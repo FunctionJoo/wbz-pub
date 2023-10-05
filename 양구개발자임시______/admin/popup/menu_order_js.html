@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<div id="loading" style="display:none"><img id="loading-image" src="../ad_images/common/loading.gif" alt="Loading..." /></div>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/> -->
+<meta name="format-detection" content="telephone=no"/>
+<meta name="Keywords" content=""/>
+<meta name="Description" content=""/>
+<title>ADMINISTRATOR</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../ad_css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="../ad_css/general.css"/>
+<script type="text/javascript" src="../ad_js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../ad_js/jquery-ui.js"></script>
+<script type="text/javascript" src="../ad_js/layout.js"></script>
+<script type="text/javascript" src="../ad_js/common.js"></script>
+<script type="text/javascript" src="../ad_js/common.min.js"></script>
+<script>
+    $(function () {
+        $('.ico_date').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: 'yy-mm-dd'
+        });
+        $.datepicker.setDefaults({
+            dateFormat: 'yy-mm-dd',
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            showMonthAfterYear: true,
+            minDate: new Date('2019-08-28'),
+            yearSuffix: '년'
+          });
+    });
+</script>
+<style>
+#loading { width: 100%; height: 100%; top: -100px; left: 0px; position: fixed; display: block;  opacity: 0.7;  background-color: #fff;  z-index: 99;  text-align: center; }
+#loading-image { position: absolute;  top: 50%;  left: 50%; z-index: 100; }
+.down_file{position: absolute; right:0; top:0 ;width:85px; height:32px; line-height:32px; text-align:center; background-color:#5e5e5e; color:#fff; font-size:14px; margin-right:-100%; border-radius:3px;}
+</style>
+</head>
+
+<body style="background-color:#fff">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h1>메뉴 노출 순서 변경</h1>
+            <a href="#" class="popup_close" onclick="closeTabClick()">닫기</a>
+        </div>
+        <div class="pop_body">
+            <div class="con_box view">
+                <div class="menu_wrap">
+                    <div class="menu_list">
+                        <dl>
+                            <dt>
+                                <span class="depth1">1depth 이름 A</span>
+                                <div>
+                                    <input type="text" title="1depth 순서 입력" placeholder="" value="1" style="width:100%;" data-seq="0">
+                                </div>
+                            </dt>
+                            <dd class="depth_list">
+                                <ul>
+                                    <li data-seq="11" class="level1">
+                                        <a href="javascript:;" class="depth2">2depth 이름 a1</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                            <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                        </div>
+                                    </li>
+                                    <li data-seq="12" class="level1">
+                                        <a href="javascript:;" class="depth2">2depth 이름 a2</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                            <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                        </div>
+                                    </li>
+                                    <li data-seq="13" class="level1">
+                                        <a href="javascript:;" class="depth2">2depth 이름 a3</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                            <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="depth1">1depth 이름 B</span>
+                                <div>
+                                    <input type="text" title="1depth 순서 입력" placeholder="" value="2" style="width:100%;" data-seq="1">
+                                </div>
+                            </dt>
+                            <dd class="depth_list">
+                                <ul>
+                                    <li data-seq="21" class="level1">
+                                        <a href="javascript:;" class="depth2">2depth 이름 b1</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                            <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                        </div>
+                                    </li>
+                                    <li data-seq="22" class="level1">
+                                        <a href="javascript:;" class="depth2">2depth 이름 b2</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                            <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                        </div>
+                                    </li>
+                                    <li data-seq="23" class="level1">
+                                        <a href="javascript:;" class="depth2">2depth 이름 b3</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                            <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                        </div>
+                                    </li>
+                                    <li data-seq="24" class="level1">
+                                        <a href="javascript:;" class="depth2">2depth 이름 b4</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                            <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                        </div>
+                                        <ul>
+                                            <li data-seq="241" class="level2">
+                                                <a href="javascript:;" class="depth3">3depth 이름 b1</a>
+                                                <div class="order_btn">
+                                                    <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                                    <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                                </div>
+                                            </li>
+                                            <li data-seq="242" class="level2">
+                                                <a href="javascript:;" class="depth3">3depth 이름 b2</a>
+                                                <div class="order_btn">
+                                                    <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                                    <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                                </div>
+                                            </li>
+                                            <li data-seq="243" class="level2">
+                                                <a href="javascript:;" class="depth3">3depth 이름 b3</a>
+                                                <div class="order_btn">
+                                                    <button type="button" class="order" onclick="menuOreder.up(event)"></button>
+                                                    <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="depth1">1depth 이름 C</span>
+                                <div>
+                                    <input type="text" title="1depth 순서 입력" placeholder="" value="3" style="width:100%;" data-seq="2">
+                                </div>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="btn_area align_c">
+                    <button type="button" class="btn" onclick="menuOreder.save()">저장</button>
+                </div>
+            </div>
+        </div>
+        <!--<div class="pop_btn_box  btn_area">
+			<a href="#"  onclick="closeTabClick()"  class="btn">닫기</a>
+		</div>-->
+    </div>
+    <script>
+        function closeTabClick() {
+            window.close();
+        }
+
+        const menuOreder = {
+            save: function() {
+                let changeList = [];
+                // 메뉴 요소들 loop
+                // 변화가 있는경우 seq값과 변화된 순위값을 저장함
+                document.querySelectorAll('.depth_list > ul').forEach((e_ul) => {
+                    e_ul.querySelectorAll('.level1').forEach((e_1, i_1) => {
+                        if (e_1.classList.contains('change')) {
+                            changeList.push({seq: e_1.dataset.seq, order: i_1});
+                        }
+                        e_1.querySelectorAll('.level2').forEach((e_2, i_2) => {
+                            if (e_2.classList.contains('change')) {
+                                changeList.push({seq: e_2.dataset.seq, order: i_2});
+                            }
+                        });
+                    });
+                });
+                alert('순서 변경된 요소 결과 콘솔창 출력');
+                console.log('변경된 요소 seq, order 모음 array 출력');
+                console.log(changeList);
+            },
+            up: function(e) {
+                this.changeHtml(e, true);
+            },
+            down: function(e) {
+                this.changeHtml(e, false);
+            },
+            changeHtml: function(e, type) {
+                // 데이터 세팅
+                let _this = e.target;
+                let targetGroup;
+                if (_this.closest('li').classList.contains('level1')) {
+                    targetGroup = '.level1';
+                } else {
+                    targetGroup = '.level2';
+                }
+
+                // 현재 몇번째 요소인지 확인
+                let moveTarget = false;
+                let moveIdx = false;
+
+                // 순위 증가/감소 타입 세팅
+                let maxCount = null;
+                if (type) {
+                    maxCount = 0;
+                } else if (type == false) {
+                    maxCount = _this.closest('ul').querySelectorAll(targetGroup).length - 1;
+                }
+
+                // 이미 최하/최상 순위인경우 변화를 주지 않음
+                _this.closest('ul').querySelectorAll(targetGroup).forEach((li, idx) => {
+                    if (_this.closest('li').dataset.seq == li.dataset.seq) {
+                        if (idx != maxCount) {
+                            moveTarget = _this.closest('li');
+                            moveIdx = idx;
+                        }
+                    }
+                });
+
+                // 증가인 경우
+                if (moveTarget != false && type) {
+                    moveTarget.classList.add('change');
+                    _this.closest('ul').querySelectorAll(targetGroup)[moveIdx - 1].classList.add('change');
+                    _this.closest('ul').querySelectorAll(targetGroup)[moveIdx - 1].insertAdjacentElement('beforebegin', moveTarget);
+                }
+                // 감소인 경우
+                if (moveTarget != false && !type) {
+                    moveTarget.classList.add('change');
+                    _this.closest('ul').querySelectorAll(targetGroup)[moveIdx + 1].classList.add('change');
+                    _this.closest('ul').querySelectorAll(targetGroup)[moveIdx + 1].insertAdjacentElement('afterend', moveTarget);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
