@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>싸템</title>
+	<!-- swiper -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- style 모음 -->
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- 공통 레이아웃 js -->
+	<script src="../js/layout.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="w_set">
+			<div class="sec_top">
+				<h1 class="logo">
+					<a href="#">
+						<img src="../images/common/logo.svg" alt="회사로고">
+						<div class="logo_txt">
+							<span class="t1">아이템거래는</span>
+							<span class="t2">SSATEM</span><span class="t3">에서!</span>
+						</div>
+					</a>
+				</h1>
+				<div class="header_search">
+					<!-- 추후 모바일에서 사용 예정 -->
+					<button class="layer_close" type="button" style="display: none;">레이어닫기</button>
+					<div class="search_bar">
+						<div class="sec_radio">
+							<label class="radio_visual">
+								<input type="radio" name="sch_type" value="0" checked>
+								<span class="radio_ico"></span>
+								<span class="txt">팝니다</span>
+							</label>
+							<label class="radio_visual type2">
+								<input type="radio" name="sch_type" value="1">
+								<span class="radio_ico"></span>
+								<span class="txt">삽니다</span>
+							</label>
+						</div>
+						<div class="sec_ipt">
+							<input type="text" placeholder="게임 또는 서버명을 입력해주세요">
+						</div>
+						<div class="sec_submit">
+							<button type="button">검색</button>
+						</div>
+					</div>
+					<div class="search_content">
+						<div class="t_before">
+							<div class="sec_1">
+								<p class="sec_title">최근 검색 게임</p>
+								<ul class="sec_cont sec_cont_full sch_ul has_close">
+									<!-- 팝니다 -->
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<!-- 삽니다 -->
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+								</ul>
+							</div>
+							<div class="sec_2">
+								<p class="sec_title">인기게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul has_rank">
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+								<p class="sec_title">신규게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul">
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_banner1">
+					<a href="#">
+						<img src="https://www.kukinews.com/data/kuk/image/2022/04/28/kuk202204280332.647x.0.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="sec_bottom">
+				<div class="sec_left">
+					<button type="button" class="chat_list_btn">
+						<div class="text"><i></i>채팅목록</div>
+						<div class="new_laert">
+							<span class="t_y">99+</span>개의 메세지가 있습니다.
+						</div>
+					</button>
+				</div>
+				<div class="sec_center">
+					<ul class="header_menu">
+						<li>
+							<a href="#" class="fc_p0">판매등록</a>
+						</li>
+						<li>
+							<a href="#" class="fc_p2">구매등록</a>
+						</li>
+						<li>
+							<a href="#">마일리지</a>
+							<ul class="dep2">
+								<li><a href="#">마일리지</a></li>
+								<li><a href="#">마일리지 충전</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">1:1 상담</a></li>
+								<li><a href="#">신규 게임 등록 요청</a></li>
+								<li><a href="#">이용안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="bold">마이페이지</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="sec_right header_login">
+					<li><a href="#" class="is_login">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="contets">
+		<div id="member">
+			<div class="w_set_member">
+				<label class="label_t">
+					<input type="text" placeholder="사이즈는 겉 박스를 조절하면 됩니다.">
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- 미완 -->
+	<footer id="footer">
+		<div class="footer_top">
+			<div class="w_set">
+				...
+			</div>
+		</div>
+		<div class="footer_content">
+			<div class="w_set">
+				.....
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

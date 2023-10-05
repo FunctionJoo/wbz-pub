@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>운영관리 > 팝업 관리 > 목록</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Header Start-->
+		<header id="header">
+			<div class="header_top">
+				<div class="header_info">
+					<h1 class="admin_title">양구수목원</h1>
+				</div>
+				<div class="header_util">
+					<div class="user_info btn_u">
+						<i class="header_info ico_profile"></i>
+						<strong class="user_name"><em>홍길동</em> 님이 로그인 하였습니다.</strong>
+					</div>
+					<span class="btn_u"></span>
+					<a href="javascript:;" class="btn_u"><i class="ico_logout"></i>로그아웃</a>
+				</div>
+			</div>
+			<div class="header_btm">
+				<nav id="gnb" class="gnb">
+					<ul>
+						<li><a href="../main/main.html">홈</a></li>
+						<li><a href="../member/member_list.html">예약&middot;신청</a></li>
+						<li><a href="../admin/admin_list.html">아카이브</a></li>
+						<li><a href="../member/member_list.html">게시판 관리</a></li>
+						<li><a href="./notice_list.html">회원관리</a></li>
+						<li><a href="../cs/qna_list.html">통계/분석</a></li>
+						<li><a href="../manage/notice_list.html">운영관리</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- //Header End-->
+		<div id="container">
+			<h2 class="blind">리스트 페이지</h2>
+			<section class="sub_section">
+				<div class="content_wrap">
+					<!--Lnb Start-->
+					<div id="lnb">
+						<button class="openBtn">&lt;</button>
+						<h2 class="tit">
+							<span>운영관리</span>
+						</h2>
+						<ul class="menu">
+							<li class="btn_sub">
+								<a href="./manage_list.html">운영자 관리</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./statistics_list.html">접속 통계</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./menu_list.html">메뉴 관리</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./main_list.html">메인 관리</a>
+								<ul class="sub_menu">
+									<li class="on"><a href="./main_list.html">메인 배너</a></li>
+									<li><a href="./etc_list.html">기타영역 배너</a></li>
+								</ul>
+							</li>
+							<li class="btn_sub">
+								<a href="./popup_list.html">팝업 관리</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./banner_list.html">상단 띠 배너</a>
+							</li>
+						</ul>
+					</div>
+					<!--//Lnb End-->
+
+					<!--Content Start-->
+					<div class="content">
+						<div class="content_head">
+							<h3>팝업 관리</h3>
+						</div>
+						<div class="content_body">
+							<!-- Search Start -->
+							<div class="search_wrap">
+								<table>
+									<caption>검색</caption>
+									<colgroup>
+										<col style="width:10%;">
+										<col style="width:40%;">
+										<col style="width:10%;">
+										<col style="width:auto;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">제목</th>
+											<td>
+												<input type="text" title="제목" placeholder="" style="width: 100%;">
+											</td>
+											<th scope="row">등록일자</th>
+											<td>
+												<input type="text" placeholder="시작일" class="ico_date" name="period01" id="datepicker1">
+												<span class="tilde">~</span>
+												<input type="text" placeholder="종료일" class="ico_date" name="period01" id="datepicker2">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="btn_area align_c mt20">
+									<button type="button" class="btn">검색</button>
+								</div>
+							</div>
+							<!-- //Search End -->
+							<!-- List Start -->
+							<div class="list_wrap">
+								<div class="list_top">
+									<div class="txt_area"> <p>총 <em>20</em>건</p></div>
+									<div class="btn_area">
+										<a class="btn" href="./popup_write.html">등록</a>
+									</div>
+								</div>
+								<div class="list_table">
+									<table>
+										<caption>팝업관리 검색결과</caption>
+										<colgroup>
+											<col style="width:6%;">
+											<col style="width:auto;">
+											<col style="width:13%;">
+											<col style="width:13%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">번호</th>
+												<th scope="col">제목</th>
+												<th scope="col">노출기간</th>
+												<th scope="col">등록일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="4">등록된 데이터가 없습니다.</td>
+											</tr>
+											<tr>
+												<td>20</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목이 표기됩니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>19</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>18</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>17</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>16</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>15</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>14</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>13</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td class="align_l"><a href="./popup_view.html" class="btn_link txt_over">제목입니다.제목입니다.제목입니다.제목입니다.제제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.목입니다.제목입니다.</a></td>
+												<td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+												<td>YYYY-MM-DD</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="pagination">
+									<a href="#" class="first">처음 페이지</a>
+									<a href="#" class="prev">이전 페이지</a>
+									<a href="#" class="on">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">7</a>
+									<a href="#">8</a>
+									<a href="#">9</a>
+									<a href="#">10</a>
+									<a href="#" class="next">다음 페이지</a>
+									<a href="#" class="last">마지막 페이지</a>
+								</div>
+							</div>
+							<!-- //List Start -->
+						</div>
+					</div>
+					<!--//Content End-->
+				</div>
+			</section>
+		</div>
+	</div>
+	<script>
+		// 페이지에서만 사용하는 스크립트
+		$(document).ready(function () {
+			$('#gnb ul li').eq(6).addClass('on');
+			$('#lnb ul.menu > li').eq(4).find(' > a ').addClass('skin_bg');
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>회원관리 > 포인트 관리 > 상세</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+
+<body style="background-color:#fff">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h1>포인트 사용 이력</h1>
+            <a href="#" class="popup_close" onclick="closeTabClick()">닫기</a>
+        </div>
+        <div class="pop_body">
+            <div class="con_box view">
+                <table>
+                    <caption>포인트 사용 이력</caption>
+                    <colgroup>
+                        <col style="width:10%;">
+                        <col style="width:auto;">
+                        <col style="width:10%;">
+                        <col style="width:auto;">
+                        <col style="width:10%;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">ID</th>
+                            <td>poemlove</td>
+                            <th scope="row">이름</th>
+                            <td>Ahmed</td>
+                            <th scope="row">국가</th>
+                            <td>America</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="align_c mt20">
+                    <p class="point_amount">현재 포인트 잔액 : <strong class="c_red">87,150</strong>P </p>
+                </div>
+                <div class="mt20">
+                    <table class="mt20">
+                        <caption>포인트 사용 이력</caption>
+                        <colgroup>
+                            <col style="width:8%;">
+                            <col style="width:auto;">
+                            <col style="width:15%;">
+                            <col style="width:10%;">
+                            <col style="width:15%;">
+                            <col style="width:15%;">
+                            <col style="width:16%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">적용내역</th>
+                                <th scope="col">적용 전 포인트</th>
+                                <th scope="col">구분</th>
+                                <th scope="col">대상 포인트</th>
+                                <th scope="col">적용 후 포인트</th>
+                                <th scope="col">처리시각</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align_c">20</td>
+                                <td>관리자 적립</td>
+                                <td class="align_r">8750USD</td>
+                                <td class="align_c">
+                                    <span class="c_blue">적립</span>
+                                </td>
+                                <td class="align_r">100USD</td>
+                                <td class="align_r">87,150P</td>
+                                <td class="align_c">2023-11-06 10:00</td>
+                            </tr>
+                            <tr>
+                                <td class="align_c">19</td>
+                                <td>자동차 상품 등록</td>
+                                <td class="align_r">10250USD</td>
+                                <td class="align_c">
+                                    <span class="c_red">차감</span>
+                                </td>
+                                <td class="align_r">15,000USD</td>
+                                <td class="align_r">87,050P</td>
+                                <td class="align_c">2023-11-05 10:00</td>
+                            </tr>
+                            <tr>
+                                <td class="align_c">18</td>
+                                <td>관리자 적립</td>
+                                <td class="align_r">10200USD</td>
+                                <td class="align_c">
+                                    <span class="c_blue">적립</span>
+                                </td>
+                                <td class="align_r">50USD</td>
+                                <td class="align_r">102,050P</td>
+                                <td class="align_c">2023-08-16 10:00</td>
+                            </tr>
+                            <tr>
+                                <td class="align_c">17</td>
+                                <td>관리자 적립</td>
+                                <td class="align_r">9900USD</td>
+                                <td class="align_c">
+                                    <span class="c_blue">적립</span>
+                                </td>
+                                <td class="align_r">3,000USD</td>
+                                <td class="align_r">102,000P</td>
+                                <td class="align_c">2023-08-13 10:00</td>
+                            </tr>
+                            <tr>
+                                <td class="align_c">16</td>
+                                <td>자동차 사고 조회</td>
+                                <td class="align_r">10000USD</td>
+                                <td class="align_c">
+                                    <span class="c_red">차감</span>
+                                </td>
+                                <td class="align_r">1,000USD</td>
+                                <td class="align_r">99,000P</td>
+                                <td class="align_c">2023-05-26 10:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination mt0">
+                    <a href="#" class="first">처음 페이지</a>
+                    <a href="#" class="prev">이전 페이지</a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="next">다음 페이지</a>
+                    <a href="#" class="last">마지막 페이지</a>
+                </div>
+            </div>
+        </div>
+        <!--<div class="pop_btn_box  btn_area">
+			<a href="#"  onclick="closeTabClick()"  class="btn">닫기</a>
+		</div>-->
+    </div>
+    <script>
+        function closeTabClick() {
+            window.close();
+        }
+    </script>
+</body>
+
+</html>

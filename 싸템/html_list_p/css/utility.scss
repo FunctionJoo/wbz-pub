@@ -13,6 +13,8 @@ $colorC: #C5C5C5;
 $colorD: #D3D3D3;
 $colorF: #FFFFFF;
 
+$test-color: #f55;
+
 // vertical width
 $w_set: 1080px;
 
@@ -28,5 +30,33 @@ $w_set: 1080px;
 		width: 6px;
 		border-radius: 3px;
 		background: $colorC;
+	}
+}
+
+@mixin imgBox($per) {
+	position: relative;
+	padding-bottom: $per;
+	overflow: hidden;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@mixin imgBoxPx($px) {
+	position: relative;
+	padding-bottom: $px;
+	overflow: hidden;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 }

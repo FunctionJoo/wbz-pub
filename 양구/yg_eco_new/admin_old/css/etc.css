@@ -1,0 +1,4 @@
+.secret{display:inline-block; width:16px; height:16px; font-size:0;}
+.secret:after{font-family:"FontAwesome"; content: "\f023";  font-size:13px; color:#000;}
+i.ico_new {display: inline-block;vertical-align: top;width: 14px;height: 14px;margin-top: 3px; margin-left: 6px; background: #0093c0;border-radius: 1px;font-size: 10px;text-align: center;line-height: 14px;color: #fff;font-family: "Roboto", "Noto Sans KR", sans-serif;}
+i.ico_new:after {content: "N";}

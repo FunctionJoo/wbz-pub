@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>운영관리 >메뉴 관리 > 목록 : 팝업</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+
+<body style="background-color:#fff">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h1>메뉴 노출 순서 변경</h1>
+            <a href="#" class="popup_close" onclick="closeTabClick()">닫기</a>
+        </div>
+        <div class="pop_body">
+            <div class="con_box view">
+                <div class="menu_wrap">
+                    <div class="menu_list">
+                        <dl>
+                            <dt>
+                                <span class="depth1">1depth 이름 A</span>
+                                <div class="order_btn">
+                                    <button type="button" class="order"></button>
+                                    <button type="button" class="order down"></button>
+                                </div>
+                            </dt>
+                            <dd class="depth_list">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 a1</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 a2</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 a3</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="depth1">1depth 이름 B</span>
+                                <div class="order_btn">
+                                    <button type="button" class="order"></button>
+                                    <button type="button" class="order down"></button>
+                                </div>
+                            </dt>
+                            <dd class="depth_list">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 b1</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 b2</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 b3</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 b4</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="depth2">2depth 이름 b5</a>
+                                        <div class="order_btn">
+                                            <button type="button" class="order"></button>
+                                            <button type="button" class="order down"></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="btn_area align_c">
+                    <button type="button" class="btn">순서저장</button>
+                </div>
+            </div>
+        </div>
+        <!--<div class="pop_btn_box  btn_area">
+			<a href="#"  onclick="closeTabClick()"  class="btn">닫기</a>
+		</div>-->
+    </div>
+    <script>
+        function closeTabClick() {
+            window.close();
+        }
+    </script>
+</body>
+
+</html>

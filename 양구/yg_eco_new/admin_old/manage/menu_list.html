@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>운영관리 > 메뉴 관리 > 목록</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Header Start-->
+		<header id="header">
+			<div class="header_top">
+				<div class="header_info">
+					<h1 class="admin_title">양구수목원</h1>
+				</div>
+				<div class="header_util">
+					<div class="user_info btn_u">
+						<i class="header_info ico_profile"></i>
+						<strong class="user_name"><em>홍길동</em> 님이 로그인 하였습니다.</strong>
+					</div>
+					<span class="btn_u"></span>
+					<a href="javascript:;" class="btn_u"><i class="ico_logout"></i>로그아웃</a>
+				</div>
+			</div>
+			<div class="header_btm">
+				<nav id="gnb" class="gnb">
+					<ul>
+						<li><a href="../main/main.html">홈</a></li>
+						<li><a href="../member/member_list.html">예약&middot;신청</a></li>
+						<li><a href="../admin/admin_list.html">아카이브</a></li>
+						<li><a href="../member/member_list.html">게시판 관리</a></li>
+						<li><a href="./notice_list.html">회원관리</a></li>
+						<li><a href="../cs/qna_list.html">통계/분석</a></li>
+						<li><a href="../manage/notice_list.html">운영관리</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- //Header End-->
+		<div id="container">
+			<h2 class="blind">리스트 페이지</h2>
+			<section class="sub_section">
+				<div class="content_wrap">
+					<!--Lnb Start-->
+					<div id="lnb">
+						<button class="openBtn">&lt;</button>
+						<h2 class="tit">
+							<span>운영관리</span>
+						</h2>
+						<ul class="menu">
+							<li class="btn_sub">
+								<a href="./manage_list.html">운영자 관리</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./statistics_list.html">접속 통계</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./menu_list.html">메뉴 관리</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./main_list.html">메인 관리</a>
+								<ul class="sub_menu">
+									<li class="on"><a href="./main_list.html">메인 배너</a></li>
+									<li><a href="./etc_list.html">기타영역 배너</a></li>
+								</ul>
+							</li>
+							<li class="btn_sub">
+								<a href="./popup_list.html">팝업 관리</a>
+							</li>
+							<li class="btn_sub">
+								<a href="./banner_list.html">상단 띠 배너</a>
+							</li>
+						</ul>
+					</div>
+					<!--//Lnb End-->
+
+					<!--Content Start-->
+					<div class="content">
+						<div class="content_head">
+							<h3>운영자 관리</h3>
+						</div>
+						<div class="content_body">
+							<div class="view_wrap">
+								<!-- List Start -->
+								<div class="btn_area">
+									<button type="button" class="btn">+ 메뉴추가</button>
+									<a href="javascript: window.open('../popup/menu_order.html','팝업창','width=600, height=800');" class="btn">순서변경</a>
+									<button type="button" class="btn">- 메뉴삭제</button>
+								</div>
+								<div class="main_box">
+									<div class="menu_wrap">
+										<div class="menu_list">
+											<div class="menu_new">
+												<p class="txt">등록한 메뉴가 없습니다.</p>
+												<div class="input_area">
+													<i class="ico_menu"></i>
+													<input type="text" title="메뉴이름 입력" placeholder="메뉴이름 입력">
+												</div>
+											</div>
+											<dl>
+												<dt>
+													<span class="depth1">1depth 이름 A</span>
+												</dt>
+												<dd class="depth_list">
+													<ul>
+														<li>
+															<a href="javascript:;" class="depth2">2depth 이름 a1</a>
+														</li>
+														<li>
+															<a href="javascript:;" class="depth2">2depth 이름 a2</a>
+														</li>
+														<li>
+															<a href="javascript:;" class="depth2">2depth 이름 a3</a>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl>
+												<dt>
+													<span class="depth1">1depth 이름 B</span>
+												</dt>
+												<dd class="depth_list">
+													<ul>
+														<li>
+															<a href="javascript:;" class="depth2">2depth 이름 b1</a>
+														</li>
+														<li>
+															<a href="javascript:;" class="depth2">2depth 이름 b2</a>
+														</li>
+														<li>
+															<a href="javascript:;" class="depth2">2depth 이름 b3</a>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="side_box">
+									<div class="view_table mt20">
+										<table>
+											<caption>작성</caption>
+											<colgroup>
+												<col style="width:20%;">
+												<col style="width:80%;">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">메뉴 제목 <span class="asta">*</span></th>
+													<td>
+														<input type="text" title="메뉴 제목 입력" placeholder="" style="width:100%;">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">SEO 설정 키워드 <i class="ico_info"></i></th>
+													<td>
+														<input type="text" title="SEO 설정 키워드" placeholder="" style="width:100%;">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">게시판 유형 <span class="asta">*</span></th>
+													<td>
+														<div>
+															<input type="checkbox" id="boardy_01" name="board" value="">
+															<label for="boardy_01">게시판</label>
+															<input type="checkbox" id="boardy_02" name="board" value="">
+															<label for="boardy_02">콘텐츠</label>
+															<input type="checkbox" id="boardy_03" name="board" value="">
+															<label for="boardy_03">외부 링크</label>
+														</div>
+														<!-- 게시판 -->
+														<div class="mt10">
+															<select name="board" id="board">
+																<option value="">리스트</option>
+															</select>
+														</div>
+														<!-- //게시판 -->
+
+														<!-- 게시판 유형 -->
+														<div class="mt10">
+															<textarea name="editor" id="editor" cols="30" rows="10">에디터 영역입니다. </textarea>
+														</div>
+														<!-- //게시판 유형 -->
+
+														<!-- 외부 링크 -->
+														<div class="mt10">
+															<input type="text" title="" placeholder="" style="width:100%;">
+														</div>
+														<!-- //외부 링크 -->
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">노출상태 <span class="asta">*</span></th>
+													<td>
+														<input type="radio" id="open_01" name="open" value="" checked="">
+														<label for="open_01">노출</label>
+														<input type="radio" id="open_02" name="open" value="">
+														<label for="open_02">미노출</label>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">모바일 여부 <span class="asta">*</span></th>
+													<td>
+														<input type="radio" id="mobile_01" name="mobile" value="">
+														<label for="mobile_01">ON</label>
+														<input type="radio" id="mobile_02" name="mobile" value="" checked="">
+														<label for="mobile_02">OFF</label>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //List Start -->
+							</div>
+							<div class="mt90 align_c">
+								<button type="button" class="btn">저장</button>
+							</div>
+						</div>
+					</div>
+					<!--//Content End-->
+				</div>
+			</section>
+		</div>
+	</div>
+	<script>
+		// 페이지에서만 사용하는 스크립트
+		$(document).ready(function () {
+			$('#gnb ul li').eq(6).addClass('on');
+			$('#lnb ul.menu > li').eq(2).find(' > a ').addClass('skin_bg');
+		});
+	</script>
+</body>
+
+</html>

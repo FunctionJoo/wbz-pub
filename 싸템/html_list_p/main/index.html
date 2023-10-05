@@ -5,7 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>싸템</title>
+	<!-- swiper -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- style 모음 -->
 	<link rel="stylesheet" href="../css/general.css">
+	<!-- 공통 레이아웃 js -->
+	<script src="../js/layout.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -21,6 +32,8 @@
 					</a>
 				</h1>
 				<div class="header_search">
+					<!-- 추후 모바일에서 사용 예정 -->
+					<button class="layer_close" type="button" style="display: none;">레이어닫기</button>
 					<div class="search_bar">
 						<div class="sec_radio">
 							<label class="radio_visual">
@@ -45,94 +58,115 @@
 						<div class="t_before">
 							<div class="sec_1">
 								<p class="sec_title">최근 검색 게임</p>
-								<ul class="sec_cont_full sch_ul has_close">
+								<ul class="sec_cont sec_cont_full sch_ul has_close">
 									<!-- 팝니다 -->
 									<li>
-										<a href="#"><span class="fc_p0">[팝니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p0">[팝니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<!-- 삽니다 -->
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 									<li>
-										<a href="#"><span class="fc_p2">[삽니다]</span>리니지 > - 이실로테03</a>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
 										<button type="button" class="li_del">삭제</button>
 									</li>
 								</ul>
 							</div>
 							<div class="sec_2">
 								<p class="sec_title">인기게임</p>
-								<div class="sec_cont"></div>
+								<div class="sec_cont">
+									<ul class="sch_ul has_rank">
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+								<p class="sec_title">신규게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul">
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -148,34 +182,233 @@
 					<button type="button" class="chat_list_btn">
 						<div class="text"><i></i>채팅목록</div>
 						<div class="new_laert">
-							<span class="t_y">99+</span>
-							개의 메세지가 있습니다.
+							<span class="t_y">99+</span>개의 메세지가 있습니다.
 						</div>
 					</button>
 				</div>
-				<ul class="sec_center header_menu">
-					<li>
-						<a href="#" class="fc_p0">판매등록</a>
-					</li>
-					<li>
-						<a href="#" class="fc_p2">구매등록</a>
-					</li>
-					<li>
-						<a href="#">마일리지</a>
-					</li>
-					<li>
-						<a href="#">고객센터</a>
-					</li>
-					<li>
-						<a href="#" class="bold">마이페이지</a>
-					</li>
-				</ul>
-				<div class="sec_right header_login">
-					<a href="#" class="is_login">로그인</a>
-					<a href="#">회원가입</a>
+				<div class="sec_center">
+					<ul class="header_menu">
+						<li>
+							<a href="#" class="fc_p0">판매등록</a>
+						</li>
+						<li>
+							<a href="#" class="fc_p2">구매등록</a>
+						</li>
+						<li>
+							<a href="#">마일리지</a>
+							<ul class="dep2">
+								<li><a href="#">마일리지</a></li>
+								<li><a href="#">마일리지 충전</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">1:1 상담</a></li>
+								<li><a href="#">신규 게임 등록 요청</a></li>
+								<li><a href="#">이용안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="bold">마이페이지</a>
+						</li>
+					</ul>
 				</div>
+				<ul class="sec_right header_login">
+					<li><a href="#" class="is_login">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+				</ul>
 			</div>
 		</div>
 	</header>
+
+	<div id="contets">
+		<div id="main">
+			<div class="main_gradient"></div>
+			<div class="w_set position">
+				<!-- main_visual -->
+				<div class="main_visual">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="https://cdn-lostark.game.onstove.com/uploadfiles/banner/ede57583986f4bcc82da518117517175.jpg" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="https://cdn-lostark.game.onstove.com/uploadfiles/banner/daa5d6e21f0441e09e126089c6dc7a85.jpg" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="https://cdn-lostark.game.onstove.com/uploadfiles/banner/41896d8bc8f749db9016ef54e2dfe068.jpg" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="https://cdn-lostark.game.onstove.com/uploadfiles/banner/ede57583986f4bcc82da518117517175.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-control"></div>
+					</div>
+				</div>
+				<!-- //main_visual -->
+
+				<!-- main_sec 1 -->
+				<div class="main_sec sec_1">
+					<div class="divide sec_left">
+						<div class="main_title">싸템 톡보적 혜택!</div>
+						<div class="benefit_banner">
+							<a href="#" class="banner_list t1">
+								<div class="txt">
+									<p class="t1">첫 거래</p>
+									<p class="t2">수수료 무료</p>
+								</div>
+							</a>
+							<a href="#" class="banner_list t2">
+								<div class="txt">
+									<p class="t1">업계 최저</p>
+									<p class="t2">거래수수료 2%</p>
+								</div>
+							</a>
+							<a href="#" class="banner_list t3">
+								<div class="txt">
+									<p class="t1">단독 아이템 지급!</p>
+									<p class="t2">신규회원 추가혜택</p>
+								</div>
+							</a>
+							<a href="#" class="banner_list t4">
+								<div class="txt">
+									<p class="t1">싸템 사전예약시</p>
+									<p class="t2">100% 경품 혜택</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="divide sec_left">
+						<div class="main_title">거래가이드</div>
+						<div class="guide_banner">
+							<a href="#">
+								<div class="pic">
+									<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/layout/logo_o.png?98a1a7c82ce9d71f950ad4cde8e4c9b0" alt="">
+								</div>
+								<div class="txt">싸템</div>
+							</a>
+							<a href="#">
+								<div class="pic">
+									<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/layout/logo_o.png?98a1a7c82ce9d71f950ad4cde8e4c9b0" alt="">
+								</div>
+								<div class="txt">카카오</div>
+							</a>
+							<a href="#">
+								<div class="pic">
+									<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/layout/logo_o.png?98a1a7c82ce9d71f950ad4cde8e4c9b0" alt="">
+								</div>
+								<div class="txt">전화번호</div>
+							</a>
+							<a href="#">
+								<div class="pic">
+									<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/layout/logo_o.png?98a1a7c82ce9d71f950ad4cde8e4c9b0" alt="">
+								</div>
+								<div class="txt">NC</div>
+							</a>
+							<a href="#">
+								<div class="pic">
+									<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/layout/logo_o.png?98a1a7c82ce9d71f950ad4cde8e4c9b0" alt="">
+								</div>
+								<div class="txt">넥슨</div>
+							</a>
+							<a href="#">
+								<div class="pic">
+									<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/layout/logo_o.png?98a1a7c82ce9d71f950ad4cde8e4c9b0" alt="">
+								</div>
+								<div class="txt">구글</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- //main_sec 1 -->
+
+				<!-- main_sec 2 -->
+				<div class="main_sec sec_2">
+					<div class="divide sec_left">
+						<div class="main_title">공지사항</div>
+						<ul class="main_notice">
+							<li>
+								<a href="#">
+									<span class="title">이용 제한 정책 업데이트 안내 (2023.07.26부터 적용)</span>
+									<span class="date">23.08.29</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="title">이용 제한 정책 업데이트 안내 (2023.07.26부터 적용) 이용 제한 정책 업데이트 안내 (2023.07.26부터 적용) 이용 제한 정책 업데이트 안내 (2023.07.26부터 적용)</span>
+									<span class="date">23.08.29</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="title">이용 제한 정책 업데이트 안내 (2023.07.26부터 적용)</span>
+									<span class="date">23.08.29</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="title">이용 제한 정책 업데이트 안내 (2023.07.26부터 적용)</span>
+									<span class="date">23.08.29</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="title">이용 제한 정책 업데이트 안내 (2023.07.26부터 적용)</span>
+									<span class="date">23.08.29</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="title">이용 제한 정책 업데이트 안내 (2023.07.26부터 적용)</span>
+									<span class="date">23.08.29</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="divide sec_left">
+						<div class="main_title">고객지원</div>
+						<div class="main_cs">
+							<ul class="cs_round">
+								<li>
+									<a href="#">
+										<i></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //main_sec 2 -->
+			</div>
+
+		</div>
+	</div>
+
+	<!-- 미완 -->
+	<footer id="footer">
+		<div class="footer_top">
+			<div class="w_set">
+				...
+			</div>
+		</div>
+		<div class="footer_content">
+			<div class="w_set">
+				.....
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

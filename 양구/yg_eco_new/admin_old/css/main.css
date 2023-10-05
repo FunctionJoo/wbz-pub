@@ -1,0 +1,53 @@
+/* ==== 메인 공통 ==== */
+.main_content{padding:30px 50px; width: 1600px; margin: 0 auto;}
+.main_content:after{content:"";display: block;clear: both;}
+
+/* 날짜 */
+.today_date{color:#105ef4; font-size:24px; font-weight:600;}
+.today_date i{display:inline-block; margin-right:8px;}
+
+/* 메인 컨텐츠 - 좌측 */
+.main_left{float:left; width:70%; box-sizing: border-box;}
+.m_left_01{margin-top:20px;}
+.m_left_01 > div{float:left; width:49%; font-size:0; margin-left:1%;}
+.m_left_01:after{content:"";display: block;clear: both;}
+.m_left_01 > div:first-child{margin-left:0}
+.m_left_01 > div > h3{font-size:18px; padding-bottom:10px;}
+.m_left_01 ul{border-top:2px solid #666; border-left:1px solid #ddd;}
+.m_left_01 li{display:inline-block; font-size:0; width:33.33%; height:80px; background:#fff; border-right:1px solid #ddd;border-bottom:1px solid #ddd;padding:15px; box-sizing: border-box;}
+.m_left_01 li span{font-size:14px; display:block;}
+.m_left_01 li strong{font-size:24px; display:block; text-align:right; color: #7FADF6;}
+.m_left_02{margin-top:30px; box-sizing: border-box; border-radius: 5px;}
+.m_left_02 h3{font-size:18px; padding-bottom:10px;}
+.m_left_02 table{width:100%; border-top: 2px solid #666;}
+.m_left_02 table th{padding:10px 20px; background-color:#f4f4f4; font-weight:400; font-size:15px; color:#666; border-bottom:1px solid #d5d5d5; border-left:1px solid #d5d5d5;}
+.m_left_02 table th:first-child{border-left:0;}
+.m_left_02 table td{position:relative; padding:10px; background-color:#fff; text-align:center; border-bottom:1px solid #d5d5d5; border-left:1px solid #d5d5d5;}
+.m_left_02 table td:first-child{color:#000; border-left:0; font-weight:bold;}
+
+/* 메인 컨텐츠 - 우측 */
+.main_right{float:right; width:28%; background:#fff; box-sizing: border-box; padding:20px 30px; border-radius: 5px; vertical-align:top;}
+.m_right_01 ul {display:inline-block; background-color:#f4f4f4; font-size:0; width:49%; margin-left:1%; border:1px dashed #ccc; border-top:2px solid #666;  border-radius: 5px; box-sizing: border-box; vertical-align:top;}
+.m_right_01 ul li{display:inline-block; font-size:0; width:50%; height:90px; padding:15px; box-sizing: border-box; border-left:1px dashed #ccc;}
+.m_right_01 li span{font-size:14px; display:block;}
+.m_right_01 li strong{font-size:28px; display:block; color: #7FADF6;}
+.m_right_01 dl{display:inline-block; font-size:0; width:46%; margin:0 0 0 10px; box-sizing: border-box; vertical-align:top;}
+.m_right_01 dt{font-size:13px; display:inline-block; width:60%; position:relative; padding-left:10px; box-sizing: border-box;}
+.m_right_01 dt:after{content:"."; position:absolute; top:-2px; left:0;}
+.m_right_01 dd{font-size:17px; display:inline-block; width:40%; font-weight:600; text-align:right; letter-spacing:-1px;}
+.m_right_01 h3{font-size:18px; padding-bottom:10px;}
+.m_right_02, .m_right_03{border-top: 1px dashed #8BB4F7; margin-top:30px;}
+.m_right_02 h3{font-size:18px; padding:30px 0 10px 0;}
+.m_right_02 li{padding-bottom:5px; vertical-align:top;}
+.m_right_02 li:after{content:"";display: block;clear: both;}
+.m_right_02 li a{font-weight:400; float:left; width:60%;}
+.m_right_02 li a strong{font-weight:400; overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis; white-space: nowrap; display:block; vertical-align:middle; position:relative; padding-left:10px;}
+.m_right_02 li a strong:after{content:"."; position:absolute; top:-2px; left:0;}
+.m_right_02 li span{text-align:right; float:right; width:40%; font-weight:200; vertical-align:top;}
+.m_right_02 li button{height:15px; text-decoration:underline; color: #105ef4;}
+.m_right_03 h3{font-size:18px; padding:30px 0 10px 0;}
+.main_right .aprrove_top a{display: block; padding: 30px 0 10px;}
+.m_right_03 li{padding-bottom:8px;}
+.m_right_03 li a strong{font-weight:400; width:60%; box-sizing: border-box; overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis; white-space: nowrap; display:block; vertical-align:middle; position:relative; padding-left:10px; display:inline-block;}
+.m_right_03 li a strong:after{content:"."; position:absolute; top:-2px; left:0;}
+.m_right_03 li span{text-align:right; display:inline-block; width:40%; font-weight:200; vertical-align:top; box-sizing: border-box;}

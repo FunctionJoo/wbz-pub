@@ -1,0 +1,40 @@
+/* 시안3 */
+.main3 #header{position: relative;}
+
+.main3 .main_slide{position: relative; width: 100%; height: 791px; background: url("../images/etc/main3_content_top.png") no-repeat center; background-size: 100%;}
+.main3 .main_slide .txt_box{padding: 135px 265px;}
+.main3 .main_slide .txt_box .txt01{font-family: 'Open Sans'; font-size: 23px; color: #666;}
+.main3 .main_slide .txt_box .txt02{padding-top: 35px; font-family: 'Jalnan'; font-size: 61px; line-height: 1.2;}
+.main3 .main_slide .txt_box .txt02 span{color:#fff8c3;}
+.main3 .main_slide .animation{position: absolute; right: 410px; bottom: 100px;animation-duration: .6s; animation-iteration-count: infinite; animation-direction: alternate; animation-name: scrollIcoAni;}
+
+@keyframes scrollIcoAni {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+.info_wrap ul li{width: 90px;margin: 30px 50px 0 0;	background: url("../img/main/main_icon_bg.png") no-repeat left bottom 34px;background-size: 90px 57px;}
+.info_wrap ul li:hover a{opacity: 1;}
+.info_wrap ul li:nth-child(1):hover a{background-position: left 19px;}
+.info_wrap ul li:nth-child(2):hover a{background-position-y: 14%;}
+
+.main_quick_ul ul {width: 100%;	max-width: 1400px; margin: 0 auto; display: flex;}
+.main_quick_ul li {width: 20%;margin: 30px 50px 0 0;background: url("../images/etc/main_icon_bg.png") no-repeat center bottom 35px;background-size: 104px 70px;}
+.main_quick_ul li a {display: block;text-align: center;font-size: 18px;color: #000; line-height: 1;padding-top: 240px;background: url("../images/etc/main_quick_1.png") no-repeat center bottom 20px;background-size: auto;position: relative;transition: all, 0.35s;}
+
+.main_quick_ul .menu01 a{background-size: 173px 204px; background-position: left 30% bottom 20px;}
+.main_quick_ul .menu02 a{background-image: url("../images/etc/main_quick_2.png"); background-size: 96px 178px; background-position: right 35% bottom 50px;}
+.main_quick_ul .menu03 a{background-image: url("../images/etc/main_quick_3.png"); background-size: 207px 226px;}
+.main_quick_ul .menu04 a{background-image: url("../images/etc/main_quick_4.png"); background-size: 164px 204px;}
+.main_quick_ul .menu05 a{background-image: url("../images/etc/main_quick_5.png"); background-size: 173px 230px;}
+
+.main_quick_ul .menu01:hover a{background-position: left 30% bottom 35px;}
+.main_quick_ul .menu02:hover a{background-position: right 55% bottom 40px;}
+.main_quick_ul .menu03:hover a{background-position: center bottom 35px;}
+.main_quick_ul .menu04:hover a{background-position: center bottom 35px;}
+.main_quick_ul .menu05:hover a{background-position: center bottom 35px;}

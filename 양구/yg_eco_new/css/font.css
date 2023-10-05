@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light');
+    src:
+    url(../font/NotoSansKR-Light.woff2) format('woff2'),
+    url(../font/NotoSansKR-Light.woff) format('woff'),
+    url(../font/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular');
+    src:
+    url(../font/NotoSansKR-Regular.woff2) format('woff2'),
+    url(../font/NotoSansKR-Regular.woff) format('woff'),
+    url(../font/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium');
+    src:
+    url(../font/NotoSansKR-Medium.woff2) format('woff2'),
+    url(../font/NotoSansKR-Medium.woff) format('woff'),
+    url(../font/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans kr';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Noto Sans Bold');
+    src:
+    url(../font/NotoSansKR-Bold.woff2) format('woff2'),
+    url(../font/NotoSansKR-Bold.woff) format('woff'),
+    url(../font/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans');
+	src: url("../font/OpenSans-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans');
+	src: url("../font/OpenSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Open Sans');
+	src: url("../font/OpenSans-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans');
+	src: url("../font/OpenSans-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans');
+	src: url("../font/OpenSans-Bold.ttf") format('truetype');
+}
+
+/* JALNAN */
+@font-face {
+    font-family: 'Jalnan';
+    font-style: normal;
+    font-weight: 700;
+    src: local('JALNANOTF');
+    src:
+    url(../font/JalnanOTF.woff2) format('woff2'),
+    url(../font/JalnanOTF.woff) format('woff'),
+    url(../font/JALNANOTF.otf) format('opentype');
+}

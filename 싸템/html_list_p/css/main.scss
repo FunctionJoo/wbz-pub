@@ -1,0 +1,30 @@
+@import 'utility.scss';
+
+#main {
+	position: relative;
+	padding-top: 42px;
+	.main_gradient {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		width: 100%;
+		height: 896px;
+		background: transparent linear-gradient(180deg, #F2F4F5 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+	}
+	.position {
+		position: relative;
+		z-index: 2;
+	}
+	.main_visual {
+		.swiper {
+			overflow: visible;
+		}
+		.swiper-slide {
+			a {
+				display: block;
+				border-radius: 8px;
+				@include imgBoxPx(390px);
+			}
+		}
+	}
+}

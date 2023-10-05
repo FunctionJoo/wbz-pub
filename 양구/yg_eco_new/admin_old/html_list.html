@@ -1,0 +1,753 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>양구수목원 관리자 마크업리스트</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<style>
+		* {
+			-webkit-text-size-adjust: none;
+		}
+
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			min-width: 800px;
+		}
+
+		html,
+		body,
+		div,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		abbr,
+		address,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		leging,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+			font-family: NanumGothic, '나눔고딕', Dotum, '돋움', applegothic, sans-serif;
+			font-size: 13px;
+			color: #555;
+			/*vertical-align:baseline;*/
+		}
+
+		body {
+			line-height: 1.2em;
+			border: 0;
+		}
+
+		strong,
+		em,
+		span,
+		wbr,
+		a {
+			display: inline-block;
+		}
+
+		span {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+		}
+
+		hr {
+			display: none
+		}
+
+		ol,
+		ul,
+		dl,
+		dt,
+		dd {
+			list-style: none outside none;
+			padding: 0;
+			margin: 0;
+		}
+
+		fieldset,
+		img,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		button,
+		hr {
+			border: 0;
+		}
+
+		address,
+		caption,
+		cite,
+		code,
+		dfn,
+		em,
+		strong,
+		th,
+		var {
+			font-style: normal;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		a {
+			cursor: pointer;
+			text-decoration: none;
+			color: #666;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		#wrap {
+			padding: 12px;
+		}
+
+		#header {
+			margin-bottom: 20px;
+		}
+
+		#header::after {
+			content: '';
+			clear: both;
+			display: block;
+		}
+
+		#header>h1 {
+			float: left;
+			font-size: 28px;
+			color: #1a1a1a;
+			padding-top: 15px;
+		}
+
+		#header>div {
+			float: right;
+		}
+
+		#header>div>p {
+			font-size: 11px;
+			color: #888;
+			text-align: right;
+		}
+
+		div.box {
+			border: 1px solid #dedede;
+			background: #f1f1f1;
+			padding: 12px 14px;
+			margin-bottom: 10px;
+		}
+
+		h3 {
+			font-size: 14px;
+			color: #333;
+			margin-bottom: 13px;
+		}
+
+		h4 {
+			font-size: 14px;
+			color: #333;
+			margin: 25px 0 8px 5px;
+		}
+
+		ol.atten>li {
+			margin-bottom: 8px;
+			padding: 0;
+			line-height: 160%;
+		}
+
+		ol.atten>li:last-child {
+			margin-bottom: 0;
+		}
+
+		table.htmllist th,
+		table.htmllist td {
+			border: 1px solid #ccc;
+		}
+
+		table.htmllist tr:first-child td {
+			text-align: center;
+			font-weight: bold;
+			border-bottom: 1px solid #111 !important;
+			height: 30px;
+			color: #000 !important;
+			font-size: 13px !important;
+		}
+
+		table.htmllist th {
+			padding: 5px 6px;
+			text-align: left;
+			border-bottom: 2px solid #0c725a !important;
+			height: 32px;
+			background-color: #f3f4f8;
+		}
+
+		table.htmllist th.depth2 {
+			padding: 2px 18px;
+			text-align: left;
+			border-bottom: 1px solid #333 !important;
+			height: 30px;
+			font-size: 12px;
+			background-color: #fff
+		}
+
+		table.htmllist td {
+			padding: 5px 6px;
+		}
+
+		table.htmllist td:first-child {
+			text-align: center;
+		}
+
+		table.htmllist td:last-child {
+			color: #888;
+			font-size: 12px;
+		}
+
+		table.htmllist td:nth-child(4),
+		table.htmllist td:nth-child(6),
+		table.htmllist td:nth-child(7) {
+			text-align: center;
+		}
+
+		table.htmllist td:nth-child(7) {
+			color: #5bcdda;
+			font-size: 11px;
+			font-weight: bold;
+		}
+
+		table.htmllist td>a {
+			display: block;
+			width: 100%;
+			height: 26px;
+			line-height: 26px;
+			text-align: center;
+			color: #fff;
+			font-size: 11px;
+			font-weight: bold;
+			vertical-align: middle;
+			background-color: #0c725a;
+			border: 1px solid #0c725a;
+			border-radius: 3px;
+		}
+
+		table.htmllist td>a:hover {
+			background-color: #0c725a;
+			border-color: #0c725a;
+			opacity: 0.7;
+			line-height: 28px;
+		}
+
+		table.htmllist tr:hover>td {
+			background-color: #fffad2;
+		}
+
+		table.htmllist td.ing {
+			text-align: center;
+			font-size: 12;
+		}
+
+		table.htmllist td.end {
+			text-align: center;
+			font-size: 12;
+			font-weight: bold;
+			background-color: #b8bbbf;
+			color: #1a1a1a;
+		}
+
+		/* .total{padding:10px 5px 20px} */
+		.total .tit_txt {
+			padding-left: 10px;
+			margin-left: 10px;
+			border-left: 1px solid #ddd;
+		}
+
+		.total h3+.tit_txt {
+			padding-left: 0;
+			margin-left: 0;
+			border-left: none;
+		}
+
+		.total_page_num {
+			font-size: 18px;
+			color: #5bcdda;
+		}
+
+		.link {
+			display: inline-block;
+			padding: 0 10px;
+			min-width: 100px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			vertical-align: middle;
+			margin-left: 15px;
+			background-color: #666;
+			border: 1px solid #666;
+			border-radius: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap" style="padding-bottom: 100px;">
+		<div id="header">
+			<h1>양구수목원 관리자 화면 설계서 - 공통</h1>
+			<div>
+				<p>Version: <b>0.0.01</b></p>
+				<p>Last Update: <b>2023.08.18</b></p>
+				<p>Coding: <b>HTML5&amp;CSS3</b></p>
+			</div>
+		</div>
+		<h4>코딩 목록</h4>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="htmllist">
+			<thead>
+				<tr class="head">
+					<td>No</td>
+					<td>Path</td>
+					<td>FileName</td>
+					<td>State</td>
+					<td>View</td>
+					<td>Update</td>
+					<td>Author</td>
+					<td>Remark</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="8">게시판</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>notice_list</td>
+					<td class="end">end</td>
+					<td><a href="./board/notice_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 공지사항 > 목록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>notice_write</td>
+					<td class="end">end</td>
+					<td><a href="./board/notice_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 공지사항 > 등록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>notice_view</td>
+					<td class="end">end</td>
+					<td><a href="./board/notice_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 공지사항 > 상세/수정 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>exhibition_list</td>
+					<td class="end">end</td>
+					<td><a href="./board/exhibition_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리> 행사 전시 > 목록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>exhibition_write</td>
+					<td class="end">end</td>
+					<td><a href="./board/exhibition_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 행사 전시 > 등록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>exhibition_view</td>
+					<td class="end">end</td>
+					<td><a href="./board/exhibition_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 행사 전시 > 상세/수정 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>exhibition_list</td>
+					<td class="end">end</td>
+					<td><a href="./board/arboretum_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리> 수목원 사계절 > 목록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>exhibition_write</td>
+					<td class="end">end</td>
+					<td><a href="./board/arboretum_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 수목원 사계절 > 등록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>exhibition_view</td>
+					<td class="end">end</td>
+					<td><a href="./board/arboretum_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 수목원 사계절 > 상세/수정 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>qna_list</td>
+					<td class="end">end</td>
+					<td><a href="./board/qna_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 1:1 문의 > 목록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>qna_view</td>
+					<td class="end">end</td>
+					<td><a href="./board/qna_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 1:1 문의 > 상세 : 답변 대기</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>qna_view</td>
+					<td class="end">end</td>
+					<td><a href="./board/qna_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 1:1 문의 > 상세 : 답변 완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>review_list</td>
+					<td class="end">end</td>
+					<td><a href="./board/review_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 자주 묻는 질문 > 목록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>review_write</td>
+					<td class="end">end</td>
+					<td><a href="./board/review_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 자주 묻는 질문 > 등록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>review_view</td>
+					<td class="end">end</td>
+					<td><a href="./board/review_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 자주 묻는 질문 > 상세/수정</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>promotion_list</td>
+					<td class="end">end</td>
+					<td><a href="./board/promotion_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 홍보동영상 > 목록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>promotion_write</td>
+					<td class="end">end</td>
+					<td><a href="./board/promotion_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 홍보동영상 > 등록/수정/삭제</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>list_list</td>
+					<td class="end">end</td>
+					<td><a href="./board/list_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 게시판 리스트 > 목록 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>list_write</td>
+					<td class="end">end</td>
+					<td><a href="./board/list_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 게시판 리스트 > 등록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>list_view</td>
+					<td class="end">end</td>
+					<td><a href="./board/list_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>게시판 관리 > 게시판 리스트 > 수정/삭제</td>
+				</tr>
+				<tr>
+					<th colspan="8">운영관리</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>manage_list</td>
+					<td class="end">end</td>
+					<td><a href="./manage/manage_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 운영자 관리 > 목록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>manage_write</td>
+					<td class="end">end</td>
+					<td><a href="./manage/manage_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 운영자 관리 > 등록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>manage_write</td>
+					<td class="end">end</td>
+					<td>
+						<!-- <a href="./manage/manage_write.html" target="_blank">View</a> -->
+					</td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>
+						운영관리 > 운영자 관리 > 등록 : 2depth 서브 메뉴 권한 관리
+						<p style="color:red">기획 미확정</p>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>manage_view</td>
+					<td class="end">end</td>
+					<td><a href="./manage/manage_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 운영자 관리 > 수정/삭제</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>menu_list</td>
+					<td class="end">end</td>
+					<td><a href="./manage/menu_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 메뉴 관리 > 목록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>main_list</td>
+					<td class="end">end</td>
+					<td><a href="./manage/main_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 메인 관리 > 메인 배너 > 목록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>main_write</td>
+					<td class="end">end</td>
+					<td><a href="./manage/main_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 메인 관리 > 메인 배너 > 등록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>main_view</td>
+					<td class="end">end</td>
+					<td><a href="./manage/main_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 메인 관리 > 메인 배너 > 수정/삭제</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>popup_list</td>
+					<td class="end">end</td>
+					<td><a href="./manage/popup_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 팝업 관리 > 목록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>popup_write</td>
+					<td class="end">end</td>
+					<td><a href="./manage/popup_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 팝업 관리 > 등록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>popup_view</td>
+					<td class="end">end</td>
+					<td><a href="./manage/popup_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 팝업 관리 > 수정/삭제</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>banner_list</td>
+					<td class="end">end</td>
+					<td><a href="./manage/banner_list.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 상단 띠 배너 > 목록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>banner_write</td>
+					<td class="end">end</td>
+					<td><a href="./manage/banner_write.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 상단 띠 배너 > 등록</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/board/</td>
+					<td>banner_view</td>
+					<td class="end">end</td>
+					<td><a href="./manage/banner_view.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 상단 띠 배너 > 수정/삭제</td>
+				</tr>
+				<tr>
+					<th colspan="8">팝업</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td>/popup/</td>
+					<td>menu_order</td>
+					<td class="end">end</td>
+					<td><a href="./popup/menu_order.html" target="_blank">View</a></td>
+					<td>2023-08-18</td>
+					<td></td>
+					<td>운영관리 > 메뉴 관리 > 목록 : 팝업</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script>
+		var totalPageNum = 0;
+		$('tbody').each(function (idx) {
+			var titTxt = $('tbody').eq(idx).find('th').text();
+			$('.total').append('<span class="tit_txt">' + titTxt + ': </span>')
+			$(this).find('tr').each(function (i) {
+				$(this).find('td:first-child').text(i);
+				num = $(this).filter(':last-child').find('td:first-child').text();
+			});
+			$('.total').append('<strong>' + num + '</strong>');
+			totalPageNum += parseInt(num);
+		});
+		$('.total h3').append('<strong class="total_page_num">' + totalPageNum + '</strong>');
+		console.log($('tbody tr').length)
+	</script>
+</body>
+
+</html>

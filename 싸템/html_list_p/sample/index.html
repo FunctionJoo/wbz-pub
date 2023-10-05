@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>싸템</title>
+	<!-- swiper -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- style 모음 -->
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- 공통 레이아웃 js -->
+	<script src="../js/layout.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
+</head>
+<body>
+	<style>
+		.sample {padding: 100px 0;}
+		.sample .t1 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+		.sample .sec ~ .sec {margin-top: 50px;}
+
+		.space_sample label + label {margin-left: 30px;}
+	</style>
+	<div class="sample w_set">
+		<div class="sec">
+			<p class="t1"><label for="asdf">input:checkbox</label></p>
+			<div class="space_sample">
+				<label class="label_c">
+					<input type="checkbox" id="asdf">
+					<span class="ico"></span>
+					<span class="txt"><b>전체동의</b> 체크박스 들어갈 텍스트</span>
+				</label>
+				<label class="label_c">
+					<input type="checkbox">
+					<span class="ico"></span>
+					<span class="txt"><b>전체동의</b> 체크박스 들어갈 텍스트</span>
+				</label>
+			</div>
+		</div>
+
+		<div class="sec">
+			<p class="t1"><label for="asdf2">input:radio</label></p>
+			<div class="space_sample">
+				<label class="label_r">
+					<input type="radio" name="asdf" id="asdf2">
+					<span class="ico"></span>
+					<span class="txt">SMS</span>
+				</label>
+				<label class="label_r">
+					<input type="radio" name="asdf">
+					<span class="ico"></span>
+					<span class="txt">이메일</span>
+				</label>
+			</div>
+		</div>
+
+		<div class="sec">
+			<p class="t1"><label for="asdf3">input:text</label></p>
+			<div class="space_sample">
+				<label class="label_t">
+					<input type="text" placeholder="사이즈는 겉 박스를 조절하면 됩니다.">
+				</label>
+			</div>
+		</div>
+
+		<div class="sec">
+			<p class="t1"><label for="asdf3">select</label></p>
+			<div class="space_sample">
+				<label class="label_s">
+					<select name="" id="">
+						<option value="">배경 아이콘 추가 필요</option>
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+					</select>
+				</label>
+			</div>
+		</div>
+
+		<div class="sec">
+			<p class="t1"><label for="asdf3">button</label></p>
+			<div class="space_sample">
+				<button type="button" class="st_btn">휴대폰 인증</button>
+				<a href="#" class="st_btn">계좌 인증 (a tag)</a><br>
+				<button class="st_btn size_b color_p">회원가입 .size_b .color_p</button>
+				<a class="st_btn size_b color_p" href="#">회원가입 .size_b .color_p</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

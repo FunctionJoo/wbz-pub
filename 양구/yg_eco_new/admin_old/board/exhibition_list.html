@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>게시판 관리 > 행사 전시 > 목록</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/etc.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Header Start-->
+		<header id="header">
+			<div class="header_top">
+				<div class="header_info">
+					<h1 class="admin_title">양구수목원</h1>
+				</div>
+				<div class="header_util">
+					<div class="user_info btn_u">
+						<i class="header_info ico_profile"></i>
+						<strong class="user_name"><em>홍길동</em> 님이 로그인 하였습니다.</strong>
+					</div>
+					<span class="btn_u"></span>
+					<a href="javascript:;" class="btn_u"><i class="ico_logout"></i>로그아웃</a>
+				</div>
+			</div>
+			<div class="header_btm">
+				<nav id="gnb" class="gnb">
+					<ul>
+						<li><a href="../main/main.html">홈</a></li>
+						<li><a href="../member/member_list.html">예약 · 신청</a></li>
+						<li><a href="../admin/admin_list.html">아카이브</a></li>
+						<li><a href="../member/member_list.html">게시판 관리</a></li>
+						<li><a href="./notice_list.html">회원관리</a></li>
+						<li><a href="../cs/qna_list.html">통계/분석</a></li>
+						<li><a href="../manage/notice_list.html">운영관리</a></li>
+					</ul>
+					</nav>
+					</div>
+					</header>
+					<!-- //Header End-->
+					<div id="container">
+						<h2 class="blind">리스트 페이지</h2>
+						<section class="sub_section">
+							<div class="content_wrap">
+								<!--Lnb Start-->
+								<div id="lnb">
+									<button type="button" class="openBtn">&lt;</button>
+									<h2 class="tit">
+										<span>게시판</span>
+									</h2>
+									<ul class="menu">
+										<li class="btn_sub">
+											<a href="./notice_list.html">공지사항</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./exhibition_list.html">행사전시</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./arboretum_list.html">수목원 사계절</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./qna_list.html">1:1 문의</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./review_list.html">자주 묻는 질문</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./promotion_list.html">홍보 동영상</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./list_list.html">게시판 리스트</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./list_write.html">게시판 등록</a>
+										</li>
+									</ul>
+								</div>
+					<!--//Lnb End-->
+
+					<!--Content Start-->
+					<div class="content">
+						<div class="content_head">
+							<h3>행사 전시</h3>
+						</div>
+						<div class="content_body">
+							<!-- Search Start -->
+							<div class="search_wrap">
+								<table>
+									<caption>검색</caption>
+									<colgroup>
+										<col style="width:10%;">
+										<col style="width:40%;">
+										<col style="width:10%;">
+										<col style="width:auto;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">키워드</th>
+											<td>
+												<select name="keyword" id="keyword" style="width: 150px;">
+													<option value="">제목</option>
+													<option value="">전체</option>
+													<option value="">내용</option>
+												</select>
+												<input class="ml20" type="text" title="키워드" placeholder="" style="width: 40%;">
+											</td>
+											<th scope="row">등록일자</th>
+											<td>
+												<input type="text" placeholder="시작일" class="ico_date" name="period01" id="datepicker1">
+												<span class="tilde">~</span>
+												<input type="text" placeholder="종료일" class="ico_date" name="period01" id="datepicker2">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="btn_area align_c mt20">
+									<button type="button" class="btn">검색</button>
+								</div>
+							</div>
+							<!-- //Search End -->
+							<!-- List Start -->
+							<div class="list_wrap">
+								<div class="list_top">
+									<div class="txt_area"> <p>총 <em>0,000</em>건</p></div>
+									<div class="btn_area align_r mt20">
+										<a class="btn" href="./exhibition_write.html"> 등록 </a>
+									</div>
+								</div>
+								<div class="list_table">
+									<table>
+										<caption>검색 결과</caption>
+										<colgroup>
+											<col style="width:5%;">
+											<col style="width:auto;">
+											<col style="width:15%;">
+											<col style="width:10%;">
+											<col style="width:10%;">
+											<col style="width:10%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">번호</th>
+												<th scope="col">제목</th>
+												<th scope="col">행사 전시 노출 기간</th>
+												<th scope="col">등록일</th>
+												<th scope="col">첨부파일</th>
+												<th scope="col">조회수</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<span class="c_red">공지</span>
+												</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>19</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) <i class="ico_new"></i></a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>18</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) <i class="ico_new"></i></a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>17</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>16</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>15</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>14</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>13</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td><a href="#"><i class="ico_file">첨부파일 다운로드</i></a></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td class="align_l">
+													<a href="./exhibition_view.html" class="btn_link txt_over">입력된 제목이 표시됩니다. 입력된 제목이 표…(최대 1줄) </a>
+												</td>
+												<td>yyy-mm-dd ~ yyy-mm-dd</td>
+												<td>YYYY-MM-DD</td>
+												<td></td>
+												<td>000</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="pagination">
+									<a href="#" class="first">처음 페이지</a>
+									<a href="#" class="prev">이전 페이지</a>
+									<a href="#" class="on">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">7</a>
+									<a href="#">8</a>
+									<a href="#">9</a>
+									<a href="#">10</a>
+									<a href="#" class="next">다음 페이지</a>
+									<a href="#" class="last">마지막 페이지</a>
+								</div>
+							</div>
+							<!-- //List Start -->
+						</div>
+					</div>
+					<!--//Content End-->
+				</div>
+			</section>
+		</div>
+	</div>
+	<script>
+		// 페이지에서만 사용하는 스크립트
+		$(document).ready(function () {
+			$('#gnb ul li').eq(3).addClass('on');
+			$('#lnb ul.menu > li').eq(1).find(' > a ').addClass('skin_bg').next('ul').show().find('>li').eq(0).addClass('on');
+		});
+	</script>
+</body>
+
+</html>

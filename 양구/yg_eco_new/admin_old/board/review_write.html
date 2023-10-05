@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>게시판 관리 > 자주 묻는 질문 > 등록 </title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body>
+	<div id="wrap" >
+		<!-- Header Start-->
+		<header id="header">
+			<div class="header_top">
+				<div class="header_info">
+					<h1 class="admin_title">양구수목원</h1>
+					<div class="user_info">
+						<i class="ico_profile"></i>
+						<strong class="user_name"><em>홍길동</em> 님</strong>
+						<span class="user_label">관리자</span>
+					</div>
+				</div>
+				<div class="header_util">
+					<a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+					<a href="javascript:;" class="btn_u"><i class="ico_logout"></i>로그아웃</a>
+				</div>
+			</div>
+			<div class="header_btm">
+				<nav id="gnb" class="gnb">
+					<ul>
+						<li><a href="../main/main.html">홈</a></li>
+						<li><a href="../member/member_list.html">예약 · 신청</a></li>
+						<li><a href="../admin/admin_list.html">아카이브</a></li>
+						<li><a href="../member/member_list.html">게시판 관리</a></li>
+						<li><a href="./notice_list.html">회원관리</a></li>
+						<li><a href="../cs/qna_list.html">통계/분석</a></li>
+						<li><a href="../manage/notice_list.html">운영관리</a></li>
+					</ul>
+					</nav>
+					</div>
+					</header>
+					<!-- //Header End-->
+					<div id="container">
+						<h2 class="blind">리스트 페이지</h2>
+						<section class="sub_section">
+							<div class="content_wrap">
+								<!--Lnb Start-->
+								<div id="lnb">
+									<button type="button" class="openBtn">&lt;</button>
+									<h2 class="tit">
+										<span>게시판</span>
+									</h2>
+									<ul class="menu">
+										<li class="btn_sub">
+											<a href="./notice_list.html">공지사항</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./exhibition_list.html">행사전시</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./arboretum_list.html">수목원 사계절</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./qna_list.html">1:1 문의</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./review_list.html">자주 묻는 질문</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./promotion_list.html">홍보 동영상</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./list_list.html">게시판 리스트</a>
+										</li>
+										<li class="btn_sub">
+											<a href="./list_write.html">게시판 등록</a>
+										</li>
+									</ul>
+								</div>
+					<!--//Lnb End-->
+
+					<!--Content Start-->
+					<div class="content">
+						<div class="content_head">
+							<h3>자주 뭍는 질문</h3>
+						</div>
+						<div class="align_r pr30"><span class="asta">*</span>필수입력</div>
+						<div class="content_body">
+							<!-- View Start -->
+							<div class="view_wrap">
+								<div class="view_table">
+									<table>
+										<caption>작성</caption>
+										<colgroup>
+											<col style="width:10%;">
+											<col style="width:90%;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">질문 <span class="asta">*</span></th>
+												<td>
+													<input type="text" title="질문 입력" placeholder="" style="width:100%;">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">노출상태</th>
+												<td>
+													<input type="radio" id="open_n" name="open" checked="checked">
+													<label for="open_n">미노출</label>
+													<input type="radio" id="open_y" name="open">
+													<label for="open_y">노출</label>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">첨부 파일</th>
+												<td>
+													<div class="file_area">
+														<input type="file" id="file_type01">
+														<label for="file_type01" class="btn">찾아보기</label>
+														<span>(파일형식 : ppt, pptx, xls, xlsx, doc, docx, jpg, jpeg, gif)</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">답변 <span class="asta">*</span></th>
+												<td>
+													<textarea name="contents" title="답변입력"></textarea>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="mt90">
+									<a href="./review_list.html" class="btn btn_form4">목록</a>
+									<div class="fl_r">
+										<button type="button" class="btn" onclick="save_check()">저장</button>
+									</div>
+								</div>
+							</div>
+							<!-- //View Start -->
+						</div>
+					</div>
+					<!--//Content End-->
+				</div>
+			</section>
+		</div>
+	</div>
+<script>
+// 페이지에서만 사용하는 스크립트
+		$(document).ready(function () {
+			$('#gnb ul li').eq(3).addClass('on');
+			$('#lnb ul.menu > li').eq(4).find(' > a ').addClass('skin_bg').next('ul').show().find('>li').eq(0).addClass('on');
+		});
+		// 저장버튼 경고창
+		function save_check(){
+			if(confirm("저장 하시겠습니까?") ==true){ //확인
+				document.removefrm.submit();
+			} else{ //취소
+				return false;
+			}
+		}
+</script>
+</body>
+</html>
