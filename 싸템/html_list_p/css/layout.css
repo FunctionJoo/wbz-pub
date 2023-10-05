@@ -1,0 +1,187 @@
+.w_set {
+  width: 1080px;
+}
+
+#header .sec_top {
+  display: flex;
+  align-items: center;
+  padding: 28px 0;
+}
+#header .sec_top .logo {
+  width: 182px;
+}
+#header .sec_top .logo a {
+  display: flex;
+}
+#header .sec_top .logo a img {
+  width: 50px;
+}
+#header .sec_top .logo a .logo_txt {
+  padding-left: 6px;
+  color: #333333;
+  line-height: 1;
+}
+#header .sec_top .logo a .logo_txt .t1 {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+}
+#header .sec_top .logo a .logo_txt .t2 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #113462;
+}
+#header .sec_top .logo a .logo_txt .t3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+#header .sec_top .header_search {
+  position: relative;
+  flex: 1;
+  height: 52px;
+  border: 2px solid #434343;
+  border-radius: 4px;
+}
+#header .sec_top .header_search .search_bar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#header .sec_top .header_search .search_bar .sec_radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding-left: 27px;
+}
+#header .sec_top .header_search .search_bar .sec_ipt {
+  width: calc(100% - 200px);
+  height: 100%;
+}
+#header .sec_top .header_search .search_bar .sec_ipt input {
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+  font-size: 16px;
+}
+#header .sec_top .header_search .search_bar .sec_ipt input::-moz-placeholder {
+  color: #A7A7A7;
+}
+#header .sec_top .header_search .search_bar .sec_ipt input:-ms-input-placeholder {
+  color: #A7A7A7;
+}
+#header .sec_top .header_search .search_bar .sec_ipt input::placeholder {
+  color: #A7A7A7;
+}
+#header .sec_top .header_search .search_bar .sec_submit {
+  position: relative;
+  width: 48px;
+  height: 100%;
+}
+#header .sec_top .header_search .search_bar .sec_submit input,
+#header .sec_top .header_search .search_bar .sec_submit button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url() no-repeat center center #f55;
+  font-size: 0;
+  border: 0 none;
+}
+#header .sec_top .header_search .search_content {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: 530px;
+  background: #fff;
+  border: 1px solid #434343;
+  padding: 20px;
+}
+#header .sec_top .header_search .search_content .t_before {
+  display: flex;
+  height: 100%;
+}
+#header .sec_top .header_search .search_content .t_before .sec_1 {
+  flex: 1;
+}
+#header .sec_top .header_search .search_content .t_before .sec_2 {
+  width: 180px;
+  padding-left: 15px;
+  border-left: 1px solid #D3D3D3;
+}
+#header .sec_top .header_search .search_content .sec_title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #222222;
+}
+#header .sec_top .header_search .search_content .sec_cont_full {
+  margin-top: 20px;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+#header .sec_top .header_search .search_content .sec_cont_full::-webkit-scrollbar {
+  width: 6px;
+  background: none;
+}
+#header .sec_top .header_search .search_content .sec_cont_full::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 3px;
+  background: #C5C5C5;
+}
+#header .sec_top .header_search .search_content .sch_ul li {
+  position: relative;
+  height: 26px;
+}
+#header .sec_top .header_search .search_content .sch_ul li a {
+  display: block;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+#header .sec_top .header_search .search_content .sch_ul li .li_del {
+  position: absolute;
+  right: 0;
+}
+#header .sec_top .header_search .search_content .sch_ul li:hover a {
+  background-color: #E9F2FF;
+}
+#header .sec_top .header_banner1 {
+  width: 209px;
+  height: 52px;
+  margin-left: 8px;
+}
+#header .sec_top .header_banner1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#header .sec_top .header_banner1 a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#header .sec_bottom {
+  display: flex;
+  align-items: center;
+}
+#header .sec_bottom .header_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .sec_bottom .header_menu a {
+  display: block;
+  border: 3px solid transparent;
+  border-width: 3px 0 3px 0;
+  padding: 13px 0;
+  margin: 0 20px;
+  font-size: 18px;
+  color: #222222;
+}
+#header .sec_bottom .header_menu a:hover, #header .sec_bottom .header_menu a.on {
+  border-bottom-color: #434343;
+}/*# sourceMappingURL=layout.css.map */

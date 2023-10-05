@@ -1,0 +1,32 @@
+// point color
+$point0: #014099;
+$point1: #113462;
+$point2: #24B685;
+// normal color
+$color1: #000000;
+$color2: #222222;
+$color3: #333333;
+$color4: #434343;
+$color6: #666666;
+$colorA: #A7A7A7;
+$colorC: #C5C5C5;
+$colorD: #D3D3D3;
+$colorF: #FFFFFF;
+
+// vertical width
+$w_set: 1080px;
+
+// mixin
+// @include **** 형식 선언
+@mixin scroll {
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		width: 6px;
+		background: none;
+	}
+	&::-webkit-scrollbar-thumb {
+		width: 6px;
+		border-radius: 3px;
+		background: $colorC;
+	}
+}

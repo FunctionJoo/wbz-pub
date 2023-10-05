@@ -1,0 +1,58 @@
+@import 'utility.scss';
+
+body {
+	font-family: "Noto Sans Kr", sans-serif;
+}
+
+.w_set {
+	width: $w_set;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.fc_p0 {color: $point0 !important;}
+.fc_p1 {color: $point1 !important;}
+.fc_p2 {color: $point2 !important;}
+
+.radio_visual {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	input[type="radio"] {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+	.radio_ico {
+		display: block;
+		width: 19px;
+		height: 19px;
+		outline: 1px solid $point0;
+		border: 4px solid #fff;
+		border-radius: 100%;
+		background: #fff;
+	}
+	.txt {
+		padding-left: 5px;
+		line-height: 20px;
+		font-size: 16px;
+		font-weight: 500;
+		color: $point0;
+		margin-top: -2px;
+	}
+	input:checked + .radio_ico {
+		background-color: $point0;
+	}
+	&.type2 {
+		.radio_ico {
+			outline-color: $point2;
+		}
+		input:checked + .radio_ico {
+			background-color: $point2;
+		}
+		.txt {
+			color: $point2;
+		}
+	}
+}
