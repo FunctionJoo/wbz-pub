@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/* ******************   게시판 :: 공통  ********************** */
+select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0}
+/* 공통 :: 버튼  */
+.cm-btn-controls{ overflow:hidden; text-align:center; padding-top:30px}
+.cm-btn-controls.cm-btn-align-left{ text-align:left}
+.cm-btn-controls.cm-btn-align-right{ text-align:right}
+.cm-btn-controls .left-btn-controls{ float:left}
+.cm-btn-controls .right-btn-controls{ float:right}
+.cm-btn-controls button,.cm-btn-controls a{ display:inline-block; width:150px; height:45px; border:0; color:#fff; background-color:#000; font-size:16px; margin:0 2px 5px 2px;  cursor:pointer; vertical-align:top; text-align:center; font-weight:400}
+.cm-btn-controls a{ line-height:43px; color:#fff ! important}
+.cm-btn-controls a i{ vertical-align:middle}
+.cm-btn-controls.cm-btn-long-controls button,.cm-btn-controls.cm-btn-long-controls a{ width:100%; height:50px; margin:0px; margin-bottom:5px}
+.cm-btn-controls.cm-btn-long-controls a{ box-sizing:border-box; line-height:50px; color:#fff ! important}
+.cm-btn-controls .btn-style01{ background-color:#0059a5}
+.cm-btn-controls .btn-style01:hover{ color:#fff;background-color:#0059a5}
+.cm-btn-controls .btn-style02{ background-color:#0059a5;width:auto;padding:0 30px}
+.cm-btn-controls .btn-style02:hover{ color:#fff;background-color:#0059a5}
+.cm-btn-controls .btn-style03{ box-sizing:border-box; background:#fff; border:1px solid #888; color:#222}
+
+/* 공통 :: PAGING */
+.paging{ width:100%; text-align:center; margin:40px 0}
+.paging a{ position:relative; display:inline-block; vertical-align:middle; margin:0 3px; width:40px; height:40px; border:1px solid #808080; text-align:center; font-size:16px; line-height:38px; color:#333; letter-spacing:-0.25px}
+.paging a.cur{ border:1px solid #0059a5; background-color:#0059a5; color:#fff}
+.paging a.paging-arrow{ line-height:38px}
+.paging i{ vertical-align:middle; color:inherit}
+.paging a span{ position:absolute; top:1px; left:5px}
+.paging a i.flo{ display: inline-block; letter-spacing: -12px;width:4px; font-size:17px}
+
+/* 공통 :: SEARCH BOX */
+.board-search-box form{ display:inline}
+.board-search-box{ text-align:center; background-color:#fbfbfb; margin-top:65px; padding:30px 0; border:1px solid #efefef}
+.board-search-box select{ width:20%; max-width:150px; height:40px; font-size:16px; border:1px solid #e3e3e3; background-color:#fff}
+
+.board-search-box .search-word{ width:30%; /*max-width:200px;*/ height:40px; border:1px solid #e3e3e3; border-right:0; padding:0; text-indent:10px; color:#868686; font-size:16px; vertical-align:middle}
+.board-search-box .search-word:focus{ color:#333}
+.board-search-box .bbs-search-btn{ overflow:hidden; margin:0px; margin-left:-5px; border:0; min-width:40px; padding:0 12px; height:40px; background:#333; color:#fff; cursor:pointer; vertical-align:top; font-size:16px}
+.board-search-box .bbs-search-btn i{ line-height:40px}
+.board-search-box .bbs-search-btn i.xi-x{ position:relative}
+.board-search-box .bbs-search-btn i.xi-x span{ display:block; position:absolute; width:1px; height:1px; line-height:1px; font-size:1px; color:transparent}
+.board-search-box div{ display:inline}
+.board-search-box .bbs-search-btn:focus {outline : 2px dashed blue}
+
+/* 공통 :: TOTAL NUMBER 및 카테고리 검색 */
+.total-list-con{ line-height:34px; /*margin-bottom:20px;*/ color:#333; font-size:15px; letter-spacing:-0.25px}
+.total-list-con b{ color:#eb8500}
+.top-search-box{ float:right; margin-bottom:20px}
+.top-search-box select{ width:200px; height:34px; border:1px solid #ccc; vertical-align:top}
+
+/* 공통 :: TOTAL NUMBER */
+.total-list-con{ padding-bottom:15px; color:#333; font-size:15px; letter-spacing:-0.25px}
+.total-list-con b{ color:#ea2c2d}
+
+/* 공통 :: NO LIST */
+.bbs-no-list{ padding:100px 0; text-align:center; color:#777; font-size:15px; border-top:1px solid #333; border-bottom:1px solid #e3e3e3}
+
+/* ******************   게시판 :: 기본리스트 ********************** */
+/* 게시판 :: 기본리스트 :: 레이아웃 */
+.bbs-list-tbl{ display:table; width:100%; table-layout:fixed}
+.bbs-list-head{ display:table-header-group}
+.bbs-list-head span{ display:table-cell; text-align:center; background:#fff; color:#303030; font-weight:400; font-size:16px; letter-spacing:-0.5px; padding:15px 0; border-top:1px solid #333;  border-bottom:1px solid #e3e3e3}
+.bbs-list-row{ display:table-row; width:100%}
+.bbs-list-row .column{ display:table-cell; vertical-align:middle; padding:15px 0; color:#555; font-size:15px; letter-spacing:-0.25px; text-align:center; border-bottom:1px solid #e3e3e3}
+.bbs-list-foot{ padding:10px; text-align:center; border-bottom:1px solid #999}
+.bbs-list-foot span{ font-weight:400}
+
+/* 게시판 :: 기본리스트 ::  항목 */
+.bbs-list-row.notice-row .notice-tit{ display:inline-block; padding:3px 5px 1px 5px; background-color:#333; color:#fff; font-size:12px; -webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px}
+.bbs-list-row.notice-row .column,.bbs-list-row.notice-row .bbs-subject-con .bbs-subject-txt{ font-weight:500 !important}
+.bbs-list-row .bbs-title{ text-align:left}
+.bbs-list-row .bbs-title a{ display:block; position:relative; padding:0 60px 0 0}	/* ★ 댓글이 있을때 padding-right:100px ★  */
+.bbs-list-row .bbs-title a:hover{ color:#000}
+.bbs-subject-con{ display:inline-block; position:relative; max-width:100%}
+.bbs-subject-con .bbs-subject-txt{ display: inline-block; padding-right: 5px; overflow: hidden; width: 100%; text-overflow: ellipsis; white-space: nowrap;  font-weight:400; line-height:18px; vertical-align:middle}
+.bbs-subject-con .bbs-subject-icons{  position: absolute; left:100%; top: 50%; width: 60px; height:18px; margin-top:-7px; text-align:left; display: inline-block}
+.bbs-subject-con .bbs-subject-icons img{ vertical-align:middle; margin:-2px 2px 0 2px}
+.bbs-subject-con .bbs-icons{ display:inline-block; color:#999; vertical-align:middle;  }
+.new-icon{ display:inline-block; height:15px; width:15px; line-height:15px; margin-left:2px; text-align:center; background-color:#eb8500; vertical-align:middle; color:#fff; font-size:10px; font-weight:400; -webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px}
+.bbs-subject-con .material-icons{ vertical-align:middle; height:18px; font-size:17px}
+.bbs-subject-con .comment-num{ display:inline-block; height:14px; margin:2px 0 0 2px; color:#aaa; line-height:16px; font-size:12px; font-weight:400; letter-spacing:-0.5px;vertical-align:middle}
+.bbs-subject-con .comment-num i{ height:16px; font-size:14px; color:#aaa}
+.bbs-subject-con .bbs-subject-icons .cm-num{ color:#aaa; font-size:12px; font-weight:400}
+.bbs-subject-con .reply-icon{ 
+	display:inline-block; padding:2px 8px 2px 3px; margin:0 3px 0 0; vertical-align:middle; line-height:12px; color:#fff; background-color:#333; font-size:10px; font-weight:400; letter-spacing:-0.5px;-webkit-border-radius:10px;-moz-border-radius:10px;-o-border-radius:10px;border-radius:10px;
+}
+.bbs-list-row .reply-state span{ display:inline-block; padding:0 10px; height:30px; line-height:28px; background-color:#888; border-radius:5px; font-size:13px; color:#fff; text-align:center}
+.bbs-list-row .reply-state span a{ color:#fff}
+.bbs-list-row .reply-state.reply-state-finish span{ background-color:#5997bb}
+.bbs-list-row .bbs-comment-data{ display:none}
+
+.bbs-list-row .bbs-subject-txt .category{ font-weight:500; color: #1c0c81 ; margin-right: 5px}
+
+/* ******************   게시판 :: 뷰페이지  ********************** */
+/* 게시판 :: 뷰 :: 상단 타이틀 정보 */
+.bbs-view-con{ padding-top:65px}
+.bbs-view-top{ padding:25px 0 0 0; border-top:2px solid #0059a5; border-bottom:1px solid #e3e3e3}
+.bbs-view-top .event-date{ overflow:hidden; color:#888; padding-bottom:10px}
+.bbs-view-top .event-date dt,.bbs-view-top .event-date dd{ display:inline-block; letter-spacing:-0.5px}
+.bbs-view-top .event-date dt{ margin-right:10px; color:#333}
+.bbs-view-top .event-date dt i{ font-size:16px; margin:-1px 3px 0 0; vertical-align:middle}
+.bbs-view-top .reply-state{ float:none; text-align:left; margin-bottom:10px}
+.bbs-view-top .reply-state span{ display:inline-block; padding:0 10px; height:24px; line-height:24px; background-color:#888; border-radius:5px; font-size:11px; color:#fff; text-align:center}
+.bbs-view-top .reply-state.reply-state-finish span{ background-color:#5997bb}
+.bbs-view-top .bbs-category{ display:block; font-size:13px; margin-bottom:10px}
+.bbs-view-top .bbs-tit{ display:block;padding:0 30px 25px;width:100%;color:#000;font-size:20px;letter-spacing:-0.3px;font-weight:400;line-height: 26px;word-break:keep-all;border-bottom:1px solid #e3e3e3}
+.bbs-view-top .bbs-write-info dt,.bbs-view-top .bbs-write-info dd{ display:inline-block; color:#666; font-size:16px; vertical-align:middle; font-weight:300}
+.bbs-view-top .bbs-write-info dd{ margin:0 50px 0 10px; color:#666; font-weight:300}
+.bbs-view-content{ padding:30px 30px;line-height:140%; min-height:150px}
+.bbs-view-content iframe{ margin-top:20px}
+.bbs-view-content p{ line-height:160%}
+.bbs-view-content-bottom{ padding:30px 30px;line-height:140%; min-height:150px; border-bottom:1px solid #ddd;}
+.video_txt{ margin-top:20px;line-height:140%}
+
+/* 게시판 :: 뷰 :: 첨부파일 */
+.bbs-view-file-info-box{ line-height:24px; border-bottom:1px solid #e3e3e3; border-top:1px solid #4f5153;background-color:#fff; margin-bottom:10px}
+.bbs-view-file-info-box.top-file{ border-top:0; padding:10px 30px 15px}
+.bbs-view-file-info-box.file-list-box .bbs-file-list{ padding:10px 30px 15px}
+.bbs-view-file-info-box.file-list-box .bbs-file-list:first-child{ border-bottom:1px solid #e3e3e3; padding:10px 30px 15px}
+.bbs-view-share-con + .bbs-view-file-info-box{ border-top:0}
+.bbs-view-file-info-box .bbs-file-list{ overflow:hidden;font-size:16px}
+.bbs-view-file-info-box .bbs-file-list:first-child{ padding-top:0}
+.bbs-view-file-info-box .bbs-file-list dt,
+.bbs-view-file-info-box .bbs-file-list dd{ display:inline-block; margin:0 -1px; vertical-align:middle}
+.bbs-view-file-info-box .bbs-file-list dt{ width:100px; font-weight:400; color:#333}
+.bbs-view-file-info-box .bbs-file-list dd{  width:70%; width:calc(100% - 100px )}
+.bbs-view-file-info-box .bbs-file-list dd a{ width:calc(100% - 100px);color:#666}
+.bbs-view-file-info-box .bbs-file-list dd .board-list-date{ width:100px; padding-left:15px; font-size:16px;text-align:right}
+.bbs-view-file-info-box .bbs-file-list dd a:hover{ text-decoration:underline}
+.bbs-view-file-info-box .bbs-file-list dd i{ vertical-align:middle; font-size:15px}
+
+.bbs-view-file-info-box1{ line-height:24px; border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; background-color:#fff; padding:10px 30px 15px; margin-bottom:0}
+.bbs-view-file-info-box1 .bbs-file-list{ overflow:hidden; padding-top:5px; font-size:16px}
+.bbs-view-file-info-box1 .bbs-file-list:first-child{ padding-top:0}
+.bbs-view-file-info-box1 .bbs-file-list dt{ float:left; width:100px; font-weight:300; color:#333}
+.bbs-view-file-info-box1 .bbs-file-list dd{ float:left; width:70%; width:calc(100% - 100px )}
+.bbs-view-file-info-box1 .bbs-file-list dd a:hover{ text-decoration:underline}
+.bbs-view-file-info-box1 .bbs-file-list dd i{ vertical-align:middle; font-size:15px}
+
+/* 게시판 :: 뷰 :: 관리자코멘트 */
+.manage-comment-con{ border:1px solid #d7d7d7; margin:10px 0}
+.manage-comment-con h1{ padding:15px 20px; border-bottom:1px solid #d7d7d7; background-color:#f9f9f9; color:#333; font-weight:600; font-size:15px}
+.manage-comment-con h1 span{ color:#888; font-size:11px; margin-left:5px; font-weight:400}
+.manage-comment-txt{ padding:18px 20px; font-weight:400; line-height:1.5em}
+
+/* 게시판 :: 뷰 :: 댓글 */
+.bbs-comment-con{ padding-top:15px}
+.bbs-comment-con .bbs-cm-head{ font-size:18px; color:#2f2f2f; letter-spacing:-0.25px;padding-bottom:15px; font-weight:600}
+.cm-write-con{ border:1px solid #d7d7d7; border-top:1px solid #000; margin-bottom:20px}
+.cm-write-top{ position:relative; overflow:hidden; padding:10px 20px; background-color:#f4f4f4; border-bottom:1px solid #e5e5e5;font-weight:600;color:#000}
+.cm-writer-info{ line-height:160%; padding:15px}
+.cm-write-top .cm-writer{ font-weight:600; font-size:15px; color:#333; margin-right:10px;  vertical-align:middle}
+.cm-write-top .cm-write-sub-txt{ color:#9d9d9d; font-size:12px; font-weight:400; vertical-align:middle}
+.cm-write-bottom{ padding:10px; overflow:hidden}
+.cm-write-bottom .cm-textarea{ float:left; height:85px; width:85%; padding:10px 0; border:1px solid #e5e5e5; resize:none; box-sizing:border-box}
+.cm-write-bottom .cm-regi-btn{ float:left; height:85px;  width:15%; border:0; padding:0; color:#fff; font-size:15px; background-color:#333; vertical-align:middle}
+.cm-list-con{ border:1px solid #d7d7d7}
+.cm-list-con li{ border-top:1px solid #d7d7d7}
+.cm-list-con li:first-child{ border-top:0}
+.cm-item .cm-write-top{ background-color:#fcfcfc}
+.cm-control-btns{ position:absolute; top:50%; right:10px; margin-top:-11px}
+.cm-control-btns a{ display:inline-block; width:50px; height:22px; line-height:22px; color:#fff; background-color:#999; text-align:center; font-weight:400; font-size:12px;	-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px}
+.cm-item .cm-content{ padding:10px; font-weight:400; line-height:1.3em; color:#555}
+.reply-cm-write-con{ padding-left:15px}
+.reply-cm-write-con .cm-write-top{  padding:10px; border-top:1px solid #e5e5e5}
+
+.bbs-view-file-info-box .bbs-file-list dd a, .bbs-view-file-info-box .bbs-file-list dd .board-list-date{ 
+	display: inline-block;
+	margin: 0 -1px;
+	vertical-align: middle;
+}
+/* ******************   게시판 :: 쓰기, 문의폼  ********************** */
+/* 게시판 :: 쓰기, 문의폼 :: 개인정보취급방침 */
+.bbs-inquiry-agree-con{ margin-bottom:50px}
+.bbs-inquiry-agree-con .agree-tit{ color:#464646; font-size:18px; letter-spacing:-0.3px; font-weight:500; padding-bottom:15px}
+.inquiry-agreement-con{ border:1px solid #e3e3e3; height:130px; overflow-y:auto; overflow-x:hidden; padding:20px; background-color:#f6f6f6}
+.bbs-inquiry-agree-con .agree-txt{ padding-top:10px; font-size:15px; letter-spacing:-0.3px; color:#868686}
+.inquiry-essential-txt{ text-align:right; color:#373737; font-size:13px; letter-spacing:-0.3px; padding-bottom:15px}
+.essential-icon{ color:#cf0505}
+
+/* 게시판 :: 쓰기, 문의폼 :: 작성영역 */
+.bbs-write-tbl{ width:100%; border-top:1px solid #333}
+.bbs-write-tbl th,.bbs-write-tbl td{ padding:8px 10px; letter-spacing:-0.5px; border-bottom:1px solid #e3e3e3}
+.bbs-write-tbl th{ color:#464646; font-size:14px; font-weight:500; text-align:left}
+.bbs-write-tbl .write-input,
+.bbs-write-tbl .write-select,
+.bbs-write-tbl .write-textarea{ height:34px; width:48%; background-color:#fff; border:1px solid #d2d2d2; font-size:14px; vertical-align:middle}
+.bbs-write-tbl .write-input:focus{ border-color:#333}
+.bbs-write-tbl .write-input{ text-indent:10px}
+.bbs-write-tbl .write-input.half{ width:50%}
+.bbs-write-tbl .write-input.three{ width:14.6%}
+.bbs-write-tbl .write-select{ height:38px}
+.bbs-write-tbl .write-textarea{ width:100%; height:200px; resize:none}
+.bbs-write-tbl td input[type="file"]{ height:auto; padding:10px 0;text-indent:0; border:0}
+.bbs-write-tbl .hypen{ display:inline-block; vertical-align:middle;width:12px; margin:0 5px; text-align:center}
+
+/* 게시판 :: 쓰기, 문의폼 :: 기타 */
+.bbs-write-tbl .input-check{ padding:10px 0}
+.bbs-write-tbl .input-check span{ margin-right:30px}
+.bbs-write-tbl .input-check span label{ vertical-align:middle; font-size:14px}
+.address-fieldset .write-input{ margin-top:6px}
+.address-fieldset .write-input:first-child{ margin-top:0}
+.bbs-write-tbl .address-btn{ display:inline-block; min-width:114px; padding:0 10px; height:38px; border:1px solid #464646; vertical-align:middle; text-align:center; color:#464646; font-size:14px; font-weight:400; margin-left:10px}
+.bbs-write-tbl .address-btn:hover{ background-color:#464646; color:#fff}
+
+/* ****************** 게시판 :: 비밀번호입력 ********************** */
+.bbs-password-input-con{ width:100%; padding:50px 0; text-align:center; border-top:1px solid #333; border-bottom:1px solid #e3e3e3; margin-bottom:50px}
+.password-input-tit{ color:#444; font-size:15px; font-weight:400; margin-bottom:30px}
+.password-input-tit b{ font-weight:600}
+.password-input-tit br{ display:none}
+.bbs-password-input-box{ padding:50px 0; border:1px solid #eee; background-color:#fafafa}
+.bbs-password-input-box i{ vertical-align:middle; color:#888 }
+.bbs-password-input-box label{ margin:0 10px 0 5px; font-size:15px; font-weight:600; color:#333; vertical-align:middle}
+.bbs-password-input-box #pwdInput{ height:30px; width:30%; max-width:200px; border:1px solid #e3e3e3; text-indent:10px}
+
+/* ****************** 게시판 ::  FAQ 게시판  ********************** */
+.faq-list-con{ border-top:1px solid #000; margin-bottom:30px}
+.faq-list-con .faq-item{ border-bottom:1px solid #d7d7d7}
+.faq-list-con .faq-item dt{ position:relative; padding:15px 30px 15px 55px; cursor:pointer}
+.faq-list-con .faq-item dt .faq-title{ display:block; color:#343434; font-size:16px; font-weight:400; letter-spacing:-0.5px; line-height:24px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; vertical-align:top}
+.faq-list-con .faq-item dt .arrow{ position:absolute; top:16px; right:15px; width:13px; height:9px}
+.faq-list-con .faq-item dt i{ color:#666; font-size:26px}
+.faq-list-con .faq-item.open dt .arrow i{ margin-top:-2px; transform:rotate(-180deg)}
+.faq-list-con .faq-item.open dt .faq-title{ white-space:normal; text-overflow:unset}
+.faq-list-con .faq-item dd{ display:none; position:relative; border-top:1px solid #d7d7d7; padding:15px 30px 15px 55px; background:#f0f0f0}
+.faq-list-con .faq-item dd .answer-txt-con{ line-height:24px; font-size:14px; color:#333}
+.faq-list-con .faq-item dt .question-icon,.faq-list-con .faq-item dd .answer-icon{ 
+	position:absolute; top:13px; left:10px; width:30px; height:30px; line-height:30px; text-align:center; color:#fff; font-size:13px; font-weight:400;
+	-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%;
+}
+.faq-list-con .faq-item dt .question-icon{ background-color:#0ab1d0}
+.faq-list-con .faq-item dd .answer-icon{ background-color:#c42500}
+
+/* FAQ :: 카테고리 */
+.top-search-box{ margin-bottom:20px}
+.top-search-box select{ width:200px; height:34px; border:1px solid #ccc; vertical-align:top}
+.faq-list-con.faq-category-list-con dl dt .faq-category{ display:inline-block; width:110px; color:#aaa; margin-right:5px; font-size:13px; line-height:24px; vertical-align:top}
+.faq-list-con.faq-category-list-con dl dt .faq-title{ display:inline-block; width:calc(95% - 120px)}
+
+/* ******************   게시판 :: 갤러리형 게시판 01 (G01) ********************** */
+.bbs-basic-gallery-con{ overflow:hidden; margin: 0}
+.bbs-basic-gallery-con li{ float:left; width:32.3333%; margin:0 0.5%  1% 0.5%; display:block; position:relative; border:1px solid #e3e3e3; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;-ms-transition:all 0.3s;transition:all 0.3s}
+.bbs-basic-gallery-con li a{ display:inline-block;padding:4px 10px;background:#333;color:#fff;font-size:12px;margin-top:5px; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;-ms-transition:all 0.3s;transition:all 0.3s}
+.bbs-basic-gallery-con li a:hover{ background:#107bbf; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;-ms-transition:all 0.3s;transition:all 0.3s}
+.bbs-basic-gallery-con li .gallery-thum-box{ position: relative; padding-top: 0%; overflow: hidden}	/* padding-top 으로 이미지의 비율 조정 */
+.bbs-basic-gallery-con li .gallery-thum-box img{ display:block; width:100%; height:250px; object-fit:cover}
+.bbs-basic-gallery-con li .gallery-thum{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; display:block; overflow:hidden}
+.bbs-basic-gallery-con li .gallery-thum img{ position: absolute; top: 0; left: 0; max-width: 100%; height: 100%; object-fit:cover; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s}
+.bbs-basic-gallery-con li .gallery-txt-con{ padding:8% 4%;border-top:1px solid #e3e3e3}
+.bbs-basic-gallery-con li .gallery-txt-con .gal-tit{ display:block;width:100%; color:#202020; font-size:16px; font-weight:400; letter-spacing:-0.6px; line-height:26px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.bbs-basic-gallery-con li .gallery-txt-con .gal-txt{ height:58px; overflow:hidden; margin:8px 0 15px; color:#5e5e5e; font-size:14px; letter-spacing:-0.5px; line-height:1.5em; word-break:keep-all}
+.bbs-basic-gallery-con li .gallery-txt-con .gal-day{ color:#666; font-size:13px; font-weight:300}
+.bbs-basic-gallery-con li .gallery-txt-con .gal-day i{ font-size:22px; vertical-align:middle; color:#aaa; margin-top:-3px}
+.bbs-basic-gallery-con li:hover{ border-color:#0059a5}
+
+/* ******************   게시판 :: 갤러리형 게시판 03 (G03)  ********************** */
+.bbs-basic-gallery-con03{ position:relative}
+.bbs-basic-gallery-con03 ul{ overflow:hidden; margin: 0 -1%}
+.bbs-basic-gallery-con03 ul li{ float:left;width: 45.5%;margin: 0 1.5%;margin-bottom: 5%}
+.bbs-basic-gallery-con03 ul li a,.bbs-basic-gallery-con03 ul li{ position:relative; display:block; letter-spacing:-0.75px; line-height:22px}
+.bbs-basic-gallery-con03 ul li a .press-thum,.bbs-basic-gallery-con03 ul li .press-thum{ position:relative;/* padding-top:40%; */height: 170px;overflow:hidden;border:1px solid #ccc;margin-bottom: 15px;display:flex;justify-content:center;align-items:center}
+.bbs-basic-gallery-con03 ul li a .press-thum .press-img,.bbs-basic-gallery-con03 ul li .press-thum .press-img{ width:100%; height:100%}
+.bbs-basic-gallery-con03 ul li a .press-thum .press-img img,.bbs-basic-gallery-con03 ul li .press-thum .press-img img{ display:block; width:100%; height:100%; object-fit:cover}
+.bbs-basic-gallery-con03 ul li a .press-thum .no-image,.bbs-basic-gallery-con03 ul li .press-thum .no-image{ background-color:#f2f2f2; text-align:center}	
+.bbs-basic-gallery-con03 ul li a .press-thum .no-image strong,.bbs-basic-gallery-con03 ul li .press-thum .no-image strong{ display:block; position:absolute; top:50%; left:0px; width:100%; text-align:center; font-size:16px; font-weight:400; margin-top:-25px}
+.bbs-basic-gallery-con03 ul li a strong,.bbs-basic-gallery-con03 ul li strong{ display:block}
+.bbs-basic-gallery-con03 ul li a .press-tit,.bbs-basic-gallery-con03 ul li .press-tit{ text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;width:100%;overflow:hidden;color:#333333;font-size:18px}
+.bbs-basic-gallery-con03 ul li a .press-date,.bbs-basic-gallery-con03 ul li .press-date{ font-size: 16px;line-height: 16px;letter-spacing: 0px;color:#555555;margin-top:10px;display:block}
+.bbs-basic-gallery-con03 ul li a:hover .press-thum,.bbs-basic-gallery-con03 ul li:hover .press-thum{ border:1px solid #0059a5}
+
+/* ******************   게시판 :: 갤러리형 게시판 04 (G04-썸네일형) ********************** */
+.bbs-basic-gallery-con04 .bbs-thum-list{ border-top:1px solid #000}
+.bbs-basic-gallery-con04 .bbs-thum-list li{ border-bottom:1px solid #e3e3e3}
+.bbs-basic-gallery-con04 .bbs-thum-list li a{ position:relative; display:block; padding:25px; overflow:hidden; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;-ms-transition:all 0.3s;transition:all 0.3s}
+/* 리스트 :: 썸네일 */
+.bbs-basic-gallery-con04 .bbs-thum-list li a .bbs-thumb-img{ width:31%; display:inline-block; vertical-align:top}
+.bbs-basic-gallery-con04 .bbs-thum-list li a .bbs-thumb-img span{ display:block; position:relative; border:1px solid #d2d2d2; height:0; padding-top:63%}
+.bbs-basic-gallery-con04 .bbs-thum-list li a .bbs-thumb-img img{ position:absolute; top:0px; left:0px; width:100%; height:100%}
+/* 리스트 :: 오른쪽정보 */
+.bbs-thumb-info-con{ overflow:hidden; display:inline-block; vertical-align:top; padding-left:3%; width:65%; height:100%}
+.bbs-thumb-info-con .bbs-category{ display:inline-block; min-width:60px; padding:0 10px; height:28px; line-height:28px; color:#fff; background-color:#888; text-align:center; font-size:13px; font-weight:500; margin-bottom:15px}
+.bbs-thumb-info-con h3{ 
+	line-height:30px; color:#333; font-size:20px; letter-spacing:-0.5px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+	-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;-ms-transition:all 0.3s;transition:all 0.3s;
+}
+.bbs-thumb-info-con .bbs-detail-txt{ 
+	overflow:hidden; height:48px; margin:20px 0 30px; letter-spacing:-0.5px;line-height:26px; font-size:15px; color:#626262; 
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical
+}
+.bbs-thumb-info-con .bbs-thumb-writer-info{ overflow:hidden; position:absolute; bottom:25px; right:25px}
+.bbs-thumb-info-con .bbs-thumb-writer-info dl{ float:left; margin-left:10px}
+.bbs-thumb-info-con .bbs-thumb-writer-info dl:first-child{ margin-left:0}
+.bbs-thumb-info-con .bbs-thumb-writer-info dt, .bbs-thumb-info-con .bbs-thumb-writer-info dd{ display:inline-block; vertical-align:middle}
+.bbs-thumb-info-con .bbs-thumb-writer-info dt{ margin-right:5px}
+.bbs-thumb-info-con .bbs-thumb-writer-info i{ color:#a5a5a5; font-size:20px; vertical-align:middle}
+.bbs-thumb-info-con .bbs-thumb-writer-info dd{ color:#888; font-size:13px; font-weight:400}
+.bbs-basic-gallery-con04 .bbs-thum-list li a:hover{ background-color:#f1f1f1}
+.bbs-basic-gallery-con04 .bbs-thum-list li a:hover h3{ color:#0762aa} 
+
+/* ******************   게시판 :: 통합검색 ********************** */
+/* 검색 :: 검색결과 상단 */
+.search-result-top-container{ margin-bottom:50px}
+.search-result-top-container .result-bold-txt{ color:#09b4de}
+.search-result-top-con{ border: 1px solid #e3e3e3; background-color:#fff; padding:50px 20px; text-align:center; font-size:18px; font-weight:400; line-height:20px; word-break:keep-all}
+.search-result-top-con .result-top-tit{ font-size:30px; letter-spacing: -0.75px; color:#000; font-weight: 300; margin-bottom:25px}
+.search-result-top-con .result-txt b{ color:#000}
+.search-result-top-con .no-result-txt p{ padding-bottom:20px; line-height:22px}
+.search-result-top-con .no-result-txt ul{ max-width:400px; margin:0px auto; text-align:left}
+.search-result-top-con .no-result-txt ul.en-no-result-txt{ max-width:500px;  }
+.search-result-top-con .no-result-txt ul li{ font-size:13px; letter-spacing:-0.5px; font-weight:300}
+ 
+/* 검색 :: 검색결과 분류 */
+.search-result-classify-con{ border:1px solid #e3e3e3; margin-top:-1px}
+.search-result-classify-item{ float:left; width:50%; text-align:center}
+.search-result-classify-item .search-result-classify-inner{ padding:30px 0; background-color:#F4F4F4}
+.search-result-classify-item:first-child .search-result-classify-inner{ border-right: 1px solid #d8d8d8}
+.search-result-classify-item .search-result-classify-inner .result-list-tit{ font-size:18px; letter-spacing: -0.75px; color:#000}
+.search-result-classify-item .search-result-classify-inner .result-list-tit i{ margin:-2px 6px 0 0;  vertical-align:middle}
+.search-result-classify-item .search-result-classify-inner .result-info{ font-size:22px; line-height: 28px; letter-spacing: -0.75px; color:#000; margin-top: 20px}
+ 
+/* 검색 :: 검색결과 하단 */
+.total-search-result-con{ margin-bottom:50px}
+.totabl-search-list-tit-box{ border-bottom:1px solid #000; padding-bottom:20px; margin-bottom:30px}
+.total-search-board-result-con .totabl-search-list-tit-box{ margin-bottom:0}
+.totabl-search-list-tit-box .total-search-list-tit{ float:left; color:#333; font-weight:300; font-size:25px; letter-spacing:-1px}
+.totabl-search-list-tit-box .total-search-more-btn{ float:right; color:#000; line-height:25px}
+.total-search-result-bbs-list li{ position:relative; border-bottom:1px solid #e3e3e3}
+.total-search-result-bbs-list li a{ display:block; padding:15px}
+.total-search-result-bbs-list li a .result-cate{ display:inline-block; margin-bottom:15px; color:#fff; background-color:#888; padding:3px 7px 4px; font-size:13px;  }
+.total-search-result-bbs-list li a .result-tit{ display:block; font-size:18px; color:#09b4de; padding-bottom:10px; font-weight:500}
+.total-search-result-bbs-list li a .result-txt{ 
+	overflow:hidden; height:44px; font-size:14px; line-height:1.6em;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical
+}
+.total-search-result-bbs-list li a:hover .result-tit,
+.total-search-result-bbs-list li a:hover .result-txt{ text-decoration:underline}
+.total-search-result-bbs-list li.thumb-item a{ overflow:hidden}
+.total-search-result-bbs-list li.thumb-item a .result-thumb{ display:block; float:left; width:150px; margin-right:15px; border:1px solid #e3e3e3}
+.total-search-result-bbs-list li.thumb-item a .result-thumb img{ width:100%}
+ 
+/* 검색 :: 검색결과 상세페이지  */
+.search-result-detail-container .search-result-classify-item{ float:none; width:auto}
+.search-result-detail-container .search-result-classify-item:first-child .search-result-classify-inner{ border-right: 0}
+.search-result-detail-container .total-search-result-bbs-list{ border-top:1px solid #000}
+ 
+/* Media 페이지 갤러리  */
+.bbs-basic-gallery-con10 > ul{ margin:0 -1%}
+.bbs-basic-gallery-con10 .gallery-over-list-item{ float:left; width:31.3333%; margin:0 1% 5%}
+.bbs-basic-gallery-con10 .gallery-over-list-item.type-02{ width:48%}
+.bbs-basic-gallery-con10 .gallery-over-list-item a{ display:block}
+.bbs-basic-gallery-con10 .gallery-img-box{ position:relative; text-align:center}
+.bbs-basic-gallery-con10 .gallery-img-box .img-wrap{ display:block; height:0; padding-top:64%}
+.bbs-basic-gallery-con10 .gallery-img-box .img-wrap img{ position:absolute; top:0px; right:0px; bottom:0px; left:0px; width:100%; height:100%; object-fit:cover; border:1px solid #d5d5d5}
+.bbs-basic-gallery-con10 .gallery-img-box .category{ position:absolute; left:0; top:0; display:inline-block; min-width:50px; padding:0 5px; height:30px; line-height: 30px; font-size:13px; letter-spacing: 0px; color:#fff; background-color:#333}
+.bbs-basic-gallery-con10 .gallery-img-box .broad-bg{ position:absolute; width:100%; height:100%; left:0; top:0; overflow:hidden}
+.bbs-basic-gallery-con10 .gallery-img-box .broad-bg span{ position:relative; display:block; width:0; height:0; left:50%; top:50%; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;  border-radius:100%}
+.bbs-basic-gallery-con10 .gallery-img-box .gallery-btn{ position:absolute; width:45px; height:45px; right:15px;bottom:-22.5px; border-radius:100%; color:#fff;  overflow:hidden; background: #004ea2; 
+background: -moz-linear-gradient(-45deg, #004ea2 0%, #6eb92b 100%); 
+background: -webkit-linear-gradient(-45deg, #004ea2 0%,#6eb92b 100%); 
+background: linear-gradient(135deg, #004ea2 0%,#6eb92b 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', endColorstr='#6eb92b',GradientType=1 ); line-height: 45px; box-shadow:5px 5px 15px rgba(0, 0, 0, 0.2); -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s}
+.bbs-basic-gallery-con10 .gallery-img-box .gallery-btn  i{ vertical-align:middle}
+.bbs-basic-gallery-con10 .gallery-info{ padding: 30px 0; min-height:118px}
+.bbs-basic-gallery-con10 .gallery-info .gallery-info-tit{ height:50px; line-height:24px; white-space: normal;    overflow: hidden;    display: -webkit-box;    -webkit-line-clamp: 2;    -webkit-box-orient: vertical;font-weight:400}
+.bbs-basic-gallery-con10 .gallery-info p{ font-size:14.5px; line-height: 22px; letter-spacing: -0.75px; color:#888; margin:10px 0; height:66px; overflow:hidden; text-overflow:ellipsis}
+.bbs-basic-gallery-con10 .gallery-info .gallery-date{ font-size:16px; line-height:16px; letter-spacing: 0px; color:#aaa; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;margin-top:10px;display:block}
+/* 셀렉트박스 */
+.select_box span{ display:inline-block; color:#0059a5; font-weight:400; margin-right:5px}
+.notice-top-box{ margin-top:20px; margin-bottom:15px}
+
+/* 셀렉트박스 이동버튼 추가 - 웹접근성 보완 : 20230417*/
+.notice-top-box .search-btn{ overflow:hidden; margin:0px; margin-left:-5px; border:0; min-width:40px; padding:0 12px; height:40px; background:#333; color:#fff; cursor:pointer; vertical-align:top; font-size:16px}
+.notice-top-box .search-btn:focus {outline : 2px dashed blue;}
+
+.search-type-02{ margin-top:60px; padding:30px}
+.search-type-02 select{ width:20%; max-width:100%; font-size:15px}
+.search-type-02 div{ display:inline-block; width:40%}
+.search-type-02 select.sel-w100{ max-width:250px; width:100%}
+.search-type-02 .search-word{ width:calc(100% - 45px); font-size:15px}
+
+@media all and (max-width:1261px){ 
+	.table-file{ display:none}
+	.search-type-02 div{ width:79%}
+	.search-type-02 select{ }
+	.search-type-02 select.sel-w100{ display:block; max-width:100% ; margin:0 auto; margin-bottom:5px}
+}
+@media all and (max-width:1024px){ 
+	.search-type-02{ margin-bottom:40px}
+}
+
+@media all and (max-width:789px){ 
+	.bbs-write-tbl .write-input.three{ width:30%}
+}
