@@ -278,9 +278,9 @@
 								stat = 'disabled';
 							}
 							let html = `
-							<dl id="menu${_this.seq}" data-seq="${_this.seq}" class="${stat}">
-								<dt class="closest_position" data-seq="${_this.seq}" data-level="${_this.level}">
-									<a href="javascript:;" class="depth1" data-seq="${_this.seq}">${_this.title}</a>
+							<dl id="menu\${_this.seq}" data-seq="\${_this.seq}" class="\${stat}">
+								<dt class="closest_position" data-seq="\${_this.seq}" data-level="\${_this.level}">
+									<a href="javascript:;" class="depth1" data-seq="\${_this.seq}">\${_this.title}</a>
 								</dt>
 								<dd class="depth_list">
 									<ul>
@@ -302,13 +302,13 @@
 							}
 
 							let html = `
-							<li class="closest_position ${stat}" data-seq="${_this.seq}" data-level="${_this.level}">
-								<a href="javascript:;" class="depth2" data-seq="${_this.seq}">${_this.title}</a>
-								<ul id="menu${_this.seq}">
+							<li class="closest_position \${stat}" data-seq="\${_this.seq}" data-level="\${_this.level}">
+								<a href="javascript:;" class="depth2" data-seq="\${_this.seq}">\${_this.title}</a>
+								<ul id="menu\${_this.seq}">
 								</ul>
 							</li>
 							`;
-							this.menuBox.querySelector(`#menu${_this.parent} > dd > ul`).insertAdjacentHTML('beforeend', html);
+							this.menuBox.querySelector(`#menu\${_this.parent} > dd > ul`).insertAdjacentHTML('beforeend', html);
 						}
 					});
 					// 3depth 데이터 세팅
@@ -322,11 +322,11 @@
 							}
 
 							let html = `
-							<li class="closest_position ${stat}" data-seq="${_this.seq}" data-level="${_this.level}">
-								<a href="javascript:;" class="depth3" data-seq="${_this.seq}">${_this.title}</a>
+							<li class="closest_position \${stat}" data-seq="\${_this.seq}" data-level="\${_this.level}">
+								<a href="javascript:;" class="depth3" data-seq="\${_this.seq}">\${_this.title}</a>
 							</li>
 							`;
-							this.menuBox.querySelector(`#menu${_this.parent}`).insertAdjacentHTML('beforeend', html);
+							this.menuBox.querySelector(`#menu\${_this.parent}`).insertAdjacentHTML('beforeend', html);
 						}
 					});
 
@@ -414,7 +414,7 @@
 					}
 					let addHtml = `
 					<li class="instantData">
-						<div class="${depth}">
+						<div class="\${depth}">
 							<input type="text" style="width: 100%;" placeholder="메뉴이름 입력">
 						</div>
 					</li>

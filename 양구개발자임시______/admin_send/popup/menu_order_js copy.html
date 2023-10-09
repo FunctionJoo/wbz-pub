@@ -296,9 +296,9 @@
                 this.menuData.forEach((el) => {
                     if (el.level == 0) {
                         html = `
-                        <dl data-seq="${el.seq}" class="">
+                        <dl data-seq="\${el.seq}" class="">
                             <dt>
-                                <span class="depth1">${el.title}</span>
+                                <span class="depth1">\${el.title}</span>
                                 <div>
                                     <div class="order_btn">
                                         <button type="button" class="order" onclick="menuOreder.up(event, true)"></button>
@@ -307,7 +307,7 @@
                                 </div>
                             </dt>
                             <dd class="depth_list">
-                                <ul id="group${el.seq}">
+                                <ul id="group\${el.seq}">
                                 </ul>
                             </dd>
                         </dl>
@@ -319,13 +319,13 @@
                     if (el.level == 1) {
                         let menuTarget = document.querySelector('#group'+el.parent);
                         html = `
-                        <li data-seq="${el.seq}" class="level1">
-                            <a href="javascript:;" class="depth2">${el.title}</a>
+                        <li data-seq="\${el.seq}" class="level1">
+                            <a href="javascript:;" class="depth2">\${el.title}</a>
                             <div class="order_btn">
                                 <button type="button" class="order" onclick="menuOreder.up(event)"></button>
                                 <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
                             </div>
-                            <ul id="group${el.seq}">
+                            <ul id="group\${el.seq}">
                             </ul>
                         </li>
                         `;
@@ -336,8 +336,8 @@
                     if (el.level == 1) {
                         let menuTarget = document.querySelector('#group'+el.parent);
                         html = `
-                        <li data-seq="${el.seq}" class="level2">
-                            <a href="javascript:;" class="depth3">${el.title}</a>
+                        <li data-seq="\${el.seq}" class="level2">
+                            <a href="javascript:;" class="depth3">\${el.title}</a>
                             <div class="order_btn">
                                 <button type="button" class="order" onclick="menuOreder.up(event)"></button>
                                 <button type="button" class="order down" onclick="menuOreder.down(event)"></button>
