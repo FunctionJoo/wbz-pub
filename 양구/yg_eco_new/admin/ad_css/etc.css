@@ -3,8 +3,9 @@
 
 input[type=password]{padding-left: 10px;}
 
-.main_box{float: left;width: 40%;}
-.side_box{float: right; width: 58%;}
+.divide_area{display: flex; justify-content: space-between;}
+.main_box{width: 40%;}
+.side_box{width: 58%;}
 
 i.ico_new {display: inline-block;vertical-align: top;width: 14px;height: 14px;margin-top: 3px; margin-left: 6px; background: #0093c0;border-radius: 1px;font-size: 10px;text-align: center;line-height: 14px;color: #fff;font-family: "Roboto", "Noto Sans KR", sans-serif;}
 i.ico_new:after {content: "N";}
@@ -37,14 +38,19 @@ i.secret{display:inline-block; width:16px; height:16px; font-size:0; background-
 
 /* 메뉴관리 */
 .menu_wrap .menu_new{padding: 15px 20px; border-bottom: 1px solid #D3D3D3;}
+
 .menu_wrap .menu_new .txt{font-size: 14px; font-weight: 500; text-align: center;}
 .menu_wrap .menu_new .input_area{display: flex; align-items: center; margin-top: 10px;}
 .menu_wrap .menu_new .input_area .ico_menu{display: inline-block; width: 18px; height: 14px; background: url(../ad_images/common/ico_menu_01.svg) no-repeat center; background-size: 100%; margin-right: 6px;}
+.menu_wrap .menu_new .menu{display: block; padding:10px 0; margin: 5px 0; }
+.menu_wrap .menu_new .menu span{display: block; font-size: 14px; font-weight: 500; padding-left: 28px; background: url(../ad_images/common/ico_menu_01.svg) no-repeat left top 4px; background-size: 18px 14px;}
+.menu_wrap .menu_new .menu.on{background-color: #019664; color: #fff;}
+.menu_wrap .menu_new .menu.on span{background-image: url(../ad_images/common/ico_menu_01_w.svg);}
 
 .menu_wrap .menu_list{background-color: #fff; border: 1px solid #D3D3D3; margin-top: 20px; max-height: 550px; overflow-y: scroll;}
 .menu_wrap .menu_list .btn_new{display: block; text-align: center; font-size: 16px; margin: 0 auto;}
 .menu_wrap .menu_list dl{margin-top: 5px;}
-.menu_wrap .menu_list dl dt{padding:15px 20px;  border-bottom: 1px solid #D3D3D3; }
+.menu_wrap .menu_list dl dt{padding:15px 20px; border-bottom: 1px solid #D3D3D3; }
 .menu_wrap .menu_list dl dt .depth1{font-size: 14px; font-weight: 500; padding-left: 28px; background: url(../ad_images/common/ico_menu_01.svg) no-repeat left top 4px; background-size: 18px 14px;}
 
 .menu_wrap .menu_list .depth_list li{padding:15px 20px 15px 30px; border-bottom: 1px solid #D3D3D3; }
