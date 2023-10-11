@@ -241,15 +241,15 @@
 				<ul class="step_wrap">
 					<li>
 						<i class="step_01 on"></i>
-						<div class="step_box"><p>Step1</p><span>약관동의/본인인증</span></div>
+						<div class="step_box">Step1<span>약관동의/본인인증</span></div>
 					</li>
 					<li>
 						<i class="step_02"></i>
-						<div class="step_box"><p>Step2</p><span>정보 입력</span></div>
+						<div class="step_box">Step2<span>정보 입력</span></div>
 					</li>
 					<li>
 						<i class="step_03"></i>
-						<div class="step_box"><p>Step3</p><span>가입완료</span></div>
+						<div class="step_box">Step3<span>가입완료</span></div>
 					</li>
 				</ul>
 				<div class="agree_area">
@@ -262,17 +262,25 @@
 						</div>
 						<ul>
 							<li class="title">
-								<a href="javascript:;" class="">
+								<div class="agree_area">
 									<div class="chk_area">
-										<input type="checkbox" name="isTerms" id="agreeChk01" required value="Y">
+										<input type="checkbox" name="isTerms" id="agreeChk01" required value="Y" aria-labelledby="marketingLabel1">
 										<label for="agreeChk01" class="chk"><i class="ico_chk"></i></label>
-										싸템 이용약관 동의 (필수)
+										<span id="marketingLabel1">싸템 이용약관 동의 <em class="red">(필수)</em></span>
 									</div>
-								</a>
+								</div>
 							</li>
 							<li class="cont" style="display: none;">
 								<div class="answer">
 									<p>
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
 										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
 										We will guide you on how much should be added and send you invoice of the extra charge.
 									</p>
@@ -281,13 +289,13 @@
 						</ul>
 						<ul>
 							<li class="title">
-								<a href="javascript:;">
+								<div class="agree_area">
 									<div class="chk_area">
-										<input type="checkbox" name="isAge" id="agreeChk02" required value="Y">
+										<input type="checkbox" name="isAge" id="agreeChk02" required value="Y" aria-labelledby="marketingLabel2">
 										<label for="agreeChk02" class="chk"><i class="ico_chk"></i></label>
-										싸템 개인정보 수집 및 이용 동의 (필수)
+										<span id="marketingLabel2">싸템 개인정보 수집 및 이용 동의 <em class="red">(필수)</em></span>
 									</div>
-								</a>
+								</div>
 							</li>
 							<li class="cont" style="">
 								<div class="answer">
@@ -301,13 +309,32 @@
 						</ul>
 						<ul>
 							<li class="title">
-								<a href="javascript:;">
+								<div class="agree_area">
 									<div class="chk_area">
-										<input type="checkbox" name="isMarketing" id="agreeChk03" value="Y">
+										<input type="checkbox" name="isMarketing" id="agreeChk03" value="Y" aria-labelledby="marketingLabel3">
 										<label for="agreeChk03" class="chk"><i class="ico_chk"></i></label>
-										광고 정보 수신동의 (선택)
+										<span id="marketingLabel3">광고 정보 수신동의 <em>(선택)</em></span>
 									</div>
-								</a>
+								</div>
+							</li>
+							<li class="cont" style="">
+								<div class="answer">
+									<p>No. We only accept direct transfer to our bank account (T/T remittance).<br>
+										TransferWise is also acceptable when you put our bank account information.<br>
+										But any other payment methods such as Credit Card and Paypal is not accepted.
+									</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="title">
+								<div class="agree_area">
+									<div class="chk_area">
+										<input type="checkbox" name="isMarketing" id="agreeChk04" value="Y" aria-labelledby="marketingLabel4">
+										<label for="agreeChk04" class="chk"><i class="ico_chk"></i></label>
+										<span id="marketingLabel4">개인정보 제3자 마케팅활동에 동의합니다 <em>(선택)</em></span>
+									</div>
+								</div>
 							</li>
 							<li class="cont" style="">
 								<div class="answer">
@@ -320,7 +347,6 @@
 						</ul>
 					</div>
 				</div>
-
 				<div class="man_list">
 					<p>본인확인</p>
 					<ul class="man_check">
@@ -341,7 +367,6 @@
 					</ul>
 				</div>
 			</div>
-
 		</div>
 	</div>
 	</div>
@@ -361,41 +386,43 @@
 	</footer>
 
 	<script>
+		// 전체 동의 체크박스
+		let allCheck = document.getElementById("allCheck");
+
+		// 개별 동의 체크박스들
+		let agreeChk01 = document.getElementById("agreeChk01");
+		let agreeChk02 = document.getElementById("agreeChk02");
+		let agreeChk03 = document.getElementById("agreeChk03");
+		let agreeChk04 = document.getElementById("agreeChk04");
+		let checkedArray = [agreeChk01, agreeChk02, agreeChk03, agreeChk04];
+
 		document.getElementById("allCheck").addEventListener("click", function () {
-			// 전체 동의 체크박스
-			let allCheck = document.getElementById("allCheck");
-
-			// 개별 동의 체크박스들
-			let agreeChk01 = document.getElementById("agreeChk01");
-			let agreeChk02 = document.getElementById("agreeChk02");
-			let agreeChk03 = document.getElementById("agreeChk03");
-
 			agreeChk01.checked = allCheck.checked;
 			agreeChk02.checked = allCheck.checked;
 			agreeChk03.checked = allCheck.checked;
-
+			agreeChk04.checked = allCheck.checked;
 			checkedArray.push(agreeChk01, agreeChk02, agreeChk03)
 		});
 
 		checkedArray.forEach(function (checkbox) {
 			checkbox.addEventListener("click", function () {
 				let allCheck = document.getElementById("allCheck");
-
 				allCheck.checked = checkedArray.every(function (checkbox) {
 					return checkbox.checked;
 				});
 			});
 		});
+
 	</script>
 
 	<script>
 		// 페이지에서만 사용하는 스크립트
-		$(document).on('click', '.list .title a', function () {
+		$(document).on('click', '.list .title .agree_area', function () {
 			if ($(this).hasClass('active')) {
-				$('.list .title a').removeClass('active');
+				$('.list .title .agree_area').removeClass('active');
 				$('.list .cont').stop().slideUp();
 			} else {
-				$('.list .title a').removeClass('active');
+				$('.list .title agree_area').removeClass('active');
 				$('.list .cont').stop().slideUp();
 				$(this).addClass('active');
 				$(this).parent('.title').siblings('.cont').stop().slideDown();
@@ -405,3 +432,5 @@
 </body>
 
 </html>
+
+<!-- FIXME 체크박스 클릭 시 .cont약간 튀어 나오는 오류 -->

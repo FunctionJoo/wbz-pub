@@ -1,14 +1,17 @@
 #member {
   margin: 50px auto 120px;
+  color: #222222;
 
   .main_title {
     text-align: center;
     h2 {
       font-size: 28px;
+      font-weight: 500;
       margin: 0;
     }
     p{
       margin-top: 20px;
+      font-size: 16px;
     }
   }
   .step_wrap{
@@ -55,6 +58,12 @@
         text-align: center;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 12px;
+        span{
+          display: block;
+          margin-top: 7.5px;
+          font-size: 14px;
+        }
       }
       i{
         position: absolute;
@@ -71,28 +80,30 @@
   }
   //체크박스
   .chk_area {
+    display: flex;
+    font-size: 16px;
     input {
       position: absolute;
       opacity: 0;
     }
     .chk {
       position: relative;
-      display: block;
-      /* height: 24px; */
-      line-height: 24px;
+      display: inline-block;
+      height: 22px;
+      line-height: 22px;
       color: #222;
-      padding: 0 0 0 30px;
+      padding: 0 0 0 32px;
       .ico_chk {
         display: block !important;
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
         position: absolute;
         top: 50%;
         left: 0;
         background-repeat: no-repeat;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        background-size: 24px;
+        background-size: 22px;
         background-image: url(../images/ico/ico_chk_off.svg);
         border-radius: 2px;
         overflow: hidden;
@@ -101,103 +112,110 @@
     input:checked+.chk i {
       background-image: url(../images/ico/ico_chk_on.svg);
     }
+    em{
+      color: #A7A7A7;
+      font-weight: 400;
+      &.red{
+        color: #DE4040;
+      }
+    }
   }
 
   //박스 모듈
-  .list {
-    text-align: left;
-
-    ul:nth-child(1) {
-      .title a {
-        padding-top: 26px;
-        border-top: 1px solid #D9D9D9;
-
-        &.type_no {
-          padding-top: 31px;
-        }
+  .agree_area{
+    margin-top: 54px;
+    .list {
+      text-align: left;
+      .all{
+        margin-bottom: 30px;
       }
-    }
-
-    ul {
-      .title {
-        border: 1px solid #D9D9D9;
-        margin-top: 20px;
-      }
-
-      .title a {
-        display: block;
-        position: relative;
-        padding: 18px 20px;
-        line-height: 20px;
-
-        &::after {
-          content: '';
-          width: 20px;
-          height: 10px;
-          position: absolute;
-          top: calc(50% - 5px);
-          transform: translate(-50%);
-          right: 20px;
-          background-image: url("../images/common/ico/ico_daun.png");
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 20px 10px;
-          transition: .3s;
-          -webkit-transition: .3s;
-        }
-
-        &.active::after {
-          transform: rotate(-180deg);
-          -webkit-transform: rotate(-180deg);
-          right: 30px;
-        }
-      }
-
-      .cont {
-        display: none;
-        padding: 19px 67px;
-        background-color: #F2F7FF;
-        border-radius: 6px;
-        margin-bottom: 10px;
-
-        .answer {
+      ul {
+        .title .agree_area {
+          cursor: pointer;
+          margin-top: 20px;
+          display: block;
           position: relative;
-
-          &::before {
+          padding: 18px 40px 18px 20px;
+          line-height: 20px;
+          border: 1px solid #D9D9D9;
+          &::after {
             content: '';
-            font-size: 16px;
+            width: 20px;
+            height: 10px;
             position: absolute;
-            left: -30px;
-            top: -3px;
-            font-size: 20px;
-            color: #0466FA;
-            font-weight: 600;
-            line-height: 1.5;
+            top: calc(50% - 5px);
+            transform: translate(-50%);
+            right: 10px;
+            background-image: url("../images/ico/ico_arrow2.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 20px 10px;
+            transition: .3s;
+            -webkit-transition: .3s;
           }
-
-          p {
-            font-size: 16px;
-            line-height: 23px;
-            color: #191F28;
+          &.active::after {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            right: 30px;
+          }
+          &.active{
+            border-bottom: 0;
+          }
+        }
+        .cont {
+          display: none;
+          padding: 20px 19px;
+          border: 1px solid #D9D9D9;
+          border-top: 0;
+          height: 240px;
+          overflow: scroll;
+          overflow-x: hidden;
+          .answer {
+            position: relative;
           }
         }
       }
-
     }
   }
 
   //본인확인
   .man_list {
     margin-top: 50px;
+    p{
+      font-size: 18px;
+      font-weight: 500;
+    }
     .man_check {
       display: flex;
       gap: 16px;
       margin-top: 30px;
       li {
+        position: relative;
         display: flex;
         gap: 20px;
-        padding: 20px 20px 25px;
+        padding: 20px 40px 25px 20px;
         border: 1px solid #707070;
+        &::after {
+          content: '';
+            position: absolute;
+            display: block;
+            width: 9px;
+            height: 18px;
+            top: calc(50% - 5px);
+            transform: translate(-50%);
+            right: 15px;
+            background-image: url("../images/ico/ico_arrow1.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 9px 18px;
+          }
+        p{
+          font-size: 16px;
+        }
+        span{
+          display: block;
+          margin-top: 11px;
+        }
         &:nth-child(1) {
           img {
             width: 40px;

@@ -1,15 +1,18 @@
 #member {
   margin: 50px auto 120px;
+  color: #222222;
 }
 #member .main_title {
   text-align: center;
 }
 #member .main_title h2 {
   font-size: 28px;
+  font-weight: 500;
   margin: 0;
 }
 #member .main_title p {
   margin-top: 20px;
+  font-size: 16px;
 }
 #member .step_wrap {
   position: relative;
@@ -57,6 +60,12 @@
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 12px;
+}
+#member .step_wrap li .step_box span {
+  display: block;
+  margin-top: 7.5px;
+  font-size: 14px;
 }
 #member .step_wrap li i {
   position: absolute;
@@ -66,29 +75,33 @@
 #member .step_wrap li i.on + .step_box {
   color: white;
 }
+#member .chk_area {
+  display: flex;
+  font-size: 16px;
+}
 #member .chk_area input {
   position: absolute;
   opacity: 0;
 }
 #member .chk_area .chk {
   position: relative;
-  display: block;
-  /* height: 24px; */
-  line-height: 24px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
   color: #222;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 32px;
 }
 #member .chk_area .chk .ico_chk {
   display: block !important;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   position: absolute;
   top: 50%;
   left: 0;
   background-repeat: no-repeat;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  background-size: 24px;
+  background-size: 22px;
   background-image: url(../images/ico/ico_chk_off.svg);
   border-radius: 2px;
   overflow: hidden;
@@ -96,74 +109,72 @@
 #member .chk_area input:checked + .chk i {
   background-image: url(../images/ico/ico_chk_on.svg);
 }
-#member .list {
+#member .chk_area em {
+  color: #A7A7A7;
+  font-weight: 400;
+}
+#member .chk_area em.red {
+  color: #DE4040;
+}
+#member .agree_area {
+  margin-top: 54px;
+}
+#member .agree_area .list {
   text-align: left;
 }
-#member .list ul:nth-child(1) .title a {
-  padding-top: 26px;
-  border-top: 1px solid #D9D9D9;
+#member .agree_area .list .all {
+  margin-bottom: 30px;
 }
-#member .list ul:nth-child(1) .title a.type_no {
-  padding-top: 31px;
-}
-#member .list ul .title {
-  border: 1px solid #D9D9D9;
+#member .agree_area .list ul .title .agree_area {
+  cursor: pointer;
   margin-top: 20px;
-}
-#member .list ul .title a {
   display: block;
   position: relative;
-  padding: 18px 20px;
+  padding: 18px 40px 18px 20px;
   line-height: 20px;
+  border: 1px solid #D9D9D9;
 }
-#member .list ul .title a::after {
+#member .agree_area .list ul .title .agree_area::after {
   content: "";
   width: 20px;
   height: 10px;
   position: absolute;
   top: calc(50% - 5px);
   transform: translate(-50%);
-  right: 20px;
-  background-image: url("../images/common/ico/ico_daun.png");
+  right: 10px;
+  background-image: url("../images/ico/ico_arrow2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 10px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
 }
-#member .list ul .title a.active::after {
+#member .agree_area .list ul .title .agree_area.active::after {
   transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
   right: 30px;
 }
-#member .list ul .cont {
+#member .agree_area .list ul .title .agree_area.active {
+  border-bottom: 0;
+}
+#member .agree_area .list ul .cont {
   display: none;
-  padding: 19px 67px;
-  background-color: #F2F7FF;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  padding: 20px 19px;
+  border: 1px solid #D9D9D9;
+  border-top: 0;
+  height: 240px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
-#member .list ul .cont .answer {
+#member .agree_area .list ul .cont .answer {
   position: relative;
-}
-#member .list ul .cont .answer::before {
-  content: "";
-  font-size: 16px;
-  position: absolute;
-  left: -30px;
-  top: -3px;
-  font-size: 20px;
-  color: #0466FA;
-  font-weight: 600;
-  line-height: 1.5;
-}
-#member .list ul .cont .answer p {
-  font-size: 16px;
-  line-height: 23px;
-  color: #191F28;
 }
 #member .man_list {
   margin-top: 50px;
+}
+#member .man_list p {
+  font-size: 18px;
+  font-weight: 500;
 }
 #member .man_list .man_check {
   display: flex;
@@ -171,10 +182,32 @@
   margin-top: 30px;
 }
 #member .man_list .man_check li {
+  position: relative;
   display: flex;
   gap: 20px;
-  padding: 20px 20px 25px;
+  padding: 20px 40px 25px 20px;
   border: 1px solid #707070;
+}
+#member .man_list .man_check li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 18px;
+  top: calc(50% - 5px);
+  transform: translate(-50%);
+  right: 15px;
+  background-image: url("../images/ico/ico_arrow1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 18px;
+}
+#member .man_list .man_check li p {
+  font-size: 16px;
+}
+#member .man_list .man_check li span {
+  display: block;
+  margin-top: 11px;
 }
 #member .man_list .man_check li:nth-child(1) img {
   width: 40px;
