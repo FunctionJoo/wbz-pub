@@ -89,29 +89,13 @@
 		</header>
 		<div class="sub_wrap">		
 			<aside id="lnb">
-				<h2 class="tit"><span>운영관리</span></h2>
+				<h2 class="tit"><span>아카이브</span></h2>
 				<ul class="menu">
 					<li class="btn_sub">
-						<a href="./manage_list.html">운영자 관리</a>
+						<a href="./archive_write.html">아카이브 등록</a>
 					</li>
 					<li class="btn_sub">
-						<a href="#">접속 통계</a>
-					</li>
-					<li class="btn_sub">
-						<a href="./menu_list.html" class="skin_bg">메뉴 관리</a>
-					</li>
-					<li class="btn_sub">
-						<a href="./main_list.html">메인 관리</a>
-						<ul class="sub_menu">
-							<li><a href="./main_list.html">메인 배너</a></li>
-							<li><a href="#">기타영역 배너</a></li>
-						</ul>
-					</li>
-					<li class="btn_sub">
-						<a href="./popup_list.html">팝업 관리</a>
-					</li>
-					<li class="btn_sub">
-						<a href="./banner_list.html">상단 띠 배너</a>
+						<a href="./archive_list.html">아카이브 관리</a>
 					</li>
 				</ul>
 			</aside>
@@ -124,57 +108,23 @@
 					<div class="write">
 						<form id="frm" onsubmit="return frm_submit(this);">
 							<div class="btn_area">
-								<button type="button" class="btn">+ 메뉴추가</button>
-								<a href="javascript: window.open('../popup/menu_order.html','팝업창','width=600, height=800');" class="btn">순서변경</a>
-								<button type="button" class="btn">- 메뉴삭제</button>
+								<button type="button" class="btn">+ 아카이브 추가</button>
+								<button type="button" class="btn">- 아카이브 삭제</button>
 							</div>
 							<div class="divide_area">
 								<div class="main_box">
 									<div class="menu_wrap">
 										<div class="menu_list">
-											<div class="menu_new">
+											<div class="menu_new type_full">
 												<p class="txt">등록한 메뉴가 없습니다.</p>
 												<div class="input_area">
 													<i class="ico_menu"></i>
-													<input type="text" title="메뉴이름 입력" placeholder="메뉴이름 입력" style="width: 100%;">
+													<input type="text" title="아카이브 명 입력" placeholder="아카이브 명 입력" style="width: 100%;">
 												</div>
+												<a href="javascript:;" class="menu on">
+													<span>식물도감 1-N</span>
+												</a>
 											</div>
-											<dl>
-												<dt>
-													<span class="depth1">1depth 이름 A</span>
-												</dt>
-												<dd class="depth_list">
-													<ul>
-														<li>
-															<a href="javascript:;" class="depth2">2depth 이름 a1</a>
-														</li>
-														<li>
-															<a href="javascript:;" class="depth2">2depth 이름 a2</a>
-														</li>
-														<li>
-															<a href="javascript:;" class="depth2">2depth 이름 a3</a>
-														</li>
-													</ul>
-												</dd>
-											</dl>
-											<dl>
-												<dt>
-													<span class="depth1">1depth 이름 B</span>
-												</dt>
-												<dd class="depth_list">
-													<ul>
-														<li>
-															<a href="javascript:;" class="depth2">2depth 이름 b1</a>
-														</li>
-														<li>
-															<a href="javascript:;" class="depth2">2depth 이름 b2</a>
-														</li>
-														<li>
-															<a href="javascript:;" class="depth2">2depth 이름 b3</a>
-														</li>
-													</ul>
-												</dd>
-											</dl>
 										</div>
 									</div>
 								</div>
@@ -265,7 +215,7 @@
 	</div>
 	<script>
 		$(function(){
-			$('#gnb ul li').eq(6).addClass('on');
+			$('#gnb ul li').eq(2).addClass('on');
 		});
 		function excelDownload(){
 			$("#excel").submit();
