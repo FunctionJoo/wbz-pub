@@ -1,0 +1,217 @@
+#member {
+  margin: 50px auto 120px;
+
+  .main_title {
+    text-align: center;
+    h2 {
+      font-size: 28px;
+      margin: 0;
+    }
+    p{
+      margin-top: 20px;
+    }
+  }
+  .step_wrap{
+    position: relative;
+    display: flex;
+    height: 70px;
+    margin-top: 30px;
+    li{
+      display: block;
+      width: 259px;
+      height: 70px;
+      .step_01{
+        background-image: url(../images/ico/ico_step1.svg);
+        left: 0;
+        &+.step_box{
+          left: 74px;
+        }
+        &.on{
+          background-image: url(../images/ico/ico_step4.svg);
+        }
+      }
+      .step_02 {
+        background-image: url(../images/ico/ico_step2.svg);
+        left: 242px;
+        &+.step_box {
+            left: 345px;
+          }
+        &.on {
+          background-image: url(../images/ico/ico_step5.svg);
+        }
+      }
+      .step_03 {
+        background-image: url(../images/ico/ico_step3.svg);
+        left: 485px;
+        &+.step_box {
+            left: 589px;
+          }
+        &.on {
+          background-image: url(../images/ico/ico_step6.svg);
+        }
+      }
+      .step_box{
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      i{
+        position: absolute;
+        width: 259px;
+        height: 70px;
+        &.on{
+          &+.step_box {
+              color: white;
+            }
+        }
+
+      }
+    }
+  }
+  //체크박스
+  .chk_area {
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+    .chk {
+      position: relative;
+      display: block;
+      /* height: 24px; */
+      line-height: 24px;
+      color: #222;
+      padding: 0 0 0 30px;
+      .ico_chk {
+        display: block !important;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        background-size: 24px;
+        background-image: url(../images/ico/ico_chk_off.svg);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+    }
+    input:checked+.chk i {
+      background-image: url(../images/ico/ico_chk_on.svg);
+    }
+  }
+
+  //박스 모듈
+  .list {
+    text-align: left;
+
+    ul:nth-child(1) {
+      .title a {
+        padding-top: 26px;
+        border-top: 1px solid #D9D9D9;
+
+        &.type_no {
+          padding-top: 31px;
+        }
+      }
+    }
+
+    ul {
+      .title {
+        border: 1px solid #D9D9D9;
+        margin-top: 20px;
+      }
+
+      .title a {
+        display: block;
+        position: relative;
+        padding: 18px 20px;
+        line-height: 20px;
+
+        &::after {
+          content: '';
+          width: 20px;
+          height: 10px;
+          position: absolute;
+          top: calc(50% - 5px);
+          transform: translate(-50%);
+          right: 20px;
+          background-image: url("../images/common/ico/ico_daun.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 20px 10px;
+          transition: .3s;
+          -webkit-transition: .3s;
+        }
+
+        &.active::after {
+          transform: rotate(-180deg);
+          -webkit-transform: rotate(-180deg);
+          right: 30px;
+        }
+      }
+
+      .cont {
+        display: none;
+        padding: 19px 67px;
+        background-color: #F2F7FF;
+        border-radius: 6px;
+        margin-bottom: 10px;
+
+        .answer {
+          position: relative;
+
+          &::before {
+            content: '';
+            font-size: 16px;
+            position: absolute;
+            left: -30px;
+            top: -3px;
+            font-size: 20px;
+            color: #0466FA;
+            font-weight: 600;
+            line-height: 1.5;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 23px;
+            color: #191F28;
+          }
+        }
+      }
+
+    }
+  }
+
+  //본인확인
+  .man_list {
+    margin-top: 50px;
+    .man_check {
+      display: flex;
+      gap: 16px;
+      margin-top: 30px;
+      li {
+        display: flex;
+        gap: 20px;
+        padding: 20px 20px 25px;
+        border: 1px solid #707070;
+        &:nth-child(1) {
+          img {
+            width: 40px;
+          }
+        }
+        &:nth-child(2) {
+          img {
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+}

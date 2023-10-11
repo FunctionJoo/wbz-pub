@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>싸템</title>
 	<!-- swiper -->
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-	/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- jQuery를 Google CDN에서 불러오는 예제 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<!-- style 모음 -->
 	<link rel="stylesheet" href="../css/general.css">
 	<!-- 공통 레이아웃 js -->
 	<script src="../js/layout.js"></script>
 	<!-- main js -->
 	<script src="../js/main.js"></script>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
 </head>
+
 <body>
 	<header id="header">
 		<div class="w_set">
@@ -225,13 +229,121 @@
 	</header>
 
 	<div id="contets">
+		<!-- <label class="label_t">
+			<input type="text" placeholder="사이즈는 겉 박스를 조절하면 됩니다.">
+		</label> -->
 		<div id="member">
 			<div class="w_set_member">
-				<label class="label_t">
-					<input type="text" placeholder="사이즈는 겉 박스를 조절하면 됩니다.">
-				</label>
+				<div class="main_title">
+					<h2>싸템 회원가입</h2>
+					<p>싸템 회원가입을 환영합니다.<br>싸템 회원이 되시면 보다 다양한 혜택을 받아 보실 수 있습니다.</p>
+				</div>
+				<ul class="step_wrap">
+					<li>
+						<i class="step_01 on"></i>
+						<div class="step_box"><p>Step1</p><span>약관동의/본인인증</span></div>
+					</li>
+					<li>
+						<i class="step_02"></i>
+						<div class="step_box"><p>Step2</p><span>정보 입력</span></div>
+					</li>
+					<li>
+						<i class="step_03"></i>
+						<div class="step_box"><p>Step3</p><span>가입완료</span></div>
+					</li>
+				</ul>
+				<div class="agree_area">
+					<div class="list">
+						<div class="chk_area all">
+							<input type="checkbox" name="allCheck" id="allCheck">
+							<label for="allCheck" class="chk">
+								<i class="ico_chk"></i>전체 동의 (싸템 전체 약관 및 선택정보에 모두 동의합니다.)
+							</label>
+						</div>
+						<ul>
+							<li class="title">
+								<a href="javascript:;" class="">
+									<div class="chk_area">
+										<input type="checkbox" name="isTerms" id="agreeChk01" required value="Y">
+										<label for="agreeChk01" class="chk"><i class="ico_chk"></i></label>
+										싸템 이용약관 동의 (필수)
+									</div>
+								</a>
+							</li>
+							<li class="cont" style="display: none;">
+								<div class="answer">
+									<p>
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+									</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="title">
+								<a href="javascript:;">
+									<div class="chk_area">
+										<input type="checkbox" name="isAge" id="agreeChk02" required value="Y">
+										<label for="agreeChk02" class="chk"><i class="ico_chk"></i></label>
+										싸템 개인정보 수집 및 이용 동의 (필수)
+									</div>
+								</a>
+							</li>
+							<li class="cont" style="">
+								<div class="answer">
+									<p>
+										Yes. Cancel is possible until before the shipment booking.<br>
+										However, if you wish to cancel, we cancel your booking and refund the money with deduction of penalty.<br>
+										(20% of the FOB value, the minimum amount USD 500)
+									</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="title">
+								<a href="javascript:;">
+									<div class="chk_area">
+										<input type="checkbox" name="isMarketing" id="agreeChk03" value="Y">
+										<label for="agreeChk03" class="chk"><i class="ico_chk"></i></label>
+										광고 정보 수신동의 (선택)
+									</div>
+								</a>
+							</li>
+							<li class="cont" style="">
+								<div class="answer">
+									<p>No. We only accept direct transfer to our bank account (T/T remittance).<br>
+										TransferWise is also acceptable when you put our bank account information.<br>
+										But any other payment methods such as Credit Card and Paypal is not accepted.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="man_list">
+					<p>본인확인</p>
+					<ul class="man_check">
+						<li>
+							<img src="../images/ico/ico_phone.svg" alt="휴대폰">
+							<div>
+								<p>휴대폰 인증</p>
+								<span>생년월일 기반의 본인인증 서비스로 가입자의 휴대폰 정보로 인증 받는 서비스</span>
+							</div>
+						</li>
+						<li>
+							<img src="../images/ico/ico_ipin.svg" alt="아이핀">
+							<div>
+								<p>아이핀 인증</p>
+								<span>인터넷상 개인 식별번호로 본인임을 확인할 수 있는 개인정보보호 서비스</span>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
+
 		</div>
+	</div>
 	</div>
 
 	<!-- 미완 -->
@@ -247,5 +359,49 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		document.getElementById("allCheck").addEventListener("click", function () {
+			// 전체 동의 체크박스
+			let allCheck = document.getElementById("allCheck");
+
+			// 개별 동의 체크박스들
+			let agreeChk01 = document.getElementById("agreeChk01");
+			let agreeChk02 = document.getElementById("agreeChk02");
+			let agreeChk03 = document.getElementById("agreeChk03");
+
+			agreeChk01.checked = allCheck.checked;
+			agreeChk02.checked = allCheck.checked;
+			agreeChk03.checked = allCheck.checked;
+
+			checkedArray.push(agreeChk01, agreeChk02, agreeChk03)
+		});
+
+		checkedArray.forEach(function (checkbox) {
+			checkbox.addEventListener("click", function () {
+				let allCheck = document.getElementById("allCheck");
+
+				allCheck.checked = checkedArray.every(function (checkbox) {
+					return checkbox.checked;
+				});
+			});
+		});
+	</script>
+
+	<script>
+		// 페이지에서만 사용하는 스크립트
+		$(document).on('click', '.list .title a', function () {
+			if ($(this).hasClass('active')) {
+				$('.list .title a').removeClass('active');
+				$('.list .cont').stop().slideUp();
+			} else {
+				$('.list .title a').removeClass('active');
+				$('.list .cont').stop().slideUp();
+				$(this).addClass('active');
+				$(this).parent('.title').siblings('.cont').stop().slideDown();
+			}
+		});
+	</script>
 </body>
+
 </html>

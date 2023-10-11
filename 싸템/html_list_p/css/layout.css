@@ -74,9 +74,6 @@ body {
 #header .sec_top .header_search .search_bar .sec_ipt input::-moz-placeholder {
   color: #A7A7A7;
 }
-#header .sec_top .header_search .search_bar .sec_ipt input:-ms-input-placeholder {
-  color: #A7A7A7;
-}
 #header .sec_top .header_search .search_bar .sec_ipt input::placeholder {
   color: #A7A7A7;
 }
@@ -394,4 +391,4 @@ body {
 }
 #footer .footer_content {
   height: 183px;
-}/*# sourceMappingURL=layout.css.map */
+}
