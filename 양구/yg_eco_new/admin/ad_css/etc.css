@@ -69,3 +69,9 @@ i.secret{display:inline-block; width:16px; height:16px; font-size:0; background-
 .color_box {display: inline-block; width: 15px; height: 15px; font-size: 0; margin: 0 auto; vertical-align: middle;}
 .color_box.is_left {margin: 0 0 0 0;}
 input[type="color"] {vertical-align: middle; margin: 0 0 0 5px;}
+
+/* 상세설명 */
+tr th em {display: block; font-size: 12px; color: #858585;}
+.file_area .file_plus {text-decoration: underline; display: flex; gap: 5px;}
+.file_area .file_plus .btn_link{color: #3899a7;}
+.file_area .file_plus .btn_del_txt{font-size: 0; display: inline-block !important; width: 20px;height: 20px; background-image: url(../ad_images/common/close.png);background-repeat: no-repeat;background-position: center;background-size: contain;}

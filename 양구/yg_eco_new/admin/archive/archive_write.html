@@ -92,10 +92,10 @@
 				<h2 class="tit"><span>아카이브</span></h2>
 				<ul class="menu">
 					<li class="btn_sub">
-						<a href="./archive_manage.html" class="skin_bg">아카이브 등록</a>
+						<a href="./archive_manage.html">아카이브 등록</a>
 					</li>
 					<li class="btn_sub">
-						<a href="./archive_list.html">아카이브 관리</a>
+						<a href="./archive_list.html" class="skin_bg">아카이브 관리</a>
 					</li>
 				</ul>
 			</aside>
@@ -103,69 +103,90 @@
 				<div class="content">
 					<a href="javscript:;" class="btn_refresh" onclick="location.reload();">새로고침</a>
 					<div class="list_tit">
-						<h3>메뉴 관리</h3>
+						<h3>아카이브 관리</h3>
 					</div>
 					<div class="write">
 						<form id="frm" onsubmit="return frm_submit(this);">
-							<div class="btn_area">
-								<button type="button" class="btn">+ 아카이브 추가</button>
-								<button type="button" class="btn">- 아카이브 삭제</button>
-							</div>
-							<div class="divide_area">
-								<div class="main_box">
-									<div class="menu_wrap">
-										<div class="menu_list">
-											<div class="menu_new type_full">
-												<p class="txt">등록한 메뉴가 없습니다.</p>
-												<div class="input_area">
-													<i class="ico_menu"></i>
-													<input type="text" title="아카이브 명 입력" placeholder="아카이브 명 입력" style="width: 100%;">
-												</div>
-												<a href="javascript:;" class="menu on">
-													<span>식물도감 1-N</span>
-												</a>
-												<a href="javascript:;" class="menu">
-													<span>아카이브 명 B</span>
-												</a>
+							<table>
+								<caption>작성</caption>
+								<colgroup>
+									<col style="width:15%;">
+									<col style="width:85%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">카테고리 선택 <span class="asta">*</span></th>
+										<td>
+											<select style="width:160px;vertical-align:middle;" name="keyword">
+												<option value="">아카이브 명</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">장소</th>
+										<td>
+											<input type="text" title="이름 입력" placeholder="" style="width:100%;">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">제목 <span class="asta">*</span></th>
+										<td>
+											<input type="text" title="이름 입력" placeholder="" style="width:100%;">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">상세설명 <span class="asta">*</span><em>(100자 내외)</em></th>
+										<td>
+											<div class="mt10">
+												<textarea name="contents" title="답변입력" placeholder=""></textarea>
 											</div>
-										</div>
-									</div>
-								</div>
-								<div class="side_box">
-									<div class="view_table mt20">
-										<table>
-											<caption>작성</caption>
-											<colgroup>
-												<col style="width:20%;">
-												<col style="width:80%;">
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">카테고리 명 <span class="asta">*</span></th>
-													<td>
-														<input type="text" title="카테고리 명" placeholder="식물도감 1-N" style="width:100%;">
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">검색 키워드 <i class="ico_info"></i></th>
-													<td>
-														<input type="text" title="검색 키워드" placeholder="#키워드, #키워드, #키워드" style="width:100%;">
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">노출상태 <span class="asta">*</span></th>
-													<td>
-														<input type="radio" id="open_01" name="open" value="" checked="">
-														<label for="open_01">노출</label>
-														<input type="radio" id="open_02" name="open" value="">
-														<label for="open_02">미노출</label>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">썸네일 이미지 <span class="asta">*</span><em>(1개)</em></th>
+										<td>
+											<div class="file_area">
+												<div class="img_type01">
+													<p>
+														<input type="text" title="첨부파일 원본파일명2" readonly="" name="attachment2_org" value="">
+														<input type="hidden" title="첨부파일2" readonly="" name="attachment2" value="">
+													</p>
+													<input type="file" id="file_type02">
+													<label for="file_type02" class="btn_file">파일찾기</label>
+												</div>
+												<button type="button" class="btn delete_btn" id="del2" onclick="delFile(2);" style="display: none">삭제</button>
+												<span class="txt">※ 파일형식 : ppt, pptx, xls, xlsx, doc, docx, jpg, jpge, gif/ 사이즈 : 600px*470px</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">상세 이미지 <span class="asta">*</span><em>(최대 5개)</em></th>
+										<td>
+											<div class="file_area">
+												<div class="img_type01">
+													<p>
+														<input type="text" title="첨부파일 원본파일명2" readonly="" name="attachment2_org" value="">
+														<input type="hidden" title="첨부파일2" readonly="" name="attachment2" value="">
+													</p>
+													<input type="file" id="file_type02">
+													<label for="file_type02" class="btn_file">파일찾기</label>
+												</div>
+												<button type="button" class="btn delete_btn" id="del2" onclick="delFile(2);" style="display: none">삭제</button>
+												<span class="txt">※ 파일형식 : ppt, pptx, xls, xlsx, doc, docx, jpg, jpge, gif/ 사이즈 : 600px*470px</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">노출상태 <span class="asta">*</span></th>
+										<td>
+											<input type="radio" name="stat" value="a" id="status_01" checked="">
+											<label for="status_01">노출</label>
+											<input type="radio" name="stat" value="c" id="status_03">
+											<label for="status_03">미노출</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 							<div class="write_btn align_r mt35">
 								<button type="submit" class="btn_modify">저장</button>
 							</div>
@@ -177,12 +198,11 @@
 	</div>
 	<script>
 		$(function(){
-			$('#gnb ul li').eq(2).addClass('on');
+			$('#gnb ul li').eq(3).addClass('on');
 		});
 		function excelDownload(){
 			$("#excel").submit();
 		}
 	</script>
 </body>
-
 </html>
