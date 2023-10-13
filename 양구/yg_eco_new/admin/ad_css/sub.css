@@ -172,7 +172,8 @@ button.month.on{background-color:#5e5e5e; color:#fff;}
 .search_wrap .result .btn_wrap .order dd label {display:block; width:15px; height:10px; background-color:#fff; background-repeat:no-repeat; text-indent:-9999px; font-size:0; color:transparent;}
 .search_wrap .result .btn_wrap .order dd .up {background-image:url(../ad_images/sub/ico_up.png); background-position:center 4px;}
 .search_wrap .result .btn_wrap .order dd .down {background-image:url(../ad_images/sub/ico_down.png); background-position:center;}
-.search_wrap table.search_list{width:100%; border-bottom:1px solid #d5d5d5;}
+.search_wrap table.search_list {width:100%; border-bottom:1px solid #d5d5d5; }
+.search_wrap table.search_list tr th.border{ border-left:1px solid #d5d5d5 !important;}
 .search_wrap table.search_list thead th{height:48px; font-weight:400; background-color:#eaeaea; border-left:1px solid #d5d5d5; border-top:1px solid #d5d5d5;}
 .search_wrap table.search_list thead th:first-child{border-left:0;}
 .search_wrap table.search_list td{text-align:center; height:48px; border-left:1px solid #d5d5d5;border-top:1px solid #d5d5d5;}
