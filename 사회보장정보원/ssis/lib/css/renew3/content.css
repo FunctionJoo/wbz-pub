@@ -144,7 +144,7 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 .contentNav .xi-x,.contentNav a,.contentNav strong{ display:inline-block; vertical-align:middle}
 .contentNav .xi-x{ width:14px; height:14px; font-size:0; line-height:0; background:0 0 no-repeat}
 .contentNav .xi-x.xi-home{ margin:0}
-.contentNav .xi-angle-right-thin{ background:url(/images/renew2/common/arrow-navi.png)}
+.contentNav .xi-angle-right-thin{ background:url(../../../images/renew2/common/arrow-navi.png)}
 .contentNav strong { margin-right:-7px}
 .contentNav strong i { color:transparent}
 .contentNav strong i img{ margin-top:-3px}
@@ -155,11 +155,11 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 .contentNav #title_line_ul li.t1.t1-m{ display:none}
 .contentNav #title_line_ul li:hover { border-color:#0059a5; -webkit-transition:.3s; -moz-transition:.3s; -o-transition:.3s; transition:.3s}
 .contentNav #title_line_ul li img{ mix-blend-mode:hard-light}
-.contentNav #title_line_ul li.t3 a{ background-image:url(/images/renew2/common/share-facebook.png)}
-.contentNav #title_line_ul li.t4 a{ background-image:url(/images/renew2/common/share-twitter.png)}
-.contentNav #title_line_ul li.t5 a{ background-image:url(/images/renew2/common/share-link.png)}
-.contentNav #title_line_ul li.t6 a{ background-image:url(/images/renew2/common/share-print.png)}
-.contentNav #title_line_ul li.t7 a{ background-image:url(/images/renew2/common/share-kakao.png)}
+.contentNav #title_line_ul li.t3 a{ background-image:url(../../../images/renew2/common/share-facebook.png)}
+.contentNav #title_line_ul li.t4 a{ background-image:url(../../../images/renew2/common/share-twitter.png)}
+.contentNav #title_line_ul li.t5 a{ background-image:url(../../../images/renew2/common/share-link.png)}
+.contentNav #title_line_ul li.t6 a{ background-image:url(../../../images/renew2/common/share-print.png)}
+.contentNav #title_line_ul li.t7 a{ background-image:url(../../../images/renew2/common/share-kakao.png)}
 .contentNav #title_line_ul li:hover a{ background-position:50% -40px}
 .subContent { position:relative; z-index:1; margin-top:37px; border-bottom:1px solid #e1e6ea; background:#fff}
 
@@ -176,40 +176,40 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	box-shadow:    -3px 0px 8px 0px rgba(0, 0, 0, 0); 
 }
 
-/* 웹비즈 수정_추가 */
+/* 웹비즈 수정_추가 231010 */
 .subContent .contentWrap.search{
 	width: calc(100% - 235px);
 }
-.subContent .search-word{
+.subContent .search-word-list{
 	width: 235px;
 	margin-top: 23px;
 	padding-left: 60px;
 }
-.subContent .search-word .recommend-wrap{
+.subContent .search-word-list .recommend-wrap{
 	margin-top: 38px;
 }
-.subContent .search-word .tit{
+.subContent .search-word-list .tit{
 	color: #222;
 	font-size: 16px;
 	font-weight: 500;
 }
-.subContent .search-word .tit span{
+.subContent .search-word-list .tit span{
 	color: #666;
 	font-weight: 400;
 	padding-left: 4px;
 }
-.subContent .search-word .word-list{
+.subContent .search-word-list .word-list{
 	margin-top: 18px;
 }
-.subContent .search-word .word-list li a{
+.subContent .search-word-list .word-list li a{
 	display: flex;
 	align-items: center;
 	gap: 14px;
 }
-.subContent .search-word .word-list li + li{
+.subContent .search-word-list .word-list li + li{
 	margin-top: 12px;
 }
-.subContent .search-word .word-list li .rank{
+.subContent .search-word-list .word-list li .rank{
 	flex: 0 0 auto;
 	width: 20px;
 	height: 20px;
@@ -219,10 +219,10 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	font-size: 12px;
 	color: #fff;
 }
-.subContent .search-word .word-list li .rank.bottom{
+.subContent .search-word-list .word-list li .rank.bottom{
 	background-color: #666;
 }
-.subContent .search-word .word-list li .txt{
+.subContent .search-word-list .word-list li .txt{
 	font-size: 14px;
 	color: #666;
 }
@@ -1501,7 +1501,7 @@ ol.number{ padding-left:16px}
 
 h4.total_style {text-align: center; font-size:20px; color:#000; font-weight:600; margin-top:48px; margin-bottom:10px; line-height:140%}
 h4.total_style strong { font-weight:600; color:#203A91}
-h4.total_style b { font-weight:600; color:#71BF45}
+h4.total_style b { font-weight:600; color:#178217}
 
 .total_tab { margin-top:17px}
 .total_tab ul { border:1px solid #e3e3e3; display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center; align-items:stretch; align-content:stretch}
@@ -1538,7 +1538,7 @@ h4.total_style b { font-weight:600; color:#71BF45}
 .sr_box .sc_depth .depth:not(:first-child){padding-left: 14px; margin-left: 10px; background: url(../../../images/renew3/common/ico_depth_arrow.svg) no-repeat left center;}
 .sr_box .text_con { padding:14px 0 0 0}
 .sr_box .text_con p { margin-bottom:15px; line-height:26px}
-.sr_box .text_con .searched{color: #71BF45;}
+.sr_box .text_con .searched{color: #178217;}
 .sr_box .text_con .text{color: #777;}
 .sr_box .text_con .state span { margin-right:5px}
 

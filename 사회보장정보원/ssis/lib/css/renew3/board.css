@@ -20,7 +20,7 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .cm-btn-controls .btn-style03{ box-sizing:border-box; background:#fff; border:1px solid #888; color:#222}
 
 /* 공통 :: PAGING */
-.paging{ width:100%; text-align:center; margin:40px 0;}
+.paging{ width:100%; text-align:center; margin:60px 0 0;} /* 웹비즈 수정 231012 */
 .paging a{ position:relative; display:inline-block; vertical-align:middle; margin:0 3px; width:30px; height:30px; text-align:center; font-size:14px; line-height:28px; color:#666; }
 .paging a.p_first, .paging a.p_first2, .paging a.p_last, .paging a.p_last2{border: 1px solid #D3D3D3; border-radius: 6px; margin: 0 5px; background-repeat: no-repeat; background-position: center;}
 .paging a.p_first{background-image: url(../../../images/renew3/common/ico_p_first.svg);}
@@ -34,6 +34,7 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .paging a i.flo{ display: inline-block; letter-spacing: -12px;width:4px; font-size:17px}
 
 /* 공통 :: SEARCH BOX */
+.board-search-box.mt0{margin-top: 0;} /* 웹비즈 수정 231010 */
 .board-search-box form{ display:inline}
 .board-search-box{ text-align:center; background-color:#fbfbfb; margin-top:65px; padding:30px 0; border:1px solid #efefef}
 .board-search-box select{ width:20%; max-width:150px; height:40px; font-size:16px; border:1px solid #e3e3e3; background-color:#fff}
