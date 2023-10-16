@@ -648,6 +648,12 @@
     .tab_container .tab_cnt .photolist li {
       width: 100%;
       margin: 20px 0;
+      a{
+        .play{
+          width: 42px;
+          margin-top: -20px;
+        }
+      }
     }
   }
 
