@@ -319,10 +319,10 @@ label.skip {
 			padding: 0 40px 0 10px;
 		}
 		.bt_select {
-			-webkit-appearance:none;/*select 내부 스타일 제거 (화살표 제거)*/ 
-			-moz-appearance:none; 
-			-o-appearance:none; 
-			appearance:none; 
+			-webkit-appearance:none;/*select 내부 스타일 제거 (화살표 제거)*/
+			-moz-appearance:none;
+			-o-appearance:none;
+			appearance:none;
 
 			min-width: 120px;
 			cursor: pointer;
@@ -553,7 +553,7 @@ label.skip {
 	*:focus {
 		outline: 2px dashed #ff0;
 	}
-	
+
 	.board_list {
 		display: table;
 		margin-top: 26px;
@@ -710,7 +710,7 @@ label.skip {
 		background-size: cover;
 		padding: 0 0 0 0;
 		margin-top: 50px;
-		height: 150px;
+		height: 120px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -801,16 +801,16 @@ label.skip {
 				}
 				li {
 					position: absolute !important;
-					top: 12px;
+					top: 0px;
 					&.share_list {
-						right: 16px;
+						right: 0px;
 						.share_layer {
 							left: auto;
 							right: 0;
 						}
 					}
 					&.for_m {
-						left: 16px;
+						left: 0px;
 					}
 				}
 				a.type_ico {
@@ -887,11 +887,11 @@ label.skip {
 				padding: 0 26px 0 8px;
 			}
 			.bt_select {
-				-webkit-appearance:none;/*select 내부 스타일 제거 (화살표 제거)*/ 
-				-moz-appearance:none; 
-				-o-appearance:none; 
-				appearance:none; 
-	
+				-webkit-appearance:none;/*select 내부 스타일 제거 (화살표 제거)*/
+				-moz-appearance:none;
+				-o-appearance:none;
+				appearance:none;
+
 				width: 82px;
 				min-width: auto;
 				cursor: pointer;
@@ -1159,11 +1159,15 @@ label.skip {
 .ame_list {
 	font-size: 0;
 	margin: -40px 0 0 -40px;
-	a {
+	li {
 		display: inline-block;
 		vertical-align: top;
 		width: calc(33.33% - 40px);
 		margin: 40px 0 0 40px;
+		transition: opacity 0.5s ease-out 0s;
+		&:hover, &:focus {
+			opacity: 0.7;
+		}
 		.img_box {
 			position: relative;
 			overflow: hidden;
@@ -1204,5 +1208,19 @@ label.skip {
 				color: #222222;
 			}
 		}
+	}
+}
+//NOTE 이사님 작업
+@media (max-width: 768px) {
+	.ame_list {
+		font-size: 0;
+		margin: -20px 0 0 -20px;
+	}
+
+	.ame_list li {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(50% - 20px);
+		margin: 20px 0 0 20px;
 	}
 }
