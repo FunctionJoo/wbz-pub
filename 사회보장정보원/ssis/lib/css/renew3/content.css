@@ -127,9 +127,10 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	#evaluation > div li img{ width:20px}
 }
 
-#subVisual { height:130px; background:url(/images/renew2/common/back-hgroup.jpg) no-repeat center center; padding:55px 0 0 0; background-size:cover; border-bottom:1px solid #e3e3e3}
-#subVisual h3 { margin:0 auto; width:1200px}
-#subVisual h3 strong{ display:block; width:400px; font-size:36px; line-height:32px; color:#0059a5; font-weight:700}
+/* 웹비즈 수정 231013 */
+#subVisual { height:130px; background:url(/images/renew3/common/back-hgroup-new.png) no-repeat center center; padding:55px 0 0; background-size:cover; border-bottom:1px solid #e3e3e3}
+#subVisual h3 { margin:0 auto; width:1400px} /* 웹비즈 수정 231017 */
+#subVisual h3 strong{ display:block; width:400px; font-size:36px; line-height:32px; color:#222; font-weight:700}
 .contentNav { 
 	z-index:90; 
 	position:relative; 
@@ -139,29 +140,40 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	font-size:16px; 
 	text-align:right;
 }
-.contentNav span,.contentNav span a{ color:#0059a5; font-weight:400}
+
+.contentNav span,.contentNav span a{ color:#2E6BD7; font-weight:400}
 .contentNav i { color:#bfbfbf; margin:0 10px}
-.contentNav .xi-x,.contentNav a,.contentNav strong{ display:inline-block; vertical-align:middle}
+.contentNav .xi-x,.contentNav a,.contentNav strong{ display:inline-block;}
 .contentNav .xi-x{ width:14px; height:14px; font-size:0; line-height:0; background:0 0 no-repeat}
 .contentNav .xi-x.xi-home{ margin:0}
 .contentNav .xi-angle-right-thin{ background:url(../../../images/renew2/common/arrow-navi.png)}
 .contentNav strong { margin-right:-7px}
 .contentNav strong i { color:transparent}
 .contentNav strong i img{ margin-top:-3px}
+
+.path-wrap a{position: relative; padding-right: 14px; margin-right: 10px; font-size: 16px; color: #303030;}
+.path-wrap a::after{content: ''; display: inline-block; width: 4px; height: 4px; background-color: #BDBDBD; border-radius: 50%; position: absolute; right: 0; top: 6px;}
+
 .contentNav #title_line_ul { position:absolute; right:0; top:115px}
-.contentNav #title_line_ul li a{ display:block; width:100%; height:100%; background:transparent 50% 0 no-repeat; text-indent:-9999px}
+.contentNav #title_line_ul li a{ display:block; width:100%; height:100%; background:transparent 50% 50% no-repeat; text-indent:-9999px}
 .contentNav #title_line_ul li { float:left; margin-left:10px; width:42px; height:42px; text-align:center; background:#fff; border:1px solid #cecece; border-radius:100%}
 .contentNav #title_line_ul li.t1.t1-pc{ display:block}
 .contentNav #title_line_ul li.t1.t1-m{ display:none}
 .contentNav #title_line_ul li:hover { border-color:#0059a5; -webkit-transition:.3s; -moz-transition:.3s; -o-transition:.3s; transition:.3s}
 .contentNav #title_line_ul li img{ mix-blend-mode:hard-light}
-.contentNav #title_line_ul li.t3 a{ background-image:url(../../../images/renew2/common/share-facebook.png)}
-.contentNav #title_line_ul li.t4 a{ background-image:url(../../../images/renew2/common/share-twitter.png)}
-.contentNav #title_line_ul li.t5 a{ background-image:url(../../../images/renew2/common/share-link.png)}
-.contentNav #title_line_ul li.t6 a{ background-image:url(../../../images/renew2/common/share-print.png)}
-.contentNav #title_line_ul li.t7 a{ background-image:url(../../../images/renew2/common/share-kakao.png)}
-.contentNav #title_line_ul li:hover a{ background-position:50% -40px}
+.contentNav #title_line_ul li.t3 a{ background-image:url(../../../images/renew3/common/share-facebook.png)}
+.contentNav #title_line_ul li.t4 a{ background-image:url(../../../images/renew3/common/share-twitter.png)}
+.contentNav #title_line_ul li.t5 a{ background-image:url(../../../images/renew3/common/share-link.png)}
+.contentNav #title_line_ul li.t6 a{ background-image:url(../../../images/renew3/common/share-print.png)}
+.contentNav #title_line_ul li.t7 a{ background-image:url(../../../images/renew3/common/share-kakao.png)}
+.contentNav #title_line_ul li.t3:hover a{background-image: url(../../../images/renew3/common/share-facebook-on.png);}
+.contentNav #title_line_ul li.t4:hover a{ background-image:url(../../../images/renew3/common/share-twitter-on.png)}
+.contentNav #title_line_ul li.t5:hover a{ background-image:url(../../../images/renew3/common/share-link-on.png)}
+.contentNav #title_line_ul li.t6:hover a{ background-image:url(../../../images/renew3/common/share-print-on.png)}
+.contentNav #title_line_ul li.t7:hover a{ background-image:url(../../../images/renew3/common/share-kakao-on.png)}
 .subContent { position:relative; z-index:1; margin-top:37px; border-bottom:1px solid #e1e6ea; background:#fff}
+
+/* //웹비즈 수정 231013 */
 
 .subContent .area { padding-top:0px; display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between; align-items:stretch; align-content:stretch}
 .subContent .lnbWrap { width:24.167%; padding:60px 50px 70px 0}
@@ -251,7 +263,7 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 .subContent .lnbWrap nav li a.lnb_menu{ background:url(/images/renew2/common/lnb-arrow-open.png) no-repeat right center}
 .subContent .lnbWrap nav li a:hover,
 .subContent .lnbWrap nav li a.active{ border-color:#0059a5; color:#0059a5; -webkit-transition:.5s; -moz-transition:.5s; -o-transition:.5s; transition:.5s}
-.subContent .lnbWrap nav li a.lnb_menu.active { border-color:#0059a5; color:#fff; font-size:18px; font-weight:400; background:#0059a5 url(/images/renew2/common/lnb-arrow-close.png) no-repeat right center}
+.subContent .lnbWrap nav li a.lnb_menu.active { border-color:#203A91; color:#fff; font-size:18px; font-weight:400; background:#203A91 url(/images/renew2/common/lnb-arrow-close.png) no-repeat right center}
 .subContent .lnbWrap nav .lnbmenu_sub { display:none; padding:15px 18px; border:1px solid #0059a5}
 .subContent .lnbWrap nav .lnbmenu_sub li { margin:0; padding:0}
 .subContent .lnbWrap nav .lnbmenu_sub li a { padding:8px 0; font-size:15px; color:#303030; background:none; border:0}
@@ -603,7 +615,7 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	}
 	.subContent .search-word{
 		padding-left: 0;
-		padding-bottom: 50px;
+		/* padding-bottom: 50px; 웹비즈 수정 231013 */ 
 	}
 	.contentNav{ margin-top:25px; font-size:14px; text-align:left}
 	.contentNav i.xi-home{ margin-left:0}
@@ -616,8 +628,9 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	.subContent .area { }
 	.contentNav #title_line_ul{ position:relative; float:right; margin:-20px 0 0 0; top:auto; right:auto}
 	.contentNav #title_line_ul li{ margin-left:7px; width:35px; height:35px}
-	.contentNav #title_line_ul li a{ background-size:33px}
-	.contentNav #title_line_ul li:hover a{ background-position:50% -33px}
+	/* 웹비즈 수정 231013 */
+	.contentNav #title_line_ul li a{ background-size:26px}
+	/* //웹비즈 수정 231013 */
 	.contentNav #title_line_ul li.t6 { display:none}
 	.missionWrap .missionConWrap > div { flex-basis:calc(33.333% - 10px); width:calc(33.333% - 10px)}
 	.missionWrap .missionConWrap > div.social{ flex-basis:calc(50% - 10px); width:calc(50% - 10px)}

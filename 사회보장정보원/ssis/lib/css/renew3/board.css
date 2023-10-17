@@ -13,11 +13,12 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .cm-btn-controls a i{ vertical-align:middle}
 .cm-btn-controls.cm-btn-long-controls button,.cm-btn-controls.cm-btn-long-controls a{ width:100%; height:50px; margin:0px; margin-bottom:5px}
 .cm-btn-controls.cm-btn-long-controls a{ box-sizing:border-box; line-height:50px; color:#fff ! important}
-.cm-btn-controls .btn-style01{ background-color:#0059a5}
+.cm-btn-controls .btn-style01{ background-color:#203A91}
 .cm-btn-controls .btn-style01:hover{ color:#fff;background-color:#0059a5}
 .cm-btn-controls .btn-style02{ background-color:#0059a5;width:auto;padding:0 30px}
 .cm-btn-controls .btn-style02:hover{ color:#fff;background-color:#0059a5}
 .cm-btn-controls .btn-style03{ box-sizing:border-box; background:#fff; border:1px solid #888; color:#222}
+.cm-btn-controls .btn-style04{width: auto; padding: 0 16px; background:#fff; border:1px solid #888; color:#222 !important;} /* 웹비즈 수정 231017_내용추가 */
 
 /* 공통 :: PAGING */
 .paging{ width:100%; text-align:center; margin:60px 0 0;} /* 웹비즈 수정 231012 */
@@ -34,14 +35,19 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .paging a i.flo{ display: inline-block; letter-spacing: -12px;width:4px; font-size:17px}
 
 /* 공통 :: SEARCH BOX */
-.board-search-box.mt0{margin-top: 0;} /* 웹비즈 수정 231010 */
-.board-search-box form{ display:inline}
-.board-search-box{ text-align:center; background-color:#fbfbfb; margin-top:65px; padding:30px 0; border:1px solid #efefef}
-.board-search-box select{ width:20%; max-width:150px; height:40px; font-size:16px; border:1px solid #e3e3e3; background-color:#fff}
-
-.board-search-box .search-word{ width:30%; /*max-width:200px;*/ height:40px; border:1px solid #e3e3e3; border-right:0; padding:0; text-indent:10px; color:#868686; font-size:16px; vertical-align:middle}
+/* 웹비즈 수정 231013 */
+.board-search-box.mt0{margin-top: 0;} 
+.board-search-box{display: flex; align-items: center; justify-content: space-between; margin:65px 0 30px; }
+.board-search-box .amount{font-size: 16px;}
+.board-search-box .amount em{color: #2E6BD7; font-weight: 500;}
+.board-search-box form{flex: 1; text-align: right;}
+.board-search-box select{ width:100%; max-width:100px; height:48px; font-size:16px; border:1px solid #DBDBDB; border-radius: 6px; background-color:#fff; padding: 0 26px 0 12px; -o-appearance: none;	-webkit-appearance: none;	-moz-appearance: none; appearance: none; background: url(../../../images/renew3/common/ico_select_arrow.png) no-repeat right 12px center; background-size: 14px;}
+.board-search-box select::-ms-expand { display: none; }
+/* //웹비즈 수정 231013 */
+.board-search-box .bbs-search-input{position: relative; margin-left: 10px; display: inline;}
+.board-search-box .search-word{ width:100%; max-width:360px; height:46px; border:1px solid #e3e3e3; border-radius: 6px; border-right:0; padding:0 74px 0 0; text-indent:10px; color:#868686; font-size:16px; vertical-align:middle}
 .board-search-box .search-word:focus{ color:#333}
-.board-search-box .bbs-search-btn{ overflow:hidden; margin:0px; margin-left:-5px; border:0; min-width:40px; padding:0 12px; height:40px; background:#333; color:#fff; cursor:pointer; vertical-align:top; font-size:16px}
+.board-search-box .bbs-search-btn{position: absolute;right: 0;overflow:hidden; margin:0px; margin-left:-5px; border:0; border-radius: 6px; min-width:62px; padding:0 12px; height:48px; color:#fff; cursor:pointer; vertical-align:top; font-size:0; background: #091152 url(../../../images/renew3/common/btn_search_w.png) no-repeat center;}
 .board-search-box .bbs-search-btn i{ line-height:40px}
 .board-search-box .bbs-search-btn i.xi-x{ position:relative}
 .board-search-box .bbs-search-btn i.xi-x span{ display:block; position:absolute; width:1px; height:1px; line-height:1px; font-size:1px; color:transparent}
@@ -374,6 +380,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-basic-gallery-con10 .gallery-info .gallery-info-tit{ height:50px; line-height:24px; white-space: normal;    overflow: hidden;    display: -webkit-box;    -webkit-line-clamp: 2;    -webkit-box-orient: vertical;font-weight:400}
 .bbs-basic-gallery-con10 .gallery-info p{ font-size:14.5px; line-height: 22px; letter-spacing: -0.75px; color:#888; margin:10px 0; height:66px; overflow:hidden; text-overflow:ellipsis}
 .bbs-basic-gallery-con10 .gallery-info .gallery-date{ font-size:16px; line-height:16px; letter-spacing: 0px; color:#aaa; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;margin-top:10px;display:block}
+
+/* 웹비즈 수정 231013_카드뉴스, 세미나포럼 */
+.bbs-basic-gallery-con10.cardnews  .gallery-info .gallery-info-tit{display: block; white-space: nowrap; text-overflow: ellipsis; height: auto;}
+
+.bbs-basic-gallery-con10.forum  .gallery-info .gallery-info-tit{display: block; white-space: nowrap; text-overflow: ellipsis; height: auto;}
+.bbs-basic-gallery-con10.forum .gallery-img-box .img-wrap{padding-bottom: 50%;}
+
+/* //웹비즈 수정 231013 */
+
 /* 셀렉트박스 */
 .select_box span{ display:inline-block; color:#0059a5; font-weight:400; margin-right:5px}
 .notice-top-box{ margin-top:20px; margin-bottom:15px}
@@ -388,6 +403,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .search-type-02 select.sel-w100{ max-width:250px; width:100%}
 .search-type-02 .search-word{ width:calc(100% - 45px); font-size:15px}
 
+
+/* 웹비즈 수정 231017_상세페이지 및 슬라이드 bbs-view-wrap */
+.divide-flex{display: flex; margin-top: 65px; gap: 24px;}
+.divide-left{}
+.divide-left .image{position: relative;	width: 330px; height: 0; padding-bottom: 125%; overflow: hidden; background-color: #DBDBDB; background-repeat: no-repeat; background-size: cover;}
+.divide-left .image img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.divide-right{margin-top: 0 !important;}
+
+.bbs-view-wrap{margin-top: 65px;}
+.bbs-view-wrap .bbs-view-top{border-top: 1px solid #222222; border-bottom: 0; padding-top: 20px;}
+.bbs-view-wrap .bbs-view-top .bbs-tit{border-color: #DBDBDB;font-weight: 700;padding: 0 20px 20px;letter-spacing: 0;}
+.bbs-view-wrap .bbs-view-top .bbs-write-info{display: flex;align-items: center; padding: 20px 20px 0;}
+.bbs-view-wrap .bbs-view-top .bbs-write-info span{font-size: 16px;}
+.bbs-view-wrap .bbs-view-top .bbs-write-info .views{position: relative;padding-left: 10px;margin-left: 10px;}
+.bbs-view-wrap .bbs-view-top .bbs-write-info .views::after{content: '';display: inline-block; width: 1px;height: 12px;background-color: #DBDBDB;position: absolute;left: 0;top: 10px;}
+.bbs-view-wrap .bbs-view-top .bbs-write-info .date{margin-left: auto;}
+
+.bbs-view-wrap .bbs-view-cont{padding: 40px 20px; border-bottom: 1px solid #DBDBDB;}
+
+.bbs-view-wrap .bbs-view-attach{padding: 16px 20px; border-bottom: 1px solid #DBDBDB;}
+.bbs-view-wrap .bbs-view-attach li + li{margin-top: 6px;}
+.bbs-view-wrap .bbs-view-attach li a{display: inline-block;padding-left: 32px;font-size: 16px;color: #303030; background: url(../../../images/renew3/common/ico_view_attach.png) no-repeat left center;}
+
+.view-slider .image {background: #f0f0f0; position: relative;background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+.view-slider .slider-single {position: relative; padding: 0 95px;}
+.view-slider .slider-single .image{position: relative;width: 100%;height: 0;padding-bottom: 100%;
+ overflow: hidden;}
+.view-slider .slider-single .image img{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.view-slider .slider-single .slick-arrow{position: absolute;top: 50%;left:0; transform: translateY(-50%); width: 60px;height: 60px;border-radius: 50%;box-shadow: 0px 0px 6px #00000029;font-size: 0;z-index: 100; background: #fff url(../../../images/renew3/common/ico_slider_prev.png) no-repeat center;}
+.view-slider .slider-single .slick-arrow.slick-next{left: auto; right: 0; background-image: url(../../../images/renew3/common/ico_slider_next.png);}
+
+.view-slider .slider-nav{margin-top: 24px;}
+.view-slider .slider-nav .image{position: relative;width: 100%;height: 0;padding-bottom: 100%;
+ overflow: hidden;}
+.view-slider .slider-nav .image img{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.view-slider .slider-nav .slick-arrow{display: none;}
+.view-slider .slider-nav .slick-slide { cursor: pointer; margin-right: 16px;}
+.view-slider .slider-nav .slick-slide:last-child{margin-right: 0;}
+.view-slider .slider-nav .slick-slide.is-active .image img {border: 6px solid #203A91;}
+
+.view-slider .pagination{text-align: center; margin: 32px 0; font-size: 18px; color: #666666;}
+.view-slider .pagination .slick-dots li {display: none;justify-content: space-between;color: #555;}
+.view-slider .pagination .slick-dots li.slick-active {display: block;}
+.view-slider .pagination .slick-dots li.slick-active span:first-of-type {color: #2E6BD7;font-weight: 700;}
+
+.bbs-view-wrap .cm-btn-controls{padding-top: 60px;}
+
+/* //웹비즈 수정 231017_상세페이지 및 슬라이드 bbs-view-wrap */
+
+
 @media all and (max-width:1261px){ 
 	.table-file{ display:none}
 	.search-type-02 div{ width:79%}
@@ -400,4 +466,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 
 @media all and (max-width:789px){ 
 	.bbs-write-tbl .write-input.three{ width:30%}
+
+	/* 웹비즈 수정 231017_상세페이지 및 슬라이드 bbs-view-wrap */
+	.divide-flex{flex-direction: column; margin-top: 0;}
+	.divide-left .image{width: 100%;}
+
+	.bbs-view-wrap{margin-top: 0;}
+	
+	.bbs-view-wrap .bbs-view-cont{padding: 20px;}
+
+	.view-slider .slider-single{padding: 0 30px;}
+	.view-slider .slider-single .slick-arrow{width: 26px;height: 26px; background-size: 13px;}
+
+	.view-slider .pagination{margin: 16px 0;font-size: 16px;}
 }
