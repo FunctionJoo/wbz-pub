@@ -25,8 +25,8 @@
   <meta property="og:image" content="../favicon/apple-touch-icon.png">
 
   <!-- swiper css,js -->
-  <!-- <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-        <script src="../js/swiper-bundle.min.js"></script> -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <script src="../js/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -39,6 +39,7 @@
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
   <script src="../js/ui_common.js"></script>
+
 </head>
 
 <body>
@@ -341,7 +342,7 @@
       <div class="w_set">
         <div class="archive">
           <div class="archive_cont">
-            <div class="archive_left">
+            <div class="hide_m archive_left">
               <div class="archive_list">
                 <ul class="type_side">
                   <li><a class="on" href="#">식물도감 1-N</a></li>
@@ -353,28 +354,61 @@
               </div>
             </div>
             <div class="archive_right">
-              <div class="slider">
-                <div class="slider-container">
-                  <div class="slide">
-                    <img src="../images/image/gallery_1.png" alt="Image 1">
+              <div class="academy">
+                <div class="course_slide">
+
+                  <div class="sliderMain swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="../images/image/img_back.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../images/image/img_img1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../images/image/img_img2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../images/image/img_img3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../images/image/academy_course_05.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../images/image/academy_course_06.jpg" alt="">
+                      </div>
+                    </div>
                   </div>
-                  <div class="slide">
-                    <img src="../images/image/gallery_2.png" alt="Image 2">
+                  <div class="sliderPaging hide_m">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="../images/image/img_back.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/image/img_img1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/image/img_img2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/image/img_img3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/image/academy_course_05.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/image/academy_course_06.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="slide">
-                    <img src="../images/image/gallery_3.png" alt="Image 3">
+                  <div class="swiper_navi">
+                    <button class="swiper_button swiper_prev" type="button" onclick="previousSlide()">이전</button>
+                    <div class="color hide_pc"><em id="slideNumber">1</em> / 5</div>
+                    <button class="swiper_button swiper_next" type="button" onclick="nextSlide()">다음</button>
                   </div>
                 </div>
-              </div>
-              <div class="button">
-                <button id="prev"><i>이전</i></button>
-                <button id="next"><i>다음</i></button>
-              </div>
-              <div class="gallery">
-                <img src="../images/image/img_image1.png" alt="이미지1">
-                <img src="../images/image/img_img2.png" alt="이미지2">
-                <img src="../images/image/img_img3.png" alt="이미지3">
-                <img src="../images/image/img_img3.png" alt="이미지3">
               </div>
               <div class="inquiry_view type_archive">
                 <div class="answer">
@@ -399,8 +433,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="board_bottom hide_m">
-                  <a href="../archive/archive_list.html" class="common_button" title="공지사항 목록으로 이동">목록</a>
+                <div class="board_bottom">
+                  <a href="../archive/archive_list.html" class="common_button" title="목록으로 이동">목록</a>
                 </div>
               </div>
             </div>
@@ -454,54 +488,72 @@
                   <a href="javascript:;" class="blg" title="새창 이동">블로그</a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </footer>
   </div>
+
   <script>
-    const sliderContainer = document.querySelector('.slider-container');
-    const slides = document.querySelectorAll('.slide');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        if (i === index) {
-          slide.style.opacity = 1;
-        } else {
-          slide.style.opacity = 0;
-        }
+    $(document).ready(function () {
+      var courseMain = new Swiper(".sliderMain.swiper-container", {
+        spaceBetween: 10,
+        thumbs: {
+          swiper: ".sliderPaging .swiper-container",
+        },
+        navigation: {
+          nextEl: '.course_slide .swiper_navi .swiper_next',
+          prevEl: '.course_slide .swiper_navi .swiper_prev',
+        },
+        freeMode: true,
+        loop: true,
       });
-    }
 
-    function prevSlide() {
-      currentSlide--;
-      if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-      }
-      showSlide(currentSlide);
-    }
+      var coursePaging = new Swiper(".sliderPaging .swiper-container", {
+        spaceBetween: 15,
+        slidesPerView: 4,
+        watchSlidesVisibility: true, // Watch for slides visibility
+        watchSlidesProgress: true,
+        loop: true,
+        breakpoints: {
+          769: {
+            slidesPerView: 4,
+            spaceBetween: 19,
+            freeMode: true,
+            pagination: false,
+            loop: true,
+          },
+        },
+      });
+    });
+  </script>
+
+  <script>
+    let currentSlide = 1;
 
     function nextSlide() {
       currentSlide++;
-      if (currentSlide >= slides.length) {
-        currentSlide = 0;
+      if (currentSlide > 5) {
+        currentSlide = 1;
       }
-      showSlide(currentSlide);
+      updateSlideNumber();
     }
 
-    prevButton.addEventListener('click', prevSlide);
-    nextButton.addEventListener('click', nextSlide);
+    function previousSlide() {
+      currentSlide--;
+      if (currentSlide < 1) {
+        currentSlide = 5;
+      }
+      updateSlideNumber();
+    }
 
-    showSlide(currentSlide);
-
-
+    function updateSlideNumber() {
+      const slideNumberElement = document.getElementById("slideNumber");
+      slideNumberElement.innerText = currentSlide;
+    }
   </script>
 </body>
 
 </html>
-
-<!--FIXME풋터 수정 필요 모바일 윗부분 수정 필요-->

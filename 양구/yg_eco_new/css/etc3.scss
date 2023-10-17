@@ -286,9 +286,12 @@
       flex-wrap: wrap;
       margin: 20px -20px;
       &.type_border{
+        margin: 10px -10px;
         li{
           border: 1px solid #DDDDDD;
           border-radius: 6px;
+          margin: 10px;
+          width: calc(33.33% - 20px);
         }
       }
       li{
@@ -362,7 +365,7 @@
   color: #222222;
   .w_set{
     .hide_pc{
-      display: none;
+      display: none !important;
     }
     .member {
       .inquire{
@@ -606,6 +609,20 @@
       }
       .archive_cont{
         display: flex;
+        &.type_center{
+          .archive_left{
+            width: 100%;
+            .archive_top{
+              .bt_sch{
+                height: 62px;
+                input{
+                  padding: 0 24px;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
         .archive_left{
           /* ==== # 리스트 ==== */
           .archive_top{
@@ -646,8 +663,10 @@
             .sub_list{
               display: flex;
               align-items: center;
+              flex-wrap: wrap;
+              margin-top: 26px;
+              gap: 12px 12px;
               li{
-                margin-top: 26px;
                 label{
                   display: block;
                   cursor: pointer;
@@ -656,7 +675,7 @@
                   opacity: 0;
                   display: none;
                 }
-                input:checked + .btn, .btn.on{background-color: #E4AC57; border: 1px solid #E4AC57; color: #fff}
+                input:checked + .btn, .btn.on{background-color: #139274; border: 1px solid #139274; color: #fff}
                 .btn{
                   display: inline-block;
                   padding: 8px 18px;
@@ -667,9 +686,6 @@
                   text-align: center;
                   border-radius: 6px;
                 }
-                &+li{
-                  margin-left: 12px
-                }
               }
             }
           }
@@ -679,16 +695,9 @@
               display: flex;
               flex-wrap: wrap;
               max-width: 650px;
+              gap: 40px 26px;
               &.type_side{
                 max-width: 310px;
-                li{
-                  &:nth-child(2n){
-                    margin-left: 0;
-                  }
-                  &:nth-child(2){
-                    margin-top: 28px;
-                  }
-                }
               }
               li{
                 font-size: 20px;
@@ -696,7 +705,6 @@
                 width: 310px;
                 border-bottom: 2px solid #222222;
                 padding: 12px;
-                margin-top: 28px;
                 background-image: url(../images/image/ico_arrow5.svg);
                 background-size: 5px 10px;
                 background-repeat: no-repeat;
@@ -710,12 +718,6 @@
                 a.on{
                   color:#F68A53;
                 }
-                &:nth-child(2n){
-                  margin-left: 26px;
-                }
-                &:nth-child(1),&:nth-child(2){
-                  margin-top: 0;
-                }
               }
             }
           }
@@ -726,13 +728,74 @@
           background-color: #F6FAF9;
           width: 43%;
           height: 1004px;
-          top:1100px;
+          top:650px;
           right: 0px;
         }
         .archive_right{
           width: 100%;
           margin-left: 66px;
           position: relative;
+          /* Academy */
+          .academy {
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            .course_slide{
+              .swiper_navi{
+                .swiper_button {
+                  font-size: 0;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  z-index: 10;
+                  top: 40%;
+                  transform: translateY(-50%);
+                  width: 54px;
+                  height: 54px;
+                  &.swiper_next{
+                    right: 0;
+                    background-image: url(../images/image/ico_arr.svg);
+                  }
+                  &.swiper_prev{
+                    left: 0;
+                    background-image: url(../images/image/ico_arr1.svg);
+                  }
+                }
+              }
+              .sliderMain{
+                display: flex;
+                justify-content: center;
+                max-width: 914px;
+                height: 522px;
+                overflow: hidden;
+                .swiper-wrapper{
+                  .swiper-slide{
+                    width: 914px !important;
+                    object-fit: cover;
+                  }
+                }
+              }
+              .sliderPaging{
+                max-width: 914px;
+                overflow: hidden;
+                margin-top: 26px;
+                .swiper-container{
+                  .swiper-slide{
+                    img{
+                      width: 214px;
+                      height: 214px;
+                      object-fit: cover;
+                      border: 1px solid #d3d3d3;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+          }
           .effect{
             position: absolute;
             right: -130px;
@@ -863,53 +926,15 @@
       }
     }
   }
-
-  //NOTE 이사님이 넣어두셨어요
-  @media (max-width: 768px){
-  .tab_container .tab_cnt .photolist {
-      margin: 20px -10px;
-      li {
-        width: calc(50% - 20px);
-        margin: 20px 10px;
-        .title .name {
-          margin-top: 12px;
-          font-size: 15px;
-          line-height: 20px;
-        }
-        .title .date {
-          margin-top: 10px;
-          font-size: 12px;
-          height: 14px;
-        }
-    }
-  }
-}
-  @media (max-width: 480px) {
-    .tab_container .tab_cnt .photolist {
-      margin: -20px 0 0 0;
-    }
-
-    .tab_container .tab_cnt .photolist li {
-      width: 100%;
-      margin: 20px 0;
-      a{
-        .play{
-          width: 42px;
-          margin-top: -20px;
-        }
-      }
-    }
-  }
-
   #content{
     .w_set{
       //모바일 숨기기
       .hide_m{
-        display: none;
+        display: none !important;
       }
       //pc숨기기
       .hide_pc{
-        display: block;
+        display: block !important;
       }
       .member{
         .inquire{
@@ -1000,6 +1025,150 @@
           }
         }
       }
+      .archive{
+        .title{
+          display: none;
+        }
+        .archive_cont{
+          width: 100%;
+          &.type_center {
+            .archive_left {
+              .sub_wrap .sub_list li .btn{
+                font-size: 16px;
+                padding: 6px 12px;
+              }
+              .archive_top .bt_sch{
+                height: 42px;
+                width: 100%;
+                input{
+                  font-size: 15px;
+                  padding: 0 14px;
+                }
+                button{
+                  width:37px;
+                  top:-3px;
+                  img{
+                    width: 19px;
+                    height: 21px;
+                  }
+                }
+              }
+              .archive_list {
+                ul {
+                  width: 100%;
+                  max-width: 100%;
+                  li {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+          .archive_left{
+            .sub_wrap{
+              .sub_list{
+                gap: 8px 8px;
+                margin-top: 12px;
+                li{
+                  .btn{
+                    font-size: 12px;
+                    padding: 5px 10px;
+                  }
+                }
+              }
+            }
+            .archive_top{
+              margin-top: 40px;
+            }
+            .archive_list{
+              margin-top: 60px;
+              ul{
+                gap: 30px 26px;
+                a{
+                  font-size: 18px;
+                  color: #222;
+                }
+              }
+            }
+          }
+          .background{
+            display: none;
+          }
+          .archive_right{
+            margin-left: 0;
+            .academy{
+              .course_slide{
+                width: 100%;
+                .swiper_navi{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .swiper_button{
+                    position:static;
+                    margin-top: 50px;
+                  }
+                  .color{
+                    font-size: 14px;
+                    em{
+                      color:#F68A53;
+                    }
+                  }
+                }
+                .sliderMain{
+                  max-width: 100%;
+                  width: 100%;
+                  height: 220px;
+                  .swiper-wrapper{
+                    .swiper-slide{
+                      width: 100% !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
+}
+
+
+
+
+//NOTE 이사님이 넣어두셨어요
+@media (max-width: 768px){
+.tab_container .tab_cnt .photolist {
+    margin: 20px -10px;
+    li {
+      width: calc(50% - 20px) !important;
+      margin: 20px 10px;
+      .title .name {
+        margin-top: 12px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .title .date {
+        margin-top: 10px;
+        font-size: 12px;
+        height: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .tab_container .tab_cnt .photolist {
+    margin: -20px 0 0 0;
+    li {
+      width: 100% !important;
+      margin: 20px 0;
+      a{
+        .play{
+          width: 42px;
+          margin-top: -20px;
+        }
+      }
+    }
+  }
+
 }
