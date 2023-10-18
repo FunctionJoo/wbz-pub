@@ -318,7 +318,7 @@
             overflow: hidden;
             width: 100%;
             height: 100%;
-            padding-top: 59%;
+            padding-top: 63%;
             text-align: center;
             &.type_video{
               padding-top: 56.25%;
@@ -420,7 +420,7 @@
     .inquiry_view {
       $lr: 20px;
       &.type_archive{
-        max-width: 914px;
+        width: 100%;
         margin: 0 auto;
         .answer{
            &>p{font-weight: 600; font-size: 24px;}
@@ -751,70 +751,87 @@
           right: 0px;
         }
         .archive_right{
-          width: 100%;
-          position: relative;
+          width: calc(100% - 370px) !important;
           margin-left: 60px;
+          position: relative;
           /* Academy */
           .academy {
-            margin: 0 auto;
-            text-align: center;
-            width: 100%;
-            display: flex;
-            position: relative;
-            justify-content: center;
-            .course_slide{
-              .swiper_navi{
-                .swiper_button {
-                  font-size: 0;
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  position: absolute;
-                  z-index: 10;
-                  top: 35%;
-                  transform: translateY(-50%);
-                  width: 54px;
-                  height: 54px;
-                  &.swiper_next{
-                    right: 0;
-                    background-image: url(../images/image/ico_arr.svg);
-                  }
-                  &.swiper_prev{
-                    left: 0;
-                    background-image: url(../images/image/ico_arr1.svg);
-                  }
-                }
-              }
-              .sliderMain{
-                display: flex;
-                justify-content: center;
-                max-width: 914px;
-                height: 522px;
-                overflow: hidden;
-                .swiper-wrapper{
-                  .swiper-slide{
-                    width: 914px !important;
-                    object-fit: cover;
+              margin: 0 auto;
+              text-align: center;
+              display: flex;
+              position: relative;
+              justify-content: center;
+              width: 100%;
+              .course_slide {
+                width: 100%;
+                .swiper_navi {
+                  .swiper_button {
+                    font-size: 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    z-index: 10;
+                    top: 45%;
+                    transform: translateY(-50%);
+                    width: 54px;
+                    height: 54px;
+
+                    &.swiper_next {
+                      right: 0;
+                      background-image: url(../images/image/ico_arr1.svg);
+                    }
+
+                    &.swiper_prev {
+                      left: 0;
+                      background-image: url(../images/image/ico_arr.svg);
+                    }
                   }
                 }
-              }
-              .sliderPaging{
-                max-width: 914px;
-                overflow: hidden;
-                margin-top: 26px;
-                .swiper-container{
-                  .swiper-slide{
-                    img{
-                      width: 214px;
-                      height: 214px;
-                      object-fit: cover;
-                      border: 1px solid #d3d3d3;
-                      cursor: pointer;
+
+                .sliderMain {
+                  display: flex;
+                  justify-content: center;
+                  overflow: hidden;
+                  width: 100%;
+                  .swiper-wrapper {
+                    .swiper-slide {
+                        height: 100%;
+                        width: 100%;
+                        padding-top: 63%;
+                        position: relative;
+                        overflow: hidden;
+                          object-fit: cover;
+
+                        img {
+                          width: 100%;
+                          height: 100%;
+                          cursor: pointer;
+                          position: absolute;
+                          top: 0;
+                          display: block;
+                          object-fit: cover;
+                        }
+                    }
+                  }
+                }
+                .sliderPaging {
+                  overflow: hidden;
+                  margin-top: 19px;
+
+                  .swiper-container {
+                    .swiper-slide {
+                      img {
+                        width: 100%;
+                        height: 154px;
+                        object-fit: cover;
+                        border: 1px solid #d3d3d3;
+                        cursor: pointer;
+                      }
                     }
                   }
                 }
               }
             }
-          }
           .effect{
             position: absolute;
             right: -130px;
@@ -1154,6 +1171,7 @@
           }
           .archive_right{
             margin-left: 0;
+            width: 100% !important;
             .inquiry_view.type_archive
             .board_bottom{
               margin-top: 40px;
@@ -1189,7 +1207,6 @@
                 .sliderMain{
                   max-width: 100%;
                   width: 100%;
-                  height: 220px;
                   .swiper-wrapper{
                     .swiper-slide{
                       width: 100% !important;

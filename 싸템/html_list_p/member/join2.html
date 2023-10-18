@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>싸템</title>
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- jQuery를 Google CDN에서 불러오는 예제 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- style 모음 -->
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- 공통 레이아웃 js -->
+	<script src="../js/layout.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+</head>
+
+<body>
+	<header id="header">
+		<div class="w_set">
+			<div class="sec_top">
+				<h1 class="logo">
+					<a href="#">
+						<img src="../images/common/logo.svg" alt="회사로고">
+						<div class="logo_txt">
+							<span class="t1">아이템거래는</span>
+							<span class="t2">SSATEM</span><span class="t3">에서!</span>
+						</div>
+					</a>
+				</h1>
+				<div class="header_search">
+					<!-- 추후 모바일에서 사용 예정 -->
+					<button class="layer_close" type="button" style="display: none;">레이어닫기</button>
+					<div class="search_bar">
+						<div class="sec_radio">
+							<label class="radio_visual">
+								<input type="radio" name="sch_type" value="0" checked>
+								<span class="radio_ico"></span>
+								<span class="txt">팝니다</span>
+							</label>
+							<label class="radio_visual type2">
+								<input type="radio" name="sch_type" value="1">
+								<span class="radio_ico"></span>
+								<span class="txt">삽니다</span>
+							</label>
+						</div>
+						<div class="sec_ipt">
+							<input type="text" placeholder="게임 또는 서버명을 입력해주세요">
+						</div>
+						<div class="sec_submit">
+							<button type="button">검색</button>
+						</div>
+					</div>
+					<div class="search_content">
+						<div class="t_before">
+							<div class="sec_1">
+								<p class="sec_title">최근 검색 게임</p>
+								<ul class="sec_cont sec_cont_full sch_ul has_close">
+									<!-- 팝니다 -->
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<!-- 삽니다 -->
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+								</ul>
+							</div>
+							<div class="sec_2">
+								<p class="sec_title">인기게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul has_rank">
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+								<p class="sec_title">신규게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul">
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_banner1">
+					<a href="#">
+						<img src="https://www.kukinews.com/data/kuk/image/2022/04/28/kuk202204280332.647x.0.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="sec_bottom">
+				<div class="sec_left">
+					<button type="button" class="chat_list_btn">
+						<div class="text"><i></i>채팅목록</div>
+						<div class="new_laert">
+							<span class="t_y">99+</span>개의 메세지가 있습니다.
+						</div>
+					</button>
+				</div>
+				<div class="sec_center">
+					<ul class="header_menu">
+						<li>
+							<a href="#" class="fc_p0">판매등록</a>
+						</li>
+						<li>
+							<a href="#" class="fc_p2">구매등록</a>
+						</li>
+						<li>
+							<a href="#">마일리지</a>
+							<ul class="dep2">
+								<li><a href="#">마일리지</a></li>
+								<li><a href="#">마일리지 충전</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">1:1 상담</a></li>
+								<li><a href="#">신규 게임 등록 요청</a></li>
+								<li><a href="#">이용안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="bold">마이페이지</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="sec_right header_login">
+					<li><a href="#" class="is_login">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="contets">
+		<div id="member">
+			<div class="w_set_member">
+				<div class="main_title">
+					<h2>싸템 회원가입</h2>
+					<p>싸템 회원가입을 환영합니다.<br>싸템 회원이 되시면 보다 다양한 혜택을 받아 보실 수 있습니다.</p>
+				</div>
+				<ul class="step_wrap">
+					<li>
+						<i class="step_01"></i>
+						<div class="step_box">Step1<span>약관동의/본인인증</span></div>
+					</li>
+					<li>
+						<i class="step_02 on"></i>
+						<div class="step_box">Step2<span>정보 입력</span></div>
+					</li>
+					<li>
+						<i class="step_03"></i>
+						<div class="step_box">Step3<span>가입완료</span></div>
+					</li>
+				</ul>
+				<div class="agree_area">
+					<div class="list">
+						<div class="label_t">
+							<label for="id">아이디 <em>*</em></label>
+							<input type="text" name="id" id="id" placeholder="사이즈는 겉 박스를 조절하면 됩니다.">
+						</div>
+						<div class="label_t">
+							<label for="password">비밀번호 <em>*</em></label>
+							<input type="password" name="password" id="password">
+						</div>
+						<div class="label_t">
+							<label for="password2">비밀번호 확인<em>*</em></label>
+							<input type="password" name="password2" id="password2">
+						</div>
+						<div class="label_t">
+							<label for="email">이메일<em>*</em></label>
+							<input type="text" name="email" id="email">
+						</div>
+						<div class="label_t">
+							<label for="mobile">은행정보 <em>*</em></label>
+							<span class="flex">
+								<input type="text" name="mobile" id="mobile" value="+82">
+								<input type="text" name="mobile2" id="mobile2">
+							</span>
+						</div>
+						<div class="chk_area all">
+							<input type="checkbox" name="allCheck" id="allCheck">
+							<label for="allCheck" class="chk">
+								<i class="ico_chk"></i>전체 동의 (싸템 전체 약관 및 선택정보에 모두 동의합니다.)
+							</label>
+						</div>
+						<ul>
+							<li class="title">
+								<div class="agree_area">
+									<div class="chk_area">
+										<input type="checkbox" name="isTerms" id="agreeChk01" required value="Y" aria-labelledby="marketingLabel1">
+										<label for="agreeChk01" class="chk"><i class="ico_chk"></i></label>
+										<span id="marketingLabel1">싸템 이용약관 동의 <em class="red">(필수)</em></span>
+									</div>
+								</div>
+							</li>
+							<li class="cont" style="display: none;">
+								<div class="answer">
+									<p>
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+										Yes. You can add more vehicles after the payment. Tou can discuss it with our staff.<br>
+										We will guide you on how much should be added and send you invoice of the extra charge.
+									</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="title">
+								<div class="agree_area">
+									<div class="chk_area">
+										<input type="checkbox" name="isAge" id="agreeChk02" required value="Y" aria-labelledby="marketingLabel2">
+										<label for="agreeChk02" class="chk"><i class="ico_chk"></i></label>
+										<span id="marketingLabel2">싸템 개인정보 수집 및 이용 동의 <em class="red">(필수)</em></span>
+									</div>
+								</div>
+							</li>
+							<li class="cont" style="">
+								<div class="answer">
+									<p>
+										Yes. Cancel is possible until before the shipment booking.<br>
+										However, if you wish to cancel, we cancel your booking and refund the money with deduction of penalty.<br>
+										(20% of the FOB value, the minimum amount USD 500)
+									</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="title">
+								<div class="agree_area">
+									<div class="chk_area">
+										<input type="checkbox" name="isMarketing" id="agreeChk03" value="Y" aria-labelledby="marketingLabel3">
+										<label for="agreeChk03" class="chk"><i class="ico_chk"></i></label>
+										<span id="marketingLabel3">광고 정보 수신동의 <em>(선택)</em></span>
+									</div>
+								</div>
+							</li>
+							<li class="cont" style="">
+								<div class="answer">
+									<p>No. We only accept direct transfer to our bank account (T/T remittance).<br>
+										TransferWise is also acceptable when you put our bank account information.<br>
+										But any other payment methods such as Credit Card and Paypal is not accepted.
+									</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="title">
+								<div class="agree_area">
+									<div class="chk_area">
+										<input type="checkbox" name="isMarketing" id="agreeChk04" value="Y" aria-labelledby="marketingLabel4">
+										<label for="agreeChk04" class="chk"><i class="ico_chk"></i></label>
+										<span id="marketingLabel4">개인정보 제3자 마케팅활동에 동의합니다 <em>(선택)</em></span>
+									</div>
+								</div>
+							</li>
+							<li class="cont" style="">
+								<div class="answer">
+									<p>No. We only accept direct transfer to our bank account (T/T remittance).<br>
+										TransferWise is also acceptable when you put our bank account information.<br>
+										But any other payment methods such as Credit Card and Paypal is not accepted.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="man_list">
+					<p>본인확인</p>
+					<ul class="man_check">
+						<li>
+							<img src="../images/ico/ico_phone.svg" alt="휴대폰">
+							<div>
+								<p>휴대폰 인증</p>
+								<span>생년월일 기반의 본인인증 서비스로 가입자의 휴대폰 정보로 인증 받는 서비스</span>
+							</div>
+						</li>
+						<li>
+							<img src="../images/ico/ico_ipin.svg" alt="아이핀">
+							<div>
+								<p>아이핀 인증</p>
+								<span>인터넷상 개인 식별번호로 본인임을 확인할 수 있는 개인정보보호 서비스</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 미완 -->
+	<footer id="footer">
+		<div class="footer_top">
+			<div class="w_set">
+				...
+			</div>
+		</div>
+		<div class="footer_content">
+			<div class="w_set">
+				.....
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		// 전체 동의 체크박스
+		let allCheck = document.getElementById("allCheck");
+
+		// 개별 동의 체크박스들
+		let agreeChk01 = document.getElementById("agreeChk01");
+		let agreeChk02 = document.getElementById("agreeChk02");
+		let agreeChk03 = document.getElementById("agreeChk03");
+		let agreeChk04 = document.getElementById("agreeChk04");
+		let checkedArray = [agreeChk01, agreeChk02, agreeChk03, agreeChk04];
+
+		document.getElementById("allCheck").addEventListener("click", function () {
+			agreeChk01.checked = allCheck.checked;
+			agreeChk02.checked = allCheck.checked;
+			agreeChk03.checked = allCheck.checked;
+			agreeChk04.checked = allCheck.checked;
+			checkedArray.push(agreeChk01, agreeChk02, agreeChk03)
+		});
+
+		checkedArray.forEach(function (checkbox) {
+			checkbox.addEventListener("click", function () {
+				let allCheck = document.getElementById("allCheck");
+				allCheck.checked = checkedArray.every(function (checkbox) {
+					return checkbox.checked;
+				});
+			});
+		});
+
+	</script>
+
+	<script>
+		// 페이지에서만 사용하는 스크립트
+		$(document).on('click', '.list .title .agree_area', function () {
+			if ($(this).hasClass('active')) {
+				$('.list .title .agree_area').removeClass('active');
+				$('.list .cont').stop().slideUp();
+			} else {
+				$('.list .title agree_area').removeClass('active');
+				$('.list .cont').stop().slideUp();
+				$(this).addClass('active');
+				$(this).parent('.title').siblings('.cont').stop().slideDown();
+			}
+		});
+	</script>
+</body>
+
+</html>
+
+<!-- FIXME 체크박스 클릭 시 .cont약간 튀어 나오는 오류 -->

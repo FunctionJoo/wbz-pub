@@ -492,36 +492,24 @@
 
   <script>
     $(document).ready(function () {
-      var courseMain = new Swiper(".sliderMain.swiper-container", {
-        spaceBetween: 10,
-        thumbs: {
-          swiper: ".sliderPaging .swiper-container",
-        },
-        navigation: {
-          nextEl: '.course_slide .swiper_navi .swiper_next',
-          prevEl: '.course_slide .swiper_navi .swiper_prev',
-        },
-        freeMode: true,
-        loop: true,
+        var courseMain = new Swiper(".sliderMain.swiper-container", {
+          thumbs: {
+            swiper: ".sliderPaging .swiper-container",
+          },
+          navigation: {
+            nextEl: '.course_slide .swiper_navi .swiper_next',
+            prevEl: '.course_slide .swiper_navi .swiper_prev',
+          },
+          loop: true,
+        });
+
+        var coursePaging = new Swiper(".sliderPaging .swiper-container", {
+          spaceBetween: 15,
+          slidesPerView: 4,
+          loop: true,
+        });
       });
 
-      var coursePaging = new Swiper(".sliderPaging .swiper-container", {
-        spaceBetween: 15,
-        slidesPerView: 4,
-        watchSlidesVisibility: true, // Watch for slides visibility
-        watchSlidesProgress: true,
-        loop: true,
-        breakpoints: {
-          769: {
-            slidesPerView: 4,
-            spaceBetween: 19,
-            freeMode: true,
-            pagination: false,
-            loop: true,
-          },
-        },
-      });
-    });
   </script>
 
   <script>
