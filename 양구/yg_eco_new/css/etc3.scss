@@ -286,7 +286,7 @@
       flex-wrap: wrap;
       margin: 20px -20px;
       &.type_border{
-        margin: 10px -10px;
+        margin: 20px -10px -10px;
         li{
           border: 1px solid #DDDDDD;
           border-radius: 6px;
@@ -622,6 +622,9 @@
         &.type_center{
           .archive_left{
             width: 100%;
+            .archive_list{
+              margin-top: 80px;
+            }
             .archive_top{
               .bt_sch{
                 height: 62px;
@@ -631,6 +634,10 @@
                 }
               }
             }
+          }
+          .archive_right{
+            margin-top: 44px;
+            margin-left: 105px;
           }
         }
         .archive_left{
@@ -700,7 +707,6 @@
             }
           }
           .archive_list{
-            margin-top: 80px;
             ul{
               display: flex;
               flex-wrap: wrap;
@@ -718,7 +724,7 @@
                 background-image: url(../images/image/ico_arrow5.svg);
                 background-size: 5px 10px;
                 background-repeat: no-repeat;
-                background-position: right 5px center;
+                background-position: right 12px center;
                 cursor: pointer;
                 a{
                   display: block;
@@ -739,15 +745,15 @@
           position: absolute;
           z-index: -2;
           background-color: #F6FAF9;
-          width: 43%;
+          width: 42%;
           height: 1004px;
           top:650px;
           right: 0px;
         }
         .archive_right{
           width: 100%;
-          margin-left: 66px;
           position: relative;
+          margin-left: 60px;
           /* Academy */
           .academy {
             margin: 0 auto;
@@ -764,7 +770,7 @@
                   background-repeat: no-repeat;
                   position: absolute;
                   z-index: 10;
-                  top: 40%;
+                  top: 35%;
                   transform: translateY(-50%);
                   width: 54px;
                   height: 54px;
@@ -1132,10 +1138,13 @@
               margin-top: 60px;
               ul{
                 gap: 30px 26px;
-                a{
-                  font-size: 18px;
-                  color: #222;
-                  display: block;
+                li{
+                  background-position: right 4px center;
+                  a{
+                    font-size: 18px;
+                    color: #222;
+                    display: block;
+                  }
                 }
               }
             }
