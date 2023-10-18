@@ -666,12 +666,12 @@
   gap: 40px 26px;
 }
 #content .w_set .archive .archive_cont .archive_left .archive_list ul.type_side {
-  max-width: 310px;
+  max-width: 250px;
 }
 #content .w_set .archive .archive_cont .archive_left .archive_list ul li {
   font-size: 20px;
   font-weight: 600;
-  width: 310px;
+  width: 250px;
   border-bottom: 2px solid #222222;
   padding: 12px;
   background-image: url(../images/image/ico_arrow5.svg);
@@ -699,7 +699,7 @@
   right: 0px;
 }
 #content .w_set .archive .archive_cont .archive_right {
-  width: calc(100% - 370px) !important;
+  width: calc(100% - 250px) !important;
   margin-left: 60px;
   position: relative;
   /* Academy */

@@ -26,8 +26,8 @@ button {cursor: pointer;}
 	cursor: pointer;
 	input[type="radio"] {
 		position: absolute;
-		width: 0;
-		height: 0;
+		//NOTE 수정 width: 0;
+		// height: 0;
 		opacity: 0;
 	}
 	.radio_ico {
@@ -129,7 +129,7 @@ button {cursor: pointer;}
 
 .label_t {
 	display: block;
-	input {
+	input:not([type="radio"]) {
 		width: 100%;
 		height: 48px;
 		border: 1px solid #D3D3D3;
@@ -137,11 +137,13 @@ button {cursor: pointer;}
 		padding: 0 14px;
 		font-size: 16px;
 		background: #fff;
-		&::placeholder {
-			color: $colorA;
-		}
 	}
+	input:not([type="radio"])::placeholder {
+		color: $colorA;
+	}
+
 }
+
 
 .label_s {
 	display: block;
@@ -150,12 +152,13 @@ button {cursor: pointer;}
 		height: 48px;
 		border: 1px solid #D3D3D3;
 		border-radius: 3px;
-		padding: 0 36px 0 14px;
+		//NOTE 패딩 수정
+		padding: 0 68px 0 14px;
 		font-size: 16px;
 		appearance: none;
 		cursor: pointer;
 		// 화살표 아이콘 추가 필요함
-		background: url() no-repeat top 50% right 16px #fff;
+		background: url(../images/ico/ico_arrow2.svg) no-repeat top 50% right 16px #fff;
 	}
 }
 

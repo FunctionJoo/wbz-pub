@@ -229,6 +229,9 @@
 	</header>
 
 	<div id="contets">
+		<!-- <label class="label_t">
+			<input type="text" placeholder="사이즈는 겉 박스를 조절하면 됩니다.">
+		</label> -->
 		<div id="member">
 			<div class="w_set_member">
 				<div class="main_title">
@@ -241,77 +244,26 @@
 						<div class="step_box">Step1<span>약관동의/본인인증</span></div>
 					</li>
 					<li>
-						<i class="step_02 on"></i>
+						<i class="step_02"></i>
 						<div class="step_box">Step2<span>정보 입력</span></div>
 					</li>
 					<li>
-						<i class="step_03"></i>
+						<i class="step_03 on"></i>
 						<div class="step_box">Step3<span>가입완료</span></div>
 					</li>
 				</ul>
-				<div class="member_info">
-					<div class="pt_txt">
-						<img src="../images/ico/ico_man.svg" alt="프로필">
-						<p>홍길동</p>
-						<p>010-5589-9850</p>
-						<p>남</p>
-						<p>84.01.12</p>
-					</div>
+				<div class="main_title">
+					<img src="../images/ico/ico_man2.svg" alt="man2" class="ico">
+					<h2>싸템 회원가입이 완료되었습니다.</h2>
+					<p>로그인 후 안전하고 편리하게 싸템 서비스를 이용하실 수 있습니다.</p>
 				</div>
-				<div class="join2">
-					<div class="list">
-						<div class="label_t">
-							<label for="id">아이디 <em>*</em></label>
-							<input type="text" name="id" id="id" placeholder="첫 문자 영문, 5~12자로 영문/숫자조합으로 띄어쓰기 없이 입력하세요">
-						</div>
-						<div class="label_t">
-							<label for="password">비밀번호 <em>*</em></label>
-							<input type="password" name="password" id="password" placeholder="8~20자의 영문/특문/숫자 조합으로 띄어쓰기 없이 입력">
-						</div>
-						<div class="label_t">
-							<label for="password2">비밀번호 확인 <em>*</em></label>
-							<input type="password" name="password2" id="password2" placeholder="위의 비밀번호로 다시한번 입력">
-						</div>
-						<div class="label_t">
-							<label for="email">이메일</label>
-							<input type="text" name="email" id="email">
-						</div>
-						<div class="label_t">
-							<label for="mobile">은행정보</label>
-							<div class="padding">
-								<div class="label_s">
-									<select id="mobile" name="mobile">
-										<option value="">국민은행</option>
-										<option value="">국민은행</option>
-										<option value="">국민은행</option>
-										<option value="">국민은행</option>
-									</select>
-								</div>
-								<input type="text" name="mobile2" id="mobile2" value="2956-1222-221">
-								<button type="button" class="st_btn">계좌인증</button>
-							</div>
-						</div>
-						<div class="label_t type_sns">
-							<div class="label">수신동의 선택</div>
-							<div>
-								<div class="sns">
-									<label class="radio_visual" for="sms">
-										<input type="radio" name="sms" id="sms" value="0" checked>
-										<span class="radio_ico"></span>
-										<span class="txt">SMS</span>
-									</label>
-									<label class="radio_visual" for="mail">
-										<input type="radio" name="sms" id="mail" value="1">
-										<span class="radio_ico"></span>
-										<span class="txt">이메일</span>
-									</label>
-								</div>
-								<span><i></i>광고성 메세지가 아닌 정보성 메세지(거래정보, 채팅, 처리결과 등)만 발송 합니다.</span>
-							</div>
-						</div>
-						<div class="btn">
-							<button type="button" class="st_btn size_b color_p">회원가입</button>
-						</div>
+				<div class="gift">
+					<div class="gift_img">
+						<img src="../images/ico/img_back1.svg" alt="back1">
+						<p>회원 가입 축하 이용권이 증정되었습니다</p>
+					</div>
+					<div class="btn">
+						<button type="button" class="st_btn size_b color_p">로그인 하기</button>
 					</div>
 				</div>
 			</div>
@@ -337,5 +289,3 @@
 </body>
 
 </html>
-
-<!--FIXME 웹접근성검사>> input두개나 세개 있을 시 label for 오류-->

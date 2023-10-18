@@ -14,6 +14,10 @@
   margin-top: 20px;
   font-size: 16px;
 }
+#member .main_title .ico {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 #member .step_wrap {
   position: relative;
   display: flex;
@@ -116,8 +120,82 @@
 #member .chk_area em.red {
   color: #DE4040;
 }
+#member .join2 {
+  margin-top: 40px;
+}
+#member .join2 .list .label_t {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+#member .join2 .list .label_t.type_sns {
+  align-items: start;
+  margin-bottom: 60px;
+}
+#member .join2 .list .label_t.type_sns .sns {
+  margin-bottom: 9px;
+}
+#member .join2 .list .label_t.type_sns .sns .radio_visual {
+  height: 26px;
+  line-height: 26px;
+  width: auto;
+}
+#member .join2 .list .label_t.type_sns .sns .radio_visual + .radio_visual {
+  margin-left: 50px;
+}
+#member .join2 .list .label_t.type_sns .sns .radio_visual .txt {
+  color: #113462;
+}
+#member .join2 .list .label_t.type_sns span {
+  display: flex;
+  align-items: center;
+}
+#member .join2 .list .label_t.type_sns span i {
+  background-image: url(../images/ico/ico_alert.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-right: 4px;
+}
+#member .join2 .list .label_t label, #member .join2 .list .label_t .label {
+  width: 164px;
+  font-size: 18px;
+  font-weight: 500;
+  flex: 0 0 auto;
+}
+#member .join2 .list .label_t label em, #member .join2 .list .label_t .label em {
+  color: #DE4040;
+}
+#member .join2 .list .label_t .padding {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#member .join2 .list .label_t .padding.type_line .label_s {
+  margin-right: 0;
+}
+#member .join2 .list .label_t .padding.type_line input {
+  margin-right: 0;
+}
+#member .join2 .list .label_t .padding.type_line span {
+  margin: 0 5px;
+  width: 8px;
+  display: block;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+#member .join2 .list .label_t .padding .label_s {
+  margin-right: 10px;
+}
+#member .join2 .list .label_t .padding .st_btn {
+  flex: 0 0 auto;
+  margin-left: 10px;
+}
+#member .join2 .list .btn {
+  text-align: center;
+}
 #member .agree_area {
-  margin-top: 54px;
+  margin-top: 55px;
 }
 #member .agree_area .list {
   text-align: left;
@@ -125,49 +203,73 @@
 #member .agree_area .list .all {
   margin-bottom: 30px;
 }
-#member .agree_area .list ul .title .agree_area {
-  cursor: pointer;
+#member .agree_area .list ul {
+  border: 1px solid #D9D9D9;
   margin-top: 20px;
+}
+#member .agree_area .list ul .title .agree_area {
+  margin-top: 0;
+  cursor: pointer;
   display: block;
   position: relative;
   padding: 18px 40px 18px 20px;
   line-height: 20px;
-  border: 1px solid #D9D9D9;
 }
 #member .agree_area .list ul .title .agree_area::after {
   content: "";
-  width: 20px;
-  height: 10px;
+  width: 14px;
+  height: 8px;
   position: absolute;
-  top: calc(50% - 5px);
+  top: calc(50% - 4px);
   transform: translate(-50%);
   right: 10px;
   background-image: url("../images/ico/ico_arrow2.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 10px;
+  background-size: 14px 8px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
 }
 #member .agree_area .list ul .title .agree_area.active::after {
   transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
-  right: 30px;
-}
-#member .agree_area .list ul .title .agree_area.active {
-  border-bottom: 0;
+  right: 20px;
 }
 #member .agree_area .list ul .cont {
   display: none;
   padding: 20px 19px;
-  border: 1px solid #D9D9D9;
-  border-top: 0;
   height: 240px;
   overflow: scroll;
   overflow-x: hidden;
 }
 #member .agree_area .list ul .cont .answer {
   position: relative;
+}
+#member .member_info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEF3F9;
+  padding: 16px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#member .member_info .pt_txt {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  align-items: center;
+  font-size: 16px;
+}
+#member .member_info .pt_txt p {
+  padding: 0px 20px;
+  color: #333333;
+  height: 10px;
+  line-height: 10px;
+}
+#member .member_info .pt_txt p + p {
+  border-left: 1px solid #A7A7A7;
 }
 #member .man_list {
   margin-top: 50px;
@@ -214,4 +316,20 @@
 }
 #member .man_list .man_check li:nth-child(2) img {
   width: 70px;
+}
+#member .gift {
+  text-align: center;
+}
+#member .gift .gift_img {
+  position: relative;
+  margin-top: 52px;
+  margin-bottom: 78px;
+}
+#member .gift .gift_img p {
+  position: absolute;
+  top: 94px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 16px;
+  color: #014099;
 }

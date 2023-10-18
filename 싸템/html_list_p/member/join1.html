@@ -369,7 +369,6 @@
 			</div>
 		</div>
 	</div>
-	</div>
 
 	<!-- 미완 -->
 	<footer id="footer">
@@ -415,22 +414,28 @@
 
 	</script>
 
-	<script>
-		// 페이지에서만 사용하는 스크립트
-		$(document).on('click', '.list .title .agree_area', function () {
-			if ($(this).hasClass('active')) {
-				$('.list .title .agree_area').removeClass('active');
-				$('.list .cont').stop().slideUp();
-			} else {
-				$('.list .title agree_area').removeClass('active');
-				$('.list .cont').stop().slideUp();
-				$(this).addClass('active');
-				$(this).parent('.title').siblings('.cont').stop().slideDown();
-			}
-		});
-	</script>
+<script>
+	// 페이지에서만 사용하는 스크립트
+	$(document).on('click', '.list .title .agree_area', function () {
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('.list .cont').stop().slideUp();
+		} else {
+			$('.list .title .agree_area').removeClass('active');
+			$('.list .cont').stop().slideUp();
+			$(this).addClass('active');
+			$(this).parent('.title').siblings('.cont').stop().slideDown();
+		}
+	});
+
+	// 다른 영역 클릭 시 active 클래스 제거
+	$(document).on('click', function (e) {
+		if (!$(e.target).closest('.list .title .agree_area').length) {
+			$('.list .title .agree_area').removeClass('active');
+			$('.list .cont').stop().slideUp();
+		}
+	});
+</script>
 </body>
 
 </html>
-
-<!-- FIXME 체크박스 클릭 시 .cont약간 튀어 나오는 오류 -->

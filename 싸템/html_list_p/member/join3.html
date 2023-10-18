@@ -253,7 +253,6 @@
 					<div class="pt_txt">
 						<img src="../images/ico/ico_man.svg" alt="프로필">
 						<p>홍길동</p>
-						<p>010-5589-9850</p>
 						<p>남</p>
 						<p>84.01.12</p>
 					</div>
@@ -273,21 +272,39 @@
 							<input type="password" name="password2" id="password2" placeholder="위의 비밀번호로 다시한번 입력">
 						</div>
 						<div class="label_t">
+							<label for="mobile">연락처</label>
+							<div class="padding type_line">
+								<div class="label_s">
+									<select id="mobile" name="mobile">
+										<option value="">010</option>
+										<option value="">010</option>
+										<option value="">010</option>
+										<option value="">010</option>
+									</select>
+								</div>
+								<span>ㅡ</span>
+								<input type="text" name="mobile2" id="mobile2" value="1234">
+								<span>ㅡ</span>
+								<input type="text" name="mobile3" id="mobile3" value="1235">
+								<button type="button" class="st_btn">휴대폰 인증</button>
+							</div>
+						</div>
+						<div class="label_t">
 							<label for="email">이메일</label>
 							<input type="text" name="email" id="email">
 						</div>
 						<div class="label_t">
-							<label for="mobile">은행정보</label>
+							<label for="bank">은행정보</label>
 							<div class="padding">
 								<div class="label_s">
-									<select id="mobile" name="mobile">
+									<select id="bank" name="bank">
 										<option value="">국민은행</option>
 										<option value="">국민은행</option>
 										<option value="">국민은행</option>
 										<option value="">국민은행</option>
 									</select>
 								</div>
-								<input type="text" name="mobile2" id="mobile2" value="2956-1222-221">
+								<input type="text" name="bank2" id="bank2" value="2956-1222-221">
 								<button type="button" class="st_btn">계좌인증</button>
 							</div>
 						</div>
@@ -337,5 +354,3 @@
 </body>
 
 </html>
-
-<!--FIXME 웹접근성검사>> input두개나 세개 있을 시 label for 오류-->
