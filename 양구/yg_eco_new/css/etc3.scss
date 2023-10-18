@@ -1196,6 +1196,13 @@
                     width: 5px;
                     height: 10px;
                     background-size: 5px 10px;
+                    &.swiper_next {
+                      background-image: url(../images/image/ico_arr3.svg);
+                    }
+
+                    &.swiper_prev {
+                      background-image: url(../images/image/ico_arr4.svg);
+                    }
                   }
                   .color{
                     font-size: 14px;
