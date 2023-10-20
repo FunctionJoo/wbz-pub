@@ -368,96 +368,29 @@
       </div>
     </div>
 
+
+
     <section id="content">
-      <div class="w_set">
-        <div class="program_wrap type_info">
-          <div class="traffic_map">
-            <img src="../images/image/img_map.png" alt="지도" class="main">
-            <i class="location three on">위치3</i>
+      <p class="skip_map blind"><a href="javascript:mapMove(0)">수목원 안내도 건너뛰기</a></p>
+      <div id="map" style="height:580px; background-color: antiquewhite;"></div>
+      <div class="wrap">
+        <div class="info type_tra">
+          <div class="title">
+            <div class="close" onclick="closeOverlay()" title="닫기"></div>
           </div>
-          <div class="program-box">
-            <div class="program-list type_traf">
-              <div class="desc">
-                <p><i>car</i>양구수목원 찾아오시는 길</p>
-                <div class="date-tbl">
-                  <div class="tbl-head">
-                    <div class="h-col">구분</div>
-                    <div class="h-col">경로</div>
-                  </div>
-                  <div class="tbl-body" id="nomalList">
-                    <div class="row">
-                      <div class="d-col type_b">
-                        <div class="col-txt">서울 방면</div>
-                      </div>
-                      <div class="d-col">
-                        <div class="col-txt">
-                          <span>서울</span>
-                          <span>춘천</span>
-                          <span>배후령</span>
-                          <span>양구송청삼거리</span>
-                          <span><em>양구수목원(151km, 2시간 소요)</em></span>
-                        </div>
-                        <div class="col-txt">
-                          <span>서울</span>
-                          <span>춘천(서울-춘천고속도로 경유)</span>
-                          <span>배후령</span>
-                          <span>양구송청삼거리</span>
-                          <span><em>양구수목원(147km, 1시간 40분 소요)</em></span>
-                        </div>
-                        <div class="col-txt">
-                          <span>서울</span>
-                          <span>양평</span>
-                          <span>홍천</span>
-                          <span>신남</span>
-                          <span>양구남면삼거리</span>
-                          <span><em>양구수목원(160km, 2시간 10분 소요)</em></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="d-col type_b">
-                        <div class="col-txt">부산 방면</div>
-                      </div>
-                      <div class="d-col">
-                        <div class="col-txt">
-                          <span>부산</span>
-                          <span>경부고속도로</span>
-                          <span>대구(금호분기점)</span>
-                          <span>홍천</span>
-                          <span>신남</span>
-                          <span>양구남면삼거리</span>
-                          <span><em>양구수목원(464km, 5시간 소요)</em></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="d-col type_b">
-                        <div class="col-txt">광주 방면</div>
-                      </div>
-                      <div class="d-col">
-                        <div class="col-txt">
-                          <span>부산</span>
-                          <span>경부고속도로</span>
-                          <span>대전(경부고속도로)</span>
-                          <span>중부고속도로</span>
-                          <span>영동고속도로(호법)</span>
-                          <span>중앙고속도로(원주)</span>
-                          <span>홍천</span>
-                          <span>신남</span>
-                          <span>양구남면삼거리</span>
-                          <span><em>양구수목원(488km, 5시간 30분 소요)</em></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="logo">
+            <img src="../images/image/ico_logo.svg">
+          </div>
+          <div class="body">
+            <div class="desc">
+              <div class="ellipsis">제주특별자치도<br>제주시 첨단로 242</div>
             </div>
           </div>
         </div>
+        <i></i>
       </div>
-    </section>
 
+    </section>
     <footer id="footer" class="footer">
       <div class="inner">
         <div class="container">
