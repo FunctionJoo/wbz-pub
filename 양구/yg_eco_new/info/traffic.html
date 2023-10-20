@@ -44,7 +44,7 @@
 <body>
   <div id="skip_navi"><a href="#content" title="본문 바로가기" tabindex="0">본문 바로가기</a></div>
   <div id="wrap">
-    <header id="header" class="">
+    <header id="header" class="m_on">
       <div class="inner">
         <button class="m_menu_close for_m" style="display: none;">close</button>
         <h1><a href="../main/main4.html" title="홈으로 이동" class="hf_d_1">양구수목원</a></h1>
@@ -301,7 +301,7 @@
     </div>
 
     <div class="main_section" id="content">
-      <div class="sub_line_bg bg_info">
+      <div class="sub_line_bg bg_info hide_m">
         <script>
           document.addEventListener('DOMContentLoaded', () => {
             setTimeout(function () { document.querySelector('.sub_line_bg .bg').classList.add('load'); }, 100);
@@ -309,9 +309,75 @@
         </script>
         <div class="w_set">
           <div class="bg">
-            <div class="img_ani"></div>
+            <div class="img_ani hide_m"></div>
           </div>
-          <div class="gradient"></div>
+          <div class="gradient hide_m"></div>
+          <h2 class="sub_title">교통안내</h2>
+          <div class="sub_nav">
+            <div class="sec_left focus_box">
+              <a href="#" title="홈으로 이동" class="type_ico sn_home focus_li">홈</a>
+              <div class="menu_select focus_box">
+                <button type="button" class="select_now focus_li">이용안내</button>
+                <div class="menu_select_space">
+                  <ul class="menu_select_list">
+                    <li><a href="#" title="이용안내 이동" class="focus_li">이용안내</a></li>
+                    <li><a href="#" title="이용안내2 이동" class="focus_li">이용안내2</a></li>
+                    <li><a href="#" title="이용안내3 이동" class="focus_li">이용안내3</a></li>
+                    <li><a href="#" title="이용안내4 이동" class="focus_li">이용안내4</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_select focus_box">
+                <button type="button" class="select_now focus_li">이용안내</button>
+                <div class="menu_select_space">
+                  <ul class="menu_select_list">
+                    <li><a href="#" title="이용안내 이동" class="focus_li">이용안내</a></li>
+                    <li><a href="#" title="이용안내2 이동" class="focus_li">이용안내2</a></li>
+                    <li><a href="#" title="이용안내3 이동" class="focus_li">이용안내3</a></li>
+                    <li><a href="#" title="이용안내4 이동" class="focus_li">이용안내4</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_select focus_box">
+                <button type="button" class="select_now focus_li">교통안내</button>
+                <div class="menu_select_space">
+                  <ul class="menu_select_list">
+                    <li><a href="#" title="교통안내 이동" class="focus_li">교통안내</a></li>
+                    <li><a href="#" title="교통안내2 이동" class="focus_li">교통안내2</a></li>
+                    <li><a href="#" title="교통안내3 이동" class="focus_li">교통안내3</a></li>
+                    <li><a href="#" title="교통안내4 이동" class="focus_li">교통안내4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <ul class="sec_right focus_box">
+              <li class="share_list">
+                <a href="#" title="현재 페이지 공유" class="type_ico sn_share focus_li share_open">공유</a>
+                <div class="share_layer">
+                  <button type="button" class="share_close">닫기</button>
+                  <a href="#" title="새창 이동" class="share_ico_1">페이스북</a>
+                  <a href="#" title="새창 이동" class="share_ico_2">카카오스토리</a>
+                  <a href="#" class="share_ico_3">URL</a>
+                </div>
+              </li>
+              <li class="for_pc"><a href="#" title="현재 페이지 프린트" class="type_ico sn_print focus_li">프린트</a></li>
+              <li class="for_m"><a href="#" title="이전 페이지로 이동" class="type_ico sn_back focus_li">뒤로가기</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_line_bg no_bg hide_pc">
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(function () { document.querySelector('.sub_line_bg .bg').classList.add('load'); }, 100);
+          })
+        </script>
+        <div class="w_set">
+          <div class="bg">
+            <div class="img_ani hide_m"></div>
+          </div>
+          <div class="gradient hide_m"></div>
           <h2 class="sub_title">교통안내</h2>
           <div class="sub_nav">
             <div class="sec_left focus_box">
@@ -389,7 +455,93 @@
         </div>
         <i></i>
       </div>
-
+      <div class="w_set">
+        <div class="program_wrap type_info">
+          <div class="program-box">
+            <div class="program-list type_traf">
+              <div class="desc">
+                <p><i>car</i>양구수목원 찾아오시는 길</p>
+                <div class="scroll-wrap">
+                  <div class="scroll">
+                    <div class="date-tbl">
+                      <div class="tbl-head">
+                        <div class="h-col type_s">구분</div>
+                        <div class="h-col type_no">경로</div>
+                      </div>
+                      <div class="tbl-body" id="nomalList">
+                        <div class="row type_no">
+                          <div class="d-col type_b">
+                            <div class="col-txt">서울 방면</div>
+                          </div>
+                          <div class="d-col">
+                            <div class="col-txt">
+                              <span>서울</span>
+                              <span>춘천</span>
+                              <span>배후령</span>
+                              <span>양구송청삼거리</span>
+                              <span><em>양구수목원(151km, 2시간 소요)</em></span>
+                            </div>
+                            <div class="col-txt">
+                              <span>서울</span>
+                              <span>춘천(서울-춘천고속도로 경유)</span>
+                              <span>배후령</span>
+                              <span>양구송청삼거리</span>
+                              <span><em>양구수목원(147km, 1시간 40분 소요)</em></span>
+                            </div>
+                            <div class="col-txt">
+                              <span>서울</span>
+                              <span>양평</span>
+                              <span>홍천</span>
+                              <span>신남</span>
+                              <span>양구남면삼거리</span>
+                              <span><em>양구수목원(160km, 2시간 10분 소요)</em></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row type_no">
+                          <div class="d-col type_b">
+                            <div class="col-txt">부산 방면</div>
+                          </div>
+                          <div class="d-col">
+                            <div class="col-txt">
+                              <span>부산</span>
+                              <span>경부고속도로</span>
+                              <span>대구(금호분기점)</span>
+                              <span>홍천</span>
+                              <span>신남</span>
+                              <span>양구남면삼거리</span>
+                              <span><em>양구수목원(464km, 5시간 소요)</em></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row type_no">
+                          <div class="d-col type_b">
+                            <div class="col-txt">광주 방면</div>
+                          </div>
+                          <div class="d-col">
+                            <div class="col-txt">
+                              <span>부산</span>
+                              <span>경부고속도로</span>
+                              <span>대전(경부고속도로)</span>
+                              <span>중부고속도로</span>
+                              <span>영동고속도로(호법)</span>
+                              <span>중앙고속도로(원주)</span>
+                              <span>홍천</span>
+                              <span>신남</span>
+                              <span>양구남면삼거리</span>
+                              <span><em>양구수목원(488km, 5시간 30분 소요)</em></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer id="footer" class="footer">
       <div class="inner">

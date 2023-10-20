@@ -44,7 +44,7 @@
 <body>
   <div id="skip_navi"><a href="#content" title="본문 바로가기" tabindex="0">본문 바로가기</a></div>
   <div id="wrap">
-    <header id="header" class="">
+    <header id="header" class="m_on">
       <div class="inner">
         <button class="m_menu_close for_m" style="display: none;">close</button>
         <h1><a href="../main/main4.html" title="홈으로 이동" class="hf_d_1">양구수목원</a></h1>
@@ -138,19 +138,19 @@
               </ul>
             </li>
             <!-- <li class="">
-                                <a href="javascript:;">내 정보</a>
-                                <ul class="depth1">
-                                    <li><a href="javascript:;">스탬프투어</a></li>
-                                    <li>
-                                        <a href="javascript:;">내 캐릭터 수집</a>
-                                        <ul class="depth2">
-                                            <li><a href="javascript:;">몬스터 감옥</a></li>
-                                            <li><a href="javascript:;">양구수호대</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:;">나의 문의</a></li>
-                                </ul>
-                            </li> -->
+              <a href="javascript:;">내 정보</a>
+              <ul class="depth1">
+                  <li><a href="javascript:;">스탬프투어</a></li>
+                  <li>
+                      <a href="javascript:;">내 캐릭터 수집</a>
+                      <ul class="depth2">
+                          <li><a href="javascript:;">몬스터 감옥</a></li>
+                          <li><a href="javascript:;">양구수호대</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="javascript:;">나의 문의</a></li>
+              </ul>
+          </li> -->
           </ul>
         </nav>
         <div class="util_menu">
@@ -165,6 +165,7 @@
         <button type="button" class="m_menu menu_trigger">메뉴열기</button>
       </div>
     </header>
+
     <aside id="side">
       <div class="side_header">
         <a href="#">로그인 해주세요</a>
@@ -364,12 +365,12 @@
           </div>
         </div>
       </div>
+
       <div class="sub_line_bg no_bg hide_pc">
         <div class="w_set">
           <div class="bg">
             <div class="img_ani"></div>
           </div>
-          <div class="gradient"></div>
           <h2 class="sub_title">입장안내</h2>
           <div class="sub_nav">
             <div class="sec_left focus_box">
@@ -476,7 +477,11 @@
                       <div class="tbl-body" id="nomalList">
                         <div class="row">
                           <div class="d-col">일반 관람객</div>
-                          <div class="d-col">
+                          <div class="d-col hide_pc">
+                            <div class="col-txt">일반(만19세 ~<br>만64세)</div>
+                            <div class="col-txt">청소년(만7세 ~<br>만18세)</div>
+                          </div>
+                          <div class="d-col hide_m">
                             <div class="col-txt">일반(만19세 ~ 만64세)</div>
                             <div class="col-txt">청소년(만7세 ~ 만18세)</div>
                           </div>
