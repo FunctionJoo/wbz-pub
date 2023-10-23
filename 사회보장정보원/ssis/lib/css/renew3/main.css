@@ -47,6 +47,7 @@ button {cursor: pointer;}
 .main_visual_bg .swiper-wrapper,
 .main_visual_bg .swiper-slide {height: 100%;}
 .main_visual_bg .swiper-slide {position: relative; display: flex; align-items: center;}
+.main_visual_bg .swiper-slide .bg .video_lay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; background: rgba(0,0,0,0.4)}
 .main_visual_bg .swiper-slide .bg img,
 .main_visual_bg .swiper-slide .bg video {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 .main_visual_bg .swiper-slide .area {position: relative; z-index: 2; display: flex;}
