@@ -128,7 +128,7 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 }
 
 /* 웹비즈 수정 231013 */
-#subVisual { height:130px; background:url(/images/renew3/common/back-hgroup-new.png) no-repeat center center; padding:55px 0 0; background-size:cover; border-bottom:1px solid #e3e3e3}
+#subVisual { height:130px; background:url(../../../images/renew3/common/back-hgroup-new.png) no-repeat center center; padding:55px 0 0; background-size:cover; border-bottom:1px solid #e3e3e3}
 #subVisual h3 { margin:0 auto; width:1400px} /* 웹비즈 수정 231017 */
 #subVisual h3 strong{ display:block; width:400px; font-size:36px; line-height:32px; color:#222; font-weight:700}
 .contentNav { 
@@ -615,6 +615,7 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	}
 	.subContent .search-word{
 		padding-left: 0;
+		max-width: 100%; /* 웹비즈 수정 231019 */
 		/* padding-bottom: 50px; 웹비즈 수정 231013 */ 
 	}
 	.contentNav{ margin-top:25px; font-size:14px; text-align:left}

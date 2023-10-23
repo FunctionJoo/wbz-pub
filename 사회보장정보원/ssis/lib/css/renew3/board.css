@@ -39,7 +39,7 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .board-search-box.mt0{margin-top: 0;} 
 .board-search-box{display: flex; align-items: center; justify-content: space-between; margin:65px 0 30px; }
 .board-search-box .amount{font-size: 16px;}
-.board-search-box .amount em{color: #2E6BD7; font-weight: 500;}
+.board-search-box .amount em{color: #2E6BD7; font-weight: 500;font-family: 'roboto';} /* 웹비즈 수정 231019 */
 .board-search-box form{flex: 1; text-align: right;}
 .board-search-box select{ width:100%; max-width:100px; height:48px; font-size:16px; border:1px solid #DBDBDB; border-radius: 6px; background-color:#fff; padding: 0 26px 0 12px; -o-appearance: none;	-webkit-appearance: none;	-moz-appearance: none; appearance: none; background: url(../../../images/renew3/common/ico_select_arrow.png) no-repeat right 12px center; background-size: 14px;}
 .board-search-box select::-ms-expand { display: none; }
@@ -379,7 +379,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-basic-gallery-con10 .gallery-info{ padding: 30px 0; min-height:118px}
 .bbs-basic-gallery-con10 .gallery-info .gallery-info-tit{ height:50px; line-height:24px; white-space: normal;    overflow: hidden;    display: -webkit-box;    -webkit-line-clamp: 2;    -webkit-box-orient: vertical;font-weight:400}
 .bbs-basic-gallery-con10 .gallery-info p{ font-size:14.5px; line-height: 22px; letter-spacing: -0.75px; color:#888; margin:10px 0; height:66px; overflow:hidden; text-overflow:ellipsis}
-.bbs-basic-gallery-con10 .gallery-info .gallery-date{ font-size:16px; line-height:16px; letter-spacing: 0px; color:#aaa; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;margin-top:10px;display:block}
+.bbs-basic-gallery-con10 .gallery-info .gallery-date{font-family: 'roboto'; font-size:16px; line-height:16px; letter-spacing: 0px; color:#aaa; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;margin-top:10px;display:block}
 
 /* 웹비즈 수정 231013_카드뉴스, 세미나포럼 */
 .bbs-basic-gallery-con10.cardnews  .gallery-info .gallery-info-tit{display: block; white-space: nowrap; text-overflow: ellipsis; height: auto;}
@@ -388,6 +388,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-basic-gallery-con10.forum .gallery-img-box .img-wrap{padding-bottom: 50%;}
 
 /* //웹비즈 수정 231013 */
+
+/* 웹비즈 수정 231019_연구보고서, 이슈페이퍼 */
+.bbs-basic-gallery-con10.type-row > ul{ margin:0; border-top: 1px solid #222222;}
+.bbs-basic-gallery-con10.type-row .gallery-over-list-item{float: none; width: 100%; margin: 0;display: flex;padding: 20px 0;border-bottom: 1px solid #DBDBDB;}
+
+.bbs-basic-gallery-con10.type-row .gallery-img-box{display: inline-block; width: 120px;}
+.bbs-basic-gallery-con10.type-row .gallery-img-box .img-wrap{padding-bottom: 75%;}
+
+.bbs-basic-gallery-con10.type-row .gallery-info{display: inline-block;vertical-align: top; padding: 0 0 0 25px;width: calc(100% - 250px);}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border: 1px solid #C6DAEF;border-radius: 6px;font-size: 14px; color: #2E6BD7;text-align: center;}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-tit{height: auto;padding-top: 4px;font-weight: 700;font-size: 20px;color: #303030;display: block;white-space: nowrap;text-overflow: ellipsis;}
+.bbs-basic-gallery-con10.type-row .gallery-info .report-num{display: block;font-size: 16px;color: #303030;padding-top: 46px;}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt span{display: inline-block;font-size: 16px;color: #303030;line-height: 24px;}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt .gallery-date{margin-top: 0; padding-left: 11px;margin-left: 10px;position: relative;vertical-align: middle;}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt .gallery-date::after{content: '';display: inline-block;width: 1px;height: 12px;background-color: #DBDBDB;position: absolute;left: 0;top: 4px;}
+
+.bbs-basic-gallery-con10.type-row .btn_download{margin-left: auto;margin-top: auto;border: 1px solid #203A91;width: 130px;height: 38px;line-height: 36px;cursor: pointer;}
+.bbs-basic-gallery-con10.type-row .btn_download span{color: #203A91;font-size: 16px;padding-right: 22px;background: url(../../../images/renew3/common/ico_download.png) no-repeat right 1px center; background-size: 12px 13px;}
+
+.bbs-basic-gallery-con10.type-row .issue-list .gallery-info .gallery-tag{border-color: #D6EFC8;color: #178217;}
+.bbs-basic-gallery-con10.type-row .issue-list .gallery-info-txt{padding-top: 76px;}
+
+/* 상세 */
+.bbs-view-tab .divide-flex{border-top: 1px solid #222222;padding-top: 20px;gap: 15px;}
+.bbs-view-tab .divide-left .image-box .image{width: 250px;padding-bottom: 139%;}
+.bbs-view-tab .bbs-view-wrap{position: relative;border: 1px solid #D0D0D0; padding: 30px; width: calc(100% - 265px);}
+.bbs-view-tab .bbs-view-wrap::after{content: '';width: 100%;height: 128px;background-color: #F5F8FA;position: absolute;left: 0;bottom: 0;}
+.bbs-view-tab .bbs-view-wrap .gallery-info{}
+.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border: 1px solid #C6DAEF;border-radius: 6px;font-size: 14px; color: #2E6BD7;text-align: center;}
+.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-tit{height: auto;padding-top: 14px;font-weight: 700;font-size: 20px;color: #303030;display: block;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.bbs-view-tab .bbs-view-wrap .gallery-info .report-num{display: block;font-size: 16px;color: #303030;padding-top: 30px;}
+.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt span{display: inline-block;font-size: 16px;color: #303030;line-height: 24px;}
+.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt .gallery-date{font-family: 'roboto'; margin-top: 0; padding-left: 11px;margin-left: 10px;position: relative;vertical-align: middle;}
+.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt .gallery-date::after{content: '';display: inline-block;width: 1px;height: 12px;background-color: #DBDBDB;position: absolute;left: 0;top: 5px;}
+
+.bbs-view-tab .tab-wrap{margin-top: 30px;}
+.bbs-view-tab .tab-wrap .tab-btn{font-size: 0;}
+.bbs-view-tab .tab-wrap .tab-btn .btn{width: 300px;height: 62px;line-height: 60px;font-size: 16px;background-color: #7C7F8E;border: 1px solid #7C7F8E;color: #fff;cursor: pointer;}
+.bbs-view-tab .tab-wrap .tab-btn .btn.on{background-color: #fff;border-color: #D0D0D0;border-top: 2px solid #091152;color: #303030;}
+.bbs-view-tab .tab-wrap .tab-cont .tab-box{display: none;}
+.bbs-view-tab .tab-wrap .tab-cont .tab-box.on{display: block;}
+.bbs-view-tab .tab-wrap .tab-cont .tab-box .txt-area{border: 2px dotted #C4C4C4;margin-top: 10px;padding: 30px;font-size: 17px;color: #303030;min-height: 354px;}
+.bbs-view-tab .tab-wrap .tab-cont .tab-box .attach-area{margin-top: 40px;padding: 13px;border: solid #DBDBDB;border-width: 1px 0;}
+.bbs-view-tab .tab-wrap .tab-cont .tab-box .attach-area li + li{margin-top: 6px;}
+.bbs-view-tab .tab-wrap .tab-cont .tab-box .attach-area li .attach{display: block;font-size: 16px;color: #303030;padding-left: 27px;background: url(../../../images/renew3/common/ico_view_attach.png) no-repeat left center;background-size: 19px auto;}
+
+.bbs-view-tab .cm-btn-controls{padding-top: 60px;}
+
+.bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-tag{border-color:#D6EFC8; color: #178217;}
+.bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-info-txt{padding-top: 62px;} 
+.bbs-view-tab.issue .tab-wrap .tab-btn .btn{cursor: initial;}
+
+/* //웹비즈 수정 231019_연구보고서, 이슈페이퍼 */
 
 /* 셀렉트박스 */
 .select_box span{ display:inline-block; color:#0059a5; font-weight:400; margin-right:5px}
@@ -408,7 +461,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .divide-flex{display: flex; margin-top: 65px; gap: 24px;}
 .divide-left{}
 .divide-left .image{position: relative;	width: 330px; height: 0; padding-bottom: 125%; overflow: hidden; background-color: #DBDBDB; background-repeat: no-repeat; background-size: cover;}
-.divide-left .image img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.divide-left .image img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
 .divide-right{margin-top: 0 !important;}
 
 .bbs-view-wrap{margin-top: 65px;}
@@ -469,14 +522,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 
 	/* 웹비즈 수정 231017_상세페이지 및 슬라이드 bbs-view-wrap */
 	.divide-flex{flex-direction: column; margin-top: 0;}
-	.divide-left .image{width: 100%;}
+	.divide-left .image{width: 100%;max-width: 400px;margin: 0 auto;padding-bottom: 75%;}
 
 	.bbs-view-wrap{margin-top: 0;}
 	
 	.bbs-view-wrap .bbs-view-cont{padding: 20px;}
+	.bbs-view-wrap .cm-btn-controls{padding-top: 30px;} /* 웹비즈 수정 231019 */
 
 	.view-slider .slider-single{padding: 0 30px;}
 	.view-slider .slider-single .slick-arrow{width: 26px;height: 26px; background-size: 13px;}
 
 	.view-slider .pagination{margin: 16px 0;font-size: 16px;}
+
+	/* 웹비즈 수정 231019_연구보고서, 이슈페이퍼 */
+	.bbs-basic-gallery-con10.type-row .gallery-over-list-item{flex-wrap: wrap;}
+
+	.bbs-basic-gallery-con10.type-row .gallery-img-box{width: 100%; max-width: 400px;margin: 0 auto;}
+	.bbs-basic-gallery-con10.type-row .gallery-img-box .img-wrap{padding-bottom: 75%;}
+
+	.bbs-basic-gallery-con10.type-row .gallery-info{padding: 16px 0 0;width: 100%;}
+	.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-tit{font-size: 16px;}
+	.bbs-basic-gallery-con10.type-row .gallery-info .report-num{display: block;font-size: 14px;color: #303030;padding-top: 8px;}
+	.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt{margin-top: 0;}
+	.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt span{font-size: 14px;line-height: 18px;}
+	
+	.bbs-basic-gallery-con10.type-row .btn_download{margin-left: 0;margin-top: 10px;width: 100px;height: 34px;line-height: 32px; }
+	.bbs-basic-gallery-con10.type-row .btn_download span{font-size: 14px;}
+	
+	.bbs-basic-gallery-con10.type-row .issue-list .gallery-info-txt{padding-top: 8px;}
+
+	/* 상세 */
+	.bbs-view-tab .divide-flex{border-top: 0;padding-top: 0;}
+	.bbs-view-tab .divide-left .image-box {max-width: 400px;margin: 0 auto;}
+	.bbs-view-tab .divide-left .image-box .image{width: 100%;max-width: 100%;padding-bottom: 100%;}
+	.bbs-view-tab .bbs-view-wrap{padding: 30px 16px; width: 100%;}
+	.bbs-view-tab .bbs-view-wrap::after{content: none;}
+	.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-tit{font-size: 16px;}
+	.bbs-view-tab .bbs-view-wrap .gallery-info .report-num{font-size: 14px;padding-top: 10px;}
+	.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt span{font-size: 14px;line-height: 18px;}
+	
+	.bbs-view-tab .tab-wrap .tab-btn{display: flex;}
+	.bbs-view-tab .tab-wrap .tab-btn .btn{flex:1;height: 48px;line-height: 46px;font-size: 16px;}
+	.bbs-view-tab .tab-wrap .tab-cont .tab-box .txt-area{border: 1px dashed #C4C4C4;padding: 16px;font-size: 14px;min-height: 300px;}
+	.bbs-view-tab .tab-wrap .tab-cont .tab-box .attach-area{margin-top: 20px;}
+	.bbs-view-tab .tab-wrap .tab-cont .tab-box .attach-area li + li{margin-top: 6px;}
+	.bbs-view-tab .tab-wrap .tab-cont .tab-box .attach-area li .attach{font-size: 14px;padding-left: 20px;background-size: 16px auto;}
+
+	.bbs-view-tab .cm-btn-controls{padding-top: 30px;}
+
+	.bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-info-txt{padding-top: 10px;} 
+
+	/* //웹비즈 수정 231019_연구보고서, 이슈페이퍼 */
 }

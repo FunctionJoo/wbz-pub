@@ -4,6 +4,16 @@
 @media all and (max-width:1024px) { 
 	/* 공통 :: SEARCH BOX */
 	.board-search-box{ margin-top:0}
+	/* 웹비즈 수정 231019 */
+	.board-search-box{ padding:15px 0; flex-direction: column-reverse; gap: 16px; align-items: flex-start; margin-bottom: 0;} /* 웹비즈 수정 231019 */
+	.board-search-box form{width: 100%; text-align: left;}
+	.board-search-box select{ width:30%}
+	.board-search-box select.half{ width:49%}
+	.board-search-box .search-word{ text-indent:4px} 
+	.board-search-box .search-word.half{ width:calc(100% - 40px)}
+	.board-search-box .bbs-search-input{display: inline-block; width: calc(100% - 114px);}
+	.board-search-box div { margin:0 auto; margin-top:10px;display:block}
+	/* 웹비즈 수정 231019 */
 }
 @media all and (max-width:800px) { 
 	/* 공통 :: 버튼  */
@@ -26,15 +36,6 @@
 }
 @media all and (max-width:660px) { 
 	/* 공통 :: SEARCH BOX */ 
-	/* 웹비즈 수정 231013 */
-	.board-search-box{ padding:15px; flex-direction: column-reverse; gap: 16px; align-items: flex-start; margin-bottom: 0;}
-	.board-search-box form{width: 100%; text-align: left;}
-	.board-search-box select{ width:30%}
-	.board-search-box select.half{ width:49%}
-	.board-search-box .search-word{ text-indent:4px} 
-	.board-search-box .search-word.half{ width:calc(100% - 40px)}
-	.board-search-box .bbs-search-input{display: inline-block; width: calc(100% - 114px);}
-	.board-search-box div { margin:0 auto; margin-top:10px;display:block}
 	/* 공통 :: PAGING */
 	.paging a{ margin:0 2px !important;}
 	/* 조직도 :: 조직검색 */
