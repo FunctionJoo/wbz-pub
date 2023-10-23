@@ -1158,7 +1158,7 @@ label.skip {
 
 .ame_list {
 	font-size: 0;
-	margin: -40px 0 0 -40px;
+	margin: 40px 0 0 -40px;
 	li {
 		display: inline-block;
 		vertical-align: top;
@@ -1214,13 +1214,31 @@ label.skip {
 @media (max-width: 768px) {
 	.ame_list {
 		font-size: 0;
-		margin: -20px 0 0 -20px;
+		margin: 20px 0 0 -12px;
 	}
 
 	.ame_list li {
 		display: inline-block;
 		vertical-align: top;
-		width: calc(50% - 20px);
-		margin: 20px 0 0 20px;
+		width: calc(50% - 12px);
+		margin: 36px 0 0 12px;
+		.title{
+			flex-direction:column;
+			justify-content: start;
+			align-items: start;
+			padding-top: 13px;
+			gap: 2px;
+			.tag{
+				border: 0;
+				min-width: auto;
+				padding: 0;
+				font-size: 13px;
+				line-height: 19px;
+				height: auto;
+			}
+			.name{
+				font-size: 16px;
+			}
+		}
 	}
 }

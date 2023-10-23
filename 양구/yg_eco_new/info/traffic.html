@@ -301,7 +301,7 @@
     </div>
 
     <div class="main_section" id="content">
-      <div class="sub_line_bg bg_info hide_m">
+      <div class="sub_line_bg bg_info">
         <script>
           document.addEventListener('DOMContentLoaded', () => {
             setTimeout(function () { document.querySelector('.sub_line_bg .bg').classList.add('load'); }, 100);
@@ -367,84 +367,43 @@
         </div>
       </div>
 
-      <div class="sub_line_bg no_bg hide_pc">
-        <script>
-          document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(function () { document.querySelector('.sub_line_bg .bg').classList.add('load'); }, 100);
-          })
-        </script>
-        <div class="w_set">
-          <div class="bg">
-            <div class="img_ani hide_m"></div>
-          </div>
-          <div class="gradient hide_m"></div>
-          <h2 class="sub_title">교통안내</h2>
-          <div class="sub_nav">
-            <div class="sec_left focus_box">
-              <a href="#" title="홈으로 이동" class="type_ico sn_home focus_li">홈</a>
-              <div class="menu_select focus_box">
-                <button type="button" class="select_now focus_li">이용안내</button>
-                <div class="menu_select_space">
-                  <ul class="menu_select_list">
-                    <li><a href="#" title="이용안내 이동" class="focus_li">이용안내</a></li>
-                    <li><a href="#" title="이용안내2 이동" class="focus_li">이용안내2</a></li>
-                    <li><a href="#" title="이용안내3 이동" class="focus_li">이용안내3</a></li>
-                    <li><a href="#" title="이용안내4 이동" class="focus_li">이용안내4</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="menu_select focus_box">
-                <button type="button" class="select_now focus_li">이용안내</button>
-                <div class="menu_select_space">
-                  <ul class="menu_select_list">
-                    <li><a href="#" title="이용안내 이동" class="focus_li">이용안내</a></li>
-                    <li><a href="#" title="이용안내2 이동" class="focus_li">이용안내2</a></li>
-                    <li><a href="#" title="이용안내3 이동" class="focus_li">이용안내3</a></li>
-                    <li><a href="#" title="이용안내4 이동" class="focus_li">이용안내4</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="menu_select focus_box">
-                <button type="button" class="select_now focus_li">교통안내</button>
-                <div class="menu_select_space">
-                  <ul class="menu_select_list">
-                    <li><a href="#" title="교통안내 이동" class="focus_li">교통안내</a></li>
-                    <li><a href="#" title="교통안내2 이동" class="focus_li">교통안내2</a></li>
-                    <li><a href="#" title="교통안내3 이동" class="focus_li">교통안내3</a></li>
-                    <li><a href="#" title="교통안내4 이동" class="focus_li">교통안내4</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <ul class="sec_right focus_box">
-              <li class="share_list">
-                <a href="#" title="현재 페이지 공유" class="type_ico sn_share focus_li share_open">공유</a>
-                <div class="share_layer">
-                  <button type="button" class="share_close">닫기</button>
-                  <a href="#" title="새창 이동" class="share_ico_1">페이스북</a>
-                  <a href="#" title="새창 이동" class="share_ico_2">카카오스토리</a>
-                  <a href="#" class="share_ico_3">URL</a>
-                </div>
-              </li>
-              <li class="for_pc"><a href="#" title="현재 페이지 프린트" class="type_ico sn_print focus_li">프린트</a></li>
-              <li class="for_m"><a href="#" title="이전 페이지로 이동" class="type_ico sn_back focus_li">뒤로가기</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <script>
+        // 모바일과 pc일때 맨 위 상단이미지 클래스 변경
+        document.addEventListener('DOMContentLoaded', function () {
+          const subLineBg = document.querySelector('.sub_line_bg.bg_info');
+          const gradientDiv = document.querySelector('.gradient');
+
+          function updateClassAndElementsBasedOnWidth() {
+            if (window.innerWidth < 1400) {
+              subLineBg.classList.remove('bg_info');
+              subLineBg.classList.add('no_bg');
+              gradientDiv.style.display = 'none';
+            } else {
+              subLineBg.classList.remove('no_bg');
+              subLineBg.classList.add('bg_info');
+              gradientDiv.style.display = 'block';
+            }
+          }
+
+          updateClassAndElementsBasedOnWidth();
+
+          window.addEventListener('resize', updateClassAndElementsBasedOnWidth);
+        });
+      </script>
     </div>
 
 
 
     <section id="content">
       <p class="skip_map blind"><a href="javascript:mapMove(0)">수목원 안내도 건너뛰기</a></p>
-      <div id="map" style="height:580px; background-color: antiquewhite;"></div>
-      <div class="wrap">
-        <div class="info type_tra">
+      <div id="map"></div>
+      <div class="wrap type_tra">
+        <div class="info">
           <div class="title">
-            <div class="close" onclick="closeOverlay()" title="닫기"></div>
+            <p class="hide_pc"><img src="../images/image/ico_logo.svg"></p>
+            <button type="button" class="close" onclick="closeOverlay()" title="닫기"></button>
           </div>
-          <div class="logo">
+          <div class="logo hide_m">
             <img src="../images/image/ico_logo.svg">
           </div>
           <div class="body">

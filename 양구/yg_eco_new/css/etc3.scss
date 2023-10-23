@@ -418,6 +418,8 @@
 					border-top: 1px solid #222222;
 					width: 100%;
 					.ag_input{
+						padding-bottom: 60px;
+						border-bottom: 1px solid #DDDDDD;
 						.ag_input_wrap{
 							margin-top: 20px;
 							&:nth-child(1){
@@ -1325,6 +1327,8 @@
 					.right{
 						border: 0;
 						.ag_input{
+							padding-bottom: 0;
+							border: 0;
 							.ag_input_wrap{
 								margin-top: 20px;
 								input{
@@ -1591,6 +1595,9 @@
 							.desc{
 								width: auto;
 								margin-top: 20px;
+								&.type_no{
+									margin-top: 0;
+								}
 								.date-tbl{
 									.tbl-head{
 										border-top: 1px solid #222;
@@ -1610,6 +1617,10 @@
 											&.type_no {
 													.d-col {
 														border-right: 0px;
+														&:nth-child(1) {
+																padding-left: 0px;
+																padding-top: 0px;
+															}
 														&.type_b {
 															width: 110px !important;
 														}
@@ -1641,10 +1652,17 @@
 									}
 								}
 							}
+							span{
+								font-size: 14px !important;
+							}
 							.tbl-txt{
 								font-size: 14px;
 								line-height: 20px;
-								>li{
+								li{
+									span{
+										font-size: 14px;
+
+									}
 									i{
 										margin-right: 8px;
 										margin-top: 9px;
@@ -1652,9 +1670,9 @@
 								}
 							}
 							p{
-								font-size: 14px;
-								line-height: 20px;
-								margin-top: 20px;
+								font-size: 14px !important;
+								line-height: 20px !important;
+								margin-top: 20px !important;
 							}
 						}
 						.program_complete{
@@ -1775,12 +1793,14 @@
 
 }
 
+//안내도 아래 마진 제거
 .footer{
 	&.type_mno{
 		margin-top: 0;
 	}
 }
 
+//숨김
 .blind {
 	display: block;
 	overflow: hidden;
@@ -1789,150 +1809,146 @@
 	left: 0;
 }
 
+//안내도 말풍선
+#map {
+	height: 580px;
+	background-color: antiquewhite;
+	background-image: url(../images/image/img_map.png);
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+}
 .wrap {
-	position: absolute;
+	position: relative;
 	z-index: 10;
 	left: 50%;
-	bottom: 100px;
-	width: 268px;
-	margin-left: -144px;
-	text-align: left;
-	overflow: hidden;
-	font-size: 12px;
-	line-height: 1.5;
+	top: -200px;
+	//조정 필요
+	width: 260px;
+	&.type_tra{
+		width: 232px;
+		.info{
+			height: auto;
+			overflow: auto;
+			.body{
+				justify-content: center;
+				.desc{
+					overflow: auto;
+					height: auto;
+					.ellipsis{
+						text-align: center;
+						font-size: 14px;
+						line-height: 19px;
+					}
+				}
+			}
+		}
+	}
 	.info {
-		width: 260px;
 		border-radius: 6px;
 		overflow: hidden;
 		background: #fff;
-		&.type_tra{
-			height: auto;
-			overflow: auto;
-			.desc{
-				margin: 0;
-				overflow: auto;
-				height: auto;
-				.ellipsis{
-					text-align: center;
-				}
+		padding: 14px;
+		.title {
+			display: flex;
+			justify-content: end;
+			align-items: end;
+			.close {
+				width: 8px;
+				height: 8px;
+				background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
+				background-size: 8px 8px;
+				cursor: pointer;
 			}
 		}
 		.logo{
-			margin: 0 auto;
 			display: flex;
-			align-items: center;
 			justify-content: center;
-			>img{
-				text-align: center;
-			}
-		}
-		&:nth-child(1) {
-			border: 0;
-		}
-		.title {
-			padding: 5px 0 0 10px;
-			height: 30px;
-			font-size: 18px;
-			font-weight: bold;
-		}
-		.close {
-			position: absolute;
-			top: 15px;
-			right: 20px;
-			color: #888;
-			width: 8px;
-			height: 8px;
-			background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
-			background-size: 8px 8px;
-		}
-		.close:hover {
-			cursor: pointer;
+			margin-bottom: 20px;
 		}
 		.body {
-			position: relative;
-			overflow: hidden;
-			margin: 14px;
-		}
-		.desc {
-			position: relative;
-			margin: 0 0 0 90px;
-			height: 80px;
-			.ellipsis {
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				color: #222222;
-				font-size: 16px;
-			}
-			.jibun {
-				font-size: 11px;
-				color: #888;
-				margin-top: -2px;
-			}
-		}
-		.img {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			width: 80px;
-			height: 80px;
-			border: 1px solid #ddd;
-			color: #888;
-			overflow: hidden;
-		}
-		.link {
-			color: #222222;
-			margin-top: 6px;
 			display: flex;
-			align-items: center;
-			&:after {
-					content: '';
-					display: inline-block;
-					width: 4px;
-					height: 9px;
-					background: url('../images/image/ico_arr6.svg');
-					background-size:4px 9px;
-					margin-left: 6px;
+			.img {
+				flex:0 0 auto;
+				width: 80px;
+				height: 80px;
+				border: 1px solid #ddd;
+			}
+			.desc {
+				margin-left: 10px;
+				max-width: 126px;
+				.ellipsis {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					color: #222222;
+					font-size: 16px;
+					font-weight: 500;
 				}
+				.link {
+					display: flex;
+					align-items: center;
+					margin-top: 6px;
+					color: #222222;
+					&:after {
+						content: '';
+						display: inline-block;
+						margin-left: 6px;
+						width: 4px;
+						height: 9px;
+						background: url('../images/image/ico_arr6.svg');
+						background-size: 4px 9px;
+					}
+				}
+			}
 		}
 	}
-	i {
+	i { // 말풍선 화살표
 		display: block;
 		margin: 0 auto;
 		width: 0;
 		height: 0;
 		border: 10px solid transparent;
-		border-bottom: 20px solid rgb(255, 255, 255);
+		border-bottom: 20px solid #ffffff;
 		transform: rotate(180deg);
-		}
-}
-.wrap * {
-	padding: 0;
-	margin: 0;
+	}
 }
 
-@media (max-width: 1400px) {
+@include mobile{
+	#map{
+		height: 360px;
+	}
 	.wrap{
-		width: 154px;
 		background-image: url(../images/image/ico_tell3.svg);
 		background-repeat: no-repeat;
+		max-width: 154px;
 		.info{
-			width: 154px;
-			height: 72px;
+				height: 70px;
+				padding: 10px 12px;
+			.title{
+				align-items: start;
+				justify-content: stretch;
+				padding-bottom: 8px;
+				p{
+					text-align: center;
+					flex: auto;
+					padding-right: 5px;
+				}
+			}
 			.desc{
 				padding: 0;
 				margin: 0 !important;
-				height: 72px;
 				.ellipsis {
 					font-size: 14px;
 					font-weight: 500;
 				}
-			}
-			.link{
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: 12px;
+				.link{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 12px;
+					padding-top: 7px;
+				}
 			}
 		}
 	}
