@@ -244,21 +244,29 @@ button {cursor: pointer;}
 .main_sec.sec_3 .area .area_btm {display: flex; justify-content: space-between; margin-top: 85px;}
 .main_sec.sec_3 .area .area_btm .sec1,
 .main_sec.sec_3 .area .area_btm .sec2 {width: calc(50% - 23px);}
+.mps_control {display: flex; align-items: center; margin: 0 15px 0 auto;}
+.mps_control button {margin-left: 8px; font-size: 0; width: 12px; height: 12px; background: #DDDDDD; border-radius: 6px; font-size: 0; transition: 0.3s;}
+.mps_control button:hover {background: #666666;}
+.mps_control button.is_act {width: 28px; background: #666666;}
 .main_portal_slide {height: 330px}
 .main_portal_slide .mps_li {display: flex;}
 /* .main_portal_slide .mps_li * {transition: 0.5s;} */
 .main_portal_slide .mps_li + .mps_li {margin-top: 10px;}
-.main_portal_slide .mps_li .portal_wrap {display: flex; align-items: center; width: 100%; height: 100%; border: 1px solid #D0D0D0; border-radius: 6px; background: #fff;}
+.main_portal_slide .mps_li .portal_wrap {display: flex; align-items: center; position: relative; width: 100%; height: 100%; border: 1px solid #D0D0D0; border-radius: 6px; background: #fff; overflow: hidden;}
+.main_portal_slide .mps_li .portal_wrap:before {content: ''; display: block; position: absolute; z-index: 1; width: 100%; height: 100%; background: transparent linear-gradient(98deg, #0053A4 0%, #0053A4 1%, #32846F 67%, #64B539 100%) 0% 0% no-repeat padding-box; opacity: 0; transition: 0.5s;}
+.main_portal_slide .mps_li .portal_wrap .pw_l,
+.main_portal_slide .mps_li .portal_wrap .pw_logo {position: relative; z-index: 2;}
 .main_portal_slide .mps_li .portal_wrap .pw_l {flex: 1 1 auto; padding-left: 26px;}
-.main_portal_slide .mps_li .portal_wrap .pw_l .pw_name {font-size: 22px; color: #000000; line-height: 1.5; font-family: 'Pretendard', 'Noto Sans KR', sans-serif;}
+.main_portal_slide .mps_li .portal_wrap .pw_l .pw_name {font-size: 22px; color: #000000; line-height: 1.5; font-family: 'Pretendard', 'Noto Sans KR', sans-serif; transition: color 0.5s;}
 .main_portal_slide .mps_li .portal_wrap .pw_l .pw_link {display: flex; padding-top: 0; height: 0; overflow: hidden; gap: 10px;}
 .main_portal_slide .mps_li .portal_wrap .pw_l .pw_link a {display: block; flex: 1; background: rgba(255,255,255,0.24); border-radius: 6px; font-size: 16px; color: #000000; line-height: 42px; text-align: center; padding: 4px;}
 .main_portal_slide .mps_li .portal_wrap .pw_l .pw_link a span {display: block; width: 100%; height: 100%; background: #fff; border-radius: 6px;}
 .main_portal_slide .mps_li .portal_wrap .pw_logo {width: 188px; height: 100%; display: flex; align-items: center; justify-content: center; padding: 10px 30px;}
 .main_portal_slide .mps_li .portal_wrap .pw_logo img {max-width: 100%; max-height: 100%; object-fit: contain;}
-.main_portal_slide .mps_li {height: 72px;}
+.main_portal_slide .mps_li {height: 72px; transition: 0.3s;}
 .main_portal_slide .mps_li.mps_active {height: 166px;}
-.main_portal_slide .mps_li.mps_active .portal_wrap {height: 100%; background: transparent linear-gradient(98deg, #0053A4 0%, #0053A4 1%, #32846F 67%, #64B539 100%) 0% 0% no-repeat padding-box; box-shadow: -3.35px 4px 21px #0000005C;}
+.main_portal_slide .mps_li.mps_active .portal_wrap {height: 100%; box-shadow: -3.35px 4px 21px #0000005C;}
+.main_portal_slide .mps_li.mps_active .portal_wrap:before {opacity: 1;}
 .main_portal_slide .mps_li.mps_active .portal_wrap .pw_name {font-size: 24px; color: #FFFFFF; font-weight: 700;}
 .main_portal_slide .mps_li.mps_active .portal_wrap .pw_link {margin-top: 28px; height: 50px;}
 
