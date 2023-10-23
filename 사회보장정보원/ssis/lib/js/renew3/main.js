@@ -63,6 +63,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		}
 	});
 
+	$('#sitemap-wrap h3').click(function() {
+		$('#sitemap-wrap .sitemap-box-inner .area.clearfix').removeClass('on');
+		$(this).closest('.area.clearfix').addClass('on');
+	});
+
 	// fullpage
 	$('#fullpage').fullpage({
 		sectionSelector: 'section',
@@ -99,6 +104,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		}
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
 
 function mainEventInit () {
 	// 메인 슬라이드 이벤트
@@ -190,23 +206,51 @@ function mainEventInit () {
 
 	// 주요 포털 사이트
 	// const swiperps = new Swiper('.main_portal_slide .swiper', {
-	// 	// direction: "vertical",
-	// 	slidesPerView: 'auto',
-	// 	spaceBetween: 10,
-	// 	centeredSlides: true,
-	// 	// loop: true,
+
 	// });
 
-	document.querySelectorAll('.mps_li').forEach((el) => {
-		el.addEventListener('mouseover', () => {
-			if (el.classList.contains('mps_active')) {
+	// document.querySelectorAll('.mps_li').forEach((el) => {
+	// 	el.addEventListener('mouseover', () => {
+	// 		if (el.classList.contains('mps_active')) {
+	// 			return false;
+	// 		} else {
+	// 			document.querySelector('.mps_active').classList.remove('mps_active');
+	// 			el.classList.add('mps_active');
+	// 		}
+	// 	})
+	// });
+
+	let mpsLen = document.querySelectorAll('.mps_wrap .mps_li').length;
+	let mpsBtnWrap = document.querySelector('.mps_control');
+	let lastidx = 0;
+	for (let i=0;i<mpsLen;i++) {
+		mpsBtnWrap.insertAdjacentHTML('beforeend' ,`
+			<button type="button" data-idx="${i}" class="mps_bul mpsb_${i}">${i}번째 슬라이드 이동</button>
+		`);
+	};
+	document.querySelectorAll('.mps_bul').forEach((el, idx_l) => {
+		if (idx_l == 0) {
+			el.classList.add('is_act');
+		}
+		el.addEventListener('click', function() {
+			let idx = Number(el.dataset.idx);
+			if (lastidx == idx) {
 				return false;
-			} else {
-				document.querySelector('.mps_active').classList.remove('mps_active');
-				el.classList.add('mps_active');
 			}
-		})
-	});
+			lastidx = idx;
+			document.querySelectorAll('.mps_li').forEach((el2, idx2) => {
+				if (idx2 == idx) {
+					document.querySelectorAll('.mps_bul')[idx2].classList.add('is_act');
+					el2.classList.add('mps_active');
+				} else {
+					document.querySelectorAll('.mps_bul')[idx2].classList.remove('is_act');
+					el2.classList.remove('mps_active');
+				}
+			});
+		});
+	})
+
+
 
 	// 알림존
 	const swipermn = new Swiper('.main_notice_slide .swiper', {

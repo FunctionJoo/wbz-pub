@@ -207,6 +207,8 @@ function checkHttps(){
 }
 
 function setSSL(onoff){
+	// 20231018 리다이렉트 해제 오류 많음...
+	return false;
 	var href = location.href;
 	//if(href.indexOf("http://dav.") == -1 && href.indexOf("http://127.") == -1){
 		if(onoff == "ON"){
