@@ -5,14 +5,14 @@
 	/* 공통 :: SEARCH BOX */
 	.board-search-box{ margin-top:0}
 	/* 웹비즈 수정 231019 */
-	.board-search-box{ padding:15px 0; flex-direction: column-reverse; gap: 16px; align-items: flex-start; margin-bottom: 0;} /* 웹비즈 수정 231019 */
-	.board-search-box form{width: 100%; text-align: left;}
-	.board-search-box select{ width:30%}
-	.board-search-box select.half{ width:49%}
-	.board-search-box .search-word{ text-indent:4px} 
-	.board-search-box .search-word.half{ width:calc(100% - 40px)}
-	.board-search-box .bbs-search-input{display: inline-block; width: calc(100% - 114px);}
-	.board-search-box div { margin:0 auto; margin-top:10px;display:block}
+	.board-search-box.renew{ padding:15px 0; flex-direction: column-reverse; gap: 16px; align-items: flex-start; margin-bottom: 0;} /* 웹비즈 수정 231019 */
+	.board-search-box.renew form{width: 100%; text-align: left;}
+	.board-search-box.renew select{ width:30%}
+	.board-search-box.renew select.half{ width:49%}
+	.board-search-box.renew .search-word{ text-indent:4px} 
+	.board-search-box.renew .search-word.half{ width:calc(100% - 40px)}
+	.board-search-box.renew .bbs-search-input{display: inline-block; width: calc(100% - 114px);}
+	.board-search-box.renew div { margin:0 auto; margin-top:10px;display:block}
 	/* 웹비즈 수정 231019 */
 }
 @media all and (max-width:800px) { 
@@ -28,7 +28,7 @@
 	/* 공통 :: SEARCH BOX */
 	.board-search-box select{ width:20%; font-size:14px}
 	.board-search-box .search-word{ font-size:14px}
-	.board-search-box .bbs-search-btn{ padding:0 10px;} /* 웹비즈 수정 231013 */
+	.board-search-box.renew .bbs-search-btn{ padding:0 10px;} /* 웹비즈 수정 231013 */
 	/* 공통 :: PAGING */
 	.paging{ margin:30px 0}
 	.paging a{ width:30px; height:30px; font-size:14px; line-height:28px}
