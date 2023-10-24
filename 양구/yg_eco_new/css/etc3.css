@@ -893,10 +893,11 @@
   display: inline-block;
   width: 27px;
   height: 29px;
+  flex: 0 0 auto;
 }
 #content .w_set .search_wrap .search > p {
   font-size: 30px;
-  line-height: 21px;
+  line-height: 41px;
 }
 #content .w_set .search_wrap .search > p span {
   color: #F68A53;
@@ -947,6 +948,67 @@
 #content .w_set .search_wrap .search-box + .search-box {
   border-top: 1px solid #DDDDDD;
   margin-top: 40px;
+}
+#content .w_set .login_inner {
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 210px 0 190px;
+  text-align: center;
+}
+#content .w_set .login_inner .ag_login .ag_tit {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 58px;
+}
+#content .w_set .login_inner .ag_login > p {
+  font-size: 16px;
+  margin-top: 12px;
+}
+#content .w_set .login_inner .ag_login .ag_cont {
+  margin-top: 59px;
+  padding: 60px 0 80px;
+  border-top: 1px dashed #666666;
+}
+#content .w_set .login_inner .ag_login .ag_cont .program_bottom .common_button {
+  width: 100% !important;
+  height: 50px;
+  line-height: 50px;
+  background-color: #FFD800;
+  color: #222222;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+}
+#content .w_set .login_inner .ag_login .ag_cont .program_bottom .common_button i {
+  flex: 0 0 auto;
+  display: inline-block;
+  font-size: 0;
+  background-image: url(../images/image/ico_kakao.png);
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 34px;
+}
+#content .w_set .login_inner .ag_login .ag_cont .program_bottom .common_button span {
+  flex: auto;
+  margin-right: 34px;
+}
+#content .w_set .login_inner .ag_login .ag_cont .program_bottom + .program_bottom {
+  margin-top: 12px;
+}
+#content .w_set .login_inner .ag_login .ag_cont .program_bottom + .program_bottom .common_button {
+  background-color: #1FBC02;
+  color: #fff;
+}
+#content .w_set .login_inner .ag_login .ag_cont .program_bottom + .program_bottom .common_button i {
+  background-image: url(../images/image/ico_naver.png);
+}
+#content .w_set .login_inner .ag_login .sub_txt {
+  font-size: 14px;
+  line-height: 22px;
+  color: #888888;
 }
 #content .program_wrap.type_info {
   margin-top: 40px;
@@ -1255,6 +1317,7 @@
   padding: 0 0 60px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #content .program_wrap.type_reserve .tab-menu button {
   text-align: left;
@@ -1262,6 +1325,7 @@
   display: inline-block;
   font-size: 25px;
   padding: 0 9px 0;
+  white-space: nowrap;
 }
 #content .program_wrap.type_reserve .tab-menu button:hover, #content .program_wrap.type_reserve .tab-menu button.selected {
   color: #F68A53;
@@ -1290,98 +1354,6 @@
 #content .program_wrap.type_reserve .complete_table {
   margin-top: 0px;
 }
-#content .login_inner {
-  max-width: 470px;
-  margin: 0 auto;
-  padding: 210px 0 190px;
-  text-align: center;
-}
-#content .login_inner .ag_login .ag_tit {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 58px;
-}
-#content .login_inner .ag_login > p {
-  font-size: 16px;
-  margin-top: 12px;
-}
-#content .login_inner .ag_login .ag_cont {
-  margin-top: 59px;
-  padding: 60px 0 80px;
-  border-top: 1px dashed #666666;
-}
-#content .login_inner .ag_login .ag_cont .program_bottom .common_button {
-  width: 100% !important;
-  height: 50px;
-  line-height: 50px;
-  background-color: #FFD800;
-  color: #222222;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  padding: 0 14px;
-}
-#content .login_inner .ag_login .ag_cont .program_bottom .common_button i {
-  flex: 0 0 auto;
-  display: inline-block;
-  font-size: 0;
-  background-image: url(../images/image/ico_kakao.png);
-  background-repeat: no-repeat;
-  width: 34px;
-  height: 34px;
-}
-#content .login_inner .ag_login .ag_cont .program_bottom .common_button span {
-  flex: auto;
-  margin-right: 34px;
-}
-#content .login_inner .ag_login .ag_cont .program_bottom + .program_bottom {
-  margin-top: 12px;
-}
-#content .login_inner .ag_login .ag_cont .program_bottom + .program_bottom .common_button {
-  background-color: #1FBC02;
-  color: #fff;
-}
-#content .login_inner .ag_login .ag_cont .program_bottom + .program_bottom .common_button i {
-  background-image: url(../images/image/ico_naver.png);
-}
-#content .login_inner .ag_login .sub_txt {
-  font-size: 14px;
-  line-height: 22px;
-  color: #888888;
-}
-
-.login_inner {
-  /*회원가입*/
-}
-.login_inner .mb_sub_txt {
-  padding-top: 40px;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.07px;
-  color: #333;
-  word-break: keep-all;
-  -ms-word-break: keep-all;
-}
-.login_inner .step_txt {
-  padding-top: 4px;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #222;
-}
-.login_inner.wide {
-  width: 540px;
-  padding-bottom: 101px;
-}
-.login_inner.wide .ag_cont .mb_input {
-  margin-top: -20px;
-}
-.login_inner.wide .ag_cont .mb_input .bm_input_wrap {
-  margin-top: 20px;
-}
-
 @media (max-width: 1400px) {
   .scroll-wrap {
     overflow-x: auto;
@@ -1799,6 +1771,31 @@
   }
   #content .w_set .program_wrap .traffic .traffic_map .location.on::before {
     content: url(../images/image/iimg_map2.svg);
+  }
+  #content .w_set .login_inner {
+    padding: 88px 0 60px;
+  }
+  #content .w_set .login_inner .ag_login .ag_tit {
+    justify-content: start;
+    font-size: 24px;
+    line-height: 35px;
+    height: 35px;
+  }
+  #content .w_set .login_inner .ag_login > p {
+    text-align: left;
+    color: #888888;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  #content .w_set .login_inner .ag_login .ag_cont {
+    margin-top: 36px;
+    padding-top: 36px;
+    padding-bottom: 250px;
+  }
+  #content .w_set .login_inner .ag_login .ag_cont .program_bottom .common_button span {
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
   }
   .common_button {
     width: 100% !important;

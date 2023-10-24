@@ -299,36 +299,10 @@
       </a>
     </div>
 
-    <div class="main_section" id="content">
-      <div class="sub_line_bg no_bg">
-        <div class="w_set">
-          <h2 class="sub_title">통합검색</h2>
-        </div>
+    <div class="sub_line_bg no_bg">
+      <div class="w_set">
+        <h2 class="sub_title">통합검색</h2>
       </div>
-
-      <script>
-        // 모바일과 pc일때 맨 위 상단이미지 클래스 변경
-        document.addEventListener('DOMContentLoaded', function () {
-          const subLineBg = document.querySelector('.sub_line_bg.bg_info');
-          const gradientDiv = document.querySelector('.gradient');
-
-          function updateClassAndElementsBasedOnWidth() {
-            if (window.innerWidth < 1400) {
-              subLineBg.classList.remove('bg_info');
-              subLineBg.classList.add('no_bg');
-              gradientDiv.style.display = 'none';
-            } else {
-              subLineBg.classList.remove('no_bg');
-              subLineBg.classList.add('bg_info');
-              gradientDiv.style.display = 'block';
-            }
-          }
-
-          updateClassAndElementsBasedOnWidth();
-
-          window.addEventListener('resize', updateClassAndElementsBasedOnWidth);
-        });
-      </script>
     </div>
 
     <section id="content">
