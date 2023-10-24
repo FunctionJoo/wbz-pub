@@ -128,7 +128,7 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 }
 
 /* 웹비즈 수정 231013 */
-#subVisual { height:130px; background:url(/images/renew3/common/back-hgroup-new.png) no-repeat center center; padding:55px 0 0; background-size:cover; border-bottom:1px solid #e3e3e3}
+#subVisual { height:130px; background:url(../../../images/renew3/common/back-hgroup-new.png) no-repeat center center; padding:55px 0 0; background-size:cover; border-bottom:1px solid #e3e3e3}
 #subVisual h3 { margin:0 auto; width:1400px} /* 웹비즈 수정 231017 */
 #subVisual h3 strong{ display:block; width:400px; font-size:36px; line-height:32px; color:#222; font-weight:700}
 .contentNav { 
@@ -615,6 +615,7 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 	}
 	.subContent .search-word{
 		padding-left: 0;
+		max-width: 100%; /* 웹비즈 수정 231019 */
 		/* padding-bottom: 50px; 웹비즈 수정 231013 */ 
 	}
 	.contentNav{ margin-top:25px; font-size:14px; text-align:left}
@@ -1714,3 +1715,17 @@ h4.total_style b { font-weight:600; color:#178217}
 	.sub-main .item-box .link-service li img{ width:50px}
 	.sub-main .item-box .link-service li strong{ font-size:15px}
 }
+
+
+/* 웹비즈 수정 231023_통합검색 추가 */
+.rebrowse_wrap .input_wrap{max-width: 640px;margin: 16px auto 0;}
+.rebrowse_wrap .input_wrap .checkbox input {overflow: hidden;position: absolute;width: 1px;height: 1px;margin: -1px;clip: rect(0 0 0 0);}
+.rebrowse_wrap .input_wrap .checkbox label {cursor: pointer;display: inline-block;position: relative;padding-left: 26px;font-size: 14px;color: #222;}
+.rebrowse_wrap .input_wrap .checkbox label:before {content: "";display: block;position: absolute;top: 50%;left: 0;transform: translateY(-50%);width: 16px;height: 16px;background: no-repeat center center;border: 1px solid #D3D3D3;border-radius: 2px;box-sizing: border-box;}
+.rebrowse_wrap .input_wrap .checkbox input:checked ~ label:before {border: 0 none;background-image: url(../../../images/renew3/common/ico_checkbox_on.png);background-size: 100% 100%;}
+
+.rebrowse_wrap .rebrowse_list{margin-top: 21px;}
+.rebrowse_wrap .rebrowse_list .word{font-size: 18px;color: #7B7B7B;display: inline-flex;align-items: center;}
+.rebrowse_wrap .rebrowse_list .word + .word{margin-left: 20px;}
+.rebrowse_wrap .rebrowse_list .word .delete{cursor: pointer;text-indent: -9999em;display: inline-block;width: 22px;height: 22px;background: url(../../../images/renew3/common/ico_rebrowse_delete.png) no-repeat center;margin-left: 6px;}
+/* //웹비즈 수정 231023_통합검색 추가 */
