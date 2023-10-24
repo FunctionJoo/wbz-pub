@@ -35,9 +35,14 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .paging a i.flo{ display: inline-block; letter-spacing: -12px;width:4px; font-size:17px}
 
 /* 공통 :: SEARCH BOX */
+/* 웹비즈 수정 231024 */
+.board-search-box form{ display:inline}
+.board-search-box{ text-align:center; background-color:#fbfbfb; margin-top:65px; padding:30px 0; border:1px solid #efefef}
+.board-search-box select{ width:20%; max-width:150px; height:40px; font-size:16px; border:1px solid #e3e3e3; background-color:#fff}
+
 /* 웹비즈 수정 231013 */
 .board-search-box.renew.mt0{margin-top: 0;} 
-.board-search-box.renew{display: flex; align-items: center; justify-content: space-between; margin:65px 0 30px; }
+.board-search-box.renew{display: flex; align-items: center; justify-content: space-between; margin:65px 0 30px;background-color: #fff;border: 0;padding: 0;}
 .board-search-box.renew .amount{font-size: 16px;}
 .board-search-box.renew .amount em{color: #2E6BD7; font-weight: 500;font-family: 'roboto';} /* 웹비즈 수정 231019 */
 .board-search-box.renew form{flex: 1; text-align: right;}
