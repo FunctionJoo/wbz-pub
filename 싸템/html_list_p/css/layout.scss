@@ -6,6 +6,7 @@
 body {overflow-x: hidden;}
 
 #header {
+	position: relative;
 	border-bottom: 1px solid $colorD;
 	.sec_top {
 		display: flex;
@@ -31,6 +32,7 @@ body {overflow-x: hidden;}
 						font-size: 18px;
 						font-weight: 900;
 						color: $point1;
+						font-family: $nunito;
 					}
 					.t3 {
 						font-size: 15px;
@@ -239,6 +241,7 @@ body {overflow-x: hidden;}
 			box-shadow: 0px 2px 5px #0000001A;
 			padding: 0 6px;
 			white-space: nowrap;
+			letter-spacing: -0.05em;
 			.text {display: inline-block;}
 			i {
 				display: inline-block;
@@ -256,9 +259,13 @@ body {overflow-x: hidden;}
 				margin-left: 2px;
 				font-size: 12px;
 				line-height: 24px;
+				letter-spacing: -0.03em;
 				.t_y {
-					font-weight: 500;
+					font-size: 13px;
+					font-weight: 600;
 					color: #FFF447;
+					font-family: $nunito;
+					letter-spacing: -0.01em;
 				}
 			}
 		}
@@ -267,6 +274,18 @@ body {overflow-x: hidden;}
 			display: flex;
 			align-items: top;
 			justify-content: center;
+			&:after {
+				content: '';
+				display: none;
+				position: absolute;
+				z-index: 4;
+				width: 100%;
+				height: 200px;
+				margin-top: 1px;
+				top: 100%;
+				left: 0;
+				background: #FFFFFF;
+			}
 			> li {
 				position: relative;
 				+ li {margin-left: 40px;}
@@ -286,7 +305,8 @@ body {overflow-x: hidden;}
 				.dep2 {
 					display: none;
 					position: absolute;
-					padding: 16px 0 24px;
+					z-index: 5;
+					padding: 16px 0 28px;
 					> li {
 						+ li {
 							margin-top: 14px;
@@ -305,6 +325,9 @@ body {overflow-x: hidden;}
 			}
 			&:hover {
 				.dep2 {
+					display: block;
+				}
+				&:after {
 					display: block;
 				}
 			}
@@ -356,8 +379,92 @@ body {overflow-x: hidden;}
 	.footer_top {
 		background: #eee;
 		height: 60px;
+		.ft_nav {
+			display: flex;
+			align-items: center;
+			gap: 37px;
+			height: 60px;
+			li {
+				a {
+					font-size: 14px;
+					color: $color6;
+					&.bold {
+						font-weight: 500;
+						color: $color3;
+					}
+				}
+			}
+		}
 	}
 	.footer_content {
-		height: 183px;
+		padding: 30px 0 45px;
+		.fc_cont {
+			display: flex;
+			.ft_logo {
+				margin: 6px 33px 0 0;
+			}
+			.ft_address {
+				overflow: hidden;
+				flex: 1;
+				ul {
+					margin: -6px 0 0 -13px;
+					font-size: 0;
+					li {
+						position: relative;
+						display: inline-block;
+						vertical-align: top;
+						margin: 6px 0 0 13px;
+						font-size: 13px;
+						color: $colorA;
+						&:before {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 50%;
+							left: -6px;
+							transform: translateY(-50%);
+							width: 1px;
+							height: 10px;
+							background: $colorA;
+						}
+						&.w100 {
+							width: 100%;
+						}
+					}
+				}
+			}
+			.ft_cs {
+				margin-left: auto;
+				color: $color6;
+				.fc_title {
+					font-size: 14px;
+				}
+				.fc_info {
+					display: flex;
+					align-items: center;
+					margin-top: 6px;
+					.fci_tel {
+						font-size: 38px;
+						font-weight: 700;
+					}
+					.fci_link {
+						display: block;
+						margin-left: 10px;
+						width: 86px;
+						height: 34px;
+						background: $color6;
+						color: #fff;
+						font-size: 14px;
+						font-weight: 300;
+						text-align: center;
+						line-height: 34px;
+					}
+				}
+				.fc_time {
+					margin-top: 10px;
+					font-size: 13px;
+				}
+			}
+		}
 	}
 }

@@ -1,4 +1,5 @@
-body {
+body,
+body * {
   font-family: "Noto Sans Kr", sans-serif;
 }
 
@@ -18,6 +19,14 @@ button {
   margin-right: auto !important;
 }
 
+@media (max-width: 1080px) {
+  .w_set {
+    width: auto;
+    max-width: 1080px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 .fc_p0 {
   color: #014099 !important;
 }
@@ -145,6 +154,9 @@ button {
 .label_t input:not([type=radio])::-moz-placeholder {
   color: #A7A7A7;
 }
+.label_t input:not([type=radio]):-ms-input-placeholder {
+  color: #A7A7A7;
+}
 .label_t input:not([type=radio])::placeholder {
   color: #A7A7A7;
 }
@@ -173,18 +185,30 @@ button {
   padding: 0 22px;
   height: 48px;
   background: #333333;
-  border: 0 none;
+  border: 1px solid #333333;
   border-radius: 3px;
   font-size: 16px;
   color: #FFFFFF;
   text-align: center;
-  line-height: 48px;
+  line-height: 46px;
 }
 .st_btn.size_b {
   width: 360px;
   height: 54px;
-  line-height: 54px;
+  line-height: 52px;
+}
+.st_btn.size_sml {
+  min-width: 76px;
+  height: 36px;
+  line-height: 34px;
+  padding: 0 12px;
+  font-size: 14px;
 }
 .st_btn.color_p {
   background-color: #014099;
 }
+.st_btn.color_pw {
+  background: #fff;
+  border-color: #014099;
+  color: #014099;
+}/*# sourceMappingURL=common.css.map */

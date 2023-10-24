@@ -641,6 +641,9 @@ label.skip {
 #sch_layer .sch_box .form_inner input[type=text]::-moz-placeholder {
   color: #fff;
 }
+#sch_layer .sch_box .form_inner input[type=text]:-ms-input-placeholder {
+  color: #fff;
+}
 #sch_layer .sch_box .form_inner input[type=text]::placeholder {
   color: #fff;
 }
@@ -814,7 +817,7 @@ label.skip {
     margin-top: 30px;
   }
   .board_top .bt_left,
-  .board_top .bt_right {
+.board_top .bt_right {
     width: 100%;
   }
   .board_top .m_hide {
@@ -828,7 +831,7 @@ label.skip {
     margin-left: 8px;
   }
   .board_top .bt_schbox .bt_select,
-  .board_top .bt_schbox .bt_sch {
+.board_top .bt_schbox .bt_sch {
     height: 42px;
     border: 1px solid #707070;
     border-radius: 6px;
@@ -992,7 +995,7 @@ label.skip {
     font-size: 17px;
   }
   #sch_layer .sch_box .form_inner input[type=submit],
-  #sch_layer .sch_box .form_inner button {
+#sch_layer .sch_box .form_inner button {
     right: 15px;
     transform: scale(0.5);
   }
@@ -1173,4 +1176,4 @@ label.skip {
   .ame_list li .title .name {
     font-size: 16px;
   }
-}
+}/*# sourceMappingURL=sub.css.map */

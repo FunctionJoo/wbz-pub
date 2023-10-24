@@ -1,0 +1,180 @@
+@charset "UTF-8";
+#chat {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#chat .chat_list .cl_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  padding: 12px 16px;
+}
+#chat .chat_list .cl_header .clh_name {
+  font-size: 16px;
+  color: #222222;
+  flex: 99;
+}
+#chat .chat_list .cl_header .clh_name .name {
+  font-weight: 500;
+}
+#chat .chat_list .cl_header .clh_right {
+  display: flex;
+  align-items: center;
+}
+#chat .chat_list .cl_header .clh_right .clh_d {
+  font-size: 14px;
+  color: #666666;
+}
+#chat .chat_list .cl_header .clh_right .clh_load {
+  margin-left: 10px;
+}
+#chat .chat_list .cl_body .clb_tab {
+  display: flex;
+}
+#chat .chat_list .cl_body .clb_tab .clbt_button {
+  flex: 1;
+  height: 60px;
+  border: 1px solid #D3D3D3;
+  font-size: 16px;
+  color: #222222;
+  background: #F5F6F7;
+}
+#chat .chat_list .cl_body .clb_tab .clbt_button + .clbt_button {
+  margin-left: -1px;
+}
+#chat .chat_list .cl_body .clb_tab .clbt_button.on {
+  position: relative;
+  z-index: 1;
+  border: 2px solid #014099;
+  background: #FFFFFF;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list:nth-child(2n) {
+  background: #F6F6F6;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag {
+  width: 76px;
+  height: 36px;
+  border: 1px solid #333333;
+  border-radius: 60px;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  line-height: 34px;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag.st0:after {
+  content: "거래불가";
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag.st1 {
+  border-color: #068C6C;
+  color: #068C6C;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag.st1:after {
+  content: "거래대기";
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag.st2 {
+  border-color: #FF9E4A;
+  color: #FF9E4A;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag.st2:after {
+  content: "거래중";
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag.st3 {
+  border-color: #007CEE;
+  color: #007CEE;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_tag.st3:after {
+  content: "거래완료";
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_mid {
+  flex: 99;
+  padding: 0 10px;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_mid .clt_tag {
+  font-size: 14px;
+  line-height: 20px;
+  max-height: 40px;
+  color: #222222;
+  overflow: hidden;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_right {
+  text-align: right;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_right .clr_date {
+  font-size: 12px;
+  color: #666666;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_right .clr_date .time {
+  font-family: "Nunito Sans", sans-serif;
+}
+#chat .chat_list .cl_body .clb_tab_wrap .tlbtw_cont .chat_list .cl_right .clr_count {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background: #014099;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 9px;
+  margin-top: 6px;
+  line-height: 18px;
+}
+#chat .chat_list .cl_search {
+  margin-top: 20px;
+}
+#chat .chat_list .cl_search .cls_form {
+  display: block;
+  position: relative;
+  width: 409px;
+  height: 36px;
+  padding-right: 56px;
+  border: 1px solid #113462;
+  margin: 0 auto;
+}
+#chat .chat_list .cl_search .cls_form input[type=text] {
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+  padding: 0 10px;
+  font-size: 14px;
+}
+#chat .chat_list .cl_search .cls_form input[type=text]::-moz-placeholder {
+  color: #A7A7A7;
+}
+#chat .chat_list .cl_search .cls_form input[type=text]:-ms-input-placeholder {
+  color: #A7A7A7;
+}
+#chat .chat_list .cl_search .cls_form input[type=text]::placeholder {
+  color: #A7A7A7;
+}
+#chat .chat_list .cl_search .cls_form button,
+#chat .chat_list .cl_search .cls_form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 100%;
+  background: #113462;
+  border: 0 none;
+  font-size: 14px;
+  color: #fff;
+}
+#chat .chat_list .cl_page {
+  display: flex;
+  align-items: center;
+}
+#chat .chat_list .cl_page .arr {
+  font-size: 0;
+}
+#chat .chat_list .cl_page .clp_num {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}/*# sourceMappingURL=chat.css.map */

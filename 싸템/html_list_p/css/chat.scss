@@ -1,0 +1,180 @@
+@import 'utility.scss';
+
+#chat {
+	max-width: 800px;
+	margin: 0 auto;
+	.chat_list {
+		.cl_header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			min-height: 60px;
+			padding: 12px 16px;
+			.clh_name {
+				font-size: 16px;
+				color: $color2;
+				flex: 99;
+				.name {
+					font-weight: 500;
+				}
+			}
+			.clh_right {
+				display: flex;
+				align-items: center;
+				.clh_d {
+					font-size: 14px;
+					color: $color6;
+				}
+				.clh_load {
+					margin-left: 10px;
+				}
+			}
+		}
+		.cl_body {
+			.clb_tab {
+				display: flex;
+				.clbt_button {
+					flex: 1;
+					height: 60px;
+					border: 1px solid $colorD;
+					font-size: 16px;
+					color: $color2;
+					background: #F5F6F7;
+					+ .clbt_button {
+						margin-left: -1px;
+					}
+					&.on {
+						position: relative;
+						z-index: 1;
+						border: 2px solid $point0;
+						background: $colorF;
+					}
+				}
+			}
+			.clb_tab_wrap {
+				.tlbtw_cont {
+					.chat_list {
+						display: flex;
+						align-items: center;
+						padding: 20px 15px;
+						&:nth-child(2n) {
+							background: $colorF6;
+						}
+						.cl_tag {
+							width: 76px;
+							height: 36px;
+							border: 1px solid $color3;
+							border-radius: 60px;
+							font-size: 14px;
+							color: $color3;
+							text-align: center;
+							line-height: 34px;
+							&.st0 {
+								&:after {content: '거래불가';}
+							}
+							&.st1 {
+								border-color: $chat1;
+								color: $chat1;
+								&:after {content: '거래대기';}
+							}
+							&.st2 {
+								border-color: $chat2;
+								color: $chat2;
+								&:after {content: '거래중';}
+							}
+							&.st3 {
+								border-color: $chat3;
+								color: $chat3;
+								&:after {content: '거래완료';}
+							}
+						}
+						.cl_mid {
+							flex: 99;
+							padding: 0 10px;
+							.clt_tag {
+								font-size: 14px;
+								line-height: 20px;
+								max-height: 40px;
+								color: $color2;
+								overflow: hidden;
+							}
+						}
+						.cl_right {
+							text-align: right;
+							.clr_date {
+								font-size: 12px;
+								color: $color6;
+								.time {
+									font-family: $nunito;
+								}
+							}
+							.clr_count {
+								display: inline-block;
+								vertical-align: top;
+								min-width: 18px;
+								height: 18px;
+								padding: 0 5px;
+								background: $point0;
+								color: #fff;
+								font-size: 13px;
+								font-family: $nunito;
+								border-radius: 9px;
+								margin-top: 6px;
+								line-height: 18px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.cl_search {
+			margin-top: 20px;
+			.cls_form {
+				display: block;
+				position: relative;
+				width: 409px;
+				height: 36px;
+				padding-right: 56px;
+				border: 1px solid $point1;
+				margin: 0 auto;
+				input[type="text"] {
+					width: 100%;
+					height: 100%;
+					border: 0 none;
+					padding: 0 10px;
+					font-size: 14px;
+					&::placeholder {
+						color: $colorA;
+					}
+				}
+				button,
+				input[type="submit"] {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 56px;
+					height: 100%;
+					background: $point1;
+					border: 0 none;
+					font-size: 14px;
+					color: #fff;
+				}
+			}
+		}
+		.cl_page {
+			display: flex;
+			align-items: center;
+			.arr {
+				font-size: 0;
+			}
+			.clp_num {
+				display: flex;
+				align-items: center;
+				gap: 4px;
+			}
+			.num {
+				// 내 일 ㄱ
+			}
+		}
+	}
+}

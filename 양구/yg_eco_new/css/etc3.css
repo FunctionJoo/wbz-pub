@@ -161,6 +161,9 @@
 .ag_input_wrap input[type=text]::-moz-placeholder, .ag_input_wrap input[type=number]::-moz-placeholder, .ag_input_wrap input[type=email]::-moz-placeholder, .ag_input_wrap input[type=tel]::-moz-placeholder, .ag_input_wrap input[type=date]::-moz-placeholder, .ag_input_wrap input[type=password]::-moz-placeholder, .ag_input_wrap textarea::-moz-placeholder, .ag_input_wrap select::-moz-placeholder {
   color: #666666;
 }
+.ag_input_wrap input[type=text]:-ms-input-placeholder, .ag_input_wrap input[type=number]:-ms-input-placeholder, .ag_input_wrap input[type=email]:-ms-input-placeholder, .ag_input_wrap input[type=tel]:-ms-input-placeholder, .ag_input_wrap input[type=date]:-ms-input-placeholder, .ag_input_wrap input[type=password]:-ms-input-placeholder, .ag_input_wrap textarea:-ms-input-placeholder, .ag_input_wrap select:-ms-input-placeholder {
+  color: #666666;
+}
 .ag_input_wrap input[type=text]::placeholder, .ag_input_wrap input[type=number]::placeholder, .ag_input_wrap input[type=email]::placeholder, .ag_input_wrap input[type=tel]::placeholder, .ag_input_wrap input[type=date]::placeholder, .ag_input_wrap input[type=password]::placeholder, .ag_input_wrap textarea::placeholder, .ag_input_wrap select::placeholder {
   color: #666666;
 }
@@ -245,6 +248,17 @@
 }
 .ag_notice_txt .chk_area input[type=checkbox]:checked + .chk .ico_chk {
   background-image: url(../images/image/ico_chk01.svg);
+}
+
+@-webkit-keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
 }
 
 @keyframes rotate360 {
@@ -822,7 +836,8 @@
   z-index: -1;
 }
 #content .w_set .archive .archive_cont .archive_right .effect img {
-  animation: rotate360 5s linear infinite;
+  -webkit-animation: rotate360 5s linear infinite;
+          animation: rotate360 5s linear infinite;
 }
 #content .w_set .slider {
   display: flex;
@@ -2018,4 +2033,4 @@
     font-size: 12px;
     padding-top: 7px;
   }
-}
+}/*# sourceMappingURL=etc3.css.map */
