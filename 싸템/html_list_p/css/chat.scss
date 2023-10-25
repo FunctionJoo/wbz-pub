@@ -1,7 +1,11 @@
 @import 'utility.scss';
 
 #chat {
+
+	border: 1px solid $test-color;
+
 	max-width: 800px;
+	height: 800px;
 	margin: 0 auto;
 	.chat_list {
 		.cl_header {
@@ -164,8 +168,27 @@
 		.cl_page {
 			display: flex;
 			align-items: center;
+			justify-content: center;
+			gap: 2px;
+			margin-top: 30px;
 			.arr {
+				display: block;
 				font-size: 0;
+				width: 15px;
+				height: 30px;
+				background: no-repeat top 55% center;
+				&.first {
+					background-image: url('../images/common/page_first.svg');
+				}
+				&.prev {
+					background-image: url('../images/common/page_prev.svg');
+				}
+				&.next {
+					background-image: url('../images/common/page_next.svg');
+				}
+				&.last {
+					background-image: url('../images/common/page_last.svg');
+				}
 			}
 			.clp_num {
 				display: flex;
@@ -173,7 +196,155 @@
 				gap: 4px;
 			}
 			.num {
-				// 내 일 ㄱ
+				width: 30px;
+				height: 30px;
+				border-radius: 15px;
+				text-align: center;
+				line-height: 30px;
+				color: $color6;
+				&.on {
+					color: #fff;
+					background: $color4;
+				}
+			}
+		}
+	}
+	.chat_view {
+		height: 100%;
+		.chat_view_main {
+			height: 100%;
+		}
+	}
+}
+
+#chatBox {
+	background: #ABC0D1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.chat_messege_list {
+		flex: 1;
+		@include scroll;
+		max-height: calc(100% - 50px);
+		padding: 0 15px;
+		.notice_list {
+			background: #fff;
+			border: 1px solid $point0;
+			border-radius: 3px;
+			padding: 10px 15px;
+			margin: 20px 0;
+		}
+		.date_list {
+			overflow: hidden;
+			text-align: center;
+			margin: 20px 0 26px;
+			.datebox {
+				position: relative;
+				display: inline-block;
+				margin: 0 auto;
+				font-size: 12px;
+				font-family: $nunito;
+				color: $color6;
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					top: calc(50% - 1px);
+					display: block;
+					width: 50vw;
+					height: 1px;
+					background: $color6;
+					opacity: 0.4;
+				}
+				&:before {
+					right: calc(100% + 6px);
+				}
+				&:after {
+					left: calc(100% + 6px);
+				}
+			}
+		}
+		.cml_list {
+			display: flex;
+			align-items: flex-end;
+			margin: 20px 0;
+			.txtbox {
+				max-width: calc(100% - 150px);
+				padding: 10px 15px;
+				margin-bottom: 1px;
+				background: #fff;
+				border-radius: 3px;
+				box-shadow: 0px 2px 2px #00000029;
+			}
+			.otherbox {
+				flex: 1;
+				padding: 0 6px;
+				font-family: $nunito;
+				font-size: 12px;
+				color: $color6;
+				.countbox {
+					display: block;
+					color: #FCEC33;
+					font-weight: 300;
+					text-shadow: 0px 1px 1px #00000029;
+				}
+				.timebox {
+					display: block;
+				}
+			}
+			&.t_r {
+				justify-content: flex-end;
+				.txtbox {
+					order: 2;
+					background-color: #FEE932;
+				}
+				.otherbox {
+					order: 1;
+					text-align: right;
+				}
+			}
+		}
+	}
+	.chat_messege_auto {
+
+	}
+	.chat_messege_send {
+		.cms_form {
+			display: flex;
+			position: relative;
+			background: #fff;
+			min-height: 50px;
+			.cms_txt {
+				width: calc(100% - 50px);
+				border: 0 none;
+				padding: 15px 50px 15px 15px;
+				font-size: 14px;
+				line-height: 20px;
+				outline: 0 none;
+				min-height: 50px;
+				max-height: 200px;
+				@include scroll;
+			}
+			.cms_file {
+				position: absolute;
+				top: 50%;
+				margin-top: -25px;
+				right: 70px;
+				width: 50px;
+				height: 50px;
+				overflow: hidden;
+				background: url('../images/common/i_file.svg') no-repeat center center;
+				cursor: pointer;
+				input {
+					opacity: 0;
+				}
+			}
+			.cms_send {
+				width: 70px;
+				background: #FFEC42;
+				border: 0 none;
+				font-size: 16px;
+				color: $color2;
 			}
 		}
 	}
