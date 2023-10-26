@@ -1224,13 +1224,14 @@ label.skip {
 		display: inline-block;
 		vertical-align: top;
 		width: calc(50% - 12px);
-		margin: 36px 0 0 12px;
+		margin: 26px 0 0 12px;
 		.title{
 			flex-direction:column;
 			justify-content: start;
 			align-items: start;
 			padding-top: 13px;
 			gap: 2px;
+			line-height: 24px;
 			.tag{
 				border: 0;
 				min-width: auto;
