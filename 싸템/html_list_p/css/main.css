@@ -2,6 +2,13 @@
   position: relative;
   padding-top: 42px;
 }
+#main .main_title {
+  font-size: 24px;
+  color: #222222;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
 #main .main_gradient {
   position: absolute;
   z-index: 1;
@@ -33,3 +40,58 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+#main .main_sec.div2 {
+  display: flex;
+  justify-content: space-between;
+}
+#main .main_sec .divide {
+  width: calc(50% - 20px);
+}
+#main .main_sec.sec_1 {
+  margin-top: 100px;
+}
+#main .main_sec .benefit_banner {
+  display: flex;
+  gap: 34px 38px;
+  flex-wrap: wrap;
+}
+#main .main_sec .benefit_banner .banner_list {
+  display: block;
+  width: calc(50% - 19px);
+  height: 160px;
+  padding: 15px 14px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: no-repeat right bottom;
+}
+#main .main_sec .benefit_banner .banner_list .t1 {
+  font-size: 16px;
+}
+#main .main_sec .benefit_banner .banner_list .t2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+#main .main_sec .benefit_banner .banner_list.t1 {
+  background: url("../images/main/mbb1.svg") no-repeat right 9px bottom 12px #EFF3FA;
+}
+#main .main_sec .benefit_banner .banner_list.t1 .t1 {
+  color: #033893;
+}
+#main .main_sec .benefit_banner .banner_list.t2 {
+  background: url("../images/main/mbb2.png") no-repeat right 15px bottom 17px #FCEDF4;
+}
+#main .main_sec .benefit_banner .banner_list.t2 .t1 {
+  color: #AB1854;
+}
+#main .main_sec .benefit_banner .banner_list.t3 {
+  background: url("../images/main/mbb3.png") no-repeat right 14px bottom 8px #F4F8E1;
+}
+#main .main_sec .benefit_banner .banner_list.t3 .t1 {
+  color: #277939;
+}
+#main .main_sec .benefit_banner .banner_list.t4 {
+  background: url("../images/main/mbb4.png") no-repeat right 0 bottom 0 #FCF1CD;
+}
+#main .main_sec .benefit_banner .banner_list.t4 .t1 {
+  color: #A44923;
+}/*# sourceMappingURL=main.css.map */

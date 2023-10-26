@@ -3,6 +3,13 @@
 #main {
 	position: relative;
 	padding-top: 42px;
+	.main_title {
+		font-size: 24px;
+		color: $color2;
+		font-weight: 500;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
 	.main_gradient {
 		position: absolute;
 		z-index: 1;
@@ -25,6 +32,69 @@
 				border-radius: 8px;
 				@include imgBoxPx(390px);
 			}
+		}
+	}
+
+	.main_sec {
+		&.div2 {
+			display: flex;
+			justify-content: space-between;
+		}
+		.divide {
+			width: calc(50% - 20px);
+		}
+		&.sec_1 {
+			margin-top: 100px;
+		}
+
+		.benefit_banner {
+			display: flex;
+			gap: 34px 38px;
+			flex-wrap: wrap;
+			.banner_list {
+				display: block;
+				width: calc(50% - 19px);
+				height: 160px;
+				padding: 15px 14px;
+				border-radius: 4px;
+				overflow: hidden;
+				background: no-repeat right bottom;
+				.t1 {
+					font-size: 16px;
+				}
+				.t2 {
+					font-size: 18px;
+					font-weight: 500;
+				}
+				&.t1 {
+					background: url('../images/main/mbb1.svg') no-repeat right 9px bottom 12px #EFF3FA;
+					.t1 {
+						color: #033893;
+					}
+				}
+				&.t2 {
+					background: url('../images/main/mbb2.png') no-repeat right 15px bottom 17px #FCEDF4;
+					.t1 {
+						color: #AB1854;
+					}
+				}
+				&.t3 {
+					background: url('../images/main/mbb3.png') no-repeat right 14px bottom 8px #F4F8E1;
+					.t1 {
+						color: #277939;
+					}
+				}
+				&.t4 {
+					background: url('../images/main/mbb4.png') no-repeat right 0 bottom 0 #FCF1CD;
+					.t1 {
+						color: #A44923;
+					}
+				}
+			}
+		}
+
+		.guide_banner {
+
 		}
 	}
 }

@@ -7,6 +7,7 @@ body {
 }
 
 #header {
+  position: relative;
   border-bottom: 1px solid #D3D3D3;
 }
 #header .sec_top {
@@ -37,6 +38,7 @@ body {
   font-size: 18px;
   font-weight: 900;
   color: #113462;
+  font-family: "Nunito Sans", sans-serif;
 }
 #header .sec_top .logo a .logo_txt .t3 {
   font-size: 15px;
@@ -72,6 +74,9 @@ body {
   font-size: 16px;
 }
 #header .sec_top .header_search .search_bar .sec_ipt input::-moz-placeholder {
+  color: #A7A7A7;
+}
+#header .sec_top .header_search .search_bar .sec_ipt input:-ms-input-placeholder {
   color: #A7A7A7;
 }
 #header .sec_top .header_search .search_bar .sec_ipt input::placeholder {
@@ -273,6 +278,7 @@ body {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1019607843);
   padding: 0 6px;
   white-space: nowrap;
+  letter-spacing: -0.05em;
 }
 #header .sec_bottom .chat_list_btn .text {
   display: inline-block;
@@ -293,16 +299,32 @@ body {
   margin-left: 2px;
   font-size: 12px;
   line-height: 24px;
+  letter-spacing: -0.03em;
 }
 #header .sec_bottom .chat_list_btn .new_laert .t_y {
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   color: #FFF447;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: -0.01em;
 }
 #header .sec_bottom .header_menu {
   flex-grow: 1;
   display: flex;
   align-items: top;
   justify-content: center;
+}
+#header .sec_bottom .header_menu:after {
+  content: "";
+  display: none;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 200px;
+  margin-top: 1px;
+  top: 100%;
+  left: 0;
+  background: #FFFFFF;
 }
 #header .sec_bottom .header_menu > li {
   position: relative;
@@ -325,7 +347,8 @@ body {
 #header .sec_bottom .header_menu > li .dep2 {
   display: none;
   position: absolute;
-  padding: 16px 0 24px;
+  z-index: 5;
+  padding: 16px 0 28px;
 }
 #header .sec_bottom .header_menu > li .dep2 > li + li {
   margin-top: 14px;
@@ -340,6 +363,9 @@ body {
   color: #222222;
 }
 #header .sec_bottom .header_menu:hover .dep2 {
+  display: block;
+}
+#header .sec_bottom .header_menu:hover:after {
   display: block;
 }
 #header .sec_bottom .header_login {
@@ -389,6 +415,88 @@ body {
   background: #eee;
   height: 60px;
 }
-#footer .footer_content {
-  height: 183px;
+#footer .footer_top .ft_nav {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  height: 60px;
 }
+#footer .footer_top .ft_nav li a {
+  font-size: 14px;
+  color: #666666;
+}
+#footer .footer_top .ft_nav li a.bold {
+  font-weight: 500;
+  color: #333333;
+}
+#footer .footer_content {
+  padding: 30px 0 45px;
+}
+#footer .footer_content .fc_cont {
+  display: flex;
+}
+#footer .footer_content .fc_cont .ft_logo {
+  margin: 6px 33px 0 0;
+}
+#footer .footer_content .fc_cont .ft_address {
+  overflow: hidden;
+  flex: 1;
+}
+#footer .footer_content .fc_cont .ft_address ul {
+  margin: -6px 0 0 -13px;
+  font-size: 0;
+}
+#footer .footer_content .fc_cont .ft_address ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0 0 13px;
+  font-size: 13px;
+  color: #A7A7A7;
+}
+#footer .footer_content .fc_cont .ft_address ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background: #A7A7A7;
+}
+#footer .footer_content .fc_cont .ft_address ul li.w100 {
+  width: 100%;
+}
+#footer .footer_content .fc_cont .ft_cs {
+  margin-left: auto;
+  color: #666666;
+}
+#footer .footer_content .fc_cont .ft_cs .fc_title {
+  font-size: 14px;
+}
+#footer .footer_content .fc_cont .ft_cs .fc_info {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+#footer .footer_content .fc_cont .ft_cs .fc_info .fci_tel {
+  font-size: 38px;
+  font-weight: 700;
+}
+#footer .footer_content .fc_cont .ft_cs .fc_info .fci_link {
+  display: block;
+  margin-left: 10px;
+  width: 86px;
+  height: 34px;
+  background: #666666;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 34px;
+}
+#footer .footer_content .fc_cont .ft_cs .fc_time {
+  margin-top: 10px;
+  font-size: 13px;
+}/*# sourceMappingURL=layout.css.map */
