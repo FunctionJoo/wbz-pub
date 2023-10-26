@@ -161,9 +161,6 @@
 .ag_input_wrap input[type=text]::-moz-placeholder, .ag_input_wrap input[type=number]::-moz-placeholder, .ag_input_wrap input[type=email]::-moz-placeholder, .ag_input_wrap input[type=tel]::-moz-placeholder, .ag_input_wrap input[type=date]::-moz-placeholder, .ag_input_wrap input[type=password]::-moz-placeholder, .ag_input_wrap textarea::-moz-placeholder, .ag_input_wrap select::-moz-placeholder {
   color: #666666;
 }
-.ag_input_wrap input[type=text]:-ms-input-placeholder, .ag_input_wrap input[type=number]:-ms-input-placeholder, .ag_input_wrap input[type=email]:-ms-input-placeholder, .ag_input_wrap input[type=tel]:-ms-input-placeholder, .ag_input_wrap input[type=date]:-ms-input-placeholder, .ag_input_wrap input[type=password]:-ms-input-placeholder, .ag_input_wrap textarea:-ms-input-placeholder, .ag_input_wrap select:-ms-input-placeholder {
-  color: #666666;
-}
 .ag_input_wrap input[type=text]::placeholder, .ag_input_wrap input[type=number]::placeholder, .ag_input_wrap input[type=email]::placeholder, .ag_input_wrap input[type=tel]::placeholder, .ag_input_wrap input[type=date]::placeholder, .ag_input_wrap input[type=password]::placeholder, .ag_input_wrap textarea::placeholder, .ag_input_wrap select::placeholder {
   color: #666666;
 }
@@ -248,17 +245,6 @@
 }
 .ag_notice_txt .chk_area input[type=checkbox]:checked + .chk .ico_chk {
   background-image: url(../images/image/ico_chk01.svg);
-}
-
-@-webkit-keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-    transform-origin: center center;
-  }
-  to {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
 }
 
 @keyframes rotate360 {
@@ -1328,57 +1314,8 @@
   color: #E4585A;
   font-weight: 400;
 }
-#content .program_wrap.type_reserve .tab-menu {
-  padding: 0 0 60px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-#content .program_wrap.type_reserve .tab-menu button {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  padding: 0 9px 0;
-}
-#content .program_wrap.type_reserve .tab-menu button:hover, #content .program_wrap.type_reserve .tab-menu button.selected {
-  color: #F68A53;
-  position: relative;
-}
-#content .program_wrap.type_reserve .tab-menu button:hover::after, #content .program_wrap.type_reserve .tab-menu button.selected::after {
-  content: "";
-  width: 136px;
-  text-align: center;
-  height: 2px;
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#content .program_wrap.type_reserve .tab-menu button i {
-  display: block;
-  background-image: url(../images/image/img_res_g.png);
-  width: 80px;
-  height: 80px;
-}
-#content .program_wrap.type_reserve .tab-menu button i.type_y {
-  background-image: url(../images/image/img_res_y.png);
-}
-#content .program_wrap.type_reserve .tab-menu button i.type_b {
-  background-image: url(../images/image/img_res_b.png);
-}
-#content .program_wrap.type_reserve .tab-menu button i.type_r {
-  background-image: url(../images/image/img_res_r.png);
-}
-#content .program_wrap.type_reserve .tab-menu button > span {
-  white-space: nowrap;
-  text-align: left;
-  list-style: none;
-  font-size: 25px;
-}
-#content .program_wrap.type_reserve .tab-menu button > span strong {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
+#content .program_wrap.type_reserve {
+  margin-top: 48px;
 }
 #content .program_wrap.type_reserve > p {
   font-size: 18px;
@@ -1388,6 +1325,7 @@
 #content .program_wrap.type_reserve .complete_table {
   margin-top: 0px;
 }
+
 @media (max-width: 1400px) {
   .scroll-wrap {
     overflow-x: auto;
@@ -2052,4 +1990,4 @@
     font-size: 12px;
     padding-top: 7px;
   }
-}/*# sourceMappingURL=etc3.css.map */
+}

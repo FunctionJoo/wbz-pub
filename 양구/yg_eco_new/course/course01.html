@@ -10,7 +10,7 @@
     <meta name="author" content="양구수목원">
     <meta name="description" content="양구수목원, 수목원, dmz야생동물생태관, dmz야생화분재원, 양구수목원야간개장, 국토정중앙, 양구여행">
     <meta name="keywords" content="양구수목원, 수목원, dmz야생동물생태관, dmz야생화분재원, 양구수목원야간개장, 국토정중앙, 양구여행">
-    
+
     <title>양구수목원 &gt; 추천코스 </title>
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
@@ -27,7 +27,7 @@
     <!-- swiper css,js -->
     <!-- <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <script src="../js/swiper-bundle.min.js"></script> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -75,13 +75,13 @@
                                 <li>
                                     <a href="javascript:;">완주코스</a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="javascript:;">핵심코스</a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="javascript:;">어린이체험코스</a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="javascript:;">힐링코스</a>
                                 </li>
                             </ul>
@@ -399,15 +399,15 @@
                     </div>
                     <div class="map-img">
                         <img id="mutiMap01" src="../images/sub/img_course_01.png" alt="1. 구상나무 모롱잇길 → 7. 수목원 연구동 → 10. 피크닉 광장 → 11. 초롱다리 → 12. 음지식물원 → 13. 무장애 나눔길 → 16. 야생화정원 → 22. DMZ 야생화 분재원 → 23. DMZ 야생동물 생태관 → 24. 목재문화체험관" onerror="this.src='/asset/images/img_noimage.png'">
-                   </div>
+                    </div>
                 </div>
                 <div class="trace_wrap">
                     <div class="w_set">
                         <span class="tit">코스 동선</span>
                         <div class="course_img">
-							<p class="blind">구상나무 모롱잇길 - 수목원 연구동 - 피크닉 광장 - 초롱다리 - 음지식물원 - 무장애 나눔길 - 야생화정원 - DMZ 야생화 분재원 - DMZ 야생동물 생태관 - 목재문화체험관</p>
-						</div>
-                    </div>                    
+                            <p class="blind">구상나무 모롱잇길 - 수목원 연구동 - 피크닉 광장 - 초롱다리 - 음지식물원 - 무장애 나눔길 - 야생화정원 - DMZ 야생화 분재원 - DMZ 야생동물 생태관 - 목재문화체험관</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="w_set">
                     <div class="image_view">
@@ -503,7 +503,7 @@
                         </div>
                         <div class="right">
                             <!-- <a href="javascript:;" class="wa"><img src="../images/main/wa.gif" alt="웹접근성인증" width="100px"></a> -->
-                            <div class="family_site" >
+                            <div class="family_site">
                                 <button type="button" class="btn_drop">Family site</button>
                                 <ul class="site_list" style="display: none;">
                                     <li><a href="javascript:;" title="새창 이동">관련 사이트</a></li>
@@ -528,13 +528,13 @@
         </footer>
 
         <!-- 추천코스 팝업 -->
-		<div class="wbz-popup-cont is-template type_swiper" id="swiperPopup">
-			<div class="popup-header">
-				<b class="popup-title"></b>
-				<button class="popup-close popup-close-just" onclick="$popup.close()">close</button>
-			</div>
-			<div class="popup-cont">
-				<div class="recommend_image_slide">
+        <div class="wbz-popup-cont is-template type_swiper" id="swiperPopup">
+            <div class="popup-header">
+                <b class="popup-title"></b>
+                <button class="popup-close popup-close-just" onclick="$popup.close()">close</button>
+            </div>
+            <div class="popup-cont">
+                <div class="recommend_image_slide">
                     <div class="swiper_navi">
                         <button class="swiper_button swiper_prev" type="button">이전</button>
                         <button class="swiper_button swiper_next" type="button">다음</button>
@@ -577,31 +577,31 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-			</div>
-		</div>
-		<!-- //추천코스 팝업 -->
+            </div>
+        </div>
+        <!-- //추천코스 팝업 -->
     </div>
     <script>
         // map-box 클래스 찾아서 지도 줌인,줌아웃 처리하기 / 이미지 모두 로딩 후 실행되어야 함 (kskang)
-        jQuery.event.add(window,"load",function(){
+        jQuery.event.add(window, "load", function () {
             var imgTag = [];
             var zoomInBtn = [];
             var zoomOutBtn = [];
             var imgWidth = [];
             var imgHeight = [];
 
-            $(".map-box").each(function(index,element){
+            $(".map-box").each(function (index, element) {
                 var el = $(element);
                 imgTag[index] = el.find('img');
                 zoomInBtn[index] = el.find('.zoomin');
                 zoomOutBtn[index] = el.find('.zoomout');
                 imgWidth[index] = imgTag[index][0].naturalWidth;
                 imgHeight[index] = imgTag[index][0].naturalHeight;
-                
+
                 $(zoomInBtn[index]).append("<span class='blind'>확대</span>");
                 $(zoomOutBtn[index]).append("<span class='blind'>축소</span>");
 
-                imgTag[index].each(function() {
+                imgTag[index].each(function () {
 
                     // 이미지 확대 배수, 포지션, 줌버튼 유무 값을 받아옴
                     var scaleVal = imgTag[index].attr('data-scale') ? imgTag[index].attr('data-scale') : 1;
@@ -610,86 +610,87 @@
                     var zoomBtnHidden = imgTag[index].attr('data-btn-hidden');
 
                     imgTag[index].guillotine({
-                        width: imgWidth[index], 
+                        width: imgWidth[index],
                         height: imgHeight[index],
                         eventOnChange: 'guillotinechange',
-                        init: { scale: scaleVal, angle: 0, x: xPosVal, y:yPosVal, },
-                        onChange:function(){
+                        init: { scale: scaleVal, angle: 0, x: xPosVal, y: yPosVal, },
+                        onChange: function () {
                             console.log(imgTag[index].guillotine('getData'));
                         }
-                    });			
+                    });
 
                     zoomShow();
-                    
-                    $(window).resize(function(){
+
+                    $(window).resize(function () {
                         zoomShow();
                     })
-                    
-                    function zoomShow(){
-                        if($(window).width() > 768){// PC
-                            if(zoomBtnHidden == 'true'){// 줌버튼 없음
+
+                    function zoomShow() {
+                        if ($(window).width() > 768) {// PC
+                            if (zoomBtnHidden == 'true') {// 줌버튼 없음
                                 $(zoomInBtn[index]).hide();
                                 $(zoomOutBtn[index]).hide();
-                            } else{// 줌버튼 있음
+                            } else {// 줌버튼 있음
                                 zoomEvt();
                             }
-                        } else{// MOB - 모바일에서는 줌버튼 항상 보임
+                        } else {// MOB - 모바일에서는 줌버튼 항상 보임
                             $(zoomInBtn[index]).show();
                             $(zoomOutBtn[index]).show();
                             zoomEvt();
                         }
                     }
-                    function zoomBtnChk(){ //줌버튼 disabled 체크
-                        if(imgTag[index].guillotine('getData').scale == 1){
+                    function zoomBtnChk() { //줌버튼 disabled 체크
+                        if (imgTag[index].guillotine('getData').scale == 1) {
                             $(zoomOutBtn[index]).attr('disabled', true);
                             $(zoomInBtn[index]).attr('disabled', false);
-                        } else if(imgTag[index].guillotine('getData').scale > 2.5){
+                        } else if (imgTag[index].guillotine('getData').scale > 2.5) {
                             $(zoomOutBtn[index]).attr('disabled', false);
                             $(zoomInBtn[index]).attr('disabled', true);
-                        } else{
+                        } else {
                             $(zoomOutBtn[index]).attr('disabled', false);
                             $(zoomInBtn[index]).attr('disabled', false);
                         }
                     }
 
-                    function zoomEvt(){//줌이벤트
+                    function zoomEvt() {//줌이벤트
                         // ZOOM IN/OUT 3배수까지 가능하도록 처리
-                        if(zoomOutBtn[index] && zoomInBtn[index]){
-                            
+                        if (zoomOutBtn[index] && zoomInBtn[index]) {
+
                             zoomBtnChk();
 
-                            $(zoomInBtn[index]).click(function(){
+                            $(zoomInBtn[index]).click(function () {
                                 imgTag[index].guillotine('zoomIn');
                                 zoomBtnChk(index);
                             });
 
-                            $(zoomOutBtn[index]).click(function(){
+                            $(zoomOutBtn[index]).click(function () {
                                 imgTag[index].guillotine('zoomOut');
                                 zoomBtnChk(index);
                             });
                         }
                     }
-                });	
-            });	   
-            
+                });
+            });
+
         });
     </script>
-    <script>       
+    <script>
         // 팝업 슬라이드
         const swiperReviews = new Swiper('.recommend_image_slide .swiper', {
-			slidesPerView: 1,
-			loop: true,
-			speed: 800,
-			navigation: {
-				prevEl: '.recommend_image_slide .swiper_navi .swiper_prev',
-				nextEl: '.recommend_image_slide .swiper_navi .swiper_next',
-			},
+            slidesPerView: 1,
+            loop: true,
+            speed: 800,
+            navigation: {
+                prevEl: '.recommend_image_slide .swiper_navi .swiper_prev',
+                nextEl: '.recommend_image_slide .swiper_navi .swiper_next',
+            },
             pagination: {
                 el: '.swiper-pagination',
                 type: 'fraction',
             },
-		});
+        });
     </script>
 
 </body>
+
 </html>

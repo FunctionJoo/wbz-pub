@@ -1413,62 +1413,7 @@
 			font-weight: 400;
 		}
 		&.type_reserve{
-
-			.tab-menu {
-					padding: 0 0 60px;
-					display: flex;
-					justify-content: space-between;
-					flex-wrap: wrap;
-					button {
-						display: flex;
-						gap: 20px;
-						align-items: center;
-						padding: 0 9px 0;
-						&:hover,
-						&.selected {
-							color: #F68A53;
-							position: relative;
-						}
-						&:hover::after,
-						&.selected::after {
-							content: "";
-							width: 136px;
-							text-align: center;
-							height: 2px;
-							position: absolute;
-							bottom: -1px;
-							left: 50%;
-							transform: translateX(-50%);
-						}
-						i{
-							display: block;
-							background-image: url(../images/image/img_res_g.png);
-							width: 80px;
-							height: 80px;
-							&.type_y{
-								background-image: url(../images/image/img_res_y.png);
-							}
-							&.type_b {
-								background-image: url(../images/image/img_res_b.png);
-							}
-							&.type_r {
-								background-image: url(../images/image/img_res_r.png);
-							}
-
-						}
-						>span{
-							white-space: nowrap;
-							text-align: left;
-							list-style: none;
-							font-size: 25px;
-							strong{
-								display: block;
-								font-size: 16px;
-								margin-bottom: 8px;
-							}
-						}
-					}
-				}
+			margin-top: 48px;
 			&>p{
 				font-size: 18px;
 				font-weight: 600;
@@ -1476,10 +1421,6 @@
 			}
 			.complete_table{
 				margin-top: 0px;
-				li{
-					.tit{
-					}
-				}
 			}
 		}
 	}
