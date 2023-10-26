@@ -669,6 +669,11 @@
 						width: 100%;
 						.archive_list{
 							margin-top: 80px;
+							ul{
+								li{
+									width: calc(50% - 20px);
+								}
+							}
 						}
 						.archive_top{
 							.bt_sch{
@@ -790,9 +795,9 @@
 					position: absolute;
 					z-index: -2;
 					background-color: #F6FAF9;
-					width: 42%;
-					height: 1004px;
-					top:650px;
+					width: 40%;
+					height: 1114px;
+					top:80px;
 					right: 0px;
 				}
 				.archive_right{
@@ -883,7 +888,7 @@
 						top: -150px;
 						z-index: -1;
 						img{
-							animation: rotate360 5s linear infinite;
+							animation: rotate360 20s linear infinite;
 						}
 					}
 				}
@@ -953,6 +958,8 @@
 				padding-bottom: 60px;
 				border-bottom: 1px solid #222;
 				gap: 17px;
+				font-size: 30px;
+				line-height: 41px;
 				i{
 					font-size: 0;
 					background-image: url(../images/image/ico_search.svg);
@@ -961,13 +968,9 @@
 					height: 29px;
 					flex: 0 0 auto;
 				}
-				>p{
-					font-size: 30px;
-					line-height: 41px;
-					span{
-						color: #F68A53;
-						font-weight: 600;
-					}
+				span{
+					color: #F68A53;
+					font-weight: 600;
 				}
 			}
 			.search-box{
@@ -984,7 +987,7 @@
 					}
 					>span{
 						font-size: 16px;
-						em{
+						strong{
 							color: #F68A53;
 						}
 					}
@@ -1417,10 +1420,9 @@
 					justify-content: space-between;
 					flex-wrap: wrap;
 					button {
-						text-align: left;
-						list-style: none;
-						display: inline-block;
-						font-size: 25px;
+						display: flex;
+						gap: 20px;
+						align-items: center;
 						padding: 0 9px 0;
 						&:hover,
 						&.selected {
@@ -1438,11 +1440,32 @@
 							left: 50%;
 							transform: translateX(-50%);
 						}
-						white-space: nowrap;
-						span{
-							font-size: 16px;
+						i{
 							display: block;
-							line-height: 20px;
+							background-image: url(../images/image/img_res_g.png);
+							width: 80px;
+							height: 80px;
+							&.type_y{
+								background-image: url(../images/image/img_res_y.png);
+							}
+							&.type_b {
+								background-image: url(../images/image/img_res_b.png);
+							}
+							&.type_r {
+								background-image: url(../images/image/img_res_r.png);
+							}
+
+						}
+						>span{
+							white-space: nowrap;
+							text-align: left;
+							list-style: none;
+							font-size: 25px;
+							strong{
+								display: block;
+								font-size: 16px;
+								margin-bottom: 8px;
+							}
 						}
 					}
 				}
@@ -2061,7 +2084,6 @@
 			}
 		}
 	}
-
 }
 
 //안내도 아래 마진 제거

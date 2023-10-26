@@ -32,6 +32,9 @@ label.skip {
 .sub_line_bg.bg_info .bg .img_ani {
   background-image: url("../images/sub/bg_info.png");
 }
+.sub_line_bg.bg_info .bg .img_ani.tomato {
+  background-image: url("../images/sub/img_tomato.png");
+}
 .sub_line_bg.bg_05 .bg .img_ani {
   background-image: url("../images/sub/sub_nav_5.png");
 }
@@ -1172,5 +1175,14 @@ label.skip {
   }
   .ame_list li .title .name {
     font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .ame_list {
+    margin: -20px 0 0 0;
+  }
+  .ame_list li {
+    width: 100% !important;
+    margin: 20px 0;
   }
 }

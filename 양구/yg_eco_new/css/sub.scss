@@ -32,6 +32,9 @@ label.skip {
 	padding: 90px 0 80px;
 	&.bg_info .bg .img_ani {
 		background-image: url('../images/sub/bg_info.png');
+		&.tomato {
+			background-image: url('../images/sub/img_tomato.png');
+		}
 	}
 	&.bg_05 .bg .img_ani {
 		background-image: url('../images/sub/sub_nav_5.png');
@@ -1239,6 +1242,15 @@ label.skip {
 			.name{
 				font-size: 16px;
 			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.ame_list {
+		margin: -20px 0 0 0;
+		li {
+			width: 100% !important;
+			margin: 20px 0;
 		}
 	}
 }

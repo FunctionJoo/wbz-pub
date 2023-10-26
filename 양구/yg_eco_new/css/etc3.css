@@ -625,6 +625,9 @@
 #content .w_set .archive .archive_cont.type_center .archive_left .archive_list {
   margin-top: 80px;
 }
+#content .w_set .archive .archive_cont.type_center .archive_left .archive_list ul li {
+  width: calc(50% - 20px);
+}
 #content .w_set .archive .archive_cont.type_center .archive_left .archive_top .bt_sch {
   height: 62px;
 }
@@ -737,9 +740,9 @@
   position: absolute;
   z-index: -2;
   background-color: #F6FAF9;
-  width: 42%;
-  height: 1004px;
-  top: 650px;
+  width: 40%;
+  height: 1114px;
+  top: 80px;
   right: 0px;
 }
 #content .w_set .archive .archive_cont .archive_right {
@@ -822,7 +825,7 @@
   z-index: -1;
 }
 #content .w_set .archive .archive_cont .archive_right .effect img {
-  animation: rotate360 5s linear infinite;
+  animation: rotate360 20s linear infinite;
 }
 #content .w_set .slider {
   display: flex;
@@ -886,6 +889,8 @@
   padding-bottom: 60px;
   border-bottom: 1px solid #222;
   gap: 17px;
+  font-size: 30px;
+  line-height: 41px;
 }
 #content .w_set .search_wrap .search i {
   font-size: 0;
@@ -895,11 +900,7 @@
   height: 29px;
   flex: 0 0 auto;
 }
-#content .w_set .search_wrap .search > p {
-  font-size: 30px;
-  line-height: 41px;
-}
-#content .w_set .search_wrap .search > p span {
+#content .w_set .search_wrap .search span {
   color: #F68A53;
   font-weight: 600;
 }
@@ -920,7 +921,7 @@
 #content .w_set .search_wrap .search-box .search-list > span {
   font-size: 16px;
 }
-#content .w_set .search_wrap .search-box .search-list > span em {
+#content .w_set .search_wrap .search-box .search-list > span strong {
   color: #F68A53;
 }
 #content .w_set .search_wrap .search-box .desc li .tit {
@@ -1320,12 +1321,10 @@
   flex-wrap: wrap;
 }
 #content .program_wrap.type_reserve .tab-menu button {
-  text-align: left;
-  list-style: none;
-  display: inline-block;
-  font-size: 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
   padding: 0 9px 0;
-  white-space: nowrap;
 }
 #content .program_wrap.type_reserve .tab-menu button:hover, #content .program_wrap.type_reserve .tab-menu button.selected {
   color: #F68A53;
@@ -1341,10 +1340,31 @@
   left: 50%;
   transform: translateX(-50%);
 }
-#content .program_wrap.type_reserve .tab-menu button span {
-  font-size: 16px;
+#content .program_wrap.type_reserve .tab-menu button i {
   display: block;
-  line-height: 20px;
+  background-image: url(../images/image/img_res_g.png);
+  width: 80px;
+  height: 80px;
+}
+#content .program_wrap.type_reserve .tab-menu button i.type_y {
+  background-image: url(../images/image/img_res_y.png);
+}
+#content .program_wrap.type_reserve .tab-menu button i.type_b {
+  background-image: url(../images/image/img_res_b.png);
+}
+#content .program_wrap.type_reserve .tab-menu button i.type_r {
+  background-image: url(../images/image/img_res_r.png);
+}
+#content .program_wrap.type_reserve .tab-menu button > span {
+  white-space: nowrap;
+  text-align: left;
+  list-style: none;
+  font-size: 25px;
+}
+#content .program_wrap.type_reserve .tab-menu button > span strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 #content .program_wrap.type_reserve > p {
   font-size: 18px;
