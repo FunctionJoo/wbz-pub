@@ -465,7 +465,7 @@
                                 <p class="txt">DMZ 야생동물 생태관</p>
                             </div>
                         </a>
-                        <a href="javascript:;" class="view" style="background-image: url('../images/sub/recommend_image_view_10.png');" onclick="$popup.template('#swiperPopup10')">
+                        <a href="javascript:;" class="view" style="background-image: url('../images/sub/recommend_image_view_010.png');" onclick="$popup.template('#swiperPopup010')">
                             <div class="overlay">
                                 <span class="num">24</span>
                                 <p class="txt">목재문화체험관</p>
@@ -475,6 +475,60 @@
                 </div>
             </div>
         </section>
+
+        <div id="popup-container"></div>
+
+        <script>
+            // 반복해서 팝업 생성
+            for (let i = 1; i <= 15; i++) {
+                const popupId = `swiperPopup0${i}`;
+                const popupContainer = document.getElementById('popup-container');
+
+                // 새로운 팝업 div 생성
+                const popupDiv = document.createElement('div');
+                popupDiv.classList.add('wbz-popup-cont', 'is-template', 'type_swiper');
+                popupDiv.id = popupId;
+
+                // 팝업 내용 구성
+                popupDiv.innerHTML = `
+                <div class="popup-header">
+                    <b class="popup-title"></b>
+                    <button class="popup-close popup-close-just" onclick="$popup.close()">close</button>
+                </div>
+                <div class="popup-cont">
+                    <div class="recommend_image_slide">
+                        <div class="swiper_navi">
+                            <button class="swiper_button swiper_prev" type="button">이전</button>
+                            <button class="swiper_button swiper_next" type="button">다음</button>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_01.jpg');"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_02.jpg');"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_03.jpg');"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_04.jpg');"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_05.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            `;
+
+                // 팝업을 컨테이너에 추가
+                popupContainer.appendChild(popupDiv);
+            }
+        </script>
 
         <footer id="footer" class="footer">
             <div class="inner">
@@ -527,77 +581,6 @@
             </div>
         </footer>
 
-<!-- 추천코스 팝업 -->
-<div class="wbz-popup-cont is-template type_swiper" id="swiperPopup01">
-    <div class="popup-header">
-        <b class="popup-title"></b>
-        <button class="popup-close popup-close-just" onclick="$popup.close()">close</button>
-    </div>
-    <div class="popup-cont">
-        <div class="recommend_image_slide">
-            <div class="swiper_navi">
-                <button class="swiper_button swiper_prev" type="button">이전</button>
-                <button class="swiper_button swiper_next" type="button">다음</button>
-            </div>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup01_01.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup01_02.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup01_03.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup01_04.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup01_05.jpg');"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-</div>
-
-<div class="wbz-popup-cont is-template type_swiper" id="swiperPopup02">
-    <div class="popup-header">
-        <b class="popup-title"></b>
-        <button class="popup-close popup-close-just" onclick="$popup.close()">close</button>
-    </div>
-    <div class="popup-cont">
-        <div class="recommend_image_slide">
-            <div class="swiper_navi">
-                <button class="swiper_button swiper_prev" type="button">이전</button>
-                <button class="swiper_button swiper_next" type="button">다음</button>
-            </div>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup02_01.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup02_02.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup02_03.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup02_04.jpg');"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup02_05.jpg');"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-</div>
-<!-- //추천코스 팝업 -->
     </div>
     <script>
         // map-box 클래스 찾아서 지도 줌인,줌아웃 처리하기 / 이미지 모두 로딩 후 실행되어야 함 (kskang)

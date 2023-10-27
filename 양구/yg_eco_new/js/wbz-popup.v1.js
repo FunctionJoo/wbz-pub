@@ -195,3 +195,12 @@ window.addEventListener('DOMContentLoaded', () => {
 		element.addEventListener('click', () => $popup.template(element.dataset.popup));
 	});
 });
+
+// 닫기 버튼 포커스
+$(function () {
+	document.querySelectorAll('.image_view .view').forEach(($el) => {
+		$el.addEventListener('click', () => {
+			document.querySelector('.popup-close').focus();
+		});
+	});
+});
