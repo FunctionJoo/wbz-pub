@@ -467,7 +467,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .divide-left{}
 .divide-left .image{position: relative;	width: 330px; height: 0; padding-bottom: 125%; overflow: hidden; background-color: #DBDBDB; background-repeat: no-repeat; background-size: cover;}
 .divide-left .image img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
-.divide-right{margin-top: 0 !important;}
+.divide-right{margin-top: 0 !important;width: 100%;} /* 웹비즈 수정 231027 */
 
 .bbs-view-wrap{margin-top: 65px;}
 .bbs-view-wrap .bbs-view-top{border-top: 1px solid #222222; border-bottom: 0; padding-top: 20px;}
