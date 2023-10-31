@@ -35,12 +35,21 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .paging a i.flo{ display: inline-block; letter-spacing: -12px;width:4px; font-size:17px}
 
 /* 공통 :: SEARCH BOX */
-/* 웹비즈 수정 231024 */
+/* 기존 검색창 */
 .board-search-box form{ display:inline}
 .board-search-box{ text-align:center; background-color:#fbfbfb; margin-top:65px; padding:30px 0; border:1px solid #efefef}
 .board-search-box select{ width:20%; max-width:150px; height:40px; font-size:16px; border:1px solid #e3e3e3; background-color:#fff}
 
-/* 웹비즈 수정 231013 */
+.board-search-box .search-word{ width:30%; /*max-width:200px;*/ height:40px; border:1px solid #e3e3e3; border-right:0; padding:0; text-indent:10px; color:#868686; font-size:16px; vertical-align:middle}
+.board-search-box .search-word:focus{ color:#333}
+.board-search-box .bbs-search-btn{ overflow:hidden; margin:0px; margin-left:-5px; border:0; min-width:40px; padding:0 12px; height:40px; background:#333; color:#fff; cursor:pointer; vertical-align:top; font-size:16px}
+.board-search-box .bbs-search-btn i{ line-height:40px}
+.board-search-box .bbs-search-btn i.xi-x{ position:relative}
+.board-search-box .bbs-search-btn i.xi-x span{ display:block; position:absolute; width:1px; height:1px; line-height:1px; font-size:1px; color:transparent}
+.board-search-box div{ display:inline}
+.board-search-box .bbs-search-btn:focus {outline : 2px dashed blue}
+
+/* 웹비즈 수정 231031_new 검색창 */
 .board-search-box.renew.mt0{margin-top: 0;} 
 .board-search-box.renew{display: flex; align-items: center; justify-content: space-between; margin:65px 0 30px;background-color: #fff;border: 0;padding: 0;}
 .board-search-box.renew .amount{font-size: 16px;}
@@ -48,16 +57,10 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .board-search-box.renew form{flex: 1; text-align: right;}
 .board-search-box.renew select{ width:100%; max-width:100px; height:48px; font-size:16px; border:1px solid #DBDBDB; border-radius: 6px; background-color:#fff; padding: 0 26px 0 12px; -o-appearance: none;	-webkit-appearance: none;	-moz-appearance: none; appearance: none; background: url(../../../images/renew3/common/ico_select_arrow.png) no-repeat right 12px center; background-size: 14px;}
 .board-search-box.renew select::-ms-expand { display: none; }
-/* //웹비즈 수정 231013 */
-.board-search-box .bbs-search-input{position: relative; margin-left: 10px; display: inline;}
-.board-search-box .search-word{ width:100%; max-width:360px; height:46px; border:1px solid #e3e3e3; border-radius: 6px; border-right:0; padding:0 74px 0 0; text-indent:10px; color:#868686; font-size:16px; vertical-align:middle}
-.board-search-box .search-word:focus{ color:#333}
-.board-search-box .bbs-search-btn{position: absolute;right: 0;overflow:hidden; margin:0px; margin-left:-5px; border:0; border-radius: 6px; min-width:62px; padding:0 12px; height:48px; color:#fff; cursor:pointer; vertical-align:top; font-size:0; background: #091152 url(../../../images/renew3/common/btn_search_w.png) no-repeat center;}
-.board-search-box .bbs-search-btn i{ line-height:40px}
-.board-search-box .bbs-search-btn i.xi-x{ position:relative}
-.board-search-box .bbs-search-btn i.xi-x span{ display:block; position:absolute; width:1px; height:1px; line-height:1px; font-size:1px; color:transparent}
-.board-search-box div{ display:inline}
-.board-search-box .bbs-search-btn:focus {outline : 2px dashed blue}
+.board-search-box.renew .bbs-search-input{position: relative; margin-left: 10px; display: inline;}
+.board-search-box.renew .search-word{ width:100%; max-width:360px; height:46px; border:1px solid #e3e3e3; border-radius: 6px; border-right:0; padding:0 74px 0 0; text-indent:10px; color:#868686; font-size:16px; vertical-align:middle}
+.board-search-box.renew .bbs-search-btn{position: absolute;right: 0;overflow:hidden; margin:0px; margin-left:-5px; border:0; border-radius: 6px; min-width:62px; padding:0 12px; height:48px; color:#fff; cursor:pointer; vertical-align:top; font-size:0; background: #091152 url(../../../images/renew3/common/btn_search_w.png) no-repeat center;}
+/* //웹비즈 수정 231031_new 검색창 */
 
 /* 공통 :: TOTAL NUMBER 및 카테고리 검색 */
 .total-list-con{ line-height:34px; /*margin-bottom:20px;*/ color:#333; font-size:15px; letter-spacing:-0.25px}
@@ -402,33 +405,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-basic-gallery-con10.type-row .gallery-img-box .img-wrap{padding-bottom: 75%;}
 
 .bbs-basic-gallery-con10.type-row .gallery-info{display: inline-block;vertical-align: top; padding: 0 0 0 25px;width: calc(100% - 250px);}
-.bbs-basic-gallery-con10.type-row .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border: 1px solid #C6DAEF;border-radius: 6px;font-size: 14px; color: #2E6BD7;text-align: center;}
-.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-tit{height: auto;padding-top: 4px;font-weight: 700;font-size: 20px;color: #303030;display: block;white-space: nowrap;text-overflow: ellipsis;}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border-radius: 6px;font-size: 14px; color: #fff;text-align: center;background-color: #163354;}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-tit{height: auto;margin-top: 14px;font-weight: 700;font-size: 20px;color: #303030;display: block;white-space: nowrap;text-overflow: ellipsis;}
 .bbs-basic-gallery-con10.type-row .gallery-info .report-num{display: block;font-size: 16px;color: #303030;padding-top: 46px;}
-.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt span{display: inline-block;font-size: 16px;color: #303030;line-height: 24px;}
+.bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt span{display: inline-block;font-size: 16px;color: #303030;line-height: 24px;font-weight: 400;}
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt .gallery-date{margin-top: 0; padding-left: 11px;margin-left: 10px;position: relative;vertical-align: middle;}
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt .gallery-date::after{content: '';display: inline-block;width: 1px;height: 12px;background-color: #DBDBDB;position: absolute;left: 0;top: 4px;}
 
 .bbs-basic-gallery-con10.type-row .btn_download{margin-left: auto;margin-top: auto;border: 1px solid #203A91;width: 130px;height: 38px;line-height: 36px;cursor: pointer;}
-.bbs-basic-gallery-con10.type-row .btn_download span{color: #203A91;font-size: 16px;padding-right: 22px;background: url(../../../images/renew3/common/ico_download.png) no-repeat right 1px center; background-size: 12px 13px;}
+.bbs-basic-gallery-con10.type-row .btn_download span{color: #203A91;font-size: 16px;font-weight: 400;padding-right: 22px;background: url(../../../images/renew3/common/ico_download.png) no-repeat right 1px center; background-size: 12px 13px;}
 
-.bbs-basic-gallery-con10.type-row .issue-list .gallery-info .gallery-tag{border-color: #D6EFC8;color: #178217;}
+.bbs-basic-gallery-con10.type-row .issue-list .gallery-info .gallery-tag{background-color: #178217;}
 .bbs-basic-gallery-con10.type-row .issue-list .gallery-info-txt{padding-top: 76px;}
 
 /* 상세 */
-.bbs-view-tab .divide-flex{border-top: 1px solid #222222;padding-top: 20px;gap: 15px;}
-.bbs-view-tab .divide-left .image-box .image{width: 250px;padding-bottom: 139%;}
+.bbs-view-tab .divide-flex{border-top: 1px solid #222222;padding-top: 20px;gap: 25px;}
+.bbs-view-tab .divide-left .image-box .image{width: 172px;padding-bottom: 139%;}
 .bbs-view-tab .bbs-view-wrap{position: relative;border: 1px solid #D0D0D0; padding: 30px; width: calc(100% - 265px);}
-.bbs-view-tab .bbs-view-wrap::after{content: '';width: 100%;height: 128px;background-color: #F5F8FA;position: absolute;left: 0;bottom: 0;}
 .bbs-view-tab .bbs-view-wrap .gallery-info{}
-.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border: 1px solid #C6DAEF;border-radius: 6px;font-size: 14px; color: #2E6BD7;text-align: center;}
+.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border-radius: 6px;font-size: 14px; color: #fff;text-align: center;background-color: #163354;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-tit{height: auto;padding-top: 14px;font-weight: 700;font-size: 20px;color: #303030;display: block;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .report-num{display: block;font-size: 16px;color: #303030;padding-top: 30px;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt span{display: inline-block;font-size: 16px;color: #303030;line-height: 24px;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt .gallery-date{font-family: 'roboto'; margin-top: 0; padding-left: 11px;margin-left: 10px;position: relative;vertical-align: middle;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt .gallery-date::after{content: '';display: inline-block;width: 1px;height: 12px;background-color: #DBDBDB;position: absolute;left: 0;top: 5px;}
 
-.bbs-view-tab .tab-wrap{margin-top: 30px;}
+.bbs-view-tab .tab-wrap{margin-top: 60px;}
 .bbs-view-tab .tab-wrap .tab-btn{font-size: 0;}
 .bbs-view-tab .tab-wrap .tab-btn .btn{width: 300px;height: 62px;line-height: 60px;font-size: 16px;background-color: #7C7F8E;border: 1px solid #7C7F8E;color: #fff;cursor: pointer;}
 .bbs-view-tab .tab-wrap .tab-btn .btn.on{background-color: #fff;border-color: #D0D0D0;border-top: 2px solid #091152;color: #303030;}
@@ -441,7 +443,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 
 .bbs-view-tab .cm-btn-controls{padding-top: 60px;}
 
-.bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-tag{border-color:#D6EFC8; color: #178217;}
+.bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-tag{background-color: #178217;}
 .bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-info-txt{padding-top: 62px;} 
 .bbs-view-tab.issue .tab-wrap .tab-btn .btn{cursor: initial;}
 
