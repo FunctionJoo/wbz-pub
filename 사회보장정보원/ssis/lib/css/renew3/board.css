@@ -20,10 +20,10 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .cm-btn-controls .btn-style03{ box-sizing:border-box; background:#fff; border:1px solid #888; color:#222}
 .cm-btn-controls .btn-style04{width: auto; padding: 0 16px; background:#fff; border:1px solid #888; color:#222 !important;} /* 웹비즈 수정 231017_내용추가 */
 
-/* 공통 :: PAGING */
-.paging{ width:100%; text-align:center; margin:60px 0 0;} /* 웹비즈 수정 231012 */
+/* 공통 :: PAGING 웹비즈 수정 231101 */
+.paging{ width:100%; text-align:center; margin:0;} /* 웹비즈 수정 231101 */
 .paging a{ position:relative; display:inline-block; vertical-align:middle; margin:0 3px; width:30px; height:30px; text-align:center; font-size:14px; line-height:28px; color:#666; }
-.paging a.p_first, .paging a.p_first2, .paging a.p_last, .paging a.p_last2{border: 1px solid #D3D3D3; border-radius: 6px; margin: 0 5px; background-repeat: no-repeat; background-position: center;}
+.paging a.p_first, .paging a.p_first2, .paging a.p_last, .paging a.p_last2{border: 1px solid #999; border-radius: 6px; margin: 0 5px; background-repeat: no-repeat; background-position: center;}
 .paging a.p_first{background-image: url(../../../images/renew3/common/ico_p_first.svg);}
 .paging a.p_first2{background-image: url(../../../images/renew3/common/ico_p_first2.svg);}
 .paging a.p_last{background-image: url(../../../images/renew3/common/ico_p_last.svg);}
@@ -49,10 +49,10 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .board-search-box div{ display:inline}
 .board-search-box .bbs-search-btn:focus {outline : 2px dashed blue}
 
-/* 웹비즈 수정 231031_new 검색창 */
+/* 웹비즈 수정 231101_new 검색창 */
 .board-search-box.renew.mt0{margin-top: 0;} 
 .board-search-box.renew{display: flex; align-items: center; justify-content: space-between; margin:65px 0 30px;background-color: #fff;border: 0;padding: 0;}
-.board-search-box.renew .amount{font-size: 16px;}
+.board-search-box.renew .amount{font-size: 18px;font-weight: 400;color: #222;}
 .board-search-box.renew .amount em{color: #2E6BD7; font-weight: 500;font-family: 'roboto';} /* 웹비즈 수정 231019 */
 .board-search-box.renew form{flex: 1; text-align: right;}
 .board-search-box.renew select{ width:100%; max-width:100px; height:48px; font-size:16px; border:1px solid #DBDBDB; border-radius: 6px; background-color:#fff; padding: 0 26px 0 12px; -o-appearance: none;	-webkit-appearance: none;	-moz-appearance: none; appearance: none; background: url(../../../images/renew3/common/ico_select_arrow.png) no-repeat right 12px center; background-size: 14px;}
@@ -60,7 +60,7 @@ select{ -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; borde
 .board-search-box.renew .bbs-search-input{position: relative; margin-left: 10px; display: inline;}
 .board-search-box.renew .search-word{ width:100%; max-width:360px; height:46px; border:1px solid #e3e3e3; border-radius: 6px; border-right:0; padding:0 74px 0 0; text-indent:10px; color:#868686; font-size:16px; vertical-align:middle}
 .board-search-box.renew .bbs-search-btn{position: absolute;right: 0;overflow:hidden; margin:0px; margin-left:-5px; border:0; border-radius: 6px; min-width:62px; padding:0 12px; height:48px; color:#fff; cursor:pointer; vertical-align:top; font-size:0; background: #091152 url(../../../images/renew3/common/btn_search_w.png) no-repeat center;}
-/* //웹비즈 수정 231031_new 검색창 */
+/* //웹비즈 수정 231101_new 검색창 */
 
 /* 공통 :: TOTAL NUMBER 및 카테고리 검색 */
 .total-list-con{ line-height:34px; /*margin-bottom:20px;*/ color:#333; font-size:15px; letter-spacing:-0.25px}
@@ -486,8 +486,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-view-wrap .bbs-view-attach li + li{margin-top: 6px;}
 .bbs-view-wrap .bbs-view-attach li a{display: inline-block;padding-left: 32px;font-size: 16px;color: #303030; background: url(../../../images/renew3/common/ico_view_attach.png) no-repeat left center;}
 
+/* 웹비즈 수정 231101 슬라이드 */
+.view-slider {max-width: 890px; margin: 0 auto;}
 .view-slider .image {background: #f0f0f0; position: relative;background-repeat: no-repeat; background-size: cover; background-position: center;}
-
 .view-slider .slider-single {position: relative; padding: 0 95px;}
 .view-slider .slider-single .image{position: relative;width: 100%;height: 0;padding-bottom: 100%;
  overflow: hidden;}

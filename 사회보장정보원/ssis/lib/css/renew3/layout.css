@@ -920,12 +920,14 @@ h2.main-title{ display:block; font-size:38px; line-height:32px; font-weight:700;
 	font-size: 0;
 	max-width: 640px;
 	margin: 0 auto;
+	display: flex; /* 웹비즈 수정 231101 */
 }
 #search-wrap .search-recommend .search-recommend-tit{ /* 웹비즈 수정 231012 */
 	font-size: 18px;
 	font-weight: 500;
 	color: #222;
 	padding-left: 10px; /* 웹비즈 수정 231019 */
+	padding-top: 8px;  /* 웹비즈 수정 231101 */
 }
 #search-wrap .search-recommend .recommend-list{
 	display: inline-block;
@@ -938,6 +940,7 @@ h2.main-title{ display:block; font-size:38px; line-height:32px; font-weight:700;
 	border-radius: 18px;
 	background-color: #2E6BD7;
 	margin-right: 12px;
+	margin-bottom: 6px; /* 웹비즈 수정 231101 */
 }
 #search-wrap .search-recommend .recommend-list li a{
 	display: block;
