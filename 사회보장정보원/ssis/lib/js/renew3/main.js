@@ -122,22 +122,35 @@ function mainEventInit () {
 		loop: true,
 		effect: 'fade',
 		allowTouchMove: false,
-		// autoplay: {
-		// 	delay: 5000
-		// },
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
 		// Navigation arrows
 		navigation: {
 			nextEl: '.main_visual_bg .mv_r',
 			prevEl: '.main_visual_bg .mv_l',
 		},
 	});
+	document.querySelector('.mv_control .mv_s').addEventListener('click', (e) => {
+		let btn = e.target;
+		if (btn.classList.contains('is_stop')) {
+			btn.classList.remove('is_stop');
+			swipermv.autoplay.start();
+		} else {
+			btn.classList.add('is_stop');
+			swipermv.autoplay.stop();
+		}
+	});
+
 	// 메인 슬라이드 이벤트 2
 	const swiperat = new Swiper('.main_article_slide .swiper', {
 		loop: true,
 		slidesPerView: 1,
 		spaceBetween: 30,
 		autoplay: {
-			delay: 5000
+			delay: 5000,
+			disableOnInteraction: false,
 		},
 		// Navigation arrows
 		navigation: {
@@ -159,6 +172,16 @@ function mainEventInit () {
 			1400: {
 				slidesPerView: 'auto',
 			},
+		}
+	});
+	document.querySelector('.ma_control .ma_s').addEventListener('click', (e) => {
+		let btn = e.target;
+		if (btn.classList.contains('is_stop')) {
+			btn.classList.remove('is_stop');
+			swiperat.autoplay.start();
+		} else {
+			btn.classList.add('is_stop');
+			swiperat.autoplay.stop();
 		}
 	});
 
@@ -255,15 +278,33 @@ function mainEventInit () {
 	// 알림존
 	const swipermn = new Swiper('.main_notice_slide .swiper', {
 		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
 		navigation: {
 			nextEl: '.mn_control .mn_r',
 			prevEl: '.mn_control .mn_l',
 		},
 	});
+	document.querySelector('.mn_control .mn_s').addEventListener('click', (e) => {
+		let btn = e.target;
+		if (btn.classList.contains('is_stop')) {
+			btn.classList.remove('is_stop');
+			swipermn.autoplay.start();
+		} else {
+			btn.classList.add('is_stop');
+			swipermn.autoplay.stop();
+		}
+	});
 
 	// 알림존
 	const swiperft = new Swiper('.footer_top .swiper', {
 		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
 		slidesPerView: 'auto',
 		navigation: {
 			nextEl: '.ft_control .ft_r',
@@ -273,6 +314,16 @@ function mainEventInit () {
 			1400: {
 				slidesPerView: 5,
 			},
+		}
+	});
+	document.querySelector('.ft_control .ft_s').addEventListener('click', (e) => {
+		let btn = e.target;
+		if (btn.classList.contains('is_stop')) {
+			btn.classList.remove('is_stop');
+			swiperft.autoplay.start();
+		} else {
+			btn.classList.add('is_stop');
+			swiperft.autoplay.stop();
 		}
 	});
 }
