@@ -50,6 +50,9 @@
 #main .main_sec.sec_1 {
   margin-top: 100px;
 }
+#main .main_sec.sec_2 {
+  margin-top: 58px;
+}
 #main .main_sec .benefit_banner {
   display: flex;
   gap: 34px 38px;
@@ -94,4 +97,132 @@
 }
 #main .main_sec .benefit_banner .banner_list.t4 .t1 {
   color: #A44923;
+}
+#main .main_sec .guide_banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+}
+#main .main_sec .guide_banner a {
+  display: block;
+}
+#main .main_sec .guide_banner a .pic {
+  width: 156px;
+  height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D3D3D3;
+}
+#main .main_sec .guide_banner a .pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+#main .main_sec .guide_banner a .txt {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #222222;
+}
+#main .main_sec .main_notice > li {
+  position: relative;
+  padding-left: 16px;
+}
+#main .main_sec .main_notice > li:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #D3D3D3;
+  position: absolute;
+  top: 53%;
+  left: 0;
+  transform: translateY(-50%);
+}
+#main .main_sec .main_notice > li + li {
+  margin-top: 20px;
+}
+#main .main_sec .main_notice > li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .main_sec .main_notice > li a .title {
+  font-size: 16px;
+  color: #222222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 99;
+}
+#main .main_sec .main_notice > li a .date {
+  font-size: 14px;
+  color: #666666;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  padding-left: 10px;
+}
+#main .main_sec .main_cs .cs_round {
+  display: flex;
+  justify-content: space-between;
+}
+#main .main_sec .main_cs .cs_round li {
+  min-width: 90px;
+}
+#main .main_sec .main_cs .cs_round li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#main .main_sec .main_cs .cs_round li a i {
+  display: block;
+  width: 62px;
+  height: 62px;
+  background: no-repeat center center #F6F6F6;
+  border-radius: 100%;
+}
+#main .main_sec .main_cs .cs_round li a .link_name {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #222222;
+}
+#main .main_sec .main_cs .cs_info {
+  margin-top: 20px;
+  padding: 14px 20px;
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+}
+#main .main_sec .main_cs .cs_info .csi_title {
+  font-size: 14px;
+  color: #222222;
+}
+#main .main_sec .main_cs .cs_info .csi_phone {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+#main .main_sec .main_cs .cs_info .csi_phone .csip_ico {
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  background: url() no-repeat center center #F6F6F6;
+}
+#main .main_sec .main_cs .cs_info .csi_phone .csip_txt {
+  padding-left: 10px;
+}
+#main .main_sec .main_cs .cs_info .csi_phone .csip_txt .csipt_tel {
+  font-size: 36px;
+  color: #222222;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+}
+#main .main_sec .main_cs .cs_info .csi_phone .csip_txt .csipt_time {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #222222;
 }/*# sourceMappingURL=main.css.map */

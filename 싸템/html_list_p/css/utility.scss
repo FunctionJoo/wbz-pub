@@ -75,6 +75,12 @@ $nunito: 'Nunito Sans', sans-serif;
 	}
 }
 
+@mixin ellipsis() {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 @mixin mobile {
 	@media (max-width: $w_set) {
 		@content;
