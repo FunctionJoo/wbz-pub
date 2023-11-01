@@ -9,7 +9,7 @@
 	.board-search-box.renew form{width: 100%; text-align: left;}
 	.board-search-box.renew select{ width:30%}
 	.board-search-box.renew select.half{ width:49%}
-	.board-search-box.renew .search-word{ text-indent:4px} 
+	.board-search-box.renew .search-word{max-width: 100%; text-indent:4px} /* 웹비즈 수정 231101 */
 	.board-search-box.renew .search-word.half{ width:calc(100% - 40px)}
 	.board-search-box.renew .bbs-search-input{display: inline-block; width: calc(100% - 114px);}
 	.board-search-box.renew div { margin:0 auto; margin-top:10px;display:block}
