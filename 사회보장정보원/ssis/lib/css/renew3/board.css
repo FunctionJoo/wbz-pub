@@ -398,7 +398,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 /* //웹비즈 수정 231013 */
 
 /* 웹비즈 수정 231019_연구보고서, 이슈페이퍼 */
-.bbs-basic-gallery-con10.type-row > ul{ margin:0; border-top: 1px solid #222222;}
+.bbs-basic-gallery-con10.type-row > ul{ margin:0 0 30px; border-top: 1px solid #222222;} /* 웹비즈 수정 231102 */
 .bbs-basic-gallery-con10.type-row .gallery-over-list-item{float: none; width: 100%; margin: 0;display: flex;padding: 20px 0;border-bottom: 1px solid #DBDBDB;}
 
 .bbs-basic-gallery-con10.type-row .gallery-img-box{display: inline-block; width: 120px;}
@@ -408,6 +408,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border-radius: 6px;font-size: 14px; color: #fff;text-align: center;background-color: #163354;}
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-tit{height: auto;margin-top: 14px;font-weight: 700;font-size: 20px;color: #303030;display: block;white-space: nowrap;text-overflow: ellipsis;}
 .bbs-basic-gallery-con10.type-row .gallery-info .report-num{display: block;font-size: 16px;color: #303030;padding-top: 46px;}
+.bbs-basic-gallery-con10.type-row .gallery-info-txt{padding-top: 76px;} /* 웹비즈 수정 231102 */
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt span{display: inline-block;font-size: 16px;color: #303030;line-height: 24px;font-weight: 400;}
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt .gallery-date{margin-top: 0; padding-left: 11px;margin-left: 10px;position: relative;vertical-align: middle;}
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-info-txt .gallery-date::after{content: '';display: inline-block;width: 1px;height: 12px;background-color: #DBDBDB;position: absolute;left: 0;top: 4px;}
@@ -416,16 +417,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-basic-gallery-con10.type-row .btn_download span{color: #203A91;font-size: 16px;font-weight: 400;padding-right: 22px;background: url(../../../images/renew3/common/ico_download.png) no-repeat right 1px center; background-size: 12px 13px;}
 
 .bbs-basic-gallery-con10.type-row .issue-list .gallery-info .gallery-tag{background-color: #178217;}
-.bbs-basic-gallery-con10.type-row .issue-list .gallery-info-txt{padding-top: 76px;}
+
 
 /* 상세 */
 .bbs-view-tab .divide-flex{border-top: 1px solid #222222;padding-top: 20px;gap: 25px;}
-.bbs-view-tab .divide-left .image-box .image{width: 172px;padding-bottom: 139%;}
+.bbs-view-tab .divide-left .image-box .image{width: 188px;padding-bottom: 139%;}
 .bbs-view-tab .bbs-view-wrap{position: relative;border: 1px solid #D0D0D0; padding: 30px; width: calc(100% - 265px);}
 .bbs-view-tab .bbs-view-wrap .gallery-info{}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border-radius: 6px;font-size: 14px; color: #fff;text-align: center;background-color: #163354;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-tit{height: auto;padding-top: 14px;font-weight: 700;font-size: 20px;color: #303030;display: block;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .report-num{display: block;font-size: 16px;color: #303030;padding-top: 30px;}
+.bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt{padding-top: 62px;} /* 웹비즈 수정 231102 */
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt span{display: inline-block;font-size: 16px;color: #303030;line-height: 24px;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt .gallery-date{font-family: 'roboto'; margin-top: 0; padding-left: 11px;margin-left: 10px;position: relative;vertical-align: middle;}
 .bbs-view-tab .bbs-view-wrap .gallery-info .gallery-info-txt .gallery-date::after{content: '';display: inline-block;width: 1px;height: 12px;background-color: #DBDBDB;position: absolute;left: 0;top: 5px;}
@@ -444,7 +446,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-view-tab .cm-btn-controls{padding-top: 60px;}
 
 .bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-tag{background-color: #178217;}
-.bbs-view-tab.issue .bbs-view-wrap .gallery-info .gallery-info-txt{padding-top: 62px;} 
+
 .bbs-view-tab.issue .tab-wrap .tab-btn .btn{cursor: initial;}
 
 /* //웹비즈 수정 231019_연구보고서, 이슈페이퍼 */

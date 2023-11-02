@@ -1319,11 +1319,12 @@ a.to-top-btn { color:#fff}
 		line-height:36px;
 		font-size:20px;
 	}	
-	/* 웹비즈 수정 */
+	/* 웹비즈 수정 231102 */
 	#search-wrap .search-close-btn img{width: 20px; } 
 	#search-wrap .search-input-box button img{width: 24px;}
-	#search-wrap .search-recommend .search-tit{display: block; margin-left: 10px; font-size: 16px;}
-	#search-wrap .search-recommend .recommend-list{margin-left: 10px; margin-top: 10px;}
+	#search-wrap .search-recommend{flex-direction: column;}
+	#search-wrap .search-recommend .search-recommend-tit{display: block; padding: 0 0 0 10px; font-size: 16px;}
+	#search-wrap .search-recommend .recommend-list{margin: 10px 0 0 10px;}
 	#search-wrap .search-recommend .recommend-list li{height: 30px; line-height: 28px; margin-right: 8px; margin-bottom: 6px;}
 	#search-wrap .search-recommend .recommend-list li a{font-size: 14px; padding: 0 10px;}
 
