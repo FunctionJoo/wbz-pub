@@ -374,6 +374,45 @@ body {overflow-x: hidden;}
 	}
 }
 
+@include mobile {
+	.w_set {
+		width: auto;
+		max-width: $w_set;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	#header {
+		.sec_top {
+			padding: 18px 0;
+			.logo {
+				a {
+					img {
+						width: 35px;
+					}
+					.logo_txt {
+						display: none;
+					}
+				}
+			}
+			.header_search {
+				position: absolute;
+				z-index: 10;
+				top: calc(100% + 10px);
+			}
+			.header_banner1 {
+				display: none;
+			}
+		}
+		.sec_bottom {
+			.sec_left,
+			.sec_right {
+				display: none;
+			}
+		}
+	}
+}
+
 #footer {
 	margin-top: 120px;
 	.footer_top {
@@ -463,6 +502,104 @@ body {overflow-x: hidden;}
 				.fc_time {
 					margin-top: 10px;
 					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+#sidebar {
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	left: 100%;
+	width: 140px;
+	transform: translateY(-50%);
+	margin-left: -140px;
+	.side_open_wrap {
+		position: absolute;
+		top: calc(50% - 120px / 2);
+		left: -34px;
+		width: 34px;
+		height: 120px;
+		padding: 20px 0 20px 20px;
+		overflow: hidden;
+		margin: -20px 0 -20px -20px;
+		box-sizing: unset;
+		.side_open {
+			width: 100%;
+			height: 100%;
+			font-size: 0;
+			border: 0 none;
+			border-radius: 10px 0px 0px 10px;
+			background: url('../images/common/side_arr.svg') no-repeat center center $colorF;
+			box-shadow: 0px 0px 13px #00000021;
+		}
+	}
+	.side_cont {
+		padding: 18px 10px;
+		border-radius: 10px 0px 0px 10px;
+		background: $colorF;
+		box-shadow: 0px 0px 13px #00000021;
+		.side_slide {
+			.swiper {
+				border-radius: 6px;
+			}
+			a {
+				display: block;
+				border-radius: 6px;
+				@include imgBox(120.83%);
+			}
+			.swiper-pagination-c {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 5px;
+				margin-top: 5px;
+				.swiper-pagination-bullet {
+					width: 6px;
+					height: 6px;
+					border-radius: 100%;
+					margin: 0 0 0 0;
+					background: $colorD;
+					&.swiper-pagination-bullet-active {
+						background: $point0;
+					}
+				}
+			}
+		}
+		.side_mile {
+			margin-top: 20px;
+			.sm_box {
+				border: 1px solid $colorD;
+				border-radius: 6px;
+				text-align: center;
+				padding: 10px 5px;
+				+ .sm_box {
+					margin-top: 10px;
+				}
+				.sm_name {
+					font-size: 13px;
+					color: $color2;
+				}
+				.sm_num {
+					margin-top: 6px;
+					font-size: 14px;
+					color: $color6;
+					b {
+						font-size: 15px;
+						font-weight: 700;
+						color: $point0;
+					}
+				}
+			}
+		}
+		.side_b_btn {
+			margin-top: 20px;
+			.st_btn {
+				border-radius: 6px;
+				+ .st_btn {
+					margin-top: 10px;
 				}
 			}
 		}

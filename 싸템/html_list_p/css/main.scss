@@ -229,3 +229,29 @@
 		}
 	}
 }
+
+@include mobile {
+	#main {
+		padding-top: 0;
+		.main_title {
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+		.main_gradient {
+			display: none;
+		}
+		.main_visual {
+			margin: 0 -16px;
+			.swiper {
+				overflow: hidden;
+			}
+			.swiper-slide {
+				a {
+					display: block;
+					border-radius: 8px;
+					@include imgBox(55.55%);
+				}
+			}
+		}
+	}
+}

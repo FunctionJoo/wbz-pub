@@ -5,4 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		loop: true,
 		loopAdditionalSlides: 2,
 	});
+
+	const asideSwiper = new Swiper('.side_slide .swiper', {
+		slidesPerView: 1,
+		loop: true,
+		pagination: {
+			el: '#sidebar .swiper-pagination-c',
+			bulletElement: 'button'
+		}
+	});
 });
