@@ -35,6 +35,8 @@
 		}
 	}
 
+	.main_mobile_menu {display: none;}
+
 	.main_sec {
 		&.div2 {
 			display: flex;
@@ -49,6 +51,7 @@
 		&.sec_2 {
 			margin-top: 58px;
 		}
+
 
 		.benefit_banner {
 			display: flex;
@@ -182,6 +185,9 @@
 							height: 62px;
 							background: no-repeat center center $colorF6;
 							border-radius: 100%;
+							@for $i from (1) to (5){
+								&.csi_#{$i} {background-image: url('../images/main/cs_#{$i}.svg')}
+							}
 						}
 						.link_name {
 							margin-top: 4px;
@@ -208,7 +214,7 @@
 						width: 68px;
 						height: 68px;
 						border-radius: 100%;
-						background: url() no-repeat center center $colorF6;
+						background: url('../images/main/cs_call.svg') no-repeat center center $colorF6;
 					}
 					.csip_txt {
 						padding-left: 10px;
@@ -226,6 +232,77 @@
 					}
 				}
 			}
+		}
+
+		.main_member {
+			border: 1px solid #DDDDDD;
+			border-radius: 10px;
+			padding: 10px 18px;
+			.mm_list {
+				padding: 19px 0;
+				+ .mm_list {
+					border-top: 1px solid $colorD;
+				}
+				.mm_link {
+					display: flex;
+					align-items: center;
+					&.type_sell {
+						.mm_tag_2,
+						.mmp_price {
+							color: #4386F9;
+						}
+					}
+					&.type_buy {
+						.mm_tag_2,
+						.mmp_price {
+							color: #03B087;
+						}
+					}
+					.mm_tag {
+						background: #EFEFF4;
+						border: 1px solid $colorD;
+						border-radius: 3px;
+						padding: 0 20px;
+						font-size: 14px;
+						color: $color2;
+						white-space: nowrap;
+						line-height: 46px;
+					}
+					.mm_title {
+						flex: 99;
+						display: flex;
+						padding: 0 16px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						& * {
+							font-size: 16px;
+						}
+						.mm_tag_2 {
+							display: inline-block;
+							font-weight: 500;
+							padding-right: 15px;
+						}
+						b {
+							color: $color2;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						}
+					}
+					.mm_price_wrap {
+						.mmp_per {
+							font-size: 16px;
+							color: $color3;
+						}
+						.mmp_price {
+							margin-top: 8px;
+							font-size: 18px;
+							font-weight: 500;
+						}
+					}
+				}
+			}	
 		}
 	}
 }
@@ -248,9 +325,244 @@
 			.swiper-slide {
 				a {
 					display: block;
-					border-radius: 8px;
+					border-radius: 0;
 					@include imgBox(55.55%);
 				}
+			}
+		}
+
+		.main_mobile_menu {
+			position: relative;
+			z-index: 3;
+			display: flex;
+			margin-top: -20px;
+			padding: 20px 0;
+			gap: 20px 0;
+			flex-wrap: wrap;
+			background: $colorF;
+			box-shadow: 0px 3px 10px #0000001A;
+			border-radius: 6px;	
+			.mmm_list {
+				width: 25%;
+				a {
+					display: block;
+					i {
+						display: block;
+						height: 24px;
+						margin: 0 auto;
+						background: no-repeat center center;
+						@for $i from (1) to (9){
+							&.mmmi_#{$i} {background-image: url('../images/main/mmi_#{$i}.svg')}
+						}
+						&.mmmi_5 {background-position: left 58% top 50%;}
+					}
+					.mmmt {
+						margin-top: 6px;
+						text-align: center;
+						font-size: 12px;
+						color: $color2;
+					}
+				}
+			}
+		}
+
+		.main_sec {
+			&.div2 {
+				display: block;
+			}
+			.divide {
+				width: auto;
+			}
+			&.sec_1 {
+				margin-top: 30px;
+				.sec_right {
+					margin-top: 36px;
+				}
+			}
+			&.sec_2 {
+				margin-top: 40px;
+			}
+	
+	
+			.benefit_banner {
+				gap: 20px 20px;
+				.banner_list {
+					display: block;
+					width: calc(50% - 10px);
+					height: 102px;
+					padding: 12px 12px;
+					.t1 {
+						font-size: 12px;
+					}
+					.t2 {
+						font-size: 16px;
+					}
+					&.t1 {
+						background-size: 52px auto;
+						background-position: right 7px bottom 7px;
+					}
+					&.t2 {
+						background-size: 60px auto;
+						background-position: right 7px bottom 3px;
+					}
+					&.t3 {
+						background-size: 60px auto;
+						background-position: right 7px bottom 7px;
+					}
+					&.t4 {
+						background-size: 122px auto;
+						background-position: right 0 bottom 0;
+					}
+				}
+			}
+	
+			.guide_banner {
+				display: flex;
+				flex-wrap: nowrap;
+				gap: 20px;
+				overflow-x: auto;
+				margin: 0 -16px;
+				padding: 0 16px;
+				&::-webkit-scrollbar {display: none;}
+				a {
+					.pic {
+						width: 82px;
+						height: 82px;
+						border-radius: 4px;
+						img {
+							object-fit: unset;
+							&.gbi_1 {width: 40px;}
+							&.gbi_2 {width: 48px;}
+							&.gbi_3 {width: 32px;}
+							&.gbi_4 {width: 40px;}
+							&.gbi_5 {width: 34px;}
+							&.gbi_6 {width: 30px;}
+						}
+					}
+					.txt {
+						margin-top: 8px;
+						font-size: 16px;
+						text-align: center;
+						font-weight: 500;
+						color: $color2;
+					}
+				}
+			}
+	
+			.main_cs {
+				.cs_round {
+					li {
+						width: 60px;
+						min-width: 0;
+						a {
+							i {
+								width: 60px;
+								height: 60px;
+							}
+							.link_name {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								margin-top: 12px;
+								font-size: 14px;
+								line-height: 20px;
+								width: calc(100% + 40px);
+								height: 40px;
+							}
+						}
+					}
+				}
+				.cs_info {
+					margin-top: 60px;
+					padding: 14px 20px;
+					.csi_phone {
+						margin-top: 0;
+						width: 100%;
+						display: block;
+						.csip_txt {
+							padding-left: 0;
+							text-align: center;
+							.csipt_tel {
+								font-size: 24px;
+							}
+							.csipt_time {
+								margin-top: 6px;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+	
+			.main_member {
+				border: 1px solid #DDDDDD;
+				border-radius: 10px;
+				padding: 10px 18px;
+				.mm_list {
+					padding: 19px 0;
+					+ .mm_list {
+						border-top: 1px solid $colorD;
+					}
+					.mm_link {
+						display: flex;
+						align-items: center;
+						&.type_sell {
+							.mm_tag_2,
+							.mmp_price {
+								color: #4386F9;
+							}
+						}
+						&.type_buy {
+							.mm_tag_2,
+							.mmp_price {
+								color: #03B087;
+							}
+						}
+						.mm_tag {
+							background: #EFEFF4;
+							border: 1px solid $colorD;
+							border-radius: 3px;
+							padding: 0 20px;
+							font-size: 14px;
+							color: $color2;
+							white-space: nowrap;
+							line-height: 46px;
+						}
+						.mm_title {
+							flex: 99;
+							display: flex;
+							padding: 0 16px;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							& * {
+								font-size: 16px;
+							}
+							.mm_tag_2 {
+								display: inline-block;
+								font-weight: 500;
+								padding-right: 15px;
+							}
+							b {
+								color: $color2;
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+							}
+						}
+						.mm_price_wrap {
+							.mmp_per {
+								font-size: 16px;
+								color: $color3;
+							}
+							.mmp_price {
+								margin-top: 8px;
+								font-size: 18px;
+								font-weight: 500;
+							}
+						}
+					}
+				}	
 			}
 		}
 	}

@@ -17,6 +17,10 @@ button {cursor: pointer;}
 	margin-right: auto !important;
 }
 
+@include pc {
+	.hide_pc {display: none !important;}
+}
+
 @include mobile {
 	.w_set {
 		width: auto;
@@ -24,6 +28,8 @@ button {cursor: pointer;}
 		padding-left: 16px;
 		padding-right: 16px;
 	}
+
+	.hide_m {display: none !important;}
 }
 
 .fc_p0 {color: $point0 !important;}

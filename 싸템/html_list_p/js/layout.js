@@ -35,4 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.querySelector('body').classList.remove('m_hold');
 		});
 	}
+
+	if (document.querySelector('#sidebar')) {
+		document.querySelector('.side_open_wrap').addEventListener('click', () => {
+			document.querySelector('#sidebar').classList.toggle('on');
+		});
+	}
 });

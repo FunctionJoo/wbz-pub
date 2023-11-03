@@ -81,8 +81,15 @@ $nunito: 'Nunito Sans', sans-serif;
 	text-overflow: ellipsis;
 }
 
-@mixin mobile {
-	@media (max-width: $w_set) {
+@mixin pc {
+	@media (min-width: $w_set) {
 		@content;
+	}
+}
+@mixin mobile {
+	body:not(.is_pc) {
+		@media (max-width: $w_set) {
+			@content;
+		}
 	}
 }

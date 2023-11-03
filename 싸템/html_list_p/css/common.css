@@ -19,12 +19,20 @@ button {
   margin-right: auto !important;
 }
 
+@media (min-width: 1080px) {
+  .hide_pc {
+    display: none !important;
+  }
+}
 @media (max-width: 1080px) {
   .w_set {
     width: auto;
     max-width: 1080px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .hide_m {
+    display: none !important;
   }
 }
 .fc_p0 {
