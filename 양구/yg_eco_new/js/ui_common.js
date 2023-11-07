@@ -1,5 +1,36 @@
 //메인 풀페이지
-$(function(){
+window.addEventListener("DOMContentLoaded", (event) => {
+
+    $('#fullpage').fullpage({
+		sectionSelector: 'section',
+		anchors: ['firstvisual', 'sec1', 'sec2','sec3','sec4', 'main_footer'],
+		menu: '#fullmenu',
+		responsiveWidth:1400,
+		responsiveHeight:900,
+		recordHistory: true,
+		animateAnchor: false,
+		onLeave: function(anchorLink, index) {
+            $('#fullmenu li').removeClass('on');
+			$('#fullmenu li').eq(index - 1).addClass('on');
+            if (index == 1) {
+                $('#fullmenu').addClass('is_first');
+                document.querySelector('header').classList.remove('type_bg2');
+            } else {
+                $('#fullmenu').removeClass('is_first');
+                document.querySelector('header').classList.add('type_bg2');
+            }
+
+            if (index == 6) {
+                $('#fullmenu').addClass('dn');
+            } else {
+                $('#fullmenu').removeClass('dn');
+            }
+		},
+		afterRender: function() {
+		},
+		afterResponsive: function(isResponsive){
+		}
+	});
 
     // var ww = $(window).width();
     // var mySwiper = undefined;
@@ -110,22 +141,7 @@ $(function(){
 
 
 $(function() {
-    let dH;
-    if (document.querySelector('#header').classList.contains('m_on')) {
-        dH = 70;
-    } else {
-        dH = document.body.offsetHeight - 150;
-        window.addEventListener('resize', () => {
-            dH = document.body.offsetHeight - 150;
-        });
-    }
-    document.addEventListener('scroll', () => {
-        if (window.scrollY > dH) {
-            document.querySelector('header').classList.add('type_bg2');
-        } else {
-            document.querySelector('header').classList.remove('type_bg2');
-        }
-    });
+
     
     // aside close open
     document.querySelectorAll('.menu_trigger').forEach(($el) => {

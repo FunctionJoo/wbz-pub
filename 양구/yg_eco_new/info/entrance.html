@@ -132,7 +132,7 @@
                     <li><a href="javascript:;">숲 배움터</a></li>
                     <li><a href="javascript:;">숲 놀이터</a></li>
                     <li><a href="javascript:;">숲 키움터</a></li>
-                    <li><a href="javascript:;">목재체험관</a></li>
+                    <li><a href="javascript:;">목재문화체험관</a></li>
                   </ul>
                 </li>
               </ul>
@@ -255,7 +255,7 @@
                   <li><a href="javascript:;">숲 배움터</a></li>
                   <li><a href="javascript:;">숲 놀이터</a></li>
                   <li><a href="javascript:;">숲 키움터</a></li>
-                  <li><a href="javascript:;">목재체험관</a></li>
+                  <li><a href="javascript:;">목재문화체험관</a></li>
                 </ul>
               </li>
             </ul>
@@ -308,9 +308,8 @@
         </script>
         <div class="w_set">
           <div class="bg">
-            <div class="img_ani"></div>
+            <div class="img_ani entance"></div>
           </div>
-          <div class="gradient"></div>
           <h2 class="sub_title">입장안내</h2>
           <div class="sub_nav">
             <div class="sec_left focus_box">
@@ -365,29 +364,26 @@
           </div>
         </div>
       </div>
-        <script>
-          // 모바일과 pc일때 맨 위 상단이미지 클래스 변경
-          document.addEventListener('DOMContentLoaded', function () {
-            const subLineBg = document.querySelector('.sub_line_bg.bg_info');
-            const gradientDiv = document.querySelector('.gradient');
+      <script>
+        // 모바일과 pc일때 맨 위 상단이미지 클래스 변경
+        document.addEventListener('DOMContentLoaded', function () {
+          const subLineBg = document.querySelector('.sub_line_bg.bg_info');
 
-            function updateClassAndElementsBasedOnWidth() {
-              if (window.innerWidth < 1400) {
-                subLineBg.classList.remove('bg_info');
-                subLineBg.classList.add('no_bg');
-                gradientDiv.style.display = 'none';
-              } else {
-                subLineBg.classList.remove('no_bg');
-                subLineBg.classList.add('bg_info');
-                gradientDiv.style.display = 'block';
-              }
+          function updateClassAndElementsBasedOnWidth() {
+            if (window.innerWidth < 1400) {
+              subLineBg.classList.remove('bg_info');
+              subLineBg.classList.add('no_bg');
+            } else {
+              subLineBg.classList.remove('no_bg');
+              subLineBg.classList.add('bg_info');
             }
+          }
 
-            updateClassAndElementsBasedOnWidth();
+          updateClassAndElementsBasedOnWidth();
 
-            window.addEventListener('resize', updateClassAndElementsBasedOnWidth);
-          });
-        </script>
+          window.addEventListener('resize', updateClassAndElementsBasedOnWidth);
+        });
+      </script>
     </div>
 
     <section id="content">
@@ -426,40 +422,79 @@
                 </div>
               </div>
             </div>-->
-            <div class="program-list">
-              <div class="tit"><span>입장료</span></div>
+            <div class="program-list type_ent">
+              <div class="tit type_s"><span>입장료</span></div>
               <div class="desc type_no">
                 <div class="date-tbl">
-                  <div class="scroll-wrap">
-                    <div class="scroll">
-                      <div class="tbl-head">
-                        <div class="h-col w-2">구분</div>
-                        <div class="h-col">개인</div>
-                        <div class="h-col">단체 (20인 이상)</div>
-                      </div>
-                      <div class="tbl-body" id="nomalList">
-                        <div class="row">
-                          <div class="d-col">일반 관람객</div>
-                          <div class="d-col hide_pc">
-                            <div class="col-txt">일반(만19세 ~<br>만64세)</div>
-                            <div class="col-txt">청소년(만7세 ~<br>만18세)</div>
-                          </div>
-                          <div class="d-col hide_m">
-                            <div class="col-txt">일반(만19세 ~ 만64세)</div>
-                            <div class="col-txt">청소년(만7세 ~ 만18세)</div>
-                          </div>
-                          <div class="d-col type_b">
-                            <div class="col-txt type_p">6,000<br><span>(양구사랑상품권 3,000원 환급)</span></div>
-                            <div class="col-txt">3,000</div>
-                          </div>
-                          <div class="d-col type_b">
-                            <div class="col-txt">3,000</div>
-                            <div class="col-txt">1,500</div>
-                          </div>
+                  <div class="scroll-wrap hide_m">
+                    <div class="tbl-head">
+                      <div class="h-col w-2">구분</div>
+                      <div class="h-col">개인</div>
+                      <div class="h-col">단체 (20인 이상)</div>
+                    </div>
+                    <div class="tbl-body" id="nomalList">
+                      <div class="row">
+                        <div class="d-col type_ss">일반 관람객</div>
+                        <div class="d-col hide_pc">
+                          <div class="col-txt">일반(만19세 ~<br>만64세)</div>
+                          <div class="col-txt">청소년(만7세 ~<br>만18세)</div>
+                        </div>
+                        <div class="d-col hide_m">
+                          <div class="col-txt">일반(만19세 ~ 만64세)</div>
+                          <div class="col-txt">청소년(만7세 ~ 만18세)</div>
+                        </div>
+                        <div class="d-col type_b">
+                          <div class="col-txt type_s">6,000<br><span>(양구사랑상품권 3,000원 환급)</span></div>
+                          <div class="col-txt">3,000</div>
+                        </div>
+                        <div class="d-col type_b">
+                          <div class="col-txt">3,000</div>
+                          <div class="col-txt">1,500</div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="scroll-wrap hide_pc">
+                    <div class="tbl-head">
+                      <div class="h-col w-2">구분</div>
+                    </div>
+                    <div class="tbl-body" id="nomalList">
+                      <div class="row">
+                        <div class="d-col">일반 관람객</div>
+                        <div class="d-col hide_pc">
+                          <div class="col-txt">일반(만19세 ~ 만64세)</div>
+                          <div class="col-txt">청소년(만7세 ~ 만18세)</div>
+                        </div>
+                        <div class="d-col hide_m">
+                          <div class="col-txt">일반(만19세 ~ 만64세)</div>
+                          <div class="col-txt">청소년(만7세 ~ 만18세)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="scroll-wrap hide_pc">
+                    <div class="tbl-head">
+                      <div class="h-col">개인</div>
+                      <div class="h-col">단체 (20인 이상)</div>
+                    </div>
+                    <div class="tbl-body" id="nomalList">
+                      <div class="row">
+                        <div class="d-col no_line hide_m">
+                          <div class="col-txt">일반(만19세 ~ 만64세)</div>
+                          <div class="col-txt">청소년(만7세 ~ 만18세)</div>
+                        </div>
+                        <div class="d-col type_b">
+                          <div class="col-txt type_p">6,000<br><span>(양구사랑상품권 3,000원 환급)</span></div>
+                          <div class="col-txt">3,000</div>
+                        </div>
+                        <div class="d-col type_b">
+                          <div class="col-txt">3,000</div>
+                          <div class="col-txt">1,500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <ul class="tbl-txt">
                     <li><i>점</i><span><em>무료입장</em> : 만 65세이상, 만6세이하, 장애인, 기초생활수급자, 명예군민, 산림복지서비스이용권 발급자, 국가유공자(독립/참전/특수임무/5·18민주 유공자, 고엽제후유증환자, 의사상자, 국군포로가족)</span></li>
                     <li><i>점</i><span><em>50% 감면</em> : 양구군민, 관내 군용사, 호수문화권역(춘천시, 홍천군, 화천군, 인제군) 주민, 접경지역시장군수협희회시군(강화군, 옹진군, 파주시, 김포시, 연천군, 철원군 고성군)주민</span></li>
@@ -492,7 +527,7 @@
                 </ul>
                 <ul>
                   <li>양구수목원 매표소: 033-481-2538</li>
-                  <li>목재체험관: 033-480-7395</li>
+                  <li>목재문화체험관: 033-480-7395</li>
                 </ul>
                 <ul>
                   <li class="copy">Copyright ⓒECO양구수목원.ALL RIGHTS RESERVED</li>

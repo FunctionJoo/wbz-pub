@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'GodoB';
+    src: local('GodoB');
+    src:
+    url(../font/GodoB.otf) format('opentype');
+}
+@font-face {
+    font-family: 'GodoM';
+    src: local('GodoM');
+    src:
+    url(../font/GodoM.otf) format('opentype');
+}
 
 @font-face {
     font-family: 'Noto Sans kr';

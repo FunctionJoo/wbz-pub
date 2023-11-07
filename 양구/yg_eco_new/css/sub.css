@@ -35,6 +35,18 @@ label.skip {
 .sub_line_bg.bg_info .bg .img_ani.tomato {
   background-image: url("../images/sub/img_tomato.png");
 }
+.sub_line_bg.bg_info .bg .img_ani.spring {
+  background-image: url("../images/sub/img_spring.png");
+}
+.sub_line_bg.bg_info .bg .img_ani.entance {
+  background-image: url("../images/sub/img_entrance.png");
+}
+.sub_line_bg.bg_info .bg .img_ani.introduce {
+  background-image: url("../images/sub/bg_introduce.png");
+}
+.sub_line_bg.bg_info .bg .img_ani.audio {
+  background-image: url("../images/sub/bg_audio.png");
+}
 .sub_line_bg.bg_05 .bg .img_ani {
   background-image: url("../images/sub/sub_nav_5.png");
 }
@@ -76,9 +88,13 @@ label.skip {
   z-index: 30;
   padding: 200px 0 170px;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   line-height: 1.45;
+  font-family: "GodoB";
+}
+.sub_line_bg .sub_title.type_shadow {
+  text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5294117647);
 }
 .sub_line_bg .sub_nav {
   position: relative;
@@ -221,10 +237,10 @@ label.skip {
   background-image: url("../images/sub/ico_sns_f.svg");
 }
 .sub_line_bg .share_list .share_layer .share_ico_2 {
-  background-image: url("../images/sub/ico_sns_i.svg");
+  background-image: url("../images/sub/ico_sns_k.svg");
 }
 .sub_line_bg .share_list .share_layer .share_ico_3 {
-  background-image: url("../images/sub/ico_sns_b.svg");
+  background-image: url("../images/sub/ico_sns_link.svg");
 }
 @media (min-width: 1400px) {
   .sub_line_bg.no_bg {
@@ -261,15 +277,21 @@ label.skip {
   background-image: url("../images/sub/sub_nav_print_b.svg");
 }
 
-.sub_line_bg + #content {
+.sub_line_bg ~ #content {
   margin: 60px 0 120px;
 }
 
-.sub_line_bg.no_bg + #content {
+.sub_line_bg.no_bg ~ #content {
   margin: 40px 0 120px;
 }
 
 .board_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.board_top > form {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -518,7 +540,7 @@ label.skip {
 
 @media (min-width: 1400px) {
   *:focus {
-    outline: 2px dashed #ff0;
+    outline: 2px dashed #00f;
   }
   .board_list {
     display: table;
@@ -551,7 +573,7 @@ label.skip {
     width: auto;
     padding-left: 40px;
     padding-right: 40px;
-    text-align: left;
+    text-align: center;
   }
   .board_list .bl_row .sec.title a {
     display: block;
@@ -574,6 +596,7 @@ label.skip {
   }
 }
 #sch_layer {
+  font-family: "GodoM";
   display: none;
   position: fixed;
   z-index: 5000;
@@ -688,7 +711,7 @@ label.skip {
     padding: 0 0;
     font-size: 24px;
     text-align: center;
-    font-weight: 500;
+    color: #000;
   }
   .sub_line_bg .sub_nav {
     background: none;
@@ -717,7 +740,7 @@ label.skip {
     margin-left: 0;
     width: 4px;
     height: 8px;
-    margin-top: -3px;
+    margin-top: -4px;
     background: url("../images/sub/sub_nav_arr_m.svg") no-repeat center center;
     background-size: 100% 100%;
   }
@@ -806,16 +829,20 @@ label.skip {
   .sub_line_bg.no_bg .sub_nav .sec_right a.type_ico {
     background-color: #F4F4F4;
   }
-  .sub_line_bg + #content {
+  .sub_line_bg ~ #content {
     margin: 30px 0 60px;
   }
-  .sub_line_bg.no_bg + #content {
+  .sub_line_bg.no_bg ~ #content {
     margin: 0 0 60px;
   }
-  .sub_line_bg.no_bg + #content .board_top {
+  .sub_line_bg.no_bg ~ #content .board_top {
     margin-top: 0;
   }
   .board_top {
+    display: block;
+    margin-top: 30px;
+  }
+  .board_top > form {
     display: block;
     margin-top: 30px;
   }
@@ -1062,7 +1089,6 @@ label.skip {
   font-size: 16px;
   color: #666666;
   line-height: 1.5;
-  white-space: pre-line;
 }
 .faq_wrap dl dd em {
   display: flex;

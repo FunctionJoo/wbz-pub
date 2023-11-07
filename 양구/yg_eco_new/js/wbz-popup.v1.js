@@ -197,7 +197,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // 닫기 버튼 포커스
-$(function () {
+$(function(){
 	document.querySelectorAll('.image_view .view').forEach(($el) => {
 		$el.addEventListener('click', () => {
 			document.querySelector('.popup-close').focus();

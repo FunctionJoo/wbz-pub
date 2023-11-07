@@ -98,7 +98,7 @@
                         <li class="focus_bg">
                             <a href="../picsub/yeyak.html" title="체험학습" class="hf_d_1">체험학습</a>
                             <ul class="depth1">
-                                <li><a href="javascript:;">목재체험프로그램</a></li>
+                                <li><a href="javascript:;">목재문화체험</a></li>
                                 <li><a href="javascript:;">숲 해설</a></li>
                                 <li><a href="javascript:;">유아숲체험</a></li>
                                 <li><a href="javascript:;">용늪탐방</a></li>
@@ -124,7 +124,7 @@
                                     <ul class="depth2">
                                         <li><a href="javascript:;">DMZ야생동물생태관</a></li>
                                         <li><a href="javascript:;">DMZ야생화 분재원</a></li>
-                                        <li><a href="javascript:;">목재체험관</a></li>
+                                        <li><a href="javascript:;">목재문화체험관</a></li>
                                         <li><a href="javascript:;">피크닉광장</a></li>
                                     </ul>
                                 </li>
@@ -248,7 +248,7 @@
                                     <li><a href="javascript:;">숲 배움터</a></li>
                                     <li><a href="javascript:;">숲 놀이터</a></li>
                                     <li><a href="javascript:;">숲 키움터</a></li>
-                                    <li><a href="javascript:;">목재체험관</a></li>
+                                    <li><a href="javascript:;">목재문화체험관</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -355,7 +355,7 @@
                                 <div class="image" style="background-image: url('../images/sub/img_recommend_03.png');"></div>
                                 <div>
                                     <p class="desc">엄마,아빠와 함께 신나게!</p>
-                                    <span class="txt">#어린이 코스</span>
+                                    <span class="txt">#어린이체험코스</span>
                                 </div>
                             </a>
                         </li>
@@ -382,10 +382,10 @@
                                     <i class="i_link"></i>
                                     <span class="txt">오디오 해설듣기</span>
                                 </a>
-                                <a href="#" class="link link03">
+                                <!-- <a href="#" class="link link03">
                                     <i class="i_link"></i>
                                     <span class="txt">스탬프 투어</span>
-                                </a>
+                                </a> -->
                             </div>
                             <div class="btn_area">
                                 <button type="button" class="btn"><i class="i_download"></i>가이드맵 다운로드</button>
@@ -404,8 +404,9 @@
                 <div class="trace_wrap">
                     <div class="w_set">
                         <span class="tit">코스 동선</span>
-                        <div class="course_img type2">
-                            <p class="blind">구상나무 모롱잇길 - 수목원 연구동 - 초롱다리 - 무장애 나눔길 - DMZ 야생화 분재원 - DMZ 야생동물 생태관 - 목재문화체험관</p>
+                        <div class="course_img">
+                            <img src="../images/sub/img_recommend_course_02.png" alt="구상나무 모롱잇길 - 수목원 연구동 - 초롱다리 - 무장애 나눔길 - DMZ 야생화 분재원 - DMZ 야생동물 생태관 - 목재문화체험관" class="hide_m">
+                            <img src="../images/sub/img_recommend_course_02_m.png" alt="구상나무 모롱잇길 - 수목원 연구동 - 초롱다리 - 무장애 나눔길 - DMZ 야생화 분재원 - DMZ 야생동물 생태관 - 목재문화체험관" class="hide_pc">
                         </div>
                     </div>
                 </div>
@@ -530,7 +531,7 @@
                                 </ul>
                                 <ul>
                                     <li>양구수목원 매표소: 033-481-2538</li>
-                                    <li>목재체험관: 033-480-7395</li>
+                                    <li>목재문화체험관: 033-480-7395</li>
                                 </ul>
                                 <ul>
                                     <li class="copy">Copyright ⓒECO양구수목원.ALL RIGHTS RESERVED</li>
@@ -706,6 +707,12 @@
                         }
                     }
                 });
+                if($(window).width() > 768){// PC
+                    $('.map-img img').attr({'src':'../images/sub/img_course_02.png'});
+                } else{
+                    $('.map-img img').attr({'src':'../images/sub/img_course_02_m.png'});
+                    $('.map-img img').parent().parent().addClass('mobile');
+                }
             });
 
         });

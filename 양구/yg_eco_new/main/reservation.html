@@ -96,7 +96,7 @@
                         <li class="focus_bg">
                             <a href="../picsub/yeyak.html" title="체험학습" class="hf_d_1">체험학습</a>
                             <ul class="depth1">
-                                <li><a href="javascript:;">목재체험프로그램</a></li>
+                                <li><a href="javascript:;">목재문화체험</a></li>
                                 <li><a href="javascript:;">숲 해설</a></li>
                                 <li><a href="javascript:;">유아숲체험</a></li>
                                 <li><a href="javascript:;">용늪탐방</a></li>
@@ -122,7 +122,7 @@
                                     <ul class="depth2">
                                         <li><a href="javascript:;">DMZ야생동물생태관</a></li>
                                         <li><a href="javascript:;">DMZ야생화 분재원</a></li>
-                                        <li><a href="javascript:;">목재체험관</a></li>
+                                        <li><a href="javascript:;">목재문화체험관</a></li>
                                         <li><a href="javascript:;">피크닉광장</a></li>
                                     </ul>
                                 </li>
@@ -246,7 +246,7 @@
                                     <li><a href="javascript:;">숲 배움터</a></li>
                                     <li><a href="javascript:;">숲 놀이터</a></li>
                                     <li><a href="javascript:;">숲 키움터</a></li>
-                                    <li><a href="javascript:;">목재체험관</a></li>
+                                    <li><a href="javascript:;">목재문화체험관</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -341,11 +341,20 @@
             <div class="w_set">
                 <ul class="top_menu">
                     <li class="on">
+                        <a href="#" class="course" title="선택됨">
+                            <div class="image" style="background-image: url('../images/image/img_res_r.png');"></div>
+                            <div>
+                                <p class="desc">다양하게 즐기는</p>
+                                <span class="txt">#목재문화체험</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#" class="course">
                             <div class="image" style="background-image: url('../images/image/img_res_g.png');"></div>
                             <div>
                                 <p class="desc">어른도 함께 참여할 수 있는</p>
-                                <span class="txt">#숲해설</span>
+                                <span class="txt">#숲 해설</span>
                             </div>
                         </a>
                     </li>
@@ -354,7 +363,7 @@
                             <div class="image" style="background-image: url('../images/image/img_res_y.png');"></div>
                             <div>
                                 <p class="desc">어린이와 함께 듣는</p>
-                                <span class="txt">#유아숲해설</span>
+                                <span class="txt">#유아숲체험</span>
                             </div>
                         </a>
                     </li>
@@ -363,45 +372,46 @@
                             <div class="image" style="background-image: url('../images/image/img_res_b.png');"></div>
                             <div>
                                 <p class="desc">보존가치가 뛰어난</p>
-                                <span class="txt">#용늪체험</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="course">
-                            <div class="image" style="background-image: url('../images/image/img_res_r.png');"></div>
-                            <div>
-                                <p class="desc">다양하게 즐기는</p>
-                                <span class="txt">#체험프로그램</span>
+                                <span class="txt">#용늪 탐방</span>
                             </div>
                         </a>
                     </li>
                 </ul>
                 <div class="program_wrap ag_input_wrap type_reserve">
-                    <p><em class="require">*</em> 예약 시 입력한 연락처와 예약번호를 입력해주세요.</p>
-                    <ul class="complete_table">
-                        <li>
-                            <div class="tit">예약자 성명<em class="require">*</em></div>
-                            <div class="txt">
-                                <input type="text" name="text" id="agtext1" placeholder="">
-                                <label for="agtext1" class="blind">내용을 입력해주세요</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tit">휴대폰번호<em class="require">*</em></div>
-                            <div class="txt">
-                                <input type="text" name="text" id="agtext2" placeholder="">
-                                <label for="agtext2" class="blind">내용을 입력해주세요</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tit">예약번호<em class="require">*</em></div>
-                            <div class="txt">
-                                <input type="text" name="text" id="agtext3" placeholder="">
-                                <label for="agtext3" class="blind">내용을 입력해주세요</label>
-                            </div>
-                        </li>
-                    </ul>
+                    <p class="require">예약 시 입력한 연락처와 예약번호를 입력해주세요.</p>
+					<ul class="complete_table">
+						<li>
+							<div class="tit">프로그램 선택</div>
+							<div class="txt">
+								<select name="" id="program_sel">
+									<option value="">프로그램</option>
+									<option value="">프로그램</option>
+								</select>
+								<label for="agtext1" class="blind">프로그램 선택</label>
+							</div>
+						</li>
+						<li>
+							<div class="tit">예약자 성명</div>
+							<div class="txt">
+								<input type="text" name="text" id="agtext1" placeholder="">
+								<label for="agtext1" class="blind">예약자 성명</label>
+							</div>
+						</li>
+						<li>
+							<div class="tit">휴대폰번호</div>
+							<div class="txt">
+								<input type="text" name="text" id="agtext2" placeholder="">
+								<label for="agtext2" class="blind">휴대폰번호</label>
+							</div>
+						</li>
+						<li>
+							<div class="tit">예약번호</div>
+							<div class="txt">
+								<input type="text" name="text" id="agtext3" placeholder="">
+								<label for="agtext3" class="blind">예약번호</label>
+							</div>
+						</li>
+					</ul>
                     <div class="program_bottom">
                         <a href="#" class="common_button" title="새창으로 이동">예약조회</a>
                     </div>
@@ -427,7 +437,7 @@
                                 </ul>
                                 <ul>
                                     <li>양구수목원 매표소: 033-481-2538</li>
-                                    <li>목재체험관: 033-480-7395</li>
+                                    <li>목재문화체험관: 033-480-7395</li>
                                 </ul>
                                 <ul>
                                     <li class="copy">Copyright ⓒECO양구수목원.ALL RIGHTS RESERVED</li>

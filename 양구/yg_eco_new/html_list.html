@@ -1,14 +1,14 @@
 <html lang="ko"><head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<title>양구수목원 메인안</title>
+	<title>양구수목원 마크업</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
 	<style>
 		*{-webkit-text-size-adjust:none;}
-		html,body{/width:100%;height:100%; min-width:800px;}
+		html,body{width:100%;height:100%; min-width:800px;}
 		html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, ul, li, fieldset, form, label, leging, table, caption, tbody, tfoot, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; outline:0; font-family:NanumGothic,'나눔고딕',Dotum,'돋움',applegothic,sans-serif; font-size:13px; color:#555; /*vertical-align:baseline;*/}
 		body{line-height:1.2em; border:0;}
 		strong, em, span, wbr, a{display:inline-block;}
@@ -41,8 +41,9 @@
 		table.htmllist td:nth-child(4),table.htmllist td:nth-child(6),table.htmllist td:nth-child(7){text-align:center;}
 		table.htmllist td:nth-child(7){color:#5bcdda; font-size:11px; font-weight:bold;}
 		table.htmllist td > a{display:block; width:100%; height:26px; line-height:26px; margin: 1px 0;text-align:center; color:#fff; font-size:11px; font-weight:bold; background-color:#444; border:1px solid #444; border-radius:3px;}
-		table.htmllist td>a:hover{background-color:#444; line-height:28px;}
-		table.htmllist tr:hover>td{/*background-color:#fffad2;*/}
+		table.htmllist td > a.on01{background-color: #139274 ;}
+		table.htmllist td>a:hover{background-color:#000; line-height:28px;}
+		table.htmllist tr:hover>td{background-color:#fffad2;}
 		table.htmllist td.ing{text-align:center; font-size:12;}
 		table.htmllist td.end{text-align:center; font-size:12; font-weight:bold; background-color:#b8bbbf; color:#1a1a1a;}
 		/* .total{padding:10px 5px 20px} */
@@ -57,11 +58,10 @@
 <body>
 <div id="wrap">
 	<div id="header">
-		<h1>양구수목원 메인</h1>
+		<h1>양구수목원 디자인 리스트</h1>
 		<div>
 			<p>Version: <b>0.0.01</b></p>
-			<p>Last Update: <b>2023-06-28</b></p>
-			<p>Coding: <b>HTML5&amp;CSS3</b></p>
+			<p>Last Update: <b>2023-10-10</b></p>
 		</div>
 	</div>
 	<h4>디자인 안 목록</h4>
@@ -69,7 +69,13 @@
 		<thead>
 			<tr class="head">
 				<td>No</td>
-				<td>Prototype</td>
+				<td>Path</td>
+				<td>FileName</td>
+				<td>State</td>
+				<td>Publishing</td>
+				<td>Update</td>
+				<td>Design(PC)</td>
+				<td>Design(mobile)</td>
 				<td>Remark</td>
 			</tr>
 		</thead>
@@ -77,391 +83,799 @@
 			<tr>
 				<th colspan="9">메인</th>
 			</tr>
-			<!-- <tr>
+			<tr>
 				<td></td>
 				<td>/main/</td>
-				<td>main</td>
+				<td>main4</td>
 				<td class="ing">ing</td>
+				<td><a href="./main/main4.html" target="_blank">view-찬</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./main/main.html" target="_blank">View</a>
+					<a href="./images/design/main_01.png" target="_blank" class="on01">메인</a>
+					<a href="./images/design/main_01_gnb.png" target="_blank" class="on01">메인 메뉴</a>
 				</td>
-				<td>2023-06-28</td>
 				<td>
-					<a href="./images/design/main_01.png" target="_blank">메인_01</a>
-				</td>
-				<td>
-					<a href="./images/design/m_login.png" target="_blank">로그인_m</a>
+					<a href="./images/design/m_main.png" target="_blank" class="on01">메인_m</a>
+					<a href="./images/design/m_logOut.png" target="_blank" class="on01">메뉴_m</a>
 				</td>
 				<td>HOME > 메인</td>
-			</tr> -->
-			<tr>
-				<td>3</td>
-				<td>
-					<a href="./main/main4.html" target="_blank">메인</a>
-				</td>
-				<td style="text-align:left;">
-				<strong> 메인</strong>
-				<br><br>홍보동영상을 전면으로 배치하고 양구의 키 컨셉에 맞게 구현.
-				</td>
-			</tr>
-			<!-- <tr>
-				<td>2</td>
-				<td>
-					<a href="./main/main2.html" target="_blank">Type 02</a>
-				</td>
-
-				<td style="text-align:left;">
-				<strong>공간분할형</strong>
-				<br><br> 상단의 키비주얼과 바로가기 영역을 최상단에 배치하여 컨텐츠 접근성 향상.
-				</td>
 			</tr>
 			<tr>
-				<td>1</td>
+				<td></td>
+				<td>/main/</td>
+				<td>login</td>
+				<td class="ing">ing</td>
+				<td><a href="./main/login.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./main/main3.html" target="_blank">Type 03</a>
+					<a href="./images/design/로그인.png" target="_blank" class="on01">view</a>
 				</td>
-
-				<td style="text-align:left;">
-				<strong> 캐릭터 활용형</strong>
-				<br><br>캐릭터를 활용하여재미요소를 부여하고 주요정보를 와이드하게 표시하여 안정감 있게 표현.
+				<td>
+					<a href="./images/design/m_login.png" target="_blank" class="on01">view</a>
 				</td>
-			</tr> -->
-			<tr>
-				<th colspan="9">메인</th>
+				<td>HOME > 로그인</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/main/</td>
+				<td>search</td>
+				<td class="ing">ing</td>
+				<td><a href="./main/search.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./main/login.html" target="_blank">로그인</a>
+					<a href="./images/design/통합검색.png" target="_blank" class="on01">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 로그인</strong>
-					<br><br>로그인
+				<td>
+					<a href="./images/design/m_통합검색.png" target="_blank" class="on01">view</a>
 				</td>
+				<td>HOME > 통합검색</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/main/</td>
+				<td>reservation<br>reservation02</td>
+				<td class="ing">ing</td>
 				<td>
-					<a href="./main/reservation.html" target="_blank">예약확인</a>
+					<a href="./main/reservation.html" target="_blank">view-연</a>
+					<a href="./main/reservation02.html" target="_blank">view-연</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 예약확인</strong>
-					<br><br>예약확인
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./main/reservation02.html" target="_blank">예약확인2</a>
+					<a href="./images/design/예약확인.png" target="_blank" class="on01">view</a>
+					<a href="./images/design/예약확인 02.png" target="_blank" class="on01">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 예약확인2</strong>
-					<br><br>예약확인2
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
 				<td>
-					<a href="./main/search.html" target="_blank">통합검색</a>
+					<a href="./images/design/m_예약확인.png" target="_blank" class="on01">view</a>
+					<a href="./images/design/m_예약확인 02.png" target="_blank" class="on01">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 통합검색</strong>
-					<br><br>통합검색
-				</td>
+				<td>HOME > 예약확인</td>
 			</tr>
 			<tr>
 				<th colspan="9">이용안내</th>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/sub/</td>
+				<td>sub</td>
+				<td class="ing">ing</td>
+				<td><a href="./info/guide.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./info/guide.html" target="_blank">수목원 안내도</a>
+					<a href="./images/design/수목원 안내도.png" target="_blank" class="on01">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 수목원 안내도</strong>
-					<br><br>수목원 안내도
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
 				<td>
-					<a href="./info/entrance.html" target="_blank">입장안내</a>
+					<a href="./images/design/m_수목원 안내도.png" target="_blank" class="on01">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 입장안내</strong>
-					<br><br>이용안내 > 입장안내
-				</td>
+				<td>HOME > 이용안내 > 수목원안내도</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/sub/</td>
+				<td>sub</td>
+				<td class="ing">ing</td>
+				<td><a href="./info/entrance.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./info/caution.html" target="_blank">유의사항</a>
+					<a href="./images/design/입장안내 02.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 유의사항</strong>
-					<br><br>이용안내 > 유의사항
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
 				<td>
-					<a href="./info/amenity.html" target="_blank">편의시설</a>
+					<a href="./images/design/m_입장안내.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-				<strong> 편의시설</strong>
-				<br><br>이용안내 > 편의시설 리스트
-				</td>
+				<td>HOME > 이용안내 > 입장안내</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/info/</td>
+				<td>amenity</td>
+				<td class="ing">ing</td>
+				<td><a href="./info/amenity.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./info/traffic.html" target="_blank">교통안내</a>
+					<a href="./images/design/편의시설.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 교통안내</strong>
-					<br><br>이용안내 > 교통안내
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
 				<td>
-					<a href="./info/faq.html" target="_blank">FAQ</a>
+					<a href="./images/design/m_편의시설.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> FAQ</strong>
-					<br><br>FAQ
-				</td>
+				<td>HOME > 이용안내 > 편의시설</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/info/</td>
+				<td>caution</td>
+				<td class="ing">ing</td>
+				<td><a href="./info/caution.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./info/inquire.html" target="_blank">문의하기</a>
+					<a href="./images/design/유의사항.png" target="_blank" class="on01">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong> 문의하기</strong>
-					<br><br>이용안내 > 문의하기
-				</td>
-			</tr>
-			<tr>
-				<th colspan="9">게시판</th>
-			</tr>
-			<tr>
-				<td>3</td>
 				<td>
-					<a href="./board/notice.html" target="_blank">게시판</a>
+					<a href="./images/design/m_유의사항.png" target="_blank" class="on01">view</a>
 				</td>
-				<td style="text-align:left;">
-				<strong> 공지사항</strong>
-				<br><br>공지사항 리스트
-				</td>
+				<td>HOME > 이용안내 > 유의사항</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/info/</td>
+				<td>traffic</td>
+				<td class="ing">ing</td>
+				<td><a href="./info/traffic.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./board/notice_view.html" target="_blank">게시판 - 상세</a>
+					<a href="./images/design/교통안내.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-				<strong> 공지사항</strong>
-				<br><br>공지사항 상세
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
 				<td>
-					<a href="./board/faq.html" target="_blank">FAQ</a>
+					<a href="./images/design/m_교통안내.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-				<strong> FAQ</strong>
-				<br><br>FAQ
-				</td>
+				<td>HOME > 이용안내 > 교통안내</td>
 			</tr>
 			<tr>
-				<th colspan="9">체험학습</th>
-			</tr>
-			<tr>
-				<td>1</td>
+				<td></td>
+				<td>/info/</td>
+				<td>faq</td>
+				<td class="ing">ing</td>
+				<td><a href="./info/faq.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./program/program_write.html" target="_blank">체험학습</a>
+					<a href="./images/design/FAQ.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-				<strong>체험학습</strong>
-				<br><br>체험프로그램
-				</td>
-			</tr>
-			<tr>
-				<td>2</td>
 				<td>
-					<a href="./program/reservation.html" target="_blank">체험학습</a>
+					<a href="./images/design/m_FAQ.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-				<strong>체험학습 - 예약하기</strong>
-				<br><br>체험프로그램 예약하기
-				</td>
+				<td>HOME > 이용안내 > FAQ</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td></td>
+				<td>/info/</td>
+				<td>inquire</td>
+				<td class="ing">ing</td>
+				<td><a href="./info/inquire.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./program/reservation_complete.html" target="_blank">체험학습</a>
+					<a href="./images/design/문의하기.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-				<strong>체험학습 - 예약완료</strong>
-				<br><br>체험프로그램 예약완료
-				</td>
-			</tr>
-			<tr>
-				<th colspan="9">수목원이야기</th>
-			</tr>
-			<tr>
-				<td>1</td>
 				<td>
-					<a href="./story/today_list.html" target="_blank">수목원 오늘</a>
+					<a href="./images/design/m_문의하기.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong>수목원오늘</strong>
-					<br><br>수목원 오늘 리스트
-				</td>
+				<td>HOME > 이용안내 > 문의하기</td>
 			</tr>
 			<tr>
-				<td>2</td>
+				<td></td>
+				<td>//</td>
+				<td></td>
+				<td class="ing">ing</td>
 				<td>
-					<a href="./story/today_view.html" target="_blank">수목원 오늘 - 상세</a>
+					<!-- <a href="./info/inquire.html" target="_blank">view-연</a> -->
 				</td>
-				<td style="text-align:left;">
-					<strong>수목원오늘</strong>
-					<br><br>수목원 오늘 상세
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./story/service_list.html" target="_blank">디자인 서비스</a>
+					<!-- <a href="./images/design/문의하기.png" target="_blank">view</a> -->
 				</td>
-				<td style="text-align:left;">
-					<strong>디자인 서비스</strong>
-					<br><br>디자인서비스 리스트
-				</td>
-			</tr>
-			<tr>
-				<td>4</td>
 				<td>
-					<a href="./story/service_view.html" target="_blank">디자인서비스 - 상세</a>
+					<!-- <a href="./images/design/m_문의하기.png" target="_blank">view</a> -->
 				</td>
-				<td style="text-align:left;">
-					<strong>디자인 서비스</strong>
-					<br><br>디자인서비스 상세
-				</td>
-			</tr>
-			<tr>
-				<th colspan="9">마이페이지</th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>
-					<a href="./mypage/inquiry_list.html" target="_blank">나의 문의</a>
-				</td>
-				<td style="text-align:left;">
-					<strong>나의 문의</strong>
-					<br><br>나의 문의 리스트
-				</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>
-					<a href="./mypage/inquiry_view.html" target="_blank">나의 문의 - 상세</a>
-				</td>
-				<td style="text-align:left;">
-					<strong>나의 문의</strong>
-					<br><br>나의 문의 상세
-				</td>
-			</tr>
-			<tr>
-				<th colspan="9">양구수목원</th>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>
-					<a href="./promotion/promotion.html" target="_blank">홍보동영상</a>
-				</td>
-				<td style="text-align:left;">
-					<strong>홍보동영상</strong>
-					<br><br>홍보동영상
-				</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>
-					<a href="./promotion/promotion_view.html" target="_blank">홍보동영상2</a>
-				</td>
-				<td style="text-align:left;">
-					<strong>홍보동영상2</strong>
-					<br><br>홍보동영상2
-				</td>
-			</tr>
-			<tr>
-				<th colspan="9">아카이브</th>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>
-					<a href="./archive/archive.html" target="_blank">아카이브1</a>
-				</td>
-				<td style="text-align:left;">
-					<strong>아카이브1</strong>
-					<br><br>아카이브1
-				</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>
-					<a href="./archive/archive_list.html" target="_blank">아카이브 리스트</a>
-				</td>
-				<td style="text-align:left;">
-					<strong>아카이브 리스트</strong>
-					<br><br>아카이브 리스트
-				</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>
-					<a href="./archive/archive_view.html" target="_blank">아카이브 상세</a>
-				</td>
-				<td style="text-align:left;">
-					<strong>아카이브 상세</strong>
-					<br><br>아카이브 상세
-				</td>
+				<td>HOME > 이용안내 > 문의하기 > 관리자 답변</td>
 			</tr>
 			<tr>
 				<th colspan="9">추천코스</th>
 			</tr>
 			<tr>
-				<td>2</td>
+				<td></td>
+				<td>/course/</td>
+				<td>course01~04</td>
+				<td class="ing">ing</td>
 				<td>
-					<a href="./course/course01.html" target="_blank">추천코스01</a>
+					<a href="./course/course01.html" target="_blank">view-미</a>
+					<a href="./course/course02.html" target="_blank">view-미</a>
+					<a href="./course/course03.html" target="_blank">view-미</a>
+					<a href="./course/course04.html" target="_blank">view-미</a>
 				</td>
-				<td style="text-align:left;">
-					<strong>추천코스1</strong>
-					<br><br>추천코스1
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/추천코스.png" target="_blank">view</a>
 				</td>
+				<td>
+					<a href="./images/design/m_추천코스.png" target="_blank">view</a>
+				</td>
+				<td>HOME > 추천코스</td>
+			</tr>
+		    <tr>
+				<td></td>
+				<td>/course/</td>
+				<td>course01~04</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./course/course01.html" target="_blank">view-미</a>
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/추천코스 사진 팝업.png" target="_blank">view</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_추천코스 사진 팝업png" target="_blank" class="on01">view</a>-->
+				</td>
+				<td>HOME > 추천코스 > 팝업</td>
 			</tr>
 			<tr>
-				<td>2</td>
+				<td></td>
+				<td>/course/</td>
+				<td>audio</td>
+				<td class="ing">ing</td>
 				<td>
-					<a href="./course/course02.html" target="_blank">추천코스02</a>
+					<a href="./course/audio.html" target="_blank">view-미</a>
 				</td>
-				<td style="text-align:left;">
-					<strong>추천코스2</strong>
-					<br><br>추천코스2
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/오디오 듣기.png" target="_blank" class="on01">view</a>
 				</td>
+				<td>
+					<a href="./images/design/m_오디오 듣기.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 추천코스 > 오디오 듣기</td>
 			</tr>
 			<tr>
-				<td>2</td>
+				<th colspan="9">아카이브</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/archive/</td>
+				<td>archive</td>
+				<td class="ing">ing</td>
+				<td><a href="./archive/archive.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
 				<td>
-					<a href="./course/course03.html" target="_blank">추천코스03</a>
+					<a href="./images/design/아카이브.png" target="_blank">view</a>
 				</td>
-				<td style="text-align:left;">
-					<strong>추천코스3</strong>
-					<br><br>추천코스3
+				<td>
+					<a href="./images/design/m_아카이브png" target="_blank">view</a>
 				</td>
+				<td>HOME > 아카이브</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/archive/</td>
+				<td>archive_list</td>
+				<td class="ing">ing</td>
+				<td><a href="./archive/archive_list.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/아카이브 02.png" target="_blank">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_아카이브 02png" target="_blank">view</a>
+				</td>
+				<td>HOME > 아카이브 검색어 입력</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/archive/</td>
+				<td>archive_view</td>
+				<td class="ing">ing</td>
+				<td><a href="./archive/archive_view.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/아카이브 03.png" target="_blank">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_아카이브 03.png" target="_blank">view</a>
+				</td>
+				<td>HOME > 아카이브 > 상세</td>
+			</tr>
+			<tr>
+				<th colspan="9">체험학습</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td>program_write</td>
+				<td class="ing">ing</td>
+				<td><a href="./program/program_write.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/체험프로그램.png" target="_blank">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_체험프로그램.png" target="_blank">view</a>
+				</td>
+				<td>HOME > 체험학습 > 체험프로그램</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td>reservation</td>
+				<td class="ing">ing</td>
+				<td><a href="./program/reservation.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/예약하기_01.png" target="_blank">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_예약하기.png" target="_blank">view</a>
+				</td>
+				<td>HOME > 체험학습 > 체험프로그램 > 신청하기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td>reservation_complete</td>
+				<td class="ing">ing</td>
+				<td><a href="./program/reservation_complete.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/예약하기_02.png" target="_blank">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_예약 완료.png" target="_blank">view</a>
+				</td>
+				<td>HOME > 체험학습 > 체험프로그램 > 신청하기 > 예약확인</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+					<!-- <a href="./program/.html" target="_blank">view</a> -->
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<!-- <a href="./images/design/예약하기_02.png" target="_blank">view</a> -->
+				</td>
+				<td>
+					<!-- <a href="./images/design/m_예약 완료.png" target="_blank">view</a> -->
+				</td>
+				<td>HOME > 체험학습 > 숲해설</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+					<!-- <a href="./program/.html" target="_blank">view</a> -->
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<!-- <a href="./images/design/예약하기_02.png" target="_blank">view</a> -->
+				</td>
+				<td>
+					<!-- <a href="./images/design/m_예약 완료.png" target="_blank">view</a> -->
+				</td>
+				<td>HOME > 체험학습 > 숲해설 > 신청</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+					<!-- <a href="./program/.html" target="_blank">view</a> -->
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<!-- <a href="./images/design/예약하기_02.png" target="_blank">view</a> -->
+				</td>
+				<td>
+					<!-- <a href="./images/design/m_예약 완료.png" target="_blank">view</a> -->
+				</td>
+				<td>HOME > 체험학습 > 유아숲체험</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+					<!-- <a href="./program/.html" target="_blank">view</a> -->
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<!-- <a href="./images/design/예약하기_02.png" target="_blank">view</a> -->
+				</td>
+				<td>
+					<!-- <a href="./images/design/m_예약 완료.png" target="_blank">view</a> -->
+				</td>
+				<td>HOME > 체험학습 > 용늪체험</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/program/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+					<!-- <a href="./program/.html" target="_blank">view</a> -->
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<!-- <a href="./images/design/예약하기_02.png" target="_blank">view</a> -->
+				</td>
+				<td>
+					<!-- <a href="./images/design/m_예약 완료.png" target="_blank">view</a> -->
+				</td>
+				<td>HOME > 체험학습 > 용늪체험 > 휴장일</td>
+			</tr>
+			<tr>
+				<th colspan="9">수목원 이야기</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/story/</td>
+				<td>today_list</td>
+				<td class="ing">ing</td>
+				<td><a href="./story/today_list.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/수목원 오늘.png" target="_blank">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_수목원 오늘.png" target="_blank">view</a>
+				</td>
+				<td>HOME > 수목원 이야기 > 수목원 오늘</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/story/</td>
+				<td>today_view</td>
+				<td class="ing">ing</td>
+				<td><a href="./story/today_view.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/수목원 오늘 02.png" target="_blank">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_수목원 오늘 02.png" target="_blank">view</a>
+				</td>
+				<td>HOME > 수목원 이야기 > 수목원 오늘 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/board/</td>
+				<td>notice</td>
+				<td class="ing">ing</td>
+				<td><a href="./board/notice.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/공지사항.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_공지사항.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 수목원 이야기 > 공지사항</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/board/</td>
+				<td>notice_view</td>
+				<td class="ing">ing</td>
+				<td><a href="./board/notice_view.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/공지사항 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_공지사항 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 수목원 이야기 > 공지사항 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/story/</td>
+				<td>service_list</td>
+				<td class="ing">ing</td>
+				<td><a href="./story/service_list.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/디자인 서비스.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<a href="./images/design/m_디자인 서비스.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 수목원 이야기 > 디자인 서비스</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/story/</td>
+				<td>service_view</td>
+				<td class="ing">ing</td>
+				<td><a href="./story/service_view.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/디자인 서비스 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_디자인 서비스 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 수목원 이야기 > 디자인 서비스 > 상세</td>
+			</tr>
+			<tr>
+				<th colspan="9">양구수목원</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/park/</td>
+				<td>introduce</td>
+				<td class="ing">ing</td>
+				<td><a href="./park/introduce.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/수목원 소개.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_수목원 소개.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 양구수목원 > 수목원 소개</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/promotion/</td>
+				<td>symbol</td>
+				<td class="ing">ing</td>
+				<td><a href="./promotion/symbol.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/수목원 상징.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_수목원 상징.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 양구수목원 > 수목원 상징</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/promotion/</td>
+				<td>promotion</td>
+				<td class="ing">ing</td>
+				<td><a href="./promotion/promotion.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/홍보영상.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_홍보영상.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 양구수목원 > 홍보영상</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/promotion/</td>
+				<td>promotion_view</td>
+				<td class="ing">ing</td>
+				<td><a href="./promotion/promotion_view.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/홍보영상 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_홍보영상 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 양구수목원 > 홍보영상 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/park/</td>
+				<td>spring<br>summer<br>autumn<br>winter</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./park/spring.html" target="_blank">view-미</a>
+					<a href="./park/summer.html" target="_blank">view-미</a>
+					<a href="./park/autumn.html" target="_blank">view-미</a>
+					<a href="./park/winter.html" target="_blank">view-미</a>
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/수목원 사계.png" target="_blank" class="on01">봄</a>
+					<a href="./images/design/수목원 사계 02.png" target="_blank" class="on01">여름</a>
+					<a href="./images/design/수목원 사계 03.png" target="_blank" class="on01">가을</a>
+					<a href="./images/design/수목원 사계 04.png" target="_blank" class="on01">겨울</a>
+				</td>
+				<td>
+				    <a href="./images/design/m_수목원 사계.png" target="_blank" class="on01">공통</a>
+				</td>
+				<td>HOME > 양구수목원 > 수목원 사계</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/facility/</td>
+				<td>facility01~03</td>
+				<td class="ing">ing</td>
+				<td>
+					<!-- <a href="./facility/facility01.html" target="_blank">view-연</a>
+					<a href="./facility/facility02.html" target="_blank">view-연</a>
+					<a href="./facility/facility03.html" target="_blank">view-연</a> -->
+				</td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/시설안내 01.png" target="_blank" class="on01">DMZ 야생동물생태관</a>
+					<a href="./images/design/시설안내 02.png" target="_blank" class="on01">DMZ 야생분재원</a>
+					<a href="./images/design/시설안내 03.png" target="_blank" class="on01">목재문화체험관</a>
+				</td>
+				<td>
+					<a href="./images/design/m_시설안내.png" target="_blank" class="on01">공통</a>
+				</td>
+				<td>HOME > 양구수목원 > 시설안내</td>
+			</tr>
+			<tr>
+				<th colspan="9">마이페이지</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>stamptour</td>
+				<td class="ing">ing</td>
+				<td><a href="./mypage/stamptour.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/스탬프 투어.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_스탬프 투어.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 마이페이지 > 스탬프투어</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>certificate</td>
+				<td class="ing">ing</td>
+				<td><a href="./mypage/certificate.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/완주 인증서.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<!--<a href="./images/design/m_스탬프 투어.png" target="_blank" class="on01">view</a>-->
+				</td>
+				<td>HOME > 마이페이지 > 스탬프투어 > 완주인증서 다운로드</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>inquiry_list</td>
+				<td class="ing">ing</td>
+				<td><a href="./mypage/inquiry_list.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/나의 문의.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_나의 문의.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 마이페이지 > 나의 문의</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>inquiry_view</td>
+				<td class="ing">ing</td>
+				<td><a href="./mypage/inquiry_view.html" target="_blank">view-연</a></td>
+				<td>2023-10-26</td>
+				<td>
+					<a href="./images/design/나의 문의 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+				<a href="./images/design/m_나의 문의 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 마이페이지 > 나의 문의 > 상세</td>
+			</tr>
+			<tr>
+				<th colspan="9">Application</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/app/</td>
+				<td>landing</td>
+				<td class="ing">ing</td>
+				<td><a href="./app/landing.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+				</td>
+				<td>
+				<a href="./images/design/Application 01.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/app/</td>
+				<td>photo</td>
+				<td class="ing">ing</td>
+				<td><a href="./app/photo.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+				</td>
+				<td>
+				<a href="./images/design/Application 02.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 촬영 준비</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>//</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td></td>
+				<td>2023-10-16</td>
+				<td>
+				</td>
+				<td>
+				<a href="./images/design/Application 03_app_guide.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 사용 가이드</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>//</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td></td>
+				<td>2023-10-16</td>
+				<td>
+				</td>
+				<td>
+				<a href="./images/design/Application 03.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 촬영</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/app/</td>
+				<td>save</td>
+				<td class="ing">ing</td>
+				<td><a href="./app/save.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+				</td>
+				<td>
+				<a href="./images/design/Application 04.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 저장</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/app/</td>
+				<td>character</td>
+				<td class="ing">ing</td>
+				<td><a href="./app/character.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+				</td>
+				<td>
+				<a href="./images/design/Application 05_b.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 내 캐릭터 함(모으기 전)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/app/</td>
+				<td>character</td>
+				<td class="ing">ing</td>
+				<td><a href="./app/character.html" target="_blank">view-미</a></td>
+				<td>2023-10-26</td>
+				<td>
+				</td>
+				<td>
+				<a href="./images/design/Application 05.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 내 캐릭터 함</td>
 			</tr>
 		</tbody>
 	</table>
