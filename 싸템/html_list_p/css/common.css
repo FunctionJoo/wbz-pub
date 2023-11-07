@@ -25,16 +25,17 @@ button {
   }
 }
 @media (max-width: 1080px) {
-  .w_set {
+  body:not(.is_pc) .w_set {
     width: auto;
     max-width: 1080px;
     padding-left: 16px;
     padding-right: 16px;
   }
-  .hide_m {
+  body:not(.is_pc) .hide_m {
     display: none !important;
   }
 }
+
 .fc_p0 {
   color: #014099 !important;
 }
@@ -160,9 +161,6 @@ button {
   background: #fff;
 }
 .label_t input:not([type=radio])::-moz-placeholder {
-  color: #A7A7A7;
-}
-.label_t input:not([type=radio]):-ms-input-placeholder {
   color: #A7A7A7;
 }
 .label_t input:not([type=radio])::placeholder {

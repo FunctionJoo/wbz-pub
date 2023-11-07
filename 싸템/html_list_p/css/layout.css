@@ -76,9 +76,6 @@ body {
 #header .sec_top .header_search .search_bar .sec_ipt input::-moz-placeholder {
   color: #A7A7A7;
 }
-#header .sec_top .header_search .search_bar .sec_ipt input:-ms-input-placeholder {
-  color: #A7A7A7;
-}
 #header .sec_top .header_search .search_bar .sec_ipt input::placeholder {
   color: #A7A7A7;
 }
@@ -533,7 +530,7 @@ body {
     background: url("../images/common/m_hd_menu.svg") no-repeat center center;
   }
   body:not(.is_pc) #header .sec_bottom .sec_left,
-body:not(.is_pc) #header .sec_bottom .sec_right {
+  body:not(.is_pc) #header .sec_bottom .sec_right {
     display: none;
   }
 }

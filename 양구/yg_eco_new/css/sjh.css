@@ -1,0 +1,130 @@
+#hedaer {
+  position: relative;
+}
+
+#content .recommend_wrap .w_set .cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center !important;
+}
+#content .recommend_wrap .w_set .cont span {
+  display: block;
+  text-align: start !important;
+}
+#content .recommend_wrap .w_set .cont.btn_wrap a {
+  width: 100%;
+  height: 50px;
+  background: #222222 0% 0% no-repeat padding-box !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-top: 1.5rem;
+  font-size: 17px;
+}
+@media (min-width: 361px) {
+  #content .recommend_wrap .w_set .cont.btn_wrap a {
+    display: none;
+  }
+}
+#content .recommend_wrap .trace_wrap .w_set .facility_img {
+  width: 100%;
+  height: 438px;
+  padding-bottom: 0% !important;
+}
+#content .recommend_wrap .trace_wrap .w_set .facility_img.type_page3 {
+  width: 100%;
+  height: 438px;
+  padding-bottom: 0% !important;
+}
+@media (max-width: 895px) {
+  #content .recommend_wrap .trace_wrap .w_set .facility_img.type_page3 {
+    height: 0;
+    padding-bottom: 45% !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  #content .recommend_wrap .trace_wrap .w_set .facility_img {
+    height: 0;
+    padding-bottom: 67% !important;
+    background-size: cover;
+  }
+}
+#content .recommend_wrap .trace_wrap .w_set .script {
+  margin-top: 60px;
+}
+#content .recommend_wrap .trace_wrap .w_set .experience_information_box {
+  margin: 60px 0;
+  border-top: 1px solid #000;
+}
+#content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 3.5rem;
+}
+@media (max-width: 578px) {
+  #content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr {
+    grid-template-rows: 5rem;
+  }
+}
+#content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_th {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  word-break: keep-all;
+  font-size: 18px;
+}
+@media (max-width: 1400px) {
+  #content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_th {
+    font-size: 14px;
+  }
+}
+#content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-bottom: 1px solid #DDDDDD;
+  font-size: 18px;
+}
+@media (max-width: 1400px) {
+  #content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td {
+    font-size: 14px;
+  }
+  #content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td span {
+    line-height: 18px !important;
+  }
+}
+#content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td span {
+  font-weight: 600;
+  word-break: keep-all;
+  line-height: 26px;
+}
+#content .recommend_wrap .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td em {
+  color: #139274;
+  word-break: keep-all;
+}
+@media (max-width: 1399px) {
+  #content .recommend_wrap .w_set .image_view .view {
+    width: 280px;
+    height: 280px;
+  }
+}
+#content .recommend_wrap .w_set .image_view .view .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0 !important;
+}
+#content .recommend_wrap .w_set .image_view .view .overlay .num {
+  border: 2px dotted #fff;
+}/*# sourceMappingURL=sjh.css.map */
