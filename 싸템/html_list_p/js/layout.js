@@ -34,6 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.querySelector('.header_search').classList.remove('show');
 			document.querySelector('body').classList.remove('m_hold');
 		});
+
+		// 검색전 탭
+		document.querySelectorAll('.t_before_tab > button').forEach((e, idx) => {
+			e.addEventListener('click', () => {
+				document.querySelectorAll('.t_before_tab > button').forEach((e) => {
+					e.classList.remove('on');
+				});
+				document.querySelectorAll('.t_before > .sec').forEach((e) => {
+					e.classList.remove('on');
+				});
+				e.classList.add('on');
+				document.querySelectorAll('.t_before > .sec')[idx].classList.add('on');
+			})
+		});
 	}
 
 	if (document.querySelector('#sidebar')) {

@@ -32,10 +32,11 @@
 					</a>
 				</h1>
 				<div class="header_search show">
-					<!-- 추후 모바일에서 사용 예정 -->
-					<button class="layer_close" type="button" style="display: none;">레이어닫기</button>
+					<!-- 모바일 닫기 레이어 -->
+					<button class="layer_close hide_pc" type="button">레이어닫기</button>
 					<div class="search_bar">
 						<div class="sec_radio">
+							<div class="radio_select_result hide_pc">삽니다</div>
 							<label class="radio_visual">
 								<input type="radio" name="sch_type" value="0" checked>
 								<span class="radio_ico"></span>
@@ -54,14 +55,14 @@
 							<button type="button">검색</button>
 						</div>
 					</div>
-					<div class="search_content">
+					<div class="search_content before_search" style="display: none;">
 						<div class="t_before_tab hide_pc">
 							<button class="tbt_btn on">최근 검색 게임</button>
 							<button class="tbt_btn">인기 검색 게임</button>
 						</div>
 						<div class="t_before">
-							<div class="sec_1">
-								<p class="sec_title">최근 검색 게임</p>
+							<div class="sec sec_1 on">
+								<p class="sec_title hide_m">최근 검색 게임</p>
 								<div class="sec_clear_wrap"><button class="sec_clear" type="button">전체삭제</button></div>
 								<ul class="sec_cont sec_cont_full sch_ul has_close">
 									<!-- 팝니다 -->
@@ -148,8 +149,8 @@
 									</li>
 								</ul>
 							</div>
-							<div class="sec_2">
-								<p class="sec_title">인기게임</p>
+							<div class="sec sec_2">
+								<p class="sec_title hide_m">인기게임</p>
 								<div class="sec_cont">
 									<ul class="sch_ul has_rank">
 										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
@@ -175,13 +176,120 @@
 							</div>
 						</div>
 					</div>
+					<div class="search_content while_search">
+						<div class="ws_content_sec has_select">
+							<div class="sch_li_sec sec_1">
+								<ul class="sch_ul has_point">
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+								</ul>
+							</div>
+							<div class="line"></div>
+							<div class="sch_li_sec sec_2">
+								<ul class="sch_ul has_point">
+									<li><a href="#">sec2 메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+								</ul>
+							</div>
+							<div class="sch_li_sec sec_3">
+								<ul class="sch_ul has_group">
+									<li class="is_all"><a href="#">전체보기</a></li>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+									</ul>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 2</a></li>
+										<li><a href="#">- 서버그룹 2-1</a></li>
+										<li><a href="#">- 서버그룹 2-1</a></li>
+										<li><a href="#">- 서버그룹 2-1</a></li>
+									</ul>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 3</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+									</ul>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 4</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="header_banner1 hide_m">
 					<a href="#">
 						<img src="https://www.kukinews.com/data/kuk/image/2022/04/28/kuk202204280332.647x.0.jpg" alt="">
 					</a>
 				</div>
-				<div class="header_menu_btn">
+				<div class="header_menu_btn hide_pc">
 					<button type="button" class="header_menu_open">메뉴오픈</button>
 				</div>
 			</div>
