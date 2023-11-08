@@ -2,6 +2,23 @@
   position: relative;
 }
 
+#content .recommend_wrap .w_set.top_menu_Swiper .swiper-wrapper {
+  overflow: unset !important;
+  gap: 0 !important;
+}
+#content .recommend_wrap .w_set.top_menu_Swiper .swiper-wrapper .swiper-slide {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  #content .recommend_wrap .w_set.top_menu_Swiper .swiper-wrapper .swiper-slide {
+    margin-right: 0;
+  }
+}
+#content .recommend_wrap .w_set.top_menu_Swiper .swiper-wrapper .swiper-slide a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 #content .recommend_wrap .w_set .cont {
   display: flex;
   flex-direction: column;
@@ -11,9 +28,28 @@
 #content .recommend_wrap .w_set .cont span {
   display: block;
   text-align: start !important;
+  word-break: keep-all;
+}
+#content .recommend_wrap .w_set .cont span.tit_s {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#content .recommend_wrap .w_set .cont span.tit_m {
+  font-weight: 500;
+}
+#content .recommend_wrap .w_set .cont span strong {
+  font-weight: 600;
+}
+#content .recommend_wrap .w_set .cont.btn_wrap {
+  flex-direction: row;
+}
+@media (max-width: 680px) {
+  #content .recommend_wrap .w_set .cont.btn_wrap {
+    flex-direction: column;
+  }
 }
 #content .recommend_wrap .w_set .cont.btn_wrap a {
-  width: 100%;
+  width: 192px;
   height: 50px;
   background: #222222 0% 0% no-repeat padding-box !important;
   display: flex;
@@ -23,9 +59,9 @@
   margin-top: 1.5rem;
   font-size: 17px;
 }
-@media (min-width: 361px) {
+@media (max-width: 680px) {
   #content .recommend_wrap .w_set .cont.btn_wrap a {
-    display: none;
+    width: 100%;
   }
 }
 #content .recommend_wrap .trace_wrap .w_set .facility_img {
@@ -113,6 +149,12 @@
   color: #139274;
   word-break: keep-all;
 }
+#content .recommend_wrap .w_set .image_view {
+  margin-right: 0;
+}
+#content .recommend_wrap .w_set .image_view.swiper-wrapper {
+  overflow-x: unset;
+}
 @media (max-width: 1399px) {
   #content .recommend_wrap .w_set .image_view .view {
     width: 280px;
@@ -127,4 +169,22 @@
 }
 #content .recommend_wrap .w_set .image_view .view .overlay .num {
   border: 2px dotted #fff;
+}
+
+#footer .footer_cnt .right .family_site .btn_drop {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #DDDDDD;
+  position: relative;
+  font-weight: 600;
+}
+#footer .footer_cnt .right .family_site .btn_drop::after {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background: url(../images/main/ico_arr_black_drop.svg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  top: 56%;
 }/*# sourceMappingURL=sjh.css.map */

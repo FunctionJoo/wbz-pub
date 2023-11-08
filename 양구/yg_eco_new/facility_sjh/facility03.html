@@ -41,6 +41,7 @@
   <script src="../js/ui_common.js"></script>
   <script src="../js/wbz-popup.v1.js"></script>
   <script src="../js/jquery.guillotine.min.js"></script>
+  <script src="../js/sjh.js"></script>
 </head>
 
 <body>
@@ -243,12 +244,10 @@
               <li>
                 <a href="javascript:;" class="has_child">시설안내</a>
                 <ul class="depth2">
-                  <li><a href="javascript:;">야생동물생태관</a></li>
-                  <li><a href="javascript:;">야생화 분재원</a></li>
-                  <li><a href="javascript:;">숲 배움터</a></li>
-                  <li><a href="javascript:;">숲 놀이터</a></li>
-                  <li><a href="javascript:;">숲 키움터</a></li>
+                  <li><a href="javascript:;">DMZ 야생동물생태관</a></li>
+                  <li><a href="javascript:;">DMZ 야생분재원</a></li>
                   <li><a href="javascript:;">목재문화체험관</a></li>
+                  <li><a href="javascript:;">피크닉 광장</a></li>
                 </ul>
               </li>
             </ul>
@@ -341,9 +340,9 @@
 
     <section id="content">
       <div class="recommend_wrap type_fac">
-        <div class="w_set">
-          <ul class="top_menu">
-            <li>
+        <div class="w_set swiper top_menu_Swiper">
+          <ul class="top_menu swiper-wrapper">
+            <li class="swiper-slide">
               <a href="./facility01.html" class="course">
                 <div class="image" style="background-image: url('../images/sub/img_facility_01.png');"></div>
                 <div>
@@ -352,7 +351,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a href="./facility02.html" class="course">
                 <div class="image" style="background-image: url('../images/sub/img_facility_02.png');"></div>
                 <div>
@@ -361,7 +360,7 @@
                 </div>
               </a>
             </li>
-            <li class="on">
+            <li class="on swiper-slide">
               <a href="./facility03.html" title="선택됨" class="course">
                 <div class="image" style="background-image: url('../images/sub/img_facility_03.png');"></div>
                 <div>
@@ -370,7 +369,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a href="#" class="course">
                 <div class="image" style="background-image: url('../images/sub/img_facility_04.png');"></div>
                 <div>
@@ -421,39 +420,39 @@
             </div>
           </div>
         </div>
-        <div class="w_set">
-          <div class="image_view">
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_010.png');" onclick="$popup.template('#swiperPopup01')">
+        <div class="w_set image_view_Swiper">
+          <div class="image_view swiper-wrapper">
+            <a href="javascript:;" class="view swiper-slide" style="background-image: url('../images/sub/facility_image_view_010.png');" onclick="$popup.template('#swiperPopup01')">
               <div class="overlay">
                 <span class="num">01</span>
-                <p class="txt">유락저</p>
+                <p class="txt">분재체험실</p>
               </div>
             </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_011.png');" onclick="$popup.template('#swiperPopup02')">
+            <a href="javascript:;" class="view swiper-slide" style="background-image: url('../images/sub/facility_image_view_011.png');" onclick="$popup.template('#swiperPopup02')">
               <div class="overlay">
                 <span class="num">02</span>
-                <p class="txt">유람정</p>
+                <p class="txt">목재체험실</p>
               </div>
             </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_012.png');" onclick="$popup.template('#swiperPopup03')">
+            <a href="javascript:;" class="view swiper-slide" style="background-image: url('../images/sub/facility_image_view_012.png');" onclick="$popup.template('#swiperPopup03')">
               <div class="overlay">
                 <span class="num">03</span>
-                <p class="txt">해양정</p>
+                <p class="txt">목재놀이 체험실</p>
               </div>
             </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_013.png');" onclick="$popup.template('#swiperPopup04')">
+            <a href="javascript:;" class="view swiper-slide" style="background-image: url('../images/sub/facility_image_view_013.png');" onclick="$popup.template('#swiperPopup04')">
               <div class="overlay">
                 <span class="num">04</span>
-                <p class="txt">선비천</p>
+                <p class="txt">영상실</p>
               </div>
             </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_014.png');" onclick="$popup.template('#swiperPopup05')">
+            <a href="javascript:;" class="view swiper-slide" style="background-image: url('../images/sub/facility_image_view_014.png');" onclick="$popup.template('#swiperPopup05')">
               <div class="overlay">
                 <span class="num">05</span>
-                <p class="txt">소분지</p>
+                <p class="txt">전시실</p>
               </div>
             </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_014.png');" onclick="$popup.template('#swiperPopup06')">
+            <a href="javascript:;" class="view swiper-slide" style="background-image: url('../images/sub/facility_image_view_014.png');" onclick="$popup.template('#swiperPopup06')">
               <div class="overlay">
                 <span class="num">06</span>
                 <p class="txt">내용 주세요</p>

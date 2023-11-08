@@ -1865,7 +1865,7 @@
 }
 #content .type_fac .w_set .video .over span {
   display: flex;
-  align-items: center;
+  align-items: end;
   margin-top: 21px;
   height: 24px;
   color: #fff;
@@ -1876,8 +1876,10 @@
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url(../images/image/ico_arr.svg) center;
-  background-size: 40px 40px;
+  background: url(../images/image/click_finger.png) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
 }
 #content .type_fac .w_set .video .gradeition {
   position: absolute;
@@ -2503,7 +2505,7 @@
   #content .type_fac.recommend_wrap .trace_wrap .w_set .cont span {
     margin-top: 24px;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 14px !important;
   }
   #content .type_fac.recommend_wrap .trace_wrap .w_set .facility_img {
     margin-top: 40px;
