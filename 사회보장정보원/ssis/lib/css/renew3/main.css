@@ -80,7 +80,7 @@ button {cursor: pointer;}
 .main_article_slide .swiper-slide a,
 .main_article_slide .swiper-slide a * {transition: 0.3s;}
 .main_article_slide .swiper-slide a {display: flex; flex-direction: column; position: relative; width: 100%; height: 100%; background: rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.3); border-radius: 26px 26px 60px 26px; padding: 40px; color: #fff;}
-.main_article_slide .swiper-slide a .tagnew {position: absolute; top: -24px; right: -2px; width: 106px; height: 48px; background: #091152; border-radius: 0px 12px 0px 0px; font-size: 20px; color: #DDDDDD; text-align: center; line-height: 48px; font-weight: 700;}
+.main_article_slide .swiper-slide a .tagnew {position: absolute; top: -24px; right: -2px; width: 106px; height: 48px; background: #091152; border-radius: 0px 12px 0px 0px; font-size: 20px; color: #DDDDDD !important; text-align: center; line-height: 48px; font-weight: 700;}
 .main_article_slide .swiper-slide a .tagnew:after {content: 'NEW';}
 .main_article_slide .swiper-slide a .title {font-size: 24px; line-height: 32px; font-weight: 700;}
 .main_article_slide .swiper-slide a .desc {margin-top: 25px; font-size: 20px; line-height: 26px; color: #E2E2E2;}
@@ -88,9 +88,13 @@ button {cursor: pointer;}
 .main_article_slide .swiper-slide a .btm .date {font-size: 18px; color: #E2E2E2; font-family: 'Play', 'Noto Sans KR', sans-serif;}
 .main_article_slide .swiper-slide a .btm:after {content: ''; display: block; width: 47px; height: 38px; background: url('../../../images/renew3/main/ma_link.png') no-repeat center center;}
 .main_article_slide .swiper-slide a:hover,
-.main_article_slide .swiper-wrapper:not(:hover) .swiper-slide.swiper-slide-active a {background-color: #178217; border-color: #178217; box-shadow: -6px 6px 20px #0000001A;}
+.main_article_slide .swiper-wrapper:not(:hover) .swiper-slide.swiper-slide-active a {background-color: #FFE66A; border-color: #FFE66A; box-shadow: -6px 6px 20px #0000001A;}
 .main_article_slide .swiper-slide a:hover .btm:after,
 .main_article_slide .swiper-wrapper:not(:hover) .swiper-slide.swiper-slide-active a .btm:after {background-image: url('../../../images/renew3/main/ma_link_on.png');}
+.main_article_slide .swiper-slide a:hover *,
+.main_article_slide .swiper-slide a:hover .date,
+.main_article_slide .swiper-wrapper:not(:hover) .swiper-slide.swiper-slide-active a *,
+.main_article_slide .swiper-wrapper:not(:hover) .swiper-slide.swiper-slide-active a .date {color: #222;}
 
 .main_article_slide .ma_control {position: absolute; z-index: 5; top: 100%; margin-top: 28px; display: flex; align-items: center;}
 .main_article_slide .ma_control button {margin-right: 6px; font-size: 0; width: 14px; height: 14px; background: no-repeat center center;}
