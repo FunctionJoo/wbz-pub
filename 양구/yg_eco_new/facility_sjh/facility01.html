@@ -386,9 +386,9 @@
             </li>
           </ul>
         </div>
-        <div class="map-box">
-          <div class="map-img">
-            <img id="mutiMap01" src="../images/sub/img_facility_bg_01.png" alt="DMZ야생동물생태관">
+        <div class="facility_banner_box">
+          <div class="facility_banner_img">
+            <img src="../images/sub/img_facility_bg_01.png" alt="DMZ야생동물생태관">
           </div>
         </div>
         <div class="trace_wrap">
@@ -406,125 +406,71 @@
         </div>
         <div class="w_set">
           <div class="image_view">
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_01.png');" onclick="$popup.template('#swiperPopup01')">
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_01.png');" >
               <div class="overlay">
                 <span class="num">01</span>
                 <p class="txt">파충류 관</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_02.png');" onclick="$popup.template('#swiperPopup02')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_02.png');">
               <div class="overlay">
                 <span class="num">02</span>
                 <p class="txt">열대어 전시실</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_03.png');" onclick="$popup.template('#swiperPopup03')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_03.png');">
               <div class="overlay">
                 <span class="num">03</span>
                 <p class="txt">생태갤러리</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_04.png');" onclick="$popup.template('#swiperPopup04')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_04.png');">
               <div class="overlay">
                 <span class="num">04</span>
                 <p class="txt">생태연구소</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_05.png');" onclick="$popup.template('#swiperPopup05')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_05.png');">
               <div class="overlay">
                 <span class="num">05</span>
                 <p class="txt">생태탐험존</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_06.png');" onclick="$popup.template('#swiperPopup06')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_06.png');">
               <div class="overlay">
                 <span class="num">06</span>
                 <p class="txt">미래존</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_07.png');" onclick="$popup.template('#swiperPopup07')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_07.png');">
               <div class="overlay">
                 <span class="num">07</span>
                 <p class="txt">체험존</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_08.png');" onclick="$popup.template('#swiperPopup08')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_08.png');">
               <div class="overlay">
                 <span class="num">08</span>
                 <p class="txt">동물존</p>
               </div>
-            </a>
-            <a href="javascript:;" class="view" style="background-image: url('../images/sub/facility_image_view_09.png');" onclick="$popup.template('#swiperPopup09')">
+            </div>
+            <div class="view" style="background-image: url('../images/sub/facility_image_view_09.png');">
               <div class="overlay">
                 <span class="num">09</span>
                 <p class="txt">수장고</p>
               </div>
-            </a>
+            </div>
           </div>
-          <div class="video">
+          <a class="video" href="">
             <div class="over">
               <i class="play"></i>
               <span><i class="preview"></i>DMZ야생동물생태관 영상으로 미리 둘러보기</span>
             </div>
             <div class="gradeition"></div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
-
-    <div id="popup-container"></div>
-
-    <script>
-      // 반복해서 팝업 생성
-      for (let i = 1; i <= 15; i++) {
-        const popupId = `swiperPopup0${i}`;
-        const popupContainer = document.getElementById('popup-container');
-
-        // 새로운 팝업 div 생성
-        const popupDiv = document.createElement('div');
-        popupDiv.classList.add('wbz-popup-cont', 'is-template', 'type_swiper');
-        popupDiv.id = popupId;
-
-        // 팝업 내용 구성
-        popupDiv.innerHTML = `
-                <div class="popup-header">
-                    <b class="popup-title"></b>
-                    <button class="popup-close popup-close-just" onclick="$popup.close()">close</button>
-                </div>
-                <div class="popup-cont">
-                    <div class="recommend_image_slide">
-                        <div class="swiper_navi">
-                            <button class="swiper_button swiper_prev" type="button">이전</button>
-                            <button class="swiper_button swiper_next" type="button">다음</button>
-                        </div>
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_01.jpg');"></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_02.jpg');"></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_03.jpg');"></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_04.jpg');"></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="recommend_image" style="background-image: url('../images/sub/recommend_image_popup0${i}_05.jpg');"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            `;
-
-        // 팝업을 컨테이너에 추가
-        popupContainer.appendChild(popupDiv);
-      }
-    </script>
 
     <footer id="footer" class="footer">
       <div class="inner">
