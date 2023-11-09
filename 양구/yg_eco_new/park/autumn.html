@@ -41,7 +41,6 @@
   <script src="../js/ui_common.js"></script>
   <script src="../js/wbz-popup.v1.js"></script>
   <script src="../js/jquery.guillotine.min.js"></script>
-  <script src="../js/park.js"></script>
 </head>
 
 <body>
@@ -418,6 +417,26 @@
                       </p>
                     </div>
                   </div>
+                  <div class="swiper-slide">
+                    <img src="../images/sub/park_autumn_info01.png" alt="양구수목원 국화 전시회 이미지" class="info_img">
+                    <p class="sub_tit">양구수목원 국화 전시회</p>
+                    <div class="sub_info">
+                      <span>전시 기간</span><span>2023. 09. 27. ~ 10. 22. (연장)</span><br>
+                      <span>전시 장소</span><span>양구수목원 DMZ야생화분재원 일원</span>
+                      <p>
+                        양구수목원 내에 식재된 튤립 6만여본이 만발하는 다채로운 물결의 현장을 볼 수 있으며 버스킹 공연은 물론, 야간 개장 등의 화려한 볼거리를 제공합니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/sub/park_autumn_info02.png" alt="등록한 행사 제목이 노출됩니다." class="info_img">
+                    <p class="sub_tit">등록한 행사 제목이 노출됩니다.</p>
+                    <div class="sub_info">
+                      <p>
+                        가을볕에 반짝이는 땅과 신록으로 물든 양구수목원은 축령산의 빼어난 산세와 어우러져 그림 같은 풍경을 자아냅니다. 시원한 가을 바람과 햇살의 설레임을 만나보세요.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -441,6 +460,12 @@
               <div class="swiper">
                 <div class="swiper_area">
                   <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="../images/sub/park_autumn_slide01.png" alt="풍성한 가을산책 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../images/sub/park_autumn_slide02.png" alt="풍성한 가을산책 이미지">
+                    </div>
                     <div class="swiper-slide">
                       <img src="../images/sub/park_autumn_slide01.png" alt="풍성한 가을산책 이미지">
                     </div>
@@ -513,116 +538,49 @@
         </div>
       </div>
     </footer>
-
   </div>
   <script>
-    // map-box 클래스 찾아서 지도 줌인,줌아웃 처리하기 / 이미지 모두 로딩 후 실행되어야 함 (kskang)
     jQuery.event.add(window, "load", function () {
-      var imgTag = [];
-      var zoomInBtn = [];
-      var zoomOutBtn = [];
-      var imgWidth = [];
-      var imgHeight = [];
-
-      $(".map-box").each(function (index, element) {
-        var el = $(element);
-        imgTag[index] = el.find('img');
-        zoomInBtn[index] = el.find('.zoomin');
-        zoomOutBtn[index] = el.find('.zoomout');
-        imgWidth[index] = imgTag[index][0].naturalWidth;
-        imgHeight[index] = imgTag[index][0].naturalHeight;
-
-        $(zoomInBtn[index]).append("<span class='blind'>확대</span>");
-        $(zoomOutBtn[index]).append("<span class='blind'>축소</span>");
-
-        imgTag[index].each(function () {
-
-          // 이미지 확대 배수, 포지션, 줌버튼 유무 값을 받아옴
-          var scaleVal = imgTag[index].attr('data-scale') ? imgTag[index].attr('data-scale') : 1;
-          var xPosVal = imgTag[index].attr('data-x') ? imgTag[index].attr('data-x') : 0;
-          var yPosVal = imgTag[index].attr('data-y') ? imgTag[index].attr('data-y') : 0;
-          var zoomBtnHidden = imgTag[index].attr('data-btn-hidden');
-
-          imgTag[index].guillotine({
-            width: imgWidth[index],
-            height: imgHeight[index],
-            eventOnChange: 'guillotinechange',
-            init: { scale: scaleVal, angle: 0, x: xPosVal, y: yPosVal, },
-            onChange: function () {
-              console.log(imgTag[index].guillotine('getData'));
-            }
-          });
-
-          zoomShow();
-
-          $(window).resize(function () {
-            zoomShow();
-          })
-
-          function zoomShow() {
-            if ($(window).width() > 768) {// PC
-              if (zoomBtnHidden == 'true') {// 줌버튼 없음
-                $(zoomInBtn[index]).hide();
-                $(zoomOutBtn[index]).hide();
-              } else {// 줌버튼 있음
-                zoomEvt();
-              }
-            } else {// MOB - 모바일에서는 줌버튼 항상 보임
-              $(zoomInBtn[index]).show();
-              $(zoomOutBtn[index]).show();
-              zoomEvt();
-            }
+      var swiper = new Swiper(".info_slide .swiper_area", {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        watchOverflow: false,
+        navigation: {
+          nextEl: ".info_slide .swiper-button-next",
+          prevEl: ".info_slide .swiper-button-prev",
+        },
+        pagination: {
+          el: ".info_slide .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          360: {
+            slidesPerView: 1,
+          },
+          1400: {
+            slidesPerView: 2,
           }
-          function zoomBtnChk() { //줌버튼 disabled 체크
-            if (imgTag[index].guillotine('getData').scale == 1) {
-              $(zoomOutBtn[index]).attr('disabled', true);
-              $(zoomInBtn[index]).attr('disabled', false);
-            } else if (imgTag[index].guillotine('getData').scale > 2.5) {
-              $(zoomOutBtn[index]).attr('disabled', false);
-              $(zoomInBtn[index]).attr('disabled', true);
-            } else {
-              $(zoomOutBtn[index]).attr('disabled', false);
-              $(zoomInBtn[index]).attr('disabled', false);
-            }
-          }
-
-          function zoomEvt() {//줌이벤트
-            // ZOOM IN/OUT 3배수까지 가능하도록 처리
-            if (zoomOutBtn[index] && zoomInBtn[index]) {
-
-              zoomBtnChk();
-
-              $(zoomInBtn[index]).click(function () {
-                imgTag[index].guillotine('zoomIn');
-                zoomBtnChk(index);
-              });
-
-              $(zoomOutBtn[index]).click(function () {
-                imgTag[index].guillotine('zoomOut');
-                zoomBtnChk(index);
-              });
-            }
-          }
-        });
+        }
       });
-
-    });
-  </script>
-  <script>
-    // 팝업 슬라이드
-    const swiperReviews = new Swiper('.recommend_image_slide .swiper', {
-      slidesPerView: 1,
-      loop: true,
-      speed: 800,
-      navigation: {
-        prevEl: '.recommend_image_slide .swiper_navi .swiper_prev',
-        nextEl: '.recommend_image_slide .swiper_navi .swiper_next',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-    });
+      swiper = new Swiper(".bg_slide_wrap .swiper_area", {
+        slidesPerView: 2,
+        spaceBetween: 40,
+        watchOverflow: false,
+        navigation: {
+          nextEl: ".bg_slide_wrap .swiper-button-next",
+          prevEl: ".bg_slide_wrap .swiper-button-prev",
+        },
+        breakpoints: {
+          360: {
+            slidesPerView: 1.5,
+            spaceBetween: 16
+          },
+          1400: {
+            slidesPerView: 2,
+          }
+        }
+      });
+    })
   </script>
 
 </body>
