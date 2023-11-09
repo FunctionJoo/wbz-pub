@@ -1890,7 +1890,10 @@
 			.w_set {
 				.tit {
 					font-size: 40px;
-					line-height: 26px;
+					line-height: 42px;
+					@media(max-width:1400px){
+						line-height: 26px;
+					}
 				}
 				.cont {
 					&.btn_wrap {

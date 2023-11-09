@@ -1783,7 +1783,12 @@
 }
 #content .type_fac .trace_wrap .w_set .tit {
   font-size: 40px;
-  line-height: 26px;
+  line-height: 42px;
+}
+@media (max-width: 1400px) {
+  #content .type_fac .trace_wrap .w_set .tit {
+    line-height: 26px;
+  }
 }
 #content .type_fac .trace_wrap .w_set .cont.btn_wrap {
   display: flex;
