@@ -173,6 +173,17 @@
                             align-items: start;
                             border-bottom: 1px solid #DDDDDD;
                             font-size: 18px;
+                            overflow-x: auto;
+                            gap: 0;
+                            overflow-y: clip;
+                            &::-webkit-scrollbar{
+                                display: none;
+                            }
+                            /* Chrome, Safari, Opera*/
+                            -ms-overflow-style: none;
+                            /* IE and Edge */
+                            scrollbar-width: none;
+                            /* Firefox */
                             @media(max-width:1400px){
                                     font-size: 14px;
                                     span{
@@ -181,12 +192,16 @@
                             }
                             span{
                                 font-weight: 600;
-                                word-break: keep-all;
                                 line-height: 26px;
+                                display: flex;
+                                flex-wrap: nowrap;
+                                text-wrap: nowrap;
                             }
                             em{
                                 color: #139274;
-                                word-break: keep-all;
+                                display: flex;
+                                flex-wrap: nowrap;
+                                width: 407px;
                             }
                         }
                     }

@@ -156,6 +156,17 @@
   align-items: start;
   border-bottom: 1px solid #DDDDDD;
   font-size: 18px;
+  overflow-x: auto;
+  gap: 0;
+  overflow-y: clip;
+  /* Chrome, Safari, Opera*/
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+#content .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 1400px) {
   #content .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td {
@@ -167,12 +178,16 @@
 }
 #content .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td span {
   font-weight: 600;
-  word-break: keep-all;
   line-height: 26px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
 }
 #content .trace_wrap .w_set .experience_information_box .experience_information_tr .experience_information_td em {
   color: #139274;
-  word-break: keep-all;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 407px;
 }
 #content .w_set .image_view {
   margin-right: 0;
