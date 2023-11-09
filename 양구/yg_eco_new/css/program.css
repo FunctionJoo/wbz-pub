@@ -266,7 +266,7 @@ p.map-img img{width:100%; display:block;} */
 .recommend_wrap .image_view .view{position: relative; width: calc(33.33% - 20px);height: 446px;background-repeat: no-repeat; background-position: center; background-size: cover;}
 .recommend_wrap .image_view .view .overlay{width: 100%;height: 100%;display: inline-flex;flex-direction: column;justify-content: center;background-color: rgba(0, 0, 0, 0.34);}
 .recommend_wrap .image_view .view .num{display: block;font-family: 'Open Sans', 'Noto Sans KR', sans-serif;font-weight: 600;font-size: 24px;text-align: center;color: #fff;border: 2px dashed #fff;border-radius: 50%;width: 84px;height: 84px;line-height: 80px; margin: 0 auto;}
-.recommend_wrap .image_view .view .txt{font-weight: 600;font-size: 24px;color: #fff;padding-top: 20px;text-align: center;}
+.recommend_wrap .image_view .view .txt{font-weight: 600;font-size: 24px;color: #fff;padding-top: 20px;text-align: center;line-height: 29px;}
 
 /* 추천코스 모달 */
 .wbz-popup-cont.type_swiper{padding: 0;border-radius: 0;max-width: 800px;width: calc(100% - 32px);background-color: transparent;}
@@ -521,7 +521,7 @@ p.map-img img{width:100%; display:block;} */
   .recommend_wrap .image_view .view{width: 280px;height: 314px;flex: 0 0 auto;margin-right: 21px;justify-content:flex-start;}
   .recommend_wrap .image_view .view .overlay{display: block;padding-top: 60px;}
   .recommend_wrap .image_view .view .num{font-size: 15px;width: 53px;height: 53px;line-height: 49px;}
-  .recommend_wrap .image_view .view .txt{font-size: 15px;padding-top: 14px;}
+  .recommend_wrap .image_view .view .txt{font-size: 15px;padding-top: 14px;line-height: 21px;}
 
   /* 추천코스 모달 */
   .recommend_image_slide .swiper_navi .swiper_button{width: 30px;height: 30px;background-size: 10px;}

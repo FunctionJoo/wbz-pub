@@ -1916,7 +1916,7 @@
 						text-align: center;
 						margin-top: 40px;
 						font-size: 24px;
-						line-height: 36px;
+						line-height: 26px;
 						&.tit_s {
 							margin-top: 20px;
 							font-size: 20px !important;
@@ -1930,9 +1930,52 @@
 					}
 				}
 				.facility_img {
-					margin-top: 60px;
+					margin-top: 55px;
 					padding-bottom: 29%;
-					background: url("../images/sub/img_facility_course_01_1.png") no-repeat center;
+					position: relative;
+					&.type_page1{
+
+						background-color: #56b394;
+						&::after{
+							content: "";
+							background-image: url(../images/sub/img_facility_course_05.png);
+							position: absolute;
+							bottom: 50%;
+							right: 50%;
+							transform: translate(50%, 50%);
+							width: 90%;
+							min-width: 150px;
+							max-width: 330px;
+							height: 90%;
+							min-height: 150px;
+							max-height: 390px;
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							@media(max-width:500px){
+								right: 62%;
+							}
+						}
+						&::before{
+							content: "";
+							background-image: url(../images/sub/img_facility_course_04.png);
+							position: absolute;
+							bottom: 10px;
+							right: 17px;
+							width: 100px;
+							height: 100px;
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							@media(max-width:500px){
+								width: 80px;
+								height: 80px;
+								right: 10px;
+								bottom: 4px;
+							}
+						}
+						// background: url("../images/sub/img_facility_course_01_1.png") no-repeat center;
+					}
 					&.type_page3 {
 						background: url("../images/sub/img_facility_course_03.png") no-repeat center;
 					}
@@ -1952,7 +1995,7 @@
 			}
 			.video {
 				position: relative;
-				margin-top: 80px;
+				margin-top: 120px;
 				padding-bottom: 30%;
 				background: url(../images/sub/facility_video_view_01.png) no-repeat center;
 				background-size: cover;
@@ -1981,11 +2024,12 @@
 						height: 24px;
 						color: #fff;
 						font-size: 16px;
+						line-height: 24px;
 						white-space: nowrap;
 						.preview {
 							display: inline-block;
-							width: 40px;
-							height: 40px;
+							width: 26px;
+							height: 37px;
 							background: url(../images/image/click_finger.png) center;
 							background-size: contain;
 							background-repeat: no-repeat;
@@ -2721,8 +2765,13 @@
 						}
 						.cont {
 							span {
-								margin-top: 24px;
-								line-height: 20px;
+								&:nth-child(1){
+									line-height: 24px;
+								}
+								&:nth-child(2){
+									line-height: 20px;
+								}
+								margin-top: 20px;
 								font-size: 14px !important;
 							}
 						}
@@ -2731,9 +2780,12 @@
 							padding-bottom: 67%;
 						}
 						.script {
-							margin-top: 20px;
+							margin-top: 60px;
 							font-size: 14px;
 							line-height: 20px;
+							@media(max-width:1400px){
+								margin-top: 20px;
+							}
 						}
 					}
 				}
@@ -2752,6 +2804,11 @@
 								font-size: 12px;
 								height: 17px;
 								margin-top: 7px;
+								line-height: 17px;
+								i{
+									width: 15px;
+									height: 27px;
+								}
 							}
 						}
 						.gradeition {
