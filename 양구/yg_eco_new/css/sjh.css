@@ -120,12 +120,13 @@
 }
 #content .trace_wrap .w_set .experience_information_box {
   margin: 60px 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 #content .trace_wrap .w_set .experience_information_box .experience_information_tr {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 3.5rem;
+  border-bottom: 1px solid #DDDDDD;
 }
 @media (max-width: 578px) {
   #content .trace_wrap .w_set .experience_information_box .experience_information_tr {
@@ -139,7 +140,6 @@
   align-items: center;
   font-weight: 600;
   border-right: 1px solid #DDDDDD;
-  border-bottom: 1px solid #DDDDDD;
   word-break: keep-all;
   font-size: 18px;
 }
@@ -154,7 +154,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  border-bottom: 1px solid #DDDDDD;
   font-size: 18px;
   overflow-x: auto;
   gap: 0;
