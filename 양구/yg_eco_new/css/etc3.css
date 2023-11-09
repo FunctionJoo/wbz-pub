@@ -1783,7 +1783,7 @@
 }
 #content .type_fac .trace_wrap .w_set .tit {
   font-size: 40px;
-  line-height: 42px;
+  line-height: 26px;
 }
 #content .type_fac .trace_wrap .w_set .cont.btn_wrap {
   display: flex;
@@ -1816,6 +1816,7 @@
 }
 #content .type_fac .trace_wrap .w_set .cont span.tit_m {
   font-weight: 500;
+  line-height: 36px;
 }
 #content .type_fac .trace_wrap .w_set .cont span strong {
   font-weight: 600;
@@ -2552,14 +2553,9 @@
     font-size: 18px;
   }
   #content .type_fac.recommend_wrap .trace_wrap .w_set .cont span {
+    line-height: 20px;
     margin-top: 20px;
     font-size: 14px !important;
-  }
-  #content .type_fac.recommend_wrap .trace_wrap .w_set .cont span:nth-child(1) {
-    line-height: 24px;
-  }
-  #content .type_fac.recommend_wrap .trace_wrap .w_set .cont span:nth-child(2) {
-    line-height: 20px;
   }
   #content .type_fac.recommend_wrap .trace_wrap .w_set .facility_img {
     margin-top: 40px;

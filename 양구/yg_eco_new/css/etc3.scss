@@ -1890,7 +1890,7 @@
 			.w_set {
 				.tit {
 					font-size: 40px;
-					line-height: 42px;
+					line-height: 26px;
 				}
 				.cont {
 					&.btn_wrap {
@@ -1923,6 +1923,7 @@
 						}
 						&.tit_m {
 							font-weight: 500;
+							line-height: 36px;
 						}
 						strong {
 							font-weight: 600;
@@ -2765,12 +2766,7 @@
 						}
 						.cont {
 							span {
-								&:nth-child(1){
-									line-height: 24px;
-								}
-								&:nth-child(2){
-									line-height: 20px;
-								}
+								line-height: 20px;
 								margin-top: 20px;
 								font-size: 14px !important;
 							}
