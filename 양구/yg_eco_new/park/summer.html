@@ -41,6 +41,7 @@
   <script src="../js/ui_common.js"></script>
   <script src="../js/wbz-popup.v1.js"></script>
   <script src="../js/jquery.guillotine.min.js"></script>
+  <script src="../js/park.js"></script>
 </head>
 
 <body>
@@ -342,8 +343,8 @@
     <section id="content">
       <div class="w_set">
         <ul class="top_menu">
-          <li class="on">
-            <a href="./spring.html" title="선택됨" class="course">
+          <li>
+            <a href="./spring.html" class="course">
               <div class="image" style="background-image: url('../images/sub/img_season_01.png');"></div>
               <div>
                 <p class="desc">Spring</p>
@@ -351,8 +352,8 @@
               </div>
             </a>
           </li>
-          <li>
-            <a href="./summer.html" class="course">
+          <li class="on">
+            <a href="./summer.html" title="선택됨" class="course">
               <div class="image" style="background-image: url('../images/sub/img_season_02.png');"></div>
               <div>
                 <p class="desc">Summer</p>
@@ -381,28 +382,70 @@
         </ul>
       </div>
       <div class="season_wrap">
-        <img src="../images/etc/page_season_02.png" alt="여름">
-        <!-- <div class="season_top">
+        <div class="season_top bg_02">
           <div class="bg"></div>
           <div class="w_set">
-            <p class="tit"><strong>Spring</strong>봄</p>
-            <p class="txt">봄에 양구수목원은 신비로운 이야기가 시작되는 계절입니다. 이 때에는 싹트는 식물과 화려한 꽃들로 가득합니다. 벚꽃, 매화, 진달래 등 다양한 꽃들이 피어나며, 아름다운 꽃놀이를 즐길 수 있습니다.</p>
-        </div>
+            <p class="tit"><strong>Summer</strong><br>여름</p>
+            <p class="txt">
+              양구수목원의 여름은 숲 속 모험의 계절입니다. 무성한 나무와 숲 길 사이로 펼쳐지는<br>
+              길을 따라 걷다보면 비밀의 이야기들을 발견할 수 있습니다. 여름의 그림같은 숲에서<br>
+              모험을 시작해보세요.
+            </p>
+          </div>
         </div>
         <div class="season_cont">
           <div class="info_slide">
             <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  
+              <div class="swiper_area">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide summer_info">
+                    <img src="../images/sub/park_summer_info01.png" alt="양구수목원 야간 개장 이미지" class="info_img">
+                    <p class="sub_tit">양구수목원 야간 개장</p>
+                    <div class="sub_info">
+                      <span>오픈 기간</span><span>2023년 7월 29일(토) ~ 08월 27일(일) [주말 운영]</span><br>
+                      <span>오픈 시간</span><span>오후 6시 ~ 오후 10시 30분까지</span>
+                      <p>
+                        매주 주말 시원한 바람을 맞고 별을 보며 여름 나들이를 즐겨보세요! 로맨틱 포레스트를 주제로 한 여름 양구수목원만의 분위기와 어우러진 감성 공연이 개최되어 더욱 더 시원하게 즐기실 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="bg_slide_wrap">
-
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-        </div> -->
+          <div class="bg_slide_wrap bg_slide02">
+            <div class="bg"></div>
+            <div class="slide_section">
+              <div class="w_set">
+                <p class="tit">여름숲의 모험</p>
+                <p class="txt">
+                  DMZ와 맞닿은 해발 450m 대암산 <br>
+                  멸종위기종이 살아숨쉬는 숲 <br>
+                  부지런히 움직이는 다람쥐 <br>
+                  자연생태 그대로의 모습 <br>
+                  비밀의 숲이 가득한 양구수목원<br>
+                </p>
+              </div>
+              <div class="swiper">
+                <div class="swiper_area">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="../images/sub/park_summer_slide01.png" alt="여름숲의 모험 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../images/sub/park_summer_slide02.png" alt="여름숲의 모험 이미지">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

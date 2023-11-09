@@ -326,7 +326,7 @@ p.map-img img{width:100%; display:block;} */
 @keyframes rotate360 {
 	from {
 		transform: rotate(0deg);
-		transform-origin: center center; 
+		transform-origin: center center;
 	}
 	to {
 		transform: rotate(360deg);
@@ -340,14 +340,15 @@ p.map-img img{width:100%; display:block;} */
 
 /* 수목원 사계 */
 .season_wrap{margin-top: 80px;}
-.season_wrap .season_top{height: 580px;background: url('../images/sub/bg_season_01.png') no-repeat center;background-size: cover;position: relative;}
-.season_wrap .season_top .bg{width: 100%;height: 100%;background-image: radial-gradient(#0000005C, #000000);opacity: .24;position: absolute;left: 0;top: 0;}
-.season_wrap .season_top .w_set{position: relative;display: flex;flex-direction: column;justify-content: center;height: 100%;}
-.season_wrap .season_top .tit{font-size: 40px;line-height: 58px;color: #fff;}
-.season_wrap .season_top .tit strong{font-family: 'Open Sans', 'Noto Sans KR', sans-serif;font-weight: 700;font-size: 60px;margin-right: 34px;line-height: 82px;}
-.season_wrap .season_top .txt{margin-top: 28px;font-size: 22px;color: #fff;line-height: 32px;}
+.season_wrap .w_set{position: relative;display: flex;flex-direction: column;justify-content: center;height: 100%;}
+.season_wrap .season_top{height: 580px; background-size: cover; position: relative;}
+.season_wrap .season_top .bg{width: 100%;height: 100%;background-image: radial-gradient(#0000005C, #000000);opacity: .48;position: absolute;left: 0;top: 0;}
+.season_wrap .season_top .tit{font-family: 'Noto Sans KR', sans-serif;font-weight: 600;font-size: 90px;line-height: 90px;color: #fff;}
+.season_wrap .season_top .tit strong{font-family: 'Noto Sans KR', sans-serif;font-weight: 600;font-size: 48px;line-height: -48px;}
+.season_wrap .season_top .txt{font-family: 'Noto Sans KR', sans-serif;font-size: 22px;color: #fff;line-height: 32px;}
+.season_wrap .bg_slide_wrap .tit{margin-bottom: 33px; font-family: 'Noto Sans KR', sans-serif;font-weight: 600;font-size: 48px;line-height: 48px;color: #222;}
+.season_wrap .bg_slide_wrap .txt{font-family: 'Noto Sans KR', sans-serif;font-size: 20px;color: #666;line-height: 29px;}
 
-.season_wrap .season_cont{}
 
 
 /* 지도 말풍선 */
@@ -537,10 +538,10 @@ p.map-img img{width:100%; display:block;} */
   .introduce_wrap .divide_area.bg_left .left_area .txt{text-align: center;font-size: 16px;line-height: 24px;}
   .introduce_wrap .divide_area.bg_left .left_area .txt span{display: block;}
   .introduce_wrap .divide_area.bg_left .left_area .tit{display: block;text-align: center;font-size: 23px;line-height: 34px;}
-  .introduce_wrap .divide_area.bg_left .left_area .img{margin: 32px 0 0;padding-bottom: 44%;}    
+  .introduce_wrap .divide_area.bg_left .left_area .img{margin: 32px 0 0;padding-bottom: 44%;}
   .introduce_wrap .divide_area.bg_left .right_area {margin: 26px 0 0;width: 100%;}
   .introduce_wrap .divide_area.bg_left .right_area .img{padding-bottom: 38%;}
-  .introduce_wrap .divide_area.bg_left .right_area .effect{display: none;}    
+  .introduce_wrap .divide_area.bg_left .right_area .effect{display: none;}
   .introduce_wrap .divide_area.bg_left .right_area .txt{text-align: center;font-size: 16px;margin: 32px 16px 0;}
   .introduce_wrap .divide_area.bg_left .right_area .txt span{display: inline;}
 
@@ -553,7 +554,7 @@ p.map-img img{width:100%; display:block;} */
   .introduce_wrap .divide_area.bg_right .right_area .txt{position: absolute;top: 32px; margin: 0;padding: 0 16px;text-align: center;font-size: 16px;width: 100%;}
 
   .introduce_wrap .full_area{margin-top: 32px;height: 148px;padding: 0;display: flex;align-items: center;}
-  .introduce_wrap .full_area .txt{font-size: 16px;line-height: 24px;text-align: center;word-break:break-all;}    
+  .introduce_wrap .full_area .txt{font-size: 16px;line-height: 24px;text-align: center;word-break:break-all;}
   .introduce_wrap .full_area .txt span{display: inline;}
 
 }
@@ -591,7 +592,7 @@ p.map-img img{width:100%; display:block;} */
   .recommend_wrap .trace_wrap{margin-top: 60px;}
   .recommend_wrap .trace_wrap .tit{font-size: 18px;}
   .recommend_wrap .trace_wrap .course_img{margin-top: 40px;}
-    
+
   .guillotine-window.mobile{padding-top: 137% !important;}
 
   /* 핵심코스 오디오 듣기 */
@@ -604,7 +605,7 @@ p.map-img img{width:100%; display:block;} */
   .audio_wrap .audio_txt pre{font-size: 14px;line-height: 22px;}
 
   /* 수목원 소개 */
-  .introduce_wrap .divide_area.bg_left .left_area .img{max-width: 100%;padding-bottom: 66.7%;}   
+  .introduce_wrap .divide_area.bg_left .left_area .img{max-width: 100%;padding-bottom: 66.7%;}
   .introduce_wrap .divide_area.bg_left .right_area .img{max-width: 100%;padding-bottom: 66.7%;}
   .introduce_wrap .divide_area.bg_right .left_area .img {max-width: 100%;padding-bottom: 66.7%;}
   .introduce_wrap .divide_area.bg_right .right_area .img{max-width: 100%;padding-bottom: 66.7%;}

@@ -1,0 +1,438 @@
+//공통
+.season_wrap{
+  .w_set {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .season_top {
+    height: auto;
+    background-size: cover;
+    position: relative;
+    @for $i from 1 to 5 {
+      &.bg_0#{$i} {
+        background: url('../images/sub/park_bg0#{$i}.png') no-repeat center;
+      }
+    }
+    .bg {
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(#0000005C, #000000);
+      opacity: .48;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .tit {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 600;
+      color: #fff;
+      > strong {
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 600;
+        }
+    }
+    .txt {
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #fff;
+    }
+
+    .bg_slide_wrap {
+      .tit {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 600;
+        color: #222;
+      }
+      .txt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        color: #666;
+      }
+    }
+
+  }
+  .swiper{overflow: visible;}
+}
+
+@media (min-width: 1400px) {
+  .season_wrap {
+    margin-top: 80px;
+    .season_top {
+      width: 100%;
+      height: 580px;
+      .w_set {
+        .tit{
+          font-size: 90px;
+          line-height: -90px;
+
+          > strong{
+            font-size: 48px;
+            font-weight: 600;
+            line-height: -48px;
+          }
+        }
+        .txt {
+          font-size: 22px;
+          line-height: 32px;
+          margin-top: 60px;
+        }
+      }
+    }
+
+    .season_cont {
+      margin: 100px 0 0;
+
+      .info_slide {
+        width: 1400px;
+        margin: 0 auto;
+        &.summer_info{
+          .swiper-slide{
+            width: 100%;
+          }
+        }
+        .swiper {
+          .swiper_area {
+            width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+
+            .swiper-wrapper {
+              .swiper-slide {
+                flex-direction: column;
+                align-items: flex-start;
+                .sub_tit {
+                  font-family: 'Noto Sans KR', sans-serif;
+                  margin: 26px 0 20px;
+                  font-size: 22px;
+                  color: #222;
+                }
+
+                .sub_info {
+                  font-family: 'Noto Sans KR', sans-serif;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #666;
+
+                  >span {
+                    display: inline-block;
+                    margin-right: 14px;
+                  }
+
+                  >p {
+                    margin-top: 12px;
+                  }
+                }
+              }
+            }
+          }
+
+          .swiper-button-next {
+            top: 210px;
+            right: calc(50% - 760px);
+            background: url('../images/sub/park_info_right.svg') no-repeat center;
+          }
+
+          .swiper-button-prev {
+            top: 210px;
+            left: calc(50% - 760px);
+            background: url('../images/sub/park_info_left.svg') no-repeat center;
+          }
+
+          .swiper-button-next:after,
+          .swiper-button-prev:after {
+            display: none;
+          }
+          .swiper-pagination{
+            display: none;
+          }
+        }
+      }
+
+      .bg_slide_wrap {
+        margin: 100px 0 120px;
+        &.bg_slide01 {
+          .bg {
+            background-color: #E8E8B9;
+          }
+        }
+        &.bg_slide02 {
+          .bg {
+            background-color: #CDECEC;
+          }
+        }
+        &.bg_slide03 {
+          .bg {
+            background-color: #FCD0BD;
+          }
+        }
+        &.bg_slide04 {
+          .bg {
+            background-color: #E0E6EC;
+          }
+        }
+        @for $i from 1 to 5 {
+          &.bg_slide0#{$i} {
+            position: relative;
+
+            .bg {
+              width: 75%;
+              height: 620px;
+            }
+
+            .slide_section {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              .tit {
+                margin-bottom: 33px;
+                font-size: 48px;
+                line-height: 48px;
+              }
+              .txt{
+                font-size: 20px;
+                line-height: 29px;
+              }
+
+              .swiper {
+                position: absolute;
+                top: calc(50% - 190px);
+                height: 380px;
+
+                .swiper_area {
+                  position: absolute;
+                  top: 0;
+                  right: 52px;
+                  width: 1200px;
+                  overflow: hidden;
+                }
+
+                .swiper-button-next {
+                  width: 42px;
+                  height: 42px;
+                  top: auto;
+                  bottom: 0;
+                  right: auto;
+                  left: calc(50% - 400px);
+                  background-color: #fff;
+                  border-radius: 50%;
+
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    width: 42px;
+                    height: 42px;
+                    bottom: 0;
+                    right: 0;
+                    background: url('../images/sub/park_slide_right.svg') no-repeat center;
+                  }
+
+                  &.swiper-button-disabled {
+                    opacity: 1;
+                  }
+                }
+
+                .swiper-button-prev {
+                  width: 42px;
+                  height: 42px;
+                  top: auto;
+                  bottom: 0;
+                  left: calc(50% - 460px);
+                  background-color: #fff;
+                  border-radius: 50%;
+
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    width: 42px;
+                    height: 42px;
+                    bottom: 0;
+                    left: 0;
+                    background: url('../images/sub/park_slide_left.svg') no-repeat center;
+                  }
+
+                  &.swiper-button-disabled {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .sub_line_bg.no_bg~#content{margin: 0;}
+  .footer {margin-top: 0;}
+  .season_wrap {
+    margin-top: 40px;
+    .season_top {
+      padding: 20px 0;
+      .w_set {
+        .tit {
+          font-size: 60px;
+          line-height: 60px;
+          >strong {
+            font-size: 18px;
+            line-height: 20px;
+            margin-right: 10px;
+          }
+        }
+        .txt {
+          font-size: 20px;
+          line-height: 24px;
+          margin-top: 12px;
+          >br{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .season_cont{
+    padding: 60px 0 0;
+    .info_slide {
+      padding: 0 16px;
+      width: 100%;
+      .swiper {
+        .swiper_area {
+          width: 100%;
+          overflow: hidden;
+          .swiper-wrapper {
+            .swiper-slide {
+              flex-direction: column;
+              align-items: flex-start;
+              >img {
+                margin: 0 auto;
+              }
+              .sub_tit {
+                font-family: 'Noto Sans KR', sans-serif;
+                margin: 20px 0 16px;
+                font-size: 18px;
+                color: #222;
+              }
+
+              .sub_info {
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 12px;
+                line-height: 20px;
+                color: #666;
+
+                >span {
+                  display: inline-block;
+                  margin-right: 10px;
+                }
+
+                >p {
+                  margin-top: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
+        }
+
+        .swiper-pagination-bullet-active {
+          width: 27px;
+          height: 8px;
+          border-radius: 4px;
+          background-color: #222;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: -30px;
+        }
+      }
+  }
+}
+.bg_slide_wrap {
+  margin-top: 70px;
+  padding: 60px 16px 70px;
+
+  &.bg_slide01 {
+    background-color: #E8E8B9;
+  }
+
+  @for $i from 1 to 5 {
+    &.bg_slide0#{$i} {
+      position: relative;
+
+      .bg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .tit {
+        font-size: 23px;
+        line-height: 34px;
+        margin-bottom: 20px;
+      }
+
+      .txt {
+        font-size: 16px;
+        line-height: 24px;
+        color: #444;
+
+        >br {
+          display: none;
+        }
+      }
+
+      .w_set {
+        padding: 0;
+      }
+
+      .swiper {
+        margin-top: 34px;
+        .swiper-button-prev::after, .swiper-button-next::after{
+          display: none;
+        }
+      }
+    }
+  }
+}
+}
+
+
+@media (max-width: 360px) {
+  .season_wrap {
+    .season_top {
+      padding: 20px 0;
+      .w_set {
+        .tit {
+          font-size: 14px;
+          line-height: 20px;
+          >strong {
+            font-size: 24px;
+            line-height: 33px;
+            margin-right: 10px;
+          }
+          >br{
+            display: none;
+          }
+        }
+        .txt {
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
