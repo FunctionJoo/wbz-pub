@@ -629,10 +629,10 @@ body {
     flex-direction: column;
   }
   body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_1,
-body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_2,
-body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_3, body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_1,
-body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_2,
-body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_3 {
+  body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_2,
+  body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_3, body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_1,
+  body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_2,
+  body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_3 {
     width: 100%;
     height: calc(50% - 1px);
   }
@@ -640,8 +640,8 @@ body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_conten
     margin-bottom: 16px;
   }
   body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_2,
-body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_3, body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_2,
-body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_3 {
+  body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec:not(.has_select) .sec_3, body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_2,
+  body:not(.is_pc) #header .sec_top .header_search.show .search_content .ws_content_sec.has_select .sec_3 {
     margin-top: 16px;
     padding: 0 0 0 0;
   }
