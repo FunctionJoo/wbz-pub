@@ -81,6 +81,21 @@ $nunito: 'Nunito Sans', sans-serif;
 	text-overflow: ellipsis;
 }
 
+@mixin dash($w, $h, $bg) {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -$h / 2;
+		width: $w;
+		height: $h;
+		background: $bg;
+	}
+}
+
 @mixin pc {
 	@media (min-width: $w_set) {
 		@content;

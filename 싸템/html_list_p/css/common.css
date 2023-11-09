@@ -19,6 +19,10 @@ button {
   margin-right: auto !important;
 }
 
+.nunito {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 @media (min-width: 1080px) {
   .hide_pc {
     display: none !important;
@@ -33,6 +37,12 @@ button {
   }
   body:not(.is_pc) .hide_m {
     display: none !important;
+  }
+  body:not(.is_pc) .w_set_member {
+    width: auto;
+    max-width: 744px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -161,6 +171,9 @@ button {
   background: #fff;
 }
 .label_t input:not([type=radio])::-moz-placeholder {
+  color: #A7A7A7;
+}
+.label_t input:not([type=radio]):-ms-input-placeholder {
   color: #A7A7A7;
 }
 .label_t input:not([type=radio])::placeholder {
