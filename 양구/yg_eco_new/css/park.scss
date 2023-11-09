@@ -66,12 +66,13 @@
       .w_set {
         .tit{
           font-size: 90px;
-          line-height: -90px;
+          line-height: 90px;
+          padding-bottom: 20px;
 
           > strong{
             font-size: 48px;
             font-weight: 600;
-            line-height: -48px;
+            line-height: 96px;
           }
         }
         .txt {
