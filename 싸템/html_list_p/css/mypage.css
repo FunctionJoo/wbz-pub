@@ -1,0 +1,103 @@
+#mypage {
+  margin-top: 30px;
+}
+#mypage .w_set_my {
+  display: flex;
+  justify-content: space-between;
+}
+#mypage .w_set_my .my_left {
+  width: 200px;
+}
+#mypage .w_set_my .my_left .mym_title {
+  margin: 0 0 0 0;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+#mypage .w_set_my .my_left .my_menu {
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #D3D3D3;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li:not(:last-of-type) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li > .dep1box {
+  position: relative;
+  padding: 10px 15px;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li > .dep1box a {
+  display: block;
+  flex: 1;
+  font-size: 15px;
+  padding-right: 40px;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li > .dep1box button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  border: 0 none;
+  background: url("../images/common/my_menu_arr.svg") no-repeat center center;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li .dep2 {
+  display: none;
+  border-top: 1px solid #D3D3D3;
+  background: #F6F6F6;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li .dep2 > ul {
+  padding: 9px 20px;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li .dep2 > ul > li a {
+  display: block;
+  font-size: 14px;
+  color: #666666;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li .dep2 > ul > li + li {
+  margin-top: 6px;
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li.on > .dep1box button {
+  transform: rotate(180deg);
+}
+#mypage .w_set_my .my_left .my_menu .dep1 > li.on .dep2 {
+  display: block;
+}
+#mypage .w_set_my .my_cont {
+  width: calc(100% - 200px - 30px);
+  margin-top: 62px;
+}
+#mypage .w_set_my .my_cont .my_title {
+  display: none;
+}
+#mypage .my_grade {
+  background: #F9F9F9;
+  padding: 15px 20px;
+}
+
+@media (max-width: 1080px) {
+  body:not(.is_pc) #mypage {
+    margin-top: 15px;
+  }
+  body:not(.is_pc) #mypage .w_set_my {
+    display: block;
+  }
+  body:not(.is_pc) #mypage .w_set_my .my_left {
+    display: none;
+  }
+  body:not(.is_pc) #mypage .w_set_my .my_cont {
+    width: auto;
+    margin-top: 0;
+  }
+  body:not(.is_pc) #mypage .w_set_my .my_cont .my_title {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+  body:not(.is_pc) #mypage .w_set_my .my_cont .my_title.type_line {
+    border-bottom: 1px solid #333333;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=mypage.css.map */

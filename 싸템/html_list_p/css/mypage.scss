@@ -1,0 +1,117 @@
+@import 'utility.scss';
+
+#mypage {
+	margin-top: 30px;
+	.w_set_my {
+		display: flex;
+		justify-content: space-between;
+		.my_left {
+			width: 200px;
+			.mym_title {
+				margin: 0 0 0 0;
+				font-size: 28px;
+				font-weight: 500;
+				line-height: 1.5;
+			}
+			.my_menu {
+				margin-top: 20px;
+				background: #fff;
+				border: 1px solid $colorD;
+				.dep1 {
+					> li {
+						&:not(:last-of-type) {
+							border-bottom: 1px solid $colorD;
+						}
+						> .dep1box {
+							position: relative;
+							padding: 10px 15px;
+							a {
+								display: block;
+								flex: 1;
+								font-size: 15px;
+								padding-right: 40px;
+							}
+							button {
+								position: absolute;
+								top: 50%;
+								right: 0;
+								width: 40px;
+								height: 40px;
+								margin-top: -20px;
+								border: 0 none;
+								background: url('../images/common/my_menu_arr.svg') no-repeat center center;
+							}
+						}
+						.dep2 {
+							display: none;
+							border-top: 1px solid $colorD;
+							background: $colorF6;
+							> ul {
+								padding: 9px 20px;
+								> li {
+									a {
+										display: block;
+										font-size: 14px;
+										color: $color6;
+									}
+									+ li {
+										margin-top: 6px;
+									}
+								}
+							}
+						}
+						&.on {
+							> .dep1box {
+								button {
+									transform: rotate(180deg);
+								}
+							}
+							.dep2 {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+		.my_cont {
+			width: calc(100% - 200px - 30px);
+			margin-top: 62px;
+			.my_title {
+				display: none;
+			}
+		}
+	}
+
+	// 마이페이지 메인
+	.my_grade {
+		background: #F9F9F9;
+		padding: 15px 20px;
+	}
+}
+
+@include mobile {
+	#mypage {
+		margin-top: 15px;
+		.w_set_my {
+			display: block;
+			.my_left {
+				display: none;
+			}
+			.my_cont {
+				width: auto;
+				margin-top: 0;
+				.my_title {
+					display: block;
+					font-size: 18px;
+					font-weight: 500;
+					padding-bottom: 15px;
+					&.type_line {
+						border-bottom: 1px solid $color3;
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -4,6 +4,9 @@ body,
 body * {
 	font-family: "Noto Sans Kr", sans-serif;
 }
+body {
+	color: $color2;
+}
 button {cursor: pointer;}
 
 .w_set {
