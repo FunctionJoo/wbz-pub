@@ -1,0 +1,102 @@
+#my_grade{
+    .my_grade_box{
+        display: flex;
+        padding: 15px 20px;
+        .my_grade_list1{
+            display: flex;
+            .class_button{
+                margin-right: 10px;
+                img{
+                    width: 68px;
+                    height: 76px;
+                }
+            }
+            .class_guide{
+                padding: 14px 20px 14px 0px;
+                border-right: 1px dashed #D3D3D3;
+                p{
+                    padding-bottom: 6px;
+                    font-size: 18px;
+                    line-height: 27px;
+                    em{
+                        color: #49D3D9;
+                    }
+                }
+                .class_popup{
+                    width: 140px;
+                    height: 32px;
+                    background-color: #fff;
+                    border: 1px #d3d3d3 solid;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-right: 13px;
+                    }
+                    i{
+                        display: block;
+                        background-image: url(../images//mypage/arrow_right_black.svg);
+                        height: 8px;
+                        width: 4px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+        .my_grade_list2{
+            padding: 14px 14px 0px 14px;
+            border-right: 1px dashed #D3D3D3;
+            span{
+                font-size: 15px;
+                line-height: 22px;
+                color: #666666;
+                display: block;
+                margin-bottom: 32px;
+            }
+            .show_mileage{
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 4px;
+                em{
+                    font-size: 26px;
+                    line-height: 33px;
+                    color: #014099;
+                }
+            }
+        }
+        .my_grade_list3{
+            padding: 14px 10px 0px 20px;
+            .detail_mileage{
+                display: flex;
+                justify-content: space-between;
+                span{
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #666666;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                    em{
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+        .my_grade_list4{
+            .mile_link{
+                display: block;
+                padding: 6px 17px;
+                font-size: 14px;
+                line-height: 20px;
+                border: 1px solid #666666;
+                border-radius: 3px;
+            }
+        }
+    }
+}
