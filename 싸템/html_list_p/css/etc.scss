@@ -156,7 +156,7 @@
 							}
 						}
 					}
-					span{
+					.alert_msg{
 						display: flex;
 						align-items: center;
 						i{
@@ -165,6 +165,10 @@
 							height: 16px;
 							display: block;
 							margin-right: 4px;
+						}
+						span {
+							font-size: 14px;
+							color: $color6;
 						}
 					}
 				}
@@ -347,17 +351,51 @@
 	.gift{
 		text-align: center;
 		.gift_img{
-			position: relative;
+			border: 1px solid $colorA;
+			padding: 16px 20px 28px;
 			margin-top: 52px;
-			margin-bottom: 78px;
-			p{
-				position: absolute;
-				top: 94px;
-				left: 50%;
-				transform: translate(-50%);
-				font-size: 16px;
-				color: #014099;
+			.gift_img_title {
+				text-align: center;
+				.pic {
+					font-size: 0;
+				}
+				p {
+					margin-top: 16px;
+					font-size: 16px;
+					color: $point0;
+				}
 			}
+			.coupon_list {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 58px;
+				$size: 56px;
+				padding-right: calc($size / 2);
+				.coupon {
+					position: relative;
+					.x_count {
+						position: absolute;
+						width: $size;
+						height: $size;
+						top: calc($size / -2);
+						right: calc($size / -2);
+						background: $color3;
+						border-radius: 100%;
+						font-size: 28px;
+						line-height: $size;
+						text-align: center;
+						color: $colorF;
+						font-family: $nunito;
+						span {
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+		.btn {
+			margin-top: 78px;
 		}
 	}
 
@@ -377,8 +415,17 @@
 				font-size: 14px;
 			}
 			.ico{
-				margin-top: 20px;
-				margin-bottom: 30px;
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+			&.is_end {
+				h2 {
+					font-size: 20px;
+				}
+				p {
+					margin-top: 10px;
+					font-size: 16px;
+				}
 			}
 		}
 
@@ -446,6 +493,91 @@
 			}
 			.chk {
 				padding: 2px 0 0 32px;
+			}
+		}
+		.join2{
+			margin-top: 20px;
+			.list{
+				.label_t{
+					align-items: flex-start;
+					flex-direction: column;
+					margin-bottom: 20px;
+					&.type_sns{
+						align-items: start;
+						margin-bottom: 60px;
+						.sns{
+							margin-bottom: 10px;
+							.radio_visual{
+								height: 26px;
+								line-height: 26px;
+								width: auto;
+								&+.radio_visual{
+									margin-left: 50px;
+								}
+								.txt{
+									color: #113462;
+								}
+							}
+						}
+						.alert_msg{
+							align-items: flex-start;
+							i{
+								margin: 2px 4px 0 0;
+							}
+							span {
+								flex: 1;
+							}
+						}
+					}
+					label,.label{
+						width: 100%;
+						font-size: 16px;
+						flex: 0 0 auto;
+						margin-bottom: 10px;
+					}
+					.padding{
+						display: flex;
+						flex-wrap: wrap;
+						width: 100%;
+						align-items: center;
+						&.type_line{
+							$gap: 18px;
+							$gap2: calc($gap * 2 / 3);
+							.label_s{
+								margin-right: 0;
+								width: calc(30% - $gap2);
+								select {
+									width: 100%;
+								}
+							}
+							input{
+								margin-right: 0;
+								width: calc(35% - $gap2) !important;
+							}
+							span{
+								margin: 0 0;
+								width: $gap;
+								text-align: center;
+							}
+						}
+						.label_s{
+							margin-right: 10px;
+							width: 114px;
+							select {
+								width: 100%;
+							}
+						}
+						input[type="text"] {
+							width: calc(100% - 114px - 10px);
+						}
+						.st_btn{
+							margin: 10px 0 0 0;
+						}
+					}
+				}
+				.btn{
+					text-align: center;
+				}
 			}
 		}
 
@@ -544,6 +676,32 @@
 						}
 					}
 				}
+			}
+		}
+		//.gift
+		.gift{
+			.gift_img{
+				padding: 18px 20px 28px;
+				margin-top: 40px;
+				.gift_img_title {
+					p {
+						margin-top: 20px;
+						font-size: 14px;
+					}
+				}
+				.coupon_list {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-top: 52px;
+					$size: 56px;
+					padding-right: 0;
+					gap: 48px;
+				}
+			}
+			.btn {
+				margin-top: 78px;
 			}
 		}
 	}

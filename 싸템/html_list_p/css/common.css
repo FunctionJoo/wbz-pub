@@ -180,6 +180,13 @@ button {
   color: #A7A7A7;
 }
 
+@media (max-width: 1080px) {
+  body:not(.is_pc) .label_t input:not([type=radio]) {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
 .label_s {
   display: block;
 }
@@ -195,6 +202,14 @@ button {
           appearance: none;
   cursor: pointer;
   background: url(../images/ico/ico_arrow2.svg) no-repeat top 50% right 16px #fff;
+}
+
+@media (max-width: 1080px) {
+  body:not(.is_pc) .label_s select {
+    padding: 0 30px 0 14px;
+    font-size: 14px;
+    background-size: 12px auto;
+  }
 }
 
 .st_btn {
@@ -250,3 +265,9 @@ button {
   height: 100%;
   background: url("../images/common/i_arr.svg") no-repeat center center;
 }
+
+@media (max-width: 1080px) {
+  body:not(.is_pc) .st_btn.size_m_100, body:not(.is_pc) .st_btn.size_b {
+    width: 100%;
+  }
+}/*# sourceMappingURL=common.css.map */

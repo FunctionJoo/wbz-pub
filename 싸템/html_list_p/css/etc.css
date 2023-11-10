@@ -149,16 +149,20 @@
 #member .join2 .list .label_t.type_sns .sns .radio_visual .txt {
   color: #113462;
 }
-#member .join2 .list .label_t.type_sns span {
+#member .join2 .list .label_t.type_sns .alert_msg {
   display: flex;
   align-items: center;
 }
-#member .join2 .list .label_t.type_sns span i {
+#member .join2 .list .label_t.type_sns .alert_msg i {
   background-image: url(../images/ico/ico_alert.svg);
   width: 16px;
   height: 16px;
   display: block;
   margin-right: 4px;
+}
+#member .join2 .list .label_t.type_sns .alert_msg span {
+  font-size: 14px;
+  color: #666666;
 }
 #member .join2 .list .label_t label, #member .join2 .list .label_t .label {
   width: 164px;
@@ -338,20 +342,50 @@
   text-align: center;
 }
 #member .gift .gift_img {
-  position: relative;
+  border: 1px solid #A7A7A7;
+  padding: 16px 20px 28px;
   margin-top: 52px;
-  margin-bottom: 78px;
 }
-#member .gift .gift_img p {
-  position: absolute;
-  top: 94px;
-  left: 50%;
-  transform: translate(-50%);
+#member .gift .gift_img .gift_img_title {
+  text-align: center;
+}
+#member .gift .gift_img .gift_img_title .pic {
+  font-size: 0;
+}
+#member .gift .gift_img .gift_img_title p {
+  margin-top: 16px;
   font-size: 16px;
   color: #014099;
-<<<<<<< Updated upstream
 }
-=======
+#member .gift .gift_img .coupon_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 58px;
+  padding-right: 28px;
+}
+#member .gift .gift_img .coupon_list .coupon {
+  position: relative;
+}
+#member .gift .gift_img .coupon_list .coupon .x_count {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: -28px;
+  right: -28px;
+  background: #333333;
+  border-radius: 100%;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Nunito Sans", sans-serif;
+}
+#member .gift .gift_img .coupon_list .coupon .x_count span {
+  font-size: 20px;
+}
+#member .gift .btn {
+  margin-top: 78px;
 }
 
 @media (max-width: 1080px) {
@@ -366,8 +400,15 @@
     font-size: 14px;
   }
   body:not(.is_pc) #member .main_title .ico {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  body:not(.is_pc) #member .main_title.is_end h2 {
+    font-size: 20px;
+  }
+  body:not(.is_pc) #member .main_title.is_end p {
+    margin-top: 10px;
+    font-size: 16px;
   }
   body:not(.is_pc) #member .step_wrap {
     height: 50px;
@@ -428,6 +469,87 @@
   }
   body:not(.is_pc) #member .chk_area .chk {
     padding: 2px 0 0 32px;
+  }
+}
+@media (max-width: 1080px) {
+  body:not(.is_pc) #member .join2 {
+    margin-top: 20px;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns {
+    align-items: start;
+    margin-bottom: 60px;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns .sns {
+    margin-bottom: 10px;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns .sns .radio_visual {
+    height: 26px;
+    line-height: 26px;
+    width: auto;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns .sns .radio_visual + .radio_visual {
+    margin-left: 50px;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns .sns .radio_visual .txt {
+    color: #113462;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns .alert_msg {
+    align-items: flex-start;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns .alert_msg i {
+    margin: 2px 4px 0 0;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t.type_sns .alert_msg span {
+    flex: 1;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t label, body:not(.is_pc) #member .join2 .list .label_t .label {
+    width: 100%;
+    font-size: 16px;
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding.type_line .label_s {
+    margin-right: 0;
+    width: calc(30% - 12px);
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding.type_line .label_s select {
+    width: 100%;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding.type_line input {
+    margin-right: 0;
+    width: calc(35% - 12px) !important;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding.type_line span {
+    margin: 0 0;
+    width: 18px;
+    text-align: center;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding .label_s {
+    margin-right: 10px;
+    width: 114px;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding .label_s select {
+    width: 100%;
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding input[type=text] {
+    width: calc(100% - 114px - 10px);
+  }
+  body:not(.is_pc) #member .join2 .list .label_t .padding .st_btn {
+    margin: 10px 0 0 0;
+  }
+  body:not(.is_pc) #member .join2 .list .btn {
+    text-align: center;
   }
 }
 @media (max-width: 1080px) {
@@ -521,5 +643,26 @@
   body:not(.is_pc) #member .man_list .man_check li:nth-child(2) img {
     width: 70px;
   }
+}
+@media (max-width: 1080px) {
+  body:not(.is_pc) #member .gift .gift_img {
+    padding: 18px 20px 28px;
+    margin-top: 40px;
+  }
+  body:not(.is_pc) #member .gift .gift_img .gift_img_title p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  body:not(.is_pc) #member .gift .gift_img .coupon_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 52px;
+    padding-right: 0;
+    gap: 48px;
+  }
+  body:not(.is_pc) #member .gift .btn {
+    margin-top: 78px;
+  }
 }/*# sourceMappingURL=etc.css.map */
->>>>>>> Stashed changes

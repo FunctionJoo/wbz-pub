@@ -89,7 +89,7 @@ $nunito: 'Nunito Sans', sans-serif;
 		position: absolute;
 		top: 50%;
 		left: 0;
-		margin-top: -$h / 2;
+		margin-top: calc($h / -2);
 		width: $w;
 		height: $h;
 		background: $bg;
