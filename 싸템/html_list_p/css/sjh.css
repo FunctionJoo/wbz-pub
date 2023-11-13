@@ -391,6 +391,7 @@
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 .my_cont .mo_table_count {
   display: none;
@@ -463,7 +464,7 @@
 .my_cont #cancelWait_table table tr td.amount_td em {
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 600;
 }
 .my_cont #cancelWait_table table tr td.date_td {
   font-size: 12px;
@@ -593,6 +594,7 @@
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 11px;
+    font-weight: 500;
   }
   .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.amount_td {
     font-size: 14px;
@@ -601,7 +603,7 @@
   .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.amount_td em {
     font-size: 14px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 600;
   }
   .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.date_td {
     font-size: 14px;

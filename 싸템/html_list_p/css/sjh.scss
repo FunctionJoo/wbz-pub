@@ -447,6 +447,7 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 20px;
+        font-weight: 500;
     }
     .mo_table_count{
         display: none;
@@ -516,7 +517,7 @@
                         em{
                             font-size: 14px;
                             line-height: 18px;
-                            font-weight: normal;
+                            font-weight: 600;
                         }
                     }
                     &.date_td{
@@ -663,6 +664,7 @@
                             font-size: 14px;
                             line-height: 20px;
                             margin-bottom: 11px;
+                            font-weight: 500;
                         }
                         &.amount_td{
                             font-size: 14px;
@@ -670,7 +672,7 @@
                             em{
                                 font-size: 14px;
                                 line-height: 18px;
-                                font-weight: normal;
+                                font-weight: 600;
                             }
                         }
                         &.date_td{
