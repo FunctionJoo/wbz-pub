@@ -1,9 +1,24 @@
+.box_title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#my_grade {
+  margin-bottom: 30px;
+}
 #my_grade .my_grade_box {
+  height: 150px;
   display: flex;
-  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 #my_grade .my_grade_box .my_grade_list1 {
   display: flex;
+  border-right: 1px dashed #D3D3D3;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 #my_grade .my_grade_box .my_grade_list1 .class_button {
   margin-right: 10px;
@@ -11,10 +26,6 @@
 #my_grade .my_grade_box .my_grade_list1 .class_button img {
   width: 68px;
   height: 76px;
-}
-#my_grade .my_grade_box .my_grade_list1 .class_guide {
-  padding: 14px 20px 14px 0px;
-  border-right: 1px dashed #D3D3D3;
 }
 #my_grade .my_grade_box .my_grade_list1 .class_guide p {
   padding-bottom: 6px;
@@ -48,8 +59,11 @@
   background-size: contain;
 }
 #my_grade .my_grade_box .my_grade_list2 {
-  padding: 14px 14px 0px 14px;
   border-right: 1px dashed #D3D3D3;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 15px;
+  padding-left: 20px;
 }
 #my_grade .my_grade_box .my_grade_list2 span {
   font-size: 15px;
@@ -67,18 +81,24 @@
   font-size: 26px;
   line-height: 33px;
   color: #014099;
+  margin-right: 4px;
 }
 #my_grade .my_grade_box .my_grade_list3 {
-  padding: 14px 10px 0px 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 #my_grade .my_grade_box .my_grade_list3 .detail_mileage {
   display: flex;
   justify-content: space-between;
 }
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage:nth-child(1) {
+  margin-bottom: 42px;
+}
 #my_grade .my_grade_box .my_grade_list3 .detail_mileage span {
   font-size: 15px;
   line-height: 22px;
   color: #666666;
+  margin-right: 19px;
 }
 #my_grade .my_grade_box .my_grade_list3 .detail_mileage p {
   font-size: 14px;
@@ -87,6 +107,7 @@
 #my_grade .my_grade_box .my_grade_list3 .detail_mileage p em {
   font-size: 18px;
   line-height: 23px;
+  margin-right: 4px;
 }
 #my_grade .my_grade_box .my_grade_list4 .mile_link {
   display: block;
@@ -95,4 +116,274 @@
   line-height: 20px;
   border: 1px solid #666666;
   border-radius: 3px;
+}
+#my_grade .my_grade_box .my_grade_list4 .mile_link:nth-child(1) {
+  margin-bottom: 28px;
+}
+
+#ticket {
+  display: flex;
+  margin-bottom: 30px;
+}
+#ticket .ticket_box {
+  width: calc((100% - 20px) / 2);
+}
+#ticket .ticket_box.ticket_box_01 {
+  margin-right: 20px;
+}
+#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_asset {
+  margin-bottom: 12px;
+}
+#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_title {
+  margin-bottom: 6px;
+}
+#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_link.before_check {
+  border-color: #014099;
+  color: #014099;
+}
+#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_link.after_check {
+  border: none;
+  background-color: #D3D3D3;
+  color: #A7A7A7;
+}
+#ticket .ticket_box .con_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border: 1px solid #D3D3D3;
+  padding: 15px 0px;
+}
+#ticket .ticket_box .con_box .con_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333333333%;
+}
+#ticket .ticket_box .con_box .con_list.list_01 {
+  border-right: 1px dashed #D3D3D3;
+}
+#ticket .ticket_box .con_box .con_list.list_02 {
+  border-right: 1px dashed #D3D3D3;
+}
+#ticket .ticket_box .con_box .con_list .con_title {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  word-break: keep-all;
+}
+#ticket .ticket_box .con_box .con_list .con_title br {
+  display: none;
+}
+#ticket .ticket_box .con_box .con_list .con_count {
+  font-size: 13px;
+  line-height: 19px;
+  margin-bottom: 12px;
+}
+#ticket .ticket_box .con_box .con_list .con_count em {
+  font-size: 24px;
+  line-height: 30px;
+  color: #014099;
+}
+#ticket .ticket_box .con_box .con_list .con_link {
+  border: 1px solid #333;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 19px;
+}
+
+#tran_status .con_box {
+  height: 80px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tran_status .con_box.con_box_01 {
+  margin-bottom: 30px;
+}
+#tran_status .con_box .con_asset {
+  margin-right: 27px;
+}
+#tran_status .con_box .con_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tran_status .con_box .con_list .title {
+  display: flex;
+  align-items: center;
+}
+#tran_status .con_box .con_list .title:not(:last-child) {
+  margin-right: 34px;
+}
+#tran_status .con_box .con_list .title:not(:first-child) {
+  margin-left: 33px;
+}
+#tran_status .con_box .con_list .title p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  margin-right: 70px;
+}
+#tran_status .con_box .con_list .title span {
+  font-size: 13px;
+  line-height: 19px;
+}
+#tran_status .con_box .con_list .title span em {
+  font-size: 24px;
+  line-height: 30px;
+  color: #014099;
+  border-bottom: 1px solid #014099;
+  margin-right: 1px;
+}
+#tran_status .con_box .con_list .arrow_asset img {
+  display: block;
+}
+
+@media (max-width: 1080px) {
+  .box_title {
+    margin-bottom: 15px;
+    line-height: 21px;
+  }
+  #my_grade.my_grade {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  #my_grade .my_grade_box {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    padding: 0;
+  }
+  #my_grade .my_grade_box .my_grade_list1 {
+    background-color: #F9F9F9;
+    display: flex;
+    border-right: none;
+    justify-content: center;
+    padding-right: 0px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    width: 100%;
+  }
+  #my_grade .my_grade_box .my_grade_list1 .class_button {
+    margin-right: 23px;
+  }
+  #my_grade .my_grade_box .my_grade_list2 {
+    width: 100%;
+    border-right: none;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #my_grade .my_grade_box .my_grade_list2 span {
+    margin-bottom: 0px;
+  }
+  #my_grade .my_grade_box .my_grade_list3 {
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 30px;
+  }
+  #my_grade .my_grade_box .my_grade_list3 .detail_mileage:nth-child(1) {
+    margin-bottom: 12px;
+  }
+  #my_grade .my_grade_box .my_grade_list4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #my_grade .my_grade_box .my_grade_list4 .mile_link {
+    width: calc(100% - 5px);
+    text-align: center;
+    padding: 6px 0px;
+  }
+  #my_grade .my_grade_box .my_grade_list4 .mile_link:nth-child(1) {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  #ticket {
+    flex-direction: column;
+  }
+  #ticket .ticket_box {
+    width: 100%;
+  }
+  #ticket .ticket_box.ticket_box_01 {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #tran_status .con_box {
+    height: 161px;
+    border: 1px solid #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 21px 30px;
+  }
+  #tran_status .con_box.con_box_01 {
+    margin-bottom: 0px;
+  }
+  #tran_status .con_box.con_box_02 {
+    border-top: none;
+  }
+  #tran_status .con_box .con_asset {
+    margin-right: 0px;
+  }
+  #tran_status .con_box .con_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+  }
+  #tran_status .con_box .con_list .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #tran_status .con_box .con_list .title:not(:last-child) {
+    margin-right: 0px;
+  }
+  #tran_status .con_box .con_list .title:not(:first-child) {
+    margin-left: 0px;
+  }
+  #tran_status .con_box .con_list .title p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #tran_status .con_box .con_list .title span {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  #tran_status .con_box .con_list .title span em {
+    font-size: 24px;
+    line-height: 30px;
+    color: #014099;
+    border-bottom: 1px solid #014099;
+    margin-right: 1px;
+  }
+  #tran_status .con_box .con_list .arrow_asset img {
+    display: block;
+  }
+}
+@media (max-width: 449px) {
+  #ticket .con_box .con_title {
+    text-align: center;
+  }
+  #ticket .con_box .con_title br {
+    display: block !important;
+  }
+  #ticket .con_box .con_title.title_with_br {
+    margin-bottom: 0px !important;
+  }
+  #ticket .con_box .con_link {
+    padding: 5px 9px !important;
+  }
 }/*# sourceMappingURL=sjh.css.map */

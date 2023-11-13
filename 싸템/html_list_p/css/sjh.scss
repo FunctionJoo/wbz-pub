@@ -1,9 +1,24 @@
+// 공통
+.box_title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+// 등급 / 마일리지
 #my_grade{
+    margin-bottom: 30px;
     .my_grade_box{
+        height: 150px;
         display: flex;
-        padding: 15px 20px;
+        justify-content: space-between;
+        align-items: center;
         .my_grade_list1{
             display: flex;
+            border-right: 1px dashed #D3D3D3;
+            padding-right: 20px;
+            padding-top: 14px;
+            padding-bottom: 14px;
             .class_button{
                 margin-right: 10px;
                 img{
@@ -12,8 +27,6 @@
                 }
             }
             .class_guide{
-                padding: 14px 20px 14px 0px;
-                border-right: 1px dashed #D3D3D3;
                 p{
                     padding-bottom: 6px;
                     font-size: 18px;
@@ -48,8 +61,11 @@
             }
         }
         .my_grade_list2{
-            padding: 14px 14px 0px 14px;
             border-right: 1px dashed #D3D3D3;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-right: 15px;
+            padding-left: 20px;
             span{
                 font-size: 15px;
                 line-height: 22px;
@@ -65,18 +81,24 @@
                     font-size: 26px;
                     line-height: 33px;
                     color: #014099;
+                    margin-right: 4px;
                 }
             }
         }
         .my_grade_list3{
-            padding: 14px 10px 0px 20px;
+            padding-left: 20px;
+            padding-right: 10px;
             .detail_mileage{
                 display: flex;
                 justify-content: space-between;
+                &:nth-child(1){
+                    margin-bottom: 42px;
+                }
                 span{
                     font-size: 15px;
                     line-height: 22px;
                     color: #666666;
+                    margin-right: 19px;
                 }
                 p{
                     font-size: 14px;
@@ -84,6 +106,7 @@
                     em{
                         font-size: 18px;
                         line-height: 23px;
+                        margin-right: 4px;
                     }
                 }
             }
@@ -96,6 +119,318 @@
                 line-height: 20px;
                 border: 1px solid #666666;
                 border-radius: 3px;
+                &:nth-child(1){
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
+}
+
+// 보유이용권 / 인증현황
+#ticket{
+    display: flex;
+    margin-bottom: 30px;
+    .ticket_box{
+        &.ticket_box_01{
+            margin-right: 20px;
+        }
+        &.ticket_box_02{
+            .con_box{
+                .con_list{
+                    .con_asset{
+                        margin-bottom: 12px;
+                    }
+                    .con_title{
+                        margin-bottom: 6px;
+                    }
+                    .con_link{
+                        &.before_check{
+                            border-color: #014099;
+                            color: #014099;
+                        }
+                        &.after_check{
+                            border: none;
+                            background-color: #D3D3D3;
+                            color: #A7A7A7;
+                        }
+                    }
+                }
+            }
+        }
+        width: calc((100% - 20px) / 2);
+        .con_box{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            border: 1px solid #D3D3D3;
+            padding: 15px 0px;
+            .con_list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: calc(100% / 3);
+                &.list_01{
+                    border-right: 1px dashed #D3D3D3;
+                }
+                &.list_02{
+                    border-right: 1px dashed #D3D3D3;
+                }
+                .con_title{
+                    font-size: 15px;
+                    line-height: 22px;
+                    margin-bottom: 18px;
+                    word-break: keep-all;
+                    br{
+                        display: none;
+                    }
+                }
+                .con_count{
+                    font-size: 13px;
+                    line-height: 19px;
+                    margin-bottom: 12px;
+                    em{
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: #014099;
+                    }
+                }
+                .con_link{
+                    border: 1px solid #333;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 5px 19px;
+                }
+            }
+        }
+    }
+}
+
+// 거래현황
+#tran_status{
+    .con_box{
+        height: 80px;
+        border: 1px solid #D3D3D3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.con_box_01{
+            margin-bottom: 30px;
+        }
+        .con_asset{
+            margin-right: 27px;
+        }
+        .con_list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                display: flex;
+                align-items: center;
+                &:not(:last-child){
+                    margin-right: 34px;
+                }
+                &:not(:first-child){
+                    margin-left: 33px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #000;
+                    margin-right: 70px;
+                }
+                span{
+                    font-size: 13px;
+                    line-height: 19px;
+                    em{
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: #014099;
+                        border-bottom: 1px solid #014099;
+                        margin-right: 1px;
+                    }
+                }
+
+            }
+            .arrow_asset{
+                img{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    // 공통
+    .box_title{
+            margin-bottom: 15px;
+            line-height: 21px;
+    }
+
+    // 등급 마일리지
+    #my_grade{
+            &.my_grade{
+                background-color: #fff;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+        .my_grade_box{
+            height: fit-content;
+            flex-direction: column;
+            padding: 0;
+            .my_grade_list1{
+                background-color: #F9F9F9;
+                display: flex;
+                border-right: none;
+                justify-content: center;
+                padding-right: 0px;
+                padding-top: 29px;
+                padding-bottom: 29px;
+                width: 100%;
+                .class_button{
+                    margin-right: 23px;
+                }
+            }
+            .my_grade_list2{
+                width: 100%;
+                border-right: none;
+                padding-top: 30px;
+                padding-bottom: 0px;
+                padding-right: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    margin-bottom: 0px;
+                }
+            }
+            .my_grade_list3{
+                width: 100%;
+                padding-top: 9px;
+                padding-bottom: 30px;
+                .detail_mileage{
+                    &:nth-child(1){
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            .my_grade_list4{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .mile_link{
+                    width: calc(100% - 10px / 2);
+                    text-align: center;
+                    padding: 6px 0px;
+                    &:nth-child(1){
+                        margin-bottom: 0px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // 보유이용권 인증현황
+    #ticket {
+        flex-direction: column;
+        .ticket_box {
+            &.ticket_box_01 {
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+            width: 100%;
+        }
+    }
+
+    // 거래현황
+    #tran_status {
+        .con_box {
+            height: 161px;
+            border: 1px solid #D3D3D3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 21px 30px;
+            &.con_box_01{
+                margin-bottom: 0px;
+            }
+            &.con_box_02{
+                border-top: none;
+            }
+            .con_asset {
+                margin-right: 0px;
+            }
+
+            .con_list {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                width: 100%;
+                .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    &:not(:last-child) {
+                        margin-right: 0px;
+                    }
+
+                    &:not(:first-child) {
+                        margin-left: 0px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000;
+                        margin-right: 0px;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-size: 13px;
+                        line-height: 19px;
+
+                        em {
+                            font-size: 24px;
+                            line-height: 30px;
+                            color: #014099;
+                            border-bottom: 1px solid #014099;
+                            margin-right: 1px;
+                        }
+                    }
+
+                }
+
+                .arrow_asset {
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:449px){
+    #ticket{
+        .con_box{
+            .con_title{
+                text-align: center;
+                br{
+                    display: block !important;
+                }
+                &.title_with_br{
+                    margin-bottom: 0px !important; 
+                }
+            }
+            .con_link{
+                padding: 5px 9px !important;
             }
         }
     }
