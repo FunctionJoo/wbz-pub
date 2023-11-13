@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: local(※), url(../font/NotoSansKR-Thin.woff2) format('woff2'),
+    url(../font/NotoSansKR-Thin.woff) format('woff'),
+    url(../font/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: local(※),  url(../font/NotoSansKR-Light.woff2) format('woff2'),
+    url(../font/NotoSansKR-Light.woff) format('woff'),
+    url(../font/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: local(※),  url(../font/NotoSansKR-Regular.woff2) format('woff2'),
+    url(../font/NotoSansKR-Regular.woff) format('woff'),
+    url(../font/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: local(※),  url(../font/NotoSansKR-Medium.woff2) format('woff2'),
+    url(../font/NotoSansKR-Medium.woff) format('woff'),
+    url(../font/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 600;
+    src: local(※),  url(../font/NotoSansKR-Bold.woff2) format('woff2'),
+    url(../font/NotoSansKR-Bold.woff) format('woff'),
+    url(../font/NotoSansKR-Bold.otf) format('opentype');
+}
+
+/* NanumSquare */
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 300;
+    src: local('NanumSquare');
+	src:url("../font/NanumSquareL.woff");
+	src:url("../font/NanumSquareL.ttf") format('truetype'),
+		url("../font/NanumSquareL.otf") format('opentype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NanumSquare');
+	src:url("../font/NanumSquareR.woff");
+	src:url("../font/NanumSquareR.ttf") format('truetype'),
+		url("../font/NanumSquareR.otf") format('opentype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 600;
+    src: local('NanumSquareRound');
+	src:url("../font/NanumSquareB.woff");
+	src:url("../font/NanumSquareB.ttf") format('truetype'),
+		url("../font/NanumSquareB.otf") format('opentype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 800;
+    src: local('NanumSquare');
+	src:url("../font/NanumSquareEB.woff");
+	src:url("../font/NanumSquareEB.ttf") format('truetype'),
+		url("../font/NanumSquareEB.otf") format('opentype');
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat');
+	src:url("../font/Montserrat-Light.eot");
+	src:url("../font/Montserrat-Light.eot?#iefix") format('embedded-opentype'),
+		url("../font/Montserrat-Light.ttf") format('truetype'),
+		url("../font/Montserrat-Light.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat');
+	src:url("../font/Montserrat-Regular.eot");
+	src:url("../font/Montserrat-Regular.eot?#iefix") format('embedded-opentype'),
+		url("../font/Montserrat-Regular.ttf") format('truetype'),
+		url("../font/Montserrat-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Montserrat');
+	src:url("../font/Montserrat-Medium.eot");
+	src:url("../font/Montserrat-Medium.eot?#iefix") format('embedded-opentype'),
+		url("../font/Montserrat-Medium.ttf") format('truetype'),
+		url("../font/Montserrat-Medium.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat');
+	src:url("../font/Montserrat-SemiBold.eot");
+	src:url("../font/Montserrat-SemiBold.eot?#iefix") format('embedded-opentype'),
+		url("../font/Montserrat-SemiBold.ttf") format('truetype'),
+		url("../font/Montserrat-SemiBold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat');
+	src:url("../font/Montserrat-Bold.eot");
+	src:url("../font/Montserrat-Bold.eot?#iefix") format('embedded-opentype'),
+		url("../font/Montserrat-Bold.ttf") format('truetype'),
+		url("../font/Montserrat-Bold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat');
+	src:url("../font/Montserrat-ExtraBold.eot");
+	src:url("../font/Montserrat-ExtraBold.eot?#iefix") format('embedded-opentype'),
+		url("../font/Montserrat-ExtraBold.ttf") format('truetype'),
+		url("../font/Montserrat-ExtraBold.otf") format('opentype');
+}
+
+/* Rubik */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Rubik');
+	src:url("../font/Rubik-Light.eot");
+	src:url("../font/Rubik-Light.eot?#iefix") format('embedded-opentype'),
+		url("../font/Rubik-Light.ttf") format('truetype'),
+		url("../font/Rubik-Light.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Rubik');
+	src:url("../font/Rubik-Regular.eot");
+	src:url("../font/Rubik-Regular.eot?#iefix") format('embedded-opentype'),
+		url("../font/Rubik-Regular.ttf") format('truetype'),
+		url("../font/Rubik-Regular.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Rubik');
+	src:url("../font/Rubik-Medium.eot");
+	src:url("../font/Rubik-Medium.eot?#iefix") format('embedded-opentype'),
+		url("../font/Rubik-Medium.ttf") format('truetype'),
+		url("../font/Rubik-Medium.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Rubik');
+	src:url("../font/Rubik-SemiBold.eot");
+	src:url("../font/Rubik-SemiBold.eot?#iefix") format('embedded-opentype'),
+		url("../font/Rubik-SemiBold.ttf") format('truetype'),
+		url("../font/Rubik-SemiBold.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Rubik');
+	src:url("../font/Rubik-Bold.eot");
+	src:url("../font/Rubik-Bold.eot?#iefix") format('embedded-opentype'),
+		url("../font/Rubik-Bold.ttf") format('truetype'),
+		url("../font/Rubik-Bold.otf") format('opentype');
+}
+
+/* Kanit */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Kanit');
+	src:url("../font/Kanit-Light.eot");
+	src:url("../font/Kanit-Light.eot?#iefix") format('embedded-opentype'),
+		url("../font/Kanit-Light.ttf") format('truetype'),
+		url("../font/Kanit-Light.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kanit');
+	src:url("../font/Kanit-Regular.eot");
+	src:url("../font/Kanit-Regular.eot?#iefix") format('embedded-opentype'),
+		url("../font/Kanit-Regular.ttf") format('truetype'),
+		url("../font/Kanit-Regular.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Kanit');
+	src:url("../font/Kanit-Medium.eot");
+	src:url("../font/Kanit-Medium.eot?#iefix") format('embedded-opentype'),
+		url("../font/Kanit-Medium.ttf") format('truetype'),
+		url("../font/Kanit-Medium.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Kanit');
+	src:url("../font/Kanit-SemiBold.eot");
+	src:url("../font/Kanit-SemiBold.eot?#iefix") format('embedded-opentype'),
+		url("../font/Kanit-SemiBold.ttf") format('truetype'),
+		url("../font/Kanit-SemiBold.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Kanit');
+	src:url("../font/Kanit-Bold.eot");
+	src:url("../font/Kanit-Bold.eot?#iefix") format('embedded-opentype'),
+		url("../font/Kanit-Bold.ttf") format('truetype'),
+		url("../font/Kanit-Bold.otf") format('opentype');
+}
