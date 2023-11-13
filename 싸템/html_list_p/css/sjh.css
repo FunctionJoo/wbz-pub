@@ -392,26 +392,26 @@
     padding: 5px 9px !important;
   }
 }
-.my_cont .pc_title {
+#mypage.cancelWait .my_cont .pc_title {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
   font-weight: 500;
 }
-.my_cont .mo_table_count {
+#mypage.cancelWait .my_cont .mo_table_count {
   display: none;
 }
-.my_cont #mo_cancelWait_table {
+#mypage.cancelWait .my_cont #mo_cancelWait_table {
   display: none;
 }
-.my_cont #cancelWait_table {
+#mypage.cancelWait .my_cont #cancelWait_table {
   display: block;
 }
-.my_cont #cancelWait_table table {
+#mypage.cancelWait .my_cont #cancelWait_table table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.my_cont #cancelWait_table table tr th {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th {
   background-color: #F6F6F6;
   border-top: 1px solid #D3D3D3;
   border-bottom: 1px solid #D3D3D3;
@@ -420,77 +420,77 @@
   font-weight: normal;
   text-align: center;
 }
-.my_cont #cancelWait_table table tr th:last-child {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th:last-child {
   border-right: 1px solid #D3D3D3;
 }
-.my_cont #cancelWait_table table tr th.category {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th.category {
   width: 150px;
 }
-.my_cont #cancelWait_table table tr th.title {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th.title {
   width: 280px;
 }
-.my_cont #cancelWait_table table tr th.amount {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th.amount {
   width: 124px;
 }
-.my_cont #cancelWait_table table tr th.date {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th.date {
   width: 80px;
 }
-.my_cont #cancelWait_table table tr th.chat {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th.chat {
   width: 50px;
 }
-.my_cont #cancelWait_table table tr th.cancel {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th.cancel {
   width: 84px;
 }
-.my_cont #cancelWait_table table tr th.check {
+#mypage.cancelWait .my_cont #cancelWait_table table tr th.check {
   width: 88px;
 }
-.my_cont #cancelWait_table table tr td {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td {
   border-top: 1px solid #D3D3D3;
   border-bottom: 1px solid #D3D3D3;
   border-left: 1px solid #D3D3D3;
   padding: 15px 0;
   text-align: center;
 }
-.my_cont #cancelWait_table table tr td:last-child {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td:last-child {
   border-right: 1px solid #D3D3D3;
 }
-.my_cont #cancelWait_table table tr td.category_td {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.category_td {
   font-size: 14px;
   line-height: 20px;
 }
-.my_cont #cancelWait_table table tr td.title_td {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.title_td {
   font-size: 13px;
   line-height: 19px;
 }
-.my_cont #cancelWait_table table tr td.amount_td {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.amount_td {
   font-size: 14px;
   line-height: 20px;
 }
-.my_cont #cancelWait_table table tr td.amount_td em {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.amount_td em {
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
 }
-.my_cont #cancelWait_table table tr td.date_td {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.date_td {
   font-size: 12px;
   line-height: 15px;
 }
-.my_cont #cancelWait_table table tr td.chat_td .img_box {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td .img_box {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
-.my_cont #cancelWait_table table tr td.chat_td .img_box img {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td .img_box img {
   display: block;
 }
-.my_cont #cancelWait_table table tr td.chat_td .img_box .count {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td .img_box .count {
   display: none;
 }
-.my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box {
   position: relative;
   margin: 0 9px;
 }
-.my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,25 +502,25 @@
   bottom: 50%;
   left: 50%;
 }
-.my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count .count_chat {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count .count_chat {
   display: block;
   font-size: 10px;
   line-height: 14px;
   color: #fff;
 }
-.my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count .over_chat {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count .over_chat {
   display: none;
   font-size: 10px;
   line-height: 14px;
   color: #fff;
 }
-.my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count.over .count_chat {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count.over .count_chat {
   display: none;
 }
-.my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count.over .over_chat {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.chat_td.chat_exists .img_box .count.over .over_chat {
   display: block;
 }
-.my_cont #cancelWait_table table tr td.cancel_td button {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.cancel_td button {
   border: 1px solid #D3D3D3;
   border-radius: 3px;
   padding: 5px 17px;
@@ -528,7 +528,7 @@
   font-size: 14px;
   line-height: 20px;
 }
-.my_cont #cancelWait_table table tr td.check_td button {
+#mypage.cancelWait .my_cont #cancelWait_table table tr td.check_td button {
   border: 1px solid #D3D3D3;
   border-radius: 3px;
   padding: 5px 9px;
@@ -542,94 +542,94 @@
   #mypage.cancelWait .w_set {
     padding: 0 !important;
   }
-  .my_cont .my_title {
+  #mypage.cancelWait .my_cont .my_title {
     margin: 0 16px;
   }
-  .my_cont .pc_title {
+  #mypage.cancelWait .my_cont .pc_title {
     display: none;
   }
-  .my_cont .mo_table_count {
+  #mypage.cancelWait .my_cont .mo_table_count {
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 44px;
     margin-bottom: 15px;
     display: flex;
   }
-  .my_cont .mo_table_count p {
+  #mypage.cancelWait .my_cont .mo_table_count p {
     font-size: 14px;
     line-height: 21px;
   }
-  .my_cont .mo_table_count p em {
+  #mypage.cancelWait .my_cont .mo_table_count p em {
     font-weight: normal;
     color: #014099;
   }
-  .my_cont #cancelWait_table {
+  #mypage.cancelWait .my_cont #cancelWait_table {
     display: none;
   }
-  .my_cont #mo_cancelWait_table {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table {
     display: block;
   }
-  .my_cont #mo_cancelWait_table .mo_table {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table {
     border-top: 1px solid #D3D3D3;
     border-bottom: 1px solid #D3D3D3;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr {
     padding: 20px 16px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr:not(:last-child) {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr:not(:last-child) {
     border-bottom: 1px solid #D3D3D3;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .amount_date_box {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .amount_date_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 21px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .chat_cancel_check_box {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .chat_cancel_check_box {
     display: flex;
     justify-content: end;
     align-items: center;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.category_td {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.category_td {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 6px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.title_td {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.title_td {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 11px;
     font-weight: 500;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.amount_td {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.amount_td {
     font-size: 14px;
     line-height: 20px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.amount_td em {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.amount_td em {
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.date_td {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.date_td {
     font-size: 14px;
     line-height: 18px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td .img_box {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td .img_box {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td .img_box img {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td .img_box img {
     display: block;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td .img_box .count {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td .img_box .count {
     display: none;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box {
     position: relative;
     margin: 0 9px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -641,28 +641,28 @@
     bottom: 50%;
     left: 50%;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count .count_chat {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count .count_chat {
     display: block;
     font-size: 10px;
     line-height: 14px;
     color: #fff;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count .over_chat {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count .over_chat {
     display: none;
     font-size: 10px;
     line-height: 14px;
     color: #fff;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count.over .count_chat {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count.over .count_chat {
     display: none;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count.over .over_chat {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.chat_td.chat_exists .img_box .count.over .over_chat {
     display: block;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.cancel_td {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.cancel_td {
     margin-right: 10px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.cancel_td button {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.cancel_td button {
     border: 1px solid #D3D3D3;
     border-radius: 3px;
     padding: 5px 22px;
@@ -670,10 +670,10 @@
     font-size: 14px;
     line-height: 20px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.check_td {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.check_td {
     margin-right: 10px;
   }
-  .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.check_td button {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .mo_table .mo_tr .td.check_td button {
     border: 1px solid #D3D3D3;
     border-radius: 3px;
     padding: 5px 9px;
@@ -682,17 +682,17 @@
     font-size: 14px;
     line-height: 20px;
   }
-  .my_cont #mo_cancelWait_table .pagenation {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation {
     margin: 37px 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .my_cont #mo_cancelWait_table .pagenation ul {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation ul {
     display: flex;
     margin: 0 10px;
   }
-  .my_cont #mo_cancelWait_table .pagenation ul li {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation ul li {
     font-size: 14px;
     line-height: 19px;
     width: 24px;
@@ -702,16 +702,16 @@
     align-items: center;
     cursor: pointer;
   }
-  .my_cont #mo_cancelWait_table .pagenation ul li.on {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation ul li.on {
     background-color: #666666;
     color: #fff;
   }
-  .my_cont #mo_cancelWait_table .pagenation .back_page {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .my_cont #mo_cancelWait_table .pagenation .back_page .all_page {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -721,11 +721,11 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  .my_cont #mo_cancelWait_table .pagenation .back_page .all_page.on {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .all_page.on {
     background-image: url(../images/mypage/table_arrow_on_end.svg);
     transform: rotate(180deg);
   }
-  .my_cont #mo_cancelWait_table .pagenation .back_page .one_page {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -734,16 +734,16 @@
     height: 24px;
     cursor: pointer;
   }
-  .my_cont #mo_cancelWait_table .pagenation .back_page .one_page.on {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .one_page.on {
     background-image: url(../images/mypage/table_arrow_on_next.svg);
     transform: rotate(180deg);
   }
-  .my_cont #mo_cancelWait_table .pagenation .next_page {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .my_cont #mo_cancelWait_table .pagenation .next_page .all_page {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     transform: rotate(180deg);
     background-repeat: no-repeat;
@@ -753,11 +753,11 @@
     height: 24px;
     cursor: pointer;
   }
-  .my_cont #mo_cancelWait_table .pagenation .next_page .all_page.on {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .all_page.on {
     background-image: url(../images/mypage/table_arrow_on_end.svg);
     transform: rotate(0deg);
   }
-  .my_cont #mo_cancelWait_table .pagenation .next_page .one_page {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     transform: rotate(180deg);
     background-repeat: no-repeat;
@@ -768,8 +768,83 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  .my_cont #mo_cancelWait_table .pagenation .next_page .one_page.on {
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .one_page.on {
     background-image: url(../images/mypage/table_arrow_on_next.svg);
     transform: rotate(0deg);
   }
+}
+#mypage.sale_detail .my_cont .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+#mypage.sale_detail .my_cont .title .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+}
+#mypage.sale_detail .my_cont .title .sale_detail_chat {
+  font-size: 14px;
+  line-height: 20px;
+  width: 80px;
+  height: 32px;
+  border: 1px solid #014099;
+  color: #014099;
+  background-color: #fff;
+}
+#mypage.sale_detail .my_cont .main {
+  padding-top: 30px;
+  display: flex;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table {
+  width: 500px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_list {
+  display: flex;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_list:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_list .th {
+  width: 90px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_list .td {
+  width: calc(100% - 100px);
+  padding: 15px 0;
+  margin-left: 10px;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_flex {
+  display: flex;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_flex .table_list {
+  display: flex;
+  border-bottom: 1px solid #D3D3D3;
+  width: 50%;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_flex .table_list:not(:first-child) .th {
+  border-left: 1px solid #D3D3D3;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_flex .table_list .th {
+  width: 90px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.sale_detail .my_cont .main .table_list .con_box .con_table .table_flex .table_list .td {
+  width: calc(100% - 100px);
+  padding: 15px 0;
+  margin-left: 10px;
 }/*# sourceMappingURL=sjh.css.map */
