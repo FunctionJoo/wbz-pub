@@ -23,9 +23,9 @@ jQuery(function($){
 	/* ======== GNB 하나씩 ========== */ 
 	function gnb_on () {
 		$gnbList.children("li").children("a").on("mouseenter focus",function  () {
-			    //$gnbList.children("li").removeClass("on").children(".gnb-2dep").hide();
-			    $gnbList.children("li").removeClass("on").children(".gnb-2dep").show();
-			    $(this).parent("li").children(".gnb-2dep").stop().slideDown(200);
+				//$gnbList.children("li").removeClass("on").children(".gnb-2dep").hide();
+				$gnbList.children("li").removeClass("on").children(".gnb-2dep").show();
+				$(this).parent("li").children(".gnb-2dep").stop().slideDown(200);
 				if ( $(this).parent("li").hasClass("gnb1") ) {
 					$("#gnb").stop().animate({"height":"403px"},400,'swing');
 					$("#gnb").addClass('active');
@@ -75,12 +75,14 @@ jQuery(function($){
 
 	/* 반응형 gnb 메뉴 오픈 */
 
-	$("#header .nav-open-btn").click(function  () {
-		$(this).addClass("on");
+	$(".nav-open-btn").click(function  () {
+		// 20231113수정 wbz
+		// $(this).addClass("on");
 		if ( menuState  ) {
 			menuClose();
 			menuState = false;
-			$(this).removeClass("on");
+			// 20231113수정 wbz
+			// $(this).removeClass("on");
 		}else {
 			menuOpen();
 			menuState = true;
@@ -111,79 +113,81 @@ jQuery(function($){
 			$("#header .nav-open-btn").removeAttr("title");
 			$("#header .nav-open-btn").attr("title", "메뉴열기");
 	}
-	$("#m-gnb > ul > li:has('.gnb-2dep')").addClass("has-2dep");
-	$("#m-gnb > ul > li:has('.gnb-2dep')").each(function  () {
-		$(this).children("a").append("<span class='gnb-icon close-icon'><i class='xi-plus-min xi-x'></i></span><span class='gnb-icon open-icon' style='display:none;'><i class='xi-minus-min xi-x'></i></span>");
-	});
-	$("#m-gnb > ul > li > ul > li:has('.gnb-3dep')").addClass("has-3dep");
-	$("#m-gnb > ul > li > ul > li:has('.gnb-3dep')").each(function  () {
-		$(this).children("a").append("<span class='gnb-icon close-icon'><i class='xi-plus-min xi-x'></i></span><span class='gnb-icon open-icon' style='display:none;'><i class='xi-minus-min xi-x'></i></span>");
-	});
+	// 20231113수정 wbz
+	// $("#m-gnb > ul > li:has('.gnb-2dep')").addClass("has-2dep");
+	// $("#m-gnb > ul > li:has('.gnb-2dep')").each(function  () {
+	// 	$(this).children("a").append("<span class='gnb-icon close-icon'><i class='xi-plus-min xi-x'></i></span><span class='gnb-icon open-icon' style='display:none;'><i class='xi-minus-min xi-x'></i></span>");
+	// });
+	// $("#m-gnb > ul > li > ul > li:has('.gnb-3dep')").addClass("has-3dep");
+	// $("#m-gnb > ul > li > ul > li:has('.gnb-3dep')").each(function  () {
+	// 	$(this).children("a").append("<span class='gnb-icon close-icon'><i class='xi-plus-min xi-x'></i></span><span class='gnb-icon open-icon' style='display:none;'><i class='xi-minus-min xi-x'></i></span>");
+	// });
 	/* GNB 2DEPTH 오픈하기 */ 
 	$("#m-gnb > ul > li:has('ul')").children("a").click(function(event){
 		/* 2dep가 열려있을때 */		
 		if ( $(this).parent("li").hasClass("active") ){
-			$(this).parent("li").removeClass("active");
-			$(this).children(".open-icon").hide();
-			$(this).children(".close-icon").show();
-			$(this).siblings("ul").slideUp(400);					
+			// $(this).parent("li").removeClass("active");
+			// $(this).children(".open-icon").hide();
+			// $(this).children(".close-icon").show();
+			// $(this).siblings("ul").slideUp(400);					
 		}
 		/* 2dep가 닫혀있을때 */ 
 		else{	  
 			$("#m-gnb > ul > li").has("ul").each(function() {
 				if ( $(this).hasClass("active") ){
 					$(this).removeClass("active");
-					$(this).find(".open-icon").hide();
-					$(this).find(".close-icon").show();
-					$(this).children("ul").slideUp(400);
+					// $(this).find(".open-icon").hide();
+					// $(this).find(".close-icon").show();
+					// $(this).children("ul").slideUp(400);
 				}
 			});	
 			$(this).parent("li").addClass("active");
-			$(this).children(".close-icon").hide();
-			$(this).children(".open-icon").show();
-			$(this).siblings("ul").slideDown(400);
+			// $(this).children(".close-icon").hide();
+			// $(this).children(".open-icon").show();
+			// $(this).siblings("ul").slideDown(400);
 		}
 		return false;
 	});
+	// 20231113수정 wbz
 	/* GNB 3DEPTH 오픈하기 */ 
-	$("#m-gnb > ul > li > ul > li:has('ul')").children("a").click(function(event){
-		/* 2dep가 열려있을때 */		
-		if ( $(this).parent("li").hasClass("active") ){
-			$(this).parent("li").removeClass("active");
-			$(this).children(".open-icon").hide();
-			$(this).children(".close-icon").show();
-			$(this).siblings("ul").slideUp(400);					
-		}
-		/* 2dep가 닫혀있을때 */ 
-		else{	  
-			$("#m-gnb > ul > li > ul > li").has("ul").each(function() {
-				if ( $(this).hasClass("active") ){
-					$(this).removeClass("active");
-					$(this).find(".open-icon").hide();
-					$(this).find(".close-icon").show();
-					$(this).children("ul").slideUp(400);
-				}
-			});	
-			$(this).parent("li").addClass("active");
-			$(this).children(".close-icon").hide();
-			$(this).children(".open-icon").show();
-			$(this).siblings("ul").slideDown(400);
-		}
-		return false;
-	});
+	// $("#m-gnb > ul > li > ul > li:has('ul')").children("a").click(function(event){
+	// 	/* 2dep가 열려있을때 */		
+	// 	if ( $(this).parent("li").hasClass("active") ){
+	// 		$(this).parent("li").removeClass("active");
+	// 		$(this).children(".open-icon").hide();
+	// 		$(this).children(".close-icon").show();
+	// 		$(this).siblings("ul").slideUp(400);					
+	// 	}
+	// 	/* 2dep가 닫혀있을때 */ 
+	// 	else{	  
+	// 		$("#m-gnb > ul > li > ul > li").has("ul").each(function() {
+	// 			if ( $(this).hasClass("active") ){
+	// 				$(this).removeClass("active");
+	// 				$(this).find(".open-icon").hide();
+	// 				$(this).find(".close-icon").show();
+	// 				$(this).children("ul").slideUp(400);
+	// 			}
+	// 		});	
+	// 		$(this).parent("li").addClass("active");
+	// 		$(this).children(".close-icon").hide();
+	// 		$(this).children(".open-icon").show();
+	// 		$(this).siblings("ul").slideDown(400);
+	// 	}
+	// 	return false;
+	// });
 	
-	if($(".lnb_menu").hasClass("active")){
-		$(".lnb_menu.active").find("+ul").slideDown();
-	}			
-	$(".lnb_menu").click(function(){
-			$(".lnb_menu").removeClass("active");
-			$(".lnbmenu_sub").slideUp();
+	// if($(".lnb_menu").hasClass("active")){
+	// 	$(".lnb_menu.active").find("+ul").slideDown();
+	// }			
+	// $(".lnb_menu").click(function(){
+	// 		$(".lnb_menu").removeClass("active");
+	// 		$(".lnbmenu_sub").slideUp();
 			
-			if($(this).find("+ul").is(":hidden")){
-				$(this).addClass("active");
-				$(this).find("+ul").slideDown();
-			}
-		});
+	// 		if($(this).find("+ul").is(":hidden")){
+	// 			$(this).addClass("active");
+	// 			$(this).find("+ul").slideDown();
+	// 		}
+	// 	});
 });
 
 /* ----------------------------------------

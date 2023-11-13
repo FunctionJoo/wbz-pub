@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", (event) => {
+
 	// header focus
 	$('a, button').focus(function() {
 		if ($(this).closest('#header_new')[0] == undefined) {
@@ -63,46 +64,134 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		}
 	});
 
-	$('#sitemap-wrap h3').click(function() {
-		$('#sitemap-wrap .sitemap-box-inner .area.clearfix').removeClass('on');
-		$(this).closest('.area.clearfix').addClass('on');
-	});
+	// footer
+	let ftWrap = document.querySelector('.footer_top .swiper-wrapper');
+	let ftSlides = ftWrap.querySelectorAll('.swiper-slide');
+	let ftMinCount = 24;
+	function ftCopyEl() {
+		ftSlides.forEach((el) => {
+			const el2 = el.cloneNode(true);
+			el2.querySelector('a').tabIndex = -1;
+			ftWrap.append(el2);
+		});
+	}
+	if (ftSlides.length < ftMinCount) {
+		ftCopyEl();
+		ftCopyEl();
+	}
 
-	// fullpage
-	$('#fullpage').fullpage({
-		sectionSelector: 'section',
-		anchors: ['firstPage', 'secondPage', '3rdPage','footerPage'],
-		menu: '#fullmenu',
-		responsiveWidth:1400,
-		responsiveHeight:900,
-		recordHistory: true,
-		animateAnchor: false,
-		onLeave: function(anchorLink, index) {
-			$('#fullmenu li').removeClass('on');
-			$('#fullmenu li').eq(index - 1).addClass('on');
-			if (index == 1) {
-				$('#fullmenu').addClass('is_first');
-				$('#header_new').addClass('is_first');
-				document.querySelectorAll('video').forEach((el) => {
-					el.play();
-				});
-			} else {
-				$('#fullmenu').removeClass('is_first');
-				$('#header_new').removeClass('is_first');
-			}
-
-			if (index == 4) {
-				$('#float_menu').addClass('is_end');
-			} else {
-				$('#float_menu').removeClass('is_end');
-			}
+	const swiperft = new Swiper('.footer_top .swiper', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
 		},
-		afterRender: function() {
-			mainEventInit();
+		slidesPerView: 'auto',
+		navigation: {
+			nextEl: '.ft_control .ft_r',
+			prevEl: '.ft_control .ft_l',
 		},
-		afterResponsive: function(isResponsive){
+		breakpoints: {
+			1400: {
+				slidesPerView: 5,
+			},
 		}
 	});
+	document.querySelector('.ft_control .ft_s').addEventListener('click', (e) => {
+		let btn = e.target;
+		if (btn.classList.contains('is_stop')) {
+			btn.classList.remove('is_stop');
+			swiperft.autoplay.start();
+		} else {
+			btn.classList.add('is_stop');
+			swiperft.autoplay.stop();
+		}
+	});
+
+	// 메인 페이지의 경우
+	if ($('#fullpage').length >= 1) {
+		mainEventInit();
+
+		window.addEventListener('scroll', (e) => {
+			let anchorTarget = []
+			if (window.scrollY > 50) {
+				$('#header_new').removeClass('is_first');
+				$('#fullmenu').removeClass('is_first');
+			} else {
+				$('#header_new').addClass('is_first');
+				$('#fullmenu').addClass('is_first');
+			}
+
+			document.querySelectorAll('#fullmenu a').forEach((el, idx) => {
+				anchorTarget[idx] = document.querySelector(el.dataset.href).offsetTop;
+			});
+			let minusHeight = 100;
+			if (window.scrollY < anchorTarget[1]) {
+				document.querySelector('#fullmenu li.on').classList.remove('on');
+				document.querySelectorAll('#fullmenu li')[0].classList.add('on');
+			} else if (window.scrollY > anchorTarget[2] - minusHeight) {
+				document.querySelector('#fullmenu li.on').classList.remove('on');
+				document.querySelectorAll('#fullmenu li')[2].classList.add('on');
+			} else if (window.scrollY > anchorTarget[1] - minusHeight) {
+				document.querySelector('#fullmenu li.on').classList.remove('on');
+				document.querySelectorAll('#fullmenu li')[1].classList.add('on');
+			} else {
+				console.log('scroll error');
+			}
+		});
+
+		document.querySelectorAll('#fullmenu a').forEach((el) => {
+			el.addEventListener('click', (e) => {
+				e.preventDefault();
+				// console.log(document.querySelector(el.dataset.href).getBoundingClientRect().top + window.pageYOffset);
+				window.scrollTo({
+					top: document.querySelector(el.dataset.href).offsetTop,
+					behavior: "smooth",
+				});
+			});
+		});
+	}
+
+	// $('#sitemap-wrap h3').click(function() {
+	// 	$('#sitemap-wrap .sitemap-box-inner .area.clearfix').removeClass('on');
+	// 	$(this).closest('.area.clearfix').addClass('on');
+	// });
+
+	// fullpage
+// 	$('#fullpage').fullpage({
+// 		sectionSelector: 'section',
+// 		anchors: ['firstPage', 'secondPage', '3rdPage','footerPage'],
+// 		menu: '#fullmenu',
+// 		responsiveWidth:1400,
+// 		responsiveHeight:900,
+// 		recordHistory: true,
+// 		animateAnchor: false,
+// 		onLeave: function(anchorLink, index) {
+// 			$('#fullmenu li').removeClass('on');
+// 			$('#fullmenu li').eq(index - 1).addClass('on');
+// 			if (index == 1) {
+// 				$('#fullmenu').addClass('is_first');
+// 				$('#header_new').addClass('is_first');
+// 				document.querySelectorAll('video').forEach((el) => {
+// 					el.play();
+// 				});
+// 			} else {
+// 				$('#fullmenu').removeClass('is_first');
+// 				$('#header_new').removeClass('is_first');
+// 			}
+
+// 			if (index == 4) {
+// 				$('#float_menu').addClass('is_end');
+// 			} else {
+// 				$('#float_menu').removeClass('is_end');
+// 			}
+// 		},
+// 		afterRender: function() {
+// 			mainEventInit();
+// 		},
+// 		afterResponsive: function(isResponsive){
+// 		}
+// 	});
 });
 
 
@@ -212,10 +301,24 @@ function mainEventInit () {
 	});
 
 	// 3P 포털 링크
+	let smWrap = document.querySelector('.swipe_menu .swiper-wrapper');
+	let smSlides = smWrap.querySelectorAll('.swiper-slide');
+	let smMinCount = 24;
+	function smCopyEl() {
+		smSlides.forEach((el) => {
+			const el2 = el.cloneNode(true);
+			el2.querySelector('a').tabIndex = -1;
+		});
+	}
+	if (smSlides.length < smMinCount) {
+		smCopyEl();
+		smCopyEl();
+	}
 	const swipermm = new Swiper('.swipe_menu .swiper', {
 		// loop: true,
 		slidesPerView: 'auto',
-		freeMode: true,
+		loop: true,
+		// freeMode: true,
 		navigation: {
 			nextEl: '.swipe_menu .sm_r',
 			prevEl: '.swipe_menu .sm_l',
@@ -295,35 +398,6 @@ function mainEventInit () {
 		} else {
 			btn.classList.add('is_stop');
 			swipermn.autoplay.stop();
-		}
-	});
-
-	// 알림존
-	const swiperft = new Swiper('.footer_top .swiper', {
-		loop: true,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false,
-		},
-		slidesPerView: 'auto',
-		navigation: {
-			nextEl: '.ft_control .ft_r',
-			prevEl: '.ft_control .ft_l',
-		},
-		breakpoints: {
-			1400: {
-				slidesPerView: 5,
-			},
-		}
-	});
-	document.querySelector('.ft_control .ft_s').addEventListener('click', (e) => {
-		let btn = e.target;
-		if (btn.classList.contains('is_stop')) {
-			btn.classList.remove('is_stop');
-			swiperft.autoplay.start();
-		} else {
-			btn.classList.add('is_stop');
-			swiperft.autoplay.stop();
 		}
 	});
 }
