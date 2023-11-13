@@ -16,12 +16,7 @@
 .mt65 {margin-top:65px !important;}
 .pt25 {padding-top: 25px !important;}
 .pl20 {padding-left: 20px !important;}
-.mb65{margin-bottom: 65px;}
-.mt65{margin-top: 65px;}
-.mt40{margin-top: 40px;}
-.mb40{margin-bottom: 40px;}
-.pr10{padding-right: 10px;}
-.pl10{padding-left: 10px;}
+
 
 /* color */
 .tclr01 {color:#f82307 !important;}
@@ -53,8 +48,6 @@
 .dlist02 dt {margin-top:5px;color:#000;font-weight:bold;}
 .dlist02 dt:first-child {margin-top:0;}
 .dlist02 dd {color:#555;padding-left:10px;background:url('/images/common/bult04.gif') no-repeat 0 10px;}
-.isBefore{position: relative; padding-left: 9px; margin-left: 8px;}
-.isBefore::before{content: '';width: 1px;height: 12px;background: #D3D3D3;position: absolute;left: 0;top: 50%;transform: translateY(-50%);}
 
 /* heading */
 .h401 {margin-bottom:20px;padding-left:17px;color:#333;font-size:22px;font-weight:bold;background:url('/images/common/bult01.gif') no-repeat 0 50%;}
@@ -258,7 +251,7 @@ a.btn_search {display:inline-block;padding:0 32px;height:40px;line-height:40px;t
 vertical-align:middle;-webkit-border-radius: 50%;
 -moz-border-radius: 50%;
 border-radius: 50%;}
-.paginate a.active,.paginate a:hover {color:#fff;background:#03b6a5;}
+.paginate a.active,.paginate a:hover {color:#fff;background:#108579;}
 
 /* tbl_view */
 .tbl_view {width:100%;border-top:2px solid #626262;clear:both;line-height:20px;letter-spacing:-0.5px;}
@@ -276,7 +269,7 @@ border-radius: 50%;}
 .tbl_view .notopen span {padding:20px 0 20px 54px;background:url('/images/sub/ico_pass2.gif') no-repeat 0 0;}
 
 /* tbl_write */
-.ess_making {padding-bottom:14px;text-align:right;color:#f82307;font-size:13px;}
+.ess_making {padding-bottom:14px;text-align:right;color:#d31b03;font-size:13px;}
 .ess_making2 {padding-bottom:14px;text-align:right;color:#666;font-size:13px;}
 .ess_making2 em {color:#f82307;}
 .tbl_write {width:100%;border-top:2px solid #626262;clear:both;line-height:20px;letter-spacing:-0.5px;}
@@ -354,7 +347,7 @@ a.btn_coun {display:inline-block;height:33px;padding:0 13px;margin-left:3px;line
 a.btn_addr {display:inline-block;width:70px;height:33px;margin:0 0 10px 3px;line-height:33px;text-align:center;font-size:13px;color:#fff;vertical-align:middle;background:#8d8d8d;white-space:nowrap;}
 a.btn_del2 {display:inline-block;height:28px;padding:0 12px;line-height:28px;text-align:center;font-size:13px;color:#fff;vertical-align:middle;background:#8d8d8d;white-space:nowrap;}
 a.btn_view {display:inline-block;width:106px;height:32px;line-height:28px;text-align:center;font-size:15px;
-color:#03b6a5;font-weight:bold;border-style: solid;  border-width: 2px;  border-image: linear-gradient(to right, #03b6a5, #3297d7) 1;vertical-align:middle;background:#fff;white-space:nowrap;}
+color:#198094;font-weight:bold;border-style: solid;  border-width: 2px;  border-image: linear-gradient(to right, #03b6a5, #3297d7) 1;vertical-align:middle;background:#fff;white-space:nowrap;}
 .blank_btn {margin-left: 15px;
     height: 35px;
     line-height: 31px;
@@ -697,7 +690,7 @@ a.btn_page {display:inline-block;padding:0 15px;margin-left:25px;height:32px;lin
 .gr_list2 > li {margin-top:25px;line-height:25px;}
 .gr_list2 > li:first-child {margin-top:0;}
 .gr_list2 li ol {margin-left:10px;}
-.gr01 {height:608px;margin:40px 0 60px;overflow:hidden;text-indent:-9999px;background:url('/images/sub/green_img01.jpg') no-repeat 0 0;}
+.gr01 {height:608px;margin:40px 0 60px;overflow:hidden;text-indent:-9999px;background:url('/images/sub/green_img01_v2.jpg') no-repeat 0 0;}
 
 
 /* mypage */
@@ -754,7 +747,7 @@ a.btn_page {display:inline-block;padding:0 15px;margin-left:25px;height:32px;lin
 .login_wrap .login_box li .login {width:295px;height:43px;padding-left:15px;border:1px solid #cbcbcb;border-top:1px solid #adadad;border-radius:2px;}
 .login_wrap .login_box .input_wrap {position:relative;}
 .login_wrap .login_box .btn_login {position:absolute;top:30px;left:324px;}
-.login_wrap .login_box .desc {margin-top:15px;color:#ff6600;}
+.login_wrap .login_box .desc {margin-top:15px;color:#d73f19;}
 .login_wrap .login_info {position:relative;margin-top:30px;padding-bottom:50px;border-bottom:1px solid #ccc;overflow:hidden;}
 .login_wrap .login_info li {float:left;width:50%;font-size:17px;color:#333;}
 .login_wrap .login_info li.li01 span {display:inline-block;padding:20px 0 10px 60px;background:url('/images/common/ico_sear.gif') no-repeat 0 10px;} 
