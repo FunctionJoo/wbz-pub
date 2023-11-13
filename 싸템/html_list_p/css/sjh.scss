@@ -33,6 +33,7 @@
                     padding-bottom: 6px;
                     font-size: 18px;
                     line-height: 27px;
+                    font-weight: 500;
                     em{
                         color: #49D3D9;
                     }
@@ -84,6 +85,7 @@
                     line-height: 33px;
                     color: #014099;
                     margin-right: 4px;
+                    font-weight: 600;
                 }
             }
         }
@@ -109,6 +111,7 @@
                         font-size: 18px;
                         line-height: 23px;
                         margin-right: 4px;
+                        font-weight: 600;
                     }
                 }
             }
@@ -196,6 +199,7 @@
                         font-size: 24px;
                         line-height: 30px;
                         color: #014099;
+                        font-weight: 600;
                     }
                 }
                 .con_link{
@@ -252,6 +256,7 @@
                         color: #014099;
                         border-bottom: 1px solid #014099;
                         margin-right: 1px;
+                        font-weight: 600;
                     }
                 }
 
@@ -604,8 +609,10 @@
 
 @media(max-width:1080px){
     #mypage{
-        .w_set{
-            padding: 0 !important;
+        &.cancelWait{
+            .w_set{
+                padding: 0 !important;
+            }
         }
     }
     .my_cont{
