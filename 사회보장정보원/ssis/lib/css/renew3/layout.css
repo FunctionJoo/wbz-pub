@@ -963,6 +963,8 @@ h2.main-title{ display:block; font-size:38px; line-height:32px; font-weight:700;
 #search-wrap .search-recommend .recommend-list{
 	display: inline-block;
 	margin-left: 20px;
+	/* 20231113수정 wbz */
+	flex: 99;
 }
 #search-wrap .search-recommend .recommend-list li{
 	display: inline-block;
@@ -1480,6 +1482,8 @@ a.to-top-btn { color:#fff}
 
 
 #header_new {position: fixed; z-index: 99; top: 0; left: 0; width: 100%; height: 76px; background: #FFFFFF; box-shadow: -2.01px 2px 12px #0000000D; padding: 0 100px;}
+/* 20231113수정 wbz */
+#header_new + section {padding-top: 76px;}
 #header_new, #header_new * {transition: 0.3s;}
 #header_new .section_space {display: flex; justify-content: space-between; align-items: center; height: 100%;}
 #header_new .logo {}
@@ -1527,6 +1531,8 @@ a.to-top-btn { color:#fff}
 
 @media (max-width: 1400px) {
 	#header_new {height: 81px; padding: 0 16px 14px;}
+	/* 20231113수정 wbz */
+	#header_new + section {padding-top: 81px;}
 	#header_new .section_space {align-items: flex-end; justify-content: space-between;}
 	#header_new #gnb_new {display: none;}
 
