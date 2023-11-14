@@ -1022,18 +1022,14 @@
   margin-bottom: 27px;
 }
 #mypage.sale_detail_item .my_cont .bottom_list_button .all_list {
-  height: 34px;
-  width: 90px;
   border: 1px solid #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #mypage.sale_detail_item .my_cont .bottom_list_button .all_list a {
   display: block;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+  padding: 6px 32px;
 }
 #mypage.sale_detail_item .my_cont .bottom_info {
   background-color: #EEF3F9;
@@ -1139,14 +1135,11 @@
     justify-content: center;
     margin-bottom: 40px;
   }
-  #mypage.sale_detail_item .my_cont .bottom_list_button .all_list {
-    width: 180px;
-    height: 50px;
-  }
   #mypage.sale_detail_item .my_cont .bottom_list_button .all_list a {
     font-size: 15px;
     line-height: 21px;
     font-weight: 500;
+    padding: 14px 76px;
   }
   #mypage.sale_detail_item .my_cont .bottom_info {
     padding: 23px 24px 23px 13px;
@@ -1444,18 +1437,14 @@
   margin-bottom: 27px;
 }
 #mypage.sale_detail_id .my_cont .bottom_list_button .all_list {
-  height: 34px;
-  width: 90px;
   border: 1px solid #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #mypage.sale_detail_id .my_cont .bottom_list_button .all_list a {
   display: block;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+  padding: 6px 32px;
 }
 #mypage.sale_detail_id .my_cont .bottom_info {
   background-color: #EEF3F9;
@@ -1559,14 +1548,11 @@
     justify-content: center;
     margin-bottom: 40px;
   }
-  #mypage.sale_detail_id .my_cont .bottom_list_button .all_list {
-    width: 180px;
-    height: 50px;
-  }
   #mypage.sale_detail_id .my_cont .bottom_list_button .all_list a {
     font-size: 15px;
     line-height: 21px;
     font-weight: 500;
+    padding: 14px 76px;
   }
   #mypage.sale_detail_id .my_cont .bottom_info {
     padding: 23px 24px 23px 13px;
@@ -2078,5 +2064,112 @@
   }
   #mypage.sale_in_progress .sale_info {
     display: none;
+  }
+}
+#mypage.payment_complete .my_cont .con_box {
+  margin-bottom: 89px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.payment_complete .my_cont .con_box .img_box {
+  margin-bottom: 23.97px;
+}
+#mypage.payment_complete .my_cont .con_box .img_box img {
+  width: 67px;
+  height: 68px;
+}
+#mypage.payment_complete .my_cont .con_box .title_box {
+  margin-bottom: 28px;
+}
+#mypage.payment_complete .my_cont .con_box .title_box p {
+  font-size: 20px;
+  line-height: 29px;
+  word-break: keep-all;
+  text-align: center;
+}
+#mypage.payment_complete .my_cont .con_box .detail_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #D3D3D3;
+  margin-bottom: 20px;
+}
+#mypage.payment_complete .my_cont .con_box .detail_box p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.payment_complete .my_cont .con_box .detail_box p em {
+  font-weight: 400;
+  color: #014099;
+}
+#mypage.payment_complete .my_cont .con_box .info_box p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+#mypage.payment_complete .my_cont .con_box .info_box p br {
+  display: none;
+}
+#mypage.payment_complete .my_cont .button_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.payment_complete .my_cont .button_box .button_list {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+#mypage.payment_complete .my_cont .button_box .button_list:not(:last-child) {
+  margin-right: 14px;
+}
+#mypage.payment_complete .my_cont .button_box .button_list.button_01 {
+  border: 1px solid #222222;
+}
+#mypage.payment_complete .my_cont .button_box .button_list.button_01 a {
+  color: #222;
+}
+#mypage.payment_complete .my_cont .button_box .button_list.button_02 {
+  background: #014099 0% 0% no-repeat padding-box;
+}
+#mypage.payment_complete .my_cont .button_box .button_list.button_02 a {
+  color: #fff;
+}
+#mypage.payment_complete .my_cont .button_box .button_list a {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 1080px) {
+  #mypage.payment_complete .my_cont {
+    padding-top: 25px;
+  }
+  #mypage.payment_complete .my_cont .con_box {
+    margin-bottom: 88px;
+  }
+  #mypage.payment_complete .my_cont .con_box .img_box {
+    margin-bottom: 28.38px;
+  }
+  #mypage.payment_complete .my_cont .con_box .detail_box {
+    display: none;
+  }
+  #mypage.payment_complete .my_cont .con_box .info_box p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #mypage.payment_complete .my_cont .con_box .info_box p br {
+    display: block;
+  }
+  #mypage.payment_complete .my_cont .button_box .button_list {
+    width: 157px;
   }
 }/*# sourceMappingURL=sjh.css.map */
