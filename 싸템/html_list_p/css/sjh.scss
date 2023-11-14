@@ -867,7 +867,7 @@
 // 판매상세_아이템
 
 #mypage {
-    &.sale_detail {
+    &.sale_detail_item {
         .my_cont {
             .title{
                 display: flex;
@@ -1081,7 +1081,7 @@
                                 padding: 10px 10px 10px 15px;
                                 display: flex;
                                 justify-content: space-between;
-                                &:not(:last-child){
+                                &:not(:nth-last-of-type(2)){
                                     border-bottom: 1px dashed #D3D3D3;
                                 }
                                 .th{
@@ -1199,7 +1199,7 @@
 
 @media(max-width:1080px){
     #mypage{
-        &.sale_detail{
+        &.sale_detail_item{
             .my_cont{
                 .title{
                     padding: 0;
@@ -1284,6 +1284,541 @@
                     padding: 23px 24px 23px 13px;
                     .info_list{
                         li{
+                            word-break: keep-all;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// 판매상세_계정
+#mypage {
+    &.sale_detail_id {
+        .my_cont {
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #333;
+
+                .pc_title {
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+                .button_box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .sale_detail_cancel{
+                        width: 80px;
+                        height: 32px;
+                        border: 1px solid #FF3333;
+                        background-color: #fff;
+                        margin-right: 10px;
+                        span {
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #FF3333;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .sale_detail_chat {
+                        width: 80px;
+                        height: 32px;
+                        border: 1px solid #014099;
+                        background-color: #fff;
+    
+                        span {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #014099;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            &::before {
+                                content: "";
+                                background-image: url(../images/mypage/mypage_chat_blue.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                                display: inline-block;
+                                width: 21px;
+                                height: 18px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main {
+                padding-top: 30px;
+                display: flex;
+                margin-bottom: 20px;
+
+                .product_list {
+                    margin-right: 15px;
+
+                    .con_box {
+                        &.basic_info {
+                            margin-bottom: 20px;
+                        }
+
+                        .mo_box {
+                            .mo_button_box{
+                                display: none;
+                                .mo_sale_detail_cancel {
+                                    width: 80px;
+                                    height: 32px;
+                                    border: 1px solid #FF3333;
+                                    background-color: #fff;
+                                    margin-right: 10px;
+                            
+                                    span {
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        color: #FF3333;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
+                                .mo_sale_detail_chat {
+                                    width: 80px;
+                                    height: 32px;
+                                    border: 1px solid #014099;
+                                    background-color: #fff;
+    
+                                    span {
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #014099;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+    
+                                        &::before {
+                                            content: "";
+                                            background-image: url(../images/mypage/mypage_chat_blue.svg);
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            background-size: contain;
+                                            display: inline-block;
+                                            width: 21px;
+                                            height: 18px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .con_title {
+                            font-size: 16px;
+                            line-height: 21px;
+                            font-weight: 500;
+                            margin-bottom: 10px;
+                        }
+
+                        .con_table {
+                            width: 500px;
+                            border: 1px solid #D3D3D3;
+
+                            .table_list {
+                                display: flex;
+
+                                &:not(:last-child) {
+                                    border-bottom: 1px solid #D3D3D3;
+                                }
+
+                                .th {
+                                    width: 90px;
+                                    padding: 15px 0;
+                                    text-align: center;
+                                    background-color: #F6F6F6;
+                                    border-right: 1px solid #D3D3D3;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+
+                                .td {
+                                    width: calc(100% - 100px);
+                                    display: flex;
+                                    justify-content: start;
+                                    align-items: center;
+                                    margin-left: 10px;
+
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        word-break: break-all;
+                                    }
+
+                                    em {
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                        font-weight: 500;
+                                    }
+
+                                    span {
+                                        margin-left: 2px;
+                                        font-size: 13px;
+                                        line-height: 19px;
+                                    }
+
+                                    &.trans_box {
+                                        .trans_info {
+                                            width: 90px;
+                                            height: 28px;
+                                            border: 1px solid #A7A7A7;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+
+                                            &:not(:last-child) {
+                                                margin-right: 10px;
+                                            }
+
+                                            span {
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                line-height: 21px;
+                                                color: #A7A7A7;
+
+                                                &::before {
+                                                    content: "";
+                                                    background-image: url(../images/mypage/mypage_check_gray.svg);
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    background-size: contain;
+                                                    display: inline-block;
+                                                    width: 13px;
+                                                    height: 10px;
+                                                    margin-right: 4px;
+                                                }
+                                            }
+
+                                            &.on {
+                                                border-color: #014099;
+
+                                                span {
+                                                    color: #014099;
+
+                                                    &::before {
+                                                        background-image: url(../images/mypage/mypage_check_blue.svg);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .table_flex {
+                                display: flex;
+
+                                .table_list {
+                                    display: flex;
+                                    border-bottom: 1px solid #D3D3D3;
+                                    width: 50%;
+
+                                    &:not(:first-child) {
+                                        .th {
+                                            border-left: 1px solid #D3D3D3;
+                                        }
+                                    }
+
+                                    .th {
+                                        width: 90px;
+                                        padding: 15px 0;
+                                        text-align: center;
+                                        background-color: #F6F6F6;
+                                        border-right: 1px solid #D3D3D3;
+                                    }
+
+                                    .td {
+                                        width: calc(100% - 100px);
+                                        padding: 15px 0;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .receipt_list {
+                    .con_box {
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+
+                        .con_title {
+                            font-size: 16px;
+                            line-height: 21px;
+                            font-weight: 500;
+                            margin-bottom: 10px;
+                        }
+
+                        .con_table {
+                            width: 335px;
+                            border-top: 1px solid #D3D3D3;
+
+                            .table_list {
+                                padding: 10px 10px 10px 15px;
+                                display: flex;
+                                justify-content: space-between;
+                                &:not(:nth-last-of-type(2)){
+                                    border-bottom: 1px dashed #D3D3D3;
+                                }
+
+                                .th {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+
+                                .td {
+                                    span {
+                                        font-size: 13px;
+                                        line-height: 19px;
+                                        margin-left: 2px;
+                                    }
+
+                                    em {
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                    }
+                                }
+                            }
+
+                            .table_result {
+                                padding: 10px 10px 10px 15px;
+                                display: flex;
+                                justify-content: space-between;
+                                background-color: #F6F6F6;
+
+                                .th {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+
+                                .td {
+                                    span {
+                                        font-weight: 500;
+                                        font-size: 13px;
+                                        line-height: 19px;
+                                        margin-left: 2px;
+                                    }
+
+                                    em {
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom_list_button {
+                display: flex;
+                justify-content: end;
+                margin-bottom: 27px;
+
+                .all_list {
+                    height: 34px;
+                    width: 90px;
+                    border: 1px solid #333333;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        display: block;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #333333;
+                    }
+                }
+            }
+
+            .bottom_info {
+                background-color: #EEF3F9;
+                border: 2px solid #EEF3F9;
+                padding: 22px 41px 22px 41px;
+
+                .info_title {
+                    margin-bottom: 14px;
+
+                    span {
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        color: #014099;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+
+                        &::before {
+                            content: "";
+                            background-image: url(../images/mypage/mypage_bulb.svg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: inline-block;
+                            height: 21px;
+                            width: 12px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+
+                .info_list {
+                    li {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000;
+                        display: flex;
+
+                        &:not(:last-child) {
+                            margin-bottom: 4px;
+                        }
+
+                        span {
+                            &:first-child {
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px) {
+    #mypage {
+        &.sale_detail_id {
+            .my_cont {
+                .title {
+                    padding: 0;
+
+                    .pc_title {
+                        display: none;
+                    }
+                    .button_box{
+                        display: none;
+                    }
+                }
+
+                .main {
+                    flex-direction: column;
+                    margin-bottom: 0;
+
+                    .product_list {
+                        margin-right: 0;
+
+                        .con_box {
+                            margin-bottom: 40px !important;
+
+                            .mo_box {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .mo_button_box{
+                                    display: flex;
+                                    margin-bottom: 15px;
+                                }
+
+                            }
+
+                            .con_table {
+                                width: auto;
+
+                                .table_flex {
+                                    flex-direction: column;
+
+                                    .table_list {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .table_list {
+                                    .td {
+                                        p {
+                                            line-height: 20px;
+                                        }
+
+                                        &.trans_box {
+                                            .trans_info {
+                                                width: 63px;
+                                                margin-right: 7px !important;
+
+                                                &:last-child {
+                                                    width: 75px;
+                                                }
+
+                                                span {
+                                                    &::before {
+                                                        margin-right: 2px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .receipt_list {
+                        .con_box {
+                            margin-bottom: 40px !important;
+
+                            .con_table {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+                .bottom_list_button {
+                    justify-content: center;
+                    margin-bottom: 40px;
+
+                    .all_list {
+                        width: 180px;
+                        height: 50px;
+
+                        a {
+                            font-size: 15px;
+                            line-height: 21px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .bottom_info {
+                    padding: 23px 24px 23px 13px;
+
+                    .info_list {
+                        li {
                             word-break: keep-all;
                         }
                     }
