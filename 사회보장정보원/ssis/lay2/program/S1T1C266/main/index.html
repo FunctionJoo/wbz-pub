@@ -312,7 +312,9 @@
 					</div>
 					<div class="y_sm">
 						<button class="hd_search search_btn" type="button">검색</button>
-						<button class="hd_menu sitemap-open-btn nav-open-btn" type="button">메뉴</button>
+						<!-- 20231113수정 wbz -->
+						<button class="hd_menu sitemap-open-btn hide_m" type="button">메뉴</button>
+						<button class="hd_menu nav-open-btn hide_pc" type="button">메뉴</button>
 					</div>
 				</div>
 			</div>
@@ -385,6 +387,8 @@
 			<!-- //search 웹비즈 수정 -->
 		</div>
 
+		<!-- 20231113수정 wbz -->
+		<!--data-href 추가 -->
 		<ul id="fullmenu" class="is_first">
 			<li class="on"><a href="#firstPage" data-href="#firstPage"><span>MAIN</span></a></li>
 			<li><a href="#secondPage" data-href="#secondPage"><span>NOTICE</span></a></li>
@@ -393,6 +397,8 @@
 		</ul>
 
 		<div id="fullpage">
+			<!-- 20231113수정 wbz -->
+			<!-- 각 섹션 ID 부여 -->
 			<section id="firstPage">
 				<div class="main_sec sec_1">
 					<div class="main_visual_bg">
@@ -1073,8 +1079,7 @@
 				<div class="area sitemap-header">
 					<h1 class="logo hide_pc"><img src="../../../../images/renew3/common/logo_wh.svg" alt="한국사회보장정보원"></h1>
 					<h2>사이트 전체 메뉴</h2>
-					<!-- 20231113수정 wbz -->
-					<a href="#none" class="sitemap-close-btn nav-open-btn" title="사이트맵 닫기"><img
+					<a href="#none" class="sitemap-close-btn" title="사이트맵 닫기"><img
 							src="../../../../images/renew2/common/header-close.png" alt="사이트맵 닫기" /></a>
 				</div>
 				<div class="sitemap-box clearfix">
@@ -1390,7 +1395,7 @@
 
 			<div id="gnbBox">
 				<h1 class="logo hide_pc"><img src="../../../../images/renew3/common/logo_wh.svg" alt="한국사회보장정보원"></h1>
-				<button class="nav-open-btn" type="button">메뉴 닫기</button>
+				<button class="nav-open-btn-close" type="button">메뉴 닫기</button>
 			</div>
 
 			<ul id="navigation">
@@ -1586,7 +1591,7 @@
 			  </li>
 			  <li class="gnb6"> <a href="http://edu.ssis.or.kr/" target="_blank">교육센터</a> </li>
 			</ul>
-		  </nav>
+		</nav>
 	</div>
 	
 </body>

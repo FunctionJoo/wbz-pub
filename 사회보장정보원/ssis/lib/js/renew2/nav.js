@@ -76,24 +76,19 @@ jQuery(function($){
 	/* 반응형 gnb 메뉴 오픈 */
 
 	$(".nav-open-btn").click(function  () {
-		// 20231113수정 wbz
-		// $(this).addClass("on");
-		if ( menuState  ) {
-			menuClose();
-			menuState = false;
-			// 20231113수정 wbz
-			// $(this).removeClass("on");
-		}else {
-			menuOpen();
-			menuState = true;
-		}
-		return false;
+		menuOpen();
+		menuState = true;
 	});
+
+	$(".nav-open-btn-close").click(function  () {
+		menuClose();
+		menuState = false;
+	});
+
 
 	$("#gnbBg, .m-gnb-close").click(function  () {
 		menuClose();
 		menuState = false;
-		$("#header .nav-open-btn > a").removeClass("on");
 	});
 
 	function menuOpen () {
