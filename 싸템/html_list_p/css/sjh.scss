@@ -1,473 +1,1978 @@
-// index page
+// // index page
 
-// 공통
-.box_title {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 24px;
-}
+// // 공통
+// .box_title {
+//     margin-bottom: 10px;
+//     font-size: 16px;
+//     line-height: 24px;
+// }
 
-// 등급 / 마일리지
-#my_grade{
-    margin-bottom: 30px;
-    .my_grade_box{
-        height: 150px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .my_grade_list1{
-            display: flex;
-            border-right: 1px dashed #D3D3D3;
-            padding-right: 20px;
-            padding-top: 14px;
-            padding-bottom: 14px;
-            .class_button{
-                margin-right: 10px;
-                img{
-                    width: 68px;
-                    height: 76px;
-                }
-            }
-            .class_guide{
-                p{
-                    padding-bottom: 6px;
-                    font-size: 18px;
-                    line-height: 27px;
-                    font-weight: 500;
-                    em{
-                        color: #49D3D9;
-                    }
-                }
-                .class_popup{
-                    width: 140px;
-                    height: 32px;
-                    background-color: #fff;
-                    border: 1px #d3d3d3 solid;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    span{
-                        font-size: 14px;
-                        line-height: 20px;
-                        margin-right: 13px;
-                    }
-                    i{
-                        display: block;
-                        background-image: url(../images//mypage/arrow_right_black.svg);
-                        height: 8px;
-                        width: 4px;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }
-                }
-            }
-        }
-        .my_grade_list2{
-            border-right: 1px dashed #D3D3D3;
-            padding-top: 14px;
-            padding-bottom: 14px;
-            padding-right: 15px;
-            padding-left: 20px;
-            span{
-                font-size: 15px;
-                line-height: 22px;
-                color: #666666;
-                display: block;
-                margin-bottom: 32px;
-            }
-            .show_mileage{
-                font-size: 14px;
-                line-height: 20px;
-                margin-left: 4px;
-                em{
-                    font-size: 26px;
-                    line-height: 33px;
-                    color: #014099;
-                    margin-right: 4px;
-                    font-weight: 600;
-                }
-            }
-        }
-        .my_grade_list3{
-            padding-left: 20px;
-            padding-right: 10px;
-            .detail_mileage{
-                display: flex;
-                justify-content: space-between;
-                &:nth-child(1){
-                    margin-bottom: 42px;
-                }
-                span{
-                    font-size: 15px;
-                    line-height: 22px;
-                    color: #666666;
-                    margin-right: 19px;
-                }
-                p{
-                    font-size: 14px;
-                    line-height: 20px;
-                    em{
-                        font-size: 18px;
-                        line-height: 23px;
-                        margin-right: 4px;
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
-        .my_grade_list4{
-            .mile_link{
-                display: block;
-                padding: 6px 17px;
-                font-size: 14px;
-                line-height: 20px;
-                border: 1px solid #666666;
-                border-radius: 3px;
-                &:nth-child(1){
-                    margin-bottom: 28px;
-                }
-            }
-        }
-    }
-}
+// // 등급 / 마일리지
+// #my_grade{
+//     margin-bottom: 30px;
+//     .my_grade_box{
+//         height: 150px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         .my_grade_list1{
+//             display: flex;
+//             border-right: 1px dashed #D3D3D3;
+//             padding-right: 20px;
+//             padding-top: 14px;
+//             padding-bottom: 14px;
+//             .class_button{
+//                 margin-right: 10px;
+//                 img{
+//                     width: 68px;
+//                     height: 76px;
+//                 }
+//             }
+//             .class_guide{
+//                 p{
+//                     padding-bottom: 6px;
+//                     font-size: 18px;
+//                     line-height: 27px;
+//                     font-weight: 500;
+//                     em{
+//                         color: #49D3D9;
+//                     }
+//                 }
+//                 .class_popup{
+//                     width: 140px;
+//                     height: 32px;
+//                     background-color: #fff;
+//                     border: 1px #d3d3d3 solid;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     span{
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                         margin-right: 13px;
+//                     }
+//                     i{
+//                         display: block;
+//                         background-image: url(../images//mypage/arrow_right_black.svg);
+//                         height: 8px;
+//                         width: 4px;
+//                         background-position: center;
+//                         background-repeat: no-repeat;
+//                         background-size: contain;
+//                     }
+//                 }
+//             }
+//         }
+//         .my_grade_list2{
+//             border-right: 1px dashed #D3D3D3;
+//             padding-top: 14px;
+//             padding-bottom: 14px;
+//             padding-right: 15px;
+//             padding-left: 20px;
+//             span{
+//                 font-size: 15px;
+//                 line-height: 22px;
+//                 color: #666666;
+//                 display: block;
+//                 margin-bottom: 32px;
+//             }
+//             .show_mileage{
+//                 font-size: 14px;
+//                 line-height: 20px;
+//                 margin-left: 4px;
+//                 em{
+//                     font-size: 26px;
+//                     line-height: 33px;
+//                     color: #014099;
+//                     margin-right: 4px;
+//                     font-weight: 600;
+//                 }
+//             }
+//         }
+//         .my_grade_list3{
+//             padding-left: 20px;
+//             padding-right: 10px;
+//             .detail_mileage{
+//                 display: flex;
+//                 justify-content: space-between;
+//                 &:nth-child(1){
+//                     margin-bottom: 42px;
+//                 }
+//                 span{
+//                     font-size: 15px;
+//                     line-height: 22px;
+//                     color: #666666;
+//                     margin-right: 19px;
+//                 }
+//                 p{
+//                     font-size: 14px;
+//                     line-height: 20px;
+//                     em{
+//                         font-size: 18px;
+//                         line-height: 23px;
+//                         margin-right: 4px;
+//                         font-weight: 600;
+//                     }
+//                 }
+//             }
+//         }
+//         .my_grade_list4{
+//             .mile_link{
+//                 display: block;
+//                 padding: 6px 17px;
+//                 font-size: 14px;
+//                 line-height: 20px;
+//                 border: 1px solid #666666;
+//                 border-radius: 3px;
+//                 &:nth-child(1){
+//                     margin-bottom: 28px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-// 보유이용권 / 인증현황
-#ticket{
-    display: flex;
-    margin-bottom: 30px;
-    .ticket_box{
-        &.ticket_box_01{
-            margin-right: 20px;
-        }
-        &.ticket_box_02{
-            .con_box{
-                .con_list{
-                    .con_asset{
-                        margin-bottom: 12px;
-                    }
-                    .con_title{
-                        margin-bottom: 6px;
-                    }
-                    .con_link{
-                        &.before_check{
-                            border-color: #014099;
-                            color: #014099;
-                        }
-                        &.after_check{
-                            border: none;
-                            background-color: #D3D3D3;
-                            color: #A7A7A7;
-                        }
-                    }
-                }
-            }
-        }
-        width: calc((100% - 20px) / 2);
-        .con_box{
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            border: 1px solid #D3D3D3;
-            padding: 15px 0px;
-            .con_list{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: calc(100% / 3);
-                &.list_01{
-                    border-right: 1px dashed #D3D3D3;
-                }
-                &.list_02{
-                    border-right: 1px dashed #D3D3D3;
-                }
-                .con_title{
-                    font-size: 15px;
-                    line-height: 22px;
-                    margin-bottom: 18px;
-                    word-break: keep-all;
-                    br{
-                        display: none;
-                    }
-                }
-                .con_count{
-                    font-size: 13px;
-                    line-height: 19px;
-                    margin-bottom: 12px;
-                    em{
-                        font-size: 24px;
-                        line-height: 30px;
-                        color: #014099;
-                        font-weight: 600;
-                    }
-                }
-                .con_link{
-                    border: 1px solid #333;
-                    border-radius: 3px;
-                    font-size: 14px;
-                    line-height: 20px;
-                    padding: 5px 19px;
-                }
-            }
-        }
-    }
-}
+// // 보유이용권 / 인증현황
+// #ticket{
+//     display: flex;
+//     margin-bottom: 30px;
+//     .ticket_box{
+//         &.ticket_box_01{
+//             margin-right: 20px;
+//         }
+//         &.ticket_box_02{
+//             .con_box{
+//                 .con_list{
+//                     .con_asset{
+//                         margin-bottom: 12px;
+//                     }
+//                     .con_title{
+//                         margin-bottom: 6px;
+//                     }
+//                     .con_link{
+//                         &.before_check{
+//                             border-color: #014099;
+//                             color: #014099;
+//                         }
+//                         &.after_check{
+//                             border: none;
+//                             background-color: #D3D3D3;
+//                             color: #A7A7A7;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         width: calc((100% - 20px) / 2);
+//         .con_box{
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: end;
+//             border: 1px solid #D3D3D3;
+//             padding: 15px 0px;
+//             .con_list{
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: calc(100% / 3);
+//                 &.list_01{
+//                     border-right: 1px dashed #D3D3D3;
+//                 }
+//                 &.list_02{
+//                     border-right: 1px dashed #D3D3D3;
+//                 }
+//                 .con_title{
+//                     font-size: 15px;
+//                     line-height: 22px;
+//                     margin-bottom: 18px;
+//                     word-break: keep-all;
+//                     br{
+//                         display: none;
+//                     }
+//                 }
+//                 .con_count{
+//                     font-size: 13px;
+//                     line-height: 19px;
+//                     margin-bottom: 12px;
+//                     em{
+//                         font-size: 24px;
+//                         line-height: 30px;
+//                         color: #014099;
+//                         font-weight: 600;
+//                     }
+//                 }
+//                 .con_link{
+//                     border: 1px solid #333;
+//                     border-radius: 3px;
+//                     font-size: 14px;
+//                     line-height: 20px;
+//                     padding: 5px 19px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-// 거래현황
-#tran_status{
-    .con_box{
-        height: 80px;
-        border: 1px solid #D3D3D3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &.con_box_01{
-            margin-bottom: 30px;
-        }
-        .con_asset{
-            margin-right: 27px;
-        }
-        .con_list{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .title{
-                display: flex;
-                align-items: center;
-                &:not(:last-child){
-                    margin-right: 34px;
-                }
-                &:not(:first-child){
-                    margin-left: 33px;
-                }
-                p{
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #000;
-                    margin-right: 70px;
-                }
-                span{
-                    font-size: 13px;
-                    line-height: 19px;
-                    em{
-                        font-size: 24px;
-                        line-height: 30px;
-                        color: #014099;
-                        border-bottom: 1px solid #014099;
-                        margin-right: 1px;
-                        font-weight: 600;
-                    }
-                }
+// // 거래현황
+// #tran_status{
+//     .con_box{
+//         height: 80px;
+//         border: 1px solid #D3D3D3;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         &.con_box_01{
+//             margin-bottom: 30px;
+//         }
+//         .con_asset{
+//             margin-right: 27px;
+//         }
+//         .con_list{
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             .title{
+//                 display: flex;
+//                 align-items: center;
+//                 &:not(:last-child){
+//                     margin-right: 34px;
+//                 }
+//                 &:not(:first-child){
+//                     margin-left: 33px;
+//                 }
+//                 p{
+//                     font-size: 14px;
+//                     line-height: 20px;
+//                     color: #000;
+//                     margin-right: 70px;
+//                 }
+//                 span{
+//                     font-size: 13px;
+//                     line-height: 19px;
+//                     em{
+//                         font-size: 24px;
+//                         line-height: 30px;
+//                         color: #014099;
+//                         border-bottom: 1px solid #014099;
+//                         margin-right: 1px;
+//                         font-weight: 600;
+//                     }
+//                 }
 
-            }
-            .arrow_asset{
-                img{
-                    display: block;
-                }
-            }
-        }
-    }
-}
+//             }
+//             .arrow_asset{
+//                 img{
+//                     display: block;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media(max-width:1080px){
-    // 공통
-    .box_title{
-            margin-bottom: 15px;
-            line-height: 21px;
-    }
+// @media(max-width:1080px){
+//     // 공통
+//     .box_title{
+//             margin-bottom: 15px;
+//             line-height: 21px;
+//     }
 
-    // 등급 마일리지
-    #my_grade{
-            &.my_grade{
-                background-color: #fff;
-                margin-bottom: 30px;
-                padding: 0;
-            }
-        .my_grade_box{
-            height: fit-content;
-            flex-direction: column;
-            padding: 0;
-            .my_grade_list1{
-                background-color: #F9F9F9;
-                display: flex;
-                border-right: none;
-                justify-content: center;
-                padding-right: 0px;
-                padding-top: 29px;
-                padding-bottom: 29px;
-                width: 100%;
-                .class_button{
-                    margin-right: 23px;
-                }
-            }
-            .my_grade_list2{
-                width: 100%;
-                border-right: none;
-                padding-top: 30px;
-                padding-bottom: 0px;
-                padding-right: 0px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                span{
-                    margin-bottom: 0px;
-                }
-            }
-            .my_grade_list3{
-                width: 100%;
-                padding-top: 9px;
-                padding-bottom: 30px;
-                .detail_mileage{
-                    &:nth-child(1){
-                        margin-bottom: 12px;
-                    }
-                }
-            }
-            .my_grade_list4{
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                .mile_link{
-                    width: calc(100% - 10px / 2);
-                    text-align: center;
-                    padding: 6px 0px;
-                    &:nth-child(1){
-                        margin-bottom: 0px;
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
-    }
+//     // 등급 마일리지
+//     #my_grade{
+//             &.my_grade{
+//                 background-color: #fff;
+//                 margin-bottom: 30px;
+//                 padding: 0;
+//             }
+//         .my_grade_box{
+//             height: fit-content;
+//             flex-direction: column;
+//             padding: 0;
+//             .my_grade_list1{
+//                 background-color: #F9F9F9;
+//                 display: flex;
+//                 border-right: none;
+//                 justify-content: center;
+//                 padding-right: 0px;
+//                 padding-top: 29px;
+//                 padding-bottom: 29px;
+//                 width: 100%;
+//                 .class_button{
+//                     margin-right: 23px;
+//                 }
+//             }
+//             .my_grade_list2{
+//                 width: 100%;
+//                 border-right: none;
+//                 padding-top: 30px;
+//                 padding-bottom: 0px;
+//                 padding-right: 0px;
+//                 display: flex;
+//                 justify-content: space-between;
+//                 align-items: center;
+//                 span{
+//                     margin-bottom: 0px;
+//                 }
+//             }
+//             .my_grade_list3{
+//                 width: 100%;
+//                 padding-top: 9px;
+//                 padding-bottom: 30px;
+//                 .detail_mileage{
+//                     &:nth-child(1){
+//                         margin-bottom: 12px;
+//                     }
+//                 }
+//             }
+//             .my_grade_list4{
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: space-between;
+//                 .mile_link{
+//                     width: calc(100% - 10px / 2);
+//                     text-align: center;
+//                     padding: 6px 0px;
+//                     &:nth-child(1){
+//                         margin-bottom: 0px;
+//                         margin-right: 10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-    // 보유이용권 인증현황
-    #ticket {
-        flex-direction: column;
-        .ticket_box {
-            &.ticket_box_01 {
-                margin-right: 0px;
-                margin-bottom: 30px;
-            }
-            width: 100%;
-        }
-    }
+//     // 보유이용권 인증현황
+//     #ticket {
+//         flex-direction: column;
+//         .ticket_box {
+//             &.ticket_box_01 {
+//                 margin-right: 0px;
+//                 margin-bottom: 30px;
+//             }
+//             width: 100%;
+//         }
+//     }
 
-    // 거래현황
-    #tran_status {
-        .con_box {
-            height: 161px;
-            border: 1px solid #D3D3D3;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 21px 30px;
-            &.con_box_01{
-                margin-bottom: 0px;
-            }
-            &.con_box_02{
-                border-top: none;
-            }
-            .con_asset {
-                margin-right: 0px;
-            }
+//     // 거래현황
+//     #tran_status {
+//         .con_box {
+//             height: 161px;
+//             border: 1px solid #D3D3D3;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-between;
+//             padding: 21px 30px;
+//             &.con_box_01{
+//                 margin-bottom: 0px;
+//             }
+//             &.con_box_02{
+//                 border-top: none;
+//             }
+//             .con_asset {
+//                 margin-right: 0px;
+//             }
 
-            .con_list {
-                display: flex;
-                justify-content: space-between;
-                align-items: start;
-                width: 100%;
-                .title {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    &:not(:last-child) {
-                        margin-right: 0px;
-                    }
+//             .con_list {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 align-items: start;
+//                 width: 100%;
+//                 .title {
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     flex-direction: column;
+//                     &:not(:last-child) {
+//                         margin-right: 0px;
+//                     }
 
-                    &:not(:first-child) {
-                        margin-left: 0px;
-                    }
+//                     &:not(:first-child) {
+//                         margin-left: 0px;
+//                     }
 
-                    p {
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #000;
-                        margin-right: 0px;
-                        margin-bottom: 10px;
-                    }
+//                     p {
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                         color: #000;
+//                         margin-right: 0px;
+//                         margin-bottom: 10px;
+//                     }
 
-                    span {
-                        font-size: 13px;
-                        line-height: 19px;
+//                     span {
+//                         font-size: 13px;
+//                         line-height: 19px;
 
-                        em {
-                            font-size: 24px;
-                            line-height: 30px;
-                            color: #014099;
-                            border-bottom: 1px solid #014099;
-                            margin-right: 1px;
-                        }
-                    }
+//                         em {
+//                             font-size: 24px;
+//                             line-height: 30px;
+//                             color: #014099;
+//                             border-bottom: 1px solid #014099;
+//                             margin-right: 1px;
+//                         }
+//                     }
 
-                }
+//                 }
 
-                .arrow_asset {
-                    img {
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media(max-width:449px){
-    #ticket{
-        .con_box{
-            .con_title{
-                text-align: center;
-                br{
-                    display: block !important;
-                }
-                &.title_with_br{
-                    margin-bottom: 0px !important; 
-                }
-            }
-            .con_link{
-                padding: 5px 9px !important;
-            }
-        }
-    }
-}
+//                 .arrow_asset {
+//                     img {
+//                         display: block;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
+// @media(max-width:449px){
+//     #ticket{
+//         .con_box{
+//             .con_title{
+//                 text-align: center;
+//                 br{
+//                     display: block !important;
+//                 }
+//                 &.title_with_br{
+//                     margin-bottom: 0px !important; 
+//                 }
+//             }
+//             .con_link{
+//                 padding: 5px 9px !important;
+//             }
+//         }
+//     }
+// }
 
-// 취소 승인 대기 page
-#mypage{
-    &.cancelWait{
-        .my_cont{
-            .pc_title{
+
+
+// // 취소 승인 대기 page
+// #mypage{
+//     &.cancelWait{
+//         .my_cont{
+//             .pc_title{
+//                 font-size: 16px;
+//                 line-height: 24px;
+//                 margin-bottom: 20px;
+//                 font-weight: 500;
+//             }
+//             .mo_table_count{
+//                 display: none;
+//             }
+//             #mo_cancelWait_table{
+//                 display: none;
+//             }
+//             #cancelWait_table{
+//                 display: block;
+//                 table{
+//                     border-collapse: collapse; 
+//                     border-spacing: 0;
+//                     tr{
+//                         th{
+//                             background-color: #F6F6F6;
+//                             border-top: 1px solid #D3D3D3;
+//                             border-bottom: 1px solid #D3D3D3;
+//                             border-left: 1px solid #D3D3D3;
+//                             padding: 15px 0;
+//                             font-weight: normal;
+//                             text-align: center;
+//                             &:last-child{
+//                                 border-right: 1px solid #D3D3D3;
+//                             }
+//                             &.category{
+//                                 width: 150px;
+//                             }
+//                             &.title{
+//                                 width: 280px;
+//                             }
+//                             &.amount{
+//                                 width: 124px;
+//                             }
+//                             &.date{
+//                                 width: 80px;
+//                             }
+//                             &.chat{
+//                                 width: 50px;
+//                             }
+//                             &.cancel{
+//                                 width: 84px;
+//                             }
+//                             &.check{
+//                                 width: 88px;
+//                             }
+//                         }
+//                         td{
+//                             border-top: 1px solid #D3D3D3;
+//                             border-bottom: 1px solid #D3D3D3;
+//                             border-left: 1px solid #D3D3D3;
+//                             padding: 15px 0;
+//                             text-align: center;
+//                             &:last-child{
+//                                 border-right: 1px solid #D3D3D3;
+//                             }
+//                             &.category_td{
+//                                 font-size: 14px;
+//                                 line-height: 20px;
+//                             }
+//                             &.title_td{
+//                                 font-size: 13px;
+//                                 line-height: 19px;
+//                             }
+//                             &.amount_td{
+//                                 font-size: 14px;
+//                                 line-height: 20px;
+//                                 em{
+//                                     font-size: 14px;
+//                                     line-height: 18px;
+//                                     font-weight: 600;
+//                                 }
+//                             }
+//                             &.date_td{
+//                                 font-size: 12px;
+//                                 line-height: 15px;
+//                             }
+//                             &.chat_td{
+//                                 .img_box{
+//                                     width: fit-content;
+//                                     margin: 0 auto;
+//                                     img{
+//                                         display: block;
+//                                     }
+//                                     .count{
+//                                         display: none;
+//                                     }
+//                                 }
+//                                 &.chat_exists{
+//                                     .img_box{
+//                                         position: relative;
+//                                         margin: 0 9px;
+//                                         .count{
+//                                             display: flex;
+//                                             justify-content: center;
+//                                             align-items: center;
+//                                             width: 21.91px;
+//                                             height: 21.91px;
+//                                             border-radius: 50%;
+//                                             background-color: #434343;
+//                                             position: absolute;
+//                                             bottom: 50%;
+//                                             left: 50%;
+//                                             .count_chat{
+//                                                 display: block;
+//                                                 font-size: 10px;
+//                                                 line-height: 14px;
+//                                                 color: #fff;
+//                                             }
+//                                             .over_chat{
+//                                                 display: none;
+//                                                 font-size: 10px;
+//                                                 line-height: 14px;
+//                                                 color: #fff;
+//                                             }
+        
+//                                             &.over{
+//                                                 .count_chat{
+//                                                     display: none;
+//                                                 }
+//                                                 .over_chat{
+//                                                     display: block;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                             &.cancel_td{
+//                                 button{
+//                                     border: 1px solid #D3D3D3;
+//                                     border-radius: 3px;
+//                                     padding: 5px 17px;
+//                                     background-color: #fff;
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+//                             }
+//                             &.check_td{
+//                                 button{
+//                                     border: 1px solid #D3D3D3;
+//                                     border-radius: 3px;
+//                                     padding: 5px 9px;
+//                                     background-color: #EEF3F9;
+//                                     color: #014099;
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media(max-width:1080px){
+//     #mypage{
+//         &.cancelWait{
+//             .w_set{
+//                 padding: 0 !important;
+//             }
+//             .my_cont{
+//                 .my_title{
+//                     margin: 0 16px;
+//                 }
+//                 .pc_title{
+//                     display: none;
+//                 }
+//                 .mo_table_count{
+//                     margin-left: 16px;
+//                     margin-right: 16px;
+//                     margin-top: 44px;
+//                     margin-bottom: 15px;
+//                     display: flex;
+//                     p{
+//                         font-size: 14px;
+//                         line-height: 21px;
+//                         em{
+//                             font-weight: normal;
+//                             color: #014099;
+//                         }
+//                     }
+//                 }
+//                 #cancelWait_table{
+//                     display: none;
+//                 }
+//                 #mo_cancelWait_table{
+//                     display: block;
+//                     .mo_table{
+//                         border-top: 1px solid #D3D3D3;
+//                         border-bottom: 1px solid #D3D3D3;
+//                         .mo_tr{
+//                             padding: 20px 16px;
+//                             &:not(:last-child){
+//                                 border-bottom: 1px solid #D3D3D3;
+//                             }
+//                             .amount_date_box{
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 align-items: center;
+//                                 margin-bottom: 21px;
+//                             }
+//                             .chat_cancel_check_box{
+//                                 display: flex;
+//                                 justify-content: end;
+//                                 align-items: center;
+//                             }
+//                             .td{
+//                                 &.category_td{
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                     margin-bottom: 6px;
+//                                 }
+//                                 &.title_td{
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                     margin-bottom: 11px;
+//                                     font-weight: 500;
+//                                 }
+//                                 &.amount_td{
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                     em{
+//                                         font-size: 14px;
+//                                         line-height: 18px;
+//                                         font-weight: 600;
+//                                     }
+//                                 }
+//                                 &.date_td{
+//                                     font-size: 14px;
+//                                     line-height: 18px;
+//                                 }
+//                                 &.chat_td{
+//                                     .img_box{
+//                                         width: fit-content;
+//                                         margin: 0 auto;
+//                                         img{
+//                                             display: block;
+//                                         }
+//                                         .count{
+//                                             display: none;
+//                                         }
+//                                     }
+//                                     &.chat_exists{
+//                                         .img_box{
+//                                             position: relative;
+//                                             margin: 0 9px;
+//                                             .count{
+//                                                 display: flex;
+//                                                 justify-content: center;
+//                                                 align-items: center;
+//                                                 width: 21.91px;
+//                                                 height: 21.91px;
+//                                                 border-radius: 50%;
+//                                                 background-color: #434343;
+//                                                 position: absolute;
+//                                                 bottom: 50%;
+//                                                 left: 50%;
+//                                                 .count_chat {
+//                                                     display: block;
+//                                                     font-size: 10px;
+//                                                     line-height: 14px;
+//                                                     color: #fff;
+//                                                 }
+                                            
+//                                                 .over_chat {
+//                                                     display: none;
+//                                                     font-size: 10px;
+//                                                     line-height: 14px;
+//                                                     color: #fff;
+//                                                 }
+                                            
+//                                                 &.over {
+//                                                     .count_chat {
+//                                                         display: none;
+//                                                     }
+                                            
+//                                                     .over_chat {
+//                                                         display: block;
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                                 &.cancel_td{
+//                                     margin-right: 10px;
+//                                     button{
+//                                         border: 1px solid #D3D3D3;
+//                                         border-radius: 3px;
+//                                         padding: 5px 22px;
+//                                         background-color: #fff;
+//                                         font-size: 14px;
+//                                         line-height: 20px;
+//                                     }
+//                                 }
+//                                 &.check_td{
+//                                     margin-right: 10px;
+//                                     button{
+//                                         border: 1px solid #D3D3D3;
+//                                         border-radius: 3px;
+//                                         padding: 5px 9px;
+//                                         background-color: #EEF3F9;
+//                                         color: #014099;
+//                                         font-size: 14px;
+//                                         line-height: 20px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                     .pagenation{
+//                         margin-bottom: 37px 0;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         ul{
+//                             display: flex;
+//                             margin: 0 10px;
+//                             li{
+//                                 font-size: 14px;
+//                                 line-height: 19px;
+//                                 width: 24px;
+//                                 height: 24px;
+//                                 display: flex;
+//                                 justify-content: center;
+//                                 align-items: center;
+//                                 cursor: pointer;
+//                                 &.on{
+//                                     background-color: #666666;
+//                                     color: #fff;
+//                                 }
+//                             }
+//                         }
+//                         .back_page{
+//                             display: flex;
+//                             justify-content: center;
+//                             align-items: center;
+//                             .all_page{
+//                                 background-image: url(../images/mypage/table_arrow_off_end.svg);
+//                                 background-repeat: no-repeat;
+//                                 background-size: contain;
+//                                 background-position: center;
+//                                 width: 24px;
+//                                 height: 24px;
+//                                 margin-right: 6px;
+//                                 cursor: pointer;
+//                                 &.on{
+//                                     background-image: url(../images/mypage/table_arrow_on_end.svg);
+//                                     transform: rotate(180deg);
+//                                 }
+//                             }
+//                             .one_page{
+//                                 background-image: url(../images/mypage/table_arrow_off_next.svg);
+//                                 background-repeat: no-repeat;
+//                                 background-size: contain;
+//                                 background-position: center;
+//                                 width: 24px;
+//                                 height: 24px;
+//                                 cursor: pointer;
+//                                 &.on{
+//                                     background-image: url(../images/mypage/table_arrow_on_next.svg);
+//                                     transform: rotate(180deg);
+//                                 }
+//                             }
+//                         }
+//                         .next_page{
+//                             display: flex;
+//                             justify-content: center;
+//                             align-items: center;
+//                             .all_page{
+//                                 background-image: url(../images/mypage/table_arrow_off_end.svg);
+//                                 transform: rotate(180deg);
+//                                 background-repeat: no-repeat;
+//                                 background-size: contain;
+//                                 background-position: center;
+//                                 width: 24px;
+//                                 height: 24px;
+//                                 cursor: pointer;
+//                                 &.on{
+//                                     background-image: url(../images/mypage/table_arrow_on_end.svg);
+//                                     transform: rotate(0deg);
+//                                 }
+//                             }
+//                             .one_page{
+//                                 background-image: url(../images/mypage/table_arrow_off_next.svg);
+//                                 transform: rotate(180deg);
+//                                 background-repeat: no-repeat;
+//                                 background-size: contain;
+//                                 background-position: center;
+//                                 width: 24px;
+//                                 height: 24px;
+//                                 margin-right: 6px;
+//                                 cursor: pointer;
+//                                 &.on{
+//                                     background-image: url(../images/mypage/table_arrow_on_next.svg);
+//                                     transform: rotate(0deg);
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+// }
+
+
+// // 판매상세_아이템
+
+// #mypage {
+//     &.sale_detail_item {
+//         .my_cont {
+//             .title{
+//                 display: flex;
+//                 justify-content: space-between;
+//                 align-items: start;
+//                 padding-bottom: 20px;
+//                 border-bottom: 2px solid #333;
+//                 .pc_title {
+//                     font-size: 20px;
+//                     line-height: 29px;
+//                 }
+//                 .sale_detail_chat {
+//                     width: 80px;
+//                     height: 32px;
+//                     border: 1px solid #014099;
+//                     background-color: #fff;
+//                     span{
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                         color: #014099;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         &::before{
+//                             content: "";
+//                             background-image: url(../images/mypage/mypage_chat_blue.svg);
+//                             background-repeat: no-repeat;
+//                             background-position: center;
+//                             background-size: contain;
+//                             display: inline-block;
+//                             width: 21px;
+//                             height: 18px;
+//                             margin-right: 5px;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .main{
+//                 padding-top: 30px;
+//                 display: flex;
+//                 margin-bottom: 20px;
+//                 .product_list{
+//                     margin-right: 15px;
+//                     .con_box{
+//                         &.basic_info{
+//                             margin-bottom: 20px;
+//                         }
+//                         .mo_box{
+//                             .mo_sale_detail_chat{
+//                                 display: none;
+//                                 width: 80px;
+//                                 height: 32px;
+//                                 border: 1px solid #014099;
+//                                 background-color: #fff;
+                            
+//                                 span {
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                     color: #014099;
+//                                     display: flex;
+//                                     justify-content: center;
+//                                     align-items: center;
+                            
+//                                     &::before {
+//                                         content: "";
+//                                         background-image: url(../images/mypage/mypage_chat_blue.svg);
+//                                         background-repeat: no-repeat;
+//                                         background-position: center;
+//                                         background-size: contain;
+//                                         display: inline-block;
+//                                         width: 21px;
+//                                         height: 18px;
+//                                         margin-right: 5px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                         .con_title{
+//                             font-size: 16px;
+//                             line-height: 21px;
+//                             font-weight: 500;
+//                             margin-bottom: 10px;
+//                         }
+//                         .con_table{
+//                             width: 500px;
+//                             border: 1px solid #D3D3D3;
+//                             .table_list{
+//                                 display: flex;
+//                                 &:not(:last-child){
+//                                     border-bottom: 1px solid #D3D3D3;
+//                                 }
+//                                 .th{
+//                                     width: 90px;
+//                                     padding: 15px 0;
+//                                     text-align: center;
+//                                     background-color: #F6F6F6;
+//                                     border-right: 1px solid #D3D3D3;
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+//                                 .td{
+//                                     width: calc(100% - 100px);
+//                                     display: flex;
+//                                     justify-content: start;
+//                                     align-items: center;
+//                                     margin-left: 10px;
+//                                     p{
+//                                         font-size: 14px;
+//                                         line-height: 21px;
+//                                         overflow: hidden;
+//                                         white-space: nowrap;
+//                                         text-overflow: ellipsis;
+//                                         word-break: break-all;
+//                                     }
+//                                     em{
+//                                         font-size: 14px;
+//                                         line-height: 19px;
+//                                         font-weight: 500;
+//                                     }
+//                                     span{
+//                                         margin-left: 2px;
+//                                         font-size: 13px;
+//                                         line-height: 19px;
+//                                     }
+//                                     &.trans_box{
+//                                         .trans_info{
+//                                             width: 90px;
+//                                             height: 28px;
+//                                             border: 1px solid #A7A7A7;
+//                                             display: flex;
+//                                             justify-content: center;
+//                                             align-items: center;
+//                                             &:not(:last-child){
+//                                                 margin-right: 10px;
+//                                             }
+//                                             span{
+//                                                 font-size: 14px;
+//                                                 font-weight: 500;
+//                                                 line-height: 21px;
+//                                                 color: #A7A7A7;
+//                                                 &::before{
+//                                                     content: "";
+//                                                     background-image: url(../images/mypage/mypage_check_gray.svg);
+//                                                     background-repeat: no-repeat;
+//                                                     background-position: center;
+//                                                     background-size: contain;
+//                                                     display: inline-block;
+//                                                     width: 13px;
+//                                                     height: 10px;
+//                                                     margin-right: 4px;
+//                                                 }
+//                                             }
+
+//                                             &.on{
+//                                                 border-color: #014099;
+//                                                 span{
+//                                                     color: #014099;
+//                                                     &::before{
+//                                                         background-image: url(../images/mypage/mypage_check_blue.svg);
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                             .table_flex{
+//                                 display: flex;
+//                                 .table_list{
+//                                     display: flex;
+//                                     border-bottom: 1px solid #D3D3D3;
+//                                     width: 50%;
+//                                     &:not(:first-child) {
+//                                         .th{
+//                                             border-left: 1px solid #D3D3D3;
+//                                         }
+//                                     }
+//                                     .th{
+//                                         width: 90px;
+//                                         padding: 15px 0;
+//                                         text-align: center;
+//                                         background-color: #F6F6F6;
+//                                         border-right: 1px solid #D3D3D3;
+//                                     }
+//                                     .td{
+//                                         width: calc(100% - 100px);
+//                                         padding: 15px 0;
+//                                         margin-left: 10px;
+//                                     }
+//                             }
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .receipt_list{
+//                     .con_box{
+//                         &:not(:last-child){
+//                             margin-bottom: 20px;
+//                         }
+//                         .con_title{
+//                             font-size: 16px;
+//                             line-height: 21px;
+//                             font-weight: 500;
+//                             margin-bottom: 10px;
+//                         }
+//                         .con_table{
+//                             width: 335px;
+//                             border-top: 1px solid #D3D3D3;
+//                             .table_list{
+//                                 padding: 10px 10px 10px 15px;
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 &:not(:nth-last-of-type(2)){
+//                                     border-bottom: 1px dashed #D3D3D3;
+//                                 }
+//                                 .th{
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+//                                 .td{
+//                                     span{
+//                                         font-size: 13px;
+//                                         line-height: 19px;
+//                                         margin-left: 2px;
+//                                     }
+//                                     em{
+//                                         font-weight: 500;
+//                                         font-size: 14px;
+//                                         line-height: 19px;
+//                                     }
+//                                 }
+//                             }
+//                             .table_result{
+//                                 padding: 10px 10px 10px 15px;
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 background-color: #F6F6F6;
+//                                 .th{
+//                                     font-weight: 500;
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+//                                 .td{
+//                                     span{
+//                                         font-weight: 500;
+//                                         font-size: 13px;
+//                                         line-height: 19px;
+//                                         margin-left: 2px;
+//                                     }
+//                                     em{
+//                                         font-weight: 600;
+//                                         font-size: 14px;
+//                                         line-height: 19px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             .bottom_list_button{
+//                 display: flex;
+//                 justify-content: end;
+//                 margin-bottom: 27px;
+//                 .all_list{
+//                     height: 34px;
+//                     width: 90px;
+//                     border: 1px solid #333333;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     a{
+//                         display: block;
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                         color: #333333;
+//                     }
+//                 }
+//             }
+//             .bottom_info{
+//                 background-color: #EEF3F9;
+//                 border: 2px solid #EEF3F9;
+//                 padding: 22px 41px 22px 41px;
+
+//                 .info_title{
+//                     margin-bottom: 14px;
+//                     span{
+//                         font-size: 15px;
+//                         font-weight: 500;
+//                         line-height: 22px;
+//                         color: #014099;
+//                         display: flex;
+//                         align-items: center;
+//                         justify-content: start;
+//                         &::before{
+//                             content: "";
+//                             background-image: url(../images/mypage/mypage_bulb.svg);
+//                             background-position: center;
+//                             background-repeat: no-repeat;
+//                             background-size: contain;
+//                             display: inline-block;
+//                             height: 21px;
+//                             width: 12px;
+//                             margin-right: 6px;
+//                         }
+//                     }
+//                 }
+//                 .info_list{
+//                     li{
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                         color: #000;
+//                         display: flex;
+//                         &:not(:last-child){
+//                             margin-bottom: 4px;
+//                         }
+//                         span{
+//                             &:first-child{
+//                                 margin-right: 4px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media(max-width:1080px){
+//     #mypage{
+//         &.sale_detail_item{
+//             .my_cont{
+//                 .title{
+//                     padding: 0;
+//                     .pc_title{
+//                         display: none;
+//                     }
+//                     .sale_detail_chat{
+//                         display: none;
+//                     }
+//                 }
+//                 .main{
+//                     flex-direction: column;
+//                     margin-bottom: 0;
+//                     .product_list{
+//                         margin-right: 0;
+//                         .con_box{
+//                             margin-bottom: 40px !important;
+//                             .mo_box {
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 align-items: center;
+//                                 .mo_sale_detail_chat {
+//                                     display: inline-block;
+//                                     margin-bottom: 15px;
+//                                 }
+//                             }
+//                             .con_table{
+//                                 width: auto;
+//                                 .table_flex{
+//                                     flex-direction: column;
+//                                     .table_list{
+//                                         width: 100%;
+//                                     }
+//                                 }
+//                                 .table_list{
+//                                     .td{
+//                                         p{
+//                                             line-height: 20px;
+//                                         }
+//                                         &.trans_box{
+//                                             .trans_info{
+//                                                 width: 63px;
+//                                                 margin-right: 7px !important;
+//                                                 &:last-child{
+//                                                     width: 75px;
+//                                                 }
+//                                                 span{
+//                                                     &::before{
+//                                                         margin-right: 2px;
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                     .receipt_list{
+//                         .con_box{
+//                             margin-bottom: 40px !important;
+//                             .con_table{
+//                                 width: auto;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .bottom_list_button{
+//                     justify-content: center;
+//                     margin-bottom: 40px;
+//                     .all_list{
+//                         width: 180px;
+//                         height: 50px;
+//                         a{
+//                             font-size: 15px;
+//                             line-height: 21px;
+//                             font-weight: 500;
+//                         }
+//                     }
+//                 }
+//                 .bottom_info{
+//                     padding: 23px 24px 23px 13px;
+//                     .info_list{
+//                         li{
+//                             word-break: keep-all;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+// // 판매상세_계정
+// #mypage {
+//     &.sale_detail_id {
+//         .my_cont {
+//             .title {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 align-items: start;
+//                 padding-bottom: 20px;
+//                 border-bottom: 2px solid #333;
+
+//                 .pc_title {
+//                     font-size: 20px;
+//                     line-height: 29px;
+//                 }
+//                 .button_box{
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     .sale_detail_cancel{
+//                         width: 80px;
+//                         height: 32px;
+//                         border: 1px solid #FF3333;
+//                         background-color: #fff;
+//                         margin-right: 10px;
+//                         span {
+//                             font-size: 14px;
+//                             line-height: 21px;
+//                             color: #FF3333;
+//                             display: flex;
+//                             justify-content: center;
+//                             align-items: center;
+//                         }
+//                     }
+//                     .sale_detail_chat {
+//                         width: 80px;
+//                         height: 32px;
+//                         border: 1px solid #014099;
+//                         background-color: #fff;
+    
+//                         span {
+//                             font-size: 14px;
+//                             line-height: 20px;
+//                             color: #014099;
+//                             display: flex;
+//                             justify-content: center;
+//                             align-items: center;
+    
+//                             &::before {
+//                                 content: "";
+//                                 background-image: url(../images/mypage/mypage_chat_blue.svg);
+//                                 background-repeat: no-repeat;
+//                                 background-position: center;
+//                                 background-size: contain;
+//                                 display: inline-block;
+//                                 width: 21px;
+//                                 height: 18px;
+//                                 margin-right: 5px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .main {
+//                 padding-top: 30px;
+//                 display: flex;
+//                 margin-bottom: 20px;
+
+//                 .product_list {
+//                     margin-right: 15px;
+
+//                     .con_box {
+//                         &.basic_info {
+//                             margin-bottom: 20px;
+//                         }
+
+//                         .mo_box {
+//                             .mo_button_box{
+//                                 display: none;
+//                                 .mo_sale_detail_cancel {
+//                                     width: 80px;
+//                                     height: 32px;
+//                                     border: 1px solid #FF3333;
+//                                     background-color: #fff;
+//                                     margin-right: 10px;
+                            
+//                                     span {
+//                                         font-size: 14px;
+//                                         line-height: 21px;
+//                                         color: #FF3333;
+//                                         display: flex;
+//                                         justify-content: center;
+//                                         align-items: center;
+//                                     }
+//                                 }
+//                                 .mo_sale_detail_chat {
+//                                     width: 80px;
+//                                     height: 32px;
+//                                     border: 1px solid #014099;
+//                                     background-color: #fff;
+    
+//                                     span {
+//                                         font-size: 14px;
+//                                         line-height: 20px;
+//                                         color: #014099;
+//                                         display: flex;
+//                                         justify-content: center;
+//                                         align-items: center;
+    
+//                                         &::before {
+//                                             content: "";
+//                                             background-image: url(../images/mypage/mypage_chat_blue.svg);
+//                                             background-repeat: no-repeat;
+//                                             background-position: center;
+//                                             background-size: contain;
+//                                             display: inline-block;
+//                                             width: 21px;
+//                                             height: 18px;
+//                                             margin-right: 5px;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+
+//                         .con_title {
+//                             font-size: 16px;
+//                             line-height: 21px;
+//                             font-weight: 500;
+//                             margin-bottom: 10px;
+//                         }
+
+//                         .con_table {
+//                             width: 500px;
+//                             border: 1px solid #D3D3D3;
+
+//                             .table_list {
+//                                 display: flex;
+
+//                                 &:not(:last-child) {
+//                                     border-bottom: 1px solid #D3D3D3;
+//                                 }
+
+//                                 .th {
+//                                     width: 90px;
+//                                     padding: 15px 0;
+//                                     text-align: center;
+//                                     background-color: #F6F6F6;
+//                                     border-right: 1px solid #D3D3D3;
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+
+//                                 .td {
+//                                     width: calc(100% - 100px);
+//                                     display: flex;
+//                                     justify-content: start;
+//                                     align-items: center;
+//                                     margin-left: 10px;
+
+//                                     p {
+//                                         font-size: 14px;
+//                                         line-height: 21px;
+//                                         overflow: hidden;
+//                                         white-space: nowrap;
+//                                         text-overflow: ellipsis;
+//                                         word-break: break-all;
+//                                     }
+
+//                                     em {
+//                                         font-size: 14px;
+//                                         line-height: 19px;
+//                                         font-weight: 500;
+//                                     }
+
+//                                     span {
+//                                         margin-left: 2px;
+//                                         font-size: 13px;
+//                                         line-height: 19px;
+//                                     }
+
+//                                     &.trans_box {
+//                                         .trans_info {
+//                                             width: 90px;
+//                                             height: 28px;
+//                                             border: 1px solid #A7A7A7;
+//                                             display: flex;
+//                                             justify-content: center;
+//                                             align-items: center;
+
+//                                             &:not(:last-child) {
+//                                                 margin-right: 10px;
+//                                             }
+
+//                                             span {
+//                                                 font-size: 14px;
+//                                                 font-weight: 500;
+//                                                 line-height: 21px;
+//                                                 color: #A7A7A7;
+
+//                                                 &::before {
+//                                                     content: "";
+//                                                     background-image: url(../images/mypage/mypage_check_gray.svg);
+//                                                     background-repeat: no-repeat;
+//                                                     background-position: center;
+//                                                     background-size: contain;
+//                                                     display: inline-block;
+//                                                     width: 13px;
+//                                                     height: 10px;
+//                                                     margin-right: 4px;
+//                                                 }
+//                                             }
+
+//                                             &.on {
+//                                                 border-color: #014099;
+
+//                                                 span {
+//                                                     color: #014099;
+
+//                                                     &::before {
+//                                                         background-image: url(../images/mypage/mypage_check_blue.svg);
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+
+//                             .table_flex {
+//                                 display: flex;
+
+//                                 .table_list {
+//                                     display: flex;
+//                                     border-bottom: 1px solid #D3D3D3;
+//                                     width: 50%;
+
+//                                     &:not(:first-child) {
+//                                         .th {
+//                                             border-left: 1px solid #D3D3D3;
+//                                         }
+//                                     }
+
+//                                     .th {
+//                                         width: 90px;
+//                                         padding: 15px 0;
+//                                         text-align: center;
+//                                         background-color: #F6F6F6;
+//                                         border-right: 1px solid #D3D3D3;
+//                                     }
+
+//                                     .td {
+//                                         width: calc(100% - 100px);
+//                                         padding: 15px 0;
+//                                         margin-left: 10px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 .receipt_list {
+//                     .con_box {
+//                         &:not(:last-child) {
+//                             margin-bottom: 20px;
+//                         }
+
+//                         .con_title {
+//                             font-size: 16px;
+//                             line-height: 21px;
+//                             font-weight: 500;
+//                             margin-bottom: 10px;
+//                         }
+
+//                         .con_table {
+//                             width: 335px;
+//                             border-top: 1px solid #D3D3D3;
+
+//                             .table_list {
+//                                 padding: 10px 10px 10px 15px;
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 &:not(:nth-last-of-type(2)){
+//                                     border-bottom: 1px dashed #D3D3D3;
+//                                 }
+
+//                                 .th {
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+
+//                                 .td {
+//                                     span {
+//                                         font-size: 13px;
+//                                         line-height: 19px;
+//                                         margin-left: 2px;
+//                                     }
+
+//                                     em {
+//                                         font-weight: 500;
+//                                         font-size: 14px;
+//                                         line-height: 19px;
+//                                     }
+//                                 }
+//                             }
+
+//                             .table_result {
+//                                 padding: 10px 10px 10px 15px;
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 background-color: #F6F6F6;
+
+//                                 .th {
+//                                     font-weight: 500;
+//                                     font-size: 14px;
+//                                     line-height: 20px;
+//                                 }
+
+//                                 .td {
+//                                     span {
+//                                         font-weight: 500;
+//                                         font-size: 13px;
+//                                         line-height: 19px;
+//                                         margin-left: 2px;
+//                                     }
+
+//                                     em {
+//                                         font-weight: 600;
+//                                         font-size: 14px;
+//                                         line-height: 19px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .bottom_list_button {
+//                 display: flex;
+//                 justify-content: end;
+//                 margin-bottom: 27px;
+
+//                 .all_list {
+//                     height: 34px;
+//                     width: 90px;
+//                     border: 1px solid #333333;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+
+//                     a {
+//                         display: block;
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                         color: #333333;
+//                     }
+//                 }
+//             }
+
+//             .bottom_info {
+//                 background-color: #EEF3F9;
+//                 border: 2px solid #EEF3F9;
+//                 padding: 22px 41px 22px 41px;
+
+//                 .info_title {
+//                     margin-bottom: 14px;
+
+//                     span {
+//                         font-size: 15px;
+//                         font-weight: 500;
+//                         line-height: 22px;
+//                         color: #014099;
+//                         display: flex;
+//                         align-items: center;
+//                         justify-content: start;
+
+//                         &::before {
+//                             content: "";
+//                             background-image: url(../images/mypage/mypage_bulb.svg);
+//                             background-position: center;
+//                             background-repeat: no-repeat;
+//                             background-size: contain;
+//                             display: inline-block;
+//                             height: 21px;
+//                             width: 12px;
+//                             margin-right: 6px;
+//                         }
+//                     }
+//                 }
+
+//                 .info_list {
+//                     li {
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                         color: #000;
+//                         display: flex;
+
+//                         &:not(:last-child) {
+//                             margin-bottom: 4px;
+//                         }
+
+//                         span {
+//                             &:first-child {
+//                                 margin-right: 4px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media(max-width:1080px) {
+//     #mypage {
+//         &.sale_detail_id {
+//             .my_cont {
+//                 .title {
+//                     padding: 0;
+
+//                     .pc_title {
+//                         display: none;
+//                     }
+//                     .button_box{
+//                         display: none;
+//                     }
+//                 }
+
+//                 .main {
+//                     flex-direction: column;
+//                     margin-bottom: 0;
+
+//                     .product_list {
+//                         margin-right: 0;
+
+//                         .con_box {
+//                             margin-bottom: 40px !important;
+
+//                             .mo_box {
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 align-items: center;
+
+//                                 .mo_button_box{
+//                                     display: flex;
+//                                     margin-bottom: 15px;
+//                                 }
+
+//                             }
+
+//                             .con_table {
+//                                 width: auto;
+
+//                                 .table_flex {
+//                                     flex-direction: column;
+
+//                                     .table_list {
+//                                         width: 100%;
+//                                     }
+//                                 }
+
+//                                 .table_list {
+//                                     .td {
+//                                         p {
+//                                             line-height: 20px;
+//                                         }
+
+//                                         &.trans_box {
+//                                             .trans_info {
+//                                                 width: 63px;
+//                                                 margin-right: 7px !important;
+
+//                                                 &:last-child {
+//                                                     width: 75px;
+//                                                 }
+
+//                                                 span {
+//                                                     &::before {
+//                                                         margin-right: 2px;
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     .receipt_list {
+//                         .con_box {
+//                             margin-bottom: 40px !important;
+
+//                             .con_table {
+//                                 width: auto;
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 .bottom_list_button {
+//                     justify-content: center;
+//                     margin-bottom: 40px;
+
+//                     .all_list {
+//                         width: 180px;
+//                         height: 50px;
+
+//                         a {
+//                             font-size: 15px;
+//                             line-height: 21px;
+//                             font-weight: 500;
+//                         }
+//                     }
+//                 }
+
+//                 .bottom_info {
+//                     padding: 23px 24px 23px 13px;
+
+//                     .info_list {
+//                         li {
+//                             word-break: keep-all;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// 판매진행중
+
+#mypage {
+    &.sale_in_progress {
+        .my_cont {
+            .pc_title {
                 font-size: 16px;
                 line-height: 24px;
                 margin-bottom: 20px;
                 font-weight: 500;
             }
-            .mo_table_count{
+
+            .mo_table_count {
+                display: flex;
+                margin-bottom: 10px;
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+            
+                    em {
+                        font-weight: normal;
+                        color: #014099;
+                    }
+                }
+            }
+
+            // 페이지네이션
+            .pagenation {
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    margin: 0 10px;
+
+                    li {
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        &.on {
+                            background-color: #666666;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .back_page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .all_page {
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .one_page {
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .next_page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .all_page {
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    .one_page {
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+
+            #mo_cancelWait_table {
                 display: none;
             }
-            #mo_cancelWait_table{
-                display: none;
-            }
-            #cancelWait_table{
+
+            #cancelWait_table {
                 display: block;
-                table{
-                    border-collapse: collapse; 
+
+                table {
+                    border-collapse: collapse;
                     border-spacing: 0;
-                    tr{
-                        th{
+
+                    tr {
+                        th {
                             background-color: #F6F6F6;
                             border-top: 1px solid #D3D3D3;
                             border-bottom: 1px solid #D3D3D3;
@@ -475,77 +1980,97 @@
                             padding: 15px 0;
                             font-weight: normal;
                             text-align: center;
-                            &:last-child{
+
+                            &:last-child {
                                 border-right: 1px solid #D3D3D3;
                             }
-                            &.category{
+
+                            &.category {
                                 width: 150px;
                             }
-                            &.title{
+
+                            &.title {
                                 width: 280px;
                             }
-                            &.amount{
+
+                            &.amount {
                                 width: 124px;
                             }
-                            &.date{
+
+                            &.date {
                                 width: 80px;
                             }
-                            &.chat{
-                                width: 50px;
+
+                            &.progress {
+                                width: 90px;
                             }
-                            &.cancel{
+                            
+                            &.cancel {
                                 width: 84px;
                             }
-                            &.check{
-                                width: 88px;
+
+                            &.chat {
+                                width: 50px;
                             }
                         }
-                        td{
+
+                        td {
                             border-top: 1px solid #D3D3D3;
                             border-bottom: 1px solid #D3D3D3;
                             border-left: 1px solid #D3D3D3;
                             padding: 15px 0;
                             text-align: center;
-                            &:last-child{
+
+                            &:last-child {
                                 border-right: 1px solid #D3D3D3;
                             }
-                            &.category_td{
+
+                            &.category_td {
                                 font-size: 14px;
                                 line-height: 20px;
                             }
-                            &.title_td{
+
+                            &.title_td {
                                 font-size: 13px;
                                 line-height: 19px;
                             }
-                            &.amount_td{
+
+                            &.amount_td {
                                 font-size: 14px;
                                 line-height: 20px;
-                                em{
+
+                                em {
                                     font-size: 14px;
                                     line-height: 18px;
                                     font-weight: 600;
                                 }
                             }
-                            &.date_td{
-                                font-size: 12px;
-                                line-height: 15px;
+
+                            &.date_td {
+                                font-size: 14px;
+                                line-height: 18px;
                             }
-                            &.chat_td{
-                                .img_box{
+
+                            &.chat_td {
+                                .img_box {
                                     width: fit-content;
                                     margin: 0 auto;
-                                    img{
+
+                                    img {
                                         display: block;
                                     }
-                                    .count{
+
+                                    .count {
                                         display: none;
                                     }
                                 }
-                                &.chat_exists{
-                                    .img_box{
+
+                                &.chat_exists {
+                                    .img_box {
                                         position: relative;
                                         margin: 0 9px;
-                                        .count{
+
+                                        .count {
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
@@ -556,24 +2081,27 @@
                                             position: absolute;
                                             bottom: 50%;
                                             left: 50%;
-                                            .count_chat{
+
+                                            .count_chat {
                                                 display: block;
                                                 font-size: 10px;
                                                 line-height: 14px;
                                                 color: #fff;
                                             }
-                                            .over_chat{
+
+                                            .over_chat {
                                                 display: none;
                                                 font-size: 10px;
                                                 line-height: 14px;
                                                 color: #fff;
                                             }
-        
-                                            &.over{
-                                                .count_chat{
+
+                                            &.over {
+                                                .count_chat {
                                                     display: none;
                                                 }
-                                                .over_chat{
+
+                                                .over_chat {
                                                     display: block;
                                                 }
                                             }
@@ -581,23 +2109,48 @@
                                     }
                                 }
                             }
-                            &.cancel_td{
-                                button{
-                                    border: 1px solid #D3D3D3;
-                                    border-radius: 3px;
-                                    padding: 5px 17px;
-                                    background-color: #fff;
+
+                            &.progress_td {
+                                .step_01{
                                     font-size: 14px;
                                     line-height: 20px;
+                                    color: #014099;
+                                }
+                                .step_02{
+                                    display: none;
+                                }
+
+                                &.on{
+                                    padding: 6px 0;
+                                    .step_01{
+                                        display: none;
+                                    }
+                                    .step_02{
+                                        display: block;
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #DE4040;
+                                            margin-bottom: 2px;
+                                        }
+                                        button {
+                                            border: 1px solid #D3D3D3;
+                                            border-radius: 3px;
+                                            padding: 4px 7px;
+                                            background-color: #fff;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                        }
+                                    }
                                 }
                             }
-                            &.check_td{
-                                button{
+
+                            &.cancel_td {
+                                button {
                                     border: 1px solid #D3D3D3;
                                     border-radius: 3px;
                                     padding: 5px 9px;
-                                    background-color: #EEF3F9;
-                                    color: #014099;
+                                    background-color: #fff;
                                     font-size: 14px;
                                     line-height: 20px;
                                 }
@@ -607,1103 +2160,65 @@
                 }
             }
         }
-    }
-}
-
-@media(max-width:1080px){
-    #mypage{
-        &.cancelWait{
-            .w_set{
-                padding: 0 !important;
+        .sale_info{
+            margin-top: 30px;
+            .info_title{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                margin-bottom: 10px;
             }
-            .my_cont{
-                .my_title{
-                    margin: 0 16px;
-                }
-                .pc_title{
-                    display: none;
-                }
-                .mo_table_count{
-                    margin-left: 16px;
-                    margin-right: 16px;
-                    margin-top: 44px;
-                    margin-bottom: 15px;
-                    display: flex;
-                    p{
-                        font-size: 14px;
-                        line-height: 21px;
-                        em{
-                            font-weight: normal;
-                            color: #014099;
-                        }
-                    }
-                }
-                #cancelWait_table{
-                    display: none;
-                }
-                #mo_cancelWait_table{
-                    display: block;
-                    .mo_table{
-                        border-top: 1px solid #D3D3D3;
-                        border-bottom: 1px solid #D3D3D3;
-                        .mo_tr{
-                            padding: 20px 16px;
-                            &:not(:last-child){
-                                border-bottom: 1px solid #D3D3D3;
-                            }
-                            .amount_date_box{
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                margin-bottom: 21px;
-                            }
-                            .chat_cancel_check_box{
-                                display: flex;
-                                justify-content: end;
-                                align-items: center;
-                            }
-                            .td{
-                                &.category_td{
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    margin-bottom: 6px;
-                                }
-                                &.title_td{
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    margin-bottom: 11px;
-                                    font-weight: 500;
-                                }
-                                &.amount_td{
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    em{
-                                        font-size: 14px;
-                                        line-height: 18px;
-                                        font-weight: 600;
-                                    }
-                                }
-                                &.date_td{
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                }
-                                &.chat_td{
-                                    .img_box{
-                                        width: fit-content;
-                                        margin: 0 auto;
-                                        img{
-                                            display: block;
-                                        }
-                                        .count{
-                                            display: none;
-                                        }
-                                    }
-                                    &.chat_exists{
-                                        .img_box{
-                                            position: relative;
-                                            margin: 0 9px;
-                                            .count{
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                width: 21.91px;
-                                                height: 21.91px;
-                                                border-radius: 50%;
-                                                background-color: #434343;
-                                                position: absolute;
-                                                bottom: 50%;
-                                                left: 50%;
-                                                .count_chat {
-                                                    display: block;
-                                                    font-size: 10px;
-                                                    line-height: 14px;
-                                                    color: #fff;
-                                                }
-                                            
-                                                .over_chat {
-                                                    display: none;
-                                                    font-size: 10px;
-                                                    line-height: 14px;
-                                                    color: #fff;
-                                                }
-                                            
-                                                &.over {
-                                                    .count_chat {
-                                                        display: none;
-                                                    }
-                                            
-                                                    .over_chat {
-                                                        display: block;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                &.cancel_td{
-                                    margin-right: 10px;
-                                    button{
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        padding: 5px 22px;
-                                        background-color: #fff;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                                &.check_td{
-                                    margin-right: 10px;
-                                    button{
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        padding: 5px 9px;
-                                        background-color: #EEF3F9;
-                                        color: #014099;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .pagenation{
-                        margin: 37px 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        ul{
-                            display: flex;
-                            margin: 0 10px;
-                            li{
-                                font-size: 14px;
-                                line-height: 19px;
-                                width: 24px;
-                                height: 24px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                cursor: pointer;
-                                &.on{
-                                    background-color: #666666;
-                                    color: #fff;
-                                }
-                            }
-                        }
-                        .back_page{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            .all_page{
-                                background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                margin-right: 6px;
-                                cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(180deg);
-                                }
-                            }
-                            .one_page{
-                                background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(180deg);
-                                }
-                            }
-                        }
-                        .next_page{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            .all_page{
-                                background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                transform: rotate(180deg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(0deg);
-                                }
-                            }
-                            .one_page{
-                                background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                transform: rotate(180deg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                margin-right: 6px;
-                                cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(0deg);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-
-// 판매상세_아이템
-
-#mypage {
-    &.sale_detail_item {
-        .my_cont {
-            .title{
+            .info_box{
+                background-color: #F6F6F6;
                 display: flex;
                 justify-content: space-between;
-                align-items: start;
-                padding-bottom: 20px;
-                border-bottom: 2px solid #333;
-                .pc_title {
-                    font-size: 20px;
-                    line-height: 29px;
-                }
-                .sale_detail_chat {
-                    width: 80px;
-                    height: 32px;
-                    border: 1px solid #014099;
-                    background-color: #fff;
-                    span{
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #014099;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        &::before{
-                            content: "";
-                            background-image: url(../images/mypage/mypage_chat_blue.svg);
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: contain;
-                            display: inline-block;
-                            width: 21px;
-                            height: 18px;
-                            margin-right: 5px;
-                        }
-                    }
-                }
-            }
-
-            .main{
-                padding-top: 30px;
-                display: flex;
-                margin-bottom: 20px;
-                .product_list{
-                    margin-right: 15px;
-                    .con_box{
-                        &.basic_info{
-                            margin-bottom: 20px;
-                        }
-                        .mo_box{
-                            .mo_sale_detail_chat{
-                                display: none;
-                                width: 80px;
-                                height: 32px;
-                                border: 1px solid #014099;
-                                background-color: #fff;
-                            
-                                span {
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    color: #014099;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                            
-                                    &::before {
-                                        content: "";
-                                        background-image: url(../images/mypage/mypage_chat_blue.svg);
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        background-size: contain;
-                                        display: inline-block;
-                                        width: 21px;
-                                        height: 18px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-                        .con_title{
-                            font-size: 16px;
-                            line-height: 21px;
-                            font-weight: 500;
-                            margin-bottom: 10px;
-                        }
-                        .con_table{
-                            width: 500px;
-                            border: 1px solid #D3D3D3;
-                            .table_list{
-                                display: flex;
-                                &:not(:last-child){
-                                    border-bottom: 1px solid #D3D3D3;
-                                }
-                                .th{
-                                    width: 90px;
-                                    padding: 15px 0;
-                                    text-align: center;
-                                    background-color: #F6F6F6;
-                                    border-right: 1px solid #D3D3D3;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                }
-                                .td{
-                                    width: calc(100% - 100px);
-                                    display: flex;
-                                    justify-content: start;
-                                    align-items: center;
-                                    margin-left: 10px;
-                                    p{
-                                        font-size: 14px;
-                                        line-height: 21px;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
-                                    }
-                                    em{
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                        font-weight: 500;
-                                    }
-                                    span{
-                                        margin-left: 2px;
-                                        font-size: 13px;
-                                        line-height: 19px;
-                                    }
-                                    &.trans_box{
-                                        .trans_info{
-                                            width: 90px;
-                                            height: 28px;
-                                            border: 1px solid #A7A7A7;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            &:not(:last-child){
-                                                margin-right: 10px;
-                                            }
-                                            span{
-                                                font-size: 14px;
-                                                font-weight: 500;
-                                                line-height: 21px;
-                                                color: #A7A7A7;
-                                                &::before{
-                                                    content: "";
-                                                    background-image: url(../images/mypage/mypage_check_gray.svg);
-                                                    background-repeat: no-repeat;
-                                                    background-position: center;
-                                                    background-size: contain;
-                                                    display: inline-block;
-                                                    width: 13px;
-                                                    height: 10px;
-                                                    margin-right: 4px;
-                                                }
-                                            }
-
-                                            &.on{
-                                                border-color: #014099;
-                                                span{
-                                                    color: #014099;
-                                                    &::before{
-                                                        background-image: url(../images/mypage/mypage_check_blue.svg);
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .table_flex{
-                                display: flex;
-                                .table_list{
-                                    display: flex;
-                                    border-bottom: 1px solid #D3D3D3;
-                                    width: 50%;
-                                    &:not(:first-child) {
-                                        .th{
-                                            border-left: 1px solid #D3D3D3;
-                                        }
-                                    }
-                                    .th{
-                                        width: 90px;
-                                        padding: 15px 0;
-                                        text-align: center;
-                                        background-color: #F6F6F6;
-                                        border-right: 1px solid #D3D3D3;
-                                    }
-                                    .td{
-                                        width: calc(100% - 100px);
-                                        padding: 15px 0;
-                                        margin-left: 10px;
-                                    }
-                            }
-                            }
-                        }
-                    }
-                }
-                .receipt_list{
-                    .con_box{
-                        &:not(:last-child){
-                            margin-bottom: 20px;
-                        }
-                        .con_title{
-                            font-size: 16px;
-                            line-height: 21px;
-                            font-weight: 500;
-                            margin-bottom: 10px;
-                        }
-                        .con_table{
-                            width: 335px;
-                            border-top: 1px solid #D3D3D3;
-                            .table_list{
-                                padding: 10px 10px 10px 15px;
-                                display: flex;
-                                justify-content: space-between;
-                                &:not(:nth-last-of-type(2)){
-                                    border-bottom: 1px dashed #D3D3D3;
-                                }
-                                .th{
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                }
-                                .td{
-                                    span{
-                                        font-size: 13px;
-                                        line-height: 19px;
-                                        margin-left: 2px;
-                                    }
-                                    em{
-                                        font-weight: 500;
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                    }
-                                }
-                            }
-                            .table_result{
-                                padding: 10px 10px 10px 15px;
-                                display: flex;
-                                justify-content: space-between;
-                                background-color: #F6F6F6;
-                                .th{
-                                    font-weight: 500;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                }
-                                .td{
-                                    span{
-                                        font-weight: 500;
-                                        font-size: 13px;
-                                        line-height: 19px;
-                                        margin-left: 2px;
-                                    }
-                                    em{
-                                        font-weight: 600;
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .bottom_list_button{
-                display: flex;
-                justify-content: end;
-                margin-bottom: 27px;
-                .all_list{
-                    height: 34px;
-                    width: 90px;
-                    border: 1px solid #333333;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    a{
-                        display: block;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #333333;
-                    }
-                }
-            }
-            .bottom_info{
-                background-color: #EEF3F9;
-                border: 2px solid #EEF3F9;
-                padding: 22px 41px 22px 41px;
-
-                .info_title{
-                    margin-bottom: 14px;
-                    span{
-                        font-size: 15px;
-                        font-weight: 500;
-                        line-height: 22px;
-                        color: #014099;
-                        display: flex;
-                        align-items: center;
-                        justify-content: start;
-                        &::before{
-                            content: "";
-                            background-image: url(../images/mypage/mypage_bulb.svg);
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            display: inline-block;
-                            height: 21px;
-                            width: 12px;
-                            margin-right: 6px;
-                        }
-                    }
-                }
+                align-items: center;
+                padding: 26px 20px 46px 20px;
                 .info_list{
-                    li{
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #000;
-                        display: flex;
-                        &:not(:last-child){
-                            margin-bottom: 4px;
-                        }
-                        span{
-                            &:first-child{
-                                margin-right: 4px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:1080px){
-    #mypage{
-        &.sale_detail_item{
-            .my_cont{
-                .title{
-                    padding: 0;
-                    .pc_title{
-                        display: none;
-                    }
-                    .sale_detail_chat{
-                        display: none;
-                    }
-                }
-                .main{
-                    flex-direction: column;
-                    margin-bottom: 0;
-                    .product_list{
-                        margin-right: 0;
-                        .con_box{
-                            margin-bottom: 40px !important;
-                            .mo_box {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                .mo_sale_detail_chat {
-                                    display: inline-block;
-                                    margin-bottom: 15px;
-                                }
-                            }
-                            .con_table{
-                                width: auto;
-                                .table_flex{
-                                    flex-direction: column;
-                                    .table_list{
-                                        width: 100%;
-                                    }
-                                }
-                                .table_list{
-                                    .td{
-                                        p{
-                                            line-height: 20px;
-                                        }
-                                        &.trans_box{
-                                            .trans_info{
-                                                width: 63px;
-                                                margin-right: 7px !important;
-                                                &:last-child{
-                                                    width: 75px;
-                                                }
-                                                span{
-                                                    &::before{
-                                                        margin-right: 2px;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .receipt_list{
-                        .con_box{
-                            margin-bottom: 40px !important;
-                            .con_table{
-                                width: auto;
-                            }
-                        }
-                    }
-                }
-                .bottom_list_button{
-                    justify-content: center;
-                    margin-bottom: 40px;
-                    .all_list{
-                        width: 180px;
-                        height: 50px;
-                        a{
-                            font-size: 15px;
-                            line-height: 21px;
-                            font-weight: 500;
-                        }
-                    }
-                }
-                .bottom_info{
-                    padding: 23px 24px 23px 13px;
-                    .info_list{
-                        li{
-                            word-break: keep-all;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-// 판매상세_계정
-#mypage {
-    &.sale_detail_id {
-        .my_cont {
-            .title {
-                display: flex;
-                justify-content: space-between;
-                align-items: start;
-                padding-bottom: 20px;
-                border-bottom: 2px solid #333;
-
-                .pc_title {
-                    font-size: 20px;
-                    line-height: 29px;
-                }
-                .button_box{
+                    width: 110px;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    .sale_detail_cancel{
-                        width: 80px;
-                        height: 32px;
-                        border: 1px solid #FF3333;
-                        background-color: #fff;
-                        margin-right: 10px;
-                        span {
-                            font-size: 14px;
-                            line-height: 21px;
-                            color: #FF3333;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
+                    position: relative;
+                    &:not(:last-child){
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                background-image: url(../images/mypage/mypage_arrow_gray_gradation.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                width: 24px;
+                                height: 15px;
+                                left: 100%;
+                                top: 30%;
+                                margin-left: 20px;
+                            }
                     }
-                    .sale_detail_chat {
-                        width: 80px;
-                        height: 32px;
-                        border: 1px solid #014099;
+                    .img_box{
+                        height: 110px;
+                        width: 110px;
+                        border-radius: 50%;
                         background-color: #fff;
-    
-                        span {
+                        border: 1px solid #A7A7A7;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            margin-top: 10px;
                             font-size: 14px;
                             line-height: 20px;
-                            color: #014099;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-    
-                            &::before {
-                                content: "";
-                                background-image: url(../images/mypage/mypage_chat_blue.svg);
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: contain;
-                                display: inline-block;
-                                width: 21px;
-                                height: 18px;
-                                margin-right: 5px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .main {
-                padding-top: 30px;
-                display: flex;
-                margin-bottom: 20px;
-
-                .product_list {
-                    margin-right: 15px;
-
-                    .con_box {
-                        &.basic_info {
-                            margin-bottom: 20px;
-                        }
-
-                        .mo_box {
-                            .mo_button_box{
-                                display: none;
-                                .mo_sale_detail_cancel {
-                                    width: 80px;
-                                    height: 32px;
-                                    border: 1px solid #FF3333;
-                                    background-color: #fff;
-                                    margin-right: 10px;
-                            
-                                    span {
-                                        font-size: 14px;
-                                        line-height: 21px;
-                                        color: #FF3333;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                    }
-                                }
-                                .mo_sale_detail_chat {
-                                    width: 80px;
-                                    height: 32px;
-                                    border: 1px solid #014099;
-                                    background-color: #fff;
-    
-                                    span {
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        color: #014099;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-    
-                                        &::before {
-                                            content: "";
-                                            background-image: url(../images/mypage/mypage_chat_blue.svg);
-                                            background-repeat: no-repeat;
-                                            background-position: center;
-                                            background-size: contain;
-                                            display: inline-block;
-                                            width: 21px;
-                                            height: 18px;
-                                            margin-right: 5px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .con_title {
-                            font-size: 16px;
-                            line-height: 21px;
                             font-weight: 500;
-                            margin-bottom: 10px;
-                        }
-
-                        .con_table {
-                            width: 500px;
-                            border: 1px solid #D3D3D3;
-
-                            .table_list {
-                                display: flex;
-
-                                &:not(:last-child) {
-                                    border-bottom: 1px solid #D3D3D3;
-                                }
-
-                                .th {
-                                    width: 90px;
-                                    padding: 15px 0;
-                                    text-align: center;
-                                    background-color: #F6F6F6;
-                                    border-right: 1px solid #D3D3D3;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                }
-
-                                .td {
-                                    width: calc(100% - 100px);
-                                    display: flex;
-                                    justify-content: start;
-                                    align-items: center;
-                                    margin-left: 10px;
-
-                                    p {
-                                        font-size: 14px;
-                                        line-height: 21px;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
-                                    }
-
-                                    em {
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                        font-weight: 500;
-                                    }
-
-                                    span {
-                                        margin-left: 2px;
-                                        font-size: 13px;
-                                        line-height: 19px;
-                                    }
-
-                                    &.trans_box {
-                                        .trans_info {
-                                            width: 90px;
-                                            height: 28px;
-                                            border: 1px solid #A7A7A7;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-
-                                            &:not(:last-child) {
-                                                margin-right: 10px;
-                                            }
-
-                                            span {
-                                                font-size: 14px;
-                                                font-weight: 500;
-                                                line-height: 21px;
-                                                color: #A7A7A7;
-
-                                                &::before {
-                                                    content: "";
-                                                    background-image: url(../images/mypage/mypage_check_gray.svg);
-                                                    background-repeat: no-repeat;
-                                                    background-position: center;
-                                                    background-size: contain;
-                                                    display: inline-block;
-                                                    width: 13px;
-                                                    height: 10px;
-                                                    margin-right: 4px;
-                                                }
-                                            }
-
-                                            &.on {
-                                                border-color: #014099;
-
-                                                span {
-                                                    color: #014099;
-
-                                                    &::before {
-                                                        background-image: url(../images/mypage/mypage_check_blue.svg);
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            .table_flex {
-                                display: flex;
-
-                                .table_list {
-                                    display: flex;
-                                    border-bottom: 1px solid #D3D3D3;
-                                    width: 50%;
-
-                                    &:not(:first-child) {
-                                        .th {
-                                            border-left: 1px solid #D3D3D3;
-                                        }
-                                    }
-
-                                    .th {
-                                        width: 90px;
-                                        padding: 15px 0;
-                                        text-align: center;
-                                        background-color: #F6F6F6;
-                                        border-right: 1px solid #D3D3D3;
-                                    }
-
-                                    .td {
-                                        width: calc(100% - 100px);
-                                        padding: 15px 0;
-                                        margin-left: 10px;
-                                    }
-                                }
-                            }
                         }
                     }
-                }
-
-                .receipt_list {
-                    .con_box {
-                        &:not(:last-child) {
-                            margin-bottom: 20px;
-                        }
-
-                        .con_title {
-                            font-size: 16px;
-                            line-height: 21px;
-                            font-weight: 500;
-                            margin-bottom: 10px;
-                        }
-
-                        .con_table {
-                            width: 335px;
-                            border-top: 1px solid #D3D3D3;
-
-                            .table_list {
-                                padding: 10px 10px 10px 15px;
-                                display: flex;
-                                justify-content: space-between;
-                                &:not(:nth-last-of-type(2)){
-                                    border-bottom: 1px dashed #D3D3D3;
-                                }
-
-                                .th {
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                }
-
-                                .td {
-                                    span {
-                                        font-size: 13px;
-                                        line-height: 19px;
-                                        margin-left: 2px;
-                                    }
-
-                                    em {
-                                        font-weight: 500;
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                    }
-                                }
-                            }
-
-                            .table_result {
-                                padding: 10px 10px 10px 15px;
-                                display: flex;
-                                justify-content: space-between;
-                                background-color: #F6F6F6;
-
-                                .th {
-                                    font-weight: 500;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                }
-
-                                .td {
-                                    span {
-                                        font-weight: 500;
-                                        font-size: 13px;
-                                        line-height: 19px;
-                                        margin-left: 2px;
-                                    }
-
-                                    em {
-                                        font-weight: 600;
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .bottom_list_button {
-                display: flex;
-                justify-content: end;
-                margin-bottom: 27px;
-
-                .all_list {
-                    height: 34px;
-                    width: 90px;
-                    border: 1px solid #333333;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    a {
-                        display: block;
+                    .text_box{
+                        text-align: center;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #333333;
-                    }
-                }
-            }
-
-            .bottom_info {
-                background-color: #EEF3F9;
-                border: 2px solid #EEF3F9;
-                padding: 22px 41px 22px 41px;
-
-                .info_title {
-                    margin-bottom: 14px;
-
-                    span {
-                        font-size: 15px;
-                        font-weight: 500;
-                        line-height: 22px;
-                        color: #014099;
-                        display: flex;
-                        align-items: center;
-                        justify-content: start;
-
-                        &::before {
-                            content: "";
-                            background-image: url(../images/mypage/mypage_bulb.svg);
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            display: inline-block;
-                            height: 21px;
-                            width: 12px;
-                            margin-right: 6px;
-                        }
-                    }
-                }
-
-                .info_list {
-                    li {
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #000;
-                        display: flex;
-
-                        &:not(:last-child) {
-                            margin-bottom: 4px;
-                        }
-
-                        span {
-                            &:first-child {
-                                margin-right: 4px;
-                            }
-                        }
+                        margin-top: 10px;
+                        white-space: nowrap;
                     }
                 }
             }
@@ -1713,117 +2228,220 @@
 
 @media(max-width:1080px) {
     #mypage {
-        &.sale_detail_id {
-            .my_cont {
-                .title {
-                    padding: 0;
+        &.sale_in_progress {
+            .w_set {
+                padding: 0 !important;
+            }
 
-                    .pc_title {
-                        display: none;
-                    }
-                    .button_box{
-                        display: none;
+            .my_cont {
+                .my_title {
+                    margin: 0 16px;
+                }
+
+                .pc_title {
+                    display: none;
+                }
+
+                .mo_table_count {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                    margin-top: 44px;
+                    margin-bottom: 15px;
+                    display: flex;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 21px;
+
+                        em {
+                            font-weight: normal;
+                            color: #014099;
+                        }
                     }
                 }
 
-                .main {
-                    flex-direction: column;
-                    margin-bottom: 0;
+                .pagenation{
+                    margin-bottom: 37px;
+                }
 
-                    .product_list {
-                        margin-right: 0;
+                #cancelWait_table {
+                    display: none;
+                }
 
-                        .con_box {
-                            margin-bottom: 40px !important;
+                #mo_cancelWait_table {
+                    display: block;
 
-                            .mo_box {
+                    .mo_table {
+                        border-top: 1px solid #D3D3D3;
+                        border-bottom: 1px solid #D3D3D3;
+
+                        .mo_tr {
+                            padding: 20px 16px;
+
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+
+                            .amount_date_box {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
+                                margin-bottom: 21px;
 
-                                .mo_button_box{
-                                    display: flex;
-                                    margin-bottom: 15px;
-                                }
+                                .amount_td {
+                                    font-size: 14px;
+                                    line-height: 20px;
 
-                            }
-
-                            .con_table {
-                                width: auto;
-
-                                .table_flex {
-                                    flex-direction: column;
-
-                                    .table_list {
-                                        width: 100%;
+                                    em {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        font-weight: 600;
                                     }
                                 }
 
-                                .table_list {
-                                    .td {
-                                        p {
-                                            line-height: 20px;
+                                .date_td {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                            .category_td {
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 6px;
+                            }
+                            .title_td {
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 11px;
+                                font-weight: 500;
+                            }
+                            .progress_td {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .step_01{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #014099;
+                                }
+                                .step_02{
+                                    display: none;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #DE4040;
+                                }
+                                .bottom_right_box{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .step_02_on{
+                                        display: none;
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        padding: 5px 3px;
+                                        background-color: #fff;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        margin-right: 10px;
+                                    }
+                                    .always_in{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .cancel_td {
+                                            button {
+                                                border: 1px solid #D3D3D3;
+                                                border-radius: 3px;
+                                                padding: 5px 9px;
+                                                background-color: #fff;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                margin-right: 10px;
+                                            }
                                         }
-
-                                        &.trans_box {
-                                            .trans_info {
-                                                width: 63px;
-                                                margin-right: 7px !important;
-
-                                                &:last-child {
-                                                    width: 75px;
+                                        .chat_td {
+                                            .img_box {
+                                                width: fit-content;
+                                                margin: 0 auto;
+                                            
+                                                img {
+                                                    display: block;
                                                 }
-
-                                                span {
-                                                    &::before {
-                                                        margin-right: 2px;
+                                            
+                                                .count {
+                                                    display: none;
+                                                }
+                                            }
+                                        
+                                            &.chat_exists {
+                                                .img_box {
+                                                    position: relative;
+                                                    margin-right: calc(21.91px / 2);
+                                                
+                                                    .count {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        width: 21.91px;
+                                                        height: 21.91px;
+                                                        border-radius: 50%;
+                                                        background-color: #434343;
+                                                        position: absolute;
+                                                        bottom: 50%;
+                                                        left: 50%;
+                                                    
+                                                        .count_chat {
+                                                            display: block;
+                                                            font-size: 10px;
+                                                            line-height: 14px;
+                                                            color: #fff;
+                                                        }
+                                                    
+                                                        .over_chat {
+                                                            display: none;
+                                                            font-size: 10px;
+                                                            line-height: 14px;
+                                                            color: #fff;
+                                                        }
+                                                    
+                                                        &.over {
+                                                            .count_chat {
+                                                                display: none;
+                                                            }
+                                                        
+                                                            .over_chat {
+                                                                display: block;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
+                                &.on{
+                                    .step_01{
+                                        display: none;
+                                    }
+                                    .step_02{
+                                        display: inline-block;
+                                    }
+                                    .bottom_right_box{
+                                        .step_02_on{
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
                             }
-                        }
-                    }
-
-                    .receipt_list {
-                        .con_box {
-                            margin-bottom: 40px !important;
-
-                            .con_table {
-                                width: auto;
-                            }
-                        }
-                    }
-                }
-
-                .bottom_list_button {
-                    justify-content: center;
-                    margin-bottom: 40px;
-
-                    .all_list {
-                        width: 180px;
-                        height: 50px;
-
-                        a {
-                            font-size: 15px;
-                            line-height: 21px;
-                            font-weight: 500;
-                        }
-                    }
-                }
-
-                .bottom_info {
-                    padding: 23px 24px 23px 13px;
-
-                    .info_list {
-                        li {
-                            word-break: keep-all;
                         }
                     }
                 }
             }
+            .sale_info{
+                display: none;
+            }
         }
     }
+
 }
