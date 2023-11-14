@@ -79,7 +79,7 @@ main i{display: block;background-repeat: no-repeat;}
 #footer .fmenu {margin-bottom:17px;overflow:hidden;}
 #footer .fmenu li {float:left;padding:0 15px;font-size:13px;color:#b8b8b8;background:url('../images/common/sline01.gif') no-repeat 0 50%;}
 #footer .fmenu li:first-child {padding-left:0;background:none;}
-#footer .fmenu li a {color:#b8b8b8;}
+#footer .fmenu li a {color:#b8b8b8;display: block;}/* 202311 웹접근성 */
 #footer .fmenu li a strong{color: #cdcdcd;}
 #footer .family {position:absolute;right:35px;top:22px;z-index: 1;}
 #footer .family_tit01 {margin-right:6px;}
@@ -92,6 +92,8 @@ main i{display: block;background-repeat: no-repeat;}
 #footer address,#footer .copyright {font-size:13px; color: #b0b0b0; line-height:20px;}
 #footer .banner{width:100%;padding:24px 0; background:#fff;text-align: center;border-top: 1px solid #ddd;}
 #footer .banner .bx-wrapper{max-width: 1300px;margin: 0 auto;}
+#footer .banner .bx-wrapper .bx-viewport{height: auto !important;}
+#footer .banner .bx-wrapper li a{display: block;height: 100%;} /* 202311 웹접근성 */
 #footer .banner .bx-prev {left:8px;background:url('../images/common/btn_prev2.jpg') no-repeat 50% 50%;}
 #footer .banner .bx-next {left: 40px;background:url('../images/common/btn_next2.jpg') no-repeat 50% 50%;}
 #footer .banner .bx-controls-direction a {display:block; position:absolute; top:15px; width:15px; height:25px; text-indent:-9999px; z-index:999;overflow:hidden;background-position: center;}

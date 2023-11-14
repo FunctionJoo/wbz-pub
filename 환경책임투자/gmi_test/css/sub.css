@@ -712,10 +712,10 @@ i.upper_ico {
     vertical-align: text-top;
 }
 
+/* 2023 웹접근성 */
 .radio_area input {
-    position: absolute;
-    right: 0;
-    opacity: 0;
+   width: 1px;
+   opacity: 0;
 }
 
 .radio_area label {

@@ -67,14 +67,20 @@ $(function(){
 	});
 
 	//메인 헤더 배경 On/Off
-	$("#header").bind("mouseover mouseout",function(event){
-		if(event.type=="mouseover"){
-			$(this).addClass('on');
-		}
-		else if(event.type=="mouseout"){
-			$(this).removeClass('on');
-		}
-	});
+	// 202311 웹접근성
+	$("#header").on("mouseover focusin",function(){		
+		$(this).addClass('on');
+	}).on("mouseout focusout",function(){
+		$(this).removeClass('on');
+	})
+	// $("#header").bind("mouseover mouseout",function(event){
+	// 	if(event.type=="mouseover"){
+	// 		$(this).addClass('on');
+	// 	}
+	// 	else if(event.type=="mouseout"){
+	// 		$(this).removeClass('on');
+	// 	}
+	// });
 
 	// Gnb메뉴 드롭다운
 	$('.depth1 > li').on('mouseover keyup',function(){
@@ -88,6 +94,11 @@ $(function(){
 		$('.depth1 > li > a').removeClass('on');
 		$('.depth1 > li .sub_menu').removeClass('selected');
 	});
+	// 202311 웹접근성
+	$('.depth2 li:last').focusout(function(){
+		$('.depth1 > li > a').removeClass('on');
+		$('.depth1 > li .sub_menu').removeClass('selected');		
+	});	
 
 	// Quick Menu
 	$('.btn_quick').click(function(){

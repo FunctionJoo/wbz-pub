@@ -30,7 +30,7 @@
 
 /* ê²Œì‹œíŒ, ê°€ì´ë“œ */
 .main .inner{max-width: 1400px; margin: 0 auto; padding: 160px 0; display: flex; justify-content: space-between;}
-.main_content{width: 48%; max-width: 650px; /*flex: 1 1 auto;*/}
+.main_content{width: 48%; max-width: 650px; /*flex: 1 1 auto;*/ position: relative;}
 .main_content .tit_area{display: flex; align-items: center; justify-content: space-between; margin-bottom: 46px;}
 .main_content .tit_area .tit{display: inline-block; font-size: 24px; line-height: 26px; color: #111; font-weight: 600; position: relative;}
 .main_content .tit_area .tit::after{content: ''; width: 10px; height: 10px; background-color: #004f4a; border-radius: 10px; position: absolute; right: -18px; top: 0;}
@@ -39,7 +39,7 @@
 .main_content .tit_area .tab_area .tab_btn:first-child{margin-left: 0;}
 .main_content .tit_area .tab_area .tab_btn.selected{color: #004f4a; font-weight: 500;}
 .main_content .tit_area .btn_more{display: block; width: 26px; height: 26px; font-size: 0; background-color: #bcbcbc; background-repeat: no-repeat; background-position: 50% 50%; background-size: 11px; background-image: url(../images/main/ico_btn_more.png);}
-.main_content .tab_content .tab_inner{display: none;}
+.main_content .tab_content{display: none;}
 .main_content .tab_content ul .today{border: 1px solid #d3d3d3; padding: 31px 0; margin-bottom: 28px;}
 .main_content .tab_content ul .today a{display: flex; align-items: center;}
 .main_content .tab_content ul .today .date{width: 108px; text-align: center;}
@@ -57,10 +57,19 @@
 .main_content .guide_content ul{display: flex;}
 .main_content .guide_content ul li{width: calc(100% / 3 - 20px); margin-left: 20px; flex: 1;}
 .main_content .guide_content ul li:first-child{margin-left: 0;}
+.main_content .guide_content ul li a{display: block;} /* 202311 웹접근성 */
 .main_content .guide_content ul li .img_wrap{display: block; padding-top: 155%; position: relative; overflow: hidden; border: 1px solid #d3d3d3;}
 .main_content .guide_content ul li .img_wrap img{width: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%); object-fit: contain;}
 .main_content .guide_content ul li .txt_wrap .tit{font-size: 16px; line-height: 18px; color: #000; font-weight: 600; display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-top: 25px;}
 .main_content .guide_content ul li .txt_wrap .txt{font-size: 14px; line-height: 16px; color: #43945b; display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-top: 20px;}
+
+/* 202311 웹접근성 */
+.main_content .bbs_tab li .tab_btn{font-size: 16px; color: #242424; margin-left: 20px;position: absolute;top: 0;right: 0;}
+.main_content .bbs_tab li:first-child .tab_btn{right: 200px;}
+.main_content .bbs_tab li:nth-child(2) .tab_btn{right: 65px;}
+.main_content .bbs_tab li .tab_btn:first-child{margin-left: 0;}
+.main_content .bbs_tab li .tab_btn.selected{color: #004f4a; font-weight: 500;}
+.main_content .bbs_tab li a.selected + .tab_content{display: block;}
 
 /* ê·¸ëž˜í”„ */
 .main.type-bg{width: 100%; /*height: 800px;*/ background-repeat: no-repeat; background-size: cover; background-image: url(../images/main/img_btm_bg.png);}

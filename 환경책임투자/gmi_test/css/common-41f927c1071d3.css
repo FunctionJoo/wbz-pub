@@ -20,7 +20,7 @@ header,section,nav,hgroup,footer,aside,article,figure {display:block;}
 table td {word-wrap:break-word;word-break:break-all;}
 hr {display:none;}
 .hide {position:absolute;left:0;top:0;overflow:hidden;text-indent:-9999px;}
-input,select{vertical-align:top; outline:none;}
+input,select{vertical-align:top; /*outline:none;*/}  /* 202311 웹접근성 */
 input[type=text],
 input[type=number],
 input[type=email],
