@@ -789,6 +789,9 @@
   height: 32px;
   border: 1px solid #014099;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mypage.sale_detail_item .my_cont .title .sale_detail_chat span {
   font-size: 14px;
@@ -1099,7 +1102,9 @@
     align-items: center;
   }
   #mypage.sale_detail_item .my_cont .main .product_list .con_box .mo_box .mo_sale_detail_chat {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
   }
   #mypage.sale_detail_item .my_cont .main .product_list .con_box .con_table {
@@ -1186,6 +1191,9 @@
   height: 32px;
   border: 1px solid #014099;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mypage.sale_detail_id .my_cont .title .button_box .sale_detail_chat span {
   font-size: 14px;
@@ -1240,6 +1248,9 @@
   height: 32px;
   border: 1px solid #014099;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mypage.sale_detail_id .my_cont .main .product_list .con_box .mo_box .mo_button_box .mo_sale_detail_chat span {
   font-size: 14px;

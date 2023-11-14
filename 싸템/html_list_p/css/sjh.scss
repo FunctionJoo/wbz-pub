@@ -884,6 +884,9 @@
                     height: 32px;
                     border: 1px solid #014099;
                     background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     span{
                         font-size: 14px;
                         line-height: 20px;
@@ -1222,7 +1225,9 @@
                                 justify-content: space-between;
                                 align-items: center;
                                 .mo_sale_detail_chat {
-                                    display: inline-block;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
                                     margin-bottom: 15px;
                                 }
                             }
@@ -1334,7 +1339,9 @@
                         height: 32px;
                         border: 1px solid #014099;
                         background-color: #fff;
-    
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         span {
                             font-size: 14px;
                             line-height: 20px;
@@ -1396,7 +1403,9 @@
                                     height: 32px;
                                     border: 1px solid #014099;
                                     background-color: #fff;
-    
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
                                     span {
                                         font-size: 14px;
                                         line-height: 20px;
