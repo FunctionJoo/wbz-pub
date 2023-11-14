@@ -125,10 +125,18 @@ button {
   height: 22px;
   border: 1px solid #D3D3D3;
   border-radius: 2px;
+  background: #fff;
 }
 .label_c input:checked + .ico {
-  border-color: #333333;
-  background: url() no-repeat center center #333333;
+  border: 0 none;
+  background: url("../images/common/i_checkbox.svg") no-repeat center center #333333;
+}
+
+@media (max-width: 1080px) {
+  body:not(.is_pc) .label_c .txt {
+    padding-left: 6px;
+    font-size: 14px;
+  }
 }
 
 .label_r {
@@ -165,6 +173,16 @@ button {
 .label_t {
   display: block;
 }
+.label_t .label_txt {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.label_t .label_txt.req:after {
+  content: " *";
+  color: #DE4040;
+  font-weight: 400;
+}
 .label_t input:not([type=radio]) {
   width: 100%;
   height: 48px;
@@ -177,11 +195,25 @@ button {
 .label_t input:not([type=radio])::-moz-placeholder {
   color: #A7A7A7;
 }
+.label_t input:not([type=radio]):-ms-input-placeholder {
+  color: #A7A7A7;
+}
 .label_t input:not([type=radio])::placeholder {
   color: #A7A7A7;
 }
+.label_t.type_login input:not([type=radio]) {
+  height: 50px;
+  border-color: #A7A7A7;
+  border-radius: 0;
+  padding: 0 20px;
+  font-size: 14px;
+}
 
 @media (max-width: 1080px) {
+  body:not(.is_pc) .label_t .label_txt {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
   body:not(.is_pc) .label_t input:not([type=radio]) {
     padding: 0 10px;
     font-size: 12px;
@@ -238,6 +270,12 @@ button {
   height: 54px;
   line-height: 52px;
 }
+.st_btn.size_login {
+  width: 100%;
+  height: 65px;
+  line-height: 63px;
+  border-radius: 0;
+}
 .st_btn.size_sml {
   min-width: 76px;
   height: 36px;
@@ -252,6 +290,10 @@ button {
 .st_btn.color_6 {
   background-color: #666666;
   border-color: #666666;
+}
+.st_btn.color_4 {
+  background-color: #434343;
+  border-color: #434343;
 }
 .st_btn.color_pw {
   background: #fff;
@@ -270,5 +312,9 @@ button {
 @media (max-width: 1080px) {
   body:not(.is_pc) .st_btn.size_m_100, body:not(.is_pc) .st_btn.size_b {
     width: 100%;
+  }
+  body:not(.is_pc) .st_btn.size_login {
+    height: 54px;
+    line-height: 52px;
   }
 }/*# sourceMappingURL=common.css.map */
