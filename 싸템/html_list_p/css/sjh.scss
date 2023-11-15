@@ -3130,13 +3130,11 @@
                                 justify-content: center;
                                 align-items: end;
                                 .mile_box{
-                                    width: 160px;
-                                    height: 34px;
-                                    border: 1px solid #D3D3D3;
-                                    display: flex;
-                                    justify-content: end;
-                                    align-items: end;
-                                    padding: 0 4px;
+                                    input{
+                                        width: 160px;
+                                        height: 34px;
+                                        border: 1px solid #D3D3D3;
+                                    }
                                 }
                                 span{
                                     font-size: 15px;
@@ -3309,9 +3307,11 @@
                                 }
                                 .after_mile{
                                     .mile_box{
-                                        max-width: 160px;
-                                        min-width: 120px;
-                                        width: 25vw;
+                                        input{
+                                            max-width: 160px;
+                                            min-width: 120px;
+                                            width: 25vw;
+                                        }
                                     }
                                 }
                             }

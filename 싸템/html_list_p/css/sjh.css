@@ -2644,14 +2644,10 @@
   justify-content: center;
   align-items: end;
 }
-#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile .mile_box {
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile .mile_box input {
   width: 160px;
   height: 34px;
   border: 1px solid #D3D3D3;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding: 0 4px;
 }
 #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile span {
   font-size: 15px;
@@ -2807,7 +2803,7 @@
   #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .con_title {
     margin-right: 0px;
   }
-  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile .mile_box {
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile .mile_box input {
     max-width: 160px;
     min-width: 120px;
     width: 25vw;
