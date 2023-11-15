@@ -116,11 +116,39 @@ $(function(){
 		return false;
 	});
 	
-	// 패밀리 사이트
+	// 패밀리 사이트 
+	/* 202311 웹접근성 */
 	$('.family_tit01').click(function(){
-		$('.family_list01').slideToggle(150);
-	});
+		var dl = $(this).next('dl');
+		$(this).toggleClass('on');
+		if($(this).hasClass('on')){
+			$(this).attr('title', '유관기관 및 단체 닫기');
+		}else{
+			$(this).attr('title', '유관기관 및 단체 열기');
+		}
+		dl.stop().slideToggle();
+	})	
+	$('.family_list01 dd:last').focusout(function(){
+		$('.family_list01').removeClass('on');		
+	});	
+
 	$('.family_tit02').click(function(){
-		$('.family_list02').slideToggle(150);
-	});
+		var dl = $(this).next('dl');
+		$(this).toggleClass('on');
+		if($(this).hasClass('on')){
+			$(this).attr('title', '코네틱 패밀리사이트 닫기');
+		}else{
+			$(this).attr('title', '코네틱 패밀리사이트 열기');
+		}
+		dl.stop().slideToggle();
+	})
+	$('.family_list02 dd:last').focusout(function(){
+		$('.family_list02').removeClass('on');		
+	});	
+	// $('.family_tit01').click(function(){
+	// 	$('.family_list01').slideToggle(150);
+	// });
+	// $('.family_tit02').click(function(){
+	// 	$('.family_list02').slideToggle(150);
+	// });
 });

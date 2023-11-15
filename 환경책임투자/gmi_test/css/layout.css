@@ -85,7 +85,9 @@ main i{display: block;background-repeat: no-repeat;}
 #footer .family_tit01 {margin-right:6px;}
 #footer .family_tit01, #footer .family_tit02 {display:inline-block; width:227px; height:40px; line-height: 38px; text-indent:12px;border:1px solid #c3c7cc;background-image: url('../images/common/select_arrowF.png') ;vertical-align:middle;cursor:pointer;color: #b8b8b8 ;background-repeat: no-repeat;background-position: right 20px top 50%;}
 #footer .family_list01 {display:none; padding:10px 0 12px; position:absolute; left:0; bottom:40px; width:229px; background:#183143;}
+#footer .family_list01.on {display: block;}
 #footer .family_list02 {display:none; padding:10px 0 12px; position:absolute; right:0; bottom:40px; width:229px; background:#183143;}
+#footer .family_list02.on{display: block;}
 #footer .family_list01 dt,#footer .family_list02 dt {margin:8px 0; color:#fff; font-size:13px; text-align:center;}
 #footer .family_list01 a,#footer .family_list02 a {padding:0 15px; color:#fff; font-size:13px; line-height:20px;}
 #footer .family_list01 a:hover,#footer .family_list02 a:hover {color:#3cc786;}
