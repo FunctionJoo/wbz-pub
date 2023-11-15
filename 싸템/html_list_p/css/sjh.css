@@ -2511,4 +2511,351 @@
   #mypage.mile_charge_complete .my_cont .main .home_button a {
     line-height: 21px;
   }
+}
+#mypage.mile_charge_withdraw .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  border-bottom: 2px solid #333333;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input {
+  margin-bottom: 20px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box {
+  border: 1px solid #D3D3D3;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top {
+  border-bottom: 1px solid #666666;
+  width: 100%;
+  margin-bottom: 23px;
+  padding-left: 218px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list.possible {
+  margin-bottom: 23px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list.possible .con_title {
+  margin-right: 46px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list.application {
+  margin-bottom: 19px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list.application .con_title {
+  margin-right: 44px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .con_title {
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .ori {
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .ori em {
+  font-size: 20px;
+  line-height: 27px;
+  color: #014099;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .ori span {
+  margin-left: 4px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .withdraw {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .withdraw input {
+  width: 160px;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .withdraw span {
+  margin-left: 4px;
+  margin-right: 15px;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .all_checkbox {
+  margin: 0;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .all_checkbox label {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .all_checkbox input {
+  display: none;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .all_checkbox input + label::before {
+  content: "";
+  box-shadow: 0 0 0 1px #333333 inset;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 7px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .all_checkbox input:checked + label::before {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 218px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .con_title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-right: 75px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile .mile_box {
+  width: 160px;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 4px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile span {
+  font-size: 15px;
+  line-height: 22px;
+  margin-left: 4px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info {
+  margin-bottom: 40px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box {
+  padding: 41px 0px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 11px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account span {
+  display: block;
+  height: 13px;
+  width: 1px;
+  background-color: #014099;
+  margin: 0 10px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .bank {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .mo_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .mo_box .number {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .mo_box .name {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 400;
+  margin-left: 10px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .mo_box .name em {
+  font-weight: 400;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info {
+  display: flex;
+  align-items: start;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .icon {
+  display: inline-block;
+  background-image: url(../images/mypage/mile_info_icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 16px;
+  height: 19px;
+  margin-right: 4px;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .text::before {
+  display: none;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .text a {
+  color: #014099;
+  text-decoration: underline;
+}
+#mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .text span {
+  color: #014099;
+}
+#mypage.mile_charge_withdraw .my_cont .main .button_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_charge_withdraw .my_cont .main .button_box button {
+  width: 200px;
+  height: 50px;
+  background-color: #014099;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+@media (max-width: 1080px) {
+  #mypage.mile_charge_withdraw .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.mile_charge_withdraw .my_cont .my_title {
+    margin-bottom: 30px !important;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input {
+    margin-bottom: 20px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box {
+    padding: 19.5px 26px 20.5px 26px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top {
+    padding-left: 0px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list {
+    justify-content: space-between;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list.possible .con_title {
+    margin-right: 0px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list.application {
+    margin-bottom: 18px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list.application .con_title {
+    margin-right: 0px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box {
+    flex-direction: column;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .withdraw {
+    margin-bottom: 11px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .withdraw input {
+    max-width: 160px;
+    min-width: 120px;
+    width: 25vw;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .input_box .withdraw span {
+    margin-right: 0px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .con_title {
+    margin-right: 0px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_bottom .after_mile .mile_box {
+    max-width: 160px;
+    min-width: 120px;
+    width: 25vw;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .title {
+    margin-bottom: 10px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box {
+    padding-top: 39px;
+    padding-bottom: 41px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account {
+    flex-direction: column;
+    margin-bottom: 8.5px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account span {
+    display: none;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .bank {
+    margin-bottom: 2px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info {
+    padding: 0 26px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .icon {
+    display: none;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .text {
+    text-align: center;
+    word-break: keep-all;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .info .text::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/mypage/mile_info_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  #mypage.mile_charge_withdraw .my_cont .main .button_box button {
+    width: 100%;
+    height: 60px;
+    line-height: 21px;
+  }
 }/*# sourceMappingURL=sjh.css.map */
