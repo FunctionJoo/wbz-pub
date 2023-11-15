@@ -541,11 +541,11 @@
     align-items: center;
   }
   body:not(.is_pc) #main .main_sec .main_member .mm_list .mm_link.type_sell .mm_tag_2,
-body:not(.is_pc) #main .main_sec .main_member .mm_list .mm_link.type_sell .mmp_price {
+  body:not(.is_pc) #main .main_sec .main_member .mm_list .mm_link.type_sell .mmp_price {
     color: #4386F9;
   }
   body:not(.is_pc) #main .main_sec .main_member .mm_list .mm_link.type_buy .mm_tag_2,
-body:not(.is_pc) #main .main_sec .main_member .mm_list .mm_link.type_buy .mmp_price {
+  body:not(.is_pc) #main .main_sec .main_member .mm_list .mm_link.type_buy .mmp_price {
     color: #03B087;
   }
   body:not(.is_pc) #main .main_sec .main_member .mm_list .mm_link .mm_tag {

@@ -2181,9 +2181,216 @@
   font-weight: 500;
   border-bottom: 2px solid #333333;
 }
+#mypage.mile_charge .my_cont .main .virtual_account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+  padding: 21px 0;
+  margin-bottom: 30px;
+}
+#mypage.mile_charge .my_cont .main .virtual_account .text_box {
+  margin-bottom: 7px;
+}
+#mypage.mile_charge .my_cont .main .virtual_account .text_box span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.mile_charge .my_cont .main .virtual_account .account_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_charge .my_cont .main .virtual_account .account_box em {
+  font-size: 20px;
+  color: #014099;
+}
+#mypage.mile_charge .my_cont .main .virtual_account .account_box em.bank {
+  font-weight: 500;
+  line-height: 29px;
+}
+#mypage.mile_charge .my_cont .main .virtual_account .account_box em.number {
+  font-weight: 600;
+  line-height: 27px;
+}
+#mypage.mile_charge .my_cont .main .virtual_account .account_box span {
+  height: 13px;
+  width: 1px;
+  display: block;
+  background-color: #014099;
+  margin: 0 10px;
+}
+#mypage.mile_charge .my_cont .main .payment_method {
+  margin-bottom: 36px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list {
+  width: 274px;
+  height: 50px;
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 14px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_03 .mo_text {
+  display: none;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_charge .my_cont .main .mo_title_02 {
+  display: none;
+}
+#mypage.mile_charge .my_cont .main .mo_title_02 .title_02 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #014099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_charge .my_cont .main .mo_title_02 .title_02::before {
+  content: "";
+  background-image: url(../images/mypage/mile_info_icon.png);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+#mypage.mile_charge .my_cont .main .info_box {
+  border: 1px solid #D3D3D3;
+  height: 250px;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0px 20px;
+  background-color: #f6f6f6;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_title .title_01 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_title .title_02 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #014099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_title .title_02::before {
+  content: "";
+  background-image: url(../images/mypage/mile_info_icon.png);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_list {
+  padding: 20px;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_list li {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: start;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_list li span {
+  font-size: 14px;
+  line-height: 20px;
+  word-break: keep-all;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_list li span:first-child {
+  margin-right: 4px;
+}
+#mypage.mile_charge .my_cont .main .info_box .info_list li span em {
+  font-weight: normal;
+  color: #DE4040;
+}
 
 @media (max-width: 1080px) {
   #mypage.mile_charge .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.mile_charge .my_cont .my_title {
+    margin-bottom: 30px !important;
+  }
+  #mypage.mile_charge .my_cont .main .virtual_account {
+    padding-top: 29.98px;
+    padding-bottom: 31.02px;
+  }
+  #mypage.mile_charge .my_cont .main .virtual_account .text_box span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.mile_charge .my_cont .main .virtual_account .account_box em.bank {
+    font-weight: 400;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method {
+    margin-bottom: 23px;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list {
+    width: calc((100% - 16px) / 3);
+    height: 70px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 11px 0px;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_03 .pc_text {
+    display: none;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_03 .mo_text {
+    display: inline-block;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_07 img {
+    width: 80px;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_08 img {
+    width: 65px;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list span {
+    order: 2;
+  }
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list img {
+    order: 1;
+  }
+  #mypage.mile_charge .my_cont .main .mo_title_02 {
+    display: block;
+    margin-bottom: 30px;
+  }
+  #mypage.mile_charge .my_cont .main .info_box {
+    height: auto;
+  }
+  #mypage.mile_charge .my_cont .main .info_box .info_title {
+    justify-content: start;
+  }
+  #mypage.mile_charge .my_cont .main .info_box .info_title .title_02 {
     display: none;
   }
 }/*# sourceMappingURL=sjh.css.map */
