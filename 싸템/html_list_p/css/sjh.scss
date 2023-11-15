@@ -10,7 +10,7 @@
     background-color: rgb(33, 33, 33, 0.6);
     z-index: 1000;
 
-    &.on{
+    &.pop{
         display: block;
     }
     .popup_main{
@@ -212,7 +212,7 @@
     height: 100vh;
     background-color: rgb(33, 33, 33, 0.6);
     z-index: 1000;
-    &.on{
+    &.pop{
         display: block;
     }
     .popup_main{
@@ -416,7 +416,7 @@
     background-color: rgb(33, 33, 33, 0.6);
     z-index: 1000;
 
-    &.on {
+    &.pop {
         display: block;
     }
 

@@ -9,7 +9,7 @@
   background-color: rgba(33, 33, 33, 0.6);
   z-index: 1000;
 }
-#virtual_account_popup.on {
+#virtual_account_popup.pop {
   display: block;
 }
 #virtual_account_popup .popup_main {
@@ -201,7 +201,7 @@
   background-color: rgba(33, 33, 33, 0.6);
   z-index: 1000;
 }
-#card_popup.on {
+#card_popup.pop {
   display: block;
 }
 #card_popup .popup_main {
@@ -393,7 +393,7 @@
   background-color: rgba(33, 33, 33, 0.6);
   z-index: 1000;
 }
-#tcash_popup.on {
+#tcash_popup.pop {
   display: block;
 }
 #tcash_popup .popup_main {
