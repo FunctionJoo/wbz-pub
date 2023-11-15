@@ -19,7 +19,8 @@
 	<script src="../js/main.js"></script>
 </head>
 <body>
-	<div id="virtual_account_popup" class=""> //class 'pop' -> display:block
+	<!-- 팝업 class 'pop' -> display:block -->
+	<div id="virtual_account_popup" class="pop">
 		<div class="popup_main">
 			<div class="pop_top">
 				<div class="title">가상계좌</div>
@@ -32,46 +33,37 @@
 					<span>원</span>
 				</div>
 				<div class="con_radioBox">
-					<div class="radio_box">
-						<div class="radio_list list_01">
-							<input id="list_01" type="radio" name="cash">
-							<label for="list_01">10,000원</label>
-						</div>
-						<div class="radio_list list_04">
-							<input id="list_04" type="radio" name="cash">
-							<label for="list_04">200,000원</label>
-						</div>
-						<div class="radio_list list_07">
-							<input id="list_07" type="radio" name="cash">
-							<label for="list_07">1,000,000원</label>
-						</div>
-
+					<div class="radio_list list_01">
+						<input id="virtual_account_01" type="radio" name="virtual_account">
+						<label for="virtual_account_01">10,000원</label>
 					</div>
-					<div class="radio_box">
-						<div class="radio_list list_02">
-							<input id="list_02" type="radio" name="cash">
-							<label for="list_02">50,000원</label>
-						</div>
-						<div class="radio_list list_05">
-							<input id="list_05" type="radio" name="cash">
-							<label for="list_05">300,000원</label>
-						</div>
-						<div class="radio_list list_08">
-							<input id="list_08" type="radio" name="cash">
-							<label for="list_08">직접입력</label>
-						</div>
-
+					<div class="radio_list list_02">
+						<input id="virtual_account_02" type="radio" name="virtual_account">
+						<label for="virtual_account_02">50,000원</label>
 					</div>
-					<div class="radio_box">
-						<div class="radio_list list_03">
-							<input id="list_03" type="radio" name="cash">
-							<label for="list_03">100,000원</label>
-						</div>
-						<div class="radio_list list_06">
-							<input id="list_06" type="radio" name="cash">
-							<label for="list_06">500,000원</label>
-						</div>
-
+					<div class="radio_list list_03">
+						<input id="virtual_account_03" type="radio" name="virtual_account">
+						<label for="virtual_account_03">100,000원</label>
+					</div>
+					<div class="radio_list list_04">
+						<input id="virtual_account_04" type="radio" name="virtual_account">
+						<label for="virtual_account_04">200,000원</label>
+					</div>
+					<div class="radio_list list_05">
+						<input id="virtual_account_05" type="radio" name="virtual_account">
+						<label for="virtual_account_05">300,000원</label>
+					</div>
+					<div class="radio_list list_06">
+						<input id="virtual_account_06" type="radio" name="virtual_account">
+						<label for="virtual_account_06">500,000원</label>
+					</div>
+					<div class="radio_list list_07">
+						<input id="virtual_account_07" type="radio" name="virtual_account">
+						<label for="virtual_account_07">1,000,000원</label>
+					</div>
+					<div class="radio_list list_08">
+						<input id="virtual_account_08" type="radio" name="virtual_account">
+						<label for="virtual_account_08">직접입력</label>
 					</div>
 				</div>
 				<div class="con_result">
@@ -104,7 +96,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="card_popup" class=""> //class 'pop' -> display:block
+	<div id="card_popup" class="">
 		<div class="popup_main">
 			<div class="pop_top">
 				<div class="title">카드결제</div>
@@ -119,42 +111,42 @@
 				<div class="con_radioBox">
 					<div class="radio_box">
 						<div class="radio_list list_01">
-							<input id="list_01" type="radio" name="cash">
-							<label for="list_01">10,000원</label>
+							<input id="card_01" type="radio" name="card">
+							<label for="card_01">10,000원</label>
 						</div>
 						<div class="radio_list list_04">
-							<input id="list_04" type="radio" name="cash">
-							<label for="list_04">200,000원</label>
+							<input id="card_04" type="radio" name="card">
+							<label for="card_04">200,000원</label>
 						</div>
 						<div class="radio_list list_07">
-							<input id="list_07" type="radio" name="cash">
-							<label for="list_07">1,000,000원</label>
+							<input id="card_07" type="radio" name="card">
+							<label for="card_07">1,000,000원</label>
 						</div>
 	
 					</div>
 					<div class="radio_box">
 						<div class="radio_list list_02">
-							<input id="list_02" type="radio" name="cash">
-							<label for="list_02">50,000원</label>
+							<input id="card_02" type="radio" name="card">
+							<label for="card_02">50,000원</label>
 						</div>
 						<div class="radio_list list_05">
-							<input id="list_05" type="radio" name="cash">
-							<label for="list_05">300,000원</label>
+							<input id="card_05" type="radio" name="card">
+							<label for="card_05">300,000원</label>
 						</div>
 						<div class="radio_list list_08">
-							<input id="list_08" type="radio" name="cash">
-							<label for="list_08">직접입력</label>
+							<input id="card_08" type="radio" name="card">
+							<label for="card_08">직접입력</label>
 						</div>
 	
 					</div>
 					<div class="radio_box">
 						<div class="radio_list list_03">
-							<input id="list_03" type="radio" name="cash">
-							<label for="list_03">100,000원</label>
+							<input id="card_03" type="radio" name="card">
+							<label for="card_03">100,000원</label>
 						</div>
 						<div class="radio_list list_06">
-							<input id="list_06" type="radio" name="cash">
-							<label for="list_06">500,000원</label>
+							<input id="card_06" type="radio" name="card">
+							<label for="card_06">500,000원</label>
 						</div>
 	
 					</div>
@@ -189,7 +181,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="tcash_popup" class=""> //class 'pop' -> display:block
+	<div id="tcash_popup" class="">
 		<div class="popup_main">
 			<div class="pop_top">
 				<div class="title">티캐시</div>
@@ -204,42 +196,42 @@
 				<div class="con_radioBox">
 					<div class="radio_box">
 						<div class="radio_list list_01">
-							<input id="list_01" type="radio" name="cash">
-							<label for="list_01">10,000원</label>
+							<input id="tcash_01" type="radio" name="tcash">
+							<label for="tcash_01">10,000원</label>
 						</div>
 						<div class="radio_list list_04">
-							<input id="list_04" type="radio" name="cash">
-							<label for="list_04">200,000원</label>
+							<input id="tcash_04" type="radio" name="tcash">
+							<label for="tcash_04">200,000원</label>
 						</div>
 						<div class="radio_list list_07">
-							<input id="list_07" type="radio" name="cash">
-							<label for="list_07">1,000,000원</label>
+							<input id="tcash_07" type="radio" name="tcash">
+							<label for="tcash_07">1,000,000원</label>
 						</div>
 	
 					</div>
 					<div class="radio_box">
 						<div class="radio_list list_02">
-							<input id="list_02" type="radio" name="cash">
-							<label for="list_02">50,000원</label>
+							<input id="tcash_02" type="radio" name="tcash">
+							<label for="tcash_02">50,000원</label>
 						</div>
 						<div class="radio_list list_05">
-							<input id="list_05" type="radio" name="cash">
-							<label for="list_05">300,000원</label>
+							<input id="tcash_05" type="radio" name="tcash">
+							<label for="tcash_05">300,000원</label>
 						</div>
 						<div class="radio_list list_08">
-							<input id="list_08" type="radio" name="cash">
-							<label for="list_08">직접입력</label>
+							<input id="tcash_08" type="radio" name="tcash">
+							<label for="tcash_08">직접입력</label>
 						</div>
 	
 					</div>
 					<div class="radio_box">
 						<div class="radio_list list_03">
-							<input id="list_03" type="radio" name="cash">
-							<label for="list_03">100,000원</label>
+							<input id="tcash_03" type="radio" name="tcash">
+							<label for="tcash_03">100,000원</label>
 						</div>
 						<div class="radio_list list_06">
-							<input id="list_06" type="radio" name="cash">
-							<label for="list_06">500,000원</label>
+							<input id="tcash_06" type="radio" name="tcash">
+							<label for="tcash_06">500,000원</label>
 						</div>
 	
 					</div>
@@ -257,6 +249,91 @@
 							</div>
 							<div class="percent">
 								<span>(충전수수료 <em>5</em>%)</span>
+							</div>
+						</div>
+					</div>
+					<div class="all_result">
+						<div class="title">총 충전금액</div>
+						<div class="result_box">
+							<div class="money">
+								<span><em>1,000,000</em>원</span>
+							</div>
+							<div class="charge_text">
+								<span>(충전수수료 포함)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pop_bottom">
+				<button>충전하기</button>
+			</div>
+		</div>
+	</div>
+	<div id="curture_land" class="">
+		<div class="popup_main">
+			<div class="pop_top">
+				<div class="title">카드결제</div>
+				<div class="close"></div>
+			</div>
+			<div class="pop_middle">
+				<div class="con_title">충전요청금액</div>
+				<div class="con_input">
+					<input type="text">
+					<span>원</span>
+				</div>
+				<div class="con_radioBox">
+					<div class="radio_box">
+						<div class="radio_list list_01">
+							<input id="curture_01" type="radio" name="curture">
+							<label for="curture_01">10,000원</label>
+						</div>
+						<div class="radio_list list_04">
+							<input id="curture_04" type="radio" name="curture">
+							<label for="curture_04">200,000원</label>
+						</div>
+						<div class="radio_list list_07">
+							<input id="curture_07" type="radio" name="curture">
+							<label for="curture_07">1,000,000원</label>
+						</div>
+	
+					</div>
+					<div class="radio_box">
+						<div class="radio_list list_02">
+							<input id="curture_02" type="radio" name="curture">
+							<label for="curture_02">50,000원</label>
+						</div>
+						<div class="radio_list list_05">
+							<input id="curture_05" type="radio" name="curture">
+							<label for="curture_05">300,000원</label>
+						</div>
+						<div class="radio_list list_08">
+							<input id="curture_08" type="radio" name="curture">
+							<label for="curture_08">직접입력</label>
+						</div>
+	
+					</div>
+					<div class="radio_box">
+						<div class="radio_list list_03">
+							<input id="curture_03" type="radio" name="curture">
+							<label for="curture_03">100,000원</label>
+						</div>
+						<div class="radio_list list_06">
+							<input id="curture_06" type="radio" name="curture">
+							<label for="curture_06">500,000원</label>
+						</div>
+	
+					</div>
+				</div>
+				<div class="con_result">
+					<div class="charge">
+						<div class="title">충전 수수료</div>
+						<div class="charge_box">
+							<div class="money">
+								<span><em>0</em>원</span>
+							</div>
+							<div class="percent">
+								<span>(충전수수료 <em>10</em>%)</span>
 							</div>
 						</div>
 					</div>

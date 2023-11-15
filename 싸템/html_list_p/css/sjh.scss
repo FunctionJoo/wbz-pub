@@ -74,41 +74,48 @@
             }
             .con_radioBox{
                 background-color: #F6F6F6;
-                padding: 23px 20px 23px 15px;
+                padding: 22px 20px 2px 15px;
                 display: flex;
-                justify-content: space-between;
-                align-items: start;
+                flex-wrap: wrap;
                 margin-bottom: 21px;
-                .radio_box{
-                    .radio_list{
-                        &:not(:last-child){
-                            margin-bottom: 20px;
+                .radio_list{
+                    display: flex;
+                    width: calc(100% /3);
+                    margin-bottom: 20px;
+                    &:nth-child(3n+0){
+                        justify-content: end;
+                    }
+                    &:nth-child(3n+1){
+                        justify-content: start;
+                    }
+                    &:nth-child(3n+2){
+                        justify-content: center;
+                    }
+                    label{
+                        display: flex;
+                        align-items: center;
+                        width: 104px;
+                    }
+                    input{
+                        display: none;
+                        +label::before{
+                            content: "";
+                            box-shadow: 0 0 0 1px #b1b1b1 inset;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            width: 22px;
+                            height: 22px;
+                            display: inline-block;
+                            margin-right: 6px;
                         }
-                        label{
-                            display: flex;
-                            align-items: center;
-                        }
-                        input{
-                            display: none;
-                            +label::before{
-                                content: "";
-                                box-shadow: 0 0 0 1px #b1b1b1 inset;
-                                background-color: #fff;
-                                border-radius: 50%;
-                                width: 22px;
-                                height: 22px;
-                                display: inline-block;
-                                margin-right: 6px;
-                            }
-                            &:checked+label::before{
-                                background-image: url(../images/mypage/radio_button.svg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                border: none;
-                                border-radius: 0px;
-                                box-shadow: none;
-                            }
+                        &:checked+label::before{
+                            background-image: url(../images/mypage/radio_button.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            border: none;
+                            border-radius: 0px;
+                            box-shadow: none;
                         }
                     }
                 }
@@ -657,7 +664,241 @@
         }
     }
 }
+// 컬쳐랜드 팝업
+#curture_land {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(33, 33, 33, 0.6);
+    z-index: 1000;
 
+    &.pop {
+        display: block;
+    }
+
+    .popup_main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 30px 30px 40px 30px;
+        width: 500px;
+
+        .pop_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 14px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #707070;
+
+            .title {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+            }
+
+            .close {
+                width: 14px;
+                height: 14px;
+                background-image: url(../images/mypage/close_button.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .pop_middle {
+            margin-bottom: 40px;
+
+            .con_title {
+                font-size: 15px;
+                line-height: 22px;
+                margin-bottom: 10px;
+
+                &::before {
+                    content: "✓";
+                    margin-right: 6px;
+                }
+            }
+
+            .con_input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+
+                input {
+                    width: calc(100% - 18.81px);
+                    text-align: end;
+                    border: 1px solid #D3D3D3;
+                    padding: 12px 10px;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+
+                span {
+                    font-size: 15px;
+                    line-height: 22px;
+                    margin-left: 5px;
+                }
+            }
+
+            .con_radioBox {
+                background-color: #F6F6F6;
+                padding: 23px 20px 23px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                margin-bottom: 21px;
+
+                .radio_box {
+                    .radio_list {
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        input {
+                            display: none;
+
+                            +label::before {
+                                content: "";
+                                box-shadow: 0 0 0 1px #b1b1b1 inset;
+                                background-color: #fff;
+                                border-radius: 50%;
+                                width: 22px;
+                                height: 22px;
+                                display: inline-block;
+                                margin-right: 6px;
+                            }
+
+                            &:checked+label::before {
+                                background-image: url(../images/mypage/radio_button.svg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                border: none;
+                                border-radius: 0px;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .con_result {
+                .charge {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    .title {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    .charge_box {
+                        display: flex;
+
+                        .money {
+                            margin-right: 4px;
+
+                            span {
+                                font-size: 15px;
+                                line-height: 20px;
+
+                                em {
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+
+                        .percent {
+                            span {
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #666666;
+
+                                em {
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .all_result {
+                    padding: 15px;
+                    background-color: #EEF3F9;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .title {
+                        font-size: 15px;
+                        line-height: 22px;
+                        font-weight: 500;
+                    }
+
+                    .result_box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .money {
+                            span {
+                                font-size: 15px;
+                                line-height: 22px;
+
+                                em {
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    color: #014099;
+                                    font-weight: 600;
+                                    margin-right: 2px;
+                                }
+                            }
+                        }
+
+                        .charge_text {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #666666;
+                            margin-left: 2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pop_bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                width: 120px;
+                height: 38px;
+                background-color: #014099;
+                border: none;
+                border-radius: 3px;
+                font-size: 16px;
+                line-height: 24px;
+                color: #fff;
+            }
+        }
+    }
+}
 // index page
 
 // 공통
