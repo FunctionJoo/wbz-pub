@@ -3755,7 +3755,7 @@
                                             }
                                         }
                                     }
-                                    label{
+                                    label {
                                         display: inline-flex;
                                         align-items: center;
                                         gap: 0.5rem;
@@ -3763,7 +3763,8 @@
                                         height: 26px;
                                         cursor: pointer;
                                         position: relative;
-                                        input{
+
+                                        input {
                                             appearance: none;
                                             position: relative;
                                             background-color: #A7A7A7;
@@ -3772,15 +3773,17 @@
                                             width: 100%;
                                             height: 100%;
                                             padding: 3px;
-                                            transition: 0.3s;
                                             margin: 0;
-                                            ~.checked_text{
+
+                                            ~.checked_text {
                                                 display: none;
                                             }
+
                                             ~.unchecked_text {
                                                 display: inline-block;
                                             }
-                                            &::before{
+
+                                            &::before {
                                                 content: "";
                                                 position: absolute;
                                                 top: 50%;
@@ -3790,22 +3793,27 @@
                                                 height: 20px;
                                                 border-radius: 50%;
                                                 background-color: #fff;
-
+                                                transition: right 150ms linear;
                                             }
-                                            &:checked{
+
+                                            &:checked {
                                                 background-color: #113462;
-                                                ~.unchecked_text{
+
+                                                ~.unchecked_text {
                                                     display: none;
                                                 }
+
                                                 ~.checked_text {
                                                     display: inline-block;
                                                 }
-                                                &::before{
-                                                    left: 3px;
+
+                                                &::before {
+                                                    right: 41px;
                                                 }
                                             }
                                         }
-                                        .checked_text{
+
+                                        .checked_text {
                                             position: absolute;
                                             font-size: 10px;
                                             line-height: 15px;
@@ -3814,7 +3822,8 @@
                                             right: 15px;
                                             transform: translateY(-50%);
                                         }
-                                        .unchecked_text{
+
+                                        .unchecked_text {
                                             position: absolute;
                                             font-size: 10px;
                                             line-height: 15px;
@@ -3824,7 +3833,7 @@
                                             transform: translateY(-50%);
                                         }
                                     }
-                                }
+
                             }
 
                         }
@@ -3961,216 +3970,217 @@
                         table{
                             display: none;
                         }
-                        .mo_table{
-                            border: 1px solid #D3D3D3;
-                            display: block;
-                            .mo_table_title{
-                                height: 50px;
-                                background-color: #F6F6F6;
-                                display: flex;
-                                border-bottom: 1px solid #D3D3D3;
-                                .th{
-                                    &:not(:last-child){
-                                        border-right: 1px solid #D3D3D3;
-                                    }
-                                    &.mo_check_th {
-                                        width: 50px;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        input{
-                                            width: 16px;
-                                            height: 16px;
-                                        }
-                                    }
-                                    &.mo_info_th {
-                                        width: calc(100% - 50px);
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                                
-                            }
-                            .mo_table_tr{
-                                padding: 13px 17px 16px 10px;
-                                .table_top{
+                        .mo_table_box{
+                            .mo_table{
+                                border: 1px solid #D3D3D3;
+                                display: block;
+                                .mo_table_title{
+                                    height: 50px;
+                                    background-color: #F6F6F6;
                                     display: flex;
-                                    justify-content: start;
-                                    align-items: center;
-                                    margin-bottom: 8px;
-                                    .premium_box{
-                                        width: 22px;
-                                        height: 22px;
-                                        margin-right: 10px;
-                                        img{
-                                            width: 100%;
-                                            height: 100%;
+                                    border-bottom: 1px solid #D3D3D3;
+                                    .th{
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
                                         }
-                                    }
-                                    .con_category{
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
-                                        span{
-                                            font-size: 14px;
-                                            line-height: 20px;
-                                            font-weight: 500;
-                                            color: #000;
-                                            em{
-                                                font-weight: 500;
-                                                color: #113462;
-                                            }
-                                        }
-                                    }
-                                }
-                                .table_middle{
-                                    margin-bottom: 25px;
-                                    .con_title{
-                                        margin-bottom: 24px;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
-                                        span{
-                                            font-size: 15px;
-                                            line-height: 22px;
-                                            color: #000;
-                                        }
-                                    }
-                                    .con_price{
-                                        .con_box{
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            &:not(:last-child){
-                                                margin-bottom: 10px;
-                                            }
-                                            span{
-                                                font-size: 13px;
-                                                line-height: 19px;
-                                            }
-                                            em{
-                                                font-size: 16px;
-                                                line-height: 20px;
-                                                font-weight: 600;
-                                            }
-                                        }
-                                    }
-                                }
-                                .table_bottom{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    .con_date{
-                                        font-size: 13px;
-                                        line-height: 16px;
-                                        color: #A7A7A7;
-                                    }
-                                    .con_right{
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-
-                                        .fix_link {
-                                            width: 64px;
-                                            height: 26px;
-                                            border: 1px solid #D3D3D3;
-                                            background-color: #fff;
-                                            border-radius: 15px;
-                                            font-size: 12px;
-                                            line-height: 18px;
-                                            margin-right: 16px;
+                                        &.mo_check_th {
+                                            width: 50px;
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
+                                            input{
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                        }
+                                        &.mo_info_th {
+                                            width: calc(100% - 50px);
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                        }
+                                    }
                                     
-                                            a {
-                                                display: block;
-                                    
-                                                &::before {
-                                                    content: "";
-                                                    margin-right: 7px;
-                                                    background-image: url(../images/mypage/mypage_pencil.svg);
-                                                    background-position: center;
-                                                    background-size: contain;
-                                                    background-repeat: no-repeat;
-                                                    display: inline-block;
-                                                    width: 11px;
-                                                    height: 11px;
+                                }
+                                .mo_table_tr{
+                                    padding: 13px 17px 16px 10px;
+                                    .table_top{
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        margin-bottom: 8px;
+                                        .premium_box{
+                                            width: 22px;
+                                            height: 22px;
+                                            margin-right: 10px;
+                                            img{
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                        .con_category{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                            span{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                font-weight: 500;
+                                                color: #000;
+                                                em{
+                                                    font-weight: 500;
+                                                    color: #113462;
                                                 }
                                             }
                                         }
-                                        label{
-                                            display: inline-flex;
+                                    }
+                                    .table_middle{
+                                        margin-bottom: 25px;
+                                        .con_title{
+                                            margin-bottom: 24px;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                            span{
+                                                font-size: 15px;
+                                                line-height: 22px;
+                                                color: #000;
+                                            }
+                                        }
+                                        .con_price{
+                                            .con_box{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                &:not(:last-child){
+                                                    margin-bottom: 10px;
+                                                }
+                                                span{
+                                                    font-size: 13px;
+                                                    line-height: 19px;
+                                                }
+                                                em{
+                                                    font-size: 16px;
+                                                    line-height: 20px;
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .table_bottom{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .con_date{
+                                            font-size: 13px;
+                                            line-height: 16px;
+                                            color: #A7A7A7;
+                                        }
+                                        .con_right{
+                                            display: flex;
+                                            justify-content: center;
                                             align-items: center;
-                                            gap: 0.5rem;
-                                            width: 64px;
-                                            height: 26px;
-                                            cursor: pointer;
-                                            position: relative;
-                                            input{
-                                                appearance: none;
-                                                position: relative;
-                                                background-color: #A7A7A7;
-                                                box-shadow: inset 0px 1px 4px #00000033;
+    
+                                            .fix_link {
+                                                width: 64px;
+                                                height: 26px;
+                                                border: 1px solid #D3D3D3;
+                                                background-color: #fff;
                                                 border-radius: 15px;
-                                                width: 100%;
-                                                height: 100%;
-                                                padding: 3px;
-                                                transition: 0.3s;
-                                                margin: 0;
-                                                ~.checked_text{
-                                                    display: none;
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                                margin-right: 16px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                        
+                                                a {
+                                                    display: block;
+                                        
+                                                    &::before {
+                                                        content: "";
+                                                        margin-right: 7px;
+                                                        background-image: url(../images/mypage/mypage_pencil.svg);
+                                                        background-position: center;
+                                                        background-size: contain;
+                                                        background-repeat: no-repeat;
+                                                        display: inline-block;
+                                                        width: 11px;
+                                                        height: 11px;
+                                                    }
                                                 }
-                                                ~.unchecked_text {
-                                                    display: inline-block;
-                                                }
-                                                &::before{
-                                                    content: "";
-                                                    position: absolute;
-                                                    top: 50%;
-                                                    transform: translateY(-50%);
-                                                    right: 3px;
-                                                    width: 20px;
-                                                    height: 20px;
-                                                    border-radius: 50%;
-                                                    background-color: #fff;
-
-                                                }
-                                                &:checked{
-                                                    background-color: #113462;
-                                                    ~.unchecked_text{
+                                            }
+                                            label{
+                                                display: inline-flex;
+                                                align-items: center;
+                                                gap: 0.5rem;
+                                                width: 64px;
+                                                height: 26px;
+                                                cursor: pointer;
+                                                position: relative;
+                                                input{
+                                                    appearance: none;
+                                                    position: relative;
+                                                    background-color: #A7A7A7;
+                                                    box-shadow: inset 0px 1px 4px #00000033;
+                                                    border-radius: 15px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    padding: 3px;
+                                                    margin: 0;
+                                                    ~.checked_text{
                                                         display: none;
                                                     }
-                                                    ~.checked_text {
+                                                    ~.unchecked_text {
                                                         display: inline-block;
                                                     }
                                                     &::before{
-                                                        left: 3px;
+                                                        content: "";
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        transform: translateY(-50%);
+                                                        right: 3px;
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        border-radius: 50%;
+                                                        background-color: #fff;
+                                                        transition: right 150ms linear;
+                                                    }
+                                                    &:checked{
+                                                        background-color: #113462;
+                                                        ~.unchecked_text{
+                                                            display: none;
+                                                        }
+                                                        ~.checked_text {
+                                                            display: inline-block;
+                                                        }
+                                                        &::before{
+                                                            right: 41px;
+                                                        }
                                                     }
                                                 }
-                                            }
-                                            .checked_text{
-                                                position: absolute;
-                                                font-size: 10px;
-                                                line-height: 15px;
-                                                color: #fff;
-                                                top: 50%;
-                                                right: 15px;
-                                                transform: translateY(-50%);
-                                            }
-                                            .unchecked_text{
-                                                position: absolute;
-                                                font-size: 10px;
-                                                line-height: 15px;
-                                                color: #fff;
-                                                top: 50%;
-                                                left: 9px;
-                                                transform: translateY(-50%);
+                                                .checked_text{
+                                                    position: absolute;
+                                                    font-size: 10px;
+                                                    line-height: 15px;
+                                                    color: #fff;
+                                                    top: 50%;
+                                                    right: 15px;
+                                                    transform: translateY(-50%);
+                                                }
+                                                .unchecked_text{
+                                                    position: absolute;
+                                                    font-size: 10px;
+                                                    line-height: 15px;
+                                                    color: #fff;
+                                                    top: 50%;
+                                                    left: 9px;
+                                                    transform: translateY(-50%);
+                                                }
                                             }
                                         }
                                     }

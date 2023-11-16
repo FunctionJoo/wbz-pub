@@ -3259,7 +3259,6 @@
   width: 100%;
   height: 100%;
   padding: 3px;
-  transition: 0.3s;
   margin: 0;
 }
 #mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input ~ .checked_text {
@@ -3278,6 +3277,7 @@
   height: 20px;
   border-radius: 50%;
   background-color: #fff;
+  transition: right 150ms linear;
 }
 #mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input:checked {
   background-color: #113462;
@@ -3289,7 +3289,7 @@
   display: inline-block;
 }
 #mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input:checked::before {
-  left: 3px;
+  right: 41px;
 }
 #mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label .checked_text {
   position: absolute;
@@ -3576,7 +3576,6 @@
     width: 100%;
     height: 100%;
     padding: 3px;
-    transition: 0.3s;
     margin: 0;
   }
   #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input ~ .checked_text {
@@ -3595,6 +3594,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: #fff;
+    transition: right 150ms linear;
   }
   #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input:checked {
     background-color: #113462;
@@ -3606,7 +3606,7 @@
     display: inline-block;
   }
   #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input:checked::before {
-    left: 3px;
+    right: 41px;
   }
   #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label .checked_text {
     position: absolute;
