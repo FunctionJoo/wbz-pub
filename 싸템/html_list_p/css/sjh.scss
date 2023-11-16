@@ -773,7 +773,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 21px;
-                        
+
                 .radio_list {
                     display: flex;
                     width: calc(100% /3);
@@ -3498,7 +3498,797 @@
 }
 
 
+// 판매등록물품
+#mypage {
+    &.items_for_sale {
+        .my_cont {
+            .pc_title {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
 
+            .main{
+                .con_top{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .post_num{
+                        span{
+                            font-size: 14px;
+                            line-height: 21px;
+                            em{
+                                font-weight: 400;
+                                color: #014099;
+                            }
+                        }
+                    }
+                    .top_right{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .view_choice{
+                            width: 70px;
+                            height: 32px;
+                            border: 1px solid #D3D3D3;
+                            border-radius: 1px;
+                            background-image: url(../images/mypage/arrow_selectBox_02.png);
+                            background-size: 12px 7px;
+                            background-repeat: no-repeat;
+                            background-position: top 50% right 10px;
+                            select {
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 15px;
+                                    padding: 0 10px;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    font-weight: 600;
+                                    border: 0; //기본 스타일 제거
+                                    -webkit-appearance: none;
+                                    /* for chrome */
+                                    -moz-appearance: none;
+                                    /*for firefox*/
+                                    appearance: none;
+                                    box-sizing: border-box; //select 박스의 크기 방식 지정.
+                                    background: transparent; //배경색 투명 처리
+                                    &::-ms-expand{
+                                        display: none;
+                                        /*for IE10,11*/
+                                    }
+                                    option{
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        font-weight: 600;
+                                    }
+                                }
+                        }
+                        .delete_button{
+                            margin-left: 10px;
+                            button{
+                                width: 64px;
+                                height: 32px;
+                                border: 1px solid #DE4040;
+                                border-radius: 1px;
+                                background-color: #fff;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #DE4040;
+                            }
+                        }
+                    }
+                }
+                .con_table{
+                    .mo_table{
+                        display: none;
+                    }
+                    table{
+                        border: 1px solid #D3D3D3;
+                        border-collapse: collapse; 
+                        border-spacing: 0;
+                        tr{
+                            &:not(:last-child){
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+                            &.premium_on{
+                                .info_td{
+                                    .top_info{
+                                        .premium_box{
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
+                            }
+                            &.table_title{
+                                th{
+                                    background-color: #F6F6F6;
+                                    height: 50px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000;
+                                    font-weight: 400;
+                                    &:not(:last-child){
+                                        border-right: 1px solid #D3D3D3;
+                                    }
+                                    &.check{
+                                        width: 40px;
+                                        input{
+                                            width: 16px;
+                                            height: 16px;
+                                        }
+                                    }
+                                    &.info{
+                                        width: 500px;
+                                    }
+                                    &.price{
+                                        width: 210px;
+                                    }
+                                    &.view{
+                                        width: 103px;
+                                    }
+                                }
+                            }
+
+                            td{
+                                &:not(:last-child){
+                                    border-right: 1px solid #D3D3D3;
+                                }
+                                &.check_td{
+                                    padding: 42px 12px;
+                                    input{
+                                        width: 16px;
+                                        height: 16px;
+                                        margin: 0;
+                                    }
+                                }
+                                &.info_td{
+                                    padding: 13px 15px 12px 10px;
+                                    .top_info{
+                                        margin-bottom: 8px;
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        .premium_box{
+                                            width: 22px;
+                                            height: 22px;
+                                            display: none;
+                                            img{
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                        .category{
+                                            margin-left: 10px;
+                                            span{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                color: #000;
+                                                font-weight: 500;
+                                                em{
+                                                    font-weight: 500;
+                                                    color: #113462;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .middle_info{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin-bottom: 9px;
+                                        .content{
+                                            span{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                color: #000;
+                                            }
+                                        }
+                                        .pay_immediately{
+                                            padding: 4px 10px;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            background-color: #EEF3F9;
+                                            color: #014099;
+                                        }
+                                    }
+                                    .bottom_info{
+                                        span{
+                                            font-size: 13px;
+                                            line-height: 16px;
+                                            color: #A7A7A7;
+                                        }
+                                    }
+                                }
+                                &.price_td{
+                                    padding: 12px 10px 12px 11px;
+                                    .con_box{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        &:first-child{
+                                            margin-bottom: 36px;
+                                        }
+                                        .title{
+                                            font-size: 13px;
+                                            line-height: 19px;
+                                        }
+                                        .con{
+                                           font-size: 14px;
+                                           line-height: 20px;
+                                           em{
+                                            font-weight: 600;
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            margin-right: 1px;
+                                           } 
+                                        }
+                                    }
+                                }
+                                &.view_id{
+                                    padding: 18px 19px 18px 20px;
+                                    .fix_link{
+                                        width: 64px;
+                                        height: 26px;
+                                        border: 1px solid #D3D3D3;
+                                        background-color: #fff;
+                                        border-radius: 15px;
+                                        font-size: 12px;
+                                        line-height: 18px;
+                                        margin-bottom: 12px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        a{
+                                            display: block;
+                                            &::before{
+                                                content: "";
+                                                margin-right: 7px;
+                                                background-image: url(../images/mypage/mypage_pencil.svg);
+                                                background-position: center;
+                                                background-size: contain;
+                                                background-repeat: no-repeat;
+                                                display: inline-block;
+                                                width: 11px;
+                                                height: 11px;
+                                            }
+                                        }
+                                    }
+                                    label{
+                                        display: inline-flex;
+                                        align-items: center;
+                                        gap: 0.5rem;
+                                        width: 64px;
+                                        height: 26px;
+                                        cursor: pointer;
+                                        position: relative;
+                                        input{
+                                            appearance: none;
+                                            position: relative;
+                                            background-color: #A7A7A7;
+                                            box-shadow: inset 0px 1px 4px #00000033;
+                                            border-radius: 15px;
+                                            width: 100%;
+                                            height: 100%;
+                                            padding: 3px;
+                                            transition: 0.3s;
+                                            margin: 0;
+                                            ~.checked_text{
+                                                display: none;
+                                            }
+                                            ~.unchecked_text {
+                                                display: inline-block;
+                                            }
+                                            &::before{
+                                                content: "";
+                                                position: absolute;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                right: 3px;
+                                                width: 20px;
+                                                height: 20px;
+                                                border-radius: 50%;
+                                                background-color: #fff;
+
+                                            }
+                                            &:checked{
+                                                background-color: #113462;
+                                                ~.unchecked_text{
+                                                    display: none;
+                                                }
+                                                ~.checked_text {
+                                                    display: inline-block;
+                                                }
+                                                &::before{
+                                                    left: 3px;
+                                                }
+                                            }
+                                        }
+                                        .checked_text{
+                                            position: absolute;
+                                            font-size: 10px;
+                                            line-height: 15px;
+                                            color: #fff;
+                                            top: 50%;
+                                            right: 15px;
+                                            transform: translateY(-50%);
+                                        }
+                                        .unchecked_text{
+                                            position: absolute;
+                                            font-size: 10px;
+                                            line-height: 15px;
+                                            color: #fff;
+                                            top: 50%;
+                                            left: 9px;
+                                            transform: translateY(-50%);
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                    .item_none{
+                        text-align: center;
+                        padding: 10px 0;
+                    }
+                }
+                // 페이지네이션
+                .mo_pagenation{
+                    display: none;
+                }
+                .pagenation {
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    ul {
+                        display: flex;
+                        margin: 0 10px;
+
+                        li {
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+
+                            &.on {
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .back_page {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .all_page {
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+
+                            &.on {
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        .one_page {
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+
+                            &.on {
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+
+                    .next_page {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .all_page {
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+
+                            &.on {
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+
+                        .one_page {
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+
+                            &.on {
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px) {
+    #mypage {
+        &.items_for_sale {
+            .my_cont {
+                .pc_title {
+                    display: none;
+                }
+                .my_title{
+                    margin-bottom: 30px !important;
+                }
+                .main{
+                    .con_table{
+                        table{
+                            display: none;
+                        }
+                        .mo_table{
+                            border: 1px solid #D3D3D3;
+                            display: block;
+                            .mo_table_title{
+                                height: 50px;
+                                background-color: #F6F6F6;
+                                display: flex;
+                                border-bottom: 1px solid #D3D3D3;
+                                .th{
+                                    &:not(:last-child){
+                                        border-right: 1px solid #D3D3D3;
+                                    }
+                                    &.mo_check_th {
+                                        width: 50px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        input{
+                                            width: 16px;
+                                            height: 16px;
+                                        }
+                                    }
+                                    &.mo_info_th {
+                                        width: calc(100% - 50px);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                    }
+                                }
+                                
+                            }
+                            .mo_table_tr{
+                                padding: 13px 17px 16px 10px;
+                                .table_top{
+                                    display: flex;
+                                    justify-content: start;
+                                    align-items: center;
+                                    margin-bottom: 8px;
+                                    .premium_box{
+                                        width: 22px;
+                                        height: 22px;
+                                        margin-right: 10px;
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .con_category{
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        word-break: break-all;
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            color: #000;
+                                            em{
+                                                font-weight: 500;
+                                                color: #113462;
+                                            }
+                                        }
+                                    }
+                                }
+                                .table_middle{
+                                    margin-bottom: 25px;
+                                    .con_title{
+                                        margin-bottom: 24px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        word-break: break-all;
+                                        span{
+                                            font-size: 15px;
+                                            line-height: 22px;
+                                            color: #000;
+                                        }
+                                    }
+                                    .con_price{
+                                        .con_box{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            &:not(:last-child){
+                                                margin-bottom: 10px;
+                                            }
+                                            span{
+                                                font-size: 13px;
+                                                line-height: 19px;
+                                            }
+                                            em{
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+                                .table_bottom{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    .con_date{
+                                        font-size: 13px;
+                                        line-height: 16px;
+                                        color: #A7A7A7;
+                                    }
+                                    .con_right{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        .fix_link {
+                                            width: 64px;
+                                            height: 26px;
+                                            border: 1px solid #D3D3D3;
+                                            background-color: #fff;
+                                            border-radius: 15px;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            margin-right: 16px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                    
+                                            a {
+                                                display: block;
+                                    
+                                                &::before {
+                                                    content: "";
+                                                    margin-right: 7px;
+                                                    background-image: url(../images/mypage/mypage_pencil.svg);
+                                                    background-position: center;
+                                                    background-size: contain;
+                                                    background-repeat: no-repeat;
+                                                    display: inline-block;
+                                                    width: 11px;
+                                                    height: 11px;
+                                                }
+                                            }
+                                        }
+                                        label{
+                                            display: inline-flex;
+                                            align-items: center;
+                                            gap: 0.5rem;
+                                            width: 64px;
+                                            height: 26px;
+                                            cursor: pointer;
+                                            position: relative;
+                                            input{
+                                                appearance: none;
+                                                position: relative;
+                                                background-color: #A7A7A7;
+                                                box-shadow: inset 0px 1px 4px #00000033;
+                                                border-radius: 15px;
+                                                width: 100%;
+                                                height: 100%;
+                                                padding: 3px;
+                                                transition: 0.3s;
+                                                margin: 0;
+                                                ~.checked_text{
+                                                    display: none;
+                                                }
+                                                ~.unchecked_text {
+                                                    display: inline-block;
+                                                }
+                                                &::before{
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    right: 3px;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    border-radius: 50%;
+                                                    background-color: #fff;
+
+                                                }
+                                                &:checked{
+                                                    background-color: #113462;
+                                                    ~.unchecked_text{
+                                                        display: none;
+                                                    }
+                                                    ~.checked_text {
+                                                        display: inline-block;
+                                                    }
+                                                    &::before{
+                                                        left: 3px;
+                                                    }
+                                                }
+                                            }
+                                            .checked_text{
+                                                position: absolute;
+                                                font-size: 10px;
+                                                line-height: 15px;
+                                                color: #fff;
+                                                top: 50%;
+                                                right: 15px;
+                                                transform: translateY(-50%);
+                                            }
+                                            .unchecked_text{
+                                                position: absolute;
+                                                font-size: 10px;
+                                                line-height: 15px;
+                                                color: #fff;
+                                                top: 50%;
+                                                left: 9px;
+                                                transform: translateY(-50%);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pagenation{
+                        display: none;
+                    }
+                    .mo_pagenation{
+                        margin-top: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                
+                        ul {
+                            display: flex;
+                            margin: 0 10px;
+                
+                            li {
+                                font-size: 14px;
+                                line-height: 19px;
+                                width: 24px;
+                                height: 24px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                
+                                &.on {
+                                    background-color: #666666;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                
+                        .back_page {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                
+                            .all_page {
+                                background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 6px;
+                                cursor: pointer;
+                
+                                &.on {
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(180deg);
+                                }
+                            }
+                
+                            .one_page {
+                                background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                cursor: pointer;
+                
+                                &.on {
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                
+                        .next_page {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                
+                            .all_page {
+                                background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                transform: rotate(180deg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                cursor: pointer;
+                
+                                &.on {
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(0deg);
+                                }
+                            }
+                
+                            .one_page {
+                                background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                transform: rotate(180deg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 6px;
+                                cursor: pointer;
+                
+                                &.on {
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(0deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

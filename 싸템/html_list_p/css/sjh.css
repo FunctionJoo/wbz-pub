@@ -3004,6 +3004,722 @@
     width: 157px;
   }
 }
+#mypage.items_for_sale .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+#mypage.items_for_sale .my_cont .main .con_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#mypage.items_for_sale .my_cont .main .con_top .post_num span {
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.items_for_sale .my_cont .main .con_top .post_num span em {
+  font-weight: 400;
+  color: #014099;
+}
+#mypage.items_for_sale .my_cont .main .con_top .top_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice {
+  width: 70px;
+  height: 32px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+  background-image: url(../images/mypage/arrow_selectBox_02.png);
+  background-size: 12px 7px;
+  background-repeat: no-repeat;
+  background-position: top 50% right 10px;
+}
+#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice select {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  border: 0;
+  -webkit-appearance: none;
+  /* for chrome */
+  -moz-appearance: none;
+  /*for firefox*/
+  appearance: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice select::-ms-expand {
+  display: none;
+  /*for IE10,11*/
+}
+#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice select option {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+}
+#mypage.items_for_sale .my_cont .main .con_top .top_right .delete_button {
+  margin-left: 10px;
+}
+#mypage.items_for_sale .my_cont .main .con_top .top_right .delete_button button {
+  width: 64px;
+  height: 32px;
+  border: 1px solid #DE4040;
+  border-radius: 1px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DE4040;
+}
+#mypage.items_for_sale .my_cont .main .con_table .mo_table {
+  display: none;
+}
+#mypage.items_for_sale .my_cont .main .con_table table {
+  border: 1px solid #D3D3D3;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.premium_on .info_td .top_info .premium_box {
+  display: inline-block;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.table_title th {
+  background-color: #F6F6F6;
+  height: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.table_title th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.table_title th.check {
+  width: 40px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.table_title th.check input {
+  width: 16px;
+  height: 16px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.table_title th.info {
+  width: 500px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.table_title th.price {
+  width: 210px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr.table_title th.view {
+  width: 103px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.check_td {
+  padding: 42px 12px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.check_td input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td {
+  padding: 13px 15px 12px 10px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .top_info {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .top_info .premium_box {
+  width: 22px;
+  height: 22px;
+  display: none;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .top_info .premium_box img {
+  width: 100%;
+  height: 100%;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .top_info .category {
+  margin-left: 10px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .top_info .category span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 500;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .top_info .category span em {
+  font-weight: 500;
+  color: #113462;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .middle_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .middle_info .content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .middle_info .pay_immediately {
+  padding: 4px 10px;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #EEF3F9;
+  color: #014099;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.info_td .bottom_info span {
+  font-size: 13px;
+  line-height: 16px;
+  color: #A7A7A7;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.price_td {
+  padding: 12px 10px 12px 11px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.price_td .con_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.price_td .con_box:first-child {
+  margin-bottom: 36px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.price_td .con_box .title {
+  font-size: 13px;
+  line-height: 19px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.price_td .con_box .con {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.price_td .con_box .con em {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 1px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id {
+  padding: 18px 19px 18px 20px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id .fix_link {
+  width: 64px;
+  height: 26px;
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id .fix_link a {
+  display: block;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id .fix_link a::before {
+  content: "";
+  margin-right: 7px;
+  background-image: url(../images/mypage/mypage_pencil.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 64px;
+  height: 26px;
+  cursor: pointer;
+  position: relative;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  background-color: #A7A7A7;
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  transition: 0.3s;
+  margin: 0;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input ~ .checked_text {
+  display: none;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input ~ .unchecked_text {
+  display: inline-block;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input:checked {
+  background-color: #113462;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input:checked ~ .unchecked_text {
+  display: none;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input:checked ~ .checked_text {
+  display: inline-block;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label input:checked::before {
+  left: 3px;
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label .checked_text {
+  position: absolute;
+  font-size: 10px;
+  line-height: 15px;
+  color: #fff;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+#mypage.items_for_sale .my_cont .main .con_table table tr td.view_id label .unchecked_text {
+  position: absolute;
+  font-size: 10px;
+  line-height: 15px;
+  color: #fff;
+  top: 50%;
+  left: 9px;
+  transform: translateY(-50%);
+}
+#mypage.items_for_sale .my_cont .main .con_table .item_none {
+  text-align: center;
+  padding: 10px 0;
+}
+#mypage.items_for_sale .my_cont .main .mo_pagenation {
+  display: none;
+}
+#mypage.items_for_sale .my_cont .main .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.items_for_sale .my_cont .main .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.items_for_sale .my_cont .main .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.items_for_sale .my_cont .main .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.items_for_sale .my_cont .main .pagenation .back_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.items_for_sale .my_cont .main .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.items_for_sale .my_cont .main .pagenation .back_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.items_for_sale .my_cont .main .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.items_for_sale .my_cont .main .pagenation .next_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.items_for_sale .my_cont .main .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.items_for_sale .my_cont .main .pagenation .next_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1080px) {
+  #mypage.items_for_sale .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.items_for_sale .my_cont .my_title {
+    margin-bottom: 30px !important;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table table {
+    display: none;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table {
+    border: 1px solid #D3D3D3;
+    display: block;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_title {
+    height: 50px;
+    background-color: #F6F6F6;
+    display: flex;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_title .th:not(:last-child) {
+    border-right: 1px solid #D3D3D3;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_title .th.mo_check_th {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_title .th.mo_check_th input {
+    width: 16px;
+    height: 16px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_title .th.mo_info_th {
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr {
+    padding: 13px 17px 16px 10px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_top .premium_box {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_top .premium_box img {
+    width: 100%;
+    height: 100%;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_top .con_category {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_top .con_category span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_top .con_category span em {
+    font-weight: 500;
+    color: #113462;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_middle {
+    margin-bottom: 25px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_middle .con_title {
+    margin-bottom: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_middle .con_title span {
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_middle .con_price .con_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_middle .con_price .con_box:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_middle .con_price .con_box span {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_middle .con_price .con_box em {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_date {
+    font-size: 13px;
+    line-height: 16px;
+    color: #A7A7A7;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right .fix_link {
+    width: 64px;
+    height: 26px;
+    border: 1px solid #D3D3D3;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right .fix_link a {
+    display: block;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right .fix_link a::before {
+    content: "";
+    margin-right: 7px;
+    background-image: url(../images/mypage/mypage_pencil.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 64px;
+    height: 26px;
+    cursor: pointer;
+    position: relative;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: relative;
+    background-color: #A7A7A7;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    transition: 0.3s;
+    margin: 0;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input ~ .checked_text {
+    display: none;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input ~ .unchecked_text {
+    display: inline-block;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input:checked {
+    background-color: #113462;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input:checked ~ .unchecked_text {
+    display: none;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input:checked ~ .checked_text {
+    display: inline-block;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label input:checked::before {
+    left: 3px;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label .checked_text {
+    position: absolute;
+    font-size: 10px;
+    line-height: 15px;
+    color: #fff;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+  #mypage.items_for_sale .my_cont .main .con_table .mo_table .mo_table_tr .table_bottom .con_right label .unchecked_text {
+    position: absolute;
+    font-size: 10px;
+    line-height: 15px;
+    color: #fff;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+  }
+  #mypage.items_for_sale .my_cont .main .pagenation {
+    display: none;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation ul {
+    display: flex;
+    margin: 0 10px;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation ul li {
+    font-size: 14px;
+    line-height: 19px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation ul li.on {
+    background-color: #666666;
+    color: #fff;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .back_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .back_page .all_page {
+    background-image: url(../images/mypage/table_arrow_off_end.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .back_page .all_page.on {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .back_page .one_page {
+    background-image: url(../images/mypage/table_arrow_off_next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .back_page .one_page.on {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .next_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .next_page .all_page {
+    background-image: url(../images/mypage/table_arrow_off_end.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .next_page .all_page.on {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .next_page .one_page {
+    background-image: url(../images/mypage/table_arrow_off_next.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  #mypage.items_for_sale .my_cont .main .mo_pagenation .next_page .one_page.on {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
+  }
+}
 #mypage.mile_charge .my_cont .pc_title {
   font-size: 20px;
   line-height: 29px;
