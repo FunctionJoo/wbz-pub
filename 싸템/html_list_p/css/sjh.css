@@ -278,23 +278,34 @@
 }
 #card_popup .popup_main .pop_middle .con_radioBox {
   background-color: #F6F6F6;
-  padding: 23px 20px 23px 15px;
+  padding: 22px 20px 2px 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  flex-wrap: wrap;
   margin-bottom: 21px;
 }
-#card_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list:not(:last-child) {
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list {
+  display: flex;
+  width: 33.3333333333%;
   margin-bottom: 20px;
 }
-#card_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list label {
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+0) {
+  justify-content: end;
+}
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+1) {
+  justify-content: start;
+}
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+2) {
+  justify-content: center;
+}
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list label {
   display: flex;
   align-items: center;
+  width: 104px;
 }
-#card_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list input {
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list input {
   display: none;
 }
-#card_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list input + label::before {
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list input + label::before {
   content: "";
   box-shadow: 0 0 0 1px #b1b1b1 inset;
   background-color: #fff;
@@ -304,7 +315,7 @@
   display: inline-block;
   margin-right: 6px;
 }
-#card_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list input:checked + label::before {
+#card_popup .popup_main .pop_middle .con_radioBox .radio_list input:checked + label::before {
   background-image: url(../images/mypage/radio_button.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -470,23 +481,34 @@
 }
 #tcash_popup .popup_main .pop_middle .con_radioBox {
   background-color: #F6F6F6;
-  padding: 23px 20px 23px 15px;
+  padding: 22px 20px 2px 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list {
+  display: flex;
+  width: 33.3333333333%;
   margin-bottom: 20px;
 }
-#tcash_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list:not(:last-child) {
-  margin-bottom: 20px;
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+0) {
+  justify-content: end;
 }
-#tcash_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list label {
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+1) {
+  justify-content: start;
+}
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+2) {
+  justify-content: center;
+}
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list label {
   display: flex;
   align-items: center;
+  width: 104px;
 }
-#tcash_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list input {
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list input {
   display: none;
 }
-#tcash_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list input + label::before {
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list input + label::before {
   content: "";
   box-shadow: 0 0 0 1px #b1b1b1 inset;
   background-color: #fff;
@@ -496,7 +518,7 @@
   display: inline-block;
   margin-right: 6px;
 }
-#tcash_popup .popup_main .pop_middle .con_radioBox .radio_box .radio_list input:checked + label::before {
+#tcash_popup .popup_main .pop_middle .con_radioBox .radio_list input:checked + label::before {
   background-image: url(../images/mypage/radio_button.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -680,23 +702,34 @@
 }
 #curture_land .popup_main .pop_middle .con_radioBox {
   background-color: #F6F6F6;
-  padding: 23px 20px 23px 15px;
+  padding: 22px 20px 2px 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  flex-wrap: wrap;
   margin-bottom: 21px;
 }
-#curture_land .popup_main .pop_middle .con_radioBox .radio_box .radio_list:not(:last-child) {
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list {
+  display: flex;
+  width: 33.3333333333%;
   margin-bottom: 20px;
 }
-#curture_land .popup_main .pop_middle .con_radioBox .radio_box .radio_list label {
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+0) {
+  justify-content: end;
+}
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+1) {
+  justify-content: start;
+}
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list:nth-child(3n+2) {
+  justify-content: center;
+}
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list label {
   display: flex;
   align-items: center;
+  width: 104px;
 }
-#curture_land .popup_main .pop_middle .con_radioBox .radio_box .radio_list input {
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list input {
   display: none;
 }
-#curture_land .popup_main .pop_middle .con_radioBox .radio_box .radio_list input + label::before {
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list input + label::before {
   content: "";
   box-shadow: 0 0 0 1px #b1b1b1 inset;
   background-color: #fff;
@@ -706,7 +739,7 @@
   display: inline-block;
   margin-right: 6px;
 }
-#curture_land .popup_main .pop_middle .con_radioBox .radio_box .radio_list input:checked + label::before {
+#curture_land .popup_main .pop_middle .con_radioBox .radio_list input:checked + label::before {
   background-image: url(../images/mypage/radio_button.svg);
   background-repeat: no-repeat;
   background-size: contain;
