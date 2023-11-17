@@ -20,13 +20,13 @@
 .main_visual .swiper_control .swiper-pagination{position: static; margin-right: 33px;}
 .main_visual .swiper_control .swiper-pagination-bullet{width: 45px; height: 4px; border-radius: 0; border: 1px solid #fff; background: transparent; opacity: 1; margin-right: 10px; vertical-align: middle;}
 .main_visual .swiper_control .swiper-pagination-bullet-active{background: #fff;}
-.main_visual .link_control{position: absolute; left: 0; right: 0; bottom: 0; background: rgba(34, 177, 124, 0.44); z-index: 10;}
+.main_visual .link_control{position: absolute; left: 0; right: 0; bottom: 0; background: rgba(40, 65, 20, 0.70);; z-index: 10;} /* 20231117 웹접근성 */
 .main_visual .link_control ul{max-width: 1400px; min-width: 1105px; width: 73%; margin: 0 auto; font-size: 0;}
 .main_visual .link_control ul li{display: inline-block; vertical-align: top; width: 20%;}
-.main_visual .link_control ul li a{display: block; height: 80px; padding: 30px 0; font-size: 20px; color: #fff; text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.44); transition: all .2s;}
+.main_visual .link_control ul li a{display: block; height: 80px; padding: 30px 0; font-size: 20px; color: #fff; text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.44); transition: all .2s; background-color:  rgba(40, 65, 20, 0.70);} /* 20231117 웹접근성 */
 .main_visual .link_control ul li:last-child a{border-right: 1px solid rgba(255, 255, 255, 0.44); }
-.main_visual .link_control ul li:hover a{background: transparent linear-gradient(82deg, rgba(40, 65, 20, 0.70) 0%, rgba(82, 170, 110, 0.66) 100%) 0% 0% no-repeat padding-box; border-color: transparent; font-weight: 600;}
-.main_visual .link_control ul li.on a{background: transparent linear-gradient(82deg, rgbargba(40, 65, 20, 0.70) 0%, rgba(82, 170, 110, 0.66) 100%) 0% 0% no-repeat padding-box; border-color: transparent; font-weight: 600;}
+/* .main_visual .link_control ul li:hover a{background: transparent linear-gradient(82deg, rgba(40, 65, 20, 0.70) 0%, rgba(82, 170, 110, 0.66) 100%) 0% 0% no-repeat padding-box; border-color: transparent; font-weight: 600;}
+.main_visual .link_control ul li.on a{background: transparent linear-gradient(82deg, rgbargba(40, 65, 20, 0.70) 0%, rgba(82, 170, 110, 0.66) 100%) 0% 0% no-repeat padding-box; border-color: transparent; font-weight: 600;} */
 
 /* ê²Œì‹œíŒ, ê°€ì´ë“œ */
 .main .inner{max-width: 1400px; margin: 0 auto; padding: 160px 0; display: flex; justify-content: space-between;}

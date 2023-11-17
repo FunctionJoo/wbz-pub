@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<!-- 헤더 영역 -->
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="환경책임투자 종합플랫폼, 녹색분류체계, 환경성 평가, 환경정보공개, 녹색채권, 환경개선 기여도, 사후보고, 녹색금융, 환경책임투자, 종합플랫폼, ESG">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="환경책임투자 종합플랫폼">
+    <meta property="og:description"
+        content="환경책임투자 종합플랫폼, 녹색분류체계, 환경성 평가, 환경정보공개, 녹색채권, 환경개선 기여도, 사후보고, 녹색금융, 환경책임투자, 종합플랫폼, ESG">
+    <meta property="og:image" content="https://www.gmi.go.kr:443/images/common/logo.png">
+    <meta property="og:url" content="https://www.gmi.go.kr:443">
+    <meta name="naver-site-verification" content="992f24b6744d15d95ab284908d252cb09976a6d1" />
+    <link rel="canonical" href="https://www.gmi.go.kr:443/mainPage.do">
+    <title> 환경책임투자 종합플랫폼</title>
+    <link rel="shortcut icon" href="/images/common/favicon.ico">
+
+    <link rel="stylesheet" href="/css/general.css?v=20231110">
+    <link rel="stylesheet" href="/css/swiper.min.css?v=20231004">
+    <link rel="stylesheet" href="/css/swiper.css?v=20231004">
+    <script src="/js/jquery-1.12.4.min.js?v=20231004"></script>
+    <script src="/js/jquery-ui.js?v=20231004"></script>
+    <script src="/js/layout.js?v=20231004"></script>
+    <script src="/js/swiper-bundle.min.js?v=20231004"></script>
+    <script type="text/javascript" src="/js/jquery.bxslider.min.js?v=20231004"></script>
+
+
+    <script type="text/javascript" src="/js/portal/portalCmmJS.js?v=20231004"></script>
+    <script type="text/javascript" src="/js/EgovMultiFile.js?v=20231004"></script>
+    <script type="text/javascript" src="/js/commons.js?v=20231004"></script>
+
+    <script language="JavaScript">
+        function fn_wisenut_search() {
+            //alert(0);
+            var queryStr = $("#queryStr").val();
+            if ("" == query) {
+                alert("검색어를 입력하세요.");
+                return;
+            } else {
+                var encodeQuery = encodeURIComponent(queryStr);
+                var decodeQuery = decodeURIComponent(encodeQuery);
+                $("#query").val(encodeQuery);
+                document.searchFrm.action = "/cmm/wisenutSearch.do";
+                document.searchFrm.submit();
+            }
+        }
+
+
+        // 최초 설정 시간(기본 : 초)
+        var SetTime = 3600;
+        function msg_time() {
+            // 남은 시간 계산
+            m = Math.floor(SetTime / 60) + "분 " + (SetTime % 60) + "초";
+
+            var msg = "남은 시간은 <font color='red'>" + m + "</font> 입니다.";
+
+            // div 영역에 표시
+            document.all.ViewTimer.innerHTML = msg;
+
+            // 1초씩 감소
+            SetTime--;
+
+            if (SetTime == 300) {
+                // 				if (confirm("로그인 세션유효시간이 5분 남았습니다.\n5분뒤 자동 로그아웃 됩니다.\n세션유효시간을 초기화 하시겠습니까?")) {
+                // 					SetTime=3600;
+                // 				}
+                fn_loginTimeChk();
+            }
+
+            // 시간종료
+            if (SetTime < 0) {
+                // 타이머 해제
+                clearInterval(tid);
+                alert("세션 유효기간이 초과되어 자동 로그아웃 되었습니다.");
+                location.href = "/login/logout.do";
+            }
+        }
+
+
+        window.onload = function TimerStart() { tid = setInterval('msg_time()', 1000) };
+
+
+        function timeReset() {
+            SetTime = 3600;
+            msg_time();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrap" class="sub">
+        <!-- New Header -->
+        <header id="header" class="header sub"><!-- 서브 페이지 header에는 sub 클래스 추가-->
+            <!-- wrap -->
+            <h1 class="logo">
+                <a href="/">환경책임투자 종합플랫폼</a>
+            </h1>
+            <nav class="nav">
+                <ul class="depth1">
+                    <li>
+                        <a href="/er/intro.do">종합플랫폼 소개</a>
+                        <div class="sub_menu">
+                            <div class="sub_bg">
+                                <span class="tit">종합플랫폼 소개</span>
+                            </div>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="/er/intro.do" class="sub_tit">종합플랫폼이란?</a>
+                                </li>
+                                <li>
+                                    <a href="/er/prtnBizIntro.do" class="sub_tit">추진사업소개</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/gc/intro.do">환경책임투자</a>
+                        <div class="sub_menu">
+                            <div class="sub_bg">
+                                <span class="tit">환경책임투자</span>
+                            </div>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="/gc/intro.do" class="sub_tit">녹색분류체계</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/gc/intro.do">녹색분류체계란?</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gc/gcGuideLine.do">가이드라인</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gb/engGuideLine.do?menuCd=2120">가이드라인(영문)</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gc/gcGuideLine.do?menuCd=2100">해설서</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gc/gcGuideLine.do?menuCd=2110">적합성판단 참고서</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=2090&seCd=2">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=2080">문의 및 의견제시</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/gb/intro.do" class="sub_tit">녹색채권</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/gb/intro.do">녹색채권이란?</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gb/pblcnSttusList.do">녹색채권 발행현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gb/pblcnSttusOverseasStatsAnlss.do">녹색채권 발행통계분석(국내)</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gb/pblcnSttusOverseasList.do">녹색채권 발행통계분석(해외)</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gb/guideLine.do">가이드라인</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gb/guideLine.do?menuCd=3080">시범사업 결과보고서</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gb/relCtrt.do">외부검토기관 등록</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=3070&seCd=1">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=3060">문의 및 의견제시</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/gb/receipt.do?menuCd=3090">이차보전 지원사업 접수</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/ee/dfn.do" class="sub_tit">환경성평가체계</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/ee/dfn.do">환경성 평가체계란?</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ee/bsicCmpsg.do">평가체계 기본 구성</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=5090&seCd=4">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ee/ahomDgnss.do">자가진단</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ee/eeGuideLine.do">가이드라인</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=5080">문의 및 의견제시</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/ei/systemSumry.do" class="sub_tit">환경정보공개</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/ei/systemSumry.do">환경정보공개란?</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ei/etcData.do">환경정보공개보고서</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ei/prtnSttus.do">국내외 환경정보공개 현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ei/grnInfo.do">환경통계</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=4070&seCd=3">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=4060">문의 및 의견제시</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ei/receipt.do?menuCd=4080">선공개 등록지원 접수하기</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/em/esgConsultIntro.do">환경경영</a>
+                        <div class="sub_menu">
+                            <div class="sub_bg">
+                                <span class="tit">환경경영</span>
+                            </div>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="/em/esgConsultIntro.do" class="sub_tit">ESG컨실팅 지원</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/em/esgConsultIntro.do">친환경경영(ESG) 컨설팅 지원사업 소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="/em/envSafety.do">통합환경안전관리시스템</a>
+                                        </li>
+                                        <li>
+                                            <a href="/em/bestExam.do">우수사례소개</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/em/intro.do" class="sub_tit">녹색기업</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/em/intro.do">녹색기업의 정의</a>
+                                        </li>
+                                        <li>
+                                            <a href="/em/apntProcss.do">지정절차</a>
+                                        </li>
+                                        <li>
+                                            <a href="/em/apntSttus.do">지정현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=8120">문의 및 의견제시</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/ht/practiceProcedure.do">ESG인력양성</a>
+                        <div class="sub_menu">
+                            <div class="sub_bg">
+                                <span class="tit">ESG인력양성</span>
+                            </div>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="/ht/practiceProcedureIntro.do" class="sub_tit">ESG인력양성 사업소개</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/ht/practiceProcedureIntro.do">실무자 과정 소개 및 수강신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ht/expertProcedureIntro.do">전문가 과정 소개 및 수강신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="/ht/eminenceProcedureIntro.do">고위급 과정 소개 및 수강신청</a>
+                                        </li>
+                                        <!-- 										<li> -->
+                                        <!-- 											<a href="/em/esgExperts.do">ESG글로벌 워크숍</a> -->
+                                        <!-- 										</li> -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/ht/esgGlobalWorkshopIntro.do" class="sub_tit">ESG글로벌 워크숍</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/ht/esgGlobalWorkshopIntro.do">ESG글로벌 워크숍</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/gf/intro.do">행사/알림</a>
+                        <div class="sub_menu">
+                            <div class="sub_bg">
+                                <span class="tit">행사/알림</span>
+                            </div>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="/gf/intro.do" class="sub_tit">녹색금융 시상식</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="/gf/intro.do">시상식소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gf/wnpzRlmCrtr.do">수상분야 및 기준</a>
+                                        </li>
+                                        <li>
+                                            <a href="/np/boardList.do?menuCd=7030">수상기업 소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gf/receipt.do?menuCd=7040">접수하기</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/np/boardList.do?menuCd=9010" class="sub_tit"
+                                        style="width: 200px;">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="/np/boardList.do?menuCd=9020" class="sub_tit"
+                                        style="width: 200px;">동향뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="/np/boardList.do?menuCd=9030" class="sub_tit" style="width: 200px;">외부
+                                        행사소식</a>
+                                </li>
+                                <li>
+                                    <a href="/np/boardList.do?menuCd=9040" class="sub_tit" style="width: 200px;">각종
+                                        보고서</a>
+                                </li>
+                                <li>
+                                    <a href="/np/boardList.do?menuCd=9080" class="sub_tit" style="width: 200px;">ESG ON
+                                        세미나</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="icon-box">
+                <!-- 
+				 2023-06-26 통합검색 프리픽스 JJH START
+				 -->
+                <form id="searchFrm" name="searchFrm" class="srch_area">
+                    <input class="input_bg" type="hidden" id="query" name="query" title="검색어 입력창"
+                        placeholder="검색어를 입력하세요 ">
+                    <input class="input_bg" type="text" id="queryStr" name="queryStr" title="검색어 입력창"
+                        placeholder="검색어를 입력하세요 ">
+                    <button class="btn_srch" onclick="javascript:fn_wisenut_search();">검색 버튼</button>
+                </form>
+                <!--
+				2023-06-26 통합검색 프리픽스 JJH END
+				 -->
+                <div class="util">
+                    <ul>
+
+
+                        <li class="time">
+                            <a href="#" id="ViewTimer" class="link"></a>
+                            <!-- 							<a href="#" class="link">남은 시간은 <em>00분 00초</em> 입니다.</a> -->
+                        </li>
+                        <li>
+                            <a href="javascript:timeReset();" class="link">시간연장</a>
+                            <!-- 							<a href="#modal_pop" class="link open_pop">시간연장</a> -->
+                        </li>
+                        <li>
+                            <a href="/login/logout.do" class="link">로그아웃</a>
+                        </li>
+                        <li>
+                            <a href="/my/passwordConfirm.do" class="link">마이페이지</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- // New Header -->
+        <link type="text/css" rel="stylesheet" href="/css/jquery-ui.css?v=202212280736">
+        <!-- // 헤더 영역 -->
+        <!-- container -->
+        <div id="container">
+
+            <!-- submenu -->
+
+
+
+
+
+
+            <div id="aside">
+                <div class="lnb_tit">
+                    <h2>환경책임투자</h2>
+                </div>
+                <ul class="lnb">
+                    <li class="on"> <!-- 해당 페이지 표시 on class 추가 -->
+                        <a href="#">ESG인력양성<i class="ico_toggle"></i></a>
+                        <ul class="lnb_depth2" style="display: block;"> <!-- 해당 페이지 표시 display:block; 추가 -->
+                            <li class="on">
+                                <a href="/ht/practiceProcedureIntro.do">실무자 과정 소개 및 수강신청</a>
+                            </li>
+                            <li>
+                                <a href="/ht/expertProcedureIntro.do">전문가 과정소개 및 수강신청</a>
+                            </li>
+                            <li>
+                                <a href="/ht/eminenceProcedureIntro.do">고위급 과정소개 및 수강신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <!-- 해당 페이지 표시 on class 추가 -->
+                        <a href="#">ESG글로벌 워크숍<i class="ico_toggle"></i></a>
+                        <ul class="lnb_depth2"> <!-- 해당 페이지 표시 display:block; 추가 -->
+                            <li>
+                                <a href="/ht/esgGlobalWorkshopIntro.do">ESG 글로벌 교육 워크숍</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- //submenu -->
+
+            <!-- ############################################## contents S ############################################## -->
+            <div id="contents">
+
+
+
+
+
+
+
+                <div class="title_area">
+                    <div class="location">
+                        <a href="/" class="ico_home">홈</a>
+
+
+                        &gt; <a href="/ht/practiceProcedureIntro.do">실무자 과정 소개 및 수강신청</a>
+
+
+                    </div>
+
+                    <h3 id="contentSubject">
+                    </h3>
+                </div>
+
+
+
+                <div id="receipt"> <!-- receipt - 시작 -->
+                    <form name="frm" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="rcptSe" id="rcptSe" value="1" />
+                        <input type="hidden" name="mblTelno" id="mblTelno" value="" />
+                        <input type="hidden" name="eml" id="eml" value="" />
+                        <!-- 회차 -->
+                        <input type="hidden" name="tme" id="tme" value="4" />
+                        <!-- 개인정보 동의 여부 -->
+                        <input type="hidden" name="checkUserInfo" id="checkUserInfo" />
+
+                        <h4 style="font-size: 25px; text-align: center; margin-top: 15px;">2023년 제4회 ESG 규제대응을 위한 실무교육
+                            수강신청</h4>
+
+                        <h4 class="section_title">수강신청</h4>
+
+                        <h2 class="section_title"
+                            style="position: unset; margin-bottom: 10px; font-size: 18px; margin-top: 15px;">· 접수과정 정보
+                        </h2>
+                        <table class="tbl_write">
+                            <caption>· 접수과정 정보</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">교육과정</th>
+                                    <td>
+                                        <p>ESG 규제대응을 위한 실무교육</p>
+                                    </td>
+                                    <th scope="row">교육장소</th>
+                                    <td>
+                                        <p>삼성DT센터 1강의장(지하1층)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">교육기간</th>
+                                    <td>
+                                        <p>2023.10.16.(월)~20.(금)</p>
+                                    </td>
+                                    <th scope="row">문의처</th>
+                                    <td>
+                                        <p>교육운영 담당자 02-2284-1976, 1963</p>
+                                        <p>실무교육 운영 사무국 02-6240-4732~4</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 class="section_title" style="position: unset; margin-bottom: 10px; font-size: 18px;">· 신청구분
+                        </h2>
+                        <table class="tbl_write">
+                            <caption>· 신청구분</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">신청구분</th>
+                                    <td colspan="3">
+                                        <label for="aplySe" class="blind">재직자 수강신청</label> <!-- 202311 웹접근성 -->
+                                        <input type="radio" class="intype" title="신청구분" id="aplySe" name="aplySe"
+                                            required="Y" hname="신청구분" value="1" checked="checked"
+                                            onclick="javascript:incumbentApplication();">
+                                        <p style="display: inline-block; margin-top: 4px;"> 재직자 수강신청</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <label for="aplySe" class="blind">개인자격 수강신청</label> <!-- 202311 웹접근성 -->
+                                        <input type="radio" class="intype" title="신청구분" id="aplySe" name="aplySe"
+                                            required="Y" hname="신청구분" value="2"
+                                            onclick="javascript:individualApplication();">
+                                        <p style="display: inline-block; margin-top: 4px;"> 개인자격 수강신청</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 class="section_title" style="position: unset; margin-bottom: 10px; font-size: 18px;">·
+                            온/오프라인 교육</h2>
+                        <table class="tbl_write">
+                            <caption>· 온·오프라인 교육</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <input type="hidden" id="offlineEdu" name="offlineEdu" value="Y">
+                                        <input type="hidden" id="onlineEdu" name="onlineEdu" value="N">
+
+                                        <input type="radio" class="intype" title="대면교육" id="offlineEduTemp"
+                                            name="onOfflineEdu" hname="대면교육" value="Y" checked="checked">
+                                        <p style="display: inline-block; margin-top: 4px;">대면교육</p><br>
+                                        <input type="radio" class="intype" title="온라인교육" id="onlineEduTemp"
+                                            name="onOfflineEdu" hname="온라인교육" value="Y">
+                                        <p style="display: inline-block; margin-top: 4px;">온라인 실시간 Zoom 교육</p><br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 class="section_title" style="position: unset; margin-bottom: 10px; font-size: 18px;">· 수강을
+                            희망하는 교육 모듈</h2>
+                        <table class="tbl_write">
+                            <caption>· 신청구분</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <input type="checkbox" class="intype" title="수강을 희망하는 교육 모듈" id="aplyMdlAll"
+                                            name="aplyMdlAll" hname="수강을 희망하는 교육 모듈">
+                                        <p style="display: inline-block; margin-top: 4px;">전체</p><br>
+                                        <input type="checkbox" class="intype" title="모듈1" id="aplyMdl1" name="aplyMdl1"
+                                            hname="모듈1" value="Y">
+                                        <p style="display: inline-block; margin-top: 4px;">[모듈1] 10.16.~18. : ESG 정보공시,
+                                            평가대응, 공급망 ESG 리스크 관리 및 제품기반 규제대응</p><br>
+                                        <input type="checkbox" class="intype" title="모듈2" id="aplyMdl2" name="aplyMdl2"
+                                            hname="모듈2" value="Y">
+                                        <p style="display: inline-block; margin-top: 4px;">[모듈2] 10.19.~20. : 글로벌 탄소중립
+                                            규제동향, 주요 이슈 및 LCA 이해</p><br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="enterpriseInfo" style="margin-top: 25px;">
+                            <h2 class="section_title" style="position: unset; margin-bottom: 10px; font-size: 18px;">·
+                                재직중 기업 정보</h2>
+                            <table class="tbl_write">
+                                <caption>· 재직중 기업 정보</caption>
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:8%">
+                                    <col style="width:42%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><em>*</em>기업명</th>
+                                        <td>
+                                            <input type="text" class="intype" title="기업명" id="entNm" name="entNm"
+                                                hname="기업명" style="width: 80%;">
+                                        </td>
+                                        <th scope="row"><em>*</em>주소</th>
+                                        <td>
+                                            <input type="hidden" class="intype" title="교육분야" id="zip" name="zip"
+                                                hname="주소" style="width: 80%;">
+                                            <input type="text" class="intype" title="교육분야" id="addr" name="addr"
+                                                hname="주소" style="width: 80%;" readonly="readonly">
+                                            <a class="btn_addr" href="javascript:goHomeAddrPopup(); " title="새창으로 열기">주소찾기</a> <!-- 202311 웹접근성 -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><em>*</em>우선선정 업종 해당여부</th>
+                                        <td>
+                                            <input type="radio" class="intype" title="우선순위 업종 해당여부" id="priortIndutyYn"
+                                                name="priortIndutyYn" hname="우선순위 업종 해당여부" value="Y" checked="checked">
+                                            <p style="display: inline-block; margin-top: 4px;"> 예</p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="radio" class="intype" title="우선순위 업종 해당여부" id="priortIndutyYn"
+                                                name="priortIndutyYn" value="N" hname="우선순위 업종 해당여부">
+                                            <p style="display: inline-block; margin-top: 4px;"> 아니요</p>
+                                        </td>
+                                        <th scope="row"><em>*</em>업종</th>
+                                        <td>
+                                            <select class="seltype" title="업종" style="width:30%;" id="indutyNmSelectBox"
+                                                hname="업종">
+                                                <option value="반도체" selected="selected">반도체</option>
+                                                <option value="자동차 부품">자동차 부품</option>
+                                                <option value="정밀화학 원료">정밀화학 원료</option>
+                                                <option value="합성수지">합성수지</option>
+                                                <option value="기구부품">기구부품</option>
+                                                <option value="철강판">철강판</option>
+                                                <option value="고무제품">고무제품</option>
+                                                <option value="무선통신기기">무선통신기기</option>
+                                                <option value="철강관 및 철강선">철강관 및 철강선</option>
+                                                <option value="반도체 제조용장비">반도체 제조용장비</option>
+                                                <option value="플라스틱">플라스틱</option>
+                                                <option value="화장품">화장품</option>
+                                                <option value="의약품">의약품</option>
+                                                <option value="철강">철강</option>
+                                                <option value="알류미늄">알류미늄</option>
+                                                <option value="시멘트">시멘트</option>
+                                                <option value="비료">비료</option>
+                                                <option value="전력">전력</option>
+                                                <option value="수소">수소</option>
+                                                <option value="noneSelected">기타(수기입력)</option>
+                                            </select>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" class="intype" title="업종" id="indutyNm" name="indutyNm"
+                                                hname="업종" style="width: 40%;" readonly="readonly">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><em>*</em>실무경력 3년이상 보유 여부</th>
+                                        <td>
+                                            <input type="radio" class="intype" title="실무경력 3년이상 보유 여부" id="careerYn"
+                                                name="careerYn" value="Y" hname="실무경력 5년이상 보유 여부" checked="checked">
+                                            <p style="display: inline-block; margin-top: 4px;"> 예</p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="radio" class="intype" title="실무경력 3년이상 보유 여부" id="careerYn"
+                                                name="careerYn" value="N" hname="실무경력 5년이상 보유 여부">
+                                            <p style="display: inline-block; margin-top: 4px;"> 아니요</p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <p style="display: inline-block;">경력</p>
+                                            <input type="number" class="intype" title="경력" id="careerYear"
+                                                name="careerYear" hname="경력" onkeyup="onlyNumberCheck(this);"
+                                                style="width: 15%;">
+                                            <p style="display: inline-block;">년</p>
+                                        </td>
+                                        <th scope="row"><em>*</em>규모</th>
+                                        <td>
+                                            <select class="seltype" title="규모" style="width:30%;" id="entScalSelectBox"
+                                                hname="규모">
+                                                <option value="대기업" selected="selected">대기업</option>
+                                                <option value="중견기업">중견기업</option>
+                                                <option value="중소기업">중소기업</option>
+                                            </select>
+                                            <input type="hidden" class="intype" title="규모" id="entScal" name="entScal"
+                                                hname="업종" style="width: 40%;" readonly="readonly">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 
+				            <p class="ess_making" style="display: inline-block; font-size: 16px; margin-top:5px; padding-top: 6px; text-align: left;">
+				             	 <em>*</em>우선선정 업종
+				             	 <br>
+								 - 국내 수출 주요 품목군에 해당하는 업종 : 반도체 , 자동차 부품 , 정밀화학 원료 , 합성수지 , 기구부품 , 철강판 , 고무제품 , 무선통신기기 , 철강관 및 철강선 , 반도체 제조용장비
+								 <br>&nbsp;&nbsp; , 플라스틱 , 화장품 , 의약품
+								 <br>
+								 - EU 탄소국경조정 제도 적용 품목 : 철강 , 알루미늄 , 시멘트 , 비료 , 전력 , 수소
+			                </p>
+			                 -->
+                        </div>
+
+                        <h2 class="section_title" style="position: unset; margin-bottom: 10px; font-size: 18px;">· 수강신청자
+                            정보</h2>
+                        <table class="tbl_write">
+                            <caption>· 수강신청자 정보</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><em>*</em>한글성명</th>
+                                    <td>
+                                        <input type="text" class="intype" title="한글성명" id="korNm" name="korNm"
+                                            required="Y" hname="한글성명" style="width:80%;" value="신지넷"
+                                            readonly="readonly">
+                                    </td>
+                                    <th scope="row"><em>*</em>직급</th>
+                                    <td>
+                                        <input type="text" class="intype" title="직급" id="jbgd" name="jbgd" required="Y"
+                                            hname="직급" style="width:80%;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><em>*</em>생년월일</th>
+                                    <td colspan="3">
+                                        <input type="hidden" id="birth" value="19850430">
+                                        <input type="text" class="intype brdt" id="brdt" name="brdt" required="Y"
+                                            title="생년월일" hname="생년월일" readonly="readonly"
+                                            style="width:15%; height: 25px; margin-right: 5px;" value="">
+                                        <!-- <input type="date" class="intype" title="생년월일" id="brdt" name="brdt" required="Y" hname="생년월일" style="width:15%;"> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><em>*</em>휴대폰</th>
+                                    <td colspan="3">
+
+                                        <select class="seltype" title="휴대폰" style="width:80px;" hname="휴대폰"
+                                            id="mblTelno1" name="mblTelno1">
+
+                                            <option value="010" selected="selected">010</option>
+
+                                            <option value="011">011</option>
+
+                                            <option value="016">016</option>
+
+                                            <option value="017">017</option>
+
+                                            <option value="018">018</option>
+
+                                            <option value="019">019</option>
+
+                                        </select>&nbsp;-&nbsp;
+                                        <input type="text" class="intype" title="휴대폰" id="mblTelno2" name="mblTelno2"
+                                            required="Y" hname="휴대폰" style="width:15%;" value="7346"
+                                            onkeyup="onlyNumberCheck(this);" readonly="readonly">&nbsp;-&nbsp;
+                                        <input type="text" class="intype" title="휴대폰" id="mblTelno3" name="mblTelno3"
+                                            required="Y" hname="휴대폰" style="width:15%;" value="2775"
+                                            onkeyup="onlyNumberCheck(this);" readonly="readonly">&nbsp;-&nbsp;
+                                        <p class="ess_making"
+                                            style="display: inline-block; font-size: 16px; padding-top: 4px;"> ※ 수강신청
+                                            안내문이 발송됩니다.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><em>*</em>이메일</th>
+                                    <td colspan="3">
+                                        <!-- 
+			                        	<input type="text" class="intype" title="아이디" style="width:85px;"  hname="이메일" id="email1" name="email1"> @
+			                        	<input type="text" class="intype" title="도메인주소" style="width:105px;"  hname="이메일" id="email2" name="email2">
+			                        	<select class="seltype" title="항목선택" style="width:125px;" hname="이메일" id="email3" name="email3" onchange="goEmailVal(this.value);">
+			                        		
+				                        		<option value="hanmail.net">hanmail.net</option>
+			                        		
+				                        		<option value="hanafos.com">hanafos.com</option>
+			                        		
+				                        		<option value="hotmail.com">hotmail.com</option>
+			                        		
+				                        		<option value="naver.com">naver.com</option>
+			                        		
+				                        		<option value="nate.com">nate.com</option>
+			                        		
+				                        		<option value="dreamwiz.com">dreamwiz.com</option>
+			                        		
+				                        		<option value="empal.com">empal.com</option>
+			                        		
+				                        		<option value="freechal.com">freechal.com</option>
+			                        		
+				                        		<option value="gmail.com">gmail.com</option>
+			                        		
+				                        		<option value="korea.com">korea.com</option>
+			                        		
+				                        		<option value="lycos.com">lycos.com</option>
+			                        		
+				                        		<option value="msn.com">msn.com</option>
+			                        		
+				                        		<option value="paran.com">paran.com</option>
+			                        		
+				                        		<option value="yahoo.com">yahoo.com</option>
+			                        		
+				                        		<option value="konetic.or.kr">konetic.or.kr</option>
+			                        		
+				                        		<option value="keiti.re.kr">keiti.re.kr</option>
+			                        		
+			                                <option value="self">직접입력</option>
+			                            </select>
+			                        	 -->
+                                        <input type="text" class="intype" title="이메일" id="eml1" name="eml1" required="Y"
+                                            hname="이메일" style="width:28%;" readonly="readonly">&nbsp;@&nbsp;
+                                        <input type="text" class="intype" title="이메일" id="eml2" name="eml2" required="Y"
+                                            hname="이메일" style="width:28%;" readonly="readonly">
+                                        <select style="display: inline-block; width: 20%; height: 30px;" id="emlBox">
+
+                                            <option value="hanmail.net">hanmail.net</option>
+
+                                            <option value="hanafos.com">hanafos.com</option>
+
+                                            <option value="hotmail.com">hotmail.com</option>
+
+                                            <option value="naver.com">naver.com</option>
+
+                                            <option value="nate.com">nate.com</option>
+
+                                            <option value="dreamwiz.com">dreamwiz.com</option>
+
+                                            <option value="empal.com">empal.com</option>
+
+                                            <option value="freechal.com">freechal.com</option>
+
+                                            <option value="gmail.com">gmail.com</option>
+
+                                            <option value="korea.com">korea.com</option>
+
+                                            <option value="lycos.com">lycos.com</option>
+
+                                            <option value="msn.com">msn.com</option>
+
+                                            <option value="paran.com">paran.com</option>
+
+                                            <option value="yahoo.com">yahoo.com</option>
+
+                                            <option value="konetic.or.kr">konetic.or.kr</option>
+
+                                            <option value="keiti.re.kr">keiti.re.kr</option>
+
+                                            <option value="self">직접입력</option>
+                                        </select>
+                                        <input type="hidden" id="email" name="email" value="kbstown@sinzi.net" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">첨부파일</th>
+                                    <td colspan="3">
+                                        <div class="file_wrap file_wrap_wrtcns">
+                                            <div id="file_wrap_wrtcns">
+                                                <input type="text" name="orgilFileNm" id="orgilFileNm" value=""
+                                                    title="첨부파일" hname="첨부파일" class="intype" style="width:57%;"
+                                                    readonly="readonly" maxlength="100">
+                                                <input type="hidden" name="strgFileNm" id="strgFileNm" value=""
+                                                    title="첨부파일" hname="첨부파일" class="intype" style="width:57%;"
+                                                    readonly="readonly" maxlength="100">
+                                                <input type="file" id="file" name="file" class="attach" title="file"
+                                                    style="left: 710px;"
+                                                    onchange="document.getElementById('orgilFileNm').value = this.value">
+                                            </div>
+                                        </div>
+                                        <p class="ess_making"
+                                            style="display: inline-block; font-size: 16px; padding-top: 4px; text-align: left;">
+                                            <em>*</em>중소·중견기업의 경우 중소 ·중견기업 확인서를 첨부해 주세요, 우선선정 대상자는 소속회사 사업자 등록증을 첨부해
+                                            주세요<br>
+                                            <em>*</em>첨부파일이 2개 이상인 경우 압축하여 1개 파일로 업로드 해주세요
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 class="section_title" style="position: unset; margin-bottom: 10px; font-size: 18px;">· 개인정보
+                            제3자 제공 동의(필수)</h2>
+                        <table class="tbl_write">
+                            <caption>· 개인정보 제3자 제공 동의(필수)</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><em>*</em>개인정보 제3자 제공 동의(필수)</th>
+                                    <td colspan="3">
+                                        <input type="radio" class="intype" title="개인정보 제3자 제공 동의(필수)" checked="checked"
+                                            id="checkUserInfo_Y" name="checkUserInfoYn" value="Y"
+                                            hname="개인정보 제3자 제공 동의(필수)">
+                                        <p style="display: inline-block; margin-top: 4px;"> 동의</p>
+                                        <input type="radio" class="intype" title="개인정보 제3자 제공 동의(필수)"
+                                            id="checkUserInfo_N" name="checkUserInfoYn" value="N"
+                                            hname="개인정보 제3자 제공 동의(필수)">
+                                        <p style="display: inline-block; margin-top: 4px;"> 미동의</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p
+                            style="display: inline-block; font-size: 16px; margin-top:5px; padding-top: 6px; text-align: left;">
+                            개인정보 제3자 제공 동의
+                            <br />
+                            1. 제공받는자 : 한국표준협회(실무자과정), BSI Group Korea(전문가과정)
+                            <br />
+                            2. 제공목적 : 교육참가 신청자 정보수집(교육생 선정 및 교육 과정 입과 안내시 활용) 및 교육홍보
+                            <br />
+                            3. 제공항목 : 성명, 회사명, 부서, 직책, 생년월일, 이메일, 연락처, 중소/중견기업 확인서
+                            <br />
+                            4. 보유기간 : 제공목적 완료시까지
+                            <br />
+                        </p>
+                        <p class="ess_making"
+                            style="display: inline-block; font-size: 16px; margin-top:5px; padding-top: 6px; text-align: left;">
+                            ※ 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 다만 동의를 거부하실 경우 교육 신청 서비스 이용이 제한될 수 있습니다.
+                        </p>
+
+                        <!-- //write -->
+                        <div id="recBtn" class="btn_center">
+                            <a href="#" class="btn_regist" id="goAdd">접수</a>
+                            <a href="#" class="btn_cancel" id="cancle">취소</a>
+                        </div>
+                    </form>
+                </div> <!-- receipt - 종료 -->
+
+                <div id="info">
+                    <h4 class="section_title" style="margin-top: 0px;">23년 제4회 ESG 전문인력 양성 실무교육 신청마감 안내</h4>
+                    <div class="input_section style01">
+                        안녕하세요<br>
+                        '23.10.16.(월)~10.20.(금) 진행 예정인 제4회 실무교육 신청이 마감되었습니다<br><br>
+
+                        감사합니다.
+                    </div>
+                </div>
+            </div>
+            <!-- ############################################## contents E ############################################## -->
+        </div>
+        <!-- //container -->
+        <hr>
+
+        <script type="text/javascript">
+            var startTime = new Date("09/15/2023").setHours(09,00);
+            var endTime = new Date("10/04/2023").setHours(18,00);
+
+            var isLoginTemp = "";
+
+            isLoginTemp = "sinzinet";
+
+
+
+            if (1700033288367 < endTime || (isLoginTemp == "sinzinet" || isLoginTemp == "eun0001" || isLoginTemp == "prefixtest01")) {
+                $("#info").hide();
+            } else {
+                $("#receipt").hide();
+                if (isLoginTemp == "prefixtest01") {
+                    $("#receipt").show();
+                    $("#info").hide();
+                }
+            }
+
+            if ($("#email").val() != "") {
+                var arrEmail = $("#email").val().split("@");
+                $("#eml1").val(arrEmail[0]);
+                $("#eml2").val(arrEmail[1]);
+            }
+
+
+
+            function goHomeAddrPopup() {
+                // 주소검색을 수행할 팝업 페이지를 호출합니다.
+                // 호출된 페이지(jusopopup.jsp)에서 실제 주소검색URL(http://www.juso.go.kr/addrlink/addrLinkUrl.do)를 호출하게 됩니다.
+                var pop = window.open("/my/homeAddrPopup.do", "pop", "width=570,height=420, scrollbars=yes, resizable=yes");
+                // 모바일 웹인 경우, 호출된 페이지(jusopopup.jsp)에서 실제 주소검색URL(http://www.juso.go.kr/addrlink/addrMobileLinkUrl.do)를 호출하게 됩니다.
+                //var pop = window.open("/popup/jusoPopup.jsp","pop","scrollbars=yes, resizable=yes"); 
+            }
+
+            function homeAddrCallBack(roadFullAddr, roadAddrPart1, addrDetail, roadAddrPart2, engAddr, jibunAddr, zipNo, admCd, rnMgtSn, bdMgtSn, detBdNmList, bdNm, bdKdcd, siNm, sggNm, emdNm, liNm, rn, udrtYn, buldMnnm, buldSlno, mtYn, lnbrMnnm, lnbrSlno, emdNo) {
+                // 도로명 주소
+                $("#addr").val(roadFullAddr);
+                // 우편번호
+                $("#zip").val(zipNo);
+            }
+
+            // 신청구분에 따른 입력 값 세팅
+            // 재직자 수강신청 클릭 시
+            function incumbentApplication() {
+                $("#enterpriseInfo").show();
+            }
+            // 개인자격 수강신청 클릭시 
+            function individualApplication() {
+                $("#enterpriseInfo").hide();
+            }
+
+
+
+            $(document).ready(function () {
+
+                // 년월일 datepicker setting
+                $(".brdt").datepicker({ //시작일
+                    showOn: "button" //이미지로 사용 , both : 엘리먼트와 이미지 동시사용
+                    , buttonImage: "/images/common/ico_cal.gif" //이미지 주소
+                    , buttonImageOnly: true //이미지만 보이기
+                    , dateFormat: "yy-mm-dd"
+                    , changeMonth: true
+                    , changeYear: true
+                    , showMonthAfterYear: true
+                    , monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+                    , yearRange: 'c-80:c'
+                });
+
+                var toDate = new Date();
+                var toDateStr = $.datepicker.formatDate('yy-mm-dd', toDate);
+                $(".brdt").val(toDateStr);
+
+                if ($("#birth").val() != "") {
+                    var birth = $("#birth").val();
+                    var year = ($("#birth").val()).substring(0, 4);
+                    var month = ($("#birth").val()).substring(4, 6);
+                    var date = ($("#birth").val()).substring(6, 8);
+
+                    birth = year + "-" + month + "-" + date;
+                    $("#brdt").val(birth);
+                }
+
+                //업종체크 로직 
+                $("#indutyNm").val($("#indutyNmSelectBox").prop('selected', true).val());
+
+                $("#indutyNmSelectBox").change(function () {
+                    indutyNm = $(this).val();
+                    if (indutyNm == 'noneSelected') {
+                        $("#indutyNm").val('');
+                        $("#indutyNm").prop('readonly', false);
+                    } else {
+                        $("#indutyNm").val($("#indutyNmSelectBox").prop('selected', true).val());
+                        $("#indutyNm").prop('readonly', true);
+                    }
+                });
+
+                //수강을 희망하는 교육 모듈 전체 체크시 로직
+                $("#aplyMdlAll").click(function () {
+                    var aplyMdlAll = $("#aplyMdlAll").is(":checked");
+                    if (aplyMdlAll) {
+                        $("#aplyMdl1").prop('checked', true);
+                        $("#aplyMdl2").prop('checked', true);
+                        $("#aplyMdl1").prop('readonly', true);
+                        $("#aplyMdl2").prop('readonly', true);
+
+                    } else {
+                        $("#aplyMdl1").prop('checked', false);
+                        $("#aplyMdl2").prop('checked', false);
+                        $("#aplyMdl1").prop('readonly', false);
+                        $("#aplyMdl2").prop('readonly', false);
+                    }
+                });
+
+                $("#aplyMdl1").click(function () {
+                    var aplyMdl1 = $("#aplyMdl1").is(":checked");
+                    var aplyMdl2 = $("#aplyMdl2").is(":checked");
+                    if (aplyMdl1 == false && aplyMdl2 == false) {
+                        $("#aplyMdlAll").prop('checked', false);
+                    }
+                    if (aplyMdl1 == true && aplyMdl2 == true) {
+                        $("#aplyMdlAll").prop('checked', true);
+                    }
+                });
+
+                $("#aplyMdl2").click(function () {
+                    var aplyMdl1 = $("#aplyMdl1").is(":checked");
+                    var aplyMdl2 = $("#aplyMdl2").is(":checked");
+                    if (aplyMdl1 == false && aplyMdl2 == false) {
+                        $("#aplyMdlAll").prop('checked', false);
+                    }
+                    if (aplyMdl1 == true && aplyMdl2 == true) {
+                        $("#aplyMdlAll").prop('checked', true);
+                    }
+                });
+
+
+                //온오프라인 교육 체크로직
+                /* 
+                $("#onOffEdu").click(function(){
+                    var onOffEdu = $("#onOffEdu").is(":checked");
+                    if (onOffEdu) {
+                        $("#offlineEdu").prop('checked',true);
+                        $("#onlineEdu").prop('checked',true);
+                        $("#offlineEdu").prop('readonly',true);
+                        $("#onlineEdu").prop('readonly',true);
+                    	
+                    }else{
+                        $("#offlineEdu").prop('checked',false);
+                        $("#onlineEdu").prop('checked',false);
+                        $("#offlineEdu").prop('readonly',false);
+                        $("#onlineEdu").prop('readonly',false);
+                    }
+                });
+            	
+                $("#offlineEdu").click(function(){
+                    var offlineEdu = $("#offlineEdu").is(":checked");
+                    var onlineEdu = $("#onlineEdu").is(":checked");
+                    if (offlineEdu == false && onlineEdu == false) {
+                        $("#onOffEdu").prop('checked',false);
+                    }
+                    if (offlineEdu == true && onlineEdu == true) {
+                        $("#onOffEdu").prop('checked',true);
+                    }
+                });
+            
+                $("#onlineEdu").click(function(){
+                    var offlineEdu = $("#offlineEdu").is(":checked");
+                    var onlineEdu = $("#onlineEdu").is(":checked");
+                    if (offlineEdu == false && onlineEdu == false) {
+                        $("#onOffEdu").prop('checked',false);
+                    }
+                    if (offlineEdu == true && onlineEdu == true) {
+                        $("#onOffEdu").prop('checked',true);
+                    }
+                });
+             */
+
+                //실무경력 3년이상 보유 여부 체크시 로직
+                var careerYn = $("input[name='careerYn']:checked").val();
+                if (careerYn == 'Y') {
+                    $("#careerYear").prop('readonly', false);
+                }
+
+                $("input[name='careerYn']").click(function () {
+                    var careerYn = $("input[name='careerYn']:checked").val();
+                    if (careerYn == 'Y') {
+                        $("#careerYear").prop('readonly', false);
+                    } else {
+                        $("#careerYear").prop('readonly', true);
+                        $("#careerYear").val('');
+                    }
+                });
+
+                //규모 체크
+                $("#entScal").val($("#entScalSelectBox").prop('selected', true).val());
+
+                $("#entScalSelectBox").change(function () {
+                    $("#entScal").val($(this).val());
+                });
+
+                //이메일 체크 로직
+                $("#eml2").val($("#emlBox").prop('selected', true).val());
+                $("#eml2").prop('readonly', true);
+
+                $("#emlBox").change(function () {
+                    var emlBox = $(this).val();
+                    if (emlBox == 'self') {
+                        $("#eml2").val('');
+                        $("#eml2").prop('readonly', false);
+                    } else {
+                        $("#eml2").val($("#emlBox").prop('selected', true).val());
+                        $("#eml2").prop('readonly', true);
+                    }
+                });
+
+                var attachFile = "";
+                $(document).on("change", ".attach", function () {
+                    // 첨부파일 확장자 체크
+                    var checkVal = $("#file").val();
+
+                    var extension = checkVal.substring(checkVal.indexOf('.'));
+                    var reg = /(.*?)\.(jpg|jpeg|png|gif|bmp|pdf|docx|txt|xls|xlsx|hwp|hwpx|zip|ppt|pptx)$/
+
+                    if (!(extension.toLowerCase().match(reg))) {
+                        alert("올바르지 않은 파일 형식입니다.파일을 확인해주세요.");
+
+                        $("#file").prev().val("");
+                        $("#file").val("");
+                        return false;
+                    }
+
+                    // 첨부파일 용량 체크
+                    var fileSize = $("#file")[0].files[0].size;
+                    var maxFileSize = 500 * 1024 * 1024;
+
+                    if (fileSize > maxFileSize) {
+                        alert("첨부파일의 크기가 500MB를 초과했습니다. 첨부파일은 최대500MB 까지 첨부 가능합니다.");
+
+                        $("#file").prev().val("");
+                        $("#file").val("");
+                        return false;
+                    }
+                });
+
+                $("#cancle").click(function () {
+                    location.href = '/ht/practiceProcedureIntro.do';
+                });
+
+                $("#goAdd").click(function () {
+                    var aplyMdlAll = $("#aplyMdlAll").is(":checked");
+                    var aplyMdl1 = $("#aplyMdl1").is(":checked");
+                    var aplyMdl2 = $("#aplyMdl2").is(":checked");
+
+                    /* 
+                    var onOffEdu = $("#onOffEdu").is(":checked");
+                     */
+                    var offlineEdu = $("#offlineEduTemp").is(":checked");
+                    var onlineEdu = $("#onlineEduTemp").is(":checked");
+
+                    var aplySe = $("input[name='aplySe']:checked").val();
+
+                    if (aplyMdl1 == false && aplyMdl2 == false) {
+                        alert("수강을 희망하는 교육 모듈 항목을 확인하여 주세요.");
+                        return false;
+                    } else {
+                        if (!validation()) return;
+                    }
+
+                    /* 
+                    if (offlineEdu == false && onlineEdu == false) {
+                        alert("온/오프라인 교육 항목을 확인하여 주세요.");
+                        return false;
+                    }else{
+                        if (!validation()) return;
+                    }
+                     */
+                    if (aplySe == '1') {
+                        var entNm = $("#entNm").val();
+                        var zip = $("#zip").val();
+                        var addr = $("#addr").val();
+                        var priortIndutyYn = $("#priortIndutyYn").val();
+                        var indutyNm = $("#indutyNm").val();
+                        var careerYn = $("#careerYn").val();
+                        var careerYear = $("#careerYear").val();
+                        var chkCareerYn = $("input[name='careerYn']:checked").val();
+
+                        if (entNm == "") {
+                            alert("기업명을 확인해주세요.");
+                            return false;
+                        }
+                        if (zip == "") {
+                            alert("주소를 확인해주세요.");
+                            return false;
+                        }
+                        if (addr == "") {
+                            alert("주소을 확인해주세요.");
+                            return false;
+                        }
+                        if (priortIndutyYn == "") {
+                            alert("우선순위 업종 해당여부를 확인해주세요.");
+                            return false;
+                        }
+                        if (entNm == "") {
+                            alert("업종명을 확인해주세요.");
+                            return false;
+                        }
+                        if (careerYn == "") {
+                            alert("실무경력3년이상보유여부를 확인해주세요.");
+                            return false;
+                        }
+                        if (chkCareerYn == "Y" && careerYear == "") {
+                            alert("실무경력3년이상보유여부를 확인해주세요.");
+                            return false;
+                        }
+                    }
+
+                    if (aplyMdl1 == false) {
+                        $("#aplyMdl1").val('N');
+                    } else if (aplyMdl2 == false) {
+                        $("#aplyMdl2").val('N');
+                    }
+
+                    if (offlineEdu == false) {
+                        $("#offlineEdu").val('N');
+                        $("#onlineEdu").val('Y');
+                    } else if (onlineEdu == false) {
+                        $("#offlineEdu").val('Y');
+                        $("#onlineEdu").val('N');
+                    }
+
+                    //var checkUserInfo = $("#checkUserInfo").is(":checked");
+
+                    var checkUserInfo = $("input[name='checkUserInfoYn']:checked").val();
+
+                    $("#checkUserInfo").val(checkUserInfo);
+
+                    var title = "";
+                    title = "2023년 제4회 ESG 규제대응을 위한 실무자 과정 수강신청을 하시겠습니까?";
+
+                    if (confirm(title)) {
+                        //휴대전화번호
+                        if ($("#mblTelno1").val() != "" && $("#mblTelno2").val() != "" && $("#mblTelno3").val() != "") {
+                            $("#mblTelno").val($("#mblTelno1").val() + "-" + $("#mblTelno2").val() + "-" + $("#mblTelno3").val());
+                        } else {
+                            $("#mblTelno").val("");
+                        }
+
+                        //이메일
+                        $("#eml").val($("#eml1").val() + "@" + $("#eml2").val());
+
+                        document.frm.action = "/ht/addPracticeProcedure.do";
+                        document.frm.submit();
+                    }
+                });
+            });
+
+        </script>
+
+
+
+
+
+        <!-- 기존 Footer -->
+        <div id="footer">
+            <div class="banner">
+                <div class="bx-wrapper">
+                    <div class="bx-viewport">
+                        <div class="bx-wrapper">
+                            <div class="bx-viewport"
+                                style="width: 100%; overflow: hidden; position: relative; height: 50px;">
+                                <ul class="ban_slider"
+                                    style="width: 1915%; position: relative; transition-duration: 0s; transform: translate3d(-399px, 0px, 0px);">
+                                    <li style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;"
+                                        class="bx-clone"><a href="http://www.me.go.kr/home/web/main.do" target="_blank"
+                                            title="새창"><img src="/images/common/banner01.jpg" alt="환경부"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="http://www.keiti.re.kr/" target="_blank" title="새창"><img
+                                                src="/images/common/banner02.jpg" alt="KEITI 한국환경산업기술원"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://www.env-info.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner30.gif" alt="환경정보공개시스템"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://www.envinance.kr:442/index.do" target="_blank" title="새창"><img
+                                                src="/images/common/banner31.jpg" alt="녹색경영기업금융지원시스템"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://www.gir.go.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner32.jpg" alt="온실가스종합정보센터"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://ngms.gir.go.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner33.jpg" alt="국가온실가스 종합관리시스템"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://www.air.go.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner34.jpg" alt="미세먼지정보센터"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px; margin-top: 5px;">
+                                        <a href="https://sodac.nier.go.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner35.jpg" alt="대기배출원관리시스템"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://wems.nier.go.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner36.jpg" alt="전국오염원조사시스템"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://www.allbaro.or.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner37.png" alt="폐기물적법처리시스템"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="http://www.ef21.co.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner38.jpg" alt="녹색기업 지정제도"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://www.koetv.or.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner39.gif" alt="환경신기술정보시스템"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://el.keiti.re.kr:9443" target="_blank" title="새창"><img
+                                                src="/images/common/banner40.gif" alt="환경표지인증"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="https://www.greencertif.or.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner41.png" alt="녹색인증"></a></li>
+                                    <li
+                                        style="float: left; list-style: none; position: relative; width: 130px; margin-right: 3px;">
+                                        <a href="http://www.buygr.or.kr" target="_blank" title="새창"><img
+                                                src="/images/common/banner42.png" alt="GR인증"></a></li>
+                                </ul>
+                            </div>
+                            <div class="bx-controls bx-has-controls-direction">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('.ban_slider').bxSlider({
+                            slideWidth: 180,
+                            minSlides: 6,
+                            maxSlides: 6,
+                            moveSlides: 1,
+                            slideMargin: 6,
+                            pager: false
+                        });
+                    });
+                </script>
+            </div>
+
+            <div class="inner">
+                <ul class="fmenu">
+                    <li><a href="https://www.konetic.or.kr/user/U/UA/UA001_L01.do" target="_blank" title="새창">이용약관</a>
+                    </li>
+                    <li><a href="https://www.konetic.or.kr/user/U/UA/UA002_L01.do"
+                            target="_blank"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.konetic.or.kr/user/U/UA/UA003_L01.do" target="_blank" title="새창">저작권정책</a>
+                    </li>
+                    <li><a href="#" onclick="javascript:fn_viewEmail();">이메일수집거부</a></li>
+                    <li><a href="http://www.keiti.re.kr/site/keiti/04/10405020000002018092811.jsp" target="_blank"
+                            title="새창">사이버신문고</a></li>
+                </ul>
+                <ul class="fmenu">
+                    <li><a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20200910&amp;lsiSeq=218937#0000"
+                            target="_blank" title="정보통신망 이용촉진 및 정보보호 등에 관한 법률">정보통신망 이용촉진 및 정보보호 등에 관한 법률</a></li>
+                </ul>
+                <div class="family">
+                    <span class="family_tit01">유관기관 및 단체</span>
+                    <dl class="family_list01">
+                        <dt>------------------ 공공기관 ------------------</dt>
+                        <dd><a href="http://www.keiti.re.kr" target="_blank">한국환경산업기술원</a></dd>
+                        <dd><a href="http://www.keco.or.kr" target="_blank">한국환경공단</a></dd>
+                        <dd><a href="http://www.slc.or.kr" target="_blank">수도권매립지관리공사</a></dd>
+                        <dd><a href="http://www.knps.or.kr" target="_blank">국립공원관리공단</a></dd>
+                        <dt>------------ 관련기관/단체/협회 ------------</dt>
+                        <dd><a href="http://www.kei.re.kr" target="_blank">한국환경정책평가연구원</a></dd>
+                        <dd><a href="http://www.epa.or.kr" target="_blank">환경보전협회</a></dd>
+                        <dd><a href="http://www.kwwa.or.kr" target="_blank">한국상하수도협회</a></dd>
+                        <dd><a href="http://koreca.or.kr" target="_blank">한국환경컨설팅협회</a></dd>
+                        <dd><a href="http://www.kcma.or.kr" target="_blank">한국화학물질관리협회</a></dd>
+                        <dd><a href="http://www.aea.or.kr" target="_blank">한국자동차환경협회</a></dd>
+                        <dd><a href="http://www.kwaste.or.kr" target="_blank">한국폐기물협회</a></dd>
+                        <dd><a href="http://www.eiaa.or.kr" target="_blank">한국영향평가협회</a></dd>
+                        <dd><a href="http://www.geca.or.kr" target="_blank">녹색환경지원센터연합회</a></dd>
+                        <dt>------------ 환경부 및 소속기관 ------------</dt>
+                        <dd><a href="http://www.me.go.kr" target="_blank">환경부</a></dd>
+                        <dd><a href="http://www.kma.go.kr" target="_blank">기상청</a></dd>
+                        <dd><a href="http://www.nier.go.kr" target="_blank">국립환경과학원</a></dd>
+                        <dd><a href="http://ehrd.me.go.kr" target="_blank">국립환경인력개발원</a></dd>
+                        <dd><a href="http://www.nibr.go.kr" target="_blank">국립생물자원관</a></dd>
+                        <dd><a href="http://edc.me.go.kr" target="_blank">중앙환경분쟁조정위원회</a></dd>
+                        <dd><a href="http://www.gir.go.kr" target="_blank">온실가스종합정보센터</a></dd>
+                    </dl>
+                    <span class="family_tit02">코네틱 패밀리사이트</span>
+                    <dl class="family_list02">
+                        <dt>--------------------- 기타 ----------------------</dt>
+                        <dd><a href="http://chemistory.go.kr" target="_blank">어린이환경과건강포털</a></dd>
+                        <dt>------------ 녹색산업 육성분야 ------------</dt>
+                        <dd><a href="http://konetic.ecoedu.go.kr" target="_blank">사이버환경실무교육</a></dd>
+                        <dd><a href="http://ecojob.re.kr" target="_blank">환경취업포털</a></dd>
+                        <dt>------------ 녹색제품 경영분야 ------------</dt>
+                        <dd><a href="http://greenproduct.go.kr" target="_blank">녹색제품정보시스템</a></dd>
+                        <dt>---------------- 무역거래지원 ----------------</dt>
+                        <dd><a href="http://ecotrade.or.kr" target="_blank">환경산업 e-Marketplace</a></dd>
+                        <dt>------------ 해외시장정보분야 ------------</dt>
+                        <dd><a href="http://www.eishub.or.kr" target="_blank">해외환경통합정보망</a></dd>
+                        <dd><a href="http://apec-vc.or.kr" target="_blank">APEC-VC 해외환경기술정보망</a></dd>
+                        <dt>--------------- 환경R&amp;D분야 --------------</dt>
+                        <dd><a href="http://ecoplus.keiti.re.kr" target="_blank">Eco-PLUS 연구관리시스템</a></dd>
+                    </dl>
+                </div>
+                <address>(03367) 서울시 은평구 진흥로 215 한국환경산업기술원 환경산업처 ESG경영지원실<br>02-2284-1988(TEL), 02-2284-1181(FAX) /
+                    hm0207@keiti.re.kr
+                </address>
+                <p class="copyright">copyright 2000 by KONETIC. All right reserved</p>
+            </div>
+        </div>
+        <!-- // 기존 Footer -->
+    </div>
+
+    <!-- New Quick Menu -->
+    <div class="quick_menu">
+        <div class="inner">
+            <a href="#" class="title openSans">QUICK<br>MENU</a>
+            <ul>
+                <li>
+                    <a href="/er/intro.do">
+                        <i class="ico_01"></i>
+                        <p>환경책임투자</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gc/intro.do">
+                        <i class="ico_02"></i>
+                        <p>녹색분류체계</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gb/pblcnSttusList.do">
+                        <i class="ico_03"></i>
+                        <p>녹색채권<br>발행현황</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/ee/dfn.do">
+                        <i class="ico_04"></i>
+                        <p>환경성<br>평가 체계</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/ei/systemSumry.do">
+                        <i class="ico_05"></i>
+                        <p>환경정보공개</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gf/intro.do">
+                        <i class="ico_06"></i>
+                        <p>녹색금융<br>시상식</p>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="btn_quick">
+                <span>접기</span>
+            </a>
+        </div>
+    </div>
+    <!-- // New Quick Menu -->
+
+
+
+
+
+
+
+
+    <script language="javascript" type="text/javascript">
+        $("document").ready(function () {
+            $(".close").click(function () {
+                $(".close").parent().hide();
+                $("#layermask").hide();
+            });
+            $(".btn_confirm").click(function () {
+                $(".close").parent().hide();
+                $("#layermask").hide();
+            });
+        });
+
+        function fn_viewEmail() {
+            $("#layermask").show();
+            $("#emailDiv").show();
+        }
+    </script>
+
+    <!-- 이메일무단수집거부 -->
+    <div class="layerwrap" id="emailDiv" style="display:none;">
+        <h4>이메일무단수집거부</h4>
+        <div class="layer_cont">
+            <dl class="email_refuse">
+                <dt>이메일 주소 자동 수집을 거부합니다!</dt>
+                <dd>본 웹사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여<br>무단으로 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 형사처벌됨을
+                    유념하시기 바랍니다.</dd>
+            </dl>
+        </div>
+        <div class="btn_center">
+            <a href="#" class="btn_confirm">확인</a>
+        </div>
+        <a href="#" class="close"><img src="../images/common/btn_close.gif" alt="닫기"></a>
+    </div>
+    <div id="layermask" style="display:none;"></div><!-- 레이어 마스크 영역 -->
+    <!-- //이메일무단수집거부 -->
+
+
+
+
+
+
+
+    <script language="javascript" type="text/javascript">
+        $("document").ready(function () {
+            $(".close").click(function () {
+                $(".close").parent().hide();
+                $("#policylayermask").hide();
+            });
+            $(".btn_confirm").click(function () {
+                $(".close").parent().hide();
+                $("#policylayermask").hide();
+            });
+        });
+
+        function fn_viewPolicy() {
+            $("#policylayermask").show();
+            $("#policyDiv").show();
+        }
+    </script>
+
+    <!-- 개인정보처리방침 -->
+    <div class="layerwrap type5" id="policyDiv" style="display:none;">
+        <h4>개인정보처리방침</h4>
+        <div class="privacy_cont">
+            <p>한국환경산업기술원 환경책임투자 종합플랫폼('eri.konetic.go.kr'이하 '환경책임투자 종합플랫폼')은 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와
+                관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.<br><br>환경책임투자 종합플랫폼은 개인정보처리방침을 개정하는 경우 웹사이트 공지사항(또는
+                개별공지)을 통하여 공지할 것입니다.</p>
+            <p class="tit">본 방침은 2019년 6월 1일부터 시행됩니다.</p>
+            <h5>1. 개인정보처리의 위탁에 관한 사항</h5>
+            <p>'환경책임투자 종합플랫폼'은 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전동의를 구할 예정입니다.
+            </p>
+            <dl class="privacy01">
+                <dt>가. 홈페이지 회원가입 및 관리</dt>
+                <dd>회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 서비스 부정이용 방지, 각종 고지·통지, 분쟁 조정을 위한 기록 보존 등을 목적으로
+                    개인정보를 처리합니다.</dd>
+                <dt>나. 민원사무 처리</dt>
+                <dd>민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락·통지, 처리결과 통보 등을 목적으로 개인정보를 처리합니다.</dd>
+                <!-- 				<dt>다. 재화 또는 서비스 제공</dt> -->
+                <!-- 				<dd>서비스 제공, 콘텐츠 제공, 맞춤 서비스 제공 등을 목적으로 개인정보를 처리합니다.</dd> -->
+                <dt>다. 서비스 제공 및 통계에의 활용</dt>
+                <dd>맞춤 서비스 제공, 접속빈도 파악 또는 회원의 서비스 이용에 대한 통계 등을 목적으로 개인정보를 처리합니다.</dd>
+            </dl>
+            <h5>2. 개인정보 파일 현황</h5>
+            <p>'환경책임투자 종합플랫폼'에서 회원관리 및 민원처리를 위하여 처리하는 개인정보 항목은 아래와 같습니다. </p>
+            <ul class="mt10">
+                <li>○ 국내</li>
+                <li>개인정보 항목(개인회원)</li>
+                <li>&nbsp;&nbsp;- 필수항목 : 아이디, 성명, 비밀번호, 이메일</li>
+                <li>개인정보 항목(기업회원)</li>
+                <li>&nbsp;&nbsp;- 필수항목 : 아이디, 회사명, 사업자등록번호, 비밀번호, 주소, 나머지주소, 전화번호, 이메일, 대표명, 분야, 기업형태, 주생산품, 직원 수, 회사소개
+                </li>
+                <li>&nbsp;&nbsp;- 선택항목 : 홈페이지, 회사소개서</li>
+            </ul>
+            <ul class="mt10">
+                <li>○ 해외</li>
+                <li>개인정보 항목(개인회원)</li>
+                <li>&nbsp;&nbsp;- 필수항목 : 아이디, 성명, 국가, 비밀번호, 이메일, 인증번호확인</li>
+                <li>&nbsp;&nbsp;- 선택항목 : 소속구분, 우편번호, 근무지주소</li>
+                <li>개인정보 항목(기업회원)</li>
+                <li>&nbsp;&nbsp;- 필수항목 : 아이디, 회사명, 설립일, 국가, 비밀번호, 이메일, 인증번호 확인</li>
+                <li>&nbsp;&nbsp;- 선택항목 : 회사 전화번호, 우편번호, 나머지주소, FAX, 대표명, 분야, 기업형태, 주생산품, 직원수, 홈페이지, 회사소개, 회사소개서</li>
+            </ul>
+
+
+            <h5>3. 개인정보의 처리 및 보유 기간</h5>
+            <ul class="privacy02">
+                <li><span>①</span> '환경책임투자 종합플랫폼'은 법령에 따른 개인정보 보유·이용기간 또는 개인정보 수집시에 정보주체로부터 동의 받은 개인정보 보유, 이용기간 내에서
+                    개인정보를 처리, 보유합니다.</li>
+                <li><span>②</span> 홈페이지 회원가입 및 관리와 관련한 개인정보는 수집·이용에 관한 동의일로부터 회원탈퇴시까지 위 이용목적을 위하여 보유, 이용됩니다.<br>
+                    - 수집근거 : 개인정보보호법 제15조제1항 “정보주체의 동의를 받은 경우”<br>
+                    - 보유기간 : 회원 탈퇴 의사 표시 후 5일 까지
+                </li>
+            </ul>
+            <h5>4. 개인정보의 제3자 제공에 관한 사항</h5>
+            <p>'환경책임투자 종합플랫폼'은 정보주체의 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</p>
+            <h5>5. 개인정보처리 위탁</h5>
+            <ul class="privacy02">
+                <li><span>①</span>'환경책임투자 종합플랫폼'은 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.<br>
+                    <p style="padding:10px 0"><a href="http://keiti.re.kr/etc/privacyList.html"
+                            target="_blank"><strong>- 개인정보처리 위탁현황 보러가기</strong></a></p>
+                </li>
+                <li><span>②</span> 한국환경산업기술원은 '환경책임투자 종합플랫폼'의 위탁계약 체결시 개인정보 보호법 제26조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적․관리적
+                    보호조치, 재위탁 제한, 수탁자에 대한 관리․감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다.
+                </li>
+                <li><span>③</span>위탁업무의 내용이나 수탁자가 변경될 경우에는 지체없이 본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.</li>
+            </ul>
+            <h5>6. 정보주체와 법정대리인의 권리 ․ 의무 및 행사방법</h5>
+            <ul class="privacy02">
+                <li><span>①</span> 정보주체는 환경책임투자 종합플랫폼에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.<br>
+                    1. 개인정보 열람요구<br>
+                    2. 오류 등이 있을 경우 정정 요구<br>
+                    3. 삭제요구<br>
+                    4. 처리정지 요구
+                </li>
+                <li><span>②</span> 제1항에 따른 권리 행사는 환경책임투자 종합플랫폼에 대해 개인정보 보호법 시행규칙 별지 제8호 서식에 따라 서면, 전자우편, 모사전송(FAX) 등을
+                    통하여 하실 수 있으며 환경책임투자 종합플랫폼은 이에 대해 지체 없이 조치하겠습니다.</li>
+                <li><span>③</span> 정보주체가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 환경책임투자 종합플랫폼은 정정 또는 삭제를 완료할 때까지 당해 개인정보를
+                    이용하거나 제공하지 않습니다.</li>
+                <li><span>④</span> 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지
+                    제11호 서식에 따른 위임장을 제출하셔야 합니다.</li>
+                <li style="padding-top: 5px;">
+                    <span style="padding-left: 300px;">
+                        <input type="button" onclick="javascript:downloadAttach('62840', 'NOTICE', '0');"
+                            title="개인정보 열람 요구서" value="[개인정보 열람 요구서 다운로드]"
+                            style="width: 180pt; height: 18pt; font-weight: bold;" />
+                    </span>
+                    <span style="padding-left: 150px;">
+                        <input type="button" onclick="javascript:downloadAttach('62841', 'NOTICE', '0');" title="위임장"
+                            value="[위임장 다운로드]" style="width: 100pt; height: 18pt; font-weight: bold;" />
+                    </span>
+                </li>
+            </ul>
+            <h5>7. 처리하는 개인정보의 항목</h5>
+            <p>환경책임투자 종합플랫폼은 홈페이지 회원가입 및 관리를 위해 다음의 개인정보 항목을 처리하고 있습니다.</p>
+            <p class="mt10">- 필수항목 : 로그인ID, 이름, 이메일, 회사명, 부서명, 직책명, 회사전화번호, 팩스번호, 휴대전화번호</p>
+            <h5>8. 개인정보 파기에 관한 사항</h5>
+            <p>이 홈페이지는 전자적 파일 형태로 기록 ․ 저장된 개인정보는 기록을 재생할 수 없도록 파기하며 , 종이 문서에 기록 ․ 저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다 .</p>
+            <p>환경책임투자 종합플랫폼은 원칙적으로 개인정보 처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.</p>
+            <ul class="mt10">
+                <li>- 파기절차<br>이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져 내부 방침 및 기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진
+                    개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.</li>
+                <li>- 파기기한<br>이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에, 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등
+                    그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.</li>
+            </ul>
+            <h5>9. 개인정보의 안전성 확보 조치</h5>
+            <p>'환경책임투자 종합플랫폼'은 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.</p>
+            <ol class="privacy02 mt10">
+                <li><span>1.</span> 개인정보 취급 직원의 최소화 및 교육<br>개인정보를 취급하는 직원을 지정하고 담당자에 한정시켜 최소화 하여 개인정보를 관리하는 대책을 시행하고
+                    있습니다.</li>
+                <li><span>2.</span> 내부관리계획의 수립 및 시행<br>개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.</li>
+                <li><span>3.</span> 개인정보의 암호화<br>이용자의 개인정보는 비밀번호는 암호화 되어 저장 및 관리되고 있어, 본인만이 알 수 있으며 중요한 데이터는 파일 및 전송
+                    데이터를 암호화 하거나 파일 잠금 기능을 사용하는 등의 별도 보안기능을 사용하고 있습니다.</li>
+                <li><span>4.</span> 해킹 등에 대비한 기술적 대책<br>'환경책임투자 종합플랫폼'은 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을
+                    설치하고 주기적인 갱신·점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다.</li>
+                <li><span>6.</span> 개인정보에 대한 접근 제한<br>개인정보를 처리하는 데이터베이스시스템에 대한 접근권한의 부여, 변경, 말소를 통하여 개인정보에 대한 접근통제를 위하여
+                    필요한 조치를 하고 있으며 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있습니다.</li>
+                <li><span>7.</span> 접속기록의 보관 및 위변조 방지<br>개인정보처리시스템에 접속한 기록을 최소 6개월 이상 보관, 관리하고 있으며, 접속 기록이 위변조 및 도난,
+                    분실되지 않도록 보안기능 사용하고 있습니다.</li>
+            </ol>
+            <h5>10. 개인정보 자동 수집 장치의 설치 ․ 운영 및 그 거부에 관한 사항</h5>
+            <ul class="privacy02">
+                <li>환경책임투자 종합플랫폼는 정보주체의 이용정보를 저장하고 수시로 불러오는 ‘ 쿠키 (cookie)’ 를 사용하지 않습니다 .</li>
+            </ul>
+            <h5>11. 권익침해 구제방법</h5>
+            <ul class="privacy02">
+                <li><span>①</span>정보주체는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의 하실 수 있습니다.<br>
+                    1. 개인정보분쟁조정위원회(한국인터넷진흥원 운영) : (국번없이) 118번 (privacy.kisa.or.kr)<br>
+                    2. 개인정보침해신고센터(한국인터넷진흥원 운영) : (국번없이) 118번 (privacy.kisa.or.kr)<br>
+                    3. 대검찰청 사이버범죄수사단 : 02-3480-3582 (http://www.spo.go.kr)<br>
+                    4. 경찰청 사이버테러대응센터 : 1566-0112 (http://www.netan.go.kr)
+                </li>
+                <li><span>②</span>개인정보보호법 제35조(개인정보의 열람), 제36조(개인정보의 정정·삭제), 제37조(개인정보의 처리정지 등)의 규정에 의한 요구에 대하여 공공기관의 장이
+                    행한 처분 또는 부작위로 인하여 권리 또는 이익의 침해를 받은 자는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.</li>
+            </ul>
+            <h5>12. 개인정보 보호책임자</h5>
+            <p>
+                한국환경산업기술원은 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자 및 실무담당자를
+                지정하고 있습니다.
+            </p>
+            <table class="tbl03 mt10">
+                <caption>개인정보 보호 책임자</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">부서명</th>
+                        <th scope="col">성명 또는 직위</th>
+                        <th scope="col">연락처</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>개인정보 보호 책임자</td>
+                        <td>환경지식정보실</td>
+                        <td>실장</td>
+                        <td><a href="mailto:yjlee@keiti.re.kr ">yjlee@keiti.re.kr </a></td>
+                    </tr>
+                    <tr>
+                        <td>개인정보보호 분야별책임관</td>
+                        <td>환경지식정보실</td>
+                        <td>윤수현</td>
+                        <td><a href="mailto:sooh@keiti.re.kr">sooh@keiti.re.kr </a></td>
+                    </tr>
+                    <tr>
+                        <td>개인정보보호 취급자</td>
+                        <td>환경지식정보실</td>
+                        <td>이고은</td>
+                        <td>Tel : 02-2284-1179<br><a href="mailto:leego@keiti.re.kr">leego@keiti.re.kr</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>13. 개인정보의 열람청구를 접수 및 처리하는 부서</h5>
+            <p>
+                정보주체께서는 환경책임투자 종합플랫폼의 서비스를 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 담당부서로 문의하실 수 있습니다.
+                한국환경산업기술원은 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.
+            </p>
+            <table class="tbl03 mt10">
+                <caption>개인정보 보호 책임자</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">부서명</th>
+                        <th scope="col">성명</th>
+                        <th scope="col">연락처</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>개인정보 보호담당 부서</td>
+                        <td>환경지식정보실</td>
+                        <td>김경란</td>
+                        <td>Tel : 02-2284-1175<br>
+                            Fax : 02-2284-1190<br>
+                            E-mail : <a href="mailto:krkim01@keiti.re.kr">krkim01@keiti.re.kr</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>14. 정보주체의 동의없이 추가적인 이용 또는 제공 기준</h5>
+            <p>
+                우리원은 개인정보보호법 제 15 조제 3 항 또는 제 17 조제 4 항에 따라 개인정보를 제공하는 경우 , 정보주체의 동의 없이 개인정보를 추가적인 이용 또는 제공할 때의 판단기준은
+                다음과 같습니다 .
+            </p>
+            <ul class="privacy02" style="padding-left: 15px;">
+                <li><span>①</span> 당초 수집 목적과 관련성이 있는지 여부</li>
+                <li><span>②</span> 개인정보를 수집한 정황 또는 처리 관행에 비추어 볼 때 개인정보의 추가적인 이용 또는 제공에 대한 예측 가능성이 있는지 여부</li>
+                <li><span>③</span> 정보주체의 이익을 부당하게 침해하는지 여부</li>
+                <li><span>④</span> 가명처리 또는 암호화 등 안전성 확보에 필요한 조치를 하였는지 여부</li>
+            </ul>
+            <h5>15. 개인정보 처리방침 변경</h5>
+            <ul class="privacy02">
+                <li><span>①</span> 이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을
+                    통하여 고지할 것입니다.</li>
+                <li><span>②</span> 이전의 개인정보처리방침은 아래에서 확인할 수 있습니다.(이전 처리방침 있을 경우)<br>
+                    - 2019. 6. 1. ~ 2021. 4. 13. <a href="#"
+                        onclick="window.open('/protection_20210413.html','protection','left=0, top=0, resizable=no, width=1050, height=550');"
+                        title="- 2019. 6. 1. ~ 2021. 4. 13. 적용 이전의 개인정보 처리방침(클릭)"><strong>적용 이전의 개인정보
+                            처리방침(클릭)</strong></a><br>
+                    - 2014. 5. 1. ~ 2019. 5. 30. <a href="#"
+                        onclick="window.open('/protection_old.html','protection','left=0, top=0, resizable=no, width=1050, height=550');"
+                        title="- 법 시행일부터 ~ 2019. 05. 30. 적용 이전의 개인정보 처리방침(클릭)"><strong>적용 이전의 개인정보
+                            처리방침(클릭)</strong></a><br>
+                    - 법 시행일부터 ~ 2014. 5. 1. <a
+                        href="http://attfile.konetic.or.kr/konetic/uploaded_data/etc/gmi_2013-03-28.hwp"><strong>적용 이전의
+                            개인정보 처리방침(클릭)</strong></a>
+                </li>
+            </ul>
+        </div>
+        <div class="btn_center">
+            <a href="#" class="btn_confirm">확인</a>
+        </div>
+        <a href="#" class="close"><img src="../images/common/btn_close.gif" alt="닫기"></a>
+    </div>
+    <div id="policylayermask" style="display:none;"></div><!-- 레이어 마스크 영역 -->
+    <!-- //개인정보처리방침 -->
+
+
+
+
+
+
+
+    <script language="javascript" type="text/javascript">
+        $("document").ready(function () {
+            $(".close").click(function () {
+                $(".close").parent().hide();
+                $("#layermask").hide();
+            });
+            $(".btn_confirm").click(function () {
+                $(".close").parent().hide();
+                $("#layermask").hide();
+            });
+        });
+
+        function fn_loginTimeChk() {
+            $("#layermask").show();
+            $("#loginTimeChkDiv").show();
+        }
+    </script>
+
+    <div class="layerwrap" id="loginTimeChkDiv" style="display:none;">
+        <h4>로그인 남은 유효시간 알림</h4>
+        <div class="layer_cont">
+            <dl class="email_refuse">
+                <dt>5분뒤 자동으로 로그아웃 됩니다.</dt>
+                <dd>페이지를 새로고침 하시거나, 상단의 시간연장 버튼을 누르세요.</dd>
+            </dl>
+        </div>
+        <div class="btn_center">
+            <a href="#" class="btn_confirm">확인</a>
+        </div>
+        <a href="#" class="close"><img src="../images/common/btn_close.gif" alt="닫기"></a>
+    </div>
+    <div id="layermask" style="display:none;"></div><!-- 레이어 마스크 영역 -->
+
+
+</body>
+
+</html>

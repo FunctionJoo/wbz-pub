@@ -87,7 +87,7 @@ main i{display: block;background-repeat: no-repeat;}
 #footer .family_list01 {display:none; padding:10px 0 12px; position:absolute; left:0; bottom:40px; width:229px; background:#183143;}
 #footer .family_list01.on {display: block;}
 #footer .family_list02 {display:none; padding:10px 0 12px; position:absolute; right:0; bottom:40px; width:229px; background:#183143;}
-#footer .family_list02.on{display: block;}
+#footer .family_list02.on {display: block;}
 #footer .family_list01 dt,#footer .family_list02 dt {margin:8px 0; color:#fff; font-size:13px; text-align:center;}
 #footer .family_list01 a,#footer .family_list02 a {padding:0 15px; color:#fff; font-size:13px; line-height:20px;}
 #footer .family_list01 a:hover,#footer .family_list02 a:hover {color:#3cc786;}
@@ -143,7 +143,7 @@ main i{display: block;background-repeat: no-repeat;}
 #aside .lnb > li > .lnb_depth2{display: none;}
 #aside .lnb > li > .lnb_depth2 > li{padding: 0 10px;}
 #aside .lnb > li > .lnb_depth2 > li > a{display: block; min-height: 48px; font-size: 14px; line-height: 16px; color: #4d4d4d; padding: 16px 16px 13px; border-bottom: 1px dashed #d8d8d8; background-repeat: no-repeat; background-position: 92% 50%; background-size: 5px 8px; background-image: url(../images/common/lnb_arrow.png);}
-#aside .lnb > li > .lnb_depth2 > li.on > a, #aside .lnb > li > .lnb_depth2 > li:hover > a{color: #015a58; background-image: url(../images/common/lnb_arrow_on.png);}
+#aside .lnb > li > .lnb_depth2 > li.on > a, #aside .lnb > li > .lnb_depth2 > li:hover > a{color: #015a58; background-image: url(../images/common/lnb_arrow_on.png);border: 1px solid #015a58;} /* 20231117 웹접근성 */
 
 /* contents */
 #contents{float:right; width: calc(100% - 370px);min-height:488px;padding:0 0 80px 0;line-height:22px;letter-spacing:-0.5px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
