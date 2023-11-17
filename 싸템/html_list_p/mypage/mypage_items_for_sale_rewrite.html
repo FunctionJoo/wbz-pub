@@ -19,163 +19,6 @@
 	<script src="../js/main.js"></script>
 </head>
 <body>
-	<!-- 팝업 class 'pop' -> display:block -->
-	<div id="virtual_account_popup" class="pop">
-		<div class="popup_main">
-			<div class="pop_top">
-				<div class="title">가상계좌</div>
-				<div class="close"></div>
-			</div>
-			<div class="pop_middle">
-				<div class="con_title">충전요청금액</div>
-				<div class="con_input">
-					<input type="text">
-					<span>원</span>
-				</div>
-				<div class="con_radioBox">
-					<div class="radio_list list_01">
-						<input id="virtual_account_01" type="radio" name="virtual_account" value="10000">
-						<label for="virtual_account_01">10,000원</label>
-					</div>
-					<div class="radio_list list_02">
-						<input id="virtual_account_02" type="radio" name="virtual_account" value="50000">
-						<label for="virtual_account_02">50,000원</label>
-					</div>
-					<div class="radio_list list_03">
-						<input id="virtual_account_03" type="radio" name="virtual_account" value="100000">
-						<label for="virtual_account_03">100,000원</label>
-					</div>
-					<div class="radio_list list_04">
-						<input id="virtual_account_04" type="radio" name="virtual_account" value="200000">
-						<label for="virtual_account_04">200,000원</label>
-					</div>
-					<div class="radio_list list_05">
-						<input id="virtual_account_05" type="radio" name="virtual_account" value="300000">
-						<label for="virtual_account_05">300,000원</label>
-					</div>
-					<div class="radio_list list_06">
-						<input id="virtual_account_06" type="radio" name="virtual_account" value="500000">
-						<label for="virtual_account_06">500,000원</label>
-					</div>
-					<div class="radio_list list_07">
-						<input id="virtual_account_07" type="radio" name="virtual_account" value="1000000">
-						<label for="virtual_account_07">1,000,000원</label>
-					</div>
-					<div class="radio_list list_08">
-						<input id="virtual_account_08" type="radio" name="virtual_account" value="">
-						<label for="virtual_account_08">직접입력</label>
-					</div>
-				</div>
-				<div class="con_result">
-					<div class="charge">
-						<div class="title">충전 수수료</div>
-						<div class="charge_box">
-							<div class="money">
-								<span><em>0</em>원</span>
-							</div>
-							<div class="percent">
-								<span>(충전수수료 <em>0</em>%)</span>
-							</div>
-						</div>
-					</div>
-					<div class="all_result">
-						<div class="title">총 충전금액</div>
-						<div class="result_box">
-							<div class="money">
-								<span><em>1,000,000</em>원</span>
-							</div>
-							<div class="charge_text">
-								<span>(충전수수료 포함)</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="pop_bottom">
-				<button>충전하기</button>
-			</div>
-		</div>
-	</div>
-	<div id="tcash_popup" class="">
-		<div class="popup_main">
-			<div class="pop_top">
-				<div class="title">티캐시</div>
-				<div class="close"></div>
-			</div>
-			<div class="pop_middle">
-				<div class="con_title">충전요청금액</div>
-				<div class="con_input">
-					<input type="text">
-					<span>원</span>
-				</div>
-				<div class="con_radioBox">
-					<div class="radio_list list_01">
-						<input id="tcash_01" type="radio" name="tcash" value="10000">
-						<label for="tcash_01">10,000원</label>
-					</div>
-					<div class="radio_list list_02">
-						<input id="tcash_02" type="radio" name="tcash" value="50000">
-						<label for="tcash_02">50,000원</label>
-					</div>
-					<div class="radio_list list_03">
-						<input id="tcash_03" type="radio" name="tcash" value="100000">
-						<label for="tcash_03">100,000원</label>
-					</div>
-					<div class="radio_list list_04">
-						<input id="tcash_04" type="radio" name="tcash" value="200000">
-						<label for="tcash_04">200,000원</label>
-					</div>
-					<div class="radio_list list_05">
-						<input id="tcash_05" type="radio" name="tcash" value="300000">
-						<label for="tcash_05">300,000원</label>
-					</div>
-					<div class="radio_list list_06">
-						<input id="tcash_06" type="radio" name="tcash" value="500000">
-						<label for="tcash_06">500,000원</label>
-					</div>
-					<div class="radio_list list_07">
-						<input id="tcash_07" type="radio" name="tcash" value="1000000">
-						<label for="tcash_07">1,000,000원</label>
-					</div>
-					<div class="radio_list list_08">
-						<input id="tcash_08" type="radio" name="tcash" value="">
-						<label for="tcash_08">직접입력</label>
-					</div>
-				</div>
-				<div class="tcash_password">
-					<div class="con_title">티캐시 비밀번호</div>
-					<input type="password" class="password_input">
-				</div>
-				<div class="con_result">
-					<div class="charge">
-						<div class="title">충전 수수료</div>
-						<div class="charge_box">
-							<div class="money">
-								<span><em>0</em>원</span>
-							</div>
-							<div class="percent">
-								<span>(충전수수료 <em>5</em>%)</span>
-							</div>
-						</div>
-					</div>
-					<div class="all_result">
-						<div class="title">총 충전금액</div>
-						<div class="result_box">
-							<div class="money">
-								<span><em>1,000,000</em>원</span>
-							</div>
-							<div class="charge_text">
-								<span>(충전수수료 포함)</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="pop_bottom">
-				<button>충전하기</button>
-			</div>
-		</div>
-	</div>
 	<header id="header">
 		<div class="w_set">
 			<div class="sec_top">
@@ -552,7 +395,7 @@
 	</div>
 
 	<div id="contets">
-		<div id="mypage" class="mile_charge">
+		<div id="mypage" class="items_for_sale_rewrite">
 			<div class="w_set w_set_my">
 				<div class="my_left">
 					<h2 class="mym_title">마이페이지</h2>
@@ -602,87 +445,211 @@
 				</div>
 				<div class="my_cont">
 					<!-- pc -->
-					<p class="pc_title">마일리지 충전</p>
+					<p class="pc_title">판매등록 물품</p>
 
 					<!-- 모바일용 타이틀 -->
-					<!-- <p class="my_title">마이페이지</p> -->
+					<!-- <p class="my_title">판매등록 물품</p> -->
 					<!-- 모바일용 타이틀 라인 타입 -->
-					<p class="my_title type_line">마일리지 충전</p>
+					<p class="my_title type_line">마이페이지</p>
 
 					<!-- 마이 메인 -->
 					<!-- 레이아웃 테스트 -->
-					
-					<div class="main">
-						<div class="virtual_account">
-							<div class="text_box">
-								<span>홍길동님 주문결제(입금)를 위한 가상계좌 입니다.</span>
+
+					<div class="con_top">
+						<div class="title">물품 기본정보</div>
+						<div class="info_table">
+							<div class="info_list category_tr">
+								<div class="info_th">카테고리</div>
+								<div class="info_td">
+									<div class="select_box">
+										<select name="main_cat" id="main_cat">
+											<option value="로스트아크">로스트아크</option>
+										</select>
+									</div>
+									<div class="select_box">
+										<select name="middle_cat" id="middle_cat">
+											<option value="로스트아크">로스트아크</option>
+										</select>
+									</div>
+									<div class="select_box">
+										<select name="sub_cat" id="sub_cat">
+											<option value="로스트아크">로스트아크</option>
+										</select>
+									</div>
+									<div class="detail_input">
+										<input type="text" value="모히또">
+									</div>
+								</div>
 							</div>
-							<div class="account_box">
-								<em class="bank">국민은행</em>
-								<span></span>
-								<em class="number">65329011342758</em>
+							<div class="info_list title_tr">
+								<div class="info_th">물품제목</div>
+								<div class="info_td">
+									<div class="title_input">
+										<input type="text" value="▶◀━━최저가━━안전 골드 2OO% 보상 빠른거래 즉시우편━━▶◀">
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="payment_method">
-							<div class="title">가상계좌</div>
-							<div class="payment_box">
-								<button class="payment_list list_01">
-									<span>가상계좌</span>
-									<img src="../images/mypage/mile_virtual_account.svg" alt="payment">
-								</button>
-								<button class="payment_list list_02">
-									<span>계좌이체</span>
-									<img src="../images/mypage/mile_account_transfer.svg" alt="payment">
-								</button>
-								<button class="payment_list list_03">
-									<span class="pc_text">신용카드 / 체크카드</span>
-									<span class="mo_text">신용/체크카드</span>
-									<img src="../images/mypage/mile_card.svg" alt="payment">
-								</button>
-								<button class="payment_list list_04">
-									<span>삼성페이</span>
-									<img src="../images/mypage/mile_samsung_pay.svg.png" alt="payment">
-								</button>
-								<button class="payment_list list_05">
-									<span>티캐시</span>
-									<img src="../images/mypage/mile_tcash.png" alt="payment">
-								</button>
-								<button class="payment_list list_06">
-									<span>휴대폰 결제</span>
-									<img src="../images/mypage/mile_phone_pay.png" alt="payment">
-								</button>
-								<button class="payment_list list_07">
-									<span>컬쳐랜드 상품권</span>
-									<img src="../images/mypage/mile_culture_land.png" alt="payment">
-								</button>
-								<button class="payment_list list_08">
-									<span>해피머니 상품권</span>
-									<img src="../images/mypage/mile_happy_money.png" alt="payment">
-								</button>
-								<button class="payment_list list_09">
-									<span>문화상품권</span>
-									<img src="../images/mypage/mile_gift_card.png" alt="payment">									
-								</button>
+							<div class="info_list column_table">
+								<div class="info_th">판매설정</div>
+								<div class="info_td">
+									<div class="sm_td top_td">
+										<div class="radio_list">
+											<input type="radio" name="method" id="all" value="일괄판매" checked>
+											<label for="all">일괄판매</label>
+										</div>
+										<div class="radio_list">
+											<input type="radio" name="method" id="divide" value="분할판매">
+											<label for="divide">분할판매</label>
+										</div>
+									</div>
+									<div class="sm_td bottom_td">
+										<div class="min_value">
+											<span>최소</span>
+											<input type="text" value="1">
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="mo_title_02">
-							<div class="title_02">꼭 회원본인의 이름으로 송금해주세요</div>
-						</div>
-						<div class="info_box">
-							<div class="info_title">
-								<div class="title_01">365일 - 24시간 마일리지 충전 처리</div>
-								<div class="title_02">꼭 회원본인의 이름으로 송금해주세요</div>
+							<div class="info_list unit_tr">
+								<div class="info_th">판매단위</div>
+								<div class="info_td">
+									<div class="select_box">
+										<select name="unit" id="unit">
+											<option value="천 다이아">천 다이아</option>
+										</select>
+									</div>
+								</div>
 							</div>
-							<ul class="info_list">
-								<li><span>· </span><span>싸템 계좌로 충전 신청금액을 송금 <em>(싸템 회원명, 입금자명 반드시 동일해야 함)</em></span></li>
-								<li><span>· </span><span>싸템 사이트에서 “가상계좌” 선택 후 충전 신청</span></li>
-								<li><span>· </span><span>[가상계좌 거래] 란 회원님이본인의 이름으로 직접 송금해 주시는 방식입니다. (다르실 경우 충전이 불가합니다.)</span></li>
-								<li><span>· </span><span>만약 입금자명과 회원명이 다를 경우, 충전이 되지 않으며 착오송금 반환지원 제도를 통해 도움을 드리고 있습니다.</span></li>
-								<li><span>· </span><span>신청 후 60분 내 송금하셔야 하며 평균 1-5분 정도 소요됩니다.</span></li>
-								<li><span>· </span><span>전자 금융 사기 방지를 위해 비대면 인증, 이체상세내역에서 확인 후 마일리지 충전이 진행되실 수 있으며 확인이 필요한 경우<br>문자 메시지를 통해 안내드리고 있습니다.</span></li>
-							</ul>
+							<div class="info_list amount_tr">
+								<div class="info_th">판매금액</div>
+								<div class="info_td">
+									<div class="amount_input">
+										<input type="text" value="1,000,000,000,000">
+										<span>원</span>
+									</div>
+								</div>
+							</div>
+							<div class="info_list imme_pay_tr">
+								<div class="info_th">즉시결제</div>
+								<div class="info_td">
+									<div class="imme_pay_input">
+										<input type="checkbox" id="imme_pay" checked>
+										<label for="imme_pay">즉시결제</label>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="con_middle">
+						<div class="title">물품 상세설명</div>
+						<div class="con_box">
+							<img src="../images/mypage/mypage_game.png" alt="game">
+							<div class="text_box">
+								★ 1:1 대화함으로 핀번호 보내드립니다 <br>
+								핀번호 특성상 넘어가면 취소 불가합니다 <br><br>
+								★ [수량 1개당 5천원입니다] <br>
+								★ 캐릭터명 또는 1:1대화함에 구매하고자하는 물품을 적어주세요 <br><br>
+								문화상품권 / 틴캐시 / 해피머니 / 온캐시 / 넥슨카드 / LOL스마트문상 <br>
+								도서문화상품권 / 스마트(게임)문화상품권 / 에그머니 / 구글 기프트카드
+							</div>
+						</div>
+					</div>
+					<div class="con_bottom">
+						<div class="title">부가 옵션(선택가능)</div>
+						<div class="con_box">
+							<div class="option_list premium">
+								<div class="con_title">프리미엄 물품등록</div>
+								<div class="con_option">
+									<div class="option_detail option_top">
+										<div class="text_box">
+											<span>
+												<em>물품리스트 상단에 고정 노출 되어, 판매 촉진이 가능한 서비스. </em><br>
+												프리미엄 잔여일이 많을수록 물품리스트 상단에 노출됩니다.
+											</span>
+										</div>
+										<div class="option_box">
+											<div class="select_box">
+												<select name="price_option" id="price_option">
+													<option value="none">금액을 선택하세요.</option>
+												</select>
+											</div>
+											<span>- 1일(24시간) : 1,000원</span>
+										</div>
+									</div>
+									<div class="option_detail option_bottom">
+										<div class="detail_box">
+											<span>잔여 프리미엄 이용권 <em>05</em>장</span>
+											<div class="option_box">
+												<div class="select_box">
+													<select name="period_option" id="period_option">
+														<option value="none">기간선택</option>
+													</select>
+												</div>
+												<span>일/<em>1</em>장</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="option_list again">
+								<div class="con_title">자동 재등록</div>
+								<div class="con_option">
+									<div class="option_detail option_top">
+										<div class="text_box">
+											<span>
+												<em>설정을 통해 주기적으로 재 등록하여 판매 촉진이 가능한 서비스. </em><br>
+												이용권에 설정된 시간 간격으로 재등록 됩니다.
+											</span>
+										</div>
+										<div class="option_box">
+											<div class="select_box">
+												<select name="price_option" id="price_option">
+													<option value="none">금액을 선택하세요.</option>
+												</select>
+											</div>
+											<div class="price_text_box">
+												<span>- 1일(24시간) : 1,000원</span>
+												<span>- 1일(24시간) : 1,000원</span>
+											</div>
+										</div>
+									</div>
+									<div class="option_detail option_bottom">
+										<div class="detail_box">
+											<span>잔여 자동 재등록 이용권 <em>5</em>분 <em>05</em>장</span>
+											<div class="option_box">
+												<div class="select_box">
+													<select name="period_option" id="period_option">
+														<option value="none">기간선택</option>
+													</select>
+												</div>
+												<span>일/<em>1</em>장</span>
+											</div>
+										</div>
+										<div class="detail_box">
+											<span>잔여 자동 재등록 이용권 <em>10</em>분 <em>05</em>장</span>
+											<div class="option_box">
+												<div class="select_box">
+													<select name="period_option" id="period_option">
+														<option value="none">기간선택</option>
+													</select>
+												</div>
+												<span>일/<em>1</em>장</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="con_total">
+							<div class="con_title">Total</div>
+							<div class="total_price"><em>0</em>원</div>
+						</div>
+					</div>
+					<div class="button_box">
+						<button class="button_list save">저장</button>
+						<a class="button_list cancel" href="#none">취소</a>
+					</div>
+					
 					<!-- <div class="" style="white-space: nowrap;">sa4d65sa4d65sa4d65as4d65as4d65sa4d65sa4d65sa4d654sa65d4as6d54as65d4sa65d4as65d4sa65d4sa65d4sa65d4sa6d4sa6d4sa65d4sa65d4sa65d4sa65d46as5d465sa4d65sa4</div> -->
 				</div>
 			</div>

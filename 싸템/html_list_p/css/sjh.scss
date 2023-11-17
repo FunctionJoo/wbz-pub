@@ -1,3 +1,47 @@
+// 공통변수
+@mixin subtitle{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+@mixin selectBox{
+    width: 140px;
+    height: 34px;
+    border: 1px solid #D3D3D3;
+    border-radius: 1px;
+    background-image: url(../images/mypage/arrow_selectBox_02.png);
+    background-size: 12px 7px;
+    background-repeat: no-repeat;
+    background-position: top 50% right 10px;
+    margin-right: 10px;
+    select {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 21px;
+        border: 0; //기본 스타일 제거
+        -webkit-appearance: none;
+        /* for chrome */
+        -moz-appearance: none;
+        /*for firefox*/
+        appearance: none;
+        box-sizing: border-box; //select 박스의 크기 방식 지정.
+        background: transparent; //배경색 투명 처리
+
+        &::-ms-expand {
+            display: none;
+            /*for IE10,11*/
+        }
+
+        option {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+
 // 팝업
 // 가상계좌 팝업
 #virtual_account_popup{
@@ -92,221 +136,6 @@
                         justify-content: center;
                     }
                     label{
-                        display: flex;
-                        align-items: center;
-                        width: 104px;
-                    }
-                    input{
-                        display: none;
-                        +label::before{
-                            content: "";
-                            box-shadow: 0 0 0 1px #b1b1b1 inset;
-                            background-color: #fff;
-                            border-radius: 50%;
-                            width: 22px;
-                            height: 22px;
-                            display: inline-block;
-                            margin-right: 6px;
-                        }
-                        &:checked+label::before{
-                            background-image: url(../images/mypage/radio_button.svg);
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                            border: none;
-                            border-radius: 0px;
-                            box-shadow: none;
-                        }
-                    }
-                }
-            }
-            .con_result{
-                .charge{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-bottom: 10px;
-                    .title{
-                        font-size: 14px;
-                        line-height: 20px;
-                    }
-                    .charge_box{
-                        display: flex;
-                        .money{
-                            margin-right: 4px;
-                            span{
-                                font-size: 15px;
-                                line-height: 20px;
-                                em{
-                                    font-weight: 400;
-                                }
-                            }
-                        }
-                        .percent{
-                            span{
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #666666;
-                                em{
-                                    font-weight: 400;
-                                }
-                            }
-                        }
-                    }
-                }
-                .all_result{
-                    padding: 15px;
-                    background-color: #EEF3F9;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    .title{
-                        font-size: 15px;
-                        line-height: 22px;
-                        font-weight: 500;
-                    }
-                    .result_box{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        .money{
-                            span{
-                                font-size: 15px;
-                                line-height: 22px;
-                                em{
-                                    font-size: 18px;
-                                    line-height: 24px;
-                                    color: #014099;
-                                    font-weight: 600;
-                                    margin-right: 2px;
-                                }
-                            }
-                        }
-                        .charge_text{
-                            font-size: 14px;
-                            line-height: 20px;
-                            color: #666666;
-                            margin-left: 2px;
-                        }
-                    }
-                }
-            }
-        }
-        .pop_bottom{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            button{
-                width: 120px;
-                height: 38px;
-                background-color: #014099;
-                border: none;
-                border-radius: 3px;
-                font-size: 16px;
-                line-height: 24px;
-                color: #fff;
-            }
-        }
-    }
-}
-// 카드결제 팝업
-#card_popup{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(33, 33, 33, 0.6);
-    z-index: 1000;
-    &.pop{
-        display: block;
-    }
-    .popup_main{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
-        padding: 30px 30px 40px 30px;
-        width: 500px;
-
-        .pop_top{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 14px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #707070;
-            .title{
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 500;
-            }
-            .close{
-                width: 14px;
-                height: 14px;
-                background-image: url(../images/mypage/close_button.svg);
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-        }
-        .pop_middle{
-            margin-bottom: 40px;
-            .con_title{
-                font-size: 15px;
-                line-height: 22px;
-                margin-bottom: 10px;
-                &::before{
-                    content: "✓";
-                    margin-right: 6px;
-                }
-            }
-            .con_input{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-                input{
-                    width: calc(100% - 18.81px);
-                    text-align: end;
-                    border: 1px solid #D3D3D3;
-                    padding: 12px 10px;
-                    font-size: 15px;
-                    line-height: 22px;
-                }
-                span{
-                    font-size: 15px;
-                    line-height: 22px;
-                    margin-left: 5px;
-                }
-            }
-            .con_radioBox{
-                background-color: #F6F6F6;
-                padding: 22px 20px 2px 15px;
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: 21px;
-            
-                .radio_list {
-                    display: flex;
-                    width: calc(100% /3);
-                    margin-bottom: 20px;
-            
-                    &:nth-child(3n+0) {
-                        justify-content: end;
-                    }
-            
-                    &:nth-child(3n+1) {
-                        justify-content: start;
-                    }
-            
-                    &:nth-child(3n+2) {
-                        justify-content: center;
-                    }
-            
-                    label {
                         display: flex;
                         align-items: center;
                         width: 104px;
@@ -579,248 +408,6 @@
                     text-align: end;
                 }
             }
-            .con_result {
-                .charge {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-bottom: 10px;
-
-                    .title {
-                        font-size: 14px;
-                        line-height: 20px;
-                    }
-
-                    .charge_box {
-                        display: flex;
-
-                        .money {
-                            margin-right: 4px;
-
-                            span {
-                                font-size: 15px;
-                                line-height: 20px;
-
-                                em {
-                                    font-weight: 400;
-                                }
-                            }
-                        }
-
-                        .percent {
-                            span {
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #666666;
-
-                                em {
-                                    font-weight: 400;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .all_result {
-                    padding: 15px;
-                    background-color: #EEF3F9;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    .title {
-                        font-size: 15px;
-                        line-height: 22px;
-                        font-weight: 500;
-                    }
-
-                    .result_box {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        .money {
-                            span {
-                                font-size: 15px;
-                                line-height: 22px;
-
-                                em {
-                                    font-size: 18px;
-                                    line-height: 24px;
-                                    color: #014099;
-                                    font-weight: 600;
-                                    margin-right: 2px;
-                                }
-                            }
-                        }
-
-                        .charge_text {
-                            font-size: 14px;
-                            line-height: 20px;
-                            color: #666666;
-                            margin-left: 2px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .pop_bottom {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            button {
-                width: 120px;
-                height: 38px;
-                background-color: #014099;
-                border: none;
-                border-radius: 3px;
-                font-size: 16px;
-                line-height: 24px;
-                color: #fff;
-            }
-        }
-    }
-}
-// 컬쳐랜드 팝업
-#curture_land {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(33, 33, 33, 0.6);
-    z-index: 1000;
-
-    &.pop {
-        display: block;
-    }
-
-    .popup_main {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
-        padding: 30px 30px 40px 30px;
-        width: 500px;
-
-        .pop_top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 14px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #707070;
-
-            .title {
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 500;
-            }
-
-            .close {
-                width: 14px;
-                height: 14px;
-                background-image: url(../images/mypage/close_button.svg);
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-        }
-
-        .pop_middle {
-            margin-bottom: 40px;
-
-            .con_title {
-                font-size: 15px;
-                line-height: 22px;
-                margin-bottom: 10px;
-
-                &::before {
-                    content: "✓";
-                    margin-right: 6px;
-                }
-            }
-
-            .con_input {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-
-                input {
-                    width: calc(100% - 18.81px);
-                    text-align: end;
-                    border: 1px solid #D3D3D3;
-                    padding: 12px 10px;
-                    font-size: 15px;
-                    line-height: 22px;
-                }
-
-                span {
-                    font-size: 15px;
-                    line-height: 22px;
-                    margin-left: 5px;
-                }
-            }
-
-            .con_radioBox {
-                background-color: #F6F6F6;
-                padding: 22px 20px 2px 15px;
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: 21px;
-
-                .radio_list {
-                    display: flex;
-                    width: calc(100% /3);
-                    margin-bottom: 20px;
-                
-                    &:nth-child(3n+0) {
-                        justify-content: end;
-                    }
-                
-                    &:nth-child(3n+1) {
-                        justify-content: start;
-                    }
-                
-                    &:nth-child(3n+2) {
-                        justify-content: center;
-                    }
-                
-                    label {
-                        display: flex;
-                        align-items: center;
-                        width: 104px;
-                    }
-                    input {
-                        display: none;
-                        +label::before {
-                            content: "";
-                            box-shadow: 0 0 0 1px #b1b1b1 inset;
-                            background-color: #fff;
-                            border-radius: 50%;
-                            width: 22px;
-                            height: 22px;
-                            display: inline-block;
-                            margin-right: 6px;
-                        }
-                        &:checked+label::before {
-                            background-image: url(../images/mypage/radio_button.svg);
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                            border: none;
-                            border-radius: 0px;
-                            box-shadow: none;
-                        }
-                    }
-                }
-            }
-
             .con_result {
                 .charge {
                     display: flex;
@@ -5100,6 +4687,648 @@
     }
 }
 
+// 판매등록수정
+#mypage{
+    &.items_for_sale_rewrite{
+        .my_cont{
+            .pc_title{
+                font-size: 20px;
+                line-height: 29px;
+                font-weight: 500;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #333333;
+            }
+
+            .con_top{
+                padding-top: 20px;
+                margin-bottom: 30px;
+                .title{
+                    @include subtitle
+                }
+                .info_table{
+                    border: 1px solid #D3D3D3;
+                    .info_list{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 50px;
+                        &:not(:last-child){
+                            border-bottom: 1px solid #D3D3D3;
+                        }
+                        &.column_table{
+                            height: 100px;
+                            .info_td{
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: start;
+                                padding: 0;
+                            }
+                        }
+                        .info_th{
+                            width: 160px;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-right: 1px solid #D3D3D3;
+                            background-color: #F6F6F6;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #000;
+                        }
+                        .info_td{
+                            width: calc(100% - 160px);
+                            padding: 0 10px;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            // 카테고리
+                            .select_box{
+                                @include selectBox()
+                            }
+                            .detail_input{
+                                width: 140px;
+                                height: 34px;
+                                input{
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 1px;
+                                    padding: 0 10px;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    color: #666666;
+                                    &::placeholder{
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        color: #666666;
+                                    }
+                                }
+                            }
+
+                            // 물품제목
+                            .title_input{
+                                width: 100%;
+                                height: 34px;
+                                input{
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 1px;
+                                    padding: 0 15px;
+                                    font-size: 13px;
+                                    line-height: 21px;
+                                }
+                            }
+
+                            // 구매설정
+                            .sm_td{
+                                height: 50px;
+                                width: 100%;
+                                padding: 0 10px;
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                                &:not(:last-child){
+                                    border-bottom: 1px solid #D3D3D3;
+                                }
+                                &.top_td{
+                                    .radio_list{
+                                        &:not(:last-child){
+                                            margin-right: 30px;
+                                        }
+                                        label{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        input{
+                                            display: none;
+                                            +label::before{
+                                                content: "";
+                                                box-shadow: 0 0 0 1px #b1b1b1 inset;
+                                                background-color: #fff;
+                                                border-radius: 50%;
+                                                width: 22px;
+                                                height: 22px;
+                                                display: inline-block;
+                                                margin-right: 6px;
+                                            }
+                                            &:checked+label::before{
+                                                background-image: url(../images/mypage/radio_button.svg);
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-position: center;
+                                                border: none;
+                                                border-radius: 0px;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    
+                                    }
+                                }
+                                &.bottom_td{
+                                    .min_value{
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            margin-right: 10px;
+                                        }
+                                        input{
+                                            margin: -4px;
+                                            width: 140px;
+                                            height: 34px;
+                                            border: 1px solid #D3D3D3;
+                                            text-align: end;
+                                            padding: 10px;
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            // 구매금액
+                            .amount_input{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                input{
+                                    width: 140px;
+                                    height: 34px;
+                                    border: 1px solid #D3D3D3;
+                                    padding: 10px;
+                                    text-align: end;
+                                }
+                                span{
+                                    margin-left: 6px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000;
+                                }
+                            }
+
+                            // 즉시결제
+                            .imme_pay_input{
+                                label{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                input{
+                                    display: none;
+                                    +label::before{
+                                        content: "";
+                                        box-shadow: 0 0 0 1px #333333 inset;
+                                        border-radius: 2px;
+                                        width: 18px;
+                                        height: 18px;
+                                        display: inline-block;
+                                        margin-right: 7px;
+                                    }
+
+                                    &:checked+label::before{
+                                        background-image: url(../images/mypage/mile_checkbox.svg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        border: none;
+                                        border-radius: 0px;
+                                        box-shadow: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .con_middle{
+                margin-bottom: 30px;
+                .title{
+                    @include subtitle
+                }
+                .con_box{
+                    height: 300px;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    border: 1px solid #D3D3D3;
+                    img{
+                        width: 358px;
+                    }
+                    .text_box{
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+            }
+            .con_bottom{
+                margin-bottom: 60px;
+                .title{
+                    @include subtitle
+                }
+                .con_box{
+                    border: 1px solid #D3D3D3;
+                    height: 320px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .option_list{
+                        width: 50%;
+                        height: 100%;
+                        &:not(:last-child){
+                            border-right: 1px solid #D3D3D3;
+                        }
+                        &.premium{
+                            .option_top{
+                                padding-bottom: 31px;
+                            }
+                        }
+                        &.again{
+                            .option_top{
+                                padding-bottom: 19px;
+                            }
+                            .option_bottom{
+                                .detail_box{
+                                    &:not(:last-child){
+                                        margin-bottom: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .con_title{
+                            font-size: 15px;
+                            line-height: 21px;
+                            color: #113462;
+                            background-color: #EEF3F9;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 40px;
+                            border-bottom: 1px solid #D3D3D3;
+                        }
+                        .con_option{
+                            padding: 14px;
+                            height: calc(100% - 40px);
+                            .option_detail{
+                                &.option_top{
+                                    position: relative;
+                                    border-bottom: 1px dashed #113462;
+                                    &::before{
+                                        content: "Or";
+                                        width: 34px;
+                                        background-color: #fff;
+                                        color: #113462;
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        text-align: center;
+                                    }
+                                    .text_box{
+                                        margin-bottom: 20px;
+                                        span{
+                                            font-size: 13px;
+                                            line-height: 21px;
+                                            em{
+                                                font-weight: 400;
+                                                color: #666666;
+                                            }
+                                        }
+                                    }
+                                    .option_box{
+                                        display: flex;
+                                        .select_box{
+                                            @include selectBox();
+                                            width: 200px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            line-height: 21px;
+                                        }
+                                        .price_text_box{
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            span{
+                                                font-size: 13px;
+                                                line-height: 21px;
+                                                &:not(:last-child){
+                                                    margin-bottom: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.option_bottom{
+                                    padding-top: 30px;
+                                    .detail_box{
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            em{
+                                                font-weight: 400;
+                                                color: #014099;
+                                            }
+                                        }
+                                        .option_box{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            .select_box{
+                                                @include selectBox();
+                                                margin-left: 10px;
+                                                width: 130px;
+                                            }
+                                            span{
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                em{
+                                                    font-weight: 400;
+                                                    color: #014099;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .con_total{
+                    height: 60px;
+                    border: 1px solid #014099;
+                    background-color: #EEF3F9;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    .con_title{
+                        font-size: 16px;
+                        line-height: 21px;
+                        font-weight: 500;
+                    }
+                    .total_price{
+                        font-size: 14px;
+                        line-height: 21px;
+                        em{
+                            font-size: 24px;
+                            line-height: 21px;
+                            font-weight: 600;
+                            color: #014099;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+            .button_box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .button_list{
+                    width: 166px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    border-radius: 3px;
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                    &.save{
+                        background-color: #014099;
+                        border: none;
+                    }
+                    &.cancel{
+                        background-color: #434343;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.items_for_sale_rewrite{
+            .my_cont{
+                .pc_title{
+                    display: none;
+                }
+
+                .con_top{
+                    padding-top: 20px;
+                    margin-bottom: 30px;
+                    .title{
+                        margin-bottom: 15px;
+                    }
+                    .info_table{
+                        .info_list{
+                            height: auto;
+                            &:not(:last-child){
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+                            &.category_tr{
+                                height: 202px;
+                                .info_td{
+                                    flex-direction: column;
+                                    .select_box{
+                                        width: 100%;
+                                        margin-right: 0;
+                                        height: 36px;
+                                        &:not(:last-child){
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+                                    .detail_input{
+                                        width: 100%;
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                            &.title_tr{
+                                height: 60px;
+                                .info_td{
+                                    .title_input{
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                            &.column_table{
+                                .sm_td{
+                                    &.bottom_td{
+                                        .min_value{
+                                            input{
+                                                width: 160px;
+                                                height: 36px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.unit_tr{
+                                height: 50px;
+                                .info_td{
+                                    .select_box{
+                                        width: 160px;
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                            &.amount_tr{
+                                height: 50px;
+                                .info_td{
+                                    .amount_input{
+                                        input{
+                                            width: calc(100% - 23px);
+                                            height: 36px;
+                                        }
+                                        span{
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            &.imme_pay_tr{
+                                height: 50px;
+                            }
+                            .info_th{
+                                width: 72px;
+                            }
+                            .info_td{
+                               width: calc(100% - 72px);
+                            }
+                        }
+                    }
+                }
+                .con_middle{
+                    .title{
+                        margin-bottom: 15px;
+                    }
+                    .con_box{
+                        height: auto;
+                        padding: 14px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 300px;
+                            margin-bottom: 16.5px;
+                        }
+                    }
+                }
+                .con_bottom{
+                    margin-bottom: 50px;
+                    .title{
+                        margin-bottom: 15px;
+                    }
+                    .con_box{
+                        height: auto;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        .option_list{
+                            width: 100%;
+                            &:not(:last-child){
+                                border-right: none;
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+                            &.premium{
+                                .option_top{
+                                    padding-bottom: 31px;
+                                }
+                            }
+                            &.again{
+                                .option_top{
+                                    padding-bottom: 19px;
+                                }
+                                .option_bottom{
+                                    .detail_box{
+                                        &:not(:last-child){
+                                            margin-bottom: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                            .con_option{
+                                padding: 15px;
+                                .option_detail{
+                                    &.option_top{
+                                        .option_box{
+                                            flex-direction: column;
+                                            .select_box{
+                                                width: 200px;
+                                                height: 36px;
+                                                margin-bottom: 10px;
+                                            }
+                                            .price_text_box{
+                                                align-items: start;
+                                            }
+                                        }
+                                    }
+                                    &.option_bottom{
+                                        .detail_box{
+                                            flex-direction: column;
+                                            align-items: start;
+                                            .option_box{
+                                                margin-top: 10px;
+                                                .select_box{
+                                                    margin-left: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .con_total{
+                        height: 60px;
+                        border: 1px solid #014099;
+                        background-color: #EEF3F9;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 20px;
+                        .con_title{
+                            font-size: 16px;
+                            line-height: 21px;
+                            font-weight: 500;
+                        }
+                        .total_price{
+                            font-size: 14px;
+                            line-height: 21px;
+                            em{
+                                font-size: 24px;
+                                line-height: 21px;
+                                font-weight: 600;
+                                color: #014099;
+                            }
+                        }
+                    }
+                }
+                .button_box{
+                    .button_list{
+                        width: calc((100% - 20px) / 2);
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
