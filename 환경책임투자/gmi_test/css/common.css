@@ -61,8 +61,8 @@ h2 {font-size:1.8em;}
 
 
 /* 202311 웹접근성 */
-input[type='radio']:focus + label {outline:2px dotted #6b9cf1;}
-input[type='checkbox']:focus + label {outline:2px dotted #6b9cf1;}
+input[type='radio']:focus + label {outline:2px dotted #FF0000;}
+input[type='checkbox']:focus + label {outline:2px dotted #FF0000;}
 
 a:focus {border:1px dotted #FF0000;}
 a:focus,
