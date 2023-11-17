@@ -3886,7 +3886,7 @@
 
 // 판매등록물품
 #mypage {
-    &.items_for_sale {
+    &.items_for_purchase {
         .my_cont {
             .pc_title {
                 font-size: 16px;
@@ -3974,254 +3974,261 @@
                             border: 1px solid #D3D3D3;
                             border-collapse: collapse; 
                             border-spacing: 0;
-                            tr{
-                                &:not(:last-child){
-                                    border-bottom: 1px solid #D3D3D3;
-                                }
-                                &.premium_on{
-                                    .info_td{
-                                        .top_info{
-                                            .premium_box{
-                                                display: inline-block;
-                                            }
-                                        }
-                                    }
-                                }
-                                &.table_title{
-                                    th{
-                                        background-color: #F6F6F6;
-                                        height: 50px;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        color: #000;
-                                        font-weight: 400;
-                                        &:not(:last-child){
-                                            border-right: 1px solid #D3D3D3;
-                                        }
-                                        &.check{
-                                            width: 40px;
-                                            input{
-                                                width: 16px;
-                                                height: 16px;
-                                            }
-                                        }
-                                        &.info{
-                                            width: 500px;
-                                        }
-                                        &.price{
-                                            width: 210px;
-                                        }
-                                        &.view{
-                                            width: 103px;
-                                        }
-                                    }
-                                }
-    
-                                td{
+                            .table_title{
+                                border-bottom: 1px solid #D3D3D3;
+                                th{
+                                    background-color: #F6F6F6;
+                                    height: 50px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000;
+                                    font-weight: 400;
                                     &:not(:last-child){
                                         border-right: 1px solid #D3D3D3;
                                     }
-                                    &.check_td{
-                                        padding: 42px 12px;
+                                    &.check{
+                                        width: 40px;
                                         input{
                                             width: 16px;
                                             height: 16px;
-                                            margin: 0;
                                         }
                                     }
-                                    &.info_td{
-                                        padding: 13px 15px 12px 10px;
-                                        .top_info{
-                                            margin-bottom: 8px;
-                                            display: flex;
-                                            justify-content: start;
-                                            align-items: center;
-                                            .premium_box{
-                                                width: 22px;
-                                                height: 22px;
-                                                display: none;
-                                                img{
-                                                    width: 100%;
-                                                    height: 100%;
-                                                }
-                                            }
-                                            .category{
-                                                margin-left: 10px;
-                                                span{
-                                                    font-size: 14px;
-                                                    line-height: 20px;
-                                                    color: #000;
-                                                    font-weight: 500;
-                                                    em{
-                                                        font-weight: 500;
-                                                        color: #113462;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        .middle_info{
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            margin-bottom: 9px;
-                                            .content{
-                                                span{
-                                                    font-size: 14px;
-                                                    line-height: 20px;
-                                                    color: #000;
-                                                }
-                                            }
-                                            .pay_immediately{
-                                                padding: 4px 10px;
-                                                font-size: 12px;
-                                                line-height: 18px;
-                                                background-color: #EEF3F9;
-                                                color: #014099;
-                                            }
-                                        }
-                                        .bottom_info{
-                                            span{
-                                                font-size: 13px;
-                                                line-height: 16px;
-                                                color: #A7A7A7;
-                                            }
-                                        }
+                                    &.info{
+                                        width: 500px;
                                     }
-                                    &.price_td{
-                                        padding: 12px 10px 12px 11px;
-                                        .con_box{
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            &:first-child{
-                                                margin-bottom: 36px;
-                                            }
-                                            .title{
-                                                font-size: 13px;
-                                                line-height: 19px;
-                                            }
-                                            .con{
-                                               font-size: 14px;
-                                               line-height: 20px;
-                                               em{
-                                                font-weight: 600;
-                                                font-size: 16px;
-                                                line-height: 20px;
-                                                margin-right: 1px;
-                                               } 
-                                            }
-                                        }
+                                    &.price{
+                                        width: 210px;
                                     }
-                                    &.view_id{
-                                        padding: 18px 19px 18px 20px;
-                                        .fix_link{
-                                            width: 64px;
-                                            height: 26px;
-                                            border: 1px solid #D3D3D3;
-                                            background-color: #fff;
-                                            border-radius: 15px;
-                                            font-size: 12px;
-                                            line-height: 18px;
-                                            margin-bottom: 12px;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            a{
-                                                display: block;
-                                                &::before{
-                                                    content: "";
-                                                    margin-right: 7px;
-                                                    background-image: url(../images/mypage/mypage_pencil.svg);
-                                                    background-position: center;
-                                                    background-size: contain;
-                                                    background-repeat: no-repeat;
-                                                    display: inline-block;
-                                                    width: 11px;
-                                                    height: 11px;
-                                                }
-                                            }
-                                        }
-                                        label {
-                                            display: inline-flex;
-                                            align-items: center;
-                                            gap: 0.5rem;
-                                            width: 64px;
-                                            height: 26px;
-                                            cursor: pointer;
-                                            position: relative;
-    
-                                            input {
-                                                appearance: none;
-                                                position: relative;
-                                                background-color: #A7A7A7;
-                                                box-shadow: inset 0px 1px 4px #00000033;
-                                                border-radius: 15px;
-                                                width: 100%;
-                                                height: 100%;
-                                                padding: 3px;
-                                                margin: 0;
-    
-                                                ~.checked_text {
-                                                    display: none;
-                                                }
-    
-                                                ~.unchecked_text {
-                                                    display: inline-block;
-                                                }
-    
-                                                &::before {
-                                                    content: "";
-                                                    position: absolute;
-                                                    top: 50%;
-                                                    transform: translateY(-50%);
-                                                    right: 3px;
-                                                    width: 20px;
-                                                    height: 20px;
-                                                    border-radius: 50%;
-                                                    background-color: #fff;
-                                                    transition: right 150ms linear;
-                                                }
-    
-                                                &:checked {
-                                                    background-color: #113462;
-    
-                                                    ~.unchecked_text {
-                                                        display: none;
-                                                    }
-    
-                                                    ~.checked_text {
-                                                        display: inline-block;
-                                                    }
-    
-                                                    &::before {
-                                                        right: 41px;
-                                                    }
-                                                }
-                                            }
-    
-                                            .checked_text {
-                                                position: absolute;
-                                                font-size: 10px;
-                                                line-height: 15px;
-                                                color: #fff;
-                                                top: 50%;
-                                                right: 15px;
-                                                transform: translateY(-50%);
-                                            }
-    
-                                            .unchecked_text {
-                                                position: absolute;
-                                                font-size: 10px;
-                                                line-height: 15px;
-                                                color: #fff;
-                                                top: 50%;
-                                                left: 9px;
-                                                transform: translateY(-50%);
-                                            }
-                                        }
+                                    &.view{
+                                        width: 103px;
                                     }
                                 }
-    
+                            }
+                            tbody{
+                                .no_item{
+                                    text-align: center;
+                                    height: 50px;
+                                }
+                                tr{
+                                    &:not(:last-child){
+                                        border-bottom: 1px solid #D3D3D3;
+                                    }
+                                    &.premium_on{
+                                        .info_td{
+                                            .top_info{
+                                                .premium_box{
+                                                    display: inline-block;
+                                                }
+                                            }
+                                        }
+                                    }
+        
+                                    td{
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
+                                        }
+                                        &.check_td{
+                                            padding: 42px 12px;
+                                            input{
+                                                width: 16px;
+                                                height: 16px;
+                                                margin: 0;
+                                            }
+                                        }
+                                        &.info_td{
+                                            padding: 13px 15px 12px 10px;
+                                            .top_info{
+                                                margin-bottom: 8px;
+                                                display: flex;
+                                                justify-content: start;
+                                                align-items: center;
+                                                .premium_box{
+                                                    width: 22px;
+                                                    height: 22px;
+                                                    display: none;
+                                                    img{
+                                                        width: 100%;
+                                                        height: 100%;
+                                                    }
+                                                }
+                                                .category{
+                                                    margin-left: 10px;
+                                                    span{
+                                                        font-size: 14px;
+                                                        line-height: 20px;
+                                                        color: #000;
+                                                        font-weight: 500;
+                                                        em{
+                                                            font-weight: 500;
+                                                            color: #113462;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .middle_info{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                margin-bottom: 9px;
+                                                .content{
+                                                    span{
+                                                        font-size: 14px;
+                                                        line-height: 20px;
+                                                        color: #000;
+                                                    }
+                                                }
+                                                .pay_immediately{
+                                                    padding: 4px 10px;
+                                                    font-size: 12px;
+                                                    line-height: 18px;
+                                                    background-color: #EEF3F9;
+                                                    color: #014099;
+                                                }
+                                            }
+                                            .bottom_info{
+                                                span{
+                                                    font-size: 13px;
+                                                    line-height: 16px;
+                                                    color: #A7A7A7;
+                                                }
+                                            }
+                                        }
+                                        &.price_td{
+                                            padding: 12px 10px 12px 11px;
+                                            .con_box{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                &:first-child{
+                                                    margin-bottom: 36px;
+                                                }
+                                                .title{
+                                                    font-size: 13px;
+                                                    line-height: 19px;
+                                                }
+                                                .con{
+                                                   font-size: 14px;
+                                                   line-height: 20px;
+                                                   em{
+                                                    font-weight: 600;
+                                                    font-size: 16px;
+                                                    line-height: 20px;
+                                                    margin-right: 1px;
+                                                   } 
+                                                }
+                                            }
+                                        }
+                                        &.view_id{
+                                            padding: 18px 19px 18px 20px;
+                                            .fix_link{
+                                                width: 64px;
+                                                height: 26px;
+                                                border: 1px solid #D3D3D3;
+                                                background-color: #fff;
+                                                border-radius: 15px;
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                                margin-bottom: 12px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                a{
+                                                    display: block;
+                                                    &::before{
+                                                        content: "";
+                                                        margin-right: 7px;
+                                                        background-image: url(../images/mypage/mypage_pencil.svg);
+                                                        background-position: center;
+                                                        background-size: contain;
+                                                        background-repeat: no-repeat;
+                                                        display: inline-block;
+                                                        width: 11px;
+                                                        height: 11px;
+                                                    }
+                                                }
+                                            }
+                                            label {
+                                                display: inline-flex;
+                                                align-items: center;
+                                                gap: 0.5rem;
+                                                width: 64px;
+                                                height: 26px;
+                                                cursor: pointer;
+                                                position: relative;
+        
+                                                input {
+                                                    appearance: none;
+                                                    position: relative;
+                                                    background-color: #A7A7A7;
+                                                    box-shadow: inset 0px 1px 4px #00000033;
+                                                    border-radius: 15px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    padding: 3px;
+                                                    margin: 0;
+        
+                                                    ~.checked_text {
+                                                        display: none;
+                                                    }
+        
+                                                    ~.unchecked_text {
+                                                        display: inline-block;
+                                                    }
+        
+                                                    &::before {
+                                                        content: "";
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        transform: translateY(-50%);
+                                                        right: 3px;
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        border-radius: 50%;
+                                                        background-color: #fff;
+                                                        transition: right 150ms linear;
+                                                    }
+        
+                                                    &:checked {
+                                                        background-color: #113462;
+        
+                                                        ~.unchecked_text {
+                                                            display: none;
+                                                        }
+        
+                                                        ~.checked_text {
+                                                            display: inline-block;
+                                                        }
+        
+                                                        &::before {
+                                                            right: 41px;
+                                                        }
+                                                    }
+                                                }
+        
+                                                .checked_text {
+                                                    position: absolute;
+                                                    font-size: 10px;
+                                                    line-height: 15px;
+                                                    color: #fff;
+                                                    top: 50%;
+                                                    right: 15px;
+                                                    transform: translateY(-50%);
+                                                }
+        
+                                                .unchecked_text {
+                                                    position: absolute;
+                                                    font-size: 10px;
+                                                    line-height: 15px;
+                                                    color: #fff;
+                                                    top: 50%;
+                                                    left: 9px;
+                                                    transform: translateY(-50%);
+                                                }
+                                            }
+                                        }
+                                    }
+        
+                                }
                             }
                         }
                         // 페이지네이션
@@ -4341,7 +4348,7 @@
 
 @media(max-width:1080px) {
     #mypage {
-        &.items_for_sale {
+        &.items_for_purchase {
             .my_cont {
                 .pc_title {
                     display: none;

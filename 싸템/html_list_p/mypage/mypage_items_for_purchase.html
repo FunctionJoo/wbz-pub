@@ -395,7 +395,7 @@
 	</div>
 
 	<div id="contets">
-		<div id="mypage" class="items_for_sale">
+		<div id="mypage" class="items_for_purchase">
 			<div class="w_set w_set_my">
 				<div class="my_left">
 					<h2 class="mym_title">마이페이지</h2>
@@ -445,12 +445,12 @@
 				</div>
 				<div class="my_cont">
 					<!-- pc -->
-					<p class="pc_title">판매등록 물품</p>
+					<p class="pc_title">구매등록 물품</p>
 
 					<!-- 모바일용 타이틀 -->
 					<!-- <p class="my_title">마이페이지</p> -->
 					<!-- 모바일용 타이틀 라인 타입 -->
-					<p class="my_title type_line">판매등록 물품</p>
+					<p class="my_title type_line">구매등록 물품</p>
 
 					<!-- 마이 메인 -->
 					<!-- 레이아웃 테스트 -->
@@ -476,278 +476,283 @@
 						<div class="con_table">
 							<div id="itemForSale_table">
 								<table id="table">
-									<tr class="table_title">
+									<thead class="table_title">
 										<th class="check">
 											<input type="checkbox">
 										</th>
 										<th class="info">물품정보</th>
 										<th class="price">기본가격</th>
 										<th class="view">수정/노출</th>
-									</tr>
-									<tr class="premium_on">
-										<td class="check_td">
-											<input type="checkbox">
-										</td>
-										<td class="info_td">
-											<div class="top_info">
-												<div class="premium_box">
-													<img src="../images/mypage/mypage_premium.png" alt="premium">
+									</thead>
+									<tbody>
+										<tr class="no_item">
+											<td colspan="4">등록된 물품이 없습니다.</td>
+										</tr>
+										<tr class="premium_on">
+											<td class="check_td">
+												<input type="checkbox">
+											</td>
+											<td class="info_td">
+												<div class="top_info">
+													<div class="premium_box">
+														<img src="../images/mypage/mypage_premium.png" alt="premium">
+													</div>
+													<div class="category">
+														<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+													</div>
 												</div>
-												<div class="category">
-													<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+												<div class="middle_info">
+													<div class="content">
+														<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+													</div>
+													<div class="pay_immediately">즉시결제</div>
 												</div>
-											</div>
-											<div class="middle_info">
-												<div class="content">
-													<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+												<div class="bottom_info">
+													<span>23.08.15 10:42:44</span>
 												</div>
-												<div class="pay_immediately">즉시결제</div>
-											</div>
-											<div class="bottom_info">
-												<span>23.08.15 10:42:44</span>
-											</div>
-										</td>
-										<td class="price_td">
-											<div class="con_box">
-												<span class="title">기본 가격</span>
-												<span class="con"><em>100,000,000</em>원</span>
-											</div>
-											<div class="con_box">
-												<span class="title">수량</span>
-												<span class="con"><em>1/1</em>개</span>
-											</div>
-										</td>
-										<td class="view_id">
-											<div class="fix_link">
-												<a href="#none">수정</a>
-											</div>
-											<label for="view_01">
-												<input id="view_01" type="checkbox">
-												<span class="checked_text">노출</span>
-												<span class="unchecked_text">비노출</span>
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="check_td">
-											<input type="checkbox">
-										</td>
-										<td class="info_td">
-											<div class="top_info">
-												<div class="premium_box">
-													<img src="../images/mypage/mypage_premium.png" alt="premium">
+											</td>
+											<td class="price_td">
+												<div class="con_box">
+													<span class="title">기본 가격</span>
+													<span class="con"><em>100,000,000</em>원</span>
 												</div>
-												<div class="category">
-													<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+												<div class="con_box">
+													<span class="title">수량</span>
+													<span class="con"><em>1/1</em>개</span>
 												</div>
-											</div>
-											<div class="middle_info">
-												<div class="content">
-													<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+											</td>
+											<td class="view_id">
+												<div class="fix_link">
+													<a href="#none">수정</a>
 												</div>
-												<div class="pay_immediately">즉시결제</div>
-											</div>
-											<div class="bottom_info">
-												<span>23.08.15 10:42:44</span>
-											</div>
-										</td>
-										<td class="price_td">
-											<div class="con_box">
-												<span class="title">기본 가격</span>
-												<span class="con"><em>100,000,000</em>원</span>
-											</div>
-											<div class="con_box">
-												<span class="title">수량</span>
-												<span class="con"><em>1/1</em>개</span>
-											</div>
-										</td>
-										<td class="view_id">
-											<div class="fix_link">
-												<a href="#none">수정</a>
-											</div>
-											<label for="view_02">
-												<input id="view_02" type="checkbox">
-												<span class="checked_text">노출</span>
-												<span class="unchecked_text">비노출</span>
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="check_td">
-											<input type="checkbox">
-										</td>
-										<td class="info_td">
-											<div class="top_info">
-												<div class="premium_box">
-													<img src="../images/mypage/mypage_premium.png" alt="premium">
+												<label for="view_01">
+													<input id="view_01" type="checkbox">
+													<span class="checked_text">노출</span>
+													<span class="unchecked_text">비노출</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_td">
+												<input type="checkbox">
+											</td>
+											<td class="info_td">
+												<div class="top_info">
+													<div class="premium_box">
+														<img src="../images/mypage/mypage_premium.png" alt="premium">
+													</div>
+													<div class="category">
+														<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+													</div>
 												</div>
-												<div class="category">
-													<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+												<div class="middle_info">
+													<div class="content">
+														<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+													</div>
+													<div class="pay_immediately">즉시결제</div>
 												</div>
-											</div>
-											<div class="middle_info">
-												<div class="content">
-													<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+												<div class="bottom_info">
+													<span>23.08.15 10:42:44</span>
 												</div>
-												<div class="pay_immediately">즉시결제</div>
-											</div>
-											<div class="bottom_info">
-												<span>23.08.15 10:42:44</span>
-											</div>
-										</td>
-										<td class="price_td">
-											<div class="con_box">
-												<span class="title">기본 가격</span>
-												<span class="con"><em>100,000,000</em>원</span>
-											</div>
-											<div class="con_box">
-												<span class="title">수량</span>
-												<span class="con"><em>1/1</em>개</span>
-											</div>
-										</td>
-										<td class="view_id">
-											<div class="fix_link">
-												<a href="#none">수정</a>
-											</div>
-											<label for="view_03">
-												<input id="view_03" type="checkbox">
-												<span class="checked_text">노출</span>
-												<span class="unchecked_text">비노출</span>
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="check_td">
-											<input type="checkbox">
-										</td>
-										<td class="info_td">
-											<div class="top_info">
-												<div class="premium_box">
-													<img src="../images/mypage/mypage_premium.png" alt="premium">
+											</td>
+											<td class="price_td">
+												<div class="con_box">
+													<span class="title">기본 가격</span>
+													<span class="con"><em>100,000,000</em>원</span>
 												</div>
-												<div class="category">
-													<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+												<div class="con_box">
+													<span class="title">수량</span>
+													<span class="con"><em>1/1</em>개</span>
 												</div>
-											</div>
-											<div class="middle_info">
-												<div class="content">
-													<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+											</td>
+											<td class="view_id">
+												<div class="fix_link">
+													<a href="#none">수정</a>
 												</div>
-												<div class="pay_immediately">즉시결제</div>
-											</div>
-											<div class="bottom_info">
-												<span>23.08.15 10:42:44</span>
-											</div>
-										</td>
-										<td class="price_td">
-											<div class="con_box">
-												<span class="title">기본 가격</span>
-												<span class="con"><em>100,000,000</em>원</span>
-											</div>
-											<div class="con_box">
-												<span class="title">수량</span>
-												<span class="con"><em>1/1</em>개</span>
-											</div>
-										</td>
-										<td class="view_id">
-											<div class="fix_link">
-												<a href="#none">수정</a>
-											</div>
-											<label for="view_04">
-												<input id="view_04" type="checkbox">
-												<span class="checked_text">노출</span>
-												<span class="unchecked_text">비노출</span>
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="check_td">
-											<input type="checkbox">
-										</td>
-										<td class="info_td">
-											<div class="top_info">
-												<div class="premium_box">
-													<img src="../images/mypage/mypage_premium.png" alt="premium">
+												<label for="view_02">
+													<input id="view_02" type="checkbox">
+													<span class="checked_text">노출</span>
+													<span class="unchecked_text">비노출</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_td">
+												<input type="checkbox">
+											</td>
+											<td class="info_td">
+												<div class="top_info">
+													<div class="premium_box">
+														<img src="../images/mypage/mypage_premium.png" alt="premium">
+													</div>
+													<div class="category">
+														<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+													</div>
 												</div>
-												<div class="category">
-													<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+												<div class="middle_info">
+													<div class="content">
+														<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+													</div>
+													<div class="pay_immediately">즉시결제</div>
 												</div>
-											</div>
-											<div class="middle_info">
-												<div class="content">
-													<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+												<div class="bottom_info">
+													<span>23.08.15 10:42:44</span>
 												</div>
-												<div class="pay_immediately">즉시결제</div>
-											</div>
-											<div class="bottom_info">
-												<span>23.08.15 10:42:44</span>
-											</div>
-										</td>
-										<td class="price_td">
-											<div class="con_box">
-												<span class="title">기본 가격</span>
-												<span class="con"><em>100,000,000</em>원</span>
-											</div>
-											<div class="con_box">
-												<span class="title">수량</span>
-												<span class="con"><em>1/1</em>개</span>
-											</div>
-										</td>
-										<td class="view_id">
-											<div class="fix_link">
-												<a href="#none">수정</a>
-											</div>
-											<label for="view_05">
-												<input id="view_05" type="checkbox">
-												<span class="checked_text">노출</span>
-												<span class="unchecked_text">비노출</span>
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="check_td">
-											<input type="checkbox">
-										</td>
-										<td class="info_td">
-											<div class="top_info">
-												<div class="premium_box">
-													<img src="../images/mypage/mypage_premium.png" alt="premium">
+											</td>
+											<td class="price_td">
+												<div class="con_box">
+													<span class="title">기본 가격</span>
+													<span class="con"><em>100,000,000</em>원</span>
 												</div>
-												<div class="category">
-													<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+												<div class="con_box">
+													<span class="title">수량</span>
+													<span class="con"><em>1/1</em>개</span>
 												</div>
-											</div>
-											<div class="middle_info">
-												<div class="content">
-													<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+											</td>
+											<td class="view_id">
+												<div class="fix_link">
+													<a href="#none">수정</a>
 												</div>
-												<div class="pay_immediately">즉시결제</div>
-											</div>
-											<div class="bottom_info">
-												<span>23.08.15 10:42:44</span>
-											</div>
-										</td>
-										<td class="price_td">
-											<div class="con_box">
-												<span class="title">기본 가격</span>
-												<span class="con"><em>100,000,000</em>원</span>
-											</div>
-											<div class="con_box">
-												<span class="title">수량</span>
-												<span class="con"><em>1/1</em>개</span>
-											</div>
-										</td>
-										<td class="view_id">
-											<div class="fix_link">
-												<a href="#none">수정</a>
-											</div>
-											<label for="view_06">
-												<input id="view_06" type="checkbox">
-												<span class="checked_text">노출</span>
-												<span class="unchecked_text">비노출</span>
-											</label>
-										</td>
-									</tr>
+												<label for="view_03">
+													<input id="view_03" type="checkbox">
+													<span class="checked_text">노출</span>
+													<span class="unchecked_text">비노출</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_td">
+												<input type="checkbox">
+											</td>
+											<td class="info_td">
+												<div class="top_info">
+													<div class="premium_box">
+														<img src="../images/mypage/mypage_premium.png" alt="premium">
+													</div>
+													<div class="category">
+														<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+													</div>
+												</div>
+												<div class="middle_info">
+													<div class="content">
+														<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+													</div>
+													<div class="pay_immediately">즉시결제</div>
+												</div>
+												<div class="bottom_info">
+													<span>23.08.15 10:42:44</span>
+												</div>
+											</td>
+											<td class="price_td">
+												<div class="con_box">
+													<span class="title">기본 가격</span>
+													<span class="con"><em>100,000,000</em>원</span>
+												</div>
+												<div class="con_box">
+													<span class="title">수량</span>
+													<span class="con"><em>1/1</em>개</span>
+												</div>
+											</td>
+											<td class="view_id">
+												<div class="fix_link">
+													<a href="#none">수정</a>
+												</div>
+												<label for="view_04">
+													<input id="view_04" type="checkbox">
+													<span class="checked_text">노출</span>
+													<span class="unchecked_text">비노출</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_td">
+												<input type="checkbox">
+											</td>
+											<td class="info_td">
+												<div class="top_info">
+													<div class="premium_box">
+														<img src="../images/mypage/mypage_premium.png" alt="premium">
+													</div>
+													<div class="category">
+														<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+													</div>
+												</div>
+												<div class="middle_info">
+													<div class="content">
+														<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+													</div>
+													<div class="pay_immediately">즉시결제</div>
+												</div>
+												<div class="bottom_info">
+													<span>23.08.15 10:42:44</span>
+												</div>
+											</td>
+											<td class="price_td">
+												<div class="con_box">
+													<span class="title">기본 가격</span>
+													<span class="con"><em>100,000,000</em>원</span>
+												</div>
+												<div class="con_box">
+													<span class="title">수량</span>
+													<span class="con"><em>1/1</em>개</span>
+												</div>
+											</td>
+											<td class="view_id">
+												<div class="fix_link">
+													<a href="#none">수정</a>
+												</div>
+												<label for="view_05">
+													<input id="view_05" type="checkbox">
+													<span class="checked_text">노출</span>
+													<span class="unchecked_text">비노출</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_td">
+												<input type="checkbox">
+											</td>
+											<td class="info_td">
+												<div class="top_info">
+													<div class="premium_box">
+														<img src="../images/mypage/mypage_premium.png" alt="premium">
+													</div>
+													<div class="category">
+														<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
+													</div>
+												</div>
+												<div class="middle_info">
+													<div class="content">
+														<span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span>
+													</div>
+													<div class="pay_immediately">즉시결제</div>
+												</div>
+												<div class="bottom_info">
+													<span>23.08.15 10:42:44</span>
+												</div>
+											</td>
+											<td class="price_td">
+												<div class="con_box">
+													<span class="title">기본 가격</span>
+													<span class="con"><em>100,000,000</em>원</span>
+												</div>
+												<div class="con_box">
+													<span class="title">수량</span>
+													<span class="con"><em>1/1</em>개</span>
+												</div>
+											</td>
+											<td class="view_id">
+												<div class="fix_link">
+													<a href="#none">수정</a>
+												</div>
+												<label for="view_06">
+													<input id="view_06" type="checkbox">
+													<span class="checked_text">노출</span>
+													<span class="unchecked_text">비노출</span>
+												</label>
+											</td>
+										</tr>
+									</tbody>
 								</table>
 								<div class="pagenation">
 									<div class="back_page">
