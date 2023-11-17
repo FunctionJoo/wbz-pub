@@ -127,7 +127,7 @@ $(function(){
 		}
 	})	
 	$('.family_list01 dd:last').focusout(function(){
-		$(this).next('dl').removeClass('on');		
+		$(this).parent('dl').removeClass('on');		
 	});	
 
 	$('.family_tit02').click(function(){
@@ -139,7 +139,7 @@ $(function(){
 		}
 	})
 	$('.family_list02 dd:last').focusout(function(){
-		$(this).next('dl').removeClass('on');		
+		$(this).parent('dl').removeClass('on');		
 	});	
 	// $('.family_tit01').click(function(){
 	// 	$('.family_list01').slideToggle(150);
