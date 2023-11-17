@@ -2490,7 +2490,7 @@
                             padding: 15px 0;
                             font-weight: normal;
                             text-align: center;
-
+                            color: #000;
                             &:last-child {
                                 border-right: 1px solid #D3D3D3;
                             }
@@ -2538,6 +2538,7 @@
                             &.category_td {
                                 font-size: 14px;
                                 line-height: 20px;
+                                color: #000;
                             }
 
                             &.title_td {
@@ -2819,12 +2820,633 @@
                                 font-size: 14px;
                                 line-height: 20px;
                                 margin-bottom: 6px;
+                                color: #000;
                             }
                             .title_td {
                                 font-size: 14px;
                                 line-height: 20px;
                                 margin-bottom: 11px;
                                 font-weight: 500;
+                                color: #000;
+                            }
+                            .progress_td {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .step_01{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #014099;
+                                }
+                                .step_02{
+                                    display: none;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #DE4040;
+                                }
+                                .bottom_right_box{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .step_02_on{
+                                        display: none;
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        padding: 5px 3px;
+                                        background-color: #fff;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        margin-right: 10px;
+                                    }
+                                    .always_in{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .cancel_td {
+                                            button {
+                                                border: 1px solid #D3D3D3;
+                                                border-radius: 3px;
+                                                padding: 5px 9px;
+                                                background-color: #fff;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                        .chat_td {
+                                            .img_box {
+                                                width: fit-content;
+                                                margin: 0 auto;
+                                            
+                                                img {
+                                                    display: block;
+                                                }
+                                            
+                                                .count {
+                                                    display: none;
+                                                }
+                                            }
+                                        
+                                            &.chat_exists {
+                                                .img_box {
+                                                    position: relative;
+                                                    margin-right: calc(21.91px / 2);
+                                                
+                                                    .count {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        width: 21.91px;
+                                                        height: 21.91px;
+                                                        border-radius: 50%;
+                                                        background-color: #434343;
+                                                        position: absolute;
+                                                        bottom: 50%;
+                                                        left: 50%;
+                                                    
+                                                        .count_chat {
+                                                            display: block;
+                                                            font-size: 10px;
+                                                            line-height: 14px;
+                                                            color: #fff;
+                                                        }
+                                                    
+                                                        .over_chat {
+                                                            display: none;
+                                                            font-size: 10px;
+                                                            line-height: 14px;
+                                                            color: #fff;
+                                                        }
+                                                    
+                                                        &.over {
+                                                            .count_chat {
+                                                                display: none;
+                                                            }
+                                                        
+                                                            .over_chat {
+                                                                display: block;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.on{
+                                    .step_01{
+                                        display: none;
+                                    }
+                                    .step_02{
+                                        display: inline-block;
+                                    }
+                                    .bottom_right_box{
+                                        .step_02_on{
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sale_info{
+                display: none;
+            }
+        }
+    }
+
+}
+
+// 판매진행중
+#mypage {
+    &.purchase_in_progress {
+        .my_cont {
+            .pc_title {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 20px;
+                font-weight: 500;
+            }
+
+            .mo_table_count {
+                display: flex;
+                margin-bottom: 10px;
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+            
+                    em {
+                        font-weight: normal;
+                        color: #014099;
+                    }
+                }
+            }
+
+            // 페이지네이션
+            .pagenation {
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    margin: 0 10px;
+
+                    li {
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        &.on {
+                            background-color: #666666;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .back_page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .all_page {
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .one_page {
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .next_page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .all_page {
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    .one_page {
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+
+            #mo_cancelWait_table {
+                display: none;
+            }
+
+            #cancelWait_table {
+                display: block;
+
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+
+                    tr {
+                        th {
+                            background-color: #F6F6F6;
+                            border-top: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            border-left: 1px solid #D3D3D3;
+                            padding: 15px 0;
+                            font-weight: normal;
+                            text-align: center;
+                            color: #000;
+                            &:last-child {
+                                border-right: 1px solid #D3D3D3;
+                            }
+
+                            &.category {
+                                width: 150px;
+                            }
+
+                            &.title {
+                                width: 280px;
+                            }
+
+                            &.amount {
+                                width: 124px;
+                            }
+
+                            &.date {
+                                width: 80px;
+                            }
+
+                            &.progress {
+                                width: 90px;
+                            }
+                            
+                            &.cancel {
+                                width: 84px;
+                            }
+
+                            &.chat {
+                                width: 50px;
+                            }
+                        }
+
+                        td {
+                            border-top: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            border-left: 1px solid #D3D3D3;
+                            padding: 15px 0;
+                            text-align: center;
+
+                            &:last-child {
+                                border-right: 1px solid #D3D3D3;
+                            }
+
+                            &.category_td {
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                            }
+
+                            &.title_td {
+                                font-size: 13px;
+                                line-height: 19px;
+                            }
+
+                            &.amount_td {
+                                font-size: 14px;
+                                line-height: 20px;
+
+                                em {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            &.date_td {
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+
+                            &.chat_td {
+                                .img_box {
+                                    width: fit-content;
+                                    margin: 0 auto;
+
+                                    img {
+                                        display: block;
+                                    }
+
+                                    .count {
+                                        display: none;
+                                    }
+                                }
+
+                                &.chat_exists {
+                                    .img_box {
+                                        position: relative;
+                                        margin: 0 9px;
+
+                                        .count {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 21.91px;
+                                            height: 21.91px;
+                                            border-radius: 50%;
+                                            background-color: #434343;
+                                            position: absolute;
+                                            bottom: 50%;
+                                            left: 50%;
+
+                                            .count_chat {
+                                                display: block;
+                                                font-size: 10px;
+                                                line-height: 14px;
+                                                color: #fff;
+                                            }
+
+                                            .over_chat {
+                                                display: none;
+                                                font-size: 10px;
+                                                line-height: 14px;
+                                                color: #fff;
+                                            }
+
+                                            &.over {
+                                                .count_chat {
+                                                    display: none;
+                                                }
+
+                                                .over_chat {
+                                                    display: block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.progress_td {
+                                .step_01{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #014099;
+                                }
+                                .step_02{
+                                    display: none;
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #DE4040;
+                                        margin-bottom: 2px;
+                                    }
+                                    button {
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        padding: 4px 7px;
+                                        background-color: #fff;
+                                        font-size: 12px;
+                                        line-height: 18px;
+                                    }
+                                }
+
+                                &.on{
+                                    padding: 6px 0;
+                                    .step_01{
+                                        display: none;
+                                    }
+                                    .step_02{
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            &.cancel_td {
+                                button {
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 3px;
+                                    padding: 5px 9px;
+                                    background-color: #fff;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sale_info{
+            margin-top: 30px;
+            .info_title{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .info_box{
+                background-color: #F6F6F6;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 26px 20px 46px 20px;
+                .info_list{
+                    width: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    &:not(:last-child){
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                background-image: url(../images/mypage/mypage_arrow_gray_gradation.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                width: 24px;
+                                height: 15px;
+                                left: 100%;
+                                top: 30%;
+                                margin-left: 20px;
+                            }
+                    }
+                    .img_box{
+                        height: 110px;
+                        width: 110px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        border: 1px solid #A7A7A7;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            margin-top: 10px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 500;
+                        }
+                    }
+                    .text_box{
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-top: 10px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px) {
+    #mypage {
+        &.purchase_in_progress {
+            .w_set {
+                padding: 0 !important;
+            }
+
+            .my_cont {
+                .my_title {
+                    margin: 0 16px;
+                }
+
+                .pc_title {
+                    display: none;
+                }
+
+                .mo_table_count {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                    margin-top: 44px;
+                    margin-bottom: 15px;
+                    display: flex;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 21px;
+
+                        em {
+                            font-weight: normal;
+                            color: #014099;
+                        }
+                    }
+                }
+
+                .pagenation{
+                    margin-top: 37px;
+                }
+
+                #cancelWait_table {
+                    display: none;
+                }
+
+                #mo_cancelWait_table {
+                    display: block;
+
+                    .mo_table {
+                        border-top: 1px solid #D3D3D3;
+                        border-bottom: 1px solid #D3D3D3;
+
+                        .mo_tr {
+                            padding: 20px 16px;
+
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+
+                            .amount_date_box {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 21px;
+
+                                .amount_td {
+                                    font-size: 14px;
+                                    line-height: 20px;
+
+                                    em {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        font-weight: 600;
+                                    }
+                                }
+
+                                .date_td {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                            .category_td {
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 6px;
+                                color: #000;
+                            }
+                            .title_td {
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 11px;
+                                font-weight: 500;
+                                color: #000;
                             }
                             .progress_td {
                                 display: flex;
