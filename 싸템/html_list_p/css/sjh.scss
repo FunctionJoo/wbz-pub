@@ -5916,7 +5916,7 @@
                     font-size: 16px;
                     line-height: 24px;
                     color: #fff;
-                    border-radius: 3px;
+                    border-radius: 0;
                     &:not(:last-child){
                         margin-right: 20px;
                     }
@@ -6135,6 +6135,7 @@
                     .button_list{
                         width: calc((100% - 20px) / 2);
                         height: 40px;
+                        border-radius: 3px;
                     }
                 }
             }
@@ -6142,6 +6143,612 @@
     }
 }
 
+// 구매등록수정
+#mypage{
+    &.items_for_purchase_rewrite{
+        .my_cont{
+            .pc_title{
+                font-size: 20px;
+                line-height: 29px;
+                font-weight: 500;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #333333;
+            }
+
+            .con_top{
+                padding-top: 20px;
+                margin-bottom: 30px;
+                .title{
+                    @include subtitle
+                }
+                .info_table{
+                    border: 1px solid #D3D3D3;
+                    .info_list{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 50px;
+                        &:not(:last-child){
+                            border-bottom: 1px solid #D3D3D3;
+                        }
+                        &.column_table{
+                            height: 100px;
+                            .info_td{
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: start;
+                                padding: 0;
+                            }
+                        }
+                        .info_th{
+                            width: 160px;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-right: 1px solid #D3D3D3;
+                            background-color: #F6F6F6;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #000;
+                        }
+                        .info_td{
+                            width: calc(100% - 160px);
+                            padding: 0 10px;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            // 카테고리
+                            .select_box{
+                                @include selectBox()
+                            }
+                            .detail_input{
+                                width: 140px;
+                                height: 34px;
+                                input{
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 1px;
+                                    padding: 0 10px;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    color: #666666;
+                                    &::placeholder{
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        color: #666666;
+                                    }
+                                }
+                            }
+
+                            // 물품제목
+                            .title_input{
+                                width: 100%;
+                                height: 34px;
+                                input{
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 1px;
+                                    padding: 0 15px;
+                                    font-size: 13px;
+                                    line-height: 21px;
+                                }
+                            }
+
+                            // 구매설정
+                            .sm_td{
+                                height: 50px;
+                                width: 100%;
+                                padding: 0 10px;
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                                &:not(:last-child){
+                                    border-bottom: 1px solid #D3D3D3;
+                                }
+                                &.top_td{
+                                    .radio_list{
+                                        &:not(:last-child){
+                                            margin-right: 30px;
+                                        }
+                                        label{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        input{
+                                            display: none;
+                                            +label::before{
+                                                content: "";
+                                                box-shadow: 0 0 0 1px #b1b1b1 inset;
+                                                background-color: #fff;
+                                                border-radius: 50%;
+                                                width: 22px;
+                                                height: 22px;
+                                                display: inline-block;
+                                                margin-right: 6px;
+                                            }
+                                            &:checked+label::before{
+                                                background-image: url(../images/mypage/radio_button.svg);
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-position: center;
+                                                border: none;
+                                                border-radius: 0px;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    
+                                    }
+                                }
+                                &.bottom_td{
+                                    .min_value{
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            margin-right: 10px;
+                                        }
+                                        input{
+                                            margin: -4px;
+                                            width: 140px;
+                                            height: 34px;
+                                            border: 1px solid #D3D3D3;
+                                            text-align: end;
+                                            padding: 10px;
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            // 구매금액
+                            .amount_input{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                input{
+                                    width: 140px;
+                                    height: 34px;
+                                    border: 1px solid #D3D3D3;
+                                    padding: 10px;
+                                    text-align: end;
+                                }
+                                span{
+                                    margin-left: 6px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000;
+                                }
+                            }
+
+                            // 즉시결제
+                            .imme_pay_input{
+                                label{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                input{
+                                    display: none;
+                                    +label::before{
+                                        content: "";
+                                        box-shadow: 0 0 0 1px #333333 inset;
+                                        border-radius: 2px;
+                                        width: 18px;
+                                        height: 18px;
+                                        display: inline-block;
+                                        margin-right: 7px;
+                                    }
+
+                                    &:checked+label::before{
+                                        background-image: url(../images/mypage/mile_checkbox.svg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        border: none;
+                                        border-radius: 0px;
+                                        box-shadow: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .con_bottom{
+                margin-bottom: 60px;
+                .title{
+                    @include subtitle
+                }
+                .con_box{
+                    border: 1px solid #D3D3D3;
+                    height: 320px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .option_list{
+                        width: 50%;
+                        height: 100%;
+                        &:not(:last-child){
+                            border-right: 1px solid #D3D3D3;
+                        }
+                        &.premium{
+                            .option_top{
+                                padding-bottom: 31px;
+                            }
+                        }
+                        &.again{
+                            .option_top{
+                                padding-bottom: 19px;
+                            }
+                            .option_bottom{
+                                .detail_box{
+                                    &:not(:last-child){
+                                        margin-bottom: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .con_title{
+                            font-size: 15px;
+                            line-height: 21px;
+                            color: #113462;
+                            background-color: #EEF3F9;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 40px;
+                            border-bottom: 1px solid #D3D3D3;
+                        }
+                        .con_option{
+                            padding: 14px;
+                            height: calc(100% - 40px);
+                            .option_detail{
+                                &.option_top{
+                                    position: relative;
+                                    border-bottom: 1px dashed #113462;
+                                    &::before{
+                                        content: "Or";
+                                        width: 34px;
+                                        background-color: #fff;
+                                        color: #113462;
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        text-align: center;
+                                    }
+                                    .text_box{
+                                        margin-bottom: 20px;
+                                        span{
+                                            font-size: 13px;
+                                            line-height: 21px;
+                                            em{
+                                                font-weight: 400;
+                                                color: #666666;
+                                            }
+                                        }
+                                    }
+                                    .option_box{
+                                        display: flex;
+                                        .select_box{
+                                            @include selectBox();
+                                            width: 200px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            line-height: 21px;
+                                        }
+                                        .price_text_box{
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            span{
+                                                font-size: 13px;
+                                                line-height: 21px;
+                                                &:not(:last-child){
+                                                    margin-bottom: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.option_bottom{
+                                    padding-top: 30px;
+                                    .detail_box{
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            em{
+                                                font-weight: 400;
+                                                color: #014099;
+                                            }
+                                        }
+                                        .option_box{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            .select_box{
+                                                @include selectBox();
+                                                margin-left: 10px;
+                                                width: 130px;
+                                            }
+                                            span{
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                em{
+                                                    font-weight: 400;
+                                                    color: #014099;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .con_total{
+                    height: 60px;
+                    border: 1px solid #014099;
+                    background-color: #EEF3F9;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    .con_title{
+                        font-size: 16px;
+                        line-height: 21px;
+                        font-weight: 500;
+                    }
+                    .total_price{
+                        font-size: 14px;
+                        line-height: 21px;
+                        em{
+                            font-size: 24px;
+                            line-height: 21px;
+                            font-weight: 600;
+                            color: #014099;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+            .button_box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .button_list{
+                    width: 166px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    border-radius: 0;
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                    &.save{
+                        background-color: #014099;
+                        border: none;
+                    }
+                    &.cancel{
+                        background-color: #434343;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.items_for_purchase_rewrite{
+            .my_cont{
+                .pc_title{
+                    display: none;
+                }
+
+                .con_top{
+                    padding-top: 20px;
+                    margin-bottom: 30px;
+                    .title{
+                        margin-bottom: 15px;
+                    }
+                    .info_table{
+                        .info_list{
+                            height: auto;
+                            &:not(:last-child){
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+                            &.category_tr{
+                                height: 202px;
+                                .info_td{
+                                    flex-direction: column;
+                                    .select_box{
+                                        width: 100%;
+                                        margin-right: 0;
+                                        height: 36px;
+                                        &:not(:last-child){
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+                                    .detail_input{
+                                        width: 100%;
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                            &.title_tr{
+                                height: 60px;
+                                .info_td{
+                                    .title_input{
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                            &.column_table{
+                                .sm_td{
+                                    &.bottom_td{
+                                        .min_value{
+                                            input{
+                                                width: 160px;
+                                                height: 36px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.unit_tr{
+                                height: 50px;
+                                .info_td{
+                                    .select_box{
+                                        width: 160px;
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                            &.amount_tr{
+                                height: 50px;
+                                .info_td{
+                                    .amount_input{
+                                        input{
+                                            width: calc(100% - 23px);
+                                            height: 36px;
+                                        }
+                                        span{
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            &.imme_pay_tr{
+                                height: 50px;
+                            }
+                            .info_th{
+                                width: 72px;
+                            }
+                            .info_td{
+                               width: calc(100% - 72px);
+                            }
+                        }
+                    }
+                }
+                .con_bottom{
+                    margin-bottom: 50px;
+                    .title{
+                        margin-bottom: 15px;
+                    }
+                    .con_box{
+                        height: auto;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        .option_list{
+                            width: 100%;
+                            &:not(:last-child){
+                                border-right: none;
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+                            &.premium{
+                                .option_top{
+                                    padding-bottom: 31px;
+                                }
+                            }
+                            &.again{
+                                .option_top{
+                                    padding-bottom: 19px;
+                                }
+                                .option_bottom{
+                                    .detail_box{
+                                        &:not(:last-child){
+                                            margin-bottom: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                            .con_option{
+                                padding: 15px;
+                                .option_detail{
+                                    &.option_top{
+                                        .option_box{
+                                            flex-direction: column;
+                                            .select_box{
+                                                width: 200px;
+                                                height: 36px;
+                                                margin-bottom: 10px;
+                                            }
+                                            .price_text_box{
+                                                align-items: start;
+                                            }
+                                        }
+                                    }
+                                    &.option_bottom{
+                                        .detail_box{
+                                            flex-direction: column;
+                                            align-items: start;
+                                            .option_box{
+                                                margin-top: 10px;
+                                                .select_box{
+                                                    margin-left: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .con_total{
+                        height: 60px;
+                        border: 1px solid #014099;
+                        background-color: #EEF3F9;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 20px;
+                        .con_title{
+                            font-size: 16px;
+                            line-height: 21px;
+                            font-weight: 500;
+                        }
+                        .total_price{
+                            font-size: 14px;
+                            line-height: 21px;
+                            em{
+                                font-size: 24px;
+                                line-height: 21px;
+                                font-weight: 600;
+                                color: #014099;
+                            }
+                        }
+                    }
+                }
+                .button_box{
+                    .button_list{
+                        width: calc((100% - 20px) / 2);
+                        height: 40px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
