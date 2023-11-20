@@ -1208,6 +1208,7 @@
 #mypage.sale_detail_item .my_cont .title .pc_title {
   font-size: 20px;
   line-height: 29px;
+  font-weight: 500;
 }
 #mypage.sale_detail_item .my_cont .title .sale_detail_chat {
   width: 80px;
@@ -1583,6 +1584,7 @@
 #mypage.sale_detail_id .my_cont .title .pc_title {
   font-size: 20px;
   line-height: 29px;
+  font-weight: 500;
 }
 #mypage.sale_detail_id .my_cont .title .button_box {
   display: flex;
@@ -1983,6 +1985,473 @@
     padding: 23px 24px 23px 13px;
   }
   #mypage.sale_detail_id .my_cont .bottom_info .info_list li {
+    word-break: keep-all;
+  }
+}
+#mypage.purchase_detail .my_cont .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+#mypage.purchase_detail .my_cont .title .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+#mypage.purchase_detail .my_cont .title .button_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .title .button_box.on .purchase_payment {
+  display: inline-block;
+}
+#mypage.purchase_detail .my_cont .title .button_box.on .purchase_take_over {
+  display: inline-block;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_payment {
+  display: none;
+  width: 80px;
+  height: 32px;
+  border: 1px solid #24B685;
+  background-color: #fff;
+  margin-right: 10px;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_payment span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #24B685;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_take_over {
+  display: none;
+  width: 80px;
+  height: 32px;
+  border: 1px solid #E96135;
+  background-color: #fff;
+  margin-right: 10px;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_take_over span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #E96135;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_detail_cancel {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #FF3333;
+  background-color: #fff;
+  margin-right: 10px;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_detail_cancel span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FF3333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_detail_chat {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #014099;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_detail_chat span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #014099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .title .button_box .purchase_detail_chat span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_chat_blue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 21px;
+  height: 18px;
+  margin-right: 5px;
+}
+#mypage.purchase_detail .my_cont .main {
+  padding-top: 30px;
+  display: flex;
+  margin-bottom: 20px;
+}
+#mypage.purchase_detail .my_cont .main.cancel_on .receipt_list .con_box.cancel_info {
+  display: block;
+}
+#mypage.purchase_detail .my_cont .main .product_list {
+  margin-right: 15px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box.basic_info {
+  margin-bottom: 20px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .mo_box .mo_button_box {
+  display: none;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .mo_box .mo_button_box .mo_sale_detail_cancel {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #FF3333;
+  background-color: #fff;
+  margin-right: 10px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .mo_box .mo_button_box .mo_sale_detail_cancel span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FF3333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .mo_box .mo_button_box .mo_sale_detail_chat {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #014099;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .mo_box .mo_button_box .mo_sale_detail_chat span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #014099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .mo_box .mo_button_box .mo_sale_detail_chat span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_chat_blue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 21px;
+  height: 18px;
+  margin-right: 5px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table {
+  width: 500px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list {
+  display: flex;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .th {
+  width: 90px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td {
+  width: calc(100% - 100px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td p {
+  font-size: 14px;
+  line-height: 21px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td em {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td span {
+  margin-left: 2px;
+  font-size: 13px;
+  line-height: 19px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info {
+  width: 90px;
+  height: 28px;
+  border: 1px solid #A7A7A7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info:not(:last-child) {
+  margin-right: 10px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #A7A7A7;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_check_gray.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  margin-right: 4px;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info.on {
+  border-color: #014099;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info.on span {
+  color: #014099;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info.on span::before {
+  background-image: url(../images/mypage/mypage_check_blue.svg);
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_flex {
+  display: flex;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_flex .table_list {
+  display: flex;
+  border-bottom: 1px solid #D3D3D3;
+  width: 50%;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_flex .table_list:not(:first-child) .th {
+  border-left: 1px solid #D3D3D3;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_flex .table_list .th {
+  width: 90px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_flex .table_list .td {
+  width: calc(100% - 100px);
+  padding: 15px 0;
+  margin-left: 10px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box:not(:last-child) {
+  margin-bottom: 20px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box.cancel_info {
+  display: none;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table {
+  width: 335px;
+  border-top: 1px solid #D3D3D3;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list {
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list:not(:nth-last-of-type(2)) {
+  border-bottom: 1px dashed #D3D3D3;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list .th {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list .td span {
+  font-size: 13px;
+  line-height: 19px;
+  margin-left: 2px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list .td em {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_result {
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_result .th {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_result .td span {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  margin-left: 2px;
+}
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_result .td em {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+#mypage.purchase_detail .my_cont .bottom_list_button {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 27px;
+}
+#mypage.purchase_detail .my_cont .bottom_list_button .all_list {
+  border: 1px solid #333333;
+}
+#mypage.purchase_detail .my_cont .bottom_list_button .all_list a {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  padding: 6px 32px;
+}
+#mypage.purchase_detail .my_cont .bottom_info {
+  background-color: #EEF3F9;
+  border: 2px solid #EEF3F9;
+  padding: 22px 41px 22px 41px;
+}
+#mypage.purchase_detail .my_cont .bottom_info .info_title {
+  margin-bottom: 14px;
+}
+#mypage.purchase_detail .my_cont .bottom_info .info_title span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #014099;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#mypage.purchase_detail .my_cont .bottom_info .info_title span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_bulb.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 21px;
+  width: 12px;
+  margin-right: 6px;
+}
+#mypage.purchase_detail .my_cont .bottom_info .info_list li {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  display: flex;
+}
+#mypage.purchase_detail .my_cont .bottom_info .info_list li:not(:last-child) {
+  margin-bottom: 4px;
+}
+#mypage.purchase_detail .my_cont .bottom_info .info_list li span:first-child {
+  margin-right: 4px;
+}
+
+@media (max-width: 1080px) {
+  #mypage.purchase_detail .my_cont .title {
+    padding: 0;
+    border: none;
+    flex-direction: column;
+  }
+  #mypage.purchase_detail .my_cont .title .pc_title {
+    display: none;
+  }
+  #mypage.purchase_detail .my_cont .title .my_title {
+    padding-bottom: 20px !important;
+  }
+  #mypage.purchase_detail .my_cont .title .button_box {
+    width: 100%;
+  }
+  #mypage.purchase_detail .my_cont .title .button_box .purchase_payment {
+    width: 78px;
+  }
+  #mypage.purchase_detail .my_cont .title .button_box .purchase_take_over {
+    width: 78px;
+  }
+  #mypage.purchase_detail .my_cont .title .button_box .purchase_detail_cancel {
+    width: 78px;
+  }
+  #mypage.purchase_detail .my_cont .title .button_box .purchase_detail_chat {
+    width: 78px;
+  }
+  #mypage.purchase_detail .my_cont .main {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-top: 45px;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list {
+    margin-right: 0;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box {
+    margin-bottom: 40px !important;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table {
+    width: auto;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_flex {
+    flex-direction: column;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_flex .table_list {
+    width: 100%;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td p {
+    line-height: 20px;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info {
+    width: 63px;
+    margin-right: 7px !important;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info:last-child {
+    width: 75px;
+  }
+  #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td.trans_box .trans_info span::before {
+    margin-right: 2px;
+  }
+  #mypage.purchase_detail .my_cont .main .receipt_list .con_box {
+    margin-bottom: 40px !important;
+  }
+  #mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table {
+    width: auto;
+  }
+  #mypage.purchase_detail .my_cont .bottom_list_button {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  #mypage.purchase_detail .my_cont .bottom_list_button .all_list a {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+    padding: 14px 76px;
+  }
+  #mypage.purchase_detail .my_cont .bottom_info {
+    padding: 23px 24px 23px 13px;
+  }
+  #mypage.purchase_detail .my_cont .bottom_info .info_list li {
     word-break: keep-all;
   }
 }
