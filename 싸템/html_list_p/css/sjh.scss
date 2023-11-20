@@ -1,4 +1,9 @@
 // 공통변수
+@mixin pc_title{
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 500;
+}
 @mixin subtitle{
     font-size: 16px;
     line-height: 21px;
@@ -10340,6 +10345,753 @@
                     }
                 }   
 
+            }
+        }
+    }
+}
+
+// 마일리지 내역
+#mypage{
+    &.mile_list{
+        .my_cont{
+            .pc_title{
+                @include pc_title();
+                padding-bottom: 20px;
+                border-bottom: 2px solid #333333;
+                margin-bottom: 20px;
+            }
+
+            .main{
+                .title{
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 13px;
+                }
+                .mile_count{
+                    display: flex;
+                    margin-bottom: 20px;
+                    .count_list{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #D3D3D3;
+                        width: 278px;
+                        height: 140px;
+                        &:not(:last-child){
+                            margin-right: 8px;
+                        }
+                        .top_con{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width: 36px;
+                                height: 30px;
+                                margin-bottom: 16px;
+                            }
+                            .list_title{
+                                margin-bottom: 8px;
+                                font-size: 15px;
+                                line-height: 22px;
+                            }
+                        }
+                        .list_count{
+                            font-size: 15px;
+                            line-height: 22px;
+                            em{
+                                font-weight: 600;
+                                color: #014099;
+                                font-size: 20px;
+                                line-height: 27px;
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+                .period_sec{
+                    height: 50px;
+                    border: 1px solid #D3D3D3;
+                    display: flex;
+                    margin-bottom: 20px;
+                    .sec_title{
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000;
+                        height: 100%;
+                        width: 100px;
+                        background-color: #F6F6F6;
+                        border-right: 1px solid #D3D3D3;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .form_sec{
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        padding-right: 20px;
+                        width: 799px;
+                        form{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            label{
+                                display: flex;
+                                align-items: center;
+                                &.no_view{
+                                    display: none;
+                                }
+                            }
+                            .date_input_box{
+                                display: flex;
+                                align-items: center;
+                                span{
+                                    display: inline-block;
+                                    width: 6px;
+                                    height: 1px;
+                                    background-color: #707070;
+                                    margin: 0 6px;
+                                }
+                                input[type=date]{
+                                    border: 1px solid #D3D3D3;
+                                    padding: 7px 10px;
+                                    width: 140px;
+                                    height: 34px;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    &::-webkit-calendar-picker-indicator{
+                                        display: none;
+                                        appearance: none;
+                                        background: url(../images/mypage/input_date_icon.svg) no-repeat center;
+                                        background-size: contain;
+                                        width: 15px;
+                                        height: 15px;
+                                        display: block;
+                                    }
+                                    &::-webkit-inner-spin-button{
+                                        display: none;
+                                        appearance: none;
+                                    }
+                                }
+                            }
+                            .option_input_box{
+                                display: flex;
+                                label{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    &:not(:nth-last-of-type(1)){
+                                        margin-right: 20px;
+                                    }
+                                }
+                                input[type=checkbox]{
+                                    display: none;
+                                    +label::before{
+                                        content: "";
+                                        box-shadow: 0 0 0 1px #333333 inset;
+                                        border-radius: 2px;
+                                        width: 16px;
+                                        height: 16px;
+                                        display: inline-block;
+                                        margin-right: 6px;
+                                    }
+                                    &:checked+label::before{
+                                        background-image: url(../images/mypage/mile_checkbox.svg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        border: none;
+                                        border-radius: 0px;
+                                        box-shadow: none;
+                                    }
+                                }
+                            }
+                            .submit_input_box{
+                                display: flex;
+                                input[type=submit]{
+                                    padding: 6px 27px;
+                                    border-radius: 3px;
+                                    background-color: #014099;
+                                    border: none;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                                .mo_excel_button{
+                                    display: none;
+                                    width: 120px;
+                                    height: 32px;
+                                    border-radius: 1px;
+                                    border: 1px solid #2E7D32;
+                                    background-color: #2E7D321A;
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #2E7D32;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        &::before{
+                                            content: "";
+                                            background-image: url(../images/mypage/mypage_excel.svg);
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            display: inline-block;
+                                            width: 16px;
+                                            height: 16px;
+                                            margin-right: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .table_sec{
+                    .button_box{
+                        display: flex;
+                        justify-content: end;
+                        margin-bottom: 10px;
+                        .excel_button{
+                            width: 120px;
+                            height: 32px;
+                            border-radius: 1px;
+                            border: 1px solid #2E7D32;
+                            background-color: #2E7D321A;
+                            span{
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #2E7D32;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &::before{
+                                    content: "";
+                                    background-image: url(../images/mypage/mypage_excel.svg);
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    display: inline-block;
+                                    width: 16px;
+                                    height: 16px;
+                                    margin-right: 6px;
+                                }
+                            }
+                        }
+                    }
+                    table{
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        thead{
+                            tr{
+                                height: 50px;
+                                background-color: #F6F6F6;
+                                border: 1px solid #D3D3D3;
+                                th{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    color: #000;
+                                    &:not(:last-child){
+                                        border-right: 1px solid #D3D3D3;
+                                    }
+                                    &.date{
+                                        width: 130px;
+                                    }
+                                    &.category{
+                                        width: 80px;
+                                    }
+                                    &.subject{
+                                        width: 369px;
+                                    }
+                                    &.input{
+                                        width: 135px;
+                                    }
+                                    &.output{
+                                        width: 140px;
+                                    }
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                height: 50px;
+                                border: 1px solid #D3D3D3;
+                                border-top: none;
+                                text-align: center;
+                                &.case_01_on{
+                                    .category_td{
+                                        .case_02, .case_03, .case_04, .case_05, .case_06{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &.case_02_on{
+                                    .category_td{
+                                        .case_01, .case_03, .case_04, .case_05, .case_06{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &.case_03_on{
+                                    .category_td{
+                                        .case_01, .case_02, .case_04, .case_05, .case_06{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &.case_04_on{
+                                    .category_td{
+                                        .case_01, .case_02, .case_03, .case_05, .case_06{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &.case_05_on{
+                                    .category_td{
+                                        .case_01, .case_02, .case_03, .case_04, .case_06{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &.case_06_on{
+                                    .category_td{
+                                        .case_01, .case_02, .case_03, .case_04, .case_05{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                td{
+                                    &:not(:last-child){
+                                        border-right: 1px solid #D3D3D3;
+                                    }
+                                    &.date_td{
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                        color: #000;
+                                    }
+                                    &.category_td{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        .case_01{
+                                            color: #113462;
+                                        }
+                                        .case_02{
+                                            color: #FF9E4A;
+                                        }
+                                        .case_03{
+                                            color: #014099;
+                                        }
+                                        .case_04{
+                                            color: #E96135;
+                                        }
+                                        .case_05{
+                                            color: #017A0D;
+                                        }
+                                        .case_06{
+                                            color: #FF3333;
+                                        }
+                                    }
+                                    &.subject_td{
+                                        font-size: 13px;
+                                        line-height: 19px;
+                                        color: #000;
+                                        span{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                            display: block;
+                                            width: 350px;
+                                            margin: 0 auto;
+                                        }
+                                    }
+                                    &.input_td{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        em{
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                    }
+                                    &.output_td{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        em{
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagenation{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            &.on{
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .back_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                            &.on{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                            &.on{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    .next_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                            &.on{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                            &.on{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.mile_list{
+            .my_cont{
+                .pc_title{
+                    display: none;
+                }
+
+                .main{
+                    .title{
+                        margin-bottom: 10.5px;
+                    }
+                    .mile_count{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        border: 1px solid #D3D3D3;
+                        padding: 22px 15px 18px 15px;
+                        .count_list{
+                            flex-direction: row;
+                            justify-content: space-between;
+                            border: none;
+                            width: 100%;
+                            height: auto;
+                            &:not(:last-child){
+                                margin-right: 0px;
+                                margin-bottom: 10px;
+                            }
+                            .top_con{
+                                flex-direction: row;
+                                
+                                img{
+                                    width: 25px;
+                                    height: 20px;
+                                    margin-bottom: 0px;
+                                    margin-right: 10px;
+                                }
+                                .list_title{
+                                    margin-bottom: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .period_sec{
+                        justify-content: center;
+                        height: auto;
+                        padding: 15px 15px 17px 15px;
+                        margin-bottom: 22px;
+                        .sec_title{
+                            display: none;
+                        }
+                        .form_sec{
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            width: auto;
+                            form{
+                                flex-direction: column;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                label{
+                                    display: flex;
+                                    align-items: center;
+                                    &.no_view{
+                                        display: none;
+                                    }
+                                }
+                                .date_input_box{
+                                    margin-bottom: 11px;
+                                }
+                                .option_input_box{
+                                    margin-bottom: 20px;
+                                }
+                                .submit_input_box{
+                                    input[type=submit]{
+                                        padding: 6px 47px;
+                                    }
+                                    .mo_excel_button{
+                                        display: block;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .table_sec{
+                        width: 100%;
+                        overflow-x: auto;
+                        &::-webkit-scrollbar{
+                            background-color: #F9F9F9;
+                            border: 1px solid #D3D3D3;
+                            height: 7px;
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background-color: #014099;
+                        }
+                        .button_box{
+                            margin-bottom: 0px;
+                            .excel_button{
+                                display: none;
+                            }
+                        }
+                        table{
+                            width: 850px;
+                            white-space: nowrap;
+                            margin-bottom: 24px;
+                            thead{
+                                tr{
+                                    height: 50px;
+                                    background-color: #F6F6F6;
+                                    border: 1px solid #D3D3D3;
+                                    th{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        font-weight: 400;
+                                        color: #000;
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
+                                        }
+                                        &.date{
+                                            width: 130px;
+                                        }
+                                        &.category{
+                                            width: 80px;
+                                        }
+                                        &.subject{
+                                            width: 369px;
+                                        }
+                                        &.input{
+                                            width: 135px;
+                                        }
+                                        &.output{
+                                            width: 140px;
+                                        }
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    height: 50px;
+                                    border: 1px solid #D3D3D3;
+                                    border-top: none;
+                                    text-align: center;
+                                    &.case_01_on{
+                                        .category_td{
+                                            .case_02, .case_03, .case_04, .case_05, .case_06{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    &.case_02_on{
+                                        .category_td{
+                                            .case_01, .case_03, .case_04, .case_05, .case_06{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    &.case_03_on{
+                                        .category_td{
+                                            .case_01, .case_02, .case_04, .case_05, .case_06{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    &.case_04_on{
+                                        .category_td{
+                                            .case_01, .case_02, .case_03, .case_05, .case_06{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    &.case_05_on{
+                                        .category_td{
+                                            .case_01, .case_02, .case_03, .case_04, .case_06{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    &.case_06_on{
+                                        .category_td{
+                                            .case_01, .case_02, .case_03, .case_04, .case_05{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    td{
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
+                                        }
+                                        &.date_td{
+                                            font-size: 14px;
+                                            line-height: 19px;
+                                            color: #000;
+                                        }
+                                        &.category_td{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            .case_01{
+                                                color: #113462;
+                                            }
+                                            .case_02{
+                                                color: #FF9E4A;
+                                            }
+                                            .case_03{
+                                                color: #014099;
+                                            }
+                                            .case_04{
+                                                color: #E96135;
+                                            }
+                                            .case_05{
+                                                color: #017A0D;
+                                            }
+                                            .case_06{
+                                                color: #FF3333;
+                                            }
+                                        }
+                                        &.subject_td{
+                                            font-size: 13px;
+                                            line-height: 19px;
+                                            color: #000;
+                                            span{
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                text-overflow: ellipsis;
+                                                word-break: break-all;
+                                                display: block;
+                                                width: 350px;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                        &.input_td{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            em{
+                                                font-size: 14px;
+                                                line-height: 18px;
+                                            }
+                                        }
+                                        &.output_td{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            em{
+                                                font-size: 14px;
+                                                line-height: 18px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pagenation{
+                        margin-top: 46px;
+                        .pageNum{
+                            li{
+                                &:nth-last-child(-n+5){
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+    
             }
         }
     }

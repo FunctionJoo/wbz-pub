@@ -9003,4 +9003,664 @@
     height: 60px;
     line-height: 21px;
   }
+}
+#mypage.mile_list .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333333;
+  margin-bottom: 20px;
+}
+#mypage.mile_list .my_cont .main .title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+#mypage.mile_list .my_cont .main .mile_count {
+  display: flex;
+  margin-bottom: 20px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  width: 278px;
+  height: 140px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list:not(:last-child) {
+  margin-right: 8px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .top_con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .top_con img {
+  width: 36px;
+  height: 30px;
+  margin-bottom: 16px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .top_con .list_title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .list_count {
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .list_count em {
+  font-weight: 600;
+  color: #014099;
+  font-size: 20px;
+  line-height: 27px;
+  margin-right: 2px;
+}
+#mypage.mile_list .my_cont .main .period_sec {
+  height: 50px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  margin-bottom: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .sec_title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  height: 100%;
+  width: 100px;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  width: 799px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form label {
+  display: flex;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form label.no_view {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box {
+  display: flex;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box span {
+  display: inline-block;
+  width: 6px;
+  height: 1px;
+  background-color: #707070;
+  margin: 0 6px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date] {
+  border: 1px solid #D3D3D3;
+  padding: 7px 10px;
+  width: 140px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+  background: url(../images/mypage/input_date_icon.svg) no-repeat center;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box {
+  display: flex;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box label {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box label:not(:nth-last-of-type(1)) {
+  margin-right: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box input[type=checkbox] {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box input[type=checkbox] + label::before {
+  content: "";
+  box-shadow: 0 0 0 1px #333333 inset;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 6px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box input[type=checkbox]:checked + label::before {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box {
+  display: flex;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box input[type=submit] {
+  padding: 6px 27px;
+  border-radius: 3px;
+  background-color: #014099;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button {
+  display: none;
+  width: 120px;
+  height: 32px;
+  border-radius: 1px;
+  border: 1px solid #2E7D32;
+  background-color: rgba(46, 125, 50, 0.1019607843);
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E7D32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_excel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button {
+  width: 120px;
+  height: 32px;
+  border-radius: 1px;
+  border: 1px solid #2E7D32;
+  background-color: rgba(46, 125, 50, 0.1019607843);
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E7D32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_excel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+#mypage.mile_list .my_cont .main .table_sec table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr {
+  height: 50px;
+  background-color: #F6F6F6;
+  border: 1px solid #D3D3D3;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.date {
+  width: 130px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.category {
+  width: 80px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.subject {
+  width: 369px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.input {
+  width: 135px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.output {
+  width: 140px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr {
+  height: 50px;
+  border: 1px solid #D3D3D3;
+  border-top: none;
+  text-align: center;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_05 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.date_td {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_01 {
+  color: #113462;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_02 {
+  color: #FF9E4A;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_03 {
+  color: #014099;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_04 {
+  color: #E96135;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_05 {
+  color: #017A0D;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_06 {
+  color: #FF3333;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td {
+  font-size: 13px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td em {
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td em {
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.mile_list .my_cont .main .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.mile_list .my_cont .main .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1080px) {
+  #mypage.mile_list .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .title {
+    margin-bottom: 10.5px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #D3D3D3;
+    padding: 22px 15px 18px 15px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con {
+    flex-direction: row;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con img {
+    width: 25px;
+    height: 20px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con .list_title {
+    margin-bottom: 0px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec {
+    justify-content: center;
+    height: auto;
+    padding: 15px 15px 17px 15px;
+    margin-bottom: 22px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .sec_title {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form label {
+    display: flex;
+    align-items: center;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form label.no_view {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box {
+    margin-bottom: 11px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box {
+    margin-bottom: 20px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box input[type=submit] {
+    padding: 6px 47px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button {
+    display: block;
+    margin-left: 10px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec {
+    width: 100%;
+    overflow-x: auto;
+  }
+  #mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar {
+    background-color: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    height: 7px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar-thumb {
+    background-color: #014099;
+  }
+  #mypage.mile_list .my_cont .main .table_sec .button_box {
+    margin-bottom: 0px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec .button_box .excel_button {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table {
+    width: 850px;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr {
+    height: 50px;
+    background-color: #F6F6F6;
+    border: 1px solid #D3D3D3;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th:not(:last-child) {
+    border-right: 1px solid #D3D3D3;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.date {
+    width: 130px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.category {
+    width: 80px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.subject {
+    width: 369px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.input {
+    width: 135px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.output {
+    width: 140px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr {
+    height: 50px;
+    border: 1px solid #D3D3D3;
+    border-top: none;
+    text-align: center;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_05 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td:not(:last-child) {
+    border-right: 1px solid #D3D3D3;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.date_td {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_01 {
+    color: #113462;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_02 {
+    color: #FF9E4A;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_03 {
+    color: #014099;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_04 {
+    color: #E96135;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_05 {
+    color: #017A0D;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_06 {
+    color: #FF3333;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td {
+    font-size: 13px;
+    line-height: 19px;
+    color: #000;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td em {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td em {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #mypage.mile_list .my_cont .main .pagenation {
+    margin-top: 46px;
+  }
+  #mypage.mile_list .my_cont .main .pagenation .pageNum li:nth-last-child(-n+5) {
+    display: none;
+  }
 }/*# sourceMappingURL=sjh.css.map */
