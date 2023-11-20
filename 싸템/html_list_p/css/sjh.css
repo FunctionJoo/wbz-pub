@@ -1243,6 +1243,9 @@
   display: flex;
   margin-bottom: 20px;
 }
+#mypage.sale_detail_item .my_cont .main.cancel_on .receipt_list .con_box.cancel_info {
+  display: block;
+}
 #mypage.sale_detail_item .my_cont .main .product_list {
   margin-right: 15px;
 }
@@ -1387,6 +1390,9 @@
 }
 #mypage.sale_detail_item .my_cont .main .receipt_list .con_box:not(:last-child) {
   margin-bottom: 20px;
+}
+#mypage.sale_detail_item .my_cont .main .receipt_list .con_box.cancel_info {
+  display: none;
 }
 #mypage.sale_detail_item .my_cont .main .receipt_list .con_box .con_title {
   font-size: 16px;
@@ -1639,6 +1645,9 @@
   display: flex;
   margin-bottom: 20px;
 }
+#mypage.sale_detail_id .my_cont .main.cancel_on .receipt_list .con_box.cancel_info {
+  display: block;
+}
 #mypage.sale_detail_id .my_cont .main .product_list {
   margin-right: 15px;
 }
@@ -1803,6 +1812,9 @@
 }
 #mypage.sale_detail_id .my_cont .main .receipt_list .con_box:not(:last-child) {
   margin-bottom: 20px;
+}
+#mypage.sale_detail_id .my_cont .main .receipt_list .con_box.cancel_info {
+  display: none;
 }
 #mypage.sale_detail_id .my_cont .main .receipt_list .con_box .con_title {
   font-size: 16px;
