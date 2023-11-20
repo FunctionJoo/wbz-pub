@@ -1505,10 +1505,10 @@
                                     p{
                                         font-size: 14px;
                                         line-height: 21px;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
+                                        // overflow: hidden;
+                                        // white-space: nowrap;
+                                        // text-overflow: ellipsis;
+                                        // word-break: break-all;
                                     }
                                     em{
                                         font-size: 14px;
@@ -2000,10 +2000,10 @@
                                     p {
                                         font-size: 14px;
                                         line-height: 21px;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
+                                        // overflow: hidden;
+                                        // white-space: nowrap;
+                                        // text-overflow: ellipsis;
+                                        // word-break: break-all;
                                     }
 
                                     em {
@@ -2584,10 +2584,6 @@
                                     p {
                                         font-size: 14px;
                                         line-height: 21px;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
                                     }
 
                                     em {
@@ -6308,9 +6304,25 @@
                                     }
                                     &.check{
                                         width: 40px;
-                                        input{
+                                        label{
+                                            border: 1px solid #D3D3D3;
+                                            background-color: #fff;
+                                            border-radius: 2px;
                                             width: 16px;
                                             height: 16px;
+                                            display: inline-block;
+                                        }
+                                        input{
+                                            display: none;
+                                            &:checked+label{
+                                                background-image: url(../images/mypage/mile_checkbox.svg);
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-position: center;
+                                                border: none;
+                                                border-radius: 0px;
+                                                box-shadow: none;
+                                            }
                                         }
                                     }
                                     &.info{
@@ -6349,10 +6361,25 @@
                                         }
                                         &.check_td{
                                             padding: 42px 12px;
-                                            input{
+                                            label{
+                                                border: 1px solid #D3D3D3;
+                                                background-color: #fff;
+                                                border-radius: 2px;
                                                 width: 16px;
                                                 height: 16px;
-                                                margin: 0;
+                                                display: inline-block;
+                                            }
+                                            input{
+                                                display: none;
+                                                &:checked+label{
+                                                    background-image: url(../images/mypage/mile_checkbox.svg);
+                                                    background-repeat: no-repeat;
+                                                    background-size: contain;
+                                                    background-position: center;
+                                                    border: none;
+                                                    border-radius: 0px;
+                                                    box-shadow: none;
+                                                }
                                             }
                                         }
                                         &.info_td{
@@ -6373,6 +6400,11 @@
                                                 }
                                                 .category{
                                                     margin-left: 10px;
+                                                    overflow: hidden;
+                                                    white-space: nowrap;
+                                                    text-overflow: ellipsis;
+                                                    word-break: break-all;
+                                                    width: 400px;
                                                     span{
                                                         font-size: 14px;
                                                         line-height: 20px;
@@ -6386,7 +6418,12 @@
                                                 }
                                             }
                                             .middle_info{
+                                                width: 450px;
                                                 margin-bottom: 9px;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                text-overflow: ellipsis;
+                                                word-break: break-all;
                                                 span{
                                                     font-size: 14px;
                                                     line-height: 20px;
@@ -6699,9 +6736,25 @@
                                                 display: flex;
                                                 justify-content: center;
                                                 align-items: center;
-                                                input{
+                                                label{
+                                                    border: 1px solid #D3D3D3;
+                                                    background-color: #fff;
+                                                    border-radius: 2px;
                                                     width: 16px;
                                                     height: 16px;
+                                                    display: inline-block;
+                                                }
+                                                input{
+                                                    display: none;
+                                                    &:checked+label{
+                                                        background-image: url(../images/mypage/mile_checkbox.svg);
+                                                        background-repeat: no-repeat;
+                                                        background-size: contain;
+                                                        background-position: center;
+                                                        border: none;
+                                                        border-radius: 0px;
+                                                        box-shadow: none;
+                                                    }
                                                 }
                                             }
                                             &.mo_info_th {
@@ -7114,9 +7167,25 @@
                                     }
                                     &.check{
                                         width: 40px;
-                                        input{
+                                        label{
+                                            border: 1px solid #D3D3D3;
+                                            background-color: #fff;
+                                            border-radius: 2px;
                                             width: 16px;
                                             height: 16px;
+                                            display: inline-block;
+                                        }
+                                        input{
+                                            display: none;
+                                            &:checked+label{
+                                                background-image: url(../images/mypage/mile_checkbox.svg);
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-position: center;
+                                                border: none;
+                                                border-radius: 0px;
+                                                box-shadow: none;
+                                            }
                                         }
                                     }
                                     &.info{
@@ -7155,68 +7224,95 @@
                                         }
                                         &.check_td{
                                             padding: 42px 12px;
-                                            input{
+                                            label{
+                                                border: 1px solid #D3D3D3;
+                                                background-color: #fff;
+                                                border-radius: 2px;
                                                 width: 16px;
                                                 height: 16px;
-                                                margin: 0;
+                                                display: inline-block;
+                                            }
+                                            input{
+                                                display: none;
+                                                &:checked+label{
+                                                    background-image: url(../images/mypage/mile_checkbox.svg);
+                                                    background-repeat: no-repeat;
+                                                    background-size: contain;
+                                                    background-position: center;
+                                                    border: none;
+                                                    border-radius: 0px;
+                                                    box-shadow: none;
+                                                }
                                             }
                                         }
                                         &.info_td{
                                             padding: 13px 15px 12px 10px;
-                                            .top_info{
-                                                margin-bottom: 8px;
-                                                display: flex;
-                                                justify-content: start;
-                                                align-items: center;
-                                                .premium_box{
-                                                    width: 22px;
-                                                    height: 22px;
-                                                    display: none;
-                                                    img{
-                                                        width: 100%;
-                                                        height: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            a{
+
+                                                .top_info{
+                                                    margin-bottom: 8px;
+                                                    display: flex;
+                                                    justify-content: start;
+                                                    align-items: center;
+                                                    .premium_box{
+                                                        width: 22px;
+                                                        height: 22px;
+                                                        display: none;
+                                                        img{
+                                                            width: 100%;
+                                                            height: 100%;
+                                                        }
                                                     }
-                                                }
-                                                .category{
-                                                    margin-left: 10px;
-                                                    span{
-                                                        font-size: 14px;
-                                                        line-height: 20px;
-                                                        color: #000;
-                                                        font-weight: 500;
-                                                        em{
+                                                    .category{
+                                                        margin-left: 10px;
+                                                        overflow: hidden;
+                                                        white-space: nowrap;
+                                                        text-overflow: ellipsis;
+                                                        word-break: break-all;
+                                                        width: 364px;
+                                                        span{
+                                                            font-size: 14px;
+                                                            line-height: 20px;
+                                                            color: #000;
                                                             font-weight: 500;
-                                                            color: #113462;
+                                                            em{
+                                                                font-weight: 500;
+                                                                color: #113462;
+                                                            }
                                                         }
                                                     }
                                                 }
-                                            }
-                                            .middle_info{
-                                                display: flex;
-                                                justify-content: space-between;
-                                                align-items: center;
-                                                margin-bottom: 9px;
-                                                .content{
+                                                .middle_info{
+                                                    width: 382px;
+                                                    margin-bottom: 9px;
+                                                    overflow: hidden;
+                                                    white-space: nowrap;
+                                                    text-overflow: ellipsis;
+                                                    word-break: break-all;
                                                     span{
                                                         font-size: 14px;
                                                         line-height: 20px;
                                                         color: #000;
                                                     }
+                                                    
                                                 }
-                                                .pay_immediately{
-                                                    padding: 4px 10px;
-                                                    font-size: 12px;
-                                                    line-height: 18px;
-                                                    background-color: #EEF3F9;
-                                                    color: #014099;
+                                                .bottom_info{
+                                                    span{
+                                                        font-size: 13px;
+                                                        line-height: 16px;
+                                                        color: #A7A7A7;
+                                                    }
                                                 }
                                             }
-                                            .bottom_info{
-                                                span{
-                                                    font-size: 13px;
-                                                    line-height: 16px;
-                                                    color: #A7A7A7;
-                                                }
+                                            .pay_immediately{
+                                                padding: 4px 10px;
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                                background-color: #EEF3F9;
+                                                color: #014099;
                                             }
                                         }
                                         &.price_td{
@@ -7510,9 +7606,25 @@
                                                 display: flex;
                                                 justify-content: center;
                                                 align-items: center;
-                                                input{
+                                                label{
+                                                    border: 1px solid #D3D3D3;
+                                                    background-color: #fff;
+                                                    border-radius: 2px;
                                                     width: 16px;
                                                     height: 16px;
+                                                    display: inline-block;
+                                                }
+                                                input{
+                                                    display: none;
+                                                    &:checked+label{
+                                                        background-image: url(../images/mypage/mile_checkbox.svg);
+                                                        background-repeat: no-repeat;
+                                                        background-size: contain;
+                                                        background-position: center;
+                                                        border: none;
+                                                        border-radius: 0px;
+                                                        box-shadow: none;
+                                                    }
                                                 }
                                             }
                                             &.mo_info_th {
@@ -7547,6 +7659,7 @@
                                                 white-space: nowrap;
                                                 text-overflow: ellipsis;
                                                 word-break: break-all;
+                                                width: 270px;
                                                 span{
                                                     font-size: 14px;
                                                     line-height: 20px;
@@ -7567,7 +7680,7 @@
                                                 white-space: nowrap;
                                                 text-overflow: ellipsis;
                                                 word-break: break-all;
-                                                span{
+                                                a{
                                                     font-size: 15px;
                                                     line-height: 22px;
                                                     color: #000;
