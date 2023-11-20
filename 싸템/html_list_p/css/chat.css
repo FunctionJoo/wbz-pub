@@ -150,6 +150,9 @@
 #chat .chat_list .cl_search .cls_form input[type=text]::-moz-placeholder {
   color: #A7A7A7;
 }
+#chat .chat_list .cl_search .cls_form input[type=text]:-ms-input-placeholder {
+  color: #A7A7A7;
+}
 #chat .chat_list .cl_search .cls_form input[type=text]::placeholder {
   color: #A7A7A7;
 }

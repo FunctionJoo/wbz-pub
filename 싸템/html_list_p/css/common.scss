@@ -4,10 +4,15 @@ body,
 body * {
 	font-family: "Noto Sans Kr", sans-serif;
 }
+
 body {
 	color: $color2;
 }
 button {cursor: pointer;}
+
+body.is_pc {
+	min-width: 1200px;
+}
 
 .w_set {
 	width: $w_set;
@@ -125,6 +130,17 @@ button {cursor: pointer;}
 		// 아이콘 체크 추가 필요
 		background: url('../images/common/i_checkbox.svg') no-repeat center center $color3;
 	}
+
+	&.size_s {
+		.ico {
+			width: 18px;
+			height: 18px;
+		}
+		.txt {
+			padding-left: 6px;
+			font-size: 14px;
+		}
+	}
 }
 
 @include mobile {
@@ -140,7 +156,7 @@ button {cursor: pointer;}
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
-	input {
+	input[type="radio"] {
 		position: absolute;
 		width: 0;
 		height: 0;
@@ -163,6 +179,13 @@ button {cursor: pointer;}
 		background-color: $point1;
 		+ .txt {
 			color: $point1;
+		}
+	}
+
+	&.size_s {
+		.txt {
+			padding-left: 6px;
+			font-size: 14px;
 		}
 	}
 }
@@ -250,6 +273,25 @@ button {cursor: pointer;}
 	}
 }
 
+.st_btn_align {
+	display: flex;
+	justify-content: center;
+	&.pc_center {
+		gap: 20px;
+	}
+}
+
+@include mobile {
+	.st_btn_align {
+		&.m_auto {
+			.st_btn {
+				flex: 1;
+			}
+			gap: 8px;
+		}
+	}
+}
+
 .st_btn {
 	display: inline-block;
 	vertical-align: top;
@@ -287,6 +329,11 @@ button {cursor: pointer;}
 		line-height: 34px;
 		padding: 0 12px;
 		font-size: 14px;
+	}
+	&.size_m {
+		width: 166px;
+		height: 40px;
+		line-height: 38px;
 	}
 	// color
 	&.color_p {
