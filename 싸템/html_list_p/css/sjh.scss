@@ -3131,11 +3131,11 @@
                             }
 
                             &.progress {
-                                width: 90px;
+                                width: 80px;
                             }
                             
                             &.cancel {
-                                width: 84px;
+                                width: 92px;
                             }
 
                             &.chat {
@@ -3244,27 +3244,17 @@
                                 .step_01{
                                     font-size: 14px;
                                     line-height: 20px;
-                                    color: #014099;
+                                    
                                 }
                                 .step_02{
                                     display: none;
                                     span{
                                         font-size: 14px;
                                         line-height: 20px;
-                                        color: #DE4040;
-                                        margin-bottom: 2px;
-                                    }
-                                    button {
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        padding: 4px 7px;
-                                        background-color: #fff;
-                                        font-size: 12px;
-                                        line-height: 18px;
                                     }
                                 }
 
-                                &.on{
+                                &.step_02_on{
                                     padding: 6px 0;
                                     .step_01{
                                         display: none;
@@ -3275,80 +3265,60 @@
                                 }
                             }
 
-                            &.cancel_td {
-                                button {
-                                    border: 1px solid #D3D3D3;
-                                    border-radius: 3px;
-                                    padding: 5px 9px;
-                                    background-color: #fff;
+                            &.buy_td {
+                                &.buy_02_on{
+                                    .buy_01{
+                                        display: none;
+                                    }
+                                    .buy_02{
+                                        display: block;
+                                    }
+                                }
+                                .cancel_button {
+                                    padding: 5px 14px;
                                     font-size: 14px;
                                     line-height: 20px;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 3px;
+                                    background-color: #fff;
+                                    margin-top: 6px;
+                                }
+                                .buy_01{
+                                    display: block;
+                                    button{
+                                        padding: 5px 14px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        border-radius: 3px;
+                                        background-color: #014099;
+                                        border: none;
+                                        color: #fff;
+                                    }
+                                }
+                                .buy_02{
+                                    display: none;
+                                    .top_button{
+                                        padding: 5px 14px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        border-radius: 3px;
+                                        background-color: #fff;
+                                        border: 1px solid #E96233;
+                                        color: #E96135;
+                                        margin-bottom: 6px;
+                                    }
+                                    .bottom_button{
+                                        padding: 5px 8px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        border-radius: 3px;
+                                        background-color: #fff;
+                                        border: 1px solid #014099;
+                                        color: #014099;
+                                    }
                                 }
                             }
                         }
-                    }
-                }
-            }
-        }
-        .sale_info{
-            margin-top: 30px;
-            .info_title{
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 500;
-                margin-bottom: 10px;
-            }
-            .info_box{
-                background-color: #F6F6F6;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 26px 20px 46px 20px;
-                .info_list{
-                    width: 110px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-                    &:not(:last-child){
-                            &::after{
-                                content: "";
-                                position: absolute;
-                                background-image: url(../images/mypage/mypage_arrow_gray_gradation.svg);
-                                background-position: center;
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                width: 24px;
-                                height: 15px;
-                                left: 100%;
-                                top: 30%;
-                                margin-left: 20px;
-                            }
-                    }
-                    .img_box{
-                        height: 110px;
-                        width: 110px;
-                        border-radius: 50%;
-                        background-color: #fff;
-                        border: 1px solid #A7A7A7;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        span{
-                            margin-top: 10px;
-                            font-size: 14px;
-                            line-height: 20px;
-                            font-weight: 500;
-                        }
-                    }
-                    .text_box{
-                        text-align: center;
-                        font-size: 14px;
-                        line-height: 20px;
-                        margin-top: 10px;
-                        white-space: nowrap;
                     }
                 }
             }
@@ -3448,102 +3418,127 @@
                                 font-weight: 500;
                                 color: #000;
                             }
-                            .progress_td {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                .step_01{
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    color: #014099;
-                                }
-                                .step_02{
-                                    display: none;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    color: #DE4040;
-                                }
-                                .bottom_right_box{
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    .step_02_on{
-                                        display: none;
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        padding: 5px 3px;
-                                        background-color: #fff;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        margin-right: 10px;
-                                    }
-                                    .always_in{
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        .cancel_td {
-                                            button {
-                                                border: 1px solid #D3D3D3;
-                                                border-radius: 3px;
-                                                padding: 5px 9px;
-                                                background-color: #fff;
-                                                font-size: 14px;
-                                                line-height: 20px;
-                                                margin-right: 10px;
+                            .step_02_box{
+                                &.on{
+                                    .progress_td{
+                                        .step_01{
+                                            display: none;
+                                        }
+                                        .step_02{
+                                            display: inline-block;
+                                        }
+                                        .bottom_right_box{
+                                            .step_02_on{
+                                                display: inline-block;
                                             }
                                         }
-                                        .chat_td {
-                                            .img_box {
-                                                width: fit-content;
-                                                margin: 0 auto;
-                                            
-                                                img {
-                                                    display: block;
-                                                }
-                                            
-                                                .count {
-                                                    display: none;
+                                    }
+                                    .buy_td{
+                                        .buy_01{
+                                            display: none;
+                                        }
+                                        .buy_02{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                                .progress_td {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    .step_01{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #014099;
+                                    }
+                                    .step_02{
+                                        display: none;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #DE4040;
+                                    }
+                                    .bottom_right_box{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        .step_02_on{
+                                            display: none;
+                                            border: 1px solid #D3D3D3;
+                                            border-radius: 3px;
+                                            padding: 5px 3px;
+                                            background-color: #fff;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            margin-right: 10px;
+                                        }
+                                        .always_in{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            .cancel_td {
+                                                button {
+                                                    border: 1px solid #D3D3D3;
+                                                    border-radius: 3px;
+                                                    padding: 5px 9px;
+                                                    background-color: #fff;
+                                                    font-size: 14px;
+                                                    line-height: 20px;
+                                                    margin-right: 10px;
                                                 }
                                             }
-                                        
-                                            &.chat_exists {
+                                            .chat_td {
                                                 .img_box {
-                                                    position: relative;
-                                                    margin-right: calc(21.91px / 2);
+                                                    width: fit-content;
+                                                    margin: 0 auto;
+                                                
+                                                    img {
+                                                        display: block;
+                                                    }
                                                 
                                                     .count {
-                                                        display: flex;
-                                                        justify-content: center;
-                                                        align-items: center;
-                                                        width: 21.91px;
-                                                        height: 21.91px;
-                                                        border-radius: 50%;
-                                                        background-color: #434343;
-                                                        position: absolute;
-                                                        bottom: 50%;
-                                                        left: 50%;
+                                                        display: none;
+                                                    }
+                                                }
+                                            
+                                                &.chat_exists {
+                                                    .img_box {
+                                                        position: relative;
+                                                        margin-right: calc(21.91px / 2);
                                                     
-                                                        .count_chat {
-                                                            display: block;
-                                                            font-size: 10px;
-                                                            line-height: 14px;
-                                                            color: #fff;
-                                                        }
-                                                    
-                                                        .over_chat {
-                                                            display: none;
-                                                            font-size: 10px;
-                                                            line-height: 14px;
-                                                            color: #fff;
-                                                        }
-                                                    
-                                                        &.over {
+                                                        .count {
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 21.91px;
+                                                            height: 21.91px;
+                                                            border-radius: 50%;
+                                                            background-color: #434343;
+                                                            position: absolute;
+                                                            bottom: 50%;
+                                                            left: 50%;
+                                                        
                                                             .count_chat {
-                                                                display: none;
+                                                                display: block;
+                                                                font-size: 10px;
+                                                                line-height: 14px;
+                                                                color: #fff;
                                                             }
                                                         
                                                             .over_chat {
-                                                                display: block;
+                                                                display: none;
+                                                                font-size: 10px;
+                                                                line-height: 14px;
+                                                                color: #fff;
+                                                            }
+                                                        
+                                                            &.over {
+                                                                .count_chat {
+                                                                    display: none;
+                                                                }
+                                                            
+                                                                .over_chat {
+                                                                    display: block;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -3552,16 +3547,28 @@
                                         }
                                     }
                                 }
-                                &.on{
-                                    .step_01{
+                                .buy_td{
+                                    margin-top: 25px;
+                                    .buy_01{
+                                        display: block;
+                                        button{
+                                            width: 100%;
+                                            height: 54px;
+                                            background-color: #fff;
+                                            border: 1px solid #24B685;
+                                            border-radius: 3px;
+                                            color: #24B685;
+                                        }
+                                    }
+                                    .buy_02{
                                         display: none;
-                                    }
-                                    .step_02{
-                                        display: inline-block;
-                                    }
-                                    .bottom_right_box{
-                                        .step_02_on{
-                                            display: inline-block;
+                                        button{
+                                            width: 100%;
+                                            height: 54px;
+                                            background-color: #fff;
+                                            border: 1px solid #E96233;
+                                            border-radius: 3px;
+                                            color: #E96135;
                                         }
                                     }
                                 }

@@ -2639,10 +2639,10 @@
   width: 80px;
 }
 #mypage.purchase_in_progress .my_cont #cancelWait_table table tr th.progress {
-  width: 90px;
+  width: 80px;
 }
 #mypage.purchase_in_progress .my_cont #cancelWait_table table tr th.cancel {
-  width: 84px;
+  width: 92px;
 }
 #mypage.purchase_in_progress .my_cont #cancelWait_table table tr th.chat {
   width: 50px;
@@ -2727,7 +2727,6 @@
 #mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td .step_01 {
   font-size: 14px;
   line-height: 20px;
-  color: #014099;
 }
 #mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td .step_02 {
   display: none;
@@ -2735,94 +2734,64 @@
 #mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td .step_02 span {
   font-size: 14px;
   line-height: 20px;
-  color: #DE4040;
-  margin-bottom: 2px;
 }
-#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td .step_02 button {
-  border: 1px solid #D3D3D3;
-  border-radius: 3px;
-  padding: 4px 7px;
-  background-color: #fff;
-  font-size: 12px;
-  line-height: 18px;
-}
-#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td.on {
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td.step_02_on {
   padding: 6px 0;
 }
-#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td.on .step_01 {
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td.step_02_on .step_01 {
   display: none;
 }
-#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td.on .step_02 {
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.progress_td.step_02_on .step_02 {
   display: block;
 }
-#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.cancel_td button {
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td.buy_02_on .buy_01 {
+  display: none;
+}
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td.buy_02_on .buy_02 {
+  display: block;
+}
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td .cancel_button {
+  padding: 5px 14px;
+  font-size: 14px;
+  line-height: 20px;
   border: 1px solid #D3D3D3;
   border-radius: 3px;
-  padding: 5px 9px;
   background-color: #fff;
+  margin-top: 6px;
+}
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td .buy_01 {
+  display: block;
+}
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td .buy_01 button {
+  padding: 5px 14px;
   font-size: 14px;
   line-height: 20px;
+  border-radius: 3px;
+  background-color: #014099;
+  border: none;
+  color: #fff;
 }
-#mypage.purchase_in_progress .sale_info {
-  margin-top: 30px;
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td .buy_02 {
+  display: none;
 }
-#mypage.purchase_in_progress .sale_info .info_title {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-#mypage.purchase_in_progress .sale_info .info_box {
-  background-color: #F6F6F6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 26px 20px 46px 20px;
-}
-#mypage.purchase_in_progress .sale_info .info_box .info_list {
-  width: 110px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-#mypage.purchase_in_progress .sale_info .info_box .info_list:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  background-image: url(../images/mypage/mypage_arrow_gray_gradation.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 24px;
-  height: 15px;
-  left: 100%;
-  top: 30%;
-  margin-left: 20px;
-}
-#mypage.purchase_in_progress .sale_info .info_box .info_list .img_box {
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td .buy_02 .top_button {
+  padding: 5px 14px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 3px;
   background-color: #fff;
-  border: 1px solid #A7A7A7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid #E96233;
+  color: #E96135;
+  margin-bottom: 6px;
 }
-#mypage.purchase_in_progress .sale_info .info_box .info_list .img_box span {
-  margin-top: 10px;
+#mypage.purchase_in_progress .my_cont #cancelWait_table table tr td.buy_td .buy_02 .bottom_button {
+  padding: 5px 8px;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
-}
-#mypage.purchase_in_progress .sale_info .info_box .info_list .text_box {
-  text-align: center;
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 10px;
-  white-space: nowrap;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #014099;
+  color: #014099;
 }
 
 @media (max-width: 1080px) {
@@ -2901,28 +2870,43 @@
     font-weight: 500;
     color: #000;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box.on .progress_td .step_01 {
+    display: none;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box.on .progress_td .step_02 {
+    display: inline-block;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box.on .progress_td .bottom_right_box .step_02_on {
+    display: inline-block;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box.on .buy_td .buy_01 {
+    display: none;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box.on .buy_td .buy_02 {
+    display: block;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .step_01 {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .step_01 {
     font-size: 14px;
     line-height: 20px;
     color: #014099;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .step_02 {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .step_02 {
     display: none;
     font-size: 14px;
     line-height: 20px;
     color: #DE4040;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .step_02_on {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .step_02_on {
     display: none;
     border: 1px solid #D3D3D3;
     border-radius: 3px;
@@ -2932,12 +2916,12 @@
     line-height: 20px;
     margin-right: 10px;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .cancel_td button {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .cancel_td button {
     border: 1px solid #D3D3D3;
     border-radius: 3px;
     padding: 5px 9px;
@@ -2946,22 +2930,22 @@
     line-height: 20px;
     margin-right: 10px;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td .img_box {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td .img_box {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td .img_box img {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td .img_box img {
     display: block;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td .img_box .count {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td .img_box .count {
     display: none;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box {
     position: relative;
     margin-right: 10.955px;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2973,32 +2957,48 @@
     bottom: 50%;
     left: 50%;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count .count_chat {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count .count_chat {
     display: block;
     font-size: 10px;
     line-height: 14px;
     color: #fff;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count .over_chat {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count .over_chat {
     display: none;
     font-size: 10px;
     line-height: 14px;
     color: #fff;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count.over .count_chat {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count.over .count_chat {
     display: none;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count.over .over_chat {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .progress_td .bottom_right_box .always_in .chat_td.chat_exists .img_box .count.over .over_chat {
     display: block;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td.on .step_01 {
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .buy_td {
+    margin-top: 25px;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .buy_td .buy_01 {
+    display: block;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .buy_td .buy_01 button {
+    width: 100%;
+    height: 54px;
+    background-color: #fff;
+    border: 1px solid #24B685;
+    border-radius: 3px;
+    color: #24B685;
+  }
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .buy_td .buy_02 {
     display: none;
   }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td.on .step_02 {
-    display: inline-block;
-  }
-  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .progress_td.on .bottom_right_box .step_02_on {
-    display: inline-block;
+  #mypage.purchase_in_progress .my_cont #mo_cancelWait_table .mo_table .mo_tr .step_02_box .buy_td .buy_02 button {
+    width: 100%;
+    height: 54px;
+    background-color: #fff;
+    border: 1px solid #E96233;
+    border-radius: 3px;
+    color: #E96135;
   }
   #mypage.purchase_in_progress .sale_info {
     display: none;
