@@ -2635,7 +2635,7 @@
   font-size: 14px;
   line-height: 18px;
 }
-#mypage.contract_list .my_cont #cancelWait_table table tr td.view_td button {
+#mypage.contract_list .my_cont #cancelWait_table table tr td.view_td a {
   padding: 5px 17px;
   background-color: #fff;
   border: 1px solid #D3D3D3;
@@ -2738,7 +2738,7 @@
     display: flex;
     justify-content: end;
   }
-  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .view_td button {
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .view_td a {
     padding: 5px 22px;
     border: 1px solid #D3D3D3;
     border-radius: 3px;
