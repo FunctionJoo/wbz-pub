@@ -3806,6 +3806,367 @@
     width: 157px;
   }
 }
+#mypage.canceling_purchase .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+#mypage.canceling_purchase .my_cont .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.canceling_purchase .my_cont .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.canceling_purchase .my_cont .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.canceling_purchase .my_cont .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.canceling_purchase .my_cont .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.canceling_purchase .my_cont .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.canceling_purchase .my_cont .pagenation .back_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.canceling_purchase .my_cont .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.canceling_purchase .my_cont .pagenation .back_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.canceling_purchase .my_cont #mo_saleComplete_table {
+  display: none;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table {
+  display: block;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th {
+  background-color: #F6F6F6;
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  border-left: 1px solid #D3D3D3;
+  padding: 15px 0;
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th:last-child {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th.category {
+  width: 150px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th.title {
+  width: 367px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th.amount {
+  width: 124px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th.date {
+  width: 80px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th.chat {
+  width: 50px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr th.progress {
+  width: 84px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td {
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  border-left: 1px solid #D3D3D3;
+  padding: 15px 0;
+  text-align: center;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td:last-child {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.category_td {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.title_td {
+  font-size: 13px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.amount_td {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.amount_td em {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.date_td {
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td .img_box {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td .img_box img {
+  display: block;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td .img_box .count {
+  display: none;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td.chat_exists .img_box {
+  position: relative;
+  margin: 0 9px;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td.chat_exists .img_box .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21.91px;
+  height: 21.91px;
+  border-radius: 50%;
+  background-color: #434343;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td.chat_exists .img_box .count .count_chat {
+  display: block;
+  font-size: 10px;
+  line-height: 14px;
+  color: #fff;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td.chat_exists .img_box .count .over_chat {
+  display: none;
+  font-size: 10px;
+  line-height: 14px;
+  color: #fff;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td.chat_exists .img_box .count.over .count_chat {
+  display: none;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.chat_td.chat_exists .img_box .count.over .over_chat {
+  display: block;
+}
+#mypage.canceling_purchase .my_cont #saleComplete_table table tr td.progress_td .view_button {
+  padding: 5px 17px;
+  border: 1px solid #D3D3D3;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 1080px) {
+  #mypage.canceling_purchase .w_set {
+    padding: 0 !important;
+  }
+  #mypage.canceling_purchase .my_cont .my_title {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 41px !important;
+    padding-bottom: 20px !important;
+  }
+  #mypage.canceling_purchase .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.canceling_purchase .my_cont .pagenation {
+    margin-top: 37px;
+  }
+  #mypage.canceling_purchase .my_cont #saleComplete_table {
+    display: none;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table {
+    display: block;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .con_count {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 15px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .con_count span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .con_count span em {
+    font-weight: 400;
+    color: #014099;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table {
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr {
+    padding: 20px 16px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr:not(:last-child) {
+    border-bottom: 1px solid #D3D3D3;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .amount_date_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .amount_date_box .amount_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .amount_date_box .amount_td em {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .amount_date_box .date_td {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .category_td {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .title_td {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 11px;
+    font-weight: 500;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .progress_td {
+    margin-right: 10px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .progress_td .view_button {
+    padding: 5px 22px;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td .img_box {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td .img_box img {
+    display: block;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td .img_box .count {
+    display: none;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td.chat_exists .img_box {
+    position: relative;
+    margin-right: 10.955px;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td.chat_exists .img_box .count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.91px;
+    height: 21.91px;
+    border-radius: 50%;
+    background-color: #434343;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td.chat_exists .img_box .count .count_chat {
+    display: block;
+    font-size: 10px;
+    line-height: 14px;
+    color: #fff;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td.chat_exists .img_box .count .over_chat {
+    display: none;
+    font-size: 10px;
+    line-height: 14px;
+    color: #fff;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td.chat_exists .img_box .count.over .count_chat {
+    display: none;
+  }
+  #mypage.canceling_purchase .my_cont #mo_saleComplete_table .mo_table .mo_tr .bottom_right_box .chat_td.chat_exists .img_box .count.over .over_chat {
+    display: block;
+  }
+}
 #mypage.items_for_sale .my_cont .pc_title {
   font-size: 16px;
   line-height: 24px;

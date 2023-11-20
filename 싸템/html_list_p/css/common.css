@@ -211,9 +211,6 @@ body.is_pc {
 .label_t input:not([type=radio])::-moz-placeholder {
   color: #A7A7A7;
 }
-.label_t input:not([type=radio]):-ms-input-placeholder {
-  color: #A7A7A7;
-}
 .label_t input:not([type=radio])::placeholder {
   color: #A7A7A7;
 }
