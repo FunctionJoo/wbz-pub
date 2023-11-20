@@ -2950,6 +2950,368 @@
     }
 }
 
+// 구매 계약리스트 _ 계약서
+#mypage {
+    &.contract_list {
+        .my_cont {
+            .pc_title {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 20px;
+                font-weight: 500;
+            }
+
+            .mo_table_count {
+                display: flex;
+                margin-bottom: 10px;
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+            
+                    em {
+                        font-weight: normal;
+                        color: #014099;
+                    }
+                }
+            }
+
+            // 페이지네이션
+            .pagenation {
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    margin: 0 10px;
+
+                    li {
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        &.on {
+                            background-color: #666666;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .back_page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .all_page {
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .one_page {
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .next_page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .all_page {
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    .one_page {
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
+
+                        &.on {
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+
+            #mo_cancelWait_table {
+                display: none;
+            }
+
+            #cancelWait_table {
+                display: block;
+
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+
+                    tr {
+                        th {
+                            background-color: #F6F6F6;
+                            border-top: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            border-left: 1px solid #D3D3D3;
+                            padding: 15px 0;
+                            font-weight: normal;
+                            text-align: center;
+                            color: #000;
+                            &:last-child {
+                                border-right: 1px solid #D3D3D3;
+                            }
+
+                            &.category {
+                                width: 150px;
+                            }
+
+                            &.title {
+                                width: 519px;
+                            }
+
+                            &.date {
+                                width: 100px;
+                            }
+
+                            &.view{
+                                width: 84px;
+                            }
+                        }
+
+                        td {
+                            border-top: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            border-left: 1px solid #D3D3D3;
+                            padding: 15px 0;
+                            text-align: center;
+
+                            &:last-child {
+                                border-right: 1px solid #D3D3D3;
+                            }
+
+                            &.category_td {
+                                span{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                    display: block;
+                                    width: 140px;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            &.title_td {
+                                a{
+                                    font-size: 13px;
+                                    line-height: 19px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                    width: 500px;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            &.date_td {
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+
+                            &.view_td{
+                                button{
+                                    padding: 5px 17px;
+                                    background-color: #fff;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 3px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px) {
+    #mypage {
+        &.contract_list {
+            .w_set {
+                padding: 0 !important;
+            }
+
+            .my_cont {
+                .my_title {
+                    margin: 0 16px;
+                }
+
+                .pc_title {
+                    display: none;
+                }
+
+                .mo_table_count {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                    margin-top: 44px;
+                    margin-bottom: 15px;
+                    display: flex;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 21px;
+
+                        em {
+                            font-weight: normal;
+                            color: #014099;
+                        }
+                    }
+                }
+
+                .pagenation{
+                    margin-top: 37px;
+                }
+
+                #cancelWait_table {
+                    display: none;
+                }
+
+                #mo_cancelWait_table {
+                    display: block;
+
+                    .mo_table {
+                        border-top: 1px solid #D3D3D3;
+                        border-bottom: 1px solid #D3D3D3;
+
+                        .mo_tr {
+                            padding: 20px 16px;
+
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+
+                            .amount_date_box {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 26px;
+
+                                .amount_td {
+                                    font-size: 14px;
+                                    line-height: 20px;
+
+                                    em {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        font-weight: 600;
+                                    }
+                                }
+
+                                .date_td {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                            .category_td {
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 6px;
+                                color: #000;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                                width: 300px;
+                                display: inline-block;
+                            }
+                            .title_td {
+                                margin-bottom: 11px;
+                                a{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 500;
+                                    color: #000;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                    width: 300px;
+                                    display: inline-block;
+                                }
+                            }
+                            .view_td{
+                                display: flex;
+                                justify-content: end;
+                                button{
+                                    padding: 5px 22px;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 3px;
+                                    background-color: #fff;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 
 // 판매진행중
 #mypage {
@@ -3570,7 +3932,7 @@
 
 }
 
-// 판매진행중
+// 구매진행중
 #mypage {
     &.purchase_in_progress {
         .my_cont {
