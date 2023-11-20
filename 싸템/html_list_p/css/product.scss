@@ -1,0 +1,144 @@
+@import 'utility.scss';
+
+#product {
+	margin-top: 50px;
+	.page_title {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 30px;
+		b {
+			font-size: 28px;
+			font-weight: 500;
+		}
+		.page_cate {
+			display: flex;
+			span {
+				font-size: 16px;
+				color: $color6;
+				+ span {
+					&:before {
+						content: '>';
+					}
+				}
+			}
+		}
+	}
+	.prd_tab {
+		display: flex;
+		margin-bottom: 30px;
+		button {
+			+ button {
+				margin-left: -1px;
+			}
+			flex: 1;
+			height: 60px;
+			background: $colorF;
+			border: 1px solid $colorD;
+			font-size: 16px;
+			&.on {
+				position: relative;
+				z-index: 2;
+				border-color: $point0;
+				background-color: $point0;
+				color: $colorF;
+			}
+		}
+	}
+}
+.prd_search_option {
+	display: block;
+	.btn_area {
+		margin-top: 40px;
+	}
+}
+.table_display {
+	border: 1px solid $colorD;
+	.tr {
+		display: flex;
+		+ .tr {
+			border-top: 1px solid $colorD;
+		}
+		.th,
+		.td {
+			padding: 12px 10px;
+		}
+		.th {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 120px;
+			background: $colorF6;
+			min-height: 46px;
+			font-size: 14px;
+			color: $color0;
+		}
+		.td {
+			flex: 1;
+			border-left: 1px solid $colorD;
+			.has_ipt {
+				input[type="text"] {
+					width: 70px;
+					height: 28px;
+					border: 1px solid $colorD;
+					border-radius: 2px;
+				}
+				.txt {
+					padding-right: 10px;
+				}
+				.dash {
+					display: block;
+					width: 15px;
+					text-align: center;
+				}
+				.unit {
+					padding-left: 6px;
+				}
+			}
+			&.type_check {
+				display: flex;
+				gap: 10px 20px;
+			}
+			&.type_radio {
+				display: flex;
+				gap: 10px 10px;
+				white-space: nowrap;
+			}
+			&.type_ipt {
+				padding: 0 0 0 0;
+				input {
+					border: 0 none;
+					width: 100%;
+					height: 100%;
+					padding: 0 10px;
+					font-size: 14px;
+					&::placeholder {
+						color: $colorA;
+					}
+				}
+			}
+		}
+
+		&.row_2 {
+			.td:last-child {
+				width: 570px;
+				flex: none;
+			}
+		}
+	}
+}
+
+@include pc {
+	.table_display {
+		border: 1px solid $colorD;
+		.tr {
+			.td + .th {
+				border-left: 1px solid $colorD;
+			}
+		}
+	}
+}
+
+@include mobile {
+	
+}

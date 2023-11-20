@@ -470,6 +470,8 @@
   body:not(.is_pc) #member .chk_area .chk {
     padding: 2px 0 0 32px;
   }
+}
+@media (max-width: 1080px) {
   body:not(.is_pc) #member .join2 {
     margin-top: 20px;
   }
@@ -549,6 +551,8 @@
   body:not(.is_pc) #member .join2 .list .btn {
     text-align: center;
   }
+}
+@media (max-width: 1080px) {
   body:not(.is_pc) #member .agree_area {
     margin-top: 30px;
   }
@@ -586,6 +590,8 @@
   body:not(.is_pc) #member .agree_area .list ul .cont {
     height: 240px;
   }
+}
+@media (max-width: 1080px) {
   body:not(.is_pc) #member .member_info {
     padding: 16px;
     margin-top: 20px;
@@ -596,6 +602,8 @@
   body:not(.is_pc) #member .member_info .pt_txt .txt {
     padding: 0px 10px;
   }
+}
+@media (max-width: 1080px) {
   body:not(.is_pc) #member .man_list {
     margin-top: 30px;
   }
@@ -635,6 +643,8 @@
   body:not(.is_pc) #member .man_list .man_check li:nth-child(2) img {
     width: 70px;
   }
+}
+@media (max-width: 1080px) {
   body:not(.is_pc) #member .gift .gift_img {
     padding: 18px 20px 28px;
     margin-top: 40px;

@@ -11,6 +11,10 @@ button {
   cursor: pointer;
 }
 
+body.is_pc {
+  min-width: 1200px;
+}
+
 .w_set {
   width: 1080px;
   margin-left: auto !important;
@@ -131,6 +135,14 @@ button {
   border: 0 none;
   background: url("../images/common/i_checkbox.svg") no-repeat center center #333333;
 }
+.label_c.size_s .ico {
+  width: 18px;
+  height: 18px;
+}
+.label_c.size_s .txt {
+  padding-left: 6px;
+  font-size: 14px;
+}
 
 @media (max-width: 1080px) {
   body:not(.is_pc) .label_c .txt {
@@ -144,7 +156,7 @@ button {
   display: inline-flex;
   align-items: center;
 }
-.label_r input {
+.label_r input[type=radio] {
   position: absolute;
   width: 0;
   height: 0;
@@ -168,6 +180,10 @@ button {
 }
 .label_r input:checked + .ico + .txt {
   color: #113462;
+}
+.label_r.size_s .txt {
+  padding-left: 6px;
+  font-size: 14px;
 }
 
 .label_t {
@@ -193,6 +209,9 @@ button {
   background: #fff;
 }
 .label_t input:not([type=radio])::-moz-placeholder {
+  color: #A7A7A7;
+}
+.label_t input:not([type=radio]):-ms-input-placeholder {
   color: #A7A7A7;
 }
 .label_t input:not([type=radio])::placeholder {
@@ -242,6 +261,23 @@ button {
   }
 }
 
+.st_btn_align {
+  display: flex;
+  justify-content: center;
+}
+.st_btn_align.pc_center {
+  gap: 20px;
+}
+
+@media (max-width: 1080px) {
+  body:not(.is_pc) .st_btn_align.m_auto {
+    gap: 8px;
+  }
+  body:not(.is_pc) .st_btn_align.m_auto .st_btn {
+    flex: 1;
+  }
+}
+
 .st_btn {
   display: inline-block;
   vertical-align: top;
@@ -279,6 +315,11 @@ button {
   line-height: 34px;
   padding: 0 12px;
   font-size: 14px;
+}
+.st_btn.size_m {
+  width: 166px;
+  height: 40px;
+  line-height: 38px;
 }
 .st_btn.color_p {
   background-color: #014099;
