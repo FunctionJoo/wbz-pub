@@ -1312,6 +1312,16 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            &.on{
+                                .all_page{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(180deg);
+                                }
+                                .one_page{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(180deg);
+                                }
+                            }
                             .all_page{
                                 background-image: url(../images/mypage/table_arrow_off_end.svg);
                                 background-repeat: no-repeat;
@@ -1321,10 +1331,6 @@
                                 height: 24px;
                                 margin-right: 6px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(180deg);
-                                }
                             }
                             .one_page{
                                 background-image: url(../images/mypage/table_arrow_off_next.svg);
@@ -1334,16 +1340,22 @@
                                 width: 24px;
                                 height: 24px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(180deg);
-                                }
                             }
                         }
                         .next_page{
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            &.on{
+                                .all_page{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(0deg);
+                                }
+                                .one_page{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(0deg);
+                                }
+                            }
                             .all_page{
                                 background-image: url(../images/mypage/table_arrow_off_end.svg);
                                 transform: rotate(180deg);
@@ -1353,10 +1365,6 @@
                                 width: 24px;
                                 height: 24px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(0deg);
-                                }
                             }
                             .one_page{
                                 background-image: url(../images/mypage/table_arrow_off_next.svg);
@@ -1368,10 +1376,6 @@
                                 height: 24px;
                                 margin-right: 6px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(0deg);
-                                }
                             }
                         }
                     }
@@ -3012,7 +3016,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         background-repeat: no-repeat;
@@ -3022,11 +3035,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
                     }
 
                     .one_page {
@@ -3037,11 +3045,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
                     }
                 }
 
@@ -3049,7 +3052,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         transform: rotate(180deg);
@@ -3059,11 +3071,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(0deg);
-                        }
                     }
 
                     .one_page {
@@ -3076,11 +3083,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(0deg);
-                        }
                     }
                 }
             }
@@ -3375,7 +3377,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         background-repeat: no-repeat;
@@ -3385,11 +3396,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
                     }
 
                     .one_page {
@@ -3400,11 +3406,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
                     }
                 }
 
@@ -3412,7 +3413,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         transform: rotate(180deg);
@@ -3422,11 +3432,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(0deg);
-                        }
                     }
 
                     .one_page {
@@ -3439,11 +3444,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(0deg);
-                        }
                     }
                 }
             }
@@ -3994,7 +3994,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         background-repeat: no-repeat;
@@ -4004,11 +4013,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
                     }
 
                     .one_page {
@@ -4019,11 +4023,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
                     }
                 }
 
@@ -4031,7 +4030,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         transform: rotate(180deg);
@@ -4041,11 +4049,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(0deg);
-                        }
                     }
 
                     .one_page {
@@ -4058,11 +4061,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(0deg);
-                        }
                     }
                 }
             }
@@ -4711,7 +4709,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         background-repeat: no-repeat;
@@ -4721,11 +4728,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
                     }
 
                     .one_page {
@@ -4736,11 +4738,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
                     }
                 }
 
@@ -4748,7 +4745,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         transform: rotate(180deg);
@@ -4758,11 +4764,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(0deg);
-                        }
                     }
 
                     .one_page {
@@ -4775,11 +4776,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(0deg);
-                        }
                     }
                 }
             }
@@ -5511,7 +5507,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         background-repeat: no-repeat;
@@ -5521,11 +5526,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
                     }
 
                     .one_page {
@@ -5536,11 +5536,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
                     }
                 }
 
@@ -5548,7 +5543,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         transform: rotate(180deg);
@@ -5558,11 +5562,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(0deg);
-                        }
                     }
 
                     .one_page {
@@ -5575,11 +5574,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(0deg);
-                        }
                     }
                 }
             }
@@ -6168,7 +6162,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(180deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(180deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         background-repeat: no-repeat;
@@ -6178,11 +6181,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
                     }
 
                     .one_page {
@@ -6193,11 +6191,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
                     }
                 }
 
@@ -6205,7 +6198,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
                     .all_page {
                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                         transform: rotate(180deg);
@@ -6215,11 +6217,6 @@
                         width: 24px;
                         height: 24px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(0deg);
-                        }
                     }
 
                     .one_page {
@@ -6232,11 +6229,6 @@
                         height: 24px;
                         margin-right: 6px;
                         cursor: pointer;
-
-                        &.on {
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(0deg);
-                        }
                     }
                 }
             }
@@ -6982,7 +6974,16 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-
+                                &.on{
+                                    .all_page{
+                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                        transform: rotate(180deg);
+                                    }
+                                    .one_page{
+                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                        transform: rotate(180deg);
+                                    }
+                                }
                                 .all_page {
                                     background-image: url(../images/mypage/table_arrow_off_end.svg);
                                     background-repeat: no-repeat;
@@ -6992,11 +6993,6 @@
                                     height: 24px;
                                     margin-right: 6px;
                                     cursor: pointer;
-
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                        transform: rotate(180deg);
-                                    }
                                 }
 
                                 .one_page {
@@ -7007,11 +7003,6 @@
                                     width: 24px;
                                     height: 24px;
                                     cursor: pointer;
-
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                        transform: rotate(180deg);
-                                    }
                                 }
                             }
 
@@ -7019,7 +7010,16 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-
+                                &.on{
+                                    .all_page{
+                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                        transform: rotate(0deg);
+                                    }
+                                    .one_page{
+                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                        transform: rotate(0deg);
+                                    }
+                                }
                                 .all_page {
                                     background-image: url(../images/mypage/table_arrow_off_end.svg);
                                     transform: rotate(180deg);
@@ -7029,11 +7029,6 @@
                                     width: 24px;
                                     height: 24px;
                                     cursor: pointer;
-
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                        transform: rotate(0deg);
-                                    }
                                 }
 
                                 .one_page {
@@ -7046,11 +7041,6 @@
                                     height: 24px;
                                     margin-right: 6px;
                                     cursor: pointer;
-
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                        transform: rotate(0deg);
-                                    }
                                 }
                             }
                         }
@@ -7349,7 +7339,16 @@
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-
+                                    &.on{
+                                        .all_page{
+                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                            transform: rotate(180deg);
+                                        }
+                                        .one_page{
+                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                            transform: rotate(180deg);
+                                        }
+                                    }
                                     .all_page {
                                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                                         background-repeat: no-repeat;
@@ -7360,10 +7359,6 @@
                                         margin-right: 6px;
                                         cursor: pointer;
 
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(180deg);
-                                        }
                                     }
 
                                     .one_page {
@@ -7374,11 +7369,6 @@
                                         width: 24px;
                                         height: 24px;
                                         cursor: pointer;
-
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(180deg);
-                                        }
                                     }
                                 }
 
@@ -7386,7 +7376,16 @@
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-
+                                    &.on{
+                                        .all_page{
+                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                            transform: rotate(0deg);
+                                        }
+                                        .one_page{
+                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                            transform: rotate(0deg);
+                                        }
+                                    }
                                     .all_page {
                                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                                         transform: rotate(180deg);
@@ -7397,10 +7396,6 @@
                                         height: 24px;
                                         cursor: pointer;
 
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(0deg);
-                                        }
                                     }
 
                                     .one_page {
@@ -7413,11 +7408,6 @@
                                         height: 24px;
                                         margin-right: 6px;
                                         cursor: pointer;
-
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(0deg);
-                                        }
                                     }
                                 }
                             }
@@ -7852,7 +7842,16 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-
+                                &.on{
+                                    .all_page{
+                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                        transform: rotate(180deg);
+                                    }
+                                    .one_page{
+                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                        transform: rotate(180deg);
+                                    }
+                                }
                                 .all_page {
                                     background-image: url(../images/mypage/table_arrow_off_end.svg);
                                     background-repeat: no-repeat;
@@ -7863,10 +7862,6 @@
                                     margin-right: 6px;
                                     cursor: pointer;
 
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                        transform: rotate(180deg);
-                                    }
                                 }
 
                                 .one_page {
@@ -7878,10 +7873,6 @@
                                     height: 24px;
                                     cursor: pointer;
 
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                        transform: rotate(180deg);
-                                    }
                                 }
                             }
 
@@ -7889,7 +7880,16 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-
+                                &.on{
+                                    .all_page{
+                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                        transform: rotate(0deg);
+                                    }
+                                    .one_page{
+                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                        transform: rotate(0deg);
+                                    }
+                                }
                                 .all_page {
                                     background-image: url(../images/mypage/table_arrow_off_end.svg);
                                     transform: rotate(180deg);
@@ -7900,10 +7900,6 @@
                                     height: 24px;
                                     cursor: pointer;
 
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                        transform: rotate(0deg);
-                                    }
                                 }
 
                                 .one_page {
@@ -7917,10 +7913,6 @@
                                     margin-right: 6px;
                                     cursor: pointer;
 
-                                    &.on {
-                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                        transform: rotate(0deg);
-                                    }
                                 }
                             }
                         }
@@ -8220,7 +8212,16 @@
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-
+                                    &.on{
+                                        .all_page{
+                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                            transform: rotate(180deg);
+                                        }
+                                        .one_page{
+                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                            transform: rotate(180deg);
+                                        }
+                                    }
                                     .all_page {
                                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                                         background-repeat: no-repeat;
@@ -8230,11 +8231,6 @@
                                         height: 24px;
                                         margin-right: 6px;
                                         cursor: pointer;
-
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(180deg);
-                                        }
                                     }
 
                                     .one_page {
@@ -8246,10 +8242,6 @@
                                         height: 24px;
                                         cursor: pointer;
 
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(180deg);
-                                        }
                                     }
                                 }
 
@@ -8257,7 +8249,16 @@
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-
+                                    &.on{
+                                        .all_page{
+                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                            transform: rotate(0deg);
+                                        }
+                                        .one_page{
+                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                            transform: rotate(0deg);
+                                        }
+                                    }
                                     .all_page {
                                         background-image: url(../images/mypage/table_arrow_off_end.svg);
                                         transform: rotate(180deg);
@@ -8268,10 +8269,6 @@
                                         height: 24px;
                                         cursor: pointer;
 
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(0deg);
-                                        }
                                     }
 
                                     .one_page {
@@ -8284,11 +8281,6 @@
                                         height: 24px;
                                         margin-right: 6px;
                                         cursor: pointer;
-
-                                        &.on {
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(0deg);
-                                        }
                                     }
                                 }
                             }
@@ -10767,6 +10759,16 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
                         .all_page{
                             background-image: url(../images/mypage/table_arrow_off_end.svg);
                             background-repeat: no-repeat;
@@ -10776,10 +10778,7 @@
                             height: 24px;
                             margin-right: 6px;
                             cursor: pointer;
-                            &.on{
-                                background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                transform: rotate(180deg);
-                            }
+
                         }
                         .one_page{
                             background-image: url(../images/mypage/table_arrow_off_next.svg);
@@ -10789,16 +10788,23 @@
                             width: 24px;
                             height: 24px;
                             cursor: pointer;
-                            &.on{
-                                background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                transform: rotate(180deg);
-                            }
+
                         }
                     }
                     .next_page{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
                         .all_page{
                             background-image: url(../images/mypage/table_arrow_off_end.svg);
                             transform: rotate(180deg);
@@ -10808,10 +10814,7 @@
                             width: 24px;
                             height: 24px;
                             cursor: pointer;
-                            &.on{
-                                background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                transform: rotate(0deg);
-                            }
+
                         }
                         .one_page{
                             background-image: url(../images/mypage/table_arrow_off_next.svg);
@@ -10823,10 +10826,6 @@
                             height: 24px;
                             margin-right: 6px;
                             cursor: pointer;
-                            &.on{
-                                background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                transform: rotate(0deg);
-                            }
                         }
                     }
                 }
@@ -11748,7 +11747,9 @@
     &.ticket_preList{
         .my_cont{
             .pc_title{
-                @include pc_title();
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
                 margin-bottom: 20px;
             }
 
@@ -11788,7 +11789,7 @@
                         .title_con{
                             display: flex;
                             justify-content: center;
-                            align-items: center;
+                            align-items: end;
                             p{
                                 font-size: 16px;
                                 line-height: 24px;
@@ -11930,7 +11931,7 @@
                         }
                     }
                     .pagenation{
-                        margin-top: 120px;
+                        margin-top: 60px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -11956,6 +11957,16 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            &.on{
+                                .all_page{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(180deg);
+                                }
+                                .one_page{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(180deg);
+                                }
+                            }
                             .all_page{
                                 background-image: url(../images/mypage/table_arrow_off_end.svg);
                                 background-repeat: no-repeat;
@@ -11965,10 +11976,7 @@
                                 height: 24px;
                                 margin-right: 6px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(180deg);
-                                }
+           
                             }
                             .one_page{
                                 background-image: url(../images/mypage/table_arrow_off_next.svg);
@@ -11978,16 +11986,23 @@
                                 width: 24px;
                                 height: 24px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(180deg);
-                                }
+
                             }
                         }
                         .next_page{
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            &.on{
+                                .all_page{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(0deg);
+                                }
+                                .one_page{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(0deg);
+                                }
+                            }
                             .all_page{
                                 background-image: url(../images/mypage/table_arrow_off_end.svg);
                                 transform: rotate(180deg);
@@ -11997,10 +12012,7 @@
                                 width: 24px;
                                 height: 24px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(0deg);
-                                }
+
                             }
                             .one_page{
                                 background-image: url(../images/mypage/table_arrow_off_next.svg);
@@ -12012,10 +12024,7 @@
                                 height: 24px;
                                 margin-right: 6px;
                                 cursor: pointer;
-                                &.on{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(0deg);
-                                }
+  
                             }
                         }
                     }
@@ -12052,6 +12061,388 @@
                             margin-bottom: 10.5px;
                             .title_con{
                                 margin-bottom: 14px;
+                            }
+                            .search_con{
+                                input[type=search]{
+                                    width: 238px;
+                                }
+                            }
+                        }
+                        .con_table{
+                            table{
+                                tbody{
+                                    tr{
+                                        &:nth-last-child(-n+15){
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .pagenation{
+                            margin-top: 37px;
+                            .pageNum{
+                                li{
+                                    &:nth-last-child(-n+5){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+
+// 이용권 사용내역 _ 자동 재등록권
+
+#mypage{
+    &.ticket_reAutoList{
+        .my_cont{
+            .pc_title{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .main{
+                .cate_button_box{
+                    margin-bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #D3D3D3;
+                    height: 50px;
+                    .cate_button_list{
+                        &:not(:last-child){
+                            border-right: 1px solid #D3D3D3;
+                        }
+
+                        width: calc(100% / 3);
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                        line-height: 22px;
+
+                        &.on{
+                            background-color: #014099;
+                            color: #fff;
+                        }
+                    }
+                }
+                .con_box{
+                    .con_top{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        .title_con{
+                            display: flex;
+                            justify-content: center;
+                            align-items: end;
+                            p{
+                                font-size: 16px;
+                                line-height: 24px;
+                                margin-right: 10px;
+                            }
+                            span{
+                                font-size: 16px;
+                                line-height: 24px;
+                                &:first-of-type{
+                                    margin-right: 11px;
+                                }
+                                strong{
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    font-weight: 600;
+                                }
+                                em{
+                                    font-size: 20px;
+                                    line-height: 27px;
+                                    margin-left: 6px;
+                                    margin-right: 2px;
+                                    color: #014099;
+                                }
+                            }
+                        }
+                        .search_con{
+                            input[type=search]{
+                                width: 200px;
+                                height: 32px;
+                                padding: 0 10px;
+                                border: 1px solid #D3D3D3;
+                                border-radius: 1px;
+                                &::placeholder{
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    color: #666666;
+                                }
+                            }
+                            input[type=submit]{
+                                width: 80px;
+                                height: 32px;
+                                color: #fff;
+                                border: none;
+                                background-color: #222222;
+                                border-radius: 1px;
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                    .con_table{
+                        width: 100%;
+                        overflow-x: auto;
+                        &::-webkit-scrollbar{
+                            background-color: #F9F9F9;
+                            border: 1px solid #D3D3D3;
+                            height: 7px;
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background-color: #014099;
+                        }
+                        table{
+                            margin: 0 auto;
+                            margin-bottom: 24px;
+                            border-collapse : collapse;
+                            border-spacing : 0;
+                            border: 1px solid #D3D3D3;
+                            width: 850px;
+                            thead{
+                                tr{
+                                    background-color: #F6F6F6;
+                                    height: 50px;
+                                    border-bottom: 1px solid #D3D3D3;
+                                    th{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
+                                        font-weight: 400;
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
+                                        }
+                                        &.number{
+                                            width: 58px;
+                                        }
+                                        &.interval{
+                                            width: 76px;
+                                        }
+                                        &.start_day{
+                                            width: 180px;
+                                        }
+                                        &.last_day{
+                                            width: 180px;
+                                        }
+                                        &.execution{
+                                            width: 82px;
+                                        }
+                                        &.minus_num{
+                                            width: 100px;
+                                        }
+                                        &.date{
+                                            width: 180px;
+                                        }
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    height: 50px;
+                                    &:not(:last-child){
+                                        border-bottom: 1px solid #D3D3D3;
+                                    }
+
+                                    &.no_item{
+                                        text-align: center;
+                                    }
+                                    &.five_min{
+                                        .interval_td{
+                                            .ten_minute{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    &.ten_min{
+                                        .interval_td{
+                                            .five_minute{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    td{
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
+                                        }
+
+                                        &.number_td, &.interval_td, &.start_day_td, &.last_day_td, &.execution_td, &.minus_num_td, &.date_td{
+                                            text-align: center;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                        &.minus_num_td, &.execution_td{
+                                            em{
+                                                font-weight: 400;
+                                                color: #222;
+                                                margin-right: 1px;
+                                            }
+                                        }
+                                        &.number_td{
+                                            color: #000;
+                                        }
+                                        &.interval_td{
+                                            a{
+                                                em{
+                                                    font-weight: 400;
+                                                    margin-right: 2px;
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pagenation{
+                        margin-top: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul{
+                            display: flex;
+                            margin: 0 10px;
+                            li{
+                                font-size: 14px;
+                                line-height: 19px;
+                                width: 24px;
+                                height: 24px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                &.on{
+                                    background-color: #666666;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .back_page{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &.on{
+                                .all_page{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(180deg);
+                                }
+                                .one_page{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(180deg);
+                                }
+                            }
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 6px;
+                                cursor: pointer;
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                cursor: pointer;
+                            }
+                        }
+                        .next_page{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &.on{
+                                .all_page{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(0deg);
+                                }
+                                .one_page{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(0deg);
+                                }
+                            }
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                transform: rotate(180deg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                cursor: pointer;
+
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                transform: rotate(180deg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 6px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.ticket_reAutoList{
+            .my_cont{
+                .pc_title{
+                    display: none;
+                }
+
+                .main{
+                    .cate_button_box{
+                        height: 45px;
+                        margin-bottom: 22.5px;
+                        .cate_button_list{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                    .con_box{
+                        .con_top{
+                            flex-direction: column;
+                            align-items: start;
+                            justify-content: center;
+                            max-width: 850px;
+                            margin: 0 auto;
+                            margin-bottom: 10.5px;
+                            .title_con{
+                                margin-bottom: 14px;
+                            }
+                            .search_con{
+                                input[type=search]{
+                                    width: 238px;
+                                }
                             }
                         }
                         .con_table{

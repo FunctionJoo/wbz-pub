@@ -1136,6 +1136,14 @@
     justify-content: center;
     align-items: center;
   }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     background-repeat: no-repeat;
@@ -1146,10 +1154,6 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     background-repeat: no-repeat;
@@ -1159,14 +1163,18 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
   }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -1178,10 +1186,6 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     transform: rotate(180deg);
@@ -1192,10 +1196,6 @@
     height: 24px;
     margin-right: 6px;
     cursor: pointer;
-  }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
   }
 }
 #mypage.sale_detail_item .my_cont .title {
@@ -2502,6 +2502,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.contract_list .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.contract_list .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.contract_list .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -2512,10 +2520,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.contract_list .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.contract_list .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -2525,14 +2529,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.contract_list .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.contract_list .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.contract_list .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.contract_list .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.contract_list .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -2544,10 +2552,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.contract_list .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.contract_list .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -2558,10 +2562,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.contract_list .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.contract_list .my_cont #mo_cancelWait_table {
   display: none;
@@ -2794,6 +2794,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.sale_in_progress .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.sale_in_progress .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.sale_in_progress .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -2804,10 +2812,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.sale_in_progress .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_in_progress .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -2817,14 +2821,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_in_progress .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_in_progress .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.sale_in_progress .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.sale_in_progress .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.sale_in_progress .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -2836,10 +2844,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_in_progress .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.sale_in_progress .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -2850,10 +2854,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.sale_in_progress .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.sale_in_progress .my_cont #mo_cancelWait_table {
   display: none;
@@ -3303,6 +3303,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.purchase_in_progress .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_in_progress .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.purchase_in_progress .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -3313,10 +3321,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.purchase_in_progress .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_in_progress .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -3326,14 +3330,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_in_progress .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_in_progress .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.purchase_in_progress .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_in_progress .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
 }
 #mypage.purchase_in_progress .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -3345,10 +3353,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_in_progress .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.purchase_in_progress .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -3359,10 +3363,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.purchase_in_progress .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.purchase_in_progress .my_cont #mo_cancelWait_table {
   display: none;
@@ -3900,6 +3900,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.sale_complete .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.sale_complete .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.sale_complete .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -3910,10 +3918,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.sale_complete .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_complete .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -3923,14 +3927,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_complete .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_complete .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.sale_complete .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.sale_complete .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.sale_complete .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -3942,10 +3950,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_complete .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.sale_complete .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -3956,10 +3960,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.sale_complete .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.sale_complete .my_cont #mo_saleComplete_table {
   display: none;
@@ -4595,6 +4595,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.purchase_complete .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_complete .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.purchase_complete .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -4605,10 +4613,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.purchase_complete .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_complete .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -4618,14 +4622,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_complete .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_complete .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.purchase_complete .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_complete .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
 }
 #mypage.purchase_complete .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -4637,10 +4645,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_complete .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.purchase_complete .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -4651,10 +4655,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.purchase_complete .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.purchase_complete .my_cont #mo_saleComplete_table {
   display: none;
@@ -5144,6 +5144,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.canceling_purchase .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.canceling_purchase .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.canceling_purchase .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -5154,10 +5162,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.canceling_purchase .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.canceling_purchase .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -5167,14 +5171,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.canceling_purchase .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.canceling_purchase .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.canceling_purchase .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -5186,10 +5194,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.canceling_purchase .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.canceling_purchase .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -5200,10 +5204,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.canceling_purchase .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.canceling_purchase .my_cont #mo_saleComplete_table {
   display: none;
@@ -5848,6 +5848,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -5858,10 +5866,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -5871,14 +5875,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -5890,10 +5898,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -5904,10 +5908,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.items_for_sale .my_cont .main .con_table .item_none {
   text-align: center;
@@ -6183,6 +6183,14 @@
     justify-content: center;
     align-items: center;
   }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     background-repeat: no-repeat;
@@ -6193,10 +6201,6 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     background-repeat: no-repeat;
@@ -6206,14 +6210,18 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
   }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -6225,10 +6233,6 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     transform: rotate(180deg);
@@ -6239,10 +6243,6 @@
     height: 24px;
     margin-right: 6px;
     cursor: pointer;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
   }
 }
 #mypage.items_for_purchase .my_cont .pc_title {
@@ -6626,6 +6626,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -6636,10 +6644,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -6649,14 +6653,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -6668,10 +6676,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -6682,10 +6686,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.items_for_purchase .my_cont .main .con_table .item_none {
   text-align: center;
@@ -6962,6 +6962,14 @@
     justify-content: center;
     align-items: center;
   }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     background-repeat: no-repeat;
@@ -6972,10 +6980,6 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     background-repeat: no-repeat;
@@ -6985,14 +6989,18 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
   }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -7004,10 +7012,6 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     transform: rotate(180deg);
@@ -7018,10 +7022,6 @@
     height: 24px;
     margin-right: 6px;
     cursor: pointer;
-  }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
   }
 }
 #mypage.items_for_sale_rewrite .my_cont .pc_title {
@@ -9391,6 +9391,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.mile_list .my_cont .main .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.mile_list .my_cont .main .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -9401,10 +9409,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.mile_list .my_cont .main .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.mile_list .my_cont .main .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -9414,14 +9418,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.mile_list .my_cont .main .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.mile_list .my_cont .main .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.mile_list .my_cont .main .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -9433,10 +9441,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.mile_list .my_cont .main .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.mile_list .my_cont .main .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -9447,10 +9451,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.mile_list .my_cont .main .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 
 @media (max-width: 1080px) {
@@ -10264,8 +10264,8 @@
   }
 }
 #mypage.ticket_preList .my_cont .pc_title {
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -10302,7 +10302,7 @@
 #mypage.ticket_preList .my_cont .main .con_box .con_top .title_con {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 #mypage.ticket_preList .my_cont .main .con_box .con_top .title_con p {
   font-size: 16px;
@@ -10436,7 +10436,7 @@
   margin-right: 1px;
 }
 #mypage.ticket_preList .my_cont .main .con_box .pagenation {
-  margin-top: 120px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10464,6 +10464,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -10474,10 +10482,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -10487,14 +10491,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -10506,10 +10514,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -10520,10 +10524,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 
 @media (max-width: 1080px) {
@@ -10549,6 +10549,9 @@
   #mypage.ticket_preList .my_cont .main .con_box .con_top .title_con {
     margin-bottom: 14px;
   }
+  #mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search] {
+    width: 238px;
+  }
   #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr:nth-last-child(-n+15) {
     display: none;
   }
@@ -10556,6 +10559,314 @@
     margin-top: 37px;
   }
   #mypage.ticket_preList .my_cont .main .con_box .pagenation .pageNum li:nth-last-child(-n+5) {
+    display: none;
+  }
+}
+#mypage.ticket_reAutoList .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  height: 50px;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list {
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list.on {
+  background-color: #014099;
+  color: #fff;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span:first-of-type {
+  margin-right: 11px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span strong {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span em {
+  font-size: 20px;
+  line-height: 27px;
+  margin-left: 6px;
+  margin-right: 2px;
+  color: #014099;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search] {
+  width: 200px;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search]::-moz-placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search]::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=submit] {
+  width: 80px;
+  height: 32px;
+  color: #fff;
+  border: none;
+  background-color: #222222;
+  border-radius: 1px;
+  margin-left: 4px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table {
+  width: 100%;
+  overflow-x: auto;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table::-webkit-scrollbar {
+  background-color: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  height: 7px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table::-webkit-scrollbar-thumb {
+  background-color: #014099;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #D3D3D3;
+  width: 850px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr {
+  background-color: #F6F6F6;
+  height: 50px;
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.number {
+  width: 58px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.interval {
+  width: 76px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.start_day {
+  width: 180px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.last_day {
+  width: 180px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.execution {
+  width: 82px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.minus_num {
+  width: 100px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.date {
+  width: 180px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr {
+  height: 50px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr.no_item {
+  text-align: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr.five_min .interval_td .ten_minute {
+  display: none;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr.ten_min .interval_td .five_minute {
+  display: none;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.interval_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.execution_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.execution_td em {
+  font-weight: 400;
+  color: #222;
+  margin-right: 1px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.number_td {
+  color: #000;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.interval_td a em {
+  font-weight: 400;
+  margin-right: 2px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #mypage.ticket_reAutoList .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .cate_button_box {
+    height: 45px;
+    margin-bottom: 22.5px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 10.5px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con {
+    margin-bottom: 14px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search] {
+    width: 238px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr:nth-last-child(-n+15) {
+    display: none;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .pagenation {
+    margin-top: 37px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .pageNum li:nth-last-child(-n+5) {
     display: none;
   }
 }/*# sourceMappingURL=sjh.css.map */
