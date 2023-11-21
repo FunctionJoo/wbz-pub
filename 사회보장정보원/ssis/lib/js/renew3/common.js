@@ -24,7 +24,8 @@ jQuery(function($){
 	/* search box */
 	$(".search_btn").click(function  () {
 		$("#search-wrap").show();
-		$(".searchTitle").focus();
+		// wbz20231121
+		$("#search-wrap .search-close-btn").focus();
 		return false;
 	});
 	$("#search-wrap .search-close-btn").click(function  () {

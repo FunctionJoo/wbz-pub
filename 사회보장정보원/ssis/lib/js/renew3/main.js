@@ -284,21 +284,64 @@ function mainEventInit () {
 		spaceBetween: 16,
 	});
 
+	// wbz20231121
 	// 공지사항 영역 이벤트
-	function mnEvt(el) {
-		document.querySelectorAll('.main_notice_board > ul > li').forEach((li) => {
-			li.classList.remove('on');
+	// 공지사항 영역 자동 롤링
+	if (document.querySelectorAll('.main_notice_board > ul > li')) {
+		let intCount = 0;
+		let intCount2 = 0;
+		let intCs = 100;
+		let intCm = 5000;
+		let intActive = true;
+		let mnbLength = document.querySelectorAll('.main_notice_board > ul > li').length;
+		setInterval(function() {
+			if (!intActive) {
+				return false;
+			}
+			if (intCount2 >= intCm) {
+				intCount2 = 0;
+				intCount++;
+				mnEvt(intCount);
+			} else {
+				intCount2 += intCs;
+			}
+		}, intCs);
+		function mnEvt(idx) {
+			intCount2 = 0;
+			if (idx >= mnbLength) {
+				intCount = 0;
+				idx = intCount;
+			} else if (idx < 0) {
+				intCount = mnbLength - 1;
+				idx = intCount;
+			} else {
+				intCount = idx;
+			}
+			document.querySelectorAll('.main_notice_board > ul > li').forEach((li) => {
+				li.classList.remove('on');
+			});
+			document.querySelectorAll('.main_notice_board > ul > li')[idx].classList.add('on');
+		}
+		document.querySelectorAll('.main_notice_board .tab_n_more button').forEach((el, idx) => {
+			el.addEventListener('click', function() {
+				mnEvt(idx);
+			});
+			el.addEventListener('focus', function() {
+				mnEvt(idx);
+			});
 		});
-		el.closest('li').classList.add('on');
+		document.querySelector('.mnb_control .mnb_l').addEventListener('click', function() {
+			intCount--;
+			mnEvt(intCount);
+		});
+		document.querySelector('.mnb_control .mnb_r').addEventListener('click', function() {
+			intCount++;
+			mnEvt(intCount);
+		});
+		document.querySelector('.mnb_control .mnb_s').addEventListener('click', function() {
+			intActive = !intActive;
+		});
 	}
-	document.querySelectorAll('.main_notice_board .tab_n_more button').forEach((el) => {
-		el.addEventListener('click', function() {
-			mnEvt(el);
-		});
-		el.addEventListener('focus', function() {
-			mnEvt(el);
-		});
-	});
 
 	// 3P 포털 링크
 	let smWrap = document.querySelector('.swipe_menu .swiper-wrapper');
