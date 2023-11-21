@@ -9202,6 +9202,18 @@
   height: 16px;
   margin-right: 6px;
 }
+#mypage.mile_list .my_cont .main .table_sec {
+  width: 100%;
+  overflow-x: auto;
+}
+#mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar {
+  background-color: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  height: 7px;
+}
+#mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar-thumb {
+  background-color: #014099;
+}
 #mypage.mile_list .my_cont .main .table_sec .button_box {
   display: flex;
   justify-content: end;
@@ -9521,18 +9533,6 @@
     display: block;
     margin-left: 10px;
   }
-  #mypage.mile_list .my_cont .main .table_sec {
-    width: 100%;
-    overflow-x: auto;
-  }
-  #mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar {
-    background-color: #F9F9F9;
-    border: 1px solid #D3D3D3;
-    height: 7px;
-  }
-  #mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar-thumb {
-    background-color: #014099;
-  }
   #mypage.mile_list .my_cont .main .table_sec .button_box {
     margin-bottom: 0px;
   }
@@ -9542,6 +9542,7 @@
   #mypage.mile_list .my_cont .main .table_sec table {
     width: 850px;
     white-space: nowrap;
+    margin: 0 auto;
     margin-bottom: 24px;
   }
   #mypage.mile_list .my_cont .main .table_sec table thead tr {
@@ -10257,5 +10258,301 @@
     width: 100%;
     height: 60px;
     padding: 18px 0;
+  }
+}
+#mypage.ticket_preList .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  height: 50px;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list {
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list.on {
+  background-color: #014099;
+  color: #fff;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con span em {
+  font-size: 20px;
+  line-height: 27px;
+  margin-right: 2px;
+  color: #014099;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search] {
+  width: 200px;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search]::-moz-placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search]::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=submit] {
+  width: 80px;
+  height: 32px;
+  color: #fff;
+  border: none;
+  background-color: #222222;
+  border-radius: 1px;
+  margin-left: 4px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table {
+  width: 100%;
+  overflow-x: auto;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table::-webkit-scrollbar {
+  background-color: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  height: 7px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table::-webkit-scrollbar-thumb {
+  background-color: #014099;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #D3D3D3;
+  width: 850px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr {
+  background-color: #F6F6F6;
+  height: 50px;
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.number {
+  width: 50px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.title {
+  width: 420px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.start_day {
+  width: 100px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.last_day {
+  width: 100px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.minus_num {
+  width: 85px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.date {
+  width: 100px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr {
+  height: 50px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr.no_item {
+  text-align: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.number_td {
+  color: #000;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.title_td {
+  padding: 0 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.title_td .list_category {
+  font-size: 13px;
+  line-height: 19px;
+  color: #113462;
+  margin-bottom: 2px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.title_td .list_title {
+  font-size: 13px;
+  line-height: 19px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em {
+  font-weight: 400;
+  color: #222;
+  margin-right: 1px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .all_page.on {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .one_page.on {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1080px) {
+  #mypage.ticket_preList .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.ticket_preList .my_cont .main .cate_button_box {
+    height: 45px;
+    margin-bottom: 22.5px;
+  }
+  #mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .con_top {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 10.5px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .con_top .title_con {
+    margin-bottom: 14px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr:nth-last-child(-n+15) {
+    display: none;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .pagenation {
+    margin-top: 37px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .pagenation .pageNum li:nth-last-child(-n+5) {
+    display: none;
   }
 }/*# sourceMappingURL=sjh.css.map */

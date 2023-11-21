@@ -10551,6 +10551,16 @@
                     }
                 }
                 .table_sec{
+                    width: 100%;
+                    overflow-x: auto;
+                    &::-webkit-scrollbar{
+                        background-color: #F9F9F9;
+                        border: 1px solid #D3D3D3;
+                        height: 7px;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        background-color: #014099;
+                    }
                     .button_box{
                         display: flex;
                         justify-content: end;
@@ -10915,16 +10925,6 @@
                         }
                     }
                     .table_sec{
-                        width: 100%;
-                        overflow-x: auto;
-                        &::-webkit-scrollbar{
-                            background-color: #F9F9F9;
-                            border: 1px solid #D3D3D3;
-                            height: 7px;
-                        }
-                        &::-webkit-scrollbar-thumb{
-                            background-color: #014099;
-                        }
                         .button_box{
                             margin-bottom: 0px;
                             .excel_button{
@@ -10934,6 +10934,7 @@
                         table{
                             width: 850px;
                             white-space: nowrap;
+                            margin: 0 auto;
                             margin-bottom: 24px;
                             thead{
                                 tr{
@@ -11732,6 +11733,348 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+
+// 이용권 사용내역 _ 프리미엄 등록권
+
+#mypage{
+    &.ticket_preList{
+        .my_cont{
+            .pc_title{
+                @include pc_title();
+                margin-bottom: 20px;
+            }
+
+            .main{
+                .cate_button_box{
+                    margin-bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #D3D3D3;
+                    height: 50px;
+                    .cate_button_list{
+                        &:not(:last-child){
+                            border-right: 1px solid #D3D3D3;
+                        }
+
+                        width: calc(100% / 3);
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                        line-height: 22px;
+
+                        &.on{
+                            background-color: #014099;
+                            color: #fff;
+                        }
+                    }
+                }
+                .con_box{
+                    .con_top{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        .title_con{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p{
+                                font-size: 16px;
+                                line-height: 24px;
+                                margin-right: 10px;
+                            }
+                            span{
+                                font-size: 16px;
+                                line-height: 24px;
+                                em{
+                                    font-size: 20px;
+                                    line-height: 27px;
+                                    margin-right: 2px;
+                                    color: #014099;
+                                }
+                            }
+                        }
+                        .search_con{
+                            input[type=search]{
+                                width: 200px;
+                                height: 32px;
+                                padding: 0 10px;
+                                border: 1px solid #D3D3D3;
+                                border-radius: 1px;
+                                &::placeholder{
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    color: #666666;
+                                }
+                            }
+                            input[type=submit]{
+                                width: 80px;
+                                height: 32px;
+                                color: #fff;
+                                border: none;
+                                background-color: #222222;
+                                border-radius: 1px;
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                    .con_table{
+                        width: 100%;
+                        overflow-x: auto;
+                        &::-webkit-scrollbar{
+                            background-color: #F9F9F9;
+                            border: 1px solid #D3D3D3;
+                            height: 7px;
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background-color: #014099;
+                        }
+                        table{
+                            margin: 0 auto;
+                            margin-bottom: 24px;
+                            border-collapse : collapse;
+                            border-spacing : 0;
+                            border: 1px solid #D3D3D3;
+                            width: 850px;
+                            thead{
+                                tr{
+                                    background-color: #F6F6F6;
+                                    height: 50px;
+                                    border-bottom: 1px solid #D3D3D3;
+                                    th{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
+                                        font-weight: 400;
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
+                                        }
+                                        &.number{
+                                            width: 50px;
+                                        }
+                                        &.title{
+                                            width: 420px;
+                                        }
+                                        &.start_day{
+                                            width: 100px;
+                                        }
+                                        &.last_day{
+                                            width: 100px;
+                                        }
+                                        &.minus_num{
+                                            width: 85px;
+                                        }
+                                        &.date{
+                                            width: 100px;
+                                        }
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    height: 50px;
+                                    &:not(:last-child){
+                                        border-bottom: 1px solid #D3D3D3;
+                                    }
+                                    &.no_item{
+                                        text-align: center;
+                                    }
+
+                                    td{
+                                        &:not(:last-child){
+                                            border-right: 1px solid #D3D3D3;
+                                        }
+
+                                        &.number_td, &.start_day_td, &.last_day_td, &.minus_num_td, &.date_td{
+                                            text-align: center;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                        &.number_td{
+                                            color: #000;
+                                        }
+                                        &.title_td{
+                                            padding: 0 10px;
+                                            .list_category{
+                                                font-size: 13px;
+                                                line-height: 19px;
+                                                color: #113462;
+                                                margin-bottom: 2px;
+                                            }
+                                            .list_title{
+                                                font-size: 13px;
+                                                line-height: 19px;
+                                            }
+                                        }
+                                        &.minus_num_td{
+                                            em{
+                                                font-weight: 400;
+                                                color: #222;
+                                                margin-right: 1px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pagenation{
+                        margin-top: 120px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul{
+                            display: flex;
+                            margin: 0 10px;
+                            li{
+                                font-size: 14px;
+                                line-height: 19px;
+                                width: 24px;
+                                height: 24px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                &.on{
+                                    background-color: #666666;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .back_page{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 6px;
+                                cursor: pointer;
+                                &.on{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(180deg);
+                                }
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                cursor: pointer;
+                                &.on{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                        .next_page{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                transform: rotate(180deg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                cursor: pointer;
+                                &.on{
+                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                    transform: rotate(0deg);
+                                }
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                transform: rotate(180deg);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 6px;
+                                cursor: pointer;
+                                &.on{
+                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                    transform: rotate(0deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.ticket_preList{
+            .my_cont{
+                .pc_title{
+                    display: none;
+                }
+
+                .main{
+                    .cate_button_box{
+                        height: 45px;
+                        margin-bottom: 22.5px;
+                        .cate_button_list{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                    .con_box{
+                        .con_top{
+                            flex-direction: column;
+                            align-items: start;
+                            justify-content: center;
+                            max-width: 850px;
+                            margin: 0 auto;
+                            margin-bottom: 10.5px;
+                            .title_con{
+                                margin-bottom: 14px;
+                            }
+                        }
+                        .con_table{
+                            table{
+                                tbody{
+                                    tr{
+                                        &:nth-last-child(-n+15){
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .pagenation{
+                            margin-top: 37px;
+                            .pageNum{
+                                li{
+                                    &:nth-last-child(-n+5){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+               
             }
         }
     }
