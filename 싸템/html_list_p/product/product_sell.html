@@ -408,7 +408,7 @@
 				<div class="prd_tab">
 					<button type="button">전체</button>
 					<button type="button" class="on">계정</button>
-					<button type="button">아이템/게임머니/기타</button>
+					<button type="button">아이템/<br class="hide_pc">게임머니/기타</button>
 				</div>
 
 				<form class="prd_search_option">
@@ -526,14 +526,16 @@
 									<span class="txt">100만원 ~ 500만원</span>
 								</label>
 								<label class="label_r size_s has_ipt">
-									<input type="radio" name="asdf">
+									<input type="radio" name="asdf" id="test">
 									<span class="ico"></span>
 									<span class="txt">직접입력</span>
+								</label>
+								<div class="range">
 									<input type="text">
 									<span class="dash">~</span>
 									<input type="text">
 									<span class="unit">만원</span>
-								</label>
+								</div>
 							</div>
 						</div>
 						<div class="tr row_2">
@@ -559,13 +561,107 @@
 						<div class="prd_s_title">
 							<b>프리미엄 물품</b>
 						</div>
-						<ul class="prd_list_wrap type_prem">
-							<li class="prd_list">
-								<div class="prem_ico">프리미엄</div>
-								<div class="opt1">아브렐슈드</div>
-								<div class="grade_ico"></div>
-							</li>
-						</ul>
+						<table class="prd_list_wrap type_prem">
+							<tbody>
+								<tr class="prd_list">
+									<td class="sec_prem">프리미엄</td>
+									<td class="sec_opt">아브렐슈드</td>
+									<td class="sec_ico">
+										<i class="is_item type_d">분할</i>
+										<!-- <i class="is_item type_a">일괄</i> -->
+									</td>
+									<td class="sec_name">
+										<p class="name_opt">[SILVER][광전사]</p>
+										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
+									</td>
+									<td class="sec_price">11,000원</td>
+									<td class="sec_date">08-06 10:01</td>
+								</tr>
+								<tr class="prd_list">
+									<td class="sec_prem">프리미엄</td>
+									<td class="sec_opt">아브렐슈드</td>
+									<td class="sec_ico">
+										<i class="is_item type_d">분할</i>
+										<!-- <i class="is_item type_a">일괄</i> -->
+									</td>
+									<td class="sec_name">
+										<p class="name_opt">[SILVER][광전사]</p>
+										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
+									</td>
+									<td class="sec_price">11,000원</td>
+									<td class="sec_date">08-06 10:01</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="prd_sec">
+						<div class="prd_s_title">
+							<div class="sec_left">
+								<b>물품 리스트</b>
+								<span class="count">
+									총 <span class="point">2,654</span>건
+								</span>
+							</div>
+							<div class="sec_right">
+								<div class="pd_sort">
+									<button type="button" class="sort_toggle">
+										<span class="sort_txt">최근 등록 순</span>
+									</button>
+									<div class="sort_select">
+										<button type="button" class="sort_option on">최근 등록 순</button>
+										<button type="button" class="sort_option">높은 가격 순</button>
+										<button type="button" class="sort_option">최근 등록 순</button>
+										<button type="button" class="sort_option">과거 등록 순</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<table class="prd_list_wrap">
+							<thead>
+								<tr class="prd_list">
+									<th class="sec_opt">서버종류</th>
+									<th class="sec_ico">구분</th>
+									<th class="sec_name">물품제목</th>
+									<th class="sec_price">가격</th>
+									<th class="sec_date">등록일자</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="prd_list">
+									<td class="sec_opt">아브렐슈드</td>
+									<td class="sec_ico">
+										<i class="is_item type_d">분할</i>
+										<!-- <i class="is_item type_a">일괄</i> -->
+									</td>
+									<td class="sec_name">
+										<p class="name_opt">[<span class="grade grade2">SILVER</span>][<span class="char_name">광전사</span>]</p>
+										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
+									</td>
+									<td class="sec_price">
+										<p class="price_per">100만당 1,100원</p>
+										<p class="price_txt">11,000원</p>
+									</td>
+									<td class="sec_date">08-06 10:01</td>
+								</tr>
+								<tr class="prd_list disabled">
+									<td class="sec_opt">아브렐슈드</td>
+									<td class="sec_ico">
+										<i class="is_item type_d">분할</i>
+										<!-- <i class="is_item type_a">일괄</i> -->
+									</td>
+									<td class="sec_name">
+										<p class="name_opt">[<span class="grade grade2">SILVER</span>][<span class="char_name">광전사</span>]</p>
+										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
+									</td>
+									<td class="sec_price">
+										<p class="price_per">100만당 1,100원</p>
+										<p class="price_txt">11,000원</p>
+									</td>
+									<td class="sec_date">08-06 10:01</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
