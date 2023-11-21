@@ -9580,6 +9580,9 @@
     border-top: none;
     text-align: center;
   }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr:nth-last-child(-n+12) {
+    display: none;
+  }
   #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_06 {
     display: none;
   }

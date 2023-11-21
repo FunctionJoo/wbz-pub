@@ -10969,6 +10969,9 @@
                             }
                             tbody{
                                 tr{
+                                    &:nth-last-child(-n+12){
+                                        display: none;
+                                    }
                                     height: 50px;
                                     border: 1px solid #D3D3D3;
                                     border-top: none;
