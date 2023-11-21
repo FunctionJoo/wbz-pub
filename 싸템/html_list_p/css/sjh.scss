@@ -12837,3 +12837,572 @@
         }
     }
 }
+
+
+// 회원 정보수정
+#mypage{
+    &.change_info{
+        .my_cont{
+            .main{
+                .con_top{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #EEF3F9;
+                    height: 56px;
+                    margin-bottom: 20px;
+                    img{
+                        margin-right: 28px;
+                        width: 22px;
+                        height: 24px;
+                    }
+                    .member_box{
+                        display: flex;
+                        div{
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                        .member_gender{
+                            position: relative;
+                            padding: 0 23px;
+                            margin: 0 26px;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                height: 10px;
+                                width: 1px;
+                                background-color: #A7A7A7;
+                                transform: translateY(-50%);
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                right: 0;
+                                height: 10px;
+                                width: 1px;
+                                background-color: #A7A7A7;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+                .form_box{
+                    form{
+                        .form_list{
+                            height: 50px;
+                            display: flex;
+                            border-left: 1px solid #D3D3D3;
+                            border-right: 1px solid #D3D3D3;
+                            border-top: 1px solid #D3D3D3;
+                            &.last_list{
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+                            .form_title{
+                                width: 160px;
+                                background-color: #F6F6F6;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                            }
+                            .form_info{
+                                padding-left: 10px;
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                                font-size: 14px;
+                                line-height: 21px;
+
+                                // 비밀번호
+                                &.password_info{
+                                    span{
+                                        color: #666666;
+                                        margin-left: 10px;
+                                    }
+                                    input[type=password]{
+                                        width: 160px;
+                                        height: 34px;
+                                        border: 1px solid #D3D3D3;
+                                    }
+                                }
+
+                                // 휴대폰번호
+                                &.phone_info{
+                                    .phone_input{
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        span{
+                                            display: block;
+                                            width: 10px;
+                                            height: 1px;
+                                            background-color: #707070;
+                                            margin: 0 10px;
+                                        }
+                                        .select_box{
+                                            width: 80px;
+                                            height: 34px;
+                                            border: 1px solid #D3D3D3;
+                                            border-radius: 1px;
+                                            background-image: url(../images/mypage/arrow_selectBox_02.png);
+                                            background-size: 12px 7px;
+                                            background-repeat: no-repeat;
+                                            background-position: top 50% right 10px;
+                                            select {
+                                                width: 100%;
+                                                height: 100%;
+                                                padding: 0 10px;
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                line-height: 21px;
+                                                border: 0; //기본 스타일 제거
+                                                -webkit-appearance: none;
+                                                /* for chrome */
+                                                -moz-appearance: none;
+                                                /*for firefox*/
+                                                appearance: none;
+                                                box-sizing: border-box; //select 박스의 크기 방식 지정.
+                                                background: transparent; //배경색 투명 처리
+                                            
+                                                &::-ms-expand {
+                                                    display: none;
+                                                    /*for IE10,11*/
+                                                }
+                                            
+                                                option {
+                                                    font-size: 14px;
+                                                    line-height: 21px;
+                                                }
+                                            }
+                                        }
+                                        input[type=text]{
+                                            width: 120px;
+                                            height: 34px;
+                                            padding: 0 10px;
+                                            border: 1px solid #D3D3D3;
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            &:disabled{
+                                                background-color: #EEEEEE;
+                                            }
+                                        }
+                                    }
+                                    .phone_check_button{
+                                        margin-left: 10px;
+                                        button{
+                                            width: 100px;
+                                            height: 36px;
+                                            background-color: #333333;
+                                            border: none;
+                                            border-radius: 3px;
+                                            span{
+                                                color: #fff;
+                                                font-size: 15px;
+                                                line-height: 22px;
+                                                margin: 0;
+                                                &.after_check{
+                                                    display: none;
+                                                }
+                                            }
+                                            &:disabled{
+                                                background-color: #A7A7A7;
+                                                span{
+                                                    &.after_check{
+                                                        display: block;
+                                                    }
+                                                    &.before_check{
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // 연락처
+                                &.contact_info{
+                                    .contact_input{
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        
+                                        .select_box{
+                                            width: 120px;
+                                            height: 34px;
+                                            border: 1px solid #D3D3D3;
+                                            border-radius: 1px;
+                                            background-image: url(../images/mypage/arrow_selectBox_02.png);
+                                            background-size: 12px 7px;
+                                            background-repeat: no-repeat;
+                                            background-position: top 50% right 10px;
+                                            select {
+                                                color: #666666;
+                                                width: 100%;
+                                                height: 100%;
+                                                padding: 0 10px;
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                border: 0; //기본 스타일 제거
+                                                -webkit-appearance: none;
+                                                /* for chrome */
+                                                -moz-appearance: none;
+                                                /*for firefox*/
+                                                appearance: none;
+                                                box-sizing: border-box; //select 박스의 크기 방식 지정.
+                                                background: transparent; //배경색 투명 처리
+                                            
+                                                &::-ms-expand {
+                                                    display: none;
+                                                    /*for IE10,11*/
+                                                }
+                                            
+                                                option {
+                                                    font-size: 14px;
+                                                    line-height: 21px;
+                                                }
+                                            }
+                                        }
+                                        .last_contact{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            input[type=text]{
+                                                width: 120px;
+                                                height: 34px;
+                                                padding: 0 10px;
+                                                border: 1px solid #D3D3D3;
+                                                font-weight: 600;
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                &:disabled{
+                                                    background-color: #EEEEEE;
+                                                }
+                                            }
+                                            span{
+                                                display: block;
+                                                width: 10px;
+                                                height: 1px;
+                                                background-color: #707070;
+                                                margin: 0 10px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // 이메일
+                                &.email_info{
+                                    input[type=email]{
+                                        width: 420px;
+                                        height: 36px;
+                                        border: 1px solid #D3D3D3;
+                                        padding: 0 10px;
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                    }
+                                }
+
+                                // 은행
+                                &.bank_info{
+                                    .bank_input{
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        .select_box{
+                                            color: #666666;
+                                            width: 120px;
+                                            height: 34px;
+                                            border: 1px solid #D3D3D3;
+                                            border-radius: 1px;
+                                            background-image: url(../images/mypage/arrow_selectBox_02.png);
+                                            background-size: 12px 7px;
+                                            background-repeat: no-repeat;
+                                            background-position: top 50% right 10px;
+                                            select {
+                                                width: 100%;
+                                                height: 100%;
+                                                padding: 0 10px;
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                border: 0; //기본 스타일 제거
+                                                -webkit-appearance: none;
+                                                /* for chrome */
+                                                -moz-appearance: none;
+                                                /*for firefox*/
+                                                appearance: none;
+                                                box-sizing: border-box; //select 박스의 크기 방식 지정.
+                                                background: transparent; //배경색 투명 처리
+                                            
+                                                &::-ms-expand {
+                                                    display: none;
+                                                    /*for IE10,11*/
+                                                }
+                                            
+                                                option {
+                                                    font-size: 14px;
+                                                    line-height: 21px;
+                                                }
+                                            }
+                                        }
+                                        .account_number_input{
+                                            margin-left: 10px;
+                                            display: flex;
+                                            justify-content: start;
+                                            align-items: center;
+                                            input[type=text]{
+                                                width: 250px;
+                                                height: 36px;
+                                                border: 1px solid #D3D3D3;
+                                                padding: 0 10px;
+                                                &::placeholder{
+                                                    color: #666666;
+                                                    font-size: 14px;
+                                                    line-height: 21px;
+                                                }
+                                            }
+                                            .account_check_button{
+                                                margin-left: 10px;
+                                                button{
+                                                    width: 100px;
+                                                    height: 36px;
+                                                    background-color: #333333;
+                                                    border: none;
+                                                    border-radius: 3px;
+                                                    span{
+                                                        color: #fff;
+                                                        font-size: 15px;
+                                                        line-height: 22px;
+                                                        margin: 0;
+                                                        &.after_check{
+                                                            display: none;
+                                                        }
+                                                    }
+                                                    &:disabled{
+                                                        background-color: #A7A7A7;
+                                                        span{
+                                                            &.after_check{
+                                                                display: block;
+                                                            }
+                                                            &.before_check{
+                                                                display: none;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // 주소
+                                &.address_info{
+                                    input[type=text]{
+                                        width: 380px;
+                                        height: 36px;
+                                        border: 1px solid #D3D3D3;
+                                        padding: 0 10px;
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        color: #666666;
+                                    }
+                                }
+
+                                // 수신동의
+                                &.optionCheck_info{
+                                    .sms_option{
+                                        &:first-child{
+                                            margin-right: 18px;
+                                        }
+                                        label{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                        input{
+                                            display: none;
+                                            +label::before{
+                                                content: "";
+                                                box-shadow: 0 0 0 1px #333333 inset;
+                                                border-radius: 2px;
+                                                width: 16px;
+                                                height: 16px;
+                                                display: inline-block;
+                                                margin-right: 7px;
+                                            }
+        
+                                            &:checked+label::before{
+                                                background-image: url(../images/mypage/mile_checkbox.svg);
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-position: center;
+                                                border: none;
+                                                border-radius: 0px;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .submit_button_box{
+                            margin-top: 60px;
+                            display: flex;
+                            justify-content: center;
+                            input[type=submit]{
+                                width: 200px;
+                                height: 50px;
+                                padding: 15px 0;
+                                text-align: center;
+                                background-color: #014099;
+                                color: #fff;
+                                font-size: 16px;
+                                line-height: 24px;
+                                border: none;
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.change_info{
+            .my_cont{
+                .main{
+                    .form_box{
+                        form{
+                            .form_list{
+                                .form_title{
+                                    width: 90px;
+                                }
+                                &.repass_list{
+                                    height: 79px;
+                                    .form_info{
+                                        flex-direction: column;
+                                        align-items: start;
+                                        justify-content: center;
+                                        input[type=password]{
+                                            margin-bottom: 8px;
+                                        }
+                                        span{
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                                &.number_list{
+                                    height: 94px;
+                                    .form_info{
+                                        &.phone_info{
+                                            flex-direction: column;
+                                            align-items: start;
+                                            justify-content: center;
+                                            .phone_input{
+                                                margin-bottom: 8px;
+                                                .select_box{
+                                                    width: 60px;
+                                                }
+                                                span{
+                                                    display: none;
+                                                }
+                                                input[type=text]{
+                                                    margin-left: 10px;
+                                                    width: 69px;
+                                                }
+                                            }
+                                            .phone_check_button{
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.contact_list{
+                                    height: 92px;
+                                    .form_info{
+                                        &.contact_info{
+                                            .contact_input{
+                                                flex-direction: column;
+                                                align-items: start;
+                                                justify-content: center;
+                                                .select_box{
+                                                    margin-bottom: 8px;
+                                                }
+                                                .last_contact{
+                                                    span{
+                                                        display: none;
+                                                    }
+                                                    input[type=text]{
+                                                        width: 104px;
+                                                        &:first-of-type{
+                                                            margin-right: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.email_list{
+                                    .form_info{
+                                        &.email_info{
+                                            input[type=email]{
+                                                width: 218px;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.bank_list{
+                                    height: 95px;
+                                    .form_info{
+                                        &.bank_info{
+                                            .bank_input{
+                                                flex-direction: column;
+                                                align-items: start;
+                                                justify-content: center;
+                                                .select_box{
+                                                    margin-bottom: 8px;
+                                                }
+                                                .account_number_input{
+                                                    margin: 0;
+                                                    input[type=text]{
+                                                        width: 108px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.address_list{
+                                    .form_info{
+                                        &.address_info{
+                                            input[type=text]{
+                                                width: 218px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .submit_button_box{
+                                input[type=submit]{
+                                    width: 100%;
+                                    height: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
