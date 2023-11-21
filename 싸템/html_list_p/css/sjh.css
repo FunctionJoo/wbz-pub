@@ -9663,4 +9663,599 @@
   #mypage.mile_list .my_cont .main .pagenation .pageNum li:nth-last-child(-n+5) {
     display: none;
   }
+}
+#mypage.ticket_purchase .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec {
+  margin-bottom: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 13px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title .rec_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title span em {
+  font-size: 20px;
+  line-height: 27px;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box {
+  margin-bottom: 20px;
+  background-color: #EEF3F9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list:first-child {
+  color: #666666;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list:last-child {
+  color: #000;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list span:first-child {
+  margin-right: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box {
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box {
+  display: flex;
+  height: 50px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .count_title {
+  font-size: 14px;
+  line-height: 20px;
+  width: 150px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 10px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count {
+  display: flex;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .minus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .plus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count #pre_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content span {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content span em {
+  font-weight: 500;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .result_text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .result_text em {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec {
+  margin-bottom: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 13px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .rec_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub {
+  display: flex;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p:not(:last-child) {
+  margin-right: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p span {
+  font-weight: 600;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p em {
+  font-size: 20px;
+  line-height: 27px;
+  color: #014099;
+  margin-right: 2px;
+  margin-left: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box {
+  margin-bottom: 20px;
+  background-color: #EEF3F9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list:first-child {
+  color: #666666;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list:last-child {
+  color: #000;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list span:first-child {
+  margin-right: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box {
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box {
+  display: flex;
+  height: 50px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .count_title {
+  font-size: 14px;
+  line-height: 20px;
+  width: 150px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 10px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .min_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 500;
+  margin-left: 0;
+  margin-right: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .second_min_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 500;
+  margin-left: 0;
+  margin-right: 12px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count {
+  display: flex;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .minus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .plus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count #autoFive_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count #autoTen_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content span {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content span em {
+  font-weight: 500;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .result_text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .result_text em {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec {
+  margin-bottom: 60px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 13px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title .rec_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title span em {
+  font-size: 20px;
+  line-height: 27px;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box {
+  margin-bottom: 20px;
+  background-color: #EEF3F9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list:first-child {
+  color: #666666;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list:last-child {
+  color: #000;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list span:first-child {
+  margin-right: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box {
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box {
+  display: flex;
+  height: 50px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .count_title {
+  font-size: 14px;
+  line-height: 20px;
+  width: 150px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 10px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count {
+  display: flex;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .minus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .plus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count #item_con_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content span {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content span em {
+  font-weight: 500;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .result_text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .result_text em {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .button_box a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  padding: 13px 0;
+  text-align: center;
+  background-color: #014099;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1080px) {
+  #mypage.ticket_purchase .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec {
+    margin-bottom: 22px;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box:not(:last-child) {
+    height: 79px;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count {
+    margin-bottom: 8px;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content span {
+    margin-left: 0;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec {
+    margin-bottom: 22px;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box:not(:last-child) {
+    height: 79px;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .push_count {
+    margin-bottom: 8px;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content span {
+    margin-left: 0;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box:not(:last-child) {
+    height: 79px;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count {
+    margin-bottom: 8px;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content span {
+    margin-left: 0;
+  }
+  #mypage.ticket_purchase .my_cont .main .button_box a {
+    width: 100%;
+    height: 60px;
+    padding: 18px 0;
+  }
 }/*# sourceMappingURL=sjh.css.map */
