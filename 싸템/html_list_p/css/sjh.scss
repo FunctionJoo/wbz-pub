@@ -13743,3 +13743,371 @@
         }
     }
 }
+
+
+// 채팅차단관리
+#mypage{
+    &.blocking_chat{
+        .my_cont{
+            .pc_title{
+                @include pc_title();
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #333333;
+            }
+            .mo_main{
+                display: none;
+            }
+            .pc_main{
+                table{
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    border: 1px solid #D3D3D3;
+                    thead{
+                        tr{
+                            height: 50px;
+                            background-color: #F6F6F6;
+                            border-bottom: 1px solid #D3D3D3;
+                            th{
+                                &:not(:last-child){
+                                    border-right: 1px solid #D3D3D3;
+                                }
+                                &.num{
+                                    width: 56px;
+                                }
+                                &.title{
+                                    width: 398px;
+                                }
+                                &.reason{
+                                    width: 100px;
+                                }
+                                &.date{
+                                    width: 200px;
+                                }
+                                &.cancel{
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        text-align: center;
+                        tr{
+                            height: 50px;
+                            &:not(:last-child){
+                                border-bottom: 1px solid #D3D3D3;
+                            }
+                            td{
+                                &:not(:last-child){
+                                    border-right: 1px solid #D3D3D3;
+                                }
+            
+                                &.num_td{
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    color: #000;
+                                }
+                                &.title_td{
+                                    font-size: 13px;
+                                    line-height: 19px;
+                                    color: #000;
+                                }
+                                &.reason_td{
+                                    button{
+                                        width: 60px;
+                                        height: 30px;
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        background-color: #fff;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                    }
+                                }
+                                &.date_td{
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    color: #000;
+                                }
+                                &.cancel_td{
+                                    button{
+                                        width: 60px;
+                                        height: 30px;
+                                        border: 1px solid #014099;
+                                        border-radius: 3px;
+                                        background-color: #EEF3F9;
+                                        color: #014099;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagenation{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            &.on{
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .back_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                    .next_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.blocking_chat{
+            .w_set_my{
+                padding: 0;
+                .my_cont{
+                    .pc_title{
+                        display: none;
+                    }
+                    .my_title{
+                        padding: 0 16px;
+                    }
+                    .pc_main{
+                        display: none;
+                    }
+                    .mo_main{
+                        display: block;
+                        .mo_table{
+                            .mo_tbody{
+                                .mo_tr{
+                                    &.no_item{
+                                        text-align: center;
+                                    }
+                                    &:first-child{
+                                        border-top: 1px solid #D3D3D3;
+                                    }
+                                    border-bottom: 1px solid #D3D3D3;
+                                    padding: 20px 17px;
+                                    .mo_title{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
+                                        margin-bottom: 20px;
+                                    }
+                                    .mo_bottom_box{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .button_box{
+                                            .view_button{
+                                                width: 70px;
+                                                height: 30px;
+                                                border: 1px solid #D3D3D3;
+                                                border-radius: 3px;
+                                                background-color: #fff;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                margin-right: 8px;
+                                            }
+                                            .cancel_button{
+                                                width: 60px;
+                                                height: 30px;
+                                                border: 1px solid #014099;
+                                                border-radius: 3px;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                color: #014099;
+                                                background-color: #EEF3F9;
+                                            }
+                                        }
+                                        .mo_date{
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                            .pagenation{
+                                margin-top: 37px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                ul{
+                                    display: flex;
+                                    margin: 0 10px;
+                                    li{
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                        width: 24px;
+                                        height: 24px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        cursor: pointer;
+                                        &.on{
+                                            background-color: #666666;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                .back_page{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    &.on{
+                                        .all_page{
+                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                            transform: rotate(180deg);
+                                        }
+                                        .one_page{
+                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                    .all_page{
+                                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        width: 24px;
+                                        height: 24px;
+                                        margin-right: 6px;
+                                        cursor: pointer;
+                                    }
+                                    .one_page{
+                                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        width: 24px;
+                                        height: 24px;
+                                        cursor: pointer;
+                                    }
+                                }
+                                .next_page{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    &.on{
+                                        .all_page{
+                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                            transform: rotate(0deg);
+                                        }
+                                        .one_page{
+                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                            transform: rotate(0deg);
+                                        }
+                                    }
+                                    .all_page{
+                                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                                        transform: rotate(180deg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        width: 24px;
+                                        height: 24px;
+                                        cursor: pointer;
+                                    }
+                                    .one_page{
+                                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                                        transform: rotate(180deg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        width: 24px;
+                                        height: 24px;
+                                        margin-right: 6px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
