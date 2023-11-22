@@ -12839,6 +12839,8 @@
 }
 
 
+// 나의정보관리!!
+
 // 회원 정보수정
 #mypage{
     &.change_info{
@@ -13399,6 +13401,341 @@
                                     height: 60px;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 거래안심인증
+#mypage{
+    &.safe_authentication{
+        .my_cont{
+            &.step_01_on{
+                .top_box{
+                    .situation_box{
+                        .step_02{
+                            display: none;
+                        }
+                        .step_03{
+                            display: none;
+                        }
+                    }
+                }
+                .main{
+                    .mo_situation_box{
+                        .step_02{
+                            display: none;
+                        }
+                        .step_03{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &.step_02_on{
+                .top_box{
+                    .situation_box{
+                        .step_01{
+                            display: none;
+                        }
+                        .step_03{
+                            display: none;
+                        }
+                    }
+                }
+                .main{
+                    .mo_situation_box{
+                        .step_01{
+                            display: none;
+                        }
+                        .step_03{
+                            display: none;
+                        }
+                    }
+                } 
+            }
+            &.step_03_on{
+                .top_box{
+                    .situation_box{
+                        .step_01{
+                            display: none;
+                        }
+                        .step_02{
+                            display: none;
+                        }
+                    }
+                }
+                .main{
+                    .mo_situation_box{
+                        .step_01{
+                            display: none;
+                        }
+                        .step_02{
+                            display: none;
+                        }
+                    }
+                } 
+            }
+            .top_box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 13px;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #333333;
+                .pc_title{
+                    @include pc_title();
+                }
+                .situation_box{
+                    padding: 8px 10px;
+                    border: 1px solid #D3D3D3;
+                    border-radius: 1px;
+                    .step_01{
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #FE0000;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                    .step_02{
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #ffd966;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                    .step_03{
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #a8d08c;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .main{
+                .mo_situation_box{
+                    padding: 8px 10px;
+                    border: 1px solid #D3D3D3;
+                    border-radius: 1px;
+                    margin-bottom: 21px;
+                    display: none;
+                    .step_01{
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #FE0000;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                    .step_02{
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #ffd966;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                    .step_03{
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #a8d08c;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .upload_box{
+                    padding: 30px 33px 67px 40px;
+                    border: 1px solid #D9D9D9;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .ex_img{
+                        img{
+                            width: 360px;
+                        }
+                    }
+                    .file_box{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+                        .file_name{
+                            width: 360px;
+                            height: 34px;
+                            border: 1px solid #D3D3D3;
+                            padding: 0 10px;
+                            margin-bottom: 14px;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: #666666;
+                            &::placeholder{
+                                font-size: 15px;
+                                line-height: 19px;
+                                color: #666666;
+                            }
+                        }
+                        label{
+                            width: 360px;
+                            height: 54px;
+                            border: 1px solid #333333;
+                            border-radius: 3px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            span{
+                                font-size: 16px;
+                                line-height: 24px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    background: url(../images/mypage/mypage_upload_icon.svg) center no-repeat;
+                                    width: 19px;
+                                    height: 16px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        input[type=file]{
+                            display: none;
+                        }
+                        .info_txt{
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #666666;
+                            margin-top: 10px;
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .button_box{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                        width: 200px;
+                        height: 50px;
+                        background-color: #014099;
+                        border: none;
+                        border-radius: 3px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #fff;
+                        padding: 13px 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.safe_authentication{
+            .my_cont{
+                .top_box{
+                    display: none;
+                }
+                .main{
+                    padding-top: 5.5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .mo_situation_box{
+                        display: inline-block;
+                    }
+                    .upload_box{
+                        flex-direction: column;
+                        padding: 60px 16px 67px 16px;
+                        .ex_img{
+                            margin-bottom: 55.5px;
+                            img{
+                                width: 280px;
+                            }
+                        }
+                        .file_box{
+                            width: 100%;
+                            align-items: center;
+                            .file_name{
+                                width: 100%;
+                            }
+                            label{
+                                width: 100%;
+                            }
+                            .info_txt{
+                                text-align: center;
+                                br{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .button_box{
+                        button{
+                            width: 314px;
                         }
                     }
                 }

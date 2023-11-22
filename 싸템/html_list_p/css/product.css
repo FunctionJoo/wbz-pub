@@ -257,7 +257,7 @@
     flex-wrap: wrap;
   }
   body:not(.is_pc) .table_display .tr .th,
-body:not(.is_pc) .table_display .tr .td {
+  body:not(.is_pc) .table_display .tr .td {
     padding: 12px 10px;
   }
   body:not(.is_pc) .table_display .tr .th {
@@ -300,7 +300,7 @@ body:not(.is_pc) .table_display .tr .td {
     width: 100%;
   }
   body:not(.is_pc) .table_display .tr.row_2 .td ~ .th,
-body:not(.is_pc) .table_display .tr.row_2 .td ~ .td {
+  body:not(.is_pc) .table_display .tr.row_2 .td ~ .td {
     border-top: 1px solid #D3D3D3;
   }
 }
