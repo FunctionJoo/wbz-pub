@@ -14111,3 +14111,166 @@
         }
     }
 }
+
+
+// 회원탈퇴
+#mypage{
+    &.go_out{
+        .my_cont{
+            .pc_title{
+                @include pc_title();
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #333333;
+            }
+            .my_title{
+                margin-bottom: 20.5px !important;
+            }
+            .main{
+                .info_box{
+                    padding: 22px 20px 29px 20px;
+                    border: 1px solid #DE4040;
+                    margin-bottom: 20px;
+                    .info_title{
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #DE4040;
+                        margin-bottom: 9px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        &::before{
+                            content: "";
+                            display: block;
+                            background: url(../images/mypage/mypage_red_danger.svg) center no-repeat;
+                            background-size: contain;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 4px;
+                        }
+                    }
+                    .info_subtitle{
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 10px;
+                    }
+                    .info_content{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+                .reason_check{
+                    .reason_check_title{
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-bottom: 20px;
+                        span{
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #DE4040;
+                        }
+                    }
+                    .input_box{
+                        .check_list{
+                            margin-bottom: 10px;
+                            &.plus_text{
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                            }
+                            label{
+                                font-size: 14px;
+                                line-height: 20px;
+                                display: flex;
+                                align-items: center;
+                            }
+                            input[type=checkbox]{
+                                display: none;
+                                +label::before{
+                                    content: "";
+                                    box-shadow: 0 0 0 1px #d3d3d3 inset;
+                                    border-radius: 2px;
+                                    width: 18px;
+                                    height: 18px;
+                                    display: inline-block;
+                                    margin-right: 7px;
+                                }
+    
+                                &:checked+label::before{
+                                    background-image: url(../images/mypage/mile_checkbox.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    background-position: center;
+                                    border: none;
+                                    border-radius: 0px;
+                                    box-shadow: none;
+                                }
+                            }
+                            input[type=text]{
+                                margin-left: 10px;
+                                width: 380px;
+                                height: 30px;
+                                border: 1px solid #D3D3D3;
+                            }
+                        }
+                        .button_box{
+                            margin-top: 60px;
+                            display: flex;
+                            justify-content: center;
+                            button{
+                                width: 200px;
+                                height: 50px;
+                                border-radius: 3px;
+                                background-color: #014099;
+                                color: #fff;
+                                font-size: 16px;
+                                line-height: 24px;
+                                padding: 13px;
+                                text-align: center;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.go_out{
+            .my_cont{
+                .pc_title{
+                    display: none;
+                }
+                .main{
+                    .reason_check{
+                        .input_box{
+                            .check_list{
+                                &.plus_text{
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: start;
+                                    div{
+                                        margin-bottom: 11px;
+                                    }
+                                    input[type=text]{
+                                        margin-left: 27px;
+                                        width: 80%;
+                                        min-width: 303px;
+                                    }
+                                }
+                            }
+                            .button_box{
+                                button{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
