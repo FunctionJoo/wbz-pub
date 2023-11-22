@@ -14277,19 +14277,20 @@
 
 // 거래계약서
 #contract{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
-    .stamp{
-        position: absolute;
-        top: 52.5%;
-        left: 42%;
-        img{
-            width: 78px;
-            height: 78px;
+    &.stamp_01{
+        .input_box{
+            .member_info{
+                &.first_mem{
+                    .stamp{
+                        display: inline-block;
+                    }
+                }
+            }
         }
     }
     .contract_hd{
@@ -14385,6 +14386,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            &.first_mem{
+                position: relative;
+                .stamp{
+                    display: none;
+                    position: absolute;
+                    top: -20px;
+                    right: 20px;
+                }
+            }
             &.second_mem{
                 .mem_title{
                     font-size: 18px;
