@@ -1294,161 +1294,337 @@ body{
 
 // 취소 승인 대기 page
 #mypage{
-    &.cancelWait{
+    &.cancel_wait{
         .my_cont{
-            .pc_title{
+            .pc_title {
                 font-size: 16px;
                 line-height: 24px;
-                margin-bottom: 20px;
                 font-weight: 500;
+                margin-bottom: 20px;
             }
-            .mo_table_count{
-                display: none;
-            }
-            #mo_cancelWait_table{
-                display: none;
-            }
-            #cancelWait_table{
-                display: block;
-                table{
-                    border-collapse: collapse; 
-                    border-spacing: 0;
-                    tr{
-                        th{
-                            background-color: #F6F6F6;
-                            border-top: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
-                            border-left: 1px solid #D3D3D3;
-                            padding: 15px 0;
-                            font-weight: normal;
-                            text-align: center;
-                            &:last-child{
+
+            .main{
+                .con_top{
+                    display: none;
+                }
+                .table_box{
+                    .pc_table_head{
+                        display: flex;
+                        height: 50px;
+                        background-color: #F6F6F6;
+                        border: 1px solid #D3D3D3;
+                        .th{
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:not(:last-child){
                                 border-right: 1px solid #D3D3D3;
                             }
-                            &.category{
-                                width: 150px;
+                            &.cate_th{
+                                width: 148px;
+                                min-width: 148px;
+                                max-width: 148px;
                             }
-                            &.title{
-                                width: 280px;
+                            &.title_th{
+                                width: 278px;
+                                min-width: 278px;
+
                             }
-                            &.amount{
+                            &.price_th{
                                 width: 124px;
+                                min-width: 124px;
                             }
-                            &.date{
-                                width: 80px;
+                            &.date_th{
+                                width: 78px;
+                                min-width: 78px;
                             }
-                            &.chat{
-                                width: 50px;
+                            &.chat_th{
+                                width: 48px;
+                                min-width: 48px;
                             }
-                            &.cancel{
+                            &.view_th{
                                 width: 84px;
+                                min-width: 84px;
                             }
-                            &.check{
+                            &.cancel_th{
                                 width: 88px;
+                                min-width: 88px;
                             }
                         }
-                        td{
-                            border-top: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
+                    }
+                    .table_tr_box{
+                        .table_tr{
+                            border-right: 1px solid #D3D3D3;
                             border-left: 1px solid #D3D3D3;
-                            padding: 15px 0;
-                            text-align: center;
-                            &:last-child{
-                                border-right: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            height: 50px;
+                            display: flex;
+                            &.no_item{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
-                            &.category_td{
-                                font-size: 14px;
-                                line-height: 20px;
-                            }
-                            &.title_td{
-                                font-size: 13px;
-                                line-height: 19px;
-                            }
-                            &.amount_td{
-                                font-size: 14px;
-                                line-height: 20px;
-                                em{
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                    font-weight: 600;
-                                }
-                            }
-                            &.date_td{
-                                font-size: 14px;
-                                line-height: 18px;
-                            }
-                            &.chat_td{
-                                .img_box{
-                                    width: fit-content;
-                                    margin: 0 auto;
-                                    img{
-                                        display: block;
-                                    }
-                                    .count{
-                                        display: none;
-                                    }
-                                }
-                                &.chat_exists{
-                                    .img_box{
-                                        position: relative;
-                                        margin: 0 9px;
-                                        .count{
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            width: 21.91px;
-                                            height: 21.91px;
-                                            border-radius: 50%;
-                                            background-color: #434343;
-                                            position: absolute;
-                                            bottom: 50%;
-                                            left: 50%;
-                                            .count_chat{
-                                                display: block;
-                                                font-size: 10px;
-                                                line-height: 14px;
-                                                color: #fff;
-                                            }
-                                            .over_chat{
-                                                display: none;
-                                                font-size: 10px;
-                                                line-height: 14px;
-                                                color: #fff;
-                                            }
-        
-                                            &.over{
-                                                .count_chat{
-                                                    display: none;
-                                                }
-                                                .over_chat{
-                                                    display: block;
+                            &.chat_exists{
+                                .mo_bottom{
+                                    .chat_td{
+                                        padding: 22px 20px 10px 9px;
+                                        a{
+                                            .img_box{
+                                                
+                                                .count{
+                                                    display: flex;
                                                 }
                                             }
                                         }
                                     }
                                 }
                             }
-                            &.cancel_td{
-                                button{
-                                    border: 1px solid #D3D3D3;
-                                    border-radius: 3px;
-                                    padding: 5px 17px;
-                                    background-color: #fff;
-                                    font-size: 14px;
-                                    line-height: 20px;
+                            &.chat_over{
+                                .mo_bottom{
+                                    .chat_td{
+                                        a{
+                                            .img_box{
+                                                .count{
+                                                    .count_chat{
+                                                        display: none;
+                                                    }
+                                                    .over_chat{
+                                                        display: inline-block;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
-                            &.check_td{
-                                button{
-                                    border: 1px solid #D3D3D3;
-                                    border-radius: 3px;
-                                    padding: 5px 9px;
-                                    background-color: #EEF3F9;
-                                    color: #014099;
-                                    font-size: 14px;
-                                    line-height: 20px;
+                            
+                            .cate_td{
+                                width: 148px;
+                                min-width: 148px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                            }
+                            .title_td{
+                                width: 278px;
+                                min-width: 278px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 13px;
+                                line-height: 19px;
+                                color: #000;
+                                a{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
                                 }
                             }
+                            .mo_middle{
+                                display: flex;
+                                .price_td{
+                                    width: 124px;
+                                    min-width: 124px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    em{
+                                        line-height: 18px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .date_td{
+                                    width: 78px;
+                                    min-width: 78px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+                            .mo_bottom{
+                                display: flex;
+                                .chat_td{
+                                    width: 48px;
+                                    min-width: 48px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-right: 1px solid #D3D3D3;
+                                    a{
+                                        display: block;
+                                        .img_box {
+                                            position: relative;
+                                            .count {
+                                                display: none;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: 21.91px;
+                                                height: 21.91px;
+                                                border-radius: 50%;
+                                                background-color: #434343;
+                                                position: absolute;
+                                                bottom: 50%;
+                                                left: 50%;
+    
+                                                .count_chat {
+                                                    display: block;
+                                                    font-size: 10px;
+                                                    line-height: 14px;
+                                                    color: #fff;
+                                                }
+    
+                                                .over_chat {
+                                                    display: none;
+                                                    font-size: 10px;
+                                                    line-height: 14px;
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .cancel_td{
+                                    width: 88px;
+                                    min-width: 88px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    button{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        padding: 5px 17px;
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        background-color: #fff;
+                                    }
+                                }
+                                .view_td{
+                                    width: 84px;
+                                    min-width: 84px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    button{
+                                        padding: 5px 9px;
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        background-color: #EEF3F9;
+                                        color: #014099;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagenation{
+                    margin-top: 60px;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            &.on{
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .back_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                    .next_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -1459,259 +1635,167 @@ body{
 
 @media(max-width:1080px){
     #mypage{
-        &.cancelWait{
+        &.cancel_wait{
             .w_set{
-                padding: 0 !important;
-            }
-            .my_cont{
-                .my_title{
-                    margin: 0 16px;
-                }
-                .pc_title{
-                    display: none;
-                }
-                .mo_table_count{
-                    margin-left: 16px;
-                    margin-right: 16px;
-                    margin-top: 44px;
-                    margin-bottom: 15px;
-                    display: flex;
-                    p{
-                        font-size: 14px;
-                        line-height: 21px;
-                        em{
-                            font-weight: normal;
-                            color: #014099;
-                        }
+                padding: 0;
+                .my_cont{
+                    .pc_title {
+                        display: none;
                     }
-                }
-                #cancelWait_table{
-                    display: none;
-                }
-                #mo_cancelWait_table{
-                    display: block;
-                    .mo_table{
-                        border-top: 1px solid #D3D3D3;
-                        border-bottom: 1px solid #D3D3D3;
-                        .mo_tr{
-                            padding: 20px 16px;
-                            &:not(:last-child){
-                                border-bottom: 1px solid #D3D3D3;
-                            }
-                            .amount_date_box{
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                margin-bottom: 21px;
-                            }
-                            .chat_cancel_check_box{
-                                display: flex;
-                                justify-content: end;
-                                align-items: center;
-                            }
-                            .td{
-                                &.category_td{
+                    .my_title{
+                        margin-left: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 44px !important;
+                    }
+        
+                    .main{
+                        .con_top{
+                            display: block;
+                            margin-bottom: 15px;
+                            .post_num{
+                                padding-left: 16px;
+                                padding-right: 16px;
+                                span{
                                     font-size: 14px;
-                                    line-height: 20px;
-                                    margin-bottom: 6px;
-                                }
-                                &.title_td{
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    margin-bottom: 11px;
-                                    font-weight: 500;
-                                }
-                                &.amount_td{
-                                    font-size: 14px;
-                                    line-height: 20px;
+                                    line-height: 21px;
                                     em{
-                                        font-size: 14px;
-                                        line-height: 18px;
-                                        font-weight: 600;
+                                        color: #014099;
+                                        font-weight: 400;
                                     }
                                 }
-                                &.date_td{
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                }
-                                &.chat_td{
-                                    .img_box{
-                                        width: fit-content;
-                                        margin: 0 auto;
-                                        img{
-                                            display: block;
-                                        }
-                                        .count{
-                                            display: none;
-                                        }
+                            }
+                        }
+                        .table_box{
+                            .pc_table_head{
+                                display: none;
+                            }
+                            .table_tr_box{
+                                border-top: 1px solid #D3D3D3;
+                                .table_tr{
+                                    height: auto;
+                                    flex-direction: column;
+                                    padding: 20px 16px 20px 17px;
+                                    &:nth-child(n+5){
+                                        display: none;
                                     }
                                     &.chat_exists{
-                                        .img_box{
-                                            position: relative;
-                                            margin: 0 9px;
-                                            .count{
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                width: 21.91px;
-                                                height: 21.91px;
-                                                border-radius: 50%;
-                                                background-color: #434343;
-                                                position: absolute;
-                                                bottom: 50%;
-                                                left: 50%;
-                                                .count_chat {
-                                                    display: block;
-                                                    font-size: 10px;
-                                                    line-height: 14px;
-                                                    color: #fff;
+                                        .mo_bottom{
+                                            .chat_td{
+                                                margin-right: 11px;
+                                                padding: 0;
+                                            }
+                                        }
+                                    }
+                                    .cate_td{
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
+                                        margin-bottom: 6px;
+                                    }
+                                    .title_td{
+                                        font-weight: 500;
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        justify-content: start;
+                                        margin-bottom: 11px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        a{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                        }
+                                    }
+                                    .mo_middle{
+                                        justify-content: space-between;
+                                        margin-bottom: 21px;
+                                        .price_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                        .date_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                    }
+                                    .mo_bottom{
+                                        justify-content: end;
+                                        .chat_td{
+                                            order: 3;
+                                            width: auto;
+                                            min-width: auto;
+                                            border-right: none;
+                                            a{
+                                                display: block;
+                                                .img_box {
+                                                    position: relative;
                                                 }
-                                            
-                                                .over_chat {
-                                                    display: none;
-                                                    font-size: 10px;
-                                                    line-height: 14px;
-                                                    color: #fff;
-                                                }
-                                            
-                                                &.over {
-                                                    .count_chat {
-                                                        display: none;
-                                                    }
-                                            
-                                                    .over_chat {
-                                                        display: block;
+                                            }
+                                        }
+                                        .cancel_td{
+                                            order: 2;
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                            margin-right: 10px;
+                                            button{
+                                                padding: 5px 22px;
+                                            }
+                                        }
+                                        .view_td{
+                                            order: 1;
+                                            width: auto;
+                                            min-width: auto;
+                                            border-right: none;
+                                            justify-content: start;
+                                            margin-right: 10px;
+                                            .step_02{
+                                                width: 100%;
+                                                .mo_flex_box{
+                                                    flex-direction: row;
+                                                    justify-content: space-between;
+                                                    button{
+                                                        font-size: 14px;
+                                                        line-height: 20px;
                                                     }
                                                 }
                                             }
                                         }
+                                        
+                                        
                                     }
                                 }
-                                &.cancel_td{
-                                    margin-right: 10px;
-                                    button{
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        padding: 5px 22px;
-                                        background-color: #fff;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                                &.check_td{
-                                    margin-right: 10px;
-                                    button{
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        padding: 5px 9px;
-                                        background-color: #EEF3F9;
-                                        color: #014099;
-                                        font-size: 14px;
-                                        line-height: 20px;
+                            }
+                        }
+                        .pagenation{
+                            display: flex;
+                            margin-top: 37px;
+                            ul{
+                                li{
+                                    &:nth-last-child(-n+5){
+                                        display: none;
                                     }
                                 }
                             }
                         }
                     }
-                    .pagenation{
-                        margin-top: 37px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        ul{
-                            display: flex;
-                            margin: 0 10px;
-                            li{
-                                font-size: 14px;
-                                line-height: 19px;
-                                width: 24px;
-                                height: 24px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                cursor: pointer;
-                                &.on{
-                                    background-color: #666666;
-                                    color: #fff;
-                                }
-                            }
-                        }
-                        .back_page{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            &.on{
-                                .all_page{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(180deg);
-                                }
-                                .one_page{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(180deg);
-                                }
-                            }
-                            .all_page{
-                                background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                margin-right: 6px;
-                                cursor: pointer;
-                            }
-                            .one_page{
-                                background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                cursor: pointer;
-                            }
-                        }
-                        .next_page{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            &.on{
-                                .all_page{
-                                    background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                    transform: rotate(0deg);
-                                }
-                                .one_page{
-                                    background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                    transform: rotate(0deg);
-                                }
-                            }
-                            .all_page{
-                                background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                transform: rotate(180deg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                cursor: pointer;
-                            }
-                            .one_page{
-                                background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                transform: rotate(180deg);
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-position: center;
-                                width: 24px;
-                                height: 24px;
-                                margin-right: 6px;
-                                cursor: pointer;
-                            }
-                        }
+                    .sale_info{
+                        display: none;
                     }
                 }
             }
         }
     }
-
 }
 
 
