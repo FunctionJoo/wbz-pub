@@ -517,6 +517,292 @@
         }
     }
 }
+
+
+// 판매완료(취소) 팝업
+// 보상신청_#pop_apply 보상신청내역_#pop_apply_history 전자계약서동의_#pop_contract
+body{
+    &.pop_apply{
+        #pop_apply{
+            display: block;
+        }
+    }
+    &.pop_apply_history{
+        #pop_apply_history{
+            display: block;
+        }
+    }
+    &.pop_contract{
+        #pop_contract{
+            display: block;
+        }
+    }
+    #pop_apply{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(33, 33, 33, 0.6);
+        z-index: 1000;
+        .pop_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            width: 40vw;
+            max-width: 700px;
+            min-width: 310px;
+            height: 560px;
+            padding: 30px 26px;
+            border: 1px solid #707070;
+            .pop_top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 14px;
+                border-bottom: 1px solid #D3D3D3;
+                margin-bottom: 20px;
+                .title{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+                .close{
+                    width: 14px;
+                    height: 14px;
+                    background-image: url(../images/mypage/close_button.svg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            .pop_bottom{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                #pop_text{
+                    width: 100%;
+                    height: 384px;
+                    border: 1px solid #D3D3D3;
+                    resize: none;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    &::placeholder{
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #666666;
+                    }
+                }
+                .submit_button{
+                    width: 120px;
+                    height: 38px;
+                    color: #fff;
+                    background-color: #014099;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    #pop_apply_history{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(33, 33, 33, 0.6);
+        z-index: 1000;
+        .pop_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            width: 40vw;
+            max-width: 700px;
+            min-width: 310px;
+            height: 560px;
+            padding: 30px 26px;
+            border: 1px solid #707070;
+            .pop_top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 14px;
+                border-bottom: 1px solid #D3D3D3;
+                margin-bottom: 20px;
+                .title{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+                .close{
+                    width: 14px;
+                    height: 14px;
+                    background-image: url(../images/mypage/close_button.svg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            .pop_bottom{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .textarea_his{
+                    width: 100%;
+                    height: 384px;
+                    margin-bottom: 20px;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #666666;
+                }
+                .submit_button{
+                    width: 120px;
+                    height: 38px;
+                    color: #fff;
+                    background-color: #014099;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    #pop_contract{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(33, 33, 33, 0.6);
+        z-index: 1000;
+        .pop_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            width: 450px;
+            padding: 30px 17px;
+            border: 1px solid #707070;
+            .pop_top{
+                padding: 20px 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid #666666;
+                background-color: #EEF3F9;
+                margin-bottom: 10px;
+                .img_box{
+                    img{
+                        width: 126px;
+                    }
+                }
+                .txt_box{
+                    .txt_tit{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+                    .txt_con{
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                }
+            }
+            .pop_bottom{
+                .info_box{
+                    padding: 20px 14px 20px 15px;
+                    border: 1px solid #D3D3D3;
+                    margin-bottom: 20px;
+                    .info_tit{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        margin-bottom: 15px;
+                    }
+                    .info_con{
+                        li{
+                            display: flex;
+                            justify-content: start;
+                            align-items: start;
+                            &:not(:last-child){
+                                margin-bottom: 10px;
+                            }
+                            span{
+                                font-size: 15px;
+                                line-height: 22px;
+                                &:first-child{
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .button_box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .close_button{
+                        padding: 8px 37px;
+                        color: #fff;
+                        font-size: 15px;
+                        line-height: 22px;
+                        background-color: #333333;
+                        border: none;
+                        border-radius: 3px;
+                        margin-right: 10px;
+                    }
+                    .yes_button{
+                        padding: 8px 23px;
+                        background-color: #014099;
+                        color: #fff;
+                        font-size: 15px;
+                        line-height: 22px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:1080px){
+        #pop_contract{
+            .pop_box{
+                width: 328px;
+                .pop_top{
+                    padding: 16px 14px 20px 17px;
+                    .img_box{
+                        img{
+                            width: 80px;
+                        }
+                    }
+                    .txt_box{
+                        margin-left: 17px;
+                        .txt_tit{
+                            margin-bottom: 10px;
+                        }
+                        .txt_con{
+                            font-size: 14px;
+                            line-height: 20px;
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // index page
 
 // 공통
