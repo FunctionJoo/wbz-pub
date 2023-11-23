@@ -6894,9 +6894,9 @@ body{
 }
 
 // 구매등록물품
-#mypage {
-    &.items_for_sale {
-        .my_cont {
+#mypage{
+    &.item_for_sale{
+        .my_cont{
             .pc_title {
                 font-size: 16px;
                 line-height: 24px;
@@ -6911,6 +6911,10 @@ body{
                     align-items: center;
                     margin-bottom: 10px;
                     .post_num{
+                        display: flex;
+                        .mo_sub_title{
+                            display: none;
+                        }
                         span{
                             font-size: 14px;
                             line-height: 21px;
@@ -6974,198 +6978,584 @@ body{
                         }
                     }
                 }
-                .con_table{
-                    #mo_itemForSale_table{
-                        display: none;
-                    }
-                    #itemForSale_table{
-                        table{
-                            border: 1px solid #D3D3D3;
-                            border-collapse: collapse; 
-                            border-spacing: 0;
-                            .table_title{
-                                border-bottom: 1px solid #D3D3D3;
-                                th{
-                                    background-color: #F6F6F6;
-                                    height: 50px;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    color: #000;
-                                    font-weight: 400;
-                                    &:not(:last-child){
-                                        border-right: 1px solid #D3D3D3;
-                                    }
-                                    &.check{
-                                        width: 40px;
-                                        label{
-                                            border: 1px solid #D3D3D3;
-                                            background-color: #fff;
-                                            border-radius: 2px;
-                                            width: 16px;
-                                            height: 16px;
-                                            display: inline-block;
-                                        }
-                                        input{
-                                            display: none;
-                                            &:checked+label{
-                                                background-image: url(../images/mypage/mile_checkbox.svg);
-                                                background-repeat: no-repeat;
-                                                background-size: contain;
-                                                background-position: center;
-                                                border: none;
-                                                border-radius: 0px;
-                                                box-shadow: none;
-                                            }
-                                        }
-                                    }
-                                    &.info{
-                                        width: 500px;
-                                    }
-                                    &.price{
-                                        width: 210px;
-                                    }
-                                    &.view{
-                                        width: 103px;
+                .table_box{
+                    .pc_table_head{
+                        display: flex;
+                        height: 50px;
+                        background-color: #F6F6F6;
+                        border: 1px solid #D3D3D3;
+                        .th{
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:not(:last-child){
+                                border-right: 1px solid #D3D3D3;
+                            }
+                            &.check_th{
+                                width: 40px;
+                                min-width: 40px;
+                                label{
+                                    border: 1px solid #D3D3D3;
+                                    background-color: #fff;
+                                    border-radius: 2px;
+                                    width: 16px;
+                                    height: 16px;
+                                    display: inline-block;
+                                }
+                                input[type=checkbox]{
+                                    display: none;
+                                    &:checked+label{
+                                        background-image: url(../images/mypage/mile_checkbox.svg);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
+                                        border: none;
+                                        border-radius: 0px;
+                                        box-shadow: none;
                                     }
                                 }
                             }
-                            tbody{
-                                .no_item{
-                                    text-align: center;
-                                    height: 50px;
-                                }
-                                tr{
-                                    &:not(:last-child){
-                                        border-bottom: 1px solid #D3D3D3;
-                                    }
-                                    &.premium_on{
-                                        .info_td{
-                                            .top_info{
-                                                .premium_box{
-                                                    display: inline-block;
-                                                }
-                                            }
-                                        }
-                                    }
-        
-                                    td{
-                                        &:not(:last-child){
-                                            border-right: 1px solid #D3D3D3;
-                                        }
-                                        &.check_td{
-                                            padding: 42px 12px;
-                                            label{
-                                                border: 1px solid #D3D3D3;
-                                                background-color: #fff;
-                                                border-radius: 2px;
-                                                width: 16px;
-                                                height: 16px;
+                            &.title_th{
+                                width: 500px;
+                                min-width: 500px;
+                            }
+                            &.price_th{
+                                width: 210px;
+                                min-width: 210px;
+                            }
+                            &.view_th{
+                                width: 103px;
+                                min-width: 103px;
+                            }
+                        }
+                    }
+                    .table_tr{
+                        border-right: 1px solid #D3D3D3;
+                        border-left: 1px solid #D3D3D3;
+                        border-bottom: 1px solid #D3D3D3;
+                        height: 100px;
+                        display: flex;
+                        &.no_item{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        &.premium_on{
+                            .mo_box{
+                                .td{
+                                    &.info_td{
+                                        .top_info{
+                                            .premium_box{
                                                 display: inline-block;
                                             }
-                                            input{
-                                                display: none;
-                                                &:checked+label{
-                                                    background-image: url(../images/mypage/mile_checkbox.svg);
-                                                    background-repeat: no-repeat;
-                                                    background-size: contain;
-                                                    background-position: center;
-                                                    border: none;
-                                                    border-radius: 0px;
-                                                    box-shadow: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .mo_box{
+                            display: flex;
+                            .td{
+                                &.info_td{
+                                    padding: 13px 0px 12px 10px;
+                                    width: 500px;
+                                    min-width: 500px;
+                                    .top_info{
+                                        margin-bottom: 8px;
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        .premium_box{
+                                            width: 22px;
+                                            height: 22px;
+                                            margin-right: 10px;
+                                            display: none;
+                                            img{
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                        .category{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                            width: 400px;
+                                            span{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                color: #000;
+                                                font-weight: 500;
+                                                em{
+                                                    font-weight: 500;
+                                                    color: #113462;
                                                 }
                                             }
                                         }
-                                        &.info_td{
-                                            padding: 13px 15px 12px 10px;
-                                            .top_info{
-                                                margin-bottom: 8px;
-                                                display: flex;
-                                                justify-content: start;
-                                                align-items: center;
-                                                .premium_box{
-                                                    width: 22px;
-                                                    height: 22px;
-                                                    display: none;
-                                                    img{
-                                                        width: 100%;
-                                                        height: 100%;
-                                                    }
+                                    }
+                                    .middle_info{
+                                        width: 450px;
+                                        margin-bottom: 9px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        word-break: break-all;
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #000;
+                                        }
+                                        .pay_immediately{
+                                            padding: 4px 10px;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            background-color: #EEF3F9;
+                                            color: #014099;
+                                        }
+                                    }
+                                    .bottom_info{
+                                        span{
+                                            font-size: 13px;
+                                            line-height: 16px;
+                                            color: #A7A7A7;
+                                        }
+                                    }
+                                }
+                                &.price_td{
+                                    padding: 12px 10.5px;
+                                    width: 210px;
+                                    min-width: 210px;
+                                    .con_box{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        &:first-child{
+                                            margin-bottom: 36px;
+                                        }
+                                        .title{
+                                            font-size: 13px;
+                                            line-height: 19px;
+                                        }
+                                        .con{
+                                           font-size: 14px;
+                                           line-height: 20px;
+                                           em{
+                                            font-weight: 600;
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            margin-right: 1px;
+                                           } 
+                                        }
+                                    }
+                                }
+                                &.view_td{
+                                    width: 103px;
+                                    min-width: 103px;
+                                    padding: 18px 19.5px;
+                                    display: flex;
+                                    .mo_left_date{
+                                        display: none;
+                                    }
+                                    .mo_right_box{
+                                        .fix_link{
+                                            width: 64px;
+                                            height: 26px;
+                                            border: 1px solid #D3D3D3;
+                                            background-color: #fff;
+                                            border-radius: 15px;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            margin-bottom: 12px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            a{
+                                                display: block;
+                                                &::before{
+                                                    content: "";
+                                                    margin-right: 7px;
+                                                    background-image: url(../images/mypage/mypage_pencil.svg);
+                                                    background-position: center;
+                                                    background-size: contain;
+                                                    background-repeat: no-repeat;
+                                                    display: inline-block;
+                                                    width: 11px;
+                                                    height: 11px;
                                                 }
-                                                .category{
-                                                    margin-left: 10px;
-                                                    overflow: hidden;
-                                                    white-space: nowrap;
-                                                    text-overflow: ellipsis;
-                                                    word-break: break-all;
-                                                    width: 400px;
-                                                    span{
-                                                        font-size: 14px;
-                                                        line-height: 20px;
-                                                        color: #000;
-                                                        font-weight: 500;
-                                                        em{
-                                                            font-weight: 500;
-                                                            color: #113462;
-                                                        }
+                                            }
+                                        }
+                                        label {
+                                            display: inline-flex;
+                                            align-items: center;
+                                            gap: 0.5rem;
+                                            width: 64px;
+                                            height: 26px;
+                                            cursor: pointer;
+                                            position: relative;
+        
+                                            input {
+                                                appearance: none;
+                                                position: relative;
+                                                background-color: #A7A7A7;
+                                                box-shadow: inset 0px 1px 4px #00000033;
+                                                border-radius: 15px;
+                                                width: 100%;
+                                                height: 100%;
+                                                padding: 3px;
+                                                margin: 0;
+        
+                                                ~.checked_text {
+                                                    display: none;
+                                                }
+        
+                                                ~.unchecked_text {
+                                                    display: inline-block;
+                                                }
+        
+                                                &::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    right: 3px;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    border-radius: 50%;
+                                                    background-color: #fff;
+                                                    transition: right 150ms linear;
+                                                }
+        
+                                                &:checked {
+                                                    background-color: #113462;
+        
+                                                    ~.unchecked_text {
+                                                        display: none;
+                                                    }
+        
+                                                    ~.checked_text {
+                                                        display: inline-block;
+                                                    }
+        
+                                                    &::before {
+                                                        right: 41px;
                                                     }
                                                 }
                                             }
-                                            .middle_info{
-                                                width: 450px;
-                                                margin-bottom: 9px;
+        
+                                            .checked_text {
+                                                position: absolute;
+                                                font-size: 10px;
+                                                line-height: 15px;
+                                                color: #fff;
+                                                top: 50%;
+                                                right: 15px;
+                                                transform: translateY(-50%);
+                                            }
+        
+                                            .unchecked_text {
+                                                position: absolute;
+                                                font-size: 10px;
+                                                line-height: 15px;
+                                                color: #fff;
+                                                top: 50%;
+                                                left: 9px;
+                                                transform: translateY(-50%);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .td{
+                            height: 100%;
+                            &:not(:last-child){
+                                border-right: 1px solid #D3D3D3;
+                            }
+                            &.checkbox_td{
+                                width: 40px;
+                                min-width: 40px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .check_box{
+                                    input[type=checkbox]{
+                                        display: none;
+                                        &:checked+label{
+                                            background-image: url(../images/mypage/mile_checkbox.svg);
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-position: center;
+                                            border: none;
+                                            border-radius: 0px;
+                                            box-shadow: none;
+                                        }
+                                    }
+                                    label{
+                                        border: 1px solid #D3D3D3;
+                                        background-color: #fff;
+                                        border-radius: 2px;
+                                        width: 16px;
+                                        height: 16px;
+                                        display: inline-block;
+                                    }
+                                }
+                                .mo_th{
+                                    display: none;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .pagenation{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            &.on{
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .back_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                    .next_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.item_for_sale{
+            .my_cont{
+                .pc_title {
+                    display: none;
+                }
+                .my_title{
+                    margin-bottom: 30px !important;
+                }
+    
+                .main{
+                    .con_top{
+                        .post_num{
+                            .mo_sub_title{
+                                display: block;
+                                font-size: 16px;
+                                line-height: 21px;
+                                font-weight: 500;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    .table_box{
+                        .pc_table_head{
+                            display: none;
+                        }
+                        .table_tr{
+                            &:nth-child(n+6){
+                                display: none;
+                            }
+                            border-right: 1px solid #D3D3D3;
+                            border-left: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            height: 258px;
+                            display: flex;
+                            flex-direction: column;
+                            &.no_item{
+                                height: 50px;
+                                border-top: 1px solid #D3D3D3;
+                            }
+                            .mo_box{
+                                flex-direction: column;
+                                padding: 13px 11px 16px 10px;
+                                .td{
+                                    &.info_td{
+                                        margin-bottom: 24px;
+                                        padding: 0;
+                                        width: 100%;
+                                        min-width: auto;
+                                        .top_info{
+                                            margin-bottom: 8px;
+                                            display: flex;
+                                            justify-content: start;
+                                            align-items: center;
+                                            .premium_box{
+                                                width: 22px;
+                                                height: 22px;
+                                                display: none;
+                                                img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                            .category{
                                                 overflow: hidden;
                                                 white-space: nowrap;
                                                 text-overflow: ellipsis;
                                                 word-break: break-all;
+                                                width: 100%;
                                                 span{
                                                     font-size: 14px;
                                                     line-height: 20px;
                                                     color: #000;
-                                                }
-                                                .pay_immediately{
-                                                    padding: 4px 10px;
-                                                    font-size: 12px;
-                                                    line-height: 18px;
-                                                    background-color: #EEF3F9;
-                                                    color: #014099;
-                                                }
-                                            }
-                                            .bottom_info{
-                                                span{
-                                                    font-size: 13px;
-                                                    line-height: 16px;
-                                                    color: #A7A7A7;
+                                                    font-weight: 500;
+                                                    em{
+                                                        font-weight: 500;
+                                                        color: #113462;
+                                                    }
                                                 }
                                             }
                                         }
-                                        &.price_td{
-                                            padding: 12px 10px 12px 11px;
-                                            .con_box{
-                                                display: flex;
-                                                justify-content: space-between;
-                                                align-items: center;
-                                                &:first-child{
-                                                    margin-bottom: 36px;
-                                                }
-                                                .title{
-                                                    font-size: 13px;
-                                                    line-height: 19px;
-                                                }
-                                                .con{
-                                                   font-size: 14px;
-                                                   line-height: 20px;
-                                                   em{
-                                                    font-weight: 600;
-                                                    font-size: 16px;
-                                                    line-height: 20px;
-                                                    margin-right: 1px;
-                                                   } 
-                                                }
+                                        .middle_info{
+                                            width: 100%;
+                                            margin-bottom: 0px;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                            span{
+                                                font-size: 15px;
+                                                line-height: 22px;
+                                                color: #000;
                                             }
                                         }
-                                        &.view_id{
-                                            padding: 18px 19px 18px 20px;
+                                        .bottom_info{
+                                            display: none;
+                                        }
+                                    }
+                                    &.price_td{
+                                        padding: 0;
+                                        width: 100%;
+                                        min-width: auto;
+                                        margin-bottom: 25px;
+                                        .con_box{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            &:first-child{
+                                                margin-bottom: 10px;
+                                            }
+                                            .title{
+                                                font-size: 13px;
+                                                line-height: 19px;
+                                            }
+                                            .con{
+                                               font-size: 14px;
+                                               line-height: 20px;
+                                               span{
+                                                display: none;
+                                               }
+                                               em{
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                margin-right: 1px;
+                                               } 
+                                            }
+                                        }
+                                    }
+                                    &.view_td{
+                                        width: 100%;
+                                        min-width: 103px;
+                                        padding: 0;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .mo_left_date{
+                                            display: block;
+                                            font-size: 13px;
+                                            line-height: 16px;
+                                            color: #A7A7A7;
+                                        }
+                                        .mo_right_box{
+                                            display: flex;
                                             .fix_link{
+                                                margin-right: 16px;
                                                 width: 64px;
                                                 height: 26px;
                                                 border: 1px solid #D3D3D3;
@@ -7173,7 +7563,7 @@ body{
                                                 border-radius: 15px;
                                                 font-size: 12px;
                                                 line-height: 18px;
-                                                margin-bottom: 12px;
+                                                margin-bottom: 0px;
                                                 display: flex;
                                                 justify-content: center;
                                                 align-items: center;
@@ -7200,7 +7590,7 @@ body{
                                                 height: 26px;
                                                 cursor: pointer;
                                                 position: relative;
-        
+            
                                                 input {
                                                     appearance: none;
                                                     position: relative;
@@ -7211,15 +7601,15 @@ body{
                                                     height: 100%;
                                                     padding: 3px;
                                                     margin: 0;
-        
+            
                                                     ~.checked_text {
                                                         display: none;
                                                     }
-        
+            
                                                     ~.unchecked_text {
                                                         display: inline-block;
                                                     }
-        
+            
                                                     &::before {
                                                         content: "";
                                                         position: absolute;
@@ -7232,24 +7622,24 @@ body{
                                                         background-color: #fff;
                                                         transition: right 150ms linear;
                                                     }
-        
+            
                                                     &:checked {
                                                         background-color: #113462;
-        
+            
                                                         ~.unchecked_text {
                                                             display: none;
                                                         }
-        
+            
                                                         ~.checked_text {
                                                             display: inline-block;
                                                         }
-        
+            
                                                         &::before {
                                                             right: 41px;
                                                         }
                                                     }
                                                 }
-        
+            
                                                 .checked_text {
                                                     position: absolute;
                                                     font-size: 10px;
@@ -7259,7 +7649,7 @@ body{
                                                     right: 15px;
                                                     transform: translateY(-50%);
                                                 }
-        
+            
                                                 .unchecked_text {
                                                     position: absolute;
                                                     font-size: 10px;
@@ -7272,477 +7662,66 @@ body{
                                             }
                                         }
                                     }
-        
                                 }
                             }
-                        }
-                        // 페이지네이션
-                        .pagenation {
-                            margin-top: 60px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            ul {
-                                display: flex;
-                                margin: 0 10px;
-
-                                li {
-                                    font-size: 14px;
-                                    line-height: 19px;
-                                    width: 24px;
-                                    height: 24px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    cursor: pointer;
-
-                                    &.on {
-                                        background-color: #666666;
-                                        color: #fff;
-                                    }
+                            .td{
+                                height: auto;
+                                &:not(:last-child){
+                                    border-right: none;
                                 }
-                            }
-
-                            .back_page {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                &.on{
-                                    .all_page{
-                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                        transform: rotate(180deg);
-                                    }
-                                    .one_page{
-                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                        transform: rotate(180deg);
-                                    }
-                                }
-                                .all_page {
-                                    background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    background-position: center;
-                                    width: 24px;
-                                    height: 24px;
-                                    margin-right: 6px;
-                                    cursor: pointer;
-                                }
-
-                                .one_page {
-                                    background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    background-position: center;
-                                    width: 24px;
-                                    height: 24px;
-                                    cursor: pointer;
-                                }
-                            }
-
-                            .next_page {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                &.on{
-                                    .all_page{
-                                        background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                        transform: rotate(0deg);
-                                    }
-                                    .one_page{
-                                        background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                        transform: rotate(0deg);
-                                    }
-                                }
-                                .all_page {
-                                    background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                    transform: rotate(180deg);
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    background-position: center;
-                                    width: 24px;
-                                    height: 24px;
-                                    cursor: pointer;
-                                }
-
-                                .one_page {
-                                    background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                    transform: rotate(180deg);
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    background-position: center;
-                                    width: 24px;
-                                    height: 24px;
-                                    margin-right: 6px;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-                    }
-                    .item_none{
-                        text-align: center;
-                        padding: 10px 0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:1080px) {
-    #mypage {
-        &.items_for_sale {
-            .my_cont {
-                .pc_title {
-                    display: none;
-                }
-                .my_title{
-                    margin-bottom: 30px !important;
-                }
-                .main{
-                    .con_table{
-                        #itemForSale_table{
-                            display: none;
-                        }
-                        #mo_itemForSale_table{
-                            display: block;
-                            .mo_table_box{
-
-                                .mo_table{
-                                    border: 1px solid #D3D3D3;
-                                    &:not(:last-child){
-                                        border-bottom: none;
-                                    }
-                                    .mo_table_title{
-                                        height: 50px;
-                                        background-color: #F6F6F6;
-                                        display: flex;
-                                        border-bottom: 1px solid #D3D3D3;
-                                        .th{
-                                            &:not(:last-child){
-                                                border-right: 1px solid #D3D3D3;
-                                            }
-                                            &.mo_check_th {
-                                                width: 50px;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                label{
-                                                    border: 1px solid #D3D3D3;
-                                                    background-color: #fff;
-                                                    border-radius: 2px;
-                                                    width: 16px;
-                                                    height: 16px;
-                                                    display: inline-block;
-                                                }
-                                                input{
-                                                    display: none;
-                                                    &:checked+label{
-                                                        background-image: url(../images/mypage/mile_checkbox.svg);
-                                                        background-repeat: no-repeat;
-                                                        background-size: contain;
-                                                        background-position: center;
-                                                        border: none;
-                                                        border-radius: 0px;
-                                                        box-shadow: none;
-                                                    }
-                                                }
-                                            }
-                                            &.mo_info_th {
-                                                width: calc(100% - 50px);
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                font-size: 14px;
-                                                line-height: 20px;
-                                            }
-                                        }
-                                        
-                                    }
-                                    .mo_table_tr{
-                                        padding: 13px 17px 16px 10px;
-                                        .table_top{
-                                            display: flex;
-                                            justify-content: start;
-                                            align-items: center;
-                                            margin-bottom: 8px;
-                                            .premium_box{
-                                                width: 22px;
-                                                height: 22px;
-                                                margin-right: 10px;
-                                                img{
-                                                    width: 100%;
-                                                    height: 100%;
-                                                }
-                                            }
-                                            .con_category{
-                                                overflow: hidden;
-                                                white-space: nowrap;
-                                                text-overflow: ellipsis;
-                                                word-break: break-all;
-                                                span{
-                                                    font-size: 14px;
-                                                    line-height: 20px;
-                                                    font-weight: 500;
-                                                    color: #000;
-                                                    em{
-                                                        font-weight: 500;
-                                                        color: #113462;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        .table_middle{
-                                            margin-bottom: 25px;
-                                            .con_title{
-                                                margin-bottom: 24px;
-                                                overflow: hidden;
-                                                white-space: nowrap;
-                                                text-overflow: ellipsis;
-                                                word-break: break-all;
-                                                span{
-                                                    font-size: 15px;
-                                                    line-height: 22px;
-                                                    color: #000;
-                                                }
-                                            }
-                                            .con_price{
-                                                .con_box{
-                                                    display: flex;
-                                                    justify-content: space-between;
-                                                    align-items: center;
-                                                    &:not(:last-child){
-                                                        margin-bottom: 10px;
-                                                    }
-                                                    span{
-                                                        font-size: 13px;
-                                                        line-height: 19px;
-                                                    }
-                                                    em{
-                                                        font-size: 16px;
-                                                        line-height: 20px;
-                                                        font-weight: 600;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        .table_bottom{
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            .con_date{
-                                                font-size: 13px;
-                                                line-height: 16px;
-                                                color: #A7A7A7;
-                                            }
-                                            .con_right{
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-        
-                                                .fix_link {
-                                                    width: 64px;
-                                                    height: 26px;
-                                                    border: 1px solid #D3D3D3;
-                                                    background-color: #fff;
-                                                    border-radius: 15px;
-                                                    font-size: 12px;
-                                                    line-height: 18px;
-                                                    margin-right: 16px;
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                            
-                                                    a {
-                                                        display: block;
-                                            
-                                                        &::before {
-                                                            content: "";
-                                                            margin-right: 7px;
-                                                            background-image: url(../images/mypage/mypage_pencil.svg);
-                                                            background-position: center;
-                                                            background-size: contain;
-                                                            background-repeat: no-repeat;
-                                                            display: inline-block;
-                                                            width: 11px;
-                                                            height: 11px;
-                                                        }
-                                                    }
-                                                }
-                                                label{
-                                                    display: inline-flex;
-                                                    align-items: center;
-                                                    gap: 0.5rem;
-                                                    width: 64px;
-                                                    height: 26px;
-                                                    cursor: pointer;
-                                                    position: relative;
-                                                    input{
-                                                        appearance: none;
-                                                        position: relative;
-                                                        background-color: #A7A7A7;
-                                                        box-shadow: inset 0px 1px 4px #00000033;
-                                                        border-radius: 15px;
-                                                        width: 100%;
-                                                        height: 100%;
-                                                        padding: 3px;
-                                                        margin: 0;
-                                                        ~.checked_text{
-                                                            display: none;
-                                                        }
-                                                        ~.unchecked_text {
-                                                            display: inline-block;
-                                                        }
-                                                        &::before{
-                                                            content: "";
-                                                            position: absolute;
-                                                            top: 50%;
-                                                            transform: translateY(-50%);
-                                                            right: 3px;
-                                                            width: 20px;
-                                                            height: 20px;
-                                                            border-radius: 50%;
-                                                            background-color: #fff;
-                                                            transition: right 150ms linear;
-                                                        }
-                                                        &:checked{
-                                                            background-color: #113462;
-                                                            ~.unchecked_text{
-                                                                display: none;
-                                                            }
-                                                            ~.checked_text {
-                                                                display: inline-block;
-                                                            }
-                                                            &::before{
-                                                                right: 41px;
-                                                            }
-                                                        }
-                                                    }
-                                                    .checked_text{
-                                                        position: absolute;
-                                                        font-size: 10px;
-                                                        line-height: 15px;
-                                                        color: #fff;
-                                                        top: 50%;
-                                                        right: 15px;
-                                                        transform: translateY(-50%);
-                                                    }
-                                                    .unchecked_text{
-                                                        position: absolute;
-                                                        font-size: 10px;
-                                                        line-height: 15px;
-                                                        color: #fff;
-                                                        top: 50%;
-                                                        left: 9px;
-                                                        transform: translateY(-50%);
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .mo_pagenation {
-                                margin-top: 60px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                ul {
-                                    display: flex;
-                                    margin: 0 10px;
-
-                                    li {
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                        width: 24px;
-                                        height: 24px;
+                                &.checkbox_td{
+                                    background-color: #F6F6F6;
+                                    border-bottom: 1px solid #D3D3D3;
+                                    width: 100%;
+                                    min-width: auto;
+                                    height: 50px;
+                                    min-height: 50px;
+                                    .check_box{
+                                        width: 50px;
+                                        height: 100%;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
-                                        cursor: pointer;
-
-                                        &.on {
-                                            background-color: #666666;
-                                            color: #fff;
+                                        border-right: 1px solid #D3D3D3;
+                                        input[type=checkbox]{
+                                            display: none;
+                                            &:checked+label{
+                                                background-image: url(../images/mypage/mile_checkbox.svg);
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-position: center;
+                                                border: none;
+                                                border-radius: 0px;
+                                                box-shadow: none;
+                                            }
                                         }
+                                        label{
+                                            border: 1px solid #D3D3D3;
+                                            background-color: #fff;
+                                            border-radius: 2px;
+                                            width: 16px;
+                                            height: 16px;
+                                            display: inline-block;
+                                        }
+                                    }
+                                    .mo_th{
+                                        width: calc(100% - 50px);
+                                        display: block;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
                                     }
                                 }
-
-                                .back_page {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    &.on{
-                                        .all_page{
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(180deg);
-                                        }
-                                        .one_page{
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(180deg);
-                                        }
-                                    }
-                                    .all_page {
-                                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        margin-right: 6px;
-                                        cursor: pointer;
-
-                                    }
-
-                                    .one_page {
-                                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        cursor: pointer;
-                                    }
-                                }
-
-                                .next_page {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    &.on{
-                                        .all_page{
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(0deg);
-                                        }
-                                        .one_page{
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(0deg);
-                                        }
-                                    }
-                                    .all_page {
-                                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                        transform: rotate(180deg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        cursor: pointer;
-
-                                    }
-
-                                    .one_page {
-                                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                        transform: rotate(180deg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        margin-right: 6px;
-                                        cursor: pointer;
-                                    }
+                            }
+                        }
+                    }
+                    .pagenation{
+                        margin-top: 37px;
+                        ul{
+                            li{
+                                &:nth-last-child(-n+5){
+                                    display: none;
                                 }
                             }
                         }

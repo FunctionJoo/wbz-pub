@@ -5784,32 +5784,38 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     display: block;
   }
 }
-#mypage.items_for_sale .my_cont .pc_title {
+#mypage.item_for_sale .my_cont .pc_title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   margin-bottom: 8px;
 }
-#mypage.items_for_sale .my_cont .main .con_top {
+#mypage.item_for_sale .my_cont .main .con_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-#mypage.items_for_sale .my_cont .main .con_top .post_num span {
+#mypage.item_for_sale .my_cont .main .con_top .post_num {
+  display: flex;
+}
+#mypage.item_for_sale .my_cont .main .con_top .post_num .mo_sub_title {
+  display: none;
+}
+#mypage.item_for_sale .my_cont .main .con_top .post_num span {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.items_for_sale .my_cont .main .con_top .post_num span em {
+#mypage.item_for_sale .my_cont .main .con_top .post_num span em {
   font-weight: 400;
   color: #014099;
 }
-#mypage.items_for_sale .my_cont .main .con_top .top_right {
+#mypage.item_for_sale .my_cont .main .con_top .top_right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice {
+#mypage.item_for_sale .my_cont .main .con_top .top_right .view_choice {
   width: 70px;
   height: 32px;
   border: 1px solid #D3D3D3;
@@ -5819,7 +5825,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
 }
-#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice select {
+#mypage.item_for_sale .my_cont .main .con_top .top_right .view_choice select {
   width: 100%;
   height: 100%;
   padding: 0 10px;
@@ -5835,19 +5841,19 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   box-sizing: border-box;
   background: transparent;
 }
-#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice select::-ms-expand {
+#mypage.item_for_sale .my_cont .main .con_top .top_right .view_choice select::-ms-expand {
   display: none;
   /*for IE10,11*/
 }
-#mypage.items_for_sale .my_cont .main .con_top .top_right .view_choice select option {
+#mypage.item_for_sale .my_cont .main .con_top .top_right .view_choice select option {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
 }
-#mypage.items_for_sale .my_cont .main .con_top .top_right .delete_button {
+#mypage.item_for_sale .my_cont .main .con_top .top_right .delete_button {
   margin-left: 10px;
 }
-#mypage.items_for_sale .my_cont .main .con_top .top_right .delete_button button {
+#mypage.item_for_sale .my_cont .main .con_top .top_right .delete_button button {
   width: 64px;
   height: 32px;
   border: 1px solid #DE4040;
@@ -5857,32 +5863,28 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
   color: #DE4040;
 }
-#mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table {
-  display: none;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table {
-  border: 1px solid #D3D3D3;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title {
-  border-bottom: 1px solid #D3D3D3;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th {
-  background-color: #F6F6F6;
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head {
+  display: flex;
   height: 50px;
+  background-color: #F6F6F6;
+  border: 1px solid #D3D3D3;
+}
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th {
   font-size: 14px;
   line-height: 20px;
   color: #000;
-  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th:not(:last-child) {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th:not(:last-child) {
   border-right: 1px solid #D3D3D3;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.check_th {
   width: 40px;
+  min-width: 40px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check label {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.check_th label {
   border: 1px solid #D3D3D3;
   background-color: #fff;
   border-radius: 2px;
@@ -5890,10 +5892,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 16px;
   display: inline-block;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check input {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.check_th input[type=checkbox] {
   display: none;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check input:checked + label {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.check_th input[type=checkbox]:checked + label {
   background-image: url(../images/mypage/mile_checkbox.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -5902,88 +5904,75 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border-radius: 0px;
   box-shadow: none;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.info {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.title_th {
   width: 500px;
+  min-width: 500px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.price {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.price_th {
   width: 210px;
+  min-width: 210px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.view {
+#mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.view_th {
   width: 103px;
+  min-width: 103px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody .no_item {
-  text-align: center;
-  height: 50px;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr:not(:last-child) {
-  border-bottom: 1px solid #D3D3D3;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr.premium_on .info_td .top_info .premium_box {
-  display: inline-block;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td:not(:last-child) {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr {
   border-right: 1px solid #D3D3D3;
+  border-left: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  height: 100px;
+  display: flex;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td {
-  padding: 42px 12px;
+#mypage.item_for_sale .my_cont .main .table_box .table_tr.no_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td label {
-  border: 1px solid #D3D3D3;
-  background-color: #fff;
-  border-radius: 2px;
-  width: 16px;
-  height: 16px;
+#mypage.item_for_sale .my_cont .main .table_box .table_tr.premium_on .mo_box .td.info_td .top_info .premium_box {
   display: inline-block;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input {
-  display: none;
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box {
+  display: flex;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input:checked + label {
-  background-image: url(../images/mypage/mile_checkbox.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td {
+  padding: 13px 0px 12px 10px;
+  width: 500px;
+  min-width: 500px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td {
-  padding: 13px 15px 12px 10px;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info {
   margin-bottom: 8px;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .premium_box {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .premium_box {
   width: 22px;
   height: 22px;
+  margin-right: 10px;
   display: none;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .premium_box img {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .premium_box img {
   width: 100%;
   height: 100%;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category {
-  margin-left: 10px;
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
   width: 400px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category span {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span {
   font-size: 14px;
   line-height: 20px;
   color: #000;
   font-weight: 500;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category span em {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span em {
   font-weight: 500;
   color: #113462;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info {
   width: 450px;
   margin-bottom: 9px;
   overflow: hidden;
@@ -5991,52 +5980,60 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   text-overflow: ellipsis;
   word-break: break-all;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info span {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info span {
   font-size: 14px;
   line-height: 20px;
   color: #000;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info .pay_immediately {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info .pay_immediately {
   padding: 4px 10px;
   font-size: 12px;
   line-height: 18px;
   background-color: #EEF3F9;
   color: #014099;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .bottom_info span {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .bottom_info span {
   font-size: 13px;
   line-height: 16px;
   color: #A7A7A7;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.price_td {
-  padding: 12px 10px 12px 11px;
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td {
+  padding: 12px 10.5px;
+  width: 210px;
+  min-width: 210px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.price_td .con_box {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.price_td .con_box:first-child {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box:first-child {
   margin-bottom: 36px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.price_td .con_box .title {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .title {
   font-size: 13px;
   line-height: 19px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.price_td .con_box .con {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.price_td .con_box .con em {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con em {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   margin-right: 1px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id {
-  padding: 18px 19px 18px 20px;
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td {
+  width: 103px;
+  min-width: 103px;
+  padding: 18px 19.5px;
+  display: flex;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id .fix_link {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_left_date {
+  display: none;
+}
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box .fix_link {
   width: 64px;
   height: 26px;
   border: 1px solid #D3D3D3;
@@ -6049,10 +6046,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: center;
   align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id .fix_link a {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box .fix_link a {
   display: block;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id .fix_link a::before {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box .fix_link a::before {
   content: "";
   margin-right: 7px;
   background-image: url(../images/mypage/mypage_pencil.svg);
@@ -6063,7 +6060,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   width: 11px;
   height: 11px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -6072,7 +6069,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   cursor: pointer;
   position: relative;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -6085,13 +6082,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   padding: 3px;
   margin: 0;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input ~ .checked_text {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input ~ .checked_text {
   display: none;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input ~ .unchecked_text {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input ~ .unchecked_text {
   display: inline-block;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input::before {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -6103,19 +6100,19 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-color: #fff;
   transition: right 150ms linear;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input:checked {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked {
   background-color: #113462;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input:checked ~ .unchecked_text {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked ~ .unchecked_text {
   display: none;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input:checked ~ .checked_text {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked ~ .checked_text {
   display: inline-block;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label input:checked::before {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked::before {
   right: 41px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label .checked_text {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label .checked_text {
   position: absolute;
   font-size: 10px;
   line-height: 15px;
@@ -6124,7 +6121,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   right: 15px;
   transform: translateY(-50%);
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.view_id label .unchecked_text {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label .unchecked_text {
   position: absolute;
   font-size: 10px;
   line-height: 15px;
@@ -6133,17 +6130,53 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   left: 9px;
   transform: translateY(-50%);
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation {
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .td {
+  height: 100%;
+}
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td {
+  width: 40px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .check_box input[type=checkbox] {
+  display: none;
+}
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .check_box input[type=checkbox]:checked + label {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .check_box label {
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+#mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .mo_th {
+  display: none;
+}
+#mypage.item_for_sale .my_cont .main .pagenation {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation ul {
+#mypage.item_for_sale .my_cont .main .pagenation ul {
   display: flex;
   margin: 0 10px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation ul li {
+#mypage.item_for_sale .my_cont .main .pagenation ul li {
   font-size: 14px;
   line-height: 19px;
   width: 24px;
@@ -6153,24 +6186,24 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation ul li.on {
+#mypage.item_for_sale .my_cont .main .pagenation ul li.on {
   background-color: #666666;
   color: #fff;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page {
+#mypage.item_for_sale .my_cont .main .pagenation .back_page {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .all_page {
+#mypage.item_for_sale .my_cont .main .pagenation .back_page.on .all_page {
   background-image: url(../images/mypage/table_arrow_on_end.svg);
   transform: rotate(180deg);
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .one_page {
+#mypage.item_for_sale .my_cont .main .pagenation .back_page.on .one_page {
   background-image: url(../images/mypage/table_arrow_on_next.svg);
   transform: rotate(180deg);
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page {
+#mypage.item_for_sale .my_cont .main .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -6180,7 +6213,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page {
+#mypage.item_for_sale .my_cont .main .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -6189,20 +6222,20 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page {
+#mypage.item_for_sale .my_cont .main .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .all_page {
+#mypage.item_for_sale .my_cont .main .pagenation .next_page.on .all_page {
   background-image: url(../images/mypage/table_arrow_on_end.svg);
   transform: rotate(0deg);
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .one_page {
+#mypage.item_for_sale .my_cont .main .pagenation .next_page.on .one_page {
   background-image: url(../images/mypage/table_arrow_on_next.svg);
   transform: rotate(0deg);
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page {
+#mypage.item_for_sale .my_cont .main .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   transform: rotate(180deg);
   background-repeat: no-repeat;
@@ -6212,7 +6245,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page {
+#mypage.item_for_sale .my_cont .main .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
   background-repeat: no-repeat;
@@ -6222,156 +6255,148 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.items_for_sale .my_cont .main .con_table .item_none {
-  text-align: center;
-  padding: 10px 0;
 }
 
 @media (max-width: 1080px) {
-  #mypage.items_for_sale .my_cont .pc_title {
+  #mypage.item_for_sale .my_cont .pc_title {
     display: none;
   }
-  #mypage.items_for_sale .my_cont .my_title {
+  #mypage.item_for_sale .my_cont .my_title {
     margin-bottom: 30px !important;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table {
-    display: none;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table {
+  #mypage.item_for_sale .my_cont .main .con_top .post_num .mo_sub_title {
     display: block;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-right: 10px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table {
-    border: 1px solid #D3D3D3;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table:not(:last-child) {
-    border-bottom: none;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title {
-    height: 50px;
-    background-color: #F6F6F6;
-    display: flex;
-    border-bottom: 1px solid #D3D3D3;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th:not(:last-child) {
-    border-right: 1px solid #D3D3D3;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th label {
-    border: 1px solid #D3D3D3;
-    background-color: #fff;
-    border-radius: 2px;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input {
+  #mypage.item_for_sale .my_cont .main .table_box .pc_table_head {
     display: none;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input:checked + label {
-    background-image: url(../images/mypage/mile_checkbox.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_info_th {
-    width: calc(100% - 50px);
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr {
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    height: 258px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    line-height: 20px;
+    flex-direction: column;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr {
-    padding: 13px 17px 16px 10px;
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr:nth-child(n+6) {
+    display: none;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_top {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr.no_item {
+    height: 50px;
+    border-top: 1px solid #D3D3D3;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box {
+    flex-direction: column;
+    padding: 13px 11px 16px 10px;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td {
+    margin-bottom: 24px;
+    padding: 0;
+    width: 100%;
+    min-width: auto;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info {
+    margin-bottom: 8px;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-bottom: 8px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_top .premium_box {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .premium_box {
     width: 22px;
     height: 22px;
-    margin-right: 10px;
+    display: none;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_top .premium_box img {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .premium_box img {
     width: 100%;
     height: 100%;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_top .con_category {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
+    width: 100%;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_top .con_category span {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span {
     font-size: 14px;
     line-height: 20px;
-    font-weight: 500;
     color: #000;
+    font-weight: 500;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_top .con_category span em {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span em {
     font-weight: 500;
     color: #113462;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle {
-    margin-bottom: 25px;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_title {
-    margin-bottom: 24px;
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info {
+    width: 100%;
+    margin-bottom: 0px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_title span {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info span {
     font-size: 15px;
     line-height: 22px;
     color: #000;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_price .con_box {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .bottom_info {
+    display: none;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td {
+    padding: 0;
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 25px;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_price .con_box:not(:last-child) {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box:first-child {
     margin-bottom: 10px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_price .con_box span {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .title {
     font-size: 13px;
     line-height: 19px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_price .con_box em {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con span {
+    display: none;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con em {
+    font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 600;
+    margin-right: 1px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td {
+    width: 100%;
+    min-width: 103px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_date {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_left_date {
+    display: block;
     font-size: 13px;
     line-height: 16px;
     color: #A7A7A7;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right .fix_link {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box .fix_link {
+    margin-right: 16px;
     width: 64px;
     height: 26px;
     border: 1px solid #D3D3D3;
@@ -6379,15 +6404,15 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     border-radius: 15px;
     font-size: 12px;
     line-height: 18px;
-    margin-right: 16px;
+    margin-bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right .fix_link a {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box .fix_link a {
     display: block;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right .fix_link a::before {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box .fix_link a::before {
     content: "";
     margin-right: 7px;
     background-image: url(../images/mypage/mypage_pencil.svg);
@@ -6398,7 +6423,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     width: 11px;
     height: 11px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -6407,7 +6432,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     cursor: pointer;
     position: relative;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -6420,13 +6445,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     padding: 3px;
     margin: 0;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input ~ .checked_text {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input ~ .checked_text {
     display: none;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input ~ .unchecked_text {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input ~ .unchecked_text {
     display: inline-block;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input::before {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -6438,19 +6463,19 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     background-color: #fff;
     transition: right 150ms linear;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input:checked {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked {
     background-color: #113462;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input:checked ~ .unchecked_text {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked ~ .unchecked_text {
     display: none;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input:checked ~ .checked_text {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked ~ .checked_text {
     display: inline-block;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label input:checked::before {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input:checked::before {
     right: 41px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label .checked_text {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label .checked_text {
     position: absolute;
     font-size: 10px;
     line-height: 15px;
@@ -6459,7 +6484,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     right: 15px;
     transform: translateY(-50%);
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_bottom .con_right label .unchecked_text {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label .unchecked_text {
     position: absolute;
     font-size: 10px;
     line-height: 15px;
@@ -6468,95 +6493,61 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     left: 9px;
     transform: translateY(-50%);
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation {
-    margin-top: 60px;
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td {
+    height: auto;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td:not(:last-child) {
+    border-right: none;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td {
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #D3D3D3;
+    width: 100%;
+    min-width: auto;
+    height: 50px;
+    min-height: 50px;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .check_box {
+    width: 50px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid #D3D3D3;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation ul {
-    display: flex;
-    margin: 0 10px;
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .check_box input[type=checkbox] {
+    display: none;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation ul li {
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .check_box input[type=checkbox]:checked + label {
+    background-image: url(../images/mypage/mile_checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .check_box label {
+    border: 1px solid #D3D3D3;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  #mypage.item_for_sale .my_cont .main .table_box .table_tr .td.checkbox_td .mo_th {
+    width: calc(100% - 50px);
+    display: block;
+    text-align: center;
     font-size: 14px;
-    line-height: 19px;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    line-height: 20px;
+    color: #000;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation ul li.on {
-    background-color: #666666;
-    color: #fff;
+  #mypage.item_for_sale .my_cont .main .pagenation {
+    margin-top: 37px;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .all_page {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .one_page {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page {
-    background-image: url(../images/mypage/table_arrow_off_end.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
-    cursor: pointer;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page {
-    background-image: url(../images/mypage/table_arrow_off_next.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .all_page {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .one_page {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page {
-    background-image: url(../images/mypage/table_arrow_off_end.svg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page {
-    background-image: url(../images/mypage/table_arrow_off_next.svg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
-    cursor: pointer;
+  #mypage.item_for_sale .my_cont .main .pagenation ul li:nth-last-child(-n+5) {
+    display: none;
   }
 }
 #mypage.items_for_purchase .my_cont .pc_title {
