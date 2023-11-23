@@ -395,279 +395,119 @@
 	</div>
 
 	<div id="contets">
-		<div id="product">
-			<div class="w_set">
-				<div class="page_title">
-					<b>팝니다</b>
-					<div class="page_cate">
-						<span>리니지</span>
-						<span>계정거래</span>
+		<div id="mypage" class="safe_authentication">
+			<div class="w_set w_set_my">
+				<div class="my_left">
+					<h2 class="mym_title">마이페이지</h2>
+					<div class="my_menu">
+						<ul class="dep1">
+							<li class="on">
+								<div class="dep1box">
+									<a href="#">나의 물품 관리 나의 물품 관리</a>
+									<button class="menu_toggle"></button>
+								</div>
+								<div class="dep2">
+									<ul>
+										<li><a href="#">판매 등록 물품</a></li>
+										<li><a href="#">구매 등록 물품</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="on">
+								<div class="dep1box">
+									<a href="#">판매 관련</a>
+									<button class="menu_toggle"></button>
+								</div>
+								<div class="dep2">
+									<ul>
+										<li><a href="#">판매 진행 중</a></li>
+										<li><a href="#">취소 승인 대기</a></li>
+										<li><a href="#">판매 완료(취소)</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="dep1box">
+									<a href="#">구매 관련</a>
+									<button class="menu_toggle"></button>
+								</div>
+								<div class="dep2">
+									<ul>
+										<li><a href="#">구매 진행 중</a></li>
+										<li><a href="#">구매 취소 중</a></li>
+										<li><a href="#">구매 완료(취소)</a></li>
+										<li><a href="#">전자 계약서</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
-
-				<div class="prd_tab">
-					<button type="button">전체</button>
-					<button type="button" class="on">계정</button>
-					<button type="button">아이템/<br class="hide_pc">게임머니/기타</button>
-				</div>
-
-				<form class="prd_search_option">
-					<div class="table_display">
-						<div class="tr">
-							<div class="th">서버</div>
-							<div class="td type_check">
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">전체선택</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
+				<!-- my_cont에서 step_01_on / step_02_on / step_03_on에 따라 상태 css변경 -->
+				<div class="my_cont step_01_on">
+					<!-- pc -->
+					<div class="top_box">
+						<p class="pc_title">거래 안심 인증</p>
+						<div class="situation_box">
+							<div class="step_01">
+								인증 해주세요
 							</div>
-						</div>
-						<div class="tr">
-							<div class="th">서버 상세</div>
-							<div class="td type_check">
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">전체선택</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">루페온</span>
-								</label>
+							<div class="step_02">
+								관리자 심사 대기중
 							</div>
-						</div>
-						<div class="tr row_2">
-							<div class="th">구분</div>
-							<div class="td type_check">
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">전체</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">거래 중</span>
-								</label>
-								<label class="label_c size_s">
-									<input type="checkbox" id="asdf">
-									<span class="ico"></span>
-									<span class="txt">거래종료</span>
-								</label>
-							</div>
-
-							<div class="th">가격</div>
-							<div class="td type_radio">
-								<label class="label_r size_s">
-									<input type="radio" name="asdf">
-									<span class="ico"></span>
-									<span class="txt">100만원 미만</span>
-								</label>
-								<label class="label_r size_s">
-									<input type="radio" name="asdf">
-									<span class="ico"></span>
-									<span class="txt">100만원 ~ 500만원</span>
-								</label>
-								<label class="label_r size_s has_ipt">
-									<input type="radio" name="asdf" id="test">
-									<span class="ico"></span>
-									<span class="txt">직접입력</span>
-								</label>
-								<div class="range">
-									<input type="text">
-									<span class="dash">~</span>
-									<input type="text">
-									<span class="unit">만원</span>
-								</div>
-							</div>
-						</div>
-						<div class="tr row_2">
-							<div class="th">제목</div>
-							<div class="td type_ipt">
-								<input type="text" placeholder="물품 제목">
-							</div>
-
-							<div class="th">내용</div>
-							<div class="td type_ipt">
-								<input type="text" placeholder="물품 내용">
+							<div class="step_03">
+								인증됨
 							</div>
 						</div>
 					</div>
-					<div class="btn_area st_btn_align pc_center m_auto">
-						<button type="button" class="st_btn size_m">검색</button>
-						<button type="button" class="st_btn size_m color_p">초기화</button>
-					</div>
-				</form>
 
-				<div class="prd_area">
-					<div class="prd_sec">
-						<div class="prd_s_title">
-							<b>프리미엄 물품</b>
-						</div>
-						<table class="prd_list_wrap type_prem">
-							<tbody>
-								<tr class="prd_list">
-									<td class="sec_prem">프리미엄</td>
-									<td class="sec_opt">아브렐슈드</td>
-									<td class="sec_ico">
-										<i class="is_item type_d">분할</i>
-										<!-- <i class="is_item type_a">일괄</i> -->
-									</td>
-									<td class="sec_name">
-										<p class="name_opt">[SILVER][광전사]</p>
-										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
-									</td>
-									<td class="sec_price">11,000원</td>
-									<td class="sec_date">08-06 10:01</td>
-								</tr>
-								<tr class="prd_list">
-									<td class="sec_prem">프리미엄</td>
-									<td class="sec_opt">아브렐슈드</td>
-									<td class="sec_ico">
-										<i class="is_item type_d">분할</i>
-										<!-- <i class="is_item type_a">일괄</i> -->
-									</td>
-									<td class="sec_name">
-										<p class="name_opt">[SILVER][광전사]</p>
-										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
-									</td>
-									<td class="sec_price">11,000원</td>
-									<td class="sec_date">08-06 10:01</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<!-- 모바일용 타이틀 -->
+					<!-- <p class="my_title">거래 안심 인증</p> -->
+					<!-- 모바일용 타이틀 라인 타입 -->
+					<p class="my_title type_line">거래 안심 인증</p>
 
-					<div class="prd_sec">
-						<div class="prd_s_title">
-							<div class="sec_left">
-								<b>물품 리스트</b>
-								<span class="count">
-									총 <span class="point">2,654</span>건
-								</span>
+					<!-- 마이 메인 -->
+					<!-- 레이아웃 테스트 -->
+					<div class="main">
+						<div class="mo_situation_box">
+							<div class="step_01">
+								인증 해주세요
 							</div>
-							<div class="sec_right">
-								<div class="pd_sort">
-									<button type="button" class="sort_toggle">
-										<span class="sort_txt">최근 등록 순</span>
-									</button>
-									<div class="sort_select">
-										<button type="button" class="sort_option on">최근 등록 순</button>
-										<button type="button" class="sort_option">높은 가격 순</button>
-										<button type="button" class="sort_option">최근 등록 순</button>
-										<button type="button" class="sort_option">과거 등록 순</button>
-									</div>
-								</div>
+							<div class="step_02">
+								관리자 심사 대기중
+							</div>
+							<div class="step_03">
+								인증됨
 							</div>
 						</div>
-						<table class="prd_list_wrap">
-							<thead>
-								<tr class="prd_list">
-									<th class="sec_opt">서버종류</th>
-									<th class="sec_ico">구분</th>
-									<th class="sec_name">물품제목</th>
-									<th class="sec_price">가격</th>
-									<th class="sec_date">등록일자</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="prd_list">
-									<td class="sec_opt">아브렐슈드</td>
-									<td class="sec_ico">
-										<i class="is_item type_d">분할</i>
-										<!-- <i class="is_item type_a">일괄</i> -->
-									</td>
-									<td class="sec_name">
-										<p class="name_opt">[<span class="grade grade2">SILVER</span>][<span class="char_name">광전사</span>]</p>
-										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
-									</td>
-									<td class="sec_price">
-										<p class="price_per">100만당 1,100원</p>
-										<p class="price_txt">11,000원</p>
-									</td>
-									<td class="sec_date">08-06 10:01</td>
-								</tr>
-								<tr class="prd_list disabled">
-									<td class="sec_opt">아브렐슈드</td>
-									<td class="sec_ico">
-										<i class="is_item type_d">분할</i>
-										<!-- <i class="is_item type_a">일괄</i> -->
-									</td>
-									<td class="sec_name">
-										<p class="name_opt">[<span class="grade grade2">SILVER</span>][<span class="char_name">광전사</span>]</p>
-										<p class="name_txt">◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</p>
-									</td>
-									<td class="sec_price">
-										<p class="price_per">100만당 1,100원</p>
-										<p class="price_txt">11,000원</p>
-									</td>
-									<td class="sec_date">08-06 10:01</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="upload_box">
+							<div class="ex_img">
+								<img src="../images/mypage/mypage_realID.svg" alt="idCard">
+							</div>
+							<div class="file_box">
+								<input class="file_name" value="" placeholder="첨부이미지.png">
+								<label for="file_upload"><span>신분증 업로드</span></label>
+								<input type="file" id="file_upload">
+								<div class="info_txt">※ 신분증 뒷자리는 보이지 않게 <br>촬영하여 첨부해주세요.</div>
+							</div>
+						</div>
+						<div class="button_box">
+							<button>제출</button>
+						</div>
 					</div>
+					<!-- <div class="" style="white-space: nowrap;">sa4d65sa4d65sa4d65as4d65as4d65sa4d65sa4d65sa4d654sa65d4as6d54as65d4sa65d4as65d4sa65d4sa65d4sa65d4sa6d4sa6d4sa65d4sa65d4sa65d4sa65d46as5d465sa4d65sa4</div> -->
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+		document.getElementById('file_upload').addEventListener('change', function(){
+			let fileName = this.value.split('\\').pop();
+			document.querySelector('.file_name').value = fileName
+		})
+	</script>
 
+	<!-- 미완 -->
 	<footer id="footer">
 		<div class="footer_top">
 			<div class="w_set">

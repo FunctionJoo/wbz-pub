@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- style 모음 -->
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- 공통 레이아웃 js -->
+	<script src="../js/layout.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
+</head>
+<body>
+    <!-- #contract에 클래스 stamp_01 추가시 스템프 생성-->
+    <div id="contract" class="stamp_01">
+        <div class="contract_hd">
+            <div class="back_button">
+                <a href="#none"></a>
+            </div>
+            <div class="page_title">
+                전자매매계약서
+            </div>
+            <div class="safe_button">
+                <button>저장</button>
+            </div>
+        </div>
+        <div class="contract_con">
+            <div class="contract_title">거 래 계 약 서</div>
+            <div class="contract_img_box">
+                <img src="../images/mypage/test_contract.jpg" alt="contract">
+            </div>
+        </div>
+        <div class="input_box">
+            <div class="member_info first_mem">
+                <img class="stamp" src="../images/mypage/mypage_stamp.png" alt="stamp">
+                <div class="mem_title">갑</div>
+                <form action="">
+                    <div class="input_list">
+                        <label for="first_mem_name"><span>성</span><span>명</span></label>
+                        <input id="first_mem_name" type="text" placeholder="남궁민">
+                    </div>
+                    <div class="input_list">
+                        <label for="first_mem_id"><span>게임ID(이메일)</span></label>
+                        <input id="first_mem_id" type="text" placeholder="sazia@naver.com">
+                    </div>
+                    <div class="input_list">
+                        <label for="first_mem_birth"><span>생</span><span>년</span><span>월</span><span>일</span></label>
+                        <input id="first_mem_birth" type="text" placeholder="1985.12.22">
+                    </div>
+                    <div class="input_list">
+                        <label for="first_mem_contact"><span>연</span><span>락</span><span>처</span></label>
+                        <input id="first_mem_contact" type="text" placeholder="010-000-0000">
+                    </div>
+                    <div class="input_list">
+                        <label for="first_mem_address"><span>주</span><span>소</span></label>
+                        <input id="first_mem_address" type="text" placeholder="서울시 송파구 송파대로 167">
+                    </div>
+                </form>
+            </div>
+            <div class="member_info second_mem">
+                <div class="mem_title">갑</div>
+                <div class="mem_info">
+                    <div class="input_list">
+                        <div class="label"><span>성</span><span>명</span></div>
+                        <div class="input">안은진</div>
+                    </div>
+                    <div class="input_list">
+                        <div class="label"><span>게임ID(이메일)</span></div>
+                        <div class="input">Kongkong12</div>
+                    </div>
+                    <div class="input_list">
+                        <div class="label"><span>생</span><span>년</span><span>월</span><span>일</span></div>
+                        <div class="input">2003.05.06</div>
+                    </div>
+                    <div class="input_list">
+                        <div class="label"><span>연</span><span>락</span><span>처</span></div>
+                        <div class="input">070-856-1111</div>
+                    </div>
+                    <div class="input_list">
+                        <div class="label"><span>주</span><span>소</span></div>
+                        <div class="input">서울시 송파구 송파대로 167</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="id_box">
+            <div class="upload_title">판매자 신분증인증</div>
+            <div class="upload_box">
+                <div class="img_box">
+                    <!-- 파일 업로드 시 이미지 변환 -->
+                    <img id="id_img_box" src="../images/mypage/mypage_realID_blur.png" alt="id">
+                </div>
+                <div class="upload_input">
+                    <input type="file" id="id_upload">
+                    <label for="id_upload">신분증 업로드</label>
+                    <span class="info_txt">※ 신분증 뒷자리는 보이지 않게 촬영하여 첨부해주세요.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const fileDOM = document.querySelector('#id_upload');
+        const previews = document.querySelector('#id_img_box');
+
+        fileDOM.addEventListener('change', () => {
+            const reader = new FileReader();
+            reader.onload = ({target}) => {
+                previews.src = event.target.result;
+            };
+            reader.readAsDataURL(fileDOM.files[0]);
+        });
+    </script>
+</body>
+</html>

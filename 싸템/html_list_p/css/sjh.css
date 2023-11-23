@@ -423,6 +423,314 @@
   color: #fff;
 }
 
+body.pop_apply #pop_apply {
+  display: block;
+}
+body.pop_apply_history #pop_apply_history {
+  display: block;
+}
+body.pop_contract #pop_contract {
+  display: block;
+}
+body #pop_apply {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.6);
+  z-index: 1000;
+}
+body #pop_apply .pop_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 40vw;
+  max-width: 700px;
+  min-width: 310px;
+  height: 560px;
+  padding: 30px 26px;
+  border: 1px solid #707070;
+}
+body #pop_apply .pop_box .pop_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 20px;
+}
+body #pop_apply .pop_box .pop_top .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+body #pop_apply .pop_box .pop_top .close {
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/mypage/close_button.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body #pop_apply .pop_box .pop_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #pop_apply .pop_box .pop_bottom #pop_text {
+  width: 100%;
+  height: 384px;
+  border: 1px solid #D3D3D3;
+  resize: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+body #pop_apply .pop_box .pop_bottom #pop_text::-moz-placeholder {
+  font-size: 15px;
+  line-height: 22px;
+  color: #666666;
+}
+body #pop_apply .pop_box .pop_bottom #pop_text::placeholder {
+  font-size: 15px;
+  line-height: 22px;
+  color: #666666;
+}
+body #pop_apply .pop_box .pop_bottom .submit_button {
+  width: 120px;
+  height: 38px;
+  color: #fff;
+  background-color: #014099;
+  border: none;
+  border-radius: 3px;
+}
+body #pop_apply_history {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.6);
+  z-index: 1000;
+}
+body #pop_apply_history .pop_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 40vw;
+  max-width: 700px;
+  min-width: 310px;
+  height: 560px;
+  padding: 30px 26px;
+  border: 1px solid #707070;
+}
+body #pop_apply_history .pop_box .pop_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 20px;
+}
+body #pop_apply_history .pop_box .pop_top .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+body #pop_apply_history .pop_box .pop_top .close {
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/mypage/close_button.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body #pop_apply_history .pop_box .pop_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #pop_apply_history .pop_box .pop_bottom .textarea_his {
+  width: 100%;
+  height: 384px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #666666;
+}
+body #pop_apply_history .pop_box .pop_bottom .submit_button {
+  width: 120px;
+  height: 38px;
+  color: #fff;
+  background-color: #014099;
+  border: none;
+  border-radius: 3px;
+}
+body #pop_contract {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.6);
+  z-index: 1000;
+}
+body #pop_contract .pop_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 450px;
+  padding: 30px 17px;
+  border: 1px solid #707070;
+}
+body #pop_contract .pop_box .pop_top {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #666666;
+  background-color: #EEF3F9;
+  margin-bottom: 10px;
+}
+body #pop_contract .pop_box .pop_top .img_box img {
+  width: 126px;
+}
+body #pop_contract .pop_box .pop_top .txt_box .txt_tit {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+body #pop_contract .pop_box .pop_top .txt_box .txt_con {
+  font-size: 15px;
+  line-height: 22px;
+}
+body #pop_contract .pop_box .pop_bottom .info_box {
+  padding: 20px 14px 20px 15px;
+  border: 1px solid #D3D3D3;
+  margin-bottom: 20px;
+}
+body #pop_contract .pop_box .pop_bottom .info_box .info_tit {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+body #pop_contract .pop_box .pop_bottom .info_box .info_con li {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+body #pop_contract .pop_box .pop_bottom .info_box .info_con li:not(:last-child) {
+  margin-bottom: 10px;
+}
+body #pop_contract .pop_box .pop_bottom .info_box .info_con li span {
+  font-size: 15px;
+  line-height: 22px;
+}
+body #pop_contract .pop_box .pop_bottom .info_box .info_con li span:first-child {
+  margin-right: 4px;
+}
+body #pop_contract .pop_box .pop_bottom .button_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #pop_contract .pop_box .pop_bottom .button_box .close_button {
+  padding: 8px 37px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 22px;
+  background-color: #333333;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
+  padding: 8px 23px;
+  background-color: #014099;
+  color: #fff;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 3px;
+}
+@media (max-width: 1080px) {
+  body #pop_contract .pop_box {
+    width: 328px;
+  }
+  body #pop_contract .pop_box .pop_top {
+    padding: 16px 14px 20px 17px;
+  }
+  body #pop_contract .pop_box .pop_top .img_box img {
+    width: 80px;
+  }
+  body #pop_contract .pop_box .pop_top .txt_box {
+    margin-left: 17px;
+  }
+  body #pop_contract .pop_box .pop_top .txt_box .txt_tit {
+    margin-bottom: 10px;
+  }
+  body #pop_contract .pop_box .pop_top .txt_box .txt_con {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  body #pop_contract .pop_box .pop_top .txt_box .txt_con br {
+    display: none;
+  }
+}
+
+#pop_class_view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.6);
+  z-index: 1000;
+}
+#pop_class_view .pop_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 750px;
+  padding: 30px 25px;
+  border: 1px solid #707070;
+}
+#pop_class_view .pop_box .pop_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+#pop_class_view .pop_box .pop_top .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#pop_class_view .pop_box .pop_top .close {
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/mypage/close_button.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .box_title {
   margin-bottom: 10px;
   font-size: 16px;
@@ -1136,6 +1444,14 @@
     justify-content: center;
     align-items: center;
   }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     background-repeat: no-repeat;
@@ -1146,10 +1462,6 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     background-repeat: no-repeat;
@@ -1159,14 +1471,18 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .back_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
   }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -1178,10 +1494,6 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
   #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     transform: rotate(180deg);
@@ -1192,10 +1504,6 @@
     height: 24px;
     margin-right: 6px;
     cursor: pointer;
-  }
-  #mypage.cancelWait .my_cont #mo_cancelWait_table .pagenation .next_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
   }
 }
 #mypage.sale_detail_item .my_cont .title {
@@ -1313,10 +1621,6 @@
 #mypage.sale_detail_item .my_cont .main .product_list .con_box .con_table .table_list .td p {
   font-size: 14px;
   line-height: 21px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-break: break-all;
 }
 #mypage.sale_detail_item .my_cont .main .product_list .con_box .con_table .table_list .td em {
   font-size: 14px;
@@ -1735,10 +2039,6 @@
 #mypage.sale_detail_id .my_cont .main .product_list .con_box .con_table .table_list .td p {
   font-size: 14px;
   line-height: 21px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-break: break-all;
 }
 #mypage.sale_detail_id .my_cont .main .product_list .con_box .con_table .table_list .td em {
   font-size: 14px;
@@ -2193,10 +2493,6 @@
 #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td p {
   font-size: 14px;
   line-height: 21px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-break: break-all;
 }
 #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td em {
   font-size: 14px;
@@ -2467,6 +2763,298 @@
     word-break: keep-all;
   }
 }
+#mypage.contract_list .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+#mypage.contract_list .my_cont .mo_table_count {
+  display: flex;
+  margin-bottom: 10px;
+}
+#mypage.contract_list .my_cont .mo_table_count p {
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.contract_list .my_cont .mo_table_count p em {
+  font-weight: normal;
+  color: #014099;
+}
+#mypage.contract_list .my_cont .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.contract_list .my_cont .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.contract_list .my_cont .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.contract_list .my_cont .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.contract_list .my_cont .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.contract_list .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.contract_list .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.contract_list .my_cont .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.contract_list .my_cont .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.contract_list .my_cont .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.contract_list .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.contract_list .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.contract_list .my_cont .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.contract_list .my_cont .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.contract_list .my_cont #mo_cancelWait_table {
+  display: none;
+}
+#mypage.contract_list .my_cont #cancelWait_table {
+  display: block;
+}
+#mypage.contract_list .my_cont #cancelWait_table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr th {
+  background-color: #F6F6F6;
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  border-left: 1px solid #D3D3D3;
+  padding: 15px 0;
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr th:last-child {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr th.category {
+  width: 150px;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr th.title {
+  width: 519px;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr th.date {
+  width: 100px;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr th.view {
+  width: 84px;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr td {
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  border-left: 1px solid #D3D3D3;
+  padding: 15px 0;
+  text-align: center;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr td:last-child {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr td.category_td span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr td.title_td a {
+  font-size: 13px;
+  line-height: 19px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr td.date_td {
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.contract_list .my_cont #cancelWait_table table tr td.view_td a {
+  padding: 5px 17px;
+  background-color: #fff;
+  border: 1px solid #D3D3D3;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 1080px) {
+  #mypage.contract_list .w_set {
+    padding: 0 !important;
+  }
+  #mypage.contract_list .my_cont .my_title {
+    margin: 0 16px;
+  }
+  #mypage.contract_list .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.contract_list .my_cont .mo_table_count {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 44px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+  #mypage.contract_list .my_cont .mo_table_count p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  #mypage.contract_list .my_cont .mo_table_count p em {
+    font-weight: normal;
+    color: #014099;
+  }
+  #mypage.contract_list .my_cont .pagenation {
+    margin-top: 37px;
+  }
+  #mypage.contract_list .my_cont #cancelWait_table {
+    display: none;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table {
+    display: block;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table {
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr {
+    padding: 20px 16px;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr:not(:last-child) {
+    border-bottom: 1px solid #D3D3D3;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .amount_date_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .amount_date_box .amount_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .amount_date_box .amount_td em {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .amount_date_box .date_td {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .category_td {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    width: 300px;
+    display: inline-block;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .title_td {
+    margin-bottom: 11px;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .title_td a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    width: 300px;
+    display: inline-block;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .view_td {
+    display: flex;
+    justify-content: end;
+  }
+  #mypage.contract_list .my_cont #mo_cancelWait_table .mo_table .mo_tr .view_td a {
+    padding: 5px 22px;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 #mypage.sale_in_progress .my_cont .pc_title {
   font-size: 16px;
   line-height: 24px;
@@ -2514,6 +3102,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.sale_in_progress .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.sale_in_progress .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.sale_in_progress .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -2524,10 +3120,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.sale_in_progress .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_in_progress .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -2537,14 +3129,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_in_progress .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_in_progress .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.sale_in_progress .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.sale_in_progress .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.sale_in_progress .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -2556,10 +3152,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_in_progress .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.sale_in_progress .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -2570,10 +3162,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.sale_in_progress .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.sale_in_progress .my_cont #mo_cancelWait_table {
   display: none;
@@ -3023,6 +3611,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.purchase_in_progress .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_in_progress .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.purchase_in_progress .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -3033,10 +3629,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.purchase_in_progress .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_in_progress .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -3046,14 +3638,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_in_progress .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_in_progress .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.purchase_in_progress .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_in_progress .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
 }
 #mypage.purchase_in_progress .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -3065,10 +3661,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_in_progress .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.purchase_in_progress .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -3079,10 +3671,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.purchase_in_progress .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.purchase_in_progress .my_cont #mo_cancelWait_table {
   display: none;
@@ -3503,6 +4091,9 @@
   font-size: 15px;
   line-height: 22px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mypage.sale_complete .my_cont .category_button .button_list.on {
   background-color: #014099;
@@ -3620,6 +4211,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.sale_complete .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.sale_complete .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.sale_complete .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -3630,10 +4229,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.sale_complete .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_complete .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -3643,14 +4238,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_complete .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.sale_complete .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.sale_complete .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.sale_complete .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.sale_complete .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -3662,10 +4261,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.sale_complete .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.sale_complete .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -3676,10 +4271,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.sale_complete .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.sale_complete .my_cont #mo_saleComplete_table {
   display: none;
@@ -4198,6 +4789,9 @@
   font-size: 15px;
   line-height: 22px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mypage.purchase_complete .my_cont .category_button .button_list.on {
   background-color: #014099;
@@ -4315,6 +4909,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.purchase_complete .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_complete .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.purchase_complete .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -4325,10 +4927,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.purchase_complete .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_complete .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -4338,14 +4936,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_complete .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.purchase_complete .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.purchase_complete .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.purchase_complete .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
 }
 #mypage.purchase_complete .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -4357,10 +4959,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.purchase_complete .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.purchase_complete .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -4371,10 +4969,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.purchase_complete .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.purchase_complete .my_cont #mo_saleComplete_table {
   display: none;
@@ -4864,6 +5458,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.canceling_purchase .my_cont .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.canceling_purchase .my_cont .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.canceling_purchase .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -4874,10 +5476,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.canceling_purchase .my_cont .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.canceling_purchase .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -4887,14 +5485,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.canceling_purchase .my_cont .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.canceling_purchase .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.canceling_purchase .my_cont .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.canceling_purchase .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -4906,10 +5508,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.canceling_purchase .my_cont .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.canceling_purchase .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -4920,10 +5518,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.canceling_purchase .my_cont .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.canceling_purchase .my_cont #mo_saleComplete_table {
   display: none;
@@ -5288,9 +5882,25 @@
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check {
   width: 40px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check input {
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check label {
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 2px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check input {
+  display: none;
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.check input:checked + label {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table .table_title th.info {
   width: 500px;
@@ -5317,10 +5927,25 @@
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td {
   padding: 42px 12px;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input {
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td label {
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 2px;
   width: 16px;
   height: 16px;
-  margin: 0;
+  display: inline-block;
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input {
+  display: none;
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input:checked + label {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td {
   padding: 13px 15px 12px 10px;
@@ -5342,6 +5967,11 @@
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category {
   margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width: 400px;
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category span {
   font-size: 14px;
@@ -5354,7 +5984,12 @@
   color: #113462;
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info {
+  width: 450px;
   margin-bottom: 9px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info span {
   font-size: 14px;
@@ -5527,6 +6162,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -5537,10 +6180,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -5550,14 +6189,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -5569,10 +6212,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -5583,10 +6222,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.items_for_sale .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.items_for_sale .my_cont .main .con_table .item_none {
   text-align: center;
@@ -5627,9 +6262,25 @@
     justify-content: center;
     align-items: center;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input {
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th label {
+    border: 1px solid #D3D3D3;
+    background-color: #fff;
+    border-radius: 2px;
     width: 16px;
     height: 16px;
+    display: inline-block;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input {
+    display: none;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input:checked + label {
+    background-image: url(../images/mypage/mile_checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
   }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_info_th {
     width: calc(100% - 50px);
@@ -5846,6 +6497,14 @@
     justify-content: center;
     align-items: center;
   }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     background-repeat: no-repeat;
@@ -5856,10 +6515,6 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     background-repeat: no-repeat;
@@ -5869,14 +6524,18 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
   }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -5888,10 +6547,6 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
   #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     transform: rotate(180deg);
@@ -5902,10 +6557,6 @@
     height: 24px;
     margin-right: 6px;
     cursor: pointer;
-  }
-  #mypage.items_for_sale .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
   }
 }
 #mypage.items_for_purchase .my_cont .pc_title {
@@ -6006,9 +6657,25 @@
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table .table_title th.check {
   width: 40px;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table .table_title th.check input {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table .table_title th.check label {
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 2px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table .table_title th.check input {
+  display: none;
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table .table_title th.check input:checked + label {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table .table_title th.info {
   width: 500px;
@@ -6035,64 +6702,89 @@
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td {
   padding: 42px 12px;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td label {
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 2px;
   width: 16px;
   height: 16px;
-  margin: 0;
+  display: inline-block;
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input {
+  display: none;
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.check_td input:checked + label {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td {
   padding: 13px 15px 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .top_info {
   margin-bottom: 8px;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .premium_box {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .top_info .premium_box {
   width: 22px;
   height: 22px;
   display: none;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .premium_box img {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .top_info .premium_box img {
   width: 100%;
   height: 100%;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .top_info .category {
   margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width: 364px;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category span {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .top_info .category span {
   font-size: 14px;
   line-height: 20px;
   color: #000;
   font-weight: 500;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .top_info .category span em {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .top_info .category span em {
   font-weight: 500;
   color: #113462;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .middle_info {
+  width: 382px;
   margin-bottom: 9px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info .content span {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .middle_info span {
   font-size: 14px;
   line-height: 20px;
   color: #000;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .middle_info .pay_immediately {
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td a .bottom_info span {
+  font-size: 13px;
+  line-height: 16px;
+  color: #A7A7A7;
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .pay_immediately {
   padding: 4px 10px;
   font-size: 12px;
   line-height: 18px;
   background-color: #EEF3F9;
   color: #014099;
-}
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.info_td .bottom_info span {
-  font-size: 13px;
-  line-height: 16px;
-  color: #A7A7A7;
 }
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table table tbody tr td.price_td {
   padding: 12px 10px 12px 11px;
@@ -6248,6 +6940,14 @@
   justify-content: center;
   align-items: center;
 }
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
@@ -6258,10 +6958,6 @@
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
@@ -6271,14 +6967,18 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .back_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(180deg);
-}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
 }
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -6290,10 +6990,6 @@
   height: 24px;
   cursor: pointer;
 }
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .all_page.on {
-  background-image: url(../images/mypage/table_arrow_on_end.svg);
-  transform: rotate(0deg);
-}
 #mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
@@ -6304,10 +7000,6 @@
   height: 24px;
   margin-right: 6px;
   cursor: pointer;
-}
-#mypage.items_for_purchase .my_cont .main .con_table #itemForSale_table .pagenation .next_page .one_page.on {
-  background-image: url(../images/mypage/table_arrow_on_next.svg);
-  transform: rotate(0deg);
 }
 #mypage.items_for_purchase .my_cont .main .con_table .item_none {
   text-align: center;
@@ -6348,9 +7040,25 @@
     justify-content: center;
     align-items: center;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input {
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th label {
+    border: 1px solid #D3D3D3;
+    background-color: #fff;
+    border-radius: 2px;
     width: 16px;
     height: 16px;
+    display: inline-block;
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input {
+    display: none;
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_check_th input:checked + label {
+    background-image: url(../images/mypage/mile_checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
   }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_title .th.mo_info_th {
     width: calc(100% - 50px);
@@ -6383,6 +7091,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
+    width: 270px;
   }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_top .con_category span {
     font-size: 14px;
@@ -6404,7 +7113,7 @@
     text-overflow: ellipsis;
     word-break: break-all;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_title span {
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_table_box .mo_table .mo_table_tr .table_middle .con_title a {
     font-size: 15px;
     line-height: 22px;
     color: #000;
@@ -6567,6 +7276,14 @@
     justify-content: center;
     align-items: center;
   }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
     background-repeat: no-repeat;
@@ -6577,10 +7294,6 @@
     margin-right: 6px;
     cursor: pointer;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     background-repeat: no-repeat;
@@ -6590,14 +7303,18 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .back_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
   }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page {
     background-image: url(../images/mypage/table_arrow_off_end.svg);
@@ -6609,10 +7326,6 @@
     height: 24px;
     cursor: pointer;
   }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .all_page.on {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
   #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page {
     background-image: url(../images/mypage/table_arrow_off_next.svg);
     transform: rotate(180deg);
@@ -6623,10 +7336,6 @@
     height: 24px;
     margin-right: 6px;
     cursor: pointer;
-  }
-  #mypage.items_for_purchase .my_cont .main .con_table #mo_itemForSale_table .mo_pagenation .next_page .one_page.on {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
   }
 }
 #mypage.items_for_sale_rewrite .my_cont .pc_title {
@@ -8608,4 +9317,3878 @@
     height: 60px;
     line-height: 21px;
   }
+}
+#mypage.mile_list .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333333;
+  margin-bottom: 20px;
+}
+#mypage.mile_list .my_cont .main .title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+#mypage.mile_list .my_cont .main .mile_count {
+  display: flex;
+  margin-bottom: 20px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  width: 278px;
+  height: 140px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list:not(:last-child) {
+  margin-right: 8px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .top_con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .top_con img {
+  width: 36px;
+  height: 30px;
+  margin-bottom: 16px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .top_con .list_title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .list_count {
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list .list_count em {
+  font-weight: 600;
+  color: #014099;
+  font-size: 20px;
+  line-height: 27px;
+  margin-right: 2px;
+}
+#mypage.mile_list .my_cont .main .period_sec {
+  height: 50px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  margin-bottom: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .sec_title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  height: 100%;
+  width: 100px;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  width: 799px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form label {
+  display: flex;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form label.no_view {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box {
+  display: flex;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box span {
+  display: inline-block;
+  width: 6px;
+  height: 1px;
+  background-color: #707070;
+  margin: 0 6px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date] {
+  border: 1px solid #D3D3D3;
+  padding: 7px 10px;
+  width: 140px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+  background: url(../images/mypage/input_date_icon.svg) no-repeat center;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box {
+  display: flex;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box label {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box label:not(:nth-last-of-type(1)) {
+  margin-right: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box input[type=checkbox] {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box input[type=checkbox] + label::before {
+  content: "";
+  box-shadow: 0 0 0 1px #333333 inset;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 6px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box input[type=checkbox]:checked + label::before {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box {
+  display: flex;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box input[type=submit] {
+  padding: 6px 27px;
+  border-radius: 3px;
+  background-color: #014099;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button {
+  display: none;
+  width: 120px;
+  height: 32px;
+  border-radius: 1px;
+  border: 1px solid #2E7D32;
+  background-color: rgba(46, 125, 50, 0.1019607843);
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E7D32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_excel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+#mypage.mile_list .my_cont .main .table_sec {
+  width: 100%;
+  overflow-x: auto;
+}
+#mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar {
+  background-color: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  height: 7px;
+}
+#mypage.mile_list .my_cont .main .table_sec::-webkit-scrollbar-thumb {
+  background-color: #014099;
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button {
+  width: 120px;
+  height: 32px;
+  border-radius: 1px;
+  border: 1px solid #2E7D32;
+  background-color: rgba(46, 125, 50, 0.1019607843);
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E7D32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_excel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+#mypage.mile_list .my_cont .main .table_sec table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr {
+  height: 50px;
+  background-color: #F6F6F6;
+  border: 1px solid #D3D3D3;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.date {
+  width: 130px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.category {
+  width: 80px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.subject {
+  width: 369px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.input {
+  width: 135px;
+}
+#mypage.mile_list .my_cont .main .table_sec table thead tr th.output {
+  width: 140px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr {
+  height: 50px;
+  border: 1px solid #D3D3D3;
+  border-top: none;
+  text-align: center;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_06 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_05 {
+  display: none;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.date_td {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_01 {
+  color: #113462;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_02 {
+  color: #FF9E4A;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_03 {
+  color: #014099;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_04 {
+  color: #E96135;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_05 {
+  color: #017A0D;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_06 {
+  color: #FF3333;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td {
+  font-size: 13px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td em {
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td em {
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.mile_list .my_cont .main .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.mile_list .my_cont .main .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.mile_list .my_cont .main .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #mypage.mile_list .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .title {
+    margin-bottom: 10.5px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #D3D3D3;
+    padding: 22px 15px 18px 15px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con {
+    flex-direction: row;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con img {
+    width: 25px;
+    height: 20px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con .list_title {
+    margin-bottom: 0px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec {
+    justify-content: center;
+    height: auto;
+    padding: 15px 15px 17px 15px;
+    margin-bottom: 22px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .sec_title {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form label {
+    display: flex;
+    align-items: center;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form label.no_view {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box {
+    margin-bottom: 11px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box {
+    margin-bottom: 20px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box input[type=submit] {
+    padding: 6px 47px;
+  }
+  #mypage.mile_list .my_cont .main .period_sec .form_sec form .submit_input_box .mo_excel_button {
+    display: block;
+    margin-left: 10px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec .button_box {
+    margin-bottom: 0px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec .button_box .excel_button {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table {
+    width: 850px;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr {
+    height: 50px;
+    background-color: #F6F6F6;
+    border: 1px solid #D3D3D3;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th:not(:last-child) {
+    border-right: 1px solid #D3D3D3;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.date {
+    width: 130px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.category {
+    width: 80px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.subject {
+    width: 369px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.input {
+    width: 135px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table thead tr th.output {
+    width: 140px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr {
+    height: 50px;
+    border: 1px solid #D3D3D3;
+    border-top: none;
+    text-align: center;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr:nth-last-child(-n+12) {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_01_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_02_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_03_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_05, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_04_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_05_on .category_td .case_06 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_01, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_02, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_03, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_04, #mypage.mile_list .my_cont .main .table_sec table tbody tr.case_06_on .category_td .case_05 {
+    display: none;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td:not(:last-child) {
+    border-right: 1px solid #D3D3D3;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.date_td {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_01 {
+    color: #113462;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_02 {
+    color: #FF9E4A;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_03 {
+    color: #014099;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_04 {
+    color: #E96135;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_05 {
+    color: #017A0D;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.category_td .case_06 {
+    color: #FF3333;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td {
+    font-size: 13px;
+    line-height: 19px;
+    color: #000;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.subject_td span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td em {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td em {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #mypage.mile_list .my_cont .main .pagenation {
+    margin-top: 46px;
+  }
+  #mypage.mile_list .my_cont .main .pagenation .pageNum li:nth-last-child(-n+5) {
+    display: none;
+  }
+}
+#mypage.ticket_purchase .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec {
+  margin-bottom: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 13px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title .rec_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .title span em {
+  font-size: 20px;
+  line-height: 27px;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box {
+  margin-bottom: 20px;
+  background-color: #EEF3F9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list:first-child {
+  color: #666666;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list:last-child {
+  color: #000;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .info_box .info_list span:first-child {
+  margin-right: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box {
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box {
+  display: flex;
+  height: 50px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .count_title {
+  font-size: 14px;
+  line-height: 20px;
+  width: 150px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 10px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count {
+  display: flex;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .minus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .plus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count #pre_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content span {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content span em {
+  font-weight: 500;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .result_text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .result_text em {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec {
+  margin-bottom: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 13px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .rec_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub {
+  display: flex;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p:not(:last-child) {
+  margin-right: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p span {
+  font-weight: 600;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p em {
+  font-size: 20px;
+  line-height: 27px;
+  color: #014099;
+  margin-right: 2px;
+  margin-left: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box {
+  margin-bottom: 20px;
+  background-color: #EEF3F9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list:first-child {
+  color: #666666;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list:last-child {
+  color: #000;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .info_box .info_list span:first-child {
+  margin-right: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box {
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box {
+  display: flex;
+  height: 50px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .count_title {
+  font-size: 14px;
+  line-height: 20px;
+  width: 150px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 10px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .min_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 500;
+  margin-left: 0;
+  margin-right: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .second_min_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 500;
+  margin-left: 0;
+  margin-right: 12px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count {
+  display: flex;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .minus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .plus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count #autoFive_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .minute_option .push_count #autoTen_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content span {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content span em {
+  font-weight: 500;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .result_text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .result_text em {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec {
+  margin-bottom: 60px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 13px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title .rec_title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title span em {
+  font-size: 20px;
+  line-height: 27px;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box {
+  margin-bottom: 20px;
+  background-color: #EEF3F9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list:first-child {
+  color: #666666;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list:last-child {
+  color: #000;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .info_box .info_list span:first-child {
+  margin-right: 4px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box {
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box {
+  display: flex;
+  height: 50px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .count_title {
+  font-size: 14px;
+  line-height: 20px;
+  width: 150px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 10px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count {
+  display: flex;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .minus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .plus_button {
+  position: relative;
+  width: 36px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count #item_con_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content span {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content span em {
+  font-weight: 500;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .result_text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .result_text em {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #014099;
+  margin-right: 2px;
+}
+#mypage.ticket_purchase .my_cont .main .button_box a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  padding: 13px 0;
+  text-align: center;
+  background-color: #014099;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1080px) {
+  #mypage.ticket_purchase .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec {
+    margin-bottom: 22px;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box:not(:last-child) {
+    height: 79px;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content .push_count {
+    margin-bottom: 8px;
+  }
+  #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .content span {
+    margin-left: 0;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec {
+    margin-bottom: 22px;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box:not(:last-child) {
+    height: 79px;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content .push_count {
+    margin-bottom: 8px;
+  }
+  #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .content span {
+    margin-left: 0;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box:not(:last-child) {
+    height: 79px;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content .push_count {
+    margin-bottom: 8px;
+  }
+  #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .content span {
+    margin-left: 0;
+  }
+  #mypage.ticket_purchase .my_cont .main .button_box a {
+    width: 100%;
+    height: 60px;
+    padding: 18px 0;
+  }
+}
+#mypage.ticket_preList .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  height: 50px;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list {
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list.on {
+  background-color: #014099;
+  color: #fff;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con span em {
+  font-size: 20px;
+  line-height: 27px;
+  margin-right: 2px;
+  color: #014099;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text] {
+  width: 200px;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con .search_button {
+  width: 80px;
+  height: 32px;
+  color: #fff;
+  border: none;
+  background-color: #222222;
+  border-radius: 1px;
+  margin-left: 4px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table {
+  width: 100%;
+  overflow-x: auto;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table::-webkit-scrollbar {
+  background-color: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  height: 7px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table::-webkit-scrollbar-thumb {
+  background-color: #014099;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #D3D3D3;
+  width: 850px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr {
+  background-color: #F6F6F6;
+  height: 50px;
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.number {
+  width: 50px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.title {
+  width: 420px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.start_day {
+  width: 100px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.last_day {
+  width: 100px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.minus_num {
+  width: 85px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.date {
+  width: 100px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr {
+  height: 50px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr.no_item {
+  text-align: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.number_td {
+  color: #000;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.title_td {
+  padding: 0 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.title_td .list_category {
+  font-size: 13px;
+  line-height: 19px;
+  color: #113462;
+  margin-bottom: 2px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.title_td .list_title {
+  font-size: 13px;
+  line-height: 19px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em {
+  font-weight: 400;
+  color: #222;
+  margin-right: 1px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_preList .my_cont .main .con_box .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #mypage.ticket_preList .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.ticket_preList .my_cont .main .cate_button_box {
+    height: 45px;
+    margin-bottom: 22.5px;
+  }
+  #mypage.ticket_preList .my_cont .main .cate_button_box .cate_button_list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .con_top {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 10.5px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .con_top .title_con {
+    margin-bottom: 14px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text] {
+    width: 238px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr:nth-child(n+7) {
+    display: none;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .pagenation {
+    margin-top: 37px;
+  }
+  #mypage.ticket_preList .my_cont .main .con_box .pagenation .pageNum li:nth-last-child(-n+5) {
+    display: none;
+  }
+}
+#mypage.ticket_reAutoList .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  height: 50px;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list {
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list.on {
+  background-color: #014099;
+  color: #fff;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span:first-of-type {
+  margin-right: 11px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span strong {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span em {
+  font-size: 20px;
+  line-height: 27px;
+  margin-left: 6px;
+  margin-right: 2px;
+  color: #014099;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text] {
+  width: 200px;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con .search_button {
+  width: 80px;
+  height: 32px;
+  color: #fff;
+  border: none;
+  background-color: #222222;
+  border-radius: 1px;
+  margin-left: 4px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table {
+  width: 100%;
+  overflow-x: auto;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table::-webkit-scrollbar {
+  background-color: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  height: 7px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table::-webkit-scrollbar-thumb {
+  background-color: #014099;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #D3D3D3;
+  width: 850px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr {
+  background-color: #F6F6F6;
+  height: 50px;
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.number {
+  width: 58px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.interval {
+  width: 76px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.start_day {
+  width: 180px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.last_day {
+  width: 180px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.execution {
+  width: 82px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.minus_num {
+  width: 100px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table thead tr th.date {
+  width: 180px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr {
+  height: 50px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr.no_item {
+  text-align: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr.five_min .interval_td .ten_minute {
+  display: none;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr.ten_min .interval_td .five_minute {
+  display: none;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.interval_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.execution_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.execution_td em {
+  font-weight: 400;
+  color: #222;
+  margin-right: 1px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.number_td {
+  color: #000;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.interval_td a em {
+  font-weight: 400;
+  margin-right: 2px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #mypage.ticket_reAutoList .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .cate_button_box {
+    height: 45px;
+    margin-bottom: 22.5px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .cate_button_box .cate_button_list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 10.5px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con {
+    margin-bottom: 14px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text] {
+    width: 238px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr:nth-child(n+7) {
+    display: none;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .pagenation {
+    margin-top: 37px;
+  }
+  #mypage.ticket_reAutoList .my_cont .main .con_box .pagenation .pageNum li:nth-last-child(-n+5) {
+    display: none;
+  }
+}
+#mypage.ticket_item_con_List .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#mypage.ticket_item_con_List .my_cont .main .cate_button_box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  height: 50px;
+}
+#mypage.ticket_item_con_List .my_cont .main .cate_button_box .cate_button_list {
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+}
+#mypage.ticket_item_con_List .my_cont .main .cate_button_box .cate_button_list:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_item_con_List .my_cont .main .cate_button_box .cate_button_list.on {
+  background-color: #014099;
+  color: #fff;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con span {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con span em {
+  font-size: 20px;
+  line-height: 27px;
+  margin-right: 2px;
+  color: #014099;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text] {
+  width: 200px;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con .search_button {
+  width: 80px;
+  height: 32px;
+  color: #fff;
+  border: none;
+  background-color: #222222;
+  border-radius: 1px;
+  margin-left: 4px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table {
+  width: 100%;
+  overflow-x: auto;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table::-webkit-scrollbar {
+  background-color: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  height: 7px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table::-webkit-scrollbar-thumb {
+  background-color: #014099;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #D3D3D3;
+  width: 850px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr {
+  background-color: #F6F6F6;
+  height: 50px;
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th.number {
+  width: 58px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th.title {
+  width: 80px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th.start_day {
+  width: 200px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th.last_day {
+  width: 200px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th.minus_num {
+  width: 100px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table thead tr th.date {
+  width: 217px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr {
+  height: 50px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr.no_item {
+  text-align: center;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr.five_min .interval_td .ten_minute {
+  display: none;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr.ten_min .interval_td .five_minute {
+  display: none;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.interval_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.execution_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.minus_num_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.execution_td em {
+  font-weight: 400;
+  color: #222;
+  margin-right: 1px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.number_td {
+  color: #000;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.interval_td a em {
+  font-weight: 400;
+  margin-right: 2px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #mypage.ticket_item_con_List .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .cate_button_box {
+    height: 45px;
+    margin-bottom: 22.5px;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .cate_button_box .cate_button_list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .con_box .con_top {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 10.5px;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con {
+    margin-bottom: 14px;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text] {
+    width: 238px;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr:nth-child(n+7) {
+    display: none;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .con_box .pagenation {
+    margin-top: 37px;
+  }
+  #mypage.ticket_item_con_List .my_cont .main .con_box .pagenation .pageNum li:nth-last-child(-n+5) {
+    display: none;
+  }
+}
+#mypage.change_info .my_cont .main .con_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEF3F9;
+  height: 56px;
+  margin-bottom: 20px;
+}
+#mypage.change_info .my_cont .main .con_top img {
+  margin-right: 28px;
+  width: 22px;
+  height: 24px;
+}
+#mypage.change_info .my_cont .main .con_top .member_box {
+  display: flex;
+}
+#mypage.change_info .my_cont .main .con_top .member_box div {
+  font-size: 16px;
+  line-height: 24px;
+}
+#mypage.change_info .my_cont .main .con_top .member_box .member_gender {
+  position: relative;
+  padding: 0 23px;
+  margin: 0 26px;
+}
+#mypage.change_info .my_cont .main .con_top .member_box .member_gender::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 10px;
+  width: 1px;
+  background-color: #A7A7A7;
+  transform: translateY(-50%);
+}
+#mypage.change_info .my_cont .main .con_top .member_box .member_gender::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 10px;
+  width: 1px;
+  background-color: #A7A7A7;
+  transform: translateY(-50%);
+}
+#mypage.change_info .my_cont .main .form_box form .form_list {
+  height: 50px;
+  display: flex;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  border-top: 1px solid #D3D3D3;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list.last_list {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_title {
+  width: 160px;
+  background-color: #F6F6F6;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info {
+  padding-left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.password_info span {
+  color: #666666;
+  margin-left: 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.password_info input[type=password] {
+  width: 160px;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input span {
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #707070;
+  margin: 0 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box {
+  width: 80px;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+  background-image: url(../images/mypage/arrow_selectBox_02.png);
+  background-size: 12px 7px;
+  background-repeat: no-repeat;
+  background-position: top 50% right 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box select {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  border: 0;
+  -webkit-appearance: none;
+  /* for chrome */
+  -moz-appearance: none;
+  /*for firefox*/
+  appearance: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box select::-ms-expand {
+  display: none;
+  /*for IE10,11*/
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box select option {
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input input[type=text] {
+  width: 120px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #D3D3D3;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input input[type=text]:disabled {
+  background-color: #EEEEEE;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_check_button {
+  margin-left: 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_check_button button {
+  width: 100px;
+  height: 36px;
+  background-color: #333333;
+  border: none;
+  border-radius: 3px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_check_button button span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_check_button button span.after_check {
+  display: none;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_check_button button:disabled {
+  background-color: #A7A7A7;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_check_button button:disabled span.after_check {
+  display: block;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_check_button button:disabled span.before_check {
+  display: none;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .select_box {
+  width: 120px;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+  background-image: url(../images/mypage/arrow_selectBox_02.png);
+  background-size: 12px 7px;
+  background-repeat: no-repeat;
+  background-position: top 50% right 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .select_box select {
+  color: #666666;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 21px;
+  border: 0;
+  -webkit-appearance: none;
+  /* for chrome */
+  -moz-appearance: none;
+  /*for firefox*/
+  appearance: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .select_box select::-ms-expand {
+  display: none;
+  /*for IE10,11*/
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .select_box select option {
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .last_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .last_contact input[type=text] {
+  width: 120px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #D3D3D3;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .last_contact input[type=text]:disabled {
+  background-color: #EEEEEE;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .last_contact span {
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #707070;
+  margin: 0 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.email_info input[type=email] {
+  width: 420px;
+  height: 36px;
+  border: 1px solid #D3D3D3;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .select_box {
+  color: #666666;
+  width: 120px;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+  background-image: url(../images/mypage/arrow_selectBox_02.png);
+  background-size: 12px 7px;
+  background-repeat: no-repeat;
+  background-position: top 50% right 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .select_box select {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 21px;
+  border: 0;
+  -webkit-appearance: none;
+  /* for chrome */
+  -moz-appearance: none;
+  /*for firefox*/
+  appearance: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .select_box select::-ms-expand {
+  display: none;
+  /*for IE10,11*/
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .select_box select option {
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input {
+  margin-left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input input[type=text] {
+  width: 250px;
+  height: 36px;
+  border: 1px solid #D3D3D3;
+  padding: 0 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input input[type=text]::-moz-placeholder {
+  color: #666666;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input input[type=text]::placeholder {
+  color: #666666;
+  font-size: 14px;
+  line-height: 21px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input .account_check_button {
+  margin-left: 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input .account_check_button button {
+  width: 100px;
+  height: 36px;
+  background-color: #333333;
+  border: none;
+  border-radius: 3px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input .account_check_button button span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input .account_check_button button span.after_check {
+  display: none;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input .account_check_button button:disabled {
+  background-color: #A7A7A7;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input .account_check_button button:disabled span.after_check {
+  display: block;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input .account_check_button button:disabled span.before_check {
+  display: none;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.address_info input[type=text] {
+  width: 380px;
+  height: 36px;
+  border: 1px solid #D3D3D3;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.optionCheck_info .sms_option:first-child {
+  margin-right: 18px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.optionCheck_info .sms_option label {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.optionCheck_info .sms_option input {
+  display: none;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.optionCheck_info .sms_option input + label::before {
+  content: "";
+  box-shadow: 0 0 0 1px #333333 inset;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 7px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.optionCheck_info .sms_option input:checked + label::before {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.change_info .my_cont .main .form_box form .submit_button_box {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+#mypage.change_info .my_cont .main .form_box form .submit_button_box input[type=submit] {
+  width: 200px;
+  height: 50px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #014099;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-radius: 3px;
+}
+
+@media (max-width: 1080px) {
+  #mypage.change_info .my_cont .main .form_box form .form_list .form_title {
+    width: 90px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.repass_list {
+    height: 79px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.repass_list .form_info {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.repass_list .form_info input[type=password] {
+    margin-bottom: 8px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.repass_list .form_info span {
+    margin: 0;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.number_list {
+    height: 94px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.number_list .form_info.phone_info {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.number_list .form_info.phone_info .phone_input {
+    margin-bottom: 8px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.number_list .form_info.phone_info .phone_input .select_box {
+    width: 60px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.number_list .form_info.phone_info .phone_input span {
+    display: none;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.number_list .form_info.phone_info .phone_input input[type=text] {
+    margin-left: 10px;
+    width: 69px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.number_list .form_info.phone_info .phone_check_button {
+    margin: 0;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.contact_list {
+    height: 92px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.contact_list .form_info.contact_info .contact_input {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.contact_list .form_info.contact_info .contact_input .select_box {
+    margin-bottom: 8px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.contact_list .form_info.contact_info .contact_input .last_contact span {
+    display: none;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.contact_list .form_info.contact_info .contact_input .last_contact input[type=text] {
+    width: 104px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.contact_list .form_info.contact_info .contact_input .last_contact input[type=text]:first-of-type {
+    margin-right: 10px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.email_list .form_info.email_info input[type=email] {
+    width: 218px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.bank_list {
+    height: 95px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.bank_list .form_info.bank_info .bank_input {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.bank_list .form_info.bank_info .bank_input .select_box {
+    margin-bottom: 8px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.bank_list .form_info.bank_info .bank_input .account_number_input {
+    margin: 0;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.bank_list .form_info.bank_info .bank_input .account_number_input input[type=text] {
+    width: 108px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .form_list.address_list .form_info.address_info input[type=text] {
+    width: 218px;
+  }
+  #mypage.change_info .my_cont .main .form_box form .submit_button_box input[type=submit] {
+    width: 100%;
+    height: 60px;
+  }
+}
+#mypage.safe_authentication .my_cont.step_01_on .top_box .situation_box .step_02 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_01_on .top_box .situation_box .step_03 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_01_on .main .mo_situation_box .step_02 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_01_on .main .mo_situation_box .step_03 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_02_on .top_box .situation_box .step_01 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_02_on .top_box .situation_box .step_03 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_02_on .main .mo_situation_box .step_01 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_02_on .main .mo_situation_box .step_03 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_03_on .top_box .situation_box .step_01 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_03_on .top_box .situation_box .step_02 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_03_on .main .mo_situation_box .step_01 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont.step_03_on .main .mo_situation_box .step_02 {
+  display: none;
+}
+#mypage.safe_authentication .my_cont .top_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333333;
+}
+#mypage.safe_authentication .my_cont .top_box .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+#mypage.safe_authentication .my_cont .top_box .situation_box {
+  padding: 8px 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+}
+#mypage.safe_authentication .my_cont .top_box .situation_box .step_01 {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .top_box .situation_box .step_01::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #FE0000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#mypage.safe_authentication .my_cont .top_box .situation_box .step_02 {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .top_box .situation_box .step_02::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffd966;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#mypage.safe_authentication .my_cont .top_box .situation_box .step_03 {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .top_box .situation_box .step_03::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #a8d08c;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#mypage.safe_authentication .my_cont .main .mo_situation_box {
+  padding: 8px 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 1px;
+  margin-bottom: 21px;
+  display: none;
+}
+#mypage.safe_authentication .my_cont .main .mo_situation_box .step_01 {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .main .mo_situation_box .step_01::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #FE0000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#mypage.safe_authentication .my_cont .main .mo_situation_box .step_02 {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .main .mo_situation_box .step_02::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffd966;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#mypage.safe_authentication .my_cont .main .mo_situation_box .step_03 {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .main .mo_situation_box .step_03::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #a8d08c;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#mypage.safe_authentication .my_cont .main .upload_box {
+  padding: 30px 33px 67px 40px;
+  border: 1px solid #D9D9D9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .ex_img img {
+  width: 360px;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box .file_name {
+  width: 360px;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+  padding: 0 10px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 19px;
+  color: #666666;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box .file_name::-moz-placeholder {
+  font-size: 15px;
+  line-height: 19px;
+  color: #666666;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box .file_name::placeholder {
+  font-size: 15px;
+  line-height: 19px;
+  color: #666666;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box label {
+  width: 360px;
+  height: 54px;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box label span {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box label span::before {
+  content: "";
+  display: block;
+  background: url(../images/mypage/mypage_upload_icon.svg) center no-repeat;
+  width: 19px;
+  height: 16px;
+  margin-right: 10px;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box input[type=file] {
+  display: none;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box .info_txt {
+  font-size: 14px;
+  line-height: 19px;
+  color: #666666;
+  margin-top: 10px;
+}
+#mypage.safe_authentication .my_cont .main .upload_box .file_box .info_txt br {
+  display: none;
+}
+#mypage.safe_authentication .my_cont .main .button_box {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.safe_authentication .my_cont .main .button_box button {
+  width: 200px;
+  height: 50px;
+  background-color: #014099;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 13px 0;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  #mypage.safe_authentication .my_cont .top_box {
+    display: none;
+  }
+  #mypage.safe_authentication .my_cont .main {
+    padding-top: 5.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.safe_authentication .my_cont .main .mo_situation_box {
+    display: inline-block;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box {
+    flex-direction: column;
+    padding: 60px 16px 67px 16px;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box .ex_img {
+    margin-bottom: 55.5px;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box .ex_img img {
+    width: 280px;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box .file_box {
+    width: 100%;
+    align-items: center;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box .file_box .file_name {
+    width: 100%;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box .file_box label {
+    width: 100%;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box .file_box .info_txt {
+    text-align: center;
+  }
+  #mypage.safe_authentication .my_cont .main .upload_box .file_box .info_txt br {
+    display: block;
+  }
+  #mypage.safe_authentication .my_cont .main .button_box button {
+    width: 314px;
+  }
+}
+#mypage.blocking_chat .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333333;
+}
+#mypage.blocking_chat .my_cont .mo_main {
+  display: none;
+}
+#mypage.blocking_chat .my_cont .pc_main table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #D3D3D3;
+}
+#mypage.blocking_chat .my_cont .pc_main table thead tr {
+  height: 50px;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.blocking_chat .my_cont .pc_main table thead tr th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.blocking_chat .my_cont .pc_main table thead tr th.num {
+  width: 56px;
+}
+#mypage.blocking_chat .my_cont .pc_main table thead tr th.title {
+  width: 398px;
+}
+#mypage.blocking_chat .my_cont .pc_main table thead tr th.reason {
+  width: 100px;
+}
+#mypage.blocking_chat .my_cont .pc_main table thead tr th.date {
+  width: 200px;
+}
+#mypage.blocking_chat .my_cont .pc_main table thead tr th.cancel {
+  width: 100px;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody {
+  text-align: center;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr {
+  height: 50px;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr td:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr td.num_td {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr td.title_td {
+  font-size: 13px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr td.reason_td button {
+  width: 60px;
+  height: 30px;
+  border: 1px solid #D3D3D3;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr td.date_td {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.blocking_chat .my_cont .pc_main table tbody tr td.cancel_td button {
+  width: 60px;
+  height: 30px;
+  border: 1px solid #014099;
+  border-radius: 3px;
+  background-color: #EEF3F9;
+  color: #014099;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation ul {
+  display: flex;
+  margin: 0 10px;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation ul li {
+  font-size: 14px;
+  line-height: 19px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation ul li.on {
+  background-color: #666666;
+  color: #fff;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(180deg);
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(180deg);
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page.on .all_page {
+  background-image: url(../images/mypage/table_arrow_on_end.svg);
+  transform: rotate(0deg);
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page.on .one_page {
+  background-image: url(../images/mypage/table_arrow_on_next.svg);
+  transform: rotate(0deg);
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page .all_page {
+  background-image: url(../images/mypage/table_arrow_off_end.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page .one_page {
+  background-image: url(../images/mypage/table_arrow_off_next.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #mypage.blocking_chat .w_set_my {
+    padding: 0;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .my_title {
+    padding: 0 16px;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .pc_main {
+    display: none;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main {
+    display: block;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr {
+    border-bottom: 1px solid #D3D3D3;
+    padding: 20px 17px;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr.no_item {
+    text-align: center;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr:first-child {
+    border-top: 1px solid #D3D3D3;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box .button_box .view_button {
+    width: 70px;
+    height: 30px;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 8px;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box .button_box .cancel_button {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #014099;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #014099;
+    background-color: #EEF3F9;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box .mo_date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation {
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation ul {
+    display: flex;
+    margin: 0 10px;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation ul li {
+    font-size: 14px;
+    line-height: 19px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation ul li.on {
+    background-color: #666666;
+    color: #fff;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(180deg);
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page .all_page {
+    background-image: url(../images/mypage/table_arrow_off_end.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page .one_page {
+    background-image: url(../images/mypage/table_arrow_off_next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page.on .all_page {
+    background-image: url(../images/mypage/table_arrow_on_end.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page.on .one_page {
+    background-image: url(../images/mypage/table_arrow_on_next.svg);
+    transform: rotate(0deg);
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page .all_page {
+    background-image: url(../images/mypage/table_arrow_off_end.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page .one_page {
+    background-image: url(../images/mypage/table_arrow_off_next.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+}
+#mypage.go_out .my_cont .pc_title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333333;
+}
+#mypage.go_out .my_cont .my_title {
+  margin-bottom: 20.5px !important;
+}
+#mypage.go_out .my_cont .main .info_box {
+  padding: 22px 20px 29px 20px;
+  border: 1px solid #DE4040;
+  margin-bottom: 20px;
+}
+#mypage.go_out .my_cont .main .info_box .info_title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #DE4040;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.go_out .my_cont .main .info_box .info_title::before {
+  content: "";
+  display: block;
+  background: url(../images/mypage/mypage_red_danger.svg) center no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+#mypage.go_out .my_cont .main .info_box .info_subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+#mypage.go_out .my_cont .main .info_box .info_content {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.go_out .my_cont .main .reason_check .reason_check_title {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#mypage.go_out .my_cont .main .reason_check .reason_check_title span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #DE4040;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .check_list {
+  margin-bottom: 10px;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .check_list.plus_text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .check_list label {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .check_list input[type=checkbox] {
+  display: none;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .check_list input[type=checkbox] + label::before {
+  content: "";
+  box-shadow: 0 0 0 1px #d3d3d3 inset;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 7px;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .check_list input[type=checkbox]:checked + label::before {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .check_list input[type=text] {
+  margin-left: 10px;
+  width: 380px;
+  height: 30px;
+  border: 1px solid #D3D3D3;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .button_box {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+#mypage.go_out .my_cont .main .reason_check .input_box .button_box button {
+  width: 200px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #014099;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 13px;
+  text-align: center;
+  border: none;
+}
+
+@media (max-width: 1080px) {
+  #mypage.go_out .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.go_out .my_cont .main .reason_check .input_box .check_list.plus_text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  #mypage.go_out .my_cont .main .reason_check .input_box .check_list.plus_text div {
+    margin-bottom: 11px;
+  }
+  #mypage.go_out .my_cont .main .reason_check .input_box .check_list.plus_text input[type=text] {
+    margin-left: 27px;
+    width: 80%;
+    min-width: 303px;
+  }
+  #mypage.go_out .my_cont .main .reason_check .input_box .button_box button {
+    width: 100%;
+  }
+}
+#contract {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+#contract.stamp_01 .input_box .member_info.first_mem .stamp {
+  display: inline-block;
+}
+#contract .contract_hd {
+  background-color: #222222;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contract .contract_hd .back_button {
+  width: 70px;
+  height: 70px;
+}
+#contract .contract_hd .back_button a {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+#contract .contract_hd .back_button a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 14px;
+  height: 28px;
+  background: url(../images/mypage/white_arrow.png) no-repeat center;
+}
+#contract .contract_hd .page_title {
+  width: calc(100% - 70px - 200px);
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+#contract .contract_hd .safe_button {
+  width: 200px;
+  height: 100%;
+}
+#contract .contract_hd .safe_button button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+}
+#contract .contract_con .contract_title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin: 40px 0;
+}
+#contract .contract_con .contract_img_box {
+  width: 1080px;
+  height: 452px;
+  overflow-y: auto;
+  border: 1px solid #D9D9D9;
+  margin-bottom: 109px;
+}
+#contract .contract_con .contract_img_box::-webkit-scrollbar {
+  background-color: transparent;
+  width: 20px;
+}
+#contract .contract_con .contract_img_box::-webkit-scrollbar-thumb {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
+#contract .contract_con .contract_img_box img {
+  width: 100%;
+}
+#contract .input_box {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#contract .input_box .member_info {
+  border-top: 2px solid #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contract .input_box .member_info.first_mem {
+  position: relative;
+}
+#contract .input_box .member_info.first_mem .stamp {
+  display: none;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+#contract .input_box .member_info.second_mem .mem_title {
+  font-size: 18px;
+  line-height: 46px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F3F7;
+  height: 230px;
+  width: 60px;
+}
+#contract .input_box .member_info.second_mem .mem_info .input_list {
+  display: flex;
+}
+#contract .input_box .member_info.second_mem .mem_info .input_list .label {
+  padding: 13px 19px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+#contract .input_box .member_info.second_mem .mem_info .input_list .label span {
+  font-size: 16px;
+  line-height: 19px;
+}
+#contract .input_box .member_info.second_mem .mem_info .input_list .input {
+  width: 330px;
+  padding: 13px 10px;
+  border: none;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  line-height: 19px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222;
+}
+#contract .input_box .member_info .mem_title {
+  font-size: 18px;
+  line-height: 46px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F3F7;
+  height: 230px;
+  width: 60px;
+}
+#contract .input_box .member_info form .input_list {
+  display: flex;
+}
+#contract .input_box .member_info form .input_list label {
+  padding: 13px 19px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+#contract .input_box .member_info form .input_list label span {
+  font-size: 16px;
+  line-height: 19px;
+}
+#contract .input_box .member_info form .input_list input[type=text] {
+  width: 330px;
+  padding: 13px 10px;
+  border: none;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  line-height: 19px;
+}
+#contract .input_box .member_info form .input_list input[type=text]::-moz-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #222;
+}
+#contract .input_box .member_info form .input_list input[type=text]::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #222;
+}
+#contract .id_box .upload_title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+#contract .id_box .upload_box {
+  border: 1px solid #D9D9D9;
+  width: 1080px;
+  height: 320px;
+  padding: 0px 180px 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contract .id_box .upload_box .img_box {
+  width: 381px;
+}
+#contract .id_box .upload_box .upload_input {
+  display: flex;
+  flex-direction: column;
+}
+#contract .id_box .upload_box .upload_input label {
+  margin-bottom: 21px;
+  width: 360px;
+  height: 54px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #014099;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+#contract .id_box .upload_box .upload_input input[type=file] {
+  display: none;
+}
+#contract .id_box .upload_box .upload_input .info_txt {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#contract_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+#contract_detail.stamp_01 .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.stamp_img_td img {
+  display: inline-block;
+}
+#contract_detail.stamp_02 .input_box .member_info.first_mem .member_stamp {
+  display: inline-block;
+}
+#contract_detail.stamp_03 .input_box .member_info.second_mem .member_stamp {
+  display: inline-block;
+}
+#contract_detail.signed .contract_hd .safe_button .signed_message {
+  display: none;
+}
+#contract_detail.signed .contract_hd .safe_button button {
+  display: inline-block;
+}
+#contract_detail .contract_hd {
+  background-color: #222222;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#contract_detail .contract_hd .page_title {
+  width: calc(100% - 200px);
+  height: 100%;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+#contract_detail .contract_hd .page_title span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  line-height: 21px;
+}
+#contract_detail .contract_hd .safe_button {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contract_detail .contract_hd .safe_button .signed_message {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+}
+#contract_detail .contract_hd .safe_button button {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+#contract_detail .contract_hd .safe_button button span {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contract_detail .contract_hd .safe_button button span::before {
+  content: "";
+  display: block;
+  background: url(../images/mypage/mypage_pdf_icon.png) center no-repeat;
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
+}
+#contract_detail .contract_con .contract_title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin: 40px 0;
+}
+#contract_detail .contract_con .trans_info .table_box {
+  border-top: 2px solid #707070;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  width: 1080px;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line {
+  display: flex;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td {
+  width: calc((100% - 160px) / 2);
+}
+#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.first_td {
+  border-right: 1px solid #D9D9D9;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.stamp_img_td {
+  position: relative;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.stamp_img_td img {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contract_detail .contract_con .trans_info .table_box .table_line.middle_line {
+  height: 80px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 30px;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line:not(:last-child) {
+  border-bottom: 1px solid #D9D9D9;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line .table_tr {
+  display: flex;
+  width: 50%;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line .table_tr:first-child {
+  border-right: 1px solid #D9D9D9;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line .table_tr .table_th {
+  font-size: 16px;
+  line-height: 19px;
+  width: 160px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #D9D9D9;
+}
+#contract_detail .contract_con .trans_info .table_box .table_line .table_tr .table_td {
+  font-size: 16px;
+  line-height: 19px;
+  width: calc(100% - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contract_detail .contract_con .contract_img_box {
+  width: 1080px;
+  height: 452px;
+  overflow-y: auto;
+  border: 1px solid #D9D9D9;
+  margin-bottom: 99px;
+}
+#contract_detail .contract_con .contract_img_box::-webkit-scrollbar {
+  background-color: transparent;
+  width: 20px;
+}
+#contract_detail .contract_con .contract_img_box::-webkit-scrollbar-thumb {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
+#contract_detail .contract_con .contract_img_box img {
+  width: 100%;
+}
+#contract_detail .input_box {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+#contract_detail .input_box .member_info {
+  border-top: 2px solid #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#contract_detail .input_box .member_info .member_stamp {
+  display: none;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+#contract_detail .input_box .member_info .mem_title {
+  font-size: 18px;
+  line-height: 46px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F3F7;
+  height: 230px;
+  width: 60px;
+}
+#contract_detail .input_box .member_info .mem_info .input_list {
+  display: flex;
+}
+#contract_detail .input_box .member_info .mem_info .input_list .label {
+  padding: 13px 19px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+#contract_detail .input_box .member_info .mem_info .input_list .label span {
+  font-size: 16px;
+  line-height: 19px;
+}
+#contract_detail .input_box .member_info .mem_info .input_list .input {
+  width: 330px;
+  padding: 13px 10px;
+  border: none;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  line-height: 19px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222;
+}
+#contract_detail .id_box .upload_title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+#contract_detail .id_box .upload_box {
+  border: 1px solid #D9D9D9;
+  width: 1080px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contract_detail .id_box .upload_box .img_box img {
+  width: 360px;
 }/*# sourceMappingURL=sjh.css.map */
