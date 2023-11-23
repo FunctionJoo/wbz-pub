@@ -401,8 +401,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004ea2', end
 .bbs-basic-gallery-con10.type-row > ul{ margin:0 0 30px; border-top: 1px solid #222222;} /* 웹비즈 수정 231102 */
 .bbs-basic-gallery-con10.type-row .gallery-over-list-item{float: none; width: 100%; margin: 0;display: flex;padding: 20px 0;border-bottom: 1px solid #DBDBDB;}
 
-.bbs-basic-gallery-con10.type-row .gallery-img-box{display: inline-block; width: 120px;}
-.bbs-basic-gallery-con10.type-row .gallery-img-box .img-wrap{padding-bottom: 75%;}
+.bbs-basic-gallery-con10.type-row .gallery-img-box{display: inline-block; width: 120px;flex: 0 0 auto;} /* 웹비즈 수정 231121 */
+.bbs-basic-gallery-con10.type-row .gallery-img-box .img-wrap{position: relative; padding-bottom: 82%;} /* 웹비즈 수정 231121 */
 
 .bbs-basic-gallery-con10.type-row .gallery-info{display: inline-block;vertical-align: top; padding: 0 0 0 25px;width: calc(100% - 250px);}
 .bbs-basic-gallery-con10.type-row .gallery-info .gallery-tag{display: inline-block; width: 100px;height: 30px;line-height: 28px;border-radius: 6px;font-size: 14px; color: #fff;text-align: center;background-color: #163354;}
