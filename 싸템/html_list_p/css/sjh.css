@@ -690,6 +690,47 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   }
 }
 
+#pop_class_view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.6);
+  z-index: 1000;
+}
+#pop_class_view .pop_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 750px;
+  padding: 30px 25px;
+  border: 1px solid #707070;
+}
+#pop_class_view .pop_box .pop_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+#pop_class_view .pop_box .pop_top .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#pop_class_view .pop_box .pop_top .close {
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/mypage/close_button.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .box_title {
   margin-bottom: 10px;
   font-size: 16px;
@@ -4050,6 +4091,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 15px;
   line-height: 22px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mypage.sale_complete .my_cont .category_button .button_list.on {
   background-color: #014099;
@@ -4745,6 +4789,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 15px;
   line-height: 22px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mypage.purchase_complete .my_cont .category_button .button_list.on {
   background-color: #014099;
@@ -10586,24 +10633,24 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 2px;
   color: #014099;
 }
-#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search] {
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text] {
   width: 200px;
   height: 32px;
   padding: 0 10px;
   border: 1px solid #D3D3D3;
   border-radius: 1px;
 }
-#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search]::-moz-placeholder {
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 }
-#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search]::placeholder {
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 }
-#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=submit] {
+#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con .search_button {
   width: 80px;
   height: 32px;
   color: #fff;
@@ -10816,7 +10863,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.ticket_preList .my_cont .main .con_box .con_top .title_con {
     margin-bottom: 14px;
   }
-  #mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=search] {
+  #mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text] {
     width: 238px;
   }
   #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr:nth-child(n+7) {
@@ -10894,24 +10941,24 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 2px;
   color: #014099;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search] {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text] {
   width: 200px;
   height: 32px;
   padding: 0 10px;
   border: 1px solid #D3D3D3;
   border-radius: 1px;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search]::-moz-placeholder {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search]::placeholder {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=submit] {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con .search_button {
   width: 80px;
   height: 32px;
   color: #fff;
@@ -11124,7 +11171,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con {
     margin-bottom: 14px;
   }
-  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=search] {
+  #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text] {
     width: 238px;
   }
   #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr:nth-child(n+7) {
@@ -11193,24 +11240,24 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 2px;
   color: #014099;
 }
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=search] {
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text] {
   width: 200px;
   height: 32px;
   padding: 0 10px;
   border: 1px solid #D3D3D3;
   border-radius: 1px;
 }
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=search]::-moz-placeholder {
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 }
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=search]::placeholder {
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 }
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=submit] {
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con .search_button {
   width: 80px;
   height: 32px;
   color: #fff;
@@ -11420,7 +11467,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con {
     margin-bottom: 14px;
   }
-  #mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=search] {
+  #mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text] {
     width: 238px;
   }
   #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr:nth-child(n+7) {

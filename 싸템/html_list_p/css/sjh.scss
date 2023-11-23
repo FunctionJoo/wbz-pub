@@ -803,6 +803,48 @@ body{
     }
 }
 
+// index페이지 등급별혜택 팝업
+#pop_class_view{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(33, 33, 33, 0.6);
+    z-index: 1000;
+    .pop_box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        width: 750px;
+        padding: 30px 25px;
+        border: 1px solid #707070;
+        .pop_top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 14px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #dbdbdb;
+            .title{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+            }
+            .close{
+                width: 14px;
+                height: 14px;
+                background-image: url(../images/mypage/close_button.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
 // index page
 
 // 공통
@@ -4869,6 +4911,9 @@ body{
                     font-size: 15px;
                     line-height: 22px;
                     border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &.on{
                         background-color: #014099;
                         color: #fff;
@@ -5667,6 +5712,9 @@ body{
                     font-size: 15px;
                     line-height: 22px;
                     border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &.on{
                         background-color: #014099;
                         color: #fff;
@@ -12093,7 +12141,7 @@ body{
                             }
                         }
                         .search_con{
-                            input[type=search]{
+                            input[type=text]{
                                 width: 200px;
                                 height: 32px;
                                 padding: 0 10px;
@@ -12105,7 +12153,7 @@ body{
                                     color: #666666;
                                 }
                             }
-                            input[type=submit]{
+                            .search_button{
                                 width: 80px;
                                 height: 32px;
                                 color: #fff;
@@ -12349,7 +12397,7 @@ body{
                                 margin-bottom: 14px;
                             }
                             .search_con{
-                                input[type=search]{
+                                input[type=text]{
                                     width: 238px;
                                 }
                             }
@@ -12459,7 +12507,7 @@ body{
                             }
                         }
                         .search_con{
-                            input[type=search]{
+                            input[type=text]{
                                 width: 200px;
                                 height: 32px;
                                 padding: 0 10px;
@@ -12471,7 +12519,7 @@ body{
                                     color: #666666;
                                 }
                             }
-                            input[type=submit]{
+                            .search_button{
                                 width: 80px;
                                 height: 32px;
                                 color: #fff;
@@ -12726,7 +12774,7 @@ body{
                                 margin-bottom: 14px;
                             }
                             .search_con{
-                                input[type=search]{
+                                input[type=text]{
                                     width: 238px;
                                 }
                             }
@@ -12825,7 +12873,7 @@ body{
                             }
                         }
                         .search_con{
-                            input[type=search]{
+                            input[type=text]{
                                 width: 200px;
                                 height: 32px;
                                 padding: 0 10px;
@@ -12837,7 +12885,7 @@ body{
                                     color: #666666;
                                 }
                             }
-                            input[type=submit]{
+                            .search_button{
                                 width: 80px;
                                 height: 32px;
                                 color: #fff;
@@ -13090,7 +13138,7 @@ body{
                                 margin-bottom: 14px;
                             }
                             .search_con{
-                                input[type=search]{
+                                input[type=text]{
                                     width: 238px;
                                 }
                             }
