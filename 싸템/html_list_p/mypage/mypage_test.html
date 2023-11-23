@@ -395,7 +395,7 @@
 	</div>
 
 	<div id="contets">
-		<div id="mypage" class="item_for_sale_test">
+		<div id="mypage" class="cancel_wait">
 			<div class="w_set w_set_my">
 				<div class="my_left">
 					<h2 class="mym_title">마이페이지</h2>
@@ -445,94 +445,225 @@
 				</div>
 				<div class="my_cont">
 					<!-- pc -->
-					<p class="pc_title">판매등록 물품</p>
+					<p class="pc_title">취소 승인 대기</p>
 
 					<!-- 모바일용 타이틀 -->
-					<!-- <p class="my_title">판매등록 물품</p> -->
+					<!-- <p class="my_title">취소 승인 대기</p> -->
 					<!-- 모바일용 타이틀 라인 타입 -->
-					<p class="my_title type_line">판매등록 물품</p>
+					<p class="my_title type_line">취소 승인 대기</p>
 
 					<!-- 마이 메인 -->
 					<!-- 레이아웃 테스트 -->
 					<div class="main">
 						<div class="con_top">
 							<div class="post_num">
-								<div class="mo_sub_title">판매등록 물품</div>
 								<span>총 <em>2.654</em>건</span>
-							</div>
-							<div class="top_right">
-								<div class="view_choice">
-									<select name="items_view" id="items_view">
-										<option value="100">100</option>
-										<option value="200">200</option>
-										<option value="500">500</option>
-									</select>
-								</div>
-								<div class="delete_button">
-									<button>삭제</button>
-								</div>
 							</div>
 						</div>
 						<div class="table_box">
 							<!-- 모바일 버전에서는 삭제 -->
 							<div class="pc_table_head">
-								<div class="th check_th">
-									<input type="checkbox" id="all_check">
-									<label for="all_check"></label>
-								</div>
-								<div class="th title_th">물품정보</div>
-								<div class="th price_th">기본가격</div>
-								<div class="th view_th">수정/노출</div>
+								<div class="th cate_th">카테고리</div>
+								<div class="th title_th">물품제목</div>
+								<div class="th price_th">거래금액</div>
+								<div class="th date_th">등록일</div>
+								<div class="th chat_th"></div>
+								<div class="th cancel_th">취소사유</div>
+								<div class="th view_th"></div>
 							</div>
 							<!--  -->
-							<div class="table_tr">
-								<div class="td checkbox_td">
-									<div class="check_box">
-										<input type="checkbox" id="list_01">
-										<label for="list_01"></label>
-									</div>
-									<div class="mo_th">물품정보</div>
+							<div class="table_tr_box">
+								<div class="table_tr no_item">
+									<span>취소 승인 대기 물품이 없습니다.</span>
 								</div>
-								<div class="mo_box">
-									<div class="td info_td">
-										<div class="top_info">
-											<div class="premium_box">
-												<img src="../images/mypage/mypage_premium.png" alt="premium">
-											</div>
-											<div class="category">
-												<span>리니지 > 데몬> 01 > <em>게임머니/아이템/기타</em></span>
-											</div>
-										</div>
-										<div class="middle_info">
-											<a href="#none"><span>◀▶◀▶우수인증 ●●대기중●●안전장사 아덴팝니다◀▶◀▶</span></a>
-										</div>
-										<!-- 모바일 버전 삭제 -->
-										<div class="bottom_info">
-											<span>23.08.15 10:42:44</span>
-										</div>
+								<!-- .table_tr에서 .step_02_on , .chat_exists, .chat_over 사용시 각 상태 변경됨 -->
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
 									</div>
-									<div class="td price_td">
-										<div class="con_box">
-											<span class="title">기본 가격</span>
-											<p class="con"><em>100,000,000</em><span>원</span></p>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
 										</div>
-										<div class="con_box">
-											<span class="title">수량</span>
-											<p class="con"><em>1/1</em><span>개</span></p>
+										<div class="cancel_td">
+											<button>보기</button>
 										</div>
+										<div class="view_td">
+											<button>취소승인</button>
+										</div>	
 									</div>
-									<div class="td view_td">
-										<div class="mo_left_date">23.08.15 10:42:44</div>
-										<div class="mo_right_box">
-											<div class="fix_link">
-												<a href="#none">수정</a>
-											</div>
-											<label for="view_01">
-												<input id="view_01" type="checkbox">
-												<span class="checked_text">노출</span>
-												<span class="unchecked_text">비노출</span>
-											</label>
+								</div>
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
 										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+										<div class="view_td">
+											<button>취소승인</button>
+										</div>	
+									</div>
+								</div>
+								<div class="table_tr ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+										<div class="view_td">
+											<button>취소승인</button>
+										</div>	
+									</div>
+								</div>
+								<div class="table_tr ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+										<div class="view_td">
+											<button>취소승인</button>
+										</div>	
+									</div>
+								</div>
+								<div class="table_tr chat_exists ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+										<div class="view_td">
+											<button>취소승인</button>
+										</div>	
+									</div>
+								</div>
+								<div class="table_tr ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+										<div class="view_td">
+											<button>취소승인</button>
+										</div>	
+									</div>
+								</div>
+								<div class="table_tr chat_exists ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">30</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+										<div class="view_td">
+											<button>취소승인</button>
+										</div>	
 									</div>
 								</div>
 							</div>
