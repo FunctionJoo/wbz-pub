@@ -155,6 +155,117 @@
     }
 }
 
+// 버튼
+.top_button_cancel{
+    width: 64px;
+    height: 32px;
+    border: 1px solid #DE4040;
+    border-radius: 1px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #DE4040;
+}
+.excel_button{
+    width: 120px;
+    height: 32px;
+    border-radius: 1px;
+    border: 1px solid #2E7D32;
+    background-color: rgba(46, 125, 50, 0.1019607843);
+    span{
+        font-size: 14px;
+        line-height: 20px;
+        color: #2E7D32;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before{
+            content: "";
+            background-image: url(../images/mypage/mypage_excel.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+        }
+    }
+}
+.top_button_cancel_sale{
+    width: 80px;
+    height: 32px;
+    border: 1px solid #FF3333;
+    background-color: #fff;
+    margin-right: 10px;
+    span{
+        font-size: 14px;
+        line-height: 21px;
+        color: #FF3333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.top_button_check{
+    width: 80px;
+    height: 32px;
+    border: 1px solid #E96135;
+    background-color: #fff;
+    margin-right: 10px;
+    span{
+        font-size: 14px;
+        line-height: 21px;
+        color: #E96135;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.top_button_pay{
+    width: 80px;
+    height: 32px;
+    border: 1px solid  #24B685;
+    background-color: #fff;
+    margin-right: 10px;
+    span{
+        font-size: 14px;
+        line-height: 21px;
+        color:  #24B685;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.top_link_chat{
+    width: 80px;
+    height: 32px;
+    border: 1px solid #014099;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-size: 14px;
+        line-height: 20px;
+        color: #014099;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before{
+            content: "";
+            background-image: url(../images/mypage/mypage_chat_blue.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: inline-block;
+            width: 21px;
+            height: 18px;
+            margin-right: 5px;
+        }
+    }
+}
+
 // 팝업
 // 가상계좌 팝업
 #virtual_account_popup{
@@ -922,6 +1033,7 @@ body{
     background-color: rgb(33, 33, 33, 0.6);
     z-index: 1000;
     .pop_box{
+        border-radius: 6px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -949,6 +1061,221 @@ body{
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
+            }
+        }
+        .pop_bottom{
+            .info_txt{
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                &::before{
+                    content: "";
+                    background-image: url(../images/mypage/mile_info_icon.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 6px;
+                }
+                strong{
+                    color: #014099;
+                    font-weight: 400;
+                }
+            }
+            .info_table{
+                display: flex;
+                border: 1px solid #A7A7A7;
+                .table_header{
+                    background-color: #F6F6F6;
+                    .th{
+                        width: 140px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 59.5px;
+                        &:not(:last-child){
+                            border-bottom: 1px solid #D3D3D3;
+                        }
+                        &.th_01{
+                            height: 114px;
+                        }
+                        &.th_02{
+                            flex-direction: column;
+                            span{
+                                &:last-child{
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+                .table_body{
+                    display: flex;
+                    width: calc(100% - 140px);
+                    .body_list{
+                        width: calc(100% / 5);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: center;
+                        .img_box{
+                            height: 114px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-bottom: 1px solid #D3D3D3;
+                            &.normal{
+                                i{
+                                    background-image: url(../images/mypage/mypage_normal_button.png);
+                                }
+                            }
+                            &.silver{
+                                i{
+                                    background-image: url(../images/mypage/mypage_silver_button.png);
+                                }
+                            }
+                            &.gold{
+                               i{
+                                    background-image: url(../images/mypage/mypage_gold_button.png);
+                                }
+                            }
+                            &.plattinum{
+                                i{
+                                    background-image: url(../images/mypage/myPage_platinum_button.png);
+                                }
+                            }
+                            &.vip{
+                                i{
+                                    background-image: url(../images/mypage/mypage_vip_button.png);
+                                }
+                            }
+                            i{
+                                display: block;
+                                width: 75px;
+                                height: 75px;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                            }
+                        }
+                        .info_box{
+                            width: 100%;
+                            .mo_header{
+                                display: none;
+                            }
+                            .mo_body{
+                                .td{
+                                    &:not(:last-child){
+                                        border-bottom: 1px solid #D3D3D3;
+                                    }
+                                    height: 59.5px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1080px){
+    #pop_class_view{
+        .pop_box{
+            height: 600px;
+            width: 328px;
+            padding: 30px 15px;
+            overflow-y: auto;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .pop_top{
+                margin: 0px 10px 20px 10px;
+            }
+            .pop_bottom{
+                .info_txt{
+                    padding: 0 10px;
+                    margin-bottom: 10px;
+                }
+                .info_table{
+                    display: flex;
+                    border: none;
+                    .table_header{
+                        display: none;
+                    }
+                    .table_body{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        .body_list{
+                            &:not(:last-child){
+                                margin-bottom: 22px;
+                            }
+                            border: 1px solid #D3D3D3;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: center;
+                            .info_box{
+                                width: 100%;
+                                display: flex;
+                                .mo_header{
+                                    display: inline-block;
+                                    background-color: #F5F5F5;
+                                    width: 50%;
+                                    .th{
+                                        &:not(:last-child){
+                                            border-bottom: 1px solid #D3D3D3;
+                                        }
+                                        height: 48px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        font-weight: 500;
+                                        span{
+                                            display: block;
+                                            &:last-child{
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                                .mo_body{
+                                    width: 50%;
+                                    .td{
+                                        &:not(:last-child){
+                                            border-bottom: 1px solid #D3D3D3;
+                                        }
+                                        height: 48px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -1921,34 +2248,6 @@ body{
                     line-height: 29px;
                     font-weight: 500;
                 }
-                .sale_detail_chat {
-                    width: 80px;
-                    height: 32px;
-                    border: 1px solid #014099;
-                    background-color: #fff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    span{
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #014099;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        &::before{
-                            content: "";
-                            background-image: url(../images/mypage/mypage_chat_blue.svg);
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: contain;
-                            display: inline-block;
-                            width: 21px;
-                            height: 18px;
-                            margin-right: 5px;
-                        }
-                    }
-                }
             }
 
             .main{
@@ -2259,7 +2558,7 @@ body{
                     .pc_title{
                         display: none;
                     }
-                    .sale_detail_chat{
+                    .top_link_chat{
                         display: none;
                     }
                 }
@@ -4934,32 +5233,6 @@ body{
                                 }
                             }
                         }
-                        .excel_button{
-                            width: 120px;
-                            height: 32px;
-                            border-radius: 1px;
-                            border: 1px solid #2E7D32;
-                            background-color: #2E7D321A;
-                            span{
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #2E7D32;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                &::before{
-                                    content: "";
-                                    background-image: url(../images/mypage/mypage_excel.svg);
-                                    background-position: center;
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    display: inline-block;
-                                    width: 16px;
-                                    height: 16px;
-                                    margin-right: 6px;
-                                }
-                            }
-                        }
                     }
     
                 }
@@ -5554,32 +5827,6 @@ body{
                                 option {
                                     font-size: 14px;
                                     line-height: 21px;
-                                }
-                            }
-                        }
-                        .excel_button{
-                            width: 120px;
-                            height: 32px;
-                            border-radius: 1px;
-                            border: 1px solid #2E7D32;
-                            background-color: #2E7D321A;
-                            span{
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #2E7D32;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                &::before{
-                                    content: "";
-                                    background-image: url(../images/mypage/mypage_excel.svg);
-                                    background-position: center;
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    display: inline-block;
-                                    width: 16px;
-                                    height: 16px;
-                                    margin-right: 6px;
                                 }
                             }
                         }
@@ -7085,16 +7332,6 @@ body{
                         }
                         .delete_button{
                             margin-left: 10px;
-                            button{
-                                width: 64px;
-                                height: 32px;
-                                border: 1px solid #DE4040;
-                                border-radius: 1px;
-                                background-color: #fff;
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #DE4040;
-                            }
                         }
                     }
                 }
@@ -7819,16 +8056,6 @@ body{
                         }
                         .delete_button{
                             margin-left: 10px;
-                            button{
-                                width: 64px;
-                                height: 32px;
-                                border: 1px solid #DE4040;
-                                border-radius: 1px;
-                                background-color: #fff;
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #DE4040;
-                            }
                         }
                     }
                 }
@@ -10765,32 +10992,6 @@ body{
                         display: flex;
                         justify-content: end;
                         margin-bottom: 10px;
-                        .excel_button{
-                            width: 120px;
-                            height: 32px;
-                            border-radius: 1px;
-                            border: 1px solid #2E7D32;
-                            background-color: #2E7D321A;
-                            span{
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #2E7D32;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                &::before{
-                                    content: "";
-                                    background-image: url(../images/mypage/mypage_excel.svg);
-                                    background-position: center;
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    display: inline-block;
-                                    width: 16px;
-                                    height: 16px;
-                                    margin-right: 6px;
-                                }
-                            }
-                        }
                     }
                     table{
                         border-collapse: collapse;

@@ -98,6 +98,121 @@
     display: none;
   }
 }
+.top_button_cancel {
+  width: 64px;
+  height: 32px;
+  border: 1px solid #DE4040;
+  border-radius: 1px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DE4040;
+}
+
+.excel_button {
+  width: 120px;
+  height: 32px;
+  border-radius: 1px;
+  border: 1px solid #2E7D32;
+  background-color: rgba(46, 125, 50, 0.1019607843);
+}
+.excel_button span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E7D32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.excel_button span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_excel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.top_button_cancel_sale {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #FF3333;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.top_button_cancel_sale span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FF3333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_button_check {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #E96135;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.top_button_check span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #E96135;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_button_pay {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #24B685;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.top_button_pay span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #24B685;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_link_chat {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #014099;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_link_chat span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #014099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_link_chat span::before {
+  content: "";
+  background-image: url(../images/mypage/mypage_chat_blue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 21px;
+  height: 18px;
+  margin-right: 5px;
+}
+
 #virtual_account_popup {
   display: none;
   position: fixed;
@@ -800,6 +915,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   z-index: 1000;
 }
 #pop_class_view .pop_box {
+  border-radius: 6px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -830,7 +946,202 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-size: contain;
   background-repeat: no-repeat;
 }
+#pop_class_view .pop_box .pop_bottom .info_txt {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+#pop_class_view .pop_box .pop_bottom .info_txt::before {
+  content: "";
+  background-image: url(../images/mypage/mile_info_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+#pop_class_view .pop_box .pop_bottom .info_txt strong {
+  color: #014099;
+  font-weight: 400;
+}
+#pop_class_view .pop_box .pop_bottom .info_table {
+  display: flex;
+  border: 1px solid #A7A7A7;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_header {
+  background-color: #F6F6F6;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_header .th {
+  width: 140px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 59.5px;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_header .th:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_header .th.th_01 {
+  height: 114px;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_header .th.th_02 {
+  flex-direction: column;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_header .th.th_02 span:last-child {
+  font-weight: 400;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body {
+  display: flex;
+  width: calc(100% - 140px);
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .img_box {
+  height: 114px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #D3D3D3;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .img_box.normal i {
+  background-image: url(../images/mypage/mypage_normal_button.png);
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .img_box.silver i {
+  background-image: url(../images/mypage/mypage_silver_button.png);
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .img_box.gold i {
+  background-image: url(../images/mypage/mypage_gold_button.png);
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .img_box.plattinum i {
+  background-image: url(../images/mypage/myPage_platinum_button.png);
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .img_box.vip i {
+  background-image: url(../images/mypage/mypage_vip_button.png);
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .img_box i {
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box {
+  width: 100%;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_header {
+  display: none;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_body .td {
+  height: 59.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+#pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_body .td:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
 
+@media (max-width: 1080px) {
+  #pop_class_view .pop_box {
+    height: 600px;
+    width: 328px;
+    padding: 30px 15px;
+    overflow-y: auto;
+  }
+  #pop_class_view .pop_box::-webkit-scrollbar {
+    display: none;
+  }
+  #pop_class_view .pop_box .pop_top {
+    margin: 0px 10px 20px 10px;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_txt {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table {
+    display: flex;
+    border: none;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_header {
+    display: none;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list {
+    border: 1px solid #D3D3D3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list:not(:last-child) {
+    margin-bottom: 22px;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box {
+    width: 100%;
+    display: flex;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_header {
+    display: inline-block;
+    background-color: #F5F5F5;
+    width: 50%;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_header .th {
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_header .th:not(:last-child) {
+    border-bottom: 1px solid #D3D3D3;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_header .th span {
+    display: block;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_header .th span:last-child {
+    font-weight: 400;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_body {
+    width: 50%;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_body .td {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  #pop_class_view .pop_box .pop_bottom .info_table .table_body .body_list .info_box .mo_body .td:not(:last-child) {
+    border-bottom: 1px solid #D3D3D3;
+  }
+}
 .box_title {
   margin-bottom: 10px;
   font-size: 16px;
@@ -1642,34 +1953,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 29px;
   font-weight: 500;
 }
-#mypage.sale_detail_item .my_cont .title .sale_detail_chat {
-  width: 80px;
-  height: 32px;
-  border: 1px solid #014099;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#mypage.sale_detail_item .my_cont .title .sale_detail_chat span {
-  font-size: 14px;
-  line-height: 20px;
-  color: #014099;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#mypage.sale_detail_item .my_cont .title .sale_detail_chat span::before {
-  content: "";
-  background-image: url(../images/mypage/mypage_chat_blue.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: inline-block;
-  width: 21px;
-  height: 18px;
-  margin-right: 5px;
-}
 #mypage.sale_detail_item .my_cont .main {
   padding-top: 30px;
   display: flex;
@@ -1939,7 +2222,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.sale_detail_item .my_cont .title .pc_title {
     display: none;
   }
-  #mypage.sale_detail_item .my_cont .title .sale_detail_chat {
+  #mypage.sale_detail_item .my_cont .title .top_link_chat {
     display: none;
   }
   #mypage.sale_detail_item .my_cont .main {
@@ -4113,32 +4396,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.sale_complete .my_cont .main .con_top .top_right .excel_button {
-  width: 120px;
-  height: 32px;
-  border-radius: 1px;
-  border: 1px solid #2E7D32;
-  background-color: rgba(46, 125, 50, 0.1019607843);
-}
-#mypage.sale_complete .my_cont .main .con_top .top_right .excel_button span {
-  font-size: 14px;
-  line-height: 20px;
-  color: #2E7D32;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#mypage.sale_complete .my_cont .main .con_top .top_right .excel_button span::before {
-  content: "";
-  background-image: url(../images/mypage/mypage_excel.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
-}
 #mypage.sale_complete .my_cont .main .table_box .pc_table_head {
   display: flex;
   height: 50px;
@@ -4659,32 +4916,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.purchase_complete .my_cont .main .con_top .top_right .select_box select option {
   font-size: 14px;
   line-height: 21px;
-}
-#mypage.purchase_complete .my_cont .main .con_top .top_right .excel_button {
-  width: 120px;
-  height: 32px;
-  border-radius: 1px;
-  border: 1px solid #2E7D32;
-  background-color: rgba(46, 125, 50, 0.1019607843);
-}
-#mypage.purchase_complete .my_cont .main .con_top .top_right .excel_button span {
-  font-size: 14px;
-  line-height: 20px;
-  color: #2E7D32;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#mypage.purchase_complete .my_cont .main .con_top .top_right .excel_button span::before {
-  content: "";
-  background-image: url(../images/mypage/mypage_excel.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
 }
 #mypage.purchase_complete .my_cont .main .table_box .pc_table_head {
   display: flex;
@@ -5993,16 +6224,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.item_for_sale .my_cont .main .con_top .top_right .delete_button {
   margin-left: 10px;
 }
-#mypage.item_for_sale .my_cont .main .con_top .top_right .delete_button button {
-  width: 64px;
-  height: 32px;
-  border: 1px solid #DE4040;
-  border-radius: 1px;
-  background-color: #fff;
-  font-size: 14px;
-  line-height: 20px;
-  color: #DE4040;
-}
 #mypage.item_for_sale .my_cont .main .table_box .pc_table_head {
   display: flex;
   height: 50px;
@@ -6660,16 +6881,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 #mypage.item_for_purchase .my_cont .main .con_top .top_right .delete_button {
   margin-left: 10px;
-}
-#mypage.item_for_purchase .my_cont .main .con_top .top_right .delete_button button {
-  width: 64px;
-  height: 32px;
-  border: 1px solid #DE4040;
-  border-radius: 1px;
-  background-color: #fff;
-  font-size: 14px;
-  line-height: 20px;
-  color: #DE4040;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .pc_table_head {
   display: flex;
@@ -9463,32 +9674,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
   justify-content: end;
   margin-bottom: 10px;
-}
-#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button {
-  width: 120px;
-  height: 32px;
-  border-radius: 1px;
-  border: 1px solid #2E7D32;
-  background-color: rgba(46, 125, 50, 0.1019607843);
-}
-#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button span {
-  font-size: 14px;
-  line-height: 20px;
-  color: #2E7D32;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#mypage.mile_list .my_cont .main .table_sec .button_box .excel_button span::before {
-  content: "";
-  background-image: url(../images/mypage/mypage_excel.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
 }
 #mypage.mile_list .my_cont .main .table_sec table {
   border-collapse: collapse;
