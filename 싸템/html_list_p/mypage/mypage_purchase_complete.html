@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>싸템</title>
 	<!-- swiper -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+	/>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<!-- style 모음 -->
 	<link rel="stylesheet" href="../css/general.css">
@@ -16,7 +18,6 @@
 	<!-- main js -->
 	<script src="../js/main.js"></script>
 </head>
-
 <body>
 	<header id="header">
 		<div class="w_set">
@@ -349,20 +350,17 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<a href="#">
-								<img src="https://cdn-lostark.game.onstove.com/uploadfiles/banner/8960a34f22324cedb1e94c9a4df6ab86.jpg"
-									alt="">
+								<img src="https://cdn-lostark.game.onstove.com/uploadfiles/banner/8960a34f22324cedb1e94c9a4df6ab86.jpg" alt="">
 							</a>
 						</div>
 						<div class="swiper-slide">
 							<a href="#">
-								<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/information/class/img_index_warrior.png?2cd671baf331946ff426d64d760b09e1"
-									alt="" style="background: #000;">
+								<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/information/class/img_index_warrior.png?2cd671baf331946ff426d64d760b09e1" alt="" style="background: #000;">
 							</a>
 						</div>
 						<div class="swiper-slide">
 							<a href="#">
-								<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/main/btn_gift_eclipse.png"
-									alt="">
+								<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/main/btn_gift_eclipse.png" alt="">
 							</a>
 						</div>
 					</div>
@@ -446,394 +444,140 @@
 					</div>
 				</div>
 				<div class="my_cont">
-					<!-- pc용 타이틀 -->
+					<!-- pc -->
 					<p class="pc_title">구매 완료(취소)</p>
 
 					<!-- 모바일용 타이틀 -->
 					<p class="my_title">구매 완료(취소)</p>
 					<!-- 모바일용 타이틀 라인 타입 -->
-					<!-- <p class="my_title type_line">판매 완료(취소)</p> -->
+					<!-- <p class="my_title type_line">구매 완료(취소)</p> -->
 
-					<div class="category_button">
-						<a href="" class="on button_list complete">구매완료</a>
-						<a href="" class=" button_list cancel">구매취소</a>
-					</div>
-
-					<div class="con_top">
-						<div class="table_count">
-							<p>총 <em>2,654</em>건</p>
+					<!-- 마이 메인 -->
+					<!-- 레이아웃 테스트 -->
+					<div class="main">
+						<div class="category_button">
+							<a href="" class="on button_list complete">구매완료</a>
+							<a href="" class="button_list cancel">구매취소</a>
 						</div>
-						<div class="top_right">
-							<div class="select_box">
-								<select name="year" id="year_box">
-									<option value="none">연도검색</option>
-									<option value="2023" selected>2023</option>
-								</select>
+	
+						<div class="con_top">
+							<div class="table_count">
+								<p>총 <em>2,654</em>건</p>
 							</div>
-							<button class="excel_button">
-								<span>엑셀다운로드</span>
-							</button>
-						</div>
-					</div>
+							<div class="top_right">
+								<div class="select_box">
+									<select name="year" id="year_box">
+										<option value="none">연도검색</option>
+										<option value="2023" selected>2023</option>
+									</select>
+								</div>
+								<button class="excel_button">
+									<span>엑셀다운로드</span>
+								</button>
+							</div>
 
-					<!-- pc화면 게시판 -->
-					<div id="saleComplete_table">
-						<table>
-							<thead>
-								<tr class="table_title">
-									<th class="category">카테고리</th>
-									<th class="title">물품제목</th>
-									<th class="amount">거래금액</th>
-									<th class="date">등록일</th>
-									<th class="chat"></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="no_item">
-									<td colspan="6">등록된 물품이 없습니다.</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
+						</div>
+						<div class="table_box">
+							<!-- 모바일 버전에서는 삭제 -->
+							<div class="pc_table_head">
+								<div class="th cate_th">카테고리</div>
+								<div class="th title_th">물품제목</div>
+								<div class="th price_th">거래금액</div>
+								<div class="th date_th">등록일</div>
+								<div class="th chat_th"></div>
+							</div>
+							<!--  -->
+							<div class="table_tr_box">
+								<div class="table_tr no_item">
+									<span>판매등록물품이 없습니다.</span>
+								</div>
+								<!-- .table_tr에서 .chat_exists, .chat_over 사용시 각 상태 변경됨 -->
+								<div class="table_tr ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
 												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">메이플스토리 > 노바1</td>
-									<td class="title_td"><a href="#none">■■((수량보유중))■■다이아 최저가 판매■■</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
 												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td ">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
 												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="table_tr step_02_on chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
 												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">메이플스토리 > 노바1</td>
-									<td class="title_td"><a href="#none">■■((수량보유중))■■다이아 최저가 판매■■</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">메이플스토리 > 노바1</td>
-									<td class="title_td"><a href="#none">■■((수량보유중))■■다이아 최저가 판매■■</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td ">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">메이플스토리 > 노바1</td>
-									<td class="title_td"><a href="#none">■■((수량보유중))■■다이아 최저가 판매■■</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">메이플스토리 > 노바1</td>
-									<td class="title_td"><a href="#none">■■((수량보유중))■■다이아 최저가 판매■■</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td ">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">메이플스토리 > 노바1</td>
-									<td class="title_td"><a href="#none">■■((수량보유중))■■다이아 최저가 판매■■</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">01</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td ">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count ">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="category_td">리니지 > 데몬> 01</td>
-									<td class="title_td"><a href="#none">레벨 완료 게스트 예약</a></td>
-									<td class="amount_td"><em>100,000,000</em>원</td>
-									<td class="date_td">23.09.09</td>
-									<td class="chat_td chat_exists">
-										<a href="#none">
-											<div class="img_box">
-												<img src="../images/mypage/mypage_chat.svg" alt="chat">
-												<div class="count over">
-													<span class="count_chat">98</span>
-													<span class="over_chat">99+</span>
-												</div>
-											</div>
-										</a>
-									</td>
-								</tr>	
-							</tbody>
-						</table>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="pagenation">
 							<div class="back_page">
 								<div class="all_page"></div>
@@ -851,105 +595,13 @@
 								<li>9</li>
 								<li>10</li>
 							</ul>
-							<div class="next_page">
-								<div class="one_page on"></div>
-								<div class="all_page on"></div>
+							<div class="next_page on">
+								<div class="one_page "></div>
+								<div class="all_page "></div>
 							</div>
 						</div>
 					</div>
-
-					<!-- 모바일화면 게시판 -->
-					<div id="mo_saleComplete_table">
-						<div class="mo_table">
-							<div class="mo_tr">
-								<div class="td category_td">리니지 > 데몬> 01</div>
-								<div class="td title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
-								<div class="amount_date_box">
-									<div class="td amount_td"><em>100,000,000</em>원</div>
-									<div class="td date_td">23.09.09</div>
-								</div>
-								<div class="chat_cancel_check_box">
-									<div class="bottom_right_box">
-										<div class="td chat_td chat_exists">
-											<a href="#none">
-												<div class="img_box">
-													<img src="../images/mypage/mypage_chat.svg" alt="chat">
-													<div class="count over">
-														<span class="count_chat">98</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="mo_tr">
-								<div class="td category_td">메이플스토리 > 노바1</div>
-								<div class="td title_td"><a href="#none">■■((수량보유중))■■다이아 최저가 판매■■</a></div>
-								<div class="amount_date_box">
-									<div class="td amount_td"><em>100,000,000</em>원</div>
-									<div class="td date_td">23.09.09</div>
-								</div>
-								<div class="chat_cancel_check_box">
-									<div class="bottom_right_box">
-										<div class="td chat_td chat_exists">
-											<a href="#none">
-												<div class="img_box">
-													<img src="../images/mypage/mypage_chat.svg" alt="chat">
-													<div class="count ">
-														<span class="count_chat">01</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="mo_tr">
-								<div class="td category_td">리니지 > 데몬> 01</div>
-								<div class="td title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
-								<div class="amount_date_box">
-									<div class="td amount_td"><em>100,000,000</em>원</div>
-									<div class="td date_td">23.09.09</div>
-								</div>
-								<div class="chat_cancel_check_box">
-									<div class="bottom_right_box">
-										<div class="td chat_td ">
-											<a href="#none">
-												<div class="img_box">
-													<img src="../images/mypage/mypage_chat.svg" alt="chat">
-													<div class="count ">
-														<span class="count_chat">98</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pagenation">
-							<div class="back_page">
-								<div class="all_page"></div>
-								<div class="one_page"></div>
-							</div>
-							<ul>
-								<li class="on">1</li>
-								<li>2</li>
-								<li>3</li>
-								<li>4</li>
-								<li>5</li>
-							</ul>
-							<div class="next_page">
-								<div class="one_page on"></div>
-								<div class="all_page on"></div>
-							</div>
-						</div>
-					</div>
-
+					<!-- <div class="" style="white-space: nowrap;">sa4d65sa4d65sa4d65as4d65as4d65sa4d65sa4d65sa4d654sa65d4as6d54as65d4sa65d4as65d4sa65d4sa65d4sa65d4sa6d4sa6d4sa65d4sa65d4sa65d4sa65d46as5d465sa4d65sa4</div> -->
 				</div>
 			</div>
 		</div>
@@ -1027,5 +679,4 @@
 		</a>
 	</div>
 </body>
-
 </html>
