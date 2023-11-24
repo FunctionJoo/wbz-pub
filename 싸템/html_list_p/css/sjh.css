@@ -750,35 +750,35 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background: url(../images/mypage/mypage_normal_button.png) no-repeat center;
   background-size: contain;
 }
-#my_grade .my_grade_box.normal .my_grade_list1 .class_guide p em {
+#my_grade .my_grade_box.normal .my_grade_list1 .class_guide p strong {
   color: #014099;
 }
 #my_grade .my_grade_box.silver .my_grade_list1 .class_button i {
   background: url(../images/mypage/mypage_silver_button.png) no-repeat center;
   background-size: contain;
 }
-#my_grade .my_grade_box.silver .my_grade_list1 .class_guide p em {
+#my_grade .my_grade_box.silver .my_grade_list1 .class_guide p strong {
   color: #666666;
 }
 #my_grade .my_grade_box.gold .my_grade_list1 .class_button i {
   background: url(../images/mypage/mypage_gold_button.png) no-repeat center;
   background-size: contain;
 }
-#my_grade .my_grade_box.gold .my_grade_list1 .class_guide p em {
+#my_grade .my_grade_box.gold .my_grade_list1 .class_guide p strong {
   color: #f5b60e;
 }
 #my_grade .my_grade_box.platinum .my_grade_list1 .class_button i {
   background: url(../images/mypage/myPage_platinum_button.png) no-repeat center;
   background-size: contain;
 }
-#my_grade .my_grade_box.platinum .my_grade_list1 .class_guide p em {
+#my_grade .my_grade_box.platinum .my_grade_list1 .class_guide p strong {
   color: #49d3d9;
 }
 #my_grade .my_grade_box.vip .my_grade_list1 .class_button i {
   background: url(../images/mypage/mypage_vip_button.png) no-repeat center;
   background-size: contain;
 }
-#my_grade .my_grade_box.vip .my_grade_list1 .class_guide p em {
+#my_grade .my_grade_box.vip .my_grade_list1 .class_guide p strong {
   color: #7356ba;
 }
 #my_grade .my_grade_box .my_grade_list1 {
@@ -805,7 +805,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 27px;
   font-weight: 500;
 }
-#my_grade .my_grade_box .my_grade_list1 .class_guide p em {
+#my_grade .my_grade_box .my_grade_list1 .class_guide p strong {
   font-weight: 500;
 }
 #my_grade .my_grade_box .my_grade_list1 .class_guide .class_popup {
@@ -850,7 +850,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
   margin-left: 4px;
 }
-#my_grade .my_grade_box .my_grade_list2 .show_mileage em {
+#my_grade .my_grade_box .my_grade_list2 .show_mileage strong {
   font-size: 26px;
   line-height: 33px;
   color: #014099;
@@ -881,7 +881,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage p em {
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage p strong {
   font-size: 18px;
   line-height: 23px;
   margin-right: 4px;
@@ -961,7 +961,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   margin-bottom: 12px;
 }
-#ticket .ticket_box .con_box .con_list .con_count em {
+#ticket .ticket_box .con_box .con_list .con_count strong {
   font-size: 24px;
   line-height: 30px;
   color: #014099;
@@ -1040,7 +1040,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 13px;
   line-height: 19px;
 }
-#tran_status .con_box .con_list .title span em {
+#tran_status .con_box .con_list .title span strong {
   font-size: 24px;
   line-height: 30px;
   color: #014099;
@@ -1173,7 +1173,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     font-size: 13px;
     line-height: 19px;
   }
-  #tran_status .con_box .con_list .title span em {
+  #tran_status .con_box .con_list .title span strong {
     font-size: 24px;
     line-height: 30px;
     color: #014099;
