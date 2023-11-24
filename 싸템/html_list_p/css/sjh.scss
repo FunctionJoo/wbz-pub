@@ -6548,6 +6548,645 @@ body{
     }
 }
 
+// 구매취소
+#mypage{
+    &.purchase_complete_cancel{
+        .my_cont{
+            .pc_title {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .main{
+                .category_button{
+                    height: 50px;
+                    display: flex;
+                    border: 1px solid #D3D3D3;
+                    margin-bottom: 20px;
+                    .button_list{
+                        width: 50%;
+                        background-color: #fff;
+                        font-size: 15px;
+                        line-height: 22px;
+                        border: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            background-color: #014099;
+                            color: #fff;
+                            border: none;
+                        }
+                    }
+                }
+                .con_top{
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .table_count {
+                        display: flex;
+                        p {
+                            font-size: 14px;
+                            line-height: 21px;
+        
+                            em {
+                                font-weight: normal;
+                                color: #014099;
+                            }
+                        }
+                    }
+                    .top_right{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .select_box{
+                            width: 110px;
+                            height: 32px;
+                            border: 1px solid #D3D3D3;
+                            border-radius: 1px;
+                            background-image: url(../images/mypage/arrow_selectBox_02.png);
+                            background-size: 12px 7px;
+                            background-repeat: no-repeat;
+                            background-position: top 50% right 10px;
+                            margin-right: 10px;
+                            select {
+                                width: 100%;
+                                height: 100%;
+                                padding: 0 10px;
+                                font-size: 14px;
+                                line-height: 21px;
+                                border: 0; //기본 스타일 제거
+                                -webkit-appearance: none;
+                                /* for chrome */
+                                -moz-appearance: none;
+                                /*for firefox*/
+                                appearance: none;
+                                box-sizing: border-box; //select 박스의 크기 방식 지정.
+                                background: transparent; //배경색 투명 처리
+                        
+                                &::-ms-expand {
+                                    display: none;
+                                    /*for IE10,11*/
+                                }
+                        
+                                option {
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                }
+                            }
+                        }
+                        .excel_button{
+                            width: 120px;
+                            height: 32px;
+                            border-radius: 1px;
+                            border: 1px solid #2E7D32;
+                            background-color: #2E7D321A;
+                            span{
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #2E7D32;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &::before{
+                                    content: "";
+                                    background-image: url(../images/mypage/mypage_excel.svg);
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    display: inline-block;
+                                    width: 16px;
+                                    height: 16px;
+                                    margin-right: 6px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                .table_box{
+                    .pc_table_head{
+                        display: flex;
+                        height: 50px;
+                        background-color: #F6F6F6;
+                        border: 1px solid #D3D3D3;
+                        .th{
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:not(:last-child){
+                                border-right: 1px solid #D3D3D3;
+                            }
+                            &.cate_th{
+                                width: 148px;
+                                min-width: 148px;
+                                max-width: 148px;
+                            }
+                            &.title_th{
+                                width: 367px;
+                                min-width: 367px;
+
+                            }
+                            &.price_th{
+                                width: 124px;
+                                min-width: 124px;
+                            }
+                            &.date_th{
+                                width: 78px;
+                                min-width: 78px;
+                            }
+                            &.chat_th{
+                                width: 48px;
+                                min-width: 48px;
+                            }
+                            &.cancel_th{
+                                width: 84px;
+                                min-width: 84px;
+                            }
+                        }
+                    }
+                    .table_tr_box{
+                        .table_tr{
+                            border-right: 1px solid #D3D3D3;
+                            border-left: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            height: 60px;
+                            display: flex;
+                            &.no_item{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            &.chat_exists{
+                                .mo_bottom{
+                                        .chat_td{
+                                            padding: 27px 18px 15px 11px;
+                                            a{
+                                                .img_box{
+                                                    
+                                                    .count{
+                                                        display: flex;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                }
+                            }
+                            &.chat_over{
+                                .mo_bottom{
+                                    .chat_td{
+                                        a{
+                                            .img_box{
+                                                .count{
+                                                    .count_chat{
+                                                        display: none;
+                                                    }
+                                                    .over_chat{
+                                                        display: inline-block;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .cate_td{
+                                width: 148px;
+                                min-width: 148px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                            }
+                            .title_td{
+                                width: 367px;
+                                min-width: 367px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 13px;
+                                line-height: 19px;
+                                color: #000;
+                                a{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
+                            }
+                            .mo_middle{
+                                display: flex;
+                                .price_td{
+                                    width: 124px;
+                                    min-width: 124px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    em{
+                                        line-height: 18px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .date_td{
+                                    width: 78px;
+                                    min-width: 78px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+                            .mo_bottom{
+                                display: flex;
+                                .chat_td{
+                                    width: 48px;
+                                    min-width: 48px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    a{
+                                        display: block;
+                                        .img_box {
+                                            position: relative;
+                                            .count {
+                                                display: none;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: 21.91px;
+                                                height: 21.91px;
+                                                border-radius: 50%;
+                                                background-color: #434343;
+                                                position: absolute;
+                                                bottom: 50%;
+                                                left: 50%;
+    
+                                                .count_chat {
+                                                    display: block;
+                                                    font-size: 10px;
+                                                    line-height: 14px;
+                                                    color: #fff;
+                                                }
+    
+                                                .over_chat {
+                                                    display: none;
+                                                    font-size: 10px;
+                                                    line-height: 14px;
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .cancel_td{
+                                    width: 84px;
+                                    min-width: 84px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    button{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        padding: 5px 17px;
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        background-color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagenation{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            &.on{
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .back_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                    .next_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1080px){
+    #mypage{
+        &.purchase_complete_cancel{
+            .w_set{
+                padding: 0;
+                .my_cont{
+                    .pc_title {
+                        display: none;
+                    }
+                    .my_title{
+                        margin-left: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 20px !important;
+                    }
+        
+                    .main{
+                        .category_button{
+                            margin-left: 16px;
+                            margin-right: 16px;
+                            height: 45px;
+                            margin-bottom: 45px;
+                        }
+                        .con_top{
+                            margin-left: 16px;
+                            margin-right: 16px;
+                            margin-bottom: 15px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .table_count {
+                                display: flex;
+                                p {
+                                    font-size: 14px;
+                                    line-height: 21px;
+                
+                                    em {
+                                        font-weight: normal;
+                                        color: #014099;
+                                    }
+                                }
+                            }
+                            .top_right{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .select_box{
+                                    width: 110px;
+                                    height: 32px;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 1px;
+                                    background-image: url(../images/mypage/arrow_selectBox_02.png);
+                                    background-size: 12px 7px;
+                                    background-repeat: no-repeat;
+                                    background-position: top 50% right 10px;
+                                    margin-right: 10px;
+                                    select {
+                                        width: 100%;
+                                        height: 100%;
+                                        padding: 0 10px;
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        border: 0; //기본 스타일 제거
+                                        -webkit-appearance: none;
+                                        /* for chrome */
+                                        -moz-appearance: none;
+                                        /*for firefox*/
+                                        appearance: none;
+                                        box-sizing: border-box; //select 박스의 크기 방식 지정.
+                                        background: transparent; //배경색 투명 처리
+                                
+                                        &::-ms-expand {
+                                            display: none;
+                                            /*for IE10,11*/
+                                        }
+                                
+                                        option {
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                        }
+                                    }
+                                }
+                                .excel_button{
+                                    width: 120px;
+                                    height: 32px;
+                                    border-radius: 1px;
+                                    border: 1px solid #2E7D32;
+                                    background-color: #2E7D321A;
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #2E7D32;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        &::before{
+                                            content: "";
+                                            background-image: url(../images/mypage/mypage_excel.svg);
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            display: inline-block;
+                                            width: 16px;
+                                            height: 16px;
+                                            margin-right: 6px;
+                                        }
+                                    }
+                                }
+                            }
+            
+                        }
+                        .table_box{
+                            .pc_table_head{
+                                display: none;
+                            }
+                            .table_tr_box{
+                                border-top: 1px solid #D3D3D3;
+                                .table_tr{
+                                    height: auto;
+                                    flex-direction: column;
+                                    padding: 20px 16px 20px 17px;
+                                    &:nth-child(n+5){
+                                        display: none;
+                                    }
+                                    &.chat_exists{
+                                        .mo_bottom{
+                                            .chat_td{
+                                                padding: 0;
+                                                margin-right: 11px;
+                                            }
+                                        }
+                                    }
+                                    .cate_td{
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
+                                        margin-bottom: 6px;
+                                    }
+                                    .title_td{
+                                        font-weight: 500;
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        justify-content: start;
+                                        margin-bottom: 11px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        a{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                        }
+                                    }
+                                    .mo_middle{
+                                        justify-content: space-between;
+                                        margin-bottom: 21px;
+                                        .price_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                        .date_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                    }
+                                    .mo_bottom{
+                                        display: flex;
+                                        justify-content: end;
+                                        .cancel_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                            order: 1;
+                                            margin-right: 10px;
+                                        }
+                                        .chat_td{
+                                            border-right: none;
+                                            width: auto;
+                                            min-width: auto;
+                                            order: 2;
+                                            a{
+                                                display: block;
+                                                .img_box {
+                                                    position: relative;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .pagenation{
+                            margin-top: 37px;
+                            ul{
+                                li{
+                                    &:nth-last-child(-n+5){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // 결제완료
 #mypage{

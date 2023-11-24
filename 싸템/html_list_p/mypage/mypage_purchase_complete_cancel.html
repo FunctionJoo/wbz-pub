@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>싸템</title>
+	<!-- swiper -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- style 모음 -->
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- 공통 레이아웃 js -->
+	<script src="../js/layout.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="w_set">
+			<div class="sec_top">
+				<h1 class="logo">
+					<a href="#">
+						<img src="../images/common/logo.svg" alt="회사로고">
+						<div class="logo_txt">
+							<span class="t1">아이템거래는</span>
+							<span class="t2">SSATEM</span><span class="t3">에서!</span>
+						</div>
+					</a>
+				</h1>
+				<div class="header_search">
+					<!-- 모바일 닫기 레이어 -->
+					<button class="layer_close hide_pc" type="button">레이어닫기</button>
+					<div class="search_bar">
+						<div class="sec_radio">
+							<div class="radio_select_result hide_pc">삽니다</div>
+							<label class="radio_visual">
+								<input type="radio" name="sch_type" value="0" checked>
+								<span class="radio_ico"></span>
+								<span class="txt">팝니다</span>
+							</label>
+							<label class="radio_visual type2">
+								<input type="radio" name="sch_type" value="1">
+								<span class="radio_ico"></span>
+								<span class="txt">삽니다</span>
+							</label>
+						</div>
+						<div class="sec_ipt">
+							<input type="text" placeholder="게임 또는 서버명을 입력해주세요">
+						</div>
+						<div class="sec_submit">
+							<button type="button">검색</button>
+						</div>
+					</div>
+					<div class="search_content before_search" style="display: none;">
+						<div class="t_before_tab hide_pc">
+							<button class="tbt_btn on">최근 검색 게임</button>
+							<button class="tbt_btn">인기 검색 게임</button>
+						</div>
+						<div class="t_before">
+							<div class="sec sec_1 on">
+								<p class="sec_title hide_m">최근 검색 게임</p>
+								<div class="sec_clear_wrap"><button class="sec_clear" type="button">전체삭제</button></div>
+								<ul class="sec_cont sec_cont_full sch_ul has_close">
+									<!-- 팝니다 -->
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<!-- 삽니다 -->
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+								</ul>
+							</div>
+							<div class="sec sec_2">
+								<p class="sec_title hide_m">인기게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul has_rank">
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+								<p class="sec_title">신규게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul">
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search_content while_search">
+						<div class="ws_content_sec has_select">
+							<div class="sch_li_sec sec_1">
+								<ul class="sch_ul has_point">
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+								</ul>
+							</div>
+							<div class="line"></div>
+							<div class="sch_li_sec sec_2">
+								<ul class="sch_ul has_point">
+									<li><a href="#">sec2 메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+									<li><a href="#">메이플스토<span class="sch_point">리</span></a></li>
+									<li><a href="#"><span class="sch_point">리</span>니지</a></li>
+								</ul>
+							</div>
+							<div class="sch_li_sec sec_3">
+								<ul class="sch_ul has_group">
+									<li class="is_all"><a href="#">전체보기</a></li>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+										<li><a href="#">- 서버그룹 1-1</a></li>
+									</ul>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 2</a></li>
+										<li><a href="#">- 서버그룹 2-1</a></li>
+										<li><a href="#">- 서버그룹 2-1</a></li>
+										<li><a href="#">- 서버그룹 2-1</a></li>
+									</ul>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 3</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+										<li><a href="#">- 서버그룹 3-1</a></li>
+									</ul>
+									<ul class="is_group">
+										<li><a href="#">서버그룹 4</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+										<li><a href="#">- 서버그룹 4-1</a></li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_banner1 hide_m">
+					<a href="#">
+						<img src="https://www.kukinews.com/data/kuk/image/2022/04/28/kuk202204280332.647x.0.jpg" alt="">
+					</a>
+				</div>
+				<div class="header_menu_btn hide_pc">
+					<button type="button" class="header_menu_open">메뉴오픈</button>
+				</div>
+			</div>
+			<div class="sec_bottom">
+				<div class="sec_left">
+					<button type="button" class="chat_list_btn">
+						<div class="text"><i></i>채팅목록</div>
+						<div class="new_laert">
+							<span class="t_y">99+</span>개의 메세지가 있습니다.
+						</div>
+					</button>
+				</div>
+				<div class="sec_center">
+					<ul class="header_menu">
+						<li>
+							<a href="#" class="fc_p0">판매등록</a>
+						</li>
+						<li>
+							<a href="#" class="fc_p2">구매등록</a>
+						</li>
+						<li>
+							<a href="#">마일리지</a>
+							<ul class="dep2">
+								<li><a href="#">마일리지</a></li>
+								<li><a href="#">마일리지 충전</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">1:1 상담</a></li>
+								<li><a href="#">신규 게임 등록 요청</a></li>
+								<li><a href="#">이용안내</a></li>
+							</ul>
+						</li>
+						<li class="hide_m">
+							<a href="#" class="bold">마이페이지</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="sec_right header_login">
+					<li><a href="#" class="is_login">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="sidebar" class="hide_m">
+		<div class="side_open_wrap">
+			<button class="side_open" type="button">사이드바 열기</button>
+		</div>
+		<div class="side_cont">
+			<div class="side_slide">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="https://cdn-lostark.game.onstove.com/uploadfiles/banner/8960a34f22324cedb1e94c9a4df6ab86.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/information/class/img_index_warrior.png?2cd671baf331946ff426d64d760b09e1" alt="" style="background: #000;">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/main/btn_gift_eclipse.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination-c"></div>
+			</div>
+			<div class="side_mile">
+				<div class="sm_box">
+					<p class="sm_name">총 마일리지</p>
+					<p class="sm_num">
+						<b>00,000,000</b>원
+					</p>
+				</div>
+				<div class="sm_box">
+					<p class="sm_name">일반 마일리지</p>
+					<p class="sm_num">
+						<b>00,000,000</b>원
+					</p>
+				</div>
+				<div class="sm_box">
+					<p class="sm_name">구매전용 마일리지</p>
+					<p class="sm_num">
+						<b>00,000,000</b>원
+					</p>
+				</div>
+			</div>
+			<div class="side_b_btn">
+				<a href="#" class="st_btn color_p size_side">충전하기<i class="i_arr"></i></a>
+				<a class="st_btn color_6 size_side" href="#">출금하기<i class="i_arr"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="contets">
+		<div id="mypage" class="purchase_complete_cancel">
+			<div class="w_set w_set_my">
+				<div class="my_left">
+					<h2 class="mym_title">마이페이지</h2>
+					<div class="my_menu">
+						<ul class="dep1">
+							<li class="on">
+								<div class="dep1box">
+									<a href="#">나의 물품 관리 나의 물품 관리</a>
+									<button class="menu_toggle"></button>
+								</div>
+								<div class="dep2">
+									<ul>
+										<li><a href="#">판매 등록 물품</a></li>
+										<li><a href="#">구매 등록 물품</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="on">
+								<div class="dep1box">
+									<a href="#">판매 관련</a>
+									<button class="menu_toggle"></button>
+								</div>
+								<div class="dep2">
+									<ul>
+										<li><a href="#">판매 진행 중</a></li>
+										<li><a href="#">취소 승인 대기</a></li>
+										<li><a href="#">판매 완료(취소)</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="dep1box">
+									<a href="#">구매 관련</a>
+									<button class="menu_toggle"></button>
+								</div>
+								<div class="dep2">
+									<ul>
+										<li><a href="#">구매 진행 중</a></li>
+										<li><a href="#">구매 취소 중</a></li>
+										<li><a href="#">구매 완료(취소)</a></li>
+										<li><a href="#">전자 계약서</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="my_cont">
+					<!-- pc -->
+					<p class="pc_title">구매 완료(취소)</p>
+
+					<!-- 모바일용 타이틀 -->
+					<p class="my_title">구매 완료(취소)</p>
+					<!-- 모바일용 타이틀 라인 타입 -->
+					<!-- <p class="my_title type_line">구매 완료(취소)</p> -->
+
+					<!-- 마이 메인 -->
+					<!-- 레이아웃 테스트 -->
+					<div class="main">
+						<div class="category_button">
+							<a href="" class="on button_list complete">구매완료</a>
+							<a href="" class="button_list cancel">구매취소</a>
+						</div>
+	
+						<div class="con_top">
+							<div class="table_count">
+								<p>총 <em>2,654</em>건</p>
+							</div>
+							<div class="top_right">
+								<div class="select_box">
+									<select name="year" id="year_box">
+										<option value="none">연도검색</option>
+										<option value="2023" selected>2023</option>
+									</select>
+								</div>
+								<button class="excel_button">
+									<span>엑셀다운로드</span>
+								</button>
+							</div>
+
+						</div>
+						<div class="table_box">
+							<!-- 모바일 버전에서는 삭제 -->
+							<div class="pc_table_head">
+								<div class="th cate_th">카테고리</div>
+								<div class="th title_th">물품제목</div>
+								<div class="th price_th">거래금액</div>
+								<div class="th date_th">등록일</div>
+								<div class="th chat_th"></div>
+								<div class="th cancel_th">취소사유</div>
+							</div>
+							<!--  -->
+							<div class="table_tr_box">
+								<div class="table_tr no_item">
+									<span>판매등록물품이 없습니다.</span>
+								</div>
+								<!-- .table_tr에서 .chat_exists, .chat_over 사용시 각 상태 변경됨 -->
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+									</div>
+								</div>
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+									</div>
+								</div>
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+									</div>
+								</div>
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
+									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
+									<div class="mo_middle">
+										<div class="price_td"><em>100,000,000</em>원</div>
+										<div class="date_td">23.09.09</div>
+									</div>
+									<div class="mo_bottom">
+										<div class="chat_td">
+											<a href="#none">
+												<div class="img_box">
+													<img src="../images/mypage/mypage_chat.svg" alt="chat">
+													<div class="count">
+														<span class="count_chat">01</span>
+														<span class="over_chat">99+</span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="cancel_td">
+											<button>보기</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pagenation">
+							<div class="back_page">
+								<div class="all_page"></div>
+								<div class="one_page"></div>
+							</div>
+							<ul>
+								<li class="on">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>7</li>
+								<li>8</li>
+								<li>9</li>
+								<li>10</li>
+							</ul>
+							<div class="next_page on">
+								<div class="one_page "></div>
+								<div class="all_page "></div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="" style="white-space: nowrap;">sa4d65sa4d65sa4d65as4d65as4d65sa4d65sa4d65sa4d654sa65d4as6d54as65d4sa65d4as65d4sa65d4sa65d4sa65d4sa6d4sa6d4sa65d4sa65d4sa65d4sa65d46as5d465sa4d65sa4</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 미완 -->
+	<footer id="footer">
+		<div class="footer_top">
+			<div class="w_set">
+				<ul class="ft_nav">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#" class="bold">개인정보처리방침</a></li>
+					<li><a href="#" class="bold">개인정보처리방침</a></li>
+					<li class="hide_m"><a href="#">사업자정보확인</a></li>
+					<li class="hide_m"><a href="#">에스크로서비스 가입확인</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_content">
+			<div class="w_set">
+				<div class="fc_cont">
+					<div class="ft_logo">
+						<a href="#" class="logo_a">
+							<img src="../images/common/logo_ft.svg" alt="싸템 로고">
+						</a>
+						<a href="#" class="hide_pc show_pc_design">PC버전</a>
+					</div>
+					<div class="ft_address">
+						<ul>
+							<li>대표이사 : 하나희</li>
+							<li>세종특별자치시 호려울로 29, 1층 104호(보람동, 세종시드니)</li>
+							<li>사업자등록번호 : 156-67-00344</li>
+							<li>통신판매업신고 : 제2020-세종-0081 호</li>
+							<li class="w100">
+								싸템은 통신판매중개자이며 통신판매의 당사자가 아닙니다.<br>
+								따라서 싸템은 상품 거래정보 및 거래에 대해 책임을 지지 않습니다.
+							</li>
+							<li class="w100">ⓒSSATEM</li>
+						</ul>
+					</div>
+					<div class="ft_cs hide_m">
+						<p class="fc_title">CUSTOMER SERVICE</p>
+						<div class="fc_info">
+							<p class="fci_tel">1551-9039</p>
+							<a href="#" class="fci_link">고객센터</a>
+						</div>
+						<p class="fc_time">전화문의 : 평일 9:00 ~ 18:00 / 점심시간 12:30 ~ 13:30</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="mobile_btm_menu" class="hide_pc">
+		<a href="#" class="on">
+			<i class="mbmi_1"></i>
+			<p class="mbm_txt">홈</p>
+		</a>
+		<a href="#">
+			<i class="mbmi_1"></i>
+			<p class="mbm_txt">판매채팅</p>
+		</a>
+		<a href="#">
+			<i class="mbmi_1"></i>
+			<p class="mbm_txt">구매채팅</p>
+		</a>
+		<a href="#">
+			<i class="mbmi_1"></i>
+			<p class="mbm_txt">고객센터</p>
+		</a>
+		<a href="#">
+			<i class="mbmi_1"></i>
+			<p class="mbm_txt">로그인</p>
+		</a>
+	</div>
+</body>
+</html>
