@@ -13130,101 +13130,148 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   }
 }
 #mypage.blocking_chat .my_cont .pc_title {
-  font-size: 20px;
-  line-height: 29px;
-  font-weight: 500;
-  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 20px;
-  border-bottom: 2px solid #333333;
+  font-weight: 500;
 }
-#mypage.blocking_chat .my_cont .mo_main {
-  display: none;
+#mypage.blocking_chat .my_cont .mo_table_count {
+  display: flex;
+  margin-bottom: 10px;
 }
-#mypage.blocking_chat .my_cont .pc_main table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: 1px solid #D3D3D3;
+#mypage.blocking_chat .my_cont .mo_table_count p {
+  font-size: 14px;
+  line-height: 21px;
 }
-#mypage.blocking_chat .my_cont .pc_main table thead tr {
+#mypage.blocking_chat .my_cont .mo_table_count p em {
+  font-weight: normal;
+  color: #014099;
+}
+#mypage.blocking_chat .my_cont .table_box .pc_table_head {
+  display: flex;
   height: 50px;
   background-color: #F6F6F6;
-  border-bottom: 1px solid #D3D3D3;
+  border: 1px solid #D3D3D3;
 }
-#mypage.blocking_chat .my_cont .pc_main table thead tr th:not(:last-child) {
-  border-right: 1px solid #D3D3D3;
-}
-#mypage.blocking_chat .my_cont .pc_main table thead tr th.num {
-  width: 56px;
-}
-#mypage.blocking_chat .my_cont .pc_main table thead tr th.title {
-  width: 398px;
-}
-#mypage.blocking_chat .my_cont .pc_main table thead tr th.reason {
-  width: 100px;
-}
-#mypage.blocking_chat .my_cont .pc_main table thead tr th.date {
-  width: 200px;
-}
-#mypage.blocking_chat .my_cont .pc_main table thead tr th.cancel {
-  width: 100px;
-}
-#mypage.blocking_chat .my_cont .pc_main table tbody {
-  text-align: center;
-}
-#mypage.blocking_chat .my_cont .pc_main table tbody tr {
-  height: 50px;
-}
-#mypage.blocking_chat .my_cont .pc_main table tbody tr:not(:last-child) {
-  border-bottom: 1px solid #D3D3D3;
-}
-#mypage.blocking_chat .my_cont .pc_main table tbody tr td:not(:last-child) {
-  border-right: 1px solid #D3D3D3;
-}
-#mypage.blocking_chat .my_cont .pc_main table tbody tr td.num_td {
+#mypage.blocking_chat .my_cont .table_box .pc_table_head .th {
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.blocking_chat .my_cont .table_box .pc_table_head .th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.blocking_chat .my_cont .table_box .pc_table_head .th.num_th {
+  width: 56px;
+  min-width: 56px;
+}
+#mypage.blocking_chat .my_cont .table_box .pc_table_head .th.title_th {
+  width: 396px;
+  min-width: 396px;
+}
+#mypage.blocking_chat .my_cont .table_box .pc_table_head .th.view_th {
+  width: 98px;
+  min-width: 98px;
+}
+#mypage.blocking_chat .my_cont .table_box .pc_table_head .th.date_th {
+  width: 200px;
+  min-width: 200px;
+}
+#mypage.blocking_chat .my_cont .table_box .pc_table_head .th.cancel_th {
+  width: 98px;
+  min-width: 98px;
+}
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr {
+  border-right: 1px solid #D3D3D3;
+  border-left: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  height: 50px;
+  display: flex;
+}
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr.no_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .num_td {
+  width: 56px;
+  min-width: 56px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
   color: #000;
 }
-#mypage.blocking_chat .my_cont .pc_main table tbody tr td.title_td {
-  font-size: 13px;
-  line-height: 19px;
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .title_td {
+  width: 396px;
+  min-width: 396px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
   color: #000;
 }
-#mypage.blocking_chat .my_cont .pc_main table tbody tr td.reason_td button {
-  width: 60px;
-  height: 30px;
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box {
+  display: flex;
+}
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .view_td {
+  width: 98px;
+  min-width: 98px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .view_td button {
+  padding: 5px 17px;
+  background-color: #fff;
   border: 1px solid #D3D3D3;
   border-radius: 3px;
-  background-color: #fff;
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.blocking_chat .my_cont .pc_main table tbody tr td.date_td {
-  font-size: 14px;
-  line-height: 19px;
-  color: #000;
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .date_td {
+  width: 200px;
+  min-width: 200px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#mypage.blocking_chat .my_cont .pc_main table tbody tr td.cancel_td button {
-  width: 60px;
-  height: 30px;
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .cancel_td {
+  width: 98px;
+  min-width: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .cancel_td button {
+  padding: 5px 17px;
+  background-color: #EEF3F9;
   border: 1px solid #014099;
   border-radius: 3px;
-  background-color: #EEF3F9;
-  color: #014099;
   font-size: 14px;
   line-height: 20px;
+  color: #014099;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation {
+#mypage.blocking_chat .my_cont .pagenation {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation ul {
+#mypage.blocking_chat .my_cont .pagenation ul {
   display: flex;
   margin: 0 10px;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation ul li {
+#mypage.blocking_chat .my_cont .pagenation ul li {
   font-size: 14px;
   line-height: 19px;
   width: 24px;
@@ -13234,24 +13281,24 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
   cursor: pointer;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation ul li.on {
+#mypage.blocking_chat .my_cont .pagenation ul li.on {
   background-color: #666666;
   color: #fff;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page {
+#mypage.blocking_chat .my_cont .pagenation .back_page {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page.on .all_page {
+#mypage.blocking_chat .my_cont .pagenation .back_page.on .all_page {
   background-image: url(../images/mypage/table_arrow_on_end.svg);
   transform: rotate(180deg);
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page.on .one_page {
+#mypage.blocking_chat .my_cont .pagenation .back_page.on .one_page {
   background-image: url(../images/mypage/table_arrow_on_next.svg);
   transform: rotate(180deg);
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page .all_page {
+#mypage.blocking_chat .my_cont .pagenation .back_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -13261,7 +13308,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 6px;
   cursor: pointer;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .back_page .one_page {
+#mypage.blocking_chat .my_cont .pagenation .back_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -13270,20 +13317,20 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 24px;
   cursor: pointer;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page {
+#mypage.blocking_chat .my_cont .pagenation .next_page {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page.on .all_page {
+#mypage.blocking_chat .my_cont .pagenation .next_page.on .all_page {
   background-image: url(../images/mypage/table_arrow_on_end.svg);
   transform: rotate(0deg);
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page.on .one_page {
+#mypage.blocking_chat .my_cont .pagenation .next_page.on .one_page {
   background-image: url(../images/mypage/table_arrow_on_next.svg);
   transform: rotate(0deg);
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page .all_page {
+#mypage.blocking_chat .my_cont .pagenation .next_page .all_page {
   background-image: url(../images/mypage/table_arrow_off_end.svg);
   transform: rotate(180deg);
   background-repeat: no-repeat;
@@ -13293,7 +13340,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 24px;
   cursor: pointer;
 }
-#mypage.blocking_chat .my_cont .pc_main .pagenation .next_page .one_page {
+#mypage.blocking_chat .my_cont .pagenation .next_page .one_page {
   background-image: url(../images/mypage/table_arrow_off_next.svg);
   transform: rotate(180deg);
   background-repeat: no-repeat;
@@ -13306,155 +13353,89 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 
 @media (max-width: 1080px) {
-  #mypage.blocking_chat .w_set_my {
-    padding: 0;
+  #mypage.blocking_chat .w_set {
+    padding: 0 !important;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .pc_title {
+  #mypage.blocking_chat .my_cont .my_title {
+    margin: 0 16px;
+  }
+  #mypage.blocking_chat .my_cont .pc_title {
     display: none;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .my_title {
-    padding: 0 16px;
+  #mypage.blocking_chat .my_cont .mo_table_count {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 44px;
+    margin-bottom: 15px;
+    display: flex;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .pc_main {
+  #mypage.blocking_chat .my_cont .mo_table_count p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  #mypage.blocking_chat .my_cont .mo_table_count p em {
+    font-weight: normal;
+    color: #014099;
+  }
+  #mypage.blocking_chat .my_cont .table_box .pc_table_head {
     display: none;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main {
-    display: block;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr {
-    border-bottom: 1px solid #D3D3D3;
-    padding: 20px 17px;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr.no_item {
-    text-align: center;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr:first-child {
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box {
     border-top: 1px solid #D3D3D3;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_title {
-    font-size: 14px;
-    line-height: 20px;
-    color: #000;
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 16px 20px 17px;
+  }
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr:nth-child(n+5) {
+    display: none;
+  }
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .num_td {
+    display: none;
+  }
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .title_td {
+    width: 100%;
+    justify-content: start;
     margin-bottom: 20px;
+    border: none;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .title_td a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box .button_box .view_button {
-    width: 70px;
-    height: 30px;
-    border: 1px solid #D3D3D3;
-    border-radius: 3px;
-    background-color: #fff;
-    font-size: 14px;
-    line-height: 20px;
-    margin-right: 8px;
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .view_td {
+    width: auto;
+    min-width: auto;
+    order: 1;
+    margin-right: 10px;
+    border: none;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box .button_box .cancel_button {
-    width: 60px;
-    height: 30px;
-    border: 1px solid #014099;
-    border-radius: 3px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #014099;
-    background-color: #EEF3F9;
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .view_td button {
+    padding: 5px 22px;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .mo_tbody .mo_tr .mo_bottom_box .mo_date {
-    font-size: 14px;
-    line-height: 18px;
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .date_td {
+    width: calc(100% - 145px);
+    justify-content: end;
+    min-width: auto;
+    order: 3;
+    border: none;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation {
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .cancel_td {
+    width: auto;
+    min-width: auto;
+    order: 2;
+  }
+  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .cancel_td button {
+    padding: 5px 17px;
+  }
+  #mypage.blocking_chat .my_cont .pagenation {
     margin-top: 37px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation ul {
-    display: flex;
-    margin: 0 10px;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation ul li {
-    font-size: 14px;
-    line-height: 19px;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation ul li.on {
-    background-color: #666666;
-    color: #fff;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page.on .all_page {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(180deg);
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page.on .one_page {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(180deg);
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page .all_page {
-    background-image: url(../images/mypage/table_arrow_off_end.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
-    cursor: pointer;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .back_page .one_page {
-    background-image: url(../images/mypage/table_arrow_off_next.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page.on .all_page {
-    background-image: url(../images/mypage/table_arrow_on_end.svg);
-    transform: rotate(0deg);
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page.on .one_page {
-    background-image: url(../images/mypage/table_arrow_on_next.svg);
-    transform: rotate(0deg);
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page .all_page {
-    background-image: url(../images/mypage/table_arrow_off_end.svg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  #mypage.blocking_chat .w_set_my .my_cont .mo_main .mo_table .pagenation .next_page .one_page {
-    background-image: url(../images/mypage/table_arrow_off_next.svg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
-    cursor: pointer;
+  #mypage.blocking_chat .my_cont .pagenation ul li:nth-last-child(-n+5) {
+    display: none;
   }
 }
 #mypage.go_out .my_cont .pc_title {

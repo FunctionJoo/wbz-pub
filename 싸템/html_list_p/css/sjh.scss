@@ -14978,196 +14978,240 @@ body{
 
 
 // 채팅차단관리
-#mypage{
-    &.blocking_chat{
-        .my_cont{
-            .pc_title{
-                @include pc_title();
-                padding-bottom: 20px;
+#mypage {
+    &.blocking_chat {
+        .my_cont {
+            .pc_title {
+                font-size: 16px;
+                line-height: 24px;
                 margin-bottom: 20px;
-                border-bottom: 2px solid #333333;
+                font-weight: 500;
             }
-            .mo_main{
-                display: none;
-            }
-            .pc_main{
-                table{
-                    border-collapse: collapse;
-                    border-spacing: 0;
-                    border: 1px solid #D3D3D3;
-                    thead{
-                        tr{
-                            height: 50px;
-                            background-color: #F6F6F6;
-                            border-bottom: 1px solid #D3D3D3;
-                            th{
-                                &:not(:last-child){
-                                    border-right: 1px solid #D3D3D3;
-                                }
-                                &.num{
-                                    width: 56px;
-                                }
-                                &.title{
-                                    width: 398px;
-                                }
-                                &.reason{
-                                    width: 100px;
-                                }
-                                &.date{
-                                    width: 200px;
-                                }
-                                &.cancel{
-                                    width: 100px;
-                                }
-                            }
-                        }
-                    }
-                    tbody{
-                        text-align: center;
-                        tr{
-                            height: 50px;
-                            &:not(:last-child){
-                                border-bottom: 1px solid #D3D3D3;
-                            }
-                            td{
-                                &:not(:last-child){
-                                    border-right: 1px solid #D3D3D3;
-                                }
+
+            .mo_table_count {
+                display: flex;
+                margin-bottom: 10px;
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
             
-                                &.num_td{
-                                    font-size: 14px;
-                                    line-height: 19px;
-                                    color: #000;
-                                }
-                                &.title_td{
-                                    font-size: 13px;
-                                    line-height: 19px;
-                                    color: #000;
-                                }
-                                &.reason_td{
-                                    button{
-                                        width: 60px;
-                                        height: 30px;
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        background-color: #fff;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                                &.date_td{
-                                    font-size: 14px;
-                                    line-height: 19px;
-                                    color: #000;
-                                }
-                                &.cancel_td{
-                                    button{
-                                        width: 60px;
-                                        height: 30px;
-                                        border: 1px solid #014099;
-                                        border-radius: 3px;
-                                        background-color: #EEF3F9;
-                                        color: #014099;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                            }
+                    em {
+                        font-weight: normal;
+                        color: #014099;
+                    }
+                }
+            }
+            .table_box{
+                .pc_table_head{
+                    display: flex;
+                    height: 50px;
+                    background-color: #F6F6F6;
+                    border: 1px solid #D3D3D3;
+                    .th{
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:not(:last-child){
+                            border-right: 1px solid #D3D3D3;
+                        }
+                        &.num_th{
+                            width: 56px;
+                            min-width: 56px;
+                        }
+                        &.title_th{
+                            width: 396px;
+                            min-width: 396px;
+                        }
+                        &.view_th{
+                            width: 98px;
+                            min-width: 98px;
+                        }
+                        &.date_th{
+                            width: 200px;
+                            min-width: 200px;
+                        }
+                        &.cancel_th{
+                            width: 98px;
+                            min-width: 98px;
                         }
                     }
                 }
-                .pagenation{
-                    margin-top: 60px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    ul{
+                .table_tr_box{
+                    .table_tr{
+                        border-right: 1px solid #D3D3D3;
+                        border-left: 1px solid #D3D3D3;
+                        border-bottom: 1px solid #D3D3D3;
+                        height: 50px;
                         display: flex;
-                        margin: 0 10px;
-                        li{
-                            font-size: 14px;
-                            line-height: 19px;
-                            width: 24px;
-                            height: 24px;
+                        &.no_item{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            cursor: pointer;
-                            &.on{
-                                background-color: #666666;
-                                color: #fff;
+                        }
+                        
+                        .num_td{
+                            width: 56px;
+                            min-width: 56px;
+                            border-right: 1px solid #D3D3D3;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000;
+                        }
+                        .title_td{
+                            width: 396px;
+                            min-width: 396px;
+                            border-right: 1px solid #D3D3D3;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000;
+                        }
+                        .mo_flex_box{
+                            display: flex;
+                            .view_td{
+                                width: 98px;
+                                min-width: 98px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                button{
+                                    padding: 5px 17px;
+                                    background-color: #fff;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 3px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                            .date_td{
+                                width: 200px;
+                                min-width: 200px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .cancel_td{
+                                width: 98px;
+                                min-width: 98px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                button{
+                                    padding: 5px 17px;
+                                    background-color: #EEF3F9;
+                                    border: 1px solid #014099;
+                                    border-radius: 3px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #014099;
+                                }
                             }
                         }
+                        
                     }
-                    .back_page{
+                }
+            }
+            .pagenation{
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ul{
+                    display: flex;
+                    margin: 0 10px;
+                    li{
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 24px;
+                        height: 24px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        cursor: pointer;
                         &.on{
-                            .all_page{
-                                background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                transform: rotate(180deg);
-                            }
-                            .one_page{
-                                background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                transform: rotate(180deg);
-                            }
-                        }
-                        .all_page{
-                            background-image: url(../images/mypage/table_arrow_off_end.svg);
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                            width: 24px;
-                            height: 24px;
-                            margin-right: 6px;
-                            cursor: pointer;
-                        }
-                        .one_page{
-                            background-image: url(../images/mypage/table_arrow_off_next.svg);
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                            width: 24px;
-                            height: 24px;
-                            cursor: pointer;
+                            background-color: #666666;
+                            color: #fff;
                         }
                     }
-                    .next_page{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        &.on{
-                            .all_page{
-                                background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                transform: rotate(0deg);
-                            }
-                            .one_page{
-                                background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                transform: rotate(0deg);
-                            }
-                        }
+                }
+                .back_page{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &.on{
                         .all_page{
-                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
                             transform: rotate(180deg);
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                            width: 24px;
-                            height: 24px;
-                            cursor: pointer;
                         }
                         .one_page{
-                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
                             transform: rotate(180deg);
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                            width: 24px;
-                            height: 24px;
-                            margin-right: 6px;
-                            cursor: pointer;
                         }
+                    }
+                    .all_page{
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+                    .one_page{
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                }
+                .next_page{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &.on{
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_on_end.svg);
+                            transform: rotate(0deg);
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_on_next.svg);
+                            transform: rotate(0deg);
+                        }
+                    }
+                    .all_page{
+                        background-image: url(../images/mypage/table_arrow_off_end.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                    .one_page{
+                        background-image: url(../images/mypage/table_arrow_off_next.svg);
+                        transform: rotate(180deg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -15175,166 +15219,104 @@ body{
     }
 }
 
-@media(max-width:1080px){
-    #mypage{
-        &.blocking_chat{
-            .w_set_my{
-                padding: 0;
-                .my_cont{
-                    .pc_title{
+@media(max-width:1080px) {
+    #mypage {
+        &.blocking_chat {
+            .w_set {
+                padding: 0 !important;
+            }
+
+            .my_cont {
+                .my_title {
+                    margin: 0 16px;
+                }
+
+                .pc_title {
+                    display: none;
+                }
+
+                .mo_table_count {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                    margin-top: 44px;
+                    margin-bottom: 15px;
+                    display: flex;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 21px;
+
+                        em {
+                            font-weight: normal;
+                            color: #014099;
+                        }
+                    }
+                }
+
+                .table_box{
+                    .pc_table_head{
                         display: none;
                     }
-                    .my_title{
-                        padding: 0 16px;
-                    }
-                    .pc_main{
-                        display: none;
-                    }
-                    .mo_main{
-                        display: block;
-                        .mo_table{
-                            .mo_tbody{
-                                .mo_tr{
-                                    &.no_item{
-                                        text-align: center;
+                    .table_tr_box{
+                        border-top: 1px solid #D3D3D3;
+                        .table_tr{
+                            height: auto;
+                            flex-direction: column;
+                            padding: 20px 16px 20px 17px;
+                            &:nth-child(n+5){
+                                display: none;
+                            }
+                            .num_td{
+                                display: none;
+                            }
+                            .title_td{
+                                width: 100%;
+                                justify-content: start;
+                                margin-bottom: 20px;
+                                border: none;
+                                a{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
+                            }
+                            .mo_flex_box{
+                                .view_td{
+                                    width: auto;
+                                    min-width: auto;
+                                    order: 1;
+                                    margin-right: 10px;
+                                    border: none;
+                                    button{
+                                        padding: 5px 22px;
                                     }
-                                    &:first-child{
-                                        border-top: 1px solid #D3D3D3;
-                                    }
-                                    border-bottom: 1px solid #D3D3D3;
-                                    padding: 20px 17px;
-                                    .mo_title{
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        color: #000;
-                                        margin-bottom: 20px;
-                                    }
-                                    .mo_bottom_box{
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
-                                        .button_box{
-                                            .view_button{
-                                                width: 70px;
-                                                height: 30px;
-                                                border: 1px solid #D3D3D3;
-                                                border-radius: 3px;
-                                                background-color: #fff;
-                                                font-size: 14px;
-                                                line-height: 20px;
-                                                margin-right: 8px;
-                                            }
-                                            .cancel_button{
-                                                width: 60px;
-                                                height: 30px;
-                                                border: 1px solid #014099;
-                                                border-radius: 3px;
-                                                font-size: 14px;
-                                                line-height: 20px;
-                                                color: #014099;
-                                                background-color: #EEF3F9;
-                                            }
-                                        }
-                                        .mo_date{
-                                            font-size: 14px;
-                                            line-height: 18px;
-                                        }
+                                }
+                                .date_td{
+                                    width: calc(100% - 145px);
+                                    justify-content: end;
+                                    min-width: auto;
+                                    order: 3;
+                                    border: none;
+                                }
+                                .cancel_td{
+                                    width: auto;
+                                    min-width: auto;
+                                    order: 2;
+                                    button{
+                                        padding: 5px 17px;
                                     }
                                 }
                             }
-                            .pagenation{
-                                margin-top: 37px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                ul{
-                                    display: flex;
-                                    margin: 0 10px;
-                                    li{
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                        width: 24px;
-                                        height: 24px;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        cursor: pointer;
-                                        &.on{
-                                            background-color: #666666;
-                                            color: #fff;
-                                        }
-                                    }
-                                }
-                                .back_page{
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    &.on{
-                                        .all_page{
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(180deg);
-                                        }
-                                        .one_page{
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(180deg);
-                                        }
-                                    }
-                                    .all_page{
-                                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        margin-right: 6px;
-                                        cursor: pointer;
-                                    }
-                                    .one_page{
-                                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        cursor: pointer;
-                                    }
-                                }
-                                .next_page{
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    &.on{
-                                        .all_page{
-                                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                                            transform: rotate(0deg);
-                                        }
-                                        .one_page{
-                                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                                            transform: rotate(0deg);
-                                        }
-                                    }
-                                    .all_page{
-                                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                                        transform: rotate(180deg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        cursor: pointer;
-                                    }
-                                    .one_page{
-                                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                                        transform: rotate(180deg);
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                        background-position: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        margin-right: 6px;
-                                        cursor: pointer;
-                                    }
-                                }
+                        }
+                    }
+                }
+                .pagenation{
+                    margin-top: 37px;
+                    ul{
+                        li{
+                            &:nth-last-child(-n+5){
+                                display: none;
                             }
                         }
                     }
@@ -15342,6 +15324,7 @@ body{
             }
         }
     }
+
 }
 
 
