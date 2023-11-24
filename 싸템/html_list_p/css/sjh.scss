@@ -805,6 +805,7 @@ body{
 
 // index페이지 등급별혜택 팝업
 #pop_class_view{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -1327,7 +1328,7 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 21px 30px;
+            padding: 21px 0;
             &.con_box_01{
                 margin-bottom: 0px;
             }
@@ -1344,16 +1345,23 @@ body{
                 align-items: start;
                 width: 100%;
                 .title {
+                    width: calc(100% / 3);
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: start;
                     flex-direction: column;
+                    position: relative;
                     &:not(:last-child) {
                         margin-right: 0px;
                     }
 
                     &:not(:first-child) {
                         margin-left: 0px;
+                    }
+                    &:after{
+                        position: absolute;
+                        top: 5px;
+                        right: 0;
                     }
 
                     p {
@@ -1377,12 +1385,6 @@ body{
                         }
                     }
 
-                }
-
-                .arrow_asset {
-                    img {
-                        display: block;
-                    }
                 }
             }
         }

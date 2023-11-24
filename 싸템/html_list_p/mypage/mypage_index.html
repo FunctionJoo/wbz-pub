@@ -19,11 +19,19 @@
 	<script src="../js/main.js"></script>
 </head>
 <body>
-	<!-- <div id="pop_class_view">
+	<script>
+		function onClick(){
+			document.getElementById('pop_class_view').style.display = 'block'
+		}
+		function offClick(){
+			document.getElementById('pop_class_view').style.display = 'none'
+		}
+	</script>
+	<div id="pop_class_view">
 		<div class="pop_box">
 			<div class="pop_top">
 				<div class="title">등급별 혜택 보기</div>
-				<div class="close"></div>
+				<div class="close" onclick="offClick()"></div>
 			</div>
 			<div class="pop_bottom">
 				<div class="info_txt">이용권은 <em>매월 1일</em> 자동 발행 됩니다.</div>
@@ -31,11 +39,11 @@
 					<table>
 						<tr>
 							<th>등급</th>
+							<td><img src="../images/mypage/mypage_normal_button.png" alt="class"></td>
+							<td><img src="../images/mypage/mypage_silver_button.png" alt="class"></td>
+							<td><img src="../images/mypage/mypage_gold_button.png" alt="class"></td>
 							<td><img src="../images/mypage/myPage_platinum_button.png" alt="class"></td>
-							<td><img src="../images/mypage/myPage_platinum_button.png" alt="class"></td>
-							<td><img src="../images/mypage/myPage_platinum_button.png" alt="class"></td>
-							<td><img src="../images/mypage/myPage_platinum_button.png" alt="class"></td>
-							<td><img src="../images/mypage/myPage_platinum_button.png" alt="class"></td>
+							<td><img src="../images/mypage/mypage_vip_button.png" alt="class"></td>
 						</tr>
 						<tr>
 							<th></th>
@@ -44,7 +52,7 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<header id="header">
 		<div class="w_set">
 			<div class="sec_top">
@@ -488,7 +496,7 @@
 										홍길동님의 등급은<br>
 										<strong>플래티넘</strong>입니다.
 									</p>
-									<button class="class_popup"><span>등급별 혜택보기</span><i></i></button>
+									<button onclick="onClick()" id="class_popup" class="class_popup"><span>등급별 혜택보기</span><i></i></button>
 								</div>
 							</div>
 							<div class="my_grade_list2">
