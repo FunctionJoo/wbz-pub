@@ -6683,403 +6683,180 @@ body{
 }
 
 // 구매취소중
-#mypage {
-    &.canceling_purchase {
-        .my_cont {
+#mypage{
+    &.canceling_purchase{
+        .my_cont{
             .pc_title {
                 font-size: 16px;
                 line-height: 24px;
-                margin-bottom: 20px;
                 font-weight: 500;
+                margin-bottom: 20px;
             }
 
-
-            // 페이지네이션
-            .pagenation {
-                margin-top: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                ul {
-                    display: flex;
-                    margin: 0 10px;
-
-                    li {
-                        font-size: 14px;
-                        line-height: 19px;
-                        width: 24px;
-                        height: 24px;
+            .main{
+                .con_top{
+                    display: none;
+                }
+                .table_box{
+                    .pc_table_head{
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-
-                        &.on {
-                            background-color: #666666;
-                            color: #fff;
-                        }
-                    }
-                }
-
-                .back_page {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &.on{
-                        .all_page{
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
-                        .one_page{
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
-                    }
-                    .all_page {
-                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        margin-right: 6px;
-                        cursor: pointer;
-                    }
-
-                    .one_page {
-                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        cursor: pointer;
-                    }
-                }
-
-                .next_page {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &.on{
-                        .all_page{
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(0deg);
-                        }
-                        .one_page{
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(0deg);
-                        }
-                    }
-                    .all_page {
-                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                        transform: rotate(180deg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        cursor: pointer;
-                    }
-
-                    .one_page {
-                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                        transform: rotate(180deg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        margin-right: 6px;
-                        cursor: pointer;
-                    }
-                }
-            }
-
-            #mo_saleComplete_table {
-                display: none;
-            }
-
-            #saleComplete_table {
-                display: block;
-
-                table {
-                    border-collapse: collapse;
-                    border-spacing: 0;
-
-                    tr {
-                        th {
-                            background-color: #F6F6F6;
-                            border-top: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
-                            border-left: 1px solid #D3D3D3;
-                            padding: 15px 0;
-                            font-weight: normal;
-                            text-align: center;
+                        height: 50px;
+                        background-color: #F6F6F6;
+                        border: 1px solid #D3D3D3;
+                        .th{
+                            font-size: 14px;
+                            line-height: 20px;
                             color: #000;
-
-                            &:last-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:not(:last-child){
                                 border-right: 1px solid #D3D3D3;
                             }
+                            &.cate_th{
+                                width: 148px;
+                                min-width: 148px;
+                                max-width: 148px;
+                            }
+                            &.title_th{
+                                width: 368px;
+                                min-width: 368px;
 
-                            &.category {
-                                width: 150px;
                             }
-                            &.title {
-                                width: 367px;
-                            }
-                            &.amount {
+                            &.price_th{
                                 width: 124px;
+                                min-width: 124px;
                             }
-                            &.date {
-                                width: 80px;
+                            &.date_th{
+                                width: 78px;
+                                min-width: 78px;
                             }
-                            &.chat {
+                            &.chat_th{
                                 width: 50px;
+                                min-width: 50px;
                             }
-                            &.progress {
+                            &.cancel_th{
                                 width: 84px;
+                                min-width: 84px;
                             }
                         }
-
-                        td {
-                            border-top: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
+                    }
+                    .table_tr_box{
+                        .table_tr{
+                            border-right: 1px solid #D3D3D3;
                             border-left: 1px solid #D3D3D3;
-                            padding: 15px 0;
-                            text-align: center;
-
-                            &:last-child {
-                                border-right: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            height: 50px;
+                            display: flex;
+                            &.no_item{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
-
-                            &.category_td {
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #000;
-                            }
-
-                            &.title_td {
-                                font-size: 13px;
-                                line-height: 19px;
-                                color: #000;
-                            }
-
-                            &.amount_td {
-                                font-size: 14px;
-                                line-height: 20px;
-
-                                em {
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                    font-weight: 600;
-                                }
-                            }
-
-                            &.date_td {
-                                font-size: 14px;
-                                line-height: 18px;
-                            }
-
-                            &.chat_td {
-                                .img_box {
-                                    width: fit-content;
-                                    margin: 0 auto;
-
-                                    img {
-                                        display: block;
-                                    }
-
-                                    .count {
-                                        display: none;
-                                    }
-                                }
-
-                                &.chat_exists {
-                                    .img_box {
-                                        position: relative;
-                                        margin: 0 9px;
-
-                                        .count {
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            width: 21.91px;
-                                            height: 21.91px;
-                                            border-radius: 50%;
-                                            background-color: #434343;
-                                            position: absolute;
-                                            bottom: 50%;
-                                            left: 50%;
-
-                                            .count_chat {
-                                                display: block;
-                                                font-size: 10px;
-                                                line-height: 14px;
-                                                color: #fff;
-                                            }
-
-                                            .over_chat {
-                                                display: none;
-                                                font-size: 10px;
-                                                line-height: 14px;
-                                                color: #fff;
-                                            }
-
-                                            &.over {
-                                                .count_chat {
-                                                    display: none;
-                                                }
-
-                                                .over_chat {
-                                                    display: block;
+                            &.chat_exists{
+                                .mo_bottom{
+                                    .chat_td{
+                                        padding: 22px 20px 10px 9px;
+                                        a{
+                                            .img_box{
+                                                
+                                                .count{
+                                                    display: flex;
                                                 }
                                             }
                                         }
                                     }
                                 }
                             }
-
-                            &.progress_td {
-                                .view_button{
-                                    padding: 5px 17px;
-                                    border: 1px solid #D3D3D3;
-                                    border-radius: 3px;
-                                    background-color: #fff;
-                                    font-size: 14px;
-                                    line-height: 20px;
+                            &.chat_over{
+                                .mo_bottom{
+                                    .chat_td{
+                                        a{
+                                            .img_box{
+                                                .count{
+                                                    .count_chat{
+                                                        display: none;
+                                                    }
+                                                    .over_chat{
+                                                        display: inline-block;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:1080px) {
-    #mypage {
-        &.canceling_purchase {
-            .w_set {
-                padding: 0 !important;
-            }
-
-            .my_cont {
-                .my_title {
-                    margin-left: 16px;
-                    margin-right: 16px;
-                    margin-bottom: 41px !important;
-                    padding-bottom: 20px !important;
-                }
-
-                .pc_title {
-                    display: none;
-                }
-
-                .pagenation {
-                    margin-top: 37px;
-                }
-
-                #saleComplete_table {
-                    display: none;
-                }
-
-                #mo_saleComplete_table {
-                    display: block;
-                    .con_count{
-                        margin-left: 16px;
-                        margin-right: 16px;
-                        margin-bottom: 15px;
-                        span{
-                            font-size: 14px;
-                            line-height: 21px;
-                            em{
-                                font-weight: 400;
-                                color: #014099;
-                            }
-                        }
-                    }
-                    .mo_table {
-                        border-top: 1px solid #D3D3D3;
-                        border-bottom: 1px solid #D3D3D3;
-
-                        .mo_tr {
-                            padding: 20px 16px;
-
-                            &:not(:last-child) {
-                                border-bottom: 1px solid #D3D3D3;
-                            }
-
-                            .amount_date_box {
+                            
+                            .cate_td{
+                                width: 148px;
+                                min-width: 148px;
+                                border-right: 1px solid #D3D3D3;
                                 display: flex;
-                                justify-content: space-between;
+                                justify-content: center;
                                 align-items: center;
-                                margin-bottom: 21px;
-
-                                .amount_td {
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                            }
+                            .title_td{
+                                width: 368px;
+                                min-width: 368px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 13px;
+                                line-height: 19px;
+                                color: #000;
+                                a{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
+                            }
+                            .mo_middle{
+                                display: flex;
+                                .price_td{
+                                    width: 124px;
+                                    min-width: 124px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-
-                                    em {
-                                        font-size: 14px;
+                                    em{
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
                                 }
-
-                                .date_td {
+                                .date_td{
+                                    width: 78px;
+                                    min-width: 78px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
                                     font-size: 14px;
                                     line-height: 18px;
                                 }
                             }
-
-                            .category_td {
-                                font-size: 14px;
-                                line-height: 20px;
-                                margin-bottom: 6px;
-                            }
-
-                            .title_td {
-                                font-size: 14px;
-                                line-height: 20px;
-                                margin-bottom: 11px;
-                                font-weight: 500;
-                            }
-
-                            .bottom_right_box {
+                            .mo_bottom{
                                 display: flex;
-                                justify-content: end;
-                                align-items: center;
-                                .progress_td {
-                                    margin-right: 10px;
-                                    .view_button{
-                                        padding: 5px 22px;
-                                        border: 1px solid #D3D3D3;
-                                        border-radius: 3px;
-                                        background-color: #fff;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                                .chat_td {
-                                    .img_box {
-                                        width: fit-content;
-                                        margin: 0 auto;
-                                        img {
-                                            display: block;
-                                        }
-                                        .count {
-                                            display: none;
-                                        }
-                                    }
-                                    &.chat_exists {
+                                .chat_td{
+                                    width: 50px;
+                                    min-width: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-right: 1px solid #D3D3D3;
+                                    a{
+                                        display: block;
                                         .img_box {
                                             position: relative;
-                                            margin-right: calc(21.91px / 2);
                                             .count {
-                                                display: flex;
+                                                display: none;
                                                 justify-content: center;
                                                 align-items: center;
                                                 width: 21.91px;
@@ -7089,38 +6866,284 @@ body{
                                                 position: absolute;
                                                 bottom: 50%;
                                                 left: 50%;
+    
                                                 .count_chat {
                                                     display: block;
                                                     font-size: 10px;
                                                     line-height: 14px;
                                                     color: #fff;
                                                 }
+    
                                                 .over_chat {
                                                     display: none;
                                                     font-size: 10px;
                                                     line-height: 14px;
                                                     color: #fff;
                                                 }
-                                                &.over {
-                                                    .count_chat {
-                                                        display: none;
-                                                    }
-                                                    .over_chat {
-                                                        display: block;
-                                                    }
-                                                }
                                             }
                                         }
+                                    }
+                                }
+                                .cancel_td{
+                                    width: 84px;
+                                    min-width: 84px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    button{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        padding: 5px 17px;
+                                        border: 1px solid #D3D3D3;
+                                        border-radius: 3px;
+                                        background-color: #fff;
                                     }
                                 }
                             }
                         }
                     }
                 }
+                .pagenation{
+                    margin-top: 60px;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            &.on{
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .back_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                    .next_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
         }
     }
+}
 
+@media(max-width:1080px){
+    #mypage{
+        &.canceling_purchase{
+            .w_set{
+                padding: 0;
+                .my_cont{
+                    .pc_title {
+                        display: none;
+                    }
+                    .my_title{
+                        margin-left: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 44px !important;
+                    }
+        
+                    .main{
+                        .con_top{
+                            display: block;
+                            margin-bottom: 15px;
+                            .post_num{
+                                padding-left: 16px;
+                                padding-right: 16px;
+                                span{
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    em{
+                                        color: #014099;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                        .table_box{
+                            .pc_table_head{
+                                display: none;
+                            }
+                            .table_tr_box{
+                                border-top: 1px solid #D3D3D3;
+                                .table_tr{
+                                    height: auto;
+                                    flex-direction: column;
+                                    padding: 20px 16px 20px 17px;
+                                    &:nth-child(n+5){
+                                        display: none;
+                                    }
+                                    &.chat_exists{
+                                        .mo_bottom{
+                                            .chat_td{
+                                                margin-right: 11px;
+                                                padding: 0;
+                                            }
+                                        }
+                                    }
+                                    .cate_td{
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
+                                        margin-bottom: 6px;
+                                    }
+                                    .title_td{
+                                        font-weight: 500;
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        justify-content: start;
+                                        margin-bottom: 11px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        a{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                        }
+                                    }
+                                    .mo_middle{
+                                        justify-content: space-between;
+                                        margin-bottom: 21px;
+                                        .price_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                        .date_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                    }
+                                    .mo_bottom{
+                                        justify-content: end;
+                                        .chat_td{
+                                            order: 3;
+                                            width: auto;
+                                            min-width: auto;
+                                            border-right: none;
+                                            a{
+                                                display: block;
+                                                .img_box {
+                                                    position: relative;
+                                                }
+                                            }
+                                        }
+                                        .cancel_td{
+                                            order: 2;
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                            margin-right: 10px;
+                                            button{
+                                                padding: 5px 22px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .pagenation{
+                            display: flex;
+                            margin-top: 37px;
+                            ul{
+                                li{
+                                    &:nth-last-child(-n+5){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sale_info{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // 구매등록물품
