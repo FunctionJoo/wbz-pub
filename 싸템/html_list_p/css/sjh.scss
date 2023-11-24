@@ -4458,583 +4458,161 @@ body{
 }
 
 // 구매진행중
-#mypage {
-    &.purchase_in_progress {
-        .my_cont {
+#mypage{
+    &.purchase_in_progress{
+        .my_cont{
             .pc_title {
                 font-size: 16px;
                 line-height: 24px;
-                margin-bottom: 20px;
                 font-weight: 500;
+                margin-bottom: 20px;
             }
-
-            .mo_table_count {
-                display: flex;
-                margin-bottom: 10px;
-                p {
-                    font-size: 14px;
-                    line-height: 21px;
-            
-                    em {
-                        font-weight: normal;
-                        color: #014099;
-                    }
-                }
-            }
-
-            // 페이지네이션
-            .pagenation {
-                margin-top: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                ul {
+            .main{
+                .con_top{
+                    margin-bottom: 10px;
                     display: flex;
-                    margin: 0 10px;
-
-                    li {
-                        font-size: 14px;
-                        line-height: 19px;
-                        width: 24px;
-                        height: 24px;
+                    justify-content: space-between;
+                    align-items: center;
+                    .table_count {
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-
-                        &.on {
-                            background-color: #666666;
-                            color: #fff;
+                        p {
+                            font-size: 14px;
+                            line-height: 21px;
+        
+                            em {
+                                font-weight: normal;
+                                color: #014099;
+                            }
                         }
                     }
                 }
-
-                .back_page {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &.on{
-                        .all_page{
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
-                        .one_page{
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
-                    }
-                    .all_page {
-                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        margin-right: 6px;
-                        cursor: pointer;
-                    }
-
-                    .one_page {
-                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        cursor: pointer;
-                    }
-                }
-
-                .next_page {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &.on{
-                        .all_page{
-                            background-image: url(../images/mypage/table_arrow_on_end.svg);
-                            transform: rotate(180deg);
-                        }
-                        .one_page{
-                            background-image: url(../images/mypage/table_arrow_on_next.svg);
-                            transform: rotate(180deg);
-                        }
-                    }
-                    .all_page {
-                        background-image: url(../images/mypage/table_arrow_off_end.svg);
-                        transform: rotate(180deg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        cursor: pointer;
-                    }
-
-                    .one_page {
-                        background-image: url(../images/mypage/table_arrow_off_next.svg);
-                        transform: rotate(180deg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 24px;
-                        height: 24px;
-                        margin-right: 6px;
-                        cursor: pointer;
-                    }
-                }
-            }
-
-            #mo_cancelWait_table {
-                display: none;
-            }
-
-            #cancelWait_table {
-                display: block;
-
-                table {
-                    border-collapse: collapse;
-                    border-spacing: 0;
-
-                    tr {
-                        th {
-                            background-color: #F6F6F6;
-                            border-top: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
-                            border-left: 1px solid #D3D3D3;
-                            padding: 15px 0;
-                            font-weight: normal;
-                            text-align: center;
+                .table_box{
+                    .pc_table_head{
+                        display: flex;
+                        height: 50px;
+                        background-color: #F6F6F6;
+                        border: 1px solid #D3D3D3;
+                        .th{
+                            font-size: 14px;
+                            line-height: 20px;
                             color: #000;
-                            &:last-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:not(:last-child){
                                 border-right: 1px solid #D3D3D3;
                             }
-
-                            &.category {
-                                width: 150px;
+                            &.cate_th{
+                                width: 148px;
+                                min-width: 148px;
+                                max-width: 148px;
                             }
-
-                            &.title {
+                            &.title_th{
                                 width: 280px;
-                            }
+                                min-width: 280px;
 
-                            &.amount {
+                            }
+                            &.price_th{
                                 width: 124px;
+                                min-width: 124px;
                             }
-
-                            &.date {
+                            &.date_th{
+                                width: 78px;
+                                min-width: 78px;
+                            }
+                            &.view_th{
                                 width: 80px;
+                                min-width: 80px;
                             }
-
-                            &.progress {
-                                width: 80px;
-                            }
-                            
-                            &.cancel {
+                            &.cancel_th{
                                 width: 92px;
+                                min-width: 92px;
                             }
-
-                            &.chat {
+                            &.chat_th{
                                 width: 50px;
+                                min-width: 50px;
                             }
                         }
-
-                        td {
-                            border-top: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
+                    }
+                    .table_tr_box{
+                        .table_tr{
+                            border-right: 1px solid #D3D3D3;
                             border-left: 1px solid #D3D3D3;
-                            padding: 15px 0;
-                            text-align: center;
-
-                            &:last-child {
-                                border-right: 1px solid #D3D3D3;
+                            border-bottom: 1px solid #D3D3D3;
+                            height: 86px;
+                            display: flex;
+                            &.no_item{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
-
-                            &.category_td {
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #000;
-                            }
-
-                            &.title_td {
-                                font-size: 13px;
-                                line-height: 19px;
-                            }
-
-                            &.amount_td {
-                                font-size: 14px;
-                                line-height: 20px;
-
-                                em {
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                    font-weight: 600;
-                                }
-                            }
-
-                            &.date_td {
-                                font-size: 14px;
-                                line-height: 18px;
-                            }
-
-                            &.chat_td {
-                                .img_box {
-                                    width: fit-content;
-                                    margin: 0 auto;
-
-                                    img {
-                                        display: block;
-                                    }
-
-                                    .count {
-                                        display: none;
-                                    }
-                                }
-
-                                &.chat_exists {
-                                    .img_box {
-                                        position: relative;
-                                        margin: 0 9px;
-
-                                        .count {
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            width: 21.91px;
-                                            height: 21.91px;
-                                            border-radius: 50%;
-                                            background-color: #434343;
-                                            position: absolute;
-                                            bottom: 50%;
-                                            left: 50%;
-
-                                            .count_chat {
-                                                display: block;
-                                                font-size: 10px;
-                                                line-height: 14px;
-                                                color: #fff;
-                                            }
-
-                                            .over_chat {
-                                                display: none;
-                                                font-size: 10px;
-                                                line-height: 14px;
-                                                color: #fff;
-                                            }
-
-                                            &.over {
-                                                .count_chat {
+                            &.step_02_on{
+                                height: 122px;
+                                .mo_bottom{
+                                    .detail_bottom_top{
+                                        .mo_left{
+                                            .view_td{
+                                                .step_01{
                                                     display: none;
                                                 }
-
-                                                .over_chat {
-                                                    display: block;
+                                                .step_02{
+                                                    display: inline-block;
+                                                }
+                                            }
+                                        }
+                                        .mo_right{
+                                            .cancel_td{
+                                                .step_01{
+                                                    display: none;
+                                                }
+                                                .step_02{
+                                                    margin-bottom: 6px;
+                                                    display: inline-block;
                                                 }
                                             }
                                         }
                                     }
-                                }
-                            }
-
-                            &.progress_td {
-                                .step_01{
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    
-                                }
-                                .step_02{
-                                    display: none;
-                                    span{
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-
-                                &.step_02_on{
-                                    padding: 6px 0;
-                                    .step_01{
-                                        display: none;
-                                    }
-                                    .step_02{
-                                        display: block;
-                                    }
-                                }
-                            }
-
-                            &.buy_td {
-                                &.buy_02_on{
-                                    .buy_01{
-                                        display: none;
-                                    }
-                                    .buy_02{
-                                        display: block;
-                                    }
-                                }
-                                .cancel_button {
-                                    padding: 5px 14px;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    border: 1px solid #D3D3D3;
-                                    border-radius: 3px;
-                                    background-color: #fff;
-                                    margin-top: 6px;
-                                }
-                                .buy_01{
-                                    display: block;
-                                    button{
-                                        padding: 5px 14px;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        border-radius: 3px;
-                                        background-color: #014099;
-                                        border: none;
-                                        color: #fff;
-                                    }
-                                }
-                                .buy_02{
-                                    display: none;
-                                    .top_button{
-                                        padding: 5px 14px;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        border-radius: 3px;
-                                        background-color: #fff;
-                                        border: 1px solid #E96233;
-                                        color: #E96135;
-                                        margin-bottom: 6px;
-                                    }
-                                    .bottom_button{
-                                        padding: 5px 8px;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        border-radius: 3px;
-                                        background-color: #fff;
-                                        border: 1px solid #014099;
-                                        color: #014099;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:1080px) {
-    #mypage {
-        &.purchase_in_progress {
-            .w_set {
-                padding: 0 !important;
-            }
-
-            .my_cont {
-                .my_title {
-                    margin: 0 16px;
-                }
-
-                .pc_title {
-                    display: none;
-                }
-
-                .mo_table_count {
-                    margin-left: 16px;
-                    margin-right: 16px;
-                    margin-top: 44px;
-                    margin-bottom: 15px;
-                    display: flex;
-
-                    p {
-                        font-size: 14px;
-                        line-height: 21px;
-
-                        em {
-                            font-weight: normal;
-                            color: #014099;
-                        }
-                    }
-                }
-
-                .pagenation{
-                    margin-top: 37px;
-                }
-
-                #cancelWait_table {
-                    display: none;
-                }
-
-                #mo_cancelWait_table {
-                    display: block;
-
-                    .mo_table {
-                        border-top: 1px solid #D3D3D3;
-                        border-bottom: 1px solid #D3D3D3;
-
-                        .mo_tr {
-                            padding: 20px 16px;
-
-                            &:not(:last-child) {
-                                border-bottom: 1px solid #D3D3D3;
-                            }
-
-                            .amount_date_box {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                margin-bottom: 21px;
-
-                                .amount_td {
-                                    font-size: 14px;
-                                    line-height: 20px;
-
-                                    em {
-                                        font-size: 14px;
-                                        line-height: 18px;
-                                        font-weight: 600;
-                                    }
-                                }
-
-                                .date_td {
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                }
-                            }
-
-                            .category_td {
-                                font-size: 14px;
-                                line-height: 20px;
-                                margin-bottom: 6px;
-                                color: #000;
-                            }
-                            .title_td {
-                                font-size: 14px;
-                                line-height: 20px;
-                                margin-bottom: 11px;
-                                font-weight: 500;
-                                color: #000;
-                            }
-                            .step_02_box{
-                                &.on{
-                                    .progress_td{
+                                    .detail_bottom_bottom{
                                         .step_01{
                                             display: none;
                                         }
                                         .step_02{
-                                            display: inline-block;
-                                        }
-                                        .bottom_right_box{
-                                            .step_02_on{
-                                                display: inline-block;
-                                            }
-                                        }
-                                    }
-                                    .buy_td{
-                                        .buy_01{
-                                            display: none;
-                                        }
-                                        .buy_02{
-                                            display: block;
+                                            display: block !important;
                                         }
                                     }
                                 }
-                                .progress_td {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    .step_01{
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        color: #014099;
-                                    }
-                                    .step_02{
-                                        display: none;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        color: #DE4040;
-                                    }
-                                    .bottom_right_box{
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        .step_02_on{
-                                            display: none;
-                                            border: 1px solid #D3D3D3;
-                                            border-radius: 3px;
-                                            padding: 5px 3px;
-                                            background-color: #fff;
-                                            font-size: 14px;
-                                            line-height: 20px;
-                                            margin-right: 10px;
-                                        }
-                                        .always_in{
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                            .cancel_td {
-                                                button {
-                                                    border: 1px solid #D3D3D3;
-                                                    border-radius: 3px;
-                                                    padding: 5px 9px;
-                                                    background-color: #fff;
-                                                    font-size: 14px;
-                                                    line-height: 20px;
-                                                    margin-right: 10px;
+                            }
+                            &.chat_exists{
+                                .mo_bottom{
+                                    .detail_bottom_top{
+                                        .mo_right{
+                                            .chat_td{
+                                                padding: 40px 18px 27px 11px;
+                                                a{
+                                                    .img_box{
+                                                        .count{
+                                                            display: flex;
+                                                        }
+                                                    }
                                                 }
                                             }
-                                            .chat_td {
-                                                .img_box {
-                                                    width: fit-content;
-                                                    margin: 0 auto;
-                                                
-                                                    img {
-                                                        display: block;
-                                                    }
-                                                
-                                                    .count {
-                                                        display: none;
-                                                    }
-                                                }
-                                            
-                                                &.chat_exists {
-                                                    .img_box {
-                                                        position: relative;
-                                                        margin-right: calc(21.91px / 2);
-                                                    
-                                                        .count {
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            align-items: center;
-                                                            width: 21.91px;
-                                                            height: 21.91px;
-                                                            border-radius: 50%;
-                                                            background-color: #434343;
-                                                            position: absolute;
-                                                            bottom: 50%;
-                                                            left: 50%;
-                                                        
-                                                            .count_chat {
-                                                                display: block;
-                                                                font-size: 10px;
-                                                                line-height: 14px;
-                                                                color: #fff;
-                                                            }
-                                                        
-                                                            .over_chat {
+                                        }
+                                    }
+                                }
+                            }
+                            &.chat_over{
+                                .mo_bottom{
+                                    .detail_bottom_top{
+                                        .mo_right{
+                                            .chat_td{
+                                                a{
+                                                    .img_box{
+                                                        .count{
+                                                            .count_chat{
                                                                 display: none;
-                                                                font-size: 10px;
-                                                                line-height: 14px;
-                                                                color: #fff;
                                                             }
-                                                        
-                                                            &.over {
-                                                                .count_chat {
-                                                                    display: none;
-                                                                }
-                                                            
-                                                                .over_chat {
-                                                                    display: block;
-                                                                }
+                                                            .over_chat{
+                                                                display: inline-block;
                                                             }
                                                         }
                                                     }
@@ -5043,42 +4621,510 @@ body{
                                         }
                                     }
                                 }
-                                .buy_td{
-                                    margin-top: 25px;
-                                    .buy_01{
-                                        display: block;
-                                        button{
-                                            width: 100%;
-                                            height: 54px;
-                                            background-color: #fff;
-                                            border: 1px solid #24B685;
-                                            border-radius: 3px;
-                                            color: #24B685;
+                            }
+                            
+                            .cate_td{
+                                width: 148px;
+                                min-width: 148px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                            }
+                            .title_td{
+                                width: 280px;
+                                min-width: 280px;
+                                border-right: 1px solid #D3D3D3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 13px;
+                                line-height: 19px;
+                                color: #000;
+                                a{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
+                            }
+                            .mo_middle{
+                                display: flex;
+                                .price_td{
+                                    width: 124px;
+                                    min-width: 124px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    em{
+                                        line-height: 18px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .date_td{
+                                    width: 78px;
+                                    min-width: 78px;
+                                    border-right: 1px solid #D3D3D3;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+                            .mo_bottom{
+                                .detail_bottom_top{
+                                    display: flex;
+                                    height: 100%;
+                                    .mo_left{
+                                        .view_td{
+                                            width: 80px;
+                                            min-width: 80px;
+                                            height: 100%;
+                                            border-right: 1px solid #D3D3D3;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            .step_01{
+                                                color: #014099;
+                                            }
+                                            .step_02{
+                                                display: none;
+                                                color: #DE4040;
+                                            }
                                         }
                                     }
-                                    .buy_02{
-                                        display: none;
-                                        button{
-                                            width: 100%;
-                                            height: 54px;
-                                            background-color: #fff;
-                                            border: 1px solid #E96233;
-                                            border-radius: 3px;
-                                            color: #E96135;
+                                    .mo_right{
+                                        display: flex;
+                                        
+                                        .cancel_td{
+                                            width: 92px;
+                                            min-width: 92px;
+                                            border-right: 1px solid #D3D3D3;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            .step_01{
+                                                .payment_button{
+                                                    padding: 5px 14px;
+                                                    border-radius: 3px;
+                                                    background-color: #014099;
+                                                    border: none;
+                                                    color: #fff;
+                                                    font-size: 14px;
+                                                    line-height: 20px;
+                                                    margin-bottom: 6px;
+                                                }
+                                            }
+                                            .step_02{
+                                                display: none;
+                                                .mo_flex_box{
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    .check_button{
+                                                        padding: 5px 14px;
+                                                        border-radius: 3px;
+                                                        border: 1px solid #E96233;
+                                                        border-radius: 3px;
+                                                        color: #E96233;
+                                                        font-size: 14px;
+                                                        line-height: 20px;
+                                                        background-color: #fff;
+                                                        margin-bottom: 6px;
+                                                    }
+                                                    .write_button{
+                                                        padding: 5px 8px;
+                                                        border-radius: 3px;
+                                                        border: 1px solid #014099;
+                                                        color: #014099;
+                                                        font-size: 14px;
+                                                        line-height: 20px;
+                                                        background-color: #fff;
+                                                    }
+                                                }
+                                            }
+                                            .cancel_button{
+                                                padding: 5px 14px;
+                                                border: 1px solid #D3D3D3;
+                                                border-radius: 3px;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                background-color: #fff;
+                                            }
+                                        }
+                                        .chat_td{
+                                            width: 50px;
+                                            min-width: 50px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            a{
+                                                display: block;
+                                                .img_box {
+                                                    position: relative;
+                                                    .count {
+                                                        display: none;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        width: 21.91px;
+                                                        height: 21.91px;
+                                                        border-radius: 50%;
+                                                        background-color: #434343;
+                                                        position: absolute;
+                                                        bottom: 50%;
+                                                        left: 50%;
+            
+                                                        .count_chat {
+                                                            display: block;
+                                                            font-size: 10px;
+                                                            line-height: 14px;
+                                                            color: #fff;
+                                                        }
+            
+                                                        .over_chat {
+                                                            display: none;
+                                                            font-size: 10px;
+                                                            line-height: 14px;
+                                                            color: #fff;
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
+                                }
+                                .detail_bottom_bottom{
+                                    display: none;
                                 }
                             }
                         }
                     }
                 }
-            }
-            .sale_info{
-                display: none;
+                .pagenation{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            &.on{
+                                background-color: #666666;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .back_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(180deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                    .next_page{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.on{
+                            .all_page{
+                                background-image: url(../images/mypage/table_arrow_on_end.svg);
+                                transform: rotate(0deg);
+                            }
+                            .one_page{
+                                background-image: url(../images/mypage/table_arrow_on_next.svg);
+                                transform: rotate(0deg);
+                            }
+                        }
+                        .all_page{
+                            background-image: url(../images/mypage/table_arrow_off_end.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                        .one_page{
+                            background-image: url(../images/mypage/table_arrow_off_next.svg);
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
         }
     }
+}
 
+@media(max-width:1080px){
+    #mypage{
+        &.purchase_in_progress{
+            .w_set{
+                padding: 0;
+                .my_cont{
+                    .pc_title {
+                        display: none;
+                    }
+                    .my_title{
+                        margin-left: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 20px !important;
+                    }
+        
+                    .main{
+                        .category_button{
+                            margin-left: 16px;
+                            margin-right: 16px;
+                            height: 45px;
+                            margin-bottom: 45px;
+                        }
+                        .con_top{
+                            margin-left: 16px;
+                            margin-right: 16px;
+                            margin-bottom: 15px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .table_count {
+                                display: flex;
+                                p {
+                                    font-size: 14px;
+                                    line-height: 21px;
+                
+                                    em {
+                                        font-weight: normal;
+                                        color: #014099;
+                                    }
+                                }
+                            }
+                        }
+                        .table_box{
+                            .pc_table_head{
+                                display: none;
+                            }
+                            .table_tr_box{
+                                border-top: 1px solid #D3D3D3;
+                                .table_tr{
+                                    height: auto;
+                                    flex-direction: column;
+                                    padding: 20px 16px 20px 17px;
+                                    &:nth-child(n+5){
+                                        display: none;
+                                    }
+                                    &.chat_exists{
+                                        .mo_bottom{
+                                            .detail_bottom_top{
+                                                .mo_right{
+                                                    .chat_td{
+                                                        padding: 0;
+                                                        margin-right: 11px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .cate_td{
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000;
+                                        margin-bottom: 6px;
+                                    }
+                                    .title_td{
+                                        font-weight: 500;
+                                        width: 100%;
+                                        min-width: auto;
+                                        border-right: none;
+                                        justify-content: start;
+                                        margin-bottom: 11px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        a{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                        }
+                                    }
+                                    .mo_middle{
+                                        justify-content: space-between;
+                                        margin-bottom: 21px;
+                                        .price_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                        .date_td{
+                                            width: auto;
+                                            border-right: none;
+                                            min-width: auto;
+                                        }
+                                    }
+                                    .mo_bottom{
+                                        .detail_bottom_top{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            .mo_left{
+                                                .view_td{
+                                                    margin-right: 10px;
+                                                    width: auto;
+                                                    min-width: auto;
+                                                    border-right: none;
+                                                    justify-content: start;
+                                                    .mo_flex_box{
+                                                        flex-direction: row;
+                                                        span{
+                                                            margin-right: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .mo_right{
+                                                .cancel_td{
+                                                    flex-direction: row;
+                                                    margin-right: 10px;
+                                                    width: auto;
+                                                    border-right: none;
+                                                    min-width: auto;
+                                                    .step_01{
+                                                        display: none;
+                                                    }
+                                                    .step_02{
+                                                        margin-bottom: 0;
+                                                        margin-right: 10px;
+                                                        .mo_flex_box{
+                                                            .check_button{
+                                                                display: none;
+                                                            }
+                                                            .write_button{
+                                                                padding: 5px 3px;
+                                                                border-color: #D3D3D3;
+                                                                color: #222;
+                                                            }
+                                                        }
+                                                    }
+                                                    .cancel_button{
+                                                        padding: 5px 9px;
+                                                    }
+                                                }
+                                                .chat_td{
+                                                    width: auto;
+                                                    min-width: auto;
+                                                    a{
+                                                        display: block;
+                                                        .img_box {
+                                                            position: relative;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .detail_bottom_bottom{
+                                            display: block;
+                                            margin-top: 20px;
+                                            .step_01{
+                                                width: 100%;
+                                                padding: 15px 0;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                border: 1px solid #24B685;
+                                                border-radius: 3px;
+                                                background-color: #fff;
+                                                color: #24B685;
+                                            }
+                                            .step_02{
+                                                display: none;
+                                                width: 100%;
+                                                padding: 15px 0;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                border: 1px solid #E96135;
+                                                border-radius: 3px;
+                                                background-color: #fff;
+                                                color: #E96135;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .pagenation{
+                            margin-top: 37px;
+                            ul{
+                                li{
+                                    &:nth-last-child(-n+5){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sale_info{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // 판매완료
@@ -7261,10 +7307,8 @@ body{
                                             height: 22px;
                                             margin-right: 10px;
                                             display: none;
-                                            img{
-                                                width: 100%;
-                                                height: 100%;
-                                            }
+                                            background: url(../images/mypage/mypage_premium.png) no-repeat center;
+                                            background-size: contain;
                                         }
                                         .category{
                                             overflow: hidden;
