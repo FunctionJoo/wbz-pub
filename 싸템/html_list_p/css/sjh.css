@@ -746,19 +746,58 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: space-between;
   align-items: center;
 }
+#my_grade .my_grade_box.normal .my_grade_list1 .class_button i {
+  background: url(../images/mypage/mypage_normal_button.png) no-repeat center;
+  background-size: contain;
+}
+#my_grade .my_grade_box.normal .my_grade_list1 .class_guide p em {
+  color: #014099;
+}
+#my_grade .my_grade_box.silver .my_grade_list1 .class_button i {
+  background: url(../images/mypage/mypage_silver_button.png) no-repeat center;
+  background-size: contain;
+}
+#my_grade .my_grade_box.silver .my_grade_list1 .class_guide p em {
+  color: #666666;
+}
+#my_grade .my_grade_box.gold .my_grade_list1 .class_button i {
+  background: url(../images/mypage/mypage_gold_button.png) no-repeat center;
+  background-size: contain;
+}
+#my_grade .my_grade_box.gold .my_grade_list1 .class_guide p em {
+  color: #f5b60e;
+}
+#my_grade .my_grade_box.platinum .my_grade_list1 .class_button i {
+  background: url(../images/mypage/myPage_platinum_button.png) no-repeat center;
+  background-size: contain;
+}
+#my_grade .my_grade_box.platinum .my_grade_list1 .class_guide p em {
+  color: #49d3d9;
+}
+#my_grade .my_grade_box.vip .my_grade_list1 .class_button i {
+  background: url(../images/mypage/mypage_vip_button.png) no-repeat center;
+  background-size: contain;
+}
+#my_grade .my_grade_box.vip .my_grade_list1 .class_guide p em {
+  color: #7356ba;
+}
 #my_grade .my_grade_box .my_grade_list1 {
+  width: 33.3333333333%;
   display: flex;
+  align-items: center;
   border-right: 1px dashed #D3D3D3;
-  padding-right: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 #my_grade .my_grade_box .my_grade_list1 .class_button {
-  margin-right: 10px;
-}
-#my_grade .my_grade_box .my_grade_list1 .class_button img {
   width: 68px;
-  height: 76px;
+  height: 68px;
+  margin-right: 15px;
+}
+#my_grade .my_grade_box .my_grade_list1 .class_button i {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 #my_grade .my_grade_box .my_grade_list1 .class_guide p {
   padding-bottom: 6px;
@@ -767,7 +806,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-weight: 500;
 }
 #my_grade .my_grade_box .my_grade_list1 .class_guide p em {
-  color: #49D3D9;
+  font-weight: 500;
 }
 #my_grade .my_grade_box .my_grade_list1 .class_guide .class_popup {
   width: 140px;
@@ -793,10 +832,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-size: contain;
 }
 #my_grade .my_grade_box .my_grade_list2 {
+  width: 33.3333333333%;
   border-right: 1px dashed #D3D3D3;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-right: 15px;
   padding-left: 20px;
 }
 #my_grade .my_grade_box .my_grade_list2 span {
@@ -819,42 +858,48 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-weight: 600;
 }
 #my_grade .my_grade_box .my_grade_list3 {
+  width: 33.3333333333%;
   padding-left: 20px;
-  padding-right: 10px;
 }
-#my_grade .my_grade_box .my_grade_list3 .detail_mileage {
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box {
+  margin-bottom: 15px;
+}
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage {
   display: flex;
   justify-content: space-between;
 }
-#my_grade .my_grade_box .my_grade_list3 .detail_mileage:nth-child(1) {
-  margin-bottom: 42px;
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage:nth-child(1) {
+  margin-bottom: 5px;
 }
-#my_grade .my_grade_box .my_grade_list3 .detail_mileage span {
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage span {
   font-size: 15px;
   line-height: 22px;
   color: #666666;
   margin-right: 19px;
 }
-#my_grade .my_grade_box .my_grade_list3 .detail_mileage p {
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage p {
   font-size: 14px;
   line-height: 20px;
 }
-#my_grade .my_grade_box .my_grade_list3 .detail_mileage p em {
+#my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage p em {
   font-size: 18px;
   line-height: 23px;
   margin-right: 4px;
   font-weight: 600;
 }
-#my_grade .my_grade_box .my_grade_list4 .mile_link {
-  display: block;
-  padding: 6px 17px;
-  font-size: 14px;
-  line-height: 20px;
+#my_grade .my_grade_box .my_grade_list3 .mile_link_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#my_grade .my_grade_box .my_grade_list3 .mile_link_box .mile_link {
+  width: calc((100% - 10px) / 2);
   border: 1px solid #666666;
   border-radius: 3px;
-}
-#my_grade .my_grade_box .my_grade_list4 .mile_link:nth-child(1) {
-  margin-bottom: 28px;
+  padding: 4px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 #ticket {
@@ -873,11 +918,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #ticket .ticket_box.ticket_box_02 .con_box .con_list .con_title {
   margin-bottom: 6px;
 }
-#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_link.before_check {
+#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_link {
   border-color: #014099;
   color: #014099;
 }
-#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_link.after_check {
+#ticket .ticket_box.ticket_box_02 .con_box .con_list .con_link.on {
   border: none;
   background-color: #D3D3D3;
   color: #A7A7A7;
@@ -940,8 +985,29 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #tran_status .con_box.con_box_01 {
   margin-bottom: 30px;
 }
-#tran_status .con_box .con_asset {
-  margin-right: 27px;
+#tran_status .con_box.con_box_01 .con_asset {
+  margin-right: 26px;
+  width: 37px;
+  height: 38px;
+}
+#tran_status .con_box.con_box_01 .con_asset i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/mypage/mypage_coin.svg) center no-repeat;
+  background-size: contain;
+}
+#tran_status .con_box.con_box_02 .con_asset {
+  margin-right: 28px;
+  width: 37px;
+  height: 31px;
+}
+#tran_status .con_box.con_box_02 .con_asset i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/mypage/mypage_cart.svg) center no-repeat;
+  background-size: contain;
 }
 #tran_status .con_box .con_list {
   display: flex;
@@ -953,9 +1019,15 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #tran_status .con_box .con_list .title:not(:last-child) {
-  margin-right: 34px;
+  margin-right: 33px;
 }
-#tran_status .con_box .con_list .title:not(:first-child) {
+#tran_status .con_box .con_list .title:not(:last-child)::after {
+  content: "";
+  background: url(../images/mypage/arrow_right_gray.svg) no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 6px;
+  height: 12px;
   margin-left: 33px;
 }
 #tran_status .con_box .con_list .title p {
@@ -975,9 +1047,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border-bottom: 1px solid #014099;
   margin-right: 1px;
   font-weight: 600;
-}
-#tran_status .con_box .con_list .arrow_asset img {
-  display: block;
 }
 
 @media (max-width: 1080px) {
@@ -1015,6 +1084,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     padding-top: 30px;
     padding-bottom: 0px;
     padding-right: 0px;
+    padding-left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1024,23 +1094,26 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   }
   #my_grade .my_grade_box .my_grade_list3 {
     width: 100%;
+    padding-left: 0;
     padding-top: 9px;
-    padding-bottom: 30px;
   }
-  #my_grade .my_grade_box .my_grade_list3 .detail_mileage:nth-child(1) {
-    margin-bottom: 12px;
+  #my_grade .my_grade_box .my_grade_list3 .detail_mileage_box {
+    margin-bottom: 30px;
   }
-  #my_grade .my_grade_box .my_grade_list4 {
+  #my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage:nth-child(1) {
+    margin-bottom: 11px;
+  }
+  #my_grade .my_grade_box .my_grade_list3 .mile_link_box {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  #my_grade .my_grade_box .my_grade_list4 .mile_link {
+  #my_grade .my_grade_box .my_grade_list3 .mile_link_box .mile_link {
     width: calc(100% - 5px);
     text-align: center;
     padding: 6px 0px;
   }
-  #my_grade .my_grade_box .my_grade_list4 .mile_link:nth-child(1) {
+  #my_grade .my_grade_box .my_grade_list3 .mile_link_box .mile_link:nth-child(1) {
     margin-bottom: 0px;
     margin-right: 10px;
   }

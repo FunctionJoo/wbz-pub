@@ -862,17 +862,106 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &.normal{
+            .my_grade_list1{
+                .class_button{
+                    i{
+                        background: url(../images/mypage/mypage_normal_button.png) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                .class_guide{
+                    p{
+                        em{
+                            color: #014099;
+                        }
+                    }
+                }
+            }
+        }
+        &.silver{
+            .my_grade_list1{
+                .class_button{
+                    i{
+                        background: url(../images/mypage/mypage_silver_button.png) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                .class_guide{
+                    p{
+                        em{
+                            color: #666666;
+                        }
+                    }
+                }
+            }
+        }
+        &.gold{
+            .my_grade_list1{
+                .class_button{
+                    i{
+                        background: url(../images/mypage/mypage_gold_button.png) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                .class_guide{
+                    p{
+                        em{
+                            color: #f5b60e;
+                        }
+                    }
+                }
+            }
+        }
+        &.platinum{
+            .my_grade_list1{
+                .class_button{
+                    i{
+                        background: url(../images/mypage/myPage_platinum_button.png) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                .class_guide{
+                    p{
+                        em{
+                            color: #49d3d9;
+                        }
+                    }
+                }
+            }
+        }
+        &.vip{
+            .my_grade_list1{
+                .class_button{
+                    i{
+                        background: url(../images/mypage/mypage_vip_button.png) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                .class_guide{
+                    p{
+                        em{
+                            color: #7356ba;
+                        }
+                    }
+                }
+            }
+        }
         .my_grade_list1{
+            width: calc(100% / 3);
             display: flex;
+            align-items: center;
             border-right: 1px dashed #D3D3D3;
-            padding-right: 20px;
             padding-top: 14px;
             padding-bottom: 14px;
             .class_button{
-                margin-right: 10px;
-                img{
-                    width: 68px;
-                    height: 76px;
+                width: 68px;
+                height: 68px;
+                margin-right: 15px;
+                i{
+                    display: block;
+                    width: 100%;
+                    height: 100%;  
                 }
             }
             .class_guide{
@@ -882,7 +971,7 @@ body{
                     line-height: 27px;
                     font-weight: 500;
                     em{
-                        color: #49D3D9;
+                        font-weight: 500;
                     }
                 }
                 .class_popup{
@@ -911,10 +1000,10 @@ body{
             }
         }
         .my_grade_list2{
+            width: calc(100% / 3);
             border-right: 1px dashed #D3D3D3;
             padding-top: 14px;
             padding-bottom: 14px;
-            padding-right: 15px;
             padding-left: 20px;
             span{
                 font-size: 15px;
@@ -937,42 +1026,46 @@ body{
             }
         }
         .my_grade_list3{
+            width: calc(100% / 3);
             padding-left: 20px;
-            padding-right: 10px;
-            .detail_mileage{
-                display: flex;
-                justify-content: space-between;
-                &:nth-child(1){
-                    margin-bottom: 42px;
-                }
-                span{
-                    font-size: 15px;
-                    line-height: 22px;
-                    color: #666666;
-                    margin-right: 19px;
-                }
-                p{
-                    font-size: 14px;
-                    line-height: 20px;
-                    em{
-                        font-size: 18px;
-                        line-height: 23px;
-                        margin-right: 4px;
-                        font-weight: 600;
+            .detail_mileage_box{
+                margin-bottom: 15px;
+                .detail_mileage{
+                    display: flex;
+                    justify-content: space-between;
+                    &:nth-child(1){
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #666666;
+                        margin-right: 19px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 20px;
+                        em{
+                            font-size: 18px;
+                            line-height: 23px;
+                            margin-right: 4px;
+                            font-weight: 600;
+                        }
                     }
                 }
             }
-        }
-        .my_grade_list4{
-            .mile_link{
-                display: block;
-                padding: 6px 17px;
-                font-size: 14px;
-                line-height: 20px;
-                border: 1px solid #666666;
-                border-radius: 3px;
-                &:nth-child(1){
-                    margin-bottom: 28px;
+            .mile_link_box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .mile_link{
+                    width: calc((100% - 10px) / 2);
+                    border: 1px solid #666666;
+                    border-radius: 3px;
+                    padding: 4px 0;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 20px;
                 }
             }
         }
@@ -997,11 +1090,9 @@ body{
                         margin-bottom: 6px;
                     }
                     .con_link{
-                        &.before_check{
-                            border-color: #014099;
-                            color: #014099;
-                        }
-                        &.after_check{
+                        border-color: #014099;
+                        color: #014099;
+                        &.on{
                             border: none;
                             background-color: #D3D3D3;
                             color: #A7A7A7;
@@ -1071,9 +1162,32 @@ body{
         align-items: center;
         &.con_box_01{
             margin-bottom: 30px;
+            .con_asset{
+                margin-right: 26px;
+                width: 37px;
+                height: 38px;
+                i{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: url(../images/mypage/mypage_coin.svg) center no-repeat;
+                    background-size: contain;
+                }
+            }
         }
-        .con_asset{
-            margin-right: 27px;
+        &.con_box_02{
+            .con_asset{
+                margin-right: 28px;
+                width: 37px;
+                height: 31px;
+                i{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: url(../images/mypage/mypage_cart.svg) center no-repeat;
+                    background-size: contain;
+                }
+            }
         }
         .con_list{
             display: flex;
@@ -1083,10 +1197,16 @@ body{
                 display: flex;
                 align-items: center;
                 &:not(:last-child){
-                    margin-right: 34px;
-                }
-                &:not(:first-child){
-                    margin-left: 33px;
+                    margin-right: 33px;
+                    &::after{
+                        content: "";
+                        background: url(../images/mypage/arrow_right_gray.svg) no-repeat center;
+                        background-size: cover;
+                        display: block;
+                        width: 6px;
+                        height: 12px;
+                        margin-left: 33px;
+                    }
                 }
                 p{
                     font-size: 14px;
@@ -1107,11 +1227,6 @@ body{
                     }
                 }
 
-            }
-            .arrow_asset{
-                img{
-                    display: block;
-                }
             }
         }
     }
@@ -1154,6 +1269,7 @@ body{
                 padding-top: 30px;
                 padding-bottom: 0px;
                 padding-right: 0px;
+                padding-left: 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1163,25 +1279,28 @@ body{
             }
             .my_grade_list3{
                 width: 100%;
+                padding-left: 0;
                 padding-top: 9px;
-                padding-bottom: 30px;
-                .detail_mileage{
-                    &:nth-child(1){
-                        margin-bottom: 12px;
+                .detail_mileage_box{
+                    margin-bottom: 30px;
+                    .detail_mileage{
+                        &:nth-child(1){
+                            margin-bottom: 11px;
+                        }
                     }
                 }
-            }
-            .my_grade_list4{
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                .mile_link{
-                    width: calc(100% - 10px / 2);
-                    text-align: center;
-                    padding: 6px 0px;
-                    &:nth-child(1){
-                        margin-bottom: 0px;
-                        margin-right: 10px;
+                .mile_link_box{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .mile_link{
+                        width: calc(100% - 10px / 2);
+                        text-align: center;
+                        padding: 6px 0px;
+                        &:nth-child(1){
+                            margin-bottom: 0px;
+                            margin-right: 10px;
+                        }
                     }
                 }
             }
