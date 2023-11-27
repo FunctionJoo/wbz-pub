@@ -1526,6 +1526,14 @@ body{
                 .con_list{
                     .con_asset{
                         margin-bottom: 12px;
+                        i{
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     .con_title{
                         margin-bottom: 6px;
@@ -1537,6 +1545,36 @@ body{
                             border: none;
                             background-color: #666;
                             color: #ffff;
+                        }
+                    }
+                    &.list_01{
+                        .con_asset{
+                            width: 42px;
+                            height: 28px;
+                            i{
+                                background-image: url(../images/mypage/mypage_idcard.svg);
+                                
+                            }
+                        }
+                    }
+                    &.list_02{
+                        .con_asset{
+                            width: 19px;
+                            height: 33px;
+                            i{
+                                background-image: url(../images/mypage/mypage_phone.svg);
+                                
+                            }
+                        }
+                    }
+                    &.list_03{
+                        .con_asset{
+                            width: 32px;
+                            height: 28px;
+                            i{
+                                background-image: url(../images/mypage/mypage_acount.svg);
+                                
+                            }
                         }
                     }
                 }
