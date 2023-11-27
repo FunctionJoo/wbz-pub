@@ -20,6 +20,10 @@
     background-repeat: no-repeat;
     background-position: top 50% right 10px;
     margin-right: 10px;
+    label{
+        position: absolute;
+        font-size: 0;
+    }
     select {
         width: 100%;
         height: 100%;
@@ -5207,6 +5211,10 @@ body{
                             background-repeat: no-repeat;
                             background-position: top 50% right 10px;
                             margin-right: 10px;
+                            label{
+                                position: absolute;
+                                font-size: 0;
+                            }
                             select {
                                 width: 100%;
                                 height: 100%;
@@ -8028,6 +8036,10 @@ body{
                             background-size: 12px 7px;
                             background-repeat: no-repeat;
                             background-position: top 50% right 10px;
+                            label{
+                                position: absolute;
+                                font-size: 0;
+                            }
                             select {
                                     width: 100%;
                                     height: 100%;
@@ -12937,6 +12949,10 @@ body{
                                             background-size: 12px 7px;
                                             background-repeat: no-repeat;
                                             background-position: top 50% right 10px;
+                                            label{
+                                                position: absolute;
+                                                font-size: 0;
+                                            }
                                             select {
                                                 width: 100%;
                                                 height: 100%;
@@ -13025,6 +13041,10 @@ body{
                                             background-size: 12px 7px;
                                             background-repeat: no-repeat;
                                             background-position: top 50% right 10px;
+                                            label{
+                                                position: absolute;
+                                                font-size: 0;
+                                            }
                                             select {
                                                 color: #666666;
                                                 width: 100%;
@@ -13107,6 +13127,10 @@ body{
                                             background-size: 12px 7px;
                                             background-repeat: no-repeat;
                                             background-position: top 50% right 10px;
+                                            label{
+                                                position: absolute;
+                                                font-size: 0;
+                                            }
                                             select {
                                                 width: 100%;
                                                 height: 100%;

@@ -4373,6 +4373,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-position: top 50% right 10px;
   margin-right: 10px;
 }
+#mypage.sale_complete .my_cont .main .con_top .top_right .select_box label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.sale_complete .my_cont .main .con_top .top_right .select_box select {
   width: 100%;
   height: 100%;
@@ -6854,6 +6858,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
 }
+#mypage.item_for_purchase .my_cont .main .con_top .top_right .view_choice label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.item_for_purchase .my_cont .main .con_top .top_right .view_choice select {
   width: 100%;
   height: 100%;
@@ -7548,6 +7556,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-position: top 50% right 10px;
   margin-right: 10px;
 }
+#mypage.items_for_sale_rewrite .my_cont .con_top .info_table .info_list .info_td .select_box label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.items_for_sale_rewrite .my_cont .con_top .info_table .info_list .info_td .select_box select {
   width: 100%;
   height: 100%;
@@ -7825,6 +7837,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 10px;
   width: 200px;
 }
+#mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_top .option_box .select_box label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_top .option_box .select_box select {
   width: 100%;
   height: 100%;
@@ -7898,6 +7914,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 10px;
   margin-left: 10px;
   width: 130px;
+}
+#mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box .select_box label {
+  position: absolute;
+  font-size: 0;
 }
 #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box .select_box select {
   width: 100%;
@@ -8216,6 +8236,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-position: top 50% right 10px;
   margin-right: 10px;
 }
+#mypage.items_for_purchase_rewrite .my_cont .con_top .info_table .info_list .info_td .select_box label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.items_for_purchase_rewrite .my_cont .con_top .info_table .info_list .info_td .select_box select {
   width: 100%;
   height: 100%;
@@ -8469,6 +8493,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 10px;
   width: 200px;
 }
+#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_top .option_box .select_box label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_top .option_box .select_box select {
   width: 100%;
   height: 100%;
@@ -8542,6 +8570,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 10px;
   margin-left: 10px;
   width: 130px;
+}
+#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box .select_box label {
+  position: absolute;
+  font-size: 0;
 }
 #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box .select_box select {
   width: 100%;
@@ -11317,6 +11349,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
 }
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box select {
   width: 100%;
   height: 100%;
@@ -11396,6 +11432,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
 }
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .select_box label {
+  position: absolute;
+  font-size: 0;
+}
 #mypage.change_info .my_cont .main .form_box form .form_list .form_info.contact_info .contact_input .select_box select {
   color: #666666;
   width: 100%;
@@ -11467,6 +11507,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-size: 12px 7px;
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
+}
+#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .select_box label {
+  position: absolute;
+  font-size: 0;
 }
 #mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .select_box select {
   width: 100%;
