@@ -1,6 +1,7 @@
 .static {position: static;}
 button {cursor: pointer;}
 
+.wrap {position: relative;}
 #fullmenu {position: fixed; z-index: 10; top: 50%; left: 40px; transform: translateY(-50%);}
 #fullmenu li {display: block; padding: 15px 0;}
 #fullmenu li a {display: block; position: relative; height: 16px; padding-left: 25px; font-size: 16px; color: #222222; line-height: 16px; overflow: hidden;}
@@ -41,6 +42,7 @@ button {cursor: pointer;}
 }
 
 /* 메인 슬라이드 영역 */
+#firstPage {position: relative;}
 .main_sec.sec_1 {padding-top: 0; height: 100vh;}
 .main_visual_bg {width: 100%; height: 100%;}
 .main_visual_bg .swiper,
@@ -95,6 +97,13 @@ button {cursor: pointer;}
 .main_article_slide .swiper-slide a:hover .date,
 .main_article_slide .swiper-wrapper:not(:hover) .swiper-slide.swiper-slide-active a *,
 .main_article_slide .swiper-wrapper:not(:hover) .swiper-slide.swiper-slide-active a .date {color: #222;}
+
+/* // wbz20231127 */
+@media (min-width: 1400px) {
+	.main_article_slide {transition: opacity 0.3s; opacity: 0; z-index: -999;}
+	.main_article_slide.visible {opacity: 1;}
+	.main_article_slide.visible-z {z-index: 1;}
+}
 
 .main_article_slide .ma_control {position: absolute; z-index: 5; top: 100%; margin-top: 28px; display: flex; align-items: center;}
 .main_article_slide .ma_control button {margin-right: 6px; font-size: 0; width: 14px; height: 14px; background: no-repeat center center;}
