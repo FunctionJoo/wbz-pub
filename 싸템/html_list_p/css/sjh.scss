@@ -1574,6 +1574,7 @@ body{
                     line-height: 19px;
                     margin-bottom: 12px;
                     strong{
+                        margin-right: 1px;
                         font-size: 24px;
                         line-height: 30px;
                         color: #014099;
@@ -1985,7 +1986,7 @@ body{
                                     align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    em{
+                                    strong{
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
@@ -2109,7 +2110,7 @@ body{
                                 span{
                                     font-size: 14px;
                                     line-height: 21px;
-                                    em{
+                                    strong{
                                         color: #014099;
                                         font-weight: 400;
                                     }
@@ -2156,7 +2157,7 @@ body{
                                         border-right: none;
                                         justify-content: start;
                                         margin-bottom: 11px;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         line-height: 20px;
                                         a{
                                             overflow: hidden;
@@ -2335,12 +2336,9 @@ body{
                                     p{
                                         font-size: 14px;
                                         line-height: 21px;
-                                        // overflow: hidden;
-                                        // white-space: nowrap;
-                                        // text-overflow: ellipsis;
-                                        // word-break: break-all;
+                                        word-break: break-all;
                                     }
-                                    em{
+                                    strong{
                                         font-size: 14px;
                                         line-height: 19px;
                                         font-weight: 500;
@@ -2454,7 +2452,7 @@ body{
                                         line-height: 19px;
                                         margin-left: 2px;
                                     }
-                                    em{
+                                    strong{
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -2478,7 +2476,7 @@ body{
                                         line-height: 19px;
                                         margin-left: 2px;
                                     }
-                                    em{
+                                    strong{
                                         font-weight: 600;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -2830,13 +2828,10 @@ body{
                                     p {
                                         font-size: 14px;
                                         line-height: 21px;
-                                        // overflow: hidden;
-                                        // white-space: nowrap;
-                                        // text-overflow: ellipsis;
-                                        // word-break: break-all;
+                                        word-break: break-all;
                                     }
 
-                                    em {
+                                    strong {
                                         font-size: 14px;
                                         line-height: 19px;
                                         font-weight: 500;
@@ -2970,7 +2965,7 @@ body{
                                         margin-left: 2px;
                                     }
 
-                                    em {
+                                    strong{
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -2998,7 +2993,7 @@ body{
                                         margin-left: 2px;
                                     }
 
-                                    em {
+                                    strong {
                                         font-weight: 600;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -3414,9 +3409,10 @@ body{
                                     p {
                                         font-size: 14px;
                                         line-height: 21px;
+                                        word-break: break-all;
                                     }
 
-                                    em {
+                                    strong {
                                         font-size: 14px;
                                         line-height: 19px;
                                         font-weight: 500;
@@ -3550,7 +3546,7 @@ body{
                                         margin-left: 2px;
                                     }
 
-                                    em {
+                                    strong {
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -3578,7 +3574,7 @@ body{
                                         margin-left: 2px;
                                     }
 
-                                    em {
+                                    strong {
                                         font-weight: 600;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -3798,7 +3794,7 @@ body{
                     font-size: 14px;
                     line-height: 21px;
             
-                    em {
+                    strong {
                         font-weight: normal;
                         color: #014099;
                     }
@@ -3896,6 +3892,12 @@ body{
                             font-size: 14px;
                             line-height: 20px;
                             color: #000;
+                            span{
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                            }
                         }
                         .mo_flex_box{
                             display: flex;
@@ -3979,15 +3981,7 @@ body{
                     margin-bottom: 15px;
                     display: flex;
 
-                    p {
-                        font-size: 14px;
-                        line-height: 21px;
-
-                        em {
-                            font-weight: normal;
-                            color: #014099;
-                        }
-                    }
+                   
                 }
 
                 .table_box{
@@ -4041,12 +4035,6 @@ body{
                                         line-height: 19px;
                                         color: #000;
                                         font-weight: 500;
-                                        a{
-                                            overflow: hidden;
-                                            white-space: nowrap;
-                                            text-overflow: ellipsis;
-                                            word-break: break-all;
-                                        }
                                     }
                                 }
                                 .mo_right{
@@ -4104,7 +4092,7 @@ body{
                         span{
                             font-size: 14px;
                             line-height: 21px;
-                            em{
+                            strong{
                                 font-weight: 400;
                                 color: #014099;
                             }
@@ -4242,6 +4230,7 @@ body{
                                 font-size: 13px;
                                 line-height: 19px;
                                 color: #000;
+                                padding: 0 5px;
                                 a{
                                     overflow: hidden;
                                     white-space: nowrap;
@@ -4260,7 +4249,7 @@ body{
                                     align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    em{
+                                    strong{
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
@@ -4500,6 +4489,12 @@ body{
                                         line-height: 20px;
                                         color: #000;
                                         margin-bottom: 6px;
+                                        span{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                        }
                                     }
                                     .title_td{
                                         font-weight: 500;
@@ -4508,8 +4503,9 @@ body{
                                         border-right: none;
                                         justify-content: start;
                                         margin-bottom: 11px;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         line-height: 20px;
+                                        padding: 0;
                                         a{
                                             overflow: hidden;
                                             white-space: nowrap;
@@ -4607,7 +4603,7 @@ body{
                             font-size: 14px;
                             line-height: 21px;
         
-                            em {
+                            strong {
                                 font-weight: normal;
                                 color: #014099;
                             }
@@ -4631,9 +4627,8 @@ body{
                                 border-right: 1px solid #D3D3D3;
                             }
                             &.cate_th{
-                                width: 148px;
-                                min-width: 148px;
-                                max-width: 148px;
+                                width: 144px;
+                                min-width: 144px;
                             }
                             &.title_th{
                                 width: 280px;
@@ -4752,8 +4747,8 @@ body{
                             }
                             
                             .cate_td{
-                                width: 148px;
-                                min-width: 148px;
+                                width: 144px;
+                                min-width: 144px;
                                 border-right: 1px solid #D3D3D3;
                                 display: flex;
                                 justify-content: center;
@@ -4790,7 +4785,7 @@ body{
                                     align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    em{
+                                    strong{
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
@@ -5022,6 +5017,12 @@ body{
                                         line-height: 20px;
                                         color: #000;
                                         margin-bottom: 6px;
+                                        span{
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
+                                        }
                                     }
                                     .title_td{
                                         font-weight: 500;
@@ -5030,7 +5031,7 @@ body{
                                         border-right: none;
                                         justify-content: start;
                                         margin-bottom: 11px;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         line-height: 20px;
                                         a{
                                             overflow: hidden;
@@ -5191,7 +5192,7 @@ body{
                             font-size: 14px;
                             line-height: 21px;
         
-                            em {
+                            strong{
                                 font-weight: normal;
                                 color: #014099;
                             }
@@ -5374,6 +5375,12 @@ body{
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000;
+                                span{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
                             }
                             .title_td{
                                 width: 350px;
@@ -5403,7 +5410,7 @@ body{
                                     align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    em{
+                                    strong{
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
@@ -5684,7 +5691,7 @@ body{
                                         border-right: none;
                                         justify-content: start;
                                         margin-bottom: 11px;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         line-height: 20px;
                                         a{
                                             overflow: hidden;
@@ -5792,7 +5799,7 @@ body{
                             font-size: 14px;
                             line-height: 21px;
         
-                            em {
+                            strong {
                                 font-weight: normal;
                                 color: #014099;
                             }
@@ -5937,6 +5944,12 @@ body{
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000;
+                                span{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
                             }
                             .title_td{
                                 width: 450px;
@@ -5966,7 +5979,7 @@ body{
                                     align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    em{
+                                    strong{
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
@@ -6182,14 +6195,8 @@ body{
                                         border-right: none;
                                         justify-content: start;
                                         margin-bottom: 11px;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         line-height: 20px;
-                                        a{
-                                            overflow: hidden;
-                                            white-space: nowrap;
-                                            text-overflow: ellipsis;
-                                            word-break: break-all;
-                                        }
                                     }
                                     .mo_middle{
                                         justify-content: space-between;
@@ -6795,10 +6802,12 @@ body{
                 align-items: center;
                 .img_box{
                     margin-bottom: 23.97px;
-                    img{
-                        width: 67px;
-                        height: 68px;
-                    }
+                    width: 67px;
+                    height: 68px;
+                    background-image: url(../images/mypage/mypage_payment_complete.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
                 .title_box{
                     margin-bottom: 28px;
@@ -6821,7 +6830,7 @@ body{
                         text-align: center;
                         font-size: 16px;
                         line-height: 24px;
-                        em{
+                        strong{
                             font-weight: 400;
                             color: #014099;
                         }
@@ -6900,7 +6909,7 @@ body{
                 }
                 .button_box{
                     .button_list{
-                        width: 157px;
+                        width: 50%;
                     }
                 }
             }
@@ -6945,8 +6954,8 @@ body{
                                 max-width: 148px;
                             }
                             &.title_th{
-                                width: 368px;
-                                min-width: 368px;
+                                width: 364px;
+                                min-width: 364px;
 
                             }
                             &.price_th{
@@ -7023,10 +7032,16 @@ body{
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000;
+                                span{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
                             }
                             .title_td{
-                                width: 368px;
-                                min-width: 368px;
+                                width: 364px;
+                                min-width: 364px;
                                 border-right: 1px solid #D3D3D3;
                                 display: flex;
                                 justify-content: center;
@@ -7052,7 +7067,7 @@ body{
                                     align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    em{
+                                    strong{
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
@@ -7159,7 +7174,7 @@ body{
                                 span{
                                     font-size: 14px;
                                     line-height: 21px;
-                                    em{
+                                    strong{
                                         color: #014099;
                                         font-weight: 400;
                                     }
@@ -7206,14 +7221,8 @@ body{
                                         border-right: none;
                                         justify-content: start;
                                         margin-bottom: 11px;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         line-height: 20px;
-                                        a{
-                                            overflow: hidden;
-                                            white-space: nowrap;
-                                            text-overflow: ellipsis;
-                                            word-break: break-all;
-                                        }
                                     }
                                     .mo_middle{
                                         justify-content: space-between;
@@ -7392,8 +7401,8 @@ body{
                                 min-width: 210px;
                             }
                             &.view_th{
-                                width: 103px;
-                                min-width: 103px;
+                                width: 98px;
+                                min-width: 98px;
                             }
                         }
                     }
@@ -7515,8 +7524,8 @@ body{
                                     }
                                 }
                                 &.view_td{
-                                    width: 103px;
-                                    min-width: 103px;
+                                    width: 98px;
+                                    min-width: 98px;
                                     padding: 18px 19.5px;
                                     display: flex;
                                     .mo_left_date{
@@ -7702,22 +7711,19 @@ body{
                         }
                     }
                     .table_box{
+                        border-top: 1px solid #D3D3D3;
                         .pc_table_head{
                             display: none;
                         }
                         .table_tr{
-                            &:nth-child(n+6){
-                                display: none;
-                            }
-                            border-right: 1px solid #D3D3D3;
-                            border-left: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
                             height: 258px;
                             display: flex;
                             flex-direction: column;
+                            &:nth-child(n+6){
+                                display: none;
+                            }
                             &.no_item{
                                 height: 50px;
-                                border-top: 1px solid #D3D3D3;
                             }
                             .mo_box{
                                 flex-direction: column;
@@ -8017,7 +8023,7 @@ body{
                         span{
                             font-size: 14px;
                             line-height: 21px;
-                            em{
+                            strong{
                                 font-weight: 400;
                                 color: #014099;
                             }
@@ -8120,8 +8126,8 @@ body{
                                 min-width: 210px;
                             }
                             &.view_th{
-                                width: 103px;
-                                min-width: 103px;
+                                width: 98px;
+                                min-width: 98px;
                             }
                         }
                     }
@@ -8179,10 +8185,8 @@ body{
                                             height: 22px;
                                             margin-right: 10px;
                                             display: none;
-                                            img{
-                                                width: 100%;
-                                                height: 100%;
-                                            }
+                                            background: url(../images/mypage/mypage_premium.png) no-repeat center;
+                                            background-size: contain;
                                         }
                                         .category{
                                             overflow: hidden;
@@ -8195,7 +8199,7 @@ body{
                                                 line-height: 20px;
                                                 color: #000;
                                                 font-weight: 500;
-                                                em{
+                                                strong{
                                                     font-weight: 500;
                                                     color: #113462;
                                                 }
@@ -8224,6 +8228,7 @@ body{
                                             line-height: 18px;
                                             background-color: #EEF3F9;
                                             color: #014099;
+                                            border-radius: 3px;
                                         }
                                     }
                                     .bottom_info{
@@ -8252,7 +8257,7 @@ body{
                                         .con{
                                            font-size: 14px;
                                            line-height: 20px;
-                                           em{
+                                           strong{
                                             font-weight: 600;
                                             font-size: 16px;
                                             line-height: 20px;
@@ -8262,8 +8267,8 @@ body{
                                     }
                                 }
                                 &.view_td{
-                                    width: 103px;
-                                    min-width: 103px;
+                                    width: 98px;
+                                    min-width: 98px;
                                     padding: 18px 19.5px;
                                     display: flex;
                                     .mo_left_date{
@@ -8449,6 +8454,7 @@ body{
                         }
                     }
                     .table_box{
+                        border-top: 1px solid #D3D3D3;
                         .pc_table_head{
                             display: none;
                         }
@@ -8456,15 +8462,11 @@ body{
                             &:nth-child(n+6){
                                 display: none;
                             }
-                            border-right: 1px solid #D3D3D3;
-                            border-left: 1px solid #D3D3D3;
-                            border-bottom: 1px solid #D3D3D3;
                             height: 258px;
                             display: flex;
                             flex-direction: column;
                             &.no_item{
                                 height: 50px;
-                                border-top: 1px solid #D3D3D3;
                             }
                             .mo_box{
                                 flex-direction: column;
@@ -8970,8 +8972,13 @@ body{
                     justify-content: space-between;
                     align-items: start;
                     border: 1px solid #D3D3D3;
-                    img{
+                    .img_box{
                         width: 358px;
+                        background-image: url(../images/mypage/mypage_game.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        padding-top: 24%;
                     }
                     .text_box{
                         font-size: 14px;
@@ -9007,6 +9014,9 @@ body{
                                 padding-bottom: 19px;
                             }
                             .option_bottom{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: end;
                                 .detail_box{
                                     &:not(:last-child){
                                         margin-bottom: 12px;
@@ -9092,6 +9102,10 @@ body{
                                                 font-weight: 400;
                                                 color: #014099;
                                             }
+                                            strong{
+                                                font-weight: 400;
+                                                color: #014099;
+                                            }
                                         }
                                         .option_box{
                                             display: flex;
@@ -9133,7 +9147,7 @@ body{
                     .total_price{
                         font-size: 14px;
                         line-height: 21px;
-                        em{
+                        strong{
                             font-size: 24px;
                             line-height: 21px;
                             font-weight: 600;
@@ -9307,6 +9321,7 @@ body{
                                     padding-bottom: 19px;
                                 }
                                 .option_bottom{
+                                    align-items: start;
                                     .detail_box{
                                         &:not(:last-child){
                                             margin-bottom: 12px;
@@ -9630,6 +9645,9 @@ body{
                                 padding-bottom: 19px;
                             }
                             .option_bottom{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: end;
                                 .detail_box{
                                     &:not(:last-child){
                                         margin-bottom: 12px;
@@ -9715,6 +9733,10 @@ body{
                                                 font-weight: 400;
                                                 color: #014099;
                                             }
+                                            strong{
+                                                font-weight: 400;
+                                                color: #014099;
+                                            }
                                         }
                                         .option_box{
                                             display: flex;
@@ -9728,7 +9750,7 @@ body{
                                             span{
                                                 font-size: 14px;
                                                 line-height: 21px;
-                                                em{
+                                                strong{
                                                     font-weight: 400;
                                                     color: #014099;
                                                 }
@@ -9756,7 +9778,7 @@ body{
                     .total_price{
                         font-size: 14px;
                         line-height: 21px;
-                        em{
+                        strong{
                             font-size: 24px;
                             line-height: 21px;
                             font-weight: 600;
@@ -9914,6 +9936,7 @@ body{
                                     padding-bottom: 19px;
                                 }
                                 .option_bottom{
+                                    align-items: start;
                                     .detail_box{
                                         &:not(:last-child){
                                             margin-bottom: 12px;
@@ -10026,7 +10049,7 @@ body{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        em{
+                        strong{
                             font-size: 20px;
                             color: #014099;
                             &.bank{
@@ -10069,15 +10092,82 @@ body{
                             justify-content: space-between;
                             align-items: center;
                             padding: 0px 14px;
+                            i{
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                            }
+                            &.list_01{
+                                i{
+                                    background-image: url(../images/mypage/mile_virtual_account.svg);
+                                    height: 16px;
+                                    width: 20px;
+                                }
+                            }
+                            &.list_02{
+                                i{
+                                    background-image: url(../images/mypage/mile_account_transfer.svg);
+                                    height: 18px;
+                                    width: 20px;
+                                }
+                            }
                             &.list_03{
+                                i{
+                                    background-image: url(../images/mypage/mile_card.svg);
+                                    height: 20px;
+                                    width: 21px;
+                                }
                                 .mo_text{
                                     display: none;
+                                }
+                            }
+                            &.list_04{
+                                i{
+                                    background-image: url(../images/mypage/mile_samsung_pay.svg.png);
+                                    height: 21px;
+                                    width: 21px;
+                                }
+                            }
+                            &.list_05{
+                                i{
+                                    background-image: url(../images/mypage/mile_tcash.png);
+                                    height: 16px;
+                                    width: 75px;
+                                }
+                            }
+                            &.list_06{
+                                i{
+                                    background-image: url(../images/mypage/mile_phone_pay.png);
+                                    height: 21px;
+                                    width: 19px;
+                                }
+                            }
+                            &.list_07{
+                                i{
+                                    background-image: url(../images/mypage/mile_culture_land.png);
+                                    height: 12px;
+                                    width: 131px;
+                                }
+                            }
+                            &.list_08{
+                                i{
+                                    background-image: url(../images/mypage/mile_happy_money.png);
+                                    height: 26px;
+                                    width: 84px;
+                                }
+                            }
+                            &.list_09{
+                                i{
+                                    background-image: url(../images/mypage/mile_gift_card.png);
+                                    height: 21px;
+                                    width: 48px;
                                 }
                             }
                             span{
                                 font-size: 14px;
                                 line-height: 20px;
                             }
+
                         }
                     }
                 }
@@ -10213,12 +10303,12 @@ body{
                                     }
                                 }
                                 &.list_07{
-                                    img{
+                                    i{
                                         width: 80px;
                                     }
                                 }
                                 &.list_08{
-                                    img{
+                                    i{
                                         width: 65px;
                                     }
                                 }
@@ -10272,8 +10362,14 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    img{
+                    i{
                         margin-bottom: 23px;
+                        background-image: url(../images/mypage/mile_complete_icon.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 72px;
+                        height: 69px;
                     }
                     .top_text{
                         font-size: 20px;
@@ -10371,7 +10467,7 @@ body{
 
                 .main{
                     .top_box{
-                        img{
+                        i{
                             margin-bottom: 30px;
                         }
                         .bottom_text{
@@ -10464,7 +10560,7 @@ body{
                                 .ori{
                                     font-size: 15px;
                                     line-height: 22px;
-                                    em{
+                                    strong{
                                         font-size: 20px;
                                         line-height: 27px;
                                         color: #014099;
@@ -10820,15 +10916,33 @@ body{
                         &:not(:last-child){
                             margin-right: 8px;
                         }
+                        &.list_01{
+                            i{
+                                background-image: url(../images/mypage/mile_list_01.png);
+                            }
+                        }
+                        &.list_02{
+                            i{
+                                background-image: url(../images/mypage/mile_list_02.png);
+                            }
+                        }
+                        &.list_03{
+                            i{
+                                background-image: url(../images/mypage/mile_list_03.png);
+                            }
+                        }
                         .top_con{
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            img{
+                            i{
                                 width: 36px;
                                 height: 30px;
                                 margin-bottom: 16px;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
                             }
                             .list_title{
                                 margin-bottom: 8px;
@@ -10839,7 +10953,7 @@ body{
                         .list_count{
                             font-size: 15px;
                             line-height: 22px;
-                            em{
+                            strong{
                                 font-weight: 600;
                                 color: #014099;
                                 font-size: 20px;
@@ -11135,7 +11249,7 @@ body{
                                     &.input_td{
                                         font-size: 14px;
                                         line-height: 20px;
-                                        em{
+                                        strong{
                                             font-size: 14px;
                                             line-height: 18px;
                                         }
@@ -11143,7 +11257,7 @@ body{
                                     &.output_td{
                                         font-size: 14px;
                                         line-height: 20px;
-                                        em{
+                                        strong{
                                             font-size: 14px;
                                             line-height: 18px;
                                         }
@@ -11191,8 +11305,7 @@ body{
                             }
                             .top_con{
                                 flex-direction: row;
-                                
-                                img{
+                                i{
                                     width: 25px;
                                     height: 20px;
                                     margin-bottom: 0px;
@@ -11445,7 +11558,7 @@ body{
                         span{
                             font-size: 16px;
                             line-height: 24px;
-                            em{
+                            strong{
                                 font-size: 20px;
                                 line-height: 27px;
                                 color: #014099;
@@ -11578,7 +11691,7 @@ body{
                                 display: flex;
                                 justify-content: start;
                                 align-items: center;
-                                em{
+                                strong{
                                     font-size: 20px;
                                     line-height: 24px;
                                     font-weight: 600;
@@ -11612,7 +11725,7 @@ body{
                                 span{
                                     font-weight: 600;
                                 }
-                                em{
+                                strong{
                                     font-size: 20px;
                                     line-height: 27px;
                                     color: #014099;
@@ -11778,7 +11891,7 @@ body{
                                 display: flex;
                                 justify-content: start;
                                 align-items: center;
-                                em{
+                                strong{
                                     font-size: 20px;
                                     line-height: 24px;
                                     font-weight: 600;
@@ -11804,7 +11917,7 @@ body{
                         span{
                             font-size: 16px;
                             line-height: 24px;
-                            em{
+                            strong{
                                 font-size: 20px;
                                 line-height: 27px;
                                 color: #014099;
@@ -11937,7 +12050,7 @@ body{
                                 display: flex;
                                 justify-content: start;
                                 align-items: center;
-                                em{
+                                strong{
                                     font-size: 20px;
                                     line-height: 24px;
                                     font-weight: 600;
@@ -12112,7 +12225,7 @@ body{
                             span{
                                 font-size: 16px;
                                 line-height: 24px;
-                                em{
+                                strong{
                                     font-size: 20px;
                                     line-height: 27px;
                                     margin-right: 2px;
@@ -12364,12 +12477,12 @@ body{
                                 &:first-of-type{
                                     margin-right: 11px;
                                 }
-                                strong{
+                                em{
                                     font-size: 16px;
                                     line-height: 22px;
                                     font-weight: 600;
                                 }
-                                em{
+                                strong{
                                     font-size: 20px;
                                     line-height: 27px;
                                     margin-left: 6px;
@@ -12631,7 +12744,7 @@ body{
                             span{
                                 font-size: 16px;
                                 line-height: 24px;
-                                em{
+                                strong{
                                     font-size: 20px;
                                     line-height: 27px;
                                     margin-right: 2px;
@@ -12846,7 +12959,11 @@ body{
                     background-color: #EEF3F9;
                     height: 56px;
                     margin-bottom: 20px;
-                    img{
+                    i{
+                        background-image: url(../images/mypage/mypage_info_icon.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
                         margin-right: 28px;
                         width: 22px;
                         height: 24px;
@@ -13401,7 +13518,7 @@ body{
                                 }
                             }
                             .submit_button_box{
-                                input[type=submit]{
+                                button{
                                     width: 100%;
                                     height: 60px;
                                 }
@@ -13838,15 +13955,22 @@ body{
                             color: #000;
                         }
                         .title_td{
+                            padding: 0 5px;
                             width: 396px;
                             min-width: 396px;
                             border-right: 1px solid #D3D3D3;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-size: 14px;
-                            line-height: 20px;
+                            font-size: 13px;
+                            line-height: 19px;
                             color: #000;
+                            a{
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                            }
                         }
                         .mo_flex_box{
                             display: flex;
@@ -13950,16 +14074,13 @@ body{
                                 display: none;
                             }
                             .title_td{
+                                padding: 0;
                                 width: 100%;
                                 justify-content: start;
+                                font-size: 15px;
+                                line-height: 20px;
                                 margin-bottom: 20px;
                                 border: none;
-                                a{
-                                    overflow: hidden;
-                                    white-space: nowrap;
-                                    text-overflow: ellipsis;
-                                    word-break: break-all;
-                                }
                             }
                             .mo_flex_box{
                                 .view_td{

@@ -1373,6 +1373,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-bottom: 12px;
 }
 #ticket .ticket_box .con_box .con_list .con_count strong {
+  margin-right: 1px;
   font-size: 24px;
   line-height: 30px;
   color: #014099;
@@ -1720,7 +1721,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.cancel_wait .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td em {
+#mypage.cancel_wait .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
   line-height: 18px;
   font-weight: 600;
 }
@@ -1832,7 +1833,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     font-size: 14px;
     line-height: 21px;
   }
-  #mypage.cancel_wait .w_set .my_cont .main .con_top .post_num span em {
+  #mypage.cancel_wait .w_set .my_cont .main .con_top .post_num span strong {
     color: #014099;
     font-weight: 400;
   }
@@ -1873,7 +1874,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     border-right: none;
     justify-content: start;
     margin-bottom: 11px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
   }
   #mypage.cancel_wait .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td a {
@@ -2028,8 +2029,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.sale_detail_item .my_cont .main .product_list .con_box .con_table .table_list .td p {
   font-size: 14px;
   line-height: 21px;
+  word-break: break-all;
 }
-#mypage.sale_detail_item .my_cont .main .product_list .con_box .con_table .table_list .td em {
+#mypage.sale_detail_item .my_cont .main .product_list .con_box .con_table .table_list .td strong {
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -2132,7 +2134,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   margin-left: 2px;
 }
-#mypage.sale_detail_item .my_cont .main .receipt_list .con_box .con_table .table_list .td em {
+#mypage.sale_detail_item .my_cont .main .receipt_list .con_box .con_table .table_list .td strong {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -2154,7 +2156,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   margin-left: 2px;
 }
-#mypage.sale_detail_item .my_cont .main .receipt_list .con_box .con_table .table_result .td em {
+#mypage.sale_detail_item .my_cont .main .receipt_list .con_box .con_table .table_result .td strong {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -2446,8 +2448,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.sale_detail_id .my_cont .main .product_list .con_box .con_table .table_list .td p {
   font-size: 14px;
   line-height: 21px;
+  word-break: break-all;
 }
-#mypage.sale_detail_id .my_cont .main .product_list .con_box .con_table .table_list .td em {
+#mypage.sale_detail_id .my_cont .main .product_list .con_box .con_table .table_list .td strong {
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -2550,7 +2553,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   margin-left: 2px;
 }
-#mypage.sale_detail_id .my_cont .main .receipt_list .con_box .con_table .table_list .td em {
+#mypage.sale_detail_id .my_cont .main .receipt_list .con_box .con_table .table_list .td strong {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -2572,7 +2575,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   margin-left: 2px;
 }
-#mypage.sale_detail_id .my_cont .main .receipt_list .con_box .con_table .table_result .td em {
+#mypage.sale_detail_id .my_cont .main .receipt_list .con_box .con_table .table_result .td strong {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -2900,8 +2903,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td p {
   font-size: 14px;
   line-height: 21px;
+  word-break: break-all;
 }
-#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td em {
+#mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td strong {
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -3004,7 +3008,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   margin-left: 2px;
 }
-#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list .td em {
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list .td strong {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -3026,7 +3030,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   margin-left: 2px;
 }
-#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_result .td em {
+#mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_result .td strong {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -3184,7 +3188,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.contract_list .my_cont .mo_table_count p em {
+#mypage.contract_list .my_cont .mo_table_count p strong {
   font-weight: normal;
   color: #014099;
 }
@@ -3257,6 +3261,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
   color: #000;
 }
+#mypage.contract_list .my_cont .table_box .table_tr_box .table_tr .cate_td span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
 #mypage.contract_list .my_cont .table_box .table_tr_box .table_tr .mo_flex_box {
   display: flex;
 }
@@ -3324,14 +3334,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     margin-bottom: 15px;
     display: flex;
   }
-  #mypage.contract_list .my_cont .mo_table_count p {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  #mypage.contract_list .my_cont .mo_table_count p em {
-    font-weight: normal;
-    color: #014099;
-  }
   #mypage.contract_list .my_cont .table_box .pc_table_head {
     display: none;
   }
@@ -3383,12 +3385,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     color: #000;
     font-weight: 500;
   }
-  #mypage.contract_list .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .mo_left .title_td a {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
-  }
   #mypage.contract_list .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .mo_right {
     display: flex;
     flex-direction: column;
@@ -3431,7 +3427,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.sale_in_progress .my_cont .main .con_top .post_num span em {
+#mypage.sale_in_progress .my_cont .main .con_top .post_num span strong {
   font-weight: 400;
   color: #014099;
 }
@@ -3532,6 +3528,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 13px;
   line-height: 19px;
   color: #000;
+  padding: 0 5px;
 }
 #mypage.sale_in_progress .my_cont .main .table_box .table_tr_box .table_tr .title_td a {
   overflow: hidden;
@@ -3552,7 +3549,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.sale_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td em {
+#mypage.sale_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
   line-height: 18px;
   font-weight: 600;
 }
@@ -3771,6 +3768,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     color: #000;
     margin-bottom: 6px;
   }
+  #mypage.sale_in_progress .w_set .my_cont .main .table_box .table_tr_box .table_tr .cate_td span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
   #mypage.sale_in_progress .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td {
     font-weight: 500;
     width: 100%;
@@ -3778,8 +3781,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     border-right: none;
     justify-content: start;
     margin-bottom: 11px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
+    padding: 0;
   }
   #mypage.sale_in_progress .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td a {
     overflow: hidden;
@@ -3865,7 +3869,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.purchase_in_progress .my_cont .main .con_top .table_count p em {
+#mypage.purchase_in_progress .my_cont .main .con_top .table_count p strong {
   font-weight: normal;
   color: #014099;
 }
@@ -3887,9 +3891,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border-right: 1px solid #D3D3D3;
 }
 #mypage.purchase_in_progress .my_cont .main .table_box .pc_table_head .th.cate_th {
-  width: 148px;
-  min-width: 148px;
-  max-width: 148px;
+  width: 144px;
+  min-width: 144px;
 }
 #mypage.purchase_in_progress .my_cont .main .table_box .pc_table_head .th.title_th {
   width: 280px;
@@ -3962,8 +3965,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: inline-block;
 }
 #mypage.purchase_in_progress .my_cont .main .table_box .table_tr_box .table_tr .cate_td {
-  width: 148px;
-  min-width: 148px;
+  width: 144px;
+  min-width: 144px;
   border-right: 1px solid #D3D3D3;
   display: flex;
   justify-content: center;
@@ -4002,7 +4005,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.purchase_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td em {
+#mypage.purchase_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
   line-height: 18px;
   font-weight: 600;
 }
@@ -4205,6 +4208,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     color: #000;
     margin-bottom: 6px;
   }
+  #mypage.purchase_in_progress .w_set .my_cont .main .table_box .table_tr_box .table_tr .cate_td span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
   #mypage.purchase_in_progress .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td {
     font-weight: 500;
     width: 100%;
@@ -4212,7 +4221,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     border-right: none;
     justify-content: start;
     margin-bottom: 11px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
   }
   #mypage.purchase_in_progress .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td a {
@@ -4353,7 +4362,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.sale_complete .my_cont .main .con_top .table_count p em {
+#mypage.sale_complete .my_cont .main .con_top .table_count p strong {
   font-weight: normal;
   color: #014099;
 }
@@ -4495,6 +4504,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
   color: #000;
 }
+#mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .cate_td span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
 #mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .title_td {
   width: 350px;
   min-width: 350px;
@@ -4525,7 +4540,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td em {
+#mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
   line-height: 18px;
   font-weight: 600;
 }
@@ -4782,7 +4797,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     border-right: none;
     justify-content: start;
     margin-bottom: 11px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
   }
   #mypage.sale_complete .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td a {
@@ -4878,7 +4893,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.purchase_complete .my_cont .main .con_top .table_count p em {
+#mypage.purchase_complete .my_cont .main .con_top .table_count p strong {
   font-weight: normal;
   color: #014099;
 }
@@ -4994,6 +5009,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
   color: #000;
 }
+#mypage.purchase_complete .my_cont .main .table_box .table_tr_box .table_tr .cate_td span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
 #mypage.purchase_complete .my_cont .main .table_box .table_tr_box .table_tr .title_td {
   width: 450px;
   min-width: 450px;
@@ -5024,7 +5045,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.purchase_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td em {
+#mypage.purchase_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
   line-height: 18px;
   font-weight: 600;
 }
@@ -5218,14 +5239,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     border-right: none;
     justify-content: start;
     margin-bottom: 11px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
-  }
-  #mypage.purchase_complete .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td a {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
   }
   #mypage.purchase_complete .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_middle {
     justify-content: space-between;
@@ -5756,10 +5771,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 #mypage.payment_complete .my_cont .con_box .img_box {
   margin-bottom: 23.97px;
-}
-#mypage.payment_complete .my_cont .con_box .img_box img {
   width: 67px;
   height: 68px;
+  background-image: url(../images/mypage/mypage_payment_complete.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #mypage.payment_complete .my_cont .con_box .title_box {
   margin-bottom: 28px;
@@ -5784,7 +5801,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 16px;
   line-height: 24px;
 }
-#mypage.payment_complete .my_cont .con_box .detail_box p em {
+#mypage.payment_complete .my_cont .con_box .detail_box p strong {
   font-weight: 400;
   color: #014099;
 }
@@ -5851,7 +5868,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     display: block;
   }
   #mypage.payment_complete .my_cont .button_box .button_list {
-    width: 157px;
+    width: 50%;
   }
 }
 #mypage.canceling_purchase .my_cont .pc_title {
@@ -5886,8 +5903,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   max-width: 148px;
 }
 #mypage.canceling_purchase .my_cont .main .table_box .pc_table_head .th.title_th {
-  width: 368px;
-  min-width: 368px;
+  width: 364px;
+  min-width: 364px;
 }
 #mypage.canceling_purchase .my_cont .main .table_box .pc_table_head .th.price_th {
   width: 124px;
@@ -5940,9 +5957,15 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
   color: #000;
 }
+#mypage.canceling_purchase .my_cont .main .table_box .table_tr_box .table_tr .cate_td span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
 #mypage.canceling_purchase .my_cont .main .table_box .table_tr_box .table_tr .title_td {
-  width: 368px;
-  min-width: 368px;
+  width: 364px;
+  min-width: 364px;
   border-right: 1px solid #D3D3D3;
   display: flex;
   justify-content: center;
@@ -5970,7 +5993,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.canceling_purchase .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td em {
+#mypage.canceling_purchase .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
   line-height: 18px;
   font-weight: 600;
 }
@@ -6065,7 +6088,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     font-size: 14px;
     line-height: 21px;
   }
-  #mypage.canceling_purchase .w_set .my_cont .main .con_top .post_num span em {
+  #mypage.canceling_purchase .w_set .my_cont .main .con_top .post_num span strong {
     color: #014099;
     font-weight: 400;
   }
@@ -6106,14 +6129,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     border-right: none;
     justify-content: start;
     margin-bottom: 11px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
-  }
-  #mypage.canceling_purchase .w_set .my_cont .main .table_box .table_tr_box .table_tr .title_td a {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
   }
   #mypage.canceling_purchase .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_middle {
     justify-content: space-between;
@@ -6278,8 +6295,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   min-width: 210px;
 }
 #mypage.item_for_sale .my_cont .main .table_box .pc_table_head .th.view_th {
-  width: 103px;
-  min-width: 103px;
+  width: 98px;
+  min-width: 98px;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr {
   border-right: 1px solid #D3D3D3;
@@ -6388,8 +6405,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 1px;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td {
-  width: 103px;
-  min-width: 103px;
+  width: 98px;
+  min-width: 98px;
   padding: 18px 19.5px;
   display: flex;
 }
@@ -6544,13 +6561,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     font-weight: 500;
     margin-right: 10px;
   }
+  #mypage.item_for_sale .my_cont .main .table_box {
+    border-top: 1px solid #D3D3D3;
+  }
   #mypage.item_for_sale .my_cont .main .table_box .pc_table_head {
     display: none;
   }
   #mypage.item_for_sale .my_cont .main .table_box .table_tr {
-    border-right: 1px solid #D3D3D3;
-    border-left: 1px solid #D3D3D3;
-    border-bottom: 1px solid #D3D3D3;
     height: 258px;
     display: flex;
     flex-direction: column;
@@ -6560,7 +6577,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   }
   #mypage.item_for_sale .my_cont .main .table_box .table_tr.no_item {
     height: 50px;
-    border-top: 1px solid #D3D3D3;
   }
   #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box {
     flex-direction: column;
@@ -6839,7 +6855,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.item_for_purchase .my_cont .main .con_top .post_num span em {
+#mypage.item_for_purchase .my_cont .main .con_top .post_num span strong {
   font-weight: 400;
   color: #014099;
 }
@@ -6940,8 +6956,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   min-width: 210px;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .pc_table_head .th.view_th {
-  width: 103px;
-  min-width: 103px;
+  width: 98px;
+  min-width: 98px;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr {
   border-right: 1px solid #D3D3D3;
@@ -6980,10 +6996,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 22px;
   margin-right: 10px;
   display: none;
-}
-#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .premium_box img {
-  width: 100%;
-  height: 100%;
+  background: url(../images/mypage/mypage_premium.png) no-repeat center;
+  background-size: contain;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category {
   overflow: hidden;
@@ -6998,7 +7012,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   color: #000;
   font-weight: 500;
 }
-#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span em {
+#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span strong {
   font-weight: 500;
   color: #113462;
 }
@@ -7025,6 +7039,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 18px;
   background-color: #EEF3F9;
   color: #014099;
+  border-radius: 3px;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .bottom_info span {
   font-size: 13px;
@@ -7052,15 +7067,15 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con em {
+#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con strong {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   margin-right: 1px;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.view_td {
-  width: 103px;
-  min-width: 103px;
+  width: 98px;
+  min-width: 98px;
   padding: 18px 19.5px;
   display: flex;
 }
@@ -7215,13 +7230,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     font-weight: 500;
     margin-right: 10px;
   }
+  #mypage.item_for_purchase .my_cont .main .table_box {
+    border-top: 1px solid #D3D3D3;
+  }
   #mypage.item_for_purchase .my_cont .main .table_box .pc_table_head {
     display: none;
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr {
-    border-right: 1px solid #D3D3D3;
-    border-left: 1px solid #D3D3D3;
-    border-bottom: 1px solid #D3D3D3;
     height: 258px;
     display: flex;
     flex-direction: column;
@@ -7231,7 +7246,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr.no_item {
     height: 50px;
-    border-top: 1px solid #D3D3D3;
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box {
     flex-direction: column;
@@ -7741,8 +7755,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: start;
   border: 1px solid #D3D3D3;
 }
-#mypage.items_for_sale_rewrite .my_cont .con_middle .con_box img {
+#mypage.items_for_sale_rewrite .my_cont .con_middle .con_box .img_box {
   width: 358px;
+  background-image: url(../images/mypage/mypage_game.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 24%;
 }
 #mypage.items_for_sale_rewrite .my_cont .con_middle .con_box .text_box {
   font-size: 14px;
@@ -7777,6 +7796,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list.again .option_top {
   padding-bottom: 19px;
+}
+#mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom .detail_box:not(:last-child) {
   margin-bottom: 12px;
@@ -7897,6 +7921,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-weight: 400;
   color: #014099;
 }
+#mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box span strong {
+  font-weight: 400;
+  color: #014099;
+}
 #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box {
   display: flex;
   justify-content: center;
@@ -7968,7 +7996,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.items_for_sale_rewrite .my_cont .con_bottom .con_total .total_price em {
+#mypage.items_for_sale_rewrite .my_cont .con_bottom .con_total .total_price strong {
   font-size: 24px;
   line-height: 21px;
   font-weight: 600;
@@ -8110,6 +8138,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   }
   #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list.again .option_top {
     padding-bottom: 19px;
+  }
+  #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom {
+    align-items: start;
   }
   #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom .detail_box:not(:last-child) {
     margin-bottom: 12px;
@@ -8434,6 +8465,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list.again .option_top {
   padding-bottom: 19px;
 }
+#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom .detail_box:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -8553,6 +8589,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-weight: 400;
   color: #014099;
 }
+#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box span strong {
+  font-weight: 400;
+  color: #014099;
+}
 #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box {
   display: flex;
   justify-content: center;
@@ -8602,7 +8642,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box span em {
+#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list .con_option .option_detail.option_bottom .detail_box .option_box span strong {
   font-weight: 400;
   color: #014099;
 }
@@ -8624,7 +8664,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_total .total_price em {
+#mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_total .total_price strong {
   font-size: 24px;
   line-height: 21px;
   font-weight: 600;
@@ -8753,6 +8793,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list.again .option_top {
     padding-bottom: 19px;
   }
+  #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom {
+    align-items: start;
+  }
   #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_box .option_list.again .option_bottom .detail_box:not(:last-child) {
     margin-bottom: 12px;
   }
@@ -8839,15 +8882,15 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: center;
   align-items: center;
 }
-#mypage.mile_charge .my_cont .main .virtual_account .account_box em {
+#mypage.mile_charge .my_cont .main .virtual_account .account_box strong {
   font-size: 20px;
   color: #014099;
 }
-#mypage.mile_charge .my_cont .main .virtual_account .account_box em.bank {
+#mypage.mile_charge .my_cont .main .virtual_account .account_box strong.bank {
   font-weight: 500;
   line-height: 29px;
 }
-#mypage.mile_charge .my_cont .main .virtual_account .account_box em.number {
+#mypage.mile_charge .my_cont .main .virtual_account .account_box strong.number {
   font-weight: 600;
   line-height: 27px;
 }
@@ -8883,8 +8926,58 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
   padding: 0px 14px;
 }
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list i {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_01 i {
+  background-image: url(../images/mypage/mile_virtual_account.svg);
+  height: 16px;
+  width: 20px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_02 i {
+  background-image: url(../images/mypage/mile_account_transfer.svg);
+  height: 18px;
+  width: 20px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_03 i {
+  background-image: url(../images/mypage/mile_card.svg);
+  height: 20px;
+  width: 21px;
+}
 #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_03 .mo_text {
   display: none;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_04 i {
+  background-image: url(../images/mypage/mile_samsung_pay.svg.png);
+  height: 21px;
+  width: 21px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_05 i {
+  background-image: url(../images/mypage/mile_tcash.png);
+  height: 16px;
+  width: 75px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_06 i {
+  background-image: url(../images/mypage/mile_phone_pay.png);
+  height: 21px;
+  width: 19px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_07 i {
+  background-image: url(../images/mypage/mile_culture_land.png);
+  height: 12px;
+  width: 131px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_08 i {
+  background-image: url(../images/mypage/mile_happy_money.png);
+  height: 26px;
+  width: 84px;
+}
+#mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_09 i {
+  background-image: url(../images/mypage/mile_gift_card.png);
+  height: 21px;
+  width: 48px;
 }
 #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list span {
   font-size: 14px;
@@ -9005,10 +9098,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_03 .mo_text {
     display: inline-block;
   }
-  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_07 img {
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_07 i {
     width: 80px;
   }
-  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_08 img {
+  #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list.list_08 i {
     width: 65px;
   }
   #mypage.mile_charge .my_cont .main .payment_method .payment_box .payment_list span {
@@ -9046,8 +9139,14 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: center;
   align-items: center;
 }
-#mypage.mile_charge_complete .my_cont .main .top_box img {
+#mypage.mile_charge_complete .my_cont .main .top_box i {
   margin-bottom: 23px;
+  background-image: url(../images/mypage/mile_complete_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 72px;
+  height: 69px;
 }
 #mypage.mile_charge_complete .my_cont .main .top_box .top_text {
   font-size: 20px;
@@ -9125,7 +9224,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.mile_charge_complete .my_cont .my_title {
     margin-bottom: 30px !important;
   }
-  #mypage.mile_charge_complete .my_cont .main .top_box img {
+  #mypage.mile_charge_complete .my_cont .main .top_box i {
     margin-bottom: 30px;
   }
   #mypage.mile_charge_complete .my_cont .main .top_box .bottom_text br {
@@ -9204,7 +9303,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 15px;
   line-height: 22px;
 }
-#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .ori em {
+#mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .ori strong {
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -9521,16 +9620,28 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.mile_list .my_cont .main .mile_count .count_list:not(:last-child) {
   margin-right: 8px;
 }
+#mypage.mile_list .my_cont .main .mile_count .count_list.list_01 i {
+  background-image: url(../images/mypage/mile_list_01.png);
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list.list_02 i {
+  background-image: url(../images/mypage/mile_list_02.png);
+}
+#mypage.mile_list .my_cont .main .mile_count .count_list.list_03 i {
+  background-image: url(../images/mypage/mile_list_03.png);
+}
 #mypage.mile_list .my_cont .main .mile_count .count_list .top_con {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#mypage.mile_list .my_cont .main .mile_count .count_list .top_con img {
+#mypage.mile_list .my_cont .main .mile_count .count_list .top_con i {
   width: 36px;
   height: 30px;
   margin-bottom: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #mypage.mile_list .my_cont .main .mile_count .count_list .top_con .list_title {
   margin-bottom: 8px;
@@ -9541,7 +9652,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 15px;
   line-height: 22px;
 }
-#mypage.mile_list .my_cont .main .mile_count .count_list .list_count em {
+#mypage.mile_list .my_cont .main .mile_count .count_list .list_count strong {
   font-weight: 600;
   color: #014099;
   font-size: 20px;
@@ -9812,7 +9923,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td em {
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td strong {
   font-size: 14px;
   line-height: 18px;
 }
@@ -9820,7 +9931,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td em {
+#mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td strong {
   font-size: 14px;
   line-height: 18px;
 }
@@ -9855,7 +9966,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.mile_list .my_cont .main .mile_count .count_list .top_con {
     flex-direction: row;
   }
-  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con img {
+  #mypage.mile_list .my_cont .main .mile_count .count_list .top_con i {
     width: 25px;
     height: 20px;
     margin-bottom: 0px;
@@ -10060,7 +10171,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 16px;
   line-height: 24px;
 }
-#mypage.ticket_purchase .my_cont .main .pre_sec .title span em {
+#mypage.ticket_purchase .my_cont .main .pre_sec .title span strong {
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -10193,7 +10304,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: start;
   align-items: center;
 }
-#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .result_text em {
+#mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .result_text strong {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -10227,7 +10338,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p span {
   font-weight: 600;
 }
-#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p em {
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p strong {
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -10392,7 +10503,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: start;
   align-items: center;
 }
-#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .result_text em {
+#mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .result_text strong {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -10417,7 +10528,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 16px;
   line-height: 24px;
 }
-#mypage.ticket_purchase .my_cont .main .item_con_sec .title span em {
+#mypage.ticket_purchase .my_cont .main .item_con_sec .title span strong {
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -10550,7 +10661,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: start;
   align-items: center;
 }
-#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .result_text em {
+#mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .result_text strong {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -10679,7 +10790,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 16px;
   line-height: 24px;
 }
-#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con span em {
+#mypage.ticket_preList .my_cont .main .con_box .con_top .title_con span strong {
   font-size: 20px;
   line-height: 27px;
   margin-right: 2px;
@@ -10885,12 +10996,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span:first-of-type {
   margin-right: 11px;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span strong {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span em {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span em {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span strong {
   font-size: 20px;
   line-height: 27px;
   margin-left: 6px;
@@ -11094,7 +11205,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 16px;
   line-height: 24px;
 }
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con span em {
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con span strong {
   font-size: 20px;
   line-height: 27px;
   margin-right: 2px;
@@ -11252,7 +11363,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 56px;
   margin-bottom: 20px;
 }
-#mypage.change_info .my_cont .main .con_top img {
+#mypage.change_info .my_cont .main .con_top i {
+  background-image: url(../images/mypage/mypage_info_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-right: 28px;
   width: 22px;
   height: 24px;
@@ -11728,7 +11843,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.change_info .my_cont .main .form_box form .form_list.address_list .form_info.address_info input[type=text] {
     width: 218px;
   }
-  #mypage.change_info .my_cont .main .form_box form .submit_button_box input[type=submit] {
+  #mypage.change_info .my_cont .main .form_box form .submit_button_box button {
     width: 100%;
     height: 60px;
   }
@@ -12105,15 +12220,22 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   color: #000;
 }
 #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .title_td {
+  padding: 0 5px;
   width: 396px;
   min-width: 396px;
   border-right: 1px solid #D3D3D3;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 19px;
   color: #000;
+}
+#mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .title_td a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box {
   display: flex;
@@ -12202,16 +12324,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     display: none;
   }
   #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .title_td {
+    padding: 0;
     width: 100%;
     justify-content: start;
+    font-size: 15px;
+    line-height: 20px;
     margin-bottom: 20px;
     border: none;
-  }
-  #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .title_td a {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
   }
   #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .view_td {
     width: auto;
