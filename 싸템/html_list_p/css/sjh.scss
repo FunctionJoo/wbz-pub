@@ -1,3 +1,5 @@
+// 숫자폰트
+@import 'utility.scss';
 
 // 공통변수
 @mixin pc_title{
@@ -62,6 +64,7 @@
         display: flex;
         margin: 0 10px;
         a{
+            font-family: $nunito;
             font-size: 14px;
             line-height: 19px;
             width: 24px;
@@ -1200,7 +1203,7 @@ body{
 @media(max-width:1080px){
     #pop_class_view{
         .pop_box{
-            height: 600px;
+            height: 80vh;
             width: 328px;
             padding: 30px 15px;
             overflow-y: auto;
@@ -1458,6 +1461,7 @@ body{
                 line-height: 20px;
                 margin-left: 4px;
                 strong{
+                    font-family: $nunito;
                     font-size: 26px;
                     line-height: 33px;
                     color: #014099;
@@ -1487,6 +1491,7 @@ body{
                         font-size: 14px;
                         line-height: 20px;
                         strong{
+                            font-family: $nunito;
                             font-size: 18px;
                             line-height: 23px;
                             margin-right: 4px;
@@ -1613,6 +1618,7 @@ body{
                     line-height: 19px;
                     margin-bottom: 12px;
                     strong{
+                        font-family: $nunito;
                         margin-right: 1px;
                         font-size: 24px;
                         line-height: 30px;
@@ -1682,6 +1688,7 @@ body{
                     font-size: 13px;
                     line-height: 19px;
                     strong{
+                        font-family: $nunito;
                         font-size: 24px;
                         line-height: 30px;
                         color: #014099;
@@ -2023,14 +2030,18 @@ body{
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    strong{
-                                        line-height: 18px;
-                                        font-weight: 600;
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        strong{
+                                            font-family: $nunito;
+                                            line-height: 18px;
+                                            font-weight: 600;
+                                        }
                                     }
                                 }
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 78px;
                                     min-width: 78px;
                                     border-right: 1px solid #D3D3D3;
@@ -2378,6 +2389,7 @@ body{
                                         word-break: break-all;
                                     }
                                     strong{
+                                        font-family: $nunito;
                                         font-size: 14px;
                                         line-height: 19px;
                                         font-weight: 500;
@@ -2492,6 +2504,7 @@ body{
                                         margin-left: 2px;
                                     }
                                     strong{
+                                        font-family: $nunito;
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -2516,6 +2529,7 @@ body{
                                         margin-left: 2px;
                                     }
                                     strong{
+                                        font-family: $nunito;
                                         font-weight: 600;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -2871,6 +2885,7 @@ body{
                                     }
 
                                     strong {
+                                        font-family: $nunito;
                                         font-size: 14px;
                                         line-height: 19px;
                                         font-weight: 500;
@@ -3005,6 +3020,7 @@ body{
                                     }
 
                                     strong{
+                                        font-family: $nunito;
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -3033,6 +3049,7 @@ body{
                                     }
 
                                     strong {
+                                        font-family: $nunito;
                                         font-weight: 600;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -3452,6 +3469,7 @@ body{
                                     }
 
                                     strong {
+                                        font-family: $nunito;
                                         font-size: 14px;
                                         line-height: 19px;
                                         font-weight: 500;
@@ -3586,6 +3604,7 @@ body{
                                     }
 
                                     strong {
+                                        font-family: $nunito;
                                         font-weight: 500;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -3614,6 +3633,7 @@ body{
                                     }
 
                                     strong {
+                                        font-family: $nunito;
                                         font-weight: 600;
                                         font-size: 14px;
                                         line-height: 19px;
@@ -3963,6 +3983,7 @@ body{
                             .mo_right{
                                 display: flex;
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 100px;
                                     min-width: 100px;
                                     border-right: 1px solid #D3D3D3;
@@ -4286,14 +4307,18 @@ body{
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    strong{
-                                        line-height: 18px;
-                                        font-weight: 600;
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        strong{
+                                            font-family: $nunito;
+                                            line-height: 18px;
+                                            font-weight: 600;
+                                        }
                                     }
                                 }
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 78px;
                                     min-width: 78px;
                                     border-right: 1px solid #D3D3D3;
@@ -4441,6 +4466,51 @@ body{
                                     margin-left: 20px;
                                 }
                         }
+                        &.list_01{
+                            .img_box{
+                                i{
+                                    background-image: url(../images/mypage/mypage_saleinfo_step01.svg);
+                                    width: 43px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+                        &.list_02{
+                            .img_box{
+                                i{
+                                    background-image: url(../images/mypage/mypage_saleinfo_step02.svg);
+                                    width: 40px;
+                                    height: 34px;
+                                }
+                            }
+                        }
+                        &.list_03{
+                            .img_box{
+                                i{
+                                    background-image: url(../images/mypage/mypage_saleinfo_step03.svg);
+                                    width: 40px;
+                                    height: 39px;
+                                }
+                            }
+                        }
+                        &.list_04{
+                            .img_box{
+                                i{
+                                    background-image: url(../images/mypage/mypage_saleinfo_step04.svg);
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+                        &.list_05{
+                            .img_box{
+                                i{
+                                    background-image: url(../images/mypage/mypage_saleinfo_step05.svg);
+                                    width: 42px;
+                                    height: 34px;
+                                }
+                            }
+                        }
                         .img_box{
                             height: 110px;
                             width: 110px;
@@ -4451,6 +4521,11 @@ body{
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
+                            i{
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                            }
                             span{
                                 margin-top: 10px;
                                 font-size: 14px;
@@ -4822,14 +4897,18 @@ body{
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    strong{
-                                        line-height: 18px;
-                                        font-weight: 600;
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        strong{
+                                            font-family: $nunito;
+                                            line-height: 18px;
+                                            font-weight: 600;
+                                        }
                                     }
                                 }
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 78px;
                                     min-width: 78px;
                                     border-right: 1px solid #D3D3D3;
@@ -5256,6 +5335,7 @@ body{
                                 font-size: 0;
                             }
                             select {
+                                font-family: $nunito;
                                 width: 100%;
                                 height: 100%;
                                 padding: 0 10px;
@@ -5276,6 +5356,7 @@ body{
                                 }
                         
                                 option {
+                                    font-family: $nunito;
                                     font-size: 14px;
                                     line-height: 21px;
                                 }
@@ -5447,14 +5528,18 @@ body{
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    strong{
-                                        line-height: 18px;
-                                        font-weight: 600;
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        strong{
+                                            font-family: $nunito;
+                                            line-height: 18px;
+                                            font-weight: 600;
+                                        }
                                     }
                                 }
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 78px;
                                     min-width: 78px;
                                     border-right: 1px solid #D3D3D3;
@@ -6019,11 +6104,13 @@ body{
                                     font-size: 14px;
                                     line-height: 20px;
                                     strong{
+                                        font-family: $nunito;
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
                                 }
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 78px;
                                     min-width: 78px;
                                     border-right: 1px solid #D3D3D3;
@@ -6336,7 +6423,7 @@ body{
                             font-size: 14px;
                             line-height: 21px;
         
-                            em {
+                            strong {
                                 font-weight: normal;
                                 color: #014099;
                             }
@@ -6357,6 +6444,7 @@ body{
                             background-position: top 50% right 10px;
                             margin-right: 10px;
                             select {
+                                font-family: $nunito;
                                 width: 100%;
                                 height: 100%;
                                 padding: 0 10px;
@@ -6377,6 +6465,7 @@ body{
                                 }
                         
                                 option {
+                                    font-family: $nunito;
                                     font-size: 14px;
                                     line-height: 21px;
                                 }
@@ -6540,12 +6629,14 @@ body{
                                     align-items: center;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    em{
+                                    strong{
+                                        font-family: $nunito;
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
                                 }
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 78px;
                                     min-width: 78px;
                                     border-right: 1px solid #D3D3D3;
@@ -7107,11 +7198,13 @@ body{
                                     font-size: 14px;
                                     line-height: 20px;
                                     strong{
+                                        font-family: $nunito;
                                         line-height: 18px;
                                         font-weight: 600;
                                     }
                                 }
                                 .date_td{
+                                    font-family: $nunito;
                                     width: 78px;
                                     min-width: 78px;
                                     border-right: 1px solid #D3D3D3;
@@ -7367,6 +7460,7 @@ body{
                                     font-size: 14px;
                                     line-height: 21px;
                                     font-weight: 600;
+                                    font-family: $nunito;
                                     border: 0; //기본 스타일 제거
                                     -webkit-appearance: none;
                                     /* for chrome */
@@ -7380,6 +7474,7 @@ body{
                                         /*for IE10,11*/
                                     }
                                     option{
+                                        font-family: $nunito;
                                         font-size: 14px;
                                         line-height: 21px;
                                         font-weight: 600;
@@ -7554,6 +7649,7 @@ body{
                                            font-size: 14px;
                                            line-height: 20px;
                                            strong{
+                                            font-family: $nunito;
                                             font-weight: 600;
                                             font-size: 16px;
                                             line-height: 20px;
@@ -8090,6 +8186,7 @@ body{
                                     height: 100%;
                                     padding: 0 10px;
                                     font-size: 14px;
+                                    font-family: $nunito;
                                     line-height: 21px;
                                     font-weight: 600;
                                     border: 0; //기본 스타일 제거
@@ -8105,6 +8202,7 @@ body{
                                         /*for IE10,11*/
                                     }
                                     option{
+                                        font-family: $nunito;
                                         font-size: 14px;
                                         line-height: 21px;
                                         font-weight: 600;
@@ -8199,7 +8297,7 @@ body{
                                 .td{
                                     &.info_td{
                                         .middle_info{
-                                            .immedi_button{
+                                            &:after{
                                                 display: inline-block;
                                             }
                                         }
@@ -8255,12 +8353,8 @@ body{
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
-                                        span{
-                                            font-size: 14px;
-                                            line-height: 20px;
-                                            color: #000;
-                                        }
-                                        .immedi_button{
+                                        &::after{
+                                            content: "즉시결제";
                                             display: none;
                                             padding: 4px 10px;
                                             font-size: 12px;
@@ -8268,6 +8362,15 @@ body{
                                             background-color: #EEF3F9;
                                             color: #014099;
                                             border-radius: 3px;
+                                        }
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #000;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            word-break: break-all;
                                         }
                                     }
                                     .bottom_info{
@@ -8297,6 +8400,7 @@ body{
                                            font-size: 14px;
                                            line-height: 20px;
                                            strong{
+                                            font-family: $nunito;
                                             font-weight: 600;
                                             font-size: 16px;
                                             line-height: 20px;
@@ -8531,31 +8635,13 @@ body{
                                                 }
                                             }
                                             .category{
-                                                overflow: hidden;
-                                                white-space: nowrap;
-                                                text-overflow: ellipsis;
-                                                word-break: break-all;
                                                 width: 100%;
-                                                span{
-                                                    font-size: 14px;
-                                                    line-height: 20px;
-                                                    color: #000;
-                                                    font-weight: 500;
-                                                    em{
-                                                        font-weight: 500;
-                                                        color: #113462;
-                                                    }
-                                                }
                                             }
                                         }
                                         .middle_info{
                                             width: 100%;
                                             margin-bottom: 0px;
                                             span{
-                                                overflow: hidden;
-                                                white-space: nowrap;
-                                                text-overflow: ellipsis;
-                                                word-break: break-all;
                                                 font-size: 15px;
                                                 line-height: 22px;
                                                 color: #000;
@@ -8949,6 +9035,7 @@ body{
                                 justify-content: center;
                                 align-items: center;
                                 input{
+                                    font-family: $nunito;
                                     width: 140px;
                                     height: 34px;
                                     border: 1px solid #D3D3D3;
@@ -9013,11 +9100,11 @@ body{
                     border: 1px solid #D3D3D3;
                     .img_box{
                         width: 358px;
+                        height: 229px;
                         background-image: url(../images/mypage/mypage_game.png);
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
-                        padding-top: 24%;
                     }
                     .text_box{
                         font-size: 14px;
@@ -9179,6 +9266,7 @@ body{
                     align-items: center;
                     padding: 0 20px;
                     .con_title{
+                        font-family: $nunito;
                         font-size: 16px;
                         line-height: 21px;
                         font-weight: 500;
@@ -9187,6 +9275,7 @@ body{
                         font-size: 14px;
                         line-height: 21px;
                         strong{
+                            font-family: $nunito;
                             font-size: 24px;
                             line-height: 21px;
                             font-weight: 600;
@@ -9329,8 +9418,9 @@ body{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        img{
+                        .img_box{
                             width: 300px;
+                            height: 163px;
                             margin-bottom: 16.5px;
                         }
                     }
@@ -9606,6 +9696,7 @@ body{
                                 justify-content: center;
                                 align-items: center;
                                 input{
+                                    font-family: $nunito;
                                     width: 140px;
                                     height: 34px;
                                     border: 1px solid #D3D3D3;
@@ -9810,6 +9901,7 @@ body{
                     align-items: center;
                     padding: 0 20px;
                     .con_title{
+                        font-family: $nunito;
                         font-size: 16px;
                         line-height: 21px;
                         font-weight: 500;
@@ -9818,6 +9910,7 @@ body{
                         font-size: 14px;
                         line-height: 21px;
                         strong{
+                            font-family: $nunito;
                             font-size: 24px;
                             line-height: 21px;
                             font-weight: 600;
@@ -10096,6 +10189,7 @@ body{
                                 line-height: 29px;
                             }
                             &.number{
+                                font-family: $nunito;
                                 font-weight: 600;
                                 line-height: 27px;
                             }
@@ -10436,7 +10530,8 @@ body{
                         }
                         &.list_05{
                             .td{
-                                em{
+                                strong{
+                                    font-family: "Noto Sans Kr", sans-serif;
                                     &:not(:last-child){
                                         margin-right: 4px;
                                     }
@@ -10462,7 +10557,8 @@ body{
                             padding: 0px 10px;
                             font-size: 14px;
                             line-height: 21px;
-                            em{
+                            strong{
+                                font-family: $nunito;
                                 font-weight: 400;
                             }
                         }
@@ -10600,6 +10696,7 @@ body{
                                     font-size: 15px;
                                     line-height: 22px;
                                     strong{
+                                        font-family: $nunito;
                                         font-size: 20px;
                                         line-height: 27px;
                                         color: #014099;
@@ -10731,9 +10828,10 @@ body{
                                 justify-content: center;
                                 align-items: center;
                                 .number{
+                                    font-family: $nunito;
                                     font-size: 20px;
                                     line-height: 27px;
-                                    font-weight: 500;
+                                    font-weight: 600;
                                 }
                                 .name{
                                     font-size: 16px;
@@ -10993,6 +11091,7 @@ body{
                             font-size: 15px;
                             line-height: 22px;
                             strong{
+                                font-family: $nunito;
                                 font-weight: 600;
                                 color: #014099;
                                 font-size: 20px;
@@ -11245,6 +11344,7 @@ body{
                                         border-right: 1px solid #D3D3D3;
                                     }
                                     &.date_td{
+                                        font-family: $nunito;
                                         font-size: 14px;
                                         line-height: 19px;
                                         color: #000;
@@ -11289,6 +11389,7 @@ body{
                                         font-size: 14px;
                                         line-height: 20px;
                                         strong{
+                                            font-family: $nunito;
                                             font-size: 14px;
                                             line-height: 18px;
                                         }
@@ -11297,6 +11398,7 @@ body{
                                         font-size: 14px;
                                         line-height: 20px;
                                         strong{
+                                            font-family: $nunito;
                                             font-size: 14px;
                                             line-height: 18px;
                                         }
@@ -11598,6 +11700,8 @@ body{
                             font-size: 16px;
                             line-height: 24px;
                             strong{
+                                font-family: $nunito;
+                                font-weight: bold;
                                 font-size: 20px;
                                 line-height: 27px;
                                 color: #014099;
@@ -11731,6 +11835,7 @@ body{
                                 justify-content: start;
                                 align-items: center;
                                 strong{
+                                    font-family: $nunito;
                                     font-size: 20px;
                                     line-height: 24px;
                                     font-weight: 600;
@@ -11765,6 +11870,8 @@ body{
                                     font-weight: 600;
                                 }
                                 strong{
+                                    font-family: $nunito;
+                                    font-weight: bold;
                                     font-size: 20px;
                                     line-height: 27px;
                                     color: #014099;
@@ -11931,6 +12038,7 @@ body{
                                 justify-content: start;
                                 align-items: center;
                                 strong{
+                                    font-family: $nunito;
                                     font-size: 20px;
                                     line-height: 24px;
                                     font-weight: 600;
@@ -11957,6 +12065,8 @@ body{
                             font-size: 16px;
                             line-height: 24px;
                             strong{
+                                font-family: $nunito;
+                                font-weight: bold;
                                 font-size: 20px;
                                 line-height: 27px;
                                 color: #014099;
@@ -12090,6 +12200,7 @@ body{
                                 justify-content: start;
                                 align-items: center;
                                 strong{
+                                    font-family: $nunito;
                                     font-size: 20px;
                                     line-height: 24px;
                                     font-weight: 600;
@@ -12265,6 +12376,8 @@ body{
                                 font-size: 16px;
                                 line-height: 24px;
                                 strong{
+                                    font-family: $nunito;
+                                    font-weight: bold;
                                     font-size: 20px;
                                     line-height: 27px;
                                     margin-right: 2px;
@@ -12314,6 +12427,7 @@ body{
                             border-spacing : 0;
                             border: 1px solid #D3D3D3;
                             width: 850px;
+                            table-layout: fixed;
                             thead{
                                 tr{
                                     background-color: #F6F6F6;
@@ -12331,7 +12445,7 @@ body{
                                             width: 50px;
                                         }
                                         &.title{
-                                            width: 420px;
+                                            width: 414px;
                                         }
                                         &.start_day{
                                             width: 100px;
@@ -12378,14 +12492,26 @@ body{
                                                 line-height: 19px;
                                                 color: #113462;
                                                 margin-bottom: 2px;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                text-overflow: ellipsis;
+                                                word-break: break-all;
                                             }
                                             .list_title{
                                                 font-size: 13px;
                                                 line-height: 19px;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                text-overflow: ellipsis;
+                                                word-break: break-all;
                                             }
                                         }
+                                        &.number_td, &.start_day_td, &.last_day_td, &.date_td{
+                                            font-family: $nunito;
+                                        }
                                         &.minus_num_td{
-                                            em{
+                                            strong{
+                                                font-family: $nunito;
                                                 font-weight: 400;
                                                 color: #222;
                                                 margin-right: 1px;
@@ -12517,11 +12643,14 @@ body{
                                     margin-right: 11px;
                                 }
                                 em{
+                                    font-family: $nunito;
                                     font-size: 16px;
                                     line-height: 22px;
                                     font-weight: 600;
                                 }
                                 strong{
+                                    font-family: $nunito;
+                                    font-weight: bold;
                                     font-size: 20px;
                                     line-height: 27px;
                                     margin-left: 6px;
@@ -12644,8 +12773,12 @@ body{
                                             font-size: 14px;
                                             line-height: 18px;
                                         }
+                                        &.number_td, &.start_day_td, &.last_day_td, &.date_td{
+                                            font-family: $nunito;
+                                        }
                                         &.minus_num_td, &.execution_td{
-                                            em{
+                                            strong{
+                                                font-family: $nunito;
                                                 font-weight: 400;
                                                 color: #222;
                                                 margin-right: 1px;
@@ -12656,7 +12789,8 @@ body{
                                         }
                                         &.interval_td{
                                             a{
-                                                em{
+                                                strong{
+                                                    font-family: $nunito;
                                                     font-weight: 400;
                                                     margin-right: 2px;
                                                 }
@@ -12784,6 +12918,8 @@ body{
                                 font-size: 16px;
                                 line-height: 24px;
                                 strong{
+                                    font-family: $nunito;
+                                    font-weight: bold;
                                     font-size: 20px;
                                     line-height: 27px;
                                     margin-right: 2px;
@@ -12901,8 +13037,12 @@ body{
                                             font-size: 14px;
                                             line-height: 18px;
                                         }
+                                        &.number_td, &.start_day_td, &.last_day_td, &.date_td{
+                                            font-family: $nunito;
+                                        }
                                         &.minus_num_td, &.execution_td{
-                                            em{
+                                            strong{
+                                                font-family: $nunito;
                                                 font-weight: 400;
                                                 color: #222;
                                                 margin-right: 1px;
@@ -12913,7 +13053,8 @@ body{
                                         }
                                         &.interval_td{
                                             a{
-                                                em{
+                                                strong{
+                                                    font-family: $nunito;
                                                     font-weight: 400;
                                                     margin-right: 2px;
                                                 }
@@ -13110,6 +13251,7 @@ body{
                                                 font-size: 0;
                                             }
                                             select {
+                                                font-family: $nunito;
                                                 width: 100%;
                                                 height: 100%;
                                                 padding: 0 10px;
@@ -13131,12 +13273,14 @@ body{
                                                 }
                                             
                                                 option {
+                                                    font-family: $nunito;
                                                     font-size: 14px;
                                                     line-height: 21px;
                                                 }
                                             }
                                         }
                                         input[type=text]{
+                                            font-family: $nunito;
                                             width: 120px;
                                             height: 34px;
                                             padding: 0 10px;
@@ -14030,6 +14174,7 @@ body{
                                 }
                             }
                             .date_td{
+                                font-family: $nunito;
                                 width: 200px;
                                 min-width: 200px;
                                 border-right: 1px solid #D3D3D3;
@@ -14559,6 +14704,7 @@ body{
                     color: #fff;
                     font-size: 16px;
                     line-height: 24px;
+                    cursor: pointer;
                 }
                 input[type=file]{
                     display: none;

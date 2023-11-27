@@ -10,6 +10,7 @@
   margin: 0 10px;
 }
 #pagination .nums a {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
   width: 24px;
@@ -1060,7 +1061,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 
 @media (max-width: 1080px) {
   #pop_class_view .pop_box {
-    height: 600px;
+    height: 80vh;
     width: 328px;
     padding: 30px 15px;
     overflow-y: auto;
@@ -1262,6 +1263,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-left: 4px;
 }
 #my_grade .my_grade_box .my_grade_list2 .show_mileage strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 26px;
   line-height: 33px;
   color: #014099;
@@ -1293,6 +1295,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #my_grade .my_grade_box .my_grade_list3 .detail_mileage_box .detail_mileage p strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   margin-right: 4px;
@@ -1402,6 +1405,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-bottom: 12px;
 }
 #ticket .ticket_box .con_box .con_list .con_count strong {
+  font-family: "Nunito Sans", sans-serif;
   margin-right: 1px;
   font-size: 24px;
   line-height: 30px;
@@ -1468,6 +1472,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
 }
 #tran_status .con_box .con_list .title span strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #014099;
@@ -1747,14 +1752,18 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.cancel_wait .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.cancel_wait .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
+#mypage.cancel_wait .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span strong {
+  font-family: "Nunito Sans", sans-serif;
   line-height: 18px;
   font-weight: 600;
 }
 #mypage.cancel_wait .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 78px;
   min-width: 78px;
   border-right: 1px solid #D3D3D3;
@@ -2061,6 +2070,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   word-break: break-all;
 }
 #mypage.sale_detail_item .my_cont .main .product_list .con_box .con_table .table_list .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -2164,6 +2174,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-left: 2px;
 }
 #mypage.sale_detail_item .my_cont .main .receipt_list .con_box .con_table .table_list .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -2186,6 +2197,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-left: 2px;
 }
 #mypage.sale_detail_item .my_cont .main .receipt_list .con_box .con_table .table_result .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -2480,6 +2492,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   word-break: break-all;
 }
 #mypage.sale_detail_id .my_cont .main .product_list .con_box .con_table .table_list .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -2583,6 +2596,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-left: 2px;
 }
 #mypage.sale_detail_id .my_cont .main .receipt_list .con_box .con_table .table_list .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -2605,6 +2619,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-left: 2px;
 }
 #mypage.sale_detail_id .my_cont .main .receipt_list .con_box .con_table .table_result .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -2935,6 +2950,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   word-break: break-all;
 }
 #mypage.purchase_detail .my_cont .main .product_list .con_box .con_table .table_list .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -3038,6 +3054,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-left: 2px;
 }
 #mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_list .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -3060,6 +3077,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-left: 2px;
 }
 #mypage.purchase_detail .my_cont .main .receipt_list .con_box .con_table .table_result .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -3321,6 +3339,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
 }
 #mypage.contract_list .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .mo_right .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 100px;
   min-width: 100px;
   border-right: 1px solid #D3D3D3;
@@ -3575,14 +3594,18 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.sale_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.sale_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
+#mypage.sale_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span strong {
+  font-family: "Nunito Sans", sans-serif;
   line-height: 18px;
   font-weight: 600;
 }
 #mypage.sale_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 78px;
   min-width: 78px;
   border-right: 1px solid #D3D3D3;
@@ -3724,6 +3747,31 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   top: 30%;
   margin-left: 20px;
 }
+#mypage.sale_in_progress .my_cont .sale_info .info_box .info_list.list_01 .img_box i {
+  background-image: url(../images/mypage/mypage_saleinfo_step01.svg);
+  width: 43px;
+  height: 40px;
+}
+#mypage.sale_in_progress .my_cont .sale_info .info_box .info_list.list_02 .img_box i {
+  background-image: url(../images/mypage/mypage_saleinfo_step02.svg);
+  width: 40px;
+  height: 34px;
+}
+#mypage.sale_in_progress .my_cont .sale_info .info_box .info_list.list_03 .img_box i {
+  background-image: url(../images/mypage/mypage_saleinfo_step03.svg);
+  width: 40px;
+  height: 39px;
+}
+#mypage.sale_in_progress .my_cont .sale_info .info_box .info_list.list_04 .img_box i {
+  background-image: url(../images/mypage/mypage_saleinfo_step04.svg);
+  width: 40px;
+  height: 40px;
+}
+#mypage.sale_in_progress .my_cont .sale_info .info_box .info_list.list_05 .img_box i {
+  background-image: url(../images/mypage/mypage_saleinfo_step05.svg);
+  width: 42px;
+  height: 34px;
+}
 #mypage.sale_in_progress .my_cont .sale_info .info_box .info_list .img_box {
   height: 110px;
   width: 110px;
@@ -3734,6 +3782,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#mypage.sale_in_progress .my_cont .sale_info .info_box .info_list .img_box i {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #mypage.sale_in_progress .my_cont .sale_info .info_box .info_list .img_box span {
   margin-top: 10px;
@@ -4031,14 +4084,18 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.purchase_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.purchase_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
+#mypage.purchase_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span strong {
+  font-family: "Nunito Sans", sans-serif;
   line-height: 18px;
   font-weight: 600;
 }
 #mypage.purchase_in_progress .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 78px;
   min-width: 78px;
   border-right: 1px solid #D3D3D3;
@@ -4416,6 +4473,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 0;
 }
 #mypage.sale_complete .my_cont .main .con_top .top_right .select_box select {
+  font-family: "Nunito Sans", sans-serif;
   width: 100%;
   height: 100%;
   padding: 0 10px;
@@ -4435,6 +4493,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   /*for IE10,11*/
 }
 #mypage.sale_complete .my_cont .main .con_top .top_right .select_box select option {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
@@ -4566,14 +4625,18 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
+#mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td span strong {
+  font-family: "Nunito Sans", sans-serif;
   line-height: 18px;
   font-weight: 600;
 }
 #mypage.sale_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 78px;
   min-width: 78px;
   border-right: 1px solid #D3D3D3;
@@ -5075,10 +5138,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #mypage.purchase_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
+  font-family: "Nunito Sans", sans-serif;
   line-height: 18px;
   font-weight: 600;
 }
 #mypage.purchase_complete .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 78px;
   min-width: 78px;
   border-right: 1px solid #D3D3D3;
@@ -5358,7 +5423,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.purchase_complete_cancel .my_cont .main .con_top .table_count p em {
+#mypage.purchase_complete_cancel .my_cont .main .con_top .table_count p strong {
   font-weight: normal;
   color: #014099;
 }
@@ -5379,6 +5444,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 10px;
 }
 #mypage.purchase_complete_cancel .my_cont .main .con_top .top_right .select_box select {
+  font-family: "Nunito Sans", sans-serif;
   width: 100%;
   height: 100%;
   padding: 0 10px;
@@ -5398,6 +5464,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   /*for IE10,11*/
 }
 #mypage.purchase_complete_cancel .my_cont .main .con_top .top_right .select_box select option {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
@@ -5534,11 +5601,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
-#mypage.purchase_complete_cancel .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td em {
+#mypage.purchase_complete_cancel .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
+  font-family: "Nunito Sans", sans-serif;
   line-height: 18px;
   font-weight: 600;
 }
 #mypage.purchase_complete_cancel .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 78px;
   min-width: 78px;
   border-right: 1px solid #D3D3D3;
@@ -6023,10 +6092,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #mypage.canceling_purchase .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .price_td strong {
+  font-family: "Nunito Sans", sans-serif;
   line-height: 18px;
   font-weight: 600;
 }
 #mypage.canceling_purchase .my_cont .main .table_box .table_tr_box .table_tr .mo_middle .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 78px;
   min-width: 78px;
   border-right: 1px solid #D3D3D3;
@@ -6253,6 +6324,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
   border: 0;
   -webkit-appearance: none;
   /* for chrome */
@@ -6267,6 +6339,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   /*for IE10,11*/
 }
 #mypage.item_for_sale .my_cont .main .con_top .top_right .view_choice select option {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
@@ -6428,6 +6501,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -6912,6 +6986,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   height: 100%;
   padding: 0 10px;
   font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
   line-height: 21px;
   font-weight: 600;
   border: 0;
@@ -6928,6 +7003,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   /*for IE10,11*/
 }
 #mypage.item_for_purchase .my_cont .main .con_top .top_right .view_choice select option {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
@@ -7003,7 +7079,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr.premium_on .mo_box .td.info_td .top_info .premium_box {
   display: inline-block;
 }
-#mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .middle_info .immedi_button {
+#mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .middle_info:after {
   display: inline-block;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box {
@@ -7056,12 +7132,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: space-between;
   align-items: center;
 }
-#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info span {
-  font-size: 14px;
-  line-height: 20px;
-  color: #000;
-}
-#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info .immedi_button {
+#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info::after {
+  content: "즉시결제";
   display: none;
   padding: 4px 10px;
   font-size: 12px;
@@ -7069,6 +7141,15 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-color: #EEF3F9;
   color: #014099;
   border-radius: 3px;
+}
+#mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .bottom_info span {
   font-size: 13px;
@@ -7097,6 +7178,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.price_td .con_box .con strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -7302,31 +7384,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     height: 100%;
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
     width: 100%;
-  }
-  #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span {
-    font-size: 14px;
-    line-height: 20px;
-    color: #000;
-    font-weight: 500;
-  }
-  #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span em {
-    font-weight: 500;
-    color: #113462;
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info {
     width: 100%;
     margin-bottom: 0px;
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info span {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
     font-size: 15px;
     line-height: 22px;
     color: #000;
@@ -7727,6 +7791,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.items_for_sale_rewrite .my_cont .con_top .info_table .info_list .info_td .amount_input input {
+  font-family: "Nunito Sans", sans-serif;
   width: 140px;
   height: 34px;
   border: 1px solid #D3D3D3;
@@ -7786,11 +7851,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 #mypage.items_for_sale_rewrite .my_cont .con_middle .con_box .img_box {
   width: 358px;
+  height: 229px;
   background-image: url(../images/mypage/mypage_game.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 24%;
 }
 #mypage.items_for_sale_rewrite .my_cont .con_middle .con_box .text_box {
   font-size: 14px;
@@ -8017,6 +8082,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   padding: 0 20px;
 }
 #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_total .con_title {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 500;
@@ -8026,6 +8092,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 21px;
 }
 #mypage.items_for_sale_rewrite .my_cont .con_bottom .con_total .total_price strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 24px;
   line-height: 21px;
   font-weight: 600;
@@ -8140,8 +8207,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     justify-content: center;
     align-items: center;
   }
-  #mypage.items_for_sale_rewrite .my_cont .con_middle .con_box img {
+  #mypage.items_for_sale_rewrite .my_cont .con_middle .con_box .img_box {
     width: 300px;
+    height: 163px;
     margin-bottom: 16.5px;
   }
   #mypage.items_for_sale_rewrite .my_cont .con_bottom {
@@ -8424,6 +8492,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.items_for_purchase_rewrite .my_cont .con_top .info_table .info_list .info_td .amount_input input {
+  font-family: "Nunito Sans", sans-serif;
   width: 140px;
   height: 34px;
   border: 1px solid #D3D3D3;
@@ -8685,6 +8754,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   padding: 0 20px;
 }
 #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_total .con_title {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 500;
@@ -8694,6 +8764,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 21px;
 }
 #mypage.items_for_purchase_rewrite .my_cont .con_bottom .con_total .total_price strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 24px;
   line-height: 21px;
   font-weight: 600;
@@ -8920,6 +8991,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 29px;
 }
 #mypage.mile_charge .my_cont .main .virtual_account .account_box strong.number {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   line-height: 27px;
 }
@@ -9202,7 +9274,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.mile_charge_complete .my_cont .main .bottom_box .info_list:not(:last-child) {
   border-bottom: 1px solid #D3D3D3;
 }
-#mypage.mile_charge_complete .my_cont .main .bottom_box .info_list.list_05 .td em:not(:last-child) {
+#mypage.mile_charge_complete .my_cont .main .bottom_box .info_list.list_05 .td strong {
+  font-family: "Noto Sans Kr", sans-serif;
+}
+#mypage.mile_charge_complete .my_cont .main .bottom_box .info_list.list_05 .td strong:not(:last-child) {
   margin-right: 4px;
 }
 #mypage.mile_charge_complete .my_cont .main .bottom_box .info_list .th {
@@ -9225,7 +9300,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 21px;
 }
-#mypage.mile_charge_complete .my_cont .main .bottom_box .info_list .td em {
+#mypage.mile_charge_complete .my_cont .main .bottom_box .info_list .td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
 }
 #mypage.mile_charge_complete .my_cont .main .home_button {
@@ -9333,6 +9409,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 22px;
 }
 #mypage.mile_charge_withdraw .my_cont .main .info_input .con_box .con_top .con_list .ori strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -9459,9 +9536,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .mo_box .number {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   line-height: 27px;
-  font-weight: 500;
+  font-weight: 600;
 }
 #mypage.mile_charge_withdraw .my_cont .main .account_info .con_box .account .mo_box .name {
   font-size: 16px;
@@ -9682,6 +9760,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 22px;
 }
 #mypage.mile_list .my_cont .main .mile_count .count_list .list_count strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   color: #014099;
   font-size: 20px;
@@ -9908,6 +9987,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border-right: 1px solid #D3D3D3;
 }
 #mypage.mile_list .my_cont .main .table_sec table tbody tr td.date_td {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #000;
@@ -9953,6 +10033,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #mypage.mile_list .my_cont .main .table_sec table tbody tr td.input_td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -9961,6 +10042,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #mypage.mile_list .my_cont .main .table_sec table tbody tr td.output_td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -10201,6 +10283,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 24px;
 }
 #mypage.ticket_purchase .my_cont .main .pre_sec .title span strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -10334,6 +10418,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.ticket_purchase .my_cont .main .pre_sec .input_box .count_box .result_text strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -10368,6 +10453,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-weight: 600;
 }
 #mypage.ticket_purchase .my_cont .main .reAuto_sec .title .sub p strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -10533,6 +10620,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.ticket_purchase .my_cont .main .reAuto_sec .input_box .count_box .result_text strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -10558,6 +10646,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 24px;
 }
 #mypage.ticket_purchase .my_cont .main .item_con_sec .title span strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   color: #014099;
@@ -10691,6 +10781,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.ticket_purchase .my_cont .main .item_con_sec .input_box .count_box .result_text strong {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -10820,6 +10911,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 24px;
 }
 #mypage.ticket_preList .my_cont .main .con_box .con_top .title_con span strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   margin-right: 2px;
@@ -10870,6 +10963,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border-spacing: 0;
   border: 1px solid #D3D3D3;
   width: 850px;
+  table-layout: fixed;
 }
 #mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr {
   background-color: #F6F6F6;
@@ -10889,7 +10983,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   width: 50px;
 }
 #mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.title {
-  width: 420px;
+  width: 414px;
 }
 #mypage.ticket_preList .my_cont .main .con_box .con_table table thead tr th.start_day {
   width: 100px;
@@ -10931,12 +11025,24 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 19px;
   color: #113462;
   margin-bottom: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.title_td .list_title {
   font-size: 13px;
   line-height: 19px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
-#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em {
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  font-family: "Nunito Sans", sans-serif;
+}
+#mypage.ticket_preList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   color: #222;
   margin-right: 1px;
@@ -11026,11 +11132,14 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   margin-right: 11px;
 }
 #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span em {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
 }
 #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .title_con span strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   margin-left: 6px;
@@ -11141,7 +11250,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 18px;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.execution_td em {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  font-family: "Nunito Sans", sans-serif;
+}
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.minus_num_td strong, #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.execution_td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   color: #222;
   margin-right: 1px;
@@ -11149,7 +11262,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.number_td {
   color: #000;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.interval_td a em {
+#mypage.ticket_reAutoList .my_cont .main .con_box .con_table table tbody tr td.interval_td a strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   margin-right: 2px;
 }
@@ -11235,6 +11349,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 24px;
 }
 #mypage.ticket_item_con_List .my_cont .main .con_box .con_top .title_con span strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   margin-right: 2px;
@@ -11341,7 +11457,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 18px;
 }
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.minus_num_td em, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.execution_td em {
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.number_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.start_day_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.last_day_td, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.date_td {
+  font-family: "Nunito Sans", sans-serif;
+}
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.minus_num_td strong, #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.execution_td strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   color: #222;
   margin-right: 1px;
@@ -11349,7 +11469,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.number_td {
   color: #000;
 }
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.interval_td a em {
+#mypage.ticket_item_con_List .my_cont .main .con_box .con_table table tbody tr td.interval_td a strong {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   margin-right: 2px;
 }
@@ -11498,6 +11619,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 0;
 }
 #mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box select {
+  font-family: "Nunito Sans", sans-serif;
   width: 100%;
   height: 100%;
   padding: 0 10px;
@@ -11518,10 +11640,12 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   /*for IE10,11*/
 }
 #mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input .select_box select option {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
 #mypage.change_info .my_cont .main .form_box form .form_list .form_info.phone_info .phone_input input[type=text] {
+  font-family: "Nunito Sans", sans-serif;
   width: 120px;
   height: 34px;
   padding: 0 10px;
@@ -12286,6 +12410,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   line-height: 20px;
 }
 #mypage.blocking_chat .my_cont .table_box .table_tr_box .table_tr .mo_flex_box .date_td {
+  font-family: "Nunito Sans", sans-serif;
   width: 200px;
   min-width: 200px;
   border-right: 1px solid #D3D3D3;
@@ -12749,6 +12874,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
 }
 #contract .id_box .upload_box .upload_input input[type=file] {
   display: none;
