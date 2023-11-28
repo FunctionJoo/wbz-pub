@@ -1007,4 +1007,146 @@ body {
 
 #contets {
   overflow: hidden;
+}
+
+#sidemenu {
+  display: none;
+}
+
+body.sideopen {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1080px) {
+  body:not(.is_pc) #sidemenu {
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  body:not(.is_pc) #sidemenu.visible {
+    left: 0;
+  }
+  body:not(.is_pc) #sidemenu .side_top {
+    position: sticky;
+    top: 0;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  body:not(.is_pc) #sidemenu .side_top .st_logo {
+    font-size: 0;
+  }
+  body:not(.is_pc) #sidemenu .side_top .st_logo img {
+    width: 35px;
+  }
+  body:not(.is_pc) #sidemenu .side_top .side_close {
+    width: 12px;
+    height: 12px;
+    box-sizing: unset;
+    background: url("../images/common/side_close.svg") no-repeat center center;
+    padding: 8px;
+    margin-right: -8px;
+    font-size: 0;
+    border: 0 none;
+  }
+  body:not(.is_pc) #sidemenu .side_info {
+    padding: 18px 16px;
+    background: #F6F6F6;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_login {
+    font-size: 16px;
+    color: #666666;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_login a {
+    color: #014099;
+    text-decoration: underline;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 16px;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_top .user_name {
+    padding-left: 26px;
+    background: url("../images/common/side_member.svg") no-repeat left center;
+    font-size: 16px;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_top .user_name b {
+    font-weight: 500;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_top .siu_logout {
+    font-size: 12px;
+    color: #666666;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_points {
+    margin-top: 18px;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_points .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_points .line + .line {
+    margin-top: 10px;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_points .line .line_name {
+    font-size: 15px;
+    color: #666666;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_points .line .line_num {
+    font-size: 14px;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_points .line .line_num .number {
+    padding-right: 4px;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: bottom;
+  }
+  body:not(.is_pc) #sidemenu .side_info .si_user .siu_points .line .line_num .number.is_top {
+    color: #014099;
+  }
+  body:not(.is_pc) #sidemenu .side_menu_wrap ul.dep1 > li {
+    border-top: 1px solid #D3D3D3;
+  }
+  body:not(.is_pc) #sidemenu .side_menu_wrap ul.dep1 > li .dep1box {
+    display: flex;
+  }
+  body:not(.is_pc) #sidemenu .side_menu_wrap ul.dep1 > li .dep1box a {
+    padding: 15px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+    min-width: 0;
+  }
+  body:not(.is_pc) #sidemenu .side_menu_wrap ul.dep1 > li .dep1box button {
+    padding: 0 16px;
+    font-size: 0;
+    background: url("../images/common/side_menu_arr.svg") no-repeat center center;
+  }
+  body:not(.is_pc) #sidemenu .side_menu_wrap ul.dep2 {
+    padding: 20px 16px;
+    border-top: 1px solid #D3D3D3;
+  }
+  body:not(.is_pc) #sidemenu .side_menu_wrap ul.dep2 > li + li {
+    margin-top: 20px;
+  }
+  body:not(.is_pc) #sidemenu .side_menu_wrap ul.dep2 > li a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=layout.css.map */
