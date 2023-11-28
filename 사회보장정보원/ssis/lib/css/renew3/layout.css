@@ -1607,7 +1607,11 @@ a.to-top-btn { color:#fff}
 	.area {padding: 0 14px;}
 }
 
-#float_menu {position: absolute; z-index: 20; right: 60px; bottom: 100px; width: 100px; transition: 0.7s;}
+#float_menu {position: fixed; right: 60px; bottom: 100px; width: 100px; transition: 0.7s;}
+#float_menu {z-index: 20; opacity: 0; transition: opacity 0.3s;}
+#float_menu.visible {opacity: 1;}
+#float_menu.visible-z {z-index: 20;}
+#float_menu.footer-close {position: absolute; margin-bottom: 100px;}
 #float_menu .quick_menu .quick_toggle {overflow: hidden; background: #FFFFFF; box-shadow: 0px 0px 6px #00000029; border-radius: 6px; margin-bottom: -6px;}
 #float_menu .quick_menu ul {padding: 20px 0 26px; transition: 0.5s;}
 #float_menu .quick_menu ul li + li {margin-top: 16px;}
@@ -1630,7 +1634,9 @@ a.to-top-btn { color:#fff}
 #float_menu.is_end {bottom: 363px;}
 
 @media (max-width: 1400px) {
-	#float_menu {position: fixed;right: 16px; bottom: 16px; width: 72px; transition: 0.7s;}
+	#float_menu.footer-close {position: absolute; margin-bottom: 16px;}
+
+	#float_menu {position: fixed;right: 16px; bottom: 16px; width: 72px;}
 	#float_menu .quick_menu ul {padding: 22px 0 28px; transition: 0.5s;}
 	#float_menu .quick_menu ul li + li {margin-top: 20px;}
 	#float_menu .quick_menu ul li a i {width: 36px; height: 36px; background-size: 100% 100%;}

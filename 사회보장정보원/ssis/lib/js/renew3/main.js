@@ -112,14 +112,39 @@ window.addEventListener("DOMContentLoaded", (event) => {
 	if ($('#fullpage').length >= 1) {
 		mainEventInit();
 
+		/* // wbz20231127 */
+		document.querySelectorAll('video').forEach((el) => {
+			el.setAttribute("playsinline", true);
+			el.play();
+		});
+
 		window.addEventListener('scroll', (e) => {
 			let anchorTarget = []
 			if (window.scrollY > 50) {
 				$('#header_new').removeClass('is_first');
 				$('#fullmenu').removeClass('is_first');
+				$('#float_menu').addClass('visible');
+				$('#float_menu').addClass('visible-z');
 			} else {
 				$('#header_new').addClass('is_first');
 				$('#fullmenu').addClass('is_first');
+				$('#float_menu').removeClass('visible');
+				setTimeout(function() {$('#float_menu').removeClass('visible-z');}, 300);
+			}
+
+			let floatSpace;
+			if (window.innerWidth > 1400) {
+				floatSpace = $('#footer_new').height() - 50;
+			} else {
+				floatSpace = $('#footer_new').height();
+			}
+			let bodyHeight = $('body').height() - floatSpace - window.innerHeight;
+			if (window.scrollY > bodyHeight) {
+				$('#float_menu').addClass('footer-close');
+				$('#float_menu').css({'bottom': floatSpace+'px'})
+			} else {
+				$('#float_menu').removeClass('footer-close');
+				$('#float_menu').attr('style', '');
 			}
 
 			document.querySelectorAll('#fullmenu a').forEach((el, idx) => {
@@ -220,6 +245,23 @@ function mainEventInit () {
 			nextEl: '.main_visual_bg .mv_r',
 			prevEl: '.main_visual_bg .mv_l',
 		},
+		/* // wbz20231127 */
+		on: {
+			slideChangeTransitionStart: function(swiper) {
+				if (swiper.realIndex != 0) {
+					document.querySelector('.main_article_slide').classList.add('visible-z');
+					document.querySelector('.main_article_slide').classList.add('visible');
+				} else {
+					document.querySelector('.main_article_slide').classList.remove('visible');
+				}
+			},
+			slideChangeTransitionEnd: function(swiper) {
+				if (swiper.realIndex != 0) {
+				} else {
+					document.querySelector('.main_article_slide').classList.remove('visible-z');
+				}
+			}
+		}
 	});
 	document.querySelector('.mv_control .mv_s').addEventListener('click', (e) => {
 		let btn = e.target;
@@ -351,6 +393,8 @@ function mainEventInit () {
 		smSlides.forEach((el) => {
 			const el2 = el.cloneNode(true);
 			el2.querySelector('a').tabIndex = -1;
+			// wbz20231127
+			smWrap.append(el2);
 		});
 	}
 	if (smSlides.length < smMinCount) {
