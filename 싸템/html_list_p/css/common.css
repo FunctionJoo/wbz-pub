@@ -241,7 +241,7 @@ body.is_pc {
   height: 48px;
   border: 1px solid #D3D3D3;
   border-radius: 3px;
-  padding: 0 68px 0 14px;
+  padding: 0 40px 0 14px;
   font-size: 16px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -317,6 +317,11 @@ body.is_pc {
   width: 166px;
   height: 40px;
   line-height: 38px;
+}
+.st_btn.size_m2 {
+  width: 200px;
+  height: 44px;
+  line-height: 42px;
 }
 .st_btn.color_p {
   background-color: #014099;

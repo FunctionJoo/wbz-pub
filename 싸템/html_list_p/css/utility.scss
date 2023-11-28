@@ -83,6 +83,11 @@ $nunito: 'Nunito Sans', sans-serif;
 	text-overflow: ellipsis;
 }
 
+@mixin afterMargin {
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
 @mixin dash($w, $h, $bg) {
 	position: relative;
 	&:before {

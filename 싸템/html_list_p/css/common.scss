@@ -209,7 +209,7 @@ body.is_pc {
 	input:not([type="radio"]) {
 		width: 100%;
 		height: 48px;
-		border: 1px solid #D3D3D3;
+		border: 1px solid $colorD;
 		border-radius: 3px;
 		padding: 0 14px;
 		font-size: 16px;
@@ -222,7 +222,7 @@ body.is_pc {
 	&.type_login {
 		input:not([type="radio"]) {
 			height: 50px;
-			border-color: #A7A7A7;
+			border-color: $colorA;
 			border-radius: 0;
 			padding: 0 20px;
 			font-size: 14px;
@@ -250,10 +250,10 @@ body.is_pc {
 	select {
 		width: auto;
 		height: 48px;
-		border: 1px solid #D3D3D3;
+		border: 1px solid $colorD;
 		border-radius: 3px;
 		//NOTE 패딩 수정
-		padding: 0 68px 0 14px;
+		padding: 0 40px 0 14px;
 		font-size: 16px;
 		appearance: none;
 		cursor: pointer;
@@ -334,6 +334,11 @@ body.is_pc {
 		width: 166px;
 		height: 40px;
 		line-height: 38px;
+	}
+	&.size_m2 {
+		width: 200px;
+		height: 44px;
+		line-height: 42px;
 	}
 	// color
 	&.color_p {
