@@ -1865,6 +1865,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 14px;
   line-height: 20px;
 }
+#mypage.cancel_wait .my_cont .main #pagination {
+  display: none;
+}
 
 @media (max-width: 1080px) {
   #mypage.cancel_wait .w_set {
@@ -1997,6 +2000,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.cancel_wait .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_bottom .view_td .step_02 .mo_flex_box button {
     font-size: 14px;
     line-height: 20px;
+  }
+  #mypage.cancel_wait .w_set .my_cont .main #pagination {
+    display: flex;
   }
 }
 #mypage.sale_detail_item .my_cont .title {
@@ -6703,6 +6709,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border-radius: 3px;
   background-color: #fff;
 }
+#mypage.canceling_purchase .my_cont .main #pagination {
+  display: none;
+}
 
 @media (max-width: 1080px) {
   #mypage.canceling_purchase .w_set {
@@ -6810,6 +6819,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   }
   #mypage.canceling_purchase .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_bottom .cancel_td button {
     padding: 5px 22px;
+  }
+  #mypage.canceling_purchase .w_set .my_cont .main #pagination {
+    display: flex;
   }
 }
 #mypage.item_for_sale .my_cont .pc_title {
@@ -13667,4 +13679,279 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 #contract_detail .id_box .upload_box .img_box img {
   width: 360px;
+}
+
+#mypage.my_interest .my_cont .pc_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#mypage.my_interest .my_cont .main .con_top {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: end;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head {
+  display: flex;
+  height: 50px;
+  background-color: #F6F6F6;
+  border: 1px solid #D3D3D3;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.check_th {
+  width: 50px;
+  min-width: 50px;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.check_th label {
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.check_th input[type=checkbox] {
+  display: none;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.check_th input[type=checkbox]:checked + label {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.div_th {
+  width: 78px;
+  min-width: 78px;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.cate_th {
+  width: 148px;
+  min-width: 148px;
+  max-width: 148px;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.title_th {
+  width: 448px;
+  min-width: 448px;
+}
+#mypage.my_interest .my_cont .main .table_box .pc_table_head .th.price_th {
+  width: 124px;
+  min-width: 124px;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr {
+  border-right: 1px solid #D3D3D3;
+  border-left: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  height: 50px;
+  display: flex;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr.purchase_on .mo_td .mo_middle .div_td span.purchase {
+  display: inline-block;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr.purchase_on .mo_td .mo_middle .div_td span.sale {
+  display: none;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr.no_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_th .check_td {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  min-width: 50px;
+  border-right: 1px solid #D3D3D3;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_th .check_td label {
+  border: 1px solid #D3D3D3;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_th .check_td input[type=checkbox] {
+  display: none;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_th .check_td input[type=checkbox]:checked + label {
+  background-image: url(../images/mypage/mile_checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td {
+  display: flex;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle {
+  display: flex;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .div_td {
+  width: 78px;
+  min-width: 78px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .div_td span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5b9bd5;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .div_td span.sale {
+  display: inline-block;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .div_td span.purchase {
+  display: none;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .cate_td {
+  width: 148px;
+  min-width: 148px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .cate_td span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom {
+  display: flex;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom .title_td {
+  width: 448px;
+  min-width: 448px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  line-height: 19px;
+  color: #000;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom .title_td a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom .price_td {
+  width: 124px;
+  min-width: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mypage.my_interest .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom .price_td strong {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 1080px) {
+  #mypage.my_interest .w_set {
+    padding: 0;
+  }
+  #mypage.my_interest .w_set .my_cont .pc_title {
+    display: none;
+  }
+  #mypage.my_interest .w_set .my_cont .my_title {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #mypage.my_interest .w_set .my_cont .main .con_top {
+    margin: 0 16px 15px 16px;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .pc_table_head {
+    border-right: none;
+    border-left: none;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .pc_table_head .div_th, #mypage.my_interest .w_set .my_cont .main .table_box .pc_table_head .cate_th, #mypage.my_interest .w_set .my_cont .main .table_box .pc_table_head .title_th, #mypage.my_interest .w_set .my_cont .main .table_box .pc_table_head .price_th {
+    display: none;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr {
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #D3D3D3;
+    height: auto;
+    display: flex;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr.no_item {
+    height: 50px;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_th .check_td {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    min-width: 50px;
+    border-right: 1px solid #D3D3D3;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_td {
+    width: 100%;
+    flex-direction: column;
+    padding: 14px;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .div_td {
+    width: auto;
+    min-width: auto;
+    border-right: none;
+    order: 2;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_middle .cate_td {
+    width: calc(100% - 30px);
+    min-width: auto;
+    border-right: none;
+    justify-content: start;
+    order: 1;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom .title_td {
+    justify-content: start;
+    width: calc(100% - 100px);
+    min-width: auto;
+    border-right: none;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #mypage.my_interest .w_set .my_cont .main .table_box .table_tr_box .table_tr .mo_td .mo_bottom .price_td {
+    width: auto;
+    min-width: auto;
+    border-right: none;
+  }
 }/*# sourceMappingURL=sjh.css.map */
