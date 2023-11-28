@@ -220,11 +220,13 @@
                                     .list_th{
                                         background-color: #F6F6F6;
                                         width: 110px;
-                                        padding: 15px 0;
                                         text-align: center;
                                         font-size: 14px;
                                         line-height: 20px;
                                         border-right: 1px solid #D3D3D3;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
                                     }
                                     .list_td{
                                         width: calc(100% - 110px);
@@ -672,7 +674,6 @@
                                     .table_list{
                                         .list_th{
                                             width: 72px;
-                                            padding: 13px 0;
                                             text-align: center;
                                         }
                                         .list_td{
