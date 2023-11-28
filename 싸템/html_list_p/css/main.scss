@@ -348,7 +348,7 @@
 					display: block;
 					i {
 						display: block;
-						height: 24px;
+						height: 26px;
 						margin: 0 auto;
 						background: no-repeat center center;
 						@for $i from (1) to (9){
@@ -357,7 +357,7 @@
 						&.mmmi_5 {background-position: left 58% top 50%;}
 					}
 					.mmmt {
-						margin-top: 6px;
+						margin-top: 5px;
 						text-align: center;
 						font-size: 12px;
 						color: $color2;

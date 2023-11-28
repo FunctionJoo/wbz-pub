@@ -55,4 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.querySelector('#sidebar').classList.toggle('on');
 		});
 	}
+
+	if (document.querySelector('#sidemenu')) {
+		document.querySelectorAll('.side_menu_btn').forEach((el) => {
+			el.addEventListener('click', () => {
+				document.querySelector('#sidemenu').classList.toggle('visible');
+				document.querySelector('body').classList.toggle('sideopen');
+			});
+		});
+	}
 });
