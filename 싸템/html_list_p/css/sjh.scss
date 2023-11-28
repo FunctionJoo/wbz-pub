@@ -132,6 +132,80 @@
             }
         }
         .main{
+            &.detail_divide{
+                .content{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding: 8px 10px;
+                    .push_count{
+                        display: flex;
+                        height: 34px;
+                        border: 1px solid #D3D3D3;
+                        .minus_button{
+                            position: relative;
+                            width: 36px;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 12px;
+                                height: 1px;
+                                background-color: #222;
+                                display: block;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            
+                        }
+                        .plus_button{
+                            position: relative;
+                            width: 36px;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 12px;
+                                height: 1px;
+                                background-color: #222;
+                                display: block;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                width: 12px;
+                                height: 1px;
+                                background-color: #222;
+                                display: block;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%) rotate(90deg);
+                            }
+                        }
+                        #pre_result{
+                            width: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-left: 1px solid #D3D3D3;
+                            border-right: 1px solid #D3D3D3;
+                            font-size: 14px;
+                            line-height: 21px;
+                        }
+                    }
+                    span{
+                        color: #000;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-left: 10px;
+                        em{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
             .main_top{
                 display: flex;
                 justify-content: space-between;

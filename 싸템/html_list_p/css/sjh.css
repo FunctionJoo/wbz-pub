@@ -72,6 +72,77 @@
   width: 24px;
   height: 27px;
 }
+#contets.sell_detail .main.detail_divide .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 10px;
+}
+#contets.sell_detail .main.detail_divide .content .push_count {
+  display: flex;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+}
+#contets.sell_detail .main.detail_divide .content .push_count .minus_button {
+  position: relative;
+  width: 36px;
+}
+#contets.sell_detail .main.detail_divide .content .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contets.sell_detail .main.detail_divide .content .push_count .plus_button {
+  position: relative;
+  width: 36px;
+}
+#contets.sell_detail .main.detail_divide .content .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contets.sell_detail .main.detail_divide .content .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#contets.sell_detail .main.detail_divide .content .push_count #pre_result {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#contets.sell_detail .main.detail_divide .content span {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+#contets.sell_detail .main.detail_divide .content span em {
+  font-weight: 500;
+}
 #contets.sell_detail .main .main_top {
   display: flex;
   justify-content: space-between;

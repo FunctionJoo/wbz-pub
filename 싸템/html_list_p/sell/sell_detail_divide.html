@@ -240,7 +240,7 @@
                     </div>
                 </div>
 
-                <div class="main detail_account">
+                <div class="main detail_divide">
                     <div class="main_top">
                         <div class="top_con top_01">
                             <div class="con_list list_01">
@@ -306,6 +306,23 @@
                             </div>
                         </div>
                         <div class="top_con top_02">
+							<div class="con_list list_new">
+								<div class="con_box">
+									<div class="con_title">구매 개수</div>
+									<div class="count_box">
+										<div class="content">
+											<div class="push_count">
+												<div class="minus_button" onclick="countBox('minus')">
+												</div>
+												<div id="count_div">0</div>
+												<div class="plus_button" onclick="countBox('plus')">
+												</div>
+											</div>
+											<span><em>1</em>일(24시간)/1장 : <em>1,000원</em></span>
+										</div>
+									</div>
+								</div>
+							</div>
                             <div class="con_list list_03">
                                 <div class="con_box">
                                     <div class="con_title">추가서비스</div>
@@ -326,24 +343,20 @@
                                                 <div class="select_box">
                                                     <label for="period" class="period_label"></label>
                                                     <select name="period" id="period">
-                                                        <option value="1" selected>1개월</option>
-                                                        <option value="2">2개월</option>
-                                                        <option value="3">3개월</option>
-                                                        <option value="4">4개월</option>
-                                                        <option value="5">5개월</option>
-                                                        <option value="6">6개월</option>
-                                                        <option value="7">7개월</option>
-                                                        <option value="8">8개월</option>
-                                                        <option value="9">9개월</option>
-                                                        <option value="10">10개월</option>
-                                                        <option value="11">11개월</option>
-                                                        <option value="12">12개월</option>
+                                                        <option value="10000" selected>1개월</option>
+                                                        <option value="20000">2개월</option>
+                                                        <option value="30000">3개월</option>
+                                                        <option value="40000">4개월</option>
+                                                        <option value="50000">5개월</option>
+                                                        <option value="60000">6개월</option>
+                                                        <option value="70000">7개월</option>
+                                                        <option value="80000">8개월</option>
+                                                        <option value="90000">9개월</option>
+                                                        <option value="100000">10개월</option>
+                                                        <option value="110000">11개월</option>
+                                                        <option value="120000">12개월</option>
                                                     </select>
                                                 </div>
-                                            </div>
-                                            <div class="option_list list_03">
-                                                <input type="radio" id="option_03" name="option_list">
-                                                <label for="option_03"><span>전자계약서<em>+10,000원</em></span></label>
                                             </div>
                                         </div>
                                         <div class="charge_box">
@@ -388,7 +401,27 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		function updateCount(type, elementId){
+			const resultElement = document.getElementById(elementId);
+			let number = resultElement.innerText;
 
+			if(type === 'plus'){
+				number = parseInt(number) + 1;
+			}else if(type === 'minus'){
+				if(number == 0){
+					number = parseInt(number)
+				}else{
+					number = parseInt(number) - 1;
+				}
+			}
+
+			resultElement.innerText = number
+		}
+		function countBox(type){
+			updateCount(type, 'count_div')
+		}
+	</script>
 	<!-- 미완 -->
 	<footer id="footer">
 		<div class="footer_top">
