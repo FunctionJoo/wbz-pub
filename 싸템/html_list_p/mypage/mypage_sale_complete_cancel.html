@@ -18,7 +18,71 @@
 	<!-- main js -->
 	<script src="../js/main.js"></script>
 </head>
-<body>
+<body class="">
+	<script>
+		function pop_on(id){
+			document.getElementById(id).style.display = 'block'
+		}
+		function pop_off(id){
+			document.getElementById(id).style.display = 'none'
+		}
+		
+	</script>
+	<div id="pop_apply">
+		<div class="pop_box">
+			<div class="pop_top">
+				<div class="title">보상신청</div>
+				<div class="close" onclick="pop_off('pop_apply')"></div>
+			</div>
+			<div class="pop_bottom">
+				<textarea name="pop_text" id="pop_text" placeholder="보상 신청사유를 입력해주세요."></textarea>
+				<button type="button" class="submit_button">저장</button>
+			</div>
+		</div>
+	</div>
+	<div id="pop_apply_history">
+		<div class="pop_box">
+			<div class="pop_top">
+				<div class="title">보상신청</div>
+				<div class="close" onclick="pop_off('pop_apply_history')"></div>
+			</div>
+			<div class="pop_bottom">
+				<div class="textarea_his">이벤트 당첨되었습니다. 보상신청합니다.</div>
+				<button type="button" class="submit_button">저장</button>
+			</div>
+		</div>
+	</div>
+	<div id="pop_contract">
+		<div class="pop_box">
+			<div class="pop_top">
+				<div class="img_box">
+				</div>
+				<div class="txt_box">
+					<div class="txt_tit">싸템 간편날인</div>
+					<div class="txt_con">
+						계약내용동의와 날인을 한번에! <br>
+						계약서의 효력은 서명이나 도장을 <br>
+						사용한 경우와 동일합니다.
+					</div>
+				</div>
+			</div>
+			<div class="pop_bottom">
+				<div class="info_box">
+					<div class="info_tit">전자계약 작성 동의</div>
+					<ul class="info_con">
+						<li><span>· </span><span>문서의 서명 및 작성 내용이 본인의 것임을 인정합니다.</span></li>
+						<li><span>· </span><span>온라인 계약의 서명 및 내용의 법적 효력에 동의합니다.</span></li>
+						<li><span>· </span><span>작성으로 인하여 법적 책임이 작성자에게 있음을 인정합니다.</span></li>
+						<li><span>· </span><span>기타 세부사항은 서비스 이용약관 및 개인정보 처리 방침에 근거하여 동의합니다.</span></li>
+					</ul>
+				</div>
+				<div class="button_box">
+					<button type="button" class="close_button" onclick="pop_off('pop_contract')">아니요.</button>
+					<button type="button" class="yes_button">예, 동의합니다.</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header id="header">
 		<div class="w_set">
 			<div class="sec_top">
@@ -395,7 +459,7 @@
 	</div>
 
 	<div id="contets">
-		<div id="mypage" class="sale_complete">
+		<div id="mypage" class="sale_complete_cancel">
 			<div class="w_set w_set_my">
 				<div class="my_left">
 					<h2 class="mym_title">마이페이지</h2>
@@ -485,40 +549,23 @@
 								<div class="th title_th">물품제목</div>
 								<div class="th price_th">거래금액</div>
 								<div class="th date_th">등록일</div>
-								<div class="th view_th"></div>
 								<div class="th chat_th"></div>
+								<div class="th cancel_th">취소사유</div>
 							</div>
 							<!--  -->
 							<div class="table_tr_box">
 								<div class="table_tr no_item">
 									<span>등록된 물품이 없습니다.</span>
 								</div>
-								<!-- .table_tr에서 .step_02_on , .chat_exists, .chat_over 사용시 각 상태 변경됨 -->
-								<div class="table_tr step_02_on chat_exists chat_over">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
+								<!-- .table_tr에서 .chat_exists, .chat_over 사용시 각 상태 변경됨 -->
+								<div class="table_tr chat_exists ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
 									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
 									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
+										<div class="price_td"><strong>100,000,000</strong>원</div>
 										<div class="date_td">23.09.09</div>
 									</div>
 									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
 										<div class="chat_td">
 											<a href="#none">
 												<div class="img_box">
@@ -529,34 +576,20 @@
 													</div>
 												</div>
 											</a>
+										</div>
+										<div class="cancel_td">
+											<button type="button">보기</button>
 										</div>
 									</div>
 								</div>
-								<div class="table_tr  chat_exists ">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
+								<div class="table_tr ">
+									<div class="cate_td">리니지 > 데몬> 01</div>
 									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
 									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
+										<div class="price_td"><strong>100,000,000</strong>원</div>
 										<div class="date_td">23.09.09</div>
 									</div>
 									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
 										<div class="chat_td">
 											<a href="#none">
 												<div class="img_box">
@@ -568,71 +601,19 @@
 												</div>
 											</a>
 										</div>
-									</div>
-								</div>
-								<div class="table_tr step_03_on ">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
-									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
-									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
-										<div class="date_td">23.09.09</div>
-									</div>
-									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
-										<div class="chat_td">
-											<a href="#none">
-												<div class="img_box">
-													<i></i>
-													<div class="count">
-														<span class="count_chat">01</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
+										<div class="cancel_td">
+											<button type="button">보기</button>
 										</div>
 									</div>
 								</div>
 								<div class="table_tr chat_exists chat_over">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
+									<div class="cate_td">리니지 > 데몬> 01</div>
 									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
 									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
+										<div class="price_td"><strong>100,000,000</strong>원</div>
 										<div class="date_td">23.09.09</div>
 									</div>
 									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
 										<div class="chat_td">
 											<a href="#none">
 												<div class="img_box">
@@ -643,34 +624,20 @@
 													</div>
 												</div>
 											</a>
+										</div>
+										<div class="cancel_td">
+											<button type="button">보기</button>
 										</div>
 									</div>
 								</div>
-								<div class="table_tr  chat_exists ">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
+								<div class="table_tr chat_exists chat_over">
+									<div class="cate_td">리니지 > 데몬> 01</div>
 									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
 									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
+										<div class="price_td"><strong>100,000,000</strong>원</div>
 										<div class="date_td">23.09.09</div>
 									</div>
 									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
 										<div class="chat_td">
 											<a href="#none">
 												<div class="img_box">
@@ -682,157 +649,8 @@
 												</div>
 											</a>
 										</div>
-									</div>
-								</div>
-								<div class="table_tr step_03_on chat_exists chat_over">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
-									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
-									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
-										<div class="date_td">23.09.09</div>
-									</div>
-									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
-										<div class="chat_td">
-											<a href="#none">
-												<div class="img_box">
-													<i></i>
-													<div class="count">
-														<span class="count_chat">01</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="table_tr step_02_on chat_exists chat_over">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
-									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
-									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
-										<div class="date_td">23.09.09</div>
-									</div>
-									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
-										<div class="chat_td">
-											<a href="#none">
-												<div class="img_box">
-													<i></i>
-													<div class="count">
-														<span class="count_chat">01</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="table_tr step_02_on chat_exists chat_over">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
-									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
-									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
-										<div class="date_td">23.09.09</div>
-									</div>
-									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
-										<div class="chat_td">
-											<a href="#none">
-												<div class="img_box">
-													<i></i>
-													<div class="count">
-														<span class="count_chat">01</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="table_tr step_02_on chat_exists chat_over">
-									<div class="cate_td"><span>리니지 > 데몬 > 01</span></div>
-									<div class="title_td"><a href="#none">레벨 완료 게스트 예약</a></div>
-									<div class="mo_middle">
-										<div class="price_td"><span><strong>100,000,000</strong>원</span></div>
-										<div class="date_td">23.09.09</div>
-									</div>
-									<div class="mo_bottom">
-										<div class="view_td">
-											<div class="step_01">
-												<button type="button">보상신청</button>
-											</div>
-											<div class="step_02">
-												<div class="mo_flex_box">
-													<span>보상신청대기</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-											<div class="step_03">
-												<div class="mo_flex_box">
-													<span>보상신청완료</span>
-													<button type="button">신청내역</button>
-												</div>
-											</div>
-										</div>
-										<div class="chat_td">
-											<a href="#none">
-												<div class="img_box">
-													<i></i>
-													<div class="count">
-														<span class="count_chat">01</span>
-														<span class="over_chat">99+</span>
-													</div>
-												</div>
-											</a>
+										<div class="cancel_td">
+											<button type="button">보기</button>
 										</div>
 									</div>
 								</div>
