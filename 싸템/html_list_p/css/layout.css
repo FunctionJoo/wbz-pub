@@ -485,7 +485,7 @@ body {
     padding-right: 16px;
   }
   body:not(.is_pc) #header .sec_top {
-    padding: 18px 0;
+    padding: 15px 0 0;
   }
   body:not(.is_pc) #header .sec_top .logo {
     width: 45px;
@@ -668,6 +668,37 @@ body {
   body:not(.is_pc) #header .sec_bottom .sec_right {
     display: none;
   }
+  body:not(.is_pc) #header .sec_bottom .sec_center {
+    width: 100%;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu:after {
+    content: none;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu > li {
+    position: relative;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu > li + li {
+    margin-left: 0;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu > li > a {
+    border-bottom: 0 none;
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu > li .dep2 {
+    display: none !important;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu:hover .dep2 {
+    display: none;
+  }
+  body:not(.is_pc) #header .sec_bottom .header_menu:hover:after {
+    display: none;
+  }
 }
 
 #footer {
@@ -816,7 +847,7 @@ body {
     width: 100%;
     margin-top: 20px;
   }
-  + body:not(.is_pc) #footer .footer_content .fc_cont .ft_address ul li.w100.w100 {
+  body:not(.is_pc) #footer .footer_content .fc_cont .ft_address ul li.w100 + .w100 {
     margin-top: 10px;
   }
   body:not(.is_pc) #mobile_btm_menu {
@@ -828,6 +859,7 @@ body {
     width: 100%;
     background: #fff;
     height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
   }
   body:not(.is_pc) #mobile_btm_menu a {
     display: flex;
@@ -838,13 +870,18 @@ body {
     text-align: center;
   }
   body:not(.is_pc) #mobile_btm_menu a i {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 26px;
     height: 26px;
   }
   body:not(.is_pc) #mobile_btm_menu a .mbm_txt {
     font-size: 12px;
     color: #666666;
+  }
+  body:not(.is_pc) #mobile_btm_menu a.on .mbm_txt {
+    color: #113462;
   }
 }
 
