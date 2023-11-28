@@ -462,7 +462,7 @@
 							<!-- 모바일 버전에서는 삭제 -->
 							<div class="pc_table_head">
 								<div class="th check_th">
-									<input type="checkbox" id="list_all">
+									<input type="checkbox" id="list_all" name="all">
 									<label for="list_all"></label>
 								</div>
 								<div class="th div_th">구분</div>
@@ -479,7 +479,7 @@
 								<div class="table_tr purchase_on">
 									<div class="mo_th">
 										<div class="check_td">
-											<input type="checkbox" id="list_01">
+											<input type="checkbox" id="list_01" name="chk">
 											<label for="list_01"></label>
 										</div>
 									</div>
@@ -500,7 +500,7 @@
 								<div class="table_tr ">
 									<div class="mo_th">
 										<div class="check_td">
-											<input type="checkbox" id="list_02">
+											<input type="checkbox" id="list_02" name="chk">
 											<label for="list_02"></label>
 										</div>
 									</div>
@@ -521,7 +521,7 @@
 								<div class="table_tr ">
 									<div class="mo_th">
 										<div class="check_td">
-											<input type="checkbox" id="list_03">
+											<input type="checkbox" id="list_03" name="chk">
 											<label for="list_03"></label>
 										</div>
 									</div>
@@ -569,6 +569,28 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		let checkboxList = document.querySelectorAll("input[name=chk]");
+		let checkAll = document.querySelector("input[name=all]");
+		
+		checkAll.addEventListener("click", function(){
+			checkboxList.forEach(function(checkbox){
+				checkbox.checked = checkAll.checked;
+			})
+		});
+		checkboxList.forEach(function(checkbox){
+			checkbox.addEventListener("click", function(){
+				let total = checkboxList.length;
+				let checked = Array.from(checkboxList).filter(function(checkbox){
+					return checkbox.checked;
+				}).length;
+
+				checkAll.checked = total === checked
+			})
+		})
+
+		
+	</script>
 
 	<!-- 미완 -->
 	<footer id="footer">
