@@ -8383,6 +8383,10 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .top_info {
   margin-bottom: 4px;
 }
+#mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .middle_info span {
+  width: calc(100% - 64px);
+  padding-right: 17px;
+}
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .middle_info .immedi_button {
   display: inline-block;
 }
@@ -8433,16 +8437,13 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info span {
-  width: calc(100% - 64px);
   font-size: 14px;
   line-height: 20px;
   color: #000;
-  white-space: normal;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   overflow: hidden;
-  padding-right: 17px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info .immedi_button {
   display: none;
@@ -8669,6 +8670,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .top_info {
     margin-bottom: 20px;
   }
+  #mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .middle_info span {
+    width: calc(100% - 64px);
+  }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr.immedi_button_on .mo_box .td.info_td .middle_info .immedi_button {
     display: inline-block;
   }
@@ -8710,6 +8714,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     font-size: 15px;
     line-height: 22px;
     color: #000;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.info_td .bottom_info {
     display: none;
