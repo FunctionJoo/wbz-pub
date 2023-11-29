@@ -9111,7 +9111,7 @@ body{
                                 &.view_td{
                                     width: 98px;
                                     min-width: 98px;
-                                    padding: 18px 19.5px;
+                                    padding: 18px 17px;
                                     display: flex;
                                     .mo_left_date{
                                         display: none;
@@ -9862,7 +9862,7 @@ body{
                                 &.view_td{
                                     width: 98px;
                                     min-width: 98px;
-                                    padding: 18px 19.5px;
+                                    padding: 18px 17px;
                                     display: flex;
                                     .mo_left_date{
                                         display: none;
@@ -10082,6 +10082,11 @@ body{
                                             .middle_info{
                                                 span{
                                                     width: calc(100% - 64px);
+                                                    display: -webkit-box;
+                                                    -webkit-line-clamp: 2;
+                                                    -webkit-box-orient: vertical;
+                                                    overflow: hidden;
+                                                    white-space: normal;
                                                 }
                                                 .immedi_button{
                                                     display: inline-block;
@@ -10127,11 +10132,6 @@ body{
                                                 font-size: 15px;
                                                 line-height: 22px;
                                                 color: #000;
-                                                display: -webkit-box;
-                                                -webkit-line-clamp: 2;
-                                                -webkit-box-orient: vertical;
-                                                overflow: hidden;
-                                                white-space: normal;
                                             }
                                         }
                                         .bottom_info{
