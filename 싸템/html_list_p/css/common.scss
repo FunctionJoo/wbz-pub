@@ -382,3 +382,52 @@ body.is_pc {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 기타 유틸리티
+.no_result {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $colorD;
+	padding: 48px 20px;
+	.nr_txt {
+		padding-top: 78px;
+		background: url('../images/common/no_result.svg') no-repeat left 50% top 0;
+		font-size: 16px;
+	}
+}
+
+@include mobile {
+	.no_result {
+		padding: 20px 16px;
+		.nr_txt {
+			padding-top: 58px;
+			background: url('../images/common/no_result_m.svg') no-repeat left 50% top 0;
+			font-size: 14px;
+		}
+	}
+}

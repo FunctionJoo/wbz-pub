@@ -357,4 +357,28 @@ body.is_pc {
     height: 54px;
     line-height: 52px;
   }
+}
+
+.no_result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D3D3D3;
+  padding: 48px 20px;
+}
+.no_result .nr_txt {
+  padding-top: 78px;
+  background: url("../images/common/no_result.svg") no-repeat left 50% top 0;
+  font-size: 16px;
+}
+
+@media (max-width: 1080px) {
+  body:not(.is_pc) .no_result {
+    padding: 20px 16px;
+  }
+  body:not(.is_pc) .no_result .nr_txt {
+    padding-top: 58px;
+    background: url("../images/common/no_result_m.svg") no-repeat left 50% top 0;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=common.css.map */
