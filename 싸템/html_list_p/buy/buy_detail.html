@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>싸템</title>
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- jQuery를 Google CDN에서 불러오는 예제 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- style 모음 -->
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- 공통 레이아웃 js -->
+	<script src="../js/layout.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
+	<!-- <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script> -->
+</head>
+
+<body>
+	<header id="header">
+		<div class="w_set">
+			<div class="sec_top">
+				<h1 class="logo">
+					<a href="#">
+						<img src="../images/common/logo.svg" alt="회사로고">
+						<div class="logo_txt">
+							<span class="t1">아이템거래는</span>
+							<span class="t2">SSATEM</span><span class="t3">에서!</span>
+						</div>
+					</a>
+				</h1>
+				<div class="header_search">
+					<!-- 추후 모바일에서 사용 예정 -->
+					<button class="layer_close" type="button" style="display: none;">레이어닫기</button>
+					<div class="search_bar">
+						<div class="sec_radio">
+							<label class="radio_visual">
+								<input type="radio" name="sch_type" value="0" checked>
+								<span class="radio_ico"></span>
+								<span class="txt">팝니다</span>
+							</label>
+							<label class="radio_visual type2">
+								<input type="radio" name="sch_type" value="1">
+								<span class="radio_ico"></span>
+								<span class="txt">삽니다</span>
+							</label>
+						</div>
+						<div class="sec_ipt">
+							<input type="text" placeholder="게임 또는 서버명을 입력해주세요">
+						</div>
+						<div class="sec_submit">
+							<button type="button">검색</button>
+						</div>
+					</div>
+					<div class="search_content">
+						<div class="t_before">
+							<div class="sec_1">
+								<p class="sec_title">최근 검색 게임</p>
+								<ul class="sec_cont sec_cont_full sch_ul has_close">
+									<!-- 팝니다 -->
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="sell">[팝니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<!-- 삽니다 -->
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+									<li>
+										<a href="#"><span class="buy">[삽니다]</span>리니지 > - 이실로테03</a>
+										<button type="button" class="li_del">삭제</button>
+									</li>
+								</ul>
+							</div>
+							<div class="sec_2">
+								<p class="sec_title">인기게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul has_rank">
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="rank"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+								<p class="sec_title">신규게임</p>
+								<div class="sec_cont">
+									<ul class="sch_ul">
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+										<li><a href="#"><span class="new"></span>메이플스토리</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_banner1">
+					<a href="#">
+						<img src="https://www.kukinews.com/data/kuk/image/2022/04/28/kuk202204280332.647x.0.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="sec_bottom">
+				<div class="sec_left">
+					<button type="button" class="chat_list_btn">
+						<div class="text"><i></i>채팅목록</div>
+						<div class="new_laert">
+							<span class="t_y">99+</span>개의 메세지가 있습니다.
+						</div>
+					</button>
+				</div>
+				<div class="sec_center">
+					<ul class="header_menu">
+						<li>
+							<a href="#" class="fc_p0">판매등록</a>
+						</li>
+						<li>
+							<a href="#" class="fc_p2">구매등록</a>
+						</li>
+						<li>
+							<a href="#">마일리지</a>
+							<ul class="dep2">
+								<li><a href="#">마일리지</a></li>
+								<li><a href="#">마일리지 충전</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">1:1 상담</a></li>
+								<li><a href="#">신규 게임 등록 요청</a></li>
+								<li><a href="#">이용안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="bold">마이페이지</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="sec_right header_login">
+					<li><a href="#" class="is_login">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="contets" class="buy_detail">
+		<div class="cell_cont">
+			<div class="w_set">
+                <div class="title_box title_line">
+                    <div class="title">삽니다</div>
+
+                    <div class="top_icon">
+                        <div class="interest_icon"></div>
+                        <div class="report_icon"></div>
+                    </div>
+                </div>
+
+                <div class="main detail_divide">
+                    <div class="main_top">
+                        <div class="top_con top_01">
+                            <div class="con_list list_01">
+                                <div class="con_box">
+                                    <div class="con_title">물품정보</div>
+                                    <div class="table_box">
+                                        <div class="table_list">
+                                            <div class="list_th">카테고리</div>
+                                            <div class="list_td">리니지 > 데몬> 01 > 게임머니</div>
+                                        </div>
+                                        <div class="table_list">
+                                            <div class="list_th">물품제목</div>
+                                            <div class="list_td">[4만~2,000만] ■■안전골드●안전(우편또는경매장)골드●안전보장■■</div>
+                                        </div>
+                                        <div class="table_list">
+                                            <div class="list_th">물품번호</div>
+                                            <div class="list_td">#2023080607180894</div>
+                                        </div>
+                                        <div class="table_list">
+                                            <div class="list_th">등록일시</div>
+                                            <div class="list_td">2023-08-06 13:13:43</div>
+                                        </div>
+                                        <div class="table_list">
+                                            <div class="list_th">최소 <br>구매수량</div>
+                                            <div class="list_td">200만 아데나</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con_list list_02">
+                                <div class="con_box">
+                                    <div class="con_title">구매자정보</div>
+                                    <div class="seller_info">
+                                        <div class="img_box vip">
+                                            <div class="grade_img"></div>
+                                            <div class="grade_txt"><strong>VIP</strong>회원</div>
+                                        </div>
+                                        <div class="cert_box">
+                                            <div class="cert_list list_01">
+                                                <span class="cert_tit">신분증</span>
+                                                <div class="cert_state ">
+                                                    <span class="txt_01">미인증</span>
+                                                    <span class="txt_02">인증완료</span>
+                                                </div>
+                                            </div>
+                                            <div class="cert_list list_02">
+                                                <span class="cert_tit">휴대폰</span>
+                                                <div class="cert_state on">
+                                                    <span class="txt_01">미인증</span>
+                                                    <span class="txt_02">인증완료</span>
+                                                </div>
+                                            </div>
+                                            <div class="cert_list list_03">
+                                                <span class="cert_tit">출금계좌</span>
+                                                <div class="cert_state on">
+                                                    <span class="txt_01">미인증</span>
+                                                    <span class="txt_02">인증완료</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top_con top_02">
+							<div class="con_list list_new">
+								<div class="con_box">
+									<div class="con_title">판매 개수</div>
+									<div class="count_box">
+										<div class="content">
+											<div class="push_count">
+												<div class="minus_button" onclick="countBox('minus')">
+												</div>
+												<div id="count_div">0</div>
+												<div class="plus_button" onclick="countBox('plus')">
+												</div>
+											</div>
+											<strong class="unit">200만 아데나</strong>
+										</div>
+										<div class="unit_charge">
+											<strong>200,000</strong>원
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="con_list list_03">
+                                <div class="con_box">
+                                    <div class="con_title">내 거래정보</div>
+                                    <div class="buy_box">
+										<div class="name_box">
+											<div class="input_box">
+												<label for="cha_name">판매자 캐릭터 명</label>
+												<input type="text" id="cha_name" placeholder="물품을 전달 하실 본인의 캐릭터명">
+											</div>
+											<div class="info_box">
+												※본인이 사용하는 서버/캐릭터 명 미 선택 및 미 기재 시 문제가 <br>
+												발생될 수 있으며, 거래신청자에게 책임이 있습니다.
+											</div>
+										</div>
+										<div class="total_box">
+											<span class="total_tit">Total</span>
+											<div class="total_count"><strong>1,000,000</strong>원</div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                            <div class="con_list list_04">
+                                <button type="button" class="button_list apply_button"><span>판매신청</span></button>
+                                <a href="#none" class="button_list chat_link"><span>실시간 채팅</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_bottom">
+                        <div class="con_box">
+                            <div class="con_title">상세설명</div>
+                            <div class="info_box">
+                                <div class="img_box"></div>
+                                <div class="txt_box">
+                                    ★ 1:1 대화함으로 핀번호 보내드립니다 <br>
+                                    핀번호 특성상 넘어가면 취소 불가합니다 <br><br>
+                                    ★ [수량 1개당 5천원입니다] <br>
+                                    ★ 캐릭터명 또는 1:1대화함에 구매하고자하는 물품을 적어주세요 <br><br>
+                                    문화상품권 / 틴캐시 / 해피머니 / 온캐시 / 넥슨카드 / LOL스마트문상 <br>
+                                    도서문화상품권 / 스마트(게임)문화상품권 / 에그머니 / 구글 기프트카드
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_bottom_button">
+                            <button type="button"><span>전체보기</span></button>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function updateCount(type, elementId){
+			const resultElement = document.getElementById(elementId);
+			let number = resultElement.innerText;
+
+			if(type === 'plus'){
+				number = parseInt(number) + 1;
+			}else if(type === 'minus'){
+				if(number == 0){
+					number = parseInt(number)
+				}else{
+					number = parseInt(number) - 1;
+				}
+			}
+
+			resultElement.innerText = number
+		}
+		function countBox(type){
+			updateCount(type, 'count_div')
+		}
+	</script>
+	<!-- 미완 -->
+	<footer id="footer">
+		<div class="footer_top">
+			<div class="w_set">
+				...
+			</div>
+		</div>
+		<div class="footer_content">
+			<div class="w_set">
+				.....
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

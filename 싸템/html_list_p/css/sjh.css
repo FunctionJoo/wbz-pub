@@ -761,6 +761,637 @@
     display: none;
   }
 }
+#contets.buy_detail .title_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contets.buy_detail .title_box .top_icon {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#contets.buy_detail .title_box .top_icon .interest_icon {
+  background-image: url(../images/sell/sell_title_heart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 26px;
+  margin-right: 20px;
+}
+#contets.buy_detail .title_box .top_icon .report_icon {
+  background-image: url(../images/sell/sell_title_info.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 27px;
+}
+#contets.buy_detail .main .main_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#contets.buy_detail .main .main_top .top_con.top_01 {
+  width: 700px;
+}
+#contets.buy_detail .main .main_top .top_con.top_02 {
+  width: 370px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_new {
+  margin-bottom: 10px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_01 {
+  margin-bottom: 30px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_03 {
+  margin-bottom: 61px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list {
+  width: calc((100% - 10px) / 2);
+  height: 50px;
+  border: none;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list span {
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.apply_button {
+  background-color: #014099;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.apply_button span {
+  color: #fff;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.apply_button span::before {
+  content: "";
+  background-image: url(../images/sell/sell_coin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin-right: 7px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.chat_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+}
+#contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.chat_link span::before {
+  content: "";
+  background-image: url(../images/sell/sell_chat.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  margin-right: 7px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .con_title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box {
+  border: 1px solid #D3D3D3;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list {
+  display: flex;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list:not(:last-child) {
+  border-bottom: 1px solid #D3D3D3;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list .list_th {
+  background-color: #F6F6F6;
+  width: 110px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list .list_th br {
+  display: none;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list .list_td {
+  width: calc(100% - 110px);
+  padding: 15px 10px;
+  font-size: 13px;
+  line-height: 19px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info {
+  display: flex;
+  padding: 0 35px;
+  background-color: #F6F6F6;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px dashed #B1C6E5;
+  padding-right: 23px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.normal .grade_img {
+  background-image: url(../images/mypage/mypage_normal_button.png);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.normal .grade_txt {
+  color: #014099;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.silver .grade_img {
+  background-image: url(../images/mypage/mypage_silver_button.png);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.silver .grade_txt {
+  color: #666666;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.gold .grade_img {
+  background-image: url(../images/mypage/mypage_gold_button.png);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.gold .grade_txt {
+  color: #f5b60e;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.platium .grade_img {
+  background-image: url(../images/mypage/myPage_platinum_button.png);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.platium .grade_txt {
+  color: #49d3d9;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.vip .grade_img {
+  background-image: url(../images/mypage/mypage_vip_button.png);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box.vip .grade_txt {
+  color: #7356ba;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box .grade_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 42px;
+  height: 47px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box .grade_txt {
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box .grade_txt strong {
+  font-weight: 500;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 23px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list {
+  display: flex;
+  align-items: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list:not(:last-child) {
+  margin-right: 25px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_tit {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state {
+  width: 90px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #A7A7A7;
+  font-weight: 500;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state.on {
+  border: 1px solid #014099;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state.on span.txt_01 {
+  display: none;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state.on span.txt_02 {
+  display: inline-block;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state span.txt_01 {
+  color: #A7A7A7;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state span.txt_01::before {
+  content: "";
+  background-image: url(../images/sell/check_gray.png);
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  margin-right: 4px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state span.txt_02 {
+  display: none;
+  color: #014099;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_state span.txt_02::before {
+  content: "";
+  background-image: url(../images/sell/check_blue.png);
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  margin-right: 4px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box {
+  margin-bottom: 14px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box {
+  height: 50px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  margin-bottom: 6px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box label {
+  display: inline-block;
+  width: 126px;
+  height: 100%;
+  background-color: #F6F6F6;
+  font-size: 14px;
+  line-height: 21px;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box input[type=text] {
+  width: calc(100% - 126px);
+  border: none;
+  padding: 10px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box input[type=text]:focus {
+  outline: none;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box input[type=text]::-moz-placeholder {
+  font-size: 13px;
+  line-height: 21px;
+  color: #A7A7A7;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box input[type=text]::placeholder {
+  font-size: 13px;
+  line-height: 21px;
+  color: #A7A7A7;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .info_box {
+  font-size: 13px;
+  line-height: 19px;
+  color: #FF3333;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .total_box {
+  background-color: #EEF3F9;
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .total_box .total_tit {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .total_box .total_count {
+  font-size: 14px;
+  line-height: 21px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .total_box .total_count strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #014099;
+  margin-right: 2px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box {
+  padding: 10px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .push_count {
+  display: flex;
+  height: 30px;
+  border: 1px solid #D3D3D3;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .push_count .minus_button {
+  position: relative;
+  width: 30px;
+  background-color: #F6F6F6;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .push_count .minus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .push_count .plus_button {
+  position: relative;
+  width: 30px;
+  background-color: #F6F6F6;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .push_count .plus_button::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .push_count .plus_button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #222;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .push_count #count_div {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+  font-size: 14px;
+  line-height: 21px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .content .unit {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .unit_charge {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+#contets.buy_detail .main .main_top .top_con .con_list .con_box .count_box .unit_charge strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #014099;
+  margin-right: 2px;
+}
+#contets.buy_detail .main .main_bottom .con_box {
+  margin-bottom: 60px;
+}
+#contets.buy_detail .main .main_bottom .con_box .con_title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#contets.buy_detail .main .main_bottom .con_box .info_box {
+  border: 1px solid #D3D3D3;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: start;
+}
+#contets.buy_detail .main .main_bottom .con_box .info_box .img_box {
+  background-image: url(../images/sell/sell_game.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 515px;
+  height: 280px;
+}
+#contets.buy_detail .main .main_bottom .con_box .info_box .txt_box {
+  width: calc(100% - 515px);
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 21px;
+}
+#contets.buy_detail .main .main_bottom .main_bottom_button {
+  display: flex;
+  justify-content: center;
+}
+#contets.buy_detail .main .main_bottom .main_bottom_button button {
+  width: 180px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #000000;
+}
+#contets.buy_detail .main .main_bottom .main_bottom_button button span {
+  position: relative;
+  font-size: 15px;
+  line-break: 21px;
+  font-weight: 500;
+}
+#contets.buy_detail .main .main_bottom .main_bottom_button button span::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 12px;
+  width: 1px;
+  background-color: #333333;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+#contets.buy_detail .main .main_bottom .main_bottom_button button span::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 12px;
+  width: 1px;
+  background-color: #333333;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+@media (max-width: 1080px) {
+  #contets.buy_detail .title_box .top_icon .interest_icon {
+    width: 21px;
+    height: 18px;
+    margin-right: 16px;
+  }
+  #contets.buy_detail .title_box .top_icon .report_icon {
+    width: 19px;
+    height: 21px;
+  }
+  #contets.buy_detail .main .main_top {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  #contets.buy_detail .main .main_top .top_con.top_01 {
+    width: auto;
+  }
+  #contets.buy_detail .main .main_top .top_con.top_02 {
+    width: auto;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_new {
+    margin-bottom: 30px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_01 {
+    margin-bottom: 40px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_02 {
+    margin-bottom: 30px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_03 {
+    margin-bottom: 40px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list {
+    height: 50px;
+    border: none;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list span {
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.apply_button {
+    background-color: #014099;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.apply_button span {
+    color: #fff;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.apply_button span::before {
+    content: "";
+    background-image: url(../images/sell/sell_coin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    margin-right: 7px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.chat_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list.list_04 .button_list.chat_link span::before {
+    content: "";
+    background-image: url(../images/sell/sell_chat.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    margin-right: 7px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .con_box {
+    margin-bottom: 15px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list .list_th {
+    width: 72px;
+    text-align: center;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list .list_th br {
+    display: block;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .table_box .table_list .list_td {
+    width: calc(100% - 72px);
+    padding: 13px 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info {
+    flex-direction: column;
+    padding: 10px 16px 15px 16px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .img_box {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #D3D3D3;
+    border-right: none;
+    padding-right: 0;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box {
+    padding-left: 0;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list {
+    flex-direction: column;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list:not(:last-child) {
+    margin-right: 13px;
+  }
+  #contets.buy_detail .main .main_top .top_con .con_list .con_box .seller_info .cert_box .cert_list .cert_tit {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+  #contets.buy_detail .main .main_bottom .con_box {
+    margin-bottom: 0px;
+  }
+  #contets.buy_detail .main .main_bottom .con_box .con_title {
+    margin-bottom: 20px;
+  }
+  #contets.buy_detail .main .main_bottom .con_box .info_box {
+    border: none;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: start;
+  }
+  #contets.buy_detail .main .main_bottom .con_box .info_box .img_box {
+    margin-bottom: 20px;
+    width: 328px;
+    height: 178px;
+  }
+  #contets.buy_detail .main .main_bottom .con_box .info_box .txt_box {
+    width: 100%;
+    padding-left: 0;
+  }
+  #contets.buy_detail .main .main_bottom .main_bottom_button {
+    display: none;
+  }
+}
 #pagination {
   margin-top: 60px;
   display: flex;
