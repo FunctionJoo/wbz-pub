@@ -626,6 +626,9 @@
   #contets.sell_detail .main.detail_divide .list_01 .con_box .table_box .table_list.half_table .half_list:first-child {
     border-bottom: 1px solid #D3D3D3;
   }
+  #contets.sell_detail .main.detail_divide .list_01 .con_box .table_box .table_list.half_table .half_list:last-child .list_th {
+    border-left: none;
+  }
   #contets.sell_detail .main.detail_divide .list_01 .con_box .table_box .table_list.half_table .half_list .list_th br {
     display: block;
   }

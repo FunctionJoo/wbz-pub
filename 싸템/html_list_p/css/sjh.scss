@@ -728,7 +728,13 @@
                                             &:first-child{
                                                 border-bottom: 1px solid #D3D3D3;
                                             }
+                                            &:last-child{
+                                                .list_th{
+                                                    border-left: none;
+                                                }
+                                            }
                                             .list_th{
+                                                
                                                 br{
                                                     display: block;
                                                 }
