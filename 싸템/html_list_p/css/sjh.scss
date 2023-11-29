@@ -9260,9 +9260,6 @@ body{
                                         display: inline-block;
                                     }
                                 }
-                                .mo_th{
-                                    display: none;
-                                }
                             }
 
                         }
@@ -9297,14 +9294,25 @@ body{
                         }
                     }
                     .table_box{
-                        border-top: 1px solid #D3D3D3;
                         .pc_table_head{
-                            display: none;
+                            .th{
+                                &.check_th{
+                                    width: 36px;
+                                    min-width: 36px;
+                                }
+                                &.title_th{
+                                    width: calc(100% - 36px);
+                                    min-width: auto;
+                                    border-right: none;
+                                }
+                                &.price_th, &.view_th{
+                                    display: none;
+                                }
+
+                            }
                         }
                         .table_tr{
                             height: 258px;
-                            display: flex;
-                            flex-direction: column;
                             &:nth-child(n+6){
                                 display: none;
                             }
@@ -9312,6 +9320,7 @@ body{
                                 height: 50px;
                             }
                             .mo_box{
+                                width: calc(100% - 36px);
                                 flex-direction: column;
                                 padding: 13px 11px 16px 10px;
                                 .td{
@@ -9531,14 +9540,10 @@ body{
                                     border-right: none;
                                 }
                                 &.checkbox_td{
-                                    background-color: #F6F6F6;
-                                    border-bottom: 1px solid #D3D3D3;
-                                    width: 100%;
-                                    min-width: auto;
-                                    height: 50px;
-                                    min-height: 50px;
+                                    width: 36px;
+                                    min-width: 36px;
                                     .check_box{
-                                        width: 50px;
+                                        width: 100%;
                                         height: 100%;
                                         display: flex;
                                         justify-content: center;
@@ -9564,14 +9569,6 @@ body{
                                             height: 16px;
                                             display: inline-block;
                                         }
-                                    }
-                                    .mo_th{
-                                        width: calc(100% - 50px);
-                                        display: block;
-                                        text-align: center;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        color: #000;
                                     }
                                 }
                             }
@@ -9747,8 +9744,11 @@ body{
                             .mo_box{
                                 .td{
                                     &.info_td{
+                                        .top_info{
+                                            margin-bottom: 4px;
+                                        }
                                         .middle_info{
-                                            &:after{
+                                            .immedi_button{
                                                 display: inline-block;
                                             }
                                         }
@@ -9797,31 +9797,30 @@ body{
                                     .middle_info{
                                         width: 100%;
                                         margin-bottom: 9px;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        word-break: break-all;
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
-                                        &::after{
-                                            content: "즉시결제";
-                                            display: none;
-                                            padding: 4px 10px;
-                                            font-size: 12px;
-                                            line-height: 18px;
-                                            background-color: #EEF3F9;
-                                            color: #014099;
-                                            border-radius: 3px;
-                                        }
                                         span{
+                                            width: calc(100% - 64px);
                                             font-size: 14px;
                                             line-height: 20px;
                                             color: #000;
+                                            white-space: normal;
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 2;
+                                            -webkit-box-orient: vertical;
                                             overflow: hidden;
-                                            white-space: nowrap;
-                                            text-overflow: ellipsis;
-                                            word-break: break-all;
+                                            padding-right: 17px;
+                                        }
+                                        .immedi_button{
+                                            display: none;
+                                            padding: 4px 0;
+                                            text-align: center;
+                                            width: 64px;
+                                            background-color: #EEF3F9;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            color: #014099;
                                         }
                                     }
                                     .bottom_info{
@@ -10048,31 +10047,59 @@ body{
                         }
                     }
                     .table_box{
-                        border-top: 1px solid #D3D3D3;
                         .pc_table_head{
-                            display: none;
+                            .th{
+                                &.check_th{
+                                    width: 36px;
+                                    min-width: 36px;
+                                }
+                                &.title_th{
+                                    width: calc(100% - 36px);
+                                    min-width: auto;
+                                    border-right: none;
+                                }
+                                &.price_th, &.view_th{
+                                    display: none;
+                                }
+                            }
                         }
                         .table_tr{
                             &:nth-child(n+6){
                                 display: none;
                             }
-                            height: 258px;
+                            height: auto;
                             display: flex;
-                            flex-direction: column;
                             &.no_item{
                                 height: 50px;
                             }
+                            &.immedi_button_on{
+                                .mo_box{
+                                    .td{
+                                        &.info_td{
+                                            .top_info{
+                                                margin-bottom: 20px;
+                                            }
+                                            .middle_info{
+                                                .immedi_button{
+                                                    display: inline-block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             .mo_box{
+                                width: calc(100% - 36px);
                                 flex-direction: column;
                                 padding: 13px 11px 16px 10px;
                                 .td{
                                     &.info_td{
-                                        margin-bottom: 24px;
+                                        margin-bottom: 10px;
                                         padding: 0;
                                         width: 100%;
                                         min-width: auto;
                                         .top_info{
-                                            margin-bottom: 8px;
+                                            margin-bottom: 20px;
                                             display: flex;
                                             justify-content: start;
                                             align-items: center;
@@ -10092,6 +10119,7 @@ body{
                                         .middle_info{
                                             width: 100%;
                                             margin-bottom: 0px;
+                                            align-items: start;
                                             span{
                                                 font-size: 15px;
                                                 line-height: 22px;
@@ -10106,7 +10134,7 @@ body{
                                         padding: 0;
                                         width: 100%;
                                         min-width: auto;
-                                        margin-bottom: 25px;
+                                        margin-bottom: 10px;
                                         .con_box{
                                             display: flex;
                                             justify-content: space-between;
@@ -10264,14 +10292,10 @@ body{
                                     border-right: none;
                                 }
                                 &.checkbox_td{
-                                    background-color: #F6F6F6;
-                                    border-bottom: 1px solid #D3D3D3;
-                                    width: 100%;
-                                    min-width: auto;
-                                    height: 50px;
-                                    min-height: 50px;
+                                    width: 36px;
+                                    min-width: 36px;
                                     .check_box{
-                                        width: 50px;
+                                        width: 100%;
                                         height: 100%;
                                         display: flex;
                                         justify-content: center;
@@ -10297,14 +10321,6 @@ body{
                                             height: 16px;
                                             display: inline-block;
                                         }
-                                    }
-                                    .mo_th{
-                                        width: calc(100% - 50px);
-                                        display: block;
-                                        text-align: center;
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                        color: #000;
                                     }
                                 }
                             }
