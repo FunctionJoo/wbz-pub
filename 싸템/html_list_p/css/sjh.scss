@@ -6245,7 +6245,30 @@ body{
                         }
                     }
                     .sale_info{
-                        display: none;
+                        padding: 0 16px;
+                        .info_box{
+                            flex-direction: column;
+                            padding-top: 46px;
+                            .info_list{
+                                &:not(:last-child){
+                                    padding-bottom: 25px;
+                                    margin-bottom: 25px;
+                                }
+                                &:after{
+                                    top: auto;
+                                    bottom: -5px;
+                                    left: 50%;
+                                    transform: translateX(-50%) rotate(90deg);
+                                    margin-left: 0;
+                                }
+                                .text_box{
+                                    font-size: 15px;
+                                    .mo_br{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -5358,6 +5358,27 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     margin: 0 10px;
   }
   #mypage.sale_in_progress .w_set .my_cont .sale_info {
+    padding: 0 16px;
+  }
+  #mypage.sale_in_progress .w_set .my_cont .sale_info .info_box {
+    flex-direction: column;
+    padding-top: 46px;
+  }
+  #mypage.sale_in_progress .w_set .my_cont .sale_info .info_box .info_list:not(:last-child) {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  #mypage.sale_in_progress .w_set .my_cont .sale_info .info_box .info_list:after {
+    top: auto;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    margin-left: 0;
+  }
+  #mypage.sale_in_progress .w_set .my_cont .sale_info .info_box .info_list .text_box {
+    font-size: 15px;
+  }
+  #mypage.sale_in_progress .w_set .my_cont .sale_info .info_box .info_list .text_box .mo_br {
     display: none;
   }
 }
