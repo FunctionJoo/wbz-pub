@@ -7730,7 +7730,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td {
-  padding: 13px 0px 12px 10px;
+  padding: 13px 10px 12px 10px;
   width: 500px;
   min-width: 500px;
 }
@@ -7749,11 +7749,11 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   background-size: contain;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category {
+  width: calc(100% - 32px);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
-  width: 400px;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .top_info .category span {
   font-size: 14px;
@@ -7766,7 +7766,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   color: #113462;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.info_td .middle_info {
-  width: 450px;
   margin-bottom: 9px;
   overflow: hidden;
   white-space: nowrap;
@@ -7985,7 +7984,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     display: none;
   }
   #mypage.item_for_sale .my_cont .main .table_box .table_tr {
-    height: 258px;
+    height: auto;
   }
   #mypage.item_for_sale .my_cont .main .table_box .table_tr:nth-child(n+6) {
     display: none;

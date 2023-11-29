@@ -9019,7 +9019,7 @@ body{
                             display: flex;
                             .td{
                                 &.info_td{
-                                    padding: 13px 0px 12px 10px;
+                                    padding: 13px 10px 12px 10px;
                                     width: 500px;
                                     min-width: 500px;
                                     .top_info{
@@ -9036,11 +9036,11 @@ body{
                                             background-size: contain;
                                         }
                                         .category{
+                                            width: calc(100% - 32px);
                                             overflow: hidden;
                                             white-space: nowrap;
                                             text-overflow: ellipsis;
                                             word-break: break-all;
-                                            width: 400px;
                                             span{
                                                 font-size: 14px;
                                                 line-height: 20px;
@@ -9054,7 +9054,6 @@ body{
                                         }
                                     }
                                     .middle_info{
-                                        width: 450px;
                                         margin-bottom: 9px;
                                         overflow: hidden;
                                         white-space: nowrap;
@@ -9312,7 +9311,7 @@ body{
                             }
                         }
                         .table_tr{
-                            height: 258px;
+                            height: auto;
                             &:nth-child(n+6){
                                 display: none;
                             }
