@@ -185,12 +185,24 @@ body {overflow-x: hidden;}
 					li {
 						position: relative;
 						height: 26px;
-						a {
+						label {
+							display: block;
+							position: relative;
+							input {
+								position: absolute;
+								opacity: 0;
+								width: 0;
+								height: 0;
+							}
+						}
+						a,
+						label .aftertxt {
 							display: block;
 							font-size: 14px;
 							line-height: 26px;
 							color: $color3;
 							padding: 0 5px;
+							cursor: pointer;
 						}
 						.li_del {
 							position: absolute;
@@ -233,7 +245,8 @@ body {overflow-x: hidden;}
 							color: $point0;
 							font-weight: 500;
 						}
-						&:hover {
+						&:hover,
+						input:checked + .aftertxt {
 							background-color: #E9F2FF;
 						}
 					}

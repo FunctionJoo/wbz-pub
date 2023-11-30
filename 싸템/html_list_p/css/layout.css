@@ -208,12 +208,24 @@ body {
   position: relative;
   height: 26px;
 }
-#header .sec_top .header_search .search_content .sch_ul li a {
+#header .sec_top .header_search .search_content .sch_ul li label {
+  display: block;
+  position: relative;
+}
+#header .sec_top .header_search .search_content .sch_ul li label input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#header .sec_top .header_search .search_content .sch_ul li a,
+#header .sec_top .header_search .search_content .sch_ul li label .aftertxt {
   display: block;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
   padding: 0 5px;
+  cursor: pointer;
 }
 #header .sec_top .header_search .search_content .sch_ul li .li_del {
   position: absolute;
@@ -256,7 +268,8 @@ body {
   color: #014099;
   font-weight: 500;
 }
-#header .sec_top .header_search .search_content .sch_ul li:hover {
+#header .sec_top .header_search .search_content .sch_ul li:hover,
+#header .sec_top .header_search .search_content .sch_ul li input:checked + .aftertxt {
   background-color: #E9F2FF;
 }
 #header .sec_top .header_search .search_content .sch_ul.has_close {
