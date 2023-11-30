@@ -473,13 +473,15 @@
 								<div class="form_list pass_list">
 									<div class="form_title">비밀번호</div>
 									<div class="form_info password_info">
-										<input type="password">
+										<label for="input_password"></label>
+										<input type="password" id="input_password">
 									</div>
 								</div>
 								<div class="form_list repass_list">
 									<div class="form_title">비밀번호 확인</div>
 									<div class="form_info password_info">
-										<input type="password">
+										<label for="re_input_password"></label>
+										<input type="password" id="re_input_password">
 										<span>※ 위의 비밀번호로 다시한번 입력</span>
 									</div>
 								</div>
@@ -499,9 +501,11 @@
 												</select>
 											</div>
 											<span></span>
-											<input type="text" value="1234">
+											<label for="middle_num"></label>
+											<input type="text" value="1234" id="middle_num">
 											<span></span>
-											<input type="text" value="1234">
+											<label for="last_num"></label>
+											<input type="text" value="1234" id="last_num">
 										</div>
 										<!-- 버튼 disabled 시 css 바뀜 -->
 										<div class="phone_check_button">
@@ -528,11 +532,13 @@
 													<option value="070">070</option>
 												</select>
 											</div>
-											<div class="last_contact">
+											<div class="next_contact">
 												<span></span>
-												<input type="text">
+												<label for="middle_contact"></label>
+												<input type="text" id="middle_contact">
 												<span></span>
-												<input type="text">
+												<label for="last_contact"></label>
+												<input type="text" id="last_contact">
 											</div>
 										</div>
 									</div>
@@ -540,7 +546,8 @@
 								<div class="form_list email_list">
 									<div class="form_title">이메일</div>
 									<div class="form_info email_info">
-										<input type="email" value="webbizz@naver.com">
+										<label for="input_email"></label>
+										<input type="email" value="webbizz@naver.com" id="input_email">
 									</div>
 								</div>
 								<div class="form_list bank_list">
@@ -556,7 +563,8 @@
 												</select>
 											</div>
 											<div class="account_number_input">
-												<input type="text" placeholder="계좌번호 입력">
+												<label for="input_account"></label>
+												<input type="text" placeholder="계좌번호 입력" id="input_account">
 												<!-- 버튼 disabled 시 css 바뀜 -->
 												<div class="account_check_button">
 													<button type="button">
@@ -571,7 +579,8 @@
 								<div class="form_list address_list">
 									<div class="form_title">주소</div>
 									<div class="form_info address_info">
-										<input type="text" placeholder="주소입력">
+										<label for="input_address"></label>
+										<input type="text" placeholder="주소입력" id="input_address">
 									</div>
 								</div>
 								<div class="form_list last_list option_list">

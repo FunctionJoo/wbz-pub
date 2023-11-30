@@ -3245,7 +3245,6 @@ body{
     #my_grade{
             &.my_grade{
                 background-color: #fff;
-                margin-bottom: 30px;
                 padding: 0;
             }
         .my_grade_box{
@@ -3325,14 +3324,13 @@ body{
     #tran_status {
         .con_box {
             height: 161px;
-            border: 1px solid #D3D3D3;
-            display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: 21px 0;
             &.con_box_01{
                 margin-bottom: 0px;
                 background-position: 50% 21px;
+                border-bottom: none;
             }
             &.con_box_02{
                 background-position: 50% 21px;
@@ -3722,6 +3720,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-right: none;
+                                    border-left: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -5602,6 +5602,8 @@ body{
                             height: auto;
                             flex-direction: column;
                             padding: 20px 16px 20px 17px;
+                            border-right: none;
+                            border-left: none;
                             &:nth-child(n+5){
                                 display: none;
                             }
@@ -6138,6 +6140,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-left: none;
+                                    border-right: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -6701,6 +6705,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-right: none;
+                                    border-left: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -7381,6 +7387,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-right: none;
+                                    border-left: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -7919,6 +7927,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-right: none;
+                                    border-left: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -8427,6 +8437,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-right: none;
+                                    border-left: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -8736,6 +8748,12 @@ body{
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000;
+                                span{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    word-break: break-all;
+                                }
                             }
                             .title_td{
                                 width: 367px;
@@ -8980,6 +8998,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-right: none;
+                                    border-left: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -9010,14 +9030,8 @@ body{
                                         border-right: none;
                                         justify-content: start;
                                         margin-bottom: 11px;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         line-height: 20px;
-                                        a{
-                                            overflow: hidden;
-                                            white-space: nowrap;
-                                            text-overflow: ellipsis;
-                                            word-break: break-all;
-                                        }
                                     }
                                     .mo_middle{
                                         justify-content: space-between;
@@ -9484,6 +9498,8 @@ body{
                                     height: auto;
                                     flex-direction: column;
                                     padding: 20px 16px 20px 17px;
+                                    border-right: none;
+                                    border-left: none;
                                     &:nth-child(n+5){
                                         display: none;
                                     }
@@ -11116,6 +11132,10 @@ body{
                             .detail_input{
                                 width: 140px;
                                 height: 34px;
+                                label{
+                                    position: absolute;
+                                    font-size: 0;
+                                }
                                 input{
                                     width: 100%;
                                     height: 100%;
@@ -11137,6 +11157,10 @@ body{
                             .title_input{
                                 width: 100%;
                                 height: 34px;
+                                label{
+                                    position: absolute;
+                                    font-size: 0;
+                                }
                                 input{
                                     width: 100%;
                                     height: 100%;
@@ -11203,6 +11227,10 @@ body{
                                             line-height: 20px;
                                             margin-right: 10px;
                                         }
+                                        label{
+                                            position: absolute;
+                                            font-size: 0;
+                                        }
                                         input{
                                             margin: -4px;
                                             width: 140px;
@@ -11222,6 +11250,10 @@ body{
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                label{
+                                    position: absolute;
+                                    font-size: 0;
+                                }
                                 input{
                                     font-family: $nunito;
                                     width: 140px;
@@ -11777,6 +11809,10 @@ body{
                             .detail_input{
                                 width: 140px;
                                 height: 34px;
+                                label{
+                                    position: absolute;
+                                    font-size: 0;
+                                }
                                 input{
                                     width: 100%;
                                     height: 100%;
@@ -11798,6 +11834,10 @@ body{
                             .title_input{
                                 width: 100%;
                                 height: 34px;
+                                label{
+                                    position: absolute;
+                                    font-size: 0;
+                                }
                                 input{
                                     width: 100%;
                                     height: 100%;
@@ -11864,6 +11904,10 @@ body{
                                             line-height: 20px;
                                             margin-right: 10px;
                                         }
+                                        label{
+                                            position: absolute;
+                                            font-size: 0;
+                                        }
                                         input{
                                             margin: -4px;
                                             width: 140px;
@@ -11883,6 +11927,10 @@ body{
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                label{
+                                    position: absolute;
+                                    font-size: 0;
+                                }
                                 input{
                                     font-family: $nunito;
                                     width: 140px;
@@ -12901,6 +12949,10 @@ body{
                                         display: flex;
                                         justify-content: center;
                                         align-items: end;
+                                        label{
+                                            position: absolute;
+                                            font-size: 0;
+                                        }
                                         input{
                                             width: 160px;
                                             height: 34px;
@@ -12965,6 +13017,10 @@ body{
                                 justify-content: center;
                                 align-items: end;
                                 .mile_box{
+                                    label{
+                                        position: absolute;
+                                        font-size: 0;
+                                    }
                                     input{
                                         width: 160px;
                                         height: 34px;
@@ -13321,7 +13377,8 @@ body{
                                 display: flex;
                                 align-items: center;
                                 &.no_view{
-                                    display: none;
+                                    position: absolute;
+                                    font-size: 0;
                                 }
                             }
                             .date_input_box{
@@ -13667,9 +13724,6 @@ body{
                                 label{
                                     display: flex;
                                     align-items: center;
-                                    &.no_view{
-                                        display: none;
-                                    }
                                 }
                                 .date_input_box{
                                     margin-bottom: 11px;
@@ -14426,6 +14480,9 @@ body{
                 .pc_title{
                     display: none;
                 }
+                .my_title{
+                    margin-bottom: 22px !important;
+                }
 
                 
                 .main{
@@ -14435,6 +14492,9 @@ body{
                             .count_box{
                                 &:not(:last-child){
                                     height: 79px;
+                                }
+                                .count_title{
+                                    width: 90px;
                                 }
                                 .content{
                                     flex-direction: column;
@@ -14457,6 +14517,9 @@ body{
                                 &:not(:last-child){
                                     height: 79px;
                                 }
+                                .count_title{
+                                    width: 90px;
+                                }
                                 .content{
                                     flex-direction: column;
                                     align-items: start;
@@ -14476,6 +14539,9 @@ body{
                             .count_box{
                                 &:not(:last-child){
                                     height: 79px;
+                                }
+                                .count_title{
+                                    width: 90px;
                                 }
                                 .content{
                                     flex-direction: column;
@@ -14574,6 +14640,10 @@ body{
                             }
                         }
                         .search_con{
+                            label{
+                                position: absolute;
+                                font-size: 0;
+                            }
                             input[type=text]{
                                 width: 200px;
                                 height: 32px;
@@ -14848,6 +14918,10 @@ body{
                             }
                         }
                         .search_con{
+                            label{
+                                position: absolute;
+                                font-size: 0;
+                            }
                             input[type=text]{
                                 width: 200px;
                                 height: 32px;
@@ -15116,6 +15190,10 @@ body{
                             }
                         }
                         .search_con{
+                            label{
+                                position: absolute;
+                                font-size: 0;
+                            }
                             input[type=text]{
                                 width: 200px;
                                 height: 32px;
@@ -15405,6 +15483,10 @@ body{
                                         color: #666666;
                                         margin-left: 10px;
                                     }
+                                    label{
+                                        position: absolute;
+                                        font-size: 0;
+                                    }
                                     input[type=password]{
                                         width: 160px;
                                         height: 34px;
@@ -15466,6 +15548,10 @@ body{
                                                     line-height: 21px;
                                                 }
                                             }
+                                        }
+                                        label{
+                                            position: absolute;
+                                            font-size: 0;
                                         }
                                         input[type=text]{
                                             font-family: $nunito;
@@ -15560,10 +15646,14 @@ body{
                                                 }
                                             }
                                         }
-                                        .last_contact{
+                                        .next_contact{
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
+                                            label{
+                                                position: absolute;
+                                                font-size: 0;
+                                            }
                                             input[type=text]{
                                                 width: 120px;
                                                 height: 34px;
@@ -15589,6 +15679,10 @@ body{
 
                                 // 이메일
                                 &.email_info{
+                                    label{
+                                        position: absolute;
+                                        font-size: 0;
+                                    }
                                     input[type=email]{
                                         width: 420px;
                                         height: 36px;
@@ -15650,6 +15744,10 @@ body{
                                             display: flex;
                                             justify-content: start;
                                             align-items: center;
+                                            label{
+                                                position: absolute;
+                                                font-size: 0;
+                                            }
                                             input[type=text]{
                                                 width: 250px;
                                                 height: 36px;
@@ -15697,6 +15795,10 @@ body{
 
                                 // 주소
                                 &.address_info{
+                                    label{
+                                        position: absolute;
+                                        font-size: 0;
+                                    }
                                     input[type=text]{
                                         width: 380px;
                                         height: 36px;
@@ -15782,6 +15884,19 @@ body{
                                 .form_title{
                                     width: 90px;
                                 }
+                                .form_info{
+                                    width: calc(100% - 90px);
+                                }
+                                &.pass_list{
+                                    .form_info{
+                                        &.password_info{
+                                            input{
+                                                width: 50%;
+                                                min-width: 160px;
+                                            }
+                                        }
+                                    }
+                                }
                                 &.repass_list{
                                     height: 79px;
                                     .form_info{
@@ -15790,6 +15905,8 @@ body{
                                         justify-content: center;
                                         input[type=password]{
                                             margin-bottom: 8px;
+                                            width: 50%;
+                                            min-width: 160px;
                                         }
                                         span{
                                             margin: 0;
@@ -15833,7 +15950,7 @@ body{
                                                 .select_box{
                                                     margin-bottom: 8px;
                                                 }
-                                                .last_contact{
+                                                .next_contact{
                                                     span{
                                                         display: none;
                                                     }
@@ -15852,7 +15969,8 @@ body{
                                     .form_info{
                                         &.email_info{
                                             input[type=email]{
-                                                width: 218px;
+                                                width: 50%;
+                                                min-width: 218px;
                                             }
                                         }
                                     }
@@ -15861,7 +15979,9 @@ body{
                                     height: 95px;
                                     .form_info{
                                         &.bank_info{
+                                            padding-right: 10px;
                                             .bank_input{
+                                                width: 100%;
                                                 flex-direction: column;
                                                 align-items: start;
                                                 justify-content: center;
@@ -15870,8 +15990,10 @@ body{
                                                 }
                                                 .account_number_input{
                                                     margin: 0;
+                                                    width: 100%;
                                                     input[type=text]{
-                                                        width: 108px;
+                                                        width: 50%;
+                                                        min-width: 108px;
                                                     }
                                                 }
                                             }
@@ -15882,7 +16004,8 @@ body{
                                     .form_info{
                                         &.address_info{
                                             input[type=text]{
-                                                width: 218px;
+                                                width: 50%;
+                                                min-width: 218px;
                                             }
                                         }
                                     }
@@ -16439,6 +16562,8 @@ body{
                             height: auto;
                             flex-direction: column;
                             padding: 20px 16px 20px 17px;
+                            border-right: none;
+                            border-left: none;
                             &:nth-child(n+5){
                                 display: none;
                             }
@@ -17454,9 +17579,7 @@ body{
                                 .table_tr{
                                     border-right: none;
                                     border-left: none;
-                                    border-bottom: 1px solid #D3D3D3;
                                     height: auto;
-                                    display: flex;
                                     &.no_item{
                                         height: 50px;
                                     }
@@ -17472,7 +17595,7 @@ body{
                                         }
                                     }
                                     .mo_td{
-                                        width: 100%;
+                                        width: calc(100% - 50px);
                                         flex-direction: column;
                                         padding: 14px;
                                         .mo_middle{
@@ -17498,11 +17621,14 @@ body{
                                             justify-content: space-between;
                                             .title_td{
                                                 justify-content: start;
-                                                width: calc(100% - 100px);
+                                                width: calc(100% - 150px);
                                                 min-width: auto;
                                                 border-right: none;
                                                 font-size: 15px;
                                                 line-height: 20px;
+                                                a{
+                                                    max-width: 100%;
+                                                }
                                             }
                                             .price_td{
                                                 width: auto;
