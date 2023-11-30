@@ -9220,6 +9220,7 @@ body{
 #mypage{
     &.payment_complete{
         .my_cont{
+            margin-top: 60px;
             .con_box{
                 margin-bottom: 89px;
                 display: flex;
@@ -9227,7 +9228,7 @@ body{
                 justify-content: center;
                 align-items: center;
                 .img_box{
-                    margin-bottom: 23.97px;
+                    margin-bottom: 24px;
                     width: 67px;
                     height: 68px;
                     background-image: url(../images/mypage/mypage_payment_complete.svg);
@@ -9259,6 +9260,9 @@ body{
                         strong{
                             font-weight: 400;
                             color: #014099;
+                        }
+                        .mo_br{
+                            display: none;
                         }
                     }
                 }
@@ -9313,15 +9317,20 @@ body{
 @media(max-width:1080px){
     #mypage{
         &.payment_complete{
+            margin-top: 40px !important;
             .my_cont{
-                padding-top: 25px;
+                margin-top: 40px;
                 .con_box{
-                    margin-bottom: 88px;
-                    .img_box{
-                        margin-bottom: 28.38px;
-                    }
                     .detail_box{
-                        display: none;
+                        padding: 26px 0;
+                        height: auto;
+                        p{
+                            font-size: 14px;
+                            line-height: 20px;
+                            .mo_br{
+                                display: block;
+                            }
+                        }
                     }
                     .info_box{
                         p{

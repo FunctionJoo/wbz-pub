@@ -7940,6 +7940,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     position: relative;
   }
 }
+#mypage.payment_complete .my_cont {
+  margin-top: 60px;
+}
 #mypage.payment_complete .my_cont .con_box {
   margin-bottom: 89px;
   display: flex;
@@ -7948,7 +7951,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
 }
 #mypage.payment_complete .my_cont .con_box .img_box {
-  margin-bottom: 23.97px;
+  margin-bottom: 24px;
   width: 67px;
   height: 68px;
   background-image: url(../images/mypage/mypage_payment_complete.svg);
@@ -7982,6 +7985,9 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #mypage.payment_complete .my_cont .con_box .detail_box p strong {
   font-weight: 400;
   color: #014099;
+}
+#mypage.payment_complete .my_cont .con_box .detail_box p .mo_br {
+  display: none;
 }
 #mypage.payment_complete .my_cont .con_box .info_box p {
   font-size: 16px;
@@ -8026,17 +8032,22 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 
 @media (max-width: 1080px) {
+  #mypage.payment_complete {
+    margin-top: 40px !important;
+  }
   #mypage.payment_complete .my_cont {
-    padding-top: 25px;
-  }
-  #mypage.payment_complete .my_cont .con_box {
-    margin-bottom: 88px;
-  }
-  #mypage.payment_complete .my_cont .con_box .img_box {
-    margin-bottom: 28.38px;
+    margin-top: 40px;
   }
   #mypage.payment_complete .my_cont .con_box .detail_box {
-    display: none;
+    padding: 26px 0;
+    height: auto;
+  }
+  #mypage.payment_complete .my_cont .con_box .detail_box p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mypage.payment_complete .my_cont .con_box .detail_box p .mo_br {
+    display: block;
   }
   #mypage.payment_complete .my_cont .con_box .info_box p {
     font-size: 16px;
