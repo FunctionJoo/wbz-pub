@@ -388,6 +388,29 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		function totalCount(){
+			let totalCount = 100000
+			let radioButtons = document.getElementsByName('option_list');
+			
+			radioButtons.forEach(function(radioButton){
+				radioButton.addEventListener('change', function(){
+					if(radioButton.checked && radioButton.id === 'option_02'){
+						let selectBox = document.getElementById('period')
+						console.log(selectBox.value)
+						selectBox.addEventListener('change', function(){
+							console.log(selectBox.value)
+						})
+					}else if(radioButton.checked && radioButton.id === 'option_03'){
+						totalCount = totalCount + 10000
+						console.log(totalCount)
+					}
+				})
+			})
+		}
+		totalCount()
+		
+	</script>
 
 	<!-- 미완 -->
 	<footer id="footer">
