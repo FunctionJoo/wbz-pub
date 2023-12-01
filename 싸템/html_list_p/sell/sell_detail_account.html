@@ -389,26 +389,40 @@
 		</div>
 	</div>
 	<script>
-		function totalCount(){
-			let totalCount = 100000
-			let radioButtons = document.getElementsByName('option_list');
+		function updateTotalCharge(totalCount, firstCount){
+			document.querySelector('.all_charge .charge_cont strong').textContent = totalCount.toLocaleString();
+
+			let addCount = totalCount - firstCount;
+			document.querySelector('.option_charge .charge_cont strong').textContent = addCount.toLocaleString();
 			
-			radioButtons.forEach(function(radioButton){
-				radioButton.addEventListener('change', function(){
-					if(radioButton.checked && radioButton.id === 'option_02'){
-						let selectBox = document.getElementById('period')
-						console.log(selectBox.value)
-						selectBox.addEventListener('change', function(){
-							console.log(selectBox.value)
-						})
-					}else if(radioButton.checked && radioButton.id === 'option_03'){
-						totalCount = totalCount + 10000
-						console.log(totalCount)
-					}
-				})
-			})
+			console.log(totalCount, addCount)
 		}
-		totalCount()
+		function totalCount(firstCount){
+			let totalCount = firstCount;
+			let radioButtons = document.getElementsByName('option_list');
+			let selectBox = document.getElementById('period')
+
+			function calculateTotalCount(){
+				totalCount = firstCount;
+				if(document.getElementById('option_02').checked){
+					let addCount = totalCount / 100 * selectBox.value
+					totalCount = totalCount + addCount
+				}else if(document.getElementById('option_03').checked){
+					totalCount = totalCount + 10000
+				}
+
+				updateTotalCharge(totalCount, firstCount);
+			}
+
+			radioButtons.forEach(function(radioButton){
+				radioButton.addEventListener('change', calculateTotalCount)
+			});
+			selectBox.addEventListener('change', calculateTotalCount);
+
+			updateTotalCharge(totalCount, firstCount)
+		}
+
+		totalCount(100000)
 		
 	</script>
 
