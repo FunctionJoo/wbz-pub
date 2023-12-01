@@ -1,0 +1,1147 @@
+<html lang="ko"><head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>오토위더스 마크업리스트</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+	<style>
+		*{-webkit-text-size-adjust:none;}
+		html,body{width:100%;height:100%; min-width:800px;}
+		html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, ul, li, fieldset, form, label, leging, table, caption, tbody, tfoot, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; outline:0; font-family:NanumGothic,'나눔고딕',Dotum,'돋움',applegothic,sans-serif; font-size:13px; color:#555; /*vertical-align:baseline;*/}
+		body{line-height:1.2em; border:0;}
+		strong, em, span, wbr, a{display:inline-block;}
+		span{margin:0; padding:0; outline:0;}
+		hr{display:none}
+		ol, ul, dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+		fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+		address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;}
+		img{vertical-align:middle;}
+		a{cursor:pointer; text-decoration:none; color:#666;}
+		table{border-collapse:collapse;}
+		#wrap{padding:12px;}
+		#header{margin-bottom:20px;position: relative;}
+		#header::after{content:''; clear:both; display:block;}
+		#header>h1{float:left; font-size:28px; color:#1a1a1a; padding-top:15px;}
+		#header>div{float:right;}
+		#header>div>p{font-size:11px; color:#888; text-align:right;}
+		div.box{border:1px solid #dedede; background:#f1f1f1; padding:12px 14px; margin-bottom:10px;}
+		h3{font-size:14px; color:#333; margin-bottom:13px;}
+		h4{font-size:14px; color:#333; margin:25px 0 8px 5px;}
+		ol.atten>li{margin-bottom:8px; padding:0; line-height:160%;}
+		ol.atten>li:last-child{margin-bottom:0;}
+		table.htmllist th,table.htmllist td{border:1px solid #ccc;}
+		table.htmllist tr:first-child td{text-align:center; font-weight:bold; border-bottom:1px solid #111 !important; height:30px; color:#000 !important; font-size:13px !important;}
+		table.htmllist th{padding:5px 6px; text-align:left; border-bottom:2px solid #444 !important; height:32px; background-color:#f3f4f8;}
+		table.htmllist th.depth2{padding: 2px 18px; text-align:left; border-bottom:1px solid #333 !important; height:30px; font-size: 12px; background-color: #fff}
+		table.htmllist td{padding:5px 6px;}
+		table.htmllist td:first-child{text-align:center;}
+		table.htmllist td:last-child{color:#888; font-size:12px;}
+		table.htmllist td:nth-child(4),table.htmllist td:nth-child(6),table.htmllist td:nth-child(7){text-align:center;}
+		table.htmllist td:nth-child(5) a{background-color: #02337e;}
+		table.htmllist td:nth-child(5) a:hover{background-color: #0466FA;}
+		table.htmllist td:nth-child(5) a.seller{background-color: #03C75A;}
+		table.htmllist td:nth-child(5) a.seller:hover{background-color: #009591;}
+		table.htmllist td:nth-child(7){color:#5bcdda; font-size:11px; font-weight:bold;}
+		table.htmllist td > a{display:block; width:100%; height:26px; line-height:26px; margin: 1px 0;text-align:center; color:#fff; font-size:11px; font-weight:bold; background-color:#444; border:1px solid #444; border-radius:3px;}
+		table.htmllist td > a.on01{background-color: #0466FA ;}
+		table.htmllist td>a:hover{background-color:#444; line-height:28px;}
+		table.htmllist tr:hover>td{background-color:#fffad2;}
+		table.htmllist td.ing{text-align:center; font-size:12;}
+		table.htmllist td.end{text-align:center; font-size:12; font-weight:bold; background-color:#b8bbbf; color:#1a1a1a;}
+		/* .total{padding:10px 5px 20px} */
+		.total .tit_txt{padding-left:10px;margin-left:10px;border-left:1px solid #ddd;}
+		.total h3 + .tit_txt{padding-left:0;margin-left:0;border-left:none;}
+		.total_page_num{font-size:18px;color:#5bcdda;}
+		.m_link{position: absolute;top: 63px;right: 13px;color: #fff;background-color: #00bcd4;font-size: 20px;height: 40px;line-height: 40px;float: right;-webkit-border-radius: 5px;font-weight: 600;padding: 0 20px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;}
+
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>오토위더스 마크업리스트</h1>
+		<div>
+			<p>Version: <b>0.0.01</b></p>
+			<p>Last Update: <b>2023-07-25</b></p>
+			<p>Coding: <b>HTML5&amp;CSS3</b></p>
+		</div>
+	</div>
+	<h4>코딩 목록</h4>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="htmllist">
+		<thead>
+			<tr class="head">
+				<td>No</td>
+				<td>Path</td>
+				<td>FileName</td>
+				<td>State</td>
+				<td>Publishing</td>
+				<td>Update</td>
+				<td>Design(PC)</td>
+				<td>Design(mobile)</td>
+				<td>Remark</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="9">메인 - 현미</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>index</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./main/index.html" target="_blank">View</a>
+				</td>
+				<td>2023-08-23</td>
+				<td>
+					<a href="./images/design/main.png" target="_blank">메인_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_main.png" target="_blank">m_메인_완</a>
+				</td>
+				<td>HOME > 메인</td>
+			</tr>
+			<tr>
+				<th colspan="9">홈&공통 - 현미</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>index</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="../seller/main/index.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<!--<a href="./images/design/GNB.png" target="_blank">view_완</a>-->
+				</td>
+				<td>
+					<a href="./images/design/m_Popup.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>메인 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>index</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./main/index.html" target="_blank">View</a>
+					<a href="../seller/main/index.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-08-23</td>
+				<td>
+					<a href="./images/design/GNB.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_GNB.png" target="_blank">view_완</a>
+				</td>
+				<td>상단 GNB</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>index</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./main/index.html" target="_blank">View</a>
+				</td>
+				<td>2023-08-23</td>
+				<td>
+					<a href="./images/design/Menu_logout.png" target="_blank">메뉴_미로그인_완</a>
+					<a href="./images/design/Menu_login.png" target="_blank">메뉴_로그인_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_main.png" target="_blank">m_로그인</a>-->
+				</td>
+				<td>HOME > 메뉴</td>
+			</tr>
+			<tr>
+				<th colspan="9">셀러</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>index</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="../seller/main/index.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/Seller Home.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러) 대시보드</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>popup</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="../seller/main/popup.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<!-- <a href="./images/design/Seller Home.png" target="_blank">view_완</a> -->
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러) 팝업_alert/ 보험이력조회/ 사고부위/ 주문취소</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/registration/</td>
+				<td>registration_step1_01</td>
+				<td class="end">end</td>
+				<td>
+					<a href="../seller/registration/registration_step1_01.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-10-20</td>
+				<td>
+					<!-- <a href="./images/design/Seller Home.png" target="_blank">view_완</a> -->
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러)홈 > New Registration > 차량등록: 1단계(차량검색)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/registration/</td>
+				<td>registration_step1_02</td>
+				<td class="end">end</td>
+				<td>
+					<a href="../seller/registration/registration_step1_02.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-10-23</td>
+				<td>
+					<!-- <a href="./images/design/Seller Home.png" target="_blank">view_완</a> -->
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러)홈 > New Registration > 차량등록: 1단계(차량결과)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/registration/</td>
+				<td>registration_step2</td>
+				<td class="end">end</td>
+				<td>
+					<a href="../seller/registration/registration_step2.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-10-23</td>
+				<td>
+					<!-- <a href="./images/design/Seller Home.png" target="_blank">view_완</a> -->
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러)홈 > New Registration > 차량등록: 2단계(차량정보입력: Detailed Information)-01</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/registration/</td>
+				<td>registration_step3</td>
+				<td class="end">end</td>
+				<td>
+					<a href="../seller/registration/registration_step3.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-10-23</td>
+				<td>
+					<!-- <a href="./images/design/Seller Home.png" target="_blank">view_완</a> -->
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러)홈 > New Registration > 차량등록: 3단계(사진, 동영상 입력)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/registration/</td>
+				<td>registration_step4</td>
+				<td class="end">end</td>
+				<td>
+					<a href="../seller/registration/registration_step4.html" target="_blank" class="seller">View</a>
+				</td>
+				<td>2023-10-23</td>
+				<td>
+					<!-- <a href="./images/design/Seller Home.png" target="_blank">view_완</a> -->
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러)홈 > New Registration > 차량등록: 4단계(finish입력완료)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>my_item</td>
+				<td class="ing">ing</td>
+				<td>
+					<!-- <a href="../seller/mypage/my_item.html" target="_blank" class="seller">View</a> -->
+				</td>
+				<td>2023-10-05</td>
+				<td>
+					<!-- <a href="./images/design/Seller Home.png" target="_blank">view_완</a> -->
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Contact staff.png" target="_blank">view</a>-->
+				</td>
+				<td>(셀러)홈 > My Item> 리스트</td>
+			</tr>
+			<tr>
+				<th colspan="9">Service Center</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/service/</td>
+				<td>notice</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./service/notice.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/notice.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_notice.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > 알림</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/service/</td>
+				<td>faq</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./service/faq.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/FAQ.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_FAQ.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > Service Center > FAQ</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/service/</td>
+				<td>inquiry</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./service/inquiry.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/Inquiry.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Inquiry.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > Service Center > 1:1 Inquiry</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/service/</td>
+				<td>inquiry_write</td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-11-23</td>
+				<td>
+
+				</td>
+				<td>
+
+				</td>
+				<td>HOME > Service Center > 1:1 Inquiry</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/service/</td>
+				<td>terms</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./service/terms.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/Terms of Use.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Terms of Use.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > Service Center > Terms of Use</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/service/</td>
+				<td>policy</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./service/policy.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/Privacy Policy.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Privacy Policy.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > Service Center > Policy</td>
+			</tr>
+			<tr>
+				<th colspan="9">How to Buy - 한울</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>transaction</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/transaction.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/Safe Transaction.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Safe Transaction.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > Safe Transaction</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>purchasing</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/purchasing.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/Purchasing Process.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Purchasing Process.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > Purchasing</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>pay</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/pay.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/How to Pay.png" target="_blank">view_완</a>
+				</td>
+				<td>
+				<a href="./images/design/m_How to Pay.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > How to pay</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>precautions</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/precautions.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/Precautions for buyer.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Precautions for buyer.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > Precautions</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>membership</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/membership.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/Business Membership.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Business Membership.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > Membership</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>inspection</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/inspection.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/Inspection.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Inspection.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > Inspection</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>document</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/document.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/Document & Fee.png" target="_blank" >view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Document & Fee.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > Document & Fee</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/how/</td>
+				<td>contact</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./how/contact.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/Contact staff.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<a href="./images/design/m_Contact staff.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>HOME > How to Buy > Contact staff</td>
+			</tr>
+			<tr>
+				<th colspan="9">회원</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>login</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/login.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/login.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_login.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > login</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>reset_password</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/reset_password.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/Reset Password.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Reset Password.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Reset Password (비밀번호 찾기)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>reset_password_02</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/reset_password_02.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/Reset Password 02.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Reset Password 02.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Reset Password (비밀번호 찾기)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>find_id</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/find_id.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/find my id.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_find my id.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > find my id (아이디 찾기)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>find_id_02</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/find_id_02.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/find my id 02.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_find my id 02.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > find my id (아이디 찾기 결과)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>close_account</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/close_account.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/Close my account.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Close my account.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Close my account (회원탈퇴)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>email_us</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/email_us.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/EMAIL US.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_EMAIL US.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > EMAIL US (1:1 문의)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>registration</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/registration.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/Registration as a user.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Registration as a user.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Registration as a user (회원가입 일반)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>registration_02</td>
+				<td class="end">end</td>
+				<td>
+					<a href="./member/registration_02.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-04</td>
+				<td>
+					<a href="./images/design/Registration as a user_s.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Registration as a user_s.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Registration as a user (회원가입 셀러)</td>
+			</tr>
+			<tr>
+				<th colspan="9">Find Car - 현미</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>find_car</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/find_car.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-07</td>
+				<td>
+					<a href="./images/design/Find Car.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Find Car.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car (카테고리)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>find_car</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/find_car.html" target="_blank">View</a>
+				</td>
+				<td>2023-09-15</td>
+				<td>
+					<a href="./images/design/Find Car list.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Find Car list.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car (차량검색)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>vehicle_view</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/vehicle_view.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-22</td>
+				<td>
+					<a href="./images/design/Basic Information.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Basic Information.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car (차량상세) > Basic Information</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>vehicle_view</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/vehicle_view.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-22</td>
+				<td>
+					<a href="./images/design/Options.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Options.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car (차량상세) > Options</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>vehicle_view</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/vehicle_view.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-22</td>
+				<td>
+					<a href="./images/design/Condition Report.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Condition Report.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car (차량상세) > Condition Report</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>vehicle_view</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/vehicle_view.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-22</td>
+				<td>
+					<a href="./images/design/Insurance History.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Insurance History.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car > Insurance History (보험이력조회)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>booking_info</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/booking_info.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-23</td>
+				<td>
+					<a href="./images/design/Enter Booking Information.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Enter Booking Information.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car > Enter Booking Information (차량예약)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>booking_completed</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./sub/booking_completed.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-23</td>
+				<td>
+					<a href="./images/design/Completed.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Completed.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Find Car > Completed (차량예약완료)</td>
+			</tr>
+			<tr>
+				<th colspan="9">User Mypage</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-19</td>
+				<td>
+					<a href="./images/design/model popup.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_my order.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > POPUP (공통)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-21</td>
+				<td>
+					<a href="./images/design/my order.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_my order.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > my order (내 주문)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/my order 02.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_my order 02.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > my order (내 주문 상세)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/Order Process.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Order Process.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > my order > Order Process</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-21</td>
+				<td>
+					<a href="./images/design/Cancel_Claims.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Cancel_Claims.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Cancel_Claims</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/My Favorite.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_My Favorite.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > My Favorite</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-20</td>
+				<td>
+					<a href="./images/design/My Favorite 02.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_My Favorite.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > My Favorite > Recent</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>point_usage</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./mypage/point_usage.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-23</td>
+				<td>
+					<a href="./images/design/My Point.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_My Point.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > My Point</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>charge_point</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./mypage/charge_point.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-23</td>
+				<td>
+					<a href="./images/design/My Point_charge.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_My Point_charge.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > My Point_charge</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>charge_complete</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./mypage/charge_complete.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-23</td>
+				<td>
+					<a href="./images/design/My Point_charge_completion.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_My Point_charge_completion.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > My Point_charge_completion</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>point_charging</td>
+				<td class="ing">ing</td>
+				<td>
+					<a href="./mypage/point_charging.html" target="_blank">View</a>
+				</td>
+				<td>2023-11-23</td>
+				<td>
+					<a href="./images/design/My Point_charge_history.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_My Point_charge_history.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > My Point_charge_history</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-19</td>
+				<td>
+					<a href="./images/design/MyReview.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_MyReview.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > MyReview</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-18</td>
+				<td>
+					<a href="./images/design/EditProfile.png" target="_blank">view_완</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_EditProfile.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > EditProfile</td>
+			</tr>
+			<tr>
+				<th colspan="9">QUOTE</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-21</td>
+				<td>
+					<a href="./images/design/QUOTE.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_QUOTE.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > QUOTE(견적서)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-21</td>
+				<td>
+					<a href="./images/design/Proforma Invoice.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_ProformaInvoice.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Proforma Invoice(청구서)</td>
+			</tr>
+			<tr>
+				<th colspan="9">Review</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-07</td>
+				<td>
+					<a href="./images/design/Review.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Find Car.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Review (리뷰)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td></td>
+				<td class="ing">ing</td>
+				<td>
+				</td>
+				<td>2023-09-07</td>
+				<td>
+					<a href="./images/design/WriteReview.png" target="_blank" class="on01">view</a>
+				</td>
+				<td>
+					<!--<a href="./images/design/m_Find Car list.png" target="_blank">view</a>-->
+				</td>
+				<td>HOME > Review (리뷰) </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+	var totalPageNum = 0;
+	$('tbody').each(function(idx){
+		var titTxt = $('tbody').eq(idx).find('th').text();
+		$('.total').append('<span class="tit_txt">' + titTxt + ': </span>')
+		$(this).find('tr').each(function(i){
+			$(this).find('td:first-child').text(i);
+			num = $(this).filter(':last-child').find('td:first-child').text();
+		});
+		$('.total').append('<strong>' + num + '</strong>');
+		totalPageNum += parseInt(num);
+	});
+	$('.total h3').append('<strong class="total_page_num">' + totalPageNum + '</strong>');
+	console.log($('tbody tr').length)
+</script>
+
+
+</body></html>

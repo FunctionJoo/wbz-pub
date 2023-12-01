@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>환경인의 대표포털 코네틱</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no">
+	<meta name="og:type" content="website">
+	<meta name="og:url" content="https://www.konetic.or.kr">
+	<meta name="og:title" content="국가환경산업기술정보시스템">
+	<meta name="og:keyword" content="국가환경산업기술원정보시스템,환경산업기술원정보시스템,코네틱,konetic">
+	<meta name="og:description" content="국가환경산업기술원정보시스템,환경산업기술원정보시스템,코네틱,konetic">
+
+	<link rel="icon" type="image/x-icon" href="https://www.konetic.or.kr/images/ico/favicon.ico?v=2" sizes="16x16">
+	<link rel="apple-touch-icon-precomposed" type="image/x-icon"
+		href="https://www.konetic.or.kr/images/ico/favicon.ico?v=2" sizes="16x16">
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.konetic.or.kr/images/ico/favicon.ico?v=2"
+		sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="../css/ui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/ui/slick.css">
+	<link rel="stylesheet" type="text/css" href="../css/ui/ui-konetic.css">
+	<link rel="stylesheet" type="text/css" href="../css/ui/utility.css">
+	<link rel="stylesheet" type="text/css" href="../css/ui/ui-konetic_new.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+	<script async="" src="//fs.bizspring.net/fs4/logger.v4.1.js"></script>
+	<script async="" src="//fs.bizspring.net/fs4/bstrk.1.js"></script>
+	<script src="../js/konetic/user/script-common.js"></script>
+	<script type="text/javascript" src="../js/se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+
+	<script src="../js/libs/jquery-3.6.0.min.js"></script>
+	<!-- <script src="../js/libs/jquery-1.12.4.min.js"></script> -->
+	<script src="../js/libs/jquery-ui.min.js"></script>
+	<script src="../js/libs/slick.min.js"></script>
+	<script src="../js/konetic/user/ui-konetic.js"></script>
+	<script src="../js/konetic/user/ui-konetic_new.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$(".calen input").datepicker(); //달력 불러오기
+			$.datepicker.setDefaults({
+				buttonImage: "/images/masterpage/template/ico_calendar.gif", // 버튼 이미지
+				buttonImageOnly: true, // 버튼에 있는 이미지만 표시한다.
+				dateFormat: 'yy-mm-dd',
+				prevText: '이전 달',
+				nextText: '다음 달',
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+				dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+				showMonthAfterYear: true,
+				changeYear: true,
+				changeMonth: true,
+				constainInput: false,
+				yearSuffix: ' '
+			});
+
+			$(".calen input").attr('placeholder', 'yyyy-mm-dd');
+			$(".calen input").attr('maxlength', '10');
+			$(".calen input").css('width', '150px');
+			$(".calen a").remove();
+
+			$(".calen input").blur(function () {
+				var dates = $(this).val().split('-').join('');
+				if (dates.length != 8) {
+					//alert("날짜를 정확히 입력하세요.");
+					dates = '';
+				}
+				dates = dates.substring(0, 4) + '-' + dates.substring(4, 6) + '-' + dates.substring(6, 8);
+				if (dates == '--') dates = '';
+				$(this).val(dates);
+			});
+
+			$('.sch_send').on('click', function () {
+				totSearch();
+			});
+
+			$(".resetTimeBtn").on('click', function () {
+				setTime = 180 * 60;
+			});
+
+			getLoadingTimes();
+
+		});
+
+		var totSearch = function () {
+			skey = $('#searchKey').val();
+			if (skey == '') {
+				alert("검색어를 입력하세요.");
+			} else {
+				document.searchForm.action = "/user/search/searchAll.do";
+				document.searchForm.submit();
+			}
+		}
+
+
+		var setTime = 180 * 60;
+		var fnTimeCount = function () {
+			var mVal = Math.floor(setTime / 60);
+			mVal = mVal < 10 ? '0' + mVal : String(mVal);
+			var sVal = (setTime % 60);
+			sVal = sVal < 10 ? '0' + sVal : String(sVal);
+			var m = mVal + ':' + sVal;
+			$(".topTimeArea").html(m);
+			setTime--;
+
+			if (setTime < 0) {
+				clearInterval(tid);
+				fnLogInTimeOut();
+			}
+		}
+
+		var fnTimeStart = function () {
+			tid = setInterval('fnTimeCount()', 1000);
+		};
+
+		$(window).on('load', function () {
+
+		});
+
+
+
+		var nowUrl = location.href;
+		if (nowUrl.indexOf("?") > 0) {
+			tmp = nowUrl.split("?")
+			nowUrl = tmp[0];
+		}
+
+		var goLoginPage = function () {
+			location.href = "/user/cmmn/login.do?refererURI=" + nowUrl + "&" + fnGet_formParameter
+		}
+
+	</script>
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<nav class="nav-skip">
+		<a href="#skip-content">본문 바로가기</a>
+		<a href="#gnb" class="pc-only">주메뉴 바로가기</a>
+		<a href="#gnbAll" class="mobile-only">전체메뉴 바로가기</a>
+	</nav>
+	<!-- /Skip Navigation -->
+	<!--  header -->
+	<header class="wrap-header new">
+		<div class="inner">
+			<div class="hd_top">
+				<a href="#">로그인</a>
+				<a href="#">회원가입</a>
+			</div>
+			<div class="hd_btm">
+				<h1 class="">
+					<a href="/" class="ico logo" title="메인 페이지로 바로가기">
+						<span class="blind">KONETIC 국가환경산업기술정보시스템</span>
+					</a>
+				</h1>
+				<nav class="nav">
+					<ul class="depth1">
+						<li class="">
+							<a href="#" class="">국내 환경정보</a>
+							<div class="sub_menu">
+								<ul class="depth2">
+									<li>
+										<a href="#" class="sub_tit">환경시장</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경뉴스</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">공사현황</a>
+													</li>
+													<li>
+														<a href="#">운영현황</a>
+													</li>
+													<li>
+														<a href="#">낙찰정보</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="sub_tit">환경기술</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경 R&D 안내</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">소개</a>
+													</li>
+													<li>
+														<a href="#">성과 전시 및 발표</a>
+													</li>
+													<li>
+														<a href="#">토양</a>
+													</li>
+													<li>
+														<a href="#"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="sub_tit">환경기술</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경 R&D 안내</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">소개</a>
+													</li>
+													<li>
+														<a href="#">성과 전시 및 발표</a>
+													</li>
+													<li>
+														<a href="#">토양</a>
+													</li>
+													<li>
+														<a href="#"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="sub_tit">환경기술</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경 R&D 안내</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">소개</a>
+													</li>
+													<li>
+														<a href="#">성과 전시 및 발표</a>
+													</li>
+													<li>
+														<a href="#">토양</a>
+													</li>
+													<li>
+														<a href="#"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<ul class="depth1">
+						<li class="">
+							<a href="#" class="">해외 환경정보</a>
+							<div class="sub_menu">
+								<ul class="depth2">
+									<li>
+										<a href="#" class="sub_tit">해외 환경시장</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경뉴스</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">공사현황</a>
+													</li>
+													<li>
+														<a href="#">운영현황</a>
+													</li>
+													<li>
+														<a href="#">낙찰정보</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="sub_tit">환경기술</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경 R&D 안내</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">소개</a>
+													</li>
+													<li>
+														<a href="#">성과 전시 및 발표</a>
+													</li>
+													<li>
+														<a href="#">토양</a>
+													</li>
+													<li>
+														<a href="#"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="sub_tit">환경기술</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경 R&D 안내</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">소개</a>
+													</li>
+													<li>
+														<a href="#">성과 전시 및 발표</a>
+													</li>
+													<li>
+														<a href="#">토양</a>
+													</li>
+													<li>
+														<a href="#"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="sub_tit">환경기술</a>
+										<ul class="depth3">
+											<li>
+												<a href="#">환경 R&D 안내</a>
+												<ul class="depth4">
+													<li>
+														<a href="#">소개</a>
+													</li>
+													<li>
+														<a href="#">성과 전시 및 발표</a>
+													</li>
+													<li>
+														<a href="#">토양</a>
+													</li>
+													<li>
+														<a href="#"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<button type="button" class="ico search">
+					<span class="blind">검색</span>
+				</button>
+				<button type="button" id="gnbAll" class="ico menu js-fixed-layer" data-tooltip="sitemap">
+					<span class="blind">전체메뉴</span>
+				</button>
+				<!-- 전체메뉴 -->
+				<!-- <nav class="h-sitemap" data-tooltip-con="sitemap" data-focus="allMenuBox" data-focus-prev="allMenuClose"
+					tabindex="0" style="display: block;">
+					<div class="menu-header">
+						<div class="inner pc-only">
+							<h1><strong>전체</strong>메뉴</h1>
+							<p>코네틱에서 제공하는 <strong>전체메뉴</strong> 를 한눈에 보실 수 있습니다.</p>
+						</div>
+						<div class="inner mobile-only">
+							<h1>
+								<strong>
+									안녕하세요.
+								</strong>
+							</h1>
+							<p>
+								회원가입 후 이용해주세요.
+							</p>
+							<ul>
+								<li><a href="javascript:void(0)" onclick="goLoginPage();">로그인</a></li>
+								<li><a href="/user/cmmn/membJoin/joinStepOne.do">회원가입</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-body">
+						<div class="inner">
+							<ul class="depth1 menu ui-accordion ui-widget ui-helper-reset" role="tablist">
+								<li>
+									<h2 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+										role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true"
+										aria-expanded="true" tabindex="0"><span
+											class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>환경기술
+									</h2>
+									<ul class="depth2 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active ui-accordion ui-widget"
+										style="" id="ui-id-2" aria-labelledby="ui-id-1" role="tablist"
+										aria-hidden="false">
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+												role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="true"
+												aria-expanded="true" tabindex="0"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>R&amp;D홍보관</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+												style="" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel"
+												aria-hidden="false">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TA/TA007_L01.do','USR020209');">R&amp;D
+														소개</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TA/TA001_L01.do','USR020202');">R&amp;D
+														스토리</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TA/TA002_L01.do','USR020205');">우수성과20선</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TA/TA003_L01.do','USR020203');">R&amp;D
+														성과확산</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TA/TA008_L01.do','USR020210');">기술거래
+														중개</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TA/TA005_L01.do','USR020204');">환경R&amp;D
+														30년사</a></li>
+											</ul>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+												role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false"
+												aria-expanded="false" tabindex="-1"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>알기쉬운
+												환경기술</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+												id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel"
+												aria-hidden="true" style="display: none;">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TB/TB002_L01.do','USR020703');">환경용어</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TB/TB003_L01.do','USR020704');">미디어
+														환경기술</a></li>
+											</ul>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+												role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false"
+												aria-expanded="false" tabindex="-1"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>기술동향</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+												id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel"
+												aria-hidden="true" style="display: none;">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TC/TC001_L01.do','USR020802');">특허</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TC/TC002_L01.do','USR020803');">해외기술</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TC/TC004_L01.do','USR020805');">인증기술</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/T/TC/TC003_L01.do','USR020804');">박람회
+														출품기술</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);"
+												onclick="javascript:fnGoUrl('/user/T/TD/TD001_L01.do','USR020901');">환경기술통계</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+										role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false"
+										aria-expanded="false" tabindex="-1"><span
+											class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>환경시장
+									</h2>
+									<ul class="depth2 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion ui-widget"
+										style="display: none;" id="ui-id-4" aria-labelledby="ui-id-3" role="tablist"
+										aria-hidden="true">
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+												role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="true"
+												aria-expanded="true" tabindex="0"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>환경시장정보</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+												style="" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel"
+												aria-hidden="false">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PA/PA001_L01.do','USR031102');">전문보고서</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PA/PA002_L01.do','USR031103');">환경분쟁사례</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PA/PA003_L01.do','USR031104');">환경연구보고서</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+												role="tab" id="ui-id-23" aria-controls="ui-id-24" aria-selected="false"
+												aria-expanded="false" tabindex="-1"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>환경시설</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+												style="display: none;" id="ui-id-24" aria-labelledby="ui-id-23"
+												role="tabpanel" aria-hidden="true">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PB/PB001_L01.do','USR031202');">공사현황</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PB/PB002_L01.do','USR031203');">운영현황</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PB/PB003_L01.do','USR031204');">낙찰정보</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+												role="tab" id="ui-id-25" aria-controls="ui-id-26" aria-selected="false"
+												aria-expanded="false" tabindex="-1"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>환경네트워크</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+												style="display: none;" id="ui-id-26" aria-labelledby="ui-id-25"
+												role="tabpanel" aria-hidden="true">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PC/PC001_L01.do','USR031302');">기업</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PC/PC003_L01.do','USR031304');">기관</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+												role="tab" id="ui-id-27" aria-controls="ui-id-28" aria-selected="false"
+												aria-expanded="false" tabindex="-1"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>해외환경산업
+												전문정보</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+												style="display: none;" id="ui-id-28" aria-labelledby="ui-id-27"
+												role="tabpanel" aria-hidden="true">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PD/PD001_L01.do','USR031402');">환경
+														규제대응</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PD/PD002_L01.do','USR031403');">환경뉴스</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PD/PD003_L01.do','USR031404');">실시간
+														입찰정보</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PD/PD004_L01.do','USR031405');">국가별
+														환경통합지표</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/P/PD/PD005_L01.do','USR031407');">해외진출컨설팅</a>
+												</li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);"
+												onclick="javascript:fnGoUrl('/user/P/PF/PF001_L01.do','USR031501');">환경산업통계</a>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+												role="tab" id="ui-id-29" aria-controls="ui-id-30" aria-selected="false"
+												aria-expanded="false" tabindex="-1"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>국제환경동향</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+												style="display: none;" id="ui-id-30" aria-labelledby="ui-id-29"
+												role="tabpanel" aria-hidden="true">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/IECC/D/DA001_L01.do','USR031602');">정책동향</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+										role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false"
+										aria-expanded="false" tabindex="-1"><span
+											class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>취업/사업지원
+									</h2>
+									<ul class="depth2 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion ui-widget"
+										style="display: none;" id="ui-id-6" aria-labelledby="ui-id-5" role="tablist"
+										aria-hidden="true">
+										<li><a href="javascript:void(0);"
+												onclick="javascript:fnGoUrl('/user/J/JB/JB001_L01.do','USR070601');">기업지원사업</a>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+												role="tab" id="ui-id-31" aria-controls="ui-id-32" aria-selected="true"
+												aria-expanded="true" tabindex="0"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>취업정보</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+												style="" id="ui-id-32" aria-labelledby="ui-id-31" role="tabpanel"
+												aria-hidden="false">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/J/JA/JA001_L01.do','USR120101');">구인정보</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/J/JA/JA002_L01.do','USR070803');">구직정보</a>
+												</li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);"
+												onclick="javascript:fnGoUrl('/user/J/JC/JC001_L01.do','USR070701');">행사/전시회</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+										role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false"
+										aria-expanded="false" tabindex="-1"><span
+											class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>이벤트/자료실
+									</h2>
+									<ul class="depth2 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion ui-widget"
+										style="display: none;" id="ui-id-8" aria-labelledby="ui-id-7" role="tablist"
+										aria-hidden="true">
+										<li><a href="javascript:void(0);"
+												onclick="javascript:fnGoUrl('/user/B/BE/BE001_L01.do','USR080701');">코네틱
+												소개</a>
+										</li>
+										<li><a href="javascript:void(0);"
+												onclick="javascript:fnGoUrl('/user/B/BA/BA001_L01.do','USR080501');">코네틱
+												소식</a>
+										</li>
+										<li><a href="javascript:void(0);"
+												onclick="javascript:fnGoUrl('/user/B/BB/BB001_L01.do','USR080901');">토론광장</a>
+										</li>
+										<li>
+											<strong
+												class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+												role="tab" id="ui-id-33" aria-controls="ui-id-34" aria-selected="true"
+												aria-expanded="true" tabindex="0"><span
+													class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>아카이브</strong>
+											<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+												style="" id="ui-id-34" aria-labelledby="ui-id-33" role="tabpanel"
+												aria-hidden="false">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC001_L01.do','USR080802');">개발동향</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC002_L01.do','USR080803');">실용기술/기술평가</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC003_L01.do','USR080805');">고급특허정보</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC004_L01.do','USR080804');">진단지원</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC005_L01.do','USR080806');">기술복덕방</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC006_L01.do','USR080807');">회원제품홍보</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC007_L01.do','USR080808');">설비장비/중고장터</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC010_L01.do','USR080811');">입찰정보</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC011_L01.do','USR080812');">심층보고서</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC012_L01.do','USR080813');">special
+														issues</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC013_L01.do','USR080814');">무역환경용어사전</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC014_L01.do','USR080815');">입찰구매정보</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC016_L01.do','USR080817');">입찰/구매/낙찰
+														정보</a></li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC017_L01.do','USR080818');">환경자료실</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC018_L01.do','USR080819');">에코케스트</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC019_L01.do','USR080820');">행사및전시정보</a>
+												</li>
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/A/AC/AC022_L01.do','USR080823');">해외환경전문가</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+				<li>
+					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+						role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false"
+						tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>마이페이지
+					</h2>
+					<ul class="depth2 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion ui-widget"
+						style="display: none;" id="ui-id-10" aria-labelledby="ui-id-9" role="tablist"
+						aria-hidden="true">
+						<li><a href="/user/M/MA/MA001_L01.do">개인정보관리</a></li>
+						<li>
+							<strong
+								class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+								role="tab" id="ui-id-35" aria-controls="ui-id-36" aria-selected="true"
+								aria-expanded="true" tabindex="0"><span
+									class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>마일리지관리</strong>
+							<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+								style="" id="ui-id-36" aria-labelledby="ui-id-35" role="tabpanel" aria-hidden="false">
+								<li><a href="/user/M/MM/MM001_L01.do">마일리지 현황</a></li>
+								<li><a href="/user/M/MM/MM002_L01.do">상품 신청현황</a></li>
+								<li><a href="/user/M/MM/MM003_L01.do">코네틱 마일리지 안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong
+								class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+								role="tab" id="ui-id-37" aria-controls="ui-id-38" aria-selected="false"
+								aria-expanded="false" tabindex="-1"><span
+									class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>나의활동관리</strong>
+							<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+								style="display: none;" id="ui-id-38" aria-labelledby="ui-id-37" role="tabpanel"
+								aria-hidden="true">
+
+
+								<li><a href="/user/M/MA/MA002_L01.do">묻고 답하기</a></li>
+								<li><a href="/user/M/MA/MA003_L01.do">댓글관리</a></li>
+								<li><a href="/user/M/MA/MA004_L01.do">스크랩 메뉴관리</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<strong
+								class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+								role="tab" id="ui-id-39" aria-controls="ui-id-40" aria-selected="false"
+								aria-expanded="false" tabindex="-1"><span
+									class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>채용정보관리</strong>
+							<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+								style="display: none;" id="ui-id-40" aria-labelledby="ui-id-39" role="tabpanel"
+								aria-hidden="true">
+								<li><a href="/user/M/MJ/MJ001_L01.do">이력서 관리</a></li>
+								<li><a href="/user/M/MJ/MJ002_L01.do">입사지원 관리</a></li>
+								<li><a href="/user/M/MJ/MJ003_L01.do">스크랩 채용정보</a></li>
+							</ul>
+						</li>
+
+
+					</ul>
+				</li>
+				<li>
+					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+						role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false"
+						tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>이용안내
+					</h2>
+					<ul class="depth2 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion ui-widget"
+						style="display: none;" id="ui-id-12" aria-labelledby="ui-id-11" role="tablist"
+						aria-hidden="true">
+						<li><a href="/user/U/UA/UA001_L01.do">서비스 이용약관</a></li>
+						<li><a href="/user/U/UA/UA002_L01.do">개인정보 처리방침</a></li>
+						<li><a href="/user/U/UA/UA004_L01.do">이메일 무단수집 거부</a></li>
+						<li><a href="/user/U/UA/UA003_L01.do">저작권 정책</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+						role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false"
+						tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span
+							class="pc-only">회원서비스</span><a href="/user/cmmn/membJoin/joinStepOne.do"
+							class="mobile-only">회원서비스</a></h2>
+					<ul class="depth2 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion ui-widget"
+						style="display: none;" id="ui-id-14" aria-labelledby="ui-id-13" role="tablist"
+						aria-hidden="true">
+
+						<li><a href="javascript:void(0)" onclick="goLoginPage();">로그인</a></li>
+						<li>
+							<strong
+								class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+								role="tab" id="ui-id-41" aria-controls="ui-id-42" aria-selected="true"
+								aria-expanded="true" tabindex="0"><span
+									class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>회원가입</strong>
+							<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+								style="" id="ui-id-42" aria-labelledby="ui-id-41" role="tabpanel" aria-hidden="false">
+								<li><a href="/user/cmmn/membJoin/joinStepOne.do">국내개인</a></li>
+								<li><a href="/user/cmmn/membJoin/joinStepOne.do">국내기업</a></li>
+								<li><a href="/user/cmmn/membJoin/joinStepOne.do">해외개인</a></li>
+								<li><a href="/user/cmmn/membJoin/joinStepOne.do">해외기업</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong
+								class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+								role="tab" id="ui-id-43" aria-controls="ui-id-44" aria-selected="false"
+								aria-expanded="false" tabindex="-1"><span
+									class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>아이디/비밀번호찾기</strong>
+							<ul class="depth3 ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content"
+								style="display: none;" id="ui-id-44" aria-labelledby="ui-id-43" role="tabpanel"
+								aria-hidden="true">
+								<li><a href="/user/cmmn/membJoin/findMemb.do">아이디찾기</a></li>
+								<li><a href="/user/cmmn/membJoin/findMembPwd.do">비밀번호찾기</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="ico m-close js-tooltip-close" data-focus="allMenuClose"
+			data-focus-next="allMenuBox"><span class="blind">전체메뉴 닫기</span></button>
+		</nav> -->
+				<!-- //전체메뉴 -->
+			</div>
+		</div>
+	</header>
+	<!-- /header -->
+	<!-- container -->
+	<main id="container" class="main">
+		<!-- 메인 비쥬얼 -->
+		<div class="main_visual">
+			<div class="w_set">
+				<div class="banner_wrap">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="banner">
+									<a href="#">
+										<!-- pc배너 권장사이즈 570 * 480 -->
+										<img src="../images/dummy/main_banner_01.png" class="hide-m" alt="">
+										<!-- ta/mo 권장사이즈 1100 * 900 -->
+										<!-- <img src="" class="hide-pc" alt=""> -->
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="banner">
+									<a href="#">
+										<!-- pc배너 권장사이즈 570 * 480 -->
+										<img src="../images/dummy/main_banner_01.png" class="hide-m" alt="">
+										<!-- ta/mo 권장사이즈 1100 * 900 -->
+										<!-- <img src="" class="hide-pc" alt=""> -->
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper_control">
+						<div class="pagination"></div>
+					</div>
+				</div>
+				<div class="search_area">
+					<div>
+						<span>SEARCH</span>
+						<div class="input_area">
+							<input type="text" placeholder="검색어를 입력하세요" id="searchKeyword" onkeyup="fnKeyUp();">
+							<label for="searchKeyword" class="blind">통합검색</label>
+							<a href="javascript:search();" class="search_btn">검색</a>
+						</div>
+					</div>
+					<ul class="search_ul">
+						<li><a href="javascript:;">#R&D홍보관</a></li>
+						<li><a href="javascript:;">#미세플라스틱</a></li>
+						<li><a href="javascript:;">#환경관리</a></li>
+						<li><a href="javascript:;">#환경규제</a></li>
+						<li><a href="javascript:;">#폐기물정보</a></li>
+						<li><a href="javascript:;">#마이크로러닝</a></li>
+					</ul>
+				</div><!-- //search_area -->
+				<ul class="quick">
+					<li class="quick1">
+						<a href="#">
+							<span>
+								<span class="tt">해외 규제 및<br>법률 정보</span>
+							</span>
+						</a>
+					</li>
+					<li class="quick2">
+						<a href="#">
+							<span>
+								<span class="tt">해외<br>입찰 정보</span>
+							</span>
+						</a>
+					</li>
+					<li class="quick3">
+						<a href="#">
+							<span>
+								<span class="tt">국내 이슈<br>분석 보고서</span>
+							</span>
+						</a>
+					</li>
+					<li class="quick4">
+						<a href="#">
+							<span>
+								<span class="tt">해외이슈<br>분석 보고서</span>
+							</span>
+						</a>
+					</li>
+					<li class="quick5">
+						<a href="#">
+							<span>
+								<span class="tt">해외<br>환경 뉴스</span>
+							</span>
+						</a>
+					</li>
+					<li class="quick6">
+						<a href="#">
+							<span>
+								<span class="tt">취업 정보</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 환경뉴스 -->
+		<div class="main_sec">
+			<div class="w_set">
+				<h2 class="tit_kr">환경뉴스</h2>
+				<h2 class="tit">Environmental News</h2>
+				<div class="news_wrap">
+					<div class="swiper_navi">
+						<button class="swiper_button swiper_prev" type="button">이전</button>
+						<button class="swiper_button swiper_next" type="button">다음</button>
+					</div>
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="news">
+									<a href="#">
+										<div class="img">
+											<span class="flag">기후대기</span>
+											<img src="../images/dummy/main_news_1.png" alt="">
+										</div>
+										<p class="tit">지역 주도의 탄소중립 실현을 위한 환경 교육 도시 지정</p>
+										<span class="date">2023.11.15</span>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news">
+									<a href="#">
+										<div class="img">
+											<span class="flag">자연보전</span>
+											<img src="../images/dummy/main_news_2.png" alt="">
+										</div>
+										<p class="tit">꿀벌에 독성 있는 살충제 카바릴 분해 능력 뛰어난 미생물 발견</p>
+										<span class="date">2023.11.13</span>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news">
+									<a href="#">
+										<div class="img">
+											<span class="flag">자연보전</span>
+											<img src="../images/dummy/main_news_3.png" alt="">
+										</div>
+										<p class="tit">국립공원 안전한 탐방 위해 야생동물과 거리두세요</p>
+										<span class="date">2023.11.07</span>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news">
+									<a href="#">
+										<div class="img">
+											<span class="flag">자연보전</span>
+											<img src="../images/dummy/main_news_4.png" alt="">
+										</div>
+										<p class="tit">[동향] 싱가폴, 그린 플랜 2030을 기반 으로 지속 가능성 분야 강화</p>
+										<span class="date">2023.11.07</span>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news">
+									<a href="#">
+										<div class="img">
+											<span class="flag">기후대기</span>
+											<img src="../images/dummy/main_news_1.png" alt="">
+										</div>
+										<p class="tit">지역 주도의 탄소중립 실현을 위한 환경 교육 도시 지정</p>
+										<span class="date">2023.11.15</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 코네틱 소식 -->
+		<div class="main_sec">
+			<div class="w_set">
+				<h2 class="tit_kr">코네틱 소식</h2>
+				<h2 class="tit">KONETIC News</h2>
+				<div class="board_wrap">
+					<ul class="board_area">
+						<li class="tab active">
+							<div>
+								<h3 class="tit">
+									<a href="javascript:;" class="board_name" title="선택됨">코네틱 소식</a>
+								</h3>
+								<a href="#none" class="more_btn" title="코네틱 소식 더보기">+</a>
+								<ul class="board_list">
+									<li>
+										<a href="#">
+											<p class="tit">코네틱(환경산업기술정보시스템) SNS 이벤트(11.10. ~ 11. 16.) 안내</p>
+											<p class="txt">[EVENT] KONETIC(국가환경산업기술 정보 시스템)을 소개합니다. KONETIC을 소개하…
+											</p>
+											<div class="list_btm">
+												<span class="writer">코네틱</span>
+												<span class="date">2023.11.30</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="tit">(마감) 국가환경산업기술정보시스템(코네틱) 이용자 만족도 및 정보수요 조사 실시 안내</p>
+											<p class="txt">환경부와 한국환경산업기술원에서는 ‘국가환경산업기술정보시스템(이하 코네틱)’의 정보의 질을 높이고 편리한
+												서비스 제공을 위하여 이용자 만족도 및 정보수요 조사를 실시합니다.</p>
+											<div class="list_btm">
+												<span class="writer">기타</span>
+												<span class="date">2023.07.05</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="tit">코네틱 콘텐츠 검색 이벤트(6.13. ~ 6.19.) 경품 발송 안내</p>
+											<p class="txt">코네틱 콘텐츠 검색 이벤트에 참여해 주신 분들께 감사의 말씀을 드립니다.</p>
+											<div class="list_btm">
+												<span class="writer">한국환경산업기술원</span>
+												<span class="date">2023.07.05</span>
+											</div>
+										</a>
+									</li>
+									<!-- 글 없을때 노출값 -->
+									<!-- <li class="no_data" style="display: none;"> 
+										<p class="tit">작성된 게시글이 없습니다.</p>
+									</li> -->
+								</ul>
+							</div>
+						</li>
+						<li class="tab">
+							<div class="">
+								<h3 class="tit">
+									<a href="javascript:;" class="board_name" title="">최신 등록글</a>
+								</h3>
+								<a href="#none" class="more_btn" title="최신 등록글 더보기">+</a>
+								<ul class="board_list">
+									<li>
+										<a href="#">
+											<p class="tit">최신 등록글</p>
+											<p class="txt">코네틱 콘텐츠 검색 이벤트에 참여해 주신 분들께 감사의 말씀을 드립니다.</p>
+											<div class="list_btm">
+												<span class="writer">한국환경산업기술원</span>
+												<span class="date">2023.07.05</span>
+											</div>
+										</a>
+									</li>
+									<!-- 글 없을때 노출값 -->
+									<!-- <li class="no_data" style="display: none;">
+										<p class="tit">작성된 게시글이 없습니다.</p>
+									</li> -->
+								</ul>
+							</div>
+						</li>
+						<li class="tab">
+							<div class="">
+								<h3 class="tit">
+									<a href="javascript:;" class="board_name" title="">지원사업</a>
+								</h3>
+								<a href="#none" class="more_btn" title="지원사업 더보기">+</a>
+								<ul class="board_list">
+									<li>
+										<a href="#">
+											<p class="tit">지원사업 안내</p>
+											<p class="txt">코네틱 콘텐츠 검색 이벤트에 참여해 주신 분들께 감사의 말씀을 드립니다.</p>
+											<div class="list_btm">
+												<span class="writer">한국환경산업기술원</span>
+												<span class="date">2023.07.05</span>
+											</div>
+										</a>
+									</li>
+									<!-- 글 없을때 노출값 -->
+									<!-- <li class="no_data" style="display: none;">
+										<p class="tit">작성된 게시글이 없습니다.</p>
+									</li> -->
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<a href="#" class="banner">
+						<img src="../images/dummy/main_news_banner.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- /container -->
+	<!--  footer -->
+	<footer id="footer" class="wrap-footer">
+		<!-- 관련기관 사이트 링크 -->
+		<div class="f-family-slide">
+			<strong class="blind">관련기관 사이트 링크</strong>
+			<div class="inner">
+				<div class="slider">
+					<div><a href="http://me.go.kr" target="_blank"><img src="../images/layout/logo-family1.png"
+								alt="환경부"></a>
+					</div>
+					<div><a href="http://www.keco.or.kr" target="_blank"><img src="../images/layout/logo-family2.png"
+								alt="한국환경공단"></a></div>
+					<div><a href="https://www.keci.or.kr" target="_blank"><img
+								src="../images/layout/logo-family3_new.png" alt="한국환경보전원"></a></div>
+					<div><a href="http://www.kei.re.kr" target="_blank"><img src="../images/layout/logo-family4.png"
+								alt="KEI한국환경연구원"></a></div>
+					<div><a href="https://www.kwater.or.kr" target="_blank"><img src="../images/layout/logo-family5.png"
+								alt="K-WATER"></a></div>
+					<div><a href="https://www.slc.or.kr" target="_blank"><img src="../images/layout/logo-family6.png"
+								alt="수도권매립지관리공사"></a></div>
+					<div><a href="http://www.kwaste.or.kr" target="_blank"><img src="../images/layout/logo-family7.png"
+								alt="한국폐기물협회"></a></div>
+					<div><a href="http://www.knps.or.kr" target="_blank"><img src="../images/layout/logo-family8.png"
+								alt="국립공원"></a></div>
+				</div>
+			</div>
+		</div>
+		<!-- /관련기관 사이트 링크 -->
+
+		<div class="inner">
+			<div class="f-link">
+				<ul>
+					<li><a href="#none">이용약관</a></li>
+					<li><a href="#none"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="#none">저작권정책</a></li>
+					<li><a href="#none">이메일무단수집거부</a></li>
+					<li><a href="#none">1:1문의</a></li>
+				</ul>
+			</div>
+
+			<div class="f-logo">
+				<a href="https://www.keiti.re.kr" class="ico logo-keiti" target="_blank"
+					title="KEITI 한국환경산업기술원 새창 바로가기"><span class="blind">KEITI 한국환경산업기술원 이동</span></a>
+			</div>
+			<!-- 인증마크 -->
+			<div class="f-mark">
+				<a title="pdf 파일보기" href="/fileDown/2023-0629 정보통신접근성 품질인증서-국가환경산업기술정보시스템.pdf" target="_blank">
+					<img class="wa" alt="(사)한국장애인단체총연합회 한국웹접근성인증편가원 웹 접근성 우수사이트 인증마크(WA인증마크)"
+						src="../images/wa_230506.png" width="120px" height="84px" />
+				</a>
+				<img src="../images/mark1_eprivacy.png" style="cursor:pointer;margin-top:6px;height:72px;" />
+			</div>
+			<!-- /인증마크 -->
+			<div class="f-company">
+				<strong class="blind">주소 :</strong>
+				<address>(우) 03367 서울시 은평구 진흥로 215 한국환경산업기술원</address>
+				<strong>대표 연락처 TEL:</strong>
+				<a href="tel:02-2284-1191">02-2284-1191</a>, <a href="tel:02-2284-1171">02-2284-1171(해외정보)</a>
+				<p class="copyright">COPYRIGHT ⓒ 2021 KONETIC All rights reserved.</p>
+			</div>
+
+
+
+			<!-- 소셜미디어 -->
+			<!-- 접근성 04.07 수정 -->
+			<div class="f-sns">
+				<!-- <a href="http://blog.naver.com" class="ico blog" target="_blank">네이버 블로그 새창 바로가기</a> -->
+				<!-- <a href="https://www.facebook.com" class="ico facebook" target="_blank">페이스북 새창 바로가기</a> -->
+				<a href="https://www.youtube.com" class="ico youtube" target="_blank">유튜브 새창 바로가기</a>
+				<!-- <a href="https://instagram.com" class="ico instargram" target="_blank">인스타그램 새창 바로가기</a>  -->
+			</div>
+			<!-- /소셜미디어 -->
+
+			<script>
+				function familySiteTitleChange() {
+					var familySiteTitle = $("#familyLink option:selected").text() + " 이동";
+					$("#familyLinkBtn").attr("title", familySiteTitle);
+				}
+
+				function goFamilySite() {
+					var url = $("#familyLink").val();
+					window.open(url);
+				}
+			</script>
+			<label for="familyLink"><span class="blind">관련사이트 바로가기 선택</span></label>
+			<select id="familyLink" name="familyLink" class="f-family-link" onchange="familySiteTitleChange()">
+				<option value="">관련사이트 바로가기</option>
+				<option value="https://www.keiti.re.kr">한국환경산업기술원</option>
+				<option value="https://www.apec-vc.com">ESTEN</option>
+				<option value="https://konetic.ecoedu.go.kr">사이버환경실무교육</option>
+				<option value="http://stat.me.go.kr">환경통계포털</option>
+				<!-- 	<option value="https://www.apec-vc.com">APEC-VC KOREA</option> -->
+				<option value="https://ehtis.or.kr">환경보건종합정보시스템</option>
+				<option value="https://ecoplus.keiti.re.kr:9443">에코플러스</option>
+			</select>
+
+			<button id="familyLinkBtn" class="bt_search_mini" onclick="goFamilySite()" title="새창열림">이동</button>
+			<!-- /접근성 04.07 수정 -->
+		</div>
+	</footer>
+	<!--  //footer -->
+
+	<script>
+		// 메인 배너 슬라이드
+		const swiperMainVisual = new Swiper('.banner_wrap .swiper', {
+			slidesPerView: 1,
+			loop: true,
+			speed: 800,
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+			pagination: {
+				el: ".banner_wrap .swiper_control .pagination",
+				clickable: true,
+			},
+		});
+
+		// 환경뉴스 슬라이드
+		const swiperNews = new Swiper('.news_wrap .swiper', {
+			slidesPerView: 2,
+			spaceBetween: 16,
+			speed: 800,
+			navigation: {
+				nextEl: '.news_wrap .swiper_next',
+				prevEl: '.news_wrap .swiper_prev',
+			},
+			breakpoints: {
+				//769: { //브라우저가 769보다 클 때
+				//slidesPerView: 2,  
+				//spaceBetween: 20,
+				//},
+				1024: { //브라우저가 1024보다 클 때
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+			},
+		});
+
+		/* 탭 게시판 */
+		$(".board_wrap>.board_area>.tab").on("click focusin", function () {
+			$(this).addClass("active").siblings().removeClass("active");
+			$(this).find('.tab-btn').attr('title', '선택됨');
+			return true;
+		});
+		$(".board_wrap>.board_area .board_name").eq(0).attr('title', '선택됨');
+		$(".board_wrap>.board_area .board_name").on("click focusin", function () {
+			$(this).closest('.tab').addClass("active").siblings().removeClass("active");
+			$(this).closest('.tab').siblings().find('.board_name').attr('title', '');
+			$(this).attr('title', '선택됨');
+			return true;
+		});
+	</script>
+</body>
+
+</html>
