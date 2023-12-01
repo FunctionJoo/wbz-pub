@@ -15619,4 +15619,74 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     min-width: auto;
     border-right: none;
   }
+}
+#board.faq .board_cont .cate_button_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D3D3D3;
+  height: 50px;
+  margin-bottom: 20px;
+}
+#board.faq .board_cont .cate_button_box .cate_button_list {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#board.faq .board_cont .cate_button_box .cate_button_list:not(:last-child) {
+  border-right: 1px solid #D3D3D3;
+}
+#board.faq .board_cont .cate_button_box .cate_button_list.on {
+  background-color: #014099;
+  color: #fff;
+}
+#board.faq .board_cont .board_wrap .board_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#board.faq .board_cont .board_wrap .board_table table tbody tr.is_file .file i {
+  display: inline-block;
+}
+#board.faq .board_cont .board_wrap .board_table table tbody tr .file i {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  #board.faq .board_cont .cate_button_box {
+    flex-direction: column;
+    height: auto;
+  }
+  #board.faq .board_cont .cate_button_box .cate_button_list {
+    width: 100%;
+    height: 50px;
+  }
+  #board.faq .board_cont .cate_button_box .cate_button_list:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  #board.faq .board_cont .board_wrap .board_top .board_search {
+    max-width: 220px;
+  }
+  #board.faq .board_cont .board_wrap .board_top .board_search .label_s {
+    width: 80px;
+  }
+  #board.faq .board_cont .board_wrap .board_table table tbody tr .file {
+    padding-left: 5px;
+    margin-left: 5px;
+    position: relative;
+  }
+  #board.faq .board_cont .board_wrap .board_table table tbody tr .file::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    width: 1px;
+    height: 10px;
+    background: #D3D3D3;
+  }
 }/*# sourceMappingURL=sjh.css.map */
