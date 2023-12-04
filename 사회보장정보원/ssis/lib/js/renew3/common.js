@@ -55,12 +55,30 @@ jQuery(function($){
 	});
 
 	/* sitemap box */
+	// wbz20231130
+	let scrollPosition = 0;
 	$(".sitemap-open-btn").click(function  () {
+		// $('body').addClass('scrollLock');
+		// 현재 스크롤 위치 저장
+		scrollPosition = window.scrollY;
+
+		// 스크롤 위치를 고정된 위치로 만들기
+		document.body.style.position = 'fixed';
+		document.body.style.top = `-${scrollPosition}px`;
+
 		$("#sitemap-wrap").show();
 		$(".sitemap-close-btn").focus();
 		return false;
 	});
 	$("#sitemap-wrap .sitemap-close-btn").click(function  () {
+		// 스크롤 위치를 원래 위치로 복원
+		document.body.style.position = '';
+		document.body.style.top = '';
+		
+		// 스크롤 위치를 이전 위치로 이동
+		window.scrollTo(0, scrollPosition);
+
+		// $('body').removeClass('scrollLock');
 		$("#sitemap-wrap").hide();
 		$(".sitemap-open-btn").focus();
 		return false;

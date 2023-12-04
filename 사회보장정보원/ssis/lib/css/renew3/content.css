@@ -154,23 +154,24 @@ ol.number > li { list-style:decimal; padding:5px 0 5px 10px; text-align:left; co
 .path-wrap a{position: relative; padding-right: 14px; margin-right: 10px; font-size: 16px; color: #303030;}
 .path-wrap a::after{content: ''; display: inline-block; width: 4px; height: 4px; background-color: #BDBDBD; border-radius: 50%; position: absolute; right: 0; top: 6px;}
 
+/* // wbz20231201 */
 .contentNav #title_line_ul { position:absolute; right:0; top:115px}
 .contentNav #title_line_ul li a{ display:block; width:100%; height:100%; background:transparent 50% 50% no-repeat; text-indent:-9999px}
-.contentNav #title_line_ul li { float:left; margin-left:10px; width:42px; height:42px; text-align:center; background:#fff; border:1px solid #cecece; border-radius:100%}
+.contentNav #title_line_ul li { float:left; margin-left:10px; width:42px; height:42px; text-align:center; background:#fff; border:1px solid #DBDBDB; border-radius:100%}
 .contentNav #title_line_ul li.t1.t1-pc{ display:block}
 .contentNav #title_line_ul li.t1.t1-m{ display:none}
-.contentNav #title_line_ul li:hover { border-color:#0059a5; -webkit-transition:.3s; -moz-transition:.3s; -o-transition:.3s; transition:.3s}
+.contentNav #title_line_ul li:hover { border-color:#2E6BD7; -webkit-transition:.3s; -moz-transition:.3s; -o-transition:.3s; transition:.3s}
 .contentNav #title_line_ul li img{ mix-blend-mode:hard-light}
-.contentNav #title_line_ul li.t3 a{ background-image:url(../../../images/renew3/common/share-facebook.png)}
-.contentNav #title_line_ul li.t4 a{ background-image:url(../../../images/renew3/common/share-twitter.png)}
-.contentNav #title_line_ul li.t5 a{ background-image:url(../../../images/renew3/common/share-link.png)}
-.contentNav #title_line_ul li.t6 a{ background-image:url(../../../images/renew3/common/share-print.png)}
-.contentNav #title_line_ul li.t7 a{ background-image:url(../../../images/renew3/common/share-kakao.png)}
-.contentNav #title_line_ul li.t3:hover a{background-image: url(../../../images/renew3/common/share-facebook-on.png);}
-.contentNav #title_line_ul li.t4:hover a{ background-image:url(../../../images/renew3/common/share-twitter-on.png)}
-.contentNav #title_line_ul li.t5:hover a{ background-image:url(../../../images/renew3/common/share-link-on.png)}
-.contentNav #title_line_ul li.t6:hover a{ background-image:url(../../../images/renew3/common/share-print-on.png)}
-.contentNav #title_line_ul li.t7:hover a{ background-image:url(../../../images/renew3/common/share-kakao-on.png)}
+.contentNav #title_line_ul li.t3 a{ background-image:url(../../../images/renew3/common/share-facebook.svg)}
+.contentNav #title_line_ul li.t4 a{ background-image:url(../../../images/renew3/common/share-twitter.svg)}
+.contentNav #title_line_ul li.t5 a{ background-image:url(../../../images/renew3/common/share-link.svg)}
+.contentNav #title_line_ul li.t6 a{ background-image:url(../../../images/renew3/common/share-print.svg)}
+.contentNav #title_line_ul li.t7 a{ background-image:url(../../../images/renew3/common/share-kakao.svg)}
+.contentNav #title_line_ul li.t3:hover a{background-image: url(../../../images/renew3/common/share-facebook-on.svg);}
+.contentNav #title_line_ul li.t4:hover a{ background-image:url(../../../images/renew3/common/share-twitter-on.svg)}
+.contentNav #title_line_ul li.t5:hover a{ background-image:url(../../../images/renew3/common/share-link-on.svg)}
+.contentNav #title_line_ul li.t6:hover a{ background-image:url(../../../images/renew3/common/share-print-on.svg)}
+.contentNav #title_line_ul li.t7:hover a{ background-image:url(../../../images/renew3/common/share-kakao-on.svg)}
 .subContent { position:relative; z-index:1; margin-top:37px; border-bottom:1px solid #e1e6ea; background:#fff}
 
 /* //웹비즈 수정 231013 */
