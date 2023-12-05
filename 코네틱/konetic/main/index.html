@@ -1027,19 +1027,36 @@
 					<li><a href="#none">1:1문의</a></li>
 				</ul>
 			</div>
-			<div class="f-logo">
-				<a href="https://www.keiti.re.kr" class="ico logo-keiti" target="_blank"
-					title="KEITI 한국환경산업기술원 새창 바로가기"><span class="blind">KEITI 한국환경산업기술원 이동</span></a>
+			<div class="f-middle">
+				<div class="f-logo">
+					<a href="https://www.keiti.re.kr" class="ico logo-keiti" target="_blank"
+						title="KEITI 한국환경산업기술원 새창 바로가기"><span class="blind">KEITI 한국환경산업기술원 이동</span></a>
+				</div>
+				<script>
+					function familySiteTitleChange() {
+						var familySiteTitle = $("#familyLink option:selected").text() + " 이동";
+						$("#familyLinkBtn").attr("title", familySiteTitle);
+					}
+	
+					function goFamilySite() {
+						var url = $("#familyLink").val();
+						window.open(url);
+					}
+				</script>
+				<label for="familyLink"><span class="blind">관련사이트 바로가기 선택</span></label>
+				<select id="familyLink" name="familyLink" class="f-family-link" onchange="familySiteTitleChange()">
+					<option value="">관련사이트 바로가기</option>
+					<option value="https://www.keiti.re.kr">한국환경산업기술원</option>
+					<option value="https://www.apec-vc.com">ESTEN</option>
+					<option value="https://konetic.ecoedu.go.kr">사이버환경실무교육</option>
+					<option value="http://stat.me.go.kr">환경통계포털</option>
+					<!-- 	<option value="https://www.apec-vc.com">APEC-VC KOREA</option> -->
+					<option value="https://ehtis.or.kr">환경보건종합정보시스템</option>
+					<option value="https://ecoplus.keiti.re.kr:9443">에코플러스</option>
+				</select>
+				<button id="familyLinkBtn" class="bt_search_mini" onclick="goFamilySite()" title="새창열림">이동</button>
+				<!-- /접근성 04.07 수정 -->
 			</div>
-			<!-- 인증마크 -->
-			<div class="f-mark">
-				<a title="pdf 파일보기" href="/fileDown/2023-0629 정보통신접근성 품질인증서-국가환경산업기술정보시스템.pdf" target="_blank">
-					<img class="wa" alt="(사)한국장애인단체총연합회 한국웹접근성인증편가원 웹 접근성 우수사이트 인증마크(WA인증마크)"
-						src="../images/wa_230506.png" width="120px" height="84px" />
-				</a>
-				<img src="../images/mark1_eprivacy.png" style="cursor:pointer;margin-top:6px;height:72px;" />
-			</div>
-			<!-- /인증마크 -->
 			<div class="f-company">
 				<strong class="blind">주소 :</strong>
 				<address>(우) 03367 서울시 은평구 진흥로 215 한국환경산업기술원</address>
@@ -1047,6 +1064,15 @@
 				<a href="tel:02-2284-1191">02-2284-1191</a>, <a href="tel:02-2284-1171">02-2284-1171(해외정보)</a>
 				<p class="copyright">COPYRIGHT ⓒ 2021 KONETIC All rights reserved.</p>
 			</div>
+			<!-- 인증마크 -->
+			<div class="f-mark">
+				<a title="pdf 파일보기" href="/fileDown/2023-0629 정보통신접근성 품질인증서-국가환경산업기술정보시스템.pdf" target="_blank">
+					<img class="wa" alt="(사)한국장애인단체총연합회 한국웹접근성인증편가원 웹 접근성 우수사이트 인증마크(WA인증마크)"
+						src="../images/wa_230506.png" width="120px" height="84px" />
+				</a>
+				<img class="eprivacy" src="../images/mark1_eprivacy.png" style="cursor:pointer;margin-top:6px;height:72px;" />
+			</div>
+			<!-- /인증마크 -->
 			<!-- 소셜미디어 -->
 			<!-- 접근성 04.07 수정 -->
 			<div class="f-sns">
@@ -1056,30 +1082,6 @@
 				<!-- <a href="https://instagram.com" class="ico instargram" target="_blank">인스타그램 새창 바로가기</a>  -->
 			</div>
 			<!-- /소셜미디어 -->
-			<script>
-				function familySiteTitleChange() {
-					var familySiteTitle = $("#familyLink option:selected").text() + " 이동";
-					$("#familyLinkBtn").attr("title", familySiteTitle);
-				}
-
-				function goFamilySite() {
-					var url = $("#familyLink").val();
-					window.open(url);
-				}
-			</script>
-			<label for="familyLink"><span class="blind">관련사이트 바로가기 선택</span></label>
-			<select id="familyLink" name="familyLink" class="f-family-link" onchange="familySiteTitleChange()">
-				<option value="">관련사이트 바로가기</option>
-				<option value="https://www.keiti.re.kr">한국환경산업기술원</option>
-				<option value="https://www.apec-vc.com">ESTEN</option>
-				<option value="https://konetic.ecoedu.go.kr">사이버환경실무교육</option>
-				<option value="http://stat.me.go.kr">환경통계포털</option>
-				<!-- 	<option value="https://www.apec-vc.com">APEC-VC KOREA</option> -->
-				<option value="https://ehtis.or.kr">환경보건종합정보시스템</option>
-				<option value="https://ecoplus.keiti.re.kr:9443">에코플러스</option>
-			</select>
-			<button id="familyLinkBtn" class="bt_search_mini" onclick="goFamilySite()" title="새창열림">이동</button>
-			<!-- /접근성 04.07 수정 -->
 		</div>
 	</footer>
 	<!--  //footer -->

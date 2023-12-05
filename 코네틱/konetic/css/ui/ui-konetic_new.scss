@@ -1,3 +1,7 @@
+body {
+    color: #222;
+}
+
 // Primary Color
 $primary-color1: #0c9194;
 $primary-color2: #00b780;
@@ -791,14 +795,84 @@ $mobile-space: 16px;
 @media screen and (max-width: 1440px) {
     .wrap-footer {
         &.new {
+            & > .inner {
+                padding: 0 16px 40px;
+            }
+            .f-family-slide {
+                .inner {
+                    padding-top: 16px;
+                }
+            }
+            .f-link {
+                margin: 0 -16px;
+                padding: 17px 16px 23px;
+                background-color: #f9f9f9;
+                ul {
+                    display: flex;
+                    gap: 16px 47px;
+                    flex-wrap: wrap;
+                    li {
+                        &::before {
+                            content: none;
+                        }
+                        a {
+                            margin-right: 0;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+            .f-middle{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
             .f-logo {
-                top: 20px;
+                position: initial;
+                display: inline-block;
+            }
+            .f-company {
+                margin-top: 20px;
+                color: #222;
+                font-weight: 400;
+                .copyright {
+                    color: #666;
+                }
+            }
+            .f-family-link {
+                flex: 0 0 auto;
+                position: initial;
+                border-radius: 3px;
+                color: #222;
+                border-color: #ddd;
+                max-width: 187px;
+                width: 100%;
+                height: 46px;
+                padding-left: 14px;
+                padding-right: 26px;
+                background: url('../../images/ico/ico-sub-menu-new.svg') no-repeat right 14px center;
+            }
+            .f-mark{
+                display: inline-block;
+                vertical-align: middle;
+                .wa{
+                    width: 60px;
+                    height: 42px;
+                }
+                .eprivacy{
+                    height: 36px !important;
+                }
+            }
+            .f-sns {
+                position: initial;
+                display: inline-block;
             }
         }
     }
 }
 
-/* 메인 페이지 */
+// 메인
 .main {
     padding-top: 110px;
     .main_visual {
@@ -1154,7 +1228,7 @@ $mobile-space: 16px;
                             width: 100%;
                             height: 100%;
                             display: block;
-                            border-top: 1px solid #ddd;
+                            border-top: 1px solid #666;
                             padding-top: 34px;
                             display: flex;
                             gap: 36px;
@@ -1252,7 +1326,6 @@ $mobile-space: 16px;
     }
 }
 
-/* Mobile */
 @media screen and (max-width: 1440px) {
     .main {
         padding-top: 60px;
@@ -1345,7 +1418,7 @@ $mobile-space: 16px;
                             left: 0;
                         }
                     }
-                }                
+                }
             }
             .board_wrap {
                 gap: 32px;
@@ -1576,11 +1649,12 @@ $mobile-space: 16px;
                                 padding-top: 20px;
                                 flex-direction: column;
                                 gap: 0;
+                                border-width: 2px;
                                 li {
                                     width: 100%;
-                                    border-bottom: 1px solid #ddd;
+                                    border-bottom: 1px solid #666;
                                     margin-bottom: 30px;
-                                    padding-bottom: 20px;
+                                    padding-bottom: 12px;
                                     &:nth-child(2) {
                                         display: block;
                                     }
@@ -1593,8 +1667,8 @@ $mobile-space: 16px;
                                         padding-top: 16px;
                                     }
                                     .list_btm {
-                                        padding-top: 10px;
-                                        margin-top: 10px;
+                                        padding-top: 14px;
+                                        margin-top: 14px;
                                     }
                                 }
                             }
