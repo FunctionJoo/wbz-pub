@@ -233,6 +233,19 @@
 .wrap-header.new .h-sitemap {
   z-index: 999;
 }
+.wrap-header.new .h-sitemap .depth2 > li {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.wrap-header.new .h-sitemap .depth2 > li::before {
+  content: none;
+}
+.wrap-header.new .h-sitemap .depth2 li.current a {
+  border-bottom: 0;
+}
+.wrap-header.new .h-sitemap .depth2 li a:hover, .wrap-header.new .h-sitemap .depth2 li a:focus {
+  border-bottom: 0;
+}
 .wrap-header.new .h-sitemap .menu-header {
   padding: 30px 0 32px;
   height: auto;
@@ -268,45 +281,22 @@
   font-size: 24px;
   width: 270px;
 }
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap {
-  display: flex;
-  width: 100%;
-  gap: 40px;
-}
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth2 {
-  flex: 1;
-  width: 100%;
-}
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth2 .sitemap_depth2_tit {
-  width: 100%;
-  display: block;
-  background: #f9f9f9;
-  border-radius: 3px;
-  height: 50px;
-  line-height: 48px;
-  font-size: 18px;
-  color: #0c9194;
-  padding: 0 20px;
-}
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth2 .sitemap_depth2_tit.has_depth {
-  background: #f9f9f9 url("../../images/ico/has_depth.svg") no-repeat right 20px center;
-}
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth3 {
-  margin-top: 9px;
-  margin-left: 20px;
+.wrap-header.new .h-sitemap .menu-body .sitemap_depth3 {
+  padding-top: 9px;
+  padding-left: 20px;
   flex-direction: column;
 }
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth3 > li:hover > a, .wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth3 > li.on > a {
+.wrap-header.new .h-sitemap .menu-body .sitemap_depth3 > li:hover > a, .wrap-header.new .h-sitemap .menu-body .sitemap_depth3 > li.on > a {
   color: #0c9194;
 }
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth3 > li a {
+.wrap-header.new .h-sitemap .menu-body .sitemap_depth3 > li a {
   position: relative;
   display: block;
   font-weight: 500;
   font-size: 16px;
   padding: 5px 0 5px 10px;
 }
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth3 > li a::before {
+.wrap-header.new .h-sitemap .menu-body .sitemap_depth3 > li a::before {
   content: "";
   display: inline-block;
   width: 3px;
@@ -317,15 +307,15 @@
   left: 3px;
   top: 17px;
 }
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth4 > li:hover > a, .wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth4 > li.on > a {
+.wrap-header.new .h-sitemap .menu-body .sitemap_depth4 > li:hover > a, .wrap-header.new .h-sitemap .menu-body .sitemap_depth4 > li.on > a {
   color: #0c9194;
 }
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth4 > li a {
-  margin-left: 14px;
+.wrap-header.new .h-sitemap .menu-body .sitemap_depth4 > li a {
+  margin-left: 10px;
   font-weight: 400;
-  padding: 2px 0 2px 5px;
+  padding: 2px 0 2px 9px;
 }
-.wrap-header.new .h-sitemap .menu-body .sitemap_depth2_wrap .sitemap_depth4 > li a::before {
+.wrap-header.new .h-sitemap .menu-body .sitemap_depth4 > li a::before {
   content: "";
   display: inline-block;
   width: 2px;
@@ -337,6 +327,36 @@
   top: 15px;
 }
 
+@media screen and (min-width: 1440px) {
+  .wrap-header.new .h-sitemap .depth1 > li > h2, .wrap-header.new .h-sitemap .depth1 > li > a {
+    border-bottom: 0;
+  }
+  .wrap-header.new .h-sitemap .depth2 {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+  }
+  .wrap-header.new .h-sitemap .depth2 > li {
+    flex: 1;
+  }
+  .wrap-header.new .h-sitemap .depth2 > li > button, .wrap-header.new .h-sitemap .depth2 > li > a, .wrap-header.new .h-sitemap .depth2 > li > strong {
+    width: 100%;
+    display: block;
+    background: #f9f9f9;
+    border-radius: 3px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 18px;
+    color: #0c9194;
+    padding: 0 20px;
+  }
+  .wrap-header.new .h-sitemap .depth2 > li > strong {
+    background: #f9f9f9 url("../../images/ico/has_depth.svg") no-repeat right 16px center;
+  }
+  .wrap-header.new .h-sitemap .menu-body .sitemap_li {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1440px) {
   .wrap-header.new {
     background-image: none;

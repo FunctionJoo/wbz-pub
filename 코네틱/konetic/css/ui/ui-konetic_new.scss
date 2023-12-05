@@ -348,6 +348,28 @@ $mobile-space: 16px;
         }
         .h-sitemap {
             z-index: 999;
+            .depth2 {
+                & > li {
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    &::before {
+                        content: none;
+                    }
+                }
+                li {
+                    &.current {
+                        a {
+                            border-bottom: 0;
+                        }
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
             .menu-header {
                 padding: 30px 0 32px;
                 height: auto;
@@ -382,84 +404,105 @@ $mobile-space: 16px;
                         width: 270px;
                     }
                 }
-                .sitemap_depth2_wrap {
-                    display: flex;
-                    width: 100%;
-                    gap: 40px;
-                    .sitemap_depth2 {
-                        flex: 1;
-                        width: 100%;
-                        .sitemap_depth2_tit {
-                            width: 100%;
+                .sitemap_depth3 {
+                    padding-top: 9px;
+                    padding-left: 20px;
+                    flex-direction: column;
+                    & > li {
+                        &:hover,
+                        &.on {
+                            & > a {
+                                color: $primary-color1;
+                            }
+                        }
+                        a {
+                            position: relative;
                             display: block;
-                            background: #f9f9f9;
-                            border-radius: 3px;
-                            height: 50px;
-                            line-height: 48px;
-                            font-size: 18px;
-                            color: $primary-color1;
-                            padding: 0 20px;
-                            &.has_depth {
-                                background: #f9f9f9 url("../../images/ico/has_depth.svg") no-repeat right 20px center;
+                            font-weight: 500;
+                            font-size: 16px;
+                            padding: 5px 0 5px 10px;
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                width: 3px;
+                                height: 3px;
+                                border-radius: 50%;
+                                background-color: $primary-color1;
+                                position: absolute;
+                                left: 3px;
+                                top: 17px;
                             }
                         }
                     }
-                    .sitemap_depth3 {
-                        margin-top: 9px;
-                        margin-left: 20px;
-                        flex-direction: column;
-                        & > li {
-                            &:hover,
-                            &.on {
-                                & > a {
-                                    color: $primary-color1;
-                                }
+                }
+                .sitemap_depth4 {
+                    & > li {
+                        &:hover,
+                        &.on {
+                            & > a {
+                                color: $primary-color1;
                             }
-                            a {
-                                position: relative;
-                                display: block;
-                                font-weight: 500;
-                                font-size: 16px;
-                                padding: 5px 0 5px 10px;
-                                &::before {
-                                    content: "";
-                                    display: inline-block;
-                                    width: 3px;
-                                    height: 3px;
-                                    border-radius: 50%;
-                                    background-color: $primary-color1;
-                                    position: absolute;
-                                    left: 3px;
-                                    top: 17px;
-                                }
+                        }
+                        a {
+                            margin-left: 10px;
+                            font-weight: 400;
+                            padding: 2px 0 2px 9px;
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                width: 2px;
+                                height: 2px;
+                                border-radius: 50%;
+                                background-color: #222;
+                                position: absolute;
+                                left: 3px;
+                                top: 15px;
                             }
                         }
                     }
-                    .sitemap_depth4 {
-                        & > li {
-                            &:hover,
-                            &.on {
-                                & > a {
-                                    color: $primary-color1;
-                                }
-                            }
-                            a {
-                                margin-left: 14px;
-                                font-weight: 400;
-                                padding: 2px 0 2px 5px;
-                                &::before {
-                                    content: "";
-                                    display: inline-block;
-                                    width: 2px;
-                                    height: 2px;
-                                    border-radius: 50%;
-                                    background-color: #222;
-                                    position: absolute;
-                                    left: 3px;
-                                    top: 15px;
-                                }
-                            }
-                        }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrap-header {
+        &.new {
+            .h-sitemap {
+                .depth1 {
+                    & > li > h2,
+                    & > li > a {
+                        border-bottom: 0;
+                    }
+                }
+                .depth2 {
+                    width: 100%;
+                    display: flex;
+                    gap: 40px;
+                    & > li {
+                        flex: 1;
+                    }
+                    & > li > button,
+                    & > li > a,
+                    & > li > strong {
+                        width: 100%;
+                        display: block;
+                        background: #f9f9f9;
+                        border-radius: 3px;
+                        height: 50px;
+                        line-height: 48px;
+                        font-size: 18px;
+                        color: $primary-color1;
+                        padding: 0 20px;
+                    }
+                    & > li > strong {
+                        background: #f9f9f9 url("../../images/ico/has_depth.svg") no-repeat right 16px center;
+                    }
+                }
+                .menu-body {
+                    .sitemap_li {
+                        width: 100%;
                     }
                 }
             }
@@ -613,20 +656,6 @@ $mobile-space: 16px;
                         & + .sitemap_depth2 {
                             margin-top: 0;
                         }
-                        // .sitemap_depth2_tit {
-                        //     width: 100%;
-                        //     display: block;
-                        //     background: #f9f9f9;
-                        //     border-radius: 3px;
-                        //     height: 50px;
-                        //     line-height: 48px;
-                        //     font-size: 18px;
-                        //     color: $text-color1;
-                        //     padding: 0 20px;
-                        //     &.has_depth {
-                        //         background: #f9f9f9 url("../../images/ico/has_depth.svg") no-repeat right 20px center;
-                        //     }
-                        // }
                     }
                     .sitemap_depth3 {
                         padding: 6px 0 14px 20px;
