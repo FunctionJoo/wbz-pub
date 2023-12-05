@@ -382,9 +382,10 @@ body {
     max-width: 1400px;
   }
   .wrap-header.new .ico.logo {
-    width: 103px;
-    height: 27px;
-    background-size: 605px;
+    width: 104px;
+    height: 29px;
+    background-size: 610px;
+    margin-top: 2px;
   }
   .wrap-header.new .hd_top {
     display: none;
@@ -474,6 +475,12 @@ body {
     font-size: 18px;
     line-height: 28px;
   }
+  .wrap-header.new .h-sitemap .menu-header p .bt {
+    border: 0;
+    background: #fff;
+    color: #222;
+    font-weight: 400;
+  }
   .wrap-header.new .h-sitemap .menu-header ul {
     position: initial;
     display: flex;
@@ -485,6 +492,7 @@ body {
   }
   .wrap-header.new .h-sitemap .menu-header ul li a {
     display: block;
+    line-height: 50px;
     width: 100%;
     height: 100%;
     background-color: #00b780;
@@ -521,7 +529,7 @@ body {
     margin-top: 0;
   }
   .wrap-header.new .h-sitemap .menu-body .sitemap_depth3 {
-    padding: 6px 0 14px 20px;
+    padding: 13px 0 14px 20px;
     border-bottom: 1px solid #ddd;
     flex-direction: column;
   }
@@ -530,7 +538,7 @@ body {
   }
   .wrap-header.new .h-sitemap .menu-body .sitemap_depth3 > li a {
     display: block;
-    padding: 6px 0;
+    padding: 7px 0;
     font-size: 16px;
     line-height: 1.2;
   }
@@ -541,7 +549,8 @@ body {
     color: #0c9194;
   }
   .wrap-header.new .h-sitemap .menu-body .sitemap_depth4 > li a {
-    padding: 3px 0 3px 10px;
+    margin-left: 0;
+    padding: 5px 0 5px 10px;
     font-weight: 400;
     position: relative;
   }
@@ -1383,7 +1392,6 @@ body {
   .main .main_visual .quick {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
-    padding: 0;
   }
   .main .main_visual .quick::after, .main .main_visual .quick::before {
     content: none;
@@ -1393,11 +1401,18 @@ body {
     padding: 8% 6%;
     border-bottom: 1px solid #ddd;
   }
+  .main .main_visual .quick li a::before {
+    width: 36px;
+    height: 36px;
+  }
   .main .main_visual .quick li:nth-child(3n) a::after {
     display: block;
   }
   .main .main_visual .quick li:nth-child(2n) a::after {
     display: none;
+  }
+  .main .main_visual .quick li:nth-last-child(-n+2) a {
+    border-bottom: 0;
   }
   .main .main_sec .board_wrap .board_area {
     height: 600px;
@@ -1441,7 +1456,7 @@ body {
     font-size: 16px;
   }
   .main .main_sec .board_wrap .banner {
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
