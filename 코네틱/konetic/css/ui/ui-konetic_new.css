@@ -272,14 +272,17 @@
 }
 .wrap-header.new .h-sitemap .menu-body .sitemap_li {
   display: flex;
+  margin: 0;
 }
 .wrap-header.new .h-sitemap .menu-body .sitemap_li + .sitemap_li {
   margin-top: 50px;
 }
 .wrap-header.new .h-sitemap .menu-body .sitemap_li h2 {
+  line-height: 1.8;
   font-weight: 500;
   font-size: 24px;
   width: 270px;
+  flex: 0 0 auto;
 }
 .wrap-header.new .h-sitemap .menu-body .sitemap_depth3 {
   padding-top: 9px;
@@ -335,6 +338,7 @@
     width: 100%;
     display: flex;
     gap: 40px;
+    padding: 0;
   }
   .wrap-header.new .h-sitemap .depth2 > li {
     flex: 1;

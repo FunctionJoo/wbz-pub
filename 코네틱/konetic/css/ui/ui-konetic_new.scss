@@ -395,13 +395,16 @@ $mobile-space: 16px;
                 padding: 37px 0 160px;
                 .sitemap_li {
                     display: flex;
+                    margin: 0;
                     & + .sitemap_li {
                         margin-top: 50px;
                     }
                     h2 {
+                        line-height: 1.8;
                         font-weight: 500;
                         font-size: 24px;
                         width: 270px;
+                        flex: 0 0 auto;
                     }
                 }
                 .sitemap_depth3 {
@@ -480,6 +483,7 @@ $mobile-space: 16px;
                     width: 100%;
                     display: flex;
                     gap: 40px;
+                    padding: 0;
                     & > li {
                         flex: 1;
                     }
