@@ -318,7 +318,7 @@ div.ui-datepicker .ui-datepicker-next {
 }
 /* Icon */
 .ico {
- display: inline-block; vertical-align: top; background-image: url("../../../images/sprite.png"); background-repeat: no-repeat; background-position: 0 0;
+ display: inline-block; vertical-align: top; background-image: url("../../images/sprite.png"); background-repeat: no-repeat; background-position: 0 0;
 }
 
 .ico.logo {
@@ -2990,7 +2990,7 @@ body.back:before {
 
 .wrap-footer .f-family-slide .slick-prev {
  overflow: hidden; position: absolute; top: 50%; left: -40px; width: 21px; height: 25px; text-indent: -999px;
- background: url("/images/sprite.png") no-repeat -421px -28px; transform: translateY(-50%);
+ background: url("../../images/sprite.png") no-repeat -421px -28px; transform: translateY(-50%);
 }
 
 .wrap-footer .f-family-slide .slick-prev:after {
@@ -2999,7 +2999,7 @@ body.back:before {
 
 .wrap-footer .f-family-slide .slick-next {
  overflow: hidden; position: absolute; top: 50%; right: -40px; width: 21px; height: 25px; text-indent: -999px;
- background: url("/images/sprite.png") no-repeat -441px -28px; transform: translateY(-50%);
+ background: url("../../images/sprite.png") no-repeat -441px -28px; transform: translateY(-50%);
 }
 
 .wrap-footer .f-family-slide .slick-next:after {
