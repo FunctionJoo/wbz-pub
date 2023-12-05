@@ -412,277 +412,111 @@
 					<span class="blind">전체메뉴</span>
 				</button>
 				<!-- 전체메뉴 -->
-				<nav class="h-sitemap" data-tooltip-con="sitemap" data-focus="allMenuBox" data-focus-prev="allMenuClose" tabindex="0" style="display:block;">
+				<nav class="h-sitemap" data-tooltip-con="sitemap" data-focus="allMenuBox" data-focus-prev="allMenuClose" tabindex="0" style="display: block;">
 					<div class="menu-header">
-						<div class="inner ">
-							<button type="button" class="ico m-close js-tooltip-close" data-focus="allMenuClose"
-								data-focus-next="allMenuBox"><span class="blind">전체메뉴 닫기</span></button>							
-								<div class="pc-only">
-									<h1>전체메뉴</h1>
-									<p>코네틱에서 제공하는 전체메뉴를 한눈에 보실 수 있습니다.</p>
-								</div>
-								<div class="mobile-only">
-									<h1>
-										<!-- 로그인 전 -->
-										<!-- <strong>
-											안녕하세요.
-										</strong> -->
-										<!-- 로그인 후 -->
-										<strong>
-											국내 가입 기업
-										</strong>
-									</h1>
-									<!-- 로그인 전 -->
-									<!-- <p>
-										회원가입 후 이용해주세요.
-									</p> -->
-									<!-- 로그인 후 -->
-									<p>
-										<span class="time topTimeArea">170:00</span> 
-										<a href="javascript:void(0);" class="bt xsmall primary resetTimeBtn">시간연장</a>
-									</p>
-									<ul>
-										<li><a href="javascript:void(0)" onclick="goLoginPage();">로그인</a></li>
-										<li><a href="#" class="join">회원가입</a></li>
-									</ul>
-								</div>
+						<div class="inner pc-only">
+							<h1><strong>전체</strong>메뉴</h1>
+							<p>코네틱에서 제공하는 <strong>전체메뉴</strong> 를 한눈에 보실 수 있습니다.</p>
+						</div>
+						<div class="inner mobile-only">
+							<h1>
+								<strong>
+									안녕하세요.
+								</strong>
+							</h1>
+							<p>
+								회원가입 후 이용해주세요.
+							</p>
+							<ul>
+								<li><a href="javascript:void(0)" onclick="goLoginPage();">로그인</a></li>
+								<li><a href="/user/cmmn/membJoin/joinStepOne.do">회원가입</a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="menu-body">
 						<div class="inner">
 							<ul class="depth1 menu">
-								<li class="sitemap_li">
-									<h2>국내 환경정보</h2>
+								<li>
+									<h2>환경기술</h2>
 									<ul class="depth2">
-										<li class="sitemap_depth2">
-											<strong>환경시장</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">환경뉴스</a>
-												</li>
-												<li>
-													<a href="#">환경시설</a>
-													<ul class="sitemap_depth4">
-														<li>
-															<a href="#">공사현황</a>
-														</li>
-														<li>
-															<a href="#">운영현황</a>
-														</li>
-														<li>
-															<a href="#">낙찰정보</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="#">환경분쟁사례</a>
-												</li>
-												<li>
-													<a href="#">기업정보</a>
-												</li>
-												<li>
-													<a href="#">통계정보</a>
-													<ul class="sitemap_depth4">
-														<li>
-															<a href="#">환경기술실태조사</a>
-														</li>
-														<li>
-															<a href="#">환경산업통계조사</a>
-														</li>
-													</ul>
-												</li>
+										<li>
+											<strong>R&D홍보관</strong>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/T/TA/TA007_L01.do','USR020209');">R&D 소개</a></li>
 											</ul>
 										</li>
-										<li class="sitemap_depth2">
-											<strong>환경기술</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">환경 R&D 안내</a>
-													<ul class="sitemap_depth4">
-														<li>
-															<a href="#">소개</a>
-														</li>
-														<li>
-															<a href="#">성과 전시 및 발표</a>
-														</li>
-														<li>
-															<a href="#">토양&middot;지하수 행사</a>
-														</li>
-														<li>
-															<a href="#">환경R&D 30년사</a>
-														</li>
-														<li>
-															<a href="#">R&D 스토리</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="#">환경 R&D 대표성과</a>
-													<ul class="sitemap_depth4">
-														<li>
-															<a href="#">우수성과20선</a>
-														</li>
-														<li>
-															<a href="#">기술거래 중개</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="#">특허정보</a>
-												</li>
-												<li>
-													<a href="#">인증기술</a>
-												</li>
-												<li>
-													<a href="#">박람회 출품기술</a>
-												</li>
+										<li>
+											<strong>알기쉬운 환경기술</strong>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/T/TB/TB002_L01.do','USR020703');">환경용어</a></li>
 											</ul>
 										</li>
-										<li class="sitemap_depth2">
-											<strong>심층분석</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">환경 연구보고서</a>
-												</li>
-												<li>
-													<a href="#">이슈 분석보고서</a>
-												</li>
+										<li>
+											<strong>기술동향</strong>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/T/TC/TC001_L01.do','USR020802');">특허</a></li>
 											</ul>
 										</li>
+										<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/T/TD/TD001_L01.do','USR020901');">환경기술통계</a></li>
 									</ul>
-								</li>
-								<li class="sitemap_li">
-									<h2>해외 환경정보</h2>
 									<ul class="depth2">
-										<li class="sitemap_depth2">
-											<strong>환경시장</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">환경뉴스</a>
-												</li>
-												<li>
-													<a href="#">기술정보</a>
-												</li>
-												<li>
-													<a href="#">규제 및 법률정보</a>
-												</li>
-												<li>
-													<a href="#">국가별 통합지표</a>
-												</li>
-												<li>
-													<a href="#">실시간 입찰정보</a>
-												</li>
+										<li>
+											<strong>환경시장정보</strong>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/P/PA/PA001_L01.do','USR031102');">전문보고서</a></li>
 											</ul>
 										</li>
-										<li class="sitemap_depth2">
-											<strong>심층분석</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">이슈 분석보고서</a>
-													<ul class="sitemap_depth4">
-														<li>
-															<a href="#">환경 인사이트</a>
-														</li>
-														<li>
-															<a href="#">분석보고서</a>
-														</li>
-													</ul>
-												</li>
+										<li>
+											<strong>환경시설</strong>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/P/PB/PB001_L01.do','USR031202');">공사현황</a></li>
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/P/PB/PB002_L01.do','USR031203');">운영현황</a></li>
 											</ul>
 										</li>
-										<li class="sitemap_depth2">
+										<li>
 											<strong>환경네트워크</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">행사/전시회 정보</a>
-												</li>
-												<li>
-													<a href="#">기업 및 기관 정보</a>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/P/PC/PC001_L01.do','USR031302');">기업</a></li>
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/P/PC/PC003_L01.do','USR031304');">기관</a></li>
+											</ul>
+										</li>
+										<li>
+											<strong>해외환경산업 전문정보</strong>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/P/PD/PD001_L01.do','USR031402');">환경 규제대응</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/P/PF/PF001_L01.do','USR031501');">환경산업통계</a>
+										<li>
+											<strong>국제환경동향</strong>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);"
+														onclick="javascript:fnGoUrl('/user/IECC/D/DA001_L01.do','USR031602');">정책동향</a>
 												</li>
 											</ul>
 										</li>
 									</ul>
-								</li>
-								<li class="sitemap_li">
-									<h2>취업/사업지원</h2>
 									<ul class="depth2">
-										<li class="sitemap_depth2">
-											<strong>기업지원사업</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">지원정보</a>
-												</li>
-												<li>
-													<a href="#">해외 진출 컨설팅</a>
-													<ul class="sitemap_depth4">
-														<li>
-															<a href="#">지원내용 및 신청방법</a>
-														</li>
-														<li>
-															<a href="#">자문위원구성</a>
-														</li>
-														<li>
-															<a href="#">자문분야</a>
-														</li>
-														<li>
-															<a href="#">승인 및 자문절차</a>
-														</li>
-														<li>
-															<a href="#">발간자료</a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li class="sitemap_depth2">
+										<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/J/JB/JB001_L01.do','USR070601');">기업지원사업</a>
+										<li>
 											<strong>취업정보</strong>
-											<ul class="sitemap_depth3">
-												<li>
-													<a href="#">구인정보</a>
-													<ul class="sitemap_depth4">
-														<li>
-															<a href="#">환경업종</a>
-														</li>
-														<li>
-															<a href="#">워크넷</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="#">구직정보</a>
-												</li>
-												<li>
-													<a href="#">환경교육자료</a>
-												</li>
+											<ul class="depth3">
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/J/JA/JA001_L01.do','USR120101');">구인정보</a></li>
+												<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/J/JA/JA002_L01.do','USR070803');">구직정보</a></li>
 											</ul>
 										</li>
-										<li class="sitemap_depth2">
-											<a href="#">환경데이터공모전(에코톤)</a>
-										</li>
+										<li><a href="javascript:void(0);" onclick="javascript:fnGoUrl('/user/J/JC/JC001_L01.do','USR070701');">행사/전시회</a></li>
 									</ul>
 								</li>
-								<li class="sitemap_li">
-									<h2>소식 알림</h2>
-									<ul class="depth2">
-										<li class="sitemap_depth2">
-											<a href="#">코네틱 소개</a>
-										</li>
-										<li class="sitemap_depth2">
-											<a href="#">코네틱 소식</a>
-										</li>
-										<li class="sitemap_depth2">
-											<a href="#">토론광장</a>
-										</li>
-										<li class="sitemap_depth2">
-											<a href="#">환경용어</a>
-										</li>
-									</ul>
-								</li>
-							</ul>							
+							</ul>
+							<!-- /사용자 메뉴 -->
 						</div>
 					</div>
+
+					<button type="button" class="ico m-close js-tooltip-close" data-focus="allMenuClose"
+						data-focus-next="allMenuBox"><span class="blind">전체메뉴 닫기</span></button>
 				</nav>
-				<!-- //전체메뉴 -->
+				<!-- /전체메뉴 -->
 			</div>
 		</div>
 	</header>
