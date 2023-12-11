@@ -44,6 +44,11 @@
 				color: $colorF;
 			}
 		}
+		&.type_sa {
+			button {
+				height: 50px;
+			}
+		}
 	}
 	.prd_sec {
 		margin-top: 40px;
@@ -565,6 +570,139 @@ body .grade {
 					background: #EEF3F9;
 					&:nth-of-type(2n) {
 						background: #ECEBF9;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+.sell_add {
+	.sa_noti {
+		background: #EEF3F9;
+		padding: 14px 30px;
+		ul {
+			li {
+				padding-left: 18px;
+				font-size: 14px;
+				background: url('../images/product/noti_i.svg') no-repeat left 0 top 5px;
+				+ li {
+					margin-top: 4px;
+				}
+			}
+		}
+		+ .prd_tab {
+			margin-top: 30px;
+		}
+	}
+
+	.sa_options {
+		table {
+			width: 100%;
+			border-spacing:0px;
+			border-collapse:collapse;
+			th, td {
+				font-size: 14px;
+				padding: 8px 10px;
+				border: 1px solid $colorD;
+			}
+			th {
+				background: $colorF6;
+				text-align: center;
+				width: 200px;
+				font-weight: 400;
+			}
+			td {
+				input {
+					width: 100%;
+					height: 34px;
+					border: 1px solid $colorD;
+					background: $colorF;
+					padding: 5px 10px;
+					&.type_price {
+						width: 200px;
+						font-size: 18px;
+						text-align: right;
+						font-family: $nunito;
+						font-weight: 700;
+					}
+					&:focus {
+						border-color: $point0;
+					}
+				}
+				.price_noti {
+					.price_num {
+						color: #7226A5;
+					}
+				}
+			}
+		}
+		.sa_game_sel {
+			position: relative;
+			width: 100%;
+			.sgs_sch_box {
+				position: relative;
+				button {
+					position: absolute;
+					top: 7px;
+					right: 10px;
+					width: 22px;
+					height: 22px;
+					background: url('../images/common/search_ico.svg') no-repeat;
+					border: 0 none;
+					font-size: 0;
+				}
+			}
+			.sgs_sch_lay {
+				position: absolute;
+				z-index: 8;
+				top: 100%;
+				height: 323px;
+				left: 0;
+				width: 100%;
+				background: #fff;
+				border: 1px solid $point0;
+				padding: 14px 4px;
+				display: flex;
+				.ssl_section {
+					width: 28%;
+					padding: 0 10px;
+					+ .ssl_section {
+						border-left: 1px solid $colorD;
+					}
+					&.sec3 {
+						width: 44%;
+					}
+				}
+				ul {
+					height: 100%;
+					@include scroll;
+					li {
+						+ li {
+							margin-top: 10px;
+						}
+						label {
+							display: block;
+							position: relative;
+							cursor: pointer;
+							input {
+								position: absolute;
+								width: 0;
+								height: 0;
+								opacity: 0;
+								&:checked + .label_after {
+									color: $point0;
+									color: $test-color;
+								}
+							}
+							.label_after {
+								font-size: 14px;
+							}
+						}
 					}
 				}
 			}

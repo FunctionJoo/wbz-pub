@@ -42,6 +42,9 @@
   background-color: #014099;
   color: #FFFFFF;
 }
+#product .prd_tab.type_sa button {
+  height: 50px;
+}
 #product .prd_sec {
   margin-top: 40px;
 }
@@ -518,4 +521,129 @@ body .grade.grade5 {
   body:not(.is_pc) .prd_list_wrap.type_prem tbody tr:nth-of-type(2n) {
     background: #ECEBF9;
   }
+}
+
+.sell_add .sa_noti {
+  background: #EEF3F9;
+  padding: 14px 30px;
+}
+.sell_add .sa_noti ul li {
+  padding-left: 18px;
+  font-size: 14px;
+  background: url("../images/product/noti_i.svg") no-repeat left 0 top 5px;
+}
+.sell_add .sa_noti ul li + li {
+  margin-top: 4px;
+}
+.sell_add .sa_noti + .prd_tab {
+  margin-top: 30px;
+}
+.sell_add .sa_options table {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+.sell_add .sa_options table th, .sell_add .sa_options table td {
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #D3D3D3;
+}
+.sell_add .sa_options table th {
+  background: #F6F6F6;
+  text-align: center;
+  width: 200px;
+  font-weight: 400;
+}
+.sell_add .sa_options table td input {
+  width: 100%;
+  height: 34px;
+  border: 1px solid #D3D3D3;
+  background: #FFFFFF;
+  padding: 5px 10px;
+}
+.sell_add .sa_options table td input.type_price {
+  width: 200px;
+  font-size: 18px;
+  text-align: right;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.sell_add .sa_options table td input:focus {
+  border-color: #014099;
+}
+.sell_add .sa_options table td .price_noti .price_num {
+  color: #7226A5;
+}
+.sell_add .sa_options .sa_game_sel {
+  position: relative;
+  width: 100%;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_box {
+  position: relative;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_box button {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/search_ico.svg") no-repeat;
+  border: 0 none;
+  font-size: 0;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay {
+  position: absolute;
+  z-index: 8;
+  top: 100%;
+  height: 323px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #014099;
+  padding: 14px 4px;
+  display: flex;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay .ssl_section {
+  width: 28%;
+  padding: 0 10px;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay .ssl_section + .ssl_section {
+  border-left: 1px solid #D3D3D3;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay .ssl_section.sec3 {
+  width: 44%;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul {
+  height: 100%;
+  overflow-y: auto;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul::-webkit-scrollbar {
+  width: 6px;
+  background: none;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 3px;
+  background: #C5C5C5;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul li + li {
+  margin-top: 10px;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul li label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul li label input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul li label input:checked + .label_after {
+  color: #014099;
+  color: #f55;
+}
+.sell_add .sa_options .sa_game_sel .sgs_sch_lay ul li label .label_after {
+  font-size: 14px;
 }/*# sourceMappingURL=product.css.map */
