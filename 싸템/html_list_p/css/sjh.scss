@@ -11215,6 +11215,11 @@ body{
 
 
 // 판매등록수정
+
+// Joo. 일반 판매 등록에 사용 하기 위해 일부 수정 합니다...
+// 의미없는 부모 클래스의 제한은 되도록 피해주세요
+// 또한 여러곳에 같은 속성이 들어간다면 이 역시 같은 속성값의 여러 선언은 피해주세요
+// 일반적으로 css가 이렇게 길어질 일이 잘 없습니다.
 #mypage{
     &.items_for_sale_rewrite{
         .my_cont{
@@ -11481,173 +11486,6 @@ body{
                 .title{
                     @include subtitle
                 }
-                .con_box{
-                    border: 1px solid #D3D3D3;
-                    height: 320px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 10px;
-                    .option_list{
-                        width: 50%;
-                        height: 100%;
-                        &:not(:last-child){
-                            border-right: 1px solid #D3D3D3;
-                        }
-                        &.premium{
-                            .option_top{
-                                padding-bottom: 31px;
-                            }
-                        }
-                        &.again{
-                            .option_top{
-                                padding-bottom: 19px;
-                            }
-                            .option_bottom{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: end;
-                                .detail_box{
-                                    &:not(:last-child){
-                                        margin-bottom: 12px;
-                                    }
-                                }
-                            }
-                        }
-                        .con_title{
-                            font-size: 15px;
-                            line-height: 21px;
-                            color: #113462;
-                            background-color: #EEF3F9;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 40px;
-                            border-bottom: 1px solid #D3D3D3;
-                        }
-                        .con_option{
-                            padding: 14px;
-                            height: calc(100% - 40px);
-                            .option_detail{
-                                &.option_top{
-                                    position: relative;
-                                    border-bottom: 1px dashed #113462;
-                                    &::before{
-                                        content: "Or";
-                                        width: 34px;
-                                        background-color: #fff;
-                                        color: #113462;
-                                        position: absolute;
-                                        top: 100%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%);
-                                        text-align: center;
-                                    }
-                                    .text_box{
-                                        margin-bottom: 20px;
-                                        span{
-                                            font-size: 13px;
-                                            line-height: 21px;
-                                            em{
-                                                font-weight: 400;
-                                                color: #666666;
-                                            }
-                                        }
-                                    }
-                                    .option_box{
-                                        display: flex;
-                                        .select_box{
-                                            @include selectBox();
-                                            width: 200px;
-                                        }
-                                        span{
-                                            font-size: 13px;
-                                            line-height: 21px;
-                                        }
-                                        .price_text_box{
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: center;
-                                            align-items: center;
-                                            span{
-                                                font-size: 13px;
-                                                line-height: 21px;
-                                                &:not(:last-child){
-                                                    margin-bottom: 5px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                &.option_bottom{
-                                    padding-top: 30px;
-                                    .detail_box{
-                                        display: flex;
-                                        justify-content: start;
-                                        align-items: center;
-                                        span{
-                                            font-size: 14px;
-                                            line-height: 21px;
-                                            em{
-                                                font-weight: 400;
-                                                color: #014099;
-                                            }
-                                            strong{
-                                                font-weight: 400;
-                                                color: #014099;
-                                            }
-                                        }
-                                        .option_box{
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            .select_box{
-                                                @include selectBox();
-                                                margin-left: 10px;
-                                                width: 130px;
-                                            }
-                                            span{
-                                                font-size: 14px;
-                                                line-height: 21px;
-                                                em{
-                                                    font-weight: 400;
-                                                    color: #014099;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .con_total{
-                    height: 60px;
-                    border: 1px solid #014099;
-                    background-color: #EEF3F9;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 0 20px;
-                    .con_title{
-                        font-family: $nunito;
-                        font-size: 16px;
-                        line-height: 21px;
-                        font-weight: 500;
-                    }
-                    .total_price{
-                        font-size: 14px;
-                        line-height: 21px;
-                        strong{
-                            font-family: $nunito;
-                            font-size: 24px;
-                            line-height: 21px;
-                            font-weight: 600;
-                            color: #014099;
-                            margin-right: 4px;
-                        }
-                    }
-                }
             }
             .button_box{
                 display: flex;
@@ -11674,6 +11512,176 @@ body{
                         background-color: #434343;
                     }
                 }
+            }
+        }
+    }
+}
+
+.items_sale_additional{
+    .con_box{
+        border: 1px solid #D3D3D3;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        .option_list{
+            width: 50%;
+            height: 100%;
+            &:not(:last-child){
+                border-right: 1px solid #D3D3D3;
+            }
+            &.premium{
+                .option_top{
+                    padding-bottom: 31px;
+                }
+            }
+            &.again{
+                .option_top{
+                    padding-bottom: 19px;
+                }
+                .option_bottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    .detail_box{
+                        &:not(:last-child){
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+            }
+            .con_title{
+                font-size: 15px;
+                line-height: 21px;
+                color: #113462;
+                background-color: #EEF3F9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                border-bottom: 1px solid #D3D3D3;
+            }
+            .con_option{
+                padding: 14px;
+                height: calc(100% - 40px);
+                .option_detail{
+                    &.option_top{
+                        position: relative;
+                        border-bottom: 1px dashed #113462;
+                        &::before{
+                            content: "Or";
+                            width: 34px;
+                            background-color: #fff;
+                            color: #113462;
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-align: center;
+                        }
+                        .text_box{
+                            margin-bottom: 20px;
+                            span{
+                                font-size: 13px;
+                                line-height: 21px;
+                                em{
+                                    font-weight: 400;
+                                    color: #666666;
+                                }
+                            }
+                        }
+                        .option_box{
+                            display: flex;
+                            .select_box{
+                                @include selectBox();
+                                width: 200px;
+                            }
+                            span{
+                                font-size: 13px;
+                                line-height: 21px;
+                            }
+                            .price_text_box{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                span{
+                                    font-size: 13px;
+                                    line-height: 21px;
+                                    &:not(:last-child){
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.option_bottom{
+                        padding-top: 30px;
+                        .detail_box{
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            span{
+                                font-size: 14px;
+                                line-height: 21px;
+                                em{
+                                    font-weight: 400;
+                                    color: #014099;
+                                }
+                                strong{
+                                    font-weight: 400;
+                                    color: #014099;
+                                }
+                            }
+                            .option_box{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .select_box{
+                                    @include selectBox();
+                                    margin-left: 10px;
+                                    width: 130px;
+                                }
+                                span{
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    em{
+                                        font-weight: 400;
+                                        color: #014099;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .con_total{
+        height: 60px;
+        border: 1px solid #014099;
+        background-color: #EEF3F9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        .con_title{
+            font-family: $nunito;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 500;
+        }
+        .total_price{
+            font-size: 14px;
+            line-height: 21px;
+            strong{
+                font-family: $nunito;
+                font-size: 24px;
+                line-height: 21px;
+                font-weight: 700;
+                color: #014099;
+                margin-right: 4px;
             }
         }
     }
@@ -11794,90 +11802,6 @@ body{
                     .title{
                         margin-bottom: 15px;
                     }
-                    .con_box{
-                        height: auto;
-                        flex-direction: column;
-                        margin-bottom: 20px;
-                        .option_list{
-                            width: 100%;
-                            &:not(:last-child){
-                                border-right: none;
-                                border-bottom: 1px solid #D3D3D3;
-                            }
-                            &.premium{
-                                .option_top{
-                                    padding-bottom: 31px;
-                                }
-                            }
-                            &.again{
-                                .option_top{
-                                    padding-bottom: 19px;
-                                }
-                                .option_bottom{
-                                    align-items: start;
-                                    .detail_box{
-                                        &:not(:last-child){
-                                            margin-bottom: 12px;
-                                        }
-                                    }
-                                }
-                            }
-                            .con_option{
-                                padding: 15px;
-                                .option_detail{
-                                    &.option_top{
-                                        .option_box{
-                                            flex-direction: column;
-                                            .select_box{
-                                                width: 200px;
-                                                height: 36px;
-                                                margin-bottom: 10px;
-                                            }
-                                            .price_text_box{
-                                                align-items: start;
-                                            }
-                                        }
-                                    }
-                                    &.option_bottom{
-                                        .detail_box{
-                                            flex-direction: column;
-                                            align-items: start;
-                                            .option_box{
-                                                margin-top: 10px;
-                                                .select_box{
-                                                    margin-left: 0;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .con_total{
-                        height: 60px;
-                        border: 1px solid #014099;
-                        background-color: #EEF3F9;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 0 20px;
-                        .con_title{
-                            font-size: 16px;
-                            line-height: 21px;
-                            font-weight: 500;
-                        }
-                        .total_price{
-                            font-size: 14px;
-                            line-height: 21px;
-                            em{
-                                font-size: 24px;
-                                line-height: 21px;
-                                font-weight: 600;
-                                color: #014099;
-                            }
-                        }
-                    }
                 }
                 .button_box{
                     .button_list{
@@ -11885,6 +11809,92 @@ body{
                         height: 40px;
                         border-radius: 3px;
                     }
+                }
+            }
+        }
+    }
+    .items_sale_additional {
+        .con_box{
+            height: auto;
+            flex-direction: column;
+            margin-bottom: 20px;
+            .option_list{
+                width: 100%;
+                &:not(:last-child){
+                    border-right: none;
+                    border-bottom: 1px solid #D3D3D3;
+                }
+                &.premium{
+                    .option_top{
+                        padding-bottom: 31px;
+                    }
+                }
+                &.again{
+                    .option_top{
+                        padding-bottom: 19px;
+                    }
+                    .option_bottom{
+                        align-items: start;
+                        .detail_box{
+                            &:not(:last-child){
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+                .con_option{
+                    padding: 15px;
+                    .option_detail{
+                        &.option_top{
+                            .option_box{
+                                flex-direction: column;
+                                .select_box{
+                                    width: 200px;
+                                    height: 36px;
+                                    margin-bottom: 10px;
+                                }
+                                .price_text_box{
+                                    align-items: start;
+                                }
+                            }
+                        }
+                        &.option_bottom{
+                            .detail_box{
+                                flex-direction: column;
+                                align-items: start;
+                                .option_box{
+                                    margin-top: 10px;
+                                    .select_box{
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .con_total{
+            height: 60px;
+            border: 1px solid #014099;
+            background-color: #EEF3F9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            .con_title{
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 500;
+            }
+            .total_price{
+                font-size: 14px;
+                line-height: 21px;
+                em{
+                    font-size: 24px;
+                    line-height: 21px;
+                    font-weight: 600;
+                    color: #014099;
                 }
             }
         }
