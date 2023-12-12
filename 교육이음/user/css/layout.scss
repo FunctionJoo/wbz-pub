@@ -1,0 +1,177 @@
+@import "./utility.scss";
+
+/* -------- header -------- */
+#header {
+    position: relative;
+    &.on {
+        &::after {
+            display: block;
+            height: 300px;
+        }
+    }
+    &::after {
+        content: "";
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        width: 100%;
+        height: 0;
+        background: #fff;
+        box-shadow: 0px 5px 16px #0000000f;
+        border-top: 1px solid #dddddd;
+        transition: all 0.35s;
+    }
+    .inner {
+        max-width: 1300px;
+        margin: 0 auto;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hd-logo {
+        display: inline-block;
+        flex: 0 0 auto;
+        width: 178px;
+        height: 57px;
+        margin-top: 22px;
+        .logo-link {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: url("../images/common/img/logo_header.png") no-repeat center;
+            background-size: 100% auto;
+        }
+    }
+    .gnb {
+        flex: 1;
+        margin-left: 60px;
+        display: flex;
+        & > li {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% / 6);
+            &:hover,
+            &.on {
+                & > a {
+                    color: #459729;
+                }
+            }
+            &:hover {
+                & > a {
+                    &::after {
+                        width: 100%;
+                        height: 3px;
+                    }
+                }
+            }
+            & > a {
+                padding: 36px 0;
+                display: inline-block;
+                font-weight: 500;
+                font-size: 18px;
+                position: relative;
+                transition: all 0.15s;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    background: #459729;
+                    box-shadow: 0px 2px 2px #00000029;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    transition: all 0.15s;
+                }
+            }
+        }
+        .depth2 {
+            display: none;
+            height: 300px;
+            padding-top: 14px;
+            position: relative;
+            z-index: 100;
+            &.on {
+                display: block;
+            }
+            li {
+                a {
+                    display: block;
+                    padding: 8px 0;
+                    font-size: 16px;
+                    transition: all 0.15s;
+                    &:hover,
+                    &.on {
+                        color: #459729;
+                    }
+                }
+            }
+        }
+    }
+    .hd-utils {
+        margin: 19px 0 0 48px;
+        font-size: 0;
+        .link {
+            display: inline-block;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+            i {
+                display: block;
+                margin: 0 auto;
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                border: 1px solid #dddddd;
+                background-color: #f9f9f9;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 4px;
+            }
+            &.login {
+                &.on {
+                    i {
+                        background-color: #78b53a;
+                        background-image: url("../images/common/ico/hd_util_logout.svg");
+                    }
+                }
+                i {
+                    background-image: url("../images/common/ico/hd_util_login.svg");
+                }
+            }
+            &.join {
+                margin-left: 29px;
+                i {
+                    background-image: url("../images/common/ico/hd_util_join.svg");
+                }
+            }
+            &.my {
+                margin-left: 21px;
+                i {
+                    background-image: url("../images/common/ico/hd_util_my.svg");
+                }
+            }
+            &.notify {
+                margin-left: 21px;
+                &.on {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: #459729;
+                    }
+                }
+                i {
+                    background-image: url("../images/common/ico/hd_util_notify.svg");
+                }
+            }
+        }
+    }
+}
