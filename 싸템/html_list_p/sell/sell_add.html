@@ -248,6 +248,7 @@
 						<button type="button">아이템/게임머니/기타</button>
 					</div>
 					<div class="sa_options">
+						<div class="sa_sec_title">물품 기본정보</div>
 						<table>
 							<tr>
 								<th>카테고리</th>
@@ -384,18 +385,49 @@
 							</tr>
 							<tr>
 								<th>판매금액</th>
-								<td>
+								<td class="for_m_0">
 									<input type="text" class="type_price">
 									<span class="price_noti">
-										원(수수료 10% : 10,000원 / 실수령액 : <span class="price_num">90,000</span>원)
+										<span class="for_m">원</span>(수수료 10% : 10,000원 / 실수령액 : <span class="price_num">90,000</span>원)
 									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>옵션1111</th>
+								<td>
+									<label class="label_s">
+										<select name="" id="">
+											<option value="1">1</option>
+											<option value="1">1</option>
+											<option value="1">1</option>
+										</select>
+									</label>
 								</td>
 							</tr>
 						</table>
 					</div>
 
+					<div class="sa_noti2">
+						<ul>
+							<li>연락처(메신저,닉네임 등)관련 노출 시, 금융 사기에 노출 될 수 있습니다.</li>
+							<li>금융 사기 방지를 위해 싸템 채팅으로 이용해주세요.</li>
+							<li>
+								금융 사고 방지를 위해 등록 시, 삭제되는 물품
+								<ul>
+									<li>- 카테고리에 맞지 않는 글(광고, 도배, 분란글 등) 등록 </li>
+									<li>- 연락처(메신저,닉네임 등) 관련 노출 </li>
+									<li>- 타 사이트 관련 언급 </li>
+									<li>- 직거래 관련 언급 </li>
+									<li>- 계정 카테고리에 아이템/게임머니/기타 거래 등록</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="editorsample">ddd</div>
+
 					<div class="items_sale_additional">
-						<div class="title">부가 옵션(선택가능)</div>
+						<div class="sa_sec_title">부가 옵션(선택가능)</div>
 						<div class="con_box">
 							<div class="option_list premium">
 								<div class="con_title">프리미엄 물품등록</div>
@@ -490,10 +522,33 @@
 							<div class="total_price"><strong>0</strong>원</div>
 						</div>
 					</div>
+
+					<div class="sa_btns st_btn_align pc_center m_auto">
+						<button type="button" class="st_btn size_m3 color_p">물품등록</button>
+						<button type="button" class="st_btn size_m3 color_4">다시작성</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<script>
+		let $el = document.querySelector('.sa_game_sel');
+		function event01() {
+			$el.classList.add('on');
+		}
+		function event02(event) {
+			if (!$el.contains(event.target)) {
+				$el.classList.remove('on');
+			}
+		}
+		document.addEventListener('DOMContentLoaded', function() {
+			$el.removeEventListener('click', event01);
+			$el.addEventListener('click', event01);
+			document.removeEventListener('click', event02);
+			document.addEventListener('click', event02);
+		});
+	</script>
 
 	<!-- 미완 -->
 	<footer id="footer">

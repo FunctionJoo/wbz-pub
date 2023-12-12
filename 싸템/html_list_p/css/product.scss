@@ -600,6 +600,36 @@ body .grade {
 		}
 	}
 
+	.sa_noti2 {
+		margin-top: 30px;
+		padding: 14px 29px;
+		border: 1px solid $colorD;
+		> ul {
+			> li {
+				padding-left: 18px;
+				font-size: 13px;
+				color: #FF3333;
+				background: url('../images/product/noti_i2.svg') no-repeat left 0 top 5px;
+				+ li {
+					margin: 5px 0 4px;
+				}
+				> ul {
+					margin-top: 8px;
+					> li {
+						font-size: 13px;
+						color: $color3;
+					}
+				}
+			}
+		}
+	}
+
+	.sa_sec_title {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
 	.sa_options {
 		table {
 			width: 100%;
@@ -617,11 +647,11 @@ body .grade {
 				font-weight: 400;
 			}
 			td {
-				input {
+				input, select {
 					width: 100%;
 					height: 34px;
 					border: 1px solid $colorD;
-					background: $colorF;
+					background-color: $colorF;
 					padding: 5px 10px;
 					&.type_price {
 						width: 200px;
@@ -633,6 +663,9 @@ body .grade {
 					&:focus {
 						border-color: $point0;
 					}
+				}
+				select {
+					width: 300px;
 				}
 				.price_noti {
 					.price_num {
@@ -657,7 +690,11 @@ body .grade {
 					font-size: 0;
 				}
 			}
+			&:not(.on) .sgs_sch_lay {
+				display: none !important;
+			}
 			.sgs_sch_lay {
+				display: flex;
 				position: absolute;
 				z-index: 8;
 				top: 100%;
@@ -667,7 +704,6 @@ body .grade {
 				background: #fff;
 				border: 1px solid $point0;
 				padding: 14px 4px;
-				display: flex;
 				.ssl_section {
 					width: 28%;
 					padding: 0 10px;
@@ -706,6 +742,102 @@ body .grade {
 					}
 				}
 			}
+		}
+	}
+
+	.editorsample {
+		margin-top: 10px;
+		border: 1px solid $colorD;
+		height: 300px;
+	}
+
+	.items_sale_additional {
+		margin-top: 30px;
+	}
+
+	.sa_btns {
+		margin-top: 60px;
+	}
+}
+
+@include mobile {
+	.sell_add {
+		.sa_noti {
+			padding: 14px;
+		}
+	
+		.sa_noti2 {
+			padding: 14px;
+		}
+	
+		.sa_sec_title {
+			margin-bottom: 10px;
+			font-size: 16px;
+			font-weight: 500;
+		}
+	
+		.sa_options {
+			table {
+				th {
+					width: 72px;
+					padding: 0 0 0 0;
+				}
+				td {
+					input {
+						&.type_price {
+							width: calc(100% - 20px);
+							font-size: 16px;
+						}
+					}
+					select {
+						width: 100%;
+					}
+					&.for_m_0 {
+						font-size: 0;
+					}
+					.price_noti {
+						display: inline-block;
+						width: 20px;
+						text-align: right;
+						font-size: 0 !important;
+						.for_m {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+			.sa_game_sel {
+				.sgs_sch_box {
+					button {
+						display: none;
+					}
+				}
+				.sgs_sch_lay {
+					display: block;
+					height: 500px;
+					padding: 6px 18px;
+					.ssl_section {
+						width: 100% !important;
+						height: 33.33%;
+						padding: 10px 0;
+						+ .ssl_section {
+							border: 0 none;
+							border-top: 1px solid $colorD;
+						}
+					}
+					ul {
+						height: 100%;
+					}
+				}
+			}
+		}
+	
+		.editorsample {
+			height: 300px;
+		}
+
+		.sa_btns {
+			margin-top: 50px;
 		}
 	}
 }

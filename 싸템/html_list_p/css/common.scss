@@ -340,6 +340,11 @@ body.is_pc {
 		height: 44px;
 		line-height: 42px;
 	}
+	&.size_m3 {
+		width: 166px;
+		height: 50px;
+		line-height: 48px;
+	}
 	// color
 	&.color_p {
 		background-color: $point0;
