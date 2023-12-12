@@ -30,7 +30,7 @@
 <body>
 	<div id="container">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
-		<!-- <div class="js-include" data-include="../outline/aside.html" data-event="aside"></div> -->
+		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
 		<main class="wrap main">
 			<a href="./index2.html">
@@ -41,7 +41,18 @@
 		<!-- <div class="js-include" data-include="../outline/footer.html" data-event="footer"></div> -->
 	</div>
 
-	<script>		
+	<script>
+		//임시
+		//메인 이미지 변경
+		$(window).resize(function(){ 
+			if (window.innerWidth > 1300) {  // 다바이스 크기가 1300이상일때 
+				/* 스크립트내용*/ 
+				$('img').attr('src','../images/dummy/main1.png');
+			} else {
+				/* 스크립트내용*/ 
+				$('img').attr('src','../images/dummy/main1_m.png');
+			}
+		}).resize(); 
 	</script>
 </body>
 </html>

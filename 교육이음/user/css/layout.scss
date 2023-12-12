@@ -175,3 +175,258 @@
         }
     }
 }
+
+// aside
+.aside_bg {
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.63;
+	&.on {
+		display: block;
+	}
+}
+#aside_menu {
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	right: -260px;
+	width: 100%;
+	height: 100%;
+	max-width: 260px;
+	background: #393B55;
+	transition: 0.3s;
+	&.on {
+		right: 0;
+	}
+	.aside_header {
+		position: relative;
+		.is_non_member {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px 0;
+            a{
+                position: relative;
+                font-size: 14px;
+                line-height: 19px;
+                color: #fff;
+                padding-right: 20px;
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: url("../images/common/ico/ico_aside_login.svg") no-repeat center;
+                    background-size: 100% 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+		}
+		.member_info {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 46px 20px 18px;
+            .name{
+                font-size: 14px;
+            }
+			.point {
+				font-size: 14px;
+			}
+		}
+		.aside_close {
+			position: absolute;
+			top: 12px;
+			right: 12px;
+			width: 22px;
+			height: 22px;
+			background: url('../images/common/ico/ico_close_l.svg') no-repeat center center;
+			background-size: 13px;
+			font-size: 0;
+		}
+	}
+	.aside_body {
+		height: calc(100% - 77px);
+		overflow-x: auto;
+		@include scroll;
+		padding: 0 12px;
+		.aside_btn {
+			margin: 0 -12px 10px;
+            display: flex;
+            .btn{
+                width: 50%;
+                height: 34px;
+                line-height: 32px;
+                border-radius: 0;
+                border:0;
+                font-size: 13px;
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.34);
+                +.btn{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 10px;
+                        background-color: #fff;
+                    }
+                }
+            }
+		}
+		.aside_menu {
+			.dep1 {
+				> a {
+					display: block;
+					position: relative;
+					padding: 10px 22px 10px 15px;
+					font-size: 16px;
+					line-height: 19px;
+                    color: #9FA1AF;
+                    border-radius: 3px;
+				}
+				&.has_child > a:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					right: 0;
+					margin-top: -10px;
+					width: 20px;
+					height: 20px;
+					background: url('../images/common/ico/i_arr_down.svg') no-repeat center center;
+					background-size: 100% auto;
+					transition: 0.3s;
+                    transform: rotate(180deg);
+				}
+				&.on {
+                    > a{
+                        background-color: rgba(255, 255, 255, 0.2);
+                        color: #fff;
+                    }
+					> a:after {
+						transform: rotate(360deg);
+					}
+					.dep2 {
+						height: auto;
+					}
+				}
+			}
+			.dep2 {
+				height: 0;
+				overflow: hidden;
+				transition: height 0.3s ease;
+				.dep2_space {
+					padding: 10px 0 10px 15px;
+					> a {
+						display: block;
+						font-size: 14px;
+						color: #fff;
+						line-height: 19px;
+                        padding-left: 16px;
+                        position: relative;
+						+ a {
+							margin-top: 14px;
+						}
+                        &::after{
+                            content: '';
+                            display: inline-block;
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            background-color: rgba(255, 255, 255, 0.4);
+                            position: absolute;
+                            left: 0;
+                            top: 8px;
+                        }
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mobile {
+    #header {
+        padding: 11px 16px 0;
+        .inner {
+            height: auto;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .hd-logo {
+            width: 117px;
+            height: 39px;
+            margin-top: 0;
+            .logo-link {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background: url("../images/common/img/logo_header.png") no-repeat center;
+                background-size: 100% auto;
+            }
+        }
+        .gnb {
+            order: 4;
+            width: 100%;
+            flex: 0 0 auto;
+            overflow-x: auto;
+            margin-left: 0;
+            gap: 30px;
+            & > li {
+                width: auto;
+                flex: 0 0 auto;
+                & > a {
+                    padding: 12px 0 14px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+        }
+        .hd-utils {
+            margin: 0 0 0 auto;
+            .link {
+                font-size: 0;
+                display: none;
+                i {
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 0;
+                }
+                &.notify {
+                    display: block;
+                    margin-left: 0;
+                    &.on {
+                        &::after {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .btn_menu {
+            margin-left: 15px;
+            width: 20px;
+            height: 20px;
+            background: url("../images/common/ico/hd_btn_menu.svg") no-repeat center;
+        }
+    }
+}

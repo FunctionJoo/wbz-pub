@@ -73,19 +73,19 @@ $noto: "Noto Sans KR", sans-serif !important;
 }
 
 @mixin pc {
-	@media (min-width: 1131px) {
+	@media (min-width: 1301px) {
 		@content;
 	}
 }
 
 @mixin tablet {
-	@media (min-width: 768px) and (max-width: 1130px) {
+	@media (min-width: 768px) and (max-width: 1300px) {
 		@content;
 	}
 }
 
 @mixin mobile {
-	@media (max-width: 1130px) {
+	@media (max-width: 1300px) {
 		@content;
 	}
 }
