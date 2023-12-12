@@ -206,7 +206,7 @@ body.is_pc {
 		}
 	}
 
-	input:not([type="radio"]) {
+	input {
 		width: 100%;
 		height: 48px;
 		border: 1px solid $colorD;
@@ -215,16 +215,25 @@ body.is_pc {
 		font-size: 16px;
 		background: #fff;
 	}
-	input:not([type="radio"])::placeholder {
+	input::placeholder {
 		color: $colorA;
 	}
 
 	&.type_login {
-		input:not([type="radio"]) {
+		input {
 			height: 50px;
 			border-color: $colorA;
 			border-radius: 0;
 			padding: 0 20px;
+			font-size: 14px;
+		}
+	}
+
+	&.type_s {
+		input {
+			height: 34px;
+			border-radius: 1px;
+			padding: 0 10px;
 			font-size: 14px;
 		}
 	}
@@ -259,6 +268,16 @@ body.is_pc {
 		cursor: pointer;
 		// 화살표 아이콘 추가 필요함
 		background: url(../images/ico/ico_arrow2.svg) no-repeat top 50% right 16px #fff;
+	}
+
+	&.type_s {
+		select {
+			padding: 0 32px 0 9px;
+			height: 34px;
+			background-position: top 50% right 9px;
+			font-size: 14px;
+			border-radius: 1px;
+		}
 	}
 }
 

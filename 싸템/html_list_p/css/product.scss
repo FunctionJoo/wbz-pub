@@ -49,7 +49,11 @@
 				height: 50px;
 			}
 		}
+		&.type_sa_all {
+			margin-bottom: 0;
+		}
 	}
+
 	.prd_sec {
 		margin-top: 40px;
 		.prd_s_title {
@@ -757,6 +761,230 @@ body .grade {
 
 	.sa_btns {
 		margin-top: 60px;
+	}
+
+	.prd_tab_under {
+		.choice_c {
+			display: flex;
+			padding: 5px 0;
+			border: 2px solid $point0;
+			background: $colorF6;
+			label {
+				flex: 1;
+				text-align: center;
+				padding: 8px 0;
+				justify-content: center;
+				+ label {
+					border-left: 1px dashed $colorA;
+				}
+			}
+		}
+		.ptu_noti {
+			padding: 10px 16px;
+			ul {
+				li {
+					font-size: 14px;
+					&:before {
+						content: '- ';
+					}
+					.p_color {
+						color: $warning;
+					}
+				}
+			}
+		}
+	}
+
+	.sa_all_table_wrap {
+		margin-top: 24px;
+		.saa_btns {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+			.sec_left,
+			.sec_right {
+				display: flex;
+				gap: 10px;
+			}
+			.saab_t1 {
+				border: 1px solid $point0;
+				background: $bgE;
+				width: 120px;
+				height: 32px;
+				font-size: 14px;
+			}
+			.saab_t2 {
+				border: 1px solid $point1;
+				background: $colorF;
+				color: $point1;
+				width: 64px;
+				height: 32px;
+				font-size: 14px;
+				&.is_del {
+					color: #DE4040;
+					border-color: #DE4040;
+				}
+			}
+			select {
+				height: 32px;
+				min-width: 70px;
+			}
+		}
+
+		.saa_table {
+			display: table;
+			width: 100%;
+			.thead,
+			.tbody {
+				display: table-row-group;
+			}
+			.tr {
+				position: relative;
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0 80px 0 40px;
+				select {
+					width: 100%;
+				}
+				.th {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: $colorF6;
+					height: 50px;
+				}
+				.th,
+				.td {
+					+ .td,
+					+ .th {
+						border-left: 0;
+					}
+					padding: 9px;
+					border: 1px solid $colorD;
+					&.t_checkbox {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 40px;
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 100%;
+					}
+					&.t_name {
+						width: 350px;
+						.rt_row {
+							width: 100%;
+							display: flex;
+							gap: 10px;
+							+ .rt_row {
+								margin-top: 10px;
+							}
+						}
+						.rt_1 {
+							label {
+								flex: 1;
+							}
+						}
+						.rt_2 {
+							label {
+								&.label_s {
+									min-width: 70px;
+									flex: none;
+								}
+								flex: 1;
+							}
+						}
+					}
+					&.t_type {
+						width: 70px;
+						label + label {
+							margin-top: 3px;
+						}
+					}
+					&.t_unit {
+						width: 138px;
+						label {
+							flex: 1;
+						}
+					}
+					&.t_count {
+						flex: 1;
+						.rt_row {
+							width: 100%;
+							display: flex;
+							align-items: center;
+							gap: 10px;
+							+ .rt_row {
+								margin-top: 10px;
+							}
+						}
+						.rt_1 {
+							label {
+								width: 120px;
+							}
+						}
+					}
+					&.t_last {
+						width: 80px;
+						position: absolute;
+						top: 0;
+						right: 0;
+						height: 100%;
+					}
+					&.is_full {
+						width: 100%;
+						gap: 10px;
+						label {
+							flex: 1;
+						}
+						.editor_toggle {
+							width: 100px;
+							height: 34px;
+							background: $color2;
+							border: 0 none;
+							border-radius: 3px;
+							span {
+								font-size: 14px;
+								color: $colorF;
+							}
+							i {
+								display: inline-block;
+								width: 14px;
+								height: 12px;
+								margin-left: 2px;
+								background: url('../images/product/editor_toggle.svg') no-repeat center center;
+							}
+						}
+						&.open {
+							.editor_toggle {
+								i {
+									transform: rotate(180deg);
+								}
+							}
+						}
+						&.has_editor {
+							padding: 0 0 0 0;
+							.editorsample {
+								margin: 0 0 0 0;
+								width: 100%;
+								background: #f55;
+							}
+						}
+						&:not(.open) + .has_editor {
+							display: none;
+						}
+					}
+				}
+				.td {
+					border-top-width: 0;
+					display: flex;
+					align-content: center;
+					flex-wrap: wrap;
+				}
+			}
+		}
 	}
 }
 

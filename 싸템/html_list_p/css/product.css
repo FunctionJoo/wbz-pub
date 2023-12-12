@@ -45,6 +45,9 @@
 #product .prd_tab.type_sa button {
   height: 50px;
 }
+#product .prd_tab.type_sa_all {
+  margin-bottom: 0;
+}
 #product .prd_sec {
   margin-top: 40px;
 }
@@ -689,6 +692,240 @@ body .grade.grade5 {
 }
 .sell_add .sa_btns {
   margin-top: 60px;
+}
+.sell_add .prd_tab_under .choice_c {
+  display: flex;
+  padding: 5px 0;
+  border: 2px solid #014099;
+  background: #F6F6F6;
+}
+.sell_add .prd_tab_under .choice_c label {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  justify-content: center;
+}
+.sell_add .prd_tab_under .choice_c label + label {
+  border-left: 1px dashed #A7A7A7;
+}
+.sell_add .prd_tab_under .ptu_noti {
+  padding: 10px 16px;
+}
+.sell_add .prd_tab_under .ptu_noti ul li {
+  font-size: 14px;
+}
+.sell_add .prd_tab_under .ptu_noti ul li:before {
+  content: "- ";
+}
+.sell_add .prd_tab_under .ptu_noti ul li .p_color {
+  color: #FF3333;
+}
+.sell_add .sa_all_table_wrap {
+  margin-top: 24px;
+}
+.sell_add .sa_all_table_wrap .saa_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sell_add .sa_all_table_wrap .saa_btns .sec_left,
+.sell_add .sa_all_table_wrap .saa_btns .sec_right {
+  display: flex;
+  gap: 10px;
+}
+.sell_add .sa_all_table_wrap .saa_btns .saab_t1 {
+  border: 1px solid #014099;
+  background: #EEF3F9;
+  width: 120px;
+  height: 32px;
+  font-size: 14px;
+}
+.sell_add .sa_all_table_wrap .saa_btns .saab_t2 {
+  border: 1px solid #113462;
+  background: #FFFFFF;
+  color: #113462;
+  width: 64px;
+  height: 32px;
+  font-size: 14px;
+}
+.sell_add .sa_all_table_wrap .saa_btns .saab_t2.is_del {
+  color: #DE4040;
+  border-color: #DE4040;
+}
+.sell_add .sa_all_table_wrap .saa_btns select {
+  height: 32px;
+  min-width: 70px;
+}
+.sell_add .sa_all_table_wrap .saa_table {
+  display: table;
+  width: 100%;
+}
+.sell_add .sa_all_table_wrap .saa_table .thead,
+.sell_add .sa_all_table_wrap .saa_table .tbody {
+  display: table-row-group;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 80px 0 40px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr select {
+  width: 100%;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+  height: 50px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th,
+.sell_add .sa_all_table_wrap .saa_table .tr .td {
+  padding: 9px;
+  border: 1px solid #D3D3D3;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th + .td,
+.sell_add .sa_all_table_wrap .saa_table .tr .th + .th,
+.sell_add .sa_all_table_wrap .saa_table .tr .td + .td,
+.sell_add .sa_all_table_wrap .saa_table .tr .td + .th {
+  border-left: 0;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_checkbox,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_name,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_name {
+  width: 350px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_name .rt_row,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_name .rt_row {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_name .rt_row + .rt_row,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_name .rt_row + .rt_row {
+  margin-top: 10px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_name .rt_1 label,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_name .rt_1 label {
+  flex: 1;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_name .rt_2 label,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_name .rt_2 label {
+  flex: 1;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_name .rt_2 label.label_s,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_name .rt_2 label.label_s {
+  min-width: 70px;
+  flex: none;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_type,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_type {
+  width: 70px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_type label + label,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_type label + label {
+  margin-top: 3px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_unit,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_unit {
+  width: 138px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_unit label,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_unit label {
+  flex: 1;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_count,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_count {
+  flex: 1;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_count .rt_row,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_count .rt_row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_count .rt_row + .rt_row,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_count .rt_row + .rt_row {
+  margin-top: 10px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_count .rt_1 label,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_count .rt_1 label {
+  width: 120px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.t_last,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.t_last {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full {
+  width: 100%;
+  gap: 10px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full label,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full label {
+  flex: 1;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full .editor_toggle,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full .editor_toggle {
+  width: 100px;
+  height: 34px;
+  background: #222222;
+  border: 0 none;
+  border-radius: 3px;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full .editor_toggle span,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full .editor_toggle span {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full .editor_toggle i,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full .editor_toggle i {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-left: 2px;
+  background: url("../images/product/editor_toggle.svg") no-repeat center center;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full.open .editor_toggle i,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full.open .editor_toggle i {
+  transform: rotate(180deg);
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full.has_editor,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full.has_editor {
+  padding: 0 0 0 0;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full.has_editor .editorsample,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full.has_editor .editorsample {
+  margin: 0 0 0 0;
+  width: 100%;
+  background: #f55;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .th.is_full:not(.open) + .has_editor,
+.sell_add .sa_all_table_wrap .saa_table .tr .td.is_full:not(.open) + .has_editor {
+  display: none;
+}
+.sell_add .sa_all_table_wrap .saa_table .tr .td {
+  border-top-width: 0;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1080px) {
