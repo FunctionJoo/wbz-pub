@@ -1566,6 +1566,7 @@ body.scrollLock {overflow: hidden; height: 100%;}
 .ft_control button.ft_l {background-image: url('../../../images/renew3/common/ft_l.svg'); background-size: auto 11px;}
 .ft_control button.ft_r {background-image: url('../../../images/renew3/common/ft_r.svg'); background-size: auto 11px;}
 .ft_control button.ft_s {background-image: url('../../../images/renew3/common/ft_s.svg'); background-size: auto 10px;}
+.ft_control button.ft_s.is_stop {background-image: url('../../../images/renew3/common/ft_s_on.svg'); background-size: auto 10px;}
 
 .footer_cont {background: #5A5B68; padding: 17px 0 40px;}
 .footer_cont .area {display: flex;}

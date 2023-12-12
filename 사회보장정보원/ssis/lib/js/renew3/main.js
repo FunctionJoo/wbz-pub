@@ -235,13 +235,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 function mainEventInit () {
+	document.querySelector('.main_scroll_down').addEventListener('click', function() {
+		window.scroll({
+			top: document.querySelector('#firstPage').clientHeight,
+			behavior: 'smooth'
+		})
+	});
+
 	// 메인 슬라이드 이벤트
 	const swipermv = new Swiper('.main_visual_bg .swiper', {
 		loop: true,
 		effect: 'fade',
 		allowTouchMove: false,
 		autoplay: {
-			delay: 5000,
+			delay: 9200,
 			disableOnInteraction: false,
 		},
 		// Navigation arrows
@@ -262,6 +269,10 @@ function mainEventInit () {
 				}
 			},
 			slideChangeTransitionEnd: function(swiper) {
+				// wbz20231206
+				if (swiper.realIndex != 0) {
+					swiper.autoplay.stop();
+				}
 				if (document.querySelector('.main_article_slide')) {
 					if (swiper.realIndex != 0) {
 					} else {
@@ -397,6 +408,7 @@ function mainEventInit () {
 			});
 			document.querySelector('.mnb_control .mnb_s').addEventListener('click', function() {
 				intActive = !intActive;
+				document.querySelector('.mnb_control .mnb_s').classList.toggle('is_stop');
 			});
 		}
 	}
