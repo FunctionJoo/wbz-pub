@@ -1,11 +1,50 @@
 @import "./utility.scss";
-
-// layout
-.w_set {
-	max-width: 1400px;
-	margin: 0 auto;
+// 웹접근성
+/* 스킵네비게이션 */
+#skipNav {
+	position: relative;
+	z-index: 9999;
+	a {
+		display: block;
+		height: 1px;
+		width: 1px;
+		margin-bottom: -1px;
+		overflow: hidden;
+		font-size: 20px;
+		color: #fff;
+		font-weight: bold;
+		background: #2466a6;
+		white-space: nowrap;
+		text-align: center;
+		&:focus,
+		&:active {
+			height: auto;
+			width: 100%;
+			padding: 5px;
+			margin-bottom: 10px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+		}
+	}
 }
 
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+*[tabindex="0"]:focus,
+*[tabindex="1"]:focus {
+	outline: 1px dashed	 #ff0000;
+}
+
+// layout
+.w-set {
+	max-width: 1300px;
+	margin: 0 auto;
+}
 .is-blind {
 	position: absolute;
 	top: 1px;
@@ -22,35 +61,14 @@
 	white-space: nowrap;
 }
 
-.pop_dropdown {
-	display: none;
-	position: absolute;
-	z-index: 90;
-	&.pop_dropdown_sm {
-		// display: block;
-		background-color: #fff;
-		border-radius: 2px;
-		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-		.pop_dropdown_btn {
-			display: block;
-			padding: 8px 16px;
-			font-size: 14px;
-			line-height: 1.71;
-			letter-spacing: -0.4px;
-			// color: $text-color3;
-			box-sizing: border-box;
-		}
-	}
-}
-
 // input
 .input_wrap {
-	input[type=text],
-	input[type=number],
-	input[type=email],
-	input[type=tel],
-	input[type=date],
-	input[type=password],
+	input[type="text"],
+	input[type="number"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="date"],
+	input[type="password"],
 	textarea,
 	select {
 		height: 50px;
@@ -145,7 +163,7 @@
 			}
 		}
 	}
-	select[disabled]{
+	select[disabled] {
 		opacity: 1;
 		color: #212121;
 		background-image: none;
@@ -433,7 +451,7 @@
 	}
 }
 
-.star_area{
+.star_area {
 	&.starChk {
 		position: relative;
 		width: 129px;
@@ -486,15 +504,15 @@
 	}
 }
 
-.new_ico {
-	display: inline-block !important;
-	vertical-align: middle !important;
-	width: 16px !important;
-	height: 16px !important;
-	background: #1e3c82 !important;
-	border-radius: 3px !important;
-	text-align: center !important;
-	line-height: 16px !important;
+.new-ico {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background: #3575d6;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 16px;
 	&:after {
 		content: "N";
 		display: block;
@@ -536,8 +554,8 @@
 }
 
 @media (max-width: 1420px) {
-	.m_w_set,
-	.w_set {
+	.m-w-set,
+	.w-set {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
@@ -654,5 +672,25 @@
 
 	.wbz-popup-cont {
 		padding: 20px 16px 10px;
+	}
+}
+
+//pc
+@media (min-width: 768px) {
+	.pc{
+		display: block !important;
+	}
+	.mobile{
+		display: none !important;
+	}
+}
+
+//모바일
+@media (max-width: 768px) {
+	.pc{
+		display: none !important;
+	}
+	.mobile{
+		display: block !important;
 	}
 }

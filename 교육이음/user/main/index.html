@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="description" content="Autowithus">
@@ -19,40 +20,243 @@
 	<title>인천광역시교육청 교육이음센터</title>
 	<!-- css -->
 	<link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
 	<!-- js -->
 	<script src="../js/jquery-1.12.4.min.js"></script>
 	<script src="../js/jquery-ui.js"></script>
 	<script src="../js/layout.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap main">
-			<a href="./index2.html">
-				<img src="../images/dummy/main1.png" alt="">
-			</a>
+		<main id="contents" class="wrap main">
+			<div class="main-visual">
+				<div class="swiper-control">
+					<a href="javascript:;" class="play on">정지</a>
+					<div class="pagination"></div>
+				</div>
+				<div class="swiper-navi">
+					<button type="button" class="swiper-button prev">이전</button>
+					<button type="button" class="swiper-button next">다음</button>
+				</div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="img pc">
+								<img src="../images/common/img/main_visual_slide_1.png"
+									alt="더 따뜻한 교육 나눔 퇴직교직원의 재능나눔을 위한 교육이음센터">
+							</a>
+							<a href="#" class="img mobile">
+								<img src="../images/common/img/main_visual_slide_1_m.png"
+									alt="더 따뜻한 교육 나눔 퇴직교직원의 재능나눔을 위한 교육이음센터">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="img pc">
+								<img src="../images/common/img/main_visual_slide_2.png"
+									alt="내 손안의 교육이음! 모바일에서 편리하게 봉사신청하세요! 지원하신 공고의 봉사 신청이 완료되었습니다. 확인하러가기">
+							</a>
+							<a href="#" class="img mobile">
+								<img src="../images/common/img/main_visual_slide_1_m.png"
+									alt="더 따뜻한 교육 나눔 퇴직교직원의 재능나눔을 위한 교육이음센터">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-sec">
+				<div class="w-set">
+					<div class="menu-wrap">
+						<a href="#" class="menu menu1">나의신청현황</a>
+						<a href="#" class="menu menu2">활동실적등록</a>
+						<a href="#" class="menu menu3">실적확인서</a>
+						<a href="#" class="menu menu4">자주묻는질문</a>
+					</div>
+				</div>
+			</div>
+			<div class="main-sec bg">
+				<div class="w-set">
+					<div class="recruit-wrap">
+						<div class="tit-area">
+							<h2 class="tit">모집공고</h2>
+							<a href="#" class="btn-more">더보기</a>
+						</div>
+						<ul class="recruit-list">
+							<li>
+								<a href="#">
+									<div class="cont-top">
+										<div class="day">D-14</div>
+										<div class="tit-area">
+											<p class="tit">[2024년1학기] 저학년 기초학력 지도 지원 관련 안내드립니다.</p><span class="tag">긴급</span><i class="new-ico"></i>
+										</div>
+										<div class="info">
+											<span>인천하늘초</span>
+											<span>연수구</span>
+											<span>12명</span>
+										</div>
+									</div>
+									<div class="cont-btm">
+										<span class="date">23.11.24 - 23.12.01</span>
+										<span class="views">60</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="cont-top">
+										<div class="day">D-14</div>
+										<div class="tit-area">
+											<p class="tit">[2024년1학기] 저학년 기초학력 지도 지원 관련 안내드립니다.</p><i class="new-ico"></i>
+										</div>
+										<div class="info">
+											<span>인천하늘초</span>
+											<span>연수구</span>
+											<span>12명</span>
+										</div>
+									</div>
+									<div class="cont-btm">
+										<span class="date">23.11.24 - 23.12.01</span>
+										<span class="views">60</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="cont-top">
+										<div class="day end">마감</div>
+										<div class="tit-area">
+											<p class="tit">[2024년1학기] 저학년 기초학력 지도 지원 관련 안내드립니다.</p>
+										</div>
+										<div class="info">
+											<span>인천하늘초</span>
+											<span>연수구</span>
+											<span>12명</span>
+										</div>
+									</div>
+									<div class="cont-btm">
+										<span class="date">23.11.24 - 23.12.01</span>
+										<span class="views">60</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="cont-top">
+										<div class="day end">마감</div>
+										<div class="tit-area">
+											<p class="tit">[2024년1학기] 저학년 기초학력 지도 지원 관련 안내드립니다.</p><span class="tag">긴급</span>
+										</div>
+										<div class="info">
+											<span>인천하늘초</span>
+											<span>연수구</span>
+											<span>12명</span>
+										</div>
+									</div>
+									<div class="cont-btm">
+										<span class="date">23.11.24 - 23.12.01</span>
+										<span class="views">60</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main-sec">
+				<div class="w-set">
+					<div class="board-wrap">
+						<div class="notice">
+							<div class="tit-area">
+								<h2 class="tit">공지사항</h2>
+								<a href="#" class="btn-more">더보기</a>
+							</div>
+							<div class="cont">
+								<a href="#" class="cont-top">
+									<div class="day">
+										<p class="month">2023.11</p>
+										<p>24</p>
+									</div>
+									<div class="tit-area">
+										<p class="tit new">[2024년1학기] 저학년 기초학력 지도 지원[2024년1학기] 저학년 기초학력 지도 지원</p><i class="new-ico"></i>
+									</div>
+									<p class="desc">인천광역시교육청 공고 제2023 - 402호 2024~2025 교육감 지정「인천광역시 교육청인천광역시교육청 공고 제2023 - 402호 2024~2025 교육감 지정「인천광역시 교육청</p>
+								</a>
+								<div class="cont-btm">
+									<div class="notice-list">
+										<a href="#">
+											<p class="txt">2023년 대한민국 정보교육상 후보자 공적 공개검증 대한민국 정보교육상 후보자 공적 공개검증</p>
+											<span class="date">2023-11-23</span>
+										</a>
+										<a href="#">
+											<p class="txt">유치원·초등·특수 교육전문직원 및 관리직 인사 유치원·초등·특수 교육전문직원 및 관리직 인사</p>
+											<span class="date">2023-11-23</span>
+										</a>
+										<a href="#">
+											<p class="txt">2023년 대한민국 정보교육상 후보자 공적 공개검증 대한민국 정보교육상 후보자 공적 공개검증</p>
+											<span class="date">2023-11-23</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="board">
+							<div class="info">
+								<span class="tit">꼭 알아두세요!</span>
+								<p class="txt">교육이음센터는 회원가입 후,<br>담당자의 승인을 거쳐 <br class="hide-pc">로그인 하실 수 있습니다.</p>
+								<p class="contact"><span>관련 문의 </span><em class="hide-m">:</em><br> 고객지원 팀 031) 000-00000</p>
+							</div>
+							<div class="board-list">
+								<a href="#" class="board1">만족도 조사</a>
+								<a href="#" class="board2">자료실</a>
+								<a href="#" class="board3">자유게시판</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
-		
-		<!-- <div class="js-include" data-include="../outline/footer.html" data-event="footer"></div> -->
+
+		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
 	<script>
-		//임시
-		//메인 이미지 변경
-		$(window).resize(function(){ 
-			if (window.innerWidth > 1300) {  // 다바이스 크기가 1300이상일때 
-				/* 스크립트내용*/ 
-				$('img').attr('src','../images/dummy/main1.png');
-			} else {
-				/* 스크립트내용*/ 
-				$('img').attr('src','../images/dummy/main1_m.png');
-			}
-		}).resize(); 
+		$(document).ready(function(){
+			// 메인비쥬얼 슬라이드
+			const mainSlide = new Swiper('.main-visual .swiper', {
+				slidesPerView: 1,
+				loop: true,
+				speed: 800,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: ".main-visual .swiper-control .pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.main-visual .swiper-navi .next',
+					prevEl: '.main-visual .swiper-navi .prev',
+				}
+			});
+
+			$(".play").on("click",function(){
+				if($(this).hasClass("on")){					
+					$(this).removeClass("on").text("재생");
+					mainSlide.autoplay.stop();					
+				} else{
+					$(this).addClass("on").text("정지");
+					mainSlide.autoplay.start();
+				}
+			});
+	});
 	</script>
 </body>
+
 </html>

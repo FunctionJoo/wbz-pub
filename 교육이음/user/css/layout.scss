@@ -1,12 +1,13 @@
 @import "./utility.scss";
 
-/* -------- header -------- */
+// header
 #header {
     position: relative;
     &.on {
         &::after {
             display: block;
             height: 300px;
+            z-index: 100;
         }
     }
     &::after {
@@ -56,16 +57,20 @@
             &.on {
                 & > a {
                     color: #459729;
-                }
-            }
-            &:hover {
-                & > a {
                     &::after {
                         width: 100%;
                         height: 3px;
                     }
                 }
             }
+            // &:hover {
+            //     & > a {
+            //         &::after {
+            //             width: 100%;
+            //             height: 3px;
+            //         }
+            //     }
+            // }
             & > a {
                 padding: 36px 0;
                 display: inline-block;
@@ -92,7 +97,7 @@
             height: 300px;
             padding-top: 14px;
             position: relative;
-            z-index: 100;
+            z-index: 110;
             &.on {
                 display: block;
             }
@@ -176,51 +181,171 @@
     }
 }
 
+// footer
+#footer {
+    margin-top: 120px;
+    .ft-top {
+        background: #eeeeee;
+        .w-set {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ft-link {
+            a {
+                font-size: 14px;
+                &.policy {
+                    font-weight: 500;
+                }
+                & + a {
+                    margin-left: 60px;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        width: 1px;
+                        height: 10px;
+                        background: #d3d3d3;
+                        position: absolute;
+                        left: -30px;
+                        top: 5px;
+                    }
+                }
+            }
+        }
+        .ft-family {
+            position: relative;
+            z-index: 200;
+            min-width: 200px;
+            .tab {
+                width: 100%;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                &.over {
+                    z-index: 5;
+                    .mn_f1 {
+                        &::after {
+                            transform: scaleY(-1);
+                        }
+                    }
+                }
+                .mn_f1 {
+                    display: block;
+                    font-weight: 500;
+                    font-size: 14px;
+                    background: #e1e1e1;
+                    position: relative;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 0 30px 0 20px;
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        margin-top: -5px;
+                        width: 13px;
+                        height: 8px;
+                        background: url("../images/common/ico/ft_arrow.png") no-repeat;
+                        transition: all 0.35s;
+                    }
+                }
+                .list-wrap {
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    display: none;
+                }
+                .list-gap {
+                    background: #fff;
+                    border: 1px solid #d3d3d3;
+                    border-radius: 0px 0px 6px 6px;
+                    ul {
+                        height: 100px;
+                        padding: 5px 12px;
+                        overflow-y: scroll;
+                        overflow-x: hidden;
+                        li {
+                            a {
+                                position: relative;
+                                display: block;
+                                padding: 5px 0 5px 7px;
+                                font-size: 14px;
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    width: 2px;
+                                    height: 2px;
+                                    background: #666;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ft-btm {
+        padding: 30px 0 60px;
+        font-size: 14px;
+        line-height: 20px;
+        br {
+            display: none;
+        }
+    }
+}
+
 // aside
 .aside_bg {
-	display: none;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	opacity: 0.63;
-	&.on {
-		display: block;
-	}
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.63;
+    &.on {
+        display: block;
+    }
 }
 #aside_menu {
-	position: fixed;
-	z-index: 100000;
-	top: 0;
-	right: -260px;
-	width: 100%;
-	height: 100%;
-	max-width: 260px;
-	background: #393B55;
-	transition: 0.3s;
-	&.on {
-		right: 0;
-	}
-	.aside_header {
-		position: relative;
-		.is_non_member {
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    right: -260px;
+    width: 100%;
+    height: 100%;
+    max-width: 260px;
+    background: #393b55;
+    transition: 0.3s;
+    &.on {
+        right: 0;
+    }
+    .aside_header {
+        position: relative;
+        .is_non_member {
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 28px 0;
-            a{
+            a {
                 position: relative;
                 font-size: 14px;
                 line-height: 19px;
                 color: #fff;
                 padding-right: 20px;
-                &::after{
-                    content: '';
+                &::after {
+                    content: "";
                     display: inline-block;
                     width: 20px;
                     height: 20px;
@@ -231,52 +356,52 @@
                     top: 0;
                 }
             }
-		}
-		.member_info {
+        }
+        .member_info {
             color: #fff;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 20px 46px 20px 18px;
-            .name{
+            .name {
                 font-size: 14px;
             }
-			.point {
-				font-size: 14px;
-			}
-		}
-		.aside_close {
-			position: absolute;
-			top: 12px;
-			right: 12px;
-			width: 22px;
-			height: 22px;
-			background: url('../images/common/ico/ico_close_l.svg') no-repeat center center;
-			background-size: 13px;
-			font-size: 0;
-		}
-	}
-	.aside_body {
-		height: calc(100% - 77px);
-		overflow-x: auto;
-		@include scroll;
-		padding: 0 12px;
-		.aside_btn {
-			margin: 0 -12px 10px;
+            .point {
+                font-size: 14px;
+            }
+        }
+        .aside_close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 22px;
+            height: 22px;
+            background: url("../images/common/ico/ico_close_l.svg") no-repeat center center;
+            background-size: 13px;
+            font-size: 0;
+        }
+    }
+    .aside_body {
+        height: calc(100% - 77px);
+        overflow-x: auto;
+        @include scroll;
+        padding: 0 12px;
+        .aside_btn {
+            margin: 0 -12px 10px;
             display: flex;
-            .btn{
+            .btn {
                 width: 50%;
                 height: 34px;
                 line-height: 32px;
                 border-radius: 0;
-                border:0;
+                border: 0;
                 font-size: 13px;
                 color: #fff;
                 background-color: rgba(255, 255, 255, 0.34);
-                +.btn{
+                + .btn {
                     position: relative;
-                    &::after{
-                        content: '';
+                    &::after {
+                        content: "";
                         position: absolute;
                         left: 0;
                         top: 50%;
@@ -287,63 +412,63 @@
                     }
                 }
             }
-		}
-		.aside_menu {
-			.dep1 {
-				> a {
-					display: block;
-					position: relative;
-					padding: 10px 22px 10px 15px;
-					font-size: 16px;
-					line-height: 19px;
-                    color: #9FA1AF;
+        }
+        .aside_menu {
+            .dep1 {
+                > a {
+                    display: block;
+                    position: relative;
+                    padding: 10px 22px 10px 15px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #9fa1af;
                     border-radius: 3px;
-				}
-				&.has_child > a:after {
-					content: '';
-					display: block;
-					position: absolute;
-					top: 50%;
-					right: 0;
-					margin-top: -10px;
-					width: 20px;
-					height: 20px;
-					background: url('../images/common/ico/i_arr_down.svg') no-repeat center center;
-					background-size: 100% auto;
-					transition: 0.3s;
+                }
+                &.has_child > a:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    margin-top: -10px;
+                    width: 20px;
+                    height: 20px;
+                    background: url("../images/common/ico/i_arr_down.svg") no-repeat center center;
+                    background-size: 100% auto;
+                    transition: 0.3s;
                     transform: rotate(180deg);
-				}
-				&.on {
-                    > a{
+                }
+                &.on {
+                    > a {
                         background-color: rgba(255, 255, 255, 0.2);
                         color: #fff;
                     }
-					> a:after {
-						transform: rotate(360deg);
-					}
-					.dep2 {
-						height: auto;
-					}
-				}
-			}
-			.dep2 {
-				height: 0;
-				overflow: hidden;
-				transition: height 0.3s ease;
-				.dep2_space {
-					padding: 10px 0 10px 15px;
-					> a {
-						display: block;
-						font-size: 14px;
-						color: #fff;
-						line-height: 19px;
+                    > a:after {
+                        transform: rotate(360deg);
+                    }
+                    .dep2 {
+                        height: auto;
+                    }
+                }
+            }
+            .dep2 {
+                height: 0;
+                overflow: hidden;
+                transition: height 0.3s ease;
+                .dep2_space {
+                    padding: 10px 0 10px 15px;
+                    > a {
+                        display: block;
+                        font-size: 14px;
+                        color: #fff;
+                        line-height: 19px;
                         padding-left: 16px;
                         position: relative;
-						+ a {
-							margin-top: 14px;
-						}
-                        &::after{
-                            content: '';
+                        + a {
+                            margin-top: 14px;
+                        }
+                        &::after {
+                            content: "";
                             display: inline-block;
                             width: 4px;
                             height: 4px;
@@ -353,14 +478,15 @@
                             left: 0;
                             top: 8px;
                         }
-					}
-				}
-			}
-		}
-	}
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include mobile {
+    // header
     #header {
         padding: 11px 16px 0;
         .inner {
@@ -387,14 +513,19 @@
             overflow-x: auto;
             margin-left: 0;
             gap: 30px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
             & > li {
                 width: auto;
                 flex: 0 0 auto;
                 & > a {
-                    padding: 12px 0 14px;
+                    padding: 16px 0 14px;
                     font-weight: 400;
                     font-size: 16px;
-                    &::after{
+                    &::after {
                         content: none;
                     }
                 }
@@ -427,6 +558,48 @@
             width: 20px;
             height: 20px;
             background: url("../images/common/ico/hd_btn_menu.svg") no-repeat center;
+        }
+    }
+
+    // footer
+    #footer {
+        margin-top: 60px;
+        .ft-top {
+            .w-set {
+                padding: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                .ft-link {
+                    width: 100%;
+                    padding: 16px;
+                    background: #f9f9f9;
+                    a {
+                        & + a {
+                            margin-left: 35px;
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+                .ft-family {
+                    width: 100%;
+                    .tab {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .ft-btm {
+            padding: 20px 0 56px;
+            font-size: 13px;
+            color: #666;
+            br {
+                display: block;
+            }
+            .copyright {
+                padding-top: 16px;
+            }
         }
     }
 }

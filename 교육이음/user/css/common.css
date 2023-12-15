@@ -1,6 +1,45 @@
 @charset "UTF-8";
-.w_set {
-  max-width: 1400px;
+/* 스킵네비게이션 */
+#skipNav {
+  position: relative;
+  z-index: 9999;
+}
+#skipNav a {
+  display: block;
+  height: 1px;
+  width: 1px;
+  margin-bottom: -1px;
+  overflow: hidden;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  background: #2466a6;
+  white-space: nowrap;
+  text-align: center;
+}
+#skipNav a:focus, #skipNav a:active {
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+*[tabindex="0"]:focus,
+*[tabindex="1"]:focus {
+  outline: 1px dashed #ff0000;
+}
+
+.w-set {
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -18,25 +57,6 @@
   width: 1px;
   height: 1px;
   white-space: nowrap;
-}
-
-.pop_dropdown {
-  display: none;
-  position: absolute;
-  z-index: 90;
-}
-.pop_dropdown.pop_dropdown_sm {
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-}
-.pop_dropdown.pop_dropdown_sm .pop_dropdown_btn {
-  display: block;
-  padding: 8px 16px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: -0.4px;
-  box-sizing: border-box;
 }
 
 .input_wrap input[type=text],
@@ -413,17 +433,17 @@
   z-index: 1;
 }
 
-.new_ico {
-  display: inline-block !important;
-  vertical-align: middle !important;
-  width: 16px !important;
-  height: 16px !important;
-  background: #1e3c82 !important;
-  border-radius: 3px !important;
-  text-align: center !important;
-  line-height: 16px !important;
+.new-ico {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: #3575d6;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
 }
-.new_ico:after {
+.new-ico:after {
   content: "N";
   display: block;
   font-size: 10px;
@@ -462,8 +482,8 @@
   }
 }
 @media (max-width: 1420px) {
-  .m_w_set,
-  .w_set {
+  .m-w-set,
+  .w-set {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -568,5 +588,21 @@
   }
   .wbz-popup-cont {
     padding: 20px 16px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .pc {
+    display: block !important;
+  }
+  .mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .pc {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
   }
 }
