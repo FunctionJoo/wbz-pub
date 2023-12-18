@@ -403,9 +403,104 @@
 						</li>
 					</ul>
 				</nav>
-				<button type="button" class="ico search">
-					<span class="blind">검색</span>
-				</button>
+				<button type="button" class="ico search js-fixed-layer js-dim active" data-tooltip="headerSearch"><span class="blind">검색</span></button>
+				<div id="searchBox" class="h-search new" data-tooltip-con="headerSearch" data-focus="searchBox" data-focus-prev="searchClose" tabindex="0">
+				<!-- Tab Menu -->	
+					<script type="text/javascript">
+						$(function () {		
+						$("#headerSearch1").on('keydown',function(e){//
+							if(e.keyCode == 13){
+								totalSearch();
+							}
+						});
+						$("#headerSearch2").on('keydown',function(e){//
+							if(e.keyCode == 13){
+								expertSearch();
+							}
+						});
+						$('#totalSearchBtn').on('click',function(){
+							totalSearch();
+						});
+						$('#expertSearchBtn').on('click',function(){
+							expertSearch();
+						});
+						});
+						
+						var totalSearch = function(){
+							skey = $('#headerSearch1').val();
+							if(skey == ''){
+								alert("검색어를 입력하세요.");
+								$('#headerSearch1').focus();
+							}else{
+								document.topTotalSearchFrm.action = "/user/search/searchAll.do";
+								document.topTotalSearchFrm.submit();
+							}
+						}
+						
+						var expertSearch = function(){
+							skey = $('#headerSearch2').val();
+							if(skey == ''){
+								alert("검색어를 입력하세요.");
+								$('#headerSearch2').focus();
+							}else{
+								document.topExpertSearchFrm.action = "/user/search/searchNtis.do";
+								document.topExpertSearchFrm.submit();
+							}
+						}
+						
+					</script>	
+					<!-- Tab Menu -->
+					<div class="ui-tabs js-tabs">
+						<ul>
+							<li class="active"><a href="#hTabSearch1" title="선택됨">통합검색</a></li>
+							<li><a href="#hTabSearch2" title="">전문자료검색</a></li>
+						</ul>
+		
+						<!-- 통합검색 -->
+						<div id="hTabSearch1" class="active" title="선택됨">
+							<h3 class="blind">통합검색</h3><!-- 2022.03.18 접근성 수정 -->
+							<div class="search-form">
+								<form id="topTotalSearchFrm" name="topTotalSearchFrm" method="post" action="">
+								<fieldset>
+									<legend>통합검색폼</legend>
+									<label for="headerSearch1" class="blind">검색어 입력</label>
+									<input type="search" id="headerSearch1" name="query" placeholder="통합검색어를 입력하세요.">
+									
+									<label for="bnk" class="blind">페이지 이동 막기</label>
+									<input type="text" id="bnk" name="bnk" style="display:none">
+									
+									<button type="button" class="ico s-search" id="totalSearchBtn"><span class="blind">검색</span></button> 
+								</fieldset>
+								</form>
+							</div>
+						</div>
+						<!-- /통합검색 -->
+		
+						<!-- 전문자료검색 -->
+						<div id="hTabSearch2">
+							<h3 class="blind">전문자료검색</h3><!-- 2022.03.18 접근성 수정 -->
+							<div class="search-form">
+								<form id="topExpertSearchFrm" name="topExpertSearchFrm" method="post" action="">
+								<fieldset>
+									<legend>전문자료검색폼</legend>
+									<label for="headerSearch2" class="blind">검색어 입력</label>
+									<input type="search" id="headerSearch2" name="query" placeholder="전문자료검색어를 입력하세요.">
+									
+									<label for="bnk2" class="blind">페이지 이동 막기</label>
+									<input type="text" id="bnk2" name="bnk" style="display:none">
+										
+									<button type="button" class="ico s-search" id="expertSearchBtn"><span class="blind">검색</span></button> 
+								</fieldset>
+								</form>
+							</div>
+						</div>
+						<!-- /전문자료검색 -->
+					</div>
+					<!-- /Tab Menu -->	
+					<!-- /Tab Menu -->
+					<button type="button" class="ico s-close js-tooltip-close" data-focus="searchClose" data-focus-next="searchBox"><span class="blind">검색창 닫기</span></button>
+				</div>
+
 				<button type="button" id="gnbAll" class="ico menu js-fixed-layer" data-tooltip="sitemap">
 					<span class="blind">전체메뉴</span>
 				</button>
@@ -723,6 +818,10 @@
 					<div>
 						<span>SEARCH</span>
 						<div class="input_area">
+							<select name="" id="">
+								<option value="">통합검색</option>
+								<option value="">전문자료검색</option>
+							</select>
 							<input type="text" placeholder="검색어를 입력하세요" id="searchKeyword" onkeyup="fnKeyUp();">
 							<label for="searchKeyword" class="blind">통합검색</label>
 							<a href="javascript:search();" class="search_btn">검색</a>

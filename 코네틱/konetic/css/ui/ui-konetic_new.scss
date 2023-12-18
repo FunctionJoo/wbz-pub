@@ -629,7 +629,7 @@ $mobile-space: 16px;
                             font-size: 18px;
                             line-height: 28px;
                         }
-                        .bt{
+                        .bt {
                             border: 0;
                             background: #fff;
                             color: #222;
@@ -964,15 +964,24 @@ $mobile-space: 16px;
                     margin-right: 35px;
                 }
                 .input_area {
+                    display: flex;
                     flex: 1;
                     position: relative;
+                    border: 2px solid $primary-color2;
+                    border-radius: 6px;
+                    background: #fff;
+                }
+                select {
+                    background-color: #fff;
+                    height: 70px;
+                    border-radius: 6px 0 0 6px;
+                    background-position: right center;
+                    padding: 0 20px 0 20px;
                 }
                 input {
-                    height: 70px;
-                    border: 2px solid $primary-color2;
                     background: #fff;
-                    border-radius: 6px;
-                    padding: 0 33px;
+                    height: 70px;
+                    padding: 0 80px 0 20px;
                     font-size: 16px;
                     width: 100%;
                     color: $text-color3;
@@ -981,13 +990,12 @@ $mobile-space: 16px;
                     display: inline-block;
                     background: $primary-color2 url("../../images/ico/search_btn.svg") no-repeat 50% 50%;
                     width: 70px;
-                    height: 70px;
+                    height: 100%;
                     transition: all 0.2s;
                     font-size: 0;
                     position: absolute;
                     right: 0;
                     top: 0;
-                    border-radius: 0px 6px 6px 0px;
                     &:hover {
                         background-color: #02996c;
                     }
@@ -1156,7 +1164,7 @@ $mobile-space: 16px;
                     }
                 }
                 .img {
-                    @include imgbox($percent: 62.5%);
+                    @include imgbox($percent: 115%);
                     .flag {
                         position: absolute;
                         right: 0;
@@ -1367,9 +1375,13 @@ $mobile-space: 16px;
                         font-size: 22px;
                         margin-right: 20px;
                     }
+                    select {
+                        height: 50px;
+                        padding-left: 14px;
+                    }
                     input {
                         height: 50px;
-                        padding: 0 20px;
+                        padding: 0 60px 0 16px;
                         font-size: 16px;
                     }
                     a {
@@ -1617,7 +1629,7 @@ $mobile-space: 16px;
                         font-size: 15px;
                         padding: 8% 6%;
                         border-bottom: 1px solid #ddd;
-                        &::before{
+                        &::before {
                             width: 36px;
                             height: 36px;
                         }
@@ -1636,7 +1648,7 @@ $mobile-space: 16px;
                             }
                         }
                     }
-                    &:nth-last-child(-n+2) {
+                    &:nth-last-child(-n + 2) {
                         a {
                             border-bottom: 0;
                         }
