@@ -170,7 +170,7 @@
   font-family: "Inter", sans-serif !important;
   font-weight: 600;
   font-size: 20px;
-  color: #3575d6;
+  color: #3575D6;
   text-align: center;
 }
 .main .cont-top .day.end {
@@ -276,7 +276,7 @@
 }
 .main .recruit-wrap .recruit-list li .cont-btm .views {
   padding-left: 24px;
-  background: url("../images/common/ico/views.svg") no-repeat left bottom 2px;
+  background: url("../images/common/ico/views.svg") no-repeat left bottom 3px;
 }
 .main .board-wrap {
   padding: 100px 0 0;
@@ -297,12 +297,12 @@
   overflow: hidden;
 }
 .main .board-wrap .notice .cont .cont-top:hover .tit {
-  color: #3f57d4;
+  color: #3F57D4;
 }
 .main .board-wrap .notice .cont .cont-top .day {
-  border-color: #3f57d4;
+  border-color: #3F57D4;
   background: #ebeefb;
-  color: #3f57d4;
+  color: #3F57D4;
   padding: 10px 0;
   font-size: 24px;
   line-height: 29px;
@@ -324,7 +324,7 @@
   white-space: nowrap;
   max-width: calc(100% - 80px);
   font-size: 16px;
-  line-height: 31px;
+  line-height: 1.4;
 }
 .main .board-wrap .notice .cont .cont-btm {
   margin-top: 20px;
@@ -370,6 +370,7 @@
   padding: 28px 30px;
   border-radius: 16px;
   background: #fff0f5 url("../images/common/img/main_info_bg.svg") no-repeat center;
+  background-size: cover;
 }
 .main .board-wrap .board .info .tit {
   font-family: "iceSotong-Rg", sans-serif !important;
@@ -394,7 +395,7 @@
   margin-top: 20px;
 }
 .main .board-wrap .board .board-list a {
-  padding: 15px 0 14px;
+  padding: 17px 0;
   display: inline-block;
   width: 33.33%;
   border: 1px solid #dddddd;

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="Autowithus">
+	<link rel="icon" href="../images/favicon/favicon_16x16.png" sizes="16x16">
+	<link rel="icon" href="../images/favicon/favicon_18x18.png" sizes="18x18">
+	<link rel="icon" href="../images/favicon/favicon_32x32.png" sizes="32x32">
+	<link rel="icon" href="../images/favicon/favicon_180x180.png" sizes="180x180">
+	<meta property="og:image" content="../images/favicon/ogi.png" />
+	<meta property="og:image:width" content="270" />
+	<meta property="og:image:height" content="270" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<title>인천광역시교육청 교육이음센터</title>
+	<!-- css -->
+	<link rel="stylesheet" href="../css/general.css">
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<!-- js -->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
+	<div id="container">
+		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
+		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
+
+		<main class="wrap main">
+			<a href="#">
+				<img src="../images/dummy/main1.png" alt="">
+			</a>
+		</main>
+
+		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			// 메인비쥬얼 슬라이드
+			const mainSlide = new Swiper('.main-visual .swiper', {
+				slidesPerView: 1,
+				loop: true,
+				speed: 800,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: ".main-visual .swiper-control .pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.main-visual .swiper-navi .next',
+					prevEl: '.main-visual .swiper-navi .prev',
+				}
+			});
+
+			$(".play").on("click",function(){
+				if($(this).hasClass("on")){					
+					$(this).removeClass("on").text("재생");
+					mainSlide.autoplay.stop();					
+				} else{
+					$(this).addClass("on").text("정지");
+					mainSlide.autoplay.start();
+				}
+			});
+	});
+	</script>
+</body>
+
+</html>

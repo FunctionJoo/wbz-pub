@@ -345,14 +345,14 @@ $mobile-space: 16px;
                 position: initial;
                 margin-left: 0;
                 background: url("../../images/ico/hd_search.svg") no-repeat center;
-                background-size: 20px auto;
+                // background-size: 20px auto;
             }
             &.menu {
                 position: initial;
                 margin-left: 0;
                 margin-right: -12px;
                 background: url("../../images/ico/hd_menu.svg") no-repeat center;
-                background-size: 17px auto;
+                // background-size: 17px auto;
             }
         }
         .h-sitemap {
@@ -1431,7 +1431,6 @@ $mobile-space: 16px;
                 padding: 0 30px;
                 .swiper_navi {
                     .swiper_button {
-                        top: 35%;
                         &.swiper_next {
                             right: 0;
                         }

@@ -233,14 +233,12 @@ body {
   position: initial;
   margin-left: 0;
   background: url("../../images/ico/hd_search.svg") no-repeat center;
-  background-size: 20px auto;
 }
 .wrap-header.new .ico.menu {
   position: initial;
   margin-left: 0;
   margin-right: -12px;
   background: url("../../images/ico/hd_menu.svg") no-repeat center;
-  background-size: 17px auto;
 }
 .wrap-header.new .h-sitemap {
   z-index: 999;
@@ -1244,9 +1242,6 @@ body {
   }
   .main .main_sec .news_wrap {
     padding: 0 30px;
-  }
-  .main .main_sec .news_wrap .swiper_navi .swiper_button {
-    top: 35%;
   }
   .main .main_sec .news_wrap .swiper_navi .swiper_button.swiper_next {
     right: 0;
