@@ -1722,3 +1722,106 @@ $mobile-space: 16px;
         }
     }
 }
+
+// headerSearch
+.wrap-header {
+    &.new {
+        .ui-tabs {
+            & > ul {
+                & > li {
+                    a {
+                        color: #666;
+                    }
+                    &:hover,
+                    &:focus,
+                    &.active,
+                    &.currunt {
+                        a {
+                            color: #0c9194;
+                        }
+                    }
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+        .search-form {
+            input[type="search"] {
+                height: 70px;
+                border: 2px solid #0c9194;
+                border-radius: 35px;
+                &::placeholder {
+                    color: #666;
+                    font-size: 20px;
+                }
+            }
+            button {
+                right: 16px;
+            }
+            .ico.s-search {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: #0c9194 url("../../images/ico/hd_search_w.svg") no-repeat center;
+            }
+        }
+        .h-search {
+            .s-close {
+                background: url("../../images/ico/hd_search_close.svg") no-repeat center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .wrap-header {
+        &.new {
+            .h-search {
+                .s-close {
+                    margin-left: 650px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .wrap-header {
+        &.new {
+            .ui-tabs {
+                & > ul {
+                    margin-left: 0;
+                    margin-bottom: 26px;
+                    & > li {
+                        &::before {
+                            height: 14px;
+                            left: -10px;
+                        }
+                    }
+                }
+            }
+            .search-form {
+                input[type="search"] {
+                    height: 50px;
+                    &::placeholder {
+                        font-size: 13px;
+                    }
+                }
+                button {
+                    right: 10px;
+                }
+                .ico.s-search {
+                    width: 36px;
+                    height: 36px;
+                    background-size: 20px;
+                }
+            }
+            .h-search {
+                .s-close {
+                    background-size: 16px;
+                }
+            }
+        }
+    }
+}
