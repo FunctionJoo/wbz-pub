@@ -68,6 +68,8 @@ jQuery(function($){
 
 		$("#sitemap-wrap").show();
 		$(".sitemap-close-btn").focus();
+
+		$('#header_new').addClass('is_menu_open');
 		return false;
 	});
 	$("#sitemap-wrap .sitemap-close-btn").click(function  () {
@@ -81,6 +83,8 @@ jQuery(function($){
 		// $('body').removeClass('scrollLock');
 		$("#sitemap-wrap").hide();
 		$(".sitemap-open-btn").focus();
+
+		$('#header_new').removeClass('is_menu_open');
 		return false;
 	});
 
