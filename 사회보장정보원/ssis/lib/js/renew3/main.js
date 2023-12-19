@@ -110,7 +110,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		});
 	}
 
-	// 메인 페이지의 경우
+	// 硫붿씤 �섏씠吏��� 寃쎌슦
 	if ($('#fullpage').length >= 1) {
 		mainEventInit();
 
@@ -242,13 +242,13 @@ function mainEventInit () {
 		})
 	});
 
-	// 메인 슬라이드 이벤트
+	// 硫붿씤 �щ씪�대뱶 �대깽��
 	const swipermv = new Swiper('.main_visual_bg .swiper', {
 		loop: true,
 		effect: 'fade',
 		allowTouchMove: false,
 		autoplay: {
-			delay: 9200,
+			delay: 5000,	/* 20231213 怨좉컼 �붿껌�쇰줈 硫붿씤而⑦뀗痢� 9.2珥덉뿉�� 5珥덈줈 蹂�寃� */
 			disableOnInteraction: false,
 		},
 		// Navigation arrows
@@ -258,12 +258,28 @@ function mainEventInit () {
 		},
 		/* // wbz20231127 */
 		on: {
-			slideChangeTransitionStart: function(swiper) {
+			init : function(swiper) {
 				if (document.querySelector('.main_article_slide')) {
-					if (swiper.realIndex != 0) {
+					var videoChk = $(swiper.visibleSlides).find('video');
+					if (videoChk.length == 0) {
+						//硫붿씤 諛곌꼍�� 鍮꾨뵒�ㅽ��낆씠 �꾨땺 寃쎌슦 �덉냼�� �쒖떆
 						document.querySelector('.main_article_slide').classList.add('visible-z');
 						document.querySelector('.main_article_slide').classList.add('visible');
 					} else {
+						//硫붿씤 諛곌꼍�� 鍮꾨뵒�ㅽ��낆씪 寃쎌슦 �덉냼�� �④린湲�
+						document.querySelector('.main_article_slide').classList.remove('visible');
+					}
+				}
+			},
+			slideChangeTransitionStart: function(swiper) {
+				if (document.querySelector('.main_article_slide')) {
+					var videoChk = $(swiper.visibleSlides).find('video');
+					if (videoChk.length == 0) {
+						//硫붿씤 諛곌꼍�� 鍮꾨뵒�ㅽ��낆씠 �꾨땺 寃쎌슦 �덉냼�� �쒖떆
+						document.querySelector('.main_article_slide').classList.add('visible-z');
+						document.querySelector('.main_article_slide').classList.add('visible');
+					} else {
+						//硫붿씤 諛곌꼍�� 鍮꾨뵒�ㅽ��낆씪 寃쎌슦 �덉냼�� �④린湲�
 						document.querySelector('.main_article_slide').classList.remove('visible');
 					}
 				}
@@ -274,8 +290,9 @@ function mainEventInit () {
 					swiper.autoplay.stop();
 				}
 				if (document.querySelector('.main_article_slide')) {
-					if (swiper.realIndex != 0) {
-					} else {
+					var videoChk = $(swiper.visibleSlides).find('video');
+					
+					if (videoChk.length != 0) {
 						document.querySelector('.main_article_slide').classList.remove('visible-z');
 					}
 				}
@@ -293,8 +310,27 @@ function mainEventInit () {
 		}
 	});
 
-	// 메인 슬라이드 이벤트 2
+	// 硫붿씤 �щ씪�대뱶 �대깽�� 2
 	if (document.querySelector('.main_article_slide')) {
+		let smWrapMas = document.querySelector('.main_article_slide .swiper-wrapper');
+		let smSlidesMas = smWrapMas.querySelectorAll('.swiper-slide');
+		let smMinCountMas = 20;
+		let copyWork = false;
+		function smCopyElMas() {
+			smSlidesMas.forEach((el) => {
+				const el2 = el.cloneNode(true);
+				el2.querySelector('a').tabIndex = -1;
+				// wbz20231127
+				smWrapMas.append(el2);
+			});
+		}
+		if (smSlidesMas.length < smMinCountMas) {
+			copyWork = true;
+			smCopyElMas();
+			smCopyElMas();
+			smCopyElMas();
+		}
+		
 		const swiperat = new Swiper('.main_article_slide .swiper', {
 			loop: true,
 			slidesPerView: 1,
@@ -310,7 +346,22 @@ function mainEventInit () {
 			},
 			pagination: {
 				el: '.main_article_slide .ma_pg',
-				type: 'fraction'
+				//type: 'fraction',
+				type: 'custom',
+				renderCustom: function(swiper, current, total) {
+					if (copyWork) {
+						let currentCalc = current;
+						if (current > (total / 4)) {
+							currentCalc = current % (total / 4);
+							if (currentCalc == 0) {
+								currentCalc = total / 4;
+							}
+						}
+						return `<span class="swiper-pagination-current">${currentCalc}</span> / <span class="swiper-pagination-total">${total / 4}</span>`;
+					} else {
+						return `<span class="swiper-pagination-current">${current}</span> / <span class="swiper-pagination-total">${total}</span>`;
+					}
+				}
 			},
 			breakpoints: {
 				// when window width is >= 320px
@@ -352,8 +403,8 @@ function mainEventInit () {
 	}
 
 	// wbz20231121
-	// 공지사항 영역 이벤트
-	// 공지사항 영역 자동 롤링
+	// 怨듭��ы빆 �곸뿭 �대깽��
+	// 怨듭��ы빆 �곸뿭 �먮룞 濡ㅻ쭅
 	if (document.querySelector('.main_notice_board > ul > li')) {
 		if (document.querySelectorAll('.main_notice_board > ul > li')) {
 			let intCount = 0;
@@ -413,7 +464,7 @@ function mainEventInit () {
 		}
 	}
 
-	// 3P 포털 링크
+	// 3P �ы꽭 留곹겕
 	if (document.querySelector('.swipe_menu .swiper-wrapper')) {
 		let smWrap = document.querySelector('.swipe_menu .swiper-wrapper');
 		let smSlides = smWrap.querySelectorAll('.swiper-slide');
@@ -447,7 +498,7 @@ function mainEventInit () {
 		});
 	}
 
-	// 주요 포털 사이트
+	// 二쇱슂 �ы꽭 �ъ씠��
 	// const swiperps = new Swiper('.main_portal_slide .swiper', {
 
 	// });
@@ -470,7 +521,7 @@ function mainEventInit () {
 	// let lastidx = 0;
 	// for (let i=0;i<mpsLen;i++) {
 	// 	mpsBtnWrap.insertAdjacentHTML('beforeend' ,`
-	// 		<button type="button" data-idx="${i}" class="mps_bul mpsb_${i}">${i}번째 슬라이드 이동</button>
+	// 		<button type="button" data-idx="${i}" class="mps_bul mpsb_${i}">${i}踰덉㎏ �щ씪�대뱶 �대룞</button>
 	// 	`);
 	// };
 	// document.querySelectorAll('.mps_bul').forEach((el, idx_l) => {
@@ -497,7 +548,7 @@ function mainEventInit () {
 
 
 
-	// 알림존
+	// �뚮┝議�
 	if (document.querySelector('.main_notice_slide .swiper')) {
 		const swipermn = new Swiper('.main_notice_slide .swiper', {
 			loop: true,
