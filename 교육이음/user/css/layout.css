@@ -516,8 +516,9 @@
   opacity: 0;
   display: none;
 }
-.go-top .txt {
-  display: inline-block;
+.go-top::after {
+  content: "TOP";
+  display: block;
   padding-top: 26px;
   font-family: "Inter", sans-serif !important;
   font-weight: 500;
@@ -605,9 +606,6 @@
   }
   #aside-menu {
     display: block;
-  }
-  #footer {
-    margin-top: 60px;
   }
   #footer .ft-top .w-set {
     padding: 0;

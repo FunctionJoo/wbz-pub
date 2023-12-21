@@ -1,6 +1,7 @@
 @import "./utility.scss";
-// 웹접근성
-/* 스킵네비게이션 */
+
+/* ===== 웹접근성 ===== */
+// 스킵네비게이션
 #skipNav {
 	position: relative;
 	z-index: 9999;
@@ -29,7 +30,7 @@
 		}
 	}
 }
-
+// focus
 a:focus,
 button:focus,
 input:focus,
@@ -37,10 +38,10 @@ select:focus,
 textarea:focus,
 *[tabindex="0"]:focus,
 *[tabindex="1"]:focus {
-	outline: 1px dashed	 #ff0000;
+	outline: 1px dashed #ff0000;
 }
 
-// layout
+/* ===== 공통 ===== */
 .w-set {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -62,7 +63,7 @@ textarea:focus,
 }
 
 // input
-.input_wrap {
+.input-wrap {
 	input[type="text"],
 	input[type="number"],
 	input[type="email"],
@@ -71,11 +72,13 @@ textarea:focus,
 	input[type="password"],
 	textarea,
 	select {
+		display: inline-block;
+		width: 100%;
 		height: 50px;
 		background: #fff;
 		border: 1px solid $base-color1;
 		border-radius: 6px;
-		font-size: 16px;
+		font-size: 15px;
 		padding: 0 20px;
 		select:focus,
 		&:focus {
@@ -83,65 +86,7 @@ textarea:focus,
 			outline: none;
 		}
 		&::placeholder {
-			// color: $text-color5;
-		}
-	}
-	.checkbox {
-		input {
-			overflow: hidden;
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			margin: -1px;
-			clip: rect(0 0 0 0);
-		}
-		label {
-			cursor: pointer;
-			display: inline-block;
-			position: relative;
-			padding-left: 31px;
-			font-size: 14px;
-			color: #222;
-			line-height: 22px;
-			&:before {
-				content: "";
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 0;
-				margin-top: -13px;
-				width: 22px;
-				height: 22px;
-				background: no-repeat center center;
-				border: 1px solid $base-color1;
-				border-radius: 3px;
-				box-sizing: border-box;
-			}
-		}
-		input:checked ~ label:before {
-			border: 0 none;
-			background-image: url("../images/common/ico/checkbox_on.svg");
-			background-size: 100% 100%;
-		}
-		input[disabled] ~ label {
-			// color: $text-color6;
-		}
-		input[disabled] ~ label:before {
-			background-color: $base-color1;
-		}
-	}
-	.radiobox {
-		@extend .checkbox;
-		input[type="radio"] ~ label {
-			&:before {
-				border-radius: 50%;
-			}
-		}
-		input[type="radio"]:checked ~ label {
-			&:before {
-				background-color: #1e3c82;
-				//background-image: url('../images/common/ico/radiobox_on.svg');
-			}
+			color: $text-color3;
 		}
 	}
 	select {
@@ -234,18 +179,78 @@ textarea:focus,
 	}
 }
 
+// checkbox, radio
+.checkbox {
+	input {
+		overflow: hidden;
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		clip: rect(0 0 0 0);
+	}
+	label {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		padding-left: 31px;
+		font-size: 15px;
+		color: #222;
+		line-height: 22px;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -13px;
+			width: 24px;
+			height: 24px;
+			background: no-repeat center center;
+			border: 1px solid $base-color1;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+	}
+	input:checked ~ label:before {
+		border: 0 none;
+		background: $primary-color1 url("../images/common/ico/checkbox_on.svg");
+		background-size: 100% 100%;
+	}
+	input[disabled] ~ label {
+		// color: $text-color6;
+	}
+	input[disabled] ~ label:before {
+		background-color: $base-color1;
+	}
+}
+.radiobox {
+	@extend .checkbox;
+	input[type="radio"] ~ label {
+		&:before {
+			border-radius: 50%;
+		}
+	}
+	input[type="radio"]:checked ~ label {
+		&:before {
+			background-color: #1e3c82;
+			//background-image: url('../images/common/ico/radiobox_on.svg');
+		}
+	}
+}
+
 // button
-.btn_wrap {
+.btn-wrap {
 	display: flex;
 	align-items: center;
-	gap: 16px;
-	&.type_right {
+	gap: 20px;
+	&.type-right {
 		text-align: right;
 	}
-	&.type_center {
+	&.type-center {
 		text-align: center;
 	}
-	&.type_center_always {
+	&.type-center-always {
 		align-items: center;
 		justify-content: center;
 		.btn {
@@ -253,16 +258,16 @@ textarea:focus,
 			width: auto;
 		}
 	}
-	&.type_between {
+	&.type-between {
 		justify-content: space-between;
 	}
-	&.type_auto {
+	&.type-auto {
 		flex-wrap: wrap;
 	}
-	&.type_column {
+	&.type-column {
 		flex-direction: column;
 	}
-	&.type_full_always {
+	&.type-full-always {
 		align-items: center;
 		justify-content: center;
 		margin: 0 0 0 0;
@@ -273,92 +278,35 @@ textarea:focus,
 			margin: 0 0 0 0;
 		}
 	}
-	&.type_fixed {
+	&.type-fixed {
 		position: fixed;
 		left: 0;
 		right: 0;
 		bottom: 0;
 	}
 }
-
 .btn {
 	display: inline-block;
 	width: 100%;
 	height: 50px;
-	background: $primary-color1;
-	border: 1px solid $primary-color1;
-	border-radius: 6px;
-	font-size: 16px;
 	line-height: 48px;
+	background: $primary-color2;
+	border: 1px solid $primary-color2;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 16px;
 	text-align: center;
 	color: #fff;
 	&.color_2 {
 		background: #fff;
-		color: $primary-color1;
+		color: $primary-color2;
 	}
 	&.color_3 {
-		background-color: #191f28;
-		border-color: #191f28;
-		color: #fff;
-	}
-	&.color_4 {
 		background-color: #fff;
-		border-color: $text-color1;
+		border-color: #666;
 		color: $text-color1;
 	}
-	&.off {
-		background-color: #828282;
-		border-color: #828282;
-	}
-
-	// 크기
-	// &.type_mini {
-	// 	width: 78px;
-	// 	height: 28px;
-	// 	line-height: 26px;
-	// 	font-size: 14px;
-	// 	border-radius: 3px;
-	// }
-	// &.type_wide {
-	// 	width: 200px;
-	// }
-	// &.type_wide_2 {
-	// 	width: 352px;
-	// }
-	// &.type_auto {
-	// 	width: auto;
-	// 	padding: 0 20px;
-	// }
-	&.type_middle {
-		width: 142px;
-	}
-	// &.type_middle_2 {
-	// 	width: 180px;
-	// }
-	// &.type_sml {
-	// 	width: 120px;
-	// 	height: 46px;
-	// 	line-height: 44px;
-	// 	font-size: 14px;
-	// }
-	// &.type_small_y {
-	// 	width: 120px;
-	// 	height: 42px;
-	// 	line-height: 40px;
-	// 	font-size: 14px;
-	// }
-	// &.type_full {
-	// 	border: 0 none !important;
-	// 	border-radius: 0 !important;
-	// 	width: 100%;
-	// }
-	// &.type_flex {
-	// 	flex: 1;
-	// 	margin: 0 6px;
-	// }
-
-	// 화살표
-	&.has_arr {
+	&.has-arr {
 		background-color: #f4f6fa;
 		border-color: #f4f6fa;
 		color: $text-color1;
@@ -373,7 +321,7 @@ textarea:focus,
 			background: url("../images/common/ico/i_more.svg") no-repeat center center;
 		}
 	}
-	&.type_toggle {
+	&.type-toggle {
 		background-color: #f4f6fa;
 		border-color: #f4f6fa;
 		color: $text-color1;
@@ -392,7 +340,7 @@ textarea:focus,
 			transform: scaleY(-1);
 		}
 	}
-	&.type_upload {
+	&.type-upload {
 		&:before {
 			content: "";
 			display: inline-block;
@@ -407,7 +355,7 @@ textarea:focus,
 			margin-top: -4px;
 		}
 	}
-	&.type_download {
+	&.type-download {
 		&:before {
 			content: "";
 			display: inline-block;
@@ -423,13 +371,10 @@ textarea:focus,
 			margin-top: -4px;
 		}
 	}
-	&.is_left {
-		margin-right: auto;
-	}
 }
 
-/*=====별점=====*/
-.star_rating {
+// 평점
+.star-rating {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
@@ -450,8 +395,7 @@ textarea:focus,
 		background-repeat: no-repeat;
 	}
 }
-
-.star_area {
+.star-area {
 	&.starChk {
 		position: relative;
 		width: 129px;
@@ -503,13 +447,12 @@ textarea:focus,
 		}
 	}
 }
-
 .new-ico {
 	display: inline-block;
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
-	background: #3575d6;
+	background: $primary-color3;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 16px;
@@ -518,32 +461,6 @@ textarea:focus,
 		display: block;
 		font-size: 10px;
 		color: #fff;
-	}
-}
-
-.df_btn {
-	display: inline-block;
-	width: 160px;
-	height: 50px;
-	border: 1px solid #fff;
-	border-radius: 6px;
-	background-color: #fff;
-	text-align: center;
-	color: $text-color1;
-	font-size: 16px;
-	line-height: 48px;
-	&.add_ico {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		i {
-			display: inline-block;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-		span {
-			color: $text-color1;
-		}
 	}
 }
 
@@ -567,7 +484,7 @@ textarea:focus,
 	}
 
 	// input
-	.input_wrap {
+	.input-wrap {
 		input[type="text"],
 		input[type="number"],
 		input[type="email"],
@@ -579,13 +496,6 @@ textarea:focus,
 			line-height: 38px;
 			font-size: 14px;
 			padding: 0 14px;
-			&.type_short {
-				max-width: 164px;
-			}
-			&.type_font_s {
-				//NOTE 수정
-				height: 42px !important;
-			}
 		}
 		textarea {
 			height: 156px;
@@ -628,7 +538,7 @@ textarea:focus,
 	}
 
 	// button
-	.btn_wrap {
+	.btn-wrap {
 		// margin-left: -6px;
 		// margin-right: -6px;
 		font-size: 0;
@@ -636,8 +546,8 @@ textarea:focus,
 			// margin: 0 6px;
 		}
 
-		&.type_between,
-		&.type_center {
+		&.type-between,
+		&.type-center {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -646,7 +556,7 @@ textarea:focus,
 				width: auto;
 			}
 		}
-		&.m_fixed {
+		&.m-fixed {
 			background-color: #fff;
 			padding: 0 16px 16px;
 			position: fixed;
@@ -655,17 +565,13 @@ textarea:focus,
 			right: 0;
 		}
 	}
-
 	.btn {
 		height: 42px;
 		line-height: 40px;
-		&.type_sml {
-			width: 96px;
-		}
-		&.has_arr {
+		&.has-arr {
 			font-size: 14px;
 		}
-		&.type_toggle {
+		&.type-toggle {
 			font-size: 14px;
 		}
 	}
@@ -675,22 +581,22 @@ textarea:focus,
 	}
 }
 
-//pc
+// pc, 태블릿
 @media (min-width: 768px) {
-	.pc{
+	.pc {
 		display: block !important;
 	}
-	.mobile{
+	.mobile {
 		display: none !important;
 	}
 }
 
-//모바일
+// 모바일
 @media (max-width: 768px) {
-	.pc{
+	.pc {
 		display: none !important;
 	}
-	.mobile{
+	.mobile {
 		display: block !important;
 	}
 }

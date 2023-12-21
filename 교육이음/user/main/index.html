@@ -7,7 +7,7 @@
 		content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="format-detection" content="telephone=no" />
-	<meta name="description" content="Autowithus">
+	<meta name="description" content="Incheon Edu">
 	<link rel="icon" href="../images/favicon/favicon_16x16.png" sizes="16x16">
 	<link rel="icon" href="../images/favicon/favicon_18x18.png" sizes="18x18">
 	<link rel="icon" href="../images/favicon/favicon_32x32.png" sizes="32x32">
@@ -72,11 +72,11 @@
 				</div>
 			</div>
 			<!-- 로그인 후 상단 내정보 -->
-			<!-- <div class="main-sec my">
+			<div class="main-sec my">
 				<div class="w-set">
 					<div class="my-wrap">
 						<div class="my-info">
-							<span class="name"><em>인천초등학교 홍길동</em>님</span>
+							<p class="name"><span>인천초등학교 홍길동</span>님</p>
 							<p class="txt">인천광역시 교육이음센터 방문을 환영합니다.</p>
 						</div>
 						<div class="supply-wrap">
@@ -85,15 +85,45 @@
 								<a href="#" class="btn-more">더보기</a>
 							</div>
 							<div class="supply-list">
-
+								<a href="#">
+									<div class="cont-top">
+										<span class="state">승인<br>대기</span>
+										<div class="tit-area">
+											<p class="tit">[2024년1학기]저학년 기초학력 지도 지원</p>
+											<i class="new-ico"></i>
+										</div>
+									</div>
+									<div class="cont-btm">
+										<p class="info">
+											<span>인천하늘초</span>
+											<span>00명</span>
+										</p>
+										<p class="date">23.11.24~23.12.01</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="cont-top">
+										<span class="state end">승인<br>완료</span>
+										<div class="tit-area">
+											<p class="tit">하굣길 교통지도 및 사각지대 순찰생존수영활동 안전 지도</p>
+										</div>
+									</div>
+									<div class="cont-btm">
+										<p class="info">
+											<span>인천하늘초</span>
+											<span>00명</span>
+										</p>
+										<p class="date">23.11.24~23.12.01</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<!-- 메인 메뉴 -->
-			<div class="main-sec"> <!-- 로그인 후 is-login 클래스 추가 -->
-				<!-- <div class="w-set">
+			<div class="main-sec is-login"> <!-- 로그인 후 is-login 클래스 추가 -->
+				<div class="w-set">
 					<div class="info-wrap">
 						<a href="#">
 							<span class="tit">정보수정</span>
@@ -104,7 +134,7 @@
 							<p class="txt">이용가이드</p>
 						</a>
 					</div>
-				</div> -->
+				</div>
 				<div class="w-set">
 					<div class="menu-wrap">
 						<a href="#" class="menu menu1">나의신청현황</a>
@@ -205,7 +235,7 @@
 				</div>
 			</div>
 			<!-- 로그인 후 -->
-			<!-- <div class="main-sec bg2">
+			<div class="main-sec bg2">
 				<div class="w-set">
 					<div class="volunteer-wrap">
 						<div class="tit-area">
@@ -233,7 +263,7 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<!-- 공지사항 -->
 			<div class="main-sec">
 				<div class="w-set">
@@ -299,10 +329,10 @@
 				slidesPerView: 1,
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-					disableOnInteraction: false,
-				},
+				// autoplay: {
+				// 	delay: 3000,
+				// 	disableOnInteraction: false,
+				// },
 				pagination: {
 					el: ".main-visual .swiper-control .pagination",
 					clickable: true,

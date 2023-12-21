@@ -566,8 +566,9 @@
     transition: 0.3s;
     opacity: 0;
     display: none;
-    .txt {
-        display: inline-block;
+    &::after{
+        content: 'TOP';
+        display: block;
         padding-top: 26px;
         font-family: $inter;
         font-weight: 500;

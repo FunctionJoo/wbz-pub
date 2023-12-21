@@ -423,7 +423,6 @@
 
 // footer
 #footer {
-    // margin-top: 120px;
     .ft-top {
         background: #eeeeee;
         .w-set {
@@ -554,8 +553,9 @@
     transition: 0.3s;
     opacity: 0;
     display: none;
-    .txt {
-        display: inline-block;
+    &::after{
+        content: 'TOP';
+        display: block;
         padding-top: 26px;
         font-family: $inter;
         font-weight: 500;
@@ -653,7 +653,6 @@
 
     // footer
     #footer {
-        margin-top: 60px;
         .ft-top {
             .w-set {
                 padding: 0;

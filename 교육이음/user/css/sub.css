@@ -6,6 +6,10 @@ h2.tit {
 
 .member {
   padding: 100px 0 200px;
+  border-top: 1px solid #ddd;
+}
+.member .type-2 h2.tit {
+  margin-bottom: 40px;
 }
 .member h2.tit {
   margin-bottom: 60px;
@@ -54,4 +58,25 @@ h2.tit {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+.member .fail-txt {
+  text-align: center;
+  padding: 67px 0 30px;
+  background: url("../images/common/ico/login_fail.svg") no-repeat top center;
+}
+.member .fail-txt .txt1 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.member .fail-txt .txt1 span {
+  color: #459729;
+}
+.member .fail-txt .txt2 {
+  font-size: 15px;
+  line-height: 22px;
+}
+.member .captcha {
+  margin: 20px 0 10px;
+  min-height: 60px;
+  background: #ddd;
 }

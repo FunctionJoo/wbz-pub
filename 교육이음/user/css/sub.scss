@@ -1,3 +1,5 @@
+@import "./utility.scss";
+
 // 공통
 h2.tit {
     text-align: center;
@@ -8,6 +10,12 @@ h2.tit {
 // 회원가입
 .member {
     padding: 100px 0 200px;
+    border-top: 1px solid #ddd;
+    .type-2 {
+        h2.tit {
+            margin-bottom: 40px;
+        }
+    }
     h2.tit {
         margin-bottom: 60px;
     }
@@ -25,16 +33,16 @@ h2.tit {
             margin-top: 15px;
         }
     }
-    .id{
-        input{
+    .id {
+        input {
             padding-left: 43px;
-            background: url('../images/common/ico/login_id.svg') no-repeat left 15px center;
+            background: url("../images/common/ico/login_id.svg") no-repeat left 15px center;
         }
     }
-    .pw{
-        input{
+    .pw {
+        input {
             padding-left: 43px;
-            background: url('../images/common/ico/login_pw.svg') no-repeat left 15px center;
+            background: url("../images/common/ico/login_pw.svg") no-repeat left 15px center;
         }
     }
     .login-btm {
@@ -61,5 +69,26 @@ h2.tit {
                 }
             }
         }
+    }
+    .fail-txt{
+        text-align: center;
+        padding: 67px 0 30px;
+        background: url('../images/common/ico/login_fail.svg') no-repeat top center;
+        .txt1{
+            font-weight: 500;
+            font-size: 20px;
+            span{
+                color: $primary-color2;
+            }
+        }
+        .txt2{
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+    .captcha{
+        margin: 20px 0 10px;
+        min-height: 60px;
+        background: #ddd;
     }
 }

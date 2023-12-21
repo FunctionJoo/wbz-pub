@@ -1,6 +1,7 @@
 @import "./utility.scss";
-// 웹접근성
-/* 스킵네비게이션 */
+
+/* ===== 웹접근성 ===== */
+// 스킵네비게이션
 #skipNav {
 	position: relative;
 	z-index: 9999;
@@ -29,7 +30,7 @@
 		}
 	}
 }
-
+// focus
 a:focus,
 button:focus,
 input:focus,
@@ -40,7 +41,7 @@ textarea:focus,
 	outline: 1px dashed #ff0000;
 }
 
-// layout
+/* ===== 공통 ===== */
 .w-set {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -178,7 +179,7 @@ textarea:focus,
 	}
 }
 
-// 체크박스
+// checkbox, radio
 .checkbox {
 	input {
 		overflow: hidden;
@@ -213,7 +214,7 @@ textarea:focus,
 	}
 	input:checked ~ label:before {
 		border: 0 none;
-		background: url("../images/common/ico/checkbox_on.svg");
+		background: $primary-color1 url("../images/common/ico/checkbox_on.svg");
 		background-size: 100% 100%;
 	}
 	input[disabled] ~ label {
@@ -239,17 +240,17 @@ textarea:focus,
 }
 
 // button
-.btn_wrap {
+.btn-wrap {
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	&.type_right {
+	&.type-right {
 		text-align: right;
 	}
-	&.type_center {
+	&.type-center {
 		text-align: center;
 	}
-	&.type_center_always {
+	&.type-center-always {
 		align-items: center;
 		justify-content: center;
 		.btn {
@@ -257,16 +258,16 @@ textarea:focus,
 			width: auto;
 		}
 	}
-	&.type_between {
+	&.type-between {
 		justify-content: space-between;
 	}
-	&.type_auto {
+	&.type-auto {
 		flex-wrap: wrap;
 	}
-	&.type_column {
+	&.type-column {
 		flex-direction: column;
 	}
-	&.type_full_always {
+	&.type-full-always {
 		align-items: center;
 		justify-content: center;
 		margin: 0 0 0 0;
@@ -277,14 +278,13 @@ textarea:focus,
 			margin: 0 0 0 0;
 		}
 	}
-	&.type_fixed {
+	&.type-fixed {
 		position: fixed;
 		left: 0;
 		right: 0;
 		bottom: 0;
 	}
 }
-
 .btn {
 	display: inline-block;
 	width: 100%;
@@ -306,77 +306,75 @@ textarea:focus,
 		border-color: #666;
 		color: $text-color1;
 	}
-
-	// 화살표
-	// &.has_arr {
-	// 	background-color: #f4f6fa;
-	// 	border-color: #f4f6fa;
-	// 	color: $text-color1;
-	// 	position: relative;
-	// 	&::after {
-	// 		content: "";
-	// 		display: inline-block;
-	// 		vertical-align: top;
-	// 		width: 20px;
-	// 		height: 100%;
-	// 		margin-left: 2px;
-	// 		background: url("../images/common/ico/i_more.svg") no-repeat center center;
-	// 	}
-	// }
-	// &.type_toggle {
-	// 	background-color: #f4f6fa;
-	// 	border-color: #f4f6fa;
-	// 	color: $text-color1;
-	// 	position: relative;
-	// 	&:after {
-	// 		content: "";
-	// 		display: inline-block;
-	// 		vertical-align: top;
-	// 		width: 20px;
-	// 		height: 100%;
-	// 		margin-left: 2px;
-	// 		background: url("../images/common/ico/i_more.svg") no-repeat center center;
-	// 		transition: all 0.35s;
-	// 	}
-	// 	&.on:after {
-	// 		transform: scaleY(-1);
-	// 	}
-	// }
-	// &.type_upload {
-	// 	&:before {
-	// 		content: "";
-	// 		display: inline-block;
-	// 		vertical-align: middle;
-	// 		width: 26px;
-	// 		height: 26px;
-	// 		border-radius: 100%;
-	// 		margin-right: 8px;
-	// 		background: url("../images/common/i_down_1.svg") no-repeat left 55% center #fff;
-	// 		background-size: auto 10px;
-	// 		transform: rotate(-90deg);
-	// 		margin-top: -4px;
-	// 	}
-	// }
-	// &.type_download {
-	// 	&:before {
-	// 		content: "";
-	// 		display: inline-block;
-	// 		vertical-align: middle;
-	// 		width: 26px;
-	// 		height: 26px;
-	// 		border-radius: 100%;
-	// 		border: 1px solid #eee;
-	// 		margin-right: 8px;
-	// 		background: url("../images/common/i_down_1.svg") no-repeat left 55% center;
-	// 		background-size: auto 10px;
-	// 		transform: rotate(90deg);
-	// 		margin-top: -4px;
-	// 	}
-	// }
+	&.has-arr {
+		background-color: #f4f6fa;
+		border-color: #f4f6fa;
+		color: $text-color1;
+		position: relative;
+		&::after {
+			content: "";
+			display: inline-block;
+			vertical-align: top;
+			width: 20px;
+			height: 100%;
+			margin-left: 2px;
+			background: url("../images/common/ico/i_more.svg") no-repeat center center;
+		}
+	}
+	&.type-toggle {
+		background-color: #f4f6fa;
+		border-color: #f4f6fa;
+		color: $text-color1;
+		position: relative;
+		&:after {
+			content: "";
+			display: inline-block;
+			vertical-align: top;
+			width: 20px;
+			height: 100%;
+			margin-left: 2px;
+			background: url("../images/common/ico/i_more.svg") no-repeat center center;
+			transition: all 0.35s;
+		}
+		&.on:after {
+			transform: scaleY(-1);
+		}
+	}
+	&.type-upload {
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			width: 26px;
+			height: 26px;
+			border-radius: 100%;
+			margin-right: 8px;
+			background: url("../images/common/i_down_1.svg") no-repeat left 55% center #fff;
+			background-size: auto 10px;
+			transform: rotate(-90deg);
+			margin-top: -4px;
+		}
+	}
+	&.type-download {
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			width: 26px;
+			height: 26px;
+			border-radius: 100%;
+			border: 1px solid #eee;
+			margin-right: 8px;
+			background: url("../images/common/i_down_1.svg") no-repeat left 55% center;
+			background-size: auto 10px;
+			transform: rotate(90deg);
+			margin-top: -4px;
+		}
+	}
 }
 
-// 별점
-.star_rating {
+// 평점
+.star-rating {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
@@ -397,8 +395,7 @@ textarea:focus,
 		background-repeat: no-repeat;
 	}
 }
-
-.star_area {
+.star-area {
 	&.starChk {
 		position: relative;
 		width: 129px;
@@ -450,7 +447,6 @@ textarea:focus,
 		}
 	}
 }
-
 .new-ico {
 	display: inline-block;
 	vertical-align: middle;
@@ -488,7 +484,7 @@ textarea:focus,
 	}
 
 	// input
-	.input_wrap {
+	.input-wrap {
 		input[type="text"],
 		input[type="number"],
 		input[type="email"],
@@ -542,7 +538,7 @@ textarea:focus,
 	}
 
 	// button
-	.btn_wrap {
+	.btn-wrap {
 		// margin-left: -6px;
 		// margin-right: -6px;
 		font-size: 0;
@@ -550,8 +546,8 @@ textarea:focus,
 			// margin: 0 6px;
 		}
 
-		&.type_between,
-		&.type_center {
+		&.type-between,
+		&.type-center {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -560,7 +556,7 @@ textarea:focus,
 				width: auto;
 			}
 		}
-		&.m_fixed {
+		&.m-fixed {
 			background-color: #fff;
 			padding: 0 16px 16px;
 			position: fixed;
@@ -569,14 +565,13 @@ textarea:focus,
 			right: 0;
 		}
 	}
-
 	.btn {
 		height: 42px;
 		line-height: 40px;
-		&.has_arr {
+		&.has-arr {
 			font-size: 14px;
 		}
-		&.type_toggle {
+		&.type-toggle {
 			font-size: 14px;
 		}
 	}
