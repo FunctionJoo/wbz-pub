@@ -78,26 +78,17 @@ function layoutEvent() {
 	// footer
 	var familySite = false;
 	$('.ft-family').each(function(){
-		$(this).find('.mn_f1').click(function () {
-			if(familySite = true && $(this).parent('.tab').hasClass('over')){
-				$(this).parent('.tab').removeClass('over');
-				$(this).parent('.tab').find('.list-wrap').slideUp();
+		$(this).find('.select').click(function () {
+			if(familySite = true && $(this).hasClass('over')){
+				$(this).removeClass('over');
+				$(this).next('.list-wrap').slideUp();
 				familySite = false;
 			}else{
-					$(this).parent('.tab').addClass('over');
-					$(this).parent('.tab').find('.list-wrap').slideDown();
-					$(this).parent('.tab').siblings('.tab').removeClass('over');
-					$(this).parent('.tab').siblings('.tab').find('.list-wrap').slideUp();
-					familySite = true;
-				
+					$(this).addClass('over');
+					$(this).next('.list-wrap').slideDown();
+					familySite = true;				
 			}
-     	});
-		 $(this).find('.close').click(function () {
-			$(this).parent('div').slideUp();
-			$(this).parent('div').parent('.tab').removeClass('over');
-			$(this).parent('div').parent('.tab').find('.mn_f1').focus();
-			familySite = false;
-		});
+     	});		
    });
 
    // go top 버튼

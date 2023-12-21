@@ -38,8 +38,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {font-size: 10px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
-
-body {width: 100%;color: #212121; background-color: #fff; }
+body {width: 100%;color: #222; background-color: #fff; }
 html, body, pre {font-family: 'Noto Sans KR', sans-serif;}
 
 ol, ul, nav {
@@ -50,14 +49,12 @@ blockquote, q {
 	quotes: none;
 }
 
-
 table {
 	width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
 	table-layout: fixed;
 }
-
 
 a {
 	text-decoration: none;
@@ -198,19 +195,13 @@ input[disabled] {
 input::-ms-clear {display: none;}
 
 header, footer, article, section, aside, details, figure, figcaption, nav, hgroup { display: block; margin: 0; padding: 0; }
-audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-button, input, select, textarea { margin: 0; font-size: 100%; vertical-align: baseline; *vertical-align: middle; }
-button, input { line-height: normal; *overflow: visible; }
-table button, table input { *overflow: auto; }
+audio[controls], canvas, video { display: inline-block; display: inline; zoom: 1; }
+button, input, select, textarea { margin: 0; font-size: 100%; vertical-align: baseline; vertical-align: middle; }
+button, input { line-height: normal; overflow: visible; }
+table button, table input { overflow: auto; }
 button, html input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
 
-input,select{vertical-align:top; outline:none;}
-input[type=text],
-input[type=number],
-input[type=email],
-input[type=tel],
-input[type=date],
-input[type=password]{display: inline-block;width: 100%;font-weight: 400;padding: 10px;border:1px solid #ddd;background:#fff;height: 52px;font-size: 16px;color: #333;box-sizing: border-box;font-family:'Noto Sans KR', sans-serif;}
+input,select{vertical-align:top; outline:none;box-sizing: border-box;}
 input[type=file],input[type=image],input[type=reset],input[type=button],input[type=submit] {cursor:pointer;}
 textarea{display:inline-block;width:100%;padding:10px;border:1px solid #ddd;background:#fff;font-size: 16px;box-sizing:border-box;resize: none;color: #333;font-family:'Noto Sans KR', sans-serif;}
 ::placeholder{color: #D3D3D3;}

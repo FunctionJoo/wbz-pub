@@ -59,115 +59,82 @@ textarea:focus,
   white-space: nowrap;
 }
 
-.input_wrap input[type=text],
-.input_wrap input[type=number],
-.input_wrap input[type=email],
-.input_wrap input[type=tel],
-.input_wrap input[type=date],
-.input_wrap input[type=password],
-.input_wrap textarea,
-.input_wrap select {
+.input-wrap input[type=text],
+.input-wrap input[type=number],
+.input-wrap input[type=email],
+.input-wrap input[type=tel],
+.input-wrap input[type=date],
+.input-wrap input[type=password],
+.input-wrap textarea,
+.input-wrap select {
+  display: inline-block;
+  width: 100%;
   height: 50px;
   background: #fff;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #d3d3d3;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
   padding: 0 20px;
 }
-.input_wrap input[type=text] select:focus, .input_wrap input[type=text]:focus,
-.input_wrap input[type=number] select:focus,
-.input_wrap input[type=number]:focus,
-.input_wrap input[type=email] select:focus,
-.input_wrap input[type=email]:focus,
-.input_wrap input[type=tel] select:focus,
-.input_wrap input[type=tel]:focus,
-.input_wrap input[type=date] select:focus,
-.input_wrap input[type=date]:focus,
-.input_wrap input[type=password] select:focus,
-.input_wrap input[type=password]:focus,
-.input_wrap textarea select:focus,
-.input_wrap textarea:focus,
-.input_wrap select select:focus,
-.input_wrap select:focus {
-  border-color: #78B53A;
+.input-wrap input[type=text] select:focus, .input-wrap input[type=text]:focus,
+.input-wrap input[type=number] select:focus,
+.input-wrap input[type=number]:focus,
+.input-wrap input[type=email] select:focus,
+.input-wrap input[type=email]:focus,
+.input-wrap input[type=tel] select:focus,
+.input-wrap input[type=tel]:focus,
+.input-wrap input[type=date] select:focus,
+.input-wrap input[type=date]:focus,
+.input-wrap input[type=password] select:focus,
+.input-wrap input[type=password]:focus,
+.input-wrap textarea select:focus,
+.input-wrap textarea:focus,
+.input-wrap select select:focus,
+.input-wrap select:focus {
+  border-color: #78b53a;
   outline: none;
 }
-.input_wrap .checkbox input, .input_wrap .radiobox input {
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0 0 0 0);
+.input-wrap input[type=text]::placeholder,
+.input-wrap input[type=number]::placeholder,
+.input-wrap input[type=email]::placeholder,
+.input-wrap input[type=tel]::placeholder,
+.input-wrap input[type=date]::placeholder,
+.input-wrap input[type=password]::placeholder,
+.input-wrap textarea::placeholder,
+.input-wrap select::placeholder {
+  color: #666;
 }
-.input_wrap .checkbox label, .input_wrap .radiobox label {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  padding-left: 31px;
-  font-size: 14px;
-  color: #222;
-  line-height: 22px;
-}
-.input_wrap .checkbox label:before, .input_wrap .radiobox label:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -13px;
-  width: 22px;
-  height: 22px;
-  background: no-repeat center center;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-.input_wrap .checkbox input:checked ~ label:before, .input_wrap .radiobox input:checked ~ label:before {
-  border: 0 none;
-  background-image: url("../images/common/ico/checkbox_on.svg");
-  background-size: 100% 100%;
-}
-.input_wrap .checkbox input[disabled] ~ label:before, .input_wrap .radiobox input[disabled] ~ label:before {
-  background-color: #d9d9d9;
-}
-.input_wrap .radiobox input[type=radio] ~ label:before {
-  border-radius: 50%;
-}
-.input_wrap .radiobox input[type=radio]:checked ~ label:before {
-  background-color: #1e3c82;
-}
-.input_wrap select {
+.input-wrap select {
   padding-right: 34px;
   width: 100%;
   appearance: none;
   background: #fff url("../images/common/ico/arrow.svg") no-repeat right 20px center;
 }
-.input_wrap select:required:invalid {
+.input-wrap select:required:invalid {
   font-size: 12px;
 }
-.input_wrap select option {
+.input-wrap select option {
   color: #222;
 }
-.input_wrap select option[value=""][disabled] {
+.input-wrap select option[value=""][disabled] {
   display: none;
 }
-.input_wrap select[disabled] {
+.input-wrap select[disabled] {
   opacity: 1;
   color: #212121;
   background-image: none;
 }
-.input_wrap textarea {
+.input-wrap textarea {
   height: 156px;
   padding: 16px;
   font-size: 16px;
   line-height: 20px;
 }
-.input_wrap.range, .input_wrap.price {
+.input-wrap.range, .input-wrap.price {
   font-size: 0;
   text-align: left;
 }
-.input_wrap.range span, .input_wrap.price span {
+.input-wrap.range span, .input-wrap.price span {
   display: inline-block;
   vertical-align: top;
   height: 40px;
@@ -176,7 +143,7 @@ textarea:focus,
   padding: 0 9px;
   color: #222;
 }
-.input_wrap.range input, .input_wrap.price input {
+.input-wrap.range input, .input-wrap.price input {
   position: relative;
   display: inline-block;
   background-repeat: no-repeat;
@@ -184,41 +151,88 @@ textarea:focus,
   background-position: right 12px center;
   background-size: 22px;
 }
-.input_wrap.price .input_box {
+.input-wrap.price .input_box {
   position: relative;
 }
-.input_wrap.price .input_box label {
+.input-wrap.price .input_box label {
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
 }
-.input_wrap.price .input_box input {
+.input-wrap.price .input_box input {
   padding-left: 36px !important;
 }
-.input_wrap .type-email {
+.input-wrap .type-email {
   display: flex;
   align-items: center;
 }
-.input_wrap .type-email .at {
+.input-wrap .type-email .at {
   font-size: 16px;
   margin: 0 8px;
 }
-.input_wrap .type-mobile {
+.input-wrap .type-mobile {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.input_wrap .type-mobile select {
+.input-wrap .type-mobile select {
   flex: 0 0 auto;
   width: 82px;
+}
+
+.checkbox input, .radiobox input {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.checkbox label, .radiobox label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 31px;
+  font-size: 15px;
+  color: #222;
+  line-height: 22px;
+}
+.checkbox label:before, .radiobox label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -13px;
+  width: 24px;
+  height: 24px;
+  background: no-repeat center center;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.checkbox input:checked ~ label:before, .radiobox input:checked ~ label:before {
+  border: 0 none;
+  background: url("../images/common/ico/checkbox_on.svg");
+  background-size: 100% 100%;
+}
+.checkbox input[disabled] ~ label:before, .radiobox input[disabled] ~ label:before {
+  background-color: #d3d3d3;
+}
+
+.radiobox input[type=radio] ~ label:before {
+  border-radius: 50%;
+}
+.radiobox input[type=radio]:checked ~ label:before {
+  background-color: #1e3c82;
 }
 
 .btn_wrap {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 .btn_wrap.type_right {
   text-align: right;
@@ -265,101 +279,25 @@ textarea:focus,
   display: inline-block;
   width: 100%;
   height: 50px;
-  background: #78B53A;
-  border: 1px solid #78B53A;
-  border-radius: 6px;
-  font-size: 16px;
   line-height: 48px;
+  background: #459729;
+  border: 1px solid #459729;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
   text-align: center;
   color: #fff;
 }
 .btn.color_2 {
   background: #fff;
-  color: #78B53A;
+  color: #459729;
 }
 .btn.color_3 {
-  background-color: #191f28;
-  border-color: #191f28;
-  color: #fff;
-}
-.btn.color_4 {
   background-color: #fff;
-  border-color: #222;
+  border-color: #666;
   color: #222;
-}
-.btn.off {
-  background-color: #828282;
-  border-color: #828282;
-}
-.btn.type_middle {
-  width: 142px;
-}
-.btn.has_arr {
-  background-color: #f4f6fa;
-  border-color: #f4f6fa;
-  color: #222;
-  position: relative;
-}
-.btn.has_arr::after {
-  content: "";
-  display: inline-block;
-  vertical-align: top;
-  width: 20px;
-  height: 100%;
-  margin-left: 2px;
-  background: url("../images/common/ico/i_more.svg") no-repeat center center;
-}
-.btn.type_toggle {
-  background-color: #f4f6fa;
-  border-color: #f4f6fa;
-  color: #222;
-  position: relative;
-}
-.btn.type_toggle:after {
-  content: "";
-  display: inline-block;
-  vertical-align: top;
-  width: 20px;
-  height: 100%;
-  margin-left: 2px;
-  background: url("../images/common/ico/i_more.svg") no-repeat center center;
-  transition: all 0.35s;
-}
-.btn.type_toggle.on:after {
-  transform: scaleY(-1);
-}
-.btn.type_upload:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 26px;
-  height: 26px;
-  border-radius: 100%;
-  margin-right: 8px;
-  background: url("../images/common/i_down_1.svg") no-repeat left 55% center #fff;
-  background-size: auto 10px;
-  transform: rotate(-90deg);
-  margin-top: -4px;
-}
-.btn.type_download:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 26px;
-  height: 26px;
-  border-radius: 100%;
-  border: 1px solid #eee;
-  margin-right: 8px;
-  background: url("../images/common/i_down_1.svg") no-repeat left 55% center;
-  background-size: auto 10px;
-  transform: rotate(90deg);
-  margin-top: -4px;
-}
-.btn.is_left {
-  margin-right: auto;
 }
 
-/*=====별점=====*/
 .star_rating {
   position: relative;
   display: inline-block;
@@ -438,7 +376,7 @@ textarea:focus,
   vertical-align: middle;
   width: 16px;
   height: 16px;
-  background: #3575D6;
+  background: #3575d6;
   border-radius: 50%;
   text-align: center;
   line-height: 16px;
@@ -448,32 +386,6 @@ textarea:focus,
   display: block;
   font-size: 10px;
   color: #fff;
-}
-
-.df_btn {
-  display: inline-block;
-  width: 160px;
-  height: 50px;
-  border: 1px solid #fff;
-  border-radius: 6px;
-  background-color: #fff;
-  text-align: center;
-  color: #222;
-  font-size: 16px;
-  line-height: 48px;
-}
-.df_btn.add_ico {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.df_btn.add_ico i {
-  display: inline-block;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.df_btn.add_ico span {
-  color: #222;
 }
 
 @media (min-width: 1301px) {
@@ -504,24 +416,6 @@ textarea:focus,
     font-size: 14px;
     padding: 0 14px;
   }
-  .input_wrap input[type=text].type_short,
-  .input_wrap input[type=number].type_short,
-  .input_wrap input[type=email].type_short,
-  .input_wrap input[type=tel].type_short,
-  .input_wrap input[type=date].type_short,
-  .input_wrap input[type=password].type_short,
-  .input_wrap textarea.type_short {
-    max-width: 164px;
-  }
-  .input_wrap input[type=text].type_font_s,
-  .input_wrap input[type=number].type_font_s,
-  .input_wrap input[type=email].type_font_s,
-  .input_wrap input[type=tel].type_font_s,
-  .input_wrap input[type=date].type_font_s,
-  .input_wrap input[type=password].type_font_s,
-  .input_wrap textarea.type_font_s {
-    height: 42px !important;
-  }
   .input_wrap textarea {
     height: 156px;
     padding: 14px;
@@ -537,11 +431,11 @@ textarea:focus,
   .input_wrap select.type_short {
     max-width: none;
   }
-  .input_wrap.range, .input_wrap.price {
+  .input_wrap.range, .input_wrap.input-wrap.price {
     font-size: 0;
     text-align: left;
   }
-  .input_wrap.range span, .input_wrap.price span {
+  .input_wrap.range span, .input_wrap.input-wrap.price span {
     width: 20px;
     height: 46px;
     text-align: center;
@@ -576,9 +470,6 @@ textarea:focus,
   .btn {
     height: 42px;
     line-height: 40px;
-  }
-  .btn.type_sml {
-    width: 96px;
   }
   .btn.has_arr {
     font-size: 14px;

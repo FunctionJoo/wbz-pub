@@ -32,10 +32,23 @@
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap">
-			<a href="./find_pw.html">
-				<img src="../images/dummy/sub_find_id.png" alt="">
-			</a>
+		<main class="wrap member">
+			<h2 class="tit">아이디 찾기</h2>
+			<div class="w-set">
+				<div class="input-wrap">
+					<input type="text" name="user_name" id="user_name" placeholder="이름">
+					<label for="user_name" class="is-blind">이름</label>
+				</div>
+				<div class="input-wrap">
+					<input type="text" name="user_birth" id="user_birth" placeholder="생년월일">
+					<label for="user_birth" class="is-blind">생년월일</label>
+				</div>
+				<div class="input-wrap">
+					<input type="text" name="cellphone" id="cellphone" placeholder="휴대폰 번호">
+					<label for="cellphone" class="is-blind">휴대폰 번호</label>
+				</div>
+				<button type="button" class="btn">확인</button>
+			</div>
 		</main>
 		
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>

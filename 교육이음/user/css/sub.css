@@ -1,0 +1,57 @@
+h2.tit {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.member {
+  padding: 100px 0 200px;
+}
+.member h2.tit {
+  margin-bottom: 60px;
+}
+.member .w-set {
+  max-width: 400px;
+}
+.member .input-wrap + .input-wrap {
+  margin-top: 10px;
+}
+.member .btn {
+  margin-top: 30px;
+}
+.member .btn + .btn {
+  margin-top: 15px;
+}
+.member .id input {
+  padding-left: 43px;
+  background: url("../images/common/ico/login_id.svg") no-repeat left 15px center;
+}
+.member .pw input {
+  padding-left: 43px;
+  background: url("../images/common/ico/login_pw.svg") no-repeat left 15px center;
+}
+.member .login-btm {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.member .login-btm a {
+  font-size: 15px;
+}
+.member .login-btm a + a {
+  margin-left: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+.member .login-btm a + a::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: #666;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

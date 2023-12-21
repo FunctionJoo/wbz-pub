@@ -469,73 +469,69 @@
             position: relative;
             z-index: 200;
             min-width: 200px;
-            .tab {
+            .select {
                 width: 100%;
                 display: inline-block;
                 position: relative;
                 z-index: 1;
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                background: #e1e1e1;
+                position: relative;
+                height: 50px;
+                line-height: 50px;
+                padding: 0 30px 0 20px;
                 &.over {
                     z-index: 5;
-                    .mn_f1 {
-                        &::after {
-                            transform: scaleY(-1);
-                        }
-                    }
-                }
-                .mn_f1 {
-                    display: block;
-                    font-weight: 500;
-                    font-size: 14px;
-                    background: #e1e1e1;
-                    position: relative;
-                    height: 50px;
-                    line-height: 50px;
-                    padding: 0 30px 0 20px;
                     &::after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        right: 20px;
-                        top: 50%;
-                        margin-top: -5px;
-                        width: 13px;
-                        height: 8px;
-                        background: url("../images/common/ico/ft_arrow.png") no-repeat;
-                        transition: all 0.35s;
+                        transform: scaleY(-1);
                     }
                 }
-                .list-wrap {
+                &::after {
+                    content: "";
+                    display: block;
                     position: absolute;
-                    left: 0;
-                    top: 100%;
-                    width: 100%;
-                    display: none;
+                    right: 20px;
+                    top: 50%;
+                    margin-top: -5px;
+                    width: 13px;
+                    height: 8px;
+                    background: url("../images/common/ico/ft_arrow.png") no-repeat;
+                    transition: all 0.35s;
                 }
-                .list-gap {
-                    background: #fff;
-                    border: 1px solid #d3d3d3;
-                    border-radius: 0px 0px 6px 6px;
-                    ul {
-                        height: 100px;
-                        padding: 5px 12px;
-                        overflow-y: scroll;
-                        overflow-x: hidden;
-                        li {
-                            a {
-                                position: relative;
+            }
+            .list-wrap {
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                display: none;
+            }
+            .list-gap {
+                background: #fff;
+                border: 1px solid #d3d3d3;
+                border-radius: 0px 0px 6px 6px;
+                ul {
+                    height: 100px;
+                    padding: 5px 12px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    li {
+                        a {
+                            position: relative;
+                            display: block;
+                            padding: 5px 0 5px 7px;
+                            font-size: 14px;
+                            &::after {
+                                content: "";
                                 display: block;
-                                padding: 5px 0 5px 7px;
-                                font-size: 14px;
-                                &::after {
-                                    content: "";
-                                    display: block;
-                                    width: 2px;
-                                    height: 2px;
-                                    background: #666;
-                                    position: absolute;
-                                    left: 0;
-                                    top: 15px;
-                                }
+                                width: 2px;
+                                height: 2px;
+                                background: #666;
+                                position: absolute;
+                                left: 0;
+                                top: 15px;
                             }
                         }
                     }
