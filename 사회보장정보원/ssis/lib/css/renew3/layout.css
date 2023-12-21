@@ -700,7 +700,7 @@ h2.main-title{ display:block; font-size:38px; line-height:32px; font-weight:700;
 }
 #footer .section02 .sns a i.youtube{ background-image:url(../../../images/renew2/common/youtube.png)}
 #footer .section02 .sns a i.facebook{ background-image:url(../../../images/renew2/common/facebook.png)}
-#footer .section02 .sns a i.twitter{ background-image:url(../../../images/renew2/common/twitter.png)}
+#footer .section02 .sns a i.twitter{ background-image:url(../../../images/renew3/common/ft_sns_x.svg)} /* 231220 웹비즈 수정 */
 
 #footer .section03 {
 	position:relative;
@@ -1103,7 +1103,7 @@ body.scrollLock {overflow: hidden; height: 100%;}
 }
 #sitemap-wrap .sitemap-box .sitemap-ul {
 	float:left;
-	width:calc(100% - 0px);
+	width:calc(100% - 200px); /* 231220 웹비즈 수정 */
 }
 #sitemap-wrap .sitemap-box .sitemap-ul > ul > li {
 	margin:-1px 0;
@@ -1579,18 +1579,19 @@ body.scrollLock {overflow: hidden; height: 100%;}
 .footer_cont {background: #5A5B68; padding: 17px 0 40px;}
 .footer_cont .area {display: flex;}
 .footer_cont .ft_logo {display: flex; align-items: center; width: 332px;}
+.footer_cont .ft_sc{flex: 0 0 auto;} /* 231220 웹비즈 수정 */
 .footer_cont .ft_sc .ft_nav ul {display: flex; margin-top: 10px;}
 .footer_cont .ft_sc .ft_nav ul li + li {margin-left: 24px;}
 .footer_cont .ft_sc .ft_nav ul li a {font-size: 16px; color: #fff; font-weight: 500;}
 .footer_cont .ft_sc .ft_address {margin-top: 30px;}
-.footer_cont .ft_sc .ft_address ul li {display: block; font-size: 16px; color: #DBDBDB; line-height: 1.5; font-weight: 500;}
+.footer_cont .ft_sc .ft_address ul li {display: block; font-size: 14px; color: #DBDBDB; line-height: 1.5; font-weight: 500;} /* 231220 웹비즈 수정 */
 .footer_cont .ft_sc .ft_address ul li * {color: #DBDBDB !important;}
 .footer_cont .ft_sc .ft_address ul li.copy {margin-top: 24px;}
-.footer_cont .ft_family {margin: 13px 0 0 auto; display: flex; align-items: flex-end; flex-direction: column;}
-.footer_cont .ft_family select {width: 160px; height: 42px;}
-.footer_cont .ft_family .ft_sns {display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 14px;}
-.footer_cont .ft_family .ft_sns a {display: block;}
-.footer_cont .ft_mark {display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-top: auto;}
+.footer_cont .ft_family {margin: 0 0 0 auto;} /* 231220 웹비즈 수정 */
+.footer_cont .ft_family select {width: 240px; height: 42px; margin-left: 20px; padding: 0 10px;} /* 231220 웹비즈 수정 */
+.footer_cont .ft_family .ft_sns {display: inline-flex; justify-content: center; align-items: center; gap: 10px; vertical-align: middle;} /* 231220 웹비즈 수정 */
+.footer_cont .ft_family .ft_sns a {display: flex; align-items: center;justify-content: center; width: 40px;height: 40px;border-radius: 50%;background: #fff;} /* 231220 웹비즈 수정 */
+.footer_cont .ft_mark {width: 100%; display: flex; justify-content: flex-end; align-items: center; gap: 20px; margin-top: 20px;} /* 231220 웹비즈 수정 */
 
 #footer_new.is_en .footer_cont {padding: 30px 0 40px}
 #footer_new.is_en .footer_cont .ft_logo {align-items: unset;}
@@ -1615,8 +1616,9 @@ body.scrollLock {overflow: hidden; height: 100%;}
 	.footer_cont .ft_sc .ft_address ul li {font-size: 12px;}
 	.footer_cont .ft_sc .ft_address ul li.copy {margin-top: 20px;}
 	.footer_cont .ft_family {margin: 37px 0 0 0;}
-	.footer_cont .ft_family select {width: 100%; height: 32px;}
+	.footer_cont .ft_family select {width: 100%; height: 32px;margin-left: 0;} /* 231220 웹비즈 수정 */
 	.footer_cont .ft_family .ft_sns {margin: -3px 14px 0 0; position: absolute; top: 0; right: 0;}
+	.footer_cont .ft_family .ft_sns a {width: 36px;height: 36px;} /* 231220 웹비즈 수정 */
 	.footer_cont .ft_mark {display: flex; justify-content: center; align-items: center; gap: 10px; width: 100%; margin-top: 26px;}
 
 	#footer_new.is_en .footer_cont {padding: 0 0 40px}
