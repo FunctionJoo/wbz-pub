@@ -545,9 +545,20 @@ $mobile-space: 16px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-            }
+            }            
+            /* gnb 보이도록 임시 */
+            /* 231222 수정 */
             .nav {
-                display: none;
+                // display: none;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 20px;
+                width: 100%;
+                & > ul {
+                    & > li {
+                        width: auto;
+                    }
+                }
             }
             .sub_menu {
                 display: none;
@@ -1183,6 +1194,7 @@ $mobile-space: 16px;
                     padding-top: 20px;
                     font-size: 20px;
                     line-height: 24px;
+                    min-height: 68px; /* 231222 수정 */
                 }
                 .date {
                     font-family: "Inter";
@@ -1266,12 +1278,14 @@ $mobile-space: 16px;
                                     line-height: 19px;
                                     @include ellipsis($lines: 2);
                                     transition: all 0.35s;
+                                    min-height: 38px; /* 231222 수정 */
                                 }
                                 .txt {
                                     padding-top: 26px;
                                     font-size: 15px;
                                     color: $text-color3;
                                     @include ellipsis($lines: 2);
+                                    min-height: 70px; /* 231222 수정 */
                                 }
                                 .list_btm {
                                     display: flex;
@@ -1555,6 +1569,7 @@ $mobile-space: 16px;
                         padding-top: 16px;
                         font-size: 16px;
                         line-height: 1.2;
+                        min-height: 58px;
                     }
                     .date {
                         padding-top: 14px;
@@ -1691,8 +1706,12 @@ $mobile-space: 16px;
                                     }
                                 }
                                 a {
+                                    .tit {
+                                        min-height: auto; /* 231222 수정 */
+                                    }
                                     .txt {
                                         padding-top: 16px;
+                                        min-height: auto; /* 231222 수정 */
                                     }
                                     .list_btm {
                                         padding-top: 14px;

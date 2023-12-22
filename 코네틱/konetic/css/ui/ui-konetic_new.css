@@ -374,6 +374,8 @@ body {
 @media screen and (max-width: 1440px) {
   .wrap-header.new {
     background-image: none;
+    /* gnb 보이도록 임시 */
+    /* 231222 수정 */
   }
   .wrap-header.new .inner {
     padding: 0 16px;
@@ -395,7 +397,13 @@ body {
     align-items: center;
   }
   .wrap-header.new .nav {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    width: 100%;
+  }
+  .wrap-header.new .nav > ul > li {
+    width: auto;
   }
   .wrap-header.new .sub_menu {
     display: none;
@@ -1002,6 +1010,7 @@ body {
   padding-top: 20px;
   font-size: 20px;
   line-height: 24px;
+  min-height: 68px; /* 231222 수정 */
 }
 .main .main_sec .news_wrap .news .date {
   font-family: "Inter";
@@ -1081,6 +1090,7 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   transition: all 0.35s;
+  min-height: 38px; /* 231222 수정 */
 }
 .main .main_sec .board_wrap .board_area > li.active .board_list a .txt {
   padding-top: 26px;
@@ -1091,6 +1101,7 @@ body {
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  min-height: 70px; /* 231222 수정 */
 }
 .main .main_sec .board_wrap .board_area > li.active .board_list a .list_btm {
   display: flex;
@@ -1333,6 +1344,7 @@ body {
     padding-top: 16px;
     font-size: 16px;
     line-height: 1.2;
+    min-height: 58px;
   }
   .main .main_sec .news_wrap .news .date {
     padding-top: 14px;
@@ -1452,8 +1464,12 @@ body {
   .main .main_sec .board_wrap .board_area > li.active .board_list li:nth-child(3) {
     display: block;
   }
+  .main .main_sec .board_wrap .board_area > li.active .board_list a .tit {
+    min-height: auto; /* 231222 수정 */
+  }
   .main .main_sec .board_wrap .board_area > li.active .board_list a .txt {
     padding-top: 16px;
+    min-height: auto; /* 231222 수정 */
   }
   .main .main_sec .board_wrap .board_area > li.active .board_list a .list_btm {
     padding-top: 14px;
