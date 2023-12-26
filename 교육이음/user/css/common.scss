@@ -61,6 +61,18 @@ textarea:focus,
 	height: 1px;
 	white-space: nowrap;
 }
+.empty {
+	border-radius: 3px;
+	height: 160px;
+	padding: 38px 0 0;
+	background: #f9f9f9 url("../images/common/img/empty_bg.svg");
+	p {
+		padding-top: 62px;
+		background: url("../images/common/ico/empty.svg") no-repeat top center;
+		text-align: center;
+		font-size: 15px;
+	}
+}
 
 // input
 .input-wrap {
@@ -370,6 +382,54 @@ textarea:focus,
 			transform: rotate(90deg);
 			margin-top: -4px;
 		}
+	}
+}
+
+// paging
+.paging {
+	padding-top: 60px;
+	text-align: center;
+	font-size: 0;
+	a {
+		font-size: 14px;
+		font-family: $inter;
+		display: inline-block;
+		vertical-align: middle;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		background-color: #fff;
+		color: #222;
+		border: 1px solid #d3d3d3;
+		border-radius: 3px;
+		margin: 0 5px;
+	}
+	.on {
+		background-color: #666;
+		border-color: #666;
+		color: #fff;
+	}
+	.move {
+		position: relative;
+		font-size: 0;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.first {
+		background-image: url("../images/common/ico/paging_first.svg");
+	}
+	.last {
+		background-image: url("../images/common/ico/paging_last.svg");
+	}
+	.prev {
+		background-image: url("../images/common/ico/paging_prev.svg");
+		margin-right: 10px;
+	}
+	.next {
+		background-image: url("../images/common/ico/paging_next.svg");
+		margin-left: 10px;
 	}
 }
 

@@ -137,3 +137,13 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 });
+
+$(document).on('mouseover focusin', '.location .has-select', function () {
+	$(this).next('ul').addClass('on');
+	$(this).parent('li').on('mouseleave', function () {
+		$(this).find('ul').removeClass('on');
+	});
+	$(this).next('ul').find('li:last').on('focusout', function () {
+		$(this).parent('ul').removeClass('on');
+	});
+});

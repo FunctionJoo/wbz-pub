@@ -60,6 +60,19 @@ textarea:focus,
   white-space: nowrap;
 }
 
+.empty {
+  border-radius: 3px;
+  height: 160px;
+  padding: 38px 0 0;
+  background: #f9f9f9 url("../images/common/img/empty_bg.svg");
+}
+.empty p {
+  padding-top: 62px;
+  background: url("../images/common/ico/empty.svg") no-repeat top center;
+  text-align: center;
+  font-size: 15px;
+}
+
 .input-wrap input[type=text],
 .input-wrap input[type=number],
 .input-wrap input[type=email],
@@ -358,6 +371,53 @@ textarea:focus,
   background-size: auto 10px;
   transform: rotate(90deg);
   margin-top: -4px;
+}
+
+.paging {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 0;
+}
+.paging a {
+  font-size: 14px;
+  font-family: "Inter", sans-serif !important;
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+.paging .on {
+  background-color: #666;
+  border-color: #666;
+  color: #fff;
+}
+.paging .move {
+  position: relative;
+  font-size: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.paging .first {
+  background-image: url("../images/common/ico/paging_first.svg");
+}
+.paging .last {
+  background-image: url("../images/common/ico/paging_last.svg");
+}
+.paging .prev {
+  background-image: url("../images/common/ico/paging_prev.svg");
+  margin-right: 10px;
+}
+.paging .next {
+  background-image: url("../images/common/ico/paging_next.svg");
+  margin-left: 10px;
 }
 
 .star-rating {

@@ -4,6 +4,97 @@ h2.tit {
   font-size: 40px;
 }
 
+.location {
+  height: 50px;
+  background: #f9f9f9;
+  font-size: 0;
+}
+.location .w-set {
+  height: 100%;
+}
+.location .w-set > li {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+.location .w-set > li + li > a {
+  padding-left: 20px;
+}
+.location .w-set > li + li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #d3d3d3;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.location .w-set > li > a {
+  line-height: 50px;
+  height: 100%;
+}
+.location a {
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+}
+.location a + a {
+  padding: 15px 20px;
+}
+.location a + a::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: #d3d3d3;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.location .home {
+  padding: 0 30px 0 34px;
+  background: url("../images/common/ico/location_home.svg") no-repeat left center;
+}
+.location .has-select {
+  padding-right: 70px;
+  background: url("../images/common/ico/location_arrow.svg") no-repeat right 20px center;
+}
+.location .has-select + ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  padding: 0 15px;
+  width: 100%;
+}
+.location .has-select + ul.on {
+  display: block;
+}
+.location .has-select + ul li a {
+  display: block;
+  padding: 5px 0;
+}
+.location .has-select + ul li:first-child a {
+  padding-top: 15px;
+}
+.location .has-select + ul li:last-child a {
+  padding-bottom: 15px;
+}
+.location .has-select + ul a {
+  color: #333;
+  transition: all 0.2s;
+}
+.location .has-select + ul a:hover {
+  color: #78b53a;
+}
+
 .member {
   padding: 100px 0 200px;
   border-top: 1px solid #ddd;

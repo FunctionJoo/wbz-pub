@@ -7,6 +7,105 @@ h2.tit {
     font-size: 40px;
 }
 
+.location {
+    height: 50px;
+    background: #f9f9f9;
+    font-size: 0;
+    .w-set {
+        height: 100%;
+        & > li {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            & + li {
+                & > a {
+                    padding-left: 20px;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 20px;
+                    background: #d3d3d3;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            & > a {
+                line-height: 50px;
+                height: 100%;
+            }
+        }
+    }
+    a {
+        display: inline-block;
+        font-size: 14px;
+        position: relative;
+        & + a {
+            padding: 15px 20px;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 20px;
+                background: $base-color1;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .home {
+        padding: 0 30px 0 34px;
+        background: url("../images/common/ico/location_home.svg") no-repeat left center;
+    }
+    .has-select {
+        padding-right: 70px;
+        background: url("../images/common/ico/location_arrow.svg") no-repeat right 20px center;
+        & + ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 10;
+            background: #fff;
+            border: 1px solid $base-color1;
+            border-radius: 3px;
+            padding: 0 15px;
+            width: 100%;
+            &.on {
+                display: block;
+            }
+            li {
+                a {
+                    display: block;
+                    padding: 5px 0;
+                }
+                &:first-child {
+                    a {
+                        padding-top: 15px;
+                    }
+                }
+                &:last-child {
+                    a {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+            a {
+                color: $text-color2;
+                transition: all 0.2s;
+                &:hover {
+                    color: $primary-color1;
+                }
+            }
+        }
+    }
+}
+
 // 회원가입
 .member {
     padding: 100px 0 200px;
@@ -70,23 +169,23 @@ h2.tit {
             }
         }
     }
-    .fail-txt{
+    .fail-txt {
         text-align: center;
         padding: 67px 0 30px;
-        background: url('../images/common/ico/login_fail.svg') no-repeat top center;
-        .txt1{
+        background: url("../images/common/ico/login_fail.svg") no-repeat top center;
+        .txt1 {
             font-weight: 500;
             font-size: 20px;
-            span{
+            span {
                 color: $primary-color2;
             }
         }
-        .txt2{
+        .txt2 {
             font-size: 15px;
             line-height: 22px;
         }
     }
-    .captcha{
+    .captcha {
         margin: 20px 0 10px;
         min-height: 60px;
         background: #ddd;
