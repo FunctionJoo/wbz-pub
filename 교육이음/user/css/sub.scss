@@ -236,6 +236,28 @@ h3.tit {
         min-height: 60px;
         background: #ddd;
     }
+    // 비밀번호 재설정 유의사항
+    .info-pw{
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #F9F9F9;
+        .info_title{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .info_list{
+            li{
+                font-size: 14px;
+                line-height: 20px;
+                &::before{
+                    content: "·";
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
 }
 .join {
     .w-set {
