@@ -51,15 +51,19 @@
 			</div>
 		</main>
 
-		<!-- alert 팝업 버튼 2개 (type_alert, type-bottom 클래스 추가) -->
-		<div class="wbz-popup-cont is-template type_alert" id="alertPopup">
+		<!-- alert 팝업 버튼 2개 (type-alert, type-bottom 클래스 추가) -->
+		<div class="wbz-popup-cont is-template type-alert" id="alertPopup">
+			<div class="popup-header">
+				<button type="button" class="popup-close" onclick="$popup.close();">✕</button>
+			</div>
 			<div class="popup-cont">
 				<div class="popup-text">
-					팝업 내용입니다.
+					[2024년1학기] 저학년<br>기초학력 지도 지원<br>공고에 지원하시겠습니까?
+					<p class="desc">활동 기간과 요일을 다시 확인해 주세요.</p>
 				</div>
 				<div class="popup-button">
-					<button type="button" class="cr_1 popup-close">Cancel</button>
-					<button type="button" class="cr_2 popup-confirm-event">Confirm</button>
+					<button type="button" class="cr_1 popup-confirm-event">확인</button>
+					<button type="button" class="cr_2 popup-close">취소</button>
 				</div>
 			</div>
 		</div>

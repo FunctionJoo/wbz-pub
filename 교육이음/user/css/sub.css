@@ -100,15 +100,48 @@ h3.tit {
   color: #78b53a;
 }
 
+.info-box {
+  background: #fff5c8 url("../images/common/img/info_bg.png") no-repeat center bottom;
+  border-radius: 3px;
+  padding: 30px 0;
+}
+.info-box .info {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.info-box .tit {
+  display: block;
+  padding-bottom: 10px;
+  font-family: "iceSotong-Rg", sans-serif !important;
+  font-size: 40px;
+  color: #ff8000;
+}
+.info-box p + p {
+  margin-top: 6px;
+}
+.info-box .txt, .info-box .be {
+  font-size: 15px;
+  line-height: 1.3;
+}
+.info-box .be {
+  position: relative;
+  padding-left: 10px;
+}
+.info-box .be::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
 .member {
   padding: 100px 0 200px;
   border-top: 1px solid #ddd;
-}
-.member .type-2 h2.tit {
-  margin-bottom: 40px;
-}
-.member h2.tit {
-  margin-bottom: 60px;
 }
 .member .w-set {
   max-width: 400px;
@@ -129,6 +162,14 @@ h3.tit {
 .member .pw input {
   padding-left: 43px;
   background: url("../images/common/ico/login_pw.svg") no-repeat left 15px center;
+}
+.member .login-wrap {
+  margin-top: 60px;
+}
+.member .find-wrap {
+  margin-top: 20px;
+  padding-top: 160px;
+  background: url("../images/common/img/member_top.png") no-repeat top center;
 }
 .member .login-btm {
   margin-top: 20px;
@@ -157,7 +198,8 @@ h3.tit {
 }
 .member .fail-txt {
   text-align: center;
-  padding: 67px 0 30px;
+  padding-top: 67px;
+  margin: 40px 0 30px;
   background: url("../images/common/ico/login_fail.svg") no-repeat top center;
 }
 .member .fail-txt .txt1 {
@@ -175,4 +217,48 @@ h3.tit {
   margin: 20px 0 10px;
   min-height: 60px;
   background: #ddd;
+}
+
+.join .w-set {
+  max-width: 1200px;
+}
+.join .join-top {
+  padding: 40px 0 0;
+}
+.join .join-top .step-list {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 683px;
+}
+.join .join-top .step-list li.on .txt, .join .join-top .step-list li.on .info-box .be, .info-box .join .join-top .step-list li.on .be {
+  color: #459729;
+}
+.join .join-top .step-list li.line {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: url("../images/common/img/step_line.svg") no-repeat;
+}
+.join .join-top .step-list li span {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}
+.join .join-top .step-list li .num {
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px;
+  color: #666;
+}
+.join .join-top .step-list li .txt, .join .join-top .step-list li .info-box .be, .info-box .join .join-top .step-list li .be {
+  font-size: 20px;
+  padding-top: 5px;
+}
+.join .btn-area {
+  margin-top: 60px;
+  text-align: center;
+}
+.join .btn-area .btn {
+  max-width: 200px;
 }

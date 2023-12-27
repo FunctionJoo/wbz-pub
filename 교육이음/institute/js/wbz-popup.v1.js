@@ -68,7 +68,7 @@ const $popup = {
 
 		// instant 팝업 템플릿
 		let template = `
-			<div class="wbz-popup-cont is-instant on type_alert" id="${popupId}" style="z-index: ${this.zIndex + this.count}">
+			<div class="wbz-popup-cont is-instant on type-alert" id="${popupId}" style="z-index: ${this.zIndex + this.count}">
 				<div class="popup-cont">
 					<div class="popup-text">z
 						${options.content}

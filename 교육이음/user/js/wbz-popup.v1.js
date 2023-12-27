@@ -62,13 +62,16 @@ const $popup = {
 		} else {
 			if (options.modal === undefined) options.modal = false; // modal 속성이 지정되어있지 않은 경우에만 속성을 변경
 			buttonTemplate = `
-				<button type="button" class="cr_2 popup-close">Confirm</button>
+				<button type="button" class="cr_1 popup-confirm-event">확인</button>
 			`;
 		}
 
 		// instant 팝업 템플릿
 		let template = `
-			<div class="wbz-popup-cont is-instant on type_alert" id="${popupId}" style="z-index: ${this.zIndex + this.count}">
+			<div class="wbz-popup-cont is-instant on type-alert" id="${popupId}" style="z-index: ${this.zIndex + this.count}">
+				<div class="popup-header">
+					<button type="button" class="popup-close" onclick="$popup.close();">✕</button>
+				</div>
 				<div class="popup-cont">
 					<div class="popup-text">
 						${options.content}

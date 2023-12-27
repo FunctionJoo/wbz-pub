@@ -109,19 +109,52 @@ h3.tit {
         }
     }
 }
+.info-box {
+    background: #fff5c8 url("../images/common/img/info_bg.png") no-repeat center bottom;
+    border-radius: 3px;
+    padding: 30px 0;
+    .info {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .tit {
+        display: block;
+        padding-bottom: 10px;
+        font-family: $sotong;
+        font-size: 40px;
+        color: #ff8000;
+    }
+    p {
+        & + p {
+            margin-top: 6px;
+        }
+    }
+    .txt {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .be {
+        @extend .txt;
+        position: relative;
+        padding-left: 10px;
+        &::after {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background: $text-color1;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+    }
+}
 
-// 회원가입
+// 회원
 .member {
     padding: 100px 0 200px;
     border-top: 1px solid #ddd;
-    .type-2 {
-        h2.tit {
-            margin-bottom: 40px;
-        }
-    }
-    h2.tit {
-        margin-bottom: 60px;
-    }
     .w-set {
         max-width: 400px;
     }
@@ -147,6 +180,14 @@ h3.tit {
             padding-left: 43px;
             background: url("../images/common/ico/login_pw.svg") no-repeat left 15px center;
         }
+    }
+    .login-wrap {
+        margin-top: 60px;
+    }
+    .find-wrap {
+        margin-top: 20px;
+        padding-top: 160px;
+        background: url("../images/common/img/member_top.png") no-repeat top center;
     }
     .login-btm {
         margin-top: 20px;
@@ -175,7 +216,8 @@ h3.tit {
     }
     .fail-txt {
         text-align: center;
-        padding: 67px 0 30px;
+        padding-top: 67px;
+        margin: 40px 0 30px;
         background: url("../images/common/ico/login_fail.svg") no-repeat top center;
         .txt1 {
             font-weight: 500;
@@ -193,5 +235,56 @@ h3.tit {
         margin: 20px 0 10px;
         min-height: 60px;
         background: #ddd;
+    }
+}
+.join {
+    .w-set {
+        max-width: 1200px;
+    }
+    .join-top {
+        padding: 40px 0 0;
+        .step-list {
+            margin: 50px auto 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 683px;
+            li {
+                & + li {
+                }
+                &.on {
+                    .txt {
+                        color: $primary-color2;
+                    }
+                }
+                &.line {
+                    display: block;
+                    width: 26px;
+                    height: 3px;
+                    background: url("../images/common/img/step_line.svg") no-repeat;
+                }
+                span {
+                    display: block;
+                    text-align: center;
+                    font-weight: 500;
+                }
+                .num {
+                    font-family: $inter;
+                    font-size: 16px;
+                    color: #666;
+                }
+                .txt {
+                    font-size: 20px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+    .btn-area {
+        margin-top: 60px;
+        text-align: center;
+        .btn {
+            max-width: 200px;
+        }
     }
 }

@@ -62,11 +62,13 @@ textarea:focus,
 
 .empty {
   border-radius: 3px;
-  height: 160px;
+  min-height: 160px;
   padding: 38px 0 0;
-  background: #f9f9f9 url("../images/common/img/empty_bg.svg");
+  background: #f9f9f9 url("../images/common/img/empty_bg.svg") no-repeat center bottom;
 }
 .empty p {
+  max-width: 560px;
+  margin: 0 auto;
   padding-top: 62px;
   background: url("../images/common/ico/empty.svg") no-repeat top center;
   text-align: center;
@@ -311,6 +313,11 @@ textarea:focus,
   border-color: #666;
   color: #222;
 }
+.btn.color_4 {
+  background-color: #222;
+  border-color: #222;
+  color: #fff;
+}
 .btn.has-arr {
   background-color: #f4f6fa;
   border-color: #f4f6fa;
@@ -426,7 +433,7 @@ textarea:focus,
   vertical-align: middle;
   width: 129px;
   height: 20px;
-  background-image: url(../images/common/img/star_rating_bg.svg);
+  background-image: url("../images/common/img/star_rating_bg.svg");
   background-size: 129px;
   background-repeat: no-repeat;
 }
@@ -437,7 +444,7 @@ textarea:focus,
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-image: url(../images/common/img/star_rating.svg);
+  background-image: url("../images/common/img/star_rating.svg");
   background-size: 129px;
   background-repeat: no-repeat;
 }
@@ -449,7 +456,7 @@ textarea:focus,
   font-size: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/common/img/star_rating_bg.svg);
+  background-image: url("../images/common/img/star_rating_bg.svg");
 }
 .star-area input {
   width: 1px;
@@ -458,7 +465,7 @@ textarea:focus,
   opacity: 0;
 }
 .star-area input:checked + .chk {
-  background-image: url(../images/common/img/star_rating.svg);
+  background-image: url("../images/common/img/star_rating.svg");
 }
 .star-area .chk {
   position: absolute;
