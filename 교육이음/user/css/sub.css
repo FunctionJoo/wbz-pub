@@ -3,6 +3,7 @@ h2.tit {
   text-align: center;
   font-weight: 500;
   font-size: 40px;
+  line-height: 60px;
 }
 @media (max-width: 1300px) {
   h2.tit {
@@ -269,6 +270,12 @@ h3.tit {
   .member .find-wrap {
     padding-top: 110px;
     background-size: 90px;
+  }
+  .member .find-wrap .input-wrap input {
+    border-radius: 3px;
+  }
+  .member .find-wrap .btn {
+    border-radius: 3px;
   }
   .member .info-pw {
     margin-top: 10px;

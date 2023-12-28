@@ -5,6 +5,7 @@ h2.tit {
     text-align: center;
     font-weight: 500;
     font-size: 40px;
+    line-height: 60px;
     @media(max-width:1300px){
         font-size: 26px;
         line-height: 36px;
@@ -279,6 +280,14 @@ h3.tit {
         .find-wrap{
             padding-top: 110px;
             background-size: 90px;
+            .input-wrap{
+                input{
+                    border-radius: 3px;
+                }
+            }
+            .btn{
+                border-radius: 3px;
+            }
         }
         .info-pw{
             margin-top: 10px;
