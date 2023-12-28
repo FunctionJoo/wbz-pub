@@ -291,6 +291,17 @@ textarea:focus,
   bottom: 0;
 }
 
+.del-btn {
+  display: inline-block;
+  height: 40px;
+  width: 80px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #459729;
+  border: 1px solid #459729;
+  border-radius: 3px;
+}
+
 .btn {
   display: inline-block;
   width: 100%;
@@ -425,6 +436,13 @@ textarea:focus,
 .paging .next {
   background-image: url("../images/common/ico/paging_next.svg");
   margin-left: 10px;
+}
+@media (max-width: 1300px) {
+  .paging a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
 
 .star-rating {
