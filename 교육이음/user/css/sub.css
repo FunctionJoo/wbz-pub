@@ -621,6 +621,7 @@ h3.tit {
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: -114px;
+    z-index: 100;
   }
   .alarm-wrap .w-set .con-top .del-btn span {
     display: none;
@@ -650,6 +651,7 @@ h3.tit {
   .alarm-wrap .w-set .table-wrap .table-list .td-list.date {
     width: auto;
     margin-left: 33px;
+    margin-top: 5px;
     font-size: 15px;
     line-height: 19px;
   }

@@ -693,6 +693,7 @@ h3.tit {
                     background-repeat: no-repeat;
                     background-size: contain;
                     margin-bottom: -114px;
+                    z-index: 100;
                     span{
                         display: none;
                     }
@@ -726,6 +727,7 @@ h3.tit {
                         &.date{
                             width: auto;
                             margin-left: 33px;
+                            margin-top: 5px;
                             font-size: 15px;
                             line-height: 19px;
                         }
