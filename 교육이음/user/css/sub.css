@@ -106,6 +106,11 @@ h3.tit {
   border-radius: 3px;
   padding: 30px 0;
 }
+@media (max-width: 765px) {
+  .info-box {
+    padding: 15px;
+  }
+}
 .info-box .info {
   max-width: 700px;
   margin: 0 auto;
@@ -117,12 +122,17 @@ h3.tit {
   font-size: 40px;
   color: #ff8000;
 }
+@media (max-width: 765px) {
+  .info-box .tit {
+    font-size: 30px;
+  }
+}
 .info-box p + p {
   margin-top: 6px;
 }
 .info-box .txt, .info-box .be {
   font-size: 15px;
-  line-height: 1.3;
+  line-height: 22px;
 }
 .info-box .be {
   position: relative;
@@ -239,46 +249,246 @@ h3.tit {
   margin-right: 2px;
 }
 
-.join .w-set {
+.join-wrap {
+  padding: 100px 0 120px;
+  border-top: 1px solid #ddd;
+}
+.join-wrap h2.tit {
+  line-height: 60px;
+}
+.join-wrap .w-set {
   max-width: 1200px;
 }
-.join .join-top {
-  padding: 40px 0 0;
+.join-wrap .join-top {
+  padding: 40px 0 58px;
 }
-.join .join-top .step-list {
+.join-wrap .join-top .step-list {
   margin: 50px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 683px;
 }
-.join .join-top .step-list li.on .txt, .join .join-top .step-list li.on .info-box .be, .info-box .join .join-top .step-list li.on .be {
+.join-wrap .join-top .step-list li.on .txt, .join-wrap .join-top .step-list li.on .info-box .be, .info-box .join-wrap .join-top .step-list li.on .be {
   color: #459729;
 }
-.join .join-top .step-list li.line {
+.join-wrap .join-top .step-list li.line {
   display: block;
   width: 26px;
   height: 3px;
   background: url("../images/common/img/step_line.svg") no-repeat;
 }
-.join .join-top .step-list li span {
+.join-wrap .join-top .step-list li span {
   display: block;
   text-align: center;
   font-weight: 500;
 }
-.join .join-top .step-list li .num {
+.join-wrap .join-top .step-list li .num {
   font-family: "Inter", sans-serif !important;
   font-size: 16px;
   color: #666;
+  line-height: 20px;
 }
-.join .join-top .step-list li .txt, .join .join-top .step-list li .info-box .be, .info-box .join .join-top .step-list li .be {
+.join-wrap .join-top .step-list li .txt, .join-wrap .join-top .step-list li .info-box .be, .info-box .join-wrap .join-top .step-list li .be {
   font-size: 20px;
+  line-height: 29px;
   padding-top: 5px;
 }
-.join .btn-area {
+.join-wrap .join-bottom {
+  border-top: 2px solid #707070;
+}
+.join-wrap .join-bottom .all-ck-wrap {
+  padding: 30px 0;
+  border-bottom: 1px solid #707070;
+}
+.join-wrap .join-bottom .all-ck-wrap .checkbox label {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.join-wrap .join-bottom .list-ck-wrap {
+  padding-top: 20px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list:not(:last-child) {
+  padding-bottom: 30px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title br {
+  display: none;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap label {
+  font-size: 16px;
+  line-height: 24px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box {
+  border: 1px solid #D3D3D3;
+  height: 160px;
+  overflow-y: auto;
+  padding: 13px 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box::-webkit-scrollbar {
+  background-color: transparent;
+  width: 15px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box::-webkit-scrollbar-thumb {
+  background-color: #DDDDDD;
+  border-radius: 30px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box:not(:last-child) {
+  margin-bottom: 30px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box.inner-box-02 .trem-title {
+  text-align: center;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .trem-title {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap {
+  border: 1px solid #707070;
+  display: flex;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap.table-01 .table-list {
+  width: 33.3333333333%;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap.table-02 .table-list {
+  width: 25%;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list:not(:last-child) {
+  border-right: 1px solid #707070;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-title {
+  border-bottom: 1px solid #707070;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content {
+  height: calc(100% - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .sub-info {
+  margin-top: 10px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 p {
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 ul li {
+  word-break: keep-all;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .title {
+  font-weight: 500;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .txt01 {
+  margin-bottom: 30px;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .txt01 strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3F57D4;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .txt02 strong {
+  font-weight: 500;
+  color: #3F57D4;
+}
+.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-06 p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.join-wrap .btn-area {
   margin-top: 60px;
   text-align: center;
 }
-.join .btn-area .btn {
+.join-wrap .btn-area .btn {
   max-width: 200px;
+}
+@media (max-width: 1300px) {
+  .join-wrap {
+    padding: 40px 0 60px 0;
+  }
+  .join-wrap h2.tit {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .join-wrap .join-top {
+    padding: 30px 0 40px;
+  }
+  .join-wrap .join-top .step-list {
+    margin: 27px auto 0;
+  }
+  .join-wrap .join-top .step-list li.line {
+    width: 16px;
+    background-size: 26px;
+  }
+  .join-wrap .join-top .step-list li .num {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .join-wrap .join-top .step-list li .txt, .join-wrap .join-top .step-list li .info-box .be, .info-box .join-wrap .join-top .step-list li .be {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .join-wrap .join-bottom .all-ck-wrap {
+    padding: 20px 0;
+  }
+  .join-wrap .join-bottom .all-ck-wrap .checkbox label {
+    font-size: 16px;
+    word-break: keep-all;
+  }
+  .join-wrap .join-bottom .all-ck-wrap .checkbox label::before {
+    margin-top: 0;
+    top: 0;
+  }
+  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap {
+    align-items: end;
+  }
+  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title br {
+    display: block;
+  }
+  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap label {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-title {
+    word-break: keep-all;
+  }
+  .join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content {
+    word-break: keep-all;
+    align-items: start;
+    padding: 10px 5px;
+  }
+  .join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content br {
+    display: none;
+  }
+  .join-wrap .btn-area {
+    margin-top: 40px;
+  }
+  .join-wrap .btn-area .btn {
+    max-width: 140px;
+    font-size: 15px;
+  }
 }
