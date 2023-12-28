@@ -5,6 +5,10 @@ h2.tit {
     text-align: center;
     font-weight: 500;
     font-size: 40px;
+    @media(max-width:1300px){
+        font-size: 26px;
+        line-height: 36px;
+    }
 }
 h3.tit {
     font-weight: 600;
@@ -170,9 +174,14 @@ h3.tit {
         }
     }
     .btn {
-        margin-top: 30px;
+        margin-top: 40px;
+        height: 60px;
         + .btn {
             margin-top: 15px;
+        }
+        @media(max-width:1300px){
+            margin-top: 30px;
+            height: 50px;
         }
     }
     .id {
@@ -194,6 +203,7 @@ h3.tit {
         margin-top: 20px;
         padding-top: 160px;
         background: url("../images/common/img/member_top.png") no-repeat top center;
+        background-size: 120px;
     }
     .login-btm {
         margin-top: 20px;
@@ -247,13 +257,13 @@ h3.tit {
         margin-top: 20px;
         padding: 15px;
         background-color: #F9F9F9;
-        .info_title{
+        .info-title{
             font-size: 16px;
             line-height: 24px;
             font-weight: 500;
             margin-bottom: 8px;
         }
-        .info_list{
+        .info-list{
             li{
                 font-size: 14px;
                 line-height: 20px;
@@ -264,15 +274,20 @@ h3.tit {
             }
         }
     }
+    @media(max-width:1300px){
+        padding: 40px 0 140px;
+        .find-wrap{
+            padding-top: 110px;
+            background-size: 90px;
+        }
+        .info-pw{
+            margin-top: 10px;
+        }
+    }
 }
 .join-wrap {
     padding: 100px 0 120px;
     border-top: 1px solid #ddd;
-    h2{
-        &.tit{
-            line-height: 60px;
-        }
-    }
     .w-set {
         max-width: 1200px;
     }
@@ -475,12 +490,6 @@ h3.tit {
 
     @media(max-width:1300px){
         padding: 40px 0 60px 0;
-        h2{
-            &.tit{
-                font-size: 26px;
-                line-height: 36px;
-            }
-        }
         .join-top{
             padding: 30px 0 40px;
             .step-list{

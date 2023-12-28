@@ -4,6 +4,12 @@ h2.tit {
   font-weight: 500;
   font-size: 40px;
 }
+@media (max-width: 1300px) {
+  h2.tit {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
 
 h3.tit {
   font-weight: 600;
@@ -161,10 +167,17 @@ h3.tit {
   margin-top: 10px;
 }
 .member .btn {
-  margin-top: 30px;
+  margin-top: 40px;
+  height: 60px;
 }
 .member .btn + .btn {
   margin-top: 15px;
+}
+@media (max-width: 1300px) {
+  .member .btn {
+    margin-top: 30px;
+    height: 50px;
+  }
 }
 .member .id input {
   padding-left: 43px;
@@ -181,6 +194,7 @@ h3.tit {
   margin-top: 20px;
   padding-top: 160px;
   background: url("../images/common/img/member_top.png") no-repeat top center;
+  background-size: 120px;
 }
 .member .login-btm {
   margin-top: 20px;
@@ -234,27 +248,36 @@ h3.tit {
   padding: 15px;
   background-color: #F9F9F9;
 }
-.member .info-pw .info_title {
+.member .info-pw .info-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   margin-bottom: 8px;
 }
-.member .info-pw .info_list li {
+.member .info-pw .info-list li {
   font-size: 14px;
   line-height: 20px;
 }
-.member .info-pw .info_list li::before {
+.member .info-pw .info-list li::before {
   content: "·";
   margin-right: 2px;
+}
+@media (max-width: 1300px) {
+  .member {
+    padding: 40px 0 140px;
+  }
+  .member .find-wrap {
+    padding-top: 110px;
+    background-size: 90px;
+  }
+  .member .info-pw {
+    margin-top: 10px;
+  }
 }
 
 .join-wrap {
   padding: 100px 0 120px;
   border-top: 1px solid #ddd;
-}
-.join-wrap h2.tit {
-  line-height: 60px;
 }
 .join-wrap .w-set {
   max-width: 1200px;
@@ -425,10 +448,6 @@ h3.tit {
 @media (max-width: 1300px) {
   .join-wrap {
     padding: 40px 0 60px 0;
-  }
-  .join-wrap h2.tit {
-    font-size: 26px;
-    line-height: 36px;
   }
   .join-wrap .join-top {
     padding: 30px 0 40px;
