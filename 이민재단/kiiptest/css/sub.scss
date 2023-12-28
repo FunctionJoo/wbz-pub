@@ -1,0 +1,528 @@
+@import "./utility.scss";
+
+// 공통
+h2.tit {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    @media(max-width:1300px){
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+h3.tit {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.location {
+    height: 50px;
+    background: #f9f9f9;
+    font-size: 0;
+    .w-set {
+        height: 100%;
+        & > li {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            & + li {
+                & > a {
+                    padding-left: 20px;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 20px;
+                    background: #d3d3d3;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            & > a {
+                line-height: 50px;
+                height: 100%;
+            }
+        }
+    }
+    a {
+        display: inline-block;
+        font-size: 14px;
+        position: relative;
+        & + a {
+            padding: 15px 20px;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 20px;
+                background: $base-color1;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .home {
+        padding: 0 30px 0 34px;
+        background: url("../images/common/ico/location_home.svg") no-repeat left center;
+    }
+    .has-select {
+        padding-right: 70px;
+        background: url("../images/common/ico/location_arrow.svg") no-repeat right 20px center;
+        & + ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 10;
+            background: #fff;
+            border: 1px solid $base-color1;
+            border-radius: 3px;
+            padding: 0 15px;
+            width: 100%;
+            &.on {
+                display: block;
+            }
+            li {
+                a {
+                    display: block;
+                    padding: 5px 0;
+                }
+                &:first-child {
+                    a {
+                        padding-top: 15px;
+                    }
+                }
+                &:last-child {
+                    a {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+            a {
+                color: $text-color2;
+                transition: all 0.2s;
+                &:hover {
+                    color: $primary-color1;
+                }
+            }
+        }
+    }
+}
+
+// 회원
+.member {
+    padding: 100px 0 200px;
+    border-top: 1px solid #ddd;
+    .w-set {
+        max-width: 400px;
+    }
+    .input-wrap {
+        + .input-wrap {
+            margin-top: 10px;
+        }
+    }
+    .btn {
+        margin-top: 40px;
+        height: 60px;
+        + .btn {
+            margin-top: 15px;
+        }
+        @media(max-width:1300px){
+            margin-top: 30px;
+            height: 50px;
+        }
+    }
+    .id {
+        input {
+            padding-left: 43px;
+            background: url("../images/common/ico/login_id.svg") no-repeat left 15px center;
+        }
+    }
+    .pw {
+        input {
+            padding-left: 43px;
+            background: url("../images/common/ico/login_pw.svg") no-repeat left 15px center;
+        }
+    }
+    .login-wrap {
+        margin-top: 60px;
+    }
+    .find-wrap {
+        margin-top: 20px;
+        padding-top: 160px;
+        background: url("../images/common/img/member_top.png") no-repeat top center;
+        background-size: 120px;
+    }
+    .login-btm {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            font-size: 15px;
+            & + a {
+                margin-left: 10px;
+                padding-left: 10px;
+                position: relative;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 1px;
+                    height: 12px;
+                    background: #666;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .fail-txt {
+        text-align: center;
+        padding-top: 67px;
+        margin: 40px 0 30px;
+        background: url("../images/common/ico/login_fail.svg") no-repeat top center;
+        .txt1 {
+            font-weight: 500;
+            font-size: 20px;
+            span {
+                color: $primary-color2;
+            }
+        }
+        .txt2 {
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+    .captcha {
+        margin: 20px 0 10px;
+        min-height: 60px;
+        background: #ddd;
+    }
+    // 비밀번호 재설정 유의사항
+    .info-pw{
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #F9F9F9;
+        .info-title{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .info-list{
+            li{
+                font-size: 14px;
+                line-height: 20px;
+                &::before{
+                    content: "·";
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+    @media(max-width:1300px){
+        padding: 40px 0 140px;
+        .find-wrap{
+            padding-top: 110px;
+            background-size: 90px;
+        }
+        .info-pw{
+            margin-top: 10px;
+        }
+    }
+}
+.join-wrap {
+    padding: 100px 0 120px;
+    border-top: 1px solid #ddd;
+    .w-set {
+        max-width: 1200px;
+    }
+    .join-top {
+        padding: 40px 0 58px;
+        .step-list {
+            margin: 50px auto 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 683px;
+            li {
+                & + li {
+                }
+                &.on {
+                    .txt {
+                        color: $primary-color2;
+                    }
+                }
+                &.line {
+                    display: block;
+                    width: 26px;
+                    height: 3px;
+                    background: url("../images/common/img/step_line.svg") no-repeat;
+                }
+                span {
+                    display: block;
+                    text-align: center;
+                    font-weight: 500;
+                }
+                .num {
+                    font-family: $inter;
+                    font-size: 16px;
+                    color: #666;
+                    line-height: 20px;
+                }
+                .txt {
+                    font-size: 20px;
+                    line-height: 29px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+    .join-bottom{
+        border-top: 2px solid #707070;
+        .all-ck-wrap{
+            padding: 30px 0;
+            border-bottom: 1px solid #707070;
+            .checkbox{
+                label{
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .list-ck-wrap{
+            padding-top: 20px;
+            .ck-list{
+                &:not(:last-child){
+                    padding-bottom: 30px;
+                }
+                .ck-wrap{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 15px;
+                    .ck-title{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        br{
+                            display: none;
+                        }
+                    }
+                    label{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+                .trem-box{
+                    border: 1px solid #D3D3D3;
+                    height: 160px;
+                    overflow-y: auto;
+                    padding: 13px 20px;
+                    font-size: 14px;
+                    line-height: 20px;
+                   &::-webkit-scrollbar{
+                    background-color: transparent;
+                    width: 15px;
+                   }
+                   &::-webkit-scrollbar-thumb{
+                    background-color: #DDDDDD;
+                    border-radius: 30px;
+                    background-clip: padding-box;
+                    border: 5px solid transparent;
+                   }
+
+                    &.trem-02{
+                        .trem-inner-box{
+                            &:not(:last-child){
+                                margin-bottom: 30px;
+                            }
+                            &.inner-box-02{
+                                .trem-title{
+                                    text-align: center;
+                                }
+                            }
+                            .trem-title{
+                                margin-bottom: 15px;
+                                font-weight: 500;
+                            }
+                            .table-wrap{
+                                border: 1px solid #707070;
+                                display: flex;
+                                &.table-01{
+                                    .table-list{
+                                        width: calc(100% / 3);
+                                    }
+                                }
+                                &.table-02{
+                                    .table-list{
+                                        width: calc(100% / 4);
+                                    }
+                                }
+                                .table-list{
+                                    &:not(:last-child){
+                                        border-right: 1px solid #707070;
+                                    }
+                                    .table-title{
+                                        border-bottom: 1px solid #707070;
+                                        height: 40px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                    }
+                                    .table-content{
+                                        height: calc(100% - 40px);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        padding: 20px 10px;
+                                    }
+                                }
+                            }
+                            .sub-info{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+
+                    &.trem-03{
+                        p{
+                            margin-bottom: 20px;
+                            word-break: keep-all;
+                        }
+                        ul{
+                            li{
+                                word-break: keep-all;
+                            }
+                        }
+                        .title{font-weight: 500;}
+                        .txt01{
+                            margin-bottom: 30px;
+                            strong{
+                                font-size: 16px;
+                                font-weight: 500;
+                                color:#3F57D4;
+                            }
+                        }
+                        .txt02{
+                            strong{
+                                font-weight: 500;
+                                color:#3F57D4;
+                            }
+                        }
+                    }
+
+                    &.trem-06{
+                        p{
+                            &:not(:last-child){
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-area {
+        margin-top: 60px;
+        text-align: center;
+        .btn {
+            max-width: 200px;
+        }
+    }
+
+    @media(max-width:1300px){
+        padding: 40px 0 60px 0;
+        .join-top{
+            padding: 30px 0 40px;
+            .step-list{
+                margin: 27px auto 0;
+                li{
+                    &.line {
+                        width: 16px;
+                        background-size: 26px;
+                    }
+                    .num{
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+                    .txt{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        .join-bottom{
+            .all-ck-wrap{
+                padding: 20px 0;
+                .checkbox{
+                    label{
+                        font-size: 16px;
+                        word-break: keep-all;
+                        &::before{
+                            margin-top: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+            .list-ck-wrap{
+                .ck-list{
+                    .ck-wrap{
+                        align-items: end;
+                        .ck-title{
+                            font-size: 15px;
+                            line-height: 22px;
+                            br{
+                                display: block;
+                            }
+                        }
+                        label{
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
+                    }
+                    .trem-box{
+                        &.trem-02{
+                            .trem-inner-box{
+                                .table-wrap{
+                                    .table-list{
+                                        .table-title{
+                                            word-break: keep-all;
+                                        }
+                                        .table-content{
+                                            word-break: keep-all;
+                                            align-items: start;
+                                            padding: 10px 5px;
+                                            br{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 40px;
+            .btn {
+                max-width: 140px;
+                font-size: 15px;
+            }
+        }
+    }
+}

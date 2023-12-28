@@ -1,0 +1,20 @@
+@import "./utility.scss";
+
+.main {
+    .main-visual {
+        background: transparent linear-gradient(1deg, #0753c6 0%, #002762 100%) 0% 0% no-repeat padding-box;
+        .w-set {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 101px 0 97px;
+        }
+        .txt-area {
+            .kr {
+            }
+        }
+    }
+}
+
+@include mobile {
+}
