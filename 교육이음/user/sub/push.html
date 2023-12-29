@@ -29,105 +29,109 @@
 </head>
 
 <body>
-	<div id="container" class="alarm">
+  <!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
+	<div id="container">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap alarm-wrap">
+		<main id="contents" class="wrap">
       <div class="w-set">
-        <div class="con-top">
-          <a href="#" class="back-button"></a>
-          <h3 class="tit">알림</h3>
-          <button type="button" class="del-btn"><span>삭제</span></button>
-        </div>
-        <div class="table-top">
-          <div class="th-list">
-            <div class="checkbox">
-              <input type="checkbox" id="ckAll">
-              <label for="ckAll"></label>
-            </div>
+        <div class="alarm-wrap">
+          <div class="con-top">
+            <a href="#" class="back-button"></a>
+            <h3 class="tit">알림</h3>
+            <button type="button" class="del-btn"><span>삭제</span></button>
           </div>
-          <div class="th-list">내용</div>
-          <div class="th-list">작성일</div>
+          <div class="table-top">
+            <div class="th-list">
+              <div class="checkbox">
+                <input type="checkbox" id="ckAll">
+                <label for="ckAll"></label>
+              </div>
+            </div>
+            <div class="th-list">내용</div>
+            <div class="th-list">작성일</div>
+          </div>
+          <ul class="table-wrap">
+            <li class="table-list">
+              <div class="td-list ckBox">
+                <div class="checkbox">
+                  <input type="checkbox" id="ck01" name="ck">
+                  <label for="ck01"></label>
+                </div>
+              </div>
+              <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+              <div class="td-list date">2023-12-18</div>
+            </li>
+            <li class="table-list">
+              <div class="td-list ckBox">
+                <div class="checkbox">
+                  <input type="checkbox" id="ck02" name="ck">
+                  <label for="ck02"></label>
+                </div>
+              </div>
+              <div class="td-list title"><a href="#">[230503-0001] 실적 확인이 승인 완료 되었습니다.</a></div>
+              <div class="td-list date">2023-12-18</div>
+            </li>
+            <li class="table-list">
+              <div class="td-list ckBox">
+                <div class="checkbox">
+                  <input type="checkbox" id="ck03" name="ck">
+                  <label for="ck03"></label>
+                </div>
+              </div>
+              <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+              <div class="td-list date">2023-12-18</div>
+            </li>
+            <li class="table-list">
+              <div class="td-list ckBox">
+                <div class="checkbox">
+                  <input type="checkbox" id="ck04" name="ck">
+                  <label for="ck04"></label>
+                </div>
+              </div>
+              <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+              <div class="td-list date">2023-12-18</div>
+            </li>
+            <li class="table-list">
+              <div class="td-list ckBox">
+                <div class="checkbox">
+                  <input type="checkbox" id="ck05" name="ck">
+                  <label for="ck05"></label>
+                </div>
+              </div>
+              <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+              <div class="td-list date">2023-12-18</div>
+            </li>
+            <li class="table-list">
+              <div class="td-list ckBox">
+                <div class="checkbox">
+                  <input type="checkbox" id="ck06" name="ck">
+                  <label for="ck06"></label>
+                </div>
+              </div>
+              <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+              <div class="td-list date">2023-12-18</div>
+            </li>
+          </ul>
+          <div class="paging">
+            <a href="#" class="move first">처음 페이지</a>
+            <a href="#" class="move prev">이전 페이지</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#" class="hide-m">6</a>
+            <a href="#" class="hide-m">7</a>
+            <a href="#" class="hide-m">8</a>
+            <a href="#" class="hide-m">9</a>
+            <a href="#" class="hide-m">10</a>
+            <a href="#" class="move next">다음 페이지</a>
+            <a href="#" class="move last">마지막 페이지</a>
+          </div>
         </div>
-        <ul class="table-wrap">
-          <li class="table-list">
-            <div class="td-list ckBox">
-              <div class="checkbox">
-                <input type="checkbox" id="ck01" name="ck">
-                <label for="ck01"></label>
-              </div>
-            </div>
-            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
-            <div class="td-list date">2023-12-18</div>
-          </li>
-          <li class="table-list">
-            <div class="td-list ckBox">
-              <div class="checkbox">
-                <input type="checkbox" id="ck02" name="ck">
-                <label for="ck02"></label>
-              </div>
-            </div>
-            <div class="td-list title"><a href="#">[230503-0001] 실적 확인이 승인 완료 되었습니다.</a></div>
-            <div class="td-list date">2023-12-18</div>
-          </li>
-          <li class="table-list">
-            <div class="td-list ckBox">
-              <div class="checkbox">
-                <input type="checkbox" id="ck03" name="ck">
-                <label for="ck03"></label>
-              </div>
-            </div>
-            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
-            <div class="td-list date">2023-12-18</div>
-          </li>
-          <li class="table-list">
-            <div class="td-list ckBox">
-              <div class="checkbox">
-                <input type="checkbox" id="ck04" name="ck">
-                <label for="ck04"></label>
-              </div>
-            </div>
-            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
-            <div class="td-list date">2023-12-18</div>
-          </li>
-          <li class="table-list">
-            <div class="td-list ckBox">
-              <div class="checkbox">
-                <input type="checkbox" id="ck05" name="ck">
-                <label for="ck05"></label>
-              </div>
-            </div>
-            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
-            <div class="td-list date">2023-12-18</div>
-          </li>
-          <li class="table-list">
-            <div class="td-list ckBox">
-              <div class="checkbox">
-                <input type="checkbox" id="ck06" name="ck">
-                <label for="ck06"></label>
-              </div>
-            </div>
-            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
-            <div class="td-list date">2023-12-18</div>
-          </li>
-        </ul>
-        <div class="paging">
-          <a href="#" class="move first">처음 페이지</a>
-          <a href="#" class="move prev">이전 페이지</a>
-          <a href="#" class="on">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#" class="hide-m">6</a>
-          <a href="#" class="hide-m">7</a>
-          <a href="#" class="hide-m">8</a>
-          <a href="#" class="hide-m">9</a>
-          <a href="#" class="hide-m">10</a>
-          <a href="#" class="move next">다음 페이지</a>
-          <a href="#" class="move last">마지막 페이지</a>
-      </div>
       </div>
 		</main>
 		

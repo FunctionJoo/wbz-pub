@@ -29,128 +29,132 @@
 </head>
 
 <body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap join-wrap">
-			<h2 class="tit">회원가입</h2>
+		<main id="contents" class="wrap">
 			<div class="w-set">
-				<div class="join-top">
-					<div class="info-box">
-						<div class="info">
-							<span class="tit">환영합니다!</span>
-							<p class="txt">교육이음센터 회원으로 가입하시면 교육이음센터 정보, 컨설팅 등 다양한 서비스를 편리하게 이용하실 수 있습니다.<br>교육이음센터 홈페이지는 만14세 미만 아동은 회원가입을 하실 수 없습니다.<br>입력하신 개인정보는 “개인정보보호법”에 따라 보호됩니다.</p>
+				<div class="join-wrap">
+					<h2 class="tit">회원가입</h2>
+					<div class="join-top">
+						<div class="info-box">
+							<div class="info">
+								<span class="tit">환영합니다!</span>
+								<p class="txt">교육이음센터 회원으로 가입하시면 교육이음센터 정보, 컨설팅 등 다양한 서비스를 편리하게 이용하실 수 있습니다.<br>교육이음센터 홈페이지는 만14세 미만 아동은 회원가입을 하실 수 없습니다.<br>입력하신 개인정보는 “개인정보보호법”에 따라 보호됩니다.</p>
+							</div>
+						</div>
+						<ul class="step-list">
+							<li class="on">
+								<span class="num">Step 01</span>
+								<span class="txt">약관동의</span>
+							</li>
+							<li class="line"></li>
+							<li>
+								<span class="num">Step 02</span>
+								<span class="txt">본인인증</span>
+							</li>
+							<li class="line"></li>
+							<li>
+								<span class="num">Step 03</span>
+								<span class="txt">정보입력</span>
+							</li>
+							<li class="line"></li>
+							<li>
+								<span class="num">Step 04</span>
+								<span class="txt">가입완료</span>
+							</li>
+						</ul>
+					</div>
+					<div class="step01-wrap">
+						<div class="all-ck-wrap">
+							<div class="checkbox">
+								<input type="checkbox" id="ckAll">
+								<label for="ckAll">아래 약관 및 개인정보처리방침 등에 대해 모든 내용에 동의합니다.</label>
+							</div>
+						</div>
+						<div class="list-ck-wrap">
+							<div class="ck-list">
+								<div class="ck-wrap">
+									<p class="ck-title">이용약관 (필수)</p>
+									<div class="checkbox">
+										<input type="checkbox" id="ck01" name="ck" required>
+										<label for="ck01">동의합니다.</label>
+									</div>
+								</div>
+								<div class="term-box">
+									관리자에 등록된 약관 표시.
+								</div>
+							</div>
+							<div class="ck-list">
+								<div class="ck-wrap">
+									<p class="ck-title">교육이음센터 개인정보<br class="mo-br"> 수집·이용 및 제공 동의 (필수)</p>
+									<div class="checkbox">
+										<input type="checkbox" id="ck02" name="ck" required>
+										<label for="ck02">동의합니다.</label>
+									</div>
+								</div>
+								<div class="term-box">
+									1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111	
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare ultricies suscipit. Maecenas nisi quam, malesuada non est at, vestibulum maximus felis. Nullam vulputate nulla sagittis ante cursus, et posuere mi vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed dapibus lectus quis vulputate tempus. Maecenas id justo quis est tempus placerat. Suspendisse a quam nec nulla pulvinar consequat ornare et urna. Proin urna ex, tempus non ante non, iaculis efficitur nisl. Maecenas tempor, nulla quis pretium commodo, ante lacus consectetur nulla, ut dictum orci risus in velit. In vestibulum dui laoreet eros hendrerit sollicitudin. In quis porta nisi. Vestibulum vulputate elit in mi dapibus vehicula. Duis lacinia orci sit amet lectus rhoncus ullamcorper. Mauris quis tristique turpis, ut fermentum elit.
+									Cras sit amet magna quis neque elementum sagittis. Ut massa metus, rhoncus sit amet justo nec, pellentesque dapibus eros. Donec vehicula erat sit amet felis efficitur, ut facilisis mauris dictum. Aliquam sit amet cursus est. In at euismod odio. In aliquam tempor metus, quis lobortis nulla rhoncus a. Curabitur mauris arcu, elementum vel nulla ut, consequat placerat sapien. Quisque aliquet elit et odio vestibulum, eget viverra diam vehicula. Phasellus egestas massa id mi ultricies euismod. Vestibulum dignissim lacus ut turpis viverra pulvinar. Duis justo ex, interdum vitae ornare quis, ornare ac arcu. Suspendisse non placerat mi.
+								</div>
+							</div>
+							<div class="ck-list">
+								<div class="ck-wrap">
+									<p class="ck-title">거래처 등록을 위한 개인정보<br class="mo-br"> 수집·이용 및 제공 동의 (필수)</p>
+									<div class="checkbox">
+										<input type="checkbox" id="ck03" name="ck" required>
+										<label for="ck03">동의합니다.</label>
+									</div>
+								</div>
+								<div class="term-box">
+									관리자에 등록된 약관 표시.
+								</div>
+							</div>
+							<div class="ck-list">
+								<div class="ck-wrap">
+									<p class="ck-title">행정정보 공동이용 사전 동의 (필수)</p>
+									<div class="checkbox">
+										<input type="checkbox" id="ck04" name="ck" required>
+										<label for="ck04">동의합니다.</label>
+									</div>
+								</div>
+								<div class="term-box">
+									관리자에 등록된 약관 표시.
+								</div>
+							</div>
+							<div class="ck-list">
+								<div class="ck-wrap">
+									<p class="ck-title">성범죄 경력 및 아동학대 관련<br class="mo-br"> 범죄 전력 조회 동의 (필수)</p>
+									<div class="checkbox">
+										<input type="checkbox" id="ck05" name="ck" required>
+										<label for="ck05">동의합니다.</label>
+									</div>
+								</div>
+								<div class="term-box">
+									관리자에 등록된 약관 표시.
+								</div>
+							</div>
+							<div class="ck-list">
+								<div class="ck-wrap">
+									<p class="ck-title">마케팅 알림톡 수신 동의 (선택)</p>
+									<div class="checkbox">
+										<input type="checkbox" id="ck06" name="ck" required>
+										<label for="ck06">동의합니다.</label>
+									</div>
+								</div>
+								<div class="term-box">
+									관리자에 등록된 약관 표시.
+								</div>
+							</div>
 						</div>
 					</div>
-					<ul class="step-list">
-						<li class="on">
-							<span class="num">Step 01</span>
-							<span class="txt">약관동의</span>
-						</li>
-						<li class="line"></li>
-						<li>
-							<span class="num">Step 02</span>
-							<span class="txt">본인인증</span>
-						</li>
-						<li class="line"></li>
-						<li>
-							<span class="num">Step 03</span>
-							<span class="txt">정보입력</span>
-						</li>
-						<li class="line"></li>
-						<li>
-							<span class="num">Step 04</span>
-							<span class="txt">가입완료</span>
-						</li>
-					</ul>
-				</div>
-				<div class="step01-wrap">
-					<div class="all-ck-wrap">
-						<div class="checkbox">
-							<input type="checkbox" id="ckAll">
-							<label for="ckAll">아래 약관 및 개인정보처리방침 등에 대해 모든 내용에 동의합니다.</label>
-						</div>
+					<div class="btn-area">
+						<button type="button" class="btn color_4">회원가입</button>
 					</div>
-					<div class="list-ck-wrap">
-						<div class="ck-list">
-							<div class="ck-wrap">
-								<p class="ck-title">이용약관 (필수)</p>
-								<div class="checkbox">
-									<input type="checkbox" id="ck01" name="ck" required>
-									<label for="ck01">동의합니다.</label>
-								</div>
-							</div>
-							<div class="term-box">
-								관리자에 등록된 약관 표시.
-							</div>
-						</div>
-						<div class="ck-list">
-							<div class="ck-wrap">
-								<p class="ck-title">교육이음센터 개인정보<br class="mo-br"> 수집·이용 및 제공 동의 (필수)</p>
-								<div class="checkbox">
-									<input type="checkbox" id="ck02" name="ck" required>
-									<label for="ck02">동의합니다.</label>
-								</div>
-							</div>
-							<div class="term-box">
-								1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111	
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare ultricies suscipit. Maecenas nisi quam, malesuada non est at, vestibulum maximus felis. Nullam vulputate nulla sagittis ante cursus, et posuere mi vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed dapibus lectus quis vulputate tempus. Maecenas id justo quis est tempus placerat. Suspendisse a quam nec nulla pulvinar consequat ornare et urna. Proin urna ex, tempus non ante non, iaculis efficitur nisl. Maecenas tempor, nulla quis pretium commodo, ante lacus consectetur nulla, ut dictum orci risus in velit. In vestibulum dui laoreet eros hendrerit sollicitudin. In quis porta nisi. Vestibulum vulputate elit in mi dapibus vehicula. Duis lacinia orci sit amet lectus rhoncus ullamcorper. Mauris quis tristique turpis, ut fermentum elit.
-								Cras sit amet magna quis neque elementum sagittis. Ut massa metus, rhoncus sit amet justo nec, pellentesque dapibus eros. Donec vehicula erat sit amet felis efficitur, ut facilisis mauris dictum. Aliquam sit amet cursus est. In at euismod odio. In aliquam tempor metus, quis lobortis nulla rhoncus a. Curabitur mauris arcu, elementum vel nulla ut, consequat placerat sapien. Quisque aliquet elit et odio vestibulum, eget viverra diam vehicula. Phasellus egestas massa id mi ultricies euismod. Vestibulum dignissim lacus ut turpis viverra pulvinar. Duis justo ex, interdum vitae ornare quis, ornare ac arcu. Suspendisse non placerat mi.
-							</div>
-						</div>
-						<div class="ck-list">
-							<div class="ck-wrap">
-								<p class="ck-title">거래처 등록을 위한 개인정보<br class="mo-br"> 수집·이용 및 제공 동의 (필수)</p>
-								<div class="checkbox">
-									<input type="checkbox" id="ck03" name="ck" required>
-									<label for="ck03">동의합니다.</label>
-								</div>
-							</div>
-							<div class="term-box">
-								관리자에 등록된 약관 표시.
-							</div>
-						</div>
-						<div class="ck-list">
-							<div class="ck-wrap">
-								<p class="ck-title">행정정보 공동이용 사전 동의 (필수)</p>
-								<div class="checkbox">
-									<input type="checkbox" id="ck04" name="ck" required>
-									<label for="ck04">동의합니다.</label>
-								</div>
-							</div>
-							<div class="term-box">
-								관리자에 등록된 약관 표시.
-							</div>
-						</div>
-						<div class="ck-list">
-							<div class="ck-wrap">
-								<p class="ck-title">성범죄 경력 및 아동학대 관련<br class="mo-br"> 범죄 전력 조회 동의 (필수)</p>
-								<div class="checkbox">
-									<input type="checkbox" id="ck05" name="ck" required>
-									<label for="ck05">동의합니다.</label>
-								</div>
-							</div>
-							<div class="term-box">
-								관리자에 등록된 약관 표시.
-							</div>
-						</div>
-						<div class="ck-list">
-							<div class="ck-wrap">
-								<p class="ck-title">마케팅 알림톡 수신 동의 (선택)</p>
-								<div class="checkbox">
-									<input type="checkbox" id="ck06" name="ck" required>
-									<label for="ck06">동의합니다.</label>
-								</div>
-							</div>
-							<div class="term-box">
-								관리자에 등록된 약관 표시.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="btn-area">
-					<button type="button" class="btn color_4">회원가입</button>
 				</div>
 			</div>
 		</main>

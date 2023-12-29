@@ -29,14 +29,71 @@
 </head>
 
 <body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap">
-			<a href="./login.html">
-				<img src="../images/dummy/sub_join.png" alt="">
-			</a>
+		<main id="contents" class="wrap">
+			<div class="w-set">
+				<div class="join-wrap">
+					<h2 class="tit">회원가입</h2>
+					<div class="join-top">
+						<div class="info-box">
+							<div class="info">
+								<span class="tit">환영합니다!</span>
+								<p class="txt">교육이음센터 회원으로 가입하시면 교육이음센터 정보, 컨설팅 등 다양한 서비스를 편리하게 이용하실 수 있습니다.<br>교육이음센터 홈페이지는 만14세 미만 아동은 회원가입을 하실 수 없습니다.<br>입력하신 개인정보는 “개인정보보호법”에 따라 보호됩니다.</p>
+							</div>
+						</div>
+						<ul class="step-list">
+							<li>
+								<span class="num">Step 01</span>
+								<span class="txt">약관동의</span>
+							</li>
+							<li class="line"></li>
+							<li>
+								<span class="num">Step 02</span>
+								<span class="txt">본인인증</span>
+							</li>
+							<li class="line"></li>
+							<li>
+								<span class="num">Step 03</span>
+								<span class="txt">정보입력</span>
+							</li>
+							<li class="line"></li>
+							<li class="on">
+								<span class="num">Step 04</span>
+								<span class="txt">가입완료</span>
+							</li>
+						</ul>
+					</div>
+					<div class="step04-wrap">
+						<div class="fin-wrap">
+							<i></i>
+							<div class="main-txt">
+								<p>회원가입 신청이 정상적으로 완료 되었습니다.</p>
+								<span>로그인 하시면 정상적인 서비스 이용이 가능합니다.</span>
+							</div>
+							<div class="info-txt">
+								<ul class="info-wrap">
+									<li class="info-list">
+										<p>아 이 디</p>
+										<strong>sazita00</strong>
+									</li>
+									<li class="info-list">
+										<p>신청일자</p>
+										<strong>2024.05.05</strong>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="btn-area">
+						<button type="button" class="btn color_4">메인페이지 이동</button>
+					</div>
+				</div>
+			</div>
 		</main>
 		
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>

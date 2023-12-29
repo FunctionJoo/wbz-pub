@@ -507,6 +507,15 @@ h3.tit {
   line-height: 29px;
   font-weight: 500;
 }
+.join-wrap .step03-wrap .info-wrap .info-list .title p {
+  display: inline-block;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .title span {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-left: 10px;
+}
 .join-wrap .step03-wrap .info-wrap .info-list .content-wrap.cw01 {
   padding: 20px 0 30px 0;
 }
@@ -517,6 +526,9 @@ h3.tit {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap.cw03 {
+  padding: 26px 0 20px 0;
 }
 .join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list {
   display: flex;
@@ -563,6 +575,45 @@ h3.tit {
 }
 .join-wrap .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap .work-list:not(:first-child) {
   margin-top: 10px;
+}
+.join-wrap .step04-wrap {
+  margin-top: 40px;
+  border-top: 2px solid #707070;
+}
+.join-wrap .step04-wrap .fin-wrap {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.join-wrap .step04-wrap .fin-wrap i {
+  background-image: url(../images/common/ico/join_fin_ico.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 83px;
+  height: 90px;
+}
+.join-wrap .step04-wrap .fin-wrap .main-txt {
+  margin-top: 42px;
+  text-align: center;
+}
+.join-wrap .step04-wrap .fin-wrap .main-txt p {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+.join-wrap .step04-wrap .fin-wrap .main-txt span {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.join-wrap .step04-wrap .fin-wrap .info-txt {
+  background-color: #F9F9F9;
+  padding: 30px 0;
+  width: 380px;
 }
 .join-wrap .btn-area {
   margin-top: 60px;
@@ -673,20 +724,17 @@ h3.tit {
 .alarm-wrap {
   padding: 60px 0 120px;
 }
-.alarm-wrap .w-set {
-  max-width: 1200px;
-}
-.alarm-wrap .w-set .con-top {
+.alarm-wrap .con-top {
   padding-bottom: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 3px solid #222222;
 }
-.alarm-wrap .w-set .con-top .back-button {
+.alarm-wrap .con-top .back-button {
   display: none;
 }
-.alarm-wrap .w-set .table-top {
+.alarm-wrap .table-top {
   display: table;
   width: 100%;
   table-layout: fixed;
@@ -696,48 +744,48 @@ h3.tit {
   line-height: 27px;
   font-weight: 500;
 }
-.alarm-wrap .w-set .table-top .th-list {
+.alarm-wrap .table-top .th-list {
   display: table-cell;
   text-align: center;
 }
-.alarm-wrap .w-set .table-top .th-list:first-child {
+.alarm-wrap .table-top .th-list:first-child {
   width: 100px;
 }
-.alarm-wrap .w-set .table-top .th-list:last-child {
+.alarm-wrap .table-top .th-list:last-child {
   width: 200px;
 }
-.alarm-wrap .w-set .table-top .th-list .checkbox label {
+.alarm-wrap .table-top .th-list .checkbox label {
   vertical-align: middle;
 }
-.alarm-wrap .w-set .table-wrap .table-list {
+.alarm-wrap .table-wrap .table-list {
   border-bottom: 1px solid #D3D3D3;
   padding: 15px 0;
   display: table;
   width: 100%;
   table-layout: fixed;
 }
-.alarm-wrap .w-set .table-wrap .table-list .td-list {
+.alarm-wrap .table-wrap .table-list .td-list {
   display: table-cell;
   text-align: center;
 }
-.alarm-wrap .w-set .table-wrap .table-list .td-list.ckBox {
+.alarm-wrap .table-wrap .table-list .td-list.ckBox {
   width: 100px;
 }
-.alarm-wrap .w-set .table-wrap .table-list .td-list.ckBox .checkbox label {
+.alarm-wrap .table-wrap .table-list .td-list.ckBox .checkbox label {
   height: 24px;
   width: 24px;
   vertical-align: middle;
 }
-.alarm-wrap .w-set .table-wrap .table-list .td-list.title {
+.alarm-wrap .table-wrap .table-list .td-list.title {
   font-size: 16px;
   line-height: 24px;
   text-align: start;
 }
-.alarm-wrap .w-set .table-wrap .table-list .td-list.title a {
+.alarm-wrap .table-wrap .table-list .td-list.title a {
   max-width: 100%;
   word-wrap: break-word;
 }
-.alarm-wrap .w-set .table-wrap .table-list .td-list.date {
+.alarm-wrap .table-wrap .table-list .td-list.date {
   width: 200px;
   font-size: 16px;
   line-height: 20px;
@@ -752,16 +800,16 @@ h3.tit {
   .alarm-wrap {
     padding: 20px 0 80px;
   }
-  .alarm-wrap .w-set .con-top {
+  .alarm-wrap .con-top {
     padding-bottom: 7px;
     border-bottom: none;
   }
-  .alarm-wrap .w-set .con-top h3.tit {
+  .alarm-wrap .con-top h3.tit {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
   }
-  .alarm-wrap .w-set .con-top .back-button {
+  .alarm-wrap .con-top .back-button {
     display: inline-block;
     background-image: url(../images/common/ico/back_arrow.svg);
     background-repeat: no-repeat;
@@ -770,7 +818,7 @@ h3.tit {
     width: 27px;
     height: 20px;
   }
-  .alarm-wrap .w-set .con-top .del-btn {
+  .alarm-wrap .con-top .del-btn {
     height: 22px;
     width: 21px;
     border: none;
@@ -781,32 +829,32 @@ h3.tit {
     margin-bottom: -114px;
     z-index: 100;
   }
-  .alarm-wrap .w-set .con-top .del-btn span {
+  .alarm-wrap .con-top .del-btn span {
     display: none;
   }
-  .alarm-wrap .w-set .table-top {
+  .alarm-wrap .table-top {
     display: inline-block;
     table-layout: unset;
     padding: 15px 0;
   }
-  .alarm-wrap .w-set .table-top .th-list:nth-child(n+2) {
+  .alarm-wrap .table-top .th-list:nth-child(n+2) {
     display: none;
   }
-  .alarm-wrap .w-set .table-top .th-list:first-child {
+  .alarm-wrap .table-top .th-list:first-child {
     width: 24px;
   }
-  .alarm-wrap .w-set .table-wrap .table-list .td-list {
+  .alarm-wrap .table-wrap .table-list .td-list {
     display: inline-block;
   }
-  .alarm-wrap .w-set .table-wrap .table-list .td-list.ckBox {
+  .alarm-wrap .table-wrap .table-list .td-list.ckBox {
     width: 24px;
     vertical-align: top;
   }
-  .alarm-wrap .w-set .table-wrap .table-list .td-list.title {
+  .alarm-wrap .table-wrap .table-list .td-list.title {
     width: calc(100% - 24px);
     padding: 0 8px;
   }
-  .alarm-wrap .w-set .table-wrap .table-list .td-list.date {
+  .alarm-wrap .table-wrap .table-list .td-list.date {
     width: auto;
     margin-left: 33px;
     margin-top: 5px;
