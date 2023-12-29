@@ -576,6 +576,45 @@ h3.tit {
 .join-wrap .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap .work-list:not(:first-child) {
   margin-top: 10px;
 }
+.join-wrap .step04-wrap {
+  margin-top: 40px;
+  border-top: 2px solid #707070;
+}
+.join-wrap .step04-wrap .fin-wrap {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.join-wrap .step04-wrap .fin-wrap i {
+  background-image: url(../images/common/ico/join_fin_ico.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 83px;
+  height: 90px;
+}
+.join-wrap .step04-wrap .fin-wrap .main-txt {
+  margin-top: 42px;
+  text-align: center;
+}
+.join-wrap .step04-wrap .fin-wrap .main-txt p {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+.join-wrap .step04-wrap .fin-wrap .main-txt span {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.join-wrap .step04-wrap .fin-wrap .info-txt {
+  background-color: #F9F9F9;
+  padding: 30px 0;
+  width: 380px;
+}
 .join-wrap .btn-area {
   margin-top: 60px;
   text-align: center;
