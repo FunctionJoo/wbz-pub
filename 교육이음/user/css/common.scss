@@ -309,6 +309,20 @@ textarea:focus,
 	border: 1px solid #459729;
 	border-radius: 3px;
 }
+.cert-btn{
+	width: 102px;
+	height: 40px;
+	border: 1px solid #459729;
+	border-radius: 3px;
+	color:  #459729;
+	font-size: 16px;
+	line-height: 24px;
+	@media(max-width:1300px){
+		width: 80px;
+		font-size: 15px;
+		line-height: 22px;
+	}
+}
 .btn {
 	display: inline-block;
 	width: 100%;
@@ -682,5 +696,24 @@ textarea:focus,
 	}
 	.mobile {
 		display: block !important;
+	}
+}
+
+// 필수요소 표시
+.essential-el{
+	&::after{
+		content: "*";
+		color: #459729;
+	}
+}
+
+// 셀렉트요소 label숨기기
+label{
+	&.hide{
+		text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+		font-size: 0;
+		position: absolute;
 	}
 }

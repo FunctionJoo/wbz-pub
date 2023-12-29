@@ -16,7 +16,7 @@
 	<meta property="og:image:height" content="270" />
 	<meta property="og:title" content="" />
 	<meta property="og:description" content="" />
-	<title>교육이음센터</title>
+	<title>교육이음센터&gt;회원가입 본인인증</title>
 	<!-- css -->
 	<link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
@@ -93,9 +93,9 @@
 						</li>
 					</ul>
 					<ul class="info-txt">
-						<li>· 안전한 회원가입을 위한 본인인증 단계입니다.</li>
-						<li>· 본인 인증 시 제공하는 인증기관에서 직접 수집하며, 인증 이외의 용도로 이용 또는 저장하지 않습니다.</li>
-						<li>· 입력하신 소중한 개인정보는 사용자의 명백한 동의 없이 공개 또는 제3자에게 제공하지 않습니다.</li>
+						<li>안전한 회원가입을 위한 본인인증 단계입니다.</li>
+						<li>본인 인증 시 제공하는 인증기관에서 직접 수집하며, 인증 이외의 용도로 이용 또는 저장하지 않습니다.</li>
+						<li>입력하신 소중한 개인정보는 사용자의 명백한 동의 없이 공개 또는 제3자에게 제공하지 않습니다.</li>
 					</ul>
 				</div>
 				
@@ -109,6 +109,15 @@
 		document.addEventListener('DOMContentLoaded', function(){
 			let certiList = document.querySelectorAll('.certi-list');
 
+			// certi-list 외의 요소 클릭 시 on클래스 제거
+			document.addEventListener('click', function(event){
+				if(!event.target.closest('.certi-list')){
+					certiList.forEach(function(item){
+						item.classList.remove('on')
+					})
+				}
+			})
+
 			certiList.forEach(function(item){
 				// 클릭 시
 				item.addEventListener('click', function(){
@@ -120,7 +129,7 @@
 					button.addEventListener('focus', function(){
 						updateClasses(item);
 					});
-					// 버튼 focus 없어질 시
+					// 버튼 focus 없어질 시 on 클래스 제거
 					button.addEventListener('blur', function(){
 						item.classList.remove('on');
 					})
