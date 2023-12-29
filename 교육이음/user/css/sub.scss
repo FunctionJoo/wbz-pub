@@ -330,7 +330,7 @@ h3.tit {
             width: 400px;
         }
         &.input07{
-
+            width: 160px;
         }
     }
     .w-set {
@@ -575,9 +575,20 @@ h3.tit {
                             }
                         }
                     }
-                    .work-list{
-                        display: flex;
-                        gap: 10px;
+                    .work-wrap{
+                        margin-top: 20px;
+                        border: 1px solid #D3D3D3;
+                        padding: 20px 30px 23px 30px;
+                        .list-wrap{
+                            margin-top: 20px;
+                            .work-list{
+                                display: flex;
+                                gap: 10px;
+                                &:not(:first-child){
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
                     }
                 }
             }
