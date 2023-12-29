@@ -29,11 +29,13 @@
 </head>
 
 <body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap member">
+		<main id="contents" class="wrap member">
 			<h2 class="tit">로그인</h2>
 			<div class="w-set">
 				<form action="" class="login-wrap">

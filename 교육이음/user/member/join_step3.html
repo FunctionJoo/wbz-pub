@@ -29,151 +29,155 @@
 </head>
 
 <body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap join-wrap">
-			<h2 class="tit">회원가입</h2>
+		<main id="contents" class="wrap">
 			<div class="w-set">
-				<div class="join-top">
-					<div class="info-box">
-						<div class="info">
-							<span class="tit">환영합니다!</span>
-							<p class="txt">교육이음센터 회원으로 가입하시면 교육이음센터 정보, 컨설팅 등 다양한 서비스를 편리하게 이용하실 수 있습니다.<br>교육이음센터 홈페이지는 만14세 미만 아동은 회원가입을 하실 수 없습니다.<br>입력하신 개인정보는 “개인정보보호법”에 따라 보호됩니다.</p>
+				<div class="join-wrap">
+					<h2 class="tit">회원가입</h2>
+					<div class="join-top">
+						<div class="info-box">
+							<div class="info">
+								<span class="tit">환영합니다!</span>
+								<p class="txt">교육이음센터 회원으로 가입하시면 교육이음센터 정보, 컨설팅 등 다양한 서비스를 편리하게 이용하실 수 있습니다.<br>교육이음센터 홈페이지는 만14세 미만 아동은 회원가입을 하실 수 없습니다.<br>입력하신 개인정보는 “개인정보보호법”에 따라 보호됩니다.</p>
+							</div>
 						</div>
+						<ul class="step-list">
+							<li>
+								<span class="num">Step 01</span>
+								<span class="txt">약관동의</span>
+							</li>
+							<li class="line"></li>
+							<li>
+								<span class="num">Step 02</span>
+								<span class="txt">본인인증</span>
+							</li>
+							<li class="line"></li>
+							<li class="on">
+								<span class="num">Step 03</span>
+								<span class="txt">정보입력</span>
+							</li>
+							<li class="line"></li>
+							<li>
+								<span class="num">Step 04</span>
+								<span class="txt">가입완료</span>
+							</li>
+						</ul>
 					</div>
-					<ul class="step-list">
-						<li>
-							<span class="num">Step 01</span>
-							<span class="txt">약관동의</span>
-						</li>
-						<li class="line"></li>
-						<li>
-							<span class="num">Step 02</span>
-							<span class="txt">본인인증</span>
-						</li>
-						<li class="line"></li>
-						<li class="on">
-							<span class="num">Step 03</span>
-							<span class="txt">정보입력</span>
-						</li>
-						<li class="line"></li>
-						<li>
-							<span class="num">Step 04</span>
-							<span class="txt">가입완료</span>
-						</li>
-					</ul>
-				</div>
-				<div class="step03-wrap">
-					<ul class="info-wrap">
-						<li class="info-list">
-							<div class="title">
-								<p>인적사항</p>
-							</div>
-							<ul class="content-wrap cw01">
-								<li class="content-list">
-									<p class="con-th essential-el">아이디</p>
-									<div class="con-td">
-										<input class="input01" type="text" id="id">
-										<button type="button" class="cert-btn">중복확인</button>
-										<span class="input-info">공백 없이 6~20자를 입력하세요. <br class="mo-br">영문 대소문자를 구분하지 않습니다.</span>
-									</div>
-								</li>
-								<li class="content-list">
-									<p class="con-th essential-el">비밀번호</p>
-									<div class="con-td">
-										<input class="input01" type="text" id="password">
-										<span class="input-info">영문, 숫자, 특수문자를 포함하여 <br class="mo-br">6~20자 이내로 입력해주세요</span>
-									</div>
-								</li>
-								<li class="content-list">
-									<p class="con-th essential-el">비밀번호 확인</p>
-									<div class="con-td">
-										<input class="input01" type="text" id="passwordCheck">
-										<span class="input-info">비밀번호확인을 위해 다시 한번 입력해주세요</span>
-									</div>
-								</li>
-								<li class="content-list">
-									<p class="con-th essential-el">휴대폰 번호</p>
-									<div class="con-td">
-										<div class="select-wrap select01">
-											<label for="num01" class="hide">번호 앞 자리</label>
-											<select name="num01" id="num01">
-												<option value="010">010</option>
-											</select>
-										</div>
-										<i class="num-bar"></i>
-										<input class="input02" type="text" id="num02">
-										<i class="num-bar"></i>
-										<input class="input02" type="text" id="num03">
-									</div>
-								</li>
-								<li class="content-list">
-									<p class="con-th essential-el">주소</p>
-									<div class="con-td">
-										<input class="input03" type="text" id="address01" placeholder="주소">
-										<input class="input04" type="text" id="address02" placeholder="상세 주소">
-									</div>
-								</li>
-								<li class="content-list">
-									<p class="con-th essential-el">수당 지급 계좌</p>
-									<div class="con-td">
-										<div class="select-wrap select02">
-											<label for="bank" class="hide">은행선택</label>
-											<select name="bank" id="bank">
-												<option value="은행 선택">은행 선택</option>
-											</select>
-										</div>
-										<input class="input04" type="text" id="address02" placeholder="계좌번호 입력">
-										<button type="button" class="cert-btn">계좌 인증</button>
-										<span class="input-info">- 없이 입력해주세요. 가입자과 동일 명의 계좌만 등록 가능합니다.</span>
-									</div>
-								</li>
-							</ul>
-						</li>
-						<li class="info-list">
-							<div class="title">
-								<p class="essential-el">경력사항</p>
-							</div>
-							<div class="content-wrap cw02">
-								<div class="content-list">
-									<p class="con-th">총 근속연수</p>
-									<div class="con-td">
-										<input class="input07" type="text" id="workYear" placeholder="예) 1">
-									</div>
+					<div class="step03-wrap">
+						<ul class="info-wrap">
+							<li class="info-list">
+								<div class="title">
+									<p>인적사항</p>
 								</div>
-								<div class="work-wrap">
-									<p class="sub-title">퇴직 전 5년 이내 근무기관</p>
-									<div class="list-wrap">
-										<div class="work-list">
-											<input type="text" id="work01" class="input05" placeholder="기관 명 입력" value="세종초등학고">
-											<input type="text" id="work01" class="input06" placeholder="총 근속연수 예) 1년" value="3년">
-											<input type="text" id="work01" class="input06" placeholder="직위(급)입력" value="교감">
+								<ul class="content-wrap cw01">
+									<li class="content-list">
+										<p class="con-th essential-el">아이디</p>
+										<div class="con-td">
+											<input class="input01" type="text" id="id">
+											<button type="button" class="cert-btn">중복확인</button>
+											<span class="input-info">공백 없이 6~20자를 입력하세요. <br class="mo-br">영문 대소문자를 구분하지 않습니다.</span>
 										</div>
-										<div class="work-list">
-											<input type="text" id="work01" class="input05" placeholder="기관 명 입력">
-											<input type="text" id="work01" class="input06" placeholder="총 근속연수 예) 1년">
-											<input type="text" id="work01" class="input06" placeholder="직위(급)입력">
+									</li>
+									<li class="content-list">
+										<p class="con-th essential-el">비밀번호</p>
+										<div class="con-td">
+											<input class="input01" type="text" id="password">
+											<span class="input-info">영문, 숫자, 특수문자를 포함하여 <br class="mo-br">6~20자 이내로 입력해주세요</span>
+										</div>
+									</li>
+									<li class="content-list">
+										<p class="con-th essential-el">비밀번호 확인</p>
+										<div class="con-td">
+											<input class="input01" type="text" id="passwordCheck">
+											<span class="input-info">비밀번호확인을 위해 다시 한번 입력해주세요</span>
+										</div>
+									</li>
+									<li class="content-list">
+										<p class="con-th essential-el">휴대폰 번호</p>
+										<div class="con-td">
+											<div class="select-wrap select01">
+												<label for="num01" class="hide">번호 앞 자리</label>
+												<select name="num01" id="num01">
+													<option value="010">010</option>
+												</select>
+											</div>
+											<i class="num-bar"></i>
+											<input class="input02" type="text" id="num02">
+											<i class="num-bar"></i>
+											<input class="input02" type="text" id="num03">
+										</div>
+									</li>
+									<li class="content-list">
+										<p class="con-th essential-el">주소</p>
+										<div class="con-td">
+											<input class="input03" type="text" id="address01" placeholder="주소">
+											<input class="input04" type="text" id="address02" placeholder="상세 주소">
+										</div>
+									</li>
+									<li class="content-list">
+										<p class="con-th essential-el">수당 지급 계좌</p>
+										<div class="con-td">
+											<div class="select-wrap select02">
+												<label for="bank" class="hide">은행선택</label>
+												<select name="bank" id="bank">
+													<option value="은행 선택">은행 선택</option>
+												</select>
+											</div>
+											<input class="input04" type="text" id="address02" placeholder="계좌번호 입력">
+											<button type="button" class="cert-btn">계좌 인증</button>
+											<span class="input-info">- 없이 입력해주세요. 가입자과 동일 명의 계좌만 등록 가능합니다.</span>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="info-list">
+								<div class="title">
+									<p class="essential-el">경력사항</p>
+								</div>
+								<div class="content-wrap cw02">
+									<div class="content-list">
+										<p class="con-th">총 근속연수</p>
+										<div class="con-td">
+											<input class="input07" type="text" id="workYear" placeholder="예) 1">
+										</div>
+									</div>
+									<div class="work-wrap">
+										<p class="sub-title">퇴직 전 5년 이내 근무기관</p>
+										<div class="list-wrap">
+											<div class="work-list">
+												<input type="text" id="work01" class="input05" placeholder="기관 명 입력" value="세종초등학고">
+												<input type="text" id="work01" class="input06" placeholder="총 근속연수 예) 1년" value="3년">
+												<input type="text" id="work01" class="input06" placeholder="직위(급)입력" value="교감">
+											</div>
+											<div class="work-list">
+												<input type="text" id="work01" class="input05" placeholder="기관 명 입력">
+												<input type="text" id="work01" class="input06" placeholder="총 근속연수 예) 1년">
+												<input type="text" id="work01" class="input06" placeholder="직위(급)입력">
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</li>
-						<li class="info-list">
-							<div class="title">
-								<p class="essential-el">활동 희망 분야</p>
-								<span>활동 희망 분야 최소 1개 이상 선택 해주세요.</span>
-								<button></button>
-							</div>
-							<div class="content-wrap cw03">
-								
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="btn-area">
-					<button type="button" class="btn color_4">회원가입</button>
+							</li>
+							<li class="info-list">
+								<div class="title">
+									<p class="essential-el">활동 희망 분야</p>
+									<span>활동 희망 분야 최소 1개 이상 선택 해주세요.</span>
+									<button></button>
+								</div>
+								<div class="content-wrap cw03">
+									
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn-area">
+						<button type="button" class="btn color_4">회원가입</button>
+					</div>
 				</div>
 			</div>
 		</main>
