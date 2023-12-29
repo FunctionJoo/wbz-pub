@@ -298,6 +298,40 @@ h3.tit {
 .join-wrap {
     padding: 100px 0 120px;
     border-top: 1px solid #ddd;
+    input{
+        height: 40px;
+        border: 1px solid #D3D3D3;
+        border-radius: 3px;
+        padding: 0 14px;
+        font-size: 15px;
+        line-height: 22px;
+        &::placeholder{
+            font-size: 15px;
+            line-height: 22px;
+            color: #A7A7A7;
+        }
+        &.input01{
+            width: 490px;
+        }
+        &.input02{
+            width: 120px;
+        }
+        &.input03{
+            width: 260px;
+        }
+        &.input04{
+            width: 360px;
+        }
+        &.input05{
+            width: 320px;
+        }
+        &.input06{
+            width: 400px;
+        }
+        &.input07{
+            
+        }
+    }
     .w-set {
         max-width: 1200px;
     }
@@ -498,11 +532,21 @@ h3.tit {
                     font-weight: 500;
                 }
                 .content-wrap{
-                    padding: 20px 0 30px 0;
+                    &.cw01{
+                        padding: 20px 0 30px 0;
+                    }
+                    &.cw02{
+                        padding: 20px 0 36px 0;
+                        .sub-title{
+                            font-size: 18px;
+                            line-height: 27px;
+                            font-weight: 500;
+                        }
+                    }
                     .content-list{
                         display: flex;
-                        &:not(:last-child){
-                            margin-bottom: 20px;
+                        &:not(:first-child){
+                            margin-top: 20px;
                         }
                         .con-th{
                             font-size: 18px;
@@ -514,13 +558,11 @@ h3.tit {
                             display: flex;
                             gap: 10px;
                             align-items: center;
-                            input{
-                                height: 40px;
-                                border: 1px solid #D3D3D3;
-                                border-radius: 3px;
-                                &.input01{
-                                    width: 490px;
-                                }
+                            .num-bar{
+                                width: 8px;
+                                height: 1px;
+                                display: inline-block;
+                                background-color: #707070;
                             }
                             .input-info{
                                 font-size: 15px;
@@ -530,13 +572,11 @@ h3.tit {
                                     display: none;
                                 }
                             }
-                            select{
-                                height: 40px;
-                                &.select01{
-                                    height: 110px;
-                                }
-                            }
                         }
+                    }
+                    .work-list{
+                        display: flex;
+                        gap: 10px;
                     }
                 }
             }

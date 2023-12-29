@@ -16,7 +16,7 @@
 	<meta property="og:image:height" content="270" />
 	<meta property="og:title" content="" />
 	<meta property="og:description" content="" />
-	<title>교육이음센터</title>
+	<title>교육이음센터&gt;알림</title>
 	<!-- css -->
 	<link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
@@ -25,23 +25,140 @@
 	<script src="../js/jquery-ui.js"></script>
 	<script src="../js/layout.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/wbz-popup.v1.js"></script>
 </head>
 
 <body>
-	<div id="container">
+	<div id="container" class="alarm">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap">
-			<a href="#none">
-				<img src="../images/dummy/notice.png" alt="">
-			</a>
+		<main class="wrap alarm-wrap">
+      <div class="w-set">
+        <div class="con-top">
+          <a href="#" class="back-button"></a>
+          <h3 class="tit">알림</h3>
+          <button type="button" class="del-btn"><span>삭제</span></button>
+        </div>
+        <div class="table-top">
+          <div class="th-list">
+            <div class="checkbox">
+              <input type="checkbox" id="ckAll">
+              <label for="ckAll"></label>
+            </div>
+          </div>
+          <div class="th-list">내용</div>
+          <div class="th-list">작성일</div>
+        </div>
+        <ul class="table-wrap">
+          <li class="table-list">
+            <div class="td-list ckBox">
+              <div class="checkbox">
+                <input type="checkbox" id="ck01" name="ck">
+                <label for="ck01"></label>
+              </div>
+            </div>
+            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+            <div class="td-list date">2023-12-18</div>
+          </li>
+          <li class="table-list">
+            <div class="td-list ckBox">
+              <div class="checkbox">
+                <input type="checkbox" id="ck02" name="ck">
+                <label for="ck02"></label>
+              </div>
+            </div>
+            <div class="td-list title"><a href="#">[230503-0001] 실적 확인이 승인 완료 되었습니다.</a></div>
+            <div class="td-list date">2023-12-18</div>
+          </li>
+          <li class="table-list">
+            <div class="td-list ckBox">
+              <div class="checkbox">
+                <input type="checkbox" id="ck03" name="ck">
+                <label for="ck03"></label>
+              </div>
+            </div>
+            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+            <div class="td-list date">2023-12-18</div>
+          </li>
+          <li class="table-list">
+            <div class="td-list ckBox">
+              <div class="checkbox">
+                <input type="checkbox" id="ck04" name="ck">
+                <label for="ck04"></label>
+              </div>
+            </div>
+            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+            <div class="td-list date">2023-12-18</div>
+          </li>
+          <li class="table-list">
+            <div class="td-list ckBox">
+              <div class="checkbox">
+                <input type="checkbox" id="ck05" name="ck">
+                <label for="ck05"></label>
+              </div>
+            </div>
+            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+            <div class="td-list date">2023-12-18</div>
+          </li>
+          <li class="table-list">
+            <div class="td-list ckBox">
+              <div class="checkbox">
+                <input type="checkbox" id="ck06" name="ck">
+                <label for="ck06"></label>
+              </div>
+            </div>
+            <div class="td-list title"><a href="#">회원가입 승인이 완료되었습니다.</a></div>
+            <div class="td-list date">2023-12-18</div>
+          </li>
+        </ul>
+        <div class="paging">
+          <a href="#" class="move first">처음 페이지</a>
+          <a href="#" class="move prev">이전 페이지</a>
+          <a href="#" class="on">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">7</a>
+          <a href="#">8</a>
+          <a href="#">9</a>
+          <a href="#">10</a>
+          <a href="#" class="move next">다음 페이지</a>
+          <a href="#" class="move last">마지막 페이지</a>
+      </div>
+      </div>
 		</main>
 		
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
 	<script>
+    // 체크박스 구현
+		document.addEventListener("DOMContentLoaded", function(){
+			let chkAll = document.getElementById('ckAll');
+			let checkboxes = document.querySelectorAll('input[name=ck]');
+
+			// 전체 체크 시
+			chkAll.addEventListener("click", function(){
+				checkboxes.forEach(function(checkbox){
+					checkbox.checked = chkAll.checked;
+				});
+			});
+
+			// 개별 전체 체크 시
+			checkboxes.forEach(function(checkbox){
+				checkbox.addEventListener("click", function(){
+					let total = checkboxes.length;
+					let checked = Array.from(checkboxes).filter(function(checkbox){
+						return checkbox.checked;
+					}).length;
+
+					chkAll.checked = total === checked;
+				})
+			})
+		})
 	</script>
 </body>
 </html>

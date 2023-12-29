@@ -673,3 +673,43 @@ label.hide {
   font-size: 0;
   position: absolute;
 }
+
+.select-wrap {
+  border: 1px solid #D3D3D3;
+  border-radius: 3px;
+  background-image: url(../images/common/ico/select_arrow_bk.svg);
+  background-size: 12px 7px;
+  background-repeat: no-repeat;
+  background-position: top 50% right 10px;
+}
+.select-wrap.select01 {
+  width: 110px;
+  height: 40px;
+}
+.select-wrap.select02 {
+  width: 140px;
+  height: 40px;
+}
+.select-wrap select {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+  line-height: 22px;
+  border: 0;
+  -webkit-appearance: none;
+  /* for chrome */
+  -moz-appearance: none;
+  /*for firefox*/
+  appearance: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+.select-wrap select::-ms-expand {
+  display: none;
+  /*for IE10,11*/
+}
+.select-wrap select option {
+  font-size: 15px;
+  line-height: 22px;
+}
