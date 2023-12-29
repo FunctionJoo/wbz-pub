@@ -170,6 +170,7 @@ h3.tit {
 .member .btn {
   margin-top: 40px;
   height: 60px;
+  line-height: 58px;
 }
 .member .btn + .btn {
   margin-top: 15px;
@@ -316,6 +317,9 @@ h3.tit {
 }
 .join-wrap input.input06 {
   width: 400px;
+}
+.join-wrap input.input07 {
+  width: 160px;
 }
 .join-wrap .w-set {
   max-width: 1200px;
@@ -545,9 +549,20 @@ h3.tit {
 .join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-td .input-info .mo-br {
   display: none;
 }
-.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .work-list {
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .work-wrap {
+  margin-top: 20px;
+  border: 1px solid #D3D3D3;
+  padding: 20px 30px 23px 30px;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap {
+  margin-top: 20px;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap .work-list {
   display: flex;
   gap: 10px;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap .work-list:not(:first-child) {
+  margin-top: 10px;
 }
 .join-wrap .btn-area {
   margin-top: 60px;
