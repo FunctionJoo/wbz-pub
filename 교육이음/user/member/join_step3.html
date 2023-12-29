@@ -69,7 +69,7 @@
 					<ul class="info-wrap">
 						<li class="info-list">
 							<div class="title">인적사항</div>
-							<ul class="content-wrap">
+							<ul class="content-wrap cw01">
 								<li class="content-list">
 									<p class="con-th essential-el">아이디</p>
 									<div class="con-td">
@@ -95,15 +95,59 @@
 								<li class="content-list">
 									<p class="con-th essential-el">휴대폰 번호</p>
 									<div class="con-td">
-										<label for="num01" class="hide">번호 앞 자리</label>
-										<select name="num01" id="num01">
-											<option value="010">010</option>
-										</select>
-										<input class="input01" type="text" id="num02">
-										<input class="input01" type="text" id="num03">
+										<div class="select-wrap select01">
+											<label for="num01" class="hide">번호 앞 자리</label>
+											<select name="num01" id="num01">
+												<option value="010">010</option>
+											</select>
+										</div>
+										<i class="num-bar"></i>
+										<input class="input02" type="text" id="num02">
+										<i class="num-bar"></i>
+										<input class="input02" type="text" id="num03">
+									</div>
+								</li>
+								<li class="content-list">
+									<p class="con-th essential-el">주소</p>
+									<div class="con-td">
+										<input class="input03" type="text" id="address01" placeholder="주소">
+										<input class="input04" type="text" id="address02" placeholder="상세 주소">
+									</div>
+								</li>
+								<li class="content-list">
+									<p class="con-th essential-el">수당 지급 계좌</p>
+									<div class="con-td">
+										<div class="select-wrap select02">
+											<label for="bank" class="hide">은행선택</label>
+											<select name="bank" id="bank">
+												<option value="은행 선택">은행 선택</option>
+											</select>
+										</div>
+										<input class="input04" type="text" id="address02" placeholder="계좌번호 입력">
+										<button type="button" class="cert-btn">계좌 인증</button>
+										<span class="input-info">- 없이 입력해주세요. 가입자과 동일 명의 계좌만 등록 가능합니다.</span>
 									</div>
 								</li>
 							</ul>
+						</li>
+						<li class="info-list">
+							<div class="title essential-el">경력사항</div>
+							<div class="content-wrap cw02">
+								<div class="content-list">
+									<p class="con-th">총 근속연수</p>
+									<div class="con-td">
+										<input class="input01" type="text" id="workYear" placeholder="예) 1">
+									</div>
+								</div>
+								<div class="work-wrap">
+									<p class="sub-title">퇴직 전 5년 이내 근무기관</p>
+									<div class="work-list">
+										<input type="text" id="work01" class="input05" placeholder="기관 명 입력">
+										<input type="text" id="work01" class="input06" placeholder="총 근속연수 예) 1년">
+										<input type="text" id="work01" class="input06" placeholder="직위(급)입력">
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
