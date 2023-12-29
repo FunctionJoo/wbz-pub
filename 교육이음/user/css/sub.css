@@ -507,6 +507,15 @@ h3.tit {
   line-height: 29px;
   font-weight: 500;
 }
+.join-wrap .step03-wrap .info-wrap .info-list .title p {
+  display: inline-block;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .title span {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-left: 10px;
+}
 .join-wrap .step03-wrap .info-wrap .info-list .content-wrap.cw01 {
   padding: 20px 0 30px 0;
 }
@@ -517,6 +526,9 @@ h3.tit {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap.cw03 {
+  padding: 26px 0 20px 0;
 }
 .join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list {
   display: flex;

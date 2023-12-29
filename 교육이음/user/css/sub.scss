@@ -531,6 +531,15 @@ h3.tit {
                     font-size: 20px;
                     line-height: 29px;
                     font-weight: 500;
+                    p{
+                        display: inline-block;
+                    }
+                    span{
+                        font-size: 15px;
+                        line-height: 22px;
+                        font-weight: 400;
+                        margin-left: 10px;
+                    }
                 }
                 .content-wrap{
                     &.cw01{
@@ -543,6 +552,9 @@ h3.tit {
                             line-height: 27px;
                             font-weight: 500;
                         }
+                    }
+                    &.cw03{
+                        padding: 26px 0 20px 0;
                     }
                     .content-list{
                         display: flex;
