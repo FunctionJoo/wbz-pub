@@ -4,13 +4,13 @@ function layoutEvent() {
 	if($(window).width() > 1300) {
 		$(document).on('mouseover focusin', '.gnb>li>a', function () {//헤더 영역에 마우스오버하면
 			$(this).parent('li').addClass('on');
-			$('#header').addClass('on');
+			$('.gnb-bg').addClass('on');
 			$('#header .depth2').addClass('on');//2뎁스 열림
 			$(this).on('mouseleave', function () {
 				$(this).parent('li').removeClass('on');
 			});
-			$('#header .gnb').on('mouseleave', function () {//헤더 영역에서 마우스아웃하면		
-				$('#header').removeClass('on');
+			$('#header .gnb-wrap').on('mouseleave', function () {//헤더 영역에서 마우스아웃하면		
+				$('.gnb-bg').removeClass('on');
 				$('#header .depth2').removeClass('on');//2뎁스 닫힘
 			});	
 		});
@@ -29,7 +29,7 @@ function layoutEvent() {
 	}
 
 	$('.depth2 li:last').focusout(function(){
-		$('#header').removeClass('on');
+		$('.gnb-bg').removeClass('on');
 		$('#header .depth2').removeClass('on');		
 	});	
 

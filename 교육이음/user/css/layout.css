@@ -1,31 +1,11 @@
 #header {
   position: relative;
 }
-#header.on::after {
-  display: block;
-  height: 300px;
-  z-index: 100;
-}
-#header::after {
-  content: "";
-  display: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  width: 100%;
-  height: 0;
-  background: #fff;
-  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.0588235294);
-  border-top: 1px solid #dddddd;
-  transition: all 0.35s;
-}
 #header .inner {
   max-width: 1300px;
   margin: 0 auto;
   height: 100px;
   display: flex;
-  justify-content: space-between;
 }
 #header .hd-logo {
   display: flex;
@@ -40,32 +20,41 @@
   background: url("../images/common/img/logo_header.png") no-repeat center;
   background-size: 100% auto;
 }
-#header .gnb {
-  flex: 1;
+#header .gnb-wrap {
   margin-left: 60px;
-  display: flex;
+  position: relative;
+  flex: 1;
+  height: 100%;
+  font-size: 0;
+  max-width: 870px;
 }
-#header .gnb > li {
+#header .gnb-wrap .gnb {
+  height: 100%;
+}
+#header .gnb-wrap .gnb > li {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 16.6666666667%;
+  height: 100%;
 }
-#header .gnb > li:hover > a, #header .gnb > li.on > a {
+#header .gnb-wrap .gnb > li:hover > a, #header .gnb-wrap .gnb > li.on > a {
   color: #459729;
 }
-#header .gnb > li:hover > a::after {
+#header .gnb-wrap .gnb > li:hover > a::after {
   width: 100%;
   height: 3px;
 }
-#header .gnb > li > a {
-  padding: 36px 0;
+#header .gnb-wrap .gnb > li > a {
+  height: 100%;
+  padding: 36px 0 0;
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
   position: relative;
   transition: all 0.15s;
 }
-#header .gnb > li > a::after {
+#header .gnb-wrap .gnb > li > a::after {
   content: "";
   display: block;
   width: 0;
@@ -76,27 +65,48 @@
   bottom: -2px;
   left: 0;
   transition: all 0.15s;
+  z-index: 1000;
 }
-#header .gnb .depth2 {
-  display: none;
+#header .gnb-wrap .gnb .depth2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
   height: 300px;
   padding-top: 14px;
   position: relative;
   z-index: 110;
+  transition: all 0.3s;
 }
-#header .gnb .depth2.on {
-  display: block;
+#header .gnb-wrap .gnb .depth2.on {
+  opacity: 1;
 }
-#header .gnb .depth2 li a {
+#header .gnb-wrap .gnb .depth2 li a {
   display: block;
   padding: 8px 0;
   font-size: 16px;
   transition: all 0.15s;
 }
-#header .gnb .depth2 li a:hover, #header .gnb .depth2 li a.on {
+#header .gnb-wrap .gnb .depth2 li a:hover, #header .gnb-wrap .gnb .depth2 li a.on {
   color: #459729;
 }
+#header .gnb-wrap .gnb-bg {
+  height: 0;
+  transition: all 0.35s;
+}
+#header .gnb-wrap .gnb-bg.on {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.0588235294);
+  border-top: 1px solid #ddd;
+  z-index: 100;
+}
 #header .hd-utils {
+  margin-left: auto;
   display: flex;
   align-items: center;
   font-size: 0;
@@ -553,30 +563,42 @@
     background: url("../images/common/img/logo_header.png") no-repeat center;
     background-size: 100% auto;
   }
-  #header .gnb {
+  #header .gnb-wrap {
     order: 4;
     width: 100%;
     flex: 0 0 auto;
     overflow-x: auto;
     margin-left: 0;
-    gap: 30px;
+    max-width: 100%;
+  }
+  #header .gnb-wrap .gnb {
+    display: flex;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  #header .gnb::-webkit-scrollbar {
+  #header .gnb-wrap .gnb::-webkit-scrollbar {
     display: none;
   }
-  #header .gnb > li {
+  #header .gnb-wrap .gnb > li {
     width: auto;
     flex: 0 0 auto;
   }
-  #header .gnb > li > a {
-    padding: 16px 0 14px;
+  #header .gnb-wrap .gnb > li:first-child > a {
+    padding-left: 0;
+  }
+  #header .gnb-wrap .gnb > li:last-child > a {
+    padding-right: 0;
+  }
+  #header .gnb-wrap .gnb > li > a {
+    padding: 16px 15px 14px;
     font-weight: 400;
     font-size: 16px;
   }
-  #header .gnb > li > a::after {
+  #header .gnb-wrap .gnb > li > a::after {
     content: none;
+  }
+  #header .gnb-wrap .gnb .depth2 {
+    display: none;
   }
   #header .hd-utils {
     margin: 0 0 0 auto;
