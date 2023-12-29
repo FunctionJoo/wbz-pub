@@ -290,7 +290,7 @@ h3.tit {
   max-width: 1200px;
 }
 .join-wrap .join-top {
-  padding: 40px 0 58px;
+  padding: 40px 0 0;
 }
 .join-wrap .join-top .step-list {
   margin: 50px auto 0;
@@ -324,43 +324,44 @@ h3.tit {
   line-height: 29px;
   padding-top: 5px;
 }
-.join-wrap .join-bottom {
+.join-wrap .step01-wrap {
+  margin-top: 58px;
   border-top: 2px solid #707070;
 }
-.join-wrap .join-bottom .all-ck-wrap {
+.join-wrap .step01-wrap .all-ck-wrap {
   padding: 30px 0;
   border-bottom: 1px solid #707070;
 }
-.join-wrap .join-bottom .all-ck-wrap .checkbox label {
+.join-wrap .step01-wrap .all-ck-wrap .checkbox label {
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
 }
-.join-wrap .join-bottom .list-ck-wrap {
+.join-wrap .step01-wrap .list-ck-wrap {
   padding-top: 20px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list:not(:last-child) {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list:not(:last-child) {
   padding-bottom: 30px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 15px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title br {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title br {
   display: none;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap label {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap label {
   font-size: 16px;
   line-height: 24px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box {
   border: 1px solid #D3D3D3;
   height: 160px;
   overflow-y: auto;
@@ -368,40 +369,40 @@ h3.tit {
   font-size: 14px;
   line-height: 20px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box::-webkit-scrollbar {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box::-webkit-scrollbar {
   background-color: transparent;
   width: 15px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box::-webkit-scrollbar-thumb {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box::-webkit-scrollbar-thumb {
   background-color: #DDDDDD;
   border-radius: 30px;
   background-clip: padding-box;
   border: 5px solid transparent;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box:not(:last-child) {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box:not(:last-child) {
   margin-bottom: 30px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box.inner-box-02 .trem-title {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box.inner-box-02 .trem-title {
   text-align: center;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .trem-title {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .trem-title {
   margin-bottom: 15px;
   font-weight: 500;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap {
   border: 1px solid #707070;
   display: flex;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap.table-01 .table-list {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap.table-01 .table-list {
   width: 33.3333333333%;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap.table-02 .table-list {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap.table-02 .table-list {
   width: 25%;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list:not(:last-child) {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list:not(:last-child) {
   border-right: 1px solid #707070;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-title {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-title {
   border-bottom: 1px solid #707070;
   height: 40px;
   display: flex;
@@ -409,7 +410,7 @@ h3.tit {
   align-items: center;
   text-align: center;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content {
   height: calc(100% - 40px);
   display: flex;
   justify-content: center;
@@ -417,33 +418,144 @@ h3.tit {
   text-align: center;
   padding: 20px 10px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .sub-info {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .sub-info {
   margin-top: 10px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 p {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-03 p {
   margin-bottom: 20px;
   word-break: keep-all;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 ul li {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-03 ul li {
   word-break: keep-all;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .title {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-03 .title {
   font-weight: 500;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .txt01 {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-03 .txt01 {
   margin-bottom: 30px;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .txt01 strong {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-03 .txt01 strong {
   font-size: 16px;
   font-weight: 500;
   color: #3F57D4;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-03 .txt02 strong {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-03 .txt02 strong {
   font-weight: 500;
   color: #3F57D4;
 }
-.join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-06 p:not(:last-child) {
+.join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-06 p:not(:last-child) {
   margin-bottom: 20px;
+}
+.join-wrap .step02-wrap {
+  margin-top: 80px;
+}
+.join-wrap .step02-wrap .certi-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  width: 585px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list.on {
+  outline: 1px solid #78B53A;
+  border: 1px solid #78B53A;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list.certi-phone {
+  gap: 25px;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list.certi-phone i {
+  background-image: url(../images/common/ico/certi_phone.svg);
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list.certi-ipin {
+  gap: 35px;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list.certi-ipin i {
+  background-image: url(../images/common/ico/certi_ipin.svg);
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list i {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 111px;
+  height: 111px;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list .txt-box .title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list .txt-box .content {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.join-wrap .step02-wrap .certi-wrap .certi-list .txt-box button {
+  display: block;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  background-color: #459729;
+  border-radius: 3px;
+}
+.join-wrap .step02-wrap .info-txt {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.join-wrap .step02-wrap .info-txt li {
+  font-size: 14px;
+  line-height: 20px;
+}
+.join-wrap .step03-wrap {
+  margin-top: 40px;
+}
+.join-wrap .step03-wrap .info-wrap .info-list {
+  border-top: 2px solid #666666;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .title {
+  border-bottom: 1px solid #D3D3D3;
+  padding: 22px 0;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap {
+  padding: 20px 0 30px 0;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list {
+  display: flex;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-th {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 500;
+  width: 161px;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-td input {
+  height: 40px;
+  border: 1px solid #D3D3D3;
+  border-radius: 3px;
+}
+.join-wrap .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-td input.input01 {
+  width: 490px;
 }
 .join-wrap .btn-area {
   margin-top: 60px;
@@ -457,7 +569,7 @@ h3.tit {
     padding: 40px 0 60px 0;
   }
   .join-wrap .join-top {
-    padding: 30px 0 40px;
+    padding: 30px 0 0;
   }
   .join-wrap .join-top .step-list {
     margin: 27px auto 0;
@@ -474,41 +586,50 @@ h3.tit {
     font-size: 14px;
     line-height: 20px;
   }
-  .join-wrap .join-bottom .all-ck-wrap {
+  .join-wrap .step01-wrap {
+    margin-top: 40px;
+  }
+  .join-wrap .step01-wrap .all-ck-wrap {
     padding: 20px 0;
   }
-  .join-wrap .join-bottom .all-ck-wrap .checkbox label {
+  .join-wrap .step01-wrap .all-ck-wrap .checkbox label {
     font-size: 16px;
     word-break: keep-all;
   }
-  .join-wrap .join-bottom .all-ck-wrap .checkbox label::before {
+  .join-wrap .step01-wrap .all-ck-wrap .checkbox label::before {
     margin-top: 0;
     top: 0;
   }
-  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap {
+  .join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap {
     align-items: end;
   }
-  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title {
+  .join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title {
     font-size: 15px;
     line-height: 22px;
   }
-  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap .ck-title br {
+  .join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title br {
     display: block;
   }
-  .join-wrap .join-bottom .list-ck-wrap .ck-list .ck-wrap label {
+  .join-wrap .step01-wrap .list-ck-wrap .ck-list .ck-wrap label {
     font-size: 15px;
     line-height: 22px;
   }
-  .join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-title {
+  .join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-title {
     word-break: keep-all;
   }
-  .join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content {
+  .join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content {
     word-break: keep-all;
     align-items: start;
     padding: 10px 5px;
   }
-  .join-wrap .join-bottom .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content br {
+  .join-wrap .step01-wrap .list-ck-wrap .ck-list .trem-box.trem-02 .trem-inner-box .table-wrap .table-list .table-content br {
     display: none;
+  }
+  .join-wrap .step02-wrap {
+    margin-top: 40px;
+  }
+  .join-wrap .step02-wrap .info-txt {
+    margin-top: 30px;
   }
   .join-wrap .btn-area {
     margin-top: 40px;
@@ -516,6 +637,31 @@ h3.tit {
   .join-wrap .btn-area .btn {
     max-width: 140px;
     font-size: 15px;
+  }
+}
+@media (max-width: 1450px) {
+  .join-wrap .step02-wrap .certi-wrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .join-wrap .step02-wrap .certi-wrap .certi-list {
+    align-items: start;
+    width: 100%;
+    padding: 30px 15px;
+  }
+  .join-wrap .step02-wrap .certi-wrap .certi-list i {
+    width: 65px;
+    min-width: 65px;
+    height: 65px;
+  }
+  .join-wrap .step02-wrap .certi-wrap .certi-list .txt-box .title {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  .join-wrap .step02-wrap .certi-wrap .certi-list .txt-box button {
+    width: 120px;
   }
 }
 

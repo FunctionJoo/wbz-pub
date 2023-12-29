@@ -33,16 +33,108 @@
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main class="wrap">
-			<a href="./join_step3.html">
-				<img src="../images/dummy/sub_Identity.png" alt="">
-			</a>
+		<main class="wrap join-wrap">
+			<h2 class="tit">회원가입</h2>
+			<div class="w-set">
+				<div class="join-top">
+					<div class="info-box">
+						<div class="info">
+							<span class="tit">환영합니다!</span>
+							<p class="txt">교육이음센터 회원으로 가입하시면 교육이음센터 정보, 컨설팅 등 다양한 서비스를 편리하게 이용하실 수 있습니다.<br>교육이음센터 홈페이지는 만14세 미만 아동은 회원가입을 하실 수 없습니다.<br>입력하신 개인정보는 “개인정보보호법”에 따라 보호됩니다.</p>
+						</div>
+					</div>
+					<ul class="step-list">
+						<li>
+							<span class="num">Step 01</span>
+							<span class="txt">약관동의</span>
+						</li>
+						<li class="line"></li>
+						<li class="on">
+							<span class="num">Step 02</span>
+							<span class="txt">본인인증</span>
+						</li>
+						<li class="line"></li>
+						<li>
+							<span class="num">Step 03</span>
+							<span class="txt">정보입력</span>
+						</li>
+						<li class="line"></li>
+						<li>
+							<span class="num">Step 04</span>
+							<span class="txt">가입완료</span>
+						</li>
+					</ul>
+				</div>
+				<div class="step02-wrap">
+					<ul class="certi-wrap">
+						<li class="certi-list certi-phone">
+							<i></i>
+							<div class="txt-box">
+								<p class="title">휴대폰 인증</p>
+								<span class="content">
+									본인명의로 등록된 휴대폰번호만 인증이 가능합니다. <br>
+									휴대폰인증 버튼 클릭 시 새 창이 열리며, <br>
+									해당 페이지에서 본인인증 확인을 하실 수 있습니다.
+								</span>
+								<button type="button">인증 하기</button>
+							</div>
+						</li>
+						<li class="certi-list certi-ipin">
+							<i></i>
+							<div class="txt-box">
+								<p class="title">I-PIN 인증</p>
+								<span class="content">
+									아이핀(I-PIN)은 인터넷상의 개인식별번호를 의미하여, <br>
+									대면확인이 어려운 인터넷에서 주민등록번호를 <br>
+									사용하지 않고도 확인할 수 있는 수단입니다.
+								</span>
+								<button type="button">인증 하기</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="info-txt">
+						<li>· 안전한 회원가입을 위한 본인인증 단계입니다.</li>
+						<li>· 본인 인증 시 제공하는 인증기관에서 직접 수집하며, 인증 이외의 용도로 이용 또는 저장하지 않습니다.</li>
+						<li>· 입력하신 소중한 개인정보는 사용자의 명백한 동의 없이 공개 또는 제3자에게 제공하지 않습니다.</li>
+					</ul>
+				</div>
+				
+			</div>
 		</main>
 		
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
 	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			let certiList = document.querySelectorAll('.certi-list');
+
+			certiList.forEach(function(item){
+				// 클릭 시
+				item.addEventListener('click', function(){
+					updateClasses(item);
+				});
+				let button = item.querySelector('button');
+				if(button){
+					// 버튼 focus시
+					button.addEventListener('focus', function(){
+						updateClasses(item);
+					});
+					// 버튼 focus 없어질 시
+					button.addEventListener('blur', function(){
+						item.classList.remove('on');
+					})
+				}
+			});
+
+			function updateClasses(clickedItem){
+				certiList.forEach(function(el){
+					el.classList.remove('on');
+				});
+
+				clickedItem.classList.add('on');
+			}
+		})
 	</script>
 </body>
 </html>
