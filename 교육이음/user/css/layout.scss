@@ -79,6 +79,7 @@
                 left: 0;
                 top: 0;
                 opacity: 0;
+                display: none;
                 height: 300px;
                 padding-top: 14px;
                 position: relative;
@@ -86,6 +87,7 @@
                 transition: all 0.3s;
                 &.on {
                     opacity: 1;
+                    display: block;
                 }
                 li {
                     a {

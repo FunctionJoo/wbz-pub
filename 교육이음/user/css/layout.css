@@ -72,6 +72,7 @@
   left: 0;
   top: 0;
   opacity: 0;
+  display: none;
   height: 300px;
   padding-top: 14px;
   position: relative;
@@ -80,6 +81,7 @@
 }
 #header .gnb-wrap .gnb .depth2.on {
   opacity: 1;
+  display: block;
 }
 #header .gnb-wrap .gnb .depth2 li a {
   display: block;
