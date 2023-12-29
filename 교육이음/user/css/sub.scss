@@ -302,7 +302,7 @@ h3.tit {
         max-width: 1200px;
     }
     .join-top {
-        padding: 40px 0 58px;
+        padding: 40px 0 0;
         .step-list {
             margin: 50px auto 0;
             display: flex;
@@ -342,7 +342,8 @@ h3.tit {
             }
         }
     }
-    .join-bottom{
+    .step01-wrap{
+        margin-top: 58px;
         border-top: 2px solid #707070;
         .all-ck-wrap{
             padding: 30px 0;
@@ -490,6 +491,124 @@ h3.tit {
             }
         }
     }
+    .step02-wrap{
+        margin-top: 80px;
+        .certi-wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .certi-list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 0;
+                width: 585px;
+                border: 1px solid #707070;
+                border-radius: 10px;
+                &.on{
+                    outline: 1px solid #78B53A;;
+                    border: 1px solid #78B53A;
+                }
+                &.certi-phone{
+                    gap: 25px;
+                    i{
+                        background-image: url(../images/common/ico/certi_phone.svg);
+
+                    }
+                }
+                &.certi-ipin{
+                    gap: 35px;
+                    i{
+                        background-image: url(../images/common/ico/certi_ipin.svg);
+                    }
+                }
+                i{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: inline-block;
+                    width: 111px;
+                    height: 111px;
+                }
+                .txt-box{
+                    .title{
+                        font-size: 20px;
+                        line-height: 29px;
+                        font-weight: 500;
+                        margin-bottom: 15px;
+                    }
+                    .content{
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-bottom: 15px;
+                        display: inline-block;
+                    }
+                    button{
+                        display: block;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #fff;
+                        width: 140px;
+                        height: 40px;
+                        background-color: #459729;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+        .info-txt{
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #F9F9F9;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    .step03-wrap{
+        margin-top: 40px;
+        .info-wrap{
+            .info-list{
+                border-top: 2px solid #666666;
+                .title{
+                    border-bottom: 1px solid #D3D3D3;
+                    padding: 22px 0;
+                    font-size: 20px;
+                    line-height: 29px;
+                    font-weight: 500;
+                }
+                .content-wrap{
+                    padding: 20px 0 30px 0;
+                    .content-list{
+                        display: flex;
+                        &:not(:last-child){
+                            margin-bottom: 20px;
+                        }
+                        .con-th{
+                            font-size: 18px;
+                            line-height: 40px;
+                            font-weight: 500;
+                            width: 161px;
+                        }
+                        .con-td{
+                            input{
+                                height: 40px;
+                                border: 1px solid #D3D3D3;
+                                border-radius: 3px;
+                                &.input01{
+                                    width: 490px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .btn-area {
         margin-top: 60px;
         text-align: center;
@@ -501,7 +620,7 @@ h3.tit {
     @media(max-width:1300px){
         padding: 40px 0 60px 0;
         .join-top{
-            padding: 30px 0 40px;
+            padding: 30px 0 0;
             .step-list{
                 margin: 27px auto 0;
                 li{
@@ -520,7 +639,8 @@ h3.tit {
                 }
             }
         }
-        .join-bottom{
+        .step01-wrap{
+            margin-top: 40px;
             .all-ck-wrap{
                 padding: 20px 0;
                 .checkbox{
@@ -574,11 +694,46 @@ h3.tit {
                 }
             }
         }
+        .step02-wrap{
+            margin-top: 40px;
+            .info-txt{
+                margin-top: 30px;
+            }
+        }
         .btn-area {
             margin-top: 40px;
             .btn {
                 max-width: 140px;
                 font-size: 15px;
+            }
+        }
+    }
+    @media(max-width:1450px){
+        .step02-wrap{
+            .certi-wrap{
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                .certi-list{
+                    align-items: start;
+                    width: 100%;
+                    padding: 30px 15px;
+                    i{
+                        width: 65px;
+                        min-width: 65px;
+                        height: 65px;
+                    }
+                    .txt-box{
+                        .title{
+                            font-size: 18px;
+                            line-height: 27px;
+                            margin-bottom: 10px;
+                        }
+                        button{
+                            width: 120px;
+                        }
+                    }
+                }
             }
         }
     }
