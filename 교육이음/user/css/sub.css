@@ -157,62 +157,62 @@ h3.tit {
   top: 8px;
 }
 
-.member {
+main.member {
   padding: 100px 0 200px;
   border-top: 1px solid #ddd;
 }
-.member .w-set {
+main.member .w-set {
   max-width: 400px;
 }
-.member .input-wrap + .input-wrap {
+main.member .input-wrap + .input-wrap {
   margin-top: 10px;
 }
-.member .btn {
+main.member .btn {
   margin-top: 40px;
   height: 60px;
   line-height: 58px;
 }
-.member .btn + .btn {
+main.member .btn + .btn {
   margin-top: 15px;
 }
 @media (max-width: 1300px) {
-  .member .btn {
+  main.member .btn {
     margin-top: 30px;
     height: 50px;
   }
 }
-.member .id input {
+main.member .id input {
   padding-left: 43px;
   background: url("../images/common/ico/login_id.svg") no-repeat left 15px center;
 }
-.member .pw input {
+main.member .pw input {
   padding-left: 43px;
   background: url("../images/common/ico/login_pw.svg") no-repeat left 15px center;
 }
-.member .login-wrap {
+main.member .login-wrap {
   margin-top: 60px;
 }
-.member .find-wrap {
+main.member .find-wrap {
   margin-top: 20px;
   padding-top: 160px;
   background: url("../images/common/img/member_top.png") no-repeat top center;
   background-size: 120px;
 }
-.member .login-btm {
+main.member .login-btm {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.member .login-btm a {
+main.member .login-btm a {
   font-size: 15px;
 }
-.member .login-btm a + a {
+main.member .login-btm a + a {
   margin-left: 10px;
   padding-left: 10px;
   position: relative;
 }
-.member .login-btm a + a::after {
+main.member .login-btm a + a::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -223,184 +223,183 @@ h3.tit {
   top: 50%;
   transform: translateY(-50%);
 }
-.member .fail-txt {
+main.member .fail-txt {
   text-align: center;
   padding-top: 67px;
   margin: 40px 0 30px;
   background: url("../images/common/ico/login_fail.svg") no-repeat top center;
 }
-.member .fail-txt .txt1 {
+main.member .fail-txt .txt1 {
   font-weight: 500;
   font-size: 20px;
 }
-.member .fail-txt .txt1 span {
+main.member .fail-txt .txt1 span {
   color: #459729;
 }
-.member .fail-txt .txt2 {
+main.member .fail-txt .txt2 {
   font-size: 15px;
   line-height: 22px;
 }
-.member .captcha {
+main.member .captcha {
   margin: 20px 0 10px;
   min-height: 60px;
   background: #ddd;
 }
-.member .info-pw {
+main.member .info-pw {
   margin-top: 20px;
   padding: 15px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
-.member .info-pw .info-title {
+main.member .info-pw .info-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   margin-bottom: 8px;
 }
-.member .info-pw .info-list li {
+main.member .info-pw .info-list li {
   font-size: 14px;
   line-height: 20px;
 }
-.member .info-pw .info-list li::before {
+main.member .info-pw .info-list li::before {
   content: "·";
   margin-right: 2px;
 }
 @media (max-width: 1300px) {
-  .member {
+  main.member {
     padding: 40px 0 140px;
   }
-  .member .find-wrap {
+  main.member .find-wrap {
     padding-top: 110px;
     background-size: 90px;
   }
-  .member .find-wrap .input-wrap input {
+  main.member .find-wrap .input-wrap input {
     border-radius: 3px;
   }
-  .member .find-wrap .btn {
+  main.member .find-wrap .btn {
     border-radius: 3px;
   }
-  .member .info-pw {
+  main.member .info-pw {
     margin-top: 10px;
   }
 }
-
-.join {
+main.join {
   padding: 100px 0 120px;
   border-top: 1px solid #ddd;
 }
-.join input {
+main.join input {
   height: 40px;
-  border: 1px solid #D3D3D3;
+  border: 1px solid #d3d3d3;
   border-radius: 3px;
   padding: 0 14px;
   font-size: 15px;
   line-height: 22px;
 }
-.join input::placeholder {
+main.join input::placeholder {
   font-size: 15px;
   line-height: 22px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
-.join input.input01 {
+main.join input.input01 {
   width: 490px;
 }
-.join input.input02 {
+main.join input.input02 {
   width: 120px;
 }
-.join input.input03 {
+main.join input.input03 {
   width: 260px;
 }
-.join input.input04 {
+main.join input.input04 {
   width: 360px;
 }
-.join input.input05 {
+main.join input.input05 {
   width: 320px;
 }
-.join input.input06 {
+main.join input.input06 {
   width: 400px;
 }
-.join input.input07 {
+main.join input.input07 {
   width: 160px;
 }
-.join .w-set {
+main.join .w-set {
   max-width: 1200px;
 }
-.join .join-top {
+main.join .join-top {
   padding: 40px 0 0;
 }
-.join .join-top .step-list {
+main.join .join-top .step-list {
   margin: 50px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 683px;
 }
-.join .join-top .step-list.off-list {
+main.join .join-top .step-list.off-list {
   max-width: 491px;
 }
-.join .join-top .step-list li.on .txt, .join .join-top .step-list li.on .info-box .be, .info-box .join .join-top .step-list li.on .be {
+main.join .join-top .step-list li.on .txt, main.join .join-top .step-list li.on .info-box .be, .info-box main.join .join-top .step-list li.on .be {
   color: #459729;
 }
-.join .join-top .step-list li.line {
+main.join .join-top .step-list li.line {
   display: block;
   width: 26px;
   height: 3px;
   background: url("../images/common/img/step_line.svg") no-repeat;
 }
-.join .join-top .step-list li span {
+main.join .join-top .step-list li span {
   display: block;
   text-align: center;
   font-weight: 500;
 }
-.join .join-top .step-list li .num {
+main.join .join-top .step-list li .num {
   font-family: "Inter", sans-serif !important;
   font-size: 16px;
   color: #666;
   line-height: 20px;
 }
-.join .join-top .step-list li .txt, .join .join-top .step-list li .info-box .be, .info-box .join .join-top .step-list li .be {
+main.join .join-top .step-list li .txt, main.join .join-top .step-list li .info-box .be, .info-box main.join .join-top .step-list li .be {
   font-size: 20px;
   line-height: 29px;
   padding-top: 5px;
 }
-.join .step01-wrap {
+main.join .step01-wrap {
   margin-top: 58px;
   border-top: 2px solid #707070;
 }
-.join .step01-wrap .all-ck-wrap {
+main.join .step01-wrap .all-ck-wrap {
   padding: 30px 0;
   border-bottom: 1px solid #707070;
 }
-.join .step01-wrap .all-ck-wrap .checkbox label {
+main.join .step01-wrap .all-ck-wrap .checkbox label {
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
 }
-.join .step01-wrap .list-ck-wrap {
+main.join .step01-wrap .list-ck-wrap {
   padding-top: 20px;
 }
-.join .step01-wrap .list-ck-wrap .ck-list:not(:first-child) {
+main.join .step01-wrap .list-ck-wrap .ck-list:not(:first-child) {
   padding-top: 30px;
 }
-.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap {
+main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 15px;
 }
-.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title {
+main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
-.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title br {
+main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title br {
   display: none;
 }
-.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap label {
+main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap label {
   font-size: 16px;
   line-height: 24px;
 }
-.join .step01-wrap .list-ck-wrap .ck-list .term-box {
-  border: 1px solid #D3D3D3;
+main.join .step01-wrap .list-ck-wrap .ck-list .term-box {
+  border: 1px solid #d3d3d3;
   height: 160px;
   overflow-y: auto;
   padding: 13px 20px;
@@ -408,124 +407,134 @@ h3.tit {
   line-height: 20px;
   word-break: break-all;
 }
-.join .step01-wrap .list-ck-wrap .ck-list .term-box::-webkit-scrollbar {
+main.join .step01-wrap .list-ck-wrap .ck-list .term-box::-webkit-scrollbar {
   background-color: transparent;
   width: 15px;
 }
-.join .step01-wrap .list-ck-wrap .ck-list .term-box::-webkit-scrollbar-thumb {
-  background-color: #DDDDDD;
+main.join .step01-wrap .list-ck-wrap .ck-list .term-box::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
   border-radius: 30px;
   background-clip: padding-box;
   border: 5px solid transparent;
 }
-.join .step02-wrap {
+main.join .step02-wrap {
   margin-top: 80px;
 }
-.join .step03-wrap {
+main.join .input-wrap {
   margin-top: 40px;
 }
-.join .step03-wrap .input-wrap li {
-  border-top: 2px solid #666666;
+main.join .input-wrap input,
+main.join .input-wrap select {
+  height: 40px;
+  border-radius: 3px;
+  font-size: 15px;
 }
-.join .step03-wrap .input-wrap li .title {
-  border-bottom: 1px solid #D3D3D3;
+main.join .input-wrap .tit-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #666666;
+  border-bottom: 1px solid #d3d3d3;
   padding: 22px 0;
   font-size: 20px;
   line-height: 29px;
   font-weight: 500;
 }
-.join .step03-wrap .input-wrap li .title .sub {
+main.join .input-wrap .tit-area .info {
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
   margin-left: 10px;
+  margin-right: auto;
 }
-.join .step03-wrap .input-wrap li .content-wrap.cw01 {
+main.join .input-wrap .tit-area .btn-info {
+  color: #459729;
+  font-size: 15px;
+  padding: 0 15px 0 33px;
+}
+main.join .input-wrap .content-wrap.cw01 {
   padding: 20px 0 30px 0;
 }
-.join .step03-wrap .input-wrap li .content-wrap.cw02 {
+main.join .input-wrap .content-wrap.cw02 {
   padding: 20px 0 36px 0;
 }
-.join .step03-wrap .input-wrap li .content-wrap.cw02 .sub-title {
+main.join .input-wrap .content-wrap.cw02 .sub-title {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
-.join .step03-wrap .input-wrap li .content-wrap.cw03 {
+main.join .input-wrap .content-wrap.cw03 {
   padding: 26px 0 20px 0;
 }
-.join .step03-wrap .input-wrap li .content-wrap .content-list {
+main.join .input-wrap .content-wrap dl {
   display: flex;
 }
-.join .step03-wrap .input-wrap li .content-wrap .content-list:not(:first-child) {
+main.join .input-wrap .content-wrap dl:not(:first-child) {
   margin-top: 20px;
 }
-.join .step03-wrap .input-wrap li .content-wrap .content-list .con-th {
+main.join .input-wrap .content-wrap dl dt {
   font-size: 18px;
   line-height: 40px;
   font-weight: 500;
   width: 161px;
 }
-.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td {
+main.join .input-wrap .content-wrap dl dd {
+  width: 100%;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td .num-bar {
+main.join .input-wrap .content-wrap dl dd .num-bar {
   width: 8px;
   height: 1px;
   display: inline-block;
   background-color: #707070;
 }
-.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td .input-info {
+main.join .input-wrap .content-wrap dl dd .input-info {
   font-size: 15px;
   line-height: 22px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
-.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td .input-info .mo-br {
+main.join .input-wrap .content-wrap dl dd .input-info .mo-br {
   display: none;
 }
-.join .step03-wrap .input-wrap li .content-wrap .work-wrap {
+main.join .input-wrap .content-wrap .work-wrap {
   margin-top: 20px;
-  border: 1px solid #D3D3D3;
+  border: 1px solid #d3d3d3;
   padding: 20px 30px 23px 30px;
 }
-.join .step03-wrap .input-wrap li .content-wrap .work-wrap .list-wrap {
+main.join .input-wrap .content-wrap .work-wrap .list-wrap {
   margin-top: 20px;
 }
-.join .step03-wrap .input-wrap li .content-wrap .work-wrap .list-wrap .work-list {
-  display: flex;
-  gap: 10px;
-}
-.join .step03-wrap .input-wrap li .content-wrap .work-wrap .list-wrap .work-list:not(:first-child) {
+main.join .input-wrap .content-wrap .work-wrap .list-wrap li + li {
   margin-top: 10px;
 }
-.join .step04-wrap {
+main.join .step04-wrap {
   margin-top: 45px;
   border-top: 2px solid #666;
 }
-.join .step01-off-wrap {
+main.join .step01-off-wrap {
   margin-top: 60px;
 }
-.join .step02-off-wrap {
+main.join .step02-off-wrap {
   margin-top: 60px;
 }
-.join .step02-off-wrap .member-wrap {
-  background-color: #F9F9F9;
+main.join .step02-off-wrap .member-wrap {
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   height: 60px;
 }
-.join .step02-off-wrap .member-wrap .certi-type span {
+main.join .step02-off-wrap .member-wrap .certi-type span {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
-.join .step02-off-wrap .member-wrap .certi-type span::before {
+main.join .step02-off-wrap .member-wrap .certi-type span::before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -536,56 +545,56 @@ h3.tit {
   background-size: contain;
   margin-right: 20px;
 }
-.join .step02-off-wrap .member-wrap .mem-info span {
+main.join .step02-off-wrap .member-wrap .mem-info span {
   font-size: 16px;
   line-height: 24px;
 }
-.join .step02-off-wrap .member-wrap .mem-info span:not(:last-child)::after {
+main.join .step02-off-wrap .member-wrap .mem-info span:not(:last-child)::after {
   content: "";
   display: inline-block;
   height: 10px;
   width: 1px;
-  background-color: #A7A7A7;
+  background-color: #a7a7a7;
   margin: 0 25px;
 }
-.join .step02-off-wrap .account-wrap {
+main.join .step02-off-wrap .account-wrap {
   display: flex;
   border-top: 2px solid #666666;
-  border-bottom: 1px solid #D3D3D3;
+  border-bottom: 1px solid #d3d3d3;
   margin-top: 40px;
   padding: 15px 0;
   gap: 44px;
 }
-.join .step02-off-wrap .account-wrap .title {
+main.join .step02-off-wrap .account-wrap .title {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
-.join .step02-off-wrap .account-wrap .option-wrap {
+main.join .step02-off-wrap .account-wrap .option-wrap {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.join .step02-off-wrap .account-wrap .option-wrap .input-wrap input {
+main.join .step02-off-wrap .account-wrap .option-wrap .input-wrap input {
   border-radius: 3px;
   height: 40px;
   width: 368px;
 }
-.join .step02-off-wrap .account-wrap .option-wrap .info-txt {
+main.join .step02-off-wrap .account-wrap .option-wrap .info-txt {
   font-size: 15px;
   line-height: 22px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
-.join .step03-off-wrap {
+main.join .step03-off-wrap {
   margin-top: 45px;
   border-top: 2px solid #666;
 }
-.join .common-wrap .certi-wrap {
+main.join .common-wrap .certi-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.join .common-wrap .certi-wrap .certi-list {
+main.join .common-wrap .certi-wrap .certi-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -594,23 +603,23 @@ h3.tit {
   border: 1px solid #707070;
   border-radius: 10px;
 }
-.join .common-wrap .certi-wrap .certi-list.on {
-  outline: 1px solid #78B53A;
-  border: 1px solid #78B53A;
+main.join .common-wrap .certi-wrap .certi-list.on {
+  outline: 1px solid #78b53a;
+  border: 1px solid #78b53a;
 }
-.join .common-wrap .certi-wrap .certi-list.certi-phone {
+main.join .common-wrap .certi-wrap .certi-list.certi-phone {
   gap: 25px;
 }
-.join .common-wrap .certi-wrap .certi-list.certi-phone i {
+main.join .common-wrap .certi-wrap .certi-list.certi-phone i {
   background-image: url(../images/common/ico/certi_phone.svg);
 }
-.join .common-wrap .certi-wrap .certi-list.certi-ipin {
+main.join .common-wrap .certi-wrap .certi-list.certi-ipin {
   gap: 35px;
 }
-.join .common-wrap .certi-wrap .certi-list.certi-ipin i {
+main.join .common-wrap .certi-wrap .certi-list.certi-ipin i {
   background-image: url(../images/common/ico/certi_ipin.svg);
 }
-.join .common-wrap .certi-wrap .certi-list i {
+main.join .common-wrap .certi-wrap .certi-list i {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -618,18 +627,18 @@ h3.tit {
   width: 111px;
   height: 111px;
 }
-.join .common-wrap .certi-wrap .certi-list .txt-box .title {
+main.join .common-wrap .certi-wrap .certi-list .txt-box .title {
   font-size: 20px;
   line-height: 29px;
   font-weight: 500;
 }
-.join .common-wrap .certi-wrap .certi-list .txt-box .content {
+main.join .common-wrap .certi-wrap .certi-list .txt-box .content {
   margin-top: 15px;
   font-size: 15px;
   line-height: 22px;
   display: inline-block;
 }
-.join .common-wrap .certi-wrap .certi-list .txt-box button {
+main.join .common-wrap .certi-wrap .certi-list .txt-box button {
   margin-top: 15px;
   display: block;
   font-size: 15px;
@@ -640,29 +649,29 @@ h3.tit {
   background-color: #459729;
   border-radius: 3px;
 }
-.join .common-wrap .info-txt {
+main.join .common-wrap .info-txt {
   margin-top: 50px;
   padding: 20px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.join .common-wrap .info-txt li {
+main.join .common-wrap .info-txt li {
   font-size: 14px;
   line-height: 20px;
 }
-.join .common-wrap .info-txt li::before {
+main.join .common-wrap .info-txt li::before {
   content: "·";
   margin-right: 4px;
 }
-.join .common-wrap .mo-br {
+main.join .common-wrap .mo-br {
   display: none;
 }
-.join .common-wrap .fin-wrap {
+main.join .common-wrap .fin-wrap {
   margin-top: 45px;
 }
-.join .common-wrap .fin-wrap i {
+main.join .common-wrap .fin-wrap i {
   background-image: url(../images/common/ico/join_fin_ico.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -672,53 +681,53 @@ h3.tit {
   height: 90px;
   margin: 0 auto;
 }
-.join .common-wrap .fin-wrap .main-txt {
+main.join .common-wrap .fin-wrap .main-txt {
   margin-top: 42px;
   text-align: center;
 }
-.join .common-wrap .fin-wrap .main-txt p {
+main.join .common-wrap .fin-wrap .main-txt p {
   font-size: 20px;
   line-height: 29px;
   font-weight: 500;
 }
-.join .common-wrap .fin-wrap .main-txt span {
+main.join .common-wrap .fin-wrap .main-txt span {
   margin-top: 10px;
   font-size: 16px;
   line-height: 24px;
   display: inline-block;
 }
-.join .common-wrap .fin-wrap .member-txt {
+main.join .common-wrap .fin-wrap .member-txt {
   margin: 30px auto 0;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   padding: 30px 0;
   width: 380px;
 }
-.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list {
+main.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list {
   display: flex;
   width: 187px;
   margin: 0 auto;
 }
-.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:first-child {
+main.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:first-child {
   gap: 46px;
 }
-.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:first-child p {
+main.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:first-child p {
   letter-spacing: 2px;
 }
-.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:last-child {
+main.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:last-child {
   gap: 48px;
   margin-top: 10px;
 }
-.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list p {
+main.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
-.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list strong {
+main.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list strong {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
-.join .common-wrap .fin-wrap .bottom-txt {
+main.join .common-wrap .fin-wrap .bottom-txt {
   margin-top: 22px;
   display: flex;
   flex-direction: column;
@@ -727,94 +736,94 @@ h3.tit {
   text-align: center;
   word-break: keep-all;
 }
-.join .common-wrap .fin-wrap .bottom-txt span {
+main.join .common-wrap .fin-wrap .bottom-txt span {
   font-size: 16px;
   line-height: 24px;
 }
-.join .common-wrap .fin-wrap .bottom-txt span.txt-im {
-  color: #D43333;
+main.join .common-wrap .fin-wrap .bottom-txt span.txt-im {
+  color: #d43333;
 }
-.join .btn-area {
+main.join .btn-area {
   margin-top: 60px;
   text-align: center;
 }
-.join .btn-area.type-a {
+main.join .btn-area.type-a {
   margin-top: 100px;
 }
-.join .btn-area.type-a .btn {
+main.join .btn-area.type-a .btn {
   max-width: 140px;
 }
-.join .btn-area .btn {
+main.join .btn-area .btn {
   max-width: 200px;
 }
 @media (max-width: 1300px) {
-  .join {
+  main.join {
     padding: 40px 0 60px 0;
   }
-  .join .join-top {
+  main.join .join-top {
     padding: 30px 0 0;
   }
-  .join .join-top .step-list {
+  main.join .join-top .step-list {
     margin: 27px auto 0;
   }
-  .join .join-top .step-list.off-list {
+  main.join .join-top .step-list.off-list {
     padding: 0 30px;
   }
-  .join .join-top .step-list li.line {
+  main.join .join-top .step-list li.line {
     width: 16px;
     background-size: 26px;
   }
-  .join .join-top .step-list li .num {
+  main.join .join-top .step-list li .num {
     font-size: 10px;
     line-height: 12px;
   }
-  .join .join-top .step-list li .txt, .join .join-top .step-list li .info-box .be, .info-box .join .join-top .step-list li .be {
+  main.join .join-top .step-list li .txt, main.join .join-top .step-list li .info-box .be, .info-box main.join .join-top .step-list li .be {
     font-size: 14px;
     line-height: 20px;
   }
-  .join .step01-wrap {
+  main.join .step01-wrap {
     margin-top: 40px;
   }
-  .join .step01-wrap .all-ck-wrap {
+  main.join .step01-wrap .all-ck-wrap {
     padding: 20px 0;
   }
-  .join .step01-wrap .all-ck-wrap .checkbox label {
+  main.join .step01-wrap .all-ck-wrap .checkbox label {
     font-size: 16px;
     word-break: keep-all;
   }
-  .join .step01-wrap .all-ck-wrap .checkbox label::before {
+  main.join .step01-wrap .all-ck-wrap .checkbox label::before {
     margin-top: 0;
     top: 0;
   }
-  .join .step01-wrap .list-ck-wrap .ck-list .ck-wrap {
+  main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap {
     align-items: end;
   }
-  .join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title {
+  main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title {
     font-size: 15px;
     line-height: 22px;
   }
-  .join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title br {
+  main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap .ck-title br {
     display: block;
   }
-  .join .step01-wrap .list-ck-wrap .ck-list .ck-wrap label {
+  main.join .step01-wrap .list-ck-wrap .ck-list .ck-wrap label {
     font-size: 15px;
     line-height: 22px;
   }
-  .join .step02-wrap {
+  main.join .step02-wrap {
     margin-top: 40px;
   }
-  .join .step01-off-wrap {
+  main.join .step01-off-wrap {
     margin-top: 40px;
   }
-  .join .step02-off-wrap {
+  main.join .step02-off-wrap {
     margin-top: 40px;
   }
-  .join .step02-off-wrap .member-wrap {
+  main.join .step02-off-wrap .member-wrap {
     flex-direction: column;
     gap: 13px;
     height: 92px;
   }
-  .join .step02-off-wrap .account-wrap {
+  main.join .step02-off-wrap .account-wrap {
     flex-direction: column;
     display: flex;
     border-top: 2px solid #666666;
@@ -823,93 +832,93 @@ h3.tit {
     padding: 20px 0 0 0;
     gap: 10px;
   }
-  .join .step02-off-wrap .account-wrap .title {
+  main.join .step02-off-wrap .account-wrap .title {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
   }
-  .join .step02-off-wrap .account-wrap .option-wrap {
+  main.join .step02-off-wrap .account-wrap .option-wrap {
     gap: 0;
     flex-wrap: wrap;
   }
-  .join .step02-off-wrap .account-wrap .option-wrap .select-wrap {
+  main.join .step02-off-wrap .account-wrap .option-wrap .select-wrap {
     width: 218px;
     order: 1;
   }
-  .join .step02-off-wrap .account-wrap .option-wrap .input-wrap {
+  main.join .step02-off-wrap .account-wrap .option-wrap .input-wrap {
     order: 3;
   }
-  .join .step02-off-wrap .account-wrap .option-wrap .input-wrap input {
+  main.join .step02-off-wrap .account-wrap .option-wrap .input-wrap input {
     border-radius: 3px;
     height: 40px;
     width: 368px;
   }
-  .join .step02-off-wrap .account-wrap .option-wrap .btn-wrap {
+  main.join .step02-off-wrap .account-wrap .option-wrap .btn-wrap {
     order: 2;
   }
-  .join .step02-off-wrap .account-wrap .option-wrap .info-txt {
+  main.join .step02-off-wrap .account-wrap .option-wrap .info-txt {
     order: 4;
     font-size: 15px;
     line-height: 22px;
-    color: #A7A7A7;
+    color: #a7a7a7;
   }
-  .join .common-wrap .info-txt {
+  main.join .common-wrap .info-txt {
     margin-top: 30px;
   }
-  .join .common-wrap .mo-br {
+  main.join .common-wrap .mo-br {
     display: block;
   }
-  .join .common-wrap .fin-wrap {
+  main.join .common-wrap .fin-wrap {
     margin-top: 25px;
   }
-  .join .common-wrap .fin-wrap .main-txt {
+  main.join .common-wrap .fin-wrap .main-txt {
     margin-top: 40px;
   }
-  .join .common-wrap .fin-wrap .main-txt span {
+  main.join .common-wrap .fin-wrap .main-txt span {
     margin-top: 20px;
   }
-  .join .common-wrap .fin-wrap .member-txt {
+  main.join .common-wrap .fin-wrap .member-txt {
     width: 100%;
   }
-  .join .common-wrap .fin-wrap .bottom-txt {
+  main.join .common-wrap .fin-wrap .bottom-txt {
     margin-top: 20px;
   }
-  .join .btn-area .btn {
+  main.join .btn-area .btn {
     max-width: 140px;
     font-size: 15px;
     font-weight: 400;
   }
 }
 @media (max-width: 1450px) {
-  .join .common-wrap .certi-wrap {
+  main.join .common-wrap .certi-wrap {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
   }
-  .join .common-wrap .certi-wrap .certi-list {
+  main.join .common-wrap .certi-wrap .certi-list {
     align-items: start;
     width: 100%;
     padding: 30px 15px;
   }
-  .join .common-wrap .certi-wrap .certi-list.certi-phone {
+  main.join .common-wrap .certi-wrap .certi-list.certi-phone {
     gap: 17px;
   }
-  .join .common-wrap .certi-wrap .certi-list.certi-ipin {
+  main.join .common-wrap .certi-wrap .certi-list.certi-ipin {
     gap: 15px;
   }
-  .join .common-wrap .certi-wrap .certi-list.certi-ipin i {
+  main.join .common-wrap .certi-wrap .certi-list.certi-ipin i {
     margin-top: -3px;
   }
-  .join .common-wrap .certi-wrap .certi-list i {
+  main.join .common-wrap .certi-wrap .certi-list i {
     width: 65px;
     min-width: 65px;
     height: 65px;
   }
-  .join .common-wrap .certi-wrap .certi-list .txt-box .title {
+  main.join .common-wrap .certi-wrap .certi-list .txt-box .title {
     font-size: 18px;
     line-height: 27px;
   }
-  .join .common-wrap .certi-wrap .certi-list .txt-box button {
+  main.join .common-wrap .certi-wrap .certi-list .txt-box button {
     margin-top: 10px;
     width: 120px;
   }
@@ -952,7 +961,7 @@ h3.tit {
   vertical-align: middle;
 }
 .alarm-wrap .table-wrap .table-list {
-  border-bottom: 1px solid #D3D3D3;
+  border-bottom: 1px solid #d3d3d3;
   padding: 15px 0;
   display: table;
   width: 100%;
