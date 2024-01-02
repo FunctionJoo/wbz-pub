@@ -755,11 +755,12 @@ h3.tit {
         }
         .step02-wrap{
             margin-top: 40px;
+           
+        }
+        .common-wrap{
             .info-txt{
                 margin-top: 30px;
             }
-        }
-        .step04-wrap{
             .mo-br{
                 display: block;
             }
@@ -772,8 +773,11 @@ h3.tit {
                         display: inline-block;
                     }
                 }
-                .info-txt{
+                .member-txt{
                     width: 100%;
+                }
+                .bottom-txt{
+                    margin-top: 20px;
                 }
             }
         }
@@ -786,7 +790,7 @@ h3.tit {
         }
     }
     @media(max-width:1450px){
-        .step02-wrap{
+        .common-wrap{
             .certi-wrap{
                 flex-direction: column;
                 justify-content: center;

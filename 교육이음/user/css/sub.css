@@ -714,24 +714,27 @@ h3.tit {
   .join .step02-wrap {
     margin-top: 40px;
   }
-  .join .step02-wrap .info-txt {
+  .join .common-wrap .info-txt {
     margin-top: 30px;
   }
-  .join .step04-wrap .mo-br {
+  .join .common-wrap .mo-br {
     display: block;
   }
-  .join .step04-wrap .fin-wrap {
+  .join .common-wrap .fin-wrap {
     margin-top: 25px;
   }
-  .join .step04-wrap .fin-wrap .main-txt {
+  .join .common-wrap .fin-wrap .main-txt {
     margin-top: 40px;
   }
-  .join .step04-wrap .fin-wrap .main-txt span {
+  .join .common-wrap .fin-wrap .main-txt span {
     margin-top: 20px;
     display: inline-block;
   }
-  .join .step04-wrap .fin-wrap .info-txt {
+  .join .common-wrap .fin-wrap .member-txt {
     width: 100%;
+  }
+  .join .common-wrap .fin-wrap .bottom-txt {
+    margin-top: 20px;
   }
   .join .btn-area {
     margin-top: 40px;
@@ -742,35 +745,35 @@ h3.tit {
   }
 }
 @media (max-width: 1450px) {
-  .join .step02-wrap .certi-wrap {
+  .join .common-wrap .certi-wrap {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
   }
-  .join .step02-wrap .certi-wrap .certi-list {
+  .join .common-wrap .certi-wrap .certi-list {
     align-items: start;
     width: 100%;
     padding: 30px 15px;
   }
-  .join .step02-wrap .certi-wrap .certi-list.certi-phone {
+  .join .common-wrap .certi-wrap .certi-list.certi-phone {
     gap: 17px;
   }
-  .join .step02-wrap .certi-wrap .certi-list.certi-ipin {
+  .join .common-wrap .certi-wrap .certi-list.certi-ipin {
     gap: 15px;
   }
-  .join .step02-wrap .certi-wrap .certi-list.certi-ipin i {
+  .join .common-wrap .certi-wrap .certi-list.certi-ipin i {
     margin-top: -3px;
   }
-  .join .step02-wrap .certi-wrap .certi-list i {
+  .join .common-wrap .certi-wrap .certi-list i {
     width: 65px;
     min-width: 65px;
     height: 65px;
   }
-  .join .step02-wrap .certi-wrap .certi-list .txt-box .title {
+  .join .common-wrap .certi-wrap .certi-list .txt-box .title {
     font-size: 18px;
     line-height: 27px;
   }
-  .join .step02-wrap .certi-wrap .certi-list .txt-box button {
+  .join .common-wrap .certi-wrap .certi-list .txt-box button {
     margin-top: 10px;
     width: 120px;
   }
