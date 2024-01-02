@@ -534,6 +534,83 @@ h3.tit {
     .step01-off-wrap{
         margin-top: 60px;
     }
+    .step02-off-wrap{
+        margin-top: 60px;
+        .member-wrap{
+            background-color: #F9F9F9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: 60px;
+            .certi-type{
+                span{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        width: 24px;
+                        height: 22px;
+                        background-image: url(../images/common/ico/hd_util_my.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .mem-info{
+                span{
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:not(:last-child){
+                        &::after{
+                            content: "";
+                            display: inline-block;
+                            height: 10px;
+                            width: 1px;
+                            background-color: #A7A7A7;
+                            margin: 0 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .account-wrap{
+            display: flex;
+            border-top: 2px solid #666666;
+            border-bottom: 1px solid #D3D3D3;
+            margin-top: 40px;
+            padding: 15px 0;
+            gap: 44px;
+            .title{
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 500;
+            }
+            .option-wrap{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .input-wrap{
+                    input{
+                        border-radius: 3px;
+                        height: 40px;
+                        width: 368px;
+                    }
+                }
+                .info-txt{
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #A7A7A7;
+                }
+            }
+        }
+    }
     .step03-off-wrap{
         margin-top: 45px;
         border-top: 2px solid #666;
@@ -702,6 +779,12 @@ h3.tit {
     .btn-area {
         margin-top: 60px;
         text-align: center;
+        &.type-a{
+            margin-top: 100px;
+            .btn{
+                max-width: 140px;
+            }
+        }
         .btn {
             max-width: 200px;
         }
@@ -773,6 +856,53 @@ h3.tit {
         }
         .step01-off-wrap{
             margin-top: 40px;
+        }
+        .step02-off-wrap{
+            margin-top: 40px;
+            .member-wrap{
+                flex-direction: column;
+                gap: 13px;
+                height: 92px;
+            }
+            .account-wrap{
+                flex-direction: column;
+                display: flex;
+                border-top: 2px solid #666666;
+                border-bottom: none;
+                margin-top: 40px;
+                padding: 20px 0 0 0;
+                gap: 10px;
+                .title{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+                .option-wrap{
+                    gap: 0;
+                    flex-wrap: wrap;
+                    .select-wrap{
+                        width: 218px;
+                        order: 1;
+                    }
+                    .input-wrap{
+                        order: 3;
+                        input{
+                            border-radius: 3px;
+                            height: 40px;
+                            width: 368px;
+                        }
+                    }
+                    .btn-wrap{
+                        order: 2;
+                    }
+                    .info-txt{
+                        order: 4;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #A7A7A7;
+                    }
+                }
+            }
         }
         .common-wrap{
             .info-txt{

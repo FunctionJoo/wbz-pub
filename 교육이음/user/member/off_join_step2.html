@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="Incheon Edu">
+	<link rel="icon" href="../images/favicon/favicon_16x16.png" sizes="16x16">
+	<link rel="icon" href="../images/favicon/favicon_18x18.png" sizes="18x18">
+	<link rel="icon" href="../images/favicon/favicon_32x32.png" sizes="32x32">
+	<link rel="icon" href="../images/favicon/favicon_180x180.png" sizes="180x180">
+	<meta property="og:image" content="../images/favicon/ogi.png" />
+	<meta property="og:image:width" content="270" />
+	<meta property="og:image:height" content="270" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<title>교육이음센터&gt;회원가입 본인인증</title>
+	<!-- css -->
+	<link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<!-- js -->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/wbz-popup.v1.js"></script>
+</head>
+
+<body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
+	<div id="container">
+		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
+		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
+
+		<main id="contents" class="join">
+			<div class="w-set">
+				<h2 class="tit">회원인증</h2>
+				<div class="join-top">
+					<div class="info-box">
+						<div class="info">
+							<span class="tit">환영합니다!</span>
+							<p class="txt">교육이음센터 회원으로 가입하시면 교육이음센터 정보, 컨설팅 등 다양한 서비스를 편리하게 이용하실 수 있습니다.<br>교육이음센터 홈페이지는 만14세 미만 아동은 회원가입을 하실 수 없습니다.<br>입력하신 개인정보는 “개인정보보호법”에 따라 보호됩니다.</p>
+						</div>
+					</div>
+					<ul class="step-list">
+						<li>
+							<span class="num">Step 01</span>
+							<span class="txt">본인인증</span>
+						</li>
+						<li class="line"></li>
+						<li class="on">
+							<span class="num">Step 02</span>
+							<span class="txt">계좌인증</span>
+						</li>
+						<li class="line"></li>
+						<li>
+							<span class="num">Step 03</span>
+							<span class="txt">가입완료</span>
+						</li>
+					</ul>
+				</div>
+				<div class="step02-off-wrap">
+					<div class="member-wrap">
+						<div class="certi-type">
+							<span>아이핀 인증</span>
+						</div>
+						<div class="mem-info">
+							<span>홍길동</span>
+							<span>남</span>
+							<span>1958.05.11</span>
+						</div>
+					</div>
+					<div class="account-wrap">
+						<span class="title required">수당 지급 계좌</span>
+						<div class="option-wrap">
+							<div class="select-wrap select02">
+								<label class="is-blind" for="bank-op">은행 선택</label>
+								<select name="bank-op" id="bank-op">
+									<option value="은행선택">은행 선택</option>
+								</select>
+							</div>
+							<div class="input-wrap">
+								<label class="is-blind" for="account-op">계좌번호 입력</label>
+								<input id="account-op" type="text">
+							</div>
+							<div class="btn-wrap">
+								<button type="button" class="cert-btn">계좌 인증</button>
+							</div>
+							<span class="info-txt">
+								- 없이 입력해주세요. 가입자과 동일 명의 계좌만 등록 가능합니다.
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="btn-area type-a">
+					<button type="button" class="btn color_5">확인</button>
+				</div>
+			</div>
+		</main>
+		
+		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			let certiList = document.querySelectorAll('.certi-list');
+
+			// certi-list 외의 요소 클릭 시 on클래스 제거
+			document.addEventListener('click', function(event){
+				if(!event.target.closest('.certi-list')){
+					certiList.forEach(function(item){
+						item.classList.remove('on')
+					})
+				}
+			})
+
+			certiList.forEach(function(item){
+				// 클릭 시
+				item.addEventListener('click', function(){
+					updateClasses(item);
+				});
+				let button = item.querySelector('button');
+				if(button){
+					// 버튼 focus시
+					button.addEventListener('focus', function(){
+						updateClasses(item);
+					});
+					// 버튼 focus 없어질 시 on 클래스 제거
+					button.addEventListener('blur', function(){
+						item.classList.remove('on');
+					})
+				}
+			});
+
+			function updateClasses(clickedItem){
+				certiList.forEach(function(el){
+					el.classList.remove('on');
+				});
+
+				clickedItem.classList.add('on');
+			}
+		})
+	</script>
+</body>
+</html>

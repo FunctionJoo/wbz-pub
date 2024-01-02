@@ -507,6 +507,75 @@ h3.tit {
 .join .step01-off-wrap {
   margin-top: 60px;
 }
+.join .step02-off-wrap {
+  margin-top: 60px;
+}
+.join .step02-off-wrap .member-wrap {
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 60px;
+}
+.join .step02-off-wrap .member-wrap .certi-type span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.join .step02-off-wrap .member-wrap .certi-type span::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  background-image: url(../images/common/ico/hd_util_my.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 20px;
+}
+.join .step02-off-wrap .member-wrap .mem-info span {
+  font-size: 16px;
+  line-height: 24px;
+}
+.join .step02-off-wrap .member-wrap .mem-info span:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background-color: #A7A7A7;
+  margin: 0 25px;
+}
+.join .step02-off-wrap .account-wrap {
+  display: flex;
+  border-top: 2px solid #666666;
+  border-bottom: 1px solid #D3D3D3;
+  margin-top: 40px;
+  padding: 15px 0;
+  gap: 44px;
+}
+.join .step02-off-wrap .account-wrap .title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+.join .step02-off-wrap .account-wrap .option-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.join .step02-off-wrap .account-wrap .option-wrap .input-wrap input {
+  border-radius: 3px;
+  height: 40px;
+  width: 368px;
+}
+.join .step02-off-wrap .account-wrap .option-wrap .info-txt {
+  font-size: 15px;
+  line-height: 22px;
+  color: #A7A7A7;
+}
 .join .step03-off-wrap {
   margin-top: 45px;
   border-top: 2px solid #666;
@@ -669,6 +738,12 @@ h3.tit {
   margin-top: 60px;
   text-align: center;
 }
+.join .btn-area.type-a {
+  margin-top: 100px;
+}
+.join .btn-area.type-a .btn {
+  max-width: 140px;
+}
 .join .btn-area .btn {
   max-width: 200px;
 }
@@ -730,6 +805,53 @@ h3.tit {
   }
   .join .step01-off-wrap {
     margin-top: 40px;
+  }
+  .join .step02-off-wrap {
+    margin-top: 40px;
+  }
+  .join .step02-off-wrap .member-wrap {
+    flex-direction: column;
+    gap: 13px;
+    height: 92px;
+  }
+  .join .step02-off-wrap .account-wrap {
+    flex-direction: column;
+    display: flex;
+    border-top: 2px solid #666666;
+    border-bottom: none;
+    margin-top: 40px;
+    padding: 20px 0 0 0;
+    gap: 10px;
+  }
+  .join .step02-off-wrap .account-wrap .title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .join .step02-off-wrap .account-wrap .option-wrap {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .join .step02-off-wrap .account-wrap .option-wrap .select-wrap {
+    width: 218px;
+    order: 1;
+  }
+  .join .step02-off-wrap .account-wrap .option-wrap .input-wrap {
+    order: 3;
+  }
+  .join .step02-off-wrap .account-wrap .option-wrap .input-wrap input {
+    border-radius: 3px;
+    height: 40px;
+    width: 368px;
+  }
+  .join .step02-off-wrap .account-wrap .option-wrap .btn-wrap {
+    order: 2;
+  }
+  .join .step02-off-wrap .account-wrap .option-wrap .info-txt {
+    order: 4;
+    font-size: 15px;
+    line-height: 22px;
+    color: #A7A7A7;
   }
   .join .common-wrap .info-txt {
     margin-top: 30px;
