@@ -609,6 +609,9 @@ h3.tit {
     .step04-wrap{
         margin-top: 40px;
         border-top: 2px solid #707070;
+        .mo-br{
+            display: none;
+        }
         .fin-wrap{
             margin-top: 45px;
             display: flex;
@@ -642,8 +645,49 @@ h3.tit {
                 background-color: #F9F9F9;
                 padding: 30px 0;
                 width: 380px;
+                margin-top: 30px;
                 .info-wrap{
-                    
+                    .info-list{
+                        display: flex;
+                        width: 187px;
+                        margin: 0 auto;
+                        &:first-child{
+                            gap: 46px;
+                            p{
+                                letter-spacing: 2px;
+                            }
+                        }
+                        &:last-child{
+                            gap: 48px;
+                            margin-top: 10px;
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 500;
+                        }
+                        strong{
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .bottom-txt{
+                margin-top: 22px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                word-break: keep-all;
+                span{
+                    font-size: 16px;
+                    line-height: 24px;
+                    &.txt-im{
+                        color: #D43333;
+                    }
                 }
             }
         }
@@ -717,6 +761,24 @@ h3.tit {
             margin-top: 40px;
             .info-txt{
                 margin-top: 30px;
+            }
+        }
+        .step04-wrap{
+            .mo-br{
+                display: block;
+            }
+            .fin-wrap{
+                margin-top: 25px;
+                .main-txt{
+                    margin-top: 40px;
+                    span{
+                        margin-top: 20px;
+                        display: inline-block;
+                    }
+                }
+                .info-txt{
+                    width: 100%;
+                }
             }
         }
         .btn-area {
