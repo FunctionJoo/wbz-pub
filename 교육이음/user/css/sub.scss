@@ -457,7 +457,6 @@ main {
                 justify-content: space-between;
                 align-items: center;
                 border-top: 2px solid #666666;
-                border-bottom: 1px solid #d3d3d3;
                 padding: 22px 0;
                 font-size: 20px;
                 line-height: 29px;
@@ -475,7 +474,8 @@ main {
                     padding: 0 15px 0 33px;
                 }
             }
-            .content-wrap {
+            .content-wrap {                
+                border-top: 1px solid #d3d3d3;
                 &.cw01 {
                     padding: 20px 0 30px 0;
                 }
@@ -488,6 +488,7 @@ main {
                     }
                 }
                 &.cw03 {
+                    border: 0;
                     padding: 26px 0 20px 0;
                 }
                 dl {

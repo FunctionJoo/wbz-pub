@@ -434,7 +434,6 @@ main.join .input-wrap .tit-area {
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid #666666;
-  border-bottom: 1px solid #d3d3d3;
   padding: 22px 0;
   font-size: 20px;
   line-height: 29px;
@@ -452,6 +451,9 @@ main.join .input-wrap .tit-area .btn-info {
   font-size: 15px;
   padding: 0 15px 0 33px;
 }
+main.join .input-wrap .content-wrap {
+  border-top: 1px solid #d3d3d3;
+}
 main.join .input-wrap .content-wrap.cw01 {
   padding: 20px 0 30px 0;
 }
@@ -464,6 +466,7 @@ main.join .input-wrap .content-wrap.cw02 .sub-title {
   font-weight: 500;
 }
 main.join .input-wrap .content-wrap.cw03 {
+  border: 0;
   padding: 26px 0 20px 0;
 }
 main.join .input-wrap .content-wrap dl {
