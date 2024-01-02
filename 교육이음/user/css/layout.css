@@ -200,44 +200,12 @@
   position: relative;
   padding: 20px 16px;
 }
-#aside-menu .aside-header .is-non-member {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 28px 0;
-}
-#aside-menu .aside-header .is-non-member a {
-  position: relative;
-  font-size: 14px;
-  line-height: 19px;
-  color: #fff;
-  padding-right: 20px;
-}
-#aside-menu .aside-header .is-non-member a::after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url("../images/common/ico/ico_aside_login.svg") no-repeat center;
-  background-size: 100% 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 #aside-menu .aside-header .member-info {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 46px 20px 18px;
+  font-size: 18px;
+  padding: 0 0 20px;
 }
 #aside-menu .aside-header .member-info .name {
-  font-size: 14px;
-}
-#aside-menu .aside-header .member-info .point {
-  font-size: 14px;
+  font-weight: 500;
 }
 #aside-menu .aside-header .link {
   display: inline-block;
@@ -257,10 +225,6 @@
   background-position: center;
   margin-bottom: 4px;
 }
-#aside-menu .aside-header .link.login.on i {
-  background-color: #78b53a;
-  background-image: url("../images/common/ico/hd_util_logout.svg");
-}
 #aside-menu .aside-header .link.login i {
   background-image: url("../images/common/ico/hd_util_login.svg");
 }
@@ -276,28 +240,10 @@
 #aside-menu .aside-header .link.my i {
   background-image: url("../images/common/ico/hd_util_my.svg");
 }
-#aside-menu .aside-header .link.notify {
-  margin-left: 21px;
-}
-#aside-menu .aside-header .link.notify.on::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #459729;
-}
-#aside-menu .aside-header .link.notify i {
-  background-image: url("../images/common/ico/hd_util_notify.svg");
-}
 #aside-menu .aside-header .aside-close {
   position: absolute;
-  top: 50%;
+  top: 26px;
   right: 16px;
-  transform: translateY(-50%);
   width: 19px;
   height: 19px;
   background: url("../images/common/ico/aside_close.svg") no-repeat center center;
