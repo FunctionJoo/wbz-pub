@@ -424,80 +424,80 @@ h3.tit {
 .join .step03-wrap {
   margin-top: 40px;
 }
-.join .step03-wrap .info-wrap .info-list {
+.join .step03-wrap .input-wrap li {
   border-top: 2px solid #666666;
 }
-.join .step03-wrap .info-wrap .info-list .title {
+.join .step03-wrap .input-wrap li .title {
   border-bottom: 1px solid #D3D3D3;
   padding: 22px 0;
   font-size: 20px;
   line-height: 29px;
   font-weight: 500;
 }
-.join .step03-wrap .info-wrap .info-list .title .sub {
+.join .step03-wrap .input-wrap li .title .sub {
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
   margin-left: 10px;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap.cw01 {
+.join .step03-wrap .input-wrap li .content-wrap.cw01 {
   padding: 20px 0 30px 0;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap.cw02 {
+.join .step03-wrap .input-wrap li .content-wrap.cw02 {
   padding: 20px 0 36px 0;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap.cw02 .sub-title {
+.join .step03-wrap .input-wrap li .content-wrap.cw02 .sub-title {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap.cw03 {
+.join .step03-wrap .input-wrap li .content-wrap.cw03 {
   padding: 26px 0 20px 0;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .content-list {
+.join .step03-wrap .input-wrap li .content-wrap .content-list {
   display: flex;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .content-list:not(:first-child) {
+.join .step03-wrap .input-wrap li .content-wrap .content-list:not(:first-child) {
   margin-top: 20px;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-th {
+.join .step03-wrap .input-wrap li .content-wrap .content-list .con-th {
   font-size: 18px;
   line-height: 40px;
   font-weight: 500;
   width: 161px;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-td {
+.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-td .num-bar {
+.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td .num-bar {
   width: 8px;
   height: 1px;
   display: inline-block;
   background-color: #707070;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-td .input-info {
+.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td .input-info {
   font-size: 15px;
   line-height: 22px;
   color: #A7A7A7;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .content-list .con-td .input-info .mo-br {
+.join .step03-wrap .input-wrap li .content-wrap .content-list .con-td .input-info .mo-br {
   display: none;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .work-wrap {
+.join .step03-wrap .input-wrap li .content-wrap .work-wrap {
   margin-top: 20px;
   border: 1px solid #D3D3D3;
   padding: 20px 30px 23px 30px;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap {
+.join .step03-wrap .input-wrap li .content-wrap .work-wrap .list-wrap {
   margin-top: 20px;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap .work-list {
+.join .step03-wrap .input-wrap li .content-wrap .work-wrap .list-wrap .work-list {
   display: flex;
   gap: 10px;
 }
-.join .step03-wrap .info-wrap .info-list .content-wrap .work-wrap .list-wrap .work-list:not(:first-child) {
+.join .step03-wrap .input-wrap li .content-wrap .work-wrap .list-wrap .work-list:not(:first-child) {
   margin-top: 10px;
 }
 .join .step04-wrap {

@@ -68,16 +68,17 @@
 					</ul>
 				</div>
 				<div class="step03-wrap">
-					<ul class="info-wrap">
-						<li class="info-list">
-							<div class="title">
+					<form action="">
+						<div class="input-wrap">
+							<div class="tit-area">
 								<span>인적사항</span>
 							</div>
 							<div class="content-wrap cw01">
 								<dl>
 									<dt class="required">아이디</dt>
 									<dd>
-										<input class="input01" type="text" id="id">
+										<input type="text" id="userId" class="type-l">
+										<label for="userId" class="is-blind">아이디</label>
 										<button type="button" class="cert-btn">중복확인</button>
 										<span class="input-info">공백 없이 6~20자를 입력하세요. <br class="mo-br">영문 대소문자를 구분하지 않습니다.</span>
 									</dd>
@@ -85,94 +86,104 @@
 								<dl>
 									<dt class="required">비밀번호</dt>
 									<dd>
-										<input class="input01" type="text" id="password">
+										<input type="text" id="password" class="type-l">
+										<label for="password" class="is-blind">비밀번호</label>
 										<span class="input-info">영문, 숫자, 특수문자를 포함하여 <br class="mo-br">6~20자 이내로 입력해주세요</span>
 									</dd>
 								</dl>
 								<dl>
 									<dt class="required">비밀번호 확인</dt>
 									<dd>
-										<input class="input01" type="text" id="passwordCheck">
+										<input type="text" id="passwordCheck" class="type-l">
+										<label for="passwordCheck" class="is-blind">비밀번호 확인</label>
 										<span class="input-info">비밀번호확인을 위해 다시 한번 입력해주세요</span>
 									</dd>
 								</dl>
 								<dl>
 									<dt class="required">휴대폰 번호</dt>
 									<dd>
-										<div class="select-wrap select01">
-											<label for="num01" class="hide">번호 앞 자리</label>
+										<div class="type-mobile">
 											<select name="num01" id="num01">
 												<option value="010">010</option>
 											</select>
+											<label for="num01" class="is-blind">휴대전화 세자리</label>
+											<i class="num-bar"></i>
+											<input type="text" id="num02">
+											<label for="num02" class="is-blind">휴대전화 가운데 자리</label>
+											<i class="num-bar"></i>
+											<input type="text" id="num03">
+											<label for="num03" class="is-blind">휴대전화 마지막 자리</label>
 										</div>
-										<i class="num-bar"></i>
-										<input class="input02" type="text" id="num02">
-										<i class="num-bar"></i>
-										<input class="input02" type="text" id="num03">
 									</dd>
 								</dl>
 								<dl>
 									<dt class="required">주소</dt>
-									<dd class="con-td">
-										<input class="input03" type="text" id="address01" placeholder="주소">
-										<input class="input04" type="text" id="address02" placeholder="상세 주소">
+									<dd>
+										<div class="type-address">
+											<input type="text" id="address01" placeholder="주소">
+											<label for="address01" class="is-blind">주소</label>
+											<input type="text" id="address02" class="detail" placeholder="상세 주소">
+											<label for="address02" class="is-blind">상세 주소</label>
+										</div>
 									</dd>
 								</dl>
 								<dl>
 									<dt class="required">수당 지급 계좌</dt>
 									<dd>
-										<div class="select-wrap select02">
-											<label for="bank" class="hide">은행선택</label>
+										<div class="type-account">
 											<select name="bank" id="bank">
 												<option value="은행 선택">은행 선택</option>
 											</select>
+											<label for="bank" class="hide">은행선택</label>
+											<input type="text" id="account" placeholder="계좌번호 입력">
+											<label for="account" class="is-blind">계좌번호 입력</label>
 										</div>
-										<input type="text" id="address02" placeholder="계좌번호 입력">
 										<button type="button" class="cert-btn">계좌 인증</button>
 										<span class="input-info">- 없이 입력해주세요. 가입자과 동일 명의 계좌만 등록 가능합니다.</span>
 									</dd>
 								</dl>
 							</div>
-						</li>
-						<li class="info-list">
-							<div class="title">
+						</div>
+						<div class="input-wrap">
+							<div class="tit-area">
 								<span class="required">경력사항</span>
 							</div>
 							<div class="content-wrap cw02">
-								<div class="content-list">
-									<p class="con-th">총 근속연수</p>
-									<div class="con-td">
-										<input class="input07" type="text" id="workYear" placeholder="예) 1">
-									</div>
-								</div>
+								<dl>
+									<dt>총 근속연수</dt>
+									<dd>
+										<input class="type-s" type="text" id="workYear" placeholder="예) 1">
+										<span class="add-txt">년</span>
+									</dd>
+								</dl>
 								<div class="work-wrap">
 									<span class="sub-title">퇴직 전 5년 이내 근무기관</span>
-									<div class="list-wrap">
-										<div class="work-list">
+									<ul class="list-wrap">
+										<li class="type-col3">
 											<input type="text" id="work01" class="input05" placeholder="기관 명 입력" value="세종초등학고">
 											<input type="text" id="work01" class="input06" placeholder="총 근속연수 예) 1년" value="3년">
 											<input type="text" id="work01" class="input06" placeholder="직위(급)입력" value="교감">
-										</div>
-										<div class="work-list">
+										</li>
+										<li class="type-col3">
 											<input type="text" id="work01" class="input05" placeholder="기관 명 입력">
 											<input type="text" id="work01" class="input06" placeholder="총 근속연수 예) 1년">
 											<input type="text" id="work01" class="input06" placeholder="직위(급)입력">
-										</div>
-									</div>
+										</li>
+									</ul>
 								</div>
 							</div>
-						</li>
-						<li class="info-list">
-							<div class="title">
+						</div>
+						<div class="input-wrap">
+							<div class="tit-area">
 								<span class="required">활동 희망 분야</span>
-								<span class="sub">활동 희망 분야 최소 1개 이상 선택 해주세요.</span>
-								<button></button>
+								<span class="info">활동 희망 분야 최소 1개 이상 선택 해주세요.</span>
+								<button type="button" class="btn-info">활동 분야 안내</button>
 							</div>
 							<div class="content-wrap cw03">
 								
 							</div>
-						</li>
-					</ul>
+						</div>
+					</form>
 				</div>
 				<div class="btn-area">
 					<button type="button" class="btn color_5">회원가입</button>
