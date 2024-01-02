@@ -1,0 +1,39 @@
+@import "./utility.scss";
+
+#contents {
+    &.join {
+        .step03-wrap {
+            dl{
+                display: flex;
+                &:not(:first-child){
+                    margin-top: 20px;
+                }
+                dt{
+                    font-size: 18px;
+                    line-height: 40px;
+                    font-weight: 500;
+                    width: 161px;
+                }
+                dd{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    .num-bar{
+                        width: 8px;
+                        height: 1px;
+                        display: inline-block;
+                        background-color: #707070;
+                    }
+                    .input-info{
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #A7A7A7;
+                        .mo-br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
