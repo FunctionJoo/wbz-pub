@@ -507,10 +507,7 @@ h3.tit {
   line-height: 29px;
   font-weight: 500;
 }
-.join .step03-wrap .info-wrap .info-list .title p {
-  display: inline-block;
-}
-.join .step03-wrap .info-wrap .info-list .title span {
+.join .step03-wrap .info-wrap .info-list .title .sub {
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
@@ -585,10 +582,6 @@ h3.tit {
 }
 .join .step04-wrap .fin-wrap {
   margin-top: 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .join .step04-wrap .fin-wrap i {
   background-image: url(../images/common/ico/join_fin_ico.svg);
@@ -598,6 +591,7 @@ h3.tit {
   display: block;
   width: 83px;
   height: 90px;
+  margin: 0 auto;
 }
 .join .step04-wrap .fin-wrap .main-txt {
   margin-top: 42px;
@@ -614,10 +608,10 @@ h3.tit {
   line-height: 24px;
 }
 .join .step04-wrap .fin-wrap .info-txt {
+  margin: 30px auto 0;
   background-color: #F9F9F9;
   padding: 30px 0;
   width: 380px;
-  margin-top: 30px;
 }
 .join .step04-wrap .fin-wrap .info-txt .info-wrap .info-list {
   display: flex;

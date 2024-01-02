@@ -277,7 +277,6 @@ h3.tit {
         }
     }
     @media(max-width:1300px){
-    .member{
         padding: 40px 0 140px;
         .find-wrap{
             padding-top: 110px;
@@ -461,6 +460,7 @@ h3.tit {
                     gap: 25px;
                     i{
                         background-image: url(../images/common/ico/certi_phone.svg);
+
                     }
                 }
                 &.certi-ipin{
@@ -531,10 +531,7 @@ h3.tit {
                     font-size: 20px;
                     line-height: 29px;
                     font-weight: 500;
-                    p{
-                        display: inline-block;
-                    }
-                    span{
+                    .sub{
                         font-size: 15px;
                         line-height: 22px;
                         font-weight: 400;
@@ -614,10 +611,6 @@ h3.tit {
         }
         .fin-wrap{
             margin-top: 45px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             i{
                 background-image: url(../images/common/ico/join_fin_ico.svg);
                 background-position: center;
@@ -626,6 +619,7 @@ h3.tit {
                 display: block;
                 width: 83px;
                 height: 90px;
+                margin: 0 auto;
             }
             .main-txt{
                 margin-top: 42px;
@@ -642,10 +636,10 @@ h3.tit {
                 }
             }
             .info-txt{
+                margin: 30px auto 0;
                 background-color: #F9F9F9;
                 padding: 30px 0;
                 width: 380px;
-                margin-top: 30px;
                 .info-wrap{
                     .info-list{
                         display: flex;
