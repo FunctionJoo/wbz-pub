@@ -300,7 +300,7 @@ main {
     &.join {
         padding: 100px 0 120px;
         border-top: 1px solid #ddd;
-        input {
+        input[type=text] {
             height: 40px;
             border: 1px solid #d3d3d3;
             border-radius: 3px;
@@ -446,7 +446,7 @@ main {
         }
         .input-wrap {
             margin-top: 40px;
-            input,
+            input[type=text],
             select {
                 height: 40px;
                 border-radius: 3px;
@@ -470,17 +470,24 @@ main {
                 }
                 .btn-info {
                     color: $primary-color2;
+                    border: $primary-color2 solid 1px;
+                    border-radius: 3px;
                     font-size: 15px;
-                    padding: 0 15px 0 33px;
+                    padding: 7px 15px 7px 33px;
+                    background-image: url(../images/common/ico/empty.svg);
+                    background-repeat: no-repeat;
+                    background-position: 12px 50%;
+                    background-size: 14px;
                 }
             }
             .content-wrap {                
-                border-top: 1px solid #d3d3d3;
                 &.cw01 {
                     padding: 20px 0 30px 0;
+                    border-top: 1px solid #d3d3d3;
                 }
                 &.cw02 {
                     padding: 20px 0 36px 0;
+                    border-top:  1px solid #666666;
                     .sub-title {
                         font-size: 18px;
                         line-height: 27px;
@@ -488,9 +495,47 @@ main {
                     }
                 }
                 &.cw03 {
-                    border: 0;
-                    padding: 26px 0 20px 0;
+                    margin-bottom: 20px;
+                    padding: 20px 0px 16px 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px 0;
+                    border: 1px solid #D3D3D3;
+                    .checkbox{
+                        width: 196px;
+                        &.sub{
+                            width: 232px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            input[type=text]{
+                                height: 36px;
+                            }
+                        }
+                    }
                 }
+                &.cw04{
+                    padding: 20px 0 0;
+                    border-top: 1px solid #666666;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 20px;
+                    .area-sel{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        span{
+                            font-size: 18px;
+                            line-height: 27px;
+                            font-weight: 500;
+                        }
+                        select{
+                            width: 160px;
+                        }
+                    }
+                }
+                
                 dl {
                     display: flex;
                     &:not(:first-child) {
@@ -501,6 +546,7 @@ main {
                         line-height: 40px;
                         font-weight: 500;
                         width: 161px;
+                        flex: 0 0 auto;
                     }
                     dd {
                         width: 100%;
@@ -517,8 +563,20 @@ main {
                             font-size: 15px;
                             line-height: 22px;
                             color: #a7a7a7;
+                            text-wrap: nowrap;
                             .mo-br {
                                 display: none;
+                            }
+                        }
+                        .add-txt{
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
+                        .add-btn{
+                            display: flex;
+                            gap: 10px;
+                            input[type=text]{
+                                width: 490px;
                             }
                         }
                     }
@@ -699,9 +757,18 @@ main {
                 li {
                     font-size: 14px;
                     line-height: 20px;
+                    position: relative;
+                    margin-left: 8px;
                     &::before {
-                        content: "·";
-                        margin-right: 4px;
+                        content: "";
+                        position: absolute;
+                        top: 10px;
+                        left: -8px;
+                        height: 1.5px;
+                        display: inline-block;
+                        width: 1.5px;
+                        background-color: #222;
+                        border-radius: 50%;
                     }
                 }
             }
@@ -861,6 +928,123 @@ main {
             }
             .step02-wrap {
                 margin-top: 40px;
+            }
+            .input-wrap {
+                .tit-area {
+                    padding: 20px 0;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+                .content-wrap {                
+                    &.cw02 {
+                        padding: 20px 0 30px 0;
+                        dl{
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            dd{
+                                margin-top: 0;
+                                width: auto;
+                            }
+                        }
+                        .sub-title {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                    &.cw03 {
+                        margin-bottom: 20px;
+                        padding: 20px 0px 16px 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px 0;
+                        border: 1px solid #D3D3D3;
+                        .checkbox{
+                            width: 196px;
+                            &.sub{
+                                width: 232px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                input[type=text]{
+                                    height: 36px;
+                                }
+                            }
+                        }
+                    }
+                    &.cw04{
+                        padding: 20px 0 0;
+                        border-top: 1px solid #666666;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        gap: 20px;
+                        .area-sel{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            span{
+                                font-size: 18px;
+                                line-height: 27px;
+                                font-weight: 500;
+                            }
+                            select{
+                                width: 160px;
+                            }
+                        }
+                    }
+                    
+                    dl {
+                        flex-direction: column;
+                        &:not(:first-child) {
+                            margin-top: 15px;
+                        }
+                        dt {
+                            font-size: 16px;
+                            line-height: 24px;
+                            width: auto;
+                        }
+                        dd {
+                            margin-top: 10px;
+                            gap: 6px;
+                            flex-wrap: wrap;
+                            .num-bar {
+                                width: 6px;
+                            }
+                            .input-info {
+                                font-size: 14px;
+                                line-height: 20px;
+                                .mo-br {
+                                    display: block;
+                                }
+                            }
+                            .add-txt{
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                            .add-btn{
+                                width: 100%;
+                                input[type=text]{
+                                    width: calc(100% - 88px);
+                                }
+                            }
+                            .type-l{
+                                max-width: none;
+                            }
+                        }
+                    }
+                    .work-wrap {
+                        padding: 15px;
+                        .list-wrap {
+                            margin-top: 20px;
+                            li {
+                                & + li{
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .step01-off-wrap {
                 margin-top: 40px;

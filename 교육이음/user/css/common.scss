@@ -193,12 +193,20 @@ textarea:focus,
 	.type-mobile {
 		display: flex;
 		align-items: center;
-		gap: 10px;
+		gap: 7px;
 		select {
 			width: 110px;
 		}
 		input {
 			width: 120px;
+		}
+		@media(max-width:1300px){
+			select{
+				width: 89px;
+			}
+			input{
+				width: 97px;
+			}
 		}
 	}
 	.type-address {
@@ -209,6 +217,16 @@ textarea:focus,
 			width: 260px;
 			&.detail {
 				width: 360px;
+			}
+		}
+		@media(max-width:1300px){
+			width: 100%;
+			flex-wrap: wrap;
+			input{
+				width: 100%;
+				&.detail {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -222,6 +240,21 @@ textarea:focus,
 		input {
 			width: 368px;
 		}
+		@media(max-width:1300px){
+			flex-wrap: wrap;
+			width: 100%;
+			select{
+				width: calc(100% - 112px);
+			}
+			.cert-btn{
+				order: 2;
+				width: 102px;
+			}
+			input{
+				order: 3;
+				width: 100%;
+			}
+		}
 	}
 	.type-col3{
 		display: flex;
@@ -231,7 +264,7 @@ textarea:focus,
 
 // checkbox, radio
 .checkbox {
-	input {
+	>input {
 		overflow: hidden;
 		position: absolute;
 		width: 1px;
@@ -239,7 +272,7 @@ textarea:focus,
 		margin: -1px;
 		clip: rect(0 0 0 0);
 	}
-	label {
+	>label {
 		cursor: pointer;
 		display: inline-block;
 		position: relative;

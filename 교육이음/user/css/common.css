@@ -171,13 +171,21 @@ textarea:focus,
 .input-wrap .type-mobile {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 .input-wrap .type-mobile select {
   width: 110px;
 }
 .input-wrap .type-mobile input {
   width: 120px;
+}
+@media (max-width: 1300px) {
+  .input-wrap .type-mobile select {
+    width: 89px;
+  }
+  .input-wrap .type-mobile input {
+    width: 97px;
+  }
 }
 .input-wrap .type-address {
   display: flex;
@@ -190,6 +198,18 @@ textarea:focus,
 .input-wrap .type-address input.detail {
   width: 360px;
 }
+@media (max-width: 1300px) {
+  .input-wrap .type-address {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .input-wrap .type-address input {
+    width: 100%;
+  }
+  .input-wrap .type-address input.detail {
+    width: 100%;
+  }
+}
 .input-wrap .type-account {
   display: flex;
   align-items: center;
@@ -201,12 +221,29 @@ textarea:focus,
 .input-wrap .type-account input {
   width: 368px;
 }
+@media (max-width: 1300px) {
+  .input-wrap .type-account {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .input-wrap .type-account select {
+    width: calc(100% - 112px);
+  }
+  .input-wrap .type-account .cert-btn {
+    order: 2;
+    width: 102px;
+  }
+  .input-wrap .type-account input {
+    order: 3;
+    width: 100%;
+  }
+}
 .input-wrap .type-col3 {
   display: flex;
   gap: 10px;
 }
 
-.checkbox input, .radiobox input {
+.checkbox > input, .radiobox > input {
   overflow: hidden;
   position: absolute;
   width: 1px;
@@ -214,7 +251,7 @@ textarea:focus,
   margin: -1px;
   clip: rect(0 0 0 0);
 }
-.checkbox label, .radiobox label {
+.checkbox > label, .radiobox > label {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -223,7 +260,7 @@ textarea:focus,
   color: #222;
   line-height: 22px;
 }
-.checkbox label:before, .radiobox label:before {
+.checkbox > label:before, .radiobox > label:before {
   content: "";
   display: block;
   position: absolute;

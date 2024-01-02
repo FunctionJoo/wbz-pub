@@ -286,7 +286,7 @@ main.join {
   padding: 100px 0 120px;
   border-top: 1px solid #ddd;
 }
-main.join input {
+main.join input[type=text] {
   height: 40px;
   border: 1px solid #d3d3d3;
   border-radius: 3px;
@@ -294,30 +294,30 @@ main.join input {
   font-size: 15px;
   line-height: 22px;
 }
-main.join input::placeholder {
+main.join input[type=text]::placeholder {
   font-size: 15px;
   line-height: 22px;
   color: #a7a7a7;
 }
-main.join input.input01 {
+main.join input[type=text].input01 {
   width: 490px;
 }
-main.join input.input02 {
+main.join input[type=text].input02 {
   width: 120px;
 }
-main.join input.input03 {
+main.join input[type=text].input03 {
   width: 260px;
 }
-main.join input.input04 {
+main.join input[type=text].input04 {
   width: 360px;
 }
-main.join input.input05 {
+main.join input[type=text].input05 {
   width: 320px;
 }
-main.join input.input06 {
+main.join input[type=text].input06 {
   width: 400px;
 }
-main.join input.input07 {
+main.join input[type=text].input07 {
   width: 160px;
 }
 main.join .w-set {
@@ -423,7 +423,7 @@ main.join .step02-wrap {
 main.join .input-wrap {
   margin-top: 40px;
 }
-main.join .input-wrap input,
+main.join .input-wrap input[type=text],
 main.join .input-wrap select {
   height: 40px;
   border-radius: 3px;
@@ -448,17 +448,22 @@ main.join .input-wrap .tit-area .info {
 }
 main.join .input-wrap .tit-area .btn-info {
   color: #459729;
+  border: #459729 solid 1px;
+  border-radius: 3px;
   font-size: 15px;
-  padding: 0 15px 0 33px;
-}
-main.join .input-wrap .content-wrap {
-  border-top: 1px solid #d3d3d3;
+  padding: 7px 15px 7px 33px;
+  background-image: url(../images/common/ico/empty.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 50%;
+  background-size: 14px;
 }
 main.join .input-wrap .content-wrap.cw01 {
   padding: 20px 0 30px 0;
+  border-top: 1px solid #d3d3d3;
 }
 main.join .input-wrap .content-wrap.cw02 {
   padding: 20px 0 36px 0;
+  border-top: 1px solid #666666;
 }
 main.join .input-wrap .content-wrap.cw02 .sub-title {
   font-size: 18px;
@@ -466,8 +471,45 @@ main.join .input-wrap .content-wrap.cw02 .sub-title {
   font-weight: 500;
 }
 main.join .input-wrap .content-wrap.cw03 {
-  border: 0;
-  padding: 26px 0 20px 0;
+  margin-bottom: 20px;
+  padding: 20px 0px 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  border: 1px solid #D3D3D3;
+}
+main.join .input-wrap .content-wrap.cw03 .checkbox {
+  width: 196px;
+}
+main.join .input-wrap .content-wrap.cw03 .checkbox.sub {
+  width: 232px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.join .input-wrap .content-wrap.cw03 .checkbox.sub input[type=text] {
+  height: 36px;
+}
+main.join .input-wrap .content-wrap.cw04 {
+  padding: 20px 0 0;
+  border-top: 1px solid #666666;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+main.join .input-wrap .content-wrap.cw04 .area-sel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main.join .input-wrap .content-wrap.cw04 .area-sel span {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+main.join .input-wrap .content-wrap.cw04 .area-sel select {
+  width: 160px;
 }
 main.join .input-wrap .content-wrap dl {
   display: flex;
@@ -480,6 +522,7 @@ main.join .input-wrap .content-wrap dl dt {
   line-height: 40px;
   font-weight: 500;
   width: 161px;
+  flex: 0 0 auto;
 }
 main.join .input-wrap .content-wrap dl dd {
   width: 100%;
@@ -497,9 +540,21 @@ main.join .input-wrap .content-wrap dl dd .input-info {
   font-size: 15px;
   line-height: 22px;
   color: #a7a7a7;
+  text-wrap: nowrap;
 }
 main.join .input-wrap .content-wrap dl dd .input-info .mo-br {
   display: none;
+}
+main.join .input-wrap .content-wrap dl dd .add-txt {
+  font-size: 15px;
+  line-height: 22px;
+}
+main.join .input-wrap .content-wrap dl dd .add-btn {
+  display: flex;
+  gap: 10px;
+}
+main.join .input-wrap .content-wrap dl dd .add-btn input[type=text] {
+  width: 490px;
 }
 main.join .input-wrap .content-wrap .work-wrap {
   margin-top: 20px;
@@ -663,10 +718,19 @@ main.join .common-wrap .info-txt {
 main.join .common-wrap .info-txt li {
   font-size: 14px;
   line-height: 20px;
+  position: relative;
+  margin-left: 8px;
 }
 main.join .common-wrap .info-txt li::before {
-  content: "·";
-  margin-right: 4px;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  height: 1.5px;
+  display: inline-block;
+  width: 1.5px;
+  background-color: #222;
+  border-radius: 50%;
 }
 main.join .common-wrap .mo-br {
   display: none;
@@ -814,6 +878,116 @@ main.join .btn-area .btn {
   }
   main.join .step02-wrap {
     margin-top: 40px;
+  }
+  main.join .input-wrap .tit-area {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  main.join .input-wrap .content-wrap.cw02 {
+    padding: 20px 0 30px 0;
+  }
+  main.join .input-wrap .content-wrap.cw02 dl {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main.join .input-wrap .content-wrap.cw02 dl dd {
+    margin-top: 0;
+    width: auto;
+  }
+  main.join .input-wrap .content-wrap.cw02 .sub-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main.join .input-wrap .content-wrap.cw03 {
+    margin-bottom: 20px;
+    padding: 20px 0px 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    border: 1px solid #D3D3D3;
+  }
+  main.join .input-wrap .content-wrap.cw03 .checkbox {
+    width: 196px;
+  }
+  main.join .input-wrap .content-wrap.cw03 .checkbox.sub {
+    width: 232px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main.join .input-wrap .content-wrap.cw03 .checkbox.sub input[type=text] {
+    height: 36px;
+  }
+  main.join .input-wrap .content-wrap.cw04 {
+    padding: 20px 0 0;
+    border-top: 1px solid #666666;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+  main.join .input-wrap .content-wrap.cw04 .area-sel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  main.join .input-wrap .content-wrap.cw04 .area-sel span {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+  }
+  main.join .input-wrap .content-wrap.cw04 .area-sel select {
+    width: 160px;
+  }
+  main.join .input-wrap .content-wrap dl {
+    flex-direction: column;
+  }
+  main.join .input-wrap .content-wrap dl:not(:first-child) {
+    margin-top: 15px;
+  }
+  main.join .input-wrap .content-wrap dl dt {
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+  }
+  main.join .input-wrap .content-wrap dl dd {
+    margin-top: 10px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  main.join .input-wrap .content-wrap dl dd .num-bar {
+    width: 6px;
+  }
+  main.join .input-wrap .content-wrap dl dd .input-info {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main.join .input-wrap .content-wrap dl dd .input-info .mo-br {
+    display: block;
+  }
+  main.join .input-wrap .content-wrap dl dd .add-txt {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main.join .input-wrap .content-wrap dl dd .add-btn {
+    width: 100%;
+  }
+  main.join .input-wrap .content-wrap dl dd .add-btn input[type=text] {
+    width: calc(100% - 88px);
+  }
+  main.join .input-wrap .content-wrap dl dd .type-l {
+    max-width: none;
+  }
+  main.join .input-wrap .content-wrap .work-wrap {
+    padding: 15px;
+  }
+  main.join .input-wrap .content-wrap .work-wrap .list-wrap {
+    margin-top: 20px;
+  }
+  main.join .input-wrap .content-wrap .work-wrap .list-wrap li + li {
+    margin-top: 10px;
   }
   main.join .step01-off-wrap {
     margin-top: 40px;
