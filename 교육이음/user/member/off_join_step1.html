@@ -16,7 +16,7 @@
 	<meta property="og:image:height" content="270" />
 	<meta property="og:title" content="" />
 	<meta property="og:description" content="" />
-	<title>교육이음센터</title>
+	<title>교육이음센터&gt;회원가입 본인인증</title>
 	<!-- css -->
 	<link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
@@ -37,7 +37,7 @@
 
 		<main id="contents" class="join">
 			<div class="w-set">
-				<h2 class="tit">회원가입</h2>
+				<h2 class="tit">회원인증</h2>
 				<div class="join-top">
 					<div class="info-box">
 						<div class="info">
@@ -46,55 +46,49 @@
 						</div>
 					</div>
 					<ul class="step-list">
-						<li>
+						<li class="on">
 							<span class="num">Step 01</span>
-							<span class="txt">약관동의</span>
-						</li>
-						<li class="line"></li>
-						<li>
-							<span class="num">Step 02</span>
 							<span class="txt">본인인증</span>
 						</li>
 						<li class="line"></li>
 						<li>
-							<span class="num">Step 03</span>
-							<span class="txt">정보입력</span>
+							<span class="num">Step 02</span>
+							<span class="txt">계좌인증</span>
 						</li>
 						<li class="line"></li>
-						<li class="on">
-							<span class="num">Step 04</span>
+						<li>
+							<span class="num">Step 03</span>
 							<span class="txt">가입완료</span>
 						</li>
 					</ul>
 				</div>
-				<div class="step04-wrap common-wrap">
-					<div class="fin-wrap">
-						<i></i>
-						<div class="main-txt">
-							<p>회원가입 신청이 <br class="mo-br">정상적으로 완료 되었습니다.</p>
-							<span>로그인 하시면 <br class="mo-br">정상적인 서비스 이용이 가능합니다.</span>
-						</div>
-						<div class="member-txt">
-							<ul class="info-wrap">
-								<li class="info-list">
-									<p>아 이 디</p>
-									<strong>sazita00</strong>
-								</li>
-								<li class="info-list">
-									<p>신청일자</p>
-									<strong>2024.05.05</strong>
-								</li>
-							</ul>
-						</div>
-						<div class="bottom-txt">
-							<span class="txt-im">가입하신 회원 정보의 내용을 토대로 내부 검토 후 <br class="mo-br">승인 여부를 알려드립니다.</span>
-							<span>최대 24시간이 소요되며, <br class="mo-br">승인 시 승인 안내 내용이 알림톡으로 발송됩니다.</span>
-							<span>회원가입신청 관련 문의는 000@00000로 <br class="mo-br">부탁드립니다.</span>
-						</div>
-					</div>
-				</div>
-				<div class="btn-area">
-					<a href="#" class="btn color_5">메인페이지 이동</a>
+				<div class="step01-off-wrap common-wrap">
+					<ul class="certi-wrap">
+						<li class="certi-list certi-phone">
+							<i></i>
+							<div class="txt-box">
+								<p class="title">휴대폰 인증</p>
+								<span class="content">
+									본인명의로 등록된 휴대폰번호만 인증이 가능합니다. <br>
+									휴대폰인증 버튼 클릭 시 새 창이 열리며, <br>
+									해당 페이지에서 본인인증 확인을 하실 수 있습니다.
+								</span>
+								<button type="button">인증 하기</button>
+							</div>
+						</li>
+						<li class="certi-list certi-ipin">
+							<i></i>
+							<div class="txt-box">
+								<p class="title">I-PIN 인증</p>
+								<span class="content">
+									아이핀(I-PIN)은 인터넷상의 개인식별번호를 의미하여, <br>
+									대면확인이 어려운 인터넷에서 주민등록번호를 <br>
+									사용하지 않고도 확인할 수 있는 수단입니다.
+								</span>
+								<button type="button">인증 하기</button>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</main>
@@ -103,6 +97,44 @@
 	</div>
 
 	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			let certiList = document.querySelectorAll('.certi-list');
+
+			// certi-list 외의 요소 클릭 시 on클래스 제거
+			document.addEventListener('click', function(event){
+				if(!event.target.closest('.certi-list')){
+					certiList.forEach(function(item){
+						item.classList.remove('on')
+					})
+				}
+			})
+
+			certiList.forEach(function(item){
+				// 클릭 시
+				item.addEventListener('click', function(){
+					updateClasses(item);
+				});
+				let button = item.querySelector('button');
+				if(button){
+					// 버튼 focus시
+					button.addEventListener('focus', function(){
+						updateClasses(item);
+					});
+					// 버튼 focus 없어질 시 on 클래스 제거
+					button.addEventListener('blur', function(){
+						item.classList.remove('on');
+					})
+				}
+			});
+
+			function updateClasses(clickedItem){
+				certiList.forEach(function(el){
+					el.classList.remove('on');
+				});
+
+				clickedItem.classList.add('on');
+			}
+		})
 	</script>
 </body>
 </html>

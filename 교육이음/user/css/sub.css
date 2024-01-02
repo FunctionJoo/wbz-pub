@@ -334,6 +334,9 @@ h3.tit {
   align-items: center;
   max-width: 683px;
 }
+.join .join-top .step-list.off-list {
+  max-width: 491px;
+}
 .join .join-top .step-list li.on .txt, .join .join-top .step-list li.on .info-box .be, .info-box .join .join-top .step-list li.on .be {
   color: #459729;
 }
@@ -498,8 +501,15 @@ h3.tit {
   margin-top: 10px;
 }
 .join .step04-wrap {
-  margin-top: 40px;
-  border-top: 2px solid #707070;
+  margin-top: 45px;
+  border-top: 2px solid #666;
+}
+.join .step01-off-wrap {
+  margin-top: 60px;
+}
+.join .step03-off-wrap {
+  margin-top: 45px;
+  border-top: 2px solid #666;
 }
 .join .common-wrap .certi-wrap {
   display: flex;
@@ -606,6 +616,7 @@ h3.tit {
   margin-top: 10px;
   font-size: 16px;
   line-height: 24px;
+  display: inline-block;
 }
 .join .common-wrap .fin-wrap .member-txt {
   margin: 30px auto 0;
@@ -671,6 +682,9 @@ h3.tit {
   .join .join-top .step-list {
     margin: 27px auto 0;
   }
+  .join .join-top .step-list.off-list {
+    padding: 0 30px;
+  }
   .join .join-top .step-list li.line {
     width: 16px;
     background-size: 26px;
@@ -714,6 +728,9 @@ h3.tit {
   .join .step02-wrap {
     margin-top: 40px;
   }
+  .join .step01-off-wrap {
+    margin-top: 40px;
+  }
   .join .common-wrap .info-txt {
     margin-top: 30px;
   }
@@ -728,7 +745,6 @@ h3.tit {
   }
   .join .common-wrap .fin-wrap .main-txt span {
     margin-top: 20px;
-    display: inline-block;
   }
   .join .common-wrap .fin-wrap .member-txt {
     width: 100%;
