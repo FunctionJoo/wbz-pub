@@ -440,85 +440,6 @@ h3.tit {
     }
     .step02-wrap{
         margin-top: 80px;
-        .certi-wrap{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .certi-list{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 30px 0;
-                width: 585px;
-                border: 1px solid #707070;
-                border-radius: 10px;
-                &.on{
-                    outline: 1px solid #78B53A;;
-                    border: 1px solid #78B53A;
-                }
-                &.certi-phone{
-                    gap: 25px;
-                    i{
-                        background-image: url(../images/common/ico/certi_phone.svg);
-
-                    }
-                }
-                &.certi-ipin{
-                    gap: 35px;
-                    i{
-                        background-image: url(../images/common/ico/certi_ipin.svg);
-                    }
-                }
-                i{
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    display: inline-block;
-                    width: 111px;
-                    height: 111px;
-                }
-                .txt-box{
-                    .title{
-                        font-size: 20px;
-                        line-height: 29px;
-                        font-weight: 500;
-                    }
-                    .content{
-                        margin-top: 15px;
-                        font-size: 15px;
-                        line-height: 22px;
-                        display: inline-block;
-                    }
-                    button{
-                        margin-top: 15px;
-                        display: block;
-                        font-size: 15px;
-                        line-height: 22px;
-                        color: #fff;
-                        width: 140px;
-                        height: 40px;
-                        background-color: #459729;
-                        border-radius: 3px;
-                    }
-                }
-            }
-        }
-        .info-txt{
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #F9F9F9;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            li{
-                font-size: 14px;
-                line-height: 20px;
-                &::before{
-                    content: "·";
-                    margin-right: 4px;
-                }
-            }
-        }
     }
     .step03-wrap{
         margin-top: 40px;
@@ -606,6 +527,87 @@ h3.tit {
     .step04-wrap{
         margin-top: 40px;
         border-top: 2px solid #707070;
+    }
+    .common-wrap{
+        .certi-wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .certi-list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 0;
+                width: 585px;
+                border: 1px solid #707070;
+                border-radius: 10px;
+                &.on{
+                    outline: 1px solid #78B53A;;
+                    border: 1px solid #78B53A;
+                }
+                &.certi-phone{
+                    gap: 25px;
+                    i{
+                        background-image: url(../images/common/ico/certi_phone.svg);
+
+                    }
+                }
+                &.certi-ipin{
+                    gap: 35px;
+                    i{
+                        background-image: url(../images/common/ico/certi_ipin.svg);
+                    }
+                }
+                i{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: inline-block;
+                    width: 111px;
+                    height: 111px;
+                }
+                .txt-box{
+                    .title{
+                        font-size: 20px;
+                        line-height: 29px;
+                        font-weight: 500;
+                    }
+                    .content{
+                        margin-top: 15px;
+                        font-size: 15px;
+                        line-height: 22px;
+                        display: inline-block;
+                    }
+                    button{
+                        margin-top: 15px;
+                        display: block;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #fff;
+                        width: 140px;
+                        height: 40px;
+                        background-color: #459729;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+        .info-txt{
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #F9F9F9;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                font-size: 14px;
+                line-height: 20px;
+                &::before{
+                    content: "·";
+                    margin-right: 4px;
+                }
+            }
+        }
         .mo-br{
             display: none;
         }
@@ -635,7 +637,7 @@ h3.tit {
                     line-height: 24px;
                 }
             }
-            .info-txt{
+            .member-txt{
                 margin: 30px auto 0;
                 background-color: #F9F9F9;
                 padding: 30px 0;

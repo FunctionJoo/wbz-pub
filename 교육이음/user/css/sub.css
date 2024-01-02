@@ -418,82 +418,6 @@ h3.tit {
 .join .step02-wrap {
   margin-top: 80px;
 }
-.join .step02-wrap .certi-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.join .step02-wrap .certi-wrap .certi-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0;
-  width: 585px;
-  border: 1px solid #707070;
-  border-radius: 10px;
-}
-.join .step02-wrap .certi-wrap .certi-list.on {
-  outline: 1px solid #78B53A;
-  border: 1px solid #78B53A;
-}
-.join .step02-wrap .certi-wrap .certi-list.certi-phone {
-  gap: 25px;
-}
-.join .step02-wrap .certi-wrap .certi-list.certi-phone i {
-  background-image: url(../images/common/ico/certi_phone.svg);
-}
-.join .step02-wrap .certi-wrap .certi-list.certi-ipin {
-  gap: 35px;
-}
-.join .step02-wrap .certi-wrap .certi-list.certi-ipin i {
-  background-image: url(../images/common/ico/certi_ipin.svg);
-}
-.join .step02-wrap .certi-wrap .certi-list i {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 111px;
-  height: 111px;
-}
-.join .step02-wrap .certi-wrap .certi-list .txt-box .title {
-  font-size: 20px;
-  line-height: 29px;
-  font-weight: 500;
-}
-.join .step02-wrap .certi-wrap .certi-list .txt-box .content {
-  margin-top: 15px;
-  font-size: 15px;
-  line-height: 22px;
-  display: inline-block;
-}
-.join .step02-wrap .certi-wrap .certi-list .txt-box button {
-  margin-top: 15px;
-  display: block;
-  font-size: 15px;
-  line-height: 22px;
-  color: #fff;
-  width: 140px;
-  height: 40px;
-  background-color: #459729;
-  border-radius: 3px;
-}
-.join .step02-wrap .info-txt {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #F9F9F9;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.join .step02-wrap .info-txt li {
-  font-size: 14px;
-  line-height: 20px;
-}
-.join .step02-wrap .info-txt li::before {
-  content: "·";
-  margin-right: 4px;
-}
 .join .step03-wrap {
   margin-top: 40px;
 }
@@ -577,13 +501,89 @@ h3.tit {
   margin-top: 40px;
   border-top: 2px solid #707070;
 }
-.join .step04-wrap .mo-br {
+.join .common-wrap .certi-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join .common-wrap .certi-wrap .certi-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  width: 585px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+}
+.join .common-wrap .certi-wrap .certi-list.on {
+  outline: 1px solid #78B53A;
+  border: 1px solid #78B53A;
+}
+.join .common-wrap .certi-wrap .certi-list.certi-phone {
+  gap: 25px;
+}
+.join .common-wrap .certi-wrap .certi-list.certi-phone i {
+  background-image: url(../images/common/ico/certi_phone.svg);
+}
+.join .common-wrap .certi-wrap .certi-list.certi-ipin {
+  gap: 35px;
+}
+.join .common-wrap .certi-wrap .certi-list.certi-ipin i {
+  background-image: url(../images/common/ico/certi_ipin.svg);
+}
+.join .common-wrap .certi-wrap .certi-list i {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 111px;
+  height: 111px;
+}
+.join .common-wrap .certi-wrap .certi-list .txt-box .title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+.join .common-wrap .certi-wrap .certi-list .txt-box .content {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 22px;
+  display: inline-block;
+}
+.join .common-wrap .certi-wrap .certi-list .txt-box button {
+  margin-top: 15px;
+  display: block;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  background-color: #459729;
+  border-radius: 3px;
+}
+.join .common-wrap .info-txt {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.join .common-wrap .info-txt li {
+  font-size: 14px;
+  line-height: 20px;
+}
+.join .common-wrap .info-txt li::before {
+  content: "·";
+  margin-right: 4px;
+}
+.join .common-wrap .mo-br {
   display: none;
 }
-.join .step04-wrap .fin-wrap {
+.join .common-wrap .fin-wrap {
   margin-top: 45px;
 }
-.join .step04-wrap .fin-wrap i {
+.join .common-wrap .fin-wrap i {
   background-image: url(../images/common/ico/join_fin_ico.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -593,52 +593,52 @@ h3.tit {
   height: 90px;
   margin: 0 auto;
 }
-.join .step04-wrap .fin-wrap .main-txt {
+.join .common-wrap .fin-wrap .main-txt {
   margin-top: 42px;
   text-align: center;
 }
-.join .step04-wrap .fin-wrap .main-txt p {
+.join .common-wrap .fin-wrap .main-txt p {
   font-size: 20px;
   line-height: 29px;
   font-weight: 500;
 }
-.join .step04-wrap .fin-wrap .main-txt span {
+.join .common-wrap .fin-wrap .main-txt span {
   margin-top: 10px;
   font-size: 16px;
   line-height: 24px;
 }
-.join .step04-wrap .fin-wrap .info-txt {
+.join .common-wrap .fin-wrap .member-txt {
   margin: 30px auto 0;
   background-color: #F9F9F9;
   padding: 30px 0;
   width: 380px;
 }
-.join .step04-wrap .fin-wrap .info-txt .info-wrap .info-list {
+.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list {
   display: flex;
   width: 187px;
   margin: 0 auto;
 }
-.join .step04-wrap .fin-wrap .info-txt .info-wrap .info-list:first-child {
+.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:first-child {
   gap: 46px;
 }
-.join .step04-wrap .fin-wrap .info-txt .info-wrap .info-list:first-child p {
+.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:first-child p {
   letter-spacing: 2px;
 }
-.join .step04-wrap .fin-wrap .info-txt .info-wrap .info-list:last-child {
+.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list:last-child {
   gap: 48px;
   margin-top: 10px;
 }
-.join .step04-wrap .fin-wrap .info-txt .info-wrap .info-list p {
+.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
-.join .step04-wrap .fin-wrap .info-txt .info-wrap .info-list strong {
+.join .common-wrap .fin-wrap .member-txt .info-wrap .info-list strong {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
-.join .step04-wrap .fin-wrap .bottom-txt {
+.join .common-wrap .fin-wrap .bottom-txt {
   margin-top: 22px;
   display: flex;
   flex-direction: column;
@@ -647,11 +647,11 @@ h3.tit {
   text-align: center;
   word-break: keep-all;
 }
-.join .step04-wrap .fin-wrap .bottom-txt span {
+.join .common-wrap .fin-wrap .bottom-txt span {
   font-size: 16px;
   line-height: 24px;
 }
-.join .step04-wrap .fin-wrap .bottom-txt span.txt-im {
+.join .common-wrap .fin-wrap .bottom-txt span.txt-im {
   color: #D43333;
 }
 .join .btn-area {
