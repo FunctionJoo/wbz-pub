@@ -185,6 +185,71 @@
             }
         }
     }
+
+    // 모바일 서브 헤더
+    .header-mobile{
+        border-bottom: 1px solid #D3D3D3;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 51px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        padding: 0 50px 0 40px;
+        .hd-center{
+            .title{
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .hd-left{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            .btn_back{
+                display: block;
+                width: 42px;
+                height: 100%;
+                font-size: 0;
+                background-image: url("../images/common/ico/btn_hd_back.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 8px 16px;
+            }
+        }
+        .hd-right{
+            // display: flex;
+            // align-items: center;
+            // position: absolute;
+            // right: 6px;
+            // top: 0;
+            // height: 100%;
+            // a{
+            //     display: block;
+            //     position: relative;
+            //     font-size: 0;
+            //     background: no-repeat center;
+            //     background-size: 20px;
+            //     width: 42px;
+            //     height: 100%;
+            //     &.btn_order{
+            //         background-image: url("../images/common/ico/btn_hd_order.png");
+            //         background-size: 22px;
+            //     }
+            //     &.btn_setting{
+            //         background-image: url("../images/common/ico/btn_hd_setting.svg");
+            //     }
+            //     &.btn_home{
+            //         background-image: url("../images/common/ico/btn_hd_home.svg");
+            //     }
+            // }
+        }
+    }
 }
 
 // aside
@@ -522,6 +587,9 @@
     // header
     #header {
         padding: 11px 16px 0;
+        &.sub{
+            padding: 0;
+        }
         .inner {
             height: auto;
             flex-wrap: wrap;

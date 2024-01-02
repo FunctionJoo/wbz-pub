@@ -1,1 +1,9 @@
 @import "./utility.scss";
+
+@include mobile {
+    main {
+        &.view{
+            padding-top: 51px;
+        }
+    }
+}

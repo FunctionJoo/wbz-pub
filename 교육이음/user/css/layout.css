@@ -165,7 +165,40 @@
 #header .hd-utils .link.notify i {
   background-image: url("../images/common/ico/hd_util_notify.svg");
 }
-
+#header .header-mobile {
+  border-bottom: 1px solid #D3D3D3;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0 50px 0 40px;
+}
+#header .header-mobile .hd-center .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+#header .header-mobile .hd-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+#header .header-mobile .hd-left .btn_back {
+  display: block;
+  width: 42px;
+  height: 100%;
+  font-size: 0;
+  background-image: url("../images/common/ico/btn_hd_back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 16px;
+}
 .aside-bg {
   display: none;
   position: fixed;
@@ -493,6 +526,9 @@
 @media (max-width: 1300px) {
   #header {
     padding: 11px 16px 0;
+  }
+  #header.sub {
+    padding: 0;
   }
   #header .inner {
     height: auto;
