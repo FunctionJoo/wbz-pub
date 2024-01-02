@@ -277,6 +277,7 @@ h3.tit {
         }
     }
     @media(max-width:1300px){
+    .member{
         padding: 40px 0 140px;
         .find-wrap{
             padding-top: 110px;
@@ -296,7 +297,7 @@ h3.tit {
     }
 }
 // 회원가입
-.join-wrap {
+.join {
     padding: 100px 0 120px;
     border-top: 1px solid #ddd;
     input{
@@ -460,7 +461,6 @@ h3.tit {
                     gap: 25px;
                     i{
                         background-image: url(../images/common/ico/certi_phone.svg);
-
                     }
                 }
                 &.certi-ipin{
