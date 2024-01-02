@@ -344,6 +344,9 @@ h3.tit {
             justify-content: space-between;
             align-items: center;
             max-width: 683px;
+            &.off-list{
+                max-width: 491px;
+            }
             li {
                 & + li {
                 }
@@ -525,8 +528,15 @@ h3.tit {
         }
     }
     .step04-wrap{
-        margin-top: 40px;
-        border-top: 2px solid #707070;
+        margin-top: 45px;
+        border-top: 2px solid #666;
+    }
+    .step01-off-wrap{
+        margin-top: 60px;
+    }
+    .step03-off-wrap{
+        margin-top: 45px;
+        border-top: 2px solid #666;
     }
     .common-wrap{
         .certi-wrap{
@@ -635,6 +645,7 @@ h3.tit {
                     margin-top: 10px;
                     font-size: 16px;
                     line-height: 24px;
+                    display: inline-block;
                 }
             }
             .member-txt{
@@ -702,6 +713,9 @@ h3.tit {
             padding: 30px 0 0;
             .step-list{
                 margin: 27px auto 0;
+                &.off-list{
+                    padding: 0 30px;
+                }
                 li{
                     &.line {
                         width: 16px;
@@ -755,11 +769,15 @@ h3.tit {
         }
         .step02-wrap{
             margin-top: 40px;
+           
+        }
+        .step01-off-wrap{
+            margin-top: 40px;
+        }
+        .common-wrap{
             .info-txt{
                 margin-top: 30px;
             }
-        }
-        .step04-wrap{
             .mo-br{
                 display: block;
             }
@@ -769,24 +787,26 @@ h3.tit {
                     margin-top: 40px;
                     span{
                         margin-top: 20px;
-                        display: inline-block;
                     }
                 }
-                .info-txt{
+                .member-txt{
                     width: 100%;
+                }
+                .bottom-txt{
+                    margin-top: 20px;
                 }
             }
         }
         .btn-area {
-            margin-top: 40px;
             .btn {
                 max-width: 140px;
                 font-size: 15px;
+                font-weight: 400;
             }
         }
     }
     @media(max-width:1450px){
-        .step02-wrap{
+        .common-wrap{
             .certi-wrap{
                 flex-direction: column;
                 justify-content: center;
