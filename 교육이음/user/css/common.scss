@@ -700,7 +700,7 @@ textarea:focus,
 }
 
 // 필수요소 표시
-.essential-el{
+.required{
 	&::after{
 		content: "*";
 		color: #459729;

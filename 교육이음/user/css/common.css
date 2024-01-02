@@ -661,7 +661,7 @@ textarea:focus,
     display: block !important;
   }
 }
-.essential-el::after {
+.required::after {
   content: "*";
   color: #459729;
 }
