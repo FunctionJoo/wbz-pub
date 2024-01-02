@@ -93,7 +93,7 @@ textarea:focus,
 		border: 1px solid $base-color1;
 		border-radius: 6px;
 		font-size: 16px;
-		padding: 0 20px;
+		padding: 0 14px;
 		select:focus,
 		&:focus {
 			border-color: $primary-color1;
@@ -102,12 +102,20 @@ textarea:focus,
 		&::placeholder {
 			color: $text-color3;
 		}
+		&.type-l {
+			width: 100%;
+			max-width: 490px;
+		}
+		&.type-s {
+			width: 100%;
+			max-width: 160px;
+		}
 	}
 	select {
 		padding-right: 34px;
 		width: 100%;
 		appearance: none;
-		background: #fff url("../images/common/ico/arrow.svg") no-repeat right 20px center;
+		background: #fff url("../images/common/ico/select_arrow_bk.svg") no-repeat right 20px center;
 		// &.on {
 		// 	background-image: url("../images/common/ico/arrow_on.svg");
 		// }
@@ -136,60 +144,88 @@ textarea:focus,
 			// color: $text-color5;
 		}
 	}
-	&.range {
-		font-size: 0;
-		text-align: left;
-		span {
-			display: inline-block;
-			vertical-align: top;
-			height: 40px;
-			line-height: 40px;
-			font-size: 16px;
-			padding: 0 9px;
-			color: $text-color1;
-		}
-		input {
-			position: relative;
-			display: inline-block;
-			background-repeat: no-repeat;
-			background-image: url(../images/common/ico_calendar.svg);
-			background-position: right 12px center;
-			background-size: 22px;
-		}
-	}
-	&.price {
-		@extend .range;
-		.input_box {
-			position: relative;
-			label {
-				// @include font(400, 12px, $text-color6);
-				position: absolute;
-				left: 10px;
-				top: 50%;
-				transform: translateY(-50%);
-				z-index: 10;
-			}
-			input {
-				padding-left: 36px !important;
-			}
-		}
-	}
-	.type-email {
-		display: flex;
-		align-items: center;
-		.at {
-			font-size: 16px;
-			margin: 0 8px;
-		}
-	}
+	// &.type-range {
+	// 	font-size: 0;
+	// 	text-align: left;
+	// 	span {
+	// 		display: inline-block;
+	// 		vertical-align: top;
+	// 		height: 40px;
+	// 		line-height: 40px;
+	// 		font-size: 16px;
+	// 		padding: 0 9px;
+	// 		color: $text-color1;
+	// 	}
+	// 	input {
+	// 		position: relative;
+	// 		display: inline-block;
+	// 		background-repeat: no-repeat;
+	// 		background-image: url(../images/common/ico_calendar.svg);
+	// 		background-position: right 12px center;
+	// 		background-size: 22px;
+	// 	}
+	// }
+	// &.type-price {
+	// 	@extend .range;
+	// 	.input_box {
+	// 		position: relative;
+	// 		label {
+	// 			// @include font(400, 12px, $text-color6);
+	// 			position: absolute;
+	// 			left: 10px;
+	// 			top: 50%;
+	// 			transform: translateY(-50%);
+	// 			z-index: 10;
+	// 		}
+	// 		input {
+	// 			padding-left: 36px !important;
+	// 		}
+	// 	}
+	// }
+	// .type-email {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	.at {
+	// 		font-size: 16px;
+	// 		margin: 0 8px;
+	// 	}
+	// }
 	.type-mobile {
 		display: flex;
 		align-items: center;
 		gap: 10px;
 		select {
-			flex: 0 0 auto;
-			width: 82px;
+			width: 110px;
 		}
+		input {
+			width: 120px;
+		}
+	}
+	.type-address {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		input {
+			width: 260px;
+			&.detail {
+				width: 360px;
+			}
+		}
+	}
+	.type-account {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		select {
+			width: 140px;
+		}
+		input {
+			width: 368px;
+		}
+	}
+	.type-col3{
+		display: flex;
+		gap: 10px;
 	}
 }
 
@@ -299,7 +335,7 @@ textarea:focus,
 		bottom: 0;
 	}
 }
-.del-btn{
+.del-btn {
 	display: inline-block;
 	height: 40px;
 	width: 80px;
@@ -309,15 +345,15 @@ textarea:focus,
 	border: 1px solid #459729;
 	border-radius: 3px;
 }
-.cert-btn{
+.cert-btn {
 	width: 102px;
 	height: 40px;
 	border: 1px solid #459729;
 	border-radius: 3px;
-	color:  #459729;
+	color: #459729;
 	font-size: 16px;
 	line-height: 24px;
-	@media(max-width:1300px){
+	@media (max-width: 1300px) {
 		width: 80px;
 		font-size: 15px;
 		line-height: 22px;
@@ -462,8 +498,8 @@ textarea:focus,
 		background-image: url("../images/common/ico/paging_next.svg");
 		margin-left: 10px;
 	}
-	@media(max-width:1300px){
-		a{
+	@media (max-width: 1300px) {
+		a {
 			width: 25px;
 			height: 25px;
 			line-height: 25px;
@@ -700,16 +736,16 @@ textarea:focus,
 }
 
 // 필수요소 표시
-.required{
-	&::after{
+.required {
+	&::after {
 		content: "*";
 		color: #459729;
 	}
 }
 
 // 라벨 hidden
-label{
-	&.hide{
+label {
+	&.hide {
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
@@ -718,22 +754,22 @@ label{
 	}
 }
 // 셀렉트 스타일
-.select-wrap{
-	border: 1px solid #D3D3D3;
+.select-wrap {
+	border: 1px solid #d3d3d3;
 	border-radius: 3px;
 	background-image: url(../images/common/ico/select_arrow_bk.svg);
 	background-size: 12px 7px;
 	background-repeat: no-repeat;
 	background-position: top 50% right 10px;
-	&.select01{
+	&.select01 {
 		width: 110px;
 		height: 40px;
 	}
-	&.select02{
+	&.select02 {
 		width: 140px;
 		height: 40px;
 	}
-	select{
+	select {
 		width: 100%;
 		height: 100%;
 		padding: 0 10px;
@@ -759,4 +795,3 @@ label{
 		}
 	}
 }
-

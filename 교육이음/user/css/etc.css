@@ -1,31 +1,64 @@
-#contents.join .step03-wrap dl {
+main.join .input-wrap input,
+main.join .input-wrap select {
+  height: 40px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+main.join .step03-wrap .tit-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #666666;
+  border-bottom: 1px solid #D3D3D3;
+  padding: 22px 0;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+}
+main.join .step03-wrap .tit-area .info {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-right: auto;
+}
+main.join .step03-wrap .tit-area .btn-info {
+  color: #459729;
+  font-size: 15px;
+  padding: 0 15px 0 33px;
+}
+main.join .step03-wrap dl {
   display: flex;
 }
-#contents.join .step03-wrap dl:not(:first-child) {
+main.join .step03-wrap dl:not(:first-child) {
   margin-top: 20px;
 }
-#contents.join .step03-wrap dl dt {
+main.join .step03-wrap dl dt {
   font-size: 18px;
   line-height: 40px;
   font-weight: 500;
   width: 161px;
 }
-#contents.join .step03-wrap dl dd {
+main.join .step03-wrap dl dd {
+  width: 100%;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#contents.join .step03-wrap dl dd .num-bar {
+main.join .step03-wrap dl dd .num-bar {
   width: 8px;
   height: 1px;
   display: inline-block;
   background-color: #707070;
 }
-#contents.join .step03-wrap dl dd .input-info {
+main.join .step03-wrap dl dd .input-info {
   font-size: 15px;
   line-height: 22px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
-#contents.join .step03-wrap dl dd .input-info .mo-br {
+main.join .step03-wrap dl dd .input-info .mo-br {
   display: none;
+}
+main.join .step03-wrap .list-wrap li + li {
+  margin-top: 10px;
 }

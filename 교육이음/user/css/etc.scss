@@ -1,36 +1,76 @@
 @import "./utility.scss";
 
-#contents {
+main {
     &.join {
+        .input-wrap {
+            
+            input,
+            select {
+                height: 40px;
+                border-radius: 3px;
+                font-size: 15px;
+            }
+        }
         .step03-wrap {
-            dl{
+            .tit-area{
                 display: flex;
-                &:not(:first-child){
+                justify-content: space-between;
+                align-items: center;
+                border-top: 2px solid #666666;
+                border-bottom: 1px solid #D3D3D3;
+                padding: 22px 0;
+                font-size: 20px;
+                line-height: 29px;
+                font-weight: 500;
+                .info{
+                    font-size: 15px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    margin-left: 10px;
+                    margin-right: auto;
+                }
+                .btn-info{
+                    color: $primary-color2;
+                    font-size: 15px;
+                    padding: 0 15px 0 33px;
+                }
+            }
+            dl {
+                display: flex;
+                &:not(:first-child) {
                     margin-top: 20px;
                 }
-                dt{
+                dt {
                     font-size: 18px;
                     line-height: 40px;
                     font-weight: 500;
                     width: 161px;
                 }
-                dd{
+                dd {
+                    width: 100%;
                     display: flex;
                     gap: 10px;
                     align-items: center;
-                    .num-bar{
+                    .num-bar {
                         width: 8px;
                         height: 1px;
                         display: inline-block;
                         background-color: #707070;
                     }
-                    .input-info{
+                    .input-info {
                         font-size: 15px;
                         line-height: 22px;
-                        color: #A7A7A7;
-                        .mo-br{
+                        color: #a7a7a7;
+                        .mo-br {
                             display: none;
                         }
+                    }
+                }
+            }
+            .list-wrap{
+                li {
+                    & + li{
+                        margin-top: 10px;
                     }
                 }
             }
