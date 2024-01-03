@@ -53,6 +53,7 @@
   top: 0;
   width: 100%;
   opacity: 0;
+  display: none;
   padding-top: 17px;
   position: relative;
   z-index: 110;
@@ -60,6 +61,7 @@
 }
 #header .gnb-wrap .gnb .depth2.on {
   opacity: 1;
+  display: block;
 }
 #header .gnb-wrap .gnb .depth2 li a {
   display: block;
@@ -94,17 +96,18 @@
   padding-bottom: 8px;
 }
 #header .gnb-wrap .gnb-bg {
-  position: fixed;
-  left: 0;
+  opacity: 0;
+}
+#header .gnb-wrap .gnb-bg.on {
+  position: absolute;
+  left: -100vw;
   top: 85px;
-  width: 100%;
-  height: 0;
+  width: 200vw;
+  height: 334px;
+  opacity: 1;
   background-color: #fff;
   box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.0588235294);
   transition: all 0.35s;
-}
-#header .gnb-wrap .gnb-bg.on {
-  height: 334px;
   z-index: 100;
 }
 #header .hd-utils {
@@ -118,12 +121,12 @@
   width: 80px;
   height: 40px;
   line-height: 38px;
-  border: 1px solid #0A4BB4;
+  border: 1px solid #3090D6;
   border-radius: 6px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: #0A4BB4;
+  color: #3090D6;
 }
 #header .hd-utils .logout {
   padding: 0 14px;
@@ -219,9 +222,42 @@
   color: #555;
 }
 #header .hd-utils .hd_lang .pop_dropdown .pop_dropdown_btn:hover, #header .hd-utils .hd_lang .pop_dropdown .pop_dropdown_btn.on {
-  color: #0A4BB4;
+  color: #3090D6;
 }
-
+#header .header-mobile {
+  border-bottom: 1px solid #d3d3d3;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0 50px 0 40px;
+}
+#header .header-mobile .hd-center .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+#header .header-mobile .hd-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+#header .header-mobile .hd-left .btn_back {
+  display: block;
+  width: 42px;
+  height: 100%;
+  font-size: 0;
+  background-image: url("../images/common/ico/btn_hd_back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 16px;
+}
 .aside-bg {
   display: none;
   position: fixed;
@@ -457,112 +493,31 @@
   top: 9px;
 }
 
-#footer .ft-top {
-  background: #eeeeee;
+#footer {
+  background: #222227;
+  padding: 32px 0 46px;
 }
-#footer .ft-top .w-set {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#footer .ft-logo {
+  width: 154px;
+  height: 27px;
 }
-#footer .ft-top .ft-link a {
-  font-size: 14px;
-}
-#footer .ft-top .ft-link a.policy {
-  font-weight: 500;
-}
-#footer .ft-top .ft-link a + a {
-  margin-left: 60px;
-  position: relative;
-}
-#footer .ft-top .ft-link a + a::after {
-  content: "";
+#footer .ft-logo .logo-link {
   display: inline-block;
-  width: 1px;
-  height: 10px;
-  background: #d3d3d3;
-  position: absolute;
-  left: -30px;
-  top: 5px;
-}
-#footer .ft-top .ft-family {
-  position: relative;
-  z-index: 200;
-  min-width: 200px;
-}
-#footer .ft-top .ft-family .select {
   width: 100%;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  background: #e1e1e1;
-  position: relative;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px 0 20px;
-}
-#footer .ft-top .ft-family .select.over {
-  z-index: 5;
-}
-#footer .ft-top .ft-family .select.over::after {
-  transform: scaleY(-1);
-}
-#footer .ft-top .ft-family .select::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  margin-top: -5px;
-  width: 13px;
-  height: 8px;
-  background: url("../images/common/ico/ft_arrow.png") no-repeat;
-  transition: all 0.35s;
-}
-#footer .ft-top .ft-family .list-wrap {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  display: none;
-}
-#footer .ft-top .ft-family .list-gap {
-  background: #fff;
-  border: 1px solid #d3d3d3;
-  border-radius: 0px 0px 6px 6px;
-}
-#footer .ft-top .ft-family .list-gap ul {
-  height: 100px;
-  padding: 5px 12px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-#footer .ft-top .ft-family .list-gap ul li a {
-  position: relative;
-  display: block;
-  padding: 5px 0 5px 7px;
-  font-size: 14px;
-}
-#footer .ft-top .ft-family .list-gap ul li a::after {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 2px;
-  background: #666;
-  position: absolute;
-  left: 0;
-  top: 15px;
+  height: 100%;
+  background: url("../images/common/img/logo_ft.svg") no-repeat center;
+  background-size: 100% auto;
 }
 #footer .ft-btm {
-  padding: 30px 0 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 20px 0 0;
+  padding: 18px 0 0;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.2;
+  color: #999;
 }
-#footer .ft-btm br {
-  display: none;
+#footer .ft-btm .copyright {
+  padding-top: 36px;
 }
 
 .go-top {
@@ -599,25 +554,9 @@
 }
 
 @media (max-width: 1300px) {
-  #header {
-    padding: 11px 16px 0;
-  }
   #header .inner {
-    height: auto;
     flex-wrap: wrap;
     align-items: center;
-  }
-  #header .hd-logo {
-    width: 117px;
-    height: 39px;
-    margin-top: 0;
-  }
-  #header .hd-logo .logo-link {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url("../images/common/img/logo_header.png") no-repeat center;
-    background-size: 100% auto;
   }
   #header .gnb {
     order: 4;

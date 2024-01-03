@@ -39,6 +39,10 @@ textarea:focus,
 }
 
 /* ===== 공통 ===== */
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
 .w-set {
   max-width: 1300px;
   margin: 0 auto;
@@ -64,7 +68,7 @@ textarea:focus,
   border-radius: 3px;
   min-height: 160px;
   padding: 38px 0 0;
-  background: #f9f9f9 url("../images/common/img/empty_bg.svg") no-repeat center bottom;
+  background: #fff url("../images/common/img/empty_bg.svg") no-repeat center bottom;
 }
 .empty p {
   max-width: 560px;
@@ -107,7 +111,7 @@ textarea:focus,
 .input-wrap textarea:focus,
 .input-wrap select select:focus,
 .input-wrap select:focus {
-  border-color: #78b53a;
+  border-color: #024fc4;
   outline: none;
 }
 .input-wrap input[type=text]::placeholder,
@@ -118,7 +122,7 @@ textarea:focus,
 .input-wrap input[type=password]::placeholder,
 .input-wrap textarea::placeholder,
 .input-wrap select::placeholder {
-  color: #666;
+  color: #999;
 }
 .input-wrap select {
   padding-right: 34px;
@@ -231,7 +235,7 @@ textarea:focus,
 }
 .checkbox input:checked ~ label:before, .radiobox input:checked ~ label:before {
   border: 0 none;
-  background: #78b53a url("../images/common/ico/checkbox_on.svg");
+  background: #024fc4 url("../images/common/ico/checkbox_on.svg");
   background-size: 100% 100%;
 }
 .checkbox input[disabled] ~ label:before, .radiobox input[disabled] ~ label:before {
@@ -296,8 +300,8 @@ textarea:focus,
   width: 100%;
   height: 50px;
   line-height: 48px;
-  background: #459729;
-  border: 1px solid #459729;
+  background: #024fc4;
+  border: 1px solid #024fc4;
   border-radius: 6px;
   font-weight: 500;
   font-size: 16px;
@@ -306,7 +310,7 @@ textarea:focus,
 }
 .btn.color_2 {
   background: #fff;
-  color: #459729;
+  color: #024fc4;
 }
 .btn.color_3 {
   background-color: #fff;
@@ -386,23 +390,21 @@ textarea:focus,
   font-size: 0;
 }
 .paging a {
+  font-weight: 50;
   font-size: 14px;
-  font-family: "Inter", sans-serif !important;
   display: inline-block;
   vertical-align: middle;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
   text-align: center;
   background-color: #fff;
-  color: #222;
-  border: 1px solid #d3d3d3;
-  border-radius: 3px;
+  color: #666;
+  border-radius: 5px;
   margin: 0 5px;
 }
 .paging .on {
-  background-color: #666;
-  border-color: #666;
+  background-color: #3090D6;
   color: #fff;
 }
 .paging .move {
@@ -411,6 +413,7 @@ textarea:focus,
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0;
 }
 .paging .first {
   background-image: url("../images/common/ico/paging_first.svg");
@@ -505,14 +508,15 @@ textarea:focus,
   vertical-align: middle;
   width: 16px;
   height: 16px;
-  background: #3575d6;
-  border-radius: 50%;
+  background: #024fc4;
+  border-radius: 3px;
   text-align: center;
-  line-height: 16px;
+  line-height: 14px;
 }
 .new-ico:after {
   content: "N";
   display: block;
+  font-weight: 600;
   font-size: 10px;
   color: #fff;
 }

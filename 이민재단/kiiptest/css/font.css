@@ -3,6 +3,17 @@
 @font-face {
     font-family: 'Pretendard';
     font-style: normal;
+    font-weight: 200;
+    src: local(※),  url("../fonts/Pretendard-ExtraLight.woff2") format('woff2'),
+    url("../fonts/Pretendard-ExtraLight.woff") format('woff'),
+    url("../fonts/Pretendard-ExtraLight.eot") format('opentype'),
+    url("../fonts/Pretendard-ExtraLight.otf") format('opentype'),
+    url("../fonts/Pretendard-ExtraLight.ttf") format("truetype");
+}
+/* Light */
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
     font-weight: 300;
     src: local(※),  url("../fonts/Pretendard-Light.woff2") format('woff2'),
     url("../fonts/Pretendard-Light.woff") format('woff'),
@@ -110,4 +121,17 @@
     url("../fonts/Montserrat-Bold.eot") format('opentype'),
     url("../fonts/Montserrat-Bold.otf") format('opentype'),
     url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+/* GmarketSans (숫자 및 영문 일부) */
+/* Medium */
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(※),  url("../fonts/GmarketSansMedium.woff2") format('woff2'),
+    url("../fonts/GmarketSansMedium.woff") format('woff'),
+    url("../fonts/GmarketSansMedium.eot") format('opentype'),
+    url("../fonts/GmarketSansMedium.otf") format('opentype'),
+    url("../fonts/GmarketSansTTFMedium.ttf") format("truetype");
 }
