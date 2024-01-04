@@ -17,8 +17,7 @@
 	<script src="../js/main.js"></script>
 </head>
 <body>
-    <!-- #contract에 클래스 stamp_01 추가시 스템프 생성-->
-    <div id="contract" class="stamp_01">
+    <div id="contract">
         <div class="contract_hd">
             <div class="back_button">
                 <a href="#none"></a>
@@ -32,61 +31,118 @@
         </div>
         <div class="contract_con">
             <div class="contract_title">거 래 계 약 서</div>
-            <div class="contract_img_box">
-                <img src="../images/mypage/test_contract.jpg" alt="contract">
+            <div class="contract_box">
+                <p class="top_txt">매도인 <em>남궁민</em>(이하 '갑'이라 한다) 과 매수인 안은진(이하 '을'이라 한다)은 다음과 같이 온라인게임 아이템에 대한 매매계약을 체결한다.</p>
+                <p class="title">-다 음-</p>
+                <dl>
+                    <dt>제 1조 [목 적]</dt>
+                    <dd>'갑'은 '을' 에게 온라인게임 아이템을 매도할 것을 약정하고 '을'은 이것을 매수할 것을 약정한다.</dd>
+
+                    <dt>제 2조 [물품의 표시]</dt>
+                    <dd class="table_dt">
+                        <table>
+                            <colgroup>
+                                <col style="width: 132px;">
+                                <col style="width: 300px;">
+                                <col style="width: 132px;">
+                                <col style="width: 300px;">
+                            </colgroup>
+                            <tr>
+                                <th>온라인게임 이름</th>
+                                <td>리 니 지1</td>
+                                <th>아이템이름</th>
+                                <td>아덴</td>
+                            </tr>
+                            <tr>
+                                <th>온라인 서버명</th>
+                                <td>데스나이트</td>
+                                <th>아이템수량</th>
+                                <td>5,000만 아데나</td>
+                            </tr>
+                            <tr>
+                                <th>매도인 아이디</th>
+                                <td>abcdef1q</td>
+                                <th>아이템가격</th>
+                                <td>100만당 1,850원</td>
+                            </tr>
+                            <tr>
+                                <th>매수인 아이디</th>
+                                <td>ssugnwon1</td>
+                                <th>기 타</th>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </dd>
+
+                    <dt>제 3조 [물품의 대금 및 지급방]</dt>
+                    <dd>아이템의 판매금액은 <em>100만당 1,850원</em>으로 정하며 대금의 지급방법은 계약서를 작성하고 '갑'이 '을'에게 물품을 지급한 후로 정한다.</dd>
+                </dl>
             </div>
         </div>
-        <div class="input_box">
-            <div class="member_info first_mem">
-                <img class="stamp" src="../images/mypage/mypage_stamp.png" alt="stamp">
+        <div class="input_wrap">
+            <div class="member_info is_stamp01">
+                <!-- member_info에 is_stamp01 클래스 추가 시 도장 노출 -->
+                <i class="stamp stamp01"></i>
                 <div class="mem_title">갑</div>
-                <form action="">
-                    <div class="input_list">
-                        <label for="first_mem_name"><span>성</span><span>명</span></label>
-                        <input id="first_mem_name" type="text" placeholder="남궁민">
-                    </div>
-                    <div class="input_list">
-                        <label for="first_mem_id"><span>게임ID(이메일)</span></label>
-                        <input id="first_mem_id" type="text" placeholder="sazia@naver.com">
-                    </div>
-                    <div class="input_list">
-                        <label for="first_mem_birth"><span>생</span><span>년</span><span>월</span><span>일</span></label>
-                        <input id="first_mem_birth" type="text" placeholder="1985.12.22">
-                    </div>
-                    <div class="input_list">
-                        <label for="first_mem_contact"><span>연</span><span>락</span><span>처</span></label>
-                        <input id="first_mem_contact" type="text" placeholder="010-000-0000">
-                    </div>
-                    <div class="input_list">
-                        <label for="first_mem_address"><span>주</span><span>소</span></label>
-                        <input id="first_mem_address" type="text" placeholder="서울시 송파구 송파대로 167">
-                    </div>
-                </form>
+                <ul class="mem_info">
+                    <li class="info_list">
+                        <p>성 명</p>
+                        <div class="info_box">안은진</div>
+                    </li>
+                    <li class="info_list">
+                        <p>게임ID(이메일)</p>
+                        <div class="info_box">Kongkong12</div>
+                    </li>
+                    <li class="info_list">
+                        <p>생 년 월 일</p>
+                        <div class="info_box">2003.05.06</div>
+                    </li>
+                    <li class="info_list">
+                        <p>연 락 처</p>
+                        <div class="info_box">070-856-1111</div>
+                    </li>
+                    <li class="info_list">
+                        <p>주 소</p>
+                        <div class="info_box">서울시 송파구 송파대로 167</div>
+                    </li>
+                </ul>
             </div>
-            <div class="member_info second_mem">
-                <div class="mem_title">갑</div>
-                <div class="mem_info">
-                    <div class="input_list">
-                        <div class="label"><span>성</span><span>명</span></div>
-                        <div class="input">안은진</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>게임ID(이메일)</span></div>
-                        <div class="input">Kongkong12</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>생</span><span>년</span><span>월</span><span>일</span></div>
-                        <div class="input">2003.05.06</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>연</span><span>락</span><span>처</span></div>
-                        <div class="input">070-856-1111</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>주</span><span>소</span></div>
-                        <div class="input">서울시 송파구 송파대로 167</div>
-                    </div>
-                </div>
+            <div class="member_info">
+                <div class="mem_title">을</div>
+                <form action="" class="mem_info">
+                    <ul class="mem_info">
+                        <li class="info_list">
+                            <p>성 명</p>
+                            <div class="info_box">
+                                <input id="first_mem_name" type="text" placeholder="남궁민">
+                            </div>
+                        </li>
+                        <li class="info_list">
+                            <p>게임ID(이메일)</p>
+                            <div class="info_box">
+                                <input id="first_mem_name" type="text" placeholder="sazia@naver.com">
+                            </div>
+                        </li>
+                        <li class="info_list">
+                            <p>생 년 월 일</p>
+                            <div class="info_box">
+                                <input id="first_mem_name" type="text" placeholder="1985.12.22">
+                            </div>
+                        </li>
+                        <li class="info_list">
+                            <p>연 락 처</p>
+                            <div class="info_box">
+                                <input id="first_mem_name" type="text" placeholder="010-000-0000">
+                            </div>
+                        </li>
+                        <li class="info_list">
+                            <p>주 소</p>
+                            <div class="info_box">
+                                <input id="first_mem_name" type="text" placeholder="서울시 송파구 송파대로 167">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
             </div>
         </div>
         <div class="id_box">

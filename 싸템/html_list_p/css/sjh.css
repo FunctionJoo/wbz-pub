@@ -1163,11 +1163,6 @@
 #contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box input[type=text]:focus {
   outline: none;
 }
-#contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box input[type=text]::-moz-placeholder {
-  font-size: 13px;
-  line-height: 21px;
-  color: #A7A7A7;
-}
 #contets.buy_detail .main .main_top .top_con .con_list .con_box .buy_box .name_box .input_box input[type=text]::placeholder {
   font-size: 13px;
   line-height: 21px;
@@ -2216,11 +2211,6 @@ body #pop_apply .pop_box .pop_bottom #pop_text {
   padding: 20px;
   margin-bottom: 20px;
 }
-body #pop_apply .pop_box .pop_bottom #pop_text::-moz-placeholder {
-  font-size: 15px;
-  line-height: 22px;
-  color: #666666;
-}
 body #pop_apply .pop_box .pop_bottom #pop_text::placeholder {
   font-size: 15px;
   line-height: 22px;
@@ -3009,7 +2999,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     padding: 0;
   }
   #my_grade .my_grade_box {
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column;
     padding: 0;
@@ -8662,9 +8651,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   position: relative;
 }
 #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   position: relative;
   background-color: #A7A7A7;
   box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -8936,9 +8923,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     position: relative;
   }
   #mypage.item_for_sale .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     position: relative;
     background-color: #A7A7A7;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -9332,9 +9317,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   position: relative;
 }
 #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   position: relative;
   background-color: #A7A7A7;
   box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -9607,9 +9590,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     position: relative;
   }
   #mypage.item_for_purchase .my_cont .main .table_box .table_tr .mo_box .td.view_td .mo_right_box label input {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     position: relative;
     background-color: #A7A7A7;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -9815,11 +9796,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border: 1px solid #D3D3D3;
   border-radius: 1px;
   padding: 0 10px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
-}
-#mypage.items_for_sale_rewrite .my_cont .con_top .info_table .info_list .info_td .detail_input input::-moz-placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
@@ -10533,11 +10509,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border: 1px solid #D3D3D3;
   border-radius: 1px;
   padding: 0 10px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
-}
-#mypage.items_for_purchase_rewrite .my_cont .con_top .info_table .info_list .info_td .detail_input input::-moz-placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
@@ -11979,8 +11950,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 #mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   background: url(../images/mypage/input_date_icon.svg) no-repeat center;
   background-size: contain;
   width: 15px;
@@ -11989,8 +11959,7 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 }
 #mypage.mile_list .my_cont .main .period_sec .form_sec form .date_input_box input[type=date]::-webkit-inner-spin-button {
   display: none;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 #mypage.mile_list .my_cont .main .period_sec .form_sec form .option_input_box {
   display: flex;
@@ -13091,11 +13060,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border: 1px solid #D3D3D3;
   border-radius: 1px;
 }
-#mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
-}
 #mypage.ticket_preList .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
   font-size: 14px;
   line-height: 21px;
@@ -13323,11 +13287,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border: 1px solid #D3D3D3;
   border-radius: 1px;
 }
-#mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
-}
 #mypage.ticket_reAutoList .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
   font-size: 14px;
   line-height: 21px;
@@ -13536,11 +13495,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   padding: 0 10px;
   border: 1px solid #D3D3D3;
   border-radius: 1px;
-}
-#mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text]::-moz-placeholder {
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
 }
 #mypage.ticket_item_con_List .my_cont .main .con_box .con_top .search_con input[type=text]::placeholder {
   font-size: 14px;
@@ -14009,11 +13963,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border: 1px solid #D3D3D3;
   padding: 0 10px;
 }
-#mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input input[type=text]::-moz-placeholder {
-  color: #666666;
-  font-size: 14px;
-  line-height: 21px;
-}
 #mypage.change_info .my_cont .main .form_box form .form_list .form_info.bank_info .bank_input .account_number_input input[type=text]::placeholder {
   color: #666666;
   font-size: 14px;
@@ -14395,11 +14344,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   border: 1px solid #D3D3D3;
   padding: 0 10px;
   margin-bottom: 14px;
-  font-size: 15px;
-  line-height: 19px;
-  color: #666666;
-}
-#mypage.safe_authentication .my_cont .main .upload_box .file_box .file_name::-moz-placeholder {
   font-size: 15px;
   line-height: 19px;
   color: #666666;
@@ -14869,8 +14813,28 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   align-items: center;
   margin-bottom: 200px;
 }
-#contract.stamp_01 .input_box .member_info.first_mem .stamp {
+#contract .is_stamp01 .stamp01 {
   display: inline-block;
+}
+#contract .is_stamp02 .stamp02 {
+  display: inline-block;
+}
+#contract .is_stamp03 .stamp03 {
+  display: inline-block;
+}
+#contract .is_stamp04 .stamp04 {
+  display: inline-block;
+}
+#contract .stamp {
+  display: none;
+  position: absolute;
+  background-image: url(../images/mypage/mypage_stamp.png);
+  width: 78px;
+  height: 78px;
+}
+#contract .stamp.stamp01, #contract .stamp.stamp03, #contract .stamp.stamp04 {
+  top: -20px;
+  right: 20px;
 }
 #contract .contract_hd {
   background-color: #222222;
@@ -14879,6 +14843,21 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#contract .contract_hd.type_a {
+  position: relative;
+}
+#contract .contract_hd.type_a .page_title {
+  width: calc(100% - 200px);
+}
+#contract .contract_hd.type_a .page_title span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  line-height: 21px;
 }
 #contract .contract_hd .back_button {
   width: 70px;
@@ -14925,6 +14904,30 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   font-size: 18px;
   line-height: 21px;
 }
+#contract .contract_hd .safe_button button.is_step02 .step01 {
+  display: none;
+}
+#contract .contract_hd .safe_button button.is_step02 .step02 {
+  display: flex;
+}
+#contract .contract_hd .safe_button button span {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+#contract .contract_hd .safe_button button span.step02 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#contract .contract_hd .safe_button button span.pdf_load::before {
+  content: "";
+  display: block;
+  background: url(../images/mypage/mypage_pdf_icon.png) center no-repeat;
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
+}
 #contract .contract_con .contract_title {
   font-size: 40px;
   line-height: 40px;
@@ -14932,49 +14935,194 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   text-align: center;
   margin: 40px 0;
 }
-#contract .contract_con .contract_img_box {
+#contract .contract_con .contract_title.type_a {
+  margin-bottom: 125px;
+}
+#contract .contract_con .contract_box {
+  padding: 40px 90px;
+  font-size: 16px;
+  line-height: 24px;
+}
+#contract .contract_con .contract_box em {
+  text-decoration: underline;
+  font-weight: 400;
+}
+#contract .contract_con .contract_box .top_txt {
+  text-align: center;
+}
+#contract .contract_con .contract_box .title {
+  text-align: justify;
+  width: 84px;
+  margin: 0 auto;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  line-height: 5px;
+}
+#contract .contract_con .contract_box .title:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+#contract .contract_con .contract_box .title:before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+#contract .contract_con .contract_box dl dt {
+  margin-top: 20px;
+  font-weight: 500;
+}
+#contract .contract_con .contract_box dl dd {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+#contract .contract_con .contract_box dl dd.table_dt {
+  margin-top: 13px;
+}
+#contract .contract_con .contract_box dl dd table {
+  border: 1px solid #707070;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#contract .contract_con .contract_box dl dd table tr:not(:last-child) {
+  border-bottom: 1px solid #707070;
+}
+#contract .contract_con .contract_box dl dd table tr th {
+  font-weight: 400;
+}
+#contract .contract_con .contract_box dl dd table tr th, #contract .contract_con .contract_box dl dd table tr td {
+  padding: 4px 0;
+  text-align: center;
+}
+#contract .contract_con .contract_box dl dd table tr :not(:last-child) {
+  border-right: 1px solid #707070;
+}
+#contract .contract_con .order_info {
+  flex-wrap: wrap;
+  border: 1px solid #D9D9D9;
+  border-width: 1px 1px 0 1px;
+  border-top: 2px solid #707070;
+}
+#contract .contract_con .order_info .info_wrap {
+  display: flex;
+}
+#contract .contract_con .order_info .info_wrap:not(:last-child) {
+  border-bottom: 1px solid #D9D9D9;
+}
+#contract .contract_con .order_info .info_wrap .info_list {
+  display: flex;
+  height: 46px;
+  width: 50%;
+}
+#contract .contract_con .order_info .info_wrap .info_list:not(:last-child) {
+  border-right: 1px solid #D9D9D9;
+}
+#contract .contract_con .order_info .info_wrap .info_list p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+}
+#contract .contract_con .order_info .info_wrap .info_list .info_tit {
+  width: 160px;
+  flex: 0 0 auto;
+  border-right: 1px solid #D9D9D9;
+}
+#contract .contract_con .order_info .info_wrap .info_list .info_con {
+  width: 100%;
+}
+#contract .contract_con .order_info .info_wrap .info_list .info_con.mini {
+  width: 191px;
+}
+#contract .contract_con .order_info .info_wrap .info_list .info_con.mini:not(:last-child) {
+  border-right: 1px solid #D9D9D9;
+}
+#contract .contract_con .order_info .txt_wrap {
+  border-bottom: 1px solid #D9D9D9;
+  padding: 16px 39px;
+  font-size: 16px;
+  line-height: 24px;
+}
+#contract .contract_con .contract_box {
   width: 1080px;
   height: 452px;
   overflow-y: auto;
   border: 1px solid #D9D9D9;
   margin-bottom: 109px;
 }
-#contract .contract_con .contract_img_box::-webkit-scrollbar {
+#contract .contract_con .contract_box::-webkit-scrollbar {
   background-color: transparent;
   width: 20px;
 }
-#contract .contract_con .contract_img_box::-webkit-scrollbar-thumb {
+#contract .contract_con .contract_box::-webkit-scrollbar-thumb {
   background-color: #EEEEEE;
   border-radius: 30px;
   background-clip: padding-box;
   border: 5px solid transparent;
 }
-#contract .contract_con .contract_img_box img {
-  width: 100%;
-}
-#contract .input_box {
+#contract .input_wrap {
   width: 1080px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
 }
-#contract .input_box .member_info {
+#contract .input_wrap .member_info {
   border-top: 2px solid #707070;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#contract .input_box .member_info.first_mem {
   position: relative;
+  height: 230px;
 }
-#contract .input_box .member_info.first_mem .stamp {
-  display: none;
-  position: absolute;
-  top: -20px;
-  right: 20px;
+#contract .input_wrap .member_info .mem_info {
+  height: 100%;
 }
-#contract .input_box .member_info.second_mem .mem_title {
+#contract .input_wrap .member_info .mem_info .info_list {
+  display: flex;
+  height: 20%;
+}
+#contract .input_wrap .member_info .mem_info .info_list p {
+  width: 140px;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 0 19px;
+  text-align: justify;
+}
+#contract .input_wrap .member_info .mem_info .info_list p:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+#contract .input_wrap .member_info .mem_info .info_list p:before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+#contract .input_wrap .member_info .mem_info .info_list .info_box {
+  width: 330px;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222;
+  padding: 0 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#contract .input_wrap .member_info .mem_info .info_list .info_box input[type=text] {
+  width: 100%;
+  height: calc(100% - 12px);
+  border: 1px solid #a7a7a7;
+  color: #222;
+  border-radius: 3px;
+  padding: 0 6px;
+}
+#contract .input_wrap .member_info .mem_title {
   font-size: 18px;
   line-height: 46px;
   color: #000;
@@ -14982,80 +15130,8 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: center;
   align-items: center;
   background-color: #F2F3F7;
-  height: 230px;
   width: 60px;
-}
-#contract .input_box .member_info.second_mem .mem_info .input_list {
-  display: flex;
-}
-#contract .input_box .member_info.second_mem .mem_info .input_list .label {
-  padding: 13px 19px;
-  width: 140px;
-  display: flex;
-  justify-content: space-between;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
-}
-#contract .input_box .member_info.second_mem .mem_info .input_list .label span {
-  font-size: 16px;
-  line-height: 19px;
-}
-#contract .input_box .member_info.second_mem .mem_info .input_list .input {
-  width: 330px;
-  padding: 13px 10px;
-  border: none;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
-  font-size: 16px;
-  line-height: 19px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222;
-}
-#contract .input_box .member_info .mem_title {
-  font-size: 18px;
-  line-height: 46px;
-  color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F2F3F7;
-  height: 230px;
-  width: 60px;
-}
-#contract .input_box .member_info form .input_list {
-  display: flex;
-}
-#contract .input_box .member_info form .input_list label {
-  padding: 13px 19px;
-  width: 140px;
-  display: flex;
-  justify-content: space-between;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
-}
-#contract .input_box .member_info form .input_list label span {
-  font-size: 16px;
-  line-height: 19px;
-}
-#contract .input_box .member_info form .input_list input[type=text] {
-  width: 330px;
-  padding: 13px 10px;
-  border: none;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
-  font-size: 16px;
-  line-height: 19px;
-}
-#contract .input_box .member_info form .input_list input[type=text]::-moz-placeholder {
-  font-size: 16px;
-  line-height: 19px;
-  color: #222;
-}
-#contract .input_box .member_info form .input_list input[type=text]::placeholder {
-  font-size: 16px;
-  line-height: 19px;
-  color: #222;
+  height: 100%;
 }
 #contract .id_box .upload_title {
   font-size: 20px;
@@ -15072,8 +15148,18 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
   justify-content: space-between;
   align-items: center;
 }
+#contract .id_box .upload_box.after_load {
+  justify-content: center;
+  padding: 0;
+}
 #contract .id_box .upload_box .img_box {
   width: 381px;
+  height: 240px;
+}
+#contract .id_box .upload_box .img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cove;
 }
 #contract .id_box .upload_box .upload_input {
   display: flex;
@@ -15099,251 +15185,6 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
 #contract .id_box .upload_box .upload_input .info_txt {
   font-size: 16px;
   line-height: 19px;
-}
-
-#contract_detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 200px;
-}
-#contract_detail.stamp_01 .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.stamp_img_td img {
-  display: inline-block;
-}
-#contract_detail.stamp_02 .input_box .member_info.first_mem .member_stamp {
-  display: inline-block;
-}
-#contract_detail.stamp_03 .input_box .member_info.second_mem .member_stamp {
-  display: inline-block;
-}
-#contract_detail.signed .contract_hd .safe_button .signed_message {
-  display: none;
-}
-#contract_detail.signed .contract_hd .safe_button button {
-  display: inline-block;
-}
-#contract_detail .contract_hd {
-  background-color: #222222;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-#contract_detail .contract_hd .page_title {
-  width: calc(100% - 200px);
-  height: 100%;
-  padding-top: 21px;
-  padding-bottom: 20px;
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-}
-#contract_detail .contract_hd .page_title span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 20px;
-  line-height: 21px;
-}
-#contract_detail .contract_hd .safe_button {
-  width: 200px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contract_detail .contract_hd .safe_button .signed_message {
-  color: #fff;
-  font-size: 18px;
-  line-height: 21px;
-}
-#contract_detail .contract_hd .safe_button button {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border: none;
-}
-#contract_detail .contract_hd .safe_button button span {
-  font-size: 18px;
-  line-height: 21px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contract_detail .contract_hd .safe_button button span::before {
-  content: "";
-  display: block;
-  background: url(../images/mypage/mypage_pdf_icon.png) center no-repeat;
-  width: 26px;
-  height: 26px;
-  margin-right: 6px;
-}
-#contract_detail .contract_con .contract_title {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 500;
-  text-align: center;
-  margin: 40px 0;
-}
-#contract_detail .contract_con .trans_info .table_box {
-  border-top: 2px solid #707070;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
-  width: 1080px;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line {
-  display: flex;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td {
-  width: calc((100% - 160px) / 2);
-}
-#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.first_td {
-  border-right: 1px solid #D9D9D9;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.stamp_img_td {
-  position: relative;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line.name_line .table_tr .table_td.stamp_img_td img {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#contract_detail .contract_con .trans_info .table_box .table_line.middle_line {
-  height: 80px;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 16px 30px;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line:not(:last-child) {
-  border-bottom: 1px solid #D9D9D9;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line .table_tr {
-  display: flex;
-  width: 50%;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line .table_tr:first-child {
-  border-right: 1px solid #D9D9D9;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line .table_tr .table_th {
-  font-size: 16px;
-  line-height: 19px;
-  width: 160px;
-  height: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #D9D9D9;
-}
-#contract_detail .contract_con .trans_info .table_box .table_line .table_tr .table_td {
-  font-size: 16px;
-  line-height: 19px;
-  width: calc(100% - 160px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contract_detail .contract_con .contract_img_box {
-  width: 1080px;
-  height: 452px;
-  overflow-y: auto;
-  border: 1px solid #D9D9D9;
-  margin-bottom: 99px;
-}
-#contract_detail .contract_con .contract_img_box::-webkit-scrollbar {
-  background-color: transparent;
-  width: 20px;
-}
-#contract_detail .contract_con .contract_img_box::-webkit-scrollbar-thumb {
-  background-color: #EEEEEE;
-  border-radius: 30px;
-  background-clip: padding-box;
-  border: 5px solid transparent;
-}
-#contract_detail .contract_con .contract_img_box img {
-  width: 100%;
-}
-#contract_detail .input_box {
-  width: 1080px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 70px;
-}
-#contract_detail .input_box .member_info {
-  border-top: 2px solid #707070;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-#contract_detail .input_box .member_info .member_stamp {
-  display: none;
-  position: absolute;
-  top: -20px;
-  right: 20px;
-}
-#contract_detail .input_box .member_info .mem_title {
-  font-size: 18px;
-  line-height: 46px;
-  color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F2F3F7;
-  height: 230px;
-  width: 60px;
-}
-#contract_detail .input_box .member_info .mem_info .input_list {
-  display: flex;
-}
-#contract_detail .input_box .member_info .mem_info .input_list .label {
-  padding: 13px 19px;
-  width: 140px;
-  display: flex;
-  justify-content: space-between;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
-}
-#contract_detail .input_box .member_info .mem_info .input_list .label span {
-  font-size: 16px;
-  line-height: 19px;
-}
-#contract_detail .input_box .member_info .mem_info .input_list .input {
-  width: 330px;
-  padding: 13px 10px;
-  border: none;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
-  font-size: 16px;
-  line-height: 19px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222;
-}
-#contract_detail .id_box .upload_title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 500;
-  margin-bottom: 12px;
-}
-#contract_detail .id_box .upload_box {
-  border: 1px solid #D9D9D9;
-  width: 1080px;
-  height: 320px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contract_detail .id_box .upload_box .img_box img {
-  width: 360px;
 }
 
 #mypage.my_interest .my_cont .pc_title {
@@ -15689,4 +15530,4 @@ body #pop_contract .pop_box .pop_bottom .button_box .yes_button {
     height: 10px;
     background: #D3D3D3;
   }
-}/*# sourceMappingURL=sjh.css.map */
+}

@@ -17,127 +17,181 @@
 	<script src="../js/main.js"></script>
 </head>
 <body>
-    <!-- #contract_detail에 class signed 추가 시 상단 pdf다운로드 버튼 생성 -->
-    <!-- #contract_detail에 class stamp_01, stamp_02, stamp_03 추가 시 각 위치의 스템프 생성 -->
-    <div id="contract_detail" class="stamp_01 stamp_02 stamp_03 signed">
-        <div class="contract_hd">
+    <div id="contract">
+        <div class="contract_hd type_a">
             <div class="page_title">
                 <span>전자매매계약서</span>
             </div>
             <div class="safe_button">
-                <span class="signed_message">구매자 서명 대기중</span>
-                <button type="button"><span>PDF 다운로드</span></button>
+                <button type="button" class="is_step02">
+                    <!-- button에 is_step02 클래스 추가 시 pdf다운로드 스타일 적용 -->
+                    <span class="step01">구매자 서명 대기중</span>
+                    <span class="step02 pdf_load">PDF 다운로드</span>
+                </button>
             </div>
         </div>
         <div class="contract_con">
-            <div class="contract_title">거 래 계 약 서</div>
-            <div class="trans_info">
-                <div class="table_box">
-                    <div class="table_line">
-                        <div class="table_tr">
-                            <div class="table_th">주문번호</div>
-                            <div class="table_td">12556453224565400</div>
-                        </div>
-                        <div class="table_tr">
-                            <div class="table_th">작성일자</div>
-                            <div class="table_td">2023-05-06 16:55:02</div>
-                        </div>
+            <div class="contract_title type_a">거 래 계 약 서</div>
+            <div class="order_info">
+                <div class="info_wrap">
+                    <div class="info_list">
+                        <p class="info_tit">주문번호</p>
+                        <p class="info_con">12556453224565400</p>
                     </div>
-                    <div class="table_line name_line">
-                        <div class="table_tr">
-                            <div class="table_th">작성자(서명)</div>
-                            <div class="table_td first_td">홍길동</div>
-                            <div class="table_td stamp_img_td">
-                                <img src="../images/mypage/mypage_stamp.png" alt="stamp">
-                            </div>
-                        </div>
-                        <div  class="table_tr">
-                            <div class="table_th">취득금액</div>
-                            <div class="table_td">10,000원</div>
-                        </div>
+                    <div class="info_list">
+                        <p class="info_tit">작성일자</p>
+                        <p class="info_con">2023-05-06 16:55:02</p>
                     </div>
-                    <div class="table_line middle_line">
-                        ‘갑’은 싸템 사이트에 물품을 등록하여 판매한것을 확인하고 보증한다<br> 
-                        ‘을’은 전자매매계약서의 내용이 구매 내용과 동일하다는 것을 확인 후 체크한다.
+                </div>
+                <div class="info_wrap">
+                    <div class="info_list is_stamp02">
+                        <!-- member_info에 is_stamp02 클래스 추가 시 도장 노출 -->
+                        <p class="info_tit">작성자(서명)</p>
+                        <p class="info_con mini">홍길동</p>
+                        <p class="info_con mini"><i class="stamp stamp02"></i></p>
                     </div>
-                    <div class="table_line">
-                        <div class="table_tr">
-                            <div class="table_th">입금 은행</div>
-                            <div class="table_td">국민</div>
-                        </div>
-                        <div class="table_tr">
-                            <div class="table_th">입금 계좌</div>
-                            <div class="table_td">4555555-01-0995465</div>
-                        </div>
+                    <div class="info_list">
+                        <p class="info_tit">취득금액</p>
+                        <p class="info_con">10,000원</p>
+                    </div>
+                </div>
+                <div class="txt_wrap">
+                    ‘갑’은 싸템 사이트에 물품을 등록하여 판매한것을 확인하고 보증한다 <br>
+                    ‘을’은 전자매매계약서의 내용이 구매 내용과 동일하다는 것을 확인 후 체크한다.
+                </div>
+                <div class="info_wrap">
+                    <div class="info_list">
+                        <p class="info_tit">입금 은행</p>
+                        <p class="info_con">국민</p>
+                    </div>
+                    <div class="info_list">
+                        <p class="info_tit">입금 계좌</p>
+                        <p class="info_con">4555555-01-0995465</p>
                     </div>
                 </div>
             </div>
-            <div class="contract_img_box">
-                <img src="../images/mypage/test_contract.jpg" alt="contract">
+            <div class="contract_box">
+                <p class="top_txt">매도인 <em>남궁민</em>(이하 '갑'이라 한다) 과 매수인 안은진(이하 '을'이라 한다)은 다음과 같이 온라인게임 아이템에 대한 매매계약을 체결한다.</p>
+                <p class="title">-다 음-</p>
+                <dl>
+                    <dt>제 1조 [목 적]</dt>
+                    <dd>'갑'은 '을' 에게 온라인게임 아이템을 매도할 것을 약정하고 '을'은 이것을 매수할 것을 약정한다.</dd>
+
+                    <dt>제 2조 [물품의 표시]</dt>
+                    <dd class="table_dt">
+                        <table>
+                            <colgroup>
+                                <col style="width: 132px;">
+                                <col style="width: 300px;">
+                                <col style="width: 132px;">
+                                <col style="width: 300px;">
+                            </colgroup>
+                            <tr>
+                                <th>온라인게임 이름</th>
+                                <td>리 니 지1</td>
+                                <th>아이템이름</th>
+                                <td>아덴</td>
+                            </tr>
+                            <tr>
+                                <th>온라인 서버명</th>
+                                <td>데스나이트</td>
+                                <th>아이템수량</th>
+                                <td>5,000만 아데나</td>
+                            </tr>
+                            <tr>
+                                <th>매도인 아이디</th>
+                                <td>abcdef1q</td>
+                                <th>아이템가격</th>
+                                <td>100만당 1,850원</td>
+                            </tr>
+                            <tr>
+                                <th>매수인 아이디</th>
+                                <td>ssugnwon1</td>
+                                <th>기 타</th>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </dd>
+
+                    <dt>제 3조 [물품의 대금 및 지급방]</dt>
+                    <dd>아이템의 판매금액은 <em>100만당 1,850원</em>으로 정하며 대금의 지급방법은 계약서를 작성하고 '갑'이 '을'에게 물품을 지급한 후로 정한다.</dd>
+                </dl>
             </div>
         </div>
-        <div class="input_box">
-            <div class="member_info first_mem">
-                <img class="member_stamp" src="../images/mypage/mypage_stamp.png" alt="stamp">
+        <div class="input_wrap">
+            <div class="member_info is_stamp03">
+                <!-- member_info에 is_stamp03 클래스 추가 시 도장 노출 -->
+                <i class="stamp stamp03"></i>
                 <div class="mem_title">갑</div>
-                <div class="mem_info first_mem">
-                    <div class="input_list">
-                        <div class="label"><span>성</span><span>명</span></div>
-                        <div class="input">안은진</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>게임ID(이메일)</span></div>
-                        <div class="input">Kongkong12</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>생</span><span>년</span><span>월</span><span>일</span></div>
-                        <div class="input">2003.05.06</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>연</span><span>락</span><span>처</span></div>
-                        <div class="input">070-856-1111</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>주</span><span>소</span></div>
-                        <div class="input">서울시 송파구 송파대로 167</div>
-                    </div>
-                </div>
+                <ul class="mem_info">
+                    <li class="info_list">
+                        <p>성 명</p>
+                        <div class="info_box">안은진</div>
+                    </li>
+                    <li class="info_list">
+                        <p>게임ID(이메일)</p>
+                        <div class="info_box">Kongkong12</div>
+                    </li>
+                    <li class="info_list">
+                        <p>생 년 월 일</p>
+                        <div class="info_box">2003.05.06</div>
+                    </li>
+                    <li class="info_list">
+                        <p>연 락 처</p>
+                        <div class="info_box">070-856-1111</div>
+                    </li>
+                    <li class="info_list">
+                        <p>주 소</p>
+                        <div class="info_box">서울시 송파구 송파대로 167</div>
+                    </li>
+                </ul>
             </div>
-            <div class="member_info second_mem">
-                <img class="member_stamp" src="../images/mypage/mypage_stamp.png" alt="stamp">
-                <div class="mem_title">갑</div>
-                <div class="mem_info">
-                    <div class="input_list">
-                        <div class="label"><span>성</span><span>명</span></div>
-                        <div class="input">안은진</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>게임ID(이메일)</span></div>
-                        <div class="input">Kongkong12</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>생</span><span>년</span><span>월</span><span>일</span></div>
-                        <div class="input">2003.05.06</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>연</span><span>락</span><span>처</span></div>
-                        <div class="input">070-856-1111</div>
-                    </div>
-                    <div class="input_list">
-                        <div class="label"><span>주</span><span>소</span></div>
-                        <div class="input">서울시 송파구 송파대로 167</div>
-                    </div>
-                </div>
+            <div class="member_info is_stamp04">
+                <!-- member_info에 is_stamp04 클래스 추가 시 도장 노출 -->
+                <i class="stamp stamp04"></i>
+                <div class="mem_title">을</div>
+                <ul class="mem_info">
+                    <li class="info_list">
+                        <p>성 명</p>
+                        <div class="info_box">남궁민</div>
+                    </li>
+                    <li class="info_list">
+                        <p>게임ID(이메일)</p>
+                        <div class="info_box">sazia@naver.com</div>
+                    </li>
+                    <li class="info_list">
+                        <p>생 년 월 일</p>
+                        <div class="info_box">1985.12.22</div>
+                    </li>
+                    <li class="info_list">
+                        <p>연 락 처</p>
+                        <div class="info_box">010-000-0000</div>
+                    </li>
+                    <li class="info_list">
+                        <p>주 소</p>
+                        <div class="info_box">서울시 송파구 송파대로 167</div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="id_box">
             <div class="upload_title">판매자 신분증인증</div>
-            <div class="upload_box">
-                <div class="img_box">
-                    <img id="id_img_box" src="../images/mypage/mypage_realID.svg" alt="id">
-                </div>
+            <div class="upload_box after_load">
+                <img id="id_img_box" src="../images/mypage/mypage_realID.svg" alt="id">
             </div>
         </div>
     </div>
+    <script>
+        const fileDOM = document.querySelector('#id_upload');
+        const previews = document.querySelector('#id_img_box');
+
+        fileDOM.addEventListener('change', () => {
+            const reader = new FileReader();
+            reader.onload = ({target}) => {
+                previews.src = event.target.result;
+            };
+            reader.readAsDataURL(fileDOM.files[0]);
+        });
+    </script>
 </body>
 </html>

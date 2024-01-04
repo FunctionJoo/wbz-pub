@@ -16939,15 +16939,35 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
-    &.stamp_01{
-        .input_box{
-            .member_info{
-                &.first_mem{
-                    .stamp{
-                        display: inline-block;
-                    }
-                }
-            }
+    .is_stamp01{
+        .stamp01{
+            display: inline-block;
+        }
+    }
+    .is_stamp02{
+        .stamp02{
+            display: inline-block;
+        }
+    }
+    .is_stamp03{
+        .stamp03{
+            display: inline-block;
+        }
+    }
+    .is_stamp04{
+        .stamp04{
+            display: inline-block;
+        }
+    }
+    .stamp{
+        display: none;
+        position: absolute;
+        background-image: url(../images/mypage/mypage_stamp.png);
+        width: 78px;
+        height: 78px;
+        &.stamp01, &.stamp03, &.stamp04{
+            top: -20px;
+            right: 20px;
         }
     }
     .contract_hd{
@@ -16957,6 +16977,21 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &.type_a{
+            position: relative;
+            .page_title{
+                width: calc(100% - 200px);
+                span{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                    font-size: 20px;
+                    line-height: 21px;
+                }
+            }
+        }
         .back_button{
             width: 70px;
             height: 70px;
@@ -17000,6 +17035,34 @@ body{
                 border: none;
                 font-size: 18px;
                 line-height: 21px;
+                &.is_step02{
+                    .step01{
+                        display: none;
+                    }
+                    .step02{
+                        display: flex;
+                    }
+                }
+                span{
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #fff;
+                    &.step02{
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &.pdf_load{
+                        &::before{
+                            content: "";
+                            display: block;
+                            background: url(../images/mypage/mypage_pdf_icon.png) center no-repeat;
+                            width: 26px;
+                            height: 26px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -17010,8 +17073,121 @@ body{
             font-weight: 500;
             text-align: center;
             margin: 40px 0;
+            &.type_a{
+                margin-bottom: 125px;
+            }
         }
-        .contract_img_box{
+        .contract_box{
+            padding: 40px 90px;
+            font-size: 16px;
+            line-height: 24px;
+            em{
+                text-decoration: underline;
+                font-weight: 400;
+            }
+            .top_txt{
+                text-align: center;
+            }
+            .title{
+                text-align: justify;
+                width: 84px;
+                margin: 0 auto;
+                letter-spacing: 5px;
+                margin-top: 30px;
+                line-height: 5px;
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                }
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+            dl{
+                dt{
+                    margin-top: 20px;
+                    font-weight: 500;
+                }
+                dd{
+                    margin-top: 4px;
+                    margin-left: 10px;
+                    &.table_dt{
+                        margin-top: 13px;
+                    }
+                    table{
+                        border: 1px solid #707070;
+                        border-collapse : collapse;
+                        border-spacing : 0;
+                        tr{
+                            &:not(:last-child){
+                                border-bottom: 1px solid #707070;
+                            }
+                            th{
+                                font-weight: 400;
+                            }
+                            th,td{
+                                padding: 4px 0;
+                                text-align: center;
+                            }
+                            :not(:last-child){
+                                border-right: 1px solid #707070;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .order_info{
+            flex-wrap: wrap;
+            border: 1px solid #D9D9D9;
+            border-width: 1px 1px 0 1px;
+            border-top: 2px solid #707070;
+            .info_wrap{
+                display: flex;
+                &:not(:last-child){
+                    border-bottom: 1px solid #D9D9D9;
+                }
+                .info_list{
+                    display: flex;
+                    height: 46px;
+                    width: 50%;
+                    &:not(:last-child){
+                        border-right: 1px solid #D9D9D9;
+                    }
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    .info_tit{
+                        width: 160px;
+                        flex: 0 0 auto;
+                        border-right: 1px solid #D9D9D9;
+                    }
+                    .info_con{
+                        width: 100%;
+                        &.mini{
+                            width: 191px;
+                            &:not(:last-child){
+                                border-right: 1px solid #D9D9D9;
+                            }
+                        }
+                    }
+                }
+            }
+            .txt_wrap{
+                border-bottom: 1px solid #D9D9D9;
+                padding: 16px 39px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .contract_box{
             width: 1080px;
             height: 452px;
             overflow-y: auto;
@@ -17027,12 +17203,9 @@ body{
                 background-clip: padding-box;
                 border: 5px solid transparent;
             }
-            img{
-                width: 100%;
-            }
         }
     }
-    .input_box{
+    .input_wrap{
         width: 1080px;
         display: flex;
         justify-content: space-between;
@@ -17043,53 +17216,50 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            &.first_mem{
-                position: relative;
-                .stamp{
-                    display: none;
-                    position: absolute;
-                    top: -20px;
-                    right: 20px;
-                }
-            }
-            &.second_mem{
-                .mem_title{
-                    font-size: 18px;
-                    line-height: 46px;
-                    color: #000;
+            position: relative;
+            height: 230px;
+            .mem_info{
+                height: 100%;
+                .info_list{
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #F2F3F7;
-                    height: 230px;
-                    width: 60px;
-                }
-                .mem_info{
-                    .input_list{
-                        display: flex;
-                        .label{
-                            padding: 13px 19px;
-                            width: 140px;
-                            display: flex;
-                            justify-content: space-between;
-                            border-right: 1px solid #D9D9D9;
-                            border-bottom: 1px solid #D9D9D9;
-                            span{
-                                font-size: 16px;
-                                line-height: 19px;
-                            }
+                    height: calc(100% / 5);
+                    p{
+                        width: 140px;
+                        border-right: 1px solid #D9D9D9;
+                        border-bottom: 1px solid #D9D9D9;
+                        font-size: 16px;
+                        line-height: 100%;
+                        padding: 0 19px;
+                        text-align: justify;
+                        &:after{
+                            content: "";
+                            display: inline-block;
+                            width: 100%;
                         }
-                        .input{
-                            width: 330px;
-                            padding: 13px 10px;
-                            border: none;
-                            border-right: 1px solid #D9D9D9;
-                            border-bottom: 1px solid #D9D9D9;
-                            font-size: 16px;
-                            line-height: 19px;
-                            font-size: 16px;
-                            line-height: 19px;
+                        &:before{
+                            content: "";
+                            display: inline-block;
+                            width: 100%;
+                        }
+                    }
+                    .info_box{
+                        width: 330px;
+                        border-right: 1px solid #D9D9D9;
+                        border-bottom: 1px solid #D9D9D9;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #222;
+                        padding: 0 10px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        input[type=text]{
+                            width: 100%;
+                            height: calc(100% - 12px);
+                            border: 1px solid #a7a7a7;
                             color: #222;
+                            border-radius: 3px;
+                            padding: 0 6px;
                         }
                     }
                 }
@@ -17102,39 +17272,8 @@ body{
                 justify-content: center;
                 align-items: center;
                 background-color: #F2F3F7;
-                height: 230px;
                 width: 60px;
-            }
-            form{
-                .input_list{
-                    display: flex;
-                    label{
-                        padding: 13px 19px;
-                        width: 140px;
-                        display: flex;
-                        justify-content: space-between;
-                        border-right: 1px solid #D9D9D9;
-                        border-bottom: 1px solid #D9D9D9;
-                        span{
-                            font-size: 16px;
-                            line-height: 19px;
-                        }
-                    }
-                    input[type=text]{
-                        width: 330px;
-                        padding: 13px 10px;
-                        border: none;
-                        border-right: 1px solid #D9D9D9;
-                        border-bottom: 1px solid #D9D9D9;
-                        font-size: 16px;
-                        line-height: 19px;
-                        &::placeholder{
-                            font-size: 16px;
-                            line-height: 19px;
-                            color: #222;
-                        }
-                    }
-                }
+                height: 100%;
             }
         }
     }
@@ -17153,8 +17292,18 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            &.after_load{
+                justify-content: center;
+                padding: 0;
+            }
             .img_box{
                 width: 381px;
+                height: 240px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cove;
+                }
             }
             .upload_input{
                 display: flex;
@@ -17179,305 +17328,6 @@ body{
                 .info_txt{
                     font-size: 16px;
                     line-height: 19px;
-                }
-            }
-        }
-    }
-}
-
-#contract_detail{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
-    &.stamp_01{
-        .contract_con{
-            .trans_info{
-                .table_box{
-                    .table_line{
-                        &.name_line{
-                            .table_tr{
-                                .table_td{
-                                    &.stamp_img_td{
-                                        img{
-                                            display: inline-block;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    &.stamp_02{
-        .input_box{
-            .member_info{
-                &.first_mem{
-                    .member_stamp{
-                        display: inline-block;
-                    }
-                }
-            }
-        }
-    }
-    &.stamp_03{
-        .input_box{
-            .member_info{
-                &.second_mem{
-                    .member_stamp{
-                        display: inline-block;
-                    }
-                }
-            }
-        }
-    }
-    &.signed{
-        .contract_hd{
-            .safe_button{
-                .signed_message{
-                    display: none;
-                }
-                button{
-                    display: inline-block;
-                }
-            }
-        }
-    }
-    .contract_hd{
-        background-color: #222222;
-        height: 70px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        .page_title{
-            width: calc(100% - 200px);
-            height: 100%;
-            padding-top: 21px;
-            padding-bottom: 20px;
-            border-right: 1px solid #fff;
-            border-left: 1px solid #fff;
-            span{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: #fff;
-                font-size: 20px;
-                line-height: 21px;
-            }
-        }
-        .safe_button{
-            width: 200px;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .signed_message{
-                color: #fff;
-                font-size: 18px;
-                line-height: 21px;
-            }
-            button{
-                display: none;
-                width: 100%;
-                height: 100%;
-                background-color:transparent;
-                border: none;
-                span{
-                    font-size: 18px;
-                    line-height: 21px;
-                    color: #fff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &::before{
-                        content: "";
-                        display: block;
-                        background: url(../images/mypage/mypage_pdf_icon.png) center no-repeat;
-                        width: 26px;
-                        height: 26px;
-                        margin-right: 6px;
-                    }
-                }
-            }
-        }
-    }
-    .contract_con{
-        .contract_title{
-            font-size: 40px;
-            line-height: 40px;
-            font-weight: 500;
-            text-align: center;
-            margin: 40px 0;
-        }
-        .trans_info{
-            .table_box{
-                border-top: 2px solid #707070;
-                border-left: 1px solid #D9D9D9;
-                border-right: 1px solid #D9D9D9;
-                width: 1080px;
-                .table_line{
-                    &.name_line{
-                        .table_tr{
-                            .table_td{
-                                width: calc((100% - 160px) / 2);
-                                &.first_td{
-                                    border-right: 1px solid #D9D9D9;
-                                }
-                                &.stamp_img_td{
-                                    position: relative;
-                                    img{
-                                        display: none;
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &.middle_line{
-                        height: 80px;
-                        font-size: 16px;
-                        line-height: 24px;
-                        padding: 16px 30px;
-                    }
-                    &:not(:last-child){
-                        border-bottom: 1px solid #D9D9D9;
-                    }
-                    display: flex;
-                    .table_tr{
-                        display: flex;
-                        width: calc(100% / 2);
-                        &:first-child{
-                            border-right: 1px solid #D9D9D9;
-                        }
-                        .table_th{
-                            font-size: 16px;
-                            line-height: 19px;
-                            width: 160px;
-                            height: 46px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-right: 1px solid #D9D9D9;
-                        }
-                        .table_td{
-                            font-size: 16px;
-                            line-height: 19px;
-                            width: calc(100% - 160px);
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                    }
-                }
-            }
-        }
-        .contract_img_box{
-            width: 1080px;
-            height: 452px;
-            overflow-y: auto;
-            border: 1px solid #D9D9D9;
-            margin-bottom: 99px;
-            &::-webkit-scrollbar{
-                background-color: transparent;
-                width: 20px;
-            }
-            &::-webkit-scrollbar-thumb{
-                background-color: #EEEEEE;
-                border-radius: 30px;
-                background-clip: padding-box;
-                border: 5px solid transparent;
-            }
-            img{
-                width: 100%;
-            }
-        }
-    }
-    .input_box{
-        width: 1080px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 70px;
-        .member_info{
-            border-top: 2px solid #707070; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            .member_stamp{
-                display: none;
-                position: absolute;
-                top: -20px;
-                right: 20px;
-            }
-            .mem_title{
-                font-size: 18px;
-                line-height: 46px;
-                color: #000;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #F2F3F7;
-                height: 230px;
-                width: 60px;
-            }
-            .mem_info{
-                .input_list{
-                    display: flex;
-                    .label{
-                        padding: 13px 19px;
-                        width: 140px;
-                        display: flex;
-                        justify-content: space-between;
-                        border-right: 1px solid #D9D9D9;
-                        border-bottom: 1px solid #D9D9D9;
-                        span{
-                            font-size: 16px;
-                            line-height: 19px;
-                        }
-                    }
-                    .input{
-                        width: 330px;
-                        padding: 13px 10px;
-                        border: none;
-                        border-right: 1px solid #D9D9D9;
-                        border-bottom: 1px solid #D9D9D9;
-                        font-size: 16px;
-                        line-height: 19px;
-                        font-size: 16px;
-                        line-height: 19px;
-                        color: #222;
-                    }
-                }
-            }
-        }
-    }
-    .id_box{
-        .upload_title{
-            font-size: 20px;
-            line-height: 24px;
-            font-weight: 500;
-            margin-bottom: 12px;
-        }
-        .upload_box{
-            border: 1px solid #D9D9D9;
-            width: 1080px;
-            height: 320px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .img_box{
-                img{
-                    width: 360px;
                 }
             }
         }
