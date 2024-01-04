@@ -121,12 +121,12 @@
   width: 80px;
   height: 40px;
   line-height: 38px;
-  border: 1px solid #3090D6;
+  border: 1px solid #3090d6;
   border-radius: 6px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: #3090D6;
+  color: #3090d6;
 }
 #header .hd-utils .logout {
   padding: 0 14px;
@@ -222,7 +222,7 @@
   color: #555;
 }
 #header .hd-utils .hd_lang .pop_dropdown .pop_dropdown_btn:hover, #header .hd-utils .hd_lang .pop_dropdown .pop_dropdown_btn.on {
-  color: #3090D6;
+  color: #3090d6;
 }
 #header .header-mobile {
   border-bottom: 1px solid #d3d3d3;
@@ -400,13 +400,13 @@
   overflow-x: auto;
 }
 #aside-menu .aside-body::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
   background: none;
 }
 #aside-menu .aside-body::-webkit-scrollbar-thumb {
-  width: 8px;
-  border-radius: 4px;
-  background: #d3d3d3;
+  width: 4px;
+  border-radius: 2px;
+  background: #e5e5e5;
 }
 #aside-menu .aside-body .aside-btn {
   margin: 0 -12px 10px;
@@ -515,6 +515,24 @@
   font-size: 14px;
   line-height: 1.2;
   color: #999;
+}
+#footer .ft-btm .ft-info {
+  padding-top: 12px;
+}
+#footer .ft-btm .ft-info .txt01 em {
+  color: #fff;
+}
+#footer .ft-btm .ft-info .txt01 span {
+  margin-left: 23px;
+}
+#footer .ft-btm .ft-info .txt02 {
+  padding-top: 12px;
+}
+#footer .ft-btm .ft-info .txt02 span {
+  margin-left: 14px;
+}
+#footer .ft-btm .ft-info .txt03 {
+  padding-top: 14px;
 }
 #footer .ft-btm .copyright {
   padding-top: 36px;

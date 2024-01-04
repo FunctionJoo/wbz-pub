@@ -233,6 +233,9 @@
   padding-top: 18px;
   border-top: 1px solid #ddd;
 }
+.main .main-cont .info-wrap .notice-area .notice-list li a {
+  display: block;
+}
 .main .main-cont .info-wrap .notice-area .notice-list li .tit {
   overflow: hidden;
   text-overflow: ellipsis;
