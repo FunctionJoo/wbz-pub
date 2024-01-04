@@ -56,12 +56,14 @@
                 top: 0;
                 width: 100%;
                 opacity: 0;
+                display: none;
                 padding-top: 17px;
                 position: relative;
                 z-index: 110;
                 transition: all 0.35s;
                 &.on {
                     opacity: 1;
+                    display: block;
                 }
                 li {
                     a {
@@ -109,16 +111,17 @@
             }
         }
         .gnb-bg {
-            position: fixed;
-            left: 0;
-            top: 85px;
-            width: 100%;
-            height: 0;
-            background-color: #fff;
-            box-shadow: 0px 5px 16px #0000000f;
-            transition: all 0.35s;
+            opacity: 0;
             &.on {
+                position: absolute;
+                left: -100vw;
+                top: 85px;
+                width: 200vw;
                 height: 334px;
+                opacity: 1;
+                background-color: #fff;
+                box-shadow: 0px 5px 16px #0000000f;
+                transition: all 0.35s;
                 z-index: 100;
             }
         }
@@ -231,11 +234,76 @@
                     font-size: 14px;
                     color: $text-color2;
                     &:hover,
-                    &.on{
+                    &.on {
                         color: $primary-color2;
                     }
                 }
             }
+        }
+    }
+
+    // 모바일 서브 헤더
+    .header-mobile {
+        border-bottom: 1px solid #d3d3d3;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 51px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        padding: 0 50px 0 40px;
+        .hd-center {
+            .title {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .hd-left {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            .btn_back {
+                display: block;
+                width: 42px;
+                height: 100%;
+                font-size: 0;
+                background-image: url("../images/common/ico/btn_hd_back.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 8px 16px;
+            }
+        }
+        .hd-right {
+            // display: flex;
+            // align-items: center;
+            // position: absolute;
+            // right: 6px;
+            // top: 0;
+            // height: 100%;
+            // a{
+            //     display: block;
+            //     position: relative;
+            //     font-size: 0;
+            //     background: no-repeat center;
+            //     background-size: 20px;
+            //     width: 42px;
+            //     height: 100%;
+            //     &.btn_order{
+            //         background-image: url("../images/common/ico/btn_hd_order.png");
+            //         background-size: 22px;
+            //     }
+            //     &.btn_setting{
+            //         background-image: url("../images/common/ico/btn_hd_setting.svg");
+            //     }
+            //     &.btn_home{
+            //         background-image: url("../images/common/ico/btn_hd_home.svg");
+            //     }
+            // }
         }
     }
 }
@@ -482,115 +550,28 @@
 
 // footer
 #footer {
-    .ft-top {
-        background: #eeeeee;
-        .w-set {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .ft-link {
-            a {
-                font-size: 14px;
-                &.policy {
-                    font-weight: 500;
-                }
-                & + a {
-                    margin-left: 60px;
-                    position: relative;
-                    &::after {
-                        content: "";
-                        display: inline-block;
-                        width: 1px;
-                        height: 10px;
-                        background: #d3d3d3;
-                        position: absolute;
-                        left: -30px;
-                        top: 5px;
-                    }
-                }
-            }
-        }
-        .ft-family {
-            position: relative;
-            z-index: 200;
-            min-width: 200px;
-            .select {
-                width: 100%;
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                display: block;
-                font-weight: 500;
-                font-size: 14px;
-                background: #e1e1e1;
-                position: relative;
-                height: 50px;
-                line-height: 50px;
-                padding: 0 30px 0 20px;
-                &.over {
-                    z-index: 5;
-                    &::after {
-                        transform: scaleY(-1);
-                    }
-                }
-                &::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    right: 20px;
-                    top: 50%;
-                    margin-top: -5px;
-                    width: 13px;
-                    height: 8px;
-                    background: url("../images/common/ico/ft_arrow.png") no-repeat;
-                    transition: all 0.35s;
-                }
-            }
-            .list-wrap {
-                position: absolute;
-                left: 0;
-                top: 100%;
-                width: 100%;
-                display: none;
-            }
-            .list-gap {
-                background: #fff;
-                border: 1px solid #d3d3d3;
-                border-radius: 0px 0px 6px 6px;
-                ul {
-                    height: 100px;
-                    padding: 5px 12px;
-                    overflow-y: scroll;
-                    overflow-x: hidden;
-                    li {
-                        a {
-                            position: relative;
-                            display: block;
-                            padding: 5px 0 5px 7px;
-                            font-size: 14px;
-                            &::after {
-                                content: "";
-                                display: block;
-                                width: 2px;
-                                height: 2px;
-                                background: #666;
-                                position: absolute;
-                                left: 0;
-                                top: 15px;
-                            }
-                        }
-                    }
-                }
-            }
+    background: #222227;
+    padding: 32px 0 46px;
+    .ft-logo {
+        width: 154px;
+        height: 27px;
+        .logo-link {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: url("../images/common/img/logo_ft.svg") no-repeat center;
+            background-size: 100% auto;
         }
     }
     .ft-btm {
-        padding: 30px 0 60px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        margin: 20px 0 0;
+        padding: 18px 0 0;
         font-size: 14px;
-        line-height: 20px;
-        br {
-            display: none;
+        line-height: 1.2;
+        color: #999;
+        .copyright{
+            padding-top: 36px;
         }
     }
 }
@@ -631,24 +612,24 @@
 @include mobile {
     // header
     #header {
-        padding: 11px 16px 0;
+        // padding: 11px 16px 0;
         .inner {
-            height: auto;
+            // height: auto;
             flex-wrap: wrap;
             align-items: center;
         }
-        .hd-logo {
-            width: 117px;
-            height: 39px;
-            margin-top: 0;
-            .logo-link {
-                display: inline-block;
-                width: 100%;
-                height: 100%;
-                background: url("../images/common/img/logo_header.png") no-repeat center;
-                background-size: 100% auto;
-            }
-        }
+        // .hd-logo {
+        //     width: 117px;
+        //     height: 39px;
+        //     margin-top: 0;
+        //     .logo-link {
+        //         display: inline-block;
+        //         width: 100%;
+        //         height: 100%;
+        //         background: url("../images/common/img/logo_header.png") no-repeat center;
+        //         background-size: 100% auto;
+        //     }
+        // }
         .gnb {
             order: 4;
             width: 100%;

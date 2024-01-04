@@ -42,6 +42,9 @@ textarea:focus,
 }
 
 /* ===== 공통 ===== */
+.mont {
+	font-family: "Montserrat", sans-serif;
+}
 .w-set {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -65,7 +68,7 @@ textarea:focus,
 	border-radius: 3px;
 	min-height: 160px;
 	padding: 38px 0 0;
-	background: #f9f9f9 url("../images/common/img/empty_bg.svg") no-repeat center bottom;
+	background: #fff url("../images/common/img/empty_bg.svg") no-repeat center bottom;
 	p {
 		max-width: 560px;
 		margin: 0 auto;
@@ -304,8 +307,8 @@ textarea:focus,
 	width: 100%;
 	height: 50px;
 	line-height: 48px;
-	background: $primary-color2;
-	border: 1px solid $primary-color2;
+	background: $primary-color1;
+	border: 1px solid $primary-color1;
 	border-radius: 6px;
 	font-weight: 500;
 	font-size: 16px;
@@ -313,7 +316,7 @@ textarea:focus,
 	color: #fff;
 	&.color_2 {
 		background: #fff;
-		color: $primary-color2;
+		color: $primary-color1;
 	}
 	&.color_3 {
 		background-color: #fff;
@@ -398,23 +401,21 @@ textarea:focus,
 	text-align: center;
 	font-size: 0;
 	a {
+		font-weight: 50;
 		font-size: 14px;
-		font-family: $inter;
 		display: inline-block;
 		vertical-align: middle;
-		width: 35px;
-		height: 35px;
-		line-height: 35px;
+		width: 26px;
+		height: 26px;
+		line-height: 26px;
 		text-align: center;
 		background-color: #fff;
-		color: #222;
-		border: 1px solid #d3d3d3;
-		border-radius: 3px;
+		color: #666;
+		border-radius: 5px;
 		margin: 0 5px;
 	}
 	.on {
-		background-color: #666;
-		border-color: #666;
+		background-color: $primary-color2;
 		color: #fff;
 	}
 	.move {
@@ -423,6 +424,7 @@ textarea:focus,
 		background-color: #fff;
 		background-repeat: no-repeat;
 		background-position: center;
+		margin: 0;
 	}
 	.first {
 		background-image: url("../images/common/ico/paging_first.svg");
@@ -519,13 +521,14 @@ textarea:focus,
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
-	background: $primary-color3;
-	border-radius: 50%;
+	background: $primary-color1;
+	border-radius: 3px;
 	text-align: center;
-	line-height: 16px;
+	line-height: 14px;
 	&:after {
 		content: "N";
 		display: block;
+		font-weight: 600;
 		font-size: 10px;
 		color: #fff;
 	}

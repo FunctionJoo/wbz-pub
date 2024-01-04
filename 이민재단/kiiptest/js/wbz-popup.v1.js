@@ -62,7 +62,7 @@ const $popup = {
 		} else {
 			if (options.modal === undefined) options.modal = false; // modal 속성이 지정되어있지 않은 경우에만 속성을 변경
 			buttonTemplate = `
-				<button type="button" class="cr_1 popup-confirm-event">확인</button>
+				<button type="button" class="cr_1 popup-close">확인</button>
 			`;
 		}
 

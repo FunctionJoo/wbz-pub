@@ -1,12 +1,11 @@
 // Primary Color
 $primary-color1: #024fc4;
-$primary-color2: #0A4BB4;
+$primary-color2: #3090d6;
 
 // Text Color
 $text-color1: #222;
 $text-color2: #555;
 $text-color3: #999;
-$text-color3: #b2b2b2;
 
 // Base Color
 $base-color1: #d3d3d3;
@@ -16,6 +15,7 @@ $mobile-space: 16px;
 
 // font
 $mont: "Montserrat", sans-serif;
+$gmarket: "GmarketSans", sans-serif;
 
 @mixin font($weight, $size, $color) {
 	font-weight: $weight;
@@ -49,13 +49,13 @@ $mont: "Montserrat", sans-serif;
 
 @mixin scroll {
 	&::-webkit-scrollbar {
-		width: 10px;
+		width: 4px;
 		background: none;
 	}
 	&::-webkit-scrollbar-thumb {
-		width: 8px;
-		border-radius: 4px;
-		background: $base-color1;
+		width: 4px;
+		border-radius: 2px;
+		background: #e5e5e5;
 	}
 }
 
