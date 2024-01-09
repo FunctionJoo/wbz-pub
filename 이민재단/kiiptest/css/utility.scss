@@ -59,6 +59,14 @@ $gmarket: "GmarketSans", sans-serif;
 	}
 }
 
+@mixin nscroll {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
 @mixin imgbox($percent) {
 	position: relative;
 	overflow: hidden;

@@ -570,6 +570,26 @@
         font-size: 14px;
         line-height: 1.2;
         color: #999;
+        .ft-info{
+            padding-top: 12px;
+            .txt01{
+                em{
+                    color: #fff;
+                }
+                span{
+                    margin-left: 23px;
+                }
+            }
+            .txt02{
+                padding-top: 12px;
+                span{
+                    margin-left: 14px;
+                }
+            }
+            .txt03{
+                padding-top: 14px;
+            }
+        }
         .copyright{
             padding-top: 36px;
         }
@@ -637,11 +657,7 @@
             overflow-x: auto;
             margin-left: 0;
             gap: 30px;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-            &::-webkit-scrollbar {
-                display: none;
-            }
+            @include nscroll;
             & > li {
                 width: auto;
                 flex: 0 0 auto;
