@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>홈 > 회원 및 성적 관리 >  지역담당자 > 상세/수정</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>회원 및 성적관리</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+                <a href="./grade_list.html">성적관리</a>
+            </li>
+            <li class="btn_sub">
+                <a href="./member_active_list.html">회원관리</a>
+            </li>
+            <li class="btn_sub">
+            <a href="./charge_list.html">지역 담당자</a>
+            </li>
+            <li class="btn_sub">
+            <a href="./admin_list.html">운영자</a>
+            </li>
+            <li class="btn_sub">
+                <a href="./sms.html">SMS 관리</a>
+                <ul class="sub_menu">
+                    <li><a href="./sms.html">CBT</a></li>
+                    <li><a href="./sms.html">PBT</a></li>
+                </ul>
+            </li>
+        </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+            <div class="content_head">
+                <h3>지역 담당자</h3>
+            </div>
+            <div class="content_body">
+              <!-- List Start -->
+              <div class="view_wrap">
+                  <div class="list_top con_right">
+                    <div class="util_area">
+                      <span class="info_txt">필수 입력</span>
+                    </div>
+                  </div>
+                  <div class="view_table m_type">
+                    <table>
+                      <caption>지역 담당자</caption>
+                      <colgroup>
+                        <col style="width: 25%;">
+                        <col style="width: auto;">
+                      </colgroup>
+                      <tr>
+                        <th class="essen_th">아이디</th>
+                        <td>
+                          junbuk123
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="essen_th">비밀번호</th>
+                        <td class="middle_input">
+                          <input type="text">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="essen_th">비밀번호 확인</th>
+                        <td class="middle_input">
+                          <input type="text">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="essen_th">이름</th>
+                        <td class="middle_input">
+                          <input type="text" value="홍길동">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="essen_th">이메일</th>
+                        <td class="middle_input">
+                          <input type="text" value="emailaddress@testmail.com">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="essen_th">휴대폰 번호</th>
+                        <td class="smallinput">
+                          <input type="text" value="010">
+                          <input type="text" value="0000">
+                          <input type="text" value="0000">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="essen_th">출입국 관할</th>
+                        <td class="middle_sel">
+                          <select name="" id="">
+                            <option value="서울">서울</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>사용 여부</th>
+                        <td>
+                          <input type="radio" id="state01" name="state" checked>
+                          <label for="state01">정상</label>
+                          <input type="radio" id="state02" name="state">
+                          <label for="state02">이용정지</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>등록일</th>
+                        <td>
+                          2024-04-05
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="bottom_btn two_btn">
+                  <button type="button" class="btn">저장</button>
+                  <a href="./charge_list.html" class="btn btn_form4">취소</a>
+                </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(2).addClass('on');
+    $('#lnb ul.menu > li').eq(2).find(' > a ').addClass('skin_bg');
+
+    $('.current .toggle').on('click', function(){
+      $(this).toggleClass('on');
+      $('.toggle_area').stop().slideToggle('fast');
+    });
+  });
+</script>
+</body>
+</html>

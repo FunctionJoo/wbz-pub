@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>홈 > 회원 및 성적 관리 >  지역담당자 > 리스트</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>회원 및 성적관리</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+                <a href="./grade_list.html">성적관리</a>
+            </li>
+            <li class="btn_sub">
+                <a href="./member_active_list.html">회원관리</a>
+                <ul class="sub_menu">
+                  <li><a href="./member_active_list.html">활동 회원</a></li>
+                  <li><a href="./member_inactive_list.html">탈퇴 회원</a></li>
+              </ul>
+            </li>
+            <li class="btn_sub">
+            <a href="./charge_list.html">지역 담당자</a>
+            </li>
+            <li class="btn_sub">
+            <a href="./admin_list.html">운영자</a>
+            </li>
+            <li class="btn_sub">
+                <a href="./sms.html">SMS 관리</a>
+            </li>
+        </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+            <div class="content_head">
+                <h3>지역 담당자</h3>
+            </div>
+            <div class="content_body">
+                <!-- List Start -->
+                <div class="list_wrap">
+                    <div class="list_top">
+                        <div class="txt_area">
+                        <p>총 <em>00</em>건</p>
+                    </div>
+                    <div class="util_area">
+                      <a href="./charge_write.html" class="btn btn_form2">
+                        담당자 등록 +
+                      </a>
+                    </div>
+                </div>
+                <div class="list_table scroll_x">
+                  <table>
+                    <caption>검색 결과</caption>
+                    <colgroup>
+                      <col style="width:5%;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                      <th scope="col">번호</th>
+                      <th scope="col">출입국 관할</th>
+                      <th scope="col">아이디</th>
+                      <th scope="col">담당자 명</th>
+                      <th scope="col">담당자 연락처</th>
+                      <th scope="col">등록일</th>
+                      <th scope="col">접속 일시</th>
+                      <th scope="col">상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2</td>
+                        <td><a href="./charge_detail.html" class="btn_link">서울</a></td>
+                        <td><a href="./charge_detail.html" class="btn_link">sazita123</a></td>
+                        <td><a href="./charge_detail.html" class="btn_link">홍길동</a></td>
+                        <td>010-000-0000</td>
+                        <td>YYYY-MM-DD</td>
+                        <td>24-05-05 15:00:00</td>
+                        <td>정상</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><a href="./charge_detail.html" class="btn_link">서울</a></td>
+                        <td><a href="./charge_detail.html" class="btn_link">sazita123</a></td>
+                        <td><a href="./charge_detail.html" class="btn_link">홍길동</a></td>
+                        <td>010-000-0000</td>
+                        <td>YYYY-MM-DD</td>
+                        <td>24-05-05 15:00:00</td>
+                        <td>정상</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="pagination">
+                  <a href="#" class="first">처음 페이지</a>
+                  <a href="#" class="prev">이전 페이지</a>
+                  <a href="#" class="on">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">7</a>
+                  <a href="#">8</a>
+                  <a href="#">9</a>
+                  <a href="#">10</a>
+                  <a href="#" class="next">다음 페이지</a>
+                  <a href="#" class="last">마지막 페이지</a>
+                </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(2).addClass('on');
+    $('#lnb ul.menu > li').eq(2).find(' > a ').addClass('skin_bg');
+
+    $('.current .toggle').on('click', function(){
+      $(this).toggleClass('on');
+      $('.toggle_area').stop().slideToggle('fast');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>수질측정공공앱</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body style="background-color:#fff">
+	<div class="pop_wrap">
+		<div class="pop_header">
+			<h1>회원 조회</h1>
+			<a href="#" class="popup_close" onclick="closeTabClick()">닫기</a>
+		</div>
+		<div class="pop_body">
+			<div class="con_box view">
+				<div class="mt10"><input type="text" placeholder="이름 검색"  style="width:97%"></div>
+				<div class="scroll_y mt20" style="height: 300px;">
+					<table>
+						<caption>회원 조회</caption>
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:25%;">
+							<col style="width:25%;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"><span class="blind">선택</span></th>
+								<th scope="col">소속기관</th>
+								<th scope="col">이름</th>
+								<th scope="col">이메일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="align_c" colspan="4">조회 결과가 없습니다.</td>
+							</tr>
+							<tr>
+								<td class="align_c"><input type="radio" id="mem_1" name="mem"><label for="mem_1" class="blind">선택</label></td>
+								<td class="align_c">성동구</td>
+								<td class="align_c">홍길동</td>
+								<td class="align_c">test@mail.com</td>
+							</tr>
+							<tr>
+								<td class="align_c"><input type="radio" id="mem_2" name="mem"><label for="mem_2" class="blind">선택</label></td>
+								<td class="align_c">은평구</td>
+								<td class="align_c">홍길순</td>
+								<td class="align_c">test@mail.com</td>
+							</tr>
+							<tr>
+								<td class="align_c"><input type="radio" id="mem_3" name="mem"><label for="mem_3" class="blind">선택</label></td>
+								<td class="align_c">성동구</td>
+								<td class="align_c">홍길동</td>
+								<td class="align_c">test@mail.com</td>
+							</tr>
+							<tr>
+								<td class="align_c"><input type="radio" id="mem_4" name="mem"><label for="mem_4" class="blind">선택</label></td>
+								<td class="align_c">성동구</td>
+								<td class="align_c">홍길동</td>
+								<td class="align_c">test@mail.com</td>
+							</tr>
+							<tr>
+								<td class="align_c"><input type="radio" id="mem_5" name="mem"><label for="mem_5" class="blind">선택</label></td>
+								<td class="align_c">은평구</td>
+								<td class="align_c">홍길순</td>
+								<td class="align_c">test@mail.com</td>
+							</tr>
+							<tr>
+								<td class="align_c"><input type="radio" id="mem_6" name="mem"><label for="mem_6" class="blind">선택</label></td>
+								<td class="align_c">은평구</td>
+								<td class="align_c">홍길순</td>
+								<td class="align_c">test@mail.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn_area align_c mt10">
+					<button type="button" class="btn btn_gray">등록</button>
+				</div>
+			</div>
+		</div>
+		<!--<div class="pop_btn_box  btn_area">
+			<a href="#"  onclick="closeTabClick()"  class="btn">닫기</a>
+		</div>-->
+	</div>
+<script>
+	function closeTabClick() {
+		window.close();
+	}
+</script>
+</body>
+</html>

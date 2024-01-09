@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>홈 > 구술감독관 > 평가배정 > 상세</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- Header Start-->
+      <header id="header">
+        <div class="header_top">
+          <div class="header_info">
+            <h1 class="admin_title">ADMINISTRATOR</h1>
+          </div>
+          <div class="header_util">
+            <div class="user_info">
+              <i class="ico_profile"></i>
+              <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+              <span class="user_label">최종관리자</span>
+            </div>
+            <a href="javascript:;" class="btn_u"
+              ><i class="ico_link"></i>HOMEPAGE</a
+            >
+            <a href="javascript:;" class="btn_u"
+              ><i class="ico_logout"></i>LOGOUT</a
+            >
+          </div>
+        </div>
+        <div class="header_btm">
+          <nav id="gnb" class="gnb">
+            <ul>
+              <li><a href="../main/main.html">HOME</a></li>
+              <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+              <li>
+                <a href="../grade_list/grade_list.html">회원 및 성적 관리</a>
+              </li>
+              <li><a href="../payment/history.html">결제 현황</a></li>
+              <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+              <li><a href="../noti/notice_list.html">알림마당</a></li>
+              <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+              <li><a href="../setting/master.html">설정</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- //Header End-->
+
+      <div id="container">
+        <h2 class="blind">리스트 페이지</h2>
+        <section class="sub_section">
+          <div class="content_wrap">
+            <!--Lnb Start-->
+            <aside id="lnb">
+              <button class="openBtn">&lt;</button>
+              <h2 class="tit"><span>구술감독관</span></h2>
+              <ul class="menu">
+                <li class="btn_sub">
+                  <a href="./inquiry.html">구술 감독관 조회</a>
+                </li>
+                <li class="btn_sub">
+                  <a href="./allocation.html">평가 배정</a>
+                </li>
+                <li class="btn_sub">
+                  <a href="./certificate.html">이수증 관리</a>
+                  <ul class="sub_menu">
+                    <li><a href="./certificate.html">양성</a></li>
+                    <li><a href="./certificate_sub.html">보조</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
+            <!--//Lnb End-->
+
+            <!--Content Start-->
+            <div class="content evaluation">
+              <div class="content_head">
+                <h3>평가 배정</h3>
+              </div>
+              <div class="content_body">
+                <div class="current info_box">
+                  <p class="txt bold_type">
+                    <span class="year">2024년</span>
+                    <span class="trem">4분기</span>
+                    <span class="title">2024년 [31차] 사전평가</span>
+                    <span class="type">PBT</span>
+                    <span class="period">2024-05-05 ~ 2024-05-05</span>
+                    <span class="date">평가 시행일 2024.05.06</span>
+                  </p>
+                </div>
+                <!-- Search Start -->
+                <div class="search_wrap">
+                  <form action="" method="post">
+                    <table class="search search_top">
+                      <caption>검색1</caption>
+                      <colgroup>
+                        <col style="width: 20%" />
+                        <col style="width: 80%" />
+                      </colgroup>
+                      <tr>
+                        <th scope="row">구술감독관 접수기간 설정</th>
+                        <td>
+                          <input type="text" placeholder="시작일" class="ico_date" name="period01" id="datepicker1">
+                          <span class="tilde">~</span>
+                          <input type="text" placeholder="종료일" class="ico_date" name="period01" id="datepicker2">
+                          <button type="button" class="btn btn_form5">등록</button>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="search">
+                      <caption>
+                        검색2
+                      </caption>
+                      <colgroup>
+                        <col style="width: 8%" />
+                        <col style="width: auto" />
+                        <col style="width: 8%" />
+                        <col style="width: 13%" />
+                        <col style="width: 8%" />
+                        <col style="width: 13%" />
+                        <col style="width: 8%" />
+                        <col style="width: 15%" />
+                      </colgroup>
+                      <tr>
+                        <th scope="row">키워드</th>
+                        <td>
+                          <label for="name_sel" class="blind">이름</label>
+                          <select name="name_sel" id="name_sel">
+                            <option value="이름">이름</option>
+                          </select>
+                          <input type="text" style="width: 50%;">
+                        </td>
+                        <th scope="row">희망지역</th>
+                        <td>
+                          <label for="area_sel" class="blind">지역</label>
+                          <select name="area_sel" id="area_sel">
+                            <option value="선택">선택</option>
+                            <option value="서울">서울</option>
+                            <option value="부산">부산</option>
+                            <option value="인천">인천</option>
+                            <option value="수원">수원</option>
+                            <option value="제주">제주</option>
+                            <option value="대구">대구</option>
+                            <option value="대전">대전</option>
+                            <option value="전남">전남</option>
+                            <option value="양주">양주</option>
+                            <option value="울산">울산</option>
+                            <option value="광주">광주</option>
+                            <option value="양주">양주</option>
+                            <option value="경남">경남</option>
+                            <option value="강원">강원</option>
+                            <option value="충북">충북</option>
+                            <option value="전북">전북</option>
+                            <option value="CBT광명">CBT광명</option>
+                            <option value="CBT대전">CBT대전</option>
+                          </select>
+                        </td>
+                        <th scope="row">배정근무지</th>
+                        <td>
+                          <label for="set_sel" class="blind">배정근무지</label>
+                          <select name="set_sel" id="set_sel">
+                            <option value="선택">선택</option>
+                            <option value="서울">서울</option>
+                            <option value="부산">부산</option>
+                            <option value="인천">인천</option>
+                            <option value="수원">수원</option>
+                            <option value="제주">제주</option>
+                            <option value="대구">대구</option>
+                            <option value="대전">대전</option>
+                            <option value="전남">전남</option>
+                            <option value="양주">양주</option>
+                            <option value="울산">울산</option>
+                            <option value="광주">광주</option>
+                            <option value="양주">양주</option>
+                            <option value="경남">경남</option>
+                            <option value="강원">강원</option>
+                            <option value="충북">충북</option>
+                            <option value="전북">전북</option>
+                            <option value="CBT광명">CBT광명</option>
+                            <option value="CBT대전">CBT대전</option>
+                          </select>
+                        </td>
+                        <th scope="row">참석여부</th>
+                        <td class="radio_wrap">
+                          <input type="radio" id="attend01" name="attend_list" checked>
+                          <label for="attend01">전체</label>
+                          <input type="radio" id="attend02" name="attend_list">
+                          <label for="attend02">O</label>
+                          <input type="radio" id="attend03" name="attend_list">
+                          <label for="attend03">X</label>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="btn_area align_c mt10">
+                      <button type="button" class="btn">검색</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- //Search End -->
+
+                <!-- List Start -->
+                <div class="list_wrap">
+                  <div class="list_top">
+                    <div class="txt_area">
+                      <p>총 <em>0,000</em>건</p>
+                    </div>
+                    <div class="util_area">
+                      <a href="javascript: window.open('../popup/allocation_detail_pop.html', '팝업창','width=600, height=700');" class="btn btn_form4 plus_button"><p>감독관 추가</p></a>
+                      <!-- <a href="javascript:;" class="btn btn_form2">개별 SMS발송</a>
+                      <a href="javascript:;" class="btn btn_form2">전체 SMS발송</a> -->
+                      <a href="javascript:;" class="btn btn_form1">엑셀 다운로드</a>
+                      <button type="button" class="btn">저장</button>
+                    </div>
+                  </div>
+                  <div class="list_table scroll_x">
+                    <table>
+                      <caption>
+                        검색 결과
+                      </caption>
+                      <colgroup>
+                        <col style="width: 5%" />
+                        <col style="width: 5%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                        <col style="width: 10%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <input
+                              type="checkbox"
+                              name="choice"
+                              id="choice00"
+                            />
+                            <label for="choice00" class="blind">전체선택</label>
+                          </th>
+                          <th scope="col">번호</th>
+                          <th scope="col">이름</th>
+                          <th scope="col">연락처</th>
+                          <th scope="col">주민등록번호</th>
+                          <th scope="col">감독구분</th>
+                          <th scope="col">평가경력</th>
+                          <th scope="col">희망지역</th>
+                          <th scope="col">배정근무지</th>
+                          <th scope="col">참석여부</th>
+                          <th scope="col">보수교육</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="no_result">
+                          <td colspan="11">지원한 구술감독관이 없습니다.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="choice"
+                              id="choice01"
+                            />
+                            <label for="choice01" class="blind">선택</label>
+                          </td>
+                          <td>2</td>
+                          <td>홍길동</td>
+                          <td>01000000000</td>
+                          <td>801212-2*****</td>
+                          <td>강사</td>
+                          <td>5회</td>
+                          <td>수원</td>
+                          <td>
+                            <label for="place01" class="blind">배정근무지</label>
+                            <select name="place01" id="place01">
+                              <option value="선택">선택</option>
+                              <option value="서울">서울</option>
+                              <option value="부산">부산</option>
+                              <option value="인천">인천</option>
+                              <option value="수원">수원</option>
+                              <option value="제주">제주</option>
+                              <option value="대구">대구</option>
+                              <option value="대전">대전</option>
+                              <option value="전남">전남</option>
+                              <option value="양주">양주</option>
+                              <option value="울산">울산</option>
+                              <option value="광주">광주</option>
+                              <option value="양주">양주</option>
+                              <option value="경남">경남</option>
+                              <option value="강원">강원</option>
+                              <option value="충북">충북</option>
+                              <option value="전북">전북</option>
+                              <option value="CBT광명">CBT광명</option>
+                              <option value="CBT대전">CBT대전</option>
+                            </select>
+                          </td>
+                          <td>
+                            <label for="assign01" class="blind">배정여부</label>
+                            <select name="assign01" id="assign01">
+                              <option value="선택">선택</option>
+                              <option value="Y">O</option>
+                              <option value="N">X</option>
+                            </select>
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="choice"
+                              id="choice02"
+                            />
+                            <label for="choice02" class="blind">선택</label>
+                          </td>
+                          <td>1</td>
+                          <td>홍길동</td>
+                          <td>01000000000</td>
+                          <td>801212-2*****</td>
+                          <td>강사</td>
+                          <td>5회</td>
+                          <td>수원</td>
+                          <td>
+                            <label for="place02" class="blind">배정근무지</label>
+                            <select name="place02" id="place02">
+                              <option value="선택">선택</option>
+                              <option value="서울">서울</option>
+                              <option value="부산">부산</option>
+                              <option value="인천">인천</option>
+                              <option value="수원">수원</option>
+                              <option value="제주">제주</option>
+                              <option value="대구">대구</option>
+                              <option value="대전">대전</option>
+                              <option value="전남">전남</option>
+                              <option value="양주">양주</option>
+                              <option value="울산">울산</option>
+                              <option value="광주">광주</option>
+                              <option value="양주">양주</option>
+                              <option value="경남">경남</option>
+                              <option value="강원">강원</option>
+                              <option value="충북">충북</option>
+                              <option value="전북">전북</option>
+                              <option value="CBT광명">CBT광명</option>
+                              <option value="CBT대전">CBT대전</option>
+                            </select>
+                          </td>
+                          <td>
+                            <label for="assign02" class="blind">배정여부</label>
+                            <select name="assign02" id="assign02">
+                              <option value="선택">선택</option>
+                              <option value="Y">O</option>
+                              <option value="N">X</option>
+                            </select>
+                          </td>
+                          <td>
+                            2023.04
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- //List Start -->
+              </div>
+            </div>
+            <!--//Content End-->
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      // 페이지에서만 사용하는 스크립트
+      $(document).ready(function () {
+        $("#gnb ul li").eq(4).addClass("on");
+        $("#lnb ul.menu > li").eq(1).find(" > a ").addClass("skin_bg");
+
+        $(".current .toggle").on("click", function () {
+          $(this).toggleClass("on");
+          $(".toggle_area").stop().slideToggle("fast");
+        });
+      });
+
+
+      // 셀렉트 박스 '선택' 고를 시 목록에서 - 노출
+      function updateOption(id) {
+        let selectElement = document.getElementById(id);
+        let selectVal = selectElement.value;
+
+        if (selectVal === "선택") {
+          selectVal = "-"
+        }
+
+        // 변경된 값을 반환 (필요에 따라 사용)
+        return selectVal;
+      }
+
+      // "sel_td02" select의 값을 변경하고 반환받음
+      let updatedValue = updateOption("sel_td02");
+      // 반환받은 값을 사용 (테스트용, 실제로는 필요 없음)
+      console.log("반환된 값:", updatedValue);
+
+    </script>
+  </body>
+</html>

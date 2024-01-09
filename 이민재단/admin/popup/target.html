@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>한국이민재단 사회통합프로그램 평가 시스템</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body style="background-color:#fff">
+	<div class="pop_wrap">
+		<div class="pop_header">
+      <h1>특별 배려 대상자</h1>
+		</div>
+		<div class="pop_body">
+			<div style="height:500px;">
+				<div class="con_box">
+          <div class="view_wrap">
+            <div class="btn_wrap align_r">
+              <a href="#" class="btn">저장</a>
+              <a href="#" class="btn btn_form4" onclick="closeTabClick()">닫기</a>
+            </div>
+            <div class="flex mt10">
+              <div class="list_wrap">
+                <div class="list_table mt0">
+                  <ul>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="choice" id="choice01">
+                        <label for="choice01" class="blind">선택</label>
+                      </div>
+                      <span class="name">JIN RILONG</span>
+                      <span class="birth">19870506</span>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="choice" id="choice02">
+                        <label for="choice02" class="blind">선택</label>
+                      </div>
+                      <span class="name">KAEWTAMA RAK</span>
+                      <span class="birth">20230112</span>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="choice" id="choice03">
+                        <label for="choice03" class="blind">선택</label>
+                      </div>
+                      <span class="name">회원 명 길면 한 줄…</span>
+                      <span class="birth">생년월일</span>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="choice" id="choice04">
+                        <label for="choice04" class="blind">선택</label>
+                      </div>
+                      <span class="name">회원 명</span>
+                      <span class="birth">생년월일</span>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="choice" id="choice05">
+                        <label for="choice05" class="blind">선택</label>
+                      </div>
+                      <span class="name">OOOOOO</span>
+                      <span class="birth">yyyymmdd</span>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="choice" id="choice06">
+                        <label for="choice06" class="blind">선택</label>
+                      </div>
+                      <span class="name">OOOOOO</span>
+                      <span class="birth">yyyymmdd</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list_wrap">
+                <div class="input_wrap align_c" style="padding: 20px;">
+                  <span>평가실이 없습니다.</span><br><br>
+                  <span><em style="font-weight: 500;">평가일정관리 > 필기실 관리에서</em><br> 평가실을 추가해주세요.</span>
+                </div>
+                <div class="input_wrap">
+                  <div class="input_area">
+                    <input type="radio" name="room" id="room01">
+                    <label for="room01">6호관 ▶필기실 8(4층)</label>
+                    <spna class="num"><em>00</em>명 / 10명</spna>
+                  </div>
+                  <div class="input_area">
+                    <input type="radio" name="room" id="room02">
+                    <label for="room02">6호관 ▶필기실 11(지하 1층)</label>
+                    <spna class="num"><em>00</em>명 / 24명</spna>
+                  </div>
+                  <div class="input_area">
+                    <input type="radio" name="room" id="room03">
+                    <label for="room03">6호관 ▶필기실 14(1층)</label>
+                    <spna class="num"><em>00</em>명 / 29명</spna>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+		</div>
+    <div class="modal_search">
+      <div>
+        <div class="title_wrap">
+          <h3>회원 찾기</h3>
+          <button type="button" class="btn_del">닫기</button>
+        </div>
+        <div class="search_wrap">
+          <form action="" method="post">
+            <div class="search">
+              <div class="input_area">
+                <input type="text" name="name" id="name" title="회원 이름 검색" placeholder="이름" value="T">
+                <label for="name" class="blind">회원이름</label>
+              </div>
+              <button type="button" class="btn">검색</button>
+            </div>
+          </form>
+          <div class="list_wrap">
+            <div class="list_table">
+              <table>
+                <caption>검색 결과</caption>
+                <colgroup>
+                  <col style="width:10%;">
+                  <col style="width:45%;">
+                  <col style="width:45%;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">휴대폰번호</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>5</td>
+                    <td>TALILO MADE</td>
+                    <td>010-000-0000</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>TALILOR MADE</td>
+                    <td>010-000-0000</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>TALILO MADE</td>
+                    <td>010-000-0000</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>TALILO MADE</td>
+                    <td>010-000-0000</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>ZLILO TADE</td>
+                    <td>010-000-0000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="pagination">
+              <a href="#" class="first">처음 페이지</a>
+              <a href="#" class="prev">이전 페이지</a>
+              <a href="#" class="on">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#" class="next">다음 페이지</a>
+              <a href="#" class="last">마지막 페이지</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+	</div>
+<script>
+	function closeTabClick() {
+		window.close();
+	}
+  //모달창 여닫는 스크립트
+  const opemBtn = '.list_wrap .plus';
+  const closeBtn = '.modal_search .btn_del';
+  const modal = '.modal_search';
+
+  $(opemBtn).click(function(){
+    $(modal).addClass('on');
+  });
+  $(closeBtn).click(function(){
+    $(modal).removeClass('on');
+  });
+</script>
+</body>
+</html>

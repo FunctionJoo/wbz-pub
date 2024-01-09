@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>홈 > 대시보드</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/layout.js"></script>
+	<script src="https://kit.fontawesome.com/21db8133e1.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+	<div id="wrap" >
+		<!-- Header Start-->
+		<header id="header">
+			<div class="header_top">
+				<div class="header_info">
+					<h1 class="admin_title">ADMINISTRATOR</h1>
+				</div>
+				<div class="header_util">
+					<div class="user_info">
+						<i class="ico_profile"></i>
+						<span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+						<span class="user_label">최종관리자</span>
+					</div>
+					<a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+					<a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+				</div>
+			</div>
+			<div class="header_btm">
+				<nav id="gnb" class="gnb">
+					<ul>
+						<li><a href="../main/main.html">HOME</a></li>
+						<li><a href="../evaluation/register_list.html">평가 관리</a></li>
+						<li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+						<li><a href="../payment/history.html">결제 현황</a></li>
+						<li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+						<li><a href="../noti/notice_list.html">알림마당</a></li>
+						<li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+						<li><a href="../setting/master.html">설정</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- //Header End-->
+
+		<!-- container -->
+		<div id="container">
+			<section class="main_section">
+				<h2 class="blind">관리자 메인</h2>
+				<!-- Main content-->
+				<div class="main_content">
+					<div class="main_left">
+						<div class="top_wrap">
+							<p class="today_date"><i class="fa-regular fa-clock"></i> 2024.03.07 목요일</p>
+							<div class="calender_mount">
+								<button type="button" class="prev_button"></button>
+								<span>2024.03</span>
+								<button type="button" class="next_button"></button>
+							</div>
+						</div>
+						<div class="calender_wrap">
+							<table>
+								<caption>달력</caption>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2">일</th>
+										<th scope="col" rowspan="2">월</th>
+										<th scope="col" rowspan="2">화</th>
+										<th scope="col" rowspan="2">수</th>
+										<th scope="col" rowspan="2">목</th>
+										<th scope="col" rowspan="2">금</th>
+										<th scope="col" rowspan="2">토</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<span class="day"></span>
+											<div class="schedule receipt_on test_on result_on">
+												<!-- schedule에 .receipt_on, .test_on, .result_on  별로 스케쥴 노출 -->
+												<div class="receipt tp_e">
+													<!-- receipt에 .tp_s 추가 시 접수S 노출 .tp_e 추가 시 접수E 노출 -->
+													<a href="../evaluation/register_before.html">
+														<p class="txt">사전115차</p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">종합(귀)1차</p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">종합(귀)1차</p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">1</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">2</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="day">3</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">4</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">5</span>
+											<div class="schedule receipt_on">
+												<div class="receipt ty_e">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">사전115차</p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">6</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">7</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">8</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">9</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="day">10</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">11</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">12</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">13</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">14</span>
+											<div class="schedule test_on result_on">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">중간2차</p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">종합(영)2차</p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">15</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">중간2차</p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">종합(영)2차</p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">16</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">중간2차</p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">종합(영)2차</p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="day">17</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">중간2차</p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">종합(영)2차</p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">18</span>
+											<div class="schedule receipt_on test_on">
+												<div class="receipt ty_s">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">사전115차</p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt">중간2차</p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">19</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">20</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">21</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">22</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">23</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="day">24</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">25</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">26</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">27</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">28</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">29</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day">30</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="day">31</span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+										<td>
+											<span class="day"></span>
+											<div class="schedule">
+												<div class="receipt">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub type_s">접수S</span>
+														<span class="sub type_e">접수E</span>
+													</a>
+												</div>
+												<div class="test">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">평가</span>
+													</a>
+												</div>
+												<div class="result">
+													<a href="../evaluation/register_before.html">
+														<p class="txt"></p>
+														<span class="sub">발표</span>
+													</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="cal_info">
+								<div class="receipt_info">
+									<i></i>
+									<span>접수</span>
+								</div>
+								<div class="test_info">
+									<i></i>
+									<span>평가(일)</span>
+								</div>
+								<div class="result_info">
+									<i></i>
+									<span>발표(일)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main_right">
+						<div class="m_right_01">
+							<h3>접수 진행 현황</h3>
+							<div class="count_box">
+								<div class="test_tit">
+									<strong>D-14</strong>
+									<p>사전평가 2차</p>
+								</div>
+								<div class="receipt_count">
+									<p><strong class="now">00/</strong><strong class="all">00</strong>명</p>
+								</div>
+							</div>
+							<div class="count_box">
+								<div class="test_tit">
+									<strong>D-06</strong>
+									<p>종합평가 2차</p>
+								</div>
+								<div class="receipt_count">
+									<p><strong class="now">00/</strong><strong class="all">00</strong>명</p>
+								</div>
+							</div>
+						</div>
+						<div class="m_right_03">
+							<div class="aprrove_top clearfix">
+								<h3 class="fl_l">Q&A</h3>
+								<a href="../noti/qna_list.html" class="fl_r">더보기 +</a>
+							</div>
+							<ul class="aprrove">
+								<li><a href="../noti/qna_view.html"><strong>사전 평가 개인정보 입력 시 핸드폰으로 해주세요. 길면 한줄 말줄임표</strong><span>[2021-05-06]</span></a></li>
+								<li><a href="../noti/qna_view.html"><strong>5차 중간평가 추가 접수 희망합니다.</strong><span>[2021-05-06]</span></a></li>
+								<li><a href="../noti/qna_view.html"><strong>CBT용 종합평가</strong><span>[2021-05-06]</span></a></li>
+							</ul>
+						</div>
+            <div class="m_right_02">
+              <div class="aprrove_top">
+                <h3>회원 현황</h3>
+                <span>(최근 7일 기준)</span>
+              </div>
+              <div style="width: 100%;">
+                <canvas id="myChart"></canvas>
+              </div>
+              <ul class="count_box">
+                <li><span>금일 가입수</span><p><strong>00</strong>명</p></li>
+                <li><span>총 회원 수</span><p><strong>00</strong>명</p></li>
+              </ul>
+            </div>
+						<div class="m_right_03">
+							<div class="aprrove_top clearfix">
+								<h3 class="fl_l">공지사항</h3>
+								<a href="../noti/notice_list.html" class="fl_r">더보기 +</a>
+							</div>
+							<ul class="aprrove">
+								<li><a href="../noti/notice_view.html"><strong>[공지]공지제목이 길면 한줄입니다. 한줄입니다. </strong><span>[2021-05-06]</span></a></li>
+								<li><a href="../noti/notice_view.html"><strong>[공지]공지제목이 길면 한줄입니다. 한줄입니다. </strong><span>[2021-05-06]</span></a></li>
+								<li><a href="../noti/notice_view.html"><strong>[공지]공지제목이 길면 한줄입니다. 한줄입니다. </strong><span>[2021-05-06]</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Main content End-->
+			</section>
+		</div>
+		<!-- //container End -->
+	</div>
+	<script>
+		// 페이지에서만 사용하는 스크립트
+		$(document).ready(function() {
+				$('#gnb ul li').eq(0).addClass('on');
+				$('#lnb ul.menu > li').eq(0).find(' > a ').addClass('skin_bg');
+		});
+
+
+		// 막대그래프
+		var data = {
+          labels: ["1", "2", "3", "4", "5", "6", "7"],
+          datasets: [
+            {
+              label: "데이터셋",
+              data: [100, 50, 80, 70, 10, 20, 58],
+              backgroundColor: 'rgb(178, 207, 246)',
+              borderColor: 'rgb(75, 137, 220)',
+              borderWidth: 1
+            }
+          ]
+        };
+        var options = {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        };
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: data,
+          options: options
+        });
+	</script>
+</body>
+</html>

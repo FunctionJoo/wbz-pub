@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>홈 > 회원 및 성적 관리 > SMS 관리 >  문자 전송</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body style="background-color:#fff">
+	<div class="pop_wrap plus_modal">
+    <div id="modal_pop">
+      <div class="modal_wrap">
+        <div class="pop_header">
+          <h1>회원 조회</h1>
+          <button type="button" class="popup_close" onclick="modalClose()">닫기</button>
+        </div>
+        <div class="pop_body">
+          <div class="con_box view">
+            <div class="mt10"><input type="text" placeholder="이름 검색"  style="width:97%"></div>
+            <div class="scroll_y mt20" style="height: 300px;">
+              <table>
+                <caption>회원 찾기</caption>
+                <colgroup>
+                  <col style="width:10%;">
+                  <col style="width:10%;">
+                  <col style="width:40%;">
+                  <col style="width:auto;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col"><input type="checkbox"></th>
+                    <th scope="col">번호</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">휴대폰번호</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="align_c" colspan="4">조회 결과가 없습니다.</td>
+                  </tr>
+                  <tr>
+                    <td class="align_c"><input type="checkbox" name="mem"></td>
+                    <td class="align_c">2</td>
+                    <td class="align_c">TALILO MADE</td>
+                    <td class="align_c">010-000-0000</td>
+                  </tr>
+                  <tr>
+                    <td class="align_c"><input type="checkbox" name="mem"></td>
+                    <td class="align_c">1</td>
+                    <td class="align_c">TALILO MADE</td>
+                    <td class="align_c">010-000-0000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- <div class="btn_area align_c mt10">
+              <button type="button" class="btn btn_gray">등록</button>
+            </div> -->
+            <div class="pagination">
+              <a href="#" class="first">처음 페이지</a>
+              <a href="#" class="prev">이전 페이지</a>
+              <a href="#" class="on">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#" class="next">다음 페이지</a>
+              <a href="#" class="last">마지막 페이지</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<div class="pop_header">
+      <h1>문자 전송</h1>
+		</div>
+		<div class="pop_body">
+			<div style="height:600px;">
+				<div class="con_box">
+          <div class="view_wrap">
+            <div class="view_table message">
+              <table>
+                <caption>문자 전송</caption>
+                <colgroup>
+                  <col style="width:16%;">
+                  <col style="width:auto;">
+                </colgroup>
+                <tr>
+                  <th>발신번호</th>
+                  <td>
+                    <label for="sent" class="blind">발신번호</label>
+                    <select name="sent" id="sent">
+                      <option value="02-2643-2583">02-2643-2583</option>
+                      <option value="02-2643-2584(인천,수원,양주)">02-2643-2584(인천,수원,양주)</option>
+                      <option value="010-2083-8791">010-2083-8791</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>수신대상</th>
+                  <td>
+                    <div class="receipt_choice">
+                      <input type="radio" id="receipt01" name="receipt" checked>
+                      <label for="receipt01">전체</label>
+                      <input type="radio" id="receipt02" name="receipt">
+                      <label for="receipt02">회원</label>
+                      <input type="radio" id="receipt03" name="receipt">
+                      <label for="receipt03">구술 감독관</label>
+                      <button type="button" class="btn" onclick="modalClick()">개별회원</button>
+                    </div>
+                    <div class="receipt_mem">
+                      <div class="mem_list">
+                        <span>TALILO MADE</span>
+                        <button type="button" class="btn_del"></button>
+                      </div>
+                      <div class="mem_list">
+                        <span>TALILO MADE</span>
+                        <button type="button" class="btn_del"></button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>구분</th>
+                  <td class="middle_sel">
+                    <input type="radio" id="cate01" name="cate" checked>
+                    <label for="cate01" class="no_mar">평가</label>
+                    <label for="cate_detail" class="blind">출입국 관할</label>
+                    <select name="cate_detail" id="cate_detail" class="hav_mar">
+                      <option value="2024년 [31차] 사전평가">2024년 [31차] 사전평가</option>
+                    </select>
+                    <input type="radio" id="cate02" name="cate">
+                    <label for="cate02">기타</label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>제목</th>
+                  <td>
+                    <input type="text">
+                  </td>
+                </tr>
+                <tr class="scroll_y">
+                  <td colspan="2">
+                    <textarea name="text" id="text">
+                      ▶일시:  2024-05-24 13시 30분까지 입실가능!
+                      ▶장소 : 부산대학교
+                      ▶준비물 : 외국인등록증,여권, 국내 발급 운전면허증 중 1개의 신분증을 필수 지참
+
+                      ※입실시간 이후 입실 절대 불가!
+                      (종이 접수증과 필기 도구는 필요 없음)
+
+                      ※별도의 대기실이 없으므로, 입실 시간에 맞춰 오시기 바랍니다.
+
+                      ★평가장소 오시는길: 대전 지하철 1호선 중앙로역 1번 출구 바로 앞 검은색 건물 2층(하나증권 대전사옥)
+                      ★주차 불가능합니다! 대중교통 이용바랍니다!
+                      ★응시생은 마스크 착용을 권고합니다.
+                      ★평가장소 건물내 흡연 절대금지!
+
+                      ※필기시간: 60분 (객관식 50문제/ 단답형 주관식 2문제 포함)
+                      ※구술시험은 외국인등록번호 앞번호순으로 진행하며, 현장의 안내에 따라 입실!
+
+                      ★협조에 감사드립니다.
+                    </textarea>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="btn_area">
+						<a href="#" class="btn">발신</a>
+						<a href="#" class="btn btn_form4" onclick="closeTabClick()">닫기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	function closeTabClick() {
+		window.close();
+	}
+
+  function modalClick(){
+    document.getElementById('modal_pop').style.display = 'block';
+  }
+  function modalClose(){
+    document.getElementById('modal_pop').style.display = 'none';
+  }
+</script>
+</body>
+</html>

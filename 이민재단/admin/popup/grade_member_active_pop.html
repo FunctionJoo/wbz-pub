@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>홈 > 회원 및 성적 관리 >  회원 관리 > 리스트 >  개인정보 조회 사유 입력 팝업</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body style="background-color:#fff">
+	<div class="pop_wrap">
+		<div class="pop_header">
+			<h1>개인정보 조회 사유 입력</h1>
+		</div>
+		<div class="pop_body">
+			<div class="scroll_y">
+				<div class="con_box">
+					<div class="input_wrap">
+						<div class="input_area">
+							<input type="radio" title="보호 계정 해제" name="list01" id="list01">
+							<label for="list01">보호 계정 해제</label>
+						</div>
+						<div class="input_area">
+							<input type="radio" title="평가 접수 확인" name="list02" id="list02">
+							<label for="list02">평가 접수 확인</label>
+						</div>
+						<div class="input_area">
+							<input type="radio" title="비밀번호 초기화" name="list03" id="list03">
+							<label for="list03">비밀번호 초기화</label>
+						</div>
+						<div class="input_area">
+							<input type="radio" title="결제 정보 조회" name="list04" id="list04">
+							<label for="list04">결제 정보 조회</label>
+						</div>
+						<div class="input_area">
+							<input type="radio" title="평가장소 확인 및 변경" name="list05" id="list05">
+							<label for="list05">평가장소 확인 및 변경</label>
+						</div>
+						<div class="input_area">
+							<input type="radio" title="기타" name="reason" id="list06">
+							<label for="list06">기타</label>
+							<input type="text" title="기타 사유 입력" name="list06_txt" id="list06_txt" style="width: 300px;">
+							<label for="list06_txt" class="blind">기타 사유 입력</label>
+						</div>
+					</div>
+					<div class="btn_area">
+						<a href="#" class="btn" onclick="window.open('../grade/member_active_detail.html');">확인</a>
+						<a href="#" class="btn btn_form4" onclick="closeTabClick()">닫기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	function closeTabClick() {
+		window.close();
+	}
+</script>
+</body>
+</html>

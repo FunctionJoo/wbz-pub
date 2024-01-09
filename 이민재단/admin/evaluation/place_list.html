@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>평가 관리</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./register_list.html">평가접수현황</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./schedule_list.html">평가일정관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./attend_list.html">출석부 배정 관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./place_list.html">평가장소관리</a>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+          <div class="content_head">
+              <h3>평가장소관리</h3>
+          </div>
+          <div class="content_body">
+            <div class="view_wrap">
+              <div class="list_wrap">
+                <div class="manage_box">
+                  <div class="view_table">
+                    <div class="main_top">
+                      <h3>출입국 관할</h3>
+                      <div class="btn_wrap"><a href="javascript: window.open('../popup/plus_immigration.html','팝업창','width=600, height=500');" class="btn btn_form2">추가</a></div>
+                    </div>
+                    <table class="mt10 category_list">
+                      <caption>출입국 관할</caption>
+                      <colgroup>
+                        <col style="width:auto;">
+                        <col style="width:25%">
+                        <col style="width:30%;">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="align_c">관할 명</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">부산</td>
+                          <td class="align_c">미노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">인천</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">서울</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">제주</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">대구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">전남</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">양주</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">울산</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">광주</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">경기</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">대전</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_immigration.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="align_r mt10"><button type="button" class="btn btn_form3">노출순서 변경</button></div>
+                </div>
+                <div class="manage_box">
+                  <div class="view_table">
+                    <div class="main_top">
+                      <h3>지역 상세</h3>
+                      <div class="btn_wrap"><a href="javascript: window.open('../popup/plus_area.html','팝업창','width=600, height=500');" class="btn btn_form2">추가</a></div>
+                    </div>
+                    <table class="mt10 category_list">
+                      <caption>지역 상세</caption>
+                      <colgroup>
+                        <col style="width:auto;">
+                        <col style="width:25%">
+                        <col style="width:30%;">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="align_c">서울시 강남구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">서울시 관악구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">경기도 성남시</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">서울시 양천구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">시도 시군구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">시도 시군구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">시도 시군구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">시도 시군구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">시도 시군구</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_area.html','팝업창','width=600, height=500')">수정</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="align_r mt10"><button type="button" class="btn btn_form3">노출순서 변경</button></div>
+                </div>
+                <div class="manage_box">
+                  <div class="view_table">
+                    <div class="main_top">
+                      <h3>평가장소</h3>
+                      <div class="btn_wrap"><a href="javascript: window.open('../popup/plus_place.html','팝업창','width=600, height=700');" class="btn btn_form2">추가</a></div>
+                    </div>
+                    <table class="mt10 category_list">
+                      <caption>평가장소</caption>
+                      <colgroup>
+                        <col style="width:auto;">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:30%;">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="align_c">한국이민재단</td>
+                          <td class="align_c">PBT</td>
+                          <td class="align_c">노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_place.html','팝업창','width=600, height=700')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">평가장소 명</td>
+                          <td class="align_c">CBT</td>
+                          <td class="align_c">미노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_place.html','팝업창','width=600, height=700')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">평가장소 명</td>
+                          <td class="align_c">CBT</td>
+                          <td class="align_c">미노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_place.html','팝업창','width=600, height=700')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">평가장소 명</td>
+                          <td class="align_c">CBT</td>
+                          <td class="align_c">미노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_place.html','팝업창','width=600, height=700')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">평가장소 명</td>
+                          <td class="align_c">CBT</td>
+                          <td class="align_c">미노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_place.html','팝업창','width=600, height=700')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">평가장소 명</td>
+                          <td class="align_c">CBT</td>
+                          <td class="align_c">미노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_place.html','팝업창','width=600, height=700')">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="align_c">평가장소 명</td>
+                          <td class="align_c">CBT</td>
+                          <td class="align_c">미노출</td>
+                          <td class="align_c chk_box">
+                            <button type="button" class="btn btn_up">↑</button>
+                            <button type="button" class="btn btn_down">↓</button>
+                            <button type="button" class="btn_s" onclick="window.open('../popup/view_place.html','팝업창','width=600, height=700')">수정</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="align_r mt10"><button type="button" class="btn btn_form3">노출순서 변경</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(1).addClass('on');
+    $('#lnb ul.menu > li').eq(3).find(' > a ').addClass('skin_bg');
+  });
+</script>
+</body>
+</html>

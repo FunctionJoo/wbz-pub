@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">작성 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>평가 관리</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./register_list.html">평가접수현황</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./schedule_list.html">평가일정관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./attend_list.html">출석부 배정 관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./place_list.html">평가장소관리</a>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+          <div class="content_head">
+              <h3><em class="color_1">2024년 CBT 1차</em> 평가일정관리</h3>
+          </div>
+          <div class="content_body">
+
+            <!-- List Start -->
+            <div class="view_wrap">
+              <div class="btn_area align_r">
+                <button type="button" class="btn">저장</button>
+								<a href="./schedule_list.html" class="btn btn_form4">취소</a>
+              </div>
+              <div class="main_box align_l mt10">
+                <p class="ess"><span class="asta">*</span> 필수 입력</p>
+                <div class="view_table">
+                  <table>
+                    <caption>작성</caption>
+                    <colgroup>
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <tr>
+                      <th>평가 구분 <span class="asta">*</span></th>
+                      <td colspan="3">
+                        <div class="input_wrap">
+                          <input type="radio" title="사전평가" name="eval" id="before">
+                          <label for="before">사전평가</label>
+                        </div>
+                        <div class="input_wrap">
+                          <input type="radio" title="중간평가" name="eval" id="middle">
+                          <label for="middle">중간평가</label>
+                        </div>
+                        <div class="input_wrap">
+                          <input type="radio" title="종합평가" name="eval" id="overall">
+                          <label for="overall">종합평가</label>
+                        </div>
+                        <div class="input_wrap">
+                          <span>&#40;</span>
+                          <input type="radio" title="영주용" name="type" id="permanent">
+                          <label for="permanent">영주용</label>
+                          <input type="radio" title="귀화용" name="type" id="naturalization">
+                          <label for="naturalization">귀화용</label>
+                          <span>&#41;</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>접수 기간 <span class="asta">*</span></th>
+                      <td colspan="3">
+                        <input type="text" placeholder="시작일" class="ico_date" name="period01" id="datepicker1" style="cursor: pointer;">
+                        <span class="tilde">~</span>
+                        <input type="text" placeholder="종료일" class="ico_date" name="period01" id="datepicker2" style="cursor: pointer;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>가격 <span class="asta">*</span></th>
+                      <td>
+                        <input type="text" placeholder="38,000" title="가격" name="price" id="price">
+                        <label for="price">원</label>
+                      </td>
+                      <th>특별 배려 대상 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="radio" title="사용" name="use" id="use">
+                          <label for="use">사용</label>
+                        </div>
+                        <div class="input_wrap">
+                          <input type="radio" title="미사용" name="use" id="unused">
+                          <label for="unused">미사용</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>특별 접수 비자</th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="checkbox" title="적용" name="visa" id="visa">
+                          <label for="visa">적용</label>
+                        </div>
+                        <div class="c_show">
+                          <div class="input_area mt10">
+                            <label for="visa_name" class="pr10">비자 명</label>
+                            <input type="text" title="비자명" name="visa" id="visa_name" placeholder="전용 비자 쉼표(,)를 구분">
+                          </div>
+                          <div class="input_area mt10">
+                            <label for="visa_dec">비자설명</label>
+                            <input type="text" title="비자설명" name="visa" id="visa_dec" placeholder="전용 비자 명칭">
+                          </div>
+                        </div>
+                      </td>
+                      <th>쿼터제 적용여부</th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="checkbox" title="적용" name="quarter" id="quarter">
+                          <label for="quarter">적용</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="order_box align_l">
+                <div class="view_table mt30">
+                  <div class="tit_wrap">
+										<h3>1회차</h3>
+									</div>
+                  <table>
+                    <caption>작성</caption>
+                    <colgroup>
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <tr>
+                      <th>평가 시행일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period02" id="datepicker3" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>평가시간: </span>
+                          <select name="hour" id="hour01">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour01">시</label>
+                          <select name="minute" id="minute01">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute01">분</label>
+                          <span>~</span>
+                          <select name="hour" id="hour02">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour02">시</label>
+                          <select name="minute" id="minute02">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute02">분</label>
+                        </div>
+                        <div class="input_wrap ">
+                          <span>입실 시각: </span>
+                          <select name="hour" id="hour03">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour03">시</label>
+                          <select name="minute" id="minute03">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute03">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>발표일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period03" id="datepicker4" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>예정시간: </span>
+                          <select name="hour" id="hour04">
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                          </select>
+                          <label for="hour04">시</label>
+                          <select name="minute" id="minute04">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute04">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평가장소 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_area">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="광명 CBT 평가센터" name="center01" id="center01">
+                            <label for="center01">광명 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center01" id="num01">
+                            <label for="num01">명</label>
+                          </div>
+                        </div>
+                        <div class="input_area mt10">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="대전 CBT 평가센터" name="center02" id="center02">
+                            <label for="center02">대전 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center02" id="num02">
+                            <label for="num02">명</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="view_table mt30">
+                  <div class="tit_wrap">
+										<h3>2회차</h3>
+									</div>
+                  <table>
+                    <caption>작성</caption>
+                    <colgroup>
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <tr>
+                      <th>평가 시행일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period02" id="datepicker5" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>평가시간: </span>
+                          <select name="hour" id="hour05">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour05">시</label>
+                          <select name="minute" id="minute05">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute05">분</label>
+                          <span>~</span>
+                          <select name="hour" id="hour06">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour06">시</label>
+                          <select name="minute" id="minute06">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute06">분</label>
+                        </div>
+                        <div class="input_wrap ">
+                          <span>입실 시각: </span>
+                          <select name="hour" id="hour07">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour07">시</label>
+                          <select name="minute" id="minute07">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute07">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>발표일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period03" id="datepicker6" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>예정시간: </span>
+                          <select name="hour" id="hour08">
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                          </select>
+                          <label for="hour08">시</label>
+                          <select name="minute" id="minute08">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute08">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평가장소 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_area">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="광명 CBT 평가센터" name="center01" id="center03">
+                            <label for="center03">광명 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center01" id="num03">
+                            <label for="num03">명</label>
+                          </div>
+                        </div>
+                        <div class="input_area mt10">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="대전 CBT 평가센터" name="center02" id="center04">
+                            <label for="center04">대전 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center02" id="num04">
+                            <label for="num04">명</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="view_table mt30">
+                  <div class="tit_wrap">
+										<h3>3회차</h3>
+									</div>
+                  <table>
+                    <caption>작성</caption>
+                    <colgroup>
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <tr>
+                      <th>평가 시행일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period02" id="datepicker7" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>평가시간: </span>
+                          <select name="hour" id="hour09">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour09">시</label>
+                          <select name="minute" id="minute09">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute09">분</label>
+                          <span>~</span>
+                          <select name="hour" id="hour10">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour10">시</label>
+                          <select name="minute" id="minute10">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute10">분</label>
+                        </div>
+                        <div class="input_wrap ">
+                          <span>입실 시각: </span>
+                          <select name="hour" id="hour11">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour11">시</label>
+                          <select name="minute" id="minute11">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute11">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>발표일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period03" id="datepicker8" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>예정시간: </span>
+                          <select name="hour" id="hour12">
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                          </select>
+                          <label for="hour12">시</label>
+                          <select name="minute" id="minute12">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute12">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평가장소 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_area">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="광명 CBT 평가센터" name="center01" id="center05">
+                            <label for="center05">광명 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center01" id="num05">
+                            <label for="num05">명</label>
+                          </div>
+                        </div>
+                        <div class="input_area mt10">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="대전 CBT 평가센터" name="center02" id="center06">
+                            <label for="center06">대전 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center02" id="num06">
+                            <label for="num06">명</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="view_table mt30">
+                  <div class="tit_wrap">
+										<h3>4회차</h3>
+									</div>
+                  <table>
+                    <caption>작성</caption>
+                    <colgroup>
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <tr>
+                      <th>평가 시행일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period02" id="datepicker9" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>평가시간: </span>
+                          <select name="hour" id="hour13">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour13">시</label>
+                          <select name="minute" id="minute13">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute13">분</label>
+                          <span>~</span>
+                          <select name="hour" id="hour14">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour14">시</label>
+                          <select name="minute" id="minute14">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute14">분</label>
+                        </div>
+                        <div class="input_wrap ">
+                          <span>입실 시각: </span>
+                          <select name="hour" id="hour15">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour15">시</label>
+                          <select name="minute" id="minute15">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute15">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>발표일 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period03" id="datepicker10" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>예정시간: </span>
+                          <select name="hour" id="hour16">
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                          </select>
+                          <label for="hour16">시</label>
+                          <select name="minute" id="minute16">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute16">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평가장소 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_area">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="광명 CBT 평가센터" name="center01" id="center07">
+                            <label for="center07">광명 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center01" id="num07">
+                            <label for="num07">명</label>
+                          </div>
+                        </div>
+                        <div class="input_area mt10">
+                          <div class="input_wrap">
+                            <input type="checkbox" title="대전 CBT 평가센터" name="center02" id="center08">
+                            <label for="center08">대전 CBT 평가센터</label>
+                          </div>
+                          <div class="input_wrap">
+                            <input type="number" placeholder="총 인원수(숫자만)" name="center02" id="num08">
+                            <label for="num08">명</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(1).addClass('on');
+    $('#lnb ul.menu > li').eq(1).find(' > a ').addClass('skin_bg');
+  });
+</script>
+</body>
+</html>

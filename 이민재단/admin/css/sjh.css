@@ -1,0 +1,137 @@
+/* 레이아웃 */
+.border_l{border-left: 1px solid #d5d5d5 !important;}
+.sub_tit{font-size: 16px; font-weight: 600; margin-bottom: 10px;}
+.con_right{display: flex; justify-content: end; align-items: center; margin-bottom: 10px;}
+.bottom_btn{display: flex; justify-content: center; align-items: center; margin-top: 30px;}
+.radio_wrap{display: flex; align-items: center;}
+.bottom_btn.two_btn{gap: 10px;}
+.bottom_btn .btn{width: 120px; height: 42px; display: flex; justify-content: center; align-items: center; }
+.info_box{justify-content: start !important; margin-bottom: 10px;}
+.info_box .txt.bold_type span:nth-child(-n+3){font-weight: 600;}
+.search_wrap .search.search_top{margin-bottom: 10px;}
+.normal_w strong{font-weight: 400;}
+.list_top .util_area{display: flex; align-items: center;}
+.content.wide{padding: 0;}
+.info_txt::before{content: "*"; color: #ff0000; margin-right: 4px;}
+.essen_th::after{content: "*"; color: #ff0000; margin-left: 4px;}
+.sub_info{color: #ff0000; margin-left: 20px;}
+.sub_button{margin-left: 20px;}
+.middle_text{width: 280px !important;}
+.view_wrap .view_table table label.no_mar{margin-right: 0;}
+.view_wrap .view_table table select.hav_mar{margin-right: 10px;}
+.r_txt{color: #ff0000;}
+
+/* 버튼 */
+.btn.plus_button p::before{content: ""; background-image: url(../images/common/modal_close.png); background-position: center; background-repeat: no-repeat; background-size: contain; display: inline-block; width: 10px; height: 10px; transform: rotate(45deg); margin-right: 5px;}
+
+/* 팝업 */
+.pop_wrap .pop_header .tit{font-size: 18px; text-align: center; padding: 20px 0; font-weight: 600;}
+.pop_wrap .pop_header .tit_a{font-size: 18px; text-align: start; padding: 20px 0; font-weight: 600;}
+
+/* info_wrap 인물 정보 표시 */
+.info_wrap{display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; border-radius: 5px; margin-bottom: 30px; background-color: #d1e4ff; border: 1px solid #6ba8ff;}
+.info_wrap .info_tit{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.info_wrap .info_tit i{background-image: url(../images/sub/person_ico.png); background-position: center; background-repeat: no-repeat; background-size: contain; display: inline-block; width: 30px; height: 30px; margin-bottom: 5px;}
+.info_wrap .info_tit span{color: #6e6e6e;}
+.info_wrap .info_table{width: calc(100% - 100px);}
+.info_wrap .info_table table{width: 100%;}
+.info_wrap .info_table tr{height: 30px;}
+.info_wrap .info_table tr th{background-color: #6ba8ff;}
+.info_wrap .info_table tr td{background-color: #fafafa; font-weight: 600; text-align: center;}
+
+/* 리스트페이지 table */
+.search_wrap table td.radio_td{display: flex; gap: 10px;}
+.search_wrap table td.chk_td{display: flex; gap: 10px; flex-wrap: wrap;}
+
+/* 상세페이지 table */
+.view_wrap .view_table table td.smallinput input[type=text]{width: 10% !important;}
+.view_wrap .view_table table td.middle_input input[type=text]{width: 40% !important;}
+.view_wrap .view_table table td.middle_sel select{width: 200px !important;}
+.view_wrap .view_table table td.middle_textarea textarea{width: 100%; height: 100px;}
+
+
+/* 버튼 체인지 */
+.util_area .save_btn{display: none;}
+.util_area.is_change .save_btn{display: inline-block;}
+.util_area.is_change .change_btn{display: none;}
+
+/* 테이블 타입 */
+.s_type table th, .s_type table td{height: 38px;}
+.m_type table th, .m_type table td{height: 50px;}
+
+/* sub */
+.txt_gray{color: #5B6286;}
+.txt_o{color: #F68A53;}
+
+
+/* 테이블 상단 스타일 */
+.util_area.con_right label{font-size: 14px; color: #828282; cursor: pointer;}
+.certi_upload{display: flex; align-items: center;}
+.certi_upload .file_input .certi_file{border: 1px solid #d5d5d5; padding: 8px 80px 8px 10px; position: relative;}
+.certi_upload .file_input .certi_file:after{content: "찾기"; color: #222; border: 1px solid #828282; background-color: #eaeaea; padding: 2px 7px; border-radius: 3px; position: absolute; top: 50%; right: 10px; transform: translateY(-50%);}
+
+
+
+/* 대시보드(홈) */
+.main_left .top_wrap{display: flex; justify-content: space-between; align-items: center;}
+.main_left .calender_mount{display: flex; align-items: center; gap: 10px;}
+.main_left .calender_mount span{font-size: 24px; font-weight: 600; color: #222;}
+.main_left .calender_mount .prev_button{background-image: url(../images/common/menu_arrow.png); background-position: center; background-repeat: no-repeat; background-size: contain; width: 20px; height: 20px; display: inline-block; transform: rotate(180deg);}
+.main_left .calender_mount .next_button{background-image: url(../images/common/menu_arrow.png); background-position: center; background-repeat: no-repeat; background-size: contain; width: 20px; height: 20px; display: inline-block;}
+.calender_wrap{margin-top: 20px;}
+.calender_wrap table{border: 1px solid #d5d5d5; width: 100%;}
+.calender_wrap table tbody tr:not(:last-child){border-bottom: 1px solid #d5d5d5;}
+.calender_wrap table tr th{height: 38px; color: #000; font-weight: 600; background-color: #eaeaea; border-bottom: 1px solid #d5d5d5;}
+.calender_wrap table tr th:not(:last-child){border-right: 1px solid #d5d5d5;}
+.calender_wrap table tr td{height: 110px; position: relative; background-color: #fff;}
+.calender_wrap table tr td:not(:last-child){border-right: 1px solid #d5d5d5;}
+.calender_wrap table tr td .day{position: absolute; top: 5px; right: 5px;}
+.calender_wrap table tr td:first-child .day, .calender_wrap table tr td:last-child .day{color: #105ef4;}
+.calender_wrap table tr td .schedule{display: flex; flex-direction: column; gap: 5px; height: 100%; padding-top: 25px;}
+.calender_wrap table tr td .schedule>div{height: 25px; position: relative; display: none; padding: 0 10px;}
+.calender_wrap table tr td .schedule .txt{color: #fff; line-height: 25px;}
+.calender_wrap table tr td .schedule.receipt_on .receipt{display: block;}
+.calender_wrap table tr td .schedule.test_on .test{display: block;}
+.calender_wrap table tr td .schedule.result_on .result{display: block;}
+.calender_wrap table tr td .receipt{background-color:#4b89dc;}
+.calender_wrap table tr td a{display: block; height: 100%;}
+.calender_wrap table tr td .receipt.tp_s .sub.type_e{display: none;}
+.calender_wrap table tr td .receipt.tp_e .sub.type_s{display: none;}
+.calender_wrap table tr td .test{background-color:#039b16;}
+.calender_wrap table tr td .result{background-color:#ff9716;}
+.calender_wrap table tr td .schedule>div .sub{position: absolute; top: 50%; transform: translateY(-50%); right: 10px; background-color: #fff; padding: 0 4px; border: 1px solid #bfbfbf;}
+.calender_wrap .cal_info{margin-top: 10px; display: flex; justify-content: end; align-items: center; gap: 20px;}
+.calender_wrap .cal_info>div{display: flex; align-items: center;}
+.calender_wrap .cal_info i{display: inline-block; width: 18px; height: 18px; margin-right: 5px;}
+.calender_wrap .cal_info .receipt_info i{background-color: #4b89dc;}
+.calender_wrap .cal_info .test_info i{background-color: #039b16;}
+.calender_wrap .cal_info .result_info i{background-color: #ff9716;}
+.m_right_01 .count_box{display: flex; justify-content: space-between; align-items: center;}
+.m_right_01 .count_box:not(:last-child){margin-bottom: 10px;}
+.m_right_01 .count_box .test_tit{display: flex; align-items: center;}
+.m_right_01 .count_box .test_tit p{font-size: 18px; font-weight: 600;}
+.m_right_01 .count_box .test_tit strong{font-size: 14px; padding: 5px 10px; background-color: #222; color: #fff; margin-right: 5px;}
+.m_right_01 .count_box .receipt_count strong.now{font-size: 18px; color: #105ef4; font-weight: 600;}
+.m_right_01 .count_box .receipt_count p{font-size: 14px; display: flex; align-items: center; gap: 10px;}
+.m_right_01 .count_box .receipt_count p::before{content: ""; background-image: url(../images/sub/person02_ico.png); background-repeat: no-repeat; background-size: contain; background-position: center; display: inline-block; width: 30px; height: 30px;}
+.m_right_01 .count_box .receipt_count p strong{font-weight: 400;}
+
+
+
+
+/* 결제현황 */
+.list_table table tr td.wait{color: #ff0000;}
+.list_table table tr td strong{font-weight: 400;}
+
+
+/* sms 문자전송 팝업 -> 회원찾기 모달 */
+.pop_wrap.plus_modal{position: relative;}
+.pop_wrap.plus_modal #modal_pop{display: none;  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); z-index: 10;}
+.pop_wrap.plus_modal #modal_pop .modal_wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; border: 1px solid #d5d5d5; background-color: #fff;}
+.pop_wrap.plus_modal .receipt_mem{display: flex; gap: 10px; flex-wrap: wrap;}
+.pop_wrap.plus_modal .receipt_mem .mem_list{display: flex; gap: 3px;}
+.pop_wrap.plus_modal .receipt_mem .mem_list span{text-wrap: nowrap;}
+
+/* 설정>지역담당자 */
+.manager_contact .contact_cate{display: inline-block; width: 50px;}
+.manager_contact .contact_list:last-child{margin-top: 5px;}

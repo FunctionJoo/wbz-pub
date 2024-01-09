@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>한국이민재단 사회통합프로그램 평가 시스템</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body style="background-color:#fff">
+	<div class="pop_wrap">
+		<div class="pop_header">
+      <h1>필기실</h1>
+		</div>
+		<div class="pop_body">
+			<div style="height:500px;">
+				<div class="con_box">
+          <div class="view_wrap">
+            <div class="place">
+              <span>부산 외국어 대학교</span>
+              <span>-</span>
+              <div class="total">
+                <i></i>
+                <span>Total <em>0,000</em>명</span>
+              </div>
+            </div>
+            <div class="view_table lectureroom">
+              <div class="top_wrap">
+                <p><span class="asta">*</span> 필수 입력</p>
+                <div class="btn_area" style="padding: 10px 0;">
+                  <button type="button" class="btn">&#43; 추가</button>
+                  <a href="./schedule_list.html" class="btn btn_form4">&#8722; 삭제</a>
+                </div>
+              </div>
+              <table class="align_c">
+                <caption>필기실 추가/삭제</caption>
+                <colgroup>
+                  <col style="width:5%;">
+                  <col style="width:30%;">
+                  <col style="width:10%;">
+                  <col style="width:14%;">
+                </colgroup>
+                <tr>
+                  <th scope="col">
+                    <input type="checkbox" name="choice" id="choice00">
+                    <label for="choice00" class="blind">전체선택</label>
+                  </th>
+                  <th scope="col">필기실 명 <span class="asta">*</span></th>
+                  <th scope="col">구분 <span class="asta">*</span></th>
+                  <th scope="col">수용인원 <span class="asta">*</span></th>
+                </tr>
+                <tr>
+                  <td colspan="4">등록된 필기실이 없습니다. 추가 버튼을 눌러 필기실을 추가해주세요.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="choice" id="choice01">
+                    <label for="choice01" class="blind">선택</label>
+                  </td>
+                  <td>
+                    <input type="text" title="필기실 명 입력" name="room" id="room01">
+                    <label for="room01" class="blind">필기실 명 입력</label>
+                  </td>
+                  <td>
+                    <input type="text" title="평가구분 입력" name="type" id="type01">
+                    <label for="type01" class="blind">평가 구분 입력</label>
+                  </td>
+                  <td>
+                    <input type="number" title="수용인원 입력" name="num" id="num01" placeholder="숫자" class="align_r">
+                    <label for="num01">명</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="choice" id="choice02">
+                    <label for="choice02" class="blind">선택</label>
+                  </td>
+                  <td>
+                    <input type="text" title="필기실 명 입력" name="room" id="room02" value="6호관 3층 - 필기실">
+                    <label for="room02" class="blind">필기실 명 입력</label>
+                  </td>
+                  <td>
+                    <input type="text" title="평가구분 입력" name="type" id="type02">
+                    <label for="type02" class="blind">평가 구분 입력</label>
+                  </td>
+                  <td>
+                    <input type="number" title="수용인원 입력" name="num" id="num02" placeholder="숫자" value="100" class="align_r">
+                    <label for="num02">명</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="choice" id="choice03">
+                    <label for="choice03" class="blind">선택</label>
+                  </td>
+                  <td>
+                    <input type="text" title="필기실 명 입력" name="room" id="room03" value="5호관 4층 - 필기실">
+                    <label for="room03" class="blind">필기실 명 입력</label>
+                  </td>
+                  <td>
+                    <input type="text" title="평가구분 입력" name="type" id="type03">
+                    <label for="type03" class="blind">평가 구분 입력</label>
+                  </td>
+                  <td>
+                    <input type="number" title="수용인원 입력" name="num" id="num03" placeholder="숫자" value="00" class="align_r">
+                    <label for="num03">명</label>
+                  </td>
+                </tr>
+              </table>
+              <p class="txt align_r mt10"><span class="asta">*</span> 구분 항목의 숫자 입력 시 <em>입력 값이 적은 평가실순으로 우선 배정</em>됩니다.</p>
+            </div>
+          </div>
+          <div class="btn_area">
+						<a href="#" class="btn">저장</a>
+						<a href="#" class="btn btn_form4" onclick="closeTabClick()">닫기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	function closeTabClick() {
+		window.close();
+	}
+</script>
+</body>
+</html>

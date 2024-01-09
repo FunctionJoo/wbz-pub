@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>홈 > 구술감독관 > 구술감독관 조회 > 리스트</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+        <div class="content_wrap">
+          <!--Lnb Start-->
+          <aside id="lnb">
+            <button class="openBtn">&lt;</button>
+            <h2 class="tit"><span>구술감독관</span></h2>
+            <ul class="menu">
+              <li class="btn_sub">
+                <a href="./inquiry.html">구술 감독관 조회</a>
+              </li>
+              <li class="btn_sub">
+                <a href="./allocation.html">평가 배정</a>
+              </li>
+              <li class="btn_sub">
+                <a href="./certificate.html">이수증 관리</a>
+                <ul class="sub_menu">
+                  <li class="on"><a href="./certificate.html">양성</a></li>
+                  <li><a href="./certificate_sub.html">보조</a></li>
+                </ul>
+              </li>
+            </ul>
+          </aside>
+          <!--//Lnb End-->
+
+          <!--Content Start-->
+          <div class="content evaluation">
+            <div class="content_head">
+                <h3>구술 감독관 조회</h3>
+            </div>
+            <div class="content_body">
+              <!-- Search Start -->
+              <div class="search_wrap">
+                <form action="" method="post">
+                  <table class="search">
+                    <caption>검색</caption>
+                    <colgroup>
+                      <col style="width:15%;">
+                      <col style="width:auto;">
+                    </colgroup>
+                    <tr>
+                        <th scope="row">키워드</th>
+                        <td colspan="3">
+                          <select name="" id="">
+                            <option value="이름">이름</option>
+                            <option value="이수증 번호">이수증 번호</option>
+                          </select>
+                          <label for="keyword" class="blind">키워드명</label>
+                          <input type="text" title="키워드" id="keyword" name="keyword" style="width: 475px;">
+                        </td>
+                      </tr>
+                  </table>
+                  <div class="btn_area align_c mt10">
+                    <button type="button" class="btn">검색</button>
+                  </div>
+                </form>
+              </div>
+                <!-- //Search End -->
+
+                <!-- List Start -->
+              <div class="list_wrap">
+                <div class="list_top">
+                  <div class="chk_cancel">
+                    <button type="button" class="btn">삭제</button>
+                  </div>
+                  <div class="util_area con_right">
+                    <form action="">
+                      <div class="certi_upload">
+                        <div class="file_input">
+                          <label for="certi_file" class="certi_file">엑셀파일 업로드</label>
+                          <input type="file" id="certi_file" accept=".xls, .xlsx">
+                        </div>
+                        <div class="file_load">
+                          <button type="button" class="btn btn_form10_r">이수증업로드</button>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn_form10">삭제</button>
+                    </form>
+                    <a href="javascript:;" class="btn btn_form1">엑셀 다운로드</a>
+                  </div>
+                </div>
+                <div class="list_table scroll_x">
+                  <table>
+                    <caption>검색 결과</caption>
+                    <colgroup>
+                      <col style="width:3%;">
+                      <col style="width:5%;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                      <col style="width:auto;">
+                      <col style="width:12%;">
+                      <col style="width:10%;">
+                      <col style="width:7.5%;">
+                      <col style="width:7.5%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                      <th scope="col" rowspan="2">
+                        <input
+                              type="checkbox"
+                              name="choice"
+                              id="choice00"
+                        />
+                        <label for="choice00" class="blind">전체선택</label>
+                      </th>
+                      <th scope="col" rowspan="2">번호</th>
+                      <th scope="col" rowspan="2">이수자명</th>
+                      <th scope="col" rowspan="2">생년월일</th>
+                      <th scope="col" rowspan="2">휴대폰 번호</th>
+                      <th scope="col" rowspan="2">이수증 번호</th>
+                      <th scope="col" rowspan="2">이수증 취득일</th>
+                      <th scope="col" colspan="2">보수교육</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input
+                          type="checkbox"
+                          name="choice"
+                          id="choice01"
+                          />
+                          <label for="choice01" class="blind">선택</label>
+                        </td>
+                        <td>2</td>
+                        <td>홍길동</td>
+                        <td>871012</td>
+                        <td>01000000000</td>
+                        <td>SU-12-구술-015</td>
+                        <td>yyyy.mm.dd</td>
+                        <td><a href="javascript: window.open('../popup/certificate_pop.html', '팝업창','width=600, height=700');"  class="btn_link">조회</a></td>
+                        <td class="normal_w"><strong>5</strong>회</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input
+                          type="checkbox"
+                          name="choice"
+                          id="choice02"
+                          />
+                          <label for="choice02" class="blind">선택</label>
+                        </td>
+                        <td>1</td>
+                        <td>홍길동</td>
+                        <td>871012</td>
+                        <td>01000000000</td>
+                        <td>SU-12-구술-015</td>
+                        <td>yyyy.mm.dd</td>
+                        <td><a href="javascript: window.open('../popup/certificate_pop.html', '팝업창','width=600, height=700');"  class="btn_link">조회</a></td>
+                        <td class="normal_w"><strong>5</strong>회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="pagination">
+                  <a href="#" class="first">처음 페이지</a>
+                  <a href="#" class="prev">이전 페이지</a>
+                  <a href="#" class="on">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">7</a>
+                  <a href="#">8</a>
+                  <a href="#">9</a>
+                  <a href="#">10</a>
+                  <a href="#" class="next">다음 페이지</a>
+                  <a href="#" class="last">마지막 페이지</a>
+                </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(4).addClass('on');
+    $('#lnb ul.menu > li').eq(2).find(' > a ').addClass('skin_bg');
+
+    $('.current .toggle').on('click', function(){
+      $(this).toggleClass('on');
+      $('.toggle_area').stop().slideToggle('fast');
+    });
+  });
+</script>
+</body>
+</html>

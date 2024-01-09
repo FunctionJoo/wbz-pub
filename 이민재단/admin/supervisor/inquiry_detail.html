@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>홈 > 구술감독관 > 구술감독관 조회 > 리스트</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>구술감독관</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./inquiry.html">구술 감독관 조회</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./allocation.html">평가 배정</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./certificate.html">이수증 관리</a>
+              <ul class="sub_menu">
+                <li><a href="./certificate.html">양성</a></li>
+                <li><a href="./certificate_sub.html">보조</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+            <div class="content_head">
+                <h3>구술 감독관 조회</h3>
+            </div>
+            <div class="content_body">
+              <!-- Search Start -->
+
+              <div class="info_wrap">
+                <div class="info_tit">
+                  <i></i>
+                  <span>회원 정보</span>
+                </div>
+                <div class="info_table">
+                  <table>
+                    <colgroup>
+                      <col style="width: auto;">
+                      <col style="width: auto;">
+                      <col style="width: auto;">
+                      <col style="width: auto;">
+                      <col style="width: 30%;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>이수증번호</th>
+                        <th>아이디</th>
+                        <th>이름</th>
+                        <th>주민등록번호</th>
+                        <th>감독구분</th>
+                        <th>평가경력</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SU-12-구술-015</td>
+                        <td>Sazita00</td>
+                        <td>홍길동</td>
+                        <td>871510-2********</td>
+                        <td>한국어 및 한국사회이해강사</td>
+                        <td>10회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- //Search End -->
+
+              <!-- List Start -->
+              <div class="view_wrap">
+                  <div class="list_top con_right">
+                    <div class="util_area ">
+                      <!-- util_area에 is_change 추가 시 버튼 '저장'으로 변경 -->
+                      <button type="button" class="btn change_btn">정보 변경</button>
+                      <button type="button" class="btn save_btn">저장</button>
+                    </div>
+                  </div>
+                  <div class="view_table s_type">
+                    <table>
+                      <caption>감독관 정보</caption>
+                      <colgroup>
+                        <col style="width: 25%;">
+                        <col style="width: auto;">
+                      </colgroup>
+                      <tr>
+                        <th>지원일</th>
+                        <td>2023.10.10</td>
+                      </tr>
+                      <tr>
+                        <th>비밀번호</th>
+                        <td>
+                          <button type="button" class="btn btn_form5">초기화</button>
+                          <span class="txt_gray">* 초기화시 비밀번호는 사용자 휴대폰 번호로 설정됩니다.</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>휴대폰 번호</th>
+                        <td class="smallinput">
+                          <input type="text" value="010" id="num01" disabled>
+                          <input type="text" value="0000" id="num02" disabled>
+                          <input type="text" value="0000" id="num03" disabled>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>주소</th>
+                        <td class="middle_input">
+                          <input id="address_td" type="text" value=" 경기도 성남시 분당구 정자동 불정로 111" disabled>
+                          <input id="address_detail" type="text" placeholder="상세주소" disabled>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>이메일</th>
+                        <td class="middle_input">
+                          <input id="email_td" type="text" value="mail@mail.com" disabled>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>은행명</th>
+                        <td class="middle_sel">
+                          <label for="bank" class="blind">은행</label>
+                          <select name="bank" id="bank" disabled>
+                            <option value="국민">국민</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>계좌변호</th>
+                        <td class="middle_input">
+                          <input id="account" type="text" value="367801-01-090490" disabled>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>예금주</th>
+                        <td class="">
+                          <input id="account_name" type="text" value="홍길동" disabled>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>추가이력</th>
+                        <td class="middle_textarea">
+                          <textarea name="plustxt" id="plustxt" disabled></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>특이사항</th>
+                        <td class="middle_textarea">
+                          <textarea name="subtxt" id="subtxt" disabled></textarea>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="view_wrap mt30">
+                  <div class="view_table align_c s_type">
+                    <table>
+                        <caption>개별 접수 상세</caption>
+                        <thead>
+                            <tr>
+                              <th>평가명</th>
+                              <th>신청횟수</th>
+                              <th>참석횟수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td><a href="javascript: window.open('../popup/inquiry_detail_pop01.html', '팝업창','width=600, height=700');" class="btn_link">사전평가</a></td>
+                              <td>14</td>
+                              <td>S3</td>
+                            </tr>
+                            <tr>
+                              <td><a href="javascript: window.open('../popup/inquiry_detail_pop02.html', '팝업창','width=600, height=700');" class="btn_link">중간평가</a></td>
+                              <td>14</td>
+                              <td>S3</td>
+                            </tr>
+                            <tr>
+                              <td><a href="javascript: window.open('../popup/inquiry_detail_pop03.html', '팝업창','width=600, height=700');" class="btn_link">종합평가</a></td>
+                              <td>14</td>
+                              <td>S3</td>
+                            </tr>
+                            <tr>
+                              <td>총 횟수</td>
+                              <td>42</td>
+                              <td>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="bottom_btn">
+                  <a href="./inquiry.html" class="btn">목록</a>
+                </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(1).addClass('on');
+    $('#lnb ul.menu > li').eq(0).find(' > a ').addClass('skin_bg');
+
+    $('.current .toggle').on('click', function(){
+      $(this).toggleClass('on');
+      $('.toggle_area').stop().slideToggle('fast');
+    });
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function(){
+    let utilArea = document.querySelector('.util_area');
+
+    utilArea.addEventListener('click', function(event){
+      if(event.target.classList.contains('change_btn')){
+        utilArea.classList.add('is_change');
+        enableInputAndSelects();
+      }else if(event.target.classList.contains('save_btn')){
+        utilArea.classList.remove('is_change');
+        disableInputsAndSelects();
+      }
+    });
+
+    function enableInputAndSelects(){
+      let inputsAndSelects = document.querySelectorAll('.view_table input, .view_table select, .view_table textarea');
+      inputsAndSelects.forEach(function(element){
+        element.removeAttribute('disabled');
+      });
+    }
+
+    function disableInputsAndSelects(){
+      let inputsAndSelects = document.querySelectorAll('.view_table input, .view_table select, .view_table textarea');
+      inputsAndSelects.forEach(function(element){
+        element.setAttribute('disabled', 'disabled');
+      })
+    }
+  })
+</script>
+</body>
+</html>

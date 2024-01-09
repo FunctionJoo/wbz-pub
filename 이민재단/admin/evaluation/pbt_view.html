@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">작성 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>평가 관리</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./register_list.html">평가접수현황</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./schedule_list.html">평가일정관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./attend_list.html">출석부 배정 관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./place_list.html">평가장소관리</a>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+          <div class="content_head">
+              <h3><em class="color_1">2024년 PBT 2차</em> 평가일정관리</h3>
+          </div>
+          <div class="content_body">
+
+            <!-- List Start -->
+            <div class="view_wrap">
+              <div class="btn_area align_r">
+                <button type="button" class="btn">저장</button>
+								<a href="./schedule_list.html" class="btn btn_form4">취소</a>
+              </div>
+              <div class="main_box align_l mt10">
+                <p class="ess"><span class="asta">*</span> 필수 입력</p>
+                <div class="view_table">
+                  <table>
+                    <caption>작성</caption>
+                    <colgroup>
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                      <col style="width: 14%;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <tr>
+                      <th>평가 구분 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="radio" title="사전평가" name="eval" id="before" checked>
+                          <label for="before">사전평가</label>
+                        </div>
+                        <div class="input_wrap">
+                          <input type="radio" title="중간평가" name="eval" id="middle">
+                          <label for="middle">중간평가</label>
+                        </div>
+                        <div class="input_wrap">
+                          <input type="radio" title="종합평가" name="eval" id="overall">
+                          <label for="overall">종합평가</label>
+                        </div>
+                      </td>
+                      <th>회차 <span class="asta">*</span></th>
+                      <td>
+                        <span class="pr10">2024년</span>
+                        <input type="number" title="평가회차" name="round" id="round" value="2" class="align_c" style="width: 80px; padding: 0;">
+                        <label for="round">회차</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>접수 기간 <span class="asta">*</span></th>
+                      <td colspan="3">
+                        <input type="text" placeholder="시작일" class="ico_date" name="period01" id="datepicker1" value="2024-05-01" style="cursor: pointer;">
+                        <span class="tilde">~</span>
+                        <input type="text" placeholder="종료일" class="ico_date" name="period01" id="datepicker2" value="2024-05-14" style="cursor: pointer;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평가 시행일 <span class="asta">*</span></th>
+                      <td colspan="3">
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period02" id="datepicker3" value="2024-05-16" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>평가시간: </span>
+                          <select name="hour" id="hour01">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour01">시</label>
+                          <select name="minute" id="minute01">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute01">분</label>
+                          <span>~</span>
+                          <select name="hour" id="hour02">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour02">시</label>
+                          <select name="minute" id="minute02">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute02">분</label>
+                        </div>
+                        <div class="input_wrap ">
+                          <span>입실 시각: </span>
+                          <select name="hour" id="hour03">
+                            <option value="">11</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                          </select>
+                          <label for="hour03">시</label>
+                          <select name="minute" id="minute03">
+                            <option value="">30</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute03">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>발표일 <span class="asta">*</span></th>
+                      <td colspan="3">
+                        <div class="input_wrap">
+                          <input type="text" class="ico_date" name="period03" id="datepicker4" value="2024-05-14" style="cursor: pointer;">
+                        </div>
+                        <div class="input_wrap pl10">
+                          <span>예정시간: </span>
+                          <select name="hour" id="hour04">
+                            <option value="">14</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                          </select>
+                          <label for="hour04">시</label>
+                          <select name="minute" id="minute04">
+                            <option value="">00</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                          </select>
+                          <label for="minute04">분</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>가격 <span class="asta">*</span></th>
+                      <td>
+                        <input type="text" placeholder="38,000" title="가격" name="price" id="price">
+                        <label for="price">원</label>
+                      </td>
+                      <th>특별 배려 대상 <span class="asta">*</span></th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="radio" title="사용" name="use" id="use" checked>
+                          <label for="use">사용</label>
+                        </div>
+                        <div class="input_wrap">
+                          <input type="radio" title="미사용" name="use" id="unused">
+                          <label for="unused">미사용</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>특별 접수 비자</th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="checkbox" title="적용" name="visa" id="visa">
+                          <label for="visa">적용</label>
+                        </div>
+                      </td>
+                      <th>쿼터제 적용여부</th>
+                      <td>
+                        <div class="input_wrap">
+                          <input type="checkbox" title="적용" name="quarter" id="quarter" checked>
+                          <label for="quarter">적용</label>
+                        </div>
+                        <div class="c_show">
+                          <div class="input_area">
+                            <span class="pr10">동포비자(F-4, H-2, C-3-8) 비율 </span>
+                            <input type="number" title="비자명" name="visa" id="ratio" placeholder="숫자"  value="20" class="align_r" style="width: 50px;">
+                            <label for="ratio" class="pr10">%</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>노출 여부 <span class="asta">*</span></th>
+                      <td colspan="3">
+                        <div class="input_wrap">
+                          <input type="checkbox" title="적용" name="show" id="show" checked>
+                          <label for="show">적용</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="order_box align_l">
+                <div class="view_table mt30">
+                  <div class="tit_wrap">
+										<h3>&#9733; 평가장소 선택 <span class="asta">*</span></h3>
+									</div>
+                  <table class="align_c">
+                    <caption>선택</caption>
+                    <colgroup>
+                      <col style="width: 8%;">
+                      <col style="width: 20%;">
+                      <col style="width: auto;">
+                      <col style="width: 22%;">
+                      <col style="width: 22%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          <input type="checkbox" name="choice" id="choice00" checked>
+                          <label for="choice00" class="blind">전체선택</label>
+                        </th>
+                        <th scope="col">지역</th>
+                        <th scope="col">장소 명</th>
+                        <th scope="col">총 인원 수</th>
+                        <th scope="col"><span class="blind">필기실 관리</span></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="choice" id="choice01" checked>
+                          <label for="choice01" class="blind">선택</label>
+                        </td>
+                        <td>서울시 강남구</td>
+                        <td><em class="c_blue">동양미래대학</em></td>
+                        <td>
+                          <input type="number" placeholder="숫자" title="인원수 입력" name="num" id="num01" value="00" class="align_r">
+                          <label for="num01" class="blind">인원 수</label>
+                        </td>
+                        <td>
+                          <a href="javascript: window.open('../popup/lectureroom.html', '팝업창','width=700, height=600');" class="btn btn_form5 pr10 pl10">필기실 관리 &#43;</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="choice" id="choice02" checked>
+                          <label for="choice02" class="blind">선택</label>
+                        </td>
+                        <td>서울시 서초구</td>
+                        <td><em class="c_blue">신설 중학교</em></td>
+                        <td>
+                          <input type="number" placeholder="숫자" title="인원수 입력" name="num" id="num02" value="00" class="align_r">
+                          <label for="num02" class="blind">인원 수</label>
+                        </td>
+                        <td>
+                          <a href="javascript: window.open('../popup/lectureroom.html', '팝업창','width=700, height=600');" class="btn btn_form5 pr10 pl10">필기실 관리 &#43;</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="choice" id="choice03" checked>
+                          <label for="choice03" class="blind">선택</label>
+                        </td>
+                        <td>서울시 양천구</td>
+                        <td><em class="c_blue">서경대학교</em></td>
+                        <td>
+                          <input type="number" placeholder="숫자" title="인원수 입력" name="num" id="num03" value="00" class="align_r">
+                          <label for="num03" class="blind">인원 수</label>
+                        </td>
+                        <td>
+                          <a href="javascript: window.open('../popup/lectureroom.html', '팝업창','width=700, height=600');" class="btn btn_form5 pr10 pl10">필기실 관리 &#43;</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="choice" id="choice04" checked>
+                          <label for="choice04" class="blind">선택</label>
+                        </td>
+                        <td>경기도 성남시</td>
+                        <td><em class="c_blue">동서울대학교</em></td>
+                        <td>
+                          <input type="number" placeholder="숫자" title="인원수 입력" name="num" id="num04" value="00" class="align_r">
+                          <label for="num04" class="blind">인원 수</label>
+                        </td>
+                        <td>
+                          <a href="javascript: window.open('../popup/lectureroom.html', '팝업창','width=700, height=600');" class="btn btn_form5 pr10 pl10">필기실 관리 &#43;</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="choice" id="choice05" checked>
+                          <label for="choice05" class="blind">선택</label>
+                        </td>
+                        <td>전주시 완주군</td>
+                        <td><em class="c_blue">우석대학교</em></td>
+                        <td>
+                          <input type="number" placeholder="숫자" title="인원수 입력" name="num" id="num05" value="00" class="align_r">
+                          <label for="num05" class="blind">인원 수</label>
+                        </td>
+                        <td>
+                          <a href="javascript: window.open('../popup/lectureroom.html', '팝업창','width=700, height=600');" class="btn btn_form5 pr10 pl10">필기실 관리 &#43;</a>
+                        </td>
+                      </tr>
+                    </thead>
+
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(1).addClass('on');
+    $('#lnb ul.menu > li').eq(1).find(' > a ').addClass('skin_bg');
+  });
+</script>
+</body>
+</html>

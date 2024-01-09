@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>홈 > 결제현황</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Content Start-->
+        <div class="content wide evaluation">
+            <div class="content_head">
+                <h3>결제 현황</h3>
+            </div>
+            <div class="content_body">
+              <!-- Search Start -->
+                <div class="search_wrap">
+                    <form action="" method="post">
+                        <table class="search">
+                          <caption>검색</caption>
+                          <colgroup>
+                            <col style="width:5%;">
+                            <col style="width:auto;">
+                            <col style="width:5%;">
+                            <col style="width:auto;">
+                            <col style="width:5%;">
+                            <col style="width:15%;">
+                          </colgroup>
+                          <tr>
+                            <th scope="row">년도</th>
+                            <td>
+                              <select name="year" id="year">
+                                <option value="2023">2023</option>
+                              </select>
+                              <label for="year" class="blind">년도</label>
+                            </td>
+                            <th scope="row">평가구분</th>
+                            <td>
+                              <input type="checkbox" id="test_cate01" checked>
+                              <label for="test_cate01">전체</label>
+                              <input type="checkbox" id="test_cate02">
+                              <label for="test_cate02">사전평가</label>
+                              <input type="checkbox" id="test_cate03">
+                              <label for="test_cate03">중간평가</label>
+                              <input type="checkbox" id="test_cate04">
+                              <label for="test_cate04">종합평가</label>
+                            </td>
+                            <th scope="row">회차</th>
+                            <td>
+                              <select name="count" id="count">
+                                <option value="전체">전체</option>
+                              </select>
+                              <label for="count" class="blind">회차</label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">키워드</th>
+                            <td>
+                              <select name="keyword" id="keyword">
+                                <option value="아이디">아이디</option>
+                                <option value="이름">이름</option>
+                              </select>
+                              <label for="keyword" class="blind">키워드</label>
+                              <input type="text" style="width: 260px;">
+                            </td>
+                            <th scope="row">결제방식</th>
+                            <td>
+                              <input type="checkbox" id="payment01" checked>
+                              <label for="payment01">전체</label>
+                              <input type="checkbox" id="payment02">
+                              <label for="payment02">가상계좌</label>
+                              <input type="checkbox" id="payment03">
+                              <label for="payment03">실시간 계좌이체</label>
+                              <input type="checkbox" id="payment04">
+                              <label for="payment04">신용카드</label>
+                            </td>
+                            <th scope="row">취소현황</th>
+                            <td>
+                              <select name="cancel" id="cancel">
+                                <option value="전체">전체</option>
+                                <option value="취소">취소</option>
+                                <option value="유지">유지</option>
+                                <option value="-">-</option>
+                              </select>
+                              <label for="cancel" class="blind">취소현황</label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">접수상태</th>
+                            <td>
+                              <input type="checkbox" id="refund01" checked>
+                              <label for="refund01">전체</label>
+                              <input type="checkbox" id="refund02">
+                              <label for="refund02">접수대기</label>
+                              <input type="checkbox" id="refund03">
+                              <label for="refund03">접수완료</label>
+                              <input type="checkbox" id="refund04">
+                              <label for="refund04">접수취소</label>
+                            </td>
+                            <th scope="row">환불상태</th>
+                            <td>
+                              <input type="radio" id="cancel01" checked>
+                              <label for="cancel01">전체</label>
+                              <input type="radio" id="cancel02">
+                              <label for="cancel02">환불대기</label>
+                              <input type="radio" id="cancel03">
+                              <label for="cancel03">환불완료</label>
+                            </td>
+                            <th scope="row"></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </table>
+                        <div class="btn_area align_c mt10">
+                          <button type="button" class="btn">검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- //Search End -->
+
+                <!-- List Start -->
+                <div class="list_wrap">
+                  <div class="list_top">
+                    <div class="txt_area">
+                      <p>총 <em>0,000</em>건</p>
+                    </div>
+                    <div class="util_area con_right">
+                      <a href="javascript:;" class="btn btn_form1">엑셀 다운로드</a>
+                    </div>
+                  </div>
+                  <div class="list_table scroll_x">
+                    <table style="width: 1818px;">
+                      <caption>검색 결과</caption>
+                      <colgroup>
+                        <col style="width:3%;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:8%;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                        <col style="width:auto;">
+                      </colgroup>
+                      <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">번호</th>
+                        <th scope="col" rowspan="2">아이디</th>
+                        <th scope="col" rowspan="2">평가유형(CBT/PBT)</th>
+                        <th scope="col" rowspan="2">년도</th>
+                        <th scope="col" rowspan="2">회차</th>
+                        <th scope="col" rowspan="2">평가구분</th>
+                        <th scope="col" rowspan="2">이름</th>
+                        <th scope="col" rowspan="2">외국인등록번호</th>
+                        <th scope="col" rowspan="2">생년월일</th>
+                        <th scope="col" rowspan="2">결제금액</th>
+                        <th scope="col" rowspan="2">결제구분</th>
+                        <th scope="col" rowspan="2">거래처명</th>
+                        <th scope="col" rowspan="2">카드번호</th>
+                        <th scope="col" rowspan="2">계좌번호</th>
+                        <th scope="col" rowspan="2">결제현황</th>
+                        <th scope="col" rowspan="2">결제일시</th>
+                        <th scope="col" rowspan="2">접수상태</th>
+                        <th scope="col" rowspan="2">취소현황</th>
+                        <th scope="col" rowspan="2">결제취소일시</th>
+                        <th scope="col" rowspan="2">환불상태</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+
+                          <td>5</td>
+                          <td>Id123</td>
+                          <td>CBT</td>
+                          <td>2023</td>
+                          <td><strong>31</strong>차</td>
+                          <td>사전평가</td>
+                          <td>Criss Angel</td>
+                          <td>769852-5******</td>
+                          <td>19871010</td>
+                          <td><strong>33,000</strong>원</td>
+                          <td>가상계좌</td>
+                          <td>국민</td>
+                          <td>-</td>
+                          <td>111021215564</td>
+                          <td class="wait">입금대기</td>
+                          <td></td>
+                          <td>접수대기</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+
+                          <td>4</td>
+                          <td>Id123</td>
+                          <td>PBT</td>
+                          <td>2023</td>
+                          <td><strong>31</strong>차</td>
+                          <td>중간평가</td>
+                          <td>Heather Angel</td>
+                          <td>769852-5******</td>
+                          <td>19871010</td>
+                          <td><strong>33,000</strong>원</td>
+                          <td>신용카드</td>
+                          <td>BC</td>
+                          <td>1233********5646</td>
+                          <td>-</td>
+                          <td>결제완료</td>
+                          <td>2023.11.12 14:01:11</td>
+                          <td>접수취소</td>
+                          <td>취소</td>
+                          <td>2023.11.12 14:01:11</td>
+                          <td>환불대기</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="pagination">
+                    <a href="#" class="first">처음 페이지</a>
+                    <a href="#" class="prev">이전 페이지</a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="next">다음 페이지</a>
+                    <a href="#" class="last">마지막 페이지</a>
+                  </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(3).addClass('on');
+    $('#lnb ul.menu > li').eq(2).find(' > a ').addClass('skin_bg');
+  });
+</script>
+</body>
+</html>

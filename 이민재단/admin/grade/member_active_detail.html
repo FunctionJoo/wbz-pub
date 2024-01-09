@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>홈 > 회원 및 성적 관리 >  회원관리 > 활동 회원 > 상세/수정(공통)</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>회원 및 성적관리</span></h2>
+          <ul class="menu">
+              <li class="btn_sub">
+                  <a href="./grade_list.html">성적관리</a>
+              </li>
+              <li class="btn_sub">
+                  <a href="./member_active_list.html">회원관리</a>
+                  <ul class="sub_menu">
+                      <li><a href="./member_active_list.html">활동 회원</a></li>
+                      <li><a href="./member_inactive_list.html">탈퇴 회원</a></li>
+                  </ul>
+              </li>
+              <li class="btn_sub">
+              <a href="./charge_list.html">지역 담당자</a>
+              </li>
+              <li class="btn_sub">
+              <a href="./admin_list.html">운영자</a>
+              </li>
+              <li class="btn_sub">
+                  <a href="./sms.html">SMS 관리</a>
+              </li>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+            <div class="content_head">
+                <h3>활동회원</h3>
+            </div>
+            <div class="content_body">
+              <!-- List Start -->
+              <div class="view_wrap">
+                  <div class="view_table s_type">
+                    <table>
+                      <caption>회원 정보</caption>
+                      <colgroup>
+                        <col style="width: 25%;">
+                        <col style="width: auto;">
+                      </colgroup>
+                      <tr>
+                        <th>아이디</th>
+                        <td>honggil12</td>
+                      </tr>
+                      <tr>
+                        <th>비밀번호 초기화</th>
+                        <td>
+                          <button type="button" class="btn btn_form5">초기화</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>이름</th>
+                        <td class="middle_input">
+                          <input type="text" value="SHOAIB MUHAMMAD">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>외국인 등록번호</th>
+                        <td class="">
+                          <strong>740115-5******</strong>
+                          <button type="button" class="btn btn_form4 sub_button">자세히보기</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>여권번호</th>
+                        <td>
+                          EL3788294
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>생년월일</th>
+                        <td>
+                          19740115
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>주소</th>
+                        <td class="middle_input">
+                          <input type="text" value="서울시 송파구 송파대로 167 테라타워 A 동 403호">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>이메일</th>
+                        <td class="middle_input">
+                          <input type="text" value="sazita@naver.com">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>휴대폰번호</th>
+                        <td class="middle_input">
+                          <input type="text" value="01055870000">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>국적</th>
+                        <td>
+                          파키스탄
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>체류자격(비자)</th>
+                        <td>
+                          E-9
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>가입일</th>
+                        <td>
+                          23-04-06 (최근 방문일시:  23-05-06:10:05:00)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>상태</th>
+                        <td class="is_cancel_mem">
+                          <!-- 상태 td에 is_cancel_mem 클래스 추가 시 탈퇴 정보 노출 -->
+                          <input type="radio" id="state_01" name="state">
+                          <label for="state_01">정상</label>
+                          <input type="radio" id="state_02" name="state">
+                          <label for="state_02">정지</label>
+                          <input type="radio" id="state_03" name="state" checked>
+                          <label for="state_03">탈퇴</label>
+                          <span class="cancel_mem_info">(탈퇴 신청일: 23-05-06 탈퇴일: 23-05-06)</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>특이사항</th>
+                        <td class="middle_textarea">
+                          <textarea name="" id=""></textarea>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="bottom_btn two_btn">
+                  <button type="button" class="btn">저장</button>
+                  <a href="./member_active_list.html" class="btn btn_form4">취소</a>
+                </div>
+                <div class="view_wrap mt30">
+                  <div class="sub_tit">회원 평가 내역</div>
+                  <div class="view_table align_c s_type">
+                    <table>
+                        <caption>회원 평가 내역</caption>
+                        <thead>
+                            <tr>
+                              <th>평가명</th>
+                              <th>접수 번호</th>
+                              <th>접수 일시</th>
+                              <th>결과</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>2024년 [31차] 사전평가</td>
+                              <td><a href="javascript: window.open('../popup/inquiry_detail_pop01.html', '팝업창','width=600, height=700');" class="btn_link">2024112700152</a></td>
+                              <td>YYYY-MM-DD:hh:mm:d</td>
+                              <td><strong>1단계</strong> | 필기<strong>75</strong> 구술<strong>25</strong>  총점 <strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2023년 [3차] 종합평가(영주용)</td>
+                              <td><a href="javascript: window.open('../popup/inquiry_detail_pop01.html', '팝업창','width=600, height=700');" class="btn_link">2024112700152</a></td>
+                              <td>YYYY-MM-DD:hh:mm:d</td>
+                              <td><strong>1단계</strong> | 필기<strong>75</strong> 구술<strong>25</strong>  총점 <strong>100</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+    $(document).ready(function () {
+        $('#gnb ul li').eq(2).addClass('on');
+        $('#lnb ul.menu > li').eq(1).find(' > a ').addClass('skin_bg');
+
+        $('.current .toggle').on('click', function(){
+        $(this).toggleClass('on');
+        $('.toggle_area').stop().slideToggle('fast');
+        });
+    });
+</script>
+</body>
+</html>

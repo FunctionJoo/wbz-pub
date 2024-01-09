@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>평가 관리</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./register_list.html">평가접수현황</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./schedule_list.html">평가일정관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./attend_list.html">출석부 배정 관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./place_list.html">평가장소관리</a>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+          <div class="content_head">
+              <h3>평가접수현황</h3>
+          </div>
+          <div class="content_body">
+            <!-- Search Start -->
+            <div class="search_wrap">
+              <form action="" method="post">
+                <table class="search">
+                  <caption>검색</caption>
+                  <colgroup>
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">년도</th>
+                    <td>
+                      <select name="year">
+                        <option value="">2023</option>
+                        <option value="">2022</option>
+                        <option value="">2021</option>
+                        <option value="">2020</option>
+                        <option value="">2019</option>
+                      </select>
+                    </td>
+                    <th scope="row">평가 구분</th>
+                    <td>
+                      <div class="input_wrap">
+                        <input type="checkbox" title="전체" name="eval" id="eval_all" checked>
+                        <label for="eval_all">전체</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="checkbox" title="사전평가" name="eval" id="before">
+                        <label for="before">사전평가</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="checkbox" title="중간평가" name="eval" id="middle">
+                        <label for="middle">중간평가</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="checkbox" title="종합평가" name="eval" id="overall">
+                        <label for="overall">종합평가</label>
+                      </div>
+                    </td>
+                    <th scope="row">평가 유형</th>
+                    <td>
+                      <div class="input_wrap">
+                        <input type="radio" title="전체" name="type" id="type_all" checked>
+                        <label for="type_all">전체</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="CBT" name="type" id="cbt">
+                        <label for="cbt">CBT</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="PBT" name="type" id="pbt">
+                        <label for="pbt">PBT</label>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="btn_area align_c mt10">
+                  <button type="button" class="btn">검색</button>
+                </div>
+              </form>
+            </div>
+            <!-- //Search End -->
+
+            <!-- List Start -->
+            <div class="list_wrap">
+              <div class="list_top">
+                <div class="txt_area">
+                  <p>총 <em>0,000</em>건</p>
+                </div>
+                <div class="util_area">
+                  <a href="javascript:;" class="btn btn_form1">엑셀 다운로드</a>
+                </div>
+              </div>
+              <div class="list_table">
+                <table>
+                  <caption>검색 결과</caption>
+                  <colgroup>
+                    <col style="width:3%;">
+                    <col style="width:5%;">
+                    <col style="width:8%;">
+                    <col style="width:5%;">
+                    <col style="width:8%;">
+                    <col style="width:8%;">
+                    <col style="width:8%;">
+                    <col style="width:15%;">
+                    <col style="width:10%;">
+                    <col style="width:10%;">
+                    <col style="width:5%;">
+                    <col style="width:auto;">
+                  </colgroup>
+                  <thead>
+                  <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">년도</th>
+                    <th scope="col">CBT/PBT</th>
+                    <th scope="col">회차</th>
+                    <th scope="col">평가 구분</th>
+                    <th scope="col">특별 접수</th>
+                    <th scope="col">쿼터제</th>
+                    <th scope="col">접수기간</th>
+                    <th scope="col">평가 시행일</th>
+                    <th scope="col">평가발표일</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">등록일시</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr onclick="location.href='./register_before.html'" style="cursor:pointer;">
+                      <td>50</td>
+                      <td>2023</td>
+                      <td>CBT</td>
+                      <td>1</td>
+                      <td>사전평가</td>
+                      <td></td>
+                      <td></td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>2024-05-05</td>
+                      <td>2024-05-05</td>
+                      <td>홍길동</td>
+                      <td>2024-05-05 00:00:00</td>
+                    </tr>
+                    <tr onclick="location.href='./register_before.html'" style="cursor:pointer;">
+                      <td>49</td>
+                      <td>2023</td>
+                      <td>CBT</td>
+                      <td>2</td>
+                      <td>중간평가</td>
+                      <td></td>
+                      <td></td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>운영자</td>
+                      <td>YYYY-MM-DD hh:mm:dd</td>
+                    </tr>
+                    <tr onclick="location.href='./register_overall.html'" style="cursor:pointer;">
+                      <td>48</td>
+                      <td>2023</td>
+                      <td>CBT</td>
+                      <td>3</td>
+                      <td>종합평가</td>
+                      <td></td>
+                      <td></td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>운영자2</td>
+                      <td>YYYY-MM-DD hh:mm:dd</td>
+                    </tr>
+                    <tr onclick="location.href='./register_overall.html'" style="cursor:pointer;">
+                      <td>47</td>
+                      <td>2023</td>
+                      <td>CBT</td>
+                      <td>4</td>
+                      <td>종합평가</td>
+                      <td></td>
+                      <td></td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>남궁민</td>
+                      <td>YYYY-MM-DD hh:mm:dd</td>
+                    </tr>
+                    <tr onclick="location.href='./register_before.html'"style="cursor:pointer;">
+                      <td>46</td>
+                      <td>2023</td>
+                      <td>CBT</td>
+                      <td>1</td>
+                      <td>중간평가</td>
+                      <td>E9</td>
+                      <td></td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>운영자</td>
+                      <td>YYYY-MM-DD hh:mm:dd</td>
+                    </tr>
+                    <tr onclick="location.href='./register_overall.html'"style="cursor:pointer;">
+                      <td>45</td>
+                      <td>2023</td>
+                      <td>CBT</td>
+                      <td>2</td>
+                      <td>종합평가</td>
+                      <td></td>
+                      <td>20%</td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>운영자</td>
+                      <td>YYYY-MM-DD hh:mm:dd</td>
+                    </tr>
+                    <tr onclick="location.href='./register_before.html'"style="cursor:pointer;">
+                      <td>44</td>
+                      <td>2023</td>
+                      <td>CBT</td>
+                      <td>1</td>
+                      <td>사전평가</td>
+                      <td></td>
+                      <td></td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>운영자</td>
+                      <td>YYYY-MM-DD hh:mm:dd</td>
+                    </tr>
+                    <tr onclick="window.open('../popup/reason.html','팝업창','width=600, height=400');" style="cursor:pointer;">
+                      <td>1</td>
+                      <td>2023</td>
+                      <td>PBT</td>
+                      <td>4</td>
+                      <td>중간평가</td>
+                      <td>4</td>
+                      <td></td>
+                      <td>2024-05-05 ~2024-05-05</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>YYYY-MM-DD</td>
+                      <td>운영자</td>
+                      <td>YYYY-MM-DD hh:mm:dd</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination">
+                <a href="#" class="first">처음 페이지</a>
+                <a href="#" class="prev">이전 페이지</a>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="next">다음 페이지</a>
+                <a href="#" class="last">마지막 페이지</a>
+              </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(1).addClass('on');
+    $('#lnb ul.menu > li').eq(0).find(' > a ').addClass('skin_bg');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,852 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>이민재단 관리자 마크업리스트</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<style>
+		*{-webkit-text-size-adjust:none;}
+		html,body{width:100%;height:100%; min-width:800px;}
+		html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, ul, li, fieldset, form, label, leging, table, caption, tbody, tfoot, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; outline:0; font-family:NanumGothic,'나눔고딕',Dotum,'돋움',applegothic,sans-serif; font-size:13px; color:#555; /*vertical-align:baseline;*/}
+		body{line-height:1.2em; border:0;}
+		strong, em, span, wbr, a{display:inline-block;}
+		span{margin:0; padding:0; outline:0;}
+		hr{display:none}
+		ol, ul, dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+		fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+		address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;}
+		img{vertical-align:middle;}
+		a{cursor:pointer; text-decoration:none; color:#666;}
+		table{border-collapse:collapse;}
+		#wrap{padding:12px;}
+		#header{margin-bottom:20px;}
+		#header::after{content:''; clear:both; display:block;}
+		#header>h1{float:left; font-size:28px; color:#1a1a1a; padding-top:15px;}
+		#header>div{float:right;}
+		#header>div>p{font-size:11px; color:#888; text-align:right;}
+		div.box{border:1px solid #dedede; background:#f1f1f1; padding:12px 14px; margin-bottom:10px;}
+		h3{font-size:14px; color:#333; margin-bottom:13px;}
+		h4{font-size:14px; color:#333; margin:25px 0 8px 5px;}
+		ol.atten>li{margin-bottom:8px; padding:0; line-height:160%;}
+		ol.atten>li:last-child{margin-bottom:0;}
+		table.htmllist th,table.htmllist td{border:1px solid #ccc;}
+		table.htmllist tr:first-child td{text-align:center; font-weight:bold; border-bottom:1px solid #111 !important; height:30px; color:#000 !important; font-size:13px !important;}
+		table.htmllist th{padding:5px 6px; text-align:left; border-bottom:2px solid #1954DB !important; height:32px; background-color:#f3f4f8;}
+		table.htmllist th.depth2{padding: 2px 18px; text-align:left; border-bottom:1px solid #333 !important; height:30px; font-size: 12px; background-color: #fff}
+		table.htmllist td{padding:5px 6px;}
+		table.htmllist td:first-child{text-align:center;}
+		table.htmllist td:last-child{color:#888; font-size:12px;}
+		table.htmllist td:nth-child(4),table.htmllist td:nth-child(6),table.htmllist td:nth-child(7){text-align:center;}
+		table.htmllist td:nth-child(7){color:#5bcdda; font-size:11px; font-weight:bold;}
+		table.htmllist td > a{display:inline-block; width:100%; height:26px; line-height:26px; text-align:center; color:#fff; font-size:11px; font-weight:bold; vertical-align:middle; background-color:#1954DB; border:1px solid #1954DB; border-radius:3px;}
+		table.htmllist td>a:hover{background-color:#1954DB; border-color: #1954DB; line-height:28px;opacity: 0.7;}
+		table.htmllist tr:hover>td{background-color:#fffad2;}
+		table.htmllist td.ing{text-align:center; font-size:12;}
+		table.htmllist td.end{text-align:center; font-size:12; font-weight:bold; background-color:#b8bbbf; color:#1a1a1a;}
+		/* .total{padding:10px 5px 20px} */
+		.total .tit_txt{padding-left:10px;margin-left:10px;border-left:1px solid #ddd;}
+		.total h3 + .tit_txt{padding-left:0;margin-left:0;border-left:none;}
+		.total_page_num{font-size:18px;color:#5bcdda;}
+		.link{display:inline-block; padding:0 10px; min-width:100px; height:40px; line-height:40px; text-align:center; color:#fff; font-size:14px; font-weight:bold; vertical-align:middle; margin-left:15px; background-color:#666; border:1px solid #666; border-radius:3px;}
+	</style>
+</head>
+<body>
+<div id="wrap"  style="padding-bottom: 100px;">
+	<div id="header">
+		<h1>한국이민재단 관리자 - 공통</h1>
+		<div>
+			<p>Version: <b>0.0.01</b></p>
+			<p>Last Update: <b>2023.12.12</b></p>
+			<p>Coding: <b>HTML5&amp;CSS3</b></p>
+		</div>
+	</div>
+	<h4>코딩 목록</h4>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="htmllist">
+		<thead>
+			<tr class="head">
+				<td>No</td>
+				<td>Path</td>
+				<td>FileName</td>
+				<td>State</td>
+				<td>View</td>
+				<td>Update</td>
+				<td>Author</td>
+				<td>Remark</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="8">로그인</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/login/</td>
+				<td>login.html</td>
+				<td class="end">end</td>
+				<td><a href="./login/login.html" target="_blank">View</a></td>
+				<td>2023-12-12</td>
+				<td></td>
+				<td>로그인</td>
+			</tr>
+
+			<tr>
+				<th colspan="8">메인</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>main.html</td>
+				<td class="end">end</td>
+				<td><a href="./main/main.html" target="_blank">View</a></td>
+				<td>2023-12-00</td>
+				<td>선주현</td>
+				<td>홈</td>
+			</tr>
+
+			<tr>
+				<th colspan="8">평가관리 - 한울</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>register_list.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/register_list.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가접수현황 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>register_before.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/register_before.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가접수현황 > 리스트: 사전/중간평가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>register_overall.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/register_overall.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가접수현황 > 리스트: 종합평가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>schedule_list.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/schedule_list.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가일정관리 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>cbt_write.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/cbt_write.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가일정관리 > CBT등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>cbt_view.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/cbt_view.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가일정관리 > CBT상세/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>pbt_write.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/pbt_write.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가일정관리 > PBT등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>pbt_view.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/pbt_view.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가일정관리 > PBT상세/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>attend_list.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/attend_list.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 출석부 배정 관리 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>attend_view.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/attend_view.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 출석부 배정 관리 > 상세: 종합평가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/evaluation/</td>
+				<td>place_list.html</td>
+				<td class="end">end</td>
+				<td><a href="evaluation/place_list.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가장소관리 > 리스트</td>
+			</tr>
+			<tr>
+				<th colspan="8">회원 및 성적 관리</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>grade_list.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/grade_list.html" target="_blank">View</a></td>
+				<td>2023-12-00</td>
+				<td>최승은</td>
+				<td>홈 > 회원 및 성적 관리 > 성적관리 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>grade_detail.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/grade_detail.html" target="_blank">View</a></td>
+				<td>2023-12-00</td>
+				<td>최승은</td>
+				<td>홈 > 회원 및 성적 관리 > 성적관리 > 상세/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>member_active_list.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/member_active_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 회원관리 > 활동 회원 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>member_active_detail.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/member_active_detail.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 회원관리 > 활동 회원 > 상세/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>member_inactive_list.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/member_inactive_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 회원관리 > 탈퇴 회원 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>charge_list.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/charge_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 지역 담당자 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>charge_write.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/charge_write.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 지역 담당자 > 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>charge_detail.html"</td>
+				<td class="end">end</td>
+				<td><a href="grade/charge_detail.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 지역 담당자 > 상세 / 수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>admin_list.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/admin_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 운영자 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>admin_write.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/admin_write.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 운영자 > 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>admin_detail.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/admin_detail.html" target="_blank">View</a></td>
+				<td>2023-12-00</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > 운영자 > 상세 / 수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/grade/</td>
+				<td>sms.html</td>
+				<td class="end">end</td>
+				<td><a href="grade/sms.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 > SMS > 리스트</td>
+			</tr>
+
+			<tr>
+				<th colspan="8">결제 현황</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/payment/</td>
+				<td>history.html</td>
+				<td class="end">end</td>
+				<td><a href="payment/history.html" target="_blank">View</a></td>
+				<td>2023-12-00</td>
+				<td>선주현</td>
+				<td>홈 > 결제현황</td>
+			</tr>
+
+			<tr>
+				<th colspan="8">구술감독관</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/supervisor/</td>
+				<td>inquiry</td>
+				<td class="end">end</td>
+				<td><a href="./supervisor/inquiry.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td>선주현</td>
+				<td>홈 > 구술감독관 > 구술 감독관 조회</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/supervisor/</td>
+				<td>inquiry_detail</td>
+				<td class="end">end</td>
+				<td><a href="./supervisor/inquiry_detail.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td>선주현</td>
+				<td>홈 > 구술감독관 > 구술 감독관 조회 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/supervisor/</td>
+				<td>allocation</td>
+				<td class="end">end</td>
+				<td><a href="./supervisor/allocation.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td>선주현</td>
+				<td>홈 > 구술감독관 > 평가배정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/supervisor/</td>
+				<td>allocation_detail</td>
+				<td class="end">end</td>
+				<td><a href="./supervisor/allocation_detail.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td>선주현</td>
+				<td>홈> 구술감독관 > 평가배정 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/supervisor/</td>
+				<td>certificate</td>
+				<td class="end">end</td>
+				<td><a href="./supervisor/certificate.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td>선주현</td>
+				<td>홈> 구술감독관 > 이수증관리 > 양성</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/supervisor/</td>
+				<td>certificate_sub</td>
+				<td class="end">end</td>
+				<td><a href="./supervisor/certificate_sub.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td>선주현</td>
+				<td>홈> 구술감독관 > 이수증관리 > 보수</td>
+			</tr>
+			<tr>
+				<th colspan="8">알림마당</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>notice_list.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/notice_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 공지사항 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>notice_write.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/notice_write.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 공지사항 > 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>notice_view.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/notice_view.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 공지사항 > 상세/수정/삭제</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>reference_list.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/reference_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 자료실 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>reference_write.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/reference_write.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 자료실 > 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>reference_view.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/reference_view.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 자료실 > 상세/수정/삭제</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>faq_list.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/faq_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > FAQ > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>faq_write.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/faq_write.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > FAQ > 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>faq_view.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/faq_view.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > FAQ > 상세/수정/삭제</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>qna_list.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/qna_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > Q&A > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>qna_view.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/qna_view.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > Q&A > 상세: 답변대기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>qna_view_complete.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/qna_view_complete.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > Q&A > 상세: 답변완료</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>popup_list.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/popup_list.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 팝업 > 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>popup_write.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/popup_write.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 팝업 > 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/noti/</td>
+				<td>popup_view.html</td>
+				<td class="end">end</td>
+				<td><a href="noti/popup_view.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td></td>
+				<td>홈 > 알림마당 > 팝업 > 상세/수정/삭제</td>
+			</tr>
+			<tr>
+				<th colspan="8">통계/분석 - 한울</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>member_stats_gender.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/member_stats_gender.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 회원 통계 > 성별</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>member_stats_age.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/member_stats_age.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 회원 통계 > 연령별</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>member_stats_area.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/member_stats_area.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 회원 통계 > 지역별</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>eval_before.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/eval_before.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 평가 현황 > 사전평가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>eval_interim.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/eval_interim.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 평가 현황 > 중간평가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>eval_overall.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/eval_overall.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 평가 현황 > 종합평가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>report.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/report.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 평가현황 > 보고서</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/stats/</td>
+				<td>active_current.html</td>
+				<td class="end">end</td>
+				<td><a href="stats/active_current.html" target="_blank">View</a></td>
+				<td>2023-12-20</td>
+				<td></td>
+				<td>홈 > 통계/분석 > 구술 감독관 활동 현황</td>
+			</tr>
+			<tr>
+				<th colspan="8">팝업</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>grade_member_active_pop.html</td>
+				<td class="end">end</td>
+				<td><a href="popup/grade_member_active_pop.html" target="_blank">View</a></td>
+				<td>2023-12-18</td>
+				<td>선주현</td>
+				<td>홈 > 회원 및 성적 관리 >  회원 관리 > 리스트 >  개인정보 조회 사유 입력 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>member_lookup_pop.html</td>
+				<td class="end">end</td>
+				<td><a href="popup/grade_lookup_pop.html" target="_blank">View</a></td>
+				<td>2023-12-00</td>
+				<td>최승은</td>
+				<td>홈 > 회원 및 성적 관리 > 회원관리 > 리스트 > 개인정보 조회 사유 입력 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>inquiry_pop</td>
+				<td class="end">end</td>
+				<td><a href="./popup/inquiry_pop.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td>선주현</td>
+				<td>홈> 구술감독관 > 구술감독관 조회 > 이수증 다운로드 내역 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>inquiry_detail_pop01</td>
+				<td class="end">end</td>
+				<td><a href="./popup/inquiry_detail_pop01.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td>선주현</td>
+				<td>홈> 구술감독관 > 구술감독관 조회 > 상세 > 사전평가 신청내역 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>allocation_detail_pop</td>
+				<td class="end">end</td>
+				<td><a href="./popup/allocation_detail_pop.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td>선주현</td>
+				<td>홈 > 구술감독관 > 평가배정_상세 > 감독관 추가 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>certificate_pop</td>
+				<td class="end">end</td>
+				<td><a href="./popup/certificate_pop.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td>선주현</td>
+				<td>홈> 구술감독관 > 이수증관리 > 양성 > 보수교육 조회 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>reason.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/reason.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가접수현황 > 리스트 > 개인정보 조회 사유 입력</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>register_view.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/register_view.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가접수현황 > 개별 평가 접수 리스트 > 개별 접수 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>message.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/message.html" target="_blank">View</a></td>
+				<td>2023-12-13</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가접수현황 > 리스트 > 문자 전송</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>lectureroom.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/lectureroom.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가일정관리 > 필기실 관리: 추가 및 상세/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>target.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/target.html" target="_blank">View</a></td>
+				<td>2023-12-14</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 출석부 배정 관리 > 특별 배려 대상자 추가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>plus_immigration.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/plus_immigration.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가장소관리 > 출입국 관할 추가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>plus_area.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/plus_area.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가장소관리 > 지역 추가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>plus_place.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/plus_place.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가장소관리 > 평가장소 추가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>view_immigration.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/view_immigration.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가장소관리 > 출입국 관할 상세/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>view_area.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/view_area.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가장소관리 > 지역 상세/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/popup/</td>
+				<td>view_place.html</td>
+				<td class="end">end</td>
+				<td><a href="./popup/view_place.html" target="_blank">View</a></td>
+				<td>2023-12-15</td>
+				<td></td>
+				<td>홈 > 평가 관리 > 평가장소관리 > 평가장소 상세/수정</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+	var totalPageNum = 0;
+	$('tbody').each(function(idx){
+		var titTxt = $('tbody').eq(idx).find('th').text();
+		$('.total').append('<span class="tit_txt">' + titTxt + ': </span>')
+		$(this).find('tr').each(function(i){
+			$(this).find('td:first-child').text(i);
+			num = $(this).filter(':last-child').find('td:first-child').text();
+		});
+		$('.total').append('<strong>' + num + '</strong>');
+		totalPageNum += parseInt(num);
+	});
+	$('.total h3').append('<strong class="total_page_num">' + totalPageNum + '</strong>');
+	console.log($('tbody tr').length)
+</script>
+</body>
+</html>

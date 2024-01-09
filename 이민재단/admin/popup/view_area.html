@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>한국이민재단 사회통합프로그램 평가 시스템</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body style="background-color:#fff">
+	<div class="pop_wrap">
+		<div class="pop_header">
+      <h1>지역 수정</h1>
+		</div>
+		<div class="pop_body">
+			<div style="height:400px;">
+				<div class="con_box">
+          <div class="view_wrap">
+            <p class="align_r mb10"><span class="asta">*</span> 필수 입력</p>
+            <div class="view_table">
+              <table class="align_c">
+                <caption>지역 수정</caption>
+                <colgroup>
+                  <col style="width:25%;">
+                  <col style="width:auto;">
+                </colgroup>
+                <tr>
+                  <th>노출상태 <span class="asta">*</span></th>
+                  <td class="align_l">
+                    <input type="radio" name="show" id="show" checked>
+                    <label for="show">노출</label>
+                    <input type="radio" name="show" id="hide">
+                    <label for="hide">미노출</label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>출입국 관할 명 <span class="asta">*</span></th>
+                  <td class="align_l">
+                    <select name="immigration" id="immigration" style="width: 49%;">
+                      <option value="">서울</option>
+                      <option value="">부산</option>
+                      <option value="">인천</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>지역</th>
+                  <td class="align_l">
+                    <label for="area01" class="blind">시/도 선택</label>
+                    <select name="area" id="area01" style="width: 49%;">
+                      <option value=""disabled>시/도 선택</option>
+                      <option value="">서울시</option>
+                      <option value="" selected>경기도</option>
+                    </select>
+                    <label for="area02" class="blind">시/군/구 선택</label>
+                    <select name="area" id="area02" style="width: 49%;">
+                      <option value="" disabled>시/군/구 선택</option>
+                      <option value="">강서구</option>
+                      <option value="">강동구</option>
+                      <option value="" selected>성남시</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>등록자</th>
+                  <td class="align_l">홍길동</td>
+                </tr>
+                <tr>
+                  <th>등록일</th>
+                  <td class="align_l">0000-00-00 00:00:00</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="btn_area">
+						<a href="#" class="btn">저장</a>
+						<a href="#" class="btn btn_form4" onclick="closeTabClick()">닫기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	function closeTabClick() {
+		window.close();
+	}
+</script>
+</body>
+</html>

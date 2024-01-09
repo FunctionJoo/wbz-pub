@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>통계/분석</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./member_stats_gender.html">회원통계</a>
+              <ul class="sub_menu">
+                <li><a href="./member_stats_gender.html">성별</a></li>
+                <li><a href="./member_stats_age.html">연령별</a></li>
+                <li><a href="./member_stats_area.html">지역별</a></li>
+              </ul>
+            </li>
+            <li class="btn_sub">
+              <a href="./eval_before.html">평가 현황</a>
+              <ul class="sub_menu">
+                <li><a href="./eval_before.html">사전평가</a></li>
+                <li class="on"><a href="./eval_interim.html">중간평가</a></li>
+                <li><a href="./eval_overall.html">종합평가</a></li>
+              </ul>
+            </li>
+            <li class="btn_sub">
+              <a href="./active_current.html">구술 감독관 활동 현황</a>
+            </li>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content stats">
+          <div class="content_head">
+              <h3>중간평가</h3>
+          </div>
+          <div class="content_body">
+            <!-- Search Start -->
+            <div class="search_wrap">
+              <form action="" method="post">
+                <table class="search">
+                  <caption>검색</caption>
+                  <colgroup>
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">연도/회차</th>
+                    <td>
+                      <label for="year" class="blind">연도</label>
+                      <select name="year" id="year">
+                        <option value="">2024년</option>
+                        <option value="">2023년</option>
+                        <option value="">2022년</option>
+                        <option value="">2021년</option>
+                        <option value="">2020년</option>
+                      </select>
+                      <label for="round" class="blind">회차</label>
+                      <select name="round" id="round">
+                        <option value="">1차</option>
+                        <option value="">2차</option>
+                        <option value="">3차</option>
+                        <option value="">4차</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+                <div class="btn_area align_c mt10">
+                  <button type="button" class="btn">검색</button>
+                </div>
+              </form>
+            </div>
+            <!-- //Search End -->
+
+            <!-- List Start -->
+            <div class="list_wrap">
+              <div class="list_top right">
+                <div class="util_area">
+                  <a href="./report.html" class="btn btn_form10_r">결과 보고서</a>
+                  <a href="javascript:;" class="btn btn_form1">엑셀 다운로드</a>
+                </div>
+              </div>
+              <div class="list_table">
+                <table>
+                  <caption>검색 결과</caption>
+                  <colgroup>
+                    <col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+										<col style="width:5%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col" rowspan="3" class="border_r">구분</th>
+                      <th scope="col" colspan="4">응시 현황</th>
+                      <th scope="col" colspan="6">평가 결과</th>
+                    </tr>
+                    <tr>
+                      <th scope="col" rowspan="2">신청자</th>
+                      <th scope="col" rowspan="2">응시자</th>
+                      <th scope="col" rowspan="2">응시율(%)</th>
+                      <th scope="col" rowspan="2" class="border_r">결시자</th>
+                      <th scope="col" colspan="3">합격 결과</th>
+                      <th scope="col" colspan="3">평균 성적</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">합격자</th>
+                      <th scope="col">합격률(%)</th>
+                      <th scope="col">불합격자</th>
+                      <th scope="col">전체</th>
+                      <th scope="col">합격</th>
+                      <th scope="col">불합격</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>전체</td>
+											<td>2,412</td>
+											<td class="bg">2,312</td>
+											<td>95.9</td>
+											<td>100</td>
+											<td class="bg">976</td>
+											<td>42.2</td>
+											<td>1,336</td>
+											<td class="bg">54.4</td>
+											<td>71.4</td>
+											<td>42.1</td>
+                    </tr>
+                    <tr>
+                      <td>서울</td>
+											<td>423</td>
+											<td class="bg">402</td>
+											<td>95.0</td>
+											<td>21</td>
+											<td class="bg">186</td>
+											<td>46.3</td>
+											<td>216</td>
+											<td class="bg">57.0</td>
+											<td>72.4</td>
+											<td>43.8</td>
+                    </tr>
+                    <tr>
+                      <td>부산</td>
+											<td>217</td>
+											<td class="bg">204</td>
+											<td>94.0</td>
+											<td>13</td>
+											<td class="bg">76</td>
+											<td>37.3</td>
+											<td>218</td>
+											<td class="bg">52.8</td>
+											<td>71.0</td>
+											<td>42.1</td>
+                    </tr>
+                    <tr>
+                      <td>인천</td>
+											<td>306</td>
+											<td class="bg">299</td>
+											<td>97.7</td>
+											<td>7</td>
+											<td class="bg">143</td>
+											<td>47.8</td>
+											<td>156</td>
+											<td class="bg">56.3</td>
+											<td>70.5</td>
+											<td>43.2</td>
+                    </tr>
+                    <tr>
+                      <td>수원</td>
+											<td>357</td>
+											<td class="bg">349</td>
+											<td>97.8</td>
+											<td>8</td>
+											<td class="bg">147</td>
+											<td>42.1</td>
+											<td>202</td>
+											<td class="bg">55.1</td>
+											<td>71.2</td>
+											<td>43.4</td>
+                    </tr>
+                    <tr>
+                      <td>제주</td>
+											<td>37</td>
+											<td class="bg">33</td>
+											<td>89.2</td>
+											<td>4</td>
+											<td class="bg">16</td>
+											<td>48.5</td>
+											<td>17</td>
+											<td class="bg">57.2</td>
+											<td>75.5</td>
+											<td>39.9</td>
+                    </tr>
+                    <tr>
+                      <td>대구</td>
+											<td>98</td>
+											<td class="bg">92</td>
+											<td>93.9</td>
+											<td>6</td>
+											<td class="bg">38</td>
+											<td>41.3</td>
+											<td>54</td>
+											<td class="bg">54.8</td>
+											<td>71.8</td>
+											<td>42.8</td>
+                    </tr>
+                    <tr>
+                      <td>대전</td>
+											<td>127</td>
+											<td class="bg">123</td>
+											<td>96.9</td>
+											<td>4</td>
+											<td class="bg">58</td>
+											<td>47.2</td>
+											<td>65</td>
+											<td class="bg">55.3</td>
+											<td>71.3</td>
+											<td>41.0</td>
+                    </tr>
+                    <tr>
+                      <td>여수</td>
+											<td>-</td>
+											<td class="bg">-</td>
+											<td>-</td>
+											<td>0</td>
+											<td class="bg">0</td>
+											<td>0.0</td>
+											<td>0</td>
+											<td class="bg">0.0</td>
+											<td>0.0</td>
+											<td>0.0</td>
+                    </tr>
+                    <tr>
+                      <td>양주</td>
+											<td>220</td>
+											<td class="bg">213</td>
+											<td>96.8</td>
+											<td>7</td>
+											<td class="bg">74</td>
+											<td>34.7</td>
+											<td>139</td>
+											<td class="bg">49.9</td>
+											<td>71.0</td>
+											<td>38.6</td>
+                    </tr>
+                    <tr>
+                      <td>울산</td>
+											<td>92</td>
+											<td class="bg">87</td>
+											<td>94.6</td>
+											<td>5</td>
+											<td class="bg">26</td>
+											<td>29.9</td>
+											<td>61</td>
+											<td class="bg">49.4</td>
+											<td>68.1</td>
+											<td>41.4</td>
+                    </tr>
+                    <tr>
+                      <td>광주</td>
+											<td>119</td>
+											<td class="bg">117</td>
+											<td>98.3</td>
+											<td>2</td>
+											<td class="bg">49</td>
+											<td>41.9</td>
+											<td>68</td>
+											<td class="bg">53.2</td>
+											<td>69.9</td>
+											<td>41.2</td>
+                    </tr>
+                    <tr>
+                      <td>창원</td>
+											<td>50</td>
+											<td class="bg">47</td>
+											<td>94.0</td>
+											<td>3</td>
+											<td class="bg">22</td>
+											<td>46.8</td>
+											<td>25</td>
+											<td class="bg">58.4</td>
+											<td>75.0</td>
+											<td>43.8</td>
+                    </tr>
+                    <tr>
+                      <td>춘천</td>
+											<td>54</td>
+											<td class="bg">49</td>
+											<td>90.7</td>
+											<td>5</td>
+											<td class="bg">30</td>
+											<td>61.2</td>
+											<td>19</td>
+											<td class="bg">61.8</td>
+											<td>74.0</td>
+											<td>42.5</td>
+                    </tr>
+                    <tr>
+                      <td>청주</td>
+											<td>213</td>
+											<td class="bg">198</td>
+											<td>93.0</td>
+											<td>15</td>
+											<td class="bg">89</td>
+											<td>44.9</td>
+											<td>109</td>
+											<td class="bg">55.6</td>
+											<td>71.9</td>
+											<td>42.4</td>
+                    </tr>
+                    <tr>
+                      <td>전주</td>
+											<td>99</td>
+											<td class="bg">99</td>
+											<td>-</td>
+											<td>-</td>
+											<td class="bg">22</td>
+											<td>22.2</td>
+											<td>77</td>
+											<td class="bg">45.0</td>
+											<td>67.4</td>
+											<td>38.6</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(6).addClass('on');
+    $('#lnb ul.menu > li').eq(1).find(' > a ').addClass('skin_bg');
+  });
+</script>
+</body>
+</html>

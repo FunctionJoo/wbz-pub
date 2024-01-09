@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>홈 > 구술감독관 > 구술감독관 조회 > 이수증 다운로드 내역 팝업</title>
+	<link rel="stylesheet" href="../css/general.css?v=1656408363">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+</head>
+<body style="background-color:#fff; overflow-y: scroll;">
+	<div class="pop_wrap">
+		<div class="pop_header">
+            <p class="tit">이수증 다운로드 내역</p>
+		</div>
+		<div class="pop_body">
+			<div>
+				<div class="con_box">
+          <div class="view_wrap">
+            <div class="view_table align_c">
+              <table>
+                  <caption>개별 접수 상세</caption>
+                  <colgroup>
+                    <col style="width:10%;">
+                    <col style="width:30%;">
+                    <col style="width:30%;">
+                    <col style="width:30%;">
+                  </colgroup>
+                  <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>이름</th>
+                        <th>이수증 번호</th>
+                        <th>다운로드 일자</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>3</td>
+                        <td>홍길동</td>
+                        <td>SU-12-구술-015</td>
+                        <td>2023.10.10</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>홍길동</td>
+                        <td>SU-12-구술-015</td>
+                        <td>2023.10.10</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>홍길동</td>
+                        <td>SU-12-구술-015</td>
+                        <td>2023.10.10</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="pagination">
+            <a href="#" class="first">처음 페이지</a>
+            <a href="#" class="prev">이전 페이지</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="next">다음 페이지</a>
+            <a href="#" class="last">마지막 페이지</a>
+          </div>
+          <div class="btn_area">
+						<button type="button" class="btn" onclick="closeTabClick()">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	function closeTabClick() {
+		window.close();
+	}
+</script>
+</body>
+</html>

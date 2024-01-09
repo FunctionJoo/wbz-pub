@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>통계/분석</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./member_stats_gender.html">회원통계</a>
+              <ul class="sub_menu">
+                <li><a href="./member_stats_gender.html">성별</a></li>
+                <li class="on"><a href="./member_stats_age.html">연령별</a></li>
+                <li><a href="./member_stats_area.html">지역별</a></li>
+              </ul>
+            </li>
+            <li class="btn_sub">
+              <a href="./eval_before.html">평가 현황</a>
+              <ul class="sub_menu">
+                <li><a href="./eval_before.html">사전평가</a></li>
+                <li><a href="./eval_interim.html">중간평가</a></li>
+                <li><a href="./eval_overall.html">종합평가</a></li>
+              </ul>
+            </li>
+            <li class="btn_sub">
+              <a href="./active_current.html">구술 감독관 활동 현황</a>
+            </li>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content stats">
+          <div class="content_head">
+              <h3>연령별</h3>
+          </div>
+          <div class="content_body">
+            <!-- Search Start -->
+            <div class="search_wrap">
+              <form action="" method="post">
+                <table class="search">
+                  <caption>검색</caption>
+                  <colgroup>
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">기간</th>
+                    <td>
+                      <input type="text" placeholder="시작일" class="ico_date" name="period01" id="datepicker1" style="cursor: pointer;">
+                      <span class="tilde">~</span>
+                      <input type="text" placeholder="종료일" class="ico_date" name="period01" id="datepicker2" style="cursor: pointer;">
+                    </td>
+                  </tr>
+                </table>
+                <div class="btn_area align_c mt10">
+                  <button type="button" class="btn">검색</button>
+                </div>
+              </form>
+            </div>
+            <!-- //Search End -->
+
+            <!-- List Start -->
+            <div class="list_wrap">
+              <div class="list_table">
+                <table>
+                  <caption>연령별 회원 통계</caption>
+                  <colgroup>
+                    <col style="width: auto;">
+										<col style="width: 11%;">
+										<col style="width: 11%;">
+										<col style="width: 11%;">
+										<col style="width: 11%;">
+										<col style="width: 11%;">
+										<col style="width: 11%;">
+										<col style="width: 11%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">총 회원수</th>
+											<th scope="col">10대</th>
+											<th scope="col">20대</th>
+											<th scope="col">30대</th>
+											<th scope="col">40대</th>
+											<th scope="col">50대</th>
+											<th scope="col">60대</th>
+											<th scope="col">70대 이상</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+											<td><b>10</b></td>
+											<td><b>0</b>/0%</td>
+											<td><b>0</b>/0%</td>
+											<td><b>5</b>/50%</td>
+											<td><b>5</b>/50%</td>
+											<td><b>0</b>/0%</td>
+											<td><b>0</b>/0%</td>
+											<td><b>0</b>/0%</td>
+										</tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="list_wrap">
+              <div class="chart_wrap">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+            <div class="list_wrap">
+              <div class="list_top">
+                <div class="txt_area">
+                  <p>2023년 05월 01일부터 2023년 05월 30일까지의 검색결과</p>
+                </div>
+                <div class="util_area">
+                  <a href="javascript:;" class="btn btn_form1">엑셀 다운로드</a>
+                </div>
+              </div>
+              <div class="list_table">
+                <table>
+                  <caption>검색 결과</caption>
+                  <colgroup>
+                    <col style="width:12%;">
+                    <col style="width:12%;">
+                    <col style="width:9%;">
+                    <col style="width:9%;">
+                    <col style="width:9%;">
+                    <col style="width:9%;">
+                    <col style="width:9%;">
+                    <col style="width:9%;">
+                    <col style="width:9%;">
+                    <col style="width:auto;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">날짜</th>
+                      <th scope="col">총 명수</th>
+                      <th scope="col">10대</th>
+                      <th scope="col">20대</th>
+                      <th scope="col">30대</th>
+                      <th scope="col">40대</th>
+                      <th scope="col">50대</th>
+                      <th scope="col">60대</th>
+                      <th scope="col">70대 이상</th>
+                      <th scope="col">비율(%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2023-05-01</td>
+                      <td><b>0</b></td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>2023-05-02</td>
+                      <td><b>0</b></td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>2023-05-03</td>
+                      <td><b>5</b></td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td>2023-05-04</td>
+                      <td><b>5</b></td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>3</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td>2023-05-05</td>
+                      <td><b>0</b></td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>2023-05-06</td>
+                      <td><b>0</b></td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>2023-05-30</td>
+                      <td><b>0</b></td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr class="total">
+                      <td>합계</td>
+											<td>10</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>100</td>
+										</tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(6).addClass('on');
+    $('#lnb ul.menu > li').eq(0).find(' > a ').addClass('skin_bg');
+
+    var myChart = new Chart(document.getElementById("myChart"),{
+      type: 'bar',
+      data: {
+        labels: ['2023-05-01', '2023-05-02', '2023-05-03','2023-05-04', '2023-05-05', '2023-05-06', '2023-05-07' ],
+        datasets: [
+          {
+            label: "10대",
+            data: ['10','7', '5', '0', '1', '2', '0'],
+            backgroundColor: 'rgb(255, 99, 132)'
+          },
+          {
+            label: "20대",
+            data: ['1','10', '2', '9', '2', '3', '6'],
+            backgroundColor: 'rgb(255, 159, 64)'
+          },
+          {
+            label: "30대",
+            data: ['4','5', '7', '7', '9', '4', '6'],
+            backgroundColor: 'rgb(255, 205, 86)'
+          },
+          {
+            label: "40대",
+            data: ['7','6', '0', '0', '3', '1', '2'],
+            backgroundColor: 'rgb(75, 192, 192)'
+          },
+          {
+            label: "50대",
+            data: ['1','2', '1', '2', '8', '5', '3'],
+            backgroundColor: 'rgb(54, 162, 235)'
+          },
+          {
+            label: "60대",
+            data: ['0','6', '9', '2', '2', '5', '3'],
+            backgroundColor: 'rgb(153, 102, 255)'
+          },
+          {
+            label: "70대",
+            data: ['0', '0', '0', '0', '2', '1', '3'],
+            backgroundColor: 'rgb(201, 203, 207)'
+          }
+        ]
+      },
+      options: {
+        aspectRatio:4
+      }
+    });
+  });
+</script>
+</body>
+</html>

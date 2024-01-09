@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="../css/general.css?v=1656408363">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- Header Start-->
+  <header id="header">
+    <div class="header_top">
+      <div class="header_info">
+        <h1 class="admin_title">ADMINISTRATOR</h1>
+      </div>
+      <div class="header_util">
+        <div class="user_info">
+          <i class="ico_profile"></i>
+          <span class="user_name"><a href="../main/change_info.html">슈퍼관리자</a> 님</span>
+          <span class="user_label">최종관리자</span>
+        </div>
+        <a href="javascript:;" class="btn_u"><i class="ico_link"></i>HOMEPAGE</a>
+        <a href="javascript:;" class="btn_u"><i class="ico_logout"></i>LOGOUT</a>
+      </div>
+    </div>
+    <div class="header_btm">
+      <nav id="gnb" class="gnb">
+        <ul>
+          <li><a href="../main/main.html">HOME</a></li>
+          <li><a href="../evaluation/register_list.html">평가 관리</a></li>
+          <li><a href="../grade/grade_list.html">회원 및 성적 관리</a></li>
+          <li><a href="../payment/history.html">결제 현황</a></li>
+          <li><a href="../supervisor/inquiry.html">구술감독관</a></li>
+          <li><a href="../noti/notice_list.html">알림마당</a></li>
+          <li><a href="../stats/member_stats_gender.html">통계/분석</a></li>
+          <li><a href="../setting/master.html">설정</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //Header End-->
+
+  <div id="container">
+    <h2 class="blind">리스트 페이지</h2>
+    <section class="sub_section">
+      <div class="content_wrap">
+        <!--Lnb Start-->
+        <aside id="lnb">
+          <button class="openBtn">&lt;</button>
+          <h2 class="tit"><span>평가 관리</span></h2>
+          <ul class="menu">
+            <li class="btn_sub">
+              <a href="./register_list.html">평가접수현황</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./schedule_list.html">평가일정관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./attend_list.html">출석부 배정 관리</a>
+            </li>
+            <li class="btn_sub">
+              <a href="./place_list.html">평가장소관리</a>
+            </li>
+          </ul>
+        </aside>
+        <!--//Lnb End-->
+
+        <!--Content Start-->
+        <div class="content evaluation">
+          <div class="content_head">
+              <h3>평가접수현황</h3>
+          </div>
+          <div class="content_body">
+            <div class="current">
+              <p class="txt">
+                <span class="order">2024년 [31차] 종합평가</span>
+                <span class="type">CBT</span>
+                <span class="period">2024-05-05 ~ 2024-05-05</span>
+                <span class="date">평가 시행일 2024.05.06</span>
+              </p>
+              <div class="toggle_area">
+                <table>
+                  <caption>접수완료현황</caption>
+                  <tr>
+                    <th rowspan="2">지역별 <br>접수 완료 현황</th>
+                    <th>전체</th>
+                    <th>수원</th>
+                    <th>양주</th>
+                    <th>울산</th>
+                    <th>충북</th>
+                    <th>대전</th>
+                    <th>부산</th>
+                    <th>전북</th>
+                    <th>광주</th>
+                    <th>대구</th>
+                    <th>전남</th>
+                    <th>강원</th>
+                    <th>제주</th>
+                  </tr>
+                  <tr>
+                    <td><em>0,000</em></td>
+                    <td>735</td>
+                    <td>245</td>
+                    <td>189</td>
+                    <td>159</td>
+                    <td>149</td>
+                    <td>119</td>
+                    <td>101</td>
+                    <td>100</td>
+                    <td>96</td>
+                    <td>55</td>
+                    <td>53</td>
+                    <td>39</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- Search Start -->
+            <div class="search_wrap">
+              <form action="" method="post">
+                <table class="search">
+                  <caption>검색</caption>
+                  <colgroup>
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                    <col style="width:8%;">
+                    <col style="width:auto;">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">평가장소</th>
+                    <td>
+                      <label for="place" class="blind">평가장소</label>
+                      <select name="place" id="place" style="width: 250px;">
+                        <option value="" disabled selected>선택하세요</option>
+                        <option value="">서경대학교</option>
+                        <option value="">남부대학교</option>
+                        <option value="">우석대학교</option>
+                        <option value="">부산외국어대학교</option>
+                      </select>
+                    </td>
+                    <th scope="row">키워드</th>
+                    <td colspan="3">
+                      <label for="sel_key" class="blind">키워드선택</label>
+                      <select name="keyword" id="sel_key" style="width: 150px;">
+                        <option value="">외국인등록번호</option>
+                        <option value="">아이디</option>
+                        <option value="">이름</option>
+                        <option value="">생년월일</option>
+                        <option value="">접수번호</option>
+                      </select>
+                      <label for="keyword" class="blind">키워드명</label>
+                      <input type="text" title="키워드" id="keyword" name="keyword" style="width: 40%;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>특별 대상</th>
+                    <td>
+                      <div class="input_wrap">
+                        <input type="radio" title="전체" name="special" id="special_all" checked>
+                        <label for="special_all">전체</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="특별대상" name="special" id="right">
+                        <label for="right">O</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="일반대상" name="special" id="no">
+                        <label for="no">X</label>
+                      </div>
+                    </td>
+                    <th>접수 상태</th>
+                    <td >
+                      <div class="input_wrap">
+                        <input type="checkbox" title="전체" name="state" id="state_all" checked>
+                        <label for="state_all">전체</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="checkbox" title="접수완료" name="state" id="complete">
+                        <label for="complete">접수완료</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="checkbox" title="입금대기" name="state" id="standby">
+                        <label for="standby">입금대기</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="checkbox" title="취소" name="state" id="cancel">
+                        <label for="cancel">취소</label>
+                      </div>
+                    </td>
+                    <th>비자</th>
+                    <td>
+                      <div class="input_wrap">
+                        <input type="radio" title="전체" name="visa" id="visa_all" checked>
+                        <label for="visa_all">전체</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="C-3-8" name="visa" id="compatriot">
+                        <label for="compatriot">C-3-8</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="일반" name="visa" id="general">
+                        <label for="general">일반</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>평가 구분</th>
+                    <td>
+                      <div class="input_wrap">
+                        <input type="radio" title="전체" name="type" id="type_all" checked>
+                        <label for="type_all">전체</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="영주용" name="type" id="permanent01">
+                        <label for="permanent01">영주용</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="귀화용" name="type" id="naturalization01">
+                        <label for="naturalization01">귀화용</label>
+                      </div>
+                    </td>
+                    <th>사통 참여 여부</th>
+                    <td colspan="3">
+                      <div class="input_wrap">
+                        <input type="radio" title="전체" name="nationality" id="nationality_all" checked>
+                        <label for="eval_all">전체</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="영주용" name="nationality" id="permanent02">
+                        <label for="permanent02">영주용</label>
+                      </div>
+                      <div class="input_wrap">
+                        <input type="radio" title="귀화용" name="nationality" id="naturalization02">
+                        <label for="naturalization02">귀화용</label>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="btn_area align_c mt10">
+                  <button type="button" class="btn">검색</button>
+                </div>
+              </form>
+            </div>
+            <!-- //Search End -->
+
+            <!-- List Start -->
+            <div class="list_wrap">
+              <div class="list_top">
+                <div class="txt_area">
+                  <p>총 <em>0,000</em>건</p>
+                </div>
+                <div class="util_area">
+                  <div class="sort_area">
+                    <span>이름</span>
+                    <button type="button" class="btn btn_form6 down"><span>내림차순</span></button>
+                    <button type="button" class="btn btn_form6 up"><span>오름차순</span></button>
+                  </div>
+                  <div class="sort_area">
+                    <span>생년월일</span>
+                    <button type="button" class="btn btn_form6 down"><span>내림차순</span></button>
+                    <button type="button" class="btn btn_form6 up"><span>오름차순</span></button>
+                  </div>
+                  <a href="javascript: window.open('../popup/message.html', '팝업창','width=600, height=700');" class="btn">문자전송</a>
+                  <a href="javascript:;" class="btn btn_form1">엑셀 다운로드</a>
+                </div>
+              </div>
+              <div class="list_table scroll_x">
+                <table style="width: 1800px;">
+                  <caption>검색 결과</caption>
+                  <colgroup>
+                    <col style="width:3%;">
+                    <col style="width:12%;">
+                    <col style="width:8%;">
+                    <col style="width:14%;">
+                    <col style="width:8%;">
+                    <col style="width:12%;">
+                    <col style="width:10%;">
+                    <col style="width:6%;">
+                    <col style="width:6%;">
+                    <col style="width:6%;">
+                    <col style="width:7%;">
+                    <col style="width:7%;">
+                    <col style="width:12%;">
+                    <col style="width:12%;">
+                    <col style="width:25%;">
+                  </colgroup>
+                  <thead>
+                  <tr>
+                    <th scope="col">
+                      <input type="checkbox" name="choice" id="choice00">
+                      <label for="choice00" class="blind">전체선택</label>
+                    </th>
+                    <th scope="col">접수번호</th>
+                    <th scope="col">아이디</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">생년월일</th>
+                    <th scope="col">외국인등록번호</th>
+                    <th scope="col">휴대폰번호</th>
+                    <th scope="col">특별 대상</th>
+                    <th scope="col">평가 구분</th>
+                    <th scope="col">사통 참여</th>
+                    <th scope="col">접수 상태</th>
+                    <th scope="col">결제 구분</th>
+                    <th scope="col">접수일시</th>
+                    <th scope="col">평가장소</th>
+                    <th scope="col">필기실</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice01">
+                        <label for="choice01" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">202212210129</a>
+                      </td>
+                      <td>saita00</td>
+                      <td>JIN RILONG</td>
+                      <td>19641110</td>
+                      <td>600314-5******</td>
+                      <td>010-00-0000</td>
+                      <td>O</td>
+                      <td>귀화</td>
+                      <td>참여</td>
+                      <td>접수완료</td>
+                      <td>계좌이체</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice02">
+                        <label for="choice02" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">yyyymmdd 00008</a>
+                      </td>
+                      <td>Hong00</td>
+                      <td>KAEWTAMA PIYARAK</td>
+                      <td>yyyymmdd</td>
+                      <td></td>
+                      <td>010-00-0000</td>
+                      <td>X</td>
+                      <td>영주</td>
+                      <td>미참여</td>
+                      <td>접수완료</td>
+                      <td>신용카드</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice03">
+                        <label for="choice03" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">yyyymmdd 00007</a>
+                      </td>
+                      <td>OOOO</td>
+                      <td>OOOOOOO</td>
+                      <td>yyyymmdd</td>
+                      <td>900314-5******</td>
+                      <td>010-00-0000</td>
+                      <td>O</td>
+                      <td>귀화</td>
+                      <td>참여</td>
+                      <td>입금대기</td>
+                      <td>가상계좌</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>부산외국어대학교</td>
+                      <td>비즈니스텍센터 i동 ▶필기실 1(3층)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice04">
+                        <label for="choice04" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">yyyymmdd 00006</a>
+                      </td>
+                      <td>OOOO</td>
+                      <td>OOOOOOO</td>
+                      <td>yyyymmdd</td>
+                      <td>700314-6******</td>
+                      <td>010-00-0000</td>
+                      <td>X</td>
+                      <td>영주</td>
+                      <td>미참여</td>
+                      <td>접수완료</td>
+                      <td>계좌이체</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>부산외국어대학교</td>
+                      <td>비즈니스텍센터 i동 ▶필기실 1(3층)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice05">
+                        <label for="choice05" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">yyyymmdd 00005</a>
+                      </td>
+                      <td>OOOO</td>
+                      <td>OOOOOOO</td>
+                      <td>yyyymmdd</td>
+                      <td></td>
+                      <td>010-00-0000</td>
+                      <td>O</td>
+                      <td>귀화</td>
+                      <td>참여</td>
+                      <td>접수취소</td>
+                      <td>가상계좌</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>부산외국어대학교</td>
+                      <td>비즈니스텍센터 i동 ▶필기실 1(3층)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice06">
+                        <label for="choice06" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">yyyymmdd 00004</a>
+                      </td>
+                      <td>OOOO</td>
+                      <td>OOOOOOO</td>
+                      <td>yyyymmdd</td>
+                      <td>600314-5******</td>
+                      <td>010-00-0000</td>
+                      <td>O</td>
+                      <td>영주</td>
+                      <td>참여</td>
+                      <td>접수완료</td>
+                      <td>신용카드</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>부산외국어대학교</td>
+                      <td>비즈니스텍센터 i동 ▶필기실 1(3층)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice07">
+                        <label for="choice07" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">yyyymmdd 00003</a>
+                      </td>
+                      <td>OOOO</td>
+                      <td>OOOOOOO</td>
+                      <td>yyyymmdd</td>
+                      <td>600314-5******</td>
+                      <td>010-00-0000</td>
+                      <td>O</td>
+                      <td>귀화</td>
+                      <td>참여</td>
+                      <td>접수취소</td>
+                      <td>신용카드</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>부산외국어대학교</td>
+                      <td>비즈니스텍센터 i동 ▶필기실 1(3층)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="choice" id="choice07">
+                        <label for="choice07" class="blind">선택</label>
+                      </td>
+                      <td>
+                        <a href="javascript: window.open('../popup/register_view.html', '팝업창','width=900, height=800');" class="btn_link">yyyymmdd 00003</a>
+                      </td>
+                      <td>OOOO</td>
+                      <td>OOOOOOO</td>
+                      <td>yyyymmdd</td>
+                      <td>600314-5******</td>
+                      <td>010-00-0000</td>
+                      <td>X</td>
+                      <td>영주</td>
+                      <td>참여</td>
+                      <td>접수취소</td>
+                      <td>신용카드</td>
+                      <td>24.12.24 20:53:26</td>
+                      <td>부산외국어대학교</td>
+                      <td>비즈니스텍센터 i동 ▶필기실 1(3층)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination">
+                <a href="#" class="first">처음 페이지</a>
+                <a href="#" class="prev">이전 페이지</a>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="next">다음 페이지</a>
+                <a href="#" class="last">마지막 페이지</a>
+              </div>
+            </div>
+            <!-- //List Start -->
+          </div>
+        </div>
+        <!--//Content End-->
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+  // 페이지에서만 사용하는 스크립트
+  $(document).ready(function () {
+    $('#gnb ul li').eq(1).addClass('on');
+    $('#lnb ul.menu > li').eq(0).find(' > a ').addClass('skin_bg');
+  });
+</script>
+</body>
+</html>
