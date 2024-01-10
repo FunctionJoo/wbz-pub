@@ -23,7 +23,7 @@
         }
     }
     .gnb-wrap {
-        margin-left: 112px;
+        margin: 0 auto;
         position: relative;
         height: 100%;
         .gnb {
@@ -551,7 +551,26 @@
 // footer
 #footer {
     background: #222227;
-    padding: 32px 0 46px;
+    margin-top: 120px;
+    .w-set {
+        position: relative;
+        padding: 32px 0 46px;
+    }
+    .link-list {
+        position: absolute;
+        right: 0;
+        top: 100px;
+        font-size: 0;
+        .link {
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            line-height: 16px;
+            & + .link {
+                margin-left: 22px;
+            }
+        }
+    }
     .ft-logo {
         width: 154px;
         height: 27px;
@@ -570,27 +589,31 @@
         font-size: 14px;
         line-height: 1.2;
         color: #999;
-        .ft-info{
-            padding-top: 12px;
-            .txt01{
-                em{
+        .ft-info {
+            .txt01 {
+                .ceo {
+                    display: block;
+                    color: #fff;
+                    padding-bottom: 12px;
+                }
+                em {
                     color: #fff;
                 }
-                span{
+                .address {
                     margin-left: 23px;
                 }
             }
-            .txt02{
+            .txt02 {
                 padding-top: 12px;
-                span{
+                span {
                     margin-left: 14px;
                 }
             }
-            .txt03{
+            .txt03 {
                 padding-top: 14px;
             }
         }
-        .copyright{
+        .copyright {
             padding-top: 36px;
         }
     }
@@ -600,7 +623,7 @@
     position: fixed;
     z-index: 9999;
     right: 5%;
-    bottom: 250px;
+    bottom: 150px;
     font-size: 0;
     display: block;
     width: 60px;
@@ -632,9 +655,7 @@
 @include mobile {
     // header
     #header {
-        // padding: 11px 16px 0;
         .inner {
-            // height: auto;
             flex-wrap: wrap;
             align-items: center;
         }
@@ -651,53 +672,7 @@
         //     }
         // }
         .gnb {
-            order: 4;
-            width: 100%;
-            flex: 0 0 auto;
-            overflow-x: auto;
-            margin-left: 0;
-            gap: 30px;
-            @include nscroll;
-            & > li {
-                width: auto;
-                flex: 0 0 auto;
-                & > a {
-                    padding: 16px 0 14px;
-                    font-weight: 400;
-                    font-size: 16px;
-                    &::after {
-                        content: none;
-                    }
-                }
-            }
-        }
-        .hd-utils {
-            margin: 0 0 0 auto;
-            .link {
-                font-size: 0;
-                display: none;
-                i {
-                    width: 32px;
-                    height: 32px;
-                    margin-bottom: 0;
-                }
-                &.notify {
-                    display: block;
-                    margin-left: 0;
-                    &.on {
-                        &::after {
-                            width: 8px;
-                            height: 8px;
-                        }
-                    }
-                }
-            }
-        }
-        .btn-menu {
-            margin-left: 15px;
-            width: 20px;
-            height: 20px;
-            background: url("../images/common/ico/hd_btn_menu.svg") no-repeat center;
+            display: none;
         }
     }
 
@@ -708,41 +683,58 @@
 
     // footer
     #footer {
-        .ft-top {
-            .w-set {
-                padding: 0;
-                flex-direction: column;
-                align-items: flex-start;
-                .ft-link {
-                    width: 100%;
-                    padding: 16px;
-                    background: #f9f9f9;
-                    a {
-                        & + a {
-                            margin-left: 35px;
-                            &::after {
-                                content: none;
-                            }
-                        }
-                    }
-                }
-                .ft-family {
-                    width: 100%;
-                    .tab {
-                        width: 100%;
-                    }
+        .w-set {
+            padding: 58px 16px 60px;
+        }
+        .ft-logo {
+            margin: 0 auto;
+        }
+        .link-list {
+            top: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            .link {
+                font-size: 12px;
+                & + .link {
+                    margin-left: 30px;
                 }
             }
         }
         .ft-btm {
-            padding: 20px 0 56px;
-            font-size: 13px;
-            color: #666;
+            padding: 24px 0 0;
+            font-size: 12px;
             br {
                 display: block;
             }
+            .ft-info {
+                .txt01 {
+                    .ceo {
+                        display: inline-block;
+                        padding-right: 24px;
+                        padding-bottom: 10px;
+                    }
+                    .address {
+                        display: block;
+                        margin-left: 0;
+                    }
+                }
+                .txt02 {
+                    padding-top: 10px;
+                    span {
+                        &:last-child {
+                            display: block;
+                            margin-left: 0;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+                .txt03 {
+                    padding-top: 10px;
+                }
+            }
             .copyright {
-                padding-top: 16px;
+                padding-top: 26px;
             }
         }
     }

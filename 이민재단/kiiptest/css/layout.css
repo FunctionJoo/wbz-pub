@@ -21,7 +21,7 @@
   background-size: 100% auto;
 }
 #header .gnb-wrap {
-  margin-left: 112px;
+  margin: 0 auto;
   position: relative;
   height: 100%;
 }
@@ -495,7 +495,26 @@
 
 #footer {
   background: #222227;
+  margin-top: 120px;
+}
+#footer .w-set {
+  position: relative;
   padding: 32px 0 46px;
+}
+#footer .link-list {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  font-size: 0;
+}
+#footer .link-list .link {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+}
+#footer .link-list .link + .link {
+  margin-left: 22px;
 }
 #footer .ft-logo {
   width: 154px;
@@ -516,13 +535,15 @@
   line-height: 1.2;
   color: #999;
 }
-#footer .ft-btm .ft-info {
-  padding-top: 12px;
+#footer .ft-btm .ft-info .txt01 .ceo {
+  display: block;
+  color: #fff;
+  padding-bottom: 12px;
 }
 #footer .ft-btm .ft-info .txt01 em {
   color: #fff;
 }
-#footer .ft-btm .ft-info .txt01 span {
+#footer .ft-btm .ft-info .txt01 .address {
   margin-left: 23px;
 }
 #footer .ft-btm .ft-info .txt02 {
@@ -542,7 +563,7 @@
   position: fixed;
   z-index: 9999;
   right: 5%;
-  bottom: 250px;
+  bottom: 150px;
   font-size: 0;
   display: block;
   width: 60px;
@@ -577,90 +598,57 @@
     align-items: center;
   }
   #header .gnb {
-    order: 4;
-    width: 100%;
-    flex: 0 0 auto;
-    overflow-x: auto;
-    margin-left: 0;
-    gap: 30px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  #header .gnb::-webkit-scrollbar {
     display: none;
-  }
-  #header .gnb > li {
-    width: auto;
-    flex: 0 0 auto;
-  }
-  #header .gnb > li > a {
-    padding: 16px 0 14px;
-    font-weight: 400;
-    font-size: 16px;
-  }
-  #header .gnb > li > a::after {
-    content: none;
-  }
-  #header .hd-utils {
-    margin: 0 0 0 auto;
-  }
-  #header .hd-utils .link {
-    font-size: 0;
-    display: none;
-  }
-  #header .hd-utils .link i {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 0;
-  }
-  #header .hd-utils .link.notify {
-    display: block;
-    margin-left: 0;
-  }
-  #header .hd-utils .link.notify.on::after {
-    width: 8px;
-    height: 8px;
-  }
-  #header .btn-menu {
-    margin-left: 15px;
-    width: 20px;
-    height: 20px;
-    background: url("../images/common/ico/hd_btn_menu.svg") no-repeat center;
   }
   #aside-menu {
     display: block;
   }
-  #footer .ft-top .w-set {
-    padding: 0;
-    flex-direction: column;
-    align-items: flex-start;
+  #footer .w-set {
+    padding: 58px 16px 60px;
   }
-  #footer .ft-top .w-set .ft-link {
+  #footer .ft-logo {
+    margin: 0 auto;
+  }
+  #footer .link-list {
+    top: 20px;
+    left: 0;
     width: 100%;
-    padding: 16px;
-    background: #f9f9f9;
+    text-align: center;
   }
-  #footer .ft-top .w-set .ft-link a + a {
-    margin-left: 35px;
+  #footer .link-list .link {
+    font-size: 12px;
   }
-  #footer .ft-top .w-set .ft-link a + a::after {
-    content: none;
-  }
-  #footer .ft-top .w-set .ft-family {
-    width: 100%;
-  }
-  #footer .ft-top .w-set .ft-family .tab {
-    width: 100%;
+  #footer .link-list .link + .link {
+    margin-left: 30px;
   }
   #footer .ft-btm {
-    padding: 20px 0 56px;
-    font-size: 13px;
-    color: #666;
+    padding: 24px 0 0;
+    font-size: 12px;
   }
   #footer .ft-btm br {
     display: block;
   }
+  #footer .ft-btm .ft-info .txt01 .ceo {
+    display: inline-block;
+    padding-right: 24px;
+    padding-bottom: 10px;
+  }
+  #footer .ft-btm .ft-info .txt01 .address {
+    display: block;
+    margin-left: 0;
+  }
+  #footer .ft-btm .ft-info .txt02 {
+    padding-top: 10px;
+  }
+  #footer .ft-btm .ft-info .txt02 span:last-child {
+    display: block;
+    margin-left: 0;
+    padding-top: 10px;
+  }
+  #footer .ft-btm .ft-info .txt03 {
+    padding-top: 10px;
+  }
   #footer .ft-btm .copyright {
-    padding-top: 16px;
+    padding-top: 26px;
   }
 }
