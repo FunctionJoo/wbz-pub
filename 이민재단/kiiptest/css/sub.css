@@ -141,15 +141,10 @@ h3.tit {
   margin-top: 40px;
   height: 52px;
   line-height: 50px;
+  font-weight: 400;
 }
 .member .btn + .btn {
   margin-top: 12px;
-}
-@media (max-width: 1300px) {
-  .member .btn {
-    margin-top: 30px;
-    height: 50px;
-  }
 }
 .member .captcha_wrap {
   margin: 12px 0 0;
@@ -205,4 +200,52 @@ h3.tit {
   height: 17px;
   background: url("../images/common/ico/find_pw.svg") no-repeat center;
   margin: 0 8px -4px 0;
+}
+
+@media (max-width: 1300px) {
+  .member {
+    padding: 50px 0 0;
+  }
+  .member .input-wrap input {
+    height: 40px;
+    padding: 0 12px;
+    line-height: 38px;
+    font-size: 14px;
+  }
+  .member .btn {
+    height: 50px;
+    line-height: 48px;
+  }
+  .member .captcha_wrap {
+    margin-top: 20px;
+  }
+  .member .note_txt {
+    margin-top: 20px;
+    padding: 16px 12px;
+  }
+  .member .note_txt .txt {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .member .note_txt .txt i {
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+  }
+  .member .note_txt .txt + .txt {
+    margin-top: 10px;
+  }
+  .member .find-pw {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .member .find-pw::before {
+    width: 7px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 6px;
+  }
 }
