@@ -128,16 +128,10 @@ h3.tit {
 
 // 회원
 .member {
-    padding: 100px 0 200px;
+    padding: 100px 0 0;
     border-top: 1px solid #ddd;
     .tit-area {
         margin-bottom: 40px;
-        .txt {
-            margin-top: 12px;
-            font-size: 16px;
-            color: $text-color2;
-            text-align: center;
-        }
     }
     .w-set {
         max-width: 400px;
@@ -148,6 +142,9 @@ h3.tit {
         }
         input {
             height: 60px;
+            border-color: #ddd;
+            padding: 0 16px;
+            line-height: 58px;
         }
     }
     .btn {
@@ -162,10 +159,43 @@ h3.tit {
             height: 50px;
         }
     }
-    .captcha {
+    .captcha_wrap{
         margin: 12px 0 0;
-        min-height: 120px;
-        background: #ddd;
+        border-radius: 6px;
+        border: 1px solid #DDDDDD;
+        .captcha {
+            min-height: 70px;
+            background: #ddd;
+        }
+        input[type=text]{
+            border: 0;
+            padding: 0 14px;
+        }
+    }
+    .note_txt{
+        width: 100%;
+        margin-top: 24px;
+        border-radius: 6px;
+        background-color: #F5F9FC;
+        padding: 18px 14px 18px 16px;
+        .txt {
+            display: flex; gap: 8px;
+            font-size: 16px;
+            color: $text-color2;
+            line-height: 24px;
+
+            i{
+                flex: 0 0 18px;
+                width: 18px; height: 18px;
+                margin-top: 2px;
+                background-image: url(../images/common/ico/login_note.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            + .txt{
+                margin-top: 14px;
+            }
+        }
     }
     .find-pw {
         display: block;

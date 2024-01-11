@@ -119,17 +119,11 @@ h3.tit {
 }
 
 .member {
-  padding: 100px 0 200px;
+  padding: 100px 0 0;
   border-top: 1px solid #ddd;
 }
 .member .tit-area {
   margin-bottom: 40px;
-}
-.member .tit-area .txt {
-  margin-top: 12px;
-  font-size: 16px;
-  color: #555;
-  text-align: center;
 }
 .member .w-set {
   max-width: 400px;
@@ -139,6 +133,9 @@ h3.tit {
 }
 .member .input-wrap input {
   height: 60px;
+  border-color: #ddd;
+  padding: 0 16px;
+  line-height: 58px;
 }
 .member .btn {
   margin-top: 40px;
@@ -154,10 +151,44 @@ h3.tit {
     height: 50px;
   }
 }
-.member .captcha {
+.member .captcha_wrap {
   margin: 12px 0 0;
-  min-height: 120px;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+}
+.member .captcha_wrap .captcha {
+  min-height: 70px;
   background: #ddd;
+}
+.member .captcha_wrap input[type=text] {
+  border: 0;
+  padding: 0 14px;
+}
+.member .note_txt {
+  width: 100%;
+  margin-top: 24px;
+  border-radius: 6px;
+  background-color: #F5F9FC;
+  padding: 18px 14px 18px 16px;
+}
+.member .note_txt .txt {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  color: #555;
+  line-height: 24px;
+}
+.member .note_txt .txt i {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  background-image: url(../images/common/ico/login_note.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.member .note_txt .txt + .txt {
+  margin-top: 14px;
 }
 .member .find-pw {
   display: block;
