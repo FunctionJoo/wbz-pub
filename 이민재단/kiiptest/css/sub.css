@@ -2,12 +2,11 @@ h2.tit {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 1300px) {
   h2.tit {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
@@ -15,6 +14,20 @@ h3.tit {
   text-align: center;
   font-weight: 700;
   font-size: 48px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-moz-placeholder {
+  color: #A7A7A7;
+}
+
+input::placeholder {
+  color: #A7A7A7;
 }
 
 .location {
@@ -123,19 +136,41 @@ h3.tit {
   border-top: 1px solid #ddd;
 }
 .member .tit-area {
-  margin-bottom: 40px;
+  text-align: center;
+}
+.member .tit-area .txt {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #555;
 }
 .member .w-set {
   max-width: 400px;
 }
-.member .input-wrap + .input-wrap {
+.member .login {
+  margin-top: 40px;
+}
+.member .login .input-wrap input {
+  height: 60px;
+  line-height: 58px;
+  padding: 0 16px;
+}
+.member .login .input-wrap + .input-wrap {
   margin-top: 10px;
 }
+.member .input-wrap + .input-wrap {
+  margin-top: 12px;
+}
 .member .input-wrap input {
-  height: 60px;
+  height: 50px;
   border-color: #ddd;
-  padding: 0 16px;
-  line-height: 58px;
+  padding: 0 14px;
+  line-height: 48px;
+}
+.member .input-wrap input::-moz-placeholder {
+  color: #A7A7A7;
+}
+.member .input-wrap input::placeholder {
+  color: #A7A7A7;
 }
 .member .btn {
   margin-top: 40px;
@@ -166,21 +201,23 @@ h3.tit {
   background-color: #F5F9FC;
   padding: 18px 14px 18px 16px;
 }
+.member .note_txt.chk .txt {
+  padding-left: 20px;
+  background-image: url(../images/common/ico/member_chk.svg);
+  background-position: center left;
+  background-size: 10px;
+  font-size: 14px;
+  line-height: 1;
+}
 .member .note_txt .txt {
-  display: flex;
-  gap: 8px;
+  padding-left: 26px;
+  background-image: url(../images/common/ico/login_note.svg);
+  background-repeat: no-repeat;
+  background-position: top 2px left;
+  background-size: 18px;
   font-size: 16px;
   color: #555;
   line-height: 24px;
-}
-.member .note_txt .txt i {
-  flex: 0 0 18px;
-  width: 18px;
-  height: 18px;
-  margin-top: 2px;
-  background-image: url(../images/common/ico/login_note.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .member .note_txt .txt + .txt {
   margin-top: 14px;
@@ -201,16 +238,217 @@ h3.tit {
   background: url("../images/common/ico/find_pw.svg") no-repeat center;
   margin: 0 8px -4px 0;
 }
+.member .find_wrap {
+  margin-top: 26px;
+  padding-top: 160px;
+  background-image: url(../images/common/img/find_pass.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 120px;
+}
+.member .find_wrap .tab_menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 50px;
+}
+.member .find_wrap .tab_menu .tab {
+  width: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  color: #B2B2B2;
+}
+.member .find_wrap .tab_menu .tab.on {
+  background-color: #3090d6;
+  border-color: #3090d6;
+  color: #fff;
+  font-weight: 600;
+}
+.member .find_wrap .tab_menu .tab:first-of-type {
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #DDDDDD;
+  border-width: 1px 0 1px 1px;
+}
+.member .find_wrap .tab_menu .tab:last-of-type {
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #DDDDDD;
+  border-width: 1px 1px 1px 0;
+}
+.member .find_wrap .tab_menu .tab a {
+  display: block;
+  width: 100%;
+}
+.member .join_wrap .w-set {
+  max-width: 1000px;
+}
+.member .join_wrap .join_top {
+  width: 100%;
+  margin: 34px 0 40px;
+  text-align: right;
+}
+.member .join_wrap .join_top > span {
+  font-size: 14px;
+  color: #555;
+}
+.member .join_wrap .join_top > span::before {
+  content: "* ";
+  color: #024fc4;
+}
+.member .join_wrap .join_top .info_box {
+  margin: 10px 0 0;
+  text-align: center;
+}
+.member .join_wrap .join_top .info_box table {
+  width: 100%;
+  border: 1px solid #DDDDDD;
+}
+.member .join_wrap .join_top .info_box table th {
+  height: 42px;
+  background-color: #F5F5F5;
+  border-right: 1px solid #DDDDDD;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #222;
+}
+.member .join_wrap .join_top .info_box table th:last-of-type {
+  border: 0;
+}
+.member .join_wrap .join_top .info_box table td {
+  height: 54px;
+  background-color: #fff;
+  border-top: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  font-size: 16px;
+  line-height: 52px;
+  color: #222;
+}
+.member .join_wrap .join_form dl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.member .join_wrap .join_form dl + dl {
+  margin-top: 20px;
+}
+.member .join_wrap .join_form dl dt {
+  width: 180px;
+  font-size: 16px;
+  color: #222;
+}
+.member .join_wrap .join_form dl dt::after {
+  content: " *";
+  color: #024fc4;
+}
+.member .join_wrap .join_form dl dd {
+  flex: 1;
+}
+.member .join_wrap .join_form dl dd input {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 15px;
+}
+.member .join_wrap .join_form .input-wrap {
+  display: flex;
+}
+.member .join_wrap .join_form .input-wrap .type-address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.member .join_wrap .join_form .input-wrap .type-address .detail {
+  flex: 0 0 auto;
+  width: 288px;
+}
+.member .join_wrap .join_form .input-wrap .type-mobile {
+  gap: 5px;
+}
+.member .join_wrap .join_form .input-wrap .type-mobile .num-bar {
+  width: 6px;
+  height: 1px;
+  background-color: #222;
+}
+.member .join_wrap .join_form .input-wrap .type-mobile input {
+  flex: 1;
+  max-width: 120px;
+}
+.member .join_wrap .join_form .input-wrap .type-mobile + .btn {
+  width: 120px;
+  height: 40px;
+  margin-top: 0;
+  margin-left: 10px;
+  line-height: 38px;
+}
+.member .join_wrap .join_form .input-wrap select {
+  height: 40px;
+  width: 200px;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #A7A7A7;
+}
+.member .join_wrap .join_form .input-wrap .cert_box {
+  display: flex;
+}
+.member .join_wrap .join_form .input-wrap .cert_box + .btn {
+  margin-top: 0;
+  height: 40px;
+}
+.member .join_wrap .join_form .checkbox label {
+  font-size: 16px;
+}
+.member .join_wrap .join_form .checkbox label::before {
+  width: 22px;
+  height: 22px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.member .join_wrap .join_form .btn-wrap {
+  margin-top: 60px;
+  justify-content: center;
+}
+.member .join_wrap .join_form .btn-wrap .btn {
+  margin-top: 0;
+  width: 200px;
+}
 
+@media (min-width: 768px) and (max-width: 1300px) {
+  .member .join_wrap .join_form .input-wrap {
+    gap: 10px;
+  }
+  .member .join_wrap .join_form .input-wrap .type-mobile {
+    flex: 2;
+  }
+  .member .join_wrap .join_form .input-wrap .type-mobile + .btn {
+    flex: 1;
+    margin-top: 0 !important;
+  }
+}
 @media (max-width: 1300px) {
   .member {
     padding: 50px 0 0;
+  }
+  .member .tit-area {
+    margin-bottom: 20px;
+  }
+  .member .tit-area .txt {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .member .login .input-wrap input {
+    height: 40px;
+    line-height: 38px;
   }
   .member .input-wrap input {
     height: 40px;
     padding: 0 12px;
     line-height: 38px;
     font-size: 14px;
+  }
+  .member .input-wrap + .input-wrap {
+    margin-top: 10px;
   }
   .member .btn {
     height: 50px;
@@ -223,17 +461,15 @@ h3.tit {
     margin-top: 20px;
     padding: 16px 12px;
   }
+  .member .note_txt.chk {
+    margin-top: 16px;
+    padding: 14px 12px 16px;
+  }
   .member .note_txt .txt {
-    display: flex;
-    gap: 8px;
+    padding-left: 24px;
     font-size: 14px;
     line-height: 20px;
-  }
-  .member .note_txt .txt i {
-    flex: 0 0 16px;
-    width: 16px;
-    height: 16px;
-    background-size: contain;
+    background-size: 16px;
   }
   .member .note_txt .txt + .txt {
     margin-top: 10px;
@@ -247,5 +483,96 @@ h3.tit {
     height: 15px;
     background-size: contain;
     margin-right: 6px;
+  }
+  .member .find_wrap {
+    margin-top: 20px;
+    padding-top: 110px;
+    background-size: 90px;
+  }
+  .member .find_wrap .tab_menu {
+    height: 42px;
+    margin-bottom: 20px;
+  }
+  .member .find_wrap .tab_menu .tab {
+    line-height: 40px;
+    font-size: 14px;
+  }
+  .member .join_wrap .join_top {
+    margin: 18px 0 20px;
+  }
+  .member .join_wrap .join_top > span {
+    font-size: 12px;
+  }
+  .member .join_wrap .join_top .info_box {
+    margin: 8px 0 0;
+    background-color: #F5F5F5;
+    padding: 20px 12px;
+  }
+  .member .join_wrap .join_top .info_box li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .member .join_wrap .join_top .info_box li span {
+    font-size: 16px;
+  }
+  .member .join_wrap .join_top .info_box li + li {
+    margin-top: 16px;
+  }
+  .member .join_wrap .join_form dl + dl {
+    margin-top: 16px;
+  }
+  .member .join_wrap .join_form dl dt {
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .member .join_wrap .join_form dl dd input {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+  .member .join_wrap .join_form .input-wrap {
+    flex-wrap: wrap;
+  }
+  .member .join_wrap .join_form .input-wrap .type-address {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .member .join_wrap .join_form .input-wrap .type-address .detail {
+    width: 100%;
+  }
+  .member .join_wrap .join_form .input-wrap .type-mobile {
+    width: 100%;
+    gap: 7px;
+  }
+  .member .join_wrap .join_form .input-wrap .type-mobile input {
+    max-width: none;
+  }
+  .member .join_wrap .join_form .input-wrap .type-mobile + .btn {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .member .join_wrap .join_form .input-wrap select {
+    width: 100%;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+  .member .join_wrap .join_form .checkbox label {
+    font-size: 14px;
+  }
+  .member .join_wrap .join_form .checkbox label::before {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    bottom: auto;
+  }
+  .member .join_wrap .join_form .btn-wrap {
+    margin-top: 40px;
+    gap: 14px;
+  }
+  .member .join_wrap .join_form .btn-wrap .btn {
+    flex: 1;
   }
 }

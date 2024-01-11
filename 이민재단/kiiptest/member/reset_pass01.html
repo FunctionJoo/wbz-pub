@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="Kiiptest">
+	<link rel="icon" href="../images/favicon/favicon_16x16.png" sizes="16x16">
+	<link rel="icon" href="../images/favicon/favicon_18x18.png" sizes="18x18">
+	<link rel="icon" href="../images/favicon/favicon_32x32.png" sizes="32x32">
+	<link rel="icon" href="../images/favicon/favicon_180x180.png" sizes="180x180">
+	<meta property="og:image" content="../images/favicon/ogi.png" />
+	<meta property="og:image:width" content="270" />
+	<meta property="og:image:height" content="270" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<title>한국이민재단</title>
+	<!-- css -->
+	<link rel="stylesheet" href="../css/general.css">
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<!-- js -->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/wbz-popup.v1.js"></script>
+</head>
+
+<body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
+	<div id="container">
+		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
+		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
+
+
+		<main id="contents" class="member">
+			<div class="tit-area">
+				<h2 class="tit">비밀번호 찾기</h2>
+				<p class="txt">비밀번호를 잊으셨다면 찾기를 통해 변경할 수 있어요.</p>
+			</div>
+			<div class="w-set">
+				<div class="find_wrap">
+					<ul class="tab_menu">
+						<li class="tab">
+							<a href="javascript:;">
+								등록 외국인
+							</a>
+						</li>
+						<li class="tab">
+							<a href="javascript:;">
+								단기 체류자(C-3-8)
+							</a>
+						</li>
+					</ul>
+					<div class="form_wrap">
+						<form action="" class="find">
+							<div class="input-wrap">
+								<input type="text" name="user_id" id="user_id01" placeholder="아이디를 입력해주세요.">
+								<label for="user_id01" class="is-blind">아이디</label>
+							</div>
+							<div class="input-wrap">
+								<input type="number" name="user_num" id="user_num01" placeholder="외국인 등록 번호를 입력해 주세요 (“-” 제외 입력)">
+								<label for="user_num01" class="is-blind">외국인 등록번호</label>
+							</div>
+							<button type="submit" class="btn color_4">확인</button>
+						</form>
+						<form action="" class="find">
+							<div class="input-wrap">
+								<input type="text" name="user_id" id="user_id02" placeholder="아이디를 입력해주세요.">
+								<label for="user_id02" class="is-blind">아이디</label>
+							</div>
+							<div class="input-wrap">
+								<input type="text" name="user_num" id="user_num02" placeholder="여권 번호를 입력해 주세요">
+								<label for="user_num02" class="is-blind">여권번호</label>
+							</div>
+							<button type="submit" class="btn color_4">확인</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
+	</div>
+
+	<script>
+		//페이지에서만 사용하는 스크립트
+
+		//탭 버튼
+		let tab = '.tab_menu .tab > a';
+		let content = '.form_wrap .find';
+
+		$(tab).parent().first().addClass('on');
+		$(content).first().stop().show();
+		$(content).last().stop().hide();
+
+		$(tab).click(function(e){
+			e.preventDefault();
+			$(tab).parent().removeClass('on');
+			$(this).parent().addClass('on');
+
+			let index = $(this).parent().index();
+
+			$(content).stop().hide();
+			$(content).eq(index).stop().show();
+		});
+	</script>
+</body>
+</html>
