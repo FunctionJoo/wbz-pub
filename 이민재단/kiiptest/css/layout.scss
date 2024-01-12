@@ -142,6 +142,7 @@
             font-family: $mont;
             font-size: 14px;
             color: $primary-color2;
+            margin-right: 16px;
         }
         .logout {
             padding: 0 14px;
@@ -156,6 +157,7 @@
             color: #121212;
             display: flex;
             justify-content: space-between;
+            margin-right: 16px;
             .time {
                 color: $primary-color1;
                 padding-left: 21px;
@@ -167,7 +169,7 @@
             width: 42px;
             height: 42px;
             background: url("../images/common/ico/hd_notify.svg") no-repeat center;
-            margin-left: 15px;
+            margin-left: 2px;
             &.on {
                 position: relative;
                 &::after {
@@ -183,6 +185,10 @@
                     top: 8px;
                 }
             }
+        }
+        .history{
+            @extend .notify;
+            background-image: url('../images/common/ico/hd_history.svg');
         }
         .hd_lang {
             position: relative;

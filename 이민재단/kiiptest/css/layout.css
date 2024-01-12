@@ -127,6 +127,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #3090d6;
+  margin-right: 16px;
 }
 #header .hd-utils .logout {
   padding: 0 14px;
@@ -141,23 +142,24 @@
   color: #121212;
   display: flex;
   justify-content: space-between;
+  margin-right: 16px;
 }
 #header .hd-utils .logout .time {
   color: #024fc4;
   padding-left: 21px;
   background: url("../images/common/ico/hd_time.svg") no-repeat left center;
 }
-#header .hd-utils .notify {
+#header .hd-utils .notify, #header .hd-utils .history {
   display: block;
   width: 42px;
   height: 42px;
   background: url("../images/common/ico/hd_notify.svg") no-repeat center;
-  margin-left: 15px;
+  margin-left: 2px;
 }
-#header .hd-utils .notify.on {
+#header .hd-utils .notify.on, #header .hd-utils .on.history {
   position: relative;
 }
-#header .hd-utils .notify.on::after {
+#header .hd-utils .notify.on::after, #header .hd-utils .on.history::after {
   content: "";
   display: block;
   width: 12px;
@@ -168,6 +170,9 @@
   position: absolute;
   right: 7px;
   top: 8px;
+}
+#header .hd-utils .history {
+  background-image: url("../images/common/ico/hd_history.svg");
 }
 #header .hd-utils .hd_lang {
   position: relative;
@@ -368,10 +373,10 @@
 #aside-menu .aside-header .link.my i {
   background-image: url("../images/common/ico/hd_util_my.svg");
 }
-#aside-menu .aside-header .link.notify {
+#aside-menu .aside-header .link.notify, #aside-menu .aside-header #header .hd-utils .link.history, #header .hd-utils #aside-menu .aside-header .link.history {
   margin-left: 21px;
 }
-#aside-menu .aside-header .link.notify.on::after {
+#aside-menu .aside-header .link.notify.on::after, #aside-menu .aside-header #header .hd-utils .link.on.history::after, #header .hd-utils #aside-menu .aside-header .link.on.history::after {
   content: "";
   position: absolute;
   right: 0;
@@ -381,7 +386,7 @@
   height: 10px;
   border-radius: 50%;
 }
-#aside-menu .aside-header .link.notify i {
+#aside-menu .aside-header .link.notify i, #aside-menu .aside-header #header .hd-utils .link.history i, #header .hd-utils #aside-menu .aside-header .link.history i {
   background-image: url("../images/common/ico/hd_util_notify.svg");
 }
 #aside-menu .aside-header .aside-close {
