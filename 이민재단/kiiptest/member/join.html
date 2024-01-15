@@ -98,7 +98,7 @@
 								<dt>비밀번호</dt>
 								<dd>
 									<div class="input-wrap">
-										<input type="text" name="join" id="password" placeholder="영문, 숫자, 특수문자를 포함하여 6~20자 이내로 입력해주세요">
+										<input type="text" name="join" id="password" placeholder="">
 										<label for="password" class="is-blind">비밀번호</label>
 									</div>
 								</dd>
@@ -107,7 +107,7 @@
 								<dt>비밀번호 확인</dt>
 								<dd>
 									<div class="input-wrap">
-										<input type="text" name="join" id="passwordChk" placeholder="비밀번호확인을 위해 다시 한번 입력해주세요">
+										<input type="text" name="join" id="passwordChk" placeholder="">
 										<label for="passwordChk" class="is-blind">비밀번호 확인</label>
 									</div>
 								</dd>
@@ -130,26 +130,27 @@
 								<dd>
 									<div class="input-wrap">
 										<div class="type-mobile">
-											<input type="text" name="join" id="num01">
+											<input type="text" name="join" id="num01" class="mont">
 											<label for="num01" class="is-blind">휴대폰 번호 앞 자리</label>
 											<i class="num-bar"></i>
-											<input type="text" name="join" id="num02">
+											<input type="text" name="join" id="num02" class="mont">
 											<label for="num02" class="is-blind">휴대폰 번호 중간 자리</label>
 											<i class="num-bar"></i>
-											<input type="text" name="join" id="num03">
+											<input type="text" name="join" id="num03" class="mont">
 											<label for="num03" class="is-blind">휴대폰 번호 마지막 자리</label>
 										</div>
 										<!-- 인증 클릭 후 resend 클래스 추가 -> 재전송 버튼으로 변경 -->
-										<button type="button" class="btn color_2 resend">
+										<button type="button" class="btn color_2">
 											<span>인증</span>
 											<span>재전송</span>
 										</button>
 									</div>
-									<!-- 인증 클릭 후 off 클래스 삭제 -->
-									<div class="input-wrap off">
+									<!-- 인증 클릭 후 on 클래스 추가 -->
+									<div class="input-wrap cert_wrap on">
 										<div class="cert_box">
-											<input type="text" name="certify" id="certify">
+											<input type="number" name="certify" id="certify" class="mont">
 											<label for="certify" class="is-blind">인증번호 입력</label>
+											<span class="time mont">03:00</span>
 										</div>
 										<button type="button" class="btn color_2">인증 완료</button>
 									</div>
@@ -217,6 +218,20 @@
 		$('#stay').change(function () {
 			$('#stay').css('color','#222');
 		});
+
+		//비밀번호 placeholder 문장 변경
+		$(window).resize(function(){
+			let win_w = window.innerWidth;
+
+			if(win_w < 1300){
+				$('#password').attr('placeholder', '영문, 숫자, 특수문자 포함, 6~20자 이내로 입력');
+				$('#passwordChk').attr('placeholder', '비밀번호 확인');
+			} else{
+				$('#password').attr('placeholder', '영문, 숫자, 특수문자를 포함하여 6~20자 이내로 입력해주세요');
+				$('#passwordChk').attr('placeholder', '비밀번호확인을 위해 다시 한번 입력해주세요');
+			}
+		});
+		$(window).trigger('resize');
 	</script>
 </body>
 </html>

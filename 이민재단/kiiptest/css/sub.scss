@@ -366,9 +366,12 @@ input::placeholder{
                     display: flex;
                     align-items: center;
                     gap: 10px;
+                    width: 100%;
+                    input{
+                        flex: 2;
+                    }
                     .detail{
-                        flex: 0 0 auto;
-                        width: 288px;
+                        flex: 1;
                     }
                 }
                 .type-mobile{
@@ -387,6 +390,19 @@ input::placeholder{
                         margin-top: 0;
                         margin-left: 10px;
                         line-height: 38px;
+                        span:last-of-type{
+                            display: none;
+                        }
+                        &.resend{
+                            border-color: #222;
+                            span:first-of-type{
+                                display: none;
+                            }
+                            span:last-of-type{
+                                display: block;
+                                color: #222;
+                            }
+                        }
                     }
                 }
                 select{
@@ -398,9 +414,35 @@ input::placeholder{
                 }
                 .cert_box{
                     display: flex;
+                    max-width: 262px;
+                    height: 40px;
+                    padding-right: 16px;
+                    font-size: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    background-color: #fff;
+                    line-height: 38px;
+                    input{
+                        border: 0;
+                        padding-right: 10px;
+                        background-color: transparent;
+                    }
+                    .time{
+                        color: #F50E0E;
+                        font-size: 14px;
+                    }
                     + .btn{
-                        margin-top: 0;
+                        width: 120px;
                         height: 40px;
+                        margin-top: 0;
+                        line-height: 38px;
+                    }
+                }
+                &.cert_wrap{
+                    display: none;
+                    gap: 10px;
+                    &.on{
+                        display: flex;
                     }
                 }
             }
@@ -451,6 +493,10 @@ input::placeholder{
         padding: 50px 0 0;
         .tit-area {
             margin-bottom: 20px;
+            h2.tit{
+                font-size: 18px;
+                font-weight: 600;
+            }
             .txt{
                 margin-top: 8px;
                 font-size: 14px;
@@ -567,11 +613,12 @@ input::placeholder{
                 .input-wrap{
                     flex-wrap: wrap;
                     .type-address{
-                        width: 100%;
                         flex-wrap: wrap;
                         gap: 6px;
-                        .detail{
+                        input{
+                            flex: auto;
                             width: 100%;
+                            padding: 0 10px;
                         }
                     }
                     .type-mobile{
@@ -579,17 +626,35 @@ input::placeholder{
                         gap: 7px;
                         input {
                             max-width: none;
+                            padding: 0 10px;
                         }
                         + .btn{
                             width: 100%;
                             margin-top: 10px;
                             margin-left: 0;
+                            font-size: 14px;
                         }
                     }
                     select{
                         width: 100%;
                         padding: 0 12px;
                         font-size: 14px;
+                    }
+                    .cert_box{
+                        max-width: none;
+                        flex: 2;
+                        padding-right: 10px;
+                        input{
+                            padding: 0 10px;
+                        }
+                        .time{
+                            font-size: 12px;
+                        }
+                        + .btn{
+                            flex: 1;
+                            width: auto;
+                            font-size: 14px;
+                        }
                     }
                 }
                 .checkbox{

@@ -22,6 +22,10 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input::-moz-placeholder {
+  color: #A7A7A7;
+}
+
 input::placeholder {
   color: #A7A7A7;
 }
@@ -161,6 +165,9 @@ input::placeholder {
   border-color: #ddd;
   padding: 0 14px;
   line-height: 48px;
+}
+.member .input-wrap input::-moz-placeholder {
+  color: #A7A7A7;
 }
 .member .input-wrap input::placeholder {
   color: #A7A7A7;
@@ -350,10 +357,13 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
+}
+.member .join_wrap .join_form .input-wrap .type-address input {
+  flex: 2;
 }
 .member .join_wrap .join_form .input-wrap .type-address .detail {
-  flex: 0 0 auto;
-  width: 288px;
+  flex: 1;
 }
 .member .join_wrap .join_form .input-wrap .type-mobile {
   gap: 5px;
@@ -374,6 +384,19 @@ input::placeholder {
   margin-left: 10px;
   line-height: 38px;
 }
+.member .join_wrap .join_form .input-wrap .type-mobile + .btn span:last-of-type {
+  display: none;
+}
+.member .join_wrap .join_form .input-wrap .type-mobile + .btn.resend {
+  border-color: #222;
+}
+.member .join_wrap .join_form .input-wrap .type-mobile + .btn.resend span:first-of-type {
+  display: none;
+}
+.member .join_wrap .join_form .input-wrap .type-mobile + .btn.resend span:last-of-type {
+  display: block;
+  color: #222;
+}
 .member .join_wrap .join_form .input-wrap select {
   height: 40px;
   width: 200px;
@@ -383,10 +406,36 @@ input::placeholder {
 }
 .member .join_wrap .join_form .input-wrap .cert_box {
   display: flex;
+  max-width: 262px;
+  height: 40px;
+  padding-right: 16px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  line-height: 38px;
+}
+.member .join_wrap .join_form .input-wrap .cert_box input {
+  border: 0;
+  padding-right: 10px;
+  background-color: transparent;
+}
+.member .join_wrap .join_form .input-wrap .cert_box .time {
+  color: #F50E0E;
+  font-size: 14px;
 }
 .member .join_wrap .join_form .input-wrap .cert_box + .btn {
-  margin-top: 0;
+  width: 120px;
   height: 40px;
+  margin-top: 0;
+  line-height: 38px;
+}
+.member .join_wrap .join_form .input-wrap.cert_wrap {
+  display: none;
+  gap: 10px;
+}
+.member .join_wrap .join_form .input-wrap.cert_wrap.on {
+  display: flex;
 }
 .member .join_wrap .join_form .checkbox label {
   font-size: 16px;
@@ -425,6 +474,10 @@ input::placeholder {
   }
   .member .tit-area {
     margin-bottom: 20px;
+  }
+  .member .tit-area h2.tit {
+    font-size: 18px;
+    font-weight: 600;
   }
   .member .tit-area .txt {
     margin-top: 8px;
@@ -528,12 +581,13 @@ input::placeholder {
     flex-wrap: wrap;
   }
   .member .join_wrap .join_form .input-wrap .type-address {
-    width: 100%;
     flex-wrap: wrap;
     gap: 6px;
   }
-  .member .join_wrap .join_form .input-wrap .type-address .detail {
+  .member .join_wrap .join_form .input-wrap .type-address input {
+    flex: auto;
     width: 100%;
+    padding: 0 10px;
   }
   .member .join_wrap .join_form .input-wrap .type-mobile {
     width: 100%;
@@ -541,15 +595,33 @@ input::placeholder {
   }
   .member .join_wrap .join_form .input-wrap .type-mobile input {
     max-width: none;
+    padding: 0 10px;
   }
   .member .join_wrap .join_form .input-wrap .type-mobile + .btn {
     width: 100%;
     margin-top: 10px;
     margin-left: 0;
+    font-size: 14px;
   }
   .member .join_wrap .join_form .input-wrap select {
     width: 100%;
     padding: 0 12px;
+    font-size: 14px;
+  }
+  .member .join_wrap .join_form .input-wrap .cert_box {
+    max-width: none;
+    flex: 2;
+    padding-right: 10px;
+  }
+  .member .join_wrap .join_form .input-wrap .cert_box input {
+    padding: 0 10px;
+  }
+  .member .join_wrap .join_form .input-wrap .cert_box .time {
+    font-size: 12px;
+  }
+  .member .join_wrap .join_form .input-wrap .cert_box + .btn {
+    flex: 1;
+    width: auto;
     font-size: 14px;
   }
   .member .join_wrap .join_form .checkbox label {
