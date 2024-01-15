@@ -1,6 +1,9 @@
 @import "./utility.scss";
 
 // 공통
+#container{
+    overflow-x: hidden;
+}
 h2.tit {
     text-align: center;
     font-weight: 700;
@@ -136,7 +139,7 @@ input::placeholder{
 
 // 회원
 .member {
-    padding: 100px 0 0;
+    padding: 100px 0 120px;
     border-top: 1px solid #ddd;
     .tit-area {
         text-align: center;

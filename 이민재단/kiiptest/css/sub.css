@@ -1,3 +1,7 @@
+#container {
+  overflow-x: hidden;
+}
+
 h2.tit {
   text-align: center;
   font-weight: 700;
@@ -20,10 +24,6 @@ input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-input::-moz-placeholder {
-  color: #A7A7A7;
 }
 
 input::placeholder {
@@ -132,7 +132,7 @@ input::placeholder {
 }
 
 .member {
-  padding: 100px 0 0;
+  padding: 100px 0 120px;
   border-top: 1px solid #ddd;
 }
 .member .tit-area {
@@ -165,9 +165,6 @@ input::placeholder {
   border-color: #ddd;
   padding: 0 14px;
   line-height: 48px;
-}
-.member .input-wrap input::-moz-placeholder {
-  color: #A7A7A7;
 }
 .member .input-wrap input::placeholder {
   color: #A7A7A7;
