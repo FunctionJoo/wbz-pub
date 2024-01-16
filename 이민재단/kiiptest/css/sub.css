@@ -111,7 +111,6 @@ input::placeholder {
   background: #fff;
   border: 1px solid #d3d3d3;
   border-radius: 3px;
-  padding: 0 15px;
   width: 100%;
 }
 .location .has-select + ul.on {
@@ -119,7 +118,7 @@ input::placeholder {
 }
 .location .has-select + ul li a {
   display: block;
-  padding: 5px 0;
+  padding: 5px 15px;
 }
 .location .has-select + ul li:first-child a {
   padding-top: 15px;

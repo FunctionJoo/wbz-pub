@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #header {
   position: relative;
   border-bottom: 1px solid #e0e0e0;
@@ -145,6 +146,7 @@
   margin-right: 16px;
 }
 #header .hd-utils .logout .time {
+  font-family: "Montserrat", sans-serif;
   color: #024fc4;
   padding-left: 21px;
   background: url("../images/common/ico/hd_time.svg") no-repeat left center;
@@ -570,13 +572,12 @@
   bottom: 150px;
   font-size: 0;
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   border: 0 none;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
-  background: #fff url("../images/common/ico/btn_top.svg") no-repeat center center;
-  background-position: top 12px center;
+  background: #0b248d url("../images/common/ico/go_top.svg") no-repeat center center;
+  background-position: top 18px center;
   transition: 0.3s;
   opacity: 0;
   display: none;
@@ -584,10 +585,11 @@
 .go-top::after {
   content: "TOP";
   display: block;
-  padding-top: 26px;
+  padding-top: 18px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 12px;
-  color: #666;
+  font-size: 14px;
+  color: #fff;
 }
 .go-top.show {
   display: block;
@@ -604,11 +606,23 @@
     z-index: 999;
   }
   #header .inner {
+    height: auto;
     flex-wrap: wrap;
     align-items: center;
+    padding: 16px;
   }
-  #header .gnb {
+  #header .hd-logo {
+    width: 123px;
+    height: 24px;
+  }
+  #header .gnb-wrap {
     display: none;
+  }
+  #header .btn-menu {
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/common/ico/hd_btn_menu.svg") no-repeat center;
   }
   #aside-menu {
     display: block;
@@ -660,5 +674,61 @@
   }
   #footer .ft-btm .copyright {
     padding-top: 26px;
+  }
+  .go-top {
+    width: 52px;
+    height: 52px;
+    background-position: top 13px center;
+    background-size: 17px auto;
+  }
+  .go-top::after {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  #header .inner {
+    padding: 16px 16px 56px;
+    margin-bottom: 16px;
+  }
+  #header .hd-utils .login {
+    margin-right: 4px;
+    width: auto;
+    height: auto;
+    border: 0;
+  }
+  #header .hd-utils .logout {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+  #header .hd-utils .logout .txt::before {
+    content: "자동 ";
+  }
+  #header .hd-utils .notify, #header .hd-utils .history {
+    width: 30px;
+    height: 30px;
+    margin-left: 4px;
+    background-size: 20px;
+  }
+  #header .hd-utils .notify.on::after, #header .hd-utils .on.history::after {
+    width: 11px;
+    height: 11px;
+    right: 2px;
+    top: 4px;
+  }
+  #header .hd-utils .history {
+    background-size: 34px;
+  }
+  #header .hd-utils .hd_lang .btn_lang {
+    background-size: 34px;
+  }
+  #header .hd-utils .hd_lang .btn_lang .txt {
+    font-size: 10px;
   }
 }
