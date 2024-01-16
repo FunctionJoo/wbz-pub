@@ -30,6 +30,10 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input::-moz-placeholder {
+  color: #A7A7A7;
+}
+
 input::placeholder {
   color: #A7A7A7;
 }
@@ -168,6 +172,9 @@ input::placeholder {
   border-color: #ddd;
   padding: 0 14px;
   line-height: 48px;
+}
+.member .input-wrap input::-moz-placeholder {
+  color: #A7A7A7;
 }
 .member .input-wrap input::placeholder {
   color: #A7A7A7;
@@ -456,6 +463,185 @@ input::placeholder {
   width: 200px;
 }
 
+.register {
+  padding: 0 0 120px;
+}
+.register .tit-area {
+  position: relative;
+  width: 100%;
+  height: 190px;
+}
+.register .tit-area .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/common/img/regi_bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.register .tit-area .w-set {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.register .tit-area .w-set h2.tit {
+  text-align: left;
+  line-height: 190px;
+  color: #fff;
+}
+.register .regi_btm {
+  padding-top: 60px;
+}
+.register .regi_btm .w-set.type_s {
+  padding: 0 100px;
+}
+.register .regi_btm .step_list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 120px;
+  padding: 20px 70px;
+  border: 1px solid #ddd;
+}
+.register .regi_btm .step_list.type_w {
+  height: 125px;
+  padding: 0 30px;
+}
+.register .regi_btm .step_list > li {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.register .regi_btm .step_list > li.on i {
+  background-color: #111E55;
+}
+.register .regi_btm .step_list > li.on .step_txt {
+  color: #111E55;
+}
+.register .regi_btm .step_list > li.on .step_txt .num {
+  font-weight: 600;
+}
+.register .regi_btm .step_list > li.on .step_txt .txt {
+  font-weight: 700;
+}
+.register .regi_btm .step_list > li i {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #DDDDDD;
+  border-radius: 50%;
+}
+.register .regi_btm .step_list > li .step_txt {
+  text-align: center;
+  color: #B2B2B2;
+}
+.register .regi_btm .step_list > li .step_txt .num {
+  font-size: 16px;
+}
+.register .regi_btm .step_list > li .step_txt .txt {
+  margin-top: 6px;
+  font-size: 18px;
+}
+.register .regi_btm .step_list > li.step01 i {
+  background-image: url("../images/common/ico/step01.svg");
+}
+.register .regi_btm .step_list > li.step02 i {
+  background-image: url("../images/common/ico/step02.svg");
+}
+.register .regi_btm .step_list > li.step03 i {
+  background-image: url("../images/common/ico/step03.svg");
+}
+.register .regi_btm .step_list > li.step04 i {
+  background-image: url("../images/common/ico/step04.svg");
+}
+.register .regi_btm .step_list > li::after, .register .regi_btm .step_list > li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #DDDDDD;
+  border-radius: 50%;
+}
+.register .regi_btm .step_list > li:first-of-type::before {
+  display: none;
+}
+.register .regi_btm .step_list > li:last-of-type::after {
+  display: none;
+}
+.register .regi_btm .regi_con {
+  margin-top: 40px;
+}
+.register .regi_btm .regi_con p.tit {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.register .regi_btm .regi_con p.tit em {
+  color: #024fc4;
+}
+.register .regi_btm .regi_con .regi_step01 .type, .register .regi_btm .regi_con .regi_step01 .program, .register .regi_btm .regi_con .regi_step01 .special {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+}
+.register .regi_btm .regi_con .regi_step01 .program {
+  width: 75%;
+  margin-top: 40px;
+}
+.register .regi_btm .regi_con .regi_step01 .program .radiobox:first-of-type {
+  flex: 2;
+}
+.register .regi_btm .regi_con .regi_step01 .special {
+  width: 50%;
+  margin-top: 40px;
+}
+.register .regi_btm .regi_con .regi_step01 .radiobox {
+  flex: 1;
+  height: 50px;
+}
+.register .regi_btm .regi_con .regi_step01 .radiobox input[type=radio]:checked + label {
+  color: #024fc4;
+  background-color: rgba(2, 79, 196, 0.1215686275);
+  border-color: #024fc4;
+}
+.register .regi_btm .regi_con .regi_step01 .radiobox label {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+  line-height: 48px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+.register .regi_btm .regi_con .regi_step01 .radiobox label::before {
+  display: none;
+}
+.register .btn-wrap {
+  margin-top: 60px;
+  justify-content: center;
+}
+.register .btn-wrap .btn {
+  max-width: 200px;
+}
+.register .btn-wrap .btn.next::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-left: 10px;
+  background-image: url(../images/common/ico/link.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 768px) and (max-width: 1300px) {
   .member .join_wrap .join_form .input-wrap {
     gap: 10px;
@@ -563,7 +749,7 @@ input::placeholder {
     font-size: 16px;
   }
   .member .join_wrap .join_top .info_box li + li {
-    margin-top: 16px;
+    margin-top: 12px;
   }
   .member .join_wrap .join_form dl + dl {
     margin-top: 16px;

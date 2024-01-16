@@ -212,14 +212,12 @@
 		//페이지에서만 사용하는 스크립트
 
 		//select 박스 선택 할 때 폰트 색 변경
-		$('#nationality').change(function () {
-			$('#nationality').css('color','#222');
-		});
-		$('#stay').change(function () {
-			$('#stay').css('color','#222');
+		let select = '.input-wrap select';
+		$(select).change(function () {
+			$(this).css('color','#222');
 		});
 
-		//비밀번호 placeholder 문장 변경
+		//모바일에서 비밀번호 placeholder 문장 변경
 		$(window).resize(function(){
 			let win_w = window.innerWidth;
 

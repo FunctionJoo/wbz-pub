@@ -76,7 +76,7 @@
 								<input type="text" name="user_num" id="user_num02" placeholder="여권 번호를 입력해 주세요">
 								<label for="user_num02" class="is-blind">여권번호</label>
 							</div>
-							<button type="submit" class="btn color_4">확인</button>
+							<button type="submit" class="btn color_4" onclick="redirectToPage()">확인</button>
 						</form>
 					</div>
 				</div>
@@ -88,6 +88,11 @@
 
 	<script>
 		//페이지에서만 사용하는 스크립트
+
+		function redirectToPage() {
+			var targetUrl = "./reset_pass02.html";
+			window.location.href = targetUrl;
+		}
 
 		//탭 버튼
 		let tab = '.tab_menu .tab > a';

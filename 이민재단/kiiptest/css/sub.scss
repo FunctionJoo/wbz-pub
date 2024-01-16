@@ -478,6 +478,196 @@ input::placeholder{
     }
 }
 
+//평가 접수
+.register{
+    padding: 0 0 120px;
+    //타이틀 배경이미지
+    .tit-area{
+        position: relative;
+        width: 100%;
+        height: 190px;
+        .bg{
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/common/img/regi_bg.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .w-set{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            h2.tit{
+                text-align: left;
+                line-height: 190px;
+                color: #fff;
+            }
+        }
+    }
+
+    //접수 step
+    .regi_btm{
+        padding-top: 60px;
+
+        //step 리스트
+        .w-set{
+            &.type_s{
+                padding: 0 100px;
+            }
+        }
+        .step_list{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            height: 120px;
+            padding: 20px 70px;
+            border: 1px solid #ddd;
+            &.type_w{
+                height: 125px;
+                padding: 0 30px;
+            }
+            > li{
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                &.on{
+                    i{
+                        background-color: #111E55;
+                    }
+                    .step_txt{
+                        color: #111E55;
+                        .num{
+                            font-weight: 600;
+                        }
+                        .txt{
+                            font-weight: 700;
+                        }
+                    }
+                }
+                i{
+                    width: 80px;
+                    height: 80px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #DDDDDD;
+                    border-radius: 50%;
+                }
+                .step_txt{
+                    text-align: center;
+                    color: #B2B2B2;
+                    .num{
+                        font-size: 16px;
+                    }
+                    .txt{
+                        margin-top: 6px;
+                        font-size: 18px;
+                    }
+                }
+                @for $i from 1 to 5 {
+                    &.step0#{$i} {
+                        i{
+                            background-image: url("../images/common/ico/step0#{$i}.svg");
+                        }
+
+                    }
+                }
+                &::after, &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #DDDDDD;
+                    border-radius: 50%;
+                }
+                &:first-of-type::before{
+                    display: none;
+                }
+                &:last-of-type::after{
+                    display: none;
+                }
+            }
+        }
+        .regi_con{
+            margin-top: 40px;
+            p.tit{
+                width: 100%;
+                font-size: 20px;
+                font-weight: 500;
+                em{
+                    color: $primary-color1;
+                }
+            }
+            .regi_step01{
+                .type, .program, .special{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 20px 10px;
+                }
+                .program{
+                    width: 75%;
+                    margin-top: 40px;
+                    .radiobox:first-of-type{
+                        flex: 2;
+                    }
+                }
+                .special{
+                    width: 50%;
+                    margin-top: 40px;
+                }
+                .radiobox{
+                    flex: 1;
+                    height: 50px;
+                    input[type=radio]:checked + label{
+                        color: $primary-color1;
+                        background-color: #024FC41F;
+                        border-color: $primary-color1;
+                    }
+                    label{
+                        padding: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #ddd;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        line-height: 48px;
+                        text-align: center;
+                        color: #666;
+                        font-size: 14px;
+                        &::before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .btn-wrap{
+        margin-top: 60px;
+        justify-content: center;
+        .btn{
+            max-width: 200px;
+            &.next{
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 6px;
+                    height: 10px;
+                    margin-left: 10px;
+                    background-image: url(../images/common/ico/link.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
 @include tablet{
     .member{
         .join_wrap{
@@ -597,7 +787,7 @@ input::placeholder{
                             font-size: 16px;
                         }
                         + li{
-                            margin-top: 16px;
+                            margin-top: 12px;
                         }
                     }
                 }

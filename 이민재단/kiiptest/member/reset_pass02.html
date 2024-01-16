@@ -58,7 +58,7 @@
 								<p class="txt">특수문자 (~,!,@,#,$,%,^,* )</p>
 								<p class="txt">개인정보(아이디, 연락처) 포함 불가입니다</p>
 							</div>
-							<button type="submit" class="btn color_4">확인</button>
+							<button type="submit" class="btn color_4" onclick="redirectToPage()">확인</button>
 						</form>
 					</div>
 				</div>
@@ -69,6 +69,10 @@
 	</div>
 
 	<script>
+		function redirectToPage() {
+			var targetUrl = "./login.html";
+			window.location.href = targetUrl;
+		}
 	</script>
 </body>
 </html>
