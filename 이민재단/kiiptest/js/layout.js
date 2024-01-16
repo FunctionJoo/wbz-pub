@@ -76,18 +76,9 @@ function layoutEvent() {
 		}
 	}	
 
-	document.querySelectorAll('.has-child').forEach(($el, index) => {
-		$el.querySelector('.dep2').style.height = '0';
-		$el.querySelector('.dep1a').addEventListener('click', function($e) {
-			$e.preventDefault();
-			$e.target.closest('.dep1').classList.toggle('on');
-			const collapseContent = $e.target.closest('.dep1').querySelector('.dep2');
-			if ( $e.target.closest('.dep1').classList.contains('on')) {
-				collapseContent.style.height = collapseContent.scrollHeight + 'px';
-			} else {
-				collapseContent.style.height = '0';
-			}
-		});
+	$(".aside-menu .depth1-list h2").on("click", function () {
+		$(this).parent().addClass('on');
+		$(this).parent().siblings().removeClass('on');
 	});
 
 	// footer
