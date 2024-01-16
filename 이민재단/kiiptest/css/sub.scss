@@ -1,5 +1,12 @@
 @import "./utility.scss";
 
+//임시
+main{
+    & > img{
+        margin-bottom: 160px;
+    }
+}
+
 // 공통
 #container{
     overflow-x: hidden;
@@ -493,7 +500,7 @@ input::placeholder{
 
 @include mobile{
     .member{
-        padding: 50px 0 0;
+        padding: 50px 0 100px;
         .tit-area {
             margin-bottom: 20px;
             h2.tit{
