@@ -642,6 +642,107 @@ input::placeholder {
   background-position: center;
 }
 
+.service .sub-wrap {
+  padding: 80px 0 120px;
+}
+.service .sub-wrap .sub-top {
+  padding-bottom: 60px;
+}
+.service .boardList-wrap .search_wrap {
+  max-width: 550px;
+  height: 50px;
+  margin: 0 auto;
+}
+.service .boardList-wrap .search_wrap form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.service .boardList-wrap .search_wrap select {
+  padding: 0 15px;
+  width: 140px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #666;
+}
+.service .boardList-wrap .search_wrap .input_label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 24px;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+}
+.service .boardList-wrap .search_wrap .input_label input[type=text] {
+  border: 0;
+}
+.service .boardList-wrap .search_wrap .search_btn {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/common/ico/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+.service .boardList-wrap .board_count {
+  text-align: left;
+}
+.service .boardList-wrap .board_count span {
+  font-size: 14px;
+  color: #333;
+}
+.service .boardList-wrap .board_count span em {
+  color: #024fc4;
+}
+.service .boardList-wrap .table_top {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #222;
+  line-height: 57px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.service .boardList-wrap .table_wrap {
+  border-bottom: 1px solid #222;
+}
+.service .boardList-wrap .table_wrap .table_list {
+  border-bottom: 1px solid #ddd;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 16px;
+  line-height: 54px;
+}
+.service .boardList-wrap .table_wrap .table_list:last-of-type {
+  border-bottom: 0;
+}
+.service .boardList-wrap .table_wrap .table_list .list.date, .service .boardList-wrap .table_wrap .table_list .list.hit {
+  font-family: "Montserrat", sans-serif;
+}
+.service .boardList-wrap .list {
+  display: table-cell;
+  text-align: center;
+}
+.service .boardList-wrap .list.no {
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+.service .boardList-wrap .list.date {
+  width: 200px;
+}
+.service .boardList-wrap .list.hit {
+  width: 100px;
+}
+.service .boardList-wrap .list.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (min-width: 768px) and (max-width: 1300px) {
   .member .join_wrap .join_form .input-wrap {
     gap: 10px;

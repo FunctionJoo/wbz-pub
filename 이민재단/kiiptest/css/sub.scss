@@ -572,7 +572,6 @@ input::placeholder{
                         i{
                             background-image: url("../images/common/ico/step0#{$i}.svg");
                         }
-
                     }
                 }
                 &::after, &::before{
@@ -663,6 +662,111 @@ input::placeholder{
                     background-repeat: no-repeat;
                     background-position: center;
                 }
+            }
+        }
+    }
+}
+
+//알림마당
+.service{
+    .sub-wrap{
+        padding: 80px 0 120px;
+        .sub-top{
+            padding-bottom: 60px;
+        }
+    }
+    .boardList-wrap{
+        .search_wrap{
+            max-width: 550px;
+            height: 50px;
+            margin: 0 auto;
+            form{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            select{
+                padding: 0 15px;
+                width: 140px;
+                border-radius: 3px;
+                font-size: 14px;
+                color: #666;
+            }
+            .input_label{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding-right: 24px;
+                border-radius: 3px;
+                border: 1px solid #d3d3d3;
+                input[type=text]{
+                    border: 0;
+                }
+            }
+            .search_btn{
+                font-size: 0;
+                width: 20px; height: 20px;
+                background-image: url(../images/common/ico/search.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 18px;
+            }
+        }
+        .board_count{
+            text-align: left;
+            span{
+                font-size: 14px;
+                color: #333;
+                em{
+                    color: $primary-color1;
+                }
+            }
+        }
+        .table_top{
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-top: 2px solid #222;
+            border-bottom: 1px solid #222;
+            line-height: 57px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .table_wrap{
+            border-bottom: 1px solid #222;
+            .table_list{
+                border-bottom: 1px solid #ddd;
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                font-size: 16px;
+                line-height: 54px;
+                &:last-of-type{
+                    border-bottom: 0;
+                }
+                .list{
+                    &.date, &.hit{
+                        font-family: $mont;
+                    }
+                }
+            }
+        }
+        .list{
+            display: table-cell;
+            text-align: center;
+            &.no{
+                width: 100px;
+                font-family: $mont;
+            }
+            &.date{
+                width: 200px;
+            }
+            &.hit{
+                width: 100px;
+            }
+            &.title{
+                @include ellipsis;
             }
         }
     }
