@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="Kiiptest">
+	<link rel="icon" href="../images/favicon/favicon_16x16.png" sizes="16x16">
+	<link rel="icon" href="../images/favicon/favicon_18x18.png" sizes="18x18">
+	<link rel="icon" href="../images/favicon/favicon_32x32.png" sizes="32x32">
+	<link rel="icon" href="../images/favicon/favicon_180x180.png" sizes="180x180">
+	<meta property="og:image" content="../images/favicon/ogi.png" />
+	<meta property="og:image:width" content="270" />
+	<meta property="og:image:height" content="270" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<title>한국이민재단</title>
+	<!-- css -->
+	<link rel="stylesheet" href="../css/general.css">
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<!-- js -->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/wbz-popup.v1.js"></script>
+</head>
+
+<body>
+	<!-- 본문 바로가기 -->
+	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
+	<div id="container">
+		<div class="js-include" data-include="../outline/header_main.html" data-event="header"></div>
+		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
+
+		<main id="contents">
+			<div class="main-content">
+				<div class="main-cont">
+					<main class="wrap" style="text-align: center;">
+						<img src="../images/dummy/main.png" alt="" usemap="#imagemap-sample1">
+					</main>
+
+					<map name="imagemap-sample1">
+						<area alt="" title="" href="../register/register_step01.html" coords="522,87,652,266" shape="rect">
+						<area alt="" title="" href="../mypage/mytest01_list.html" coords="674,87,818,266" shape="rect">
+						<area alt="" title="" href="../mypage/mytest02.html" coords="835,87,984,266" shape="rect">
+						<area alt="" title="" href="../register/register_step02_pbt.html" coords="691,590,775,620" shape="rect">
+						<area alt="" title="" href="../register/register_step02_cbt.html" coords="700,637,778,670" shape="rect">
+						<area alt="" title="" href="../service/notice_list.html" coords="1162,380,1191,410" shape="rect">
+						<area alt="" title="" href="../service/notice_view.html" coords="820,417,1200,711" shape="rect">
+						<area alt="" title="" href="../supervisor/new_join01.html" coords="829,748,1200,900" shape="rect">
+						<area alt="" title="" href="../service/faq_list.html" coords="10,951,387,1090" shape="rect">
+						<area alt="" title="" href="../service/qna_list.html" coords="415,951,798,1090" shape="rect">
+						<area alt="" title="" href="../service/archive_list.html" coords="827,951,1200,1090" shape="rect">
+					</map>
+				</div>
+			</div>
+		</main>
+
+		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+	<script>
+
+		$(document).ready(function() {
+      $('img[usemap]').rwdImageMaps();
+    });
+
+		document.querySelectorAll('.tab button').forEach(function (btn, idx) {
+			btn.addEventListener('click', function () {
+				document.querySelectorAll('.tab button').forEach(function (btn, idx) {
+					btn.classList.remove('on');
+				});
+				btn.classList.add('on');
+				document.querySelectorAll('.tab-content').forEach(function (contBox) {
+					contBox.classList.remove('on');
+				})
+				document.querySelectorAll('.tab-content')[idx].classList.add('on');
+			});
+		});
+		document.querySelectorAll('.pbt .tab-detail button').forEach(function (btn, idx) {
+			btn.addEventListener('click', function () {
+				document.querySelectorAll('.pbt .tab-detail button').forEach(function (btn, idx) {
+					btn.classList.remove('on');
+				});
+				btn.classList.add('on');
+				document.querySelectorAll('.pbt .tab-box').forEach(function (tabBox) {
+					tabBox.classList.remove('on');
+				})
+				document.querySelectorAll('.pbt .tab-box')[idx].classList.add('on');
+			});
+		});
+		document.querySelectorAll('.cbt .tab-detail button').forEach(function (btn, idx) {
+			btn.addEventListener('click', function () {
+				document.querySelectorAll('.cbt .tab-detail button').forEach(function (btn, idx) {
+					btn.classList.remove('on');
+				});
+				btn.classList.add('on');
+				document.querySelectorAll('.cbt .tab-box').forEach(function (tabBox) {
+					tabBox.classList.remove('on');
+				})
+				document.querySelectorAll('.cbt .tab-box')[idx].classList.add('on');
+			});
+		});
+	</script>
+</body>
+
+</html>
