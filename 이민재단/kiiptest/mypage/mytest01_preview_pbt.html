@@ -32,45 +32,23 @@
 	<!-- 본문 바로가기 -->
 	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
-		<div class="js-include" data-include="../outline/header_sub.html" data-event="header"></div>
-		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-
-		<main id="contents" class="member">
-			<div class="tit-area hide-m">
-				<h2 class="tit">비밀번호 재설정</h2>
-			</div>
-			<div class="w-set">
-				<div class="find_wrap">
-					<div class="form_wrap">
-						<form action="" class="find">
-							<div class="input-wrap">
-								<input type="text" name="new_pw" id="new_pw" placeholder="새로운 비밀번호">
-								<label for="new_pw" class="is-blind">새로운 비밀번호</label>
-							</div>
-							<div class="input-wrap">
-								<input type="text" name="chk_pw" id="chk_pw" placeholder="비밀번호 확인">
-								<label for="chk_pw" class="is-blind">비밀번호 확인</label>
-							</div>
-							<div class="note_txt chk">
-								<p class="txt">비밀번호는 8~20자 사이</p>
-								<p class="txt">영문(대소문자 구분)</p>
-								<p class="txt">특수문자 (~,!,@,#,$,%,^,* )</p>
-								<p class="txt">개인정보(아이디, 연락처) 포함 불가입니다</p>
-							</div>
-							<!-- <button type="submit" class="btn color_4">확인</button> -->
-							<!-- 임시링크연결 -->
-							<a href="./login.html" class="btn color_4">확인</a>
-						</form>
-					</div>
-				</div>
-			</div>
+    <main class="wrap">
+			<img src="../images/dummy/Register_preview.png" alt="test" usemap="#imagemap-sample1">
 		</main>
 
-		<div class="js-include hide-m" data-include="../outline/footer.html" data-event="footer"></div>
+    <map name="imagemap-sample1">
+      <area alt="" title="" href="./mytest01_list.html" coords="2,5,74,74" shape="rect">
+		</map>
+
 	</div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
 	<script>
+    $(document).ready(function() {
+      $('img[usemap]').rwdImageMaps();
+    });
 	</script>
 </body>
 </html>
