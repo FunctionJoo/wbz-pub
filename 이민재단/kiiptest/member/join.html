@@ -36,172 +36,176 @@
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
 
-		<main id="contents" class="member">
-			<div class="tit-area hide-m">
-				<h2 class="tit">회원가입</h2>
-			</div>
-			<div class="join_wrap">
-				<div class="w-set">
-					<div class="join_top">
-						<span>필수입력</span>
-						<div class="info_box hide-m">
-							<table>
-								<caption>회원 정보</caption>
-								<thead>
-									<tr>
-										<th>아이디</th>
-										<th>이름</th>
-										<th>외국인등록번호</th>
-										<th>생년월일</th>
-										<th>여권번호</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sazita00</td>
-										<td>Taylor Alison Swift</td>
-										<td>871510-5********</td>
-										<td>19800112</td>
-										<td>M302133456</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="info_box hide-pc">
-							<ul>
-								<li>
-									<span>아이디</span>
-									<span class="mont">Sazita00</span>
-								</li>
-								<li>
-									<span>이름</span>
-									<span class="mont">Taylor Alison Swift</span>
-								</li>
-								<li>
-									<span>외국인등록번호</span>
-									<span class="mont">871510-5********</span>
-								</li>
-								<li>
-									<span>생년월일</span>
-									<span class="mont">19800112</span>
-								</li>
-								<li>
-									<span>여권번호</span>
-									<span class="mont">M302133456</span>
-								</li>
-							</ul>
-						</div>
+		<main id="contents">
+			<div class="sub-content">
+				<div class="member-wrap">
+					<div class="tit-area hide-m">
+						<h2 class="tit">회원가입</h2>
 					</div>
-					<div class="join_form">
-						<form action="">
-							<dl>
-								<dt>비밀번호</dt>
-								<dd>
-									<div class="input-wrap">
-										<input type="text" name="join" id="password" placeholder="">
-										<label for="password" class="is-blind">비밀번호</label>
-									</div>
-								</dd>
-							</dl>
-							<dl>
-								<dt>비밀번호 확인</dt>
-								<dd>
-									<div class="input-wrap">
-										<input type="text" name="join" id="passwordChk" placeholder="">
-										<label for="passwordChk" class="is-blind">비밀번호 확인</label>
-									</div>
-								</dd>
-							</dl>
-							<dl>
-								<dt>주소</dt>
-								<dd>
-									<div class="input-wrap">
-										<div class="type-address">
-											<input type="text" name="join" id="address01" placeholder="주소">
-											<label for="address01" class="is-blind">주소</label>
-											<input type="text" name="join" id="address02" placeholder="상세 주소" class="detail">
-											<label for="address02" class="is-blind">상세 주소</label>
-										</div>
-									</div>
-								</dd>
-							</dl>
-							<dl>
-								<dt>휴대폰 번호</dt>
-								<dd>
-									<div class="input-wrap">
-										<div class="type-mobile">
-											<input type="text" name="join" id="num01" class="mont">
-											<label for="num01" class="is-blind">휴대폰 번호 앞 자리</label>
-											<i class="num-bar"></i>
-											<input type="text" name="join" id="num02" class="mont">
-											<label for="num02" class="is-blind">휴대폰 번호 중간 자리</label>
-											<i class="num-bar"></i>
-											<input type="text" name="join" id="num03" class="mont">
-											<label for="num03" class="is-blind">휴대폰 번호 마지막 자리</label>
-										</div>
-										<!-- 인증 클릭 후 resend 클래스 추가 -> 재전송 버튼으로 변경 -->
-										<button type="button" class="btn color_2">
-											<span>인증</span>
-											<span>재전송</span>
-										</button>
-									</div>
-									<!-- 인증 클릭 후 on 클래스 추가 -->
-									<div class="input-wrap cert_wrap on">
-										<div class="cert_box">
-											<input type="number" name="certify" id="certify" class="mont">
-											<label for="certify" class="is-blind">인증번호 입력</label>
-											<span class="time mont">03:00</span>
-										</div>
-										<button type="button" class="btn color_2">인증 완료</button>
-									</div>
-								</dd>
-							</dl>
-							<dl>
-								<dt>국적</dt>
-								<dd>
-									<div class="input-wrap">
-										<select name="join" id="nationality">
-											<option value="" disabled selected>국적을 선택하세요</option>
-											<option value="">가나</option>
-											<option value="">가봉</option>
-											<option value="">과테말라</option>
-											<option value="">기타</option>
-										</select>
-										<label for="nationality" class="is-blind">국적</label>
-									</div>
-								</dd>
-							</dl>
-							<dl>
-								<dt>체류자격</dt>
-								<dd>
-									<div class="input-wrap">
-										<select name="join" id="stay">
-											<option value="" disabled selected>체류자격을 선택하세요</option>
-											<option value="">D2(유학)</option>
-											<option value="">D4(일반연수)</option>
-											<option value="">D10(구직)</option>
-											<option value="">기타</option>
-										</select>
-										<label for="stay" class="is-blind">체류자격</label>
-									</div>
-								</dd>
-							</dl>
-							<dl>
-								<dt>알림수신동의</dt>
-								<dd>
-									<div class="checkbox">
-										<input type="checkbox" name="join" id="agree">
-										<label for="agree">한국이민재단에서 시행하는 KIIP 평가 관련정보를 제공하는 SMS 등 문자수신에 동의합니다.</label>
-									</div>
-								</dd>
-							</dl>
-							<div class="btn-wrap">
-								<!-- <button type="button" class="btn">회원 가입</button> -->
-								<!-- 임시 링크용 -->
-								<a href="../main/index_img.html" class="btn">회원 가입</a>
-								<a href="../main/index_img.html" class="btn color_3">취소</a>
+					<div class="join-wrap">
+						<div class="w-set">
+							<div class="join-top">
+								<span>필수입력</span>
+								<div class="info-box hide-m">
+									<table>
+										<caption>회원 정보</caption>
+										<thead>
+											<tr>
+												<th>아이디</th>
+												<th>이름</th>
+												<th>외국인등록번호</th>
+												<th>생년월일</th>
+												<th>여권번호</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Sazita00</td>
+												<td>Taylor Alison Swift</td>
+												<td>871510-5********</td>
+												<td>19800112</td>
+												<td>M302133456</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="info-box hide-pc">
+									<ul>
+										<li>
+											<span>아이디</span>
+											<span class="mont">Sazita00</span>
+										</li>
+										<li>
+											<span>이름</span>
+											<span class="mont">Taylor Alison Swift</span>
+										</li>
+										<li>
+											<span>외국인등록번호</span>
+											<span class="mont">871510-5********</span>
+										</li>
+										<li>
+											<span>생년월일</span>
+											<span class="mont">19800112</span>
+										</li>
+										<li>
+											<span>여권번호</span>
+											<span class="mont">M302133456</span>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</form>
+							<div class="join-form">
+								<form action="">
+									<dl>
+										<dt>비밀번호</dt>
+										<dd>
+											<div class="input-wrap">
+												<input type="text" name="join" id="password" placeholder="">
+												<label for="password" class="is-blind">비밀번호</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>비밀번호 확인</dt>
+										<dd>
+											<div class="input-wrap">
+												<input type="text" name="join" id="passwordChk" placeholder="">
+												<label for="passwordChk" class="is-blind">비밀번호 확인</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>주소</dt>
+										<dd>
+											<div class="input-wrap">
+												<div class="type-address">
+													<input type="text" name="join" id="address01" placeholder="주소">
+													<label for="address01" class="is-blind">주소</label>
+													<input type="text" name="join" id="address02" placeholder="상세 주소" class="detail">
+													<label for="address02" class="is-blind">상세 주소</label>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>휴대폰 번호</dt>
+										<dd>
+											<div class="input-wrap">
+												<div class="type-mobile">
+													<input type="text" name="join" id="num01" class="mont">
+													<label for="num01" class="is-blind">휴대폰 번호 앞 자리</label>
+													<i class="num-bar"></i>
+													<input type="text" name="join" id="num02" class="mont">
+													<label for="num02" class="is-blind">휴대폰 번호 중간 자리</label>
+													<i class="num-bar"></i>
+													<input type="text" name="join" id="num03" class="mont">
+													<label for="num03" class="is-blind">휴대폰 번호 마지막 자리</label>
+												</div>
+												<!-- 인증 클릭 후 resend 클래스 추가 -> 재전송 버튼으로 변경 -->
+												<button type="button" class="btn color_2">
+													<span>인증</span>
+													<span>재전송</span>
+												</button>
+											</div>
+											<!-- 인증 클릭 후 on 클래스 추가 -->
+											<div class="input-wrap cert-wrap on">
+												<div class="cert-box">
+													<input type="number" name="certify" id="certify" class="mont">
+													<label for="certify" class="is-blind">인증번호 입력</label>
+													<span class="time mont">03:00</span>
+												</div>
+												<button type="button" class="btn color_2">인증 완료</button>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>국적</dt>
+										<dd>
+											<div class="input-wrap">
+												<select name="join" id="nationality">
+													<option value="" disabled selected>국적을 선택하세요</option>
+													<option value="">가나</option>
+													<option value="">가봉</option>
+													<option value="">과테말라</option>
+													<option value="">기타</option>
+												</select>
+												<label for="nationality" class="is-blind">국적</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>체류자격</dt>
+										<dd>
+											<div class="input-wrap">
+												<select name="join" id="stay">
+													<option value="" disabled selected>체류자격을 선택하세요</option>
+													<option value="">D2(유학)</option>
+													<option value="">D4(일반연수)</option>
+													<option value="">D10(구직)</option>
+													<option value="">기타</option>
+												</select>
+												<label for="stay" class="is-blind">체류자격</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>알림수신동의</dt>
+										<dd>
+											<div class="checkbox">
+												<input type="checkbox" name="join" id="agree">
+												<label for="agree">한국이민재단에서 시행하는 KIIP 평가 관련정보를 제공하는 SMS 등 문자수신에 동의합니다.</label>
+											</div>
+										</dd>
+									</dl>
+									<div class="btn-wrap">
+										<!-- <button type="button" class="btn">회원 가입</button> -->
+										<!-- 임시 링크 -->
+										<a href="../main/index_img.html" class="btn">회원 가입</a>
+										<a href="../main/index_img.html" class="btn color_3">취소</a>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

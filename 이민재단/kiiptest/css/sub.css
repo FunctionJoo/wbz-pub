@@ -138,77 +138,77 @@ input::placeholder {
   color: #024fc4;
 }
 
-.member {
+.member-wrap {
   padding: 100px 0 120px;
   border-top: 1px solid #ddd;
 }
-.member .tit-area {
+.member-wrap .tit-area {
   text-align: center;
 }
-.member .tit-area .txt {
+.member-wrap .tit-area .txt {
   margin-top: 12px;
   font-size: 16px;
   color: #555;
 }
-.member .w-set {
+.member-wrap .w-set {
   max-width: 400px;
 }
-.member .login {
+.member-wrap .login {
   margin-top: 40px;
 }
-.member .login .input-wrap input {
+.member-wrap .login .input-wrap input {
   height: 60px;
   line-height: 58px;
   padding: 0 16px;
 }
-.member .login .input-wrap + .input-wrap {
+.member-wrap .login .input-wrap + .input-wrap {
   margin-top: 10px;
 }
-.member .input-wrap + .input-wrap {
+.member-wrap .input-wrap + .input-wrap {
   margin-top: 12px;
 }
-.member .input-wrap input {
+.member-wrap .input-wrap input {
   height: 50px;
   border-color: #ddd;
   padding: 0 14px;
   line-height: 48px;
 }
-.member .input-wrap input::-moz-placeholder {
+.member-wrap .input-wrap input::-moz-placeholder {
   color: #A7A7A7;
 }
-.member .input-wrap input::placeholder {
+.member-wrap .input-wrap input::placeholder {
   color: #A7A7A7;
 }
-.member .btn {
+.member-wrap .btn {
   margin-top: 40px;
   height: 52px;
   line-height: 50px;
   font-weight: 400;
 }
-.member .btn + .btn {
+.member-wrap .btn + .btn {
   margin-top: 12px;
 }
-.member .captcha_wrap {
+.member-wrap .captcha-wrap {
   margin: 12px 0 0;
   border-radius: 6px;
   border: 1px solid #DDDDDD;
 }
-.member .captcha_wrap .captcha {
+.member-wrap .captcha-wrap .captcha {
   min-height: 70px;
   background: #ddd;
 }
-.member .captcha_wrap input[type=text] {
+.member-wrap .captcha-wrap input[type=text] {
   border: 0;
   padding: 0 14px;
 }
-.member .note_txt {
+.member-wrap .note-txt {
   width: 100%;
   margin-top: 24px;
   border-radius: 6px;
   background-color: #F5F9FC;
   padding: 18px 14px 18px 16px;
 }
-.member .note_txt.chk .txt {
+.member-wrap .note-txt.chk .txt {
   padding-left: 20px;
   background-image: url(../images/common/ico/member_chk.svg);
   background-position: center left;
@@ -216,7 +216,7 @@ input::placeholder {
   font-size: 14px;
   line-height: 1;
 }
-.member .note_txt .txt {
+.member-wrap .note-txt .txt {
   padding-left: 26px;
   background-image: url(../images/common/ico/login_note.svg);
   background-repeat: no-repeat;
@@ -226,10 +226,10 @@ input::placeholder {
   color: #555;
   line-height: 24px;
 }
-.member .note_txt .txt + .txt {
+.member-wrap .note-txt .txt + .txt {
   margin-top: 14px;
 }
-.member .find-pw {
+.member-wrap .find-pw {
   display: block;
   text-align: center;
   font-size: 14px;
@@ -237,7 +237,7 @@ input::placeholder {
   line-height: 16px;
   margin-top: 40px;
 }
-.member .find-pw::before {
+.member-wrap .find-pw::before {
   content: "";
   display: inline-block;
   width: 8px;
@@ -245,7 +245,7 @@ input::placeholder {
   background: url("../images/common/ico/find_pw.svg") no-repeat center;
   margin: 0 8px -4px 0;
 }
-.member .find_wrap {
+.member-wrap .find-wrap {
   margin-top: 26px;
   padding-top: 160px;
   background-image: url(../images/common/img/find_pass.png);
@@ -253,13 +253,13 @@ input::placeholder {
   background-position: top center;
   background-size: 120px;
 }
-.member .find_wrap .tab_menu {
+.member-wrap .find-wrap .tab-menu {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
   height: 50px;
 }
-.member .find_wrap .tab_menu .tab {
+.member-wrap .find-wrap .tab-menu .tab {
   width: 50%;
   background-color: #fff;
   text-align: center;
@@ -267,51 +267,51 @@ input::placeholder {
   font-size: 16px;
   color: #B2B2B2;
 }
-.member .find_wrap .tab_menu .tab.on {
+.member-wrap .find-wrap .tab-menu .tab.on {
   background-color: #3090d6;
   border-color: #3090d6;
   color: #fff;
   font-weight: 600;
 }
-.member .find_wrap .tab_menu .tab:first-of-type {
+.member-wrap .find-wrap .tab-menu .tab:first-of-type {
   border-radius: 6px 0 0 6px;
   border: 1px solid #DDDDDD;
   border-width: 1px 0 1px 1px;
 }
-.member .find_wrap .tab_menu .tab:last-of-type {
+.member-wrap .find-wrap .tab-menu .tab:last-of-type {
   border-radius: 0 6px 6px 0;
   border: 1px solid #DDDDDD;
   border-width: 1px 1px 1px 0;
 }
-.member .find_wrap .tab_menu .tab a {
+.member-wrap .find-wrap .tab-menu .tab a {
   display: block;
   width: 100%;
 }
-.member .join_wrap .w-set {
+.member-wrap .join-wrap .w-set {
   max-width: 1000px;
 }
-.member .join_wrap .join_top {
+.member-wrap .join-wrap .join-top {
   width: 100%;
   margin: 34px 0 40px;
   text-align: right;
 }
-.member .join_wrap .join_top > span {
+.member-wrap .join-wrap .join-top > span {
   font-size: 14px;
   color: #555;
 }
-.member .join_wrap .join_top > span::before {
+.member-wrap .join-wrap .join-top > span::before {
   content: "* ";
   color: #024fc4;
 }
-.member .join_wrap .join_top .info_box {
+.member-wrap .join-wrap .join-top .info-box {
   margin: 10px 0 0;
   text-align: center;
 }
-.member .join_wrap .join_top .info_box table {
+.member-wrap .join-wrap .join-top .info-box table {
   width: 100%;
   border: 1px solid #DDDDDD;
 }
-.member .join_wrap .join_top .info_box table th {
+.member-wrap .join-wrap .join-top .info-box table th {
   height: 42px;
   background-color: #F5F5F5;
   border-right: 1px solid #DDDDDD;
@@ -320,10 +320,10 @@ input::placeholder {
   font-weight: 400;
   color: #222;
 }
-.member .join_wrap .join_top .info_box table th:last-of-type {
+.member-wrap .join-wrap .join-top .info-box table th:last-of-type {
   border: 0;
 }
-.member .join_wrap .join_top .info_box table td {
+.member-wrap .join-wrap .join-top .info-box table td {
   height: 54px;
   background-color: #fff;
   border-top: 1px solid #DDDDDD;
@@ -332,86 +332,86 @@ input::placeholder {
   line-height: 52px;
   color: #222;
 }
-.member .join_wrap .join_form dl {
+.member-wrap .join-wrap .join-form dl {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.member .join_wrap .join_form dl + dl {
+.member-wrap .join-wrap .join-form dl + dl {
   margin-top: 20px;
 }
-.member .join_wrap .join_form dl dt {
+.member-wrap .join-wrap .join-form dl dt {
   width: 180px;
   font-size: 16px;
   color: #222;
 }
-.member .join_wrap .join_form dl dt::after {
+.member-wrap .join-wrap .join-form dl dt::after {
   content: " *";
   color: #024fc4;
 }
-.member .join_wrap .join_form dl dd {
+.member-wrap .join-wrap .join-form dl dd {
   flex: 1;
 }
-.member .join_wrap .join_form dl dd input {
+.member-wrap .join-wrap .join-form dl dd input {
   height: 40px;
   padding: 0 16px;
   font-size: 15px;
 }
-.member .join_wrap .join_form .input-wrap {
+.member-wrap .join-wrap .join-form .input-wrap {
   display: flex;
 }
-.member .join_wrap .join_form .input-wrap .type-address {
+.member-wrap .join-wrap .join-form .input-wrap .type-address {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 100%;
 }
-.member .join_wrap .join_form .input-wrap .type-address input {
+.member-wrap .join-wrap .join-form .input-wrap .type-address input {
   flex: 2;
 }
-.member .join_wrap .join_form .input-wrap .type-address .detail {
+.member-wrap .join-wrap .join-form .input-wrap .type-address .detail {
   flex: 1;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile {
   gap: 5px;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile .num-bar {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile .num-bar {
   width: 6px;
   height: 1px;
   background-color: #222;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile input {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile input {
   flex: 1;
   max-width: 120px;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile + .btn {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn {
   width: 120px;
   height: 40px;
   margin-top: 0;
   margin-left: 10px;
   line-height: 38px;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile + .btn span:last-of-type {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn span:last-of-type {
   display: none;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile + .btn.resend {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn.resend {
   border-color: #222;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile + .btn.resend span:first-of-type {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn.resend span:first-of-type {
   display: none;
 }
-.member .join_wrap .join_form .input-wrap .type-mobile + .btn.resend span:last-of-type {
+.member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn.resend span:last-of-type {
   display: block;
   color: #222;
 }
-.member .join_wrap .join_form .input-wrap select {
+.member-wrap .join-wrap .join-form .input-wrap select {
   height: 40px;
   width: 200px;
   padding: 0 16px;
   font-size: 15px;
   color: #A7A7A7;
 }
-.member .join_wrap .join_form .input-wrap .cert_box {
+.member-wrap .join-wrap .join-form .input-wrap .cert-box {
   display: flex;
   max-width: 262px;
   height: 40px;
@@ -422,63 +422,61 @@ input::placeholder {
   background-color: #fff;
   line-height: 38px;
 }
-.member .join_wrap .join_form .input-wrap .cert_box input {
+.member-wrap .join-wrap .join-form .input-wrap .cert-box input {
   border: 0;
   padding-right: 10px;
   background-color: transparent;
 }
-.member .join_wrap .join_form .input-wrap .cert_box .time {
+.member-wrap .join-wrap .join-form .input-wrap .cert-box .time {
   color: #F50E0E;
   font-size: 14px;
 }
-.member .join_wrap .join_form .input-wrap .cert_box + .btn {
+.member-wrap .join-wrap .join-form .input-wrap .cert-box + .btn {
   width: 120px;
   height: 40px;
   margin-top: 0;
   line-height: 38px;
 }
-.member .join_wrap .join_form .input-wrap.cert_wrap {
+.member-wrap .join-wrap .join-form .input-wrap.cert-wrap {
   display: none;
   gap: 10px;
 }
-.member .join_wrap .join_form .input-wrap.cert_wrap.on {
+.member-wrap .join-wrap .join-form .input-wrap.cert-wrap.on {
   display: flex;
 }
-.member .join_wrap .join_form .checkbox label {
+.member-wrap .join-wrap .join-form .checkbox label {
   font-size: 16px;
 }
-.member .join_wrap .join_form .checkbox label::before {
+.member-wrap .join-wrap .join-form .checkbox label::before {
   width: 22px;
   height: 22px;
   top: 0;
   bottom: 0;
   margin: auto 0;
 }
-.member .join_wrap .join_form .btn-wrap {
+.member-wrap .join-wrap .join-form .btn-wrap {
   margin-top: 60px;
   justify-content: center;
 }
-.member .join_wrap .join_form .btn-wrap .btn {
+.member-wrap .join-wrap .join-form .btn-wrap .btn {
   margin-top: 0;
   width: 200px;
 }
 
-.evaluation {
-  /* padding: 0 0 120px; */
-}
-.evaluation .tit-area {
+.con-top .tit-area {
   position: relative;
   width: 100%;
   height: 190px;
 }
-.evaluation .tit-area .bg {
+.con-top .tit-area .bg {
   width: 100%;
   height: 100%;
   background-image: url(../images/common/img/regi_bg.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
-.evaluation .tit-area .w-set {
+.con-top .tit-area .w-set {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -486,18 +484,26 @@ input::placeholder {
   left: 0;
   right: 0;
 }
-.evaluation .tit-area .w-set h2.tit {
+.con-top .tit-area .w-set h2.tit {
   text-align: left;
   line-height: 190px;
   color: #fff;
 }
-.evaluation .regi_btm {
+
+.con-btm {
+  padding: 60px 0 120px;
+}
+
+.regi-wrap {
+  /* padding: 0 0 120px; */
+}
+.regi-wrap .con-btm {
   padding-top: 60px;
 }
-.evaluation .regi_btm .w-set.type_s {
+.regi-wrap .con-btm .w-set.type-s {
   padding: 0 100px;
 }
-.evaluation .regi_btm .step_list {
+.regi-wrap .con-btm .step-list {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -506,28 +512,28 @@ input::placeholder {
   padding: 20px 70px;
   border: 1px solid #ddd;
 }
-.evaluation .regi_btm .step_list.type_w {
+.regi-wrap .con-btm .step-list.type-w {
   height: 125px;
   padding: 0 30px;
 }
-.evaluation .regi_btm .step_list > li {
+.regi-wrap .con-btm .step-list > li {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.evaluation .regi_btm .step_list > li.on i {
+.regi-wrap .con-btm .step-list > li.on i {
   background-color: #111E55;
 }
-.evaluation .regi_btm .step_list > li.on .step_txt {
+.regi-wrap .con-btm .step-list > li.on .step-txt {
   color: #111E55;
 }
-.evaluation .regi_btm .step_list > li.on .step_txt .num {
+.regi-wrap .con-btm .step-list > li.on .step-txt .num {
   font-weight: 600;
 }
-.evaluation .regi_btm .step_list > li.on .step_txt .txt {
+.regi-wrap .con-btm .step-list > li.on .step-txt .txt {
   font-weight: 700;
 }
-.evaluation .regi_btm .step_list > li i {
+.regi-wrap .con-btm .step-list > li i {
   width: 80px;
   height: 80px;
   background-repeat: no-repeat;
@@ -535,30 +541,30 @@ input::placeholder {
   background-color: #DDDDDD;
   border-radius: 50%;
 }
-.evaluation .regi_btm .step_list > li .step_txt {
+.regi-wrap .con-btm .step-list > li .step-txt {
   text-align: center;
   color: #B2B2B2;
 }
-.evaluation .regi_btm .step_list > li .step_txt .num {
+.regi-wrap .con-btm .step-list > li .step-txt .num {
   font-size: 16px;
 }
-.evaluation .regi_btm .step_list > li .step_txt .txt {
+.regi-wrap .con-btm .step-list > li .step-txt .txt {
   margin-top: 6px;
   font-size: 18px;
 }
-.evaluation .regi_btm .step_list > li.step01 i {
+.regi-wrap .con-btm .step-list > li.step01 i {
   background-image: url("../images/common/ico/step01.svg");
 }
-.evaluation .regi_btm .step_list > li.step02 i {
+.regi-wrap .con-btm .step-list > li.step02 i {
   background-image: url("../images/common/ico/step02.svg");
 }
-.evaluation .regi_btm .step_list > li.step03 i {
+.regi-wrap .con-btm .step-list > li.step03 i {
   background-image: url("../images/common/ico/step03.svg");
 }
-.evaluation .regi_btm .step_list > li.step04 i {
+.regi-wrap .con-btm .step-list > li.step04 i {
   background-image: url("../images/common/ico/step04.svg");
 }
-.evaluation .regi_btm .step_list > li::after, .evaluation .regi_btm .step_list > li::before {
+.regi-wrap .con-btm .step-list > li::after, .regi-wrap .con-btm .step-list > li::before {
   content: "";
   display: inline-block;
   width: 4px;
@@ -566,50 +572,40 @@ input::placeholder {
   background-color: #DDDDDD;
   border-radius: 50%;
 }
-.evaluation .regi_btm .step_list > li:first-of-type::before {
+.regi-wrap .con-btm .step-list > li:first-of-type::before {
   display: none;
 }
-.evaluation .regi_btm .step_list > li:last-of-type::after {
+.regi-wrap .con-btm .step-list > li:last-of-type::after {
   display: none;
 }
-.evaluation .regi_btm .regi_con {
+.regi-wrap .con-btm .regi-con {
   margin-top: 40px;
 }
-.evaluation .regi_btm .regi_con p.tit {
+.regi-wrap .con-btm .regi-con p.tit {
   width: 100%;
   font-size: 20px;
   font-weight: 500;
 }
-.evaluation .regi_btm .regi_con p.tit em {
+.regi-wrap .con-btm .regi-con p.tit em {
   color: #024fc4;
 }
-.evaluation .regi_btm .regi_con .regi_step01 .type, .evaluation .regi_btm .regi_con .regi_step01 .program, .evaluation .regi_btm .regi_con .regi_step01 .special {
+.regi-wrap .con-btm .regi-con .regi-step01 .type, .regi-wrap .con-btm .regi-con .regi-step01 .program, .regi-wrap .con-btm .regi-con .regi-step01 .special {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px 10px;
-}
-.evaluation .regi_btm .regi_con .regi_step01 .program {
-  width: 75%;
   margin-top: 40px;
 }
-.evaluation .regi_btm .regi_con .regi_step01 .program .radiobox:first-of-type {
-  flex: 2;
-}
-.evaluation .regi_btm .regi_con .regi_step01 .special {
-  width: 50%;
-  margin-top: 40px;
-}
-.evaluation .regi_btm .regi_con .regi_step01 .radiobox {
+.regi-wrap .con-btm .regi-con .regi-step01 .radiobox {
   flex: 1;
   height: 50px;
 }
-.evaluation .regi_btm .regi_con .regi_step01 .radiobox input[type=radio]:checked + label {
+.regi-wrap .con-btm .regi-con .regi-step01 .radiobox input[type=radio]:checked + label {
   color: #024fc4;
   background-color: rgba(2, 79, 196, 0.1215686275);
   border-color: #024fc4;
 }
-.evaluation .regi_btm .regi_con .regi_step01 .radiobox label {
+.regi-wrap .con-btm .regi-con .regi-step01 .radiobox label {
   padding: 0;
   width: 100%;
   height: 100%;
@@ -621,17 +617,17 @@ input::placeholder {
   color: #666;
   font-size: 14px;
 }
-.evaluation .regi_btm .regi_con .regi_step01 .radiobox label::before {
+.regi-wrap .con-btm .regi-con .regi-step01 .radiobox label::before {
   display: none;
 }
-.evaluation .btn-wrap {
+.regi-wrap .btn-wrap {
   margin-top: 60px;
   justify-content: center;
 }
-.evaluation .btn-wrap .btn {
+.regi-wrap .btn-wrap .btn {
   max-width: 200px;
 }
-.evaluation .btn-wrap .btn.next::after {
+.regi-wrap .btn-wrap .btn.next::after {
   content: "";
   display: inline-block;
   width: 6px;
@@ -642,30 +638,24 @@ input::placeholder {
   background-position: center;
 }
 
-.service .sub-wrap {
-  padding: 80px 0 120px;
-}
-.service .sub-wrap .sub-top {
-  padding-bottom: 60px;
-}
-.service .boardList-wrap .search_wrap {
+.board-wrap .boardList-wrap .search-wrap {
   max-width: 550px;
   height: 50px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 }
-.service .boardList-wrap .search_wrap form {
+.board-wrap .boardList-wrap .search-wrap form {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.service .boardList-wrap .search_wrap select {
+.board-wrap .boardList-wrap .search-wrap select {
   padding: 0 15px;
   width: 140px;
   border-radius: 3px;
   font-size: 14px;
   color: #666;
 }
-.service .boardList-wrap .search_wrap .input_label {
+.board-wrap .boardList-wrap .search-wrap .input-label {
   flex: 1;
   display: flex;
   align-items: center;
@@ -674,10 +664,10 @@ input::placeholder {
   border-radius: 3px;
   border: 1px solid #d3d3d3;
 }
-.service .boardList-wrap .search_wrap .input_label input[type=text] {
+.board-wrap .boardList-wrap .search-wrap .input-label input[type=text] {
   border: 0;
 }
-.service .boardList-wrap .search_wrap .search_btn {
+.board-wrap .boardList-wrap .search-wrap .search-btn {
   font-size: 0;
   width: 20px;
   height: 20px;
@@ -686,17 +676,18 @@ input::placeholder {
   background-position: center;
   background-size: 18px;
 }
-.service .boardList-wrap .board_count {
+.board-wrap .boardList-wrap .board-count {
   text-align: left;
+  margin-bottom: 20px;
 }
-.service .boardList-wrap .board_count span {
+.board-wrap .boardList-wrap .board-count span {
   font-size: 14px;
   color: #333;
 }
-.service .boardList-wrap .board_count span em {
+.board-wrap .boardList-wrap .board-count span em {
   color: #024fc4;
 }
-.service .boardList-wrap .table_top {
+.board-wrap .boardList-wrap .table-top {
   display: table;
   width: 100%;
   table-layout: fixed;
@@ -706,10 +697,10 @@ input::placeholder {
   font-weight: 500;
   font-size: 18px;
 }
-.service .boardList-wrap .table_wrap {
+.board-wrap .boardList-wrap .table-wrap {
   border-bottom: 1px solid #222;
 }
-.service .boardList-wrap .table_wrap .table_list {
+.board-wrap .boardList-wrap .table-wrap .table-list {
   border-bottom: 1px solid #ddd;
   display: table;
   table-layout: fixed;
@@ -717,214 +708,259 @@ input::placeholder {
   font-size: 16px;
   line-height: 54px;
 }
-.service .boardList-wrap .table_wrap .table_list:last-of-type {
+.board-wrap .boardList-wrap .table-wrap .table-list:last-of-type {
   border-bottom: 0;
 }
-.service .boardList-wrap .table_wrap .table_list .list.date, .service .boardList-wrap .table_wrap .table_list .list.hit {
+.board-wrap .boardList-wrap .table-wrap .table-list .list.date, .board-wrap .boardList-wrap .table-wrap .table-list .list.hit {
   font-family: "Montserrat", sans-serif;
 }
-.service .boardList-wrap .list {
-  display: table-cell;
-  text-align: center;
+.board-wrap .boardList-wrap .table-wrap .table-list .list.title {
+  text-align: left;
+  padding-left: 20px;
 }
-.service .boardList-wrap .list.no {
-  width: 100px;
-  font-family: "Montserrat", sans-serif;
-}
-.service .boardList-wrap .list.date {
-  width: 200px;
-}
-.service .boardList-wrap .list.hit {
-  width: 100px;
-}
-.service .boardList-wrap .list.title {
+.board-wrap .boardList-wrap .table-wrap .table-list .list.title > a {
+  display: inline-block;
+  max-width: calc(100% - 300px);
+  vertical-align: middle;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.board-wrap .boardList-wrap .list {
+  display: table-cell;
+  text-align: center;
+}
+.board-wrap .boardList-wrap .list.no {
+  width: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+.board-wrap .boardList-wrap .list.no.is-notice span {
+  display: inline-block;
+  background-color: #3555AF;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 32px;
+}
+.board-wrap .boardList-wrap .list.date {
+  width: 200px;
+}
+.board-wrap .boardList-wrap .list.hit {
+  width: 100px;
+}
 
 @media (min-width: 768px) and (max-width: 1300px) {
-  .member .join_wrap .join_form .input-wrap {
+  .member-wrap .join-wrap .join-form .input-wrap {
     gap: 10px;
   }
-  .member .join_wrap .join_form .input-wrap .type-mobile {
+  .member-wrap .join-wrap .join-form .input-wrap .type-mobile {
     flex: 2;
   }
-  .member .join_wrap .join_form .input-wrap .type-mobile + .btn {
+  .member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn {
     flex: 1;
     margin-top: 0 !important;
   }
 }
 @media (max-width: 1300px) {
-  .member {
+  .con-top .tit-area {
+    height: 160px;
+  }
+  .con-top .tit-area .w-set h2.tit {
+    text-align: center;
+    line-height: 160px;
+  }
+  .con-btm {
+    padding: 40px 0 80px;
+  }
+  .member-wrap {
     padding: 50px 0 100px;
   }
-  .member .tit-area {
+  .member-wrap .tit-area {
     margin-bottom: 20px;
   }
-  .member .tit-area h2.tit {
+  .member-wrap .tit-area h2.tit {
     font-size: 18px;
     font-weight: 600;
   }
-  .member .tit-area .txt {
+  .member-wrap .tit-area .txt {
     margin-top: 8px;
     font-size: 14px;
   }
-  .member .login .input-wrap input {
+  .member-wrap .login .input-wrap input {
     height: 40px;
     line-height: 38px;
   }
-  .member .input-wrap input {
+  .member-wrap .input-wrap input {
     height: 40px;
     padding: 0 12px;
     line-height: 38px;
     font-size: 14px;
   }
-  .member .input-wrap + .input-wrap {
+  .member-wrap .input-wrap + .input-wrap {
     margin-top: 10px;
   }
-  .member .btn {
+  .member-wrap .btn {
     height: 50px;
     line-height: 48px;
   }
-  .member .captcha_wrap {
+  .member-wrap .captcha-wrap {
     margin-top: 20px;
   }
-  .member .note_txt {
+  .member-wrap .note-txt {
     margin-top: 20px;
     padding: 16px 12px;
   }
-  .member .note_txt.chk {
+  .member-wrap .note-txt.chk {
     margin-top: 16px;
     padding: 14px 12px 16px;
   }
-  .member .note_txt .txt {
+  .member-wrap .note-txt .txt {
     padding-left: 24px;
     font-size: 14px;
     line-height: 20px;
     background-size: 16px;
   }
-  .member .note_txt .txt + .txt {
+  .member-wrap .note-txt .txt + .txt {
     margin-top: 10px;
   }
-  .member .find-pw {
+  .member-wrap .find-pw {
     margin-top: 20px;
     font-size: 12px;
   }
-  .member .find-pw::before {
+  .member-wrap .find-pw::before {
     width: 7px;
     height: 15px;
     background-size: contain;
     margin-right: 6px;
   }
-  .member .find_wrap {
+  .member-wrap .find-wrap {
     margin-top: 20px;
     padding-top: 110px;
     background-size: 90px;
   }
-  .member .find_wrap .tab_menu {
+  .member-wrap .find-wrap .tab-menu {
     height: 42px;
     margin-bottom: 20px;
   }
-  .member .find_wrap .tab_menu .tab {
+  .member-wrap .find-wrap .tab-menu .tab {
     line-height: 40px;
     font-size: 14px;
   }
-  .member .join_wrap .join_top {
+  .member-wrap .join-wrap .join-top {
     margin: 18px 0 20px;
   }
-  .member .join_wrap .join_top > span {
+  .member-wrap .join-wrap .join-top > span {
     font-size: 12px;
   }
-  .member .join_wrap .join_top .info_box {
+  .member-wrap .join-wrap .join-top .info-box {
     margin: 8px 0 0;
     background-color: #F5F5F5;
     padding: 20px 12px;
   }
-  .member .join_wrap .join_top .info_box li {
+  .member-wrap .join-wrap .join-top .info-box li {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .member .join_wrap .join_top .info_box li span {
+  .member-wrap .join-wrap .join-top .info-box li span {
     font-size: 16px;
   }
-  .member .join_wrap .join_top .info_box li + li {
+  .member-wrap .join-wrap .join-top .info-box li + li {
     margin-top: 12px;
   }
-  .member .join_wrap .join_form dl + dl {
+  .member-wrap .join-wrap .join-form dl + dl {
     margin-top: 16px;
   }
-  .member .join_wrap .join_form dl dt {
+  .member-wrap .join-wrap .join-form dl dt {
     width: 100%;
     font-weight: 500;
     margin-bottom: 10px;
   }
-  .member .join_wrap .join_form dl dd input {
+  .member-wrap .join-wrap .join-form dl dd input {
     padding: 0 12px;
     font-size: 14px;
   }
-  .member .join_wrap .join_form .input-wrap {
+  .member-wrap .join-wrap .join-form .input-wrap {
     flex-wrap: wrap;
   }
-  .member .join_wrap .join_form .input-wrap .type-address {
+  .member-wrap .join-wrap .join-form .input-wrap .type-address {
     flex-wrap: wrap;
     gap: 6px;
   }
-  .member .join_wrap .join_form .input-wrap .type-address input {
+  .member-wrap .join-wrap .join-form .input-wrap .type-address input {
     flex: auto;
     width: 100%;
     padding: 0 10px;
   }
-  .member .join_wrap .join_form .input-wrap .type-mobile {
+  .member-wrap .join-wrap .join-form .input-wrap .type-mobile {
     width: 100%;
     gap: 7px;
   }
-  .member .join_wrap .join_form .input-wrap .type-mobile input {
+  .member-wrap .join-wrap .join-form .input-wrap .type-mobile input {
     max-width: none;
     padding: 0 10px;
   }
-  .member .join_wrap .join_form .input-wrap .type-mobile + .btn {
+  .member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn {
     width: 100%;
     margin-top: 10px;
     margin-left: 0;
     font-size: 14px;
   }
-  .member .join_wrap .join_form .input-wrap select {
+  .member-wrap .join-wrap .join-form .input-wrap select {
     width: 100%;
     padding: 0 12px;
     font-size: 14px;
   }
-  .member .join_wrap .join_form .input-wrap .cert_box {
+  .member-wrap .join-wrap .join-form .input-wrap .cert_box {
     max-width: none;
     flex: 2;
     padding-right: 10px;
   }
-  .member .join_wrap .join_form .input-wrap .cert_box input {
+  .member-wrap .join-wrap .join-form .input-wrap .cert_box input {
     padding: 0 10px;
   }
-  .member .join_wrap .join_form .input-wrap .cert_box .time {
+  .member-wrap .join-wrap .join-form .input-wrap .cert_box .time {
     font-size: 12px;
   }
-  .member .join_wrap .join_form .input-wrap .cert_box + .btn {
+  .member-wrap .join-wrap .join-form .input-wrap .cert_box + .btn {
     flex: 1;
     width: auto;
     font-size: 14px;
   }
-  .member .join_wrap .join_form .checkbox label {
+  .member-wrap .join-wrap .join-form .checkbox label {
     font-size: 14px;
   }
-  .member .join_wrap .join_form .checkbox label::before {
+  .member-wrap .join-wrap .join-form .checkbox label::before {
     width: 20px;
     height: 20px;
     top: 3px;
     bottom: auto;
   }
-  .member .join_wrap .join_form .btn-wrap {
+  .member-wrap .join-wrap .join-form .btn-wrap {
     margin-top: 40px;
     gap: 14px;
   }
-  .member .join_wrap .join_form .btn-wrap .btn {
+  .member-wrap .join-wrap .join-form .btn-wrap .btn {
     flex: 1;
+  }
+  .board-wrap .boardList-wrap .search-wrap {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 32px;
+  }
+  .board-wrap .boardList-wrap .search-wrap form {
+    flex-wrap: wrap;
+  }
+  .board-wrap .boardList-wrap .search-wrap select {
+    width: 100%;
+    padding: 0 14px;
+    font-size: 16px;
+  }
+  .board-wrap .boardList-wrap .search-wrap input {
+    height: 50px;
+  }
+  .board-wrap .boardList-wrap .board-count {
+    margin-bottom: 14px;
   }
 }

@@ -35,44 +35,48 @@
 		<div class="js-include" data-include="../outline/header_sub.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main id="contents" class="member">
-			<div class="tit-area hide-m">
-				<h2 class="tit mont">LOGIN</h2>
-			</div>
-			<div class="w-set">
-				<form action="" class="login">
-					<div class="input-wrap">
-						<input type="text" name="user_id" id="user_id" placeholder="아이디를 입력해주세요.">
-						<label for="user_id" class="is-blind">아이디</label>
+		<main id="contents">
+			<div class="sub-content">
+				<div class="member-wrap">
+					<div class="tit-area hide-m">
+						<h2 class="tit mont">LOGIN</h2>
 					</div>
-					<div class="input-wrap">
-						<input type="password" name="user_pw" id="user_pw" placeholder="비밀번호를 입력해주세요.">
-						<label for="user_pw" class="is-blind">비밀번호</label>
-					</div>
-					<!-- 캡챠영역 -->
-					<div class="captcha_wrap">
-						<div class="captcha"></div>
-						<div class="input-wrap">
-							<input type="text" name="write_txt" id="write_txt" placeholder="상단의 문자를 입력해주세요.">
-							<label for="write_txt" class="is-blind">문자 입력</label>
-						</div>
-					</div>
-					<!-- 캡챠영역 -->
+					<div class="w-set">
+						<form action="" class="login">
+							<div class="input-wrap">
+								<input type="text" name="id" id="userId" placeholder="아이디를 입력해주세요.">
+								<label for="userId" class="is-blind">아이디</label>
+							</div>
+							<div class="input-wrap">
+								<input type="password" name="pw" id="userPw" placeholder="비밀번호를 입력해주세요.">
+								<label for="userPw" class="is-blind">비밀번호</label>
+							</div>
+							<!-- 캡챠영역 -->
+							<div class="captcha-wrap">
+								<div class="captcha"></div>
+								<div class="input-wrap">
+									<input type="text" name="write" id="writeTxt" placeholder="상단의 문자를 입력해주세요.">
+									<label for="writeTxt" class="is-blind">문자 입력</label>
+								</div>
+							</div>
+							<!-- 캡챠영역 -->
 
-					<div class="note_txt">
-						<p class="txt">
-							아이디가 없는 분들은 사회통합정보망 사이트 가입 후 로그인 해주시기 바랍니다.
-						</p>
-						<p class="txt">
-							사회통합정보망을 통해 가입할 수 있으며 본인인증을 거쳐 비밀번호를 설정해주시기 바랍니다.
-						</p>
+							<div class="note-txt">
+								<p class="txt">
+									아이디가 없는 분들은 사회통합정보망 사이트 가입 후 로그인 해주시기 바랍니다.
+								</p>
+								<p class="txt">
+									사회통합정보망을 통해 가입할 수 있으며 본인인증을 거쳐 비밀번호를 설정해주시기 바랍니다.
+								</p>
+							</div>
+							<!-- 임시 링크 연결 -->
+							<!-- <button type="submit" class="btn">로그인</button> -->
+							<a href="../main/index_img.html" class="btn">로그인</a>
+							<a href="https://www.socinet.go.kr/soci/mem/join/sy/ServiceForm.jsp?q_global_menu_id=S_MJ_SUB01" target="_blank" class="btn color_2">소시넷에서 회원가입</a>
+							<a href="./reset_pass01.html" class="find-pw">비밀번호를 잊으셨나요?</a>
+						</form>
 					</div>
-					<!-- 임시 링크 연결 -->
-					<!-- <button type="submit" class="btn">로그인</button> -->
-					<a href="../main/index_img.html" class="btn">로그인</a>
-					<a href="https://www.socinet.go.kr/soci/mem/join/sy/ServiceForm.jsp?q_global_menu_id=S_MJ_SUB01" target="_blank" class="btn color_2">소시넷에서 회원가입</a>
-					<a href="./reset_pass01.html" class="find-pw">비밀번호를 잊으셨나요?</a>
-				</form>
+				</div>
 			</div>
 		</main>
 
