@@ -31,310 +31,133 @@
 <body>
 	<!-- 본문 바로가기 -->
 	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
-	<div id="container">
+	<div id="container" class="main">
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
 		<main id="contents">
-			<div class="main-content">
-				<div class="main-visual">
-					<div class="w-set">
+			<div class="main-content">				
+				<div class="w-set">
+					<div class="main-visual">
 						<div class="txt-area">
 							<p class="kr">사회통합프로그램 평가</p>
 							<p class="en">Korea Immigration & integration Program</p>
 						</div>
 						<div class="link-area">
-							<a href="../register/register_step01.html" class="link1">평가 접수</a>
-							<a href="../mypage/mytest01_list.html" class="link2">접수 확인</a>
-							<a href="../mypage/mytest02.html" class="link3">성적확인</a>
-							<a href="#" class="link4">응시자 유의사항</a>
+							<a href="../register/register_step01.html" class="link1"><i></i>평가 접수</a>
+							<a href="../mypage/mytest01_list.html" class="link2"><i></i>접수 확인</a>
+							<a href="../mypage/mytest02.html" class="link3"><i></i>성적확인</a>
+							<a href="#" class="link4"><i></i>응시자 유의사항</a>
 						</div>
 					</div>
-				</div>
-				<div class="main-cont">
-					<div class="w-set">
+					<div class="main-cont">
 						<div class="cont-top">
 							<div class="tab-wrap">
 								<div class="tab">
 									<button type="button" class="on">PBT</button>
 									<button type="button">CBT</button>
 								</div>
-								<div class="tab-content pbt on">
-									<div class="tab-detail">
-										<button type="button" class="on">전체</button>
-										<button type="button">사전평가</button>
-										<button type="button">중간평가</button>
-										<button type="button">종합평가</button>
+								<div class="tab-box pbt on">
+									<div class="month-list">
+										<a href="#" class="on"><span>1</span>월</a>
+										<a href="#"><span>2</span>월</a>
+										<a href="#"><span>3</span>월</a>
+										<a href="#"><span>4</span>월</a>
+										<a href="#"><span>5</span>월</a>
+										<a href="#"><span>6</span>월</a>
+										<a href="#"><span>7</span>월</a>
+										<a href="#"><span>8</span>월</a>
+										<a href="#"><span>9</span>월</a>
+										<a href="#"><span>10</span>월</a>
+										<a href="#"><span>11</span>월</a>
+										<a href="#"><span>12</span>월</a>
 									</div>
-									<div class="tab-box on">
-										<div class="month-list">
-											<a href="#" class="on"><span>1</span>월</a>
-											<a href="#"><span>2</span>월</a>
-											<a href="#"><span>3</span>월</a>
-											<a href="#"><span>4</span>월</a>
-											<a href="#"><span>5</span>월</a>
-											<a href="#"><span>6</span>월</a>
-											<a href="#"><span>7</span>월</a>
-											<a href="#"><span>8</span>월</a>
-											<a href="#"><span>9</span>월</a>
-											<a href="#"><span>10</span>월</a>
-											<a href="#"><span>11</span>월</a>
-											<a href="#"><span>12</span>월</a>
-										</div>
-										<div class="table-wrap">
-											<div class="table-head">
-												<div class="list-row table-title">
-													<div class="sort">평가구분</div>
-													<div class="type">종류</div>
-													<div class="num">차수</div>
-													<div class="period">기간</div>
-													<div class="date">평가일정</div>
-													<div class="register"></div>
-												</div>
-											</div>
-											<div class="table-body">
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<a href="../register/register_step02_pbt.html" class="btn color_3">접수하기</a>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span class="mid">중간평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span class="comp">종합평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span class="mid">중간평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span class="comp">종합평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
+									<div class="table-wrap">
+										<div class="table-head">
+											<div class="list-row table-title">
+												<div class="sort">평가구분</div>
+												<div class="type">종류</div>
+												<div class="num">차수</div>
+												<div class="period">접수기간</div>
+												<div class="date">평가일정</div>
+												<div class="register"></div>
 											</div>
 										</div>
-									</div>
-									<div class="tab-box">
-										<div class="month-list">
-											<a href="#" class="on"><span>1</span>월</a>
-											<a href="#"><span>2</span>월</a>
-											<a href="#"><span>3</span>월</a>
-											<a href="#"><span>4</span>월</a>
-											<a href="#"><span>5</span>월</a>
-											<a href="#"><span>6</span>월</a>
-											<a href="#"><span>7</span>월</a>
-											<a href="#"><span>8</span>월</a>
-											<a href="#"><span>9</span>월</a>
-											<a href="#"><span>10</span>월</a>
-											<a href="#"><span>11</span>월</a>
-											<a href="#"><span>12</span>월</a>
-										</div>
-										<div class="table-wrap">
-											<div class="table-head">
-												<div class="list-row table-title">
-													<div class="sort">평가구분</div>
-													<div class="type">종류</div>
-													<div class="num">차수</div>
-													<div class="period">기간</div>
-													<div class="date">평가일정</div>
-													<div class="register"></div>
+										<div class="table-body">
+											<div class="list-row">
+												<div class="sort"><span>사전평가</span></div>
+												<div class="type">PBT</div>
+												<div class="num">2023년 - 14차</div>
+												<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
+												<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
+												<div class="register">
+													<a href="../register/register_step02_pbt.html" class="btn color_3">접수하기</a>
 												</div>
 											</div>
-											<div class="table-body">
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
+											<div class="list-row">
+												<div class="sort"><span class="mid">중간평가</span></div>
+												<div class="type">PBT</div>
+												<div class="num">2023년 - 14차</div>
+												<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
+												<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
+												<div class="register">
+													<button type="button" class="btn color_3">접수하기</button>
 												</div>
 											</div>
-										</div>
-									</div>
-									<div class="tab-box">
-										<div class="month-list">
-											<a href="#" class="on"><span>1</span>월</a>
-											<a href="#"><span>2</span>월</a>
-											<a href="#"><span>3</span>월</a>
-											<a href="#"><span>4</span>월</a>
-											<a href="#"><span>5</span>월</a>
-											<a href="#"><span>6</span>월</a>
-											<a href="#"><span>7</span>월</a>
-											<a href="#"><span>8</span>월</a>
-											<a href="#"><span>9</span>월</a>
-											<a href="#"><span>10</span>월</a>
-											<a href="#"><span>11</span>월</a>
-											<a href="#"><span>12</span>월</a>
-										</div>
-										<div class="table-wrap">
-											<div class="table-head">
-												<div class="list-row table-title">
-													<div class="sort">평가구분</div>
-													<div class="type">종류</div>
-													<div class="num">차수</div>
-													<div class="period">기간</div>
-													<div class="date">평가일정</div>
-													<div class="register"></div>
+											<div class="list-row">
+												<div class="sort"><span class="comp">종합평가</span></div>
+												<div class="type">PBT</div>
+												<div class="num">2023년 - 14차</div>
+												<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
+												<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
+												<div class="register">
+													<button type="button" class="btn color_3">접수하기</button>
 												</div>
 											</div>
-											<div class="table-body">
-												<div class="list-row">
-													<div class="sort"><span class="mid">중간평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span class="mid">중간평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
+											<div class="list-row">
+												<div class="sort"><span>사전평가</span></div>
+												<div class="type">PBT</div>
+												<div class="num">2023년 - 14차</div>
+												<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
+												<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
+												<div class="register">
+													<button type="button" class="btn color_3">접수하기</button>
 												</div>
 											</div>
-										</div>
-									</div>
-									<div class="tab-box">
-										<div class="month-list">
-											<a href="#" class="on"><span>1</span>월</a>
-											<a href="#"><span>2</span>월</a>
-											<a href="#"><span>3</span>월</a>
-											<a href="#"><span>4</span>월</a>
-											<a href="#"><span>5</span>월</a>
-											<a href="#"><span>6</span>월</a>
-											<a href="#"><span>7</span>월</a>
-											<a href="#"><span>8</span>월</a>
-											<a href="#"><span>9</span>월</a>
-											<a href="#"><span>10</span>월</a>
-											<a href="#"><span>11</span>월</a>
-											<a href="#"><span>12</span>월</a>
-										</div>
-										<div class="table-wrap">
-											<div class="table-head">
-												<div class="list-row table-title">
-													<div class="sort">평가구분</div>
-													<div class="type">종류</div>
-													<div class="num">차수</div>
-													<div class="period">기간</div>
-													<div class="date">평가일정</div>
-													<div class="register"></div>
+											<div class="list-row">
+												<div class="sort"><span>사전평가</span></div>
+												<div class="type">PBT</div>
+												<div class="num">2023년 - 14차</div>
+												<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
+												<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
+												<div class="register">
+													<button type="button" class="btn color_3">접수하기</button>
 												</div>
 											</div>
-											<div class="table-body">
-												<div class="list-row">
-													<div class="sort"><span class="comp">종합평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
+											<div class="list-row">
+												<div class="sort"><span class="mid">중간평가</span></div>
+												<div class="type">PBT</div>
+												<div class="num">2023년 - 14차</div>
+												<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
+												<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
+												<div class="register">
+													<button type="button" class="btn color_3">접수하기</button>
 												</div>
-												<div class="list-row">
-													<div class="sort"><span class="comp">종합평가</span></div>
-													<div class="type">PBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
+											</div>
+											<div class="list-row">
+												<div class="sort"><span class="comp">종합평가</span></div>
+												<div class="type">PBT</div>
+												<div class="num">2023년 - 14차</div>
+												<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
+												<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
+												<div class="register">
+													<button type="button" class="btn color_3">접수하기</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-content cbt">
-									<div class="tab-detail">
-										<button type="button" class="on">전체</button>
-										<button type="button">사전평가</button>
-										<button type="button">중간평가</button>
-										<button type="button">종합평가</button>
-									</div>
-									<div class="tab-box on">
+								<div class="tab-box cbt">
 										<div class="month-list">
 											<a href="#" class="on"><span>1</span>월</a>
 											<a href="#"><span>2</span>월</a>
@@ -355,7 +178,7 @@
 													<div class="sort">평가구분</div>
 													<div class="type">종류</div>
 													<div class="num">차수</div>
-													<div class="period">기간</div>
+													<div class="period">접수기간</div>
 													<div class="date">평가일정</div>
 													<div class="register"></div>
 												</div>
@@ -433,167 +256,6 @@
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="tab-box">
-										<div class="month-list">
-											<a href="#" class="on"><span>1</span>월</a>
-											<a href="#"><span>2</span>월</a>
-											<a href="#"><span>3</span>월</a>
-											<a href="#"><span>4</span>월</a>
-											<a href="#"><span>5</span>월</a>
-											<a href="#"><span>6</span>월</a>
-											<a href="#"><span>7</span>월</a>
-											<a href="#"><span>8</span>월</a>
-											<a href="#"><span>9</span>월</a>
-											<a href="#"><span>10</span>월</a>
-											<a href="#"><span>11</span>월</a>
-											<a href="#"><span>12</span>월</a>
-										</div>
-										<div class="table-wrap">
-											<div class="table-head">
-												<div class="list-row table-title">
-													<div class="sort">평가구분</div>
-													<div class="type">종류</div>
-													<div class="num">차수</div>
-													<div class="period">기간</div>
-													<div class="date">평가일정</div>
-													<div class="register"></div>
-												</div>
-											</div>
-											<div class="table-body">
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">CBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">CBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span>사전평가</span></div>
-													<div class="type">CBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="tab-box">
-										<div class="month-list">
-											<a href="#" class="on"><span>1</span>월</a>
-											<a href="#"><span>2</span>월</a>
-											<a href="#"><span>3</span>월</a>
-											<a href="#"><span>4</span>월</a>
-											<a href="#"><span>5</span>월</a>
-											<a href="#"><span>6</span>월</a>
-											<a href="#"><span>7</span>월</a>
-											<a href="#"><span>8</span>월</a>
-											<a href="#"><span>9</span>월</a>
-											<a href="#"><span>10</span>월</a>
-											<a href="#"><span>11</span>월</a>
-											<a href="#"><span>12</span>월</a>
-										</div>
-										<div class="table-wrap">
-											<div class="table-head">
-												<div class="list-row table-title">
-													<div class="sort">평가구분</div>
-													<div class="type">종류</div>
-													<div class="num">차수</div>
-													<div class="period">기간</div>
-													<div class="date">평가일정</div>
-													<div class="register"></div>
-												</div>
-											</div>
-											<div class="table-body">
-												<div class="list-row">
-													<div class="sort"><span class="mid">중간평가</span></div>
-													<div class="type">CBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span class="mid">중간평가</span></div>
-													<div class="type">CBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="tab-box">
-										<div class="month-list">
-											<a href="#" class="on"><span>1</span>월</a>
-											<a href="#"><span>2</span>월</a>
-											<a href="#"><span>3</span>월</a>
-											<a href="#"><span>4</span>월</a>
-											<a href="#"><span>5</span>월</a>
-											<a href="#"><span>6</span>월</a>
-											<a href="#"><span>7</span>월</a>
-											<a href="#"><span>8</span>월</a>
-											<a href="#"><span>9</span>월</a>
-											<a href="#"><span>10</span>월</a>
-											<a href="#"><span>11</span>월</a>
-											<a href="#"><span>12</span>월</a>
-										</div>
-										<div class="table-wrap">
-											<div class="table-head">
-												<div class="list-row table-title">
-													<div class="sort">평가구분</div>
-													<div class="type">종류</div>
-													<div class="num">차수</div>
-													<div class="period">기간</div>
-													<div class="date">평가일정</div>
-													<div class="register"></div>
-												</div>
-											</div>
-											<div class="table-body">
-												<div class="list-row">
-													<div class="sort"><span class="comp">종합평가</span></div>
-													<div class="type">CBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-												<div class="list-row">
-													<div class="sort"><span class="comp">종합평가</span></div>
-													<div class="type">CBT</div>
-													<div class="num">2023년 - 14차</div>
-													<div class="period">11. 21 (화) ~ 11. 25 (토)</div>
-													<div class="date">12. 03 (월) ~ 12. 07 (금)</div>
-													<div class="register">
-														<button type="button" class="btn color_3">접수하기</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 							<div class="info-wrap">
@@ -670,34 +332,10 @@
 					btn.classList.remove('on');
 				});
 				btn.classList.add('on');
-				document.querySelectorAll('.tab-content').forEach(function (contBox) {
+				document.querySelectorAll('.tab-box').forEach(function (contBox) {
 					contBox.classList.remove('on');
 				})
-				document.querySelectorAll('.tab-content')[idx].classList.add('on');
-			});
-		});
-		document.querySelectorAll('.pbt .tab-detail button').forEach(function (btn, idx) {
-			btn.addEventListener('click', function () {
-				document.querySelectorAll('.pbt .tab-detail button').forEach(function (btn, idx) {
-					btn.classList.remove('on');
-				});
-				btn.classList.add('on');
-				document.querySelectorAll('.pbt .tab-box').forEach(function (tabBox) {
-					tabBox.classList.remove('on');
-				})
-				document.querySelectorAll('.pbt .tab-box')[idx].classList.add('on');
-			});
-		});
-		document.querySelectorAll('.cbt .tab-detail button').forEach(function (btn, idx) {
-			btn.addEventListener('click', function () {
-				document.querySelectorAll('.cbt .tab-detail button').forEach(function (btn, idx) {
-					btn.classList.remove('on');
-				});
-				btn.classList.add('on');
-				document.querySelectorAll('.cbt .tab-box').forEach(function (tabBox) {
-					tabBox.classList.remove('on');
-				})
-				document.querySelectorAll('.cbt .tab-box')[idx].classList.add('on');
+				document.querySelectorAll('.tab-box')[idx].classList.add('on');
 			});
 		});
 	</script>
