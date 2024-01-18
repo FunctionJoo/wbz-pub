@@ -1,2 +1,315 @@
 @import "./utility.scss";
 
+.program-wrap {
+    .program-box {
+        display: flex;
+        gap: 10px;
+        margin-top: 40px;
+        .program-list {
+            flex: 1;
+            .tit {
+                text-align: center;
+                background-color: #f5f9fc;
+                padding: 15px 0 16px;
+                font-size: 18px;
+                span {
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+            .desc {
+                padding: 40px 20px;
+                border: 1px solid #ddd;
+                height: 540px;
+            }
+        }
+    }
+}
+
+.calendar_box {
+    .clndr-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 27px;
+        .month {
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .clndr-previous-button {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #f4f4f4 url(../images/common/ico_calendar_prev.svg) no-repeat center;
+            font-size: 0;
+            cursor: pointer;
+        }
+        .clndr-next-button {
+            @extend .clndr-previous-button;
+            background-image: url(../images/common/ico_calendar_next.svg);
+        }
+    }
+    .clndr {
+        .clndr-table {
+            width: 100%;
+            text-align: center;
+            margin-top: 21px;
+            border-top: 2px solid #222;
+        }
+        .header-day {
+            padding: 14px 0;
+            font-size: 16px;
+        }
+        table {
+            tr {
+                th {
+                    &:first-child {
+                        color: #ff0000;
+                    }
+                }
+                td {
+                    &:first-child {
+                        button {
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.calendar_box .clndr table tr th:first-child,
+.calendar_box .clndr table tr td:first-child button {
+    color: #ff0000;
+}
+.calendar_box .clndr table tr th:last-child,
+.calendar_box .clndr table tr td:last-child button {
+    color: #296ddd;
+}
+.calendar_box .clndr table td {
+    border: 1px solid #d3d3d3;
+    width: 14.28%;
+    height: 61px;
+    vertical-align: middle;
+}
+.calendar_box .clndr table td button {
+    font-family: "Open Sans", "Noto Sans KR", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #222;
+}
+.calendar_box .clndr table td.past {
+    background-color: #f8f8f8;
+}
+.calendar_box .clndr table td.today {
+    background-color: #fee6bd;
+}
+.calendar_box .clndr table td.today button {
+    color: #fff;
+}
+.calendar_box .clndr table td.selectday {
+    background: #fc9f76 !important;
+}
+.calendar_box .clndr table td.last-month,
+.calendar_box .clndr table td.next-month {
+    background: #fff !important;
+}
+.calendar_box .clndr table td.last-month *,
+.calendar_box .clndr table td.next-month * {
+    display: none;
+}
+.calendar_box .clndr table td.select {
+    background-color: #0b248d;
+}
+.calendar_box .clndr table td.select button {
+    color: #fff;
+}
+.calendar_box .clndr table td .day-contents {
+    font-size: 16px;
+    color: #222;
+    line-height: 1;
+}
+.calendar_box .clndr table td.select .day-contents {
+    color: #fff;
+}
+.calendar_box .clndr table td.test {
+    background-color: #e0e9f8;
+}
+.calendar_box .clndr table td div {
+    line-height: 1;
+}
+.calendar_box .clndr table td .reserve {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    background-color: #ed7d31;
+    color: #fff;
+    width: calc(100% - 6px);
+    margin: 0 3px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.calendar_box .clndr table td .reserve.finish {
+    display: none;
+    background-color: #626262;
+}
+
+.program-wrap .program-box .program-list .desc .strong_txt {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.program-wrap .program-box .program-list .desc .selectlist {
+    display: flex;
+    margin-top: 24px;
+}
+.program-wrap .program-box .program-list .desc .selectlist p {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.program-wrap .program-box .program-list .desc .selectlist p .square {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d3d3d3;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #fff;
+}
+.program-wrap .program-box .program-list .desc .selectlist p .square.today {
+    background-color: #139274;
+}
+.program-wrap .program-box .program-list .desc .selectlist p .square.non {
+    background-color: #ddd;
+}
+.program-wrap .program-box .program-list .desc .selectlist p .square.select {
+    background-color: #f68a53;
+}
+
+.program-wrap .program-box .program-list .desc .datebox .date-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.program-wrap .program-box .program-list .desc .datebox .date-list:first-child {
+    margin-top: 0;
+}
+.program-wrap .program-box .program-list .desc .datebox .datebox-tit {
+    color: #666;
+}
+.program-wrap .program-box .program-list .desc .datebox .datebox-desc {
+    font-family: "Open Sans", "Noto Sans KR", sans-serif;
+}
+
+.program-wrap .program-box .program-list .desc .datebox.type_bg {
+    border: 1px solid #d3d3d3;
+    border-top: 2px solid #222;
+    background-color: #f8f8f8;
+    padding: 16px 20px;
+}
+.program-wrap .program-box .program-list .desc .datebox.type_bg .datebox-desc {
+    font-weight: 600;
+}
+
+.program-wrap .program-box .program-list .desc .date-tbl {
+    margin-top: 23px;
+}
+.program-wrap .program-box .program-list .desc .date-tbl .tbl-head {
+    background-color: #f8f8f8;
+    display: flex;
+    border: 1px solid #d3d3d3;
+    border-top: 2px solid #222;
+}
+.program-wrap .program-box .program-list .desc .date-tbl .tbl-head .h-col {
+    flex: 1;
+    padding: 18px 0;
+    font-size: 16px;
+}
+.program-wrap .program-box .program-list .desc .date-tbl .tbl-head .h-col {
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.program-wrap .program-box .program-list .desc .date-tbl .tbl-head .h-col:last-child {
+    border-right: 0;
+}
+
+.program-wrap .program-box .program-list .desc .date-tbl .tbl-body .row {
+    display: flex;
+}
+.program-wrap .program-box .program-list .desc .date-tbl .tbl-body .row .d-col {
+    font-family: "Open Sans", "Noto Sans KR", sans-serif;
+    flex: 1;
+    padding: 14px 0;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    position: relative;
+}
+.program-wrap .program-box .program-list .desc .date-tbl .tbl-body .row .d-col:last-child {
+    border-right: none;
+}
+.program-wrap .program-box .program-list .desc .date-tbl .txt {
+    font-size: 16px;
+    color: #666;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.program-wrap .program-box .program-list .desc .input-wrap {
+    padding-top: 16px;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dl {
+    display: flex;
+    width: 100%;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dl:not(:first-child) {
+    margin-top: 16px;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dt {
+    width: 120px;
+    font-size: 16px;
+    margin-top: 12px;
+    flex: 0 0 auto;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dt span {
+    color: #e4585a;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dd {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dd input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dd .add_txt {
+    margin-left: 10px;
+    font-size: 16px;
+}
+.program-wrap .program-box .program-list .desc .input-wrap dd textarea {
+    width: 100%;
+    height: 155px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+}

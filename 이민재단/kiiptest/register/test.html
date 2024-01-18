@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="Kiiptest">
+    <link rel="icon" href="../images/favicon/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" href="../images/favicon/favicon_18x18.png" sizes="18x18">
+    <link rel="icon" href="../images/favicon/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" href="../images/favicon/favicon_180x180.png" sizes="180x180">
+    <meta property="og:image" content="../images/favicon/ogi.png" />
+    <meta property="og:image:width" content="270" />
+    <meta property="og:image:height" content="270" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>한국이민재단</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <!-- js -->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/wbz-popup.v1.js"></script>
+</head>
+
+<body>
+    <!-- 본문 바로가기 -->
+    <div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
+    <div id="container">
+        <div class="js-include" data-include="../outline/header.html" data-event="header"></div>
+        <div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
+
+        <main id="contents">
+            <div class="sub-content">
+                <div class="program-wrap">
+                    <div class="w-set">
+                        <div class="program-box">
+                            <div class="program-list">
+                                <div class="tit"><span>1. </span>평가 장소 선택</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li>
+                                            <div class="radiobox">
+                                                <input type="radio" name="timeSelect" id="time_01">
+                                                <label for="time_01" class="label">광명 CBT센터</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radiobox">
+                                                <input type="radio" name="timeSelect" id="time_01">
+                                                <label for="time_01" class="label">대전 CBT센터</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="program-list">
+                                <div class="tit"><span>2. </span>평가일 선택</div>
+                                <div class="desc">
+                                    <div class="datebox">
+                                        <div class="date-list">
+                                            <div class="datebox-tit">선택 장소</div>
+                                            <div class="datebox-desc">광명 CBT센터</div>
+                                        </div>
+                                    </div>
+                                    <!-- 달력 -->
+                                    <div class="calendar_box pj2">
+                                        <div class="clndr">
+                                            <div class="clndr-controls">
+                                                <div class="clndr-control-button"><button class="clndr-previous-button">이전달</button></div>
+                                                <div class="month" data-nowmonth="1" data-nowyear="2024">2024.01</div>
+                                                <div class="clndr-control-button rightalign"><button class="clndr-next-button">다음달</button></div>
+                                            </div>
+                                            <table class="clndr-table" border="0" cellspacing="0" cellpadding="0">
+                                                <thead>
+                                                    <tr class="header-days">
+                                                        <th class="header-day">일</th>
+                                                        <th class="header-day">월</th>
+                                                        <th class="header-day">화</th>
+                                                        <th class="header-day">수</th>
+                                                        <th class="header-day">목</th>
+                                                        <th class="header-day">금</th>
+                                                        <th class="header-day">토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents"></em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents"></em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents"></em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents"></em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents"></em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day today">
+                                                            <button type="button">
+                                                                <em class="day-contents">1</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">2</em>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">3</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">4</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">5</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day select">
+                                                            <button type="button">
+                                                                <em class="day-contents">6</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">7</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">8</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">9</em>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">10</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">11</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">12</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day test">
+                                                            <button type="button">
+                                                                <em class="day-contents">13</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">14</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">15</em>
+                                                            </button>
+                                                        </td>
+                                                        <td class="day">
+                                                            <button type="button">
+                                                                <em class="day-contents">16</em>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>                                    
+                                    <!-- // 달력 -->
+                                    <div class="selectlist">
+                                        <p><span class="square today"></span>금일</p>
+                                        <p><span class="square test"></span>평가일</p>
+                                        <p><span class="square select"></span>선택</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="program-list">
+                                <div class="tit"><span>3. </span>회차 및 시간 선택</div>
+                                <div class="desc">
+                                    <div class="datebox">
+                                        <div class="date-list">
+                                            <div class="datebox-tit">선택 장소</div>
+                                            <div class="datebox-desc">광명 CBT센터</div>
+                                        </div>
+                                        <div class="date-list">
+                                            <div class="datebox-tit">선택 날짜</div>
+                                            <div class="datebox-desc">2023.12.12 (금)</div>
+                                        </div>
+                                    </div>
+                                    <div class="date-tbl">
+                                        <div class="tbl-head">
+                                            <div class="h-col">시간</div>
+                                            <div class="h-col">회차</div>
+                                            <div class="h-col">시험시간</div>
+                                            <div class="h-col">모집인원</div>
+                                            <div class="h-col">가능인원</div>
+                                            <div class="h-col">상태</div>
+                                        </div>
+                                        <div class="tbl-body" id="nomalList">
+                                            <div class="row">
+                                                <div class="d-col">
+                                                    <div class="radiobox">
+                                                        <input type="radio" name="timeSelect" id="time_01">
+                                                        <label for="time_01" class="label is-blind">시간 선택</label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-col">1차</div>
+                                                <div class="d-col">10:00~11:00</div>
+                                                <div class="d-col">300</div>
+                                                <div class="d-col">250</div>
+                                                <div class="d-col">접수중</div>
+                                            </div>
+                                        </div>
+                                        <p class="txt">(정원 : 50명)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>
