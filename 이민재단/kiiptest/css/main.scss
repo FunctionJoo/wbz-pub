@@ -1,6 +1,6 @@
 @import "./utility.scss";
 
-.main {
+.main-content {
     .main-visual {
         height: 378px;
         background: url("../images/common/img/main_visual.png"), linear-gradient(1deg, #0753c6 0%, #002762 100%);
@@ -203,7 +203,7 @@
                             text-align: center;
                         }
                         .sort {
-                            width: 130px;
+                            width: 120px;
                             span {
                                 display: inline-block;
                                 width: 76px;
@@ -222,13 +222,14 @@
                             }
                         }
                         .type {
-                            width: 70px;
+                            width: 50px;
                         }
                         .num {
-                            width: 140px;
+                            width: 120px;
                         }
                         .register {
                             width: 120px;
+                            padding: 0;
                             .btn {
                                 width: 88px;
                                 height: 38px;
@@ -385,7 +386,7 @@
 }
 
 @include mobile {
-    .main {
+    .main-content {
         .main-visual {
             .w-set {
                 flex-direction: column;
@@ -445,7 +446,7 @@
 }
 
 @media (max-width: 768px) {
-    .main {
+    .main-content {
         .main-visual {
             height: auto;
             background-image: url("../images/common/img/main_visual_m.png");
