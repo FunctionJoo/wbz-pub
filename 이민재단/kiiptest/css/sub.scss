@@ -830,6 +830,17 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @include mobile {
+    .location {
+        display: none;
+    }
+    .tab-list {
+        button,
+        a {
+            height: 50px;
+            line-height: 48px;
+        }
+    }
+
     //타이틀 배경
     .con-top {
         .tit-area {

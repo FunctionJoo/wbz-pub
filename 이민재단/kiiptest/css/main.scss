@@ -1,8 +1,9 @@
 @import "./utility.scss";
 
-.main {
+#container.main {
     #header {
         background: #f7f7f9;
+        border-bottom: 0;
     }
 }
 .main-content {

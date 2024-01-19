@@ -67,7 +67,7 @@ textarea:focus,
 .empty {
   border-radius: 3px;
   min-height: 160px;
-  padding: 38px 0 0;
+  padding: 60px 0;
   background: #fff url("../images/common/img/empty_bg.svg") no-repeat center bottom;
 }
 .empty p {
@@ -321,6 +321,11 @@ textarea:focus,
   background-color: #222;
   border-color: #222;
   color: #fff;
+}
+.btn.color_5 {
+  background-color: #fff;
+  border-color: #ddd;
+  color: #222;
 }
 .btn.has-arr {
   background-color: #f4f6fa;

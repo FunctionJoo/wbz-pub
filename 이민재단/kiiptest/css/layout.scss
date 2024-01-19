@@ -3,7 +3,7 @@
 // header
 #header {
     position: relative;
-    /* border-bottom: 1px solid #e0e0e0; */
+    border-bottom: 1px solid #e0e0e0;
     background: #fff;
     .inner {
         max-width: 1200px;
@@ -404,7 +404,8 @@
                 .depth1 {
                     &.on {
                         h2 {
-                            background: $primary-color1 url('../images/common/ico/aside_depth1.svg') no-repeat right 16px center;
+                            background: $primary-color1 url("../images/common/ico/aside_depth1.svg") no-repeat right
+                                16px center;
                             color: #fff;
                             width: 160px;
                             position: relative;
