@@ -233,12 +233,11 @@
   color: #3090d6;
 }
 #header .header-mobile {
-  border-bottom: 1px solid #d3d3d3;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 51px;
+  height: 56px;
   position: fixed;
   top: 0;
   left: 0;
@@ -248,7 +247,7 @@
 }
 #header .header-mobile .hd-center .title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 #header .header-mobile .hd-left {
   position: absolute;
