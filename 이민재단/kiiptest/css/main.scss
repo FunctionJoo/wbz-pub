@@ -251,9 +251,9 @@
                     margin-top: 24px;
                     li {
                         & + li {
-                            margin-top: 16px;
-                            padding-top: 18px;
-                            border-top: 1px solid #ddd;
+                            margin-top: 14px;
+                            padding-top: 14px;
+                            border-top: 1px dashed #ddd;
                         }
                         a {
                             display: block;
