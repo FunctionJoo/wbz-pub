@@ -103,7 +103,7 @@ textarea:focus,
 			outline: none;
 		}
 		&::placeholder {
-			color: $text-color3;
+			color: #a7a7a7;
 		}
 	}
 	select {
@@ -415,7 +415,7 @@ textarea:focus,
 		margin: 0 5px;
 	}
 	.on {
-		background-color: $primary-color2;
+		background-color: $primary-color1;
 		color: #fff;
 	}
 	.move {

@@ -2,10 +2,6 @@ main > img {
   margin-bottom: 160px;
 }
 
-#container {
-  overflow-x: hidden;
-}
-
 h2.tit {
   text-align: center;
   font-weight: 700;
@@ -28,14 +24,6 @@ input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-input::-moz-placeholder {
-  color: #A7A7A7;
-}
-
-input::placeholder {
-  color: #A7A7A7;
 }
 
 .location {
@@ -138,6 +126,39 @@ input::placeholder {
   color: #024fc4;
 }
 
+.tab-list {
+  display: flex;
+}
+.tab-list button,
+.tab-list a {
+  padding: 0 20px;
+  flex: 1;
+  height: 60px;
+  line-height: 58px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #dddddd;
+  border-left: 0;
+}
+.tab-list button:first-child,
+.tab-list a:first-child {
+  border-left: 1px solid #dddddd;
+}
+.tab-list button.on,
+.tab-list a.on {
+  background: #3555af;
+  border-color: #3555af;
+  font-weight: 500;
+  color: #fff;
+}
+
+.tab-content .tab-box {
+  display: none;
+}
+.tab-content .tab-box.on {
+  display: block;
+}
+
 .member-wrap {
   padding: 100px 0 120px;
   border-top: 1px solid #ddd;
@@ -173,11 +194,8 @@ input::placeholder {
   padding: 0 14px;
   line-height: 48px;
 }
-.member-wrap .input-wrap input::-moz-placeholder {
-  color: #A7A7A7;
-}
 .member-wrap .input-wrap input::placeholder {
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 .member-wrap .btn {
   margin-top: 40px;
@@ -191,7 +209,7 @@ input::placeholder {
 .member-wrap .captcha-wrap {
   margin: 12px 0 0;
   border-radius: 6px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
 }
 .member-wrap .captcha-wrap .captcha {
   min-height: 70px;
@@ -205,7 +223,7 @@ input::placeholder {
   width: 100%;
   margin-top: 24px;
   border-radius: 6px;
-  background-color: #F5F9FC;
+  background-color: #f5f9fc;
   padding: 18px 14px 18px 16px;
 }
 .member-wrap .note-txt.chk .txt {
@@ -265,7 +283,7 @@ input::placeholder {
   text-align: center;
   line-height: 50px;
   font-size: 16px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 .member-wrap .find-wrap .tab-menu .tab.on {
   background-color: #3090d6;
@@ -275,12 +293,12 @@ input::placeholder {
 }
 .member-wrap .find-wrap .tab-menu .tab:first-of-type {
   border-radius: 6px 0 0 6px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   border-width: 1px 0 1px 1px;
 }
 .member-wrap .find-wrap .tab-menu .tab:last-of-type {
   border-radius: 0 6px 6px 0;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   border-width: 1px 1px 1px 0;
 }
 .member-wrap .find-wrap .tab-menu .tab a {
@@ -309,12 +327,12 @@ input::placeholder {
 }
 .member-wrap .join-wrap .join-top .info-box table {
   width: 100%;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
 }
 .member-wrap .join-wrap .join-top .info-box table th {
   height: 42px;
-  background-color: #F5F5F5;
-  border-right: 1px solid #DDDDDD;
+  background-color: #f5f5f5;
+  border-right: 1px solid #dddddd;
   font-size: 16px;
   line-height: 40px;
   font-weight: 400;
@@ -326,8 +344,8 @@ input::placeholder {
 .member-wrap .join-wrap .join-top .info-box table td {
   height: 54px;
   background-color: #fff;
-  border-top: 1px solid #DDDDDD;
-  border-right: 1px solid #DDDDDD;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
   font-size: 16px;
   line-height: 52px;
   color: #222;
@@ -409,7 +427,7 @@ input::placeholder {
   width: 200px;
   padding: 0 16px;
   font-size: 15px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 .member-wrap .join-wrap .join-form .input-wrap .cert-box {
   display: flex;
@@ -428,7 +446,7 @@ input::placeholder {
   background-color: transparent;
 }
 .member-wrap .join-wrap .join-form .input-wrap .cert-box .time {
-  color: #F50E0E;
+  color: #f50e0e;
   font-size: 14px;
 }
 .member-wrap .join-wrap .join-form .input-wrap .cert-box + .btn {
@@ -522,10 +540,10 @@ input::placeholder {
   gap: 24px;
 }
 .regi-wrap .con-btm .step-list > li.on i {
-  background-color: #111E55;
+  background-color: #111e55;
 }
 .regi-wrap .con-btm .step-list > li.on .step-txt {
-  color: #111E55;
+  color: #111e55;
 }
 .regi-wrap .con-btm .step-list > li.on .step-txt .num {
   font-weight: 600;
@@ -538,12 +556,12 @@ input::placeholder {
   height: 80px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   border-radius: 50%;
 }
 .regi-wrap .con-btm .step-list > li .step-txt {
   text-align: center;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 .regi-wrap .con-btm .step-list > li .step-txt .num {
   font-size: 16px;
@@ -569,7 +587,7 @@ input::placeholder {
   display: inline-block;
   width: 4px;
   height: 4px;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   border-radius: 50%;
 }
 .regi-wrap .con-btm .step-list > li:first-of-type::before {
@@ -589,7 +607,9 @@ input::placeholder {
 .regi-wrap .con-btm .regi-con p.tit em {
   color: #024fc4;
 }
-.regi-wrap .con-btm .regi-con .regi-step01 .type, .regi-wrap .con-btm .regi-con .regi-step01 .program, .regi-wrap .con-btm .regi-con .regi-step01 .special {
+.regi-wrap .con-btm .regi-con .regi-step01 .type,
+.regi-wrap .con-btm .regi-con .regi-step01 .program,
+.regi-wrap .con-btm .regi-con .regi-step01 .special {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -736,7 +756,7 @@ input::placeholder {
 }
 .board-wrap .boardList-wrap .list.no.is-notice span {
   display: inline-block;
-  background-color: #3555AF;
+  background-color: #3555af;
   border-radius: 3px;
   font-size: 14px;
   color: #fff;
@@ -855,7 +875,7 @@ input::placeholder {
   }
   .member-wrap .join-wrap .join-top .info-box {
     margin: 8px 0 0;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     padding: 20px 12px;
   }
   .member-wrap .join-wrap .join-top .info-box li {

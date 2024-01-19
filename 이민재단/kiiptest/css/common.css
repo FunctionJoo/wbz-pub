@@ -114,9 +114,6 @@ textarea:focus,
   border-color: #024fc4;
   outline: none;
 }
-.input-wrap input[type=text]::-moz-placeholder, .input-wrap input[type=number]::-moz-placeholder, .input-wrap input[type=email]::-moz-placeholder, .input-wrap input[type=tel]::-moz-placeholder, .input-wrap input[type=date]::-moz-placeholder, .input-wrap input[type=password]::-moz-placeholder, .input-wrap textarea::-moz-placeholder, .input-wrap select::-moz-placeholder {
-  color: #999;
-}
 .input-wrap input[type=text]::placeholder,
 .input-wrap input[type=number]::placeholder,
 .input-wrap input[type=email]::placeholder,
@@ -125,14 +122,12 @@ textarea:focus,
 .input-wrap input[type=password]::placeholder,
 .input-wrap textarea::placeholder,
 .input-wrap select::placeholder {
-  color: #999;
+  color: #a7a7a7;
 }
 .input-wrap select {
   padding-right: 34px;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background: #fff url("../images/common/ico/arrow.svg") no-repeat right 20px center;
 }
 .input-wrap select:required:invalid {
@@ -409,7 +404,7 @@ textarea:focus,
   margin: 0 5px;
 }
 .paging .on {
-  background-color: #3090d6;
+  background-color: #024fc4;
   color: #fff;
 }
 .paging .move {
