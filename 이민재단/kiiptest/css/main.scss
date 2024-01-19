@@ -9,7 +9,7 @@
     background: #f7f7f9;
     padding: 36px 0 120px;
     .main-visual {
-        background: /*url("../images/common/img/main_visual.png"),*/ linear-gradient(1deg, #2b66d1 0%, #3555af 100%);
+        background: url("../images/common/img/main_visual.png"), linear-gradient(0deg, #1057a1 0%, #002762 100%);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -97,6 +97,7 @@
                     text-align: center;
                     border: 2px solid #3555af;
                     border-radius: 30px;
+                    transition: all 0.2s;
                     &.on,
                     &:hover,
                     &:active {
@@ -106,50 +107,18 @@
                     }
                 }
             }
-            .tab-detail {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                border-bottom: 1px solid #ddd;
-                button {
-                    cursor: pointer;
-                    padding: 22px 20px;
-                    color: #666;
-                    font-size: 18px;
-                    line-height: 1;
-                    &.on,
-                    &:hover,
-                    &:active {
-                        color: #024fc4;
-                        font-weight: 600;
-                    }
-                    & + button {
-                        position: relative;
-                        &::before {
-                            content: "";
-                            display: inline-block;
-                            width: 1px;
-                            height: 12px;
-                            background: #ddd;
-                            position: absolute;
-                            left: 0;
-                            top: 50%;
-                            transform: translateY(-50%);
-                        }
-                    }
-                }
-            }
             .tab-box {
                 display: none;
                 &.on {
                     display: block;
                 }
                 .month-list {
-                    padding: 20px 0;
+                    padding: 24px 0 18px;
                     display: flex;
                     justify-content: center;
                     gap: 22px;
                     a {
+                        cursor: initial;
                         flex: 0 0 auto;
                         display: flex;
                         align-items: center;
@@ -175,7 +144,7 @@
                     .table-body {
                         padding: 13px 16px 0 0;
                         margin-right: -16px;
-                        height: 336px;
+                        height: 306px;
                         overflow: auto;
                         @include scroll;
                     }
@@ -186,10 +155,12 @@
                         padding: 7px 0;
                         vertical-align: middle;
                         &.table-title {
-                            font-size: 14px;
                             padding: 14px 10px 14px 0;
                             border: solid #ddd;
                             border-width: 1px 0;
+                            div {
+                                font-size: 14px;
+                            }
                         }
                         & > div {
                             font-size: 15px;
@@ -205,13 +176,16 @@
                                 line-height: 30px;
                                 text-align: center;
                                 color: #fff;
-                                background: $primary-color1;
+                                background: #6420db;
                                 border-radius: 15px;
-                                &.mid {
+                                &.middle {
                                     background: #339933;
                                 }
-                                &.comp {
+                                &.whole {
                                     background: #f76504;
+                                }
+                                &.comp {
+                                    background: #3074f0;
                                 }
                             }
                         }
@@ -232,6 +206,12 @@
                                 height: 36px;
                                 line-height: 34px;
                                 border-color: rgba(102, 102, 102, 0.16);
+                                transition: all 0.2s;
+                                &:hover {
+                                    background: $primary-color1;
+                                    border-color: $primary-color1;
+                                    color: #fff;
+                                }
                             }
                         }
                     }
@@ -241,6 +221,10 @@
         .info-wrap {
             width: 380px;
             .notice-area {
+                background: #fff;
+                box-shadow: 0px 0px 12px #0000000f;
+                border-radius: 24px;
+                padding: 20px;
                 .tit-area {
                     display: flex;
                     align-items: center;
@@ -257,6 +241,10 @@
                         background: #fff url("../images/common/ico/view.svg") no-repeat center;
                         border: 1px solid #dddddd;
                         border-radius: 50%;
+                        transition: all 0.35s;
+                        &:hover {
+                            transform: rotate(90deg);
+                        }
                     }
                 }
                 .notice-list {
@@ -269,6 +257,11 @@
                         }
                         a {
                             display: block;
+                            &:hover {
+                                .tit {
+                                    text-decoration: underline;
+                                }
+                            }
                         }
                         .tit {
                             @include ellipsis($lines: 1);
@@ -290,16 +283,24 @@
                 margin-top: 32px;
                 padding: 44px 24px;
                 display: block;
-                background: #5ca6fa url("../images/common/img/main_supply.svg") no-repeat right bottom;
+                background: #6798e2 url("../images/common/img/main_supply.svg") no-repeat right bottom;
                 border-radius: 18px;
                 color: #fff;
+                transition: all 0.35s;
+                &:hover {
+                    .tit {
+                        background-position: right center;
+                    }
+                    background-color: $primary-color1;
+                }
                 .tit {
                     display: inline-block;
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 1.2;
-                    padding-right: 14px;
-                    background: url("../images/common/ico/link.svg") no-repeat right center;
+                    padding-right: 24px;
+                    background: url("../images/common/ico/link.svg") no-repeat right 10px center;
+                    transition: all 0.35s;
                 }
                 .txt {
                     padding-top: 18px;
@@ -310,23 +311,34 @@
             }
         }
         .cont-btm {
-            display: flex;
-            gap: 30px;
-            margin-top: 40px;
-            .link-wrap {
-                width: calc(100% - 380px);
+            margin-top: 50px;
+            .board-wrap {
                 display: flex;
-                gap: 20px;
-                font-size: 0;
+                gap: 30px;
                 > a {
-                    padding: 18px 24px;
-                    background: #fff;
-                    width: calc(100% / 3);
-                    height: 160px;
-                    border: 1px solid #e6e6e6;
-                    border-radius: 12px;
-                    background-repeat: no-repeat;
-                    background-position: right bottom;
+                    padding: 26px 20px;
+                    background: #fff url("../images/common/ico/link_arrow.svg") no-repeat right 20px center;
+                    flex: 1;
+                    height: 140px;
+                    border-radius: 24px;
+                    box-shadow: 0px 0px 12px #0000000f;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    transition: all 0.2s;
+                    &:hover {
+                        background-position: right 14px center;
+                    }
+                    i {
+                        display: block;
+                        width: 88px;
+                        height: 88px;
+                        border-radius: 50%;
+                        background-color: #f8f8f8;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        transition: all 0.35s;
+                    }
                     .tit {
                         font-weight: 700;
                         font-size: 20px;
@@ -340,25 +352,26 @@
                         font-size: 14px;
                     }
                     @for $i from 1 to 4 {
-                        &.link#{$i} {
-                            background-image: url("../images/common/img/main_link_#{$i}.svg");
+                        &.board#{$i} {
+                            i {
+                                background-image: url("../images/common/ico/main_board_#{$i}.svg");
+                            }
                         }
                     }
                 }
             }
             .cs-wrap {
-                flex: 0 0 auto;
-                padding: 33px 0 0 126px;
-                width: 380px;
-                height: 160px;
-                background: #fff url("../images/common/img/main_cs.svg") no-repeat left 24px center;
-                border: 1px solid #e6e6e6;
-                border-radius: 18px;
+                margin-top: 50px;
+                padding: 36px 40px;
+                height: 180px;
+                background: #ebedff url("../images/common/img/main_cs.png") no-repeat right bottom;
+                border-radius: 24px;
                 .tit {
                     display: block;
                     font-family: $gmarket;
-                    font-size: 20px;
-                    line-height: 24px;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 1.3;
                 }
                 .num {
                     padding-top: 17px;
@@ -385,11 +398,9 @@
 @include mobile {
     .main-content {
         .main-visual {
-            .w-set {
-                flex-direction: column;
-                gap: 40px;
-                padding: 60px 0;
-            }
+            flex-direction: column;
+            gap: 40px;
+            padding: 60px 0;
         }
         .main-cont {
             .cont-top {
@@ -429,14 +440,6 @@
                 width: 100%;
             }
             .cont-btm {
-                flex-direction: column;
-                gap: 24px;
-                .link-wrap {
-                    width: 100%;
-                }
-                .cs-wrap {
-                    width: 100%;
-                }
             }
         }
     }
@@ -445,6 +448,7 @@
 @media (max-width: 768px) {
     .main-content {
         .main-visual {
+            padding: 30px 0;
             height: auto;
             background-image: url("../images/common/img/main_visual_m.png");
             background-position: right bottom;
@@ -460,44 +464,27 @@
             }
             .link-area {
                 flex-wrap: wrap;
-                gap: 14px;
+                gap: 20px 14px;
                 a {
                     width: calc(100% / 2 - 7px);
-                    height: 104px;
                     gap: 12px;
                     font-size: 14px;
-                    &::before {
-                        width: 42px;
-                        height: 42px;
-                        background-size: cover;
+                    i {
+                        width: 100px;
+                        height: 100px;
                     }
                 }
             }
         }
         .main-cont {
-            padding-top: 40px;
             .tab-wrap {
                 .tab {
                     button {
-                        padding: 16px 0 15px;
                         font-size: 16px;
-                    }
-                }
-                .tab-detail {
-                    border: 0;
-                    button {
-                        padding: 20px 10px;
-                        font-size: 14px;
-                        & + button {
-                            &::before {
-                                height: 8px;
-                            }
-                        }
                     }
                 }
                 .tab-box {
                     .month-list {
-                        padding: 0 12px;
                         a:not(.on) {
                             display: none;
                         }
@@ -512,10 +499,9 @@
                     }
                     .table-wrap {
                         .table-body {
-                            margin: 24px 12px 0;
-                            padding: 0;
+                            margin: 24px -12px 0 0;
+                            padding-right: 12px;
                             height: 742px;
-                            @include nscroll;
                         }
                         .list-row {
                             padding: 0;
@@ -608,12 +594,15 @@
                 }
             }
             .cont-btm {
-                .link-wrap {
+                margin-top: 24px;
+                .board-wrap {
                     gap: 14px;
                     > a {
                         padding: 12px;
                         height: 94px;
-                        background-size: 150px;
+                        i {
+                            display: none;
+                        }
                         .tit {
                             font-size: 16px;
                         }
@@ -623,9 +612,8 @@
                     }
                 }
                 .cs-wrap {
-                    background-size: 60px auto;
-                    background-position: left 16px center;
-                    padding-left: 93px;
+                    margin-top: 24px;
+                    background-image: none;
                     .num {
                         padding-top: 14px;
                         font-size: 12px;

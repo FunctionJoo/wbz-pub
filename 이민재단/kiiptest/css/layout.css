@@ -205,7 +205,7 @@
   display: inline-block;
   width: 10px;
   height: 6px;
-  background: url("../images/common/ico/hd_lang_arr.svg") no-repeat center;
+  background: url("../images/common/ico/hd_lang_arrow.svg") no-repeat center;
   position: absolute;
   right: -5px;
   transition: all 0.35s;
@@ -348,11 +348,11 @@
   overflow-y: auto;
 }
 #aside-menu .aside-body::-webkit-scrollbar {
-  width: 4px;
+  width: 3px;
   background: none;
 }
 #aside-menu .aside-body::-webkit-scrollbar-thumb {
-  width: 4px;
+  width: 3px;
   border-radius: 2px;
   background: #e5e5e5;
 }
@@ -609,7 +609,6 @@
 @media (max-width: 500px) {
   #header .inner {
     padding: 16px 16px 56px;
-    margin-bottom: 16px;
   }
   #header .hd-utils .login {
     margin-right: 4px;

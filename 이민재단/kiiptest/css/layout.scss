@@ -218,7 +218,7 @@
                     display: inline-block;
                     width: 10px;
                     height: 6px;
-                    background: url("../images/common/ico/hd_lang_arr.svg") no-repeat center;
+                    background: url("../images/common/ico/hd_lang_arrow.svg") no-repeat center;
                     position: absolute;
                     right: -5px;
                     transition: all 0.35s;
@@ -689,7 +689,6 @@
     #header {
         .inner {
             padding: 16px 16px 56px;
-            margin-bottom: 16px;
         }
         .hd-utils {
             .login {
