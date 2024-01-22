@@ -99,7 +99,7 @@ $gmarket: "GmarketSans", sans-serif;
 }
 
 @mixin mobile {
-	@media (max-width: 1300px) {
+	@media (max-width: 768px) {
 		@content;
 	}
 }
