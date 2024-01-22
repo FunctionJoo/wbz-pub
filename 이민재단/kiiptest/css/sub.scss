@@ -168,18 +168,22 @@ input[type="number"]::-webkit-inner-spin-button {
 
 // 회원
 .member-wrap {
-    padding: 100px 0 120px;
+    padding: 80px 0 120px;
     border-top: 1px solid #ddd;
     .tit-area {
         text-align: center;
-        .txt {
-            margin-top: 12px;
-            font-size: 16px;
-            color: $text-color2;
-        }
     }
     .w-set {
         max-width: 400px;
+    }
+    .sub-txt {
+        text-align: center;
+        margin-top: 12px;
+        font-size: 16px;
+        color: $text-color2;
+        br{
+            display: none;
+        }
     }
     //로그인
     .login {
@@ -297,8 +301,8 @@ input[type="number"]::-webkit-inner-spin-button {
                 font-size: 16px;
                 color: #b2b2b2;
                 &.on {
-                    background-color: $primary-color2;
-                    border-color: $primary-color2;
+                    background-color: #3555AF;
+                    border-color: #3555AF;
                     color: #fff;
                     font-weight: 600;
                 }
@@ -423,6 +427,7 @@ input[type="number"]::-webkit-inner-spin-button {
             }
             .input-wrap {
                 display: flex;
+                gap: 10px;
                 .type-address {
                     display: flex;
                     align-items: center;
@@ -433,6 +438,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                     .detail {
                         flex: 1;
+                        min-width: 270px;
                     }
                 }
                 .type-mobile {
@@ -447,10 +453,9 @@ input[type="number"]::-webkit-inner-spin-button {
                         max-width: 120px;
                     }
                     + .btn {
-                        width: 120px;
+                        max-width: 120px;
                         height: 40px;
                         margin-top: 0;
-                        margin-left: 10px;
                         line-height: 38px;
                         span:last-of-type {
                             display: none;
@@ -476,8 +481,8 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
                 .cert-box {
                     display: flex;
-                    max-width: 262px;
                     height: 40px;
+                    max-width: 262px;
                     padding-right: 16px;
                     font-size: 15px;
                     border: 1px solid #ddd;
@@ -494,7 +499,8 @@ input[type="number"]::-webkit-inner-spin-button {
                         font-size: 14px;
                     }
                     + .btn {
-                        width: 120px;
+                        flex: 1;
+                        max-width: 120px;
                         height: 40px;
                         margin-top: 0;
                         line-height: 38px;
@@ -841,41 +847,31 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @include tablet {
     .member-wrap {
+        padding: 50px 0 100px;
+        .sub-txt {
+            margin: 26px 0 32px;
+        }
         .join-wrap {
-            .join-top {
-                .info-box {
-                    background-color: transparent;
-                    padding: 0;
-                    ul {
-                        border: solid #DDDDDD;
-                        border-width: 1px 0 1px 0;
-                        li {
-                            display: table-cell;
-                            border-left: 1px solid #DDDDDD;
-                            .th {
-                                height: 42px;
-                                line-height: 42px;
-                                border-bottom: 1px solid #DDDDDD;
-                            }
-                            span {
-                                height: 54px;
-                                line-height: 54px;
-                            }
-                            &:last-of-type {
-                                border-right: 1px solid #DDDDDD;
-                            }
-                        }
-                    }
-                }
-            }
             .join-form {
                 .input-wrap {
-                    gap: 10px;
                     .type-mobile {
                         flex: 2;
+                        input {
+                            max-width: none;
+                            padding: 0 10px;
+                        }
                         + .btn {
                             flex: 1;
-                            margin-top: 0;
+                            max-width: none;
+                            min-width: 270px;
+                        }
+                    }
+                    .cert-box{
+                        max-width: none;
+                        flex: 2;
+                        + .btn {
+                            max-width: none;
+                            min-width: 270px;
                         }
                     }
                 }
@@ -914,12 +910,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
     //회원
     .member-wrap {
-        padding: 50px 0 100px;
-        .tit-area {
-            margin-bottom: 20px;
-            .txt {
-                margin-top: 8px;
-                font-size: 14px;
+        .sub-txt {
+            font-size: 14px;
+            br{
+                display: block;
             }
         }
         //로그인
@@ -978,7 +972,7 @@ input[type="number"]::-webkit-inner-spin-button {
         }
         .find-wrap {
             margin-top: 26px;
-            padding-top: 110px;
+            padding-top: 122px;
             background-size: 90px;
             .tab-menu {
                 height: 42px;
@@ -1002,6 +996,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     background-color: #f5f5f5;
                     padding: 20px 12px;
                     ul {
+                        border: 0;
                         li {
                             display: flex;
                             justify-content: space-between;
@@ -1052,6 +1047,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                     .type-mobile {
                         width: 100%;
+                        flex: auto;
                         gap: 7px;
                         input {
                             max-width: none;
@@ -1071,7 +1067,8 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                     .cert-box {
                         max-width: none;
-                        flex: 2;
+                        width: 100%;
+                        flex: auto;
                         padding-right: 10px;
                         input {
                             padding: 0 10px;
@@ -1080,8 +1077,8 @@ input[type="number"]::-webkit-inner-spin-button {
                             font-size: 12px;
                         }
                         + .btn {
-                            flex: 1;
-                            width: auto;
+                            width: 100%;
+                            flex: auto;
                             font-size: 14px;
                         }
                     }
