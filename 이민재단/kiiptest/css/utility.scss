@@ -93,7 +93,7 @@ $gmarket: "GmarketSans", sans-serif;
 }
 
 @mixin tablet {
-	@media (min-width: 768px) and (max-width: 1300px) {
+	@media (max-width: 1300px) {
 		@content;
 	}
 }
