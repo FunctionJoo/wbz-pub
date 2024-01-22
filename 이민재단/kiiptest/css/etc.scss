@@ -10,11 +10,11 @@
             .tit {
                 text-align: center;
                 background-color: #f5f9fc;
-                padding: 15px 0 16px;
+                padding: 20px 0;
+                font-weight: 600;
                 font-size: 18px;
                 span {
-                    font-weight: 600;
-                    font-size: 20px;
+                    font-family: $mont;
                 }
             }
             .desc {
@@ -303,11 +303,84 @@
 
 // 공통
 
-// 마이페이지
-
+// 평가 접수
+.register-wrap {
+    .con-btm {
+        .step-wrap {
+            .sort {
+                display: flex;
+                align-items: center;
+                flex: 0 0 auto;
+                margin-right: 26px;
+                padding-right: 26px;
+                position: relative;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 49px;
+                    height: 47px;
+                    background: url("../images/common/ico/register_sort.svg") no-repeat center;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 1px;
+                    height: 32px;
+                    background: #ddd;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .tit {
+                    @include font(600, 22px, #111e55);
+                    margin-left: 20px;
+                }
+                .txt {
+                    font-size: 20px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}
 
 @include tablet {
-    
+    // 평가 접수
+    .register-wrap {
+        .con-btm {
+            .step-wrap {
+                &.type-w {
+                    height: auto;
+                    padding: 0;
+                }
+                flex-direction: column-reverse;
+                background: #fff;
+                .sort {
+                    justify-content: center;
+                    width: 100%;
+                    margin: 32px 0 0;
+                    padding: 20px 0;
+                    border: 1px solid #ddd;
+                    &::before {
+                        width: 36px;
+                        height: 34px;
+                        background-size: cover;
+                    }
+                    &::after {
+                        content: none;
+                    }
+                    .tit {
+                        font-size: 16px;
+                        margin-left: 12px;
+                    }
+                    .txt {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include mobile {

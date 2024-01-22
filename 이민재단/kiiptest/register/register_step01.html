@@ -92,39 +92,41 @@
 					</div>
 					<div class="con-btm">
 						<div class="w-set type-s">
-							<ul class="step-list">
-								<li class="step01 on">
-									<i></i>
-									<div class="step-txt">
-										<p class="num">01</p>
-										<p class="txt">평가구분</p>
-									</div>
-								</li>
-								<li class="line"></li>
-								<li class="step02">
-									<i></i>
-									<div class="step-txt">
-										<p class="num">02</p>
-										<p class="txt">접수하기</p>
-									</div>
-								</li>
-								<li class="line"></li>
-								<li class="step03">
-									<i></i>
-									<div class="step-txt">
-										<p class="num">03</p>
-										<p class="txt">결제하기</p>
-									</div>
-								</li>
-								<li class="line"></li>
-								<li class="step04">
-									<i></i>
-									<div class="step-txt">
-										<p class="num">04</p>
-										<p class="txt">접수완료</p>
-									</div>
-								</li>
-							</ul>
+							<div class="step-wrap">	
+								<ul class="step-list">
+									<li class="step01 on">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">01</p>
+											<p class="txt">평가구분</p>
+										</div>
+									</li>
+									<li class="line"></li>
+									<li class="step02">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">02</p>
+											<p class="txt">접수하기</p>
+										</div>
+									</li>
+									<li class="line"></li>
+									<li class="step03">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">03</p>
+											<p class="txt">결제하기</p>
+										</div>
+									</li>
+									<li class="line"></li>
+									<li class="step04">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">04</p>
+											<p class="txt">접수완료</p>
+										</div>
+									</li>
+								</ul>
+							</div>
 							<div class="register-con">
 								<div class="register-step01">
 									<form action="">
@@ -176,7 +178,7 @@
 											</div>
 										</div>
 										<div class="btn-wrap">
-											<button type="button" class="btn color_4 next" onclick="redirectToPage()">다음 단계</button>
+											<button type="button" class="btn color_4 next">다음 단계</button>
 										</div>
 									</form>
 								</div>
@@ -190,10 +192,6 @@
 	</div>
 
 	<script>
-		function redirectToPage() {
-			var targetUrl = "./register_step02_cbt.html";
-			window.location.href = targetUrl;
-		}
 	</script>
 </body>
 </html>

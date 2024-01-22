@@ -761,12 +761,9 @@ input[type="number"]::-webkit-inner-spin-button {
                 max-width: 1000px;
             }
         }
-        .step-list {
+        .step-wrap {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            width: 100%;
             height: 120px;
             padding: 20px 70px;
             background: #f8f8f8;
@@ -774,6 +771,13 @@ input[type="number"]::-webkit-inner-spin-button {
                 height: 125px;
                 padding: 0 30px;
             }
+        }
+        .step-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            width: 100%;
             > li {
                 display: flex;
                 align-items: center;
@@ -1133,10 +1137,10 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
     }
-    .btn-wrap{
+    .btn-wrap {
         margin-top: 60px;
         justify-content: center;
-        .btn{
+        .btn {
             width: 200px;
         }
     }
@@ -1154,7 +1158,7 @@ input[type="number"]::-webkit-inner-spin-button {
             line-height: 48px;
         }
     }
-    
+
     .sub-content {
         // 테이블
         .list-wrap {
@@ -1258,7 +1262,7 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
             }
         }
-        .table-wrap{
+        .table-wrap {
             &.type-row {
                 .th {
                     width: 120px;
@@ -1308,7 +1312,6 @@ input[type="number"]::-webkit-inner-spin-button {
                 align-items: flex-end;
                 height: auto;
                 padding: 0;
-                background: #fff;
                 & > li {
                     flex-direction: column;
                     gap: 10px;
@@ -1443,7 +1446,7 @@ input[type="number"]::-webkit-inner-spin-button {
         .tit-area {
             height: 160px;
             &.type-bg {
-                background-image: url('../images/common/img/title_bg_m.svg');
+                background-image: url("../images/common/img/title_bg_m.svg");
             }
             h2.tit {
                 text-align: center;

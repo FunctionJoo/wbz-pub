@@ -9,12 +9,12 @@
 .program-wrap .program-box .program-list .tit {
   text-align: center;
   background-color: #f5f9fc;
-  padding: 15px 0 16px;
+  padding: 20px 0;
+  font-weight: 600;
   font-size: 18px;
 }
 .program-wrap .program-box .program-list .tit span {
-  font-weight: 600;
-  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 .program-wrap .program-box .program-list .desc {
   padding: 40px 20px;
@@ -273,4 +273,74 @@
 .calendar_box .clndr table td .reserve.finish {
   display: none;
   background-color: #626262;
+}
+
+.register-wrap .con-btm .step-wrap .sort {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-right: 26px;
+  padding-right: 26px;
+  position: relative;
+}
+.register-wrap .con-btm .step-wrap .sort::before {
+  content: "";
+  display: inline-block;
+  width: 49px;
+  height: 47px;
+  background: url("../images/common/ico/register_sort.svg") no-repeat center;
+}
+.register-wrap .con-btm .step-wrap .sort::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.register-wrap .con-btm .step-wrap .sort .tit {
+  font-weight: 600;
+  font-size: 22px;
+  color: #111e55;
+  margin-left: 20px;
+}
+.register-wrap .con-btm .step-wrap .sort .txt {
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+@media (max-width: 1300px) {
+  .register-wrap .con-btm .step-wrap {
+    flex-direction: column-reverse;
+    background: #fff;
+  }
+  .register-wrap .con-btm .step-wrap.type-w {
+    height: auto;
+    padding: 0;
+  }
+  .register-wrap .con-btm .step-wrap .sort {
+    justify-content: center;
+    width: 100%;
+    margin: 32px 0 0;
+    padding: 20px 0;
+    border: 1px solid #ddd;
+  }
+  .register-wrap .con-btm .step-wrap .sort::before {
+    width: 36px;
+    height: 34px;
+    background-size: cover;
+  }
+  .register-wrap .con-btm .step-wrap .sort::after {
+    content: none;
+  }
+  .register-wrap .con-btm .step-wrap .sort .tit {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+  .register-wrap .con-btm .step-wrap .sort .txt {
+    font-size: 14px;
+  }
 }
