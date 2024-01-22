@@ -305,6 +305,7 @@
     }
 }
 
+// 공통
 .sub-content {
     // 테이블
     .table-wrap {
@@ -494,37 +495,38 @@
             }
         }
     }
+}
 
-    // 마이페이지
-    .mypage-wrap {
-        .tab-list {
-            margin: 60px 0;
-        }
-        .link {
-            color: #555;
-        }
-        .result-wrap {
-            .table-wrap {
-                .list-row {
-                    .sort {
-                        width: 100px;
-                    }
-                    .date {
-                        width: 160px;
-                    }
-                    .num {
-                        width: 200px;
-                    }
-                    .result {
-                        width: 420px;
-                    }
+// 마이페이지
+.mypage-wrap {
+    .tab-list {
+        margin: 60px 0;
+    }
+    .link {
+        color: #555;
+    }
+    .result-wrap {
+        .table-wrap {
+            .list-row {
+                .sort {
+                    width: 100px;
+                }
+                .date {
+                    width: 160px;
+                }
+                .num {
+                    width: 200px;
+                }
+                .result {
+                    width: 420px;
                 }
             }
         }
     }
 }
 
-@include mobile {
+@include tablet {
+    // 공통
     .sub-content {
         .list-wrap {
             .receipt-list {
@@ -627,16 +629,50 @@
                 }
             }
         }
-        // 마이페이지
-        .mypage-wrap {
-            .tab-list {
-                margin: 30px -16px;
+    }
+    // 평가접수
+    .regi-wrap {
+        .con-btm {
+            .step-list {
+                align-items: flex-end;
+                height: auto;
+                padding: 0;
+                background: #fff;
+                & > li {
+                    flex-direction: column;
+                    gap: 10px;
+                    &.line {
+                        width: 12px;
+                        height: 4px;
+                        margin-bottom: 10px;
+                    }
+                    i{
+                        width: 46px;
+                        height: 46px;
+                        background-size: 24px;
+                    }
+                    .step-txt {
+                        .num {
+                            display: none;
+                        }
+                        .txt {
+                            margin-top: 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
+        }
+    }
+    // 마이페이지
+    .mypage-wrap {
+        .tab-list {
+            margin: 30px -16px;
         }
     }
 }
 
-@media (max-width: 768px) {
+@include mobile {
     .sub-content {
         .list-wrap {
             .receipt-list {

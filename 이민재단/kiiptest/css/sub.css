@@ -329,17 +329,17 @@ input[type=number]::-webkit-inner-spin-button {
   display: table;
   table-layout: fixed;
   width: 100%;
-  border: solid #DDDDDD;
+  border: solid #dddddd;
   border-width: 1px 0 1px 0;
 }
 .member-wrap .join-wrap .join-top .info-box ul li {
   display: table-cell;
-  border-left: 1px solid #DDDDDD;
+  border-left: 1px solid #dddddd;
 }
 .member-wrap .join-wrap .join-top .info-box ul li .th {
   height: 42px;
-  background-color: #F5F5F5;
-  border-bottom: 1px solid #DDDDDD;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dddddd;
   line-height: 42px;
   color: #222;
 }
@@ -351,7 +351,7 @@ input[type=number]::-webkit-inner-spin-button {
   color: #222;
 }
 .member-wrap .join-wrap .join-top .info-box ul li:last-of-type {
-  border-right: 1px solid #DDDDDD;
+  border-right: 1px solid #dddddd;
 }
 .member-wrap .join-wrap .join-top .info-box table {
   width: 100%;
@@ -547,16 +547,17 @@ input[type=number]::-webkit-inner-spin-button {
   padding-top: 60px;
 }
 .regi-wrap .con-btm .w-set.type-s {
-  padding: 0 100px;
+  max-width: 1000px;
 }
 .regi-wrap .con-btm .step-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   width: 100%;
   height: 120px;
   padding: 20px 70px;
-  border: 1px solid #ddd;
+  background: #f8f8f8;
 }
 .regi-wrap .con-btm .step-list.type-w {
   height: 125px;
@@ -575,11 +576,20 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .regi-wrap .con-btm .step-list > li.on .step-txt .num {
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 .regi-wrap .con-btm .step-list > li.on .step-txt .txt {
   font-weight: 700;
 }
+.regi-wrap .con-btm .step-list > li.line {
+  display: block;
+  width: 16px;
+  height: 4px;
+  background: url("../images/common/img/register_line.svg") no-repeat center;
+  background-size: 100% 100%;
+}
 .regi-wrap .con-btm .step-list > li i {
+  flex: 0 0 auto;
   width: 80px;
   height: 80px;
   background-repeat: no-repeat;
@@ -609,20 +619,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .regi-wrap .con-btm .step-list > li.step04 i {
   background-image: url("../images/common/ico/step04.svg");
-}
-.regi-wrap .con-btm .step-list > li::after, .regi-wrap .con-btm .step-list > li::before {
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  background-color: #dddddd;
-  border-radius: 50%;
-}
-.regi-wrap .con-btm .step-list > li:first-of-type::before {
-  display: none;
-}
-.regi-wrap .con-btm .step-list > li:last-of-type::after {
-  display: none;
 }
 .regi-wrap .con-btm .regi-con {
   margin-top: 40px;
@@ -804,24 +800,24 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 0;
   }
   .member-wrap .join-wrap .join-top .info-box ul {
-    border: solid #DDDDDD;
+    border: solid #dddddd;
     border-width: 1px 0 1px 0;
   }
   .member-wrap .join-wrap .join-top .info-box ul li {
     display: table-cell;
-    border-left: 1px solid #DDDDDD;
+    border-left: 1px solid #dddddd;
   }
   .member-wrap .join-wrap .join-top .info-box ul li .th {
     height: 42px;
     line-height: 42px;
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid #dddddd;
   }
   .member-wrap .join-wrap .join-top .info-box ul li span {
     height: 54px;
     line-height: 54px;
   }
   .member-wrap .join-wrap .join-top .info-box ul li:last-of-type {
-    border-right: 1px solid #DDDDDD;
+    border-right: 1px solid #dddddd;
   }
   .member-wrap .join-wrap .join-form .input-wrap {
     gap: 10px;
@@ -834,7 +830,7 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 0;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 768px) {
   .location {
     display: none;
   }
@@ -940,7 +936,8 @@ input[type=number]::-webkit-inner-spin-button {
     align-items: center;
     border: 0;
   }
-  .member-wrap .join-wrap .join-top .info-box ul li span, .member-wrap .join-wrap .join-top .info-box ul li .th {
+  .member-wrap .join-wrap .join-top .info-box ul li span,
+  .member-wrap .join-wrap .join-top .info-box ul li .th {
     height: auto;
     line-height: 1;
     border-bottom: 0;
@@ -1081,7 +1078,7 @@ input[type=number]::-webkit-inner-spin-button {
     width: 1px;
     height: 10px;
     margin-left: 10px;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
   }
   .board-wrap .boardList-wrap .table-wrap .list.no, .board-wrap .boardList-wrap .table-wrap .list.date, .board-wrap .boardList-wrap .table-wrap .list.hit {
     width: auto;

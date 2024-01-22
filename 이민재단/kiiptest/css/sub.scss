@@ -344,15 +344,15 @@ input[type="number"]::-webkit-inner-spin-button {
                     display: table;
                     table-layout: fixed;
                     width: 100%;
-                    border: solid #DDDDDD;
+                    border: solid #dddddd;
                     border-width: 1px 0 1px 0;
                     li {
                         display: table-cell;
-                        border-left: 1px solid #DDDDDD;
+                        border-left: 1px solid #dddddd;
                         .th {
                             height: 42px;
-                            background-color: #F5F5F5;
-                            border-bottom: 1px solid #DDDDDD;
+                            background-color: #f5f5f5;
+                            border-bottom: 1px solid #dddddd;
                             line-height: 42px;
                             color: $text-color1;
                         }
@@ -364,7 +364,7 @@ input[type="number"]::-webkit-inner-spin-button {
                             color: $text-color1;
                         }
                         &:last-of-type {
-                            border-right: 1px solid #DDDDDD;
+                            border-right: 1px solid #dddddd;
                         }
                     }
                 }
@@ -571,21 +571,21 @@ input[type="number"]::-webkit-inner-spin-button {
     //접수 step
     .con-btm {
         padding-top: 60px;
-
         //step 리스트
         .w-set {
             &.type-s {
-                padding: 0 100px;
+                max-width: 1000px;
             }
         }
         .step-list {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 8px;
             width: 100%;
             height: 120px;
             padding: 20px 70px;
-            border: 1px solid #ddd;
+            background: #f8f8f8;
             &.type-w {
                 height: 125px;
                 padding: 0 30px;
@@ -602,13 +602,22 @@ input[type="number"]::-webkit-inner-spin-button {
                         color: #111e55;
                         .num {
                             font-weight: 600;
+                            font-family: $mont;
                         }
                         .txt {
                             font-weight: 700;
                         }
                     }
                 }
+                &.line {
+                    display: block;
+                    width: 16px;
+                    height: 4px;
+                    background: url('../images/common/img/register_line.svg') no-repeat center;
+                    background-size: 100% 100%;
+                }
                 i {
+                    flex: 0 0 auto;
                     width: 80px;
                     height: 80px;
                     background-repeat: no-repeat;
@@ -633,21 +642,6 @@ input[type="number"]::-webkit-inner-spin-button {
                             background-image: url("../images/common/ico/step0#{$i}.svg");
                         }
                     }
-                }
-                &::after,
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    width: 4px;
-                    height: 4px;
-                    background-color: #dddddd;
-                    border-radius: 50%;
-                }
-                &:first-of-type::before {
-                    display: none;
-                }
-                &:last-of-type::after {
-                    display: none;
                 }
             }
         }
@@ -847,22 +841,22 @@ input[type="number"]::-webkit-inner-spin-button {
                     background-color: transparent;
                     padding: 0;
                     ul {
-                        border: solid #DDDDDD;
+                        border: solid #dddddd;
                         border-width: 1px 0 1px 0;
                         li {
                             display: table-cell;
-                            border-left: 1px solid #DDDDDD;
+                            border-left: 1px solid #dddddd;
                             .th {
                                 height: 42px;
                                 line-height: 42px;
-                                border-bottom: 1px solid #DDDDDD;
+                                border-bottom: 1px solid #dddddd;
                             }
                             span {
                                 height: 54px;
                                 line-height: 54px;
                             }
                             &:last-of-type {
-                                border-right: 1px solid #DDDDDD;
+                                border-right: 1px solid #dddddd;
                             }
                         }
                     }
@@ -1007,7 +1001,8 @@ input[type="number"]::-webkit-inner-spin-button {
                             justify-content: space-between;
                             align-items: center;
                             border: 0;
-                            span, .th {
+                            span,
+                            .th {
                                 height: auto;
                                 line-height: 1;
                                 border-bottom: 0;
@@ -1125,7 +1120,7 @@ input[type="number"]::-webkit-inner-spin-button {
                 input {
                     height: 50px;
                 }
-                .input-label{
+                .input-label {
                     padding-right: 14px;
                 }
             }
@@ -1144,7 +1139,7 @@ input[type="number"]::-webkit-inner-spin-button {
                             display: flex;
                             align-items: center;
                             padding: 0;
-                            > a{
+                            > a {
                                 max-width: calc(100% - 5px);
                                 width: calc(100% - 5px);
                             }
@@ -1159,16 +1154,19 @@ input[type="number"]::-webkit-inner-spin-button {
                             }
                         }
                         &.date::after {
-                            content: '';
+                            content: "";
                             display: inline-block;
-                            width: 1px; height: 10px;
+                            width: 1px;
+                            height: 10px;
                             margin-left: 10px;
-                            background-color: #D3D3D3;
+                            background-color: #d3d3d3;
                         }
                     }
                 }
                 .list {
-                    &.no, &.date, &.hit {
+                    &.no,
+                    &.date,
+                    &.hit {
                         width: auto;
                         font-size: 14px;
                     }
