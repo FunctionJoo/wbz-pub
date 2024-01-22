@@ -64,6 +64,14 @@ textarea:focus,
 	height: 1px;
 	white-space: nowrap;
 }
+// 필수요소
+.required {
+	&::after {
+		content: "*";
+		color: #024FC4;
+		margin-left: 4px;
+	}
+}
 .empty {
 	border-radius: 3px;
 	min-height: 160px;
@@ -640,17 +648,7 @@ textarea:focus,
 			right: 0;
 		}
 	}
-	.btn {
-		height: 42px;
-		line-height: 40px;
-		&.has-arr {
-			font-size: 14px;
-		}
-		&.type-toggle {
-			font-size: 14px;
-		}
-	}
-
+	
 	.wbz-popup-cont {
 		padding: 20px 16px 10px;
 	}

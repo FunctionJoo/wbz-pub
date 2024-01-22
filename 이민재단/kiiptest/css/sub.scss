@@ -166,6 +166,198 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+// 공통
+.sub-content {
+    // 테이블
+    .table-wrap {
+        .table-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 0 15px;
+            border: 0;
+            .total {
+                font-size: 15px;
+                line-height: 21px;
+            }
+            .btn-wrap {
+                margin-left: auto;
+                gap: 10px;
+                .btn {
+                    height: 40px;
+                    line-height: 38px;
+                    border-radius: 3px;
+                    width: auto;
+                    min-width: 96px;
+                    padding: 0 20px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    &.excel {
+                        border-color: #d3d3d3;
+                        background: #fff;
+                        color: $text-color1;
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            background: url("../images/common/ico/download.svg") no-repeat center;
+                            margin-right: 6px;
+                            margin-bottom: -2px;
+                        }
+                    }
+                }
+            }
+            .input-wrap {
+                &.period {
+                    .txt {
+                        font-size: 15px;
+                        font-weight: 400;
+                        margin-right: 20px;
+                    }
+                    .btn {
+                        margin-left: 10px;
+                        width: 68px;
+                        min-width: auto;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .caption {
+            text-align: right;
+            margin-bottom: 10px;
+            font-size: 15px;
+            &::before {
+                content: "*";
+                font-size: 15px;
+                color: $primary-color2;
+            }
+        }
+        .table-body {
+            .list-row {
+                &:last-child {
+                    border-bottom: 1px solid #d3d3d3;
+                }
+            }
+        }
+        .list-row {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            &.table-title {
+                background: #f5f5f5;
+                font-size: 14px;
+                & > div {
+                    text-align: center;
+                }
+            }
+            &.total {
+                background: #eafbda;
+            }
+            & > div {
+                border: solid #d3d3d3;
+                border-width: 1px 0 0 1px;
+                font-size: 15px;
+                display: table-cell;
+                text-align: center;
+                padding: 7px 10px;
+                height: 54px;
+                vertical-align: middle;
+                &:last-child {
+                    border-right: 1px solid #d3d3d3;
+                }
+            }
+            .name {
+                text-align: left;
+            }
+            .sort {
+                width: 70px;
+            }
+            .date {
+                width: 130px;
+            }
+            .num {
+                width: 150px;
+            }
+            .exam {
+                width: 80px;
+            }
+            .state {
+                width: 100px;
+                .wait {
+                    color: #f50e0e;
+                }
+                .cancel {
+                    color: #555;
+                }
+                .finish {
+                    color: #024fc4;
+                }
+            }
+            .receipt,
+            .place {
+                width: 100px;
+                text-align: center;
+                .btn {
+                    width: 80px;
+                    height: 28px;
+                    line-height: 26px;
+                    font-size: 14px;
+                }
+            }
+            .result {
+                gap: 16px;
+                padding: 20px;
+                .tit {
+                    color: $primary-color1;
+                }
+                .result-list {
+                    display: inline-block;
+                    background: #f5f9fc;
+                    border-radius: 3px;
+                    padding: 10px 0;
+                    margin-left: 16px;
+                    width: 308px;
+                    font-size: 0;
+                    li {
+                        font-size: 14px;
+                        display: inline-block;
+                        width: calc(100% / 3);
+                        & + li {
+                            position: relative;
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                width: 1px;
+                                height: 12px;
+                                border-left: 1px dashed #b2b2b2;
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.type-row {
+            .th {
+                width: 200px;
+                background: #f6f6f6;
+                border: solid #d3d3d3;
+                border-width: 1px 0 0 1px;
+            }
+            .td {
+                border: solid #d3d3d3;
+                border-width: 1px 0 0 1px;
+                text-align: left;
+            }
+        }
+    }
+}
+
 // 회원
 .member-wrap {
     padding: 80px 0 120px;
@@ -181,7 +373,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-top: 12px;
         font-size: 16px;
         color: $text-color2;
-        br{
+        br {
             display: none;
         }
     }
@@ -301,8 +493,8 @@ input[type="number"]::-webkit-inner-spin-button {
                 font-size: 16px;
                 color: #b2b2b2;
                 &.on {
-                    background-color: #3555AF;
-                    border-color: #3555AF;
+                    background-color: #3555af;
+                    border-color: #3555af;
                     color: #fff;
                     font-weight: 600;
                 }
@@ -544,26 +736,14 @@ input[type="number"]::-webkit-inner-spin-button {
         position: relative;
         width: 100%;
         height: 190px;
-        .bg {
-            width: 100%;
-            height: 100%;
-            background-image: url("../images/common/img/regi_bg.svg");
-            background-repeat: no-repeat;
-            background-position: center;
+        &.type-bg {
+            background: url("../images/common/img/title_bg.svg") no-repeat center;
             background-size: cover;
         }
-        .w-set {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            h2.tit {
-                text-align: left;
-                line-height: 190px;
-                color: #fff;
-            }
+        h2.tit {
+            text-align: left;
+            line-height: 190px;
+            color: #fff;
         }
     }
 }
@@ -572,11 +752,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 //평가 접수
-.regi-wrap {
-    /* padding: 0 0 120px; */
+.register-wrap {
     //접수 step
     .con-btm {
-        padding-top: 60px;
         //step 리스트
         .w-set {
             &.type-s {
@@ -619,7 +797,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     display: block;
                     width: 16px;
                     height: 4px;
-                    background: url('../images/common/img/register_line.svg') no-repeat center;
+                    background: url("../images/common/img/register_line.svg") no-repeat center;
                     background-size: 100% 100%;
                 }
                 i {
@@ -651,47 +829,48 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
             }
         }
-        .regi-con {
+        .register-con {
             margin-top: 40px;
-            p.tit {
-                width: 100%;
+            h4.tit {
                 font-size: 20px;
                 font-weight: 500;
-                em {
-                    color: $primary-color1;
-                }
             }
-            .regi-step01 {
-                .type,
-                .program,
-                .special {
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 20px 10px;
-                    margin-top: 40px;
+            .register-step01 {
+                .tit {
+                    margin-bottom: 20px;
                 }
-                .radiobox {
-                    flex: 1;
-                    height: 50px;
-                    input[type="radio"]:checked + label {
-                        color: $primary-color1;
-                        background-color: #024fc41f;
-                        border-color: $primary-color1;
+                .list-wrap {
+                    & + .list-wrap {
+                        margin-top: 40px;
                     }
-                    label {
-                        padding: 0;
-                        width: 100%;
-                        height: 100%;
-                        border: 1px solid #ddd;
-                        background-color: #fff;
-                        border-radius: 5px;
-                        line-height: 48px;
-                        text-align: center;
-                        color: #666;
-                        font-size: 14px;
-                        &::before {
-                            display: none;
+                    .select-list {
+                        display: flex;
+                        gap: 10px;
+                        .radiobox {
+                            flex: 1;
+                            min-height: 50px;
+                            input[type="radio"]:checked + label {
+                                color: $primary-color1;
+                                background-color: #024fc41f;
+                                border-color: $primary-color1;
+                            }
+                            label {
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 6px;
+                                width: 100%;
+                                height: 100%;
+                                border: 1px solid #ddd;
+                                background-color: #fff;
+                                border-radius: 5px;
+                                text-align: center;
+                                color: #666;
+                                font-size: 14px;
+                                &::before {
+                                    display: none;
+                                }
+                            }
                         }
                     }
                 }
@@ -839,7 +1018,142 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+// 마이페이지
+.mypage-wrap {
+    .tab-list {
+        margin: 60px 0;
+    }
+    .link {
+        text-decoration: underline !important;
+        color: #555;
+    }
+    .result-wrap {
+        .table-wrap {
+            .list-row {
+                .sort {
+                    width: 100px;
+                }
+                .date {
+                    width: 160px;
+                }
+                .num {
+                    width: 200px;
+                }
+                .result {
+                    width: 420px;
+                }
+            }
+        }
+    }
+}
+
 @include tablet {
+    // 공통
+    .sub-content {
+        // 테이블
+        .list-wrap {
+            .receipt-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                & > li {
+                    width: calc(50% - 6px);
+                    border: 1px solid #dddddd;
+                    border-radius: 6px;
+                    padding: 20px 14px;
+                    font-size: 0;
+                    * {
+                        font-size: 16px;
+                    }
+                    span {
+                        & + span {
+                            position: relative;
+                            padding-left: 8px;
+                            margin-left: 8px;
+                            &::after {
+                                content: "";
+                                display: inline-block;
+                                width: 1px;
+                                height: 10px;
+                                background: #707070;
+                                position: absolute;
+                                left: 0;
+                                top: 4px;
+                            }
+                        }
+                    }
+                }
+                .wait {
+                    color: #f50e0e;
+                }
+                .cancel {
+                    color: #555;
+                }
+                .finish {
+                    color: #024fc4;
+                }
+                .sort {
+                    font-weight: 500;
+                }
+                .name {
+                    display: block;
+                    padding-top: 14px;
+                }
+                .row3 {
+                    padding-top: 10px;
+                }
+                .row4 {
+                    padding-top: 10px;
+                }
+                .btn-wrap {
+                    margin-top: 20px;
+                    justify-content: center;
+                    gap: 10px;
+                    .btn {
+                        max-width: 145px;
+                        font-size: 14px;
+                    }
+                }
+                .result {
+                    background: #f5f9fc;
+                    border-radius: 3px;
+                    margin-top: 20px;
+                    padding: 12px 0;
+                    .tit {
+                        display: block;
+                        text-align: center;
+                        color: $primary-color1;
+                        font-size: 16px;
+                    }
+                    .result-list {
+                        font-size: 0;
+                        margin-top: 10px;
+                        li {
+                            font-size: 14px;
+                            display: inline-block;
+                            width: calc(100% / 3);
+                            text-align: center;
+                            & + li {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 1px;
+                                    height: 12px;
+                                    border-left: 1px dashed #b2b2b2;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 회원가입
     .member-wrap {
         padding: 50px 0 100px;
         .sub-txt {
@@ -860,7 +1174,7 @@ input[type="number"]::-webkit-inner-spin-button {
                             min-width: 270px;
                         }
                     }
-                    .cert-box{
+                    .cert-box {
                         max-width: none;
                         flex: 2;
                         + .btn {
@@ -872,9 +1186,85 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
     }
+    // 평가접수
+    .register-wrap {
+        .con-btm {
+            .step-list {
+                margin: 0 auto;
+                max-width: 328px;
+                align-items: flex-end;
+                height: auto;
+                padding: 0;
+                background: #fff;
+                & > li {
+                    flex-direction: column;
+                    gap: 10px;
+                    &.line {
+                        width: 10px;
+                        height: 4px;
+                        margin-bottom: 8px;
+                    }
+                    i {
+                        width: 46px;
+                        height: 46px;
+                        background-size: 34px;
+                    }
+                    .step-txt {
+                        .num {
+                            display: none;
+                        }
+                        .txt {
+                            margin-top: 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .register-con {
+                h4.tit {
+                    font-size: 16px;
+                }
+                .register-step01 {
+                    .tit {
+                        margin-bottom: 10px;
+                    }
+                    .list-wrap {
+                        & + .list-wrap {
+                            margin-top: 20px;
+                        }
+                        .select-list {
+                            flex-wrap: wrap;
+                            gap: 12px;
+                            .radiobox {
+                                flex: 0 0 auto;
+                                width: calc(100% / 2 - 6px);
+                                label {
+                                    line-height: 1.2;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-wrap {
+            margin-top: 40px;
+            .btn {
+                max-width: 328px;
+            }
+        }
+    }
+    // 마이페이지
+    .mypage-wrap {
+        .tab-list {
+            margin: 30px -16px;
+        }
+    }
 }
 
 @include mobile {
+    // 공통
     .location {
         display: none;
     }
@@ -886,15 +1276,16 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 
-    //타이틀 배경
+    // 타이틀 배경
     .con-top {
         .tit-area {
             height: 160px;
-            .w-set {
-                h2.tit {
-                    text-align: center;
-                    line-height: 160px;
-                }
+            &.type-bg {
+                background-image: url('../images/common/img/title_bg_m.svg');
+            }
+            h2.tit {
+                text-align: center;
+                line-height: 160px;
             }
         }
     }
@@ -902,11 +1293,22 @@ input[type="number"]::-webkit-inner-spin-button {
         padding: 40px 0 80px;
     }
 
-    //회원
+    .sub-content {
+        // 테이블
+        .list-wrap {
+            .receipt-list {
+                & > li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // 회원가입
     .member-wrap {
         .sub-txt {
             font-size: 14px;
-            br{
+            br {
                 display: block;
             }
         }

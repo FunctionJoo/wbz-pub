@@ -35,13 +35,11 @@
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-
-		<main id="contents" style="margin-bottom: 120px;">
+		<main id="contents">
 			<div class="sub-content">
-				<div class="regi-wrap">
+				<div class="register-wrap">
 					<div class="con-top">
-						<div class="tit-area">
-							<div class="bg"></div>
+						<div class="tit-area type-bg">
 							<div class="w-set">
 								<h2 class="tit">평가 접수</h2>
 							</div>
@@ -127,12 +125,12 @@
 									</div>
 								</li>
 							</ul>
-							<div class="regi-con">
-								<div class="regi-step01">
+							<div class="register-con">
+								<div class="register-step01">
 									<form action="">
-										<div class="type">
-											<p class="tit">평가 구분 <em>*</em></p>
-											<div class="list">
+										<div class="list-wrap">
+											<h4 class="tit required">평가 구분</h4>
+											<div class="select-list">
 												<div class="radiobox">
 													<input type="radio" name="type" id="type01" checked>
 													<label for="type01">종합평가 (영주용)</label>
@@ -151,26 +149,30 @@
 												</div>
 											</div>
 										</div>
-										<div class="program">
-											<p class="tit">사회통합프로그램 참여여부 <em>*</em></p>
-											<div class="radiobox">
-												<input type="radio" name="program" id="program01" checked>
-												<label for="program01">수료(사회통합프로그램 5단계(기본+심화)과정 수료)</label>
-											</div>
-											<div class="radiobox">
-												<input type="radio" name="program" id="program02">
-												<label for="program02">미수료</label>
+										<div class="list-wrap">
+											<h4 class="tit required">사회통합프로그램 참여여부</h4>
+											<div class="select-list">
+												<div class="radiobox">
+													<input type="radio" name="program" id="program01" checked>
+													<label for="program01">수료(사회통합프로그램 5단계(기본+심화)과정 수료)</label>
+												</div>
+												<div class="radiobox">
+													<input type="radio" name="program" id="program02">
+													<label for="program02">미수료</label>
+												</div>
 											</div>
 										</div>
-										<div class="special">
-											<p class="tit">특별 배려대상여부 <em>*</em></p>
-											<div class="radiobox">
-												<input type="radio" name="special" id="special01" checked>
-												<label for="special01">대상</label>
-											</div>
-											<div class="radiobox">
-												<input type="radio" name="special" id="special02">
-												<label for="special02">대상 아님 (소시넷 장애인 인증 필요)</label>
+										<div class="list-wrap">
+											<h4 class="tit required">특별 배려대상여부</h4>
+											<div class="select-list">
+												<div class="radiobox">
+													<input type="radio" name="special" id="special01" checked>
+													<label for="special01">대상</label>
+												</div>
+												<div class="radiobox">
+													<input type="radio" name="special" id="special02">
+													<label for="special02">대상 아님 <br class="hide-pc">(소시넷 장애인 인증 필요)</label>
+												</div>
 											</div>
 										</div>
 										<div class="btn-wrap">
