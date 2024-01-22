@@ -32,35 +32,204 @@
 	<!-- 본문 바로가기 -->
 	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
-		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
+		<div class="js-include" data-include="../outline/header_sub.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-    <main class="wrap">
-			<img src="../images/dummy/join.png" alt="" usemap="#imagemap-sample1">
+
+		<main id="contents">
+			<div class="sub-content">
+				<div class="member-wrap">
+					<div class="tit-area hide-m">
+						<h2 class="tit">회원가입</h2>
+					</div>
+					<div class="join-wrap">
+						<div class="w-set">
+							<div class="join-top">
+								<span>필수입력</span>
+								<div class="info-box">
+									<ul>
+										<li>
+											<span class="th">아이디</span>
+											<span>Sazita00</span>
+										</li>
+										<li>
+											<span class="th">이름</span>
+											<span>Taylor Alison Swift</span>
+										</li>
+										<li>
+											<span class="th">외국인등록번호</span>
+											<span>871510-5********</span>
+										</li>
+										<li>
+											<span class="th">생년월일</span>
+											<span>19800112</span>
+										</li>
+										<li>
+											<span class="th">여권번호</span>
+											<span>M302133456</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="join-form">
+								<form action="">
+									<dl>
+										<dt>비밀번호</dt>
+										<dd>
+											<div class="input-wrap">
+												<input type="password" name="join" id="password" placeholder="">
+												<label for="password" class="is-blind">비밀번호</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>비밀번호 확인</dt>
+										<dd>
+											<div class="input-wrap">
+												<input type="password" name="join" id="passwordChk" placeholder="">
+												<label for="passwordChk" class="is-blind">비밀번호 확인</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>주소</dt>
+										<dd>
+											<div class="input-wrap">
+												<div class="type-address">
+													<input type="text" name="join" id="address01" placeholder="주소">
+													<label for="address01" class="is-blind">주소</label>
+													<input type="text" name="join" id="address02" placeholder="상세 주소" class="detail">
+													<label for="address02" class="is-blind">상세 주소</label>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>휴대폰 번호</dt>
+										<dd>
+											<div class="input-wrap">
+												<div class="type-mobile">
+													<input type="text" name="join" id="num01" class="mont" value="010" readonly>
+													<label for="num01" class="is-blind">휴대폰 번호 앞 자리</label>
+													<i class="num-bar"></i>
+													<input type="text" name="join" id="num02" class="mont" value="1234" readonly>
+													<label for="num02" class="is-blind">휴대폰 번호 중간 자리</label>
+													<i class="num-bar"></i>
+													<input type="text" name="join" id="num03" class="mont" value="5678" readonly>
+													<label for="num03" class="is-blind">휴대폰 번호 마지막 자리</label>
+												</div>
+												<!-- 인증 클릭 후 resend 클래스 추가 -> 재전송 버튼으로 변경 -->
+												<button type="button" class="btn color_2">
+													<span>인증</span>
+													<span>재전송</span>
+												</button>
+											</div>
+											<!-- 인증 클릭 후 on 클래스 추가 -->
+											<div class="input-wrap cert-wrap on">
+												<div class="cert-box">
+													<input type="number" name="certify" id="certify" class="mont">
+													<label for="certify" class="is-blind">인증번호 입력</label>
+													<span class="time mont">03:00</span>
+												</div>
+												<button type="button" class="btn color_2">인증 완료</button>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>국적</dt>
+										<dd>
+											<div class="input-wrap">
+												<select name="join" id="nationality">
+													<option value="" disabled selected>국적을 선택하세요</option>
+													<option value="">가나</option>
+													<option value="">가봉</option>
+													<option value="">과테말라</option>
+													<option value="">기타</option>
+												</select>
+												<label for="nationality" class="is-blind">국적</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>체류자격</dt>
+										<dd>
+											<div class="input-wrap">
+												<select name="join" id="stay">
+													<option value="" disabled selected>체류자격을 선택하세요</option>
+													<option value="">D2(유학)</option>
+													<option value="">D4(일반연수)</option>
+													<option value="">D10(구직)</option>
+													<option value="">기타</option>
+												</select>
+												<label for="stay" class="is-blind">체류자격</label>
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>알림수신동의</dt>
+										<dd>
+											<div class="checkbox">
+												<input type="checkbox" name="join" id="agree">
+												<label for="agree">한국이민재단에서 시행하는 KIIP 평가 관련정보를 제공하는 SMS 등 문자수신에 동의합니다.</label>
+											</div>
+										</dd>
+									</dl>
+									<div class="btn-wrap">
+										<button type="button" class="btn">저장</button>
+										<button type="button" class="btn color_3" onclick="$popup.template('#withdrawPopup')">회원탈퇴</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
-    <!-- <map name="imagemap-sample1">
-			<area alt="" title="" href="./certificate01.html" coords="359,216,960,270" shape="rect">
-			<area alt="" title="" href="./certificate_view.html" coords="1459,477,1538,500" shape="rect">
-		</map> -->
-
-		<!-- <main id="contents" class="member">
-			<div class="tit-area">
-				<h2 class="tit">평가구분</h2>
-			</div>
-			<div class="w-set">
-			</div>
-		</main> -->
-
-		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
+		<div class="js-include hide-m" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+	<!-- 회원탈퇴 팝업 -->
+	<div class="wbz-popup-cont is-template size-l" id="withdrawPopup">
+		<div class="popup-header">
+			<strong class="popup-title">회원탈퇴</strong>
+			<button class="popup-close popup-close-just" onclick="$popup.close();">✕</button>
+		</div>
+		<div class="popup-cont">
+			<div class="">
+				<div class="input-wrap">
+					<textarea name="" id="" cols="30" rows="10" placeholder="탈퇴 사유를 입력해주세요."></textarea>
+				</div>
+			</div>
+			<div class="popup-button">
+				<button type="button" class="cr_1 popup-confirm-event">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- //회원탈퇴 팝업 -->
+
 	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
+		//페이지에서만 사용하는 스크립트
+
+		//select 박스 선택 할 때 폰트 색 변경
+		let select = '.input-wrap select';
+		$(select).change(function () {
+			$(this).css('color','#222');
+		});
+
+		//모바일에서 비밀번호 placeholder 문장 변경
+		$(window).resize(function(){
+			let win_w = window.innerWidth;
+
+			if(win_w < 1300){
+				$('#password').attr('placeholder', '영문, 숫자, 특수문자 포함, 6~20자 이내로 입력');
+				$('#passwordChk').attr('placeholder', '비밀번호 확인');
+			} else{
+				$('#password').attr('placeholder', '영문, 숫자, 특수문자를 포함하여 6~20자 이내로 입력해주세요');
+				$('#passwordChk').attr('placeholder', '비밀번호확인을 위해 다시 한번 입력해주세요');
+			}
+		});
+		$(window).trigger('resize');
 	</script>
 </body>
 </html>

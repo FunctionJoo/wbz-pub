@@ -261,7 +261,7 @@ input[type="number"]::-webkit-inner-spin-button {
                 font-size: 15px;
                 display: table-cell;
                 text-align: center;
-                padding: 7px 10px;
+                padding: 6px 10px;
                 height: 54px;
                 vertical-align: middle;
                 &:last-child {
@@ -1045,6 +1045,101 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
     }
+    .cont {
+        .tit-area {
+            .tit {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        & + .cont {
+            margin-top: 40px;
+        }
+        .info-box {
+            margin: 10px 0 0;
+            text-align: center;
+            ul {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                border: solid #dddddd;
+                border-width: 1px 0 1px 0;
+                li {
+                    display: table-cell;
+                    border-left: 1px solid #dddddd;
+                    .th {
+                        color: #fff;
+                        height: 42px;
+                        background-color: #555;
+                        border-bottom: 1px solid #dddddd;
+                        line-height: 42px;
+                    }
+                    span {
+                        display: block;
+                        height: 54px;
+                        font-size: 16px;
+                        line-height: 54px;
+                        color: $text-color1;
+                    }
+                    &:last-of-type {
+                        border-right: 1px solid #dddddd;
+                    }
+                }
+            }
+            table {
+                width: 100%;
+                border: 1px solid #dddddd;
+                th {
+                    height: 42px;
+                    background-color: #f5f5f5;
+                    border-right: 1px solid #dddddd;
+                    font-size: 16px;
+                    line-height: 40px;
+                    font-weight: 400;
+                    color: $text-color1;
+                    &:last-of-type {
+                        border: 0;
+                    }
+                }
+                td {
+                    height: 54px;
+                    background-color: #fff;
+                    border-top: 1px solid #dddddd;
+                    border-right: 1px solid #dddddd;
+                    font-size: 16px;
+                    line-height: 52px;
+                    color: $text-color1;
+                }
+            }
+        }
+        .pay-box {
+            padding: 20px 30px;
+            border: 1px solid #ddd;
+            dl {
+                display: flex;
+                & + dl {
+                    margin-top: 14px;
+                }
+                dt {
+                    width: 190px;
+                    font-size: 16px;
+                }
+                dd {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .btn-wrap{
+        margin-top: 60px;
+        justify-content: center;
+        .btn{
+            width: 200px;
+        }
+    }
 }
 
 @include tablet {
@@ -1149,6 +1244,13 @@ input[type="number"]::-webkit-inner-spin-button {
                             }
                         }
                     }
+                }
+            }
+        }
+        .table-wrap{
+            &.type-row {
+                .th {
+                    width: 120px;
                 }
             }
         }
@@ -1259,6 +1361,67 @@ input[type="number"]::-webkit-inner-spin-button {
     .mypage-wrap {
         .tab-list {
             margin: 30px -16px;
+        }
+        .cont {
+            .tit-area {
+                .tit {
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-bottom: 14px;
+                }
+            }
+            & + .cont {
+                margin-top: 32px;
+            }
+            .info-box {
+                background-color: #f5f5f5;
+                padding: 20px 12px;
+                ul {
+                    border: 0;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 0;
+                        span,
+                        .th {
+                            background: transparent;
+                            color: $text-color1;
+                            height: auto;
+                            line-height: 1;
+                            border-bottom: 0;
+                        }
+                        + li {
+                            margin-top: 12px;
+                        }
+                        &:last-of-type {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            .table-wrap {
+                &.type-row {
+                    .list-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        & > div {
+                            display: inline-flex;
+                            align-items: center;
+                            min-height: 42px;
+                            height: auto;
+                        }
+                        .th {
+                            justify-content: center;
+                            padding: 6px 0;
+                        }
+                        .td {
+                            border-right: 1px solid #d3d3d3;
+                            width: calc(100% - 120px);
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -1502,6 +1665,7 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 
+    // 게시판
     .board-wrap {
         .boardList-wrap {
             .search-wrap {
@@ -1574,6 +1738,21 @@ input[type="number"]::-webkit-inner-spin-button {
                         .new-ico {
                             margin-right: 16px;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    // 마이페이지
+    .mypage-wrap {
+        .cont {
+            .pay-box {
+                padding: 20px 12px;
+                dl {
+                    justify-content: space-between;
+                    dt {
+                        width: auto;
                     }
                 }
             }
