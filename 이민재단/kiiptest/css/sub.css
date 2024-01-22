@@ -1070,6 +1070,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1300px) {
+  .location {
+    display: none;
+  }
+  .tab-list button,
+  .tab-list a {
+    height: 50px;
+    line-height: 48px;
+  }
   .sub-content .list-wrap .receipt-list {
     display: flex;
     flex-wrap: wrap;
@@ -1310,14 +1318,6 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 768px) {
-  .location {
-    display: none;
-  }
-  .tab-list button,
-  .tab-list a {
-    height: 50px;
-    line-height: 48px;
-  }
   .con-top .tit-area {
     height: 160px;
   }

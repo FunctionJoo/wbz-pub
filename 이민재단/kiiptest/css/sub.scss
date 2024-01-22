@@ -1144,6 +1144,17 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @include tablet {
     // 공통
+    .location {
+        display: none;
+    }
+    .tab-list {
+        button,
+        a {
+            height: 50px;
+            line-height: 48px;
+        }
+    }
+    
     .sub-content {
         // 테이블
         .list-wrap {
@@ -1427,18 +1438,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @include mobile {
-    // 공통
-    .location {
-        display: none;
-    }
-    .tab-list {
-        button,
-        a {
-            height: 50px;
-            line-height: 48px;
-        }
-    }
-
     // 타이틀 배경
     .con-top {
         .tit-area {
