@@ -76,7 +76,7 @@ textarea:focus,
 	border-radius: 3px;
 	min-height: 160px;
 	padding: 60px 0;
-	background: #fff url("../images/common/img/empty_bg.svg") no-repeat center bottom;
+	background: #fff;
 	p {
 		max-width: 560px;
 		margin: 0 auto;
@@ -258,8 +258,7 @@ textarea:focus,
 	}
 	input[type="radio"]:checked ~ label {
 		&:before {
-			background-color: #1e3c82;
-			//background-image: url('../images/common/ico/radiobox_on.svg');
+			background-image: url('../images/common/ico/radiobox_on.svg');
 		}
 	}
 }

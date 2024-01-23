@@ -74,7 +74,7 @@ textarea:focus,
   border-radius: 3px;
   min-height: 160px;
   padding: 60px 0;
-  background: #fff url("../images/common/img/empty_bg.svg") no-repeat center bottom;
+  background: #fff;
 }
 .empty p {
   max-width: 560px;
@@ -252,7 +252,7 @@ textarea:focus,
   border-radius: 50%;
 }
 .radiobox input[type=radio]:checked ~ label:before {
-  background-color: #1e3c82;
+  background-image: url("../images/common/ico/radiobox_on.svg");
 }
 
 .btn-wrap {
@@ -531,7 +531,7 @@ textarea:focus,
   color: #fff;
 }
 
-@media (min-width: 1301px) {
+@media (min-width: 1241px) {
   .hide-pc {
     display: none !important;
   }
@@ -543,7 +543,7 @@ textarea:focus,
     padding-right: 16px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1240px) {
   .hide-m {
     display: none !important;
   }
