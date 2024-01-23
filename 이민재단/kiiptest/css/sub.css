@@ -382,6 +382,9 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 0 14px;
   line-height: 48px;
 }
+.member-wrap .input-wrap input::-moz-placeholder {
+  color: #a7a7a7;
+}
 .member-wrap .input-wrap input::placeholder {
   color: #a7a7a7;
 }
@@ -573,6 +576,9 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .member-wrap .join-wrap .join-form dl + dl {
   margin-top: 20px;
+}
+.member-wrap .join-wrap .join-form dl:last-of-type dt::after {
+  display: none;
 }
 .member-wrap .join-wrap .join-form dl dt {
   width: 180px;
@@ -1861,7 +1867,6 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .member-wrap .join-wrap .join-form .input-wrap .type-mobile + .btn {
     width: 100%;
-    margin-top: 10px;
     margin-left: 0;
     font-size: 14px;
   }
@@ -1873,7 +1878,7 @@ input[type=number]::-webkit-inner-spin-button {
   .member-wrap .join-wrap .join-form .input-wrap .cert-box {
     max-width: none;
     width: 100%;
-    flex: auto;
+    flex: 2;
     padding-right: 10px;
   }
   .member-wrap .join-wrap .join-form .input-wrap .cert-box input {
@@ -1883,9 +1888,11 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 12px;
   }
   .member-wrap .join-wrap .join-form .input-wrap .cert-box + .btn {
-    width: 100%;
-    flex: auto;
+    min-width: auto;
     font-size: 14px;
+  }
+  .member-wrap .join-wrap .join-form .input-wrap.cert-wrap {
+    gap: 8px;
   }
   .member-wrap .join-wrap .join-form .checkbox label {
     font-size: 14px;
