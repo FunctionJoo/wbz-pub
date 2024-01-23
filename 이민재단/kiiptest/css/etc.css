@@ -95,6 +95,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   font-size: 14px;
   line-height: 19px;
 }
@@ -102,6 +103,7 @@
   margin-top: 12px;
 }
 .register-box .register-list .desc .datebox .date-list .datebox-tit {
+  flex: 0 0 auto;
   color: #555;
 }
 .register-box .register-list .desc .datebox .date-list .datebox-desc {

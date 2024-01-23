@@ -98,12 +98,14 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    gap: 10px;
                     font-size: 14px;
                     line-height: 19px;
                     & + .date-list {
                         margin-top: 12px;
                     }
                     .datebox-tit {
+                        flex: 0 0 auto;
                         color: #555;
                     }
                     .datebox-desc {

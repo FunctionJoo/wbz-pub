@@ -37,10 +37,9 @@
 
 		<main id="contents">
 			<div class="sub-content">
-				<div class="regi-wrap">
+				<div class="register-wrap">
 					<div class="con-top">
-						<div class="tit-area">
-							<div class="bg"></div>
+						<div class="tit-area type-bg">
 							<div class="w-set">
 								<h2 class="tit">평가 접수</h2>
 							</div>
@@ -71,7 +70,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="./register_step02_cbt.html" class="menu has-select">접수하기</a>
+									<a href="./register_step01.html" class="menu has-select">평가구분</a>
 									<ul>
 										<li>
 											<a href="./register_step01.html">평가구분</a>
@@ -91,14 +90,325 @@
 							</ul>
 						</div>
 					</div>
-
-					<main class="wrap" style="text-align: center;">
-						<img src="../images/dummy/Register 03.png" alt="평가접수02_pbt" usemap="#imagemap-sample1">
-					</main>
-
-					<map name="imagemap-sample1">
-						<area alt="" title="" href="./register_step03.html" coords="503,1036,700,1087" shape="rect">
-					</map>
+					<div class="con-btm">
+						<div class="w-set">
+							<div class="step-wrap type-w">
+								<div class="sort">
+									<strong class="tit">평가구분</strong>
+									<span class="txt">CBT 종합평가<br>(귀화용)</span>
+								</div>
+								<ul class="step-list">
+									<li class="step01">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">01</p>
+											<p class="txt">평가구분</p>
+										</div>
+									</li>
+									<li class="line"></li>
+									<li class="step02 on">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">02</p>
+											<p class="txt">접수하기</p>
+										</div>
+									</li>
+									<li class="line"></li>
+									<li class="step03">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">03</p>
+											<p class="txt">결제하기</p>
+										</div>
+									</li>
+									<li class="line"></li>
+									<li class="step04">
+										<i></i>
+										<div class="step-txt">
+											<p class="num">04</p>
+											<p class="txt">접수완료</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="register-con">
+								<div class="register-box">
+									<div class="register-list on">
+										<div class="tit"><span>1. </span>평가 장소 선택</div>
+										<div class="desc">
+											<ul class="place-list">
+												<li>
+													<div class="radiobox">
+														<input type="radio" name="placeSelect" id="place_01" checked>
+														<label for="place_01" class="label">광주광역시 서구 - 남부 대학교</label>
+													</div>
+												</li>
+												<li>
+													<div class="radiobox">
+														<input type="radio" name="placeSelect" id="place_02" disabled>
+														<label for="place_02" class="label">서울시 강남구 - 서경대학교</label>
+													</div>
+												</li>
+												<li>
+													<div class="radiobox">
+														<input type="radio" name="placeSelect" id="place_03">
+														<label for="place_03" class="label">전라남도 의성시 - 순천대학교</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="register-list">
+										<div class="tit"><span>2. </span>평가일 선택</div>
+										<div class="desc">													
+											<div class="datebox">
+												<div class="date-list">
+													<div class="datebox-tit">선택 장소</div>
+													<div class="datebox-desc">광주광역시 서구 - 남부 대학교</div>
+												</div>
+											</div>
+											<!-- <div class="empty">
+												<p>장소를 선택해 주세요.</p>
+											</div> -->
+											<!-- 달력 -->
+											<div class="calendar_box pj2">
+												<div class="clndr">
+													<div class="clndr-controls">
+														<div class="clndr-control-button"><button class="clndr-previous-button">이전달</button></div>
+														<div class="month" data-nowmonth="1" data-nowyear="2024">2024.01</div>
+														<div class="clndr-control-button rightalign"><button class="clndr-next-button">다음달</button></div>
+													</div>
+													<table class="clndr-table" border="0" cellspacing="0" cellpadding="0">
+														<thead>
+															<tr class="header-days">
+																<th class="header-day">일</th>
+																<th class="header-day">월</th>
+																<th class="header-day">화</th>
+																<th class="header-day">수</th>
+																<th class="header-day">목</th>
+																<th class="header-day">금</th>
+																<th class="header-day">토</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents"></em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents"></em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents"></em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents"></em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents"></em>
+																	</button>
+																</td>
+																<td class="day today">
+																	<button type="button">
+																		<em class="day-contents">1</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">2</em>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">3</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">4</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">5</em>
+																	</button>
+																</td>
+																<td class="day selectday">
+																	<button type="button">
+																		<em class="day-contents">6</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">7</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">8</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">9</em>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">10</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">11</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">12</em>
+																	</button>
+																</td>
+																<td class="day testday">
+																	<button type="button">
+																		<em class="day-contents">13</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">14</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">15</em>
+																	</button>
+																</td>
+																<td class="day">
+																	<button type="button">
+																		<em class="day-contents">16</em>
+																	</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>                                    
+											<!-- // 달력 -->
+											<div class="selectlist">
+												<p><span class="square today"></span>금일</p>
+												<p><span class="square testday"></span>평가일</p>
+												<p><span class="square selectday"></span>선택</p>
+											</div>
+										</div>
+									</div>
+									<div class="register-list">
+										<div class="tit"><span>3. </span>회차 및 시간 선택</div>
+										<div class="desc">
+											<div class="datebox">
+												<div class="date-list">
+													<div class="datebox-tit">선택 장소</div>
+													<div class="datebox-desc">광주광역시 서구 - 남부 대학교</div>
+												</div>
+												<div class="date-list">
+													<div class="datebox-tit">선택 날짜</div>
+													<div class="datebox-desc">2023.12.12 (금)</div>
+												</div>
+											</div>
+											<p class="info-txt">*쿼터제 적용으로 동포비자(F-4, H-2, C-3-8) 비율은 전체 [35%]로 선발하고 있습니다.</p>
+											<div class="table-wrap">
+												<div class="table-head">
+													<div class="list-row">
+														<div class="select"></div>
+														<div class="time">시험시간</div>
+														<div class="recruits">모집인원</div>
+														<div class="available">가능인원</div>
+														<div class="state">상태</div>
+													</div>
+												</div>
+												<div class="table-body">
+													<div class="list-row type-empty">
+														<div>접수 가능한 평가가 없습니다.</div>
+													</div>
+													<div class="list-row">
+														<div class="select">
+															<div class="radiobox">
+																<input type="radio" name="testSelect" id="test_01">
+																<label for="test_01" class="label"></label>
+															</div>
+														</div>
+														<div class="time">09:30 - 11:50</div>
+														<div class="recruits">300</div>
+														<div class="available">250</div>
+														<div class="state">
+															<span class="ing">접수중</span>
+														</div>
+													</div>
+													<div class="list-row">
+														<div class="select">
+															<div class="radiobox">
+																<input type="radio" name="testSelect" id="test_02">
+																<label for="test_02" class="label"></label>
+															</div>
+														</div>
+														<div class="time">15:20 – 17:40</div>
+														<div class="recruits">300</div>
+														<div class="available">250</div>
+														<div class="state">
+															<span class="ing">접수중</span>
+														</div>
+													</div>
+													<div class="list-row">
+														<div class="select">
+															<div class="radiobox">
+																<input type="radio" name="testSelect" id="test_03">
+																<label for="test_03" class="label"></label>
+															</div>
+														</div>
+														<div class="time">15:20 – 17:40</div>
+														<div class="recruits">300</div>
+														<div class="available">250</div>
+														<div class="state">
+															<span class="ing">접수중</span>
+														</div>
+													</div>
+													<div class="list-row">
+														<div class="select">
+															<div class="radiobox">
+																<input type="radio" name="testSelect" id="test_04">
+																<label for="test_04" class="label"></label>
+															</div>
+														</div>
+														<div class="time">15:20 – 17:40</div>
+														<div class="recruits">300</div>
+														<div class="available">250</div>
+														<div class="state">
+															<span class="end">접수완료</span>
+														</div>
+													</div>
+												</div>
+											</div>											
+										</div>
+									</div>
+								</div>
+								<div class="btn-wrap">
+									<button type="button" class="btn color_4 next">다음 단계</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -106,12 +416,7 @@
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
 	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
 	</script>
 </body>
 </html>
