@@ -1107,6 +1107,18 @@ input[type=number]::-webkit-inner-spin-button {
   background-position: center;
 }
 
+.board-wrap .tit-area {
+  margin-bottom: 60px;
+}
+.board-wrap .is-notice span {
+  display: inline-block;
+  background-color: #3555af;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 32px;
+}
 .board-wrap .boardList-wrap .search-wrap {
   max-width: 550px;
   height: 50px;
@@ -1203,20 +1215,98 @@ input[type=number]::-webkit-inner-spin-button {
   width: 120px;
   font-family: "Montserrat", sans-serif;
 }
-.board-wrap .boardList-wrap .list.no.is-notice span {
-  display: inline-block;
-  background-color: #3555af;
-  border-radius: 3px;
-  font-size: 14px;
-  color: #fff;
-  padding: 0 20px;
-  line-height: 32px;
-}
 .board-wrap .boardList-wrap .list.date {
   width: 200px;
 }
 .board-wrap .boardList-wrap .list.hit {
   width: 100px;
+}
+.board-wrap .boardView-wrap .btn-wrap {
+  padding-top: 60px;
+  justify-content: center;
+}
+.board-wrap .boardView-wrap .btn-wrap .list_btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 27px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/common/ico/list_btn.svg");
+}
+.board-wrap .boardView-wrap .top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #222222;
+  padding-bottom: 24px;
+}
+.board-wrap .boardView-wrap .top-wrap > div {
+  display: flex;
+  align-items: center;
+}
+.board-wrap .boardView-wrap .top-wrap .tit {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: 12px;
+}
+.board-wrap .boardView-wrap .top-wrap .sub-wrap {
+  font-size: 16px;
+}
+.board-wrap .boardView-wrap .top-wrap .sub-wrap > span {
+  font-family: "Montserrat", sans-serif;
+}
+.board-wrap .boardView-wrap .top-wrap .sub-wrap > span.date::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #D3D3D3;
+  margin: 0 20px;
+}
+.board-wrap .boardView-wrap .cont-area {
+  padding: 40px 6px;
+  border-bottom: 1px solid #D3D3D3;
+}
+.board-wrap .boardView-wrap .cont-area .txt {
+  font-size: 16px;
+  line-height: 29px;
+  word-break: keep-all;
+}
+.board-wrap .boardView-wrap .attach-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 0;
+  border-bottom: 1px solid #D3D3D3;
+}
+.board-wrap .boardView-wrap .attach-area .cate {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #666666;
+  font-size: 14px;
+  padding: 0 20px;
+  line-height: 32px;
+}
+.board-wrap .boardView-wrap .attach-area .attach-list .attach {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;
+  padding-left: 36px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.board-wrap .boardView-wrap .attach-area .attach-list .attach.doc {
+  background-image: url("../images/common/ico/file_doc.svg");
+}
+.board-wrap .boardView-wrap .attach-area .attach-list .attach.pdf {
+  background-image: url("../images/common/ico/file_pdf.svg");
+}
+.board-wrap .boardView-wrap .attach-area .attach-list .attach + .attach {
+  margin-top: 12px;
 }
 
 .mypage-wrap .tab-list {
