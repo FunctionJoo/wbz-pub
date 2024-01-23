@@ -1051,12 +1051,12 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .cont {
         .tit-area {
+            margin-bottom: 20px;
             .tit {
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 24px;
                 display: block;
-                margin-bottom: 20px;
             }
         }
         & + .cont {
@@ -1378,10 +1378,10 @@ input[type="number"]::-webkit-inner-spin-button {
         }
         .cont {
             .tit-area {
+                margin-bottom: 14px;
                 .tit {
                     font-size: 18px;
                     line-height: 21px;
-                    margin-bottom: 14px;
                 }
             }
             & + .cont {
@@ -1404,6 +1404,9 @@ input[type="number"]::-webkit-inner-spin-button {
                             height: auto;
                             line-height: 1;
                             border-bottom: 0;
+                        }
+                        .td {
+                            color: #555;
                         }
                         + li {
                             margin-top: 12px;
@@ -1433,6 +1436,15 @@ input[type="number"]::-webkit-inner-spin-button {
                             border-right: 1px solid #d3d3d3;
                             width: calc(100% - 120px);
                         }
+                    }
+                }
+            }
+            .pay-box {
+                padding: 20px 12px;
+                dl {
+                    justify-content: space-between;
+                    dt {
+                        width: auto;
                     }
                 }
             }
@@ -1744,20 +1756,5 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
             }
         }
-    }
-
-    // 마이페이지
-    .mypage-wrap {
-        .cont {
-            .pay-box {
-                padding: 20px 12px;
-                dl {
-                    justify-content: space-between;
-                    dt {
-                        width: auto;
-                    }
-                }
-            }
-        }
-    }
+    }    
 }

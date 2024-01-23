@@ -311,8 +311,224 @@
   font-size: 20px;
   margin-left: 12px;
 }
+.register-wrap .con-btm .cont .tit-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.register-wrap .con-btm .cont .tit-area .tit {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+}
+.register-wrap .con-btm .cont .tit-area .btn {
+  width: 144px;
+  height: 40px;
+  line-height: 38px;
+}
+.register-wrap .con-btm .cont + .cont {
+  margin-top: 40px;
+}
+.register-wrap .con-btm .cont .info-box {
+  margin: 10px 0 0;
+  text-align: center;
+}
+.register-wrap .con-btm .cont .info-box ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border: solid #dddddd;
+  border-width: 1px 0 1px 0;
+}
+.register-wrap .con-btm .cont .info-box ul li {
+  display: table-cell;
+  border-left: 1px solid #dddddd;
+}
+.register-wrap .con-btm .cont .info-box ul li.name {
+  width: 35%;
+}
+.register-wrap .con-btm .cont .info-box ul li.paytype {
+  width: 13%;
+}
+.register-wrap .con-btm .cont .info-box ul li .th {
+  color: #fff;
+  height: 42px;
+  background-color: #555;
+  border-bottom: 1px solid #dddddd;
+  line-height: 42px;
+}
+.register-wrap .con-btm .cont .info-box ul li span {
+  display: block;
+  height: 54px;
+  font-size: 16px;
+  line-height: 54px;
+  color: #222;
+}
+.register-wrap .con-btm .cont .info-box ul li:last-of-type {
+  border-right: 1px solid #dddddd;
+}
+.register-wrap .con-btm .cont .info-box table {
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+.register-wrap .con-btm .cont .info-box table th {
+  height: 42px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #dddddd;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #222;
+}
+.register-wrap .con-btm .cont .info-box table th:last-of-type {
+  border: 0;
+}
+.register-wrap .con-btm .cont .info-box table td {
+  height: 54px;
+  background-color: #fff;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  font-size: 16px;
+  line-height: 52px;
+  color: #222;
+}
+.register-wrap .con-btm .cont .pay-box {
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+}
+.register-wrap .con-btm .cont .pay-box dl {
+  display: flex;
+}
+.register-wrap .con-btm .cont .pay-box dl + dl {
+  margin-top: 14px;
+}
+.register-wrap .con-btm .cont .pay-box dl dt {
+  width: 190px;
+  font-size: 16px;
+}
+.register-wrap .con-btm .cont .pay-box dl dd {
+  font-size: 15px;
+}
+.register-wrap .con-btm .cont .select-paytype {
+  display: flex;
+  gap: 12px;
+}
+.register-wrap .con-btm .cont .select-paytype label {
+  flex: 0 0 auto;
+  display: block;
+  width: 180px;
+  cursor: pointer;
+}
+.register-wrap .con-btm .cont .select-paytype label input {
+  position: absolute;
+  opacity: 0;
+}
+.register-wrap .con-btm .cont .select-paytype label .label_visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  line-height: 48px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #666666;
+}
+.register-wrap .con-btm .cont .select-paytype label .label_visual i {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 6px;
+}
+.register-wrap .con-btm .cont .select-paytype label .label_visual i.ico_account {
+  width: 28px;
+  height: 28px;
+  background-image: url("../images/common/ico/paytype_account.svg");
+}
+.register-wrap .con-btm .cont .select-paytype label .label_visual i.ico_card {
+  width: 24px;
+  height: 16px;
+  background-image: url("../images/common/ico/paytype_card.svg");
+}
+.register-wrap .con-btm .cont .select-paytype label input:checked + .label_visual {
+  border-color: #024fc4;
+  color: #024fc4;
+  background: rgba(2, 79, 196, 0.1215686275);
+}
+.register-wrap .con-btm .cont .select-paytype label input:checked + .label_visual i.ico_account {
+  background-image: url("../images/common/ico/paytype_account_on.svg");
+}
+.register-wrap .con-btm .cont .select-paytype label input:checked + .label_visual i.ico_card {
+  background-image: url("../images/common/ico/paytype_card_on.svg");
+}
+.register-wrap .con-btm .cont .info-txt {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f50e0e;
+}
+.register-wrap .con-btm .cont .amount-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background: #f5f9fc;
+}
+.register-wrap .con-btm .cont .amount-area .txt {
+  font-size: 16px;
+  color: #555;
+}
+.register-wrap .con-btm .cont .amount-area .amount {
+  font-size: 16px;
+}
+.register-wrap .con-btm .cont .amount-area .amount em {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #024fc4;
+}
+.register-wrap .con-btm .cont .precaution-box {
+  padding: 30px;
+  border: 1px solid #ddd;
+}
+.register-wrap .con-btm .cont .precaution-box .txt {
+  font-size: 16px;
+  line-height: 21px;
+}
+.register-wrap .con-btm .cont .precaution-box .txt + .txt {
+  margin-top: 12px;
+}
+.register-wrap .con-btm .cont .precaution-box .checkbox {
+  margin-top: 20px;
+}
+.register-wrap .con-btm .cont .precaution-box .checkbox label {
+  font-size: 14px;
+  color: #555;
+}
+.register-wrap .con-btm .cont .complete-info {
+  margin: 60px 0;
+}
+.register-wrap .con-btm .cont .complete-info .txt {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 92px;
+  background: url("../images/common/ico/register_complete.svg") no-repeat top center;
+}
+.register-wrap .con-btm .cont .complete-info .info-box {
+  margin-top: 28px;
+  padding: 28px 0;
+  background: #f5f9fc;
+  font-size: 16px;
+  line-height: 24px;
+}
+.register-wrap .con-btm .cont .complete-info .info-box span {
+  color: #024fc4;
+}
 
-@media (max-width: 1300px) {
+@media (max-width: 1240px) {
   .register-wrap .con-btm .step-wrap {
     flex-direction: column-reverse;
     background: #fff;
@@ -342,5 +558,131 @@
   }
   .register-wrap .con-btm .step-wrap .sort .txt {
     font-size: 14px;
+  }
+  .register-wrap .con-btm .cont .tit-area {
+    margin-bottom: 14px;
+  }
+  .register-wrap .con-btm .cont .tit-area .tit {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .register-wrap .con-btm .cont .tit-area .btn {
+    width: 108px;
+    height: 34px;
+    line-height: 32px;
+    font-size: 14px;
+  }
+  .register-wrap .con-btm .cont + .cont {
+    margin-top: 32px;
+  }
+  .register-wrap .con-btm .cont .info-box {
+    background-color: #f5f5f5;
+    padding: 20px 12px;
+  }
+  .register-wrap .con-btm .cont .info-box ul {
+    border: 0;
+  }
+  .register-wrap .con-btm .cont .info-box ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    width: auto !important;
+  }
+  .register-wrap .con-btm .cont .info-box ul li span,
+  .register-wrap .con-btm .cont .info-box ul li .th {
+    background: transparent;
+    color: #222;
+    height: auto;
+    line-height: 1;
+    border-bottom: 0;
+  }
+  .register-wrap .con-btm .cont .info-box ul li .td {
+    color: #555;
+  }
+  .register-wrap .con-btm .cont .info-box ul li + li {
+    margin-top: 12px;
+  }
+  .register-wrap .con-btm .cont .info-box ul li:last-of-type {
+    border: 0;
+  }
+  .register-wrap .con-btm .cont .table-wrap.type-row .list-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .register-wrap .con-btm .cont .table-wrap.type-row .list-row > div {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    height: auto;
+  }
+  .register-wrap .con-btm .cont .table-wrap.type-row .list-row .th {
+    justify-content: center;
+    padding: 6px 0;
+  }
+  .register-wrap .con-btm .cont .table-wrap.type-row .list-row .td {
+    border-right: 1px solid #d3d3d3;
+    width: calc(100% - 120px);
+  }
+  .register-wrap .con-btm .cont .pay-box {
+    padding: 20px 12px;
+  }
+  .register-wrap .con-btm .cont .pay-box dl {
+    justify-content: space-between;
+  }
+  .register-wrap .con-btm .cont .pay-box dl dt {
+    width: auto;
+  }
+  .register-wrap .con-btm .cont .complete-info {
+    margin: 46px 0 32px;
+  }
+  .register-wrap .con-btm .cont .complete-info .info-box {
+    margin-top: 30px;
+    padding: 18px 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .register-wrap .con-btm .cont .select-paytype {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .register-wrap .con-btm .cont .select-paytype label {
+    width: calc(50% - 4px);
+  }
+  .register-wrap .con-btm .cont .amount-area {
+    padding: 15px 12px;
+  }
+  .register-wrap .con-btm .cont .amount-area .txt {
+    font-size: 14px;
+  }
+  .register-wrap .con-btm .cont .amount-area .amount {
+    font-size: 14px;
+  }
+  .register-wrap .con-btm .cont .amount-area .amount em {
+    font-size: 20px;
+  }
+  .register-wrap .con-btm .cont .precaution-box {
+    padding: 14px 12px;
+  }
+  .register-wrap .con-btm .cont .precaution-box .txt {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .register-wrap .con-btm .cont .precaution-box .txt + .txt {
+    margin-top: 10px;
+  }
+  .register-wrap .con-btm .cont .precaution-box .checkbox {
+    margin-top: 14px;
+  }
+  .register-wrap .con-btm .cont .precaution-box .checkbox label {
+    font-size: 13px;
+    line-height: 1.3;
+    padding-left: 22px;
+  }
+  .register-wrap .con-btm .cont .precaution-box .checkbox label::before {
+    width: 16px;
+    height: 16px;
+    margin-top: -16px;
   }
 }

@@ -87,13 +87,13 @@ $gmarket: "GmarketSans", sans-serif;
 }
 
 @mixin pc {
-	@media (min-width: 1301px) {
+	@media (min-width: 1241px) {
 		@content;
 	}
 }
 
 @mixin tablet {
-	@media (max-width: 1300px) {
+	@media (max-width: 1240px) {
 		@content;
 	}
 }
