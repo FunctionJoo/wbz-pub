@@ -559,6 +559,9 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 500px;
+    .mainPopup-wrap {
+        position: relative;
+    }
     .swiper-navi {
         margin: -30px auto 0;
         position: absolute;
@@ -576,13 +579,29 @@
             position: absolute;
             z-index: 10;
             &.prev {
-                background-image: url("../images/common/ico/ico_swiper_prev_w.svg");
+                background-image: url("../images/common/ico/swiper_prev.svg");
                 left: -81px;
             }
             &.next {
-                background-image: url("../images/common/ico/ico_swiper_next_w.svg");
+                background-image: url("../images/common/ico/swiper_next.svg");
                 right: -81px;
             }
+        }
+    }
+    .swiper-count {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        bottom: 90px;
+        transform: translateX(-50%);
+        width: auto;
+        color: #fff;
+        font-size: 16px;
+        span {
+            font-family: $mont;
+        }
+        em {
+            margin: 0 4px;
         }
     }
     .swiper {
@@ -599,17 +618,6 @@
                 }
             }
         }
-        .swiper-count {
-            position: absolute;
-            z-index: 2;
-            left: 50%;
-            bottom: 20px;
-            transform: translateX(-50%);
-            width: auto;
-            color: #fff;
-            font-family: $mont;
-            font-size: 16px;
-        }
     }
     .mainpop-menu {
         display: flex;
@@ -620,7 +628,18 @@
             height: 70px;
             line-height: 68px;
             & + button {
-                border-left: 1px solid #666;
+                position: relative;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 1px;
+                    height: 16px;
+                    background: #bcbcbc;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
         }
     }
@@ -731,5 +750,38 @@
         transform: initial;
         width: 100%;
         max-width: 100%;
+        .swiper-navi {
+            top: -18px;
+            .swiper-button {
+                &.prev {
+                    background-image: url("../images/common/ico/swiper_prev_m.svg");
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-left: -42px;
+                }
+                &.next {
+                    background-image: url("../images/common/ico/swiper_next_m.svg");
+                    right: 50%;
+                    transform: translateX(50%);
+                    margin-right: -42px;
+                }
+            }
+        }
+        .swiper-count {
+            bottom: auto;
+            top: -28px;
+            z-index: 1000;
+        }
+        .swiper {
+            border-radius: 12px 12px 0px 0px;
+            overflow: hidden;
+        }
+        .mainpop-menu {
+            button {
+                font-size: 14px;
+                height: 40px;
+                line-height: 38px;
+            }
+        }
     }
 }

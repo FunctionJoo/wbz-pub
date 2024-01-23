@@ -540,6 +540,9 @@
   width: 100%;
   max-width: 500px;
 }
+#mainPopup .mainPopup-wrap {
+  position: relative;
+}
 #mainPopup .swiper-navi {
   margin: -30px auto 0;
   position: absolute;
@@ -559,12 +562,28 @@
   z-index: 10;
 }
 #mainPopup .swiper-navi .swiper-button.prev {
-  background-image: url("../images/common/ico/ico_swiper_prev_w.svg");
+  background-image: url("../images/common/ico/swiper_prev.svg");
   left: -81px;
 }
 #mainPopup .swiper-navi .swiper-button.next {
-  background-image: url("../images/common/ico/ico_swiper_next_w.svg");
+  background-image: url("../images/common/ico/swiper_next.svg");
   right: -81px;
+}
+#mainPopup .swiper-count {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%);
+  width: auto;
+  color: #fff;
+  font-size: 16px;
+}
+#mainPopup .swiper-count span {
+  font-family: "Montserrat", sans-serif;
+}
+#mainPopup .swiper-count em {
+  margin: 0 4px;
 }
 #mainPopup .swiper {
   position: relative;
@@ -577,17 +596,6 @@
 #mainPopup .swiper .swiper-wrapper .swiper-slide a img {
   width: 100%;
 }
-#mainPopup .swiper .swiper-count {
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  width: auto;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
 #mainPopup .mainpop-menu {
   display: flex;
 }
@@ -599,7 +607,18 @@
   line-height: 68px;
 }
 #mainPopup .mainpop-menu button + button {
-  border-left: 1px solid #666;
+  position: relative;
+}
+#mainPopup .mainpop-menu button + button::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background: #bcbcbc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
@@ -700,5 +719,34 @@
     transform: initial;
     width: 100%;
     max-width: 100%;
+  }
+  #mainPopup .swiper-navi {
+    top: -18px;
+  }
+  #mainPopup .swiper-navi .swiper-button.prev {
+    background-image: url("../images/common/ico/swiper_prev_m.svg");
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -42px;
+  }
+  #mainPopup .swiper-navi .swiper-button.next {
+    background-image: url("../images/common/ico/swiper_next_m.svg");
+    right: 50%;
+    transform: translateX(50%);
+    margin-right: -42px;
+  }
+  #mainPopup .swiper-count {
+    bottom: auto;
+    top: -28px;
+    z-index: 1000;
+  }
+  #mainPopup .swiper {
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+  }
+  #mainPopup .mainpop-menu button {
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px;
   }
 }

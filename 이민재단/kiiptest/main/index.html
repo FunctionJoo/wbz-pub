@@ -329,6 +329,7 @@
 					</div>
 				</div>
 			</div>
+			<button type="button" class="bm_button type_auto" onclick="localStorage.removeItem('promoshowtime'); location.reload()">그만보기 리셋</button>
 		</main>
 
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
@@ -337,38 +338,40 @@
 	<!-- 메인팝업 -->
 	<div id="mainPopupBg" style="display: none;"></div>
 	<div id="mainPopup" style="display: none;">
-		<div class="swiper-navi">
-			<button type="button" class="swiper-button prev">이전</button>
-			<button type="button" class="swiper-button next">다음</button>
-		</div>
-		<div class="swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<a href="#">
-						<img src="../images/common/img/main_visual_m.png" alt="">
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#">
-						<img src="../images/common/img/main_visual_m.png" alt="">
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#">
-						<img src="../images/common/img/main_visual_m.png" alt="">
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#">
-						<img src="../images/common/img/main_visual_m.png" alt="">
-					</a>
-				</div>
+		<div class="mainPopup-wrap">
+			<div class="swiper-navi">
+				<button type="button" class="swiper-button prev">이전</button>
+				<button type="button" class="swiper-button next">다음</button>
 			</div>
 			<div class="swiper-count"></div>
-		</div>
-		<div class="mainpop-menu">
-			<button type="button" class="mp-close mp-close-day">오늘 하루 보지 않기</button>
-			<button type="button" class="mp-close mp-close-x">닫기</button>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="../images/common/img/main_visual_m.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="../images/common/img/main_visual_m.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="../images/common/img/main_visual_m.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="../images/common/img/main_visual_m.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mainpop-menu">
+				<button type="button" class="mp-close mp-close-day">오늘 하루 보지 않기</button>
+				<button type="button" class="mp-close mp-close-x">닫기</button>
+			</div>
 		</div>
 	</div>
 
@@ -425,7 +428,7 @@
 					// 갯수 표현 마크업
 					renderFraction: function (currentClass, totalClass) {
 						return `<span class="${currentClass}"></span>` +
-								`/` +
+								`<em>/</em>` +
 								`<span class="${totalClass}"></span>`;
 					}
 				},
