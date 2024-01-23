@@ -334,6 +334,44 @@
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
+	<!-- 메인팝업 -->
+	<div id="mainPopupBg" style="display: none;"></div>
+	<div id="mainPopup" style="display: none;">
+		<div class="swiper-navi">
+			<button type="button" class="swiper-button prev">이전</button>
+			<button type="button" class="swiper-button next">다음</button>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="../images/common/img/main_visual_m.png" alt="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="../images/common/img/main_visual_m.png" alt="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="../images/common/img/main_visual_m.png" alt="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="../images/common/img/main_visual_m.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="swiper-count"></div>
+		</div>
+		<div class="mainpop-menu">
+			<button type="button" class="mp-close mp-close-day">오늘 하루 보지 않기</button>
+			<button type="button" class="mp-close mp-close-x">닫기</button>
+		</div>
+	</div>
+
 	<script>
 		document.querySelectorAll('.tab button').forEach(function (btn, idx) {
 			btn.addEventListener('click', function () {
@@ -347,6 +385,70 @@
 				document.querySelectorAll('.tab-box')[idx].classList.add('on');
 			});
 		});
+
+		// 메인 팝업
+		var handleStorage = {
+			// 스토리지에 데이터 쓰기(이름, 만료일)
+			setStorage: function (name, exp) {
+				// 만료 시간 구하기(exp를 ms단위로 변경)
+				var date = new Date();
+				date = date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+
+				// 로컬 스토리지에 저장하기
+					// (값을 따로 저장하지 않고 만료 시간을 저장)
+				localStorage.setItem(name, date)
+			},
+			// 스토리지 읽어오기
+			getStorage: function (name) {
+				var now = new Date();
+				now = now.setTime(now.getTime());
+				// 현재 시각과 스토리지에 저장된 시각을 각각 비교하여
+				// 시간이 남아 있으면 true, 아니면 false 리턴
+				return parseInt(localStorage.getItem(name)) > now
+			}
+		};
+
+		// Check if the user has chosen not to see the popup again
+		if (!handleStorage.getStorage('promoshowtime')) {
+			// Display the popup
+			document.querySelector('#mainPopupBg').style.display = '';
+			document.querySelector('#mainPopup').style.display = '';
+
+			const mainpopSwiper = new Swiper('#mainPopup .swiper', {
+				autoplay: true,
+				speed: 800,
+				loop : true,
+				autoHeight : true,
+				pagination: {
+					el: '.swiper-count',
+					type: 'fraction',
+					// 갯수 표현 마크업
+					renderFraction: function (currentClass, totalClass) {
+						return `<span class="${currentClass}"></span>` +
+								`/` +
+								`<span class="${totalClass}"></span>`;
+					}
+				},
+				navigation: {
+					nextEl: '#mainPopup .swiper-navi .next',
+					prevEl: '#mainPopup .swiper-navi .prev',
+				},
+			});
+
+		// 일반 닫기 이벤트
+		document.querySelectorAll('.mp-close').forEach(($el) => {
+			$el.addEventListener('click', (e) => {
+				document.querySelector('#mainPopupBg').remove();
+				document.querySelector('#mainPopup').remove();
+			});
+		});
+
+		// 그만보기 체크
+		document.querySelector('.mp-close.mp-close-day').addEventListener('click', () => {
+			// 하루동안 보지 않게 세팅
+			handleStorage.setStorage('promoshowtime', 1);
+		});
+		}
 	</script>
 </body>
 

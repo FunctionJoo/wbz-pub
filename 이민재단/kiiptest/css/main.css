@@ -404,7 +404,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1240px) {
   .main-content .main-visual {
     flex-direction: column;
     gap: 40px;
@@ -520,6 +520,88 @@
     line-height: 40px;
   }
 }
+#mainPopupBg {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222222;
+  opacity: 0.4;
+}
+
+#mainPopup {
+  position: fixed;
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+}
+#mainPopup .swiper-navi {
+  margin: -30px auto 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+#mainPopup .swiper-navi .swiper-button {
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 31px 57px;
+  position: absolute;
+  z-index: 10;
+}
+#mainPopup .swiper-navi .swiper-button.prev {
+  background-image: url("../images/common/ico/ico_swiper_prev_w.svg");
+  left: -81px;
+}
+#mainPopup .swiper-navi .swiper-button.next {
+  background-image: url("../images/common/ico/ico_swiper_next_w.svg");
+  right: -81px;
+}
+#mainPopup .swiper {
+  position: relative;
+  overflow: hidden;
+}
+#mainPopup .swiper .swiper-wrapper .swiper-slide a {
+  display: block;
+  position: relative;
+}
+#mainPopup .swiper .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+}
+#mainPopup .swiper .swiper-count {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: auto;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+#mainPopup .mainpop-menu {
+  display: flex;
+}
+#mainPopup .mainpop-menu button {
+  flex: 1;
+  background: #fff;
+  font-size: 18px;
+  height: 70px;
+  line-height: 68px;
+}
+#mainPopup .mainpop-menu button + button {
+  border-left: 1px solid #666;
+}
+
 @media (max-width: 768px) {
   .main-content {
     padding-top: 20px;
@@ -609,5 +691,14 @@
   }
   .main-content .main-cont .cont-btm .cs-wrap .time {
     padding-top: 10px;
+  }
+  #mainPopup {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: initial;
+    width: 100%;
+    max-width: 100%;
   }
 }
