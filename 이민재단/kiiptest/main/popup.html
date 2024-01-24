@@ -42,6 +42,9 @@
 						<!-- alert 팝업 버튼 2개 -->
 						<button type="button" class="btn form_submit btn_pop" onclick="$popup.template('#alertPopup')">alert 팝업 버튼 2개</button>
 
+						<!-- 비밀번호 확인 -->						
+						<button type="button" class="btn btn_pop" onclick="$popup.template('#passwordPopup')">비밀번호 확인</button>
+
 						<!-- 이용약관 및 개인정보 팝업 -->
 						<!-- <button type="button" class="btn" onclick="$popup.template('#termsPopup')">이용약관 및 개인정보처리방침</button> -->
 
@@ -85,6 +88,29 @@
 			</div>
 		</div>
 		<!-- //이용약관 및 개인정보 팝업 -->
+
+		<!-- 비밀번호 확인 팝업 -->
+		<div class="wbz-popup-cont is-template type-alert" id="passwordPopup">
+			<div class="popup-header">
+				<button type="button" class="popup-close" onclick="$popup.close();">✕</button>
+			</div>
+			<div class="popup-cont">
+				<div class="password-wrap">
+					<div class="popup-text">
+						비밀번호 확인
+						<div class="input-wrap">
+							<input type="text" name="" id="" placeholder="숫자 4자리">
+						</div>
+						<p class="error-txt">입력한 비밀번호가 올바르지 않습니다.</p>
+					</div>
+					<div class="popup-button">
+						<button type="button" class="cr_1 popup-confirm-event">확인</button>
+						<button type="button" class="cr_2 popup-close">취소</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //비밀번호 확인 팝업 -->
 
 		<!-- 회원탈퇴 팝업 -->
 		<div class="wbz-popup-cont is-template size-l" id="withdrawPopup">

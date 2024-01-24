@@ -1,5 +1,18 @@
 @import "./utility.scss";
 
+// 팝업
+.wbz-popup-cont {
+    .password-wrap {
+        .input-wrap {
+            margin-top: 20px;
+            width: 100%;
+            input {
+                text-align: center;
+            }
+        }
+    }
+}
+
 // pdf
 .document-wrap {
     .document-top {

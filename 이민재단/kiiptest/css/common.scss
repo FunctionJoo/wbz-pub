@@ -70,9 +70,14 @@ textarea:focus,
 .required {
 	&::after {
 		content: "*";
-		color: #024FC4;
+		color: #024fc4;
 		margin-left: 4px;
 	}
+}
+.error-txt {
+	color: #f50e0e;
+	font-size: 12px;
+	padding-top: 6px;
 }
 .empty {
 	border-radius: 3px;
@@ -260,7 +265,7 @@ textarea:focus,
 	}
 	input[type="radio"]:checked ~ label {
 		&:before {
-			background-image: url('../images/common/ico/radiobox_on.svg');
+			background-image: url("../images/common/ico/radiobox_on.svg");
 		}
 	}
 }
@@ -650,7 +655,7 @@ textarea:focus,
 			right: 0;
 		}
 	}
-	
+
 	.wbz-popup-cont {
 		padding: 20px 16px 10px;
 	}

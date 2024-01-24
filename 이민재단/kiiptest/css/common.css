@@ -68,8 +68,14 @@ textarea:focus,
 
 .required::after {
   content: "*";
-  color: #024FC4;
+  color: #024fc4;
   margin-left: 4px;
+}
+
+.error-txt {
+  color: #f50e0e;
+  font-size: 12px;
+  padding-top: 6px;
 }
 
 .empty {
