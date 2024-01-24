@@ -1,4 +1,192 @@
 @charset "UTF-8";
+.document-wrap .document-top {
+  background-color: #222;
+  padding: 21px 0;
+  position: relative;
+  height: 70px;
+}
+.document-wrap .document-top .btn-back {
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 100%;
+  background: url("../images/common/ico/document_btn_back.svg") no-repeat center;
+  border-right: 1px solid rgba(255, 255, 255, 0.44);
+}
+.document-wrap .document-top .btn-pdf {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 50px;
+  border-left: 1px solid rgba(255, 255, 255, 0.44);
+}
+.document-wrap .page {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.document-wrap .document-cont .num-list p {
+  font-size: 15px;
+  line-height: 18px;
+}
+.document-wrap .document-cont .num-list p + p {
+  padding-top: 12px;
+}
+.document-wrap .document-cont .tit {
+  font-weight: 700;
+  font-size: 26px;
+  display: block;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.document-wrap .document-cont .table-wrap table {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-bottom: 0px none;
+}
+.document-wrap .document-cont .table-wrap table th,
+.document-wrap .document-cont .table-wrap table td {
+  font-size: 15px;
+  padding: 6px;
+  height: 54px;
+  text-align: center;
+}
+.document-wrap .document-cont .table-wrap table th {
+  background-color: #f6f6f6;
+  font-weight: 400;
+  border: 1px solid #d3d3d3;
+  border-top-width: 0;
+}
+.document-wrap .document-cont .table-wrap table td {
+  background-color: #fff;
+  border: solid #d3d3d3;
+  border-width: 0 1px 1px 0;
+}
+.document-wrap .document-btm {
+  padding-top: 100px;
+  text-align: center;
+}
+.document-wrap .document-btm .txt, .document-wrap .document-btm .date {
+  font-weight: 500;
+  font-size: 16px;
+}
+.document-wrap .document-btm .date {
+  padding-top: 16px;
+}
+.document-wrap .document-btm .seal-area {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.document-wrap .document-btm .seal-area .kiiptest {
+  padding-left: 12px;
+  font-size: 20px;
+}
+.document-wrap .document-btm .seal-area img {
+  margin-left: 8px;
+}
+.document-wrap .caution-wrap {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px dashed #b2b2b2;
+}
+.document-wrap .caution-wrap .tit {
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+.document-wrap .caution-wrap .caution-box {
+  margin-top: 40px;
+  padding: 30px;
+  background: #f5f9fc;
+}
+.document-wrap .caution-wrap .caution-box p {
+  font-size: 15px;
+  line-height: 28px;
+}
+.document-wrap .map-wrap {
+  margin-top: 40px;
+  background: #ddd;
+}
+.document-wrap .map-wrap::before {
+  content: "";
+  display: block;
+  padding-bottom: 38.31%;
+}
+.document-wrap .career-wrap {
+  padding: 50px 0 120px;
+}
+.document-wrap .career-wrap .tit {
+  margin-top: 26px;
+}
+.document-wrap .career-wrap .table-wrap + .table-wrap {
+  margin-top: 50px;
+}
+.document-wrap .mytest-wrap {
+  padding: 80px 0 200px;
+}
+.document-wrap .certificate-wrap {
+  margin: 100px 0 120px;
+  padding: 40px 40px 120px;
+  border: 1px solid #222;
+}
+.document-wrap .certificate-wrap .document-cont .num-list p {
+  font-size: 18px;
+}
+.document-wrap .certificate-wrap .document-cont .tit {
+  padding-top: 18px;
+  padding-bottom: 100px;
+  font-size: 60px;
+}
+.document-wrap .certificate-wrap .document-cont .myinfo {
+  margin-left: auto;
+  max-width: 236px;
+}
+.document-wrap .certificate-wrap .document-cont .myinfo dl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.document-wrap .certificate-wrap .document-cont .myinfo dl + dl {
+  padding-top: 10px;
+}
+.document-wrap .certificate-wrap .document-cont .myinfo dl dt {
+  font-weight: 500;
+}
+.document-wrap .certificate-wrap .document-cont .txt, .document-wrap .certificate-wrap .document-cont .document-btm .date, .document-wrap .document-btm .certificate-wrap .document-cont .date {
+  padding-top: 276px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.document-wrap .certificate-wrap .document-cont .date {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.document-wrap .certificate-wrap .document-btm {
+  padding-top: 440px;
+  font-size: 16px;
+}
+.document-wrap .certificate-wrap .document-btm .kiiptest {
+  padding: 6px 0 0;
+  display: block;
+  font-size: 36px;
+}
+.document-wrap .certificate-wrap .document-btm img {
+  margin-left: 12px;
+}
+
 .register-box {
   display: flex;
   gap: 12px;

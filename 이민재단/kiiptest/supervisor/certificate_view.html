@@ -29,34 +29,53 @@
 </head>
 
 <body>
-	<!-- 본문 바로가기 -->
-	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
-	<div id="container">
-
-    <main class="wrap">
-			<img src="../images/dummy/complete_preview.png" alt="" usemap="#imagemap-sample1">
-		</main>
-
-    <map name="imagemap-sample1">
-			<area alt="" title="" href="./certificate01.html" coords="3,3,71,71" shape="rect">
-		</map>
-
-		<!-- <main id="contents" class="member">
-			<div class="tit-area">
-				<h2 class="tit">평가구분</h2>
-			</div>
+	<div class="document-wrap">
+		<div class="document-top">
 			<div class="w-set">
+				<button type="button" class="btn-back">뒤로가기</button>
+				<button type="button" class="btn-pdf">PDF 출력하기</button>
 			</div>
-		</main> -->
-
+		</div>
+		<div class="page">
+			<div class="certificate-wrap">
+				<div class="document-cont">
+					<div class="num-list">
+						<p>SU-12-구술-015</p>
+					</div>
+					<span class="tit">이수증</span>
+					<div class="myinfo">
+						<dl>
+							<dt>성명</dt>
+							<dd>홍길동</dd>
+						</dl>
+						<dl>
+							<dt>생년월일</dt>
+							<dd>1982. 05. 28</dd>
+						</dl>
+						<dl>
+							<dt>소속기관</dt>
+							<dd>한국이민재단</dd>
+						</dl>
+						<dl>
+							<dt>이수시간</dt>
+							<dd>8시간</dd>
+						</dl>
+					</div>
+					<p class="txt">위 사람은 법무부가 주최하고, 한국이민재단이 주관한<br>[사회통합프로그램 (KIIP) 기본소양평가 구술시험관 양성교육 (신규)을 성실히 수료하였으므로,<br>이에 증서를 수여합니다.</p>					
+					<p class="date">2024년 01월 06일</p>
+				</div>
+				<div class="document-btm">
+					<div class="seal-area">
+						<div>
+							<span>사회통합프로그램 중앙거점운영기관</span>
+							<span class="kiiptest">한국이민재단 이사장</span>
+						</div>
+						<img src="../images/dummy/seal.png" alt="직인">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
-	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
-	</script>
 </body>
+
 </html>

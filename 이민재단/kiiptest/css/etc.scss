@@ -1,5 +1,210 @@
 @import "./utility.scss";
 
+// pdf
+.document-wrap {
+    .document-top {
+        background-color: #222;
+        padding: 21px 0;
+        position: relative;
+        height: 70px;
+        .btn-back {
+            font-size: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 70px;
+            height: 100%;
+            background: url("../images/common/ico/document_btn_back.svg") no-repeat center;
+            border-right: 1px solid rgba(255, 255, 255, 0.44);
+        }
+        .btn-pdf {
+            font-size: 18px;
+            color: #fff;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            padding: 0 50px;
+            border-left: 1px solid rgba(255, 255, 255, 0.44);
+        }
+    }
+    .page {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .document-cont {
+        .num-list {
+            p {
+                font-size: 15px;
+                line-height: 18px;
+                & + p {
+                    padding-top: 12px;
+                }
+            }
+        }
+        .tit {
+            font-weight: 700;
+            font-size: 26px;
+            display: block;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        // 테이블
+        .table-wrap {
+            table {
+                width: 100%;
+                border: 1px solid #d3d3d3;
+                border-bottom: 0px none;
+                th,
+                td {
+                    font-size: 15px;
+                    padding: 6px;
+                    height: 54px;
+                    text-align: center;
+                }
+                th {
+                    background-color: #f6f6f6;
+                    font-weight: 400;
+                    border: 1px solid #d3d3d3;
+                    border-top-width: 0;
+                }
+                td {
+                    background-color: #fff;
+                    border: solid #d3d3d3;
+                    border-width: 0 1px 1px 0;
+                }
+            }
+        }
+    }
+    .document-btm {
+        padding-top: 100px;
+        text-align: center;
+        .txt {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .date {
+            @extend .txt;
+            padding-top: 16px;
+        }
+        .seal-area {
+            margin-top: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 16px;
+            .kiiptest {
+                padding-left: 12px;
+                font-size: 20px;
+            }
+            img {
+                margin-left: 8px;
+            }
+        }
+    }
+    .caution-wrap {
+        margin-top: 80px;
+        padding-top: 60px;
+        border-top: 1px dashed #b2b2b2;
+        .tit {
+            font-weight: 700;
+            font-size: 20px;
+            display: block;
+            text-align: center;
+        }
+        .caution-box {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f5f9fc;
+            p {
+                font-size: 15px;
+                line-height: 28px;
+            }
+        }
+    }
+    .map-wrap {
+        margin-top: 40px;
+        background: #ddd;
+        &::before {
+            content: "";
+            display: block;
+            padding-bottom: 38.31%;
+        }
+    }
+    .career-wrap {
+        padding: 50px 0 120px;
+        .tit {
+            margin-top: 26px;
+        }
+        .table-wrap {
+            & + .table-wrap {
+                margin-top: 50px;
+            }
+        }
+    }
+    .mytest-wrap {
+        padding: 80px 0 200px;
+    }
+    .certificate-wrap {
+        margin: 100px 0 120px;
+        padding: 40px 40px 120px;
+        border: 1px solid #222;
+        .document-cont {
+            .num-list {
+                p {
+                    font-size: 18px;
+                }
+            }
+            .tit {
+                padding-top: 18px;
+                padding-bottom: 100px;
+                font-size: 60px;
+            }
+            .myinfo {
+                margin-left: auto;
+                max-width: 236px;
+                dl {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 20px;
+                    & + dl {
+                        padding-top: 10px;
+                    }
+                    dt {
+                        font-weight: 500;
+                    }
+                }
+            }
+            .txt {
+                padding-top: 276px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 24px;
+            }
+            .date {
+                padding-top: 50px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 24px;
+            }
+        }
+        .document-btm {
+            padding-top: 440px;
+            font-size: 16px;
+            .kiiptest {
+                padding: 6px 0 0;
+                display: block;
+                font-size: 36px;
+            }
+            img {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
 .register-box {
     display: flex;
     gap: 12px;

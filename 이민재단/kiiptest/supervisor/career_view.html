@@ -29,26 +29,97 @@
 </head>
 
 <body>
-	<!-- 본문 바로가기 -->
-	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
-	<div id="container">
-
-    <main class="wrap">
-			<img src="../images/dummy/activity confirmation.png" alt="" usemap="#imagemap-sample1">
-		</main>
-
-		<map name="imagemap-sample1">
-			<area alt="" title="" href="./career_list.html" coords="3,3,71,71" shape="rect">
-		</map>
-
+	<div class="document-wrap">
+		<div class="document-top">
+			<div class="w-set">
+				<button type="button" class="btn-back">뒤로가기</button>
+				<button type="button" class="btn-pdf">PDF 출력하기</button>
+			</div>
+		</div>
+		<div class="page">
+			<div class="career-wrap">
+				<div class="document-cont">
+					<div class="num-list">
+						<p>제2022-0001호</p>
+						<p>KISF-평가-yy-0001서</p>
+					</div>
+					<span class="tit">활동 확인서</span>
+					<div class="table-wrap type-row">
+						<table>
+							<caption>신청인 정보를 성명, 연락처, 주민등록번호, 구술감독관 양성 이수 번호로 나타낸 표입니다.</caption>
+							<colgroup>
+								<col style="width: 16%;">
+								<col style="width: 16%;">
+								<col style="width: 26%;">
+								<col style="width: 16%;">
+								<col style="width: 26%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="2">신청인</th>
+									<th scope="row">성명</th>
+									<td>홍길동</td>
+									<th scope="row">연락처</th>
+									<td>010-0000-0000</td>
+								</tr>
+								<tr>
+									<th scope="row">주민등록번호<br>(외국인등록번호)</th>
+									<td>000000-0000000</td>
+									<th scope="row">구슬감독관 양성<br>이수(수료) 번호</th>
+									<td>SU-12-구술-015</td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+					<div class="table-wrap">
+						<table>
+							<caption>신청인 정보를 성명, 연락처, 주민등록번호(외국인등록번호), 구술감독관 양성 이수(수료) 번호로 나타낸 표입니다.</caption>
+							<colgroup>
+								<col style="width: 16%;">
+								<col style="width: 28%;">
+								<col style="width: 28%;">
+								<col style="width: 28%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="col" rowspan="5">경력</th>
+									<th scope="col">활동내용</th>
+									<th scope="col">활동 기간</th>
+									<th scope="col">활동 일수 및 시간</th>
+								</tr>
+								<tr>
+									<td rowspan="4">사회통합프로그램(KIIP) 평가 구술감독관</td>
+									<td>2023.01.30~2024.05.20</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>2023.01.30~2024.05.20</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>2023.01.30~2024.05.20</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>2023.01.30~2024.05.20</td>
+									<td>3</td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+				</div>
+				<div class="document-btm">
+					<p class="txt">위 사람은 법무부 사회통합프로그램(KIIP) 평가의 구술감독관으로 활동하였음을 확인합니다.</p>
+					<p class="date">2024년 01월 06일</p>
+					<div class="seal-area">
+						<span>재단<br>법인</span>
+						<span class="kiiptest">한국이민재단 이사장</span>
+						<img src="../images/dummy/seal.png" alt="직인">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
-	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
-	</script>
 </body>
+
 </html>
