@@ -45,7 +45,7 @@
 									<a href="../main/index.html" class="home">Home</a>
 								</li>
 								<li>
-									<a href="../service/notice_list.html" class="menu has-select">알림마당</a>
+									<a href="#" class="menu has-select">알림마당</a>
 									<ul>
 										<li>
 											<a href="#">KIIP 평가안내</a>
@@ -65,7 +65,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="./qna_list.html" class="menu has-select">Q&A</a>
+									<a href="#" class="menu has-select">Q&A</a>
 									<ul>
 										<li>
 											<a href="./notice_list.html">공지사항</a>
@@ -84,28 +84,109 @@
 							</ul>
 						</div>
 					</div>
+
+					<div class="con-btm">
+						<div class="w-set">
+							<div class="tit-area">
+								<h2 class="tit">Q&A</h2>
+								<p class="sub-txt">
+									한국이민재단에 대해 궁금하신 점이나 의견을 남겨주세요. <br>
+									문의하신 내용은 최대한 빠르게 확인하여 친절하게 답변 드리겠습니다.
+								</p>
+							</div>
+							<div class="boardList-wrap">
+								<div class="search-wrap">
+									<div class="input-wrap">
+										<form action="">
+											<label for="category" class="is-blind">카테고리 선택</label>
+											<select name="category" id="category">
+												<option value="">제목+내용</option>
+												<option value="">제목</option>
+												<option value="">내용</option>
+												<option value="">등록자</option>
+											</select>
+											<div class="input-label">
+												<label for="searchTit" class="is-blind">검색어</label>
+												<input type="text" name="searchTit" id="searchTit">
+												<button type="submit" class="search-btn">검색</button>
+											</div>
+										</form>
+									</div>
+									<div class="write-btn">
+										<a href="./qna_write.html" class="btn color_4">글쓰기</a>
+									</div>
+								</div>
+								<div class="board-count">
+									<span>총 <em>0,000</em>건</span>
+								</div>
+								<div class="table-top hide-m qna-top">
+									<div class="list no">No.</div>
+									<div class="list title">제목</div>
+									<div class="list writer">등록자</div>
+									<div class="list date">등록일</div>
+									<div class="list asnswer">답변 여부</div>
+								</div>
+								<ul class="table-wrap qna-wrap">
+									<li class="table-list">
+										<div class="list no">
+											<span>10</span>
+										</div>
+										<div class="list title">
+											<a href="./qna_view.html">입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)</a>
+											<span class="new-ico"></span>
+										</div>
+										<div class="list writer">Brian bobi Brian</div>
+										<div class="list date">2023-12-18</div>
+										<!-- 답변 완료일 경우 complet 클래스 추가 -->
+										<div class="list asnswer">
+											<span>답변 대기</span>
+											<span>답변 완료</span>
+										</div>
+									</li>
+									<li class="table-list">
+										<div class="list no">
+											<span>9</span>
+										</div>
+										<div class="list title">
+											<a href="./qna_view.html">입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)입력된 제목이 표시됩니다. 입력된 제목이 표시됩니다…(최대 1줄)</a>
+										</div>
+										<div class="list writer">Brian bobi Brian</div>
+										<div class="list date">2023-12-18</div>
+										<div class="list asnswer complet">
+											<span>답변 대기</span>
+											<span>답변 완료</span>
+										</div>
+									</li>
+								</ul>
+								<div class="paging">
+									<a href="#" class="move first">처음 페이지</a>
+									<a href="#" class="move prev">이전 페이지</a>
+									<a href="#" class="on">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#" class="hide-m">6</a>
+									<a href="#" class="hide-m">7</a>
+									<a href="#" class="hide-m">8</a>
+									<a href="#" class="hide-m">9</a>
+									<a href="#" class="hide-m">10</a>
+									<a href="#" class="move next">다음 페이지</a>
+									<a href="#" class="move last">마지막 페이지</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
 
-    <main class="wrap">
-			<img src="../images/dummy/Q&A.png" alt="Q&A" usemap="#imagemap-sample1">
-		</main>
-
-    <map name="imagemap-sample1">
-			<area alt="" title="" href="./qna_write.html" coords="1414,275,1510,312" shape="rect">
-      <area alt="" title="" href="./qna_view.html" coords="398,442,910,492" shape="rect">
-		</map>
-
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
 	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
+
 	</script>
 </body>
 </html>
