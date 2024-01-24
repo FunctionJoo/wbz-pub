@@ -1,5 +1,62 @@
 @import "./utility.scss";
 
+// 회원가입
+.member-wrap {
+    .join-wrap {
+        .w-set {
+            &.type-s {
+                max-width: 494px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .join-top {
+        .step-list {
+            margin-top: 60px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                &.on {
+                    .num {
+                        background: #111e55;
+                    }
+                    .txt {
+                        font-weight: 700;
+                        color: #111e55;
+                    }
+                }
+                &.line {
+                    display: block;
+                    width: 16px;
+                    height: 4px;
+                    background: url("../images/common/img/register_line.svg") no-repeat center;
+                    background-size: 100% 100%;
+                }
+            }
+            .num {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                border-radius: 50%;
+                background: #ddd;
+                font-family: $mont;
+                font-weight: 600;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+            }
+            .txt {
+                margin-left: 6px;
+                font-size: 18px;
+                color: #b2b2b2;
+            }
+        }
+    }
+}
+
 // 팝업
 .wbz-popup-cont {
     .password-wrap {
@@ -539,6 +596,36 @@
 }
 
 @include tablet {
+    // 회원가입
+    .member-wrap {
+        .join-top {
+            .step-list {
+                align-items: flex-start;
+                margin: 30px 0 24px;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    &.on {
+                        .txt {
+                            font-weight: 600;
+                        }
+                    }
+                    &.line {
+                       margin-top: 54px;
+                    }
+                }
+                .num {
+                    
+                }
+                .txt {
+                    margin: 10px 0 0;
+                }
+            }
+        }
+    }
+
     .register-box {
         flex-direction: column;
         margin-top: 32px;
@@ -666,6 +753,33 @@
 }
 
 @include mobile {
+     // 회원가입
+    .member-wrap {
+        .join-top {
+            .step-list {
+                justify-content: space-around;
+                li {
+                    &.on {
+                        .txt {
+                            font-weight: 600;
+                        }
+                    }
+                    &.line {
+                       margin-top: 50px;
+                       width: 10px;
+                    }
+                }
+                .num {
+                    
+                }
+                .txt {
+                    margin: 10px 0 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
     .register-box {
         .register-list {
             .desc {

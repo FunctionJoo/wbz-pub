@@ -1,4 +1,48 @@
 @charset "UTF-8";
+.member-wrap .join-wrap .w-set.type-s {
+  max-width: 494px;
+  margin: 0 auto;
+}
+.member-wrap .join-top .step-list {
+  margin-top: 60px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.member-wrap .join-top .step-list li.on .num {
+  background: #111e55;
+}
+.member-wrap .join-top .step-list li.on .txt, .member-wrap .join-top .step-list li.on .document-wrap .document-btm .date, .document-wrap .document-btm .member-wrap .join-top .step-list li.on .date {
+  font-weight: 700;
+  color: #111e55;
+}
+.member-wrap .join-top .step-list li.line {
+  display: block;
+  width: 16px;
+  height: 4px;
+  background: url("../images/common/img/register_line.svg") no-repeat center;
+  background-size: 100% 100%;
+}
+.member-wrap .join-top .step-list .num {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  background: #ddd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+.member-wrap .join-top .step-list .txt, .member-wrap .join-top .step-list .document-wrap .document-btm .date, .document-wrap .document-btm .member-wrap .join-top .step-list .date {
+  margin-left: 6px;
+  font-size: 18px;
+  color: #b2b2b2;
+}
+
 .wbz-popup-cont .password-wrap .input-wrap {
   margin-top: 20px;
   width: 100%;
@@ -473,6 +517,25 @@
 }
 
 @media (max-width: 1240px) {
+  .member-wrap .join-top .step-list {
+    align-items: flex-start;
+    margin: 30px 0 24px;
+  }
+  .member-wrap .join-top .step-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .member-wrap .join-top .step-list li.on .txt, .member-wrap .join-top .step-list li.on .document-wrap .document-btm .date, .document-wrap .document-btm .member-wrap .join-top .step-list li.on .date {
+    font-weight: 600;
+  }
+  .member-wrap .join-top .step-list li.line {
+    margin-top: 54px;
+  }
+  .member-wrap .join-top .step-list .txt, .member-wrap .join-top .step-list .document-wrap .document-btm .date, .document-wrap .document-btm .member-wrap .join-top .step-list .date {
+    margin: 10px 0 0;
+  }
   .register-box {
     flex-direction: column;
     margin-top: 32px;
@@ -586,6 +649,20 @@
   }
 }
 @media (max-width: 768px) {
+  .member-wrap .join-top .step-list {
+    justify-content: space-around;
+  }
+  .member-wrap .join-top .step-list li.on .txt, .member-wrap .join-top .step-list li.on .document-wrap .document-btm .date, .document-wrap .document-btm .member-wrap .join-top .step-list li.on .date {
+    font-weight: 600;
+  }
+  .member-wrap .join-top .step-list li.line {
+    margin-top: 50px;
+    width: 10px;
+  }
+  .member-wrap .join-top .step-list .txt, .member-wrap .join-top .step-list .document-wrap .document-btm .date, .document-wrap .document-btm .member-wrap .join-top .step-list .date {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
   .register-box .register-list .desc .table-wrap .list-row {
     width: 100%;
   }

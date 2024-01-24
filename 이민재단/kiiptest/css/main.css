@@ -407,7 +407,7 @@
 
 #mainPopupBg {
   position: fixed;
-  z-index: 100;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -418,7 +418,7 @@
 
 #mainPopup {
   position: fixed;
-  z-index: 101;
+  z-index: 10000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -560,8 +560,8 @@
     border-radius: 24px;
   }
   .main-content .main-cont .tab-wrap .tab-box .table-wrap .table-body {
-    margin: 24px -12px 0 0;
-    padding: 0 12px 0 0;
+    margin: 24px -10px 0 0;
+    padding: 0 10px 0 0;
     height: 804px;
   }
   .main-content .main-cont .tab-wrap .tab-box .table-wrap .list-row {
