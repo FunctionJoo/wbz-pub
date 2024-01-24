@@ -381,6 +381,9 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 0 14px;
   line-height: 48px;
 }
+.member-wrap .input-wrap input::-moz-placeholder {
+  color: #a7a7a7;
+}
 .member-wrap .input-wrap input::placeholder {
   color: #a7a7a7;
 }
@@ -1197,7 +1200,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .board-wrap .boardList-wrap .table-wrap .table-list .list.title > a {
   display: inline-block;
-  max-width: calc(100% - 300px);
+  max-width: calc(100% - 30px);
   vertical-align: middle;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1217,6 +1220,67 @@ input[type=number]::-webkit-inner-spin-button {
 .board-wrap .boardList-wrap .list.hit {
   width: 100px;
 }
+.board-wrap .boardList-wrap .faq-wrap {
+  border-top: 1px solid #222222;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list {
+  border-bottom: 1px solid #DDDDDD;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list .cate {
+  font-size: 20px;
+  font-weight: 700;
+  color: #024fc4;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dt {
+  padding: 30px;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dt > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dt > a.on .ico-arr {
+  transform: rotate(180deg);
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dt > a .q-wrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dt > a .q-wrap .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dt > a .ico-arr {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/common/ico/faq_downarrow.svg");
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dd {
+  padding: 30px;
+  border-top: 1px solid #DDDDDD;
+  gap: 30px;
+  background-color: rgba(170, 204, 255, 0.1);
+  display: flex;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dd .answer-wrap .answer-tit {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list dd .answer-wrap .answer-txt {
+  font-size: 16px;
+  color: #555;
+  word-break: break-all;
+}
+.board-wrap .boardList-wrap .faq-wrap .faq-list:last-of-type {
+  border: 0;
+}
 .board-wrap .boardView-wrap .btn-wrap {
   padding-top: 60px;
   justify-content: center;
@@ -1232,25 +1296,35 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .board-wrap .boardView-wrap .top-wrap {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
+  gap: 10px;
   border-bottom: 2px solid #222222;
   padding-bottom: 24px;
 }
-.board-wrap .boardView-wrap .top-wrap > div {
+.board-wrap .boardView-wrap .top-wrap .tit-wrap {
   display: flex;
-  align-items: center;
+  align-items: start;
+  line-height: 32px;
 }
-.board-wrap .boardView-wrap .top-wrap .tit {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+.board-wrap .boardView-wrap .top-wrap .tit-wrap.is-notice .tit {
   margin-left: 12px;
 }
+.board-wrap .boardView-wrap .top-wrap .tit-wrap > span {
+  flex: 0 0 auto;
+}
+.board-wrap .boardView-wrap .top-wrap .tit {
+  flex: 1;
+  font-weight: 600;
+  font-size: 24px;
+}
 .board-wrap .boardView-wrap .top-wrap .sub-wrap {
-  font-size: 16px;
+  flex: 0 0 auto;
+  font-size: 0;
 }
 .board-wrap .boardView-wrap .top-wrap .sub-wrap > span {
+  font-size: 16px;
+  line-height: 32px;
   font-family: "Montserrat", sans-serif;
 }
 .board-wrap .boardView-wrap .top-wrap .sub-wrap > span.date::after {
@@ -1262,22 +1336,23 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0 20px;
 }
 .board-wrap .boardView-wrap .cont-area {
-  padding: 40px 6px;
+  padding: 40px 16px;
   border-bottom: 1px solid #D3D3D3;
 }
 .board-wrap .boardView-wrap .cont-area .txt {
   font-size: 16px;
   line-height: 29px;
-  word-break: keep-all;
+  word-break: break-all;
 }
 .board-wrap .boardView-wrap .attach-area {
   display: flex;
-  align-items: flex-start;
+  align-items: start;
   gap: 12px;
   padding: 20px 0;
   border-bottom: 1px solid #D3D3D3;
 }
 .board-wrap .boardView-wrap .attach-area .cate {
+  flex: 0 0 auto;
   display: inline-block;
   background-color: #fff;
   border-radius: 3px;
@@ -1286,14 +1361,25 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 0 20px;
   line-height: 32px;
 }
+.board-wrap .boardView-wrap .attach-area .attach-list {
+  padding-right: 16px;
+  align-self: center;
+}
 .board-wrap .boardView-wrap .attach-area .attach-list .attach {
-  display: block;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left top;
   background-size: 25px;
   padding-left: 36px;
   font-size: 16px;
   line-height: 26px;
+  word-break: break-all;
+}
+.board-wrap .boardView-wrap .attach-area .attach-list .attach .f-name {
+  display: inline-block;
+}
+.board-wrap .boardView-wrap .attach-area .attach-list .attach:first-of-type {
+  background-position: left top 3px;
+  padding-top: 3px;
 }
 .board-wrap .boardView-wrap .attach-area .attach-list .attach.doc {
   background-image: url("../images/common/ico/file_doc.svg");
@@ -1802,6 +1888,73 @@ input[type=number]::-webkit-inner-spin-button {
   .mypage-wrap .cont .pay-box dl dt {
     width: auto;
   }
+  .board-wrap .boardList-wrap .table-wrap {
+    border-top: 2px solid #222;
+  }
+  .board-wrap .boardList-wrap .table-wrap .table-list .list.no {
+    width: 80px;
+  }
+  .board-wrap .boardList-wrap .table-wrap .table-list .list.date {
+    width: 120px;
+  }
+  .board-wrap .boardList-wrap .table-wrap .table-list .list.hit {
+    width: 70px;
+  }
+  .board-wrap .boardList-wrap .table-wrap .table-list .list.title {
+    padding-left: 0;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list .cate {
+    font-size: 18px;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list dt {
+    padding: 14px 4px;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list dt > a .q-wrap {
+    gap: 8px;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list dt > a .q-wrap .title {
+    font-size: 16px;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list dt > a .ico-arr {
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list dd {
+    padding: 14px 4px;
+    gap: 8px;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list dd .answer-wrap .answer-tit {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .board-wrap .boardList-wrap .faq-wrap .faq-list dd .answer-wrap .answer-txt {
+    font-size: 14px;
+  }
+  .board-wrap .boardView-wrap .top-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 14px;
+    border-width: 1px;
+  }
+  .board-wrap .boardView-wrap .top-wrap .tit-wrap {
+    padding-right: 10px;
+  }
+  .board-wrap .boardView-wrap .top-wrap .tit {
+    font-size: 18px;
+  }
+  .board-wrap .boardView-wrap .top-wrap .sub-wrap {
+    padding-left: 5px;
+  }
+  .board-wrap .boardView-wrap .top-wrap .sub-wrap > span {
+    line-height: 18px;
+  }
+  .board-wrap .boardView-wrap .top-wrap .sub-wrap > span.date::after {
+    margin: 0 8px;
+  }
+  .board-wrap .boardView-wrap .cont-area {
+    padding: 20px 16px;
+  }
 }
 @media (max-width: 768px) {
   .con-top .tit-area {
@@ -1996,6 +2149,9 @@ input[type=number]::-webkit-inner-spin-button {
   .member-wrap .join-wrap .join-form .btn-wrap .btn {
     flex: 1;
   }
+  .board-wrap .tit-area {
+    margin-bottom: 30px;
+  }
   .board-wrap .boardList-wrap .search-wrap {
     max-width: 100%;
     height: auto;
@@ -2027,7 +2183,12 @@ input[type=number]::-webkit-inner-spin-button {
     align-items: center;
     gap: 12px 10px;
   }
+  .board-wrap .boardList-wrap .table-wrap .table-list .list.no, .board-wrap .boardList-wrap .table-wrap .table-list .list.date, .board-wrap .boardList-wrap .table-wrap .table-list .list.hit {
+    width: auto;
+    font-size: 14px;
+  }
   .board-wrap .boardList-wrap .table-wrap .table-list .list.title {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0;
@@ -2035,6 +2196,9 @@ input[type=number]::-webkit-inner-spin-button {
   .board-wrap .boardList-wrap .table-wrap .table-list .list.title > a {
     max-width: calc(100% - 5px);
     width: calc(100% - 5px);
+  }
+  .board-wrap .boardList-wrap .table-wrap .table-list .list.title .new-ico {
+    margin-right: 16px;
   }
   .board-wrap .boardList-wrap .table-wrap .table-list .list.no {
     display: none;
@@ -2053,15 +2217,35 @@ input[type=number]::-webkit-inner-spin-button {
     margin-left: 10px;
     background-color: #d3d3d3;
   }
-  .board-wrap .boardList-wrap .table-wrap .list.no, .board-wrap .boardList-wrap .table-wrap .list.date, .board-wrap .boardList-wrap .table-wrap .list.hit {
-    width: auto;
+  .board-wrap .boardView-wrap .btn-wrap {
+    padding-top: 40px;
+  }
+  .board-wrap .boardView-wrap .btn-wrap .list_btn {
+    font-size: 14px;
+    padding-left: 19px;
+    background-size: 11px 8px;
+  }
+  .board-wrap .boardView-wrap .top-wrap .sub-wrap > span {
     font-size: 14px;
   }
-  .board-wrap .boardList-wrap .table-wrap .list.title {
-    width: 100%;
+  .board-wrap .boardView-wrap .cont-area {
+    padding: 20px 0;
   }
-  .board-wrap .boardList-wrap .table-wrap .list.title .new-ico {
-    margin-right: 16px;
+  .board-wrap .boardView-wrap .cont-area .txt {
+    line-height: 26px;
+  }
+  .board-wrap .boardView-wrap .attach-area {
+    padding: 14px 0;
+  }
+  .board-wrap .boardView-wrap .attach-area .cate {
+    display: none;
+  }
+  .board-wrap .boardView-wrap .attach-area .attach-list .attach:first-of-type {
+    background-position: left top;
+    padding-top: 0;
+  }
+  .board-wrap .boardView-wrap .attach-area .attach-list .attach:first-of-type + .attach {
+    margin-top: 10px;
   }
   .register-wrap .con-btm .cont .select-paytype {
     gap: 8px;
