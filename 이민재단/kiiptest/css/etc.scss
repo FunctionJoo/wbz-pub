@@ -268,6 +268,58 @@
     }
 }
 
+// 감독관
+.supervisor-wrap {
+    .tab-list {
+        margin: 60px 0;
+    }
+}
+
+.sub-content {
+    // 테이블
+    .table-wrap {
+        .list-row {
+            .no {
+                width: 80px;
+            }
+            .name {
+                width: 140px;
+            }
+            .birth {
+                width: 140px;
+            }
+            .mobile {
+                width: 150px;
+            }
+            .approval {
+                width: 110px;
+            }
+            .apply,
+            .print {
+                width: 130px;
+                .btn {
+                    width: 80px;
+                    height: 28px;
+                    line-height: 26px;
+                    font-size: 14px;
+                    &.off {
+                        border-color: #ddd;
+                        color: #555;
+                    }
+                }
+            }
+        }
+        .table-body {
+            .list-row {
+                .name,
+                .certi-num {
+                    color: #555;
+                }
+            }
+        }
+    }
+}
+
 @include tablet {
     .register-box {
         flex-direction: column;
@@ -384,6 +436,13 @@
                     line-height: 17px;
                 }
             }
+        }
+    }
+
+    // 감독관
+    .supervisor-wrap {
+        .tab-list {
+            margin: 30px -16px;
         }
     }
 }

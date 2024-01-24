@@ -274,7 +274,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     border-right: 1px solid #d3d3d3;
                 }
             }
-            .name {
+            .title {
                 text-align: left;
             }
             .sort {
@@ -367,7 +367,7 @@ input[type="number"]::-webkit-inner-spin-button {
 // 회원
 .member-wrap {
     padding: 80px 0 120px;
-    border-top: 1px solid #ddd;
+    // border-top: 1px solid #ddd;
     .tit-area {
         text-align: center;
     }
@@ -952,7 +952,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     li {
                         display: table-cell;
                         border-left: 1px solid #dddddd;
-                        &.name {
+                        &.title {
                             width: 35%;
                         }
                         &.paytype {
@@ -1563,7 +1563,7 @@ input[type="number"]::-webkit-inner-spin-button {
                 .sort {
                     font-weight: 500;
                 }
-                .name {
+                .title {
                     display: block;
                     padding-top: 14px;
                 }

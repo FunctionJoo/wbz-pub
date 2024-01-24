@@ -520,6 +520,9 @@
 }
 
 @media (max-width: 1240px) {
+  #header {
+    border-bottom: 0;
+  }
   #header.sub {
     background: #fff;
     position: sticky;

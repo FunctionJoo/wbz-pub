@@ -17,6 +17,7 @@
 		background: #2466a6;
 		white-space: nowrap;
 		text-align: center;
+		opacity: 0;
 		&:focus,
 		&:active {
 			height: auto;
@@ -27,6 +28,7 @@
 			left: 0;
 			top: 0;
 			right: 0;
+			opacity: 1;
 		}
 	}
 }
@@ -337,7 +339,7 @@ textarea:focus,
 	&.color_5 {
 		background-color: #fff;
 		border-color: #ddd;
-		color: #222;
+		color: #555;
 	}
 	&.has-arr {
 		background-color: #f4f6fa;
@@ -651,25 +653,5 @@ textarea:focus,
 	
 	.wbz-popup-cont {
 		padding: 20px 16px 10px;
-	}
-}
-
-// pc, 태블릿
-@media (min-width: 768px) {
-	.pc {
-		display: block !important;
-	}
-	.mobile {
-		display: none !important;
-	}
-}
-
-// 모바일
-@media (max-width: 768px) {
-	.pc {
-		display: none !important;
-	}
-	.mobile {
-		display: block !important;
 	}
 }

@@ -236,6 +236,46 @@
   line-height: 1;
 }
 
+.supervisor-wrap .tab-list {
+  margin: 60px 0;
+}
+
+.sub-content .table-wrap .list-row .no {
+  width: 80px;
+}
+.sub-content .table-wrap .list-row .name {
+  width: 140px;
+}
+.sub-content .table-wrap .list-row .birth {
+  width: 140px;
+}
+.sub-content .table-wrap .list-row .mobile {
+  width: 150px;
+}
+.sub-content .table-wrap .list-row .approval {
+  width: 110px;
+}
+.sub-content .table-wrap .list-row .apply,
+.sub-content .table-wrap .list-row .print {
+  width: 130px;
+}
+.sub-content .table-wrap .list-row .apply .btn,
+.sub-content .table-wrap .list-row .print .btn {
+  width: 80px;
+  height: 28px;
+  line-height: 26px;
+  font-size: 14px;
+}
+.sub-content .table-wrap .list-row .apply .btn.off,
+.sub-content .table-wrap .list-row .print .btn.off {
+  border-color: #ddd;
+  color: #555;
+}
+.sub-content .table-wrap .table-body .list-row .name,
+.sub-content .table-wrap .table-body .list-row .certi-num {
+  color: #555;
+}
+
 @media (max-width: 1240px) {
   .register-box {
     flex-direction: column;
@@ -344,6 +384,9 @@
   .register-box .register-list .desc .info-txt {
     font-size: 12px;
     line-height: 17px;
+  }
+  .supervisor-wrap .tab-list {
+    margin: 30px -16px;
   }
 }
 @media (max-width: 768px) {

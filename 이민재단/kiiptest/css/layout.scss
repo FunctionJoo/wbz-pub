@@ -584,6 +584,7 @@
 @include tablet {
     // header
     #header {
+        border-bottom: 0;
         &.sub {
             background: #fff;
             position: sticky;
