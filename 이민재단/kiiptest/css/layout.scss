@@ -559,7 +559,7 @@
     height: 68px;
     border-radius: 50%;
     border: 0 none;
-    background: #0b248d url("../images/common/ico/go_top.svg") no-repeat center center;
+    background: #3555af url("../images/common/ico/go_top.svg") no-repeat center center;
     background-position: top 18px center;
     transition: 0.3s;
     opacity: 0;
@@ -685,7 +685,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
     // header
     #header {
         .inner {
