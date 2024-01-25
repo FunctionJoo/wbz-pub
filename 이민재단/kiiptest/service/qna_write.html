@@ -35,7 +35,7 @@
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-		<main id="contents">
+    <main id="contents">
 			<div class="sub-content">
 				<div class="board-wrap">
 					<div class="con-top">
@@ -45,7 +45,7 @@
 									<a href="../main/index.html" class="home">Home</a>
 								</li>
 								<li>
-									<a href="../service/notice_list.html" class="menu has-select">알림마당</a>
+									<a href="#" class="menu has-select">알림마당</a>
 									<ul>
 										<li>
 											<a href="#">KIIP 평가안내</a>
@@ -65,7 +65,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="./qna_list.html" class="menu has-select">Q&A</a>
+									<a href="#" class="menu has-select">Q&A</a>
 									<ul>
 										<li>
 											<a href="./notice_list.html">공지사항</a>
@@ -84,27 +84,153 @@
 							</ul>
 						</div>
 					</div>
+
+					<div class="con-btm">
+						<div class="tit-area">
+							<h2 class="tit">Q&A</h2>
+						</div>
+						<div class="boardWrite-wrap">
+							<div class="w-set">
+								<div class="write-form">
+									<form action="">
+										<div class="input-area">
+											<dl>
+												<dt>제목<em> *</em></dt>
+												<dd>
+													<div class="input-wrap">
+														<input type="text" name="title" id="title" placeholder="">
+														<label for="title" class="is-blind">제목</label>
+													</div>
+												</dd>
+											</dl>
+											<dl>
+												<dt>이름<em> *</em></dt>
+												<dd>
+													<div class="input-wrap type-s">
+														<input type="text" name="name" id="name" placeholder="">
+														<label for="name" class="is-blind">이름</label>
+													</div>
+												</dd>
+											</dl>
+											<dl>
+												<dt>비밀번호<em> *</em></dt>
+												<dd>
+													<div class="input-wrap type-s">
+														<input type="password" name="pass" id="pass" placeholder="">
+														<label for="pass" class="is-blind">비밀번호</label>
+													</div>
+													<span class="sub-txt">정보 보호를 위하여 게시글의 비밀번호를 설정해주세요!</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>휴대폰 번호</dt>
+												<dd>
+													<div class="input-wrap type-s">
+														<div class="type-mobile">
+															<input type="text" name="join" id="num01" class="mont">
+															<label for="num01" class="is-blind">휴대폰 번호 앞 자리</label>
+															<i class="num-bar"></i>
+															<input type="text" name="join" id="num02" class="mont">
+															<label for="num02" class="is-blind">휴대폰 번호 중간 자리</label>
+															<i class="num-bar"></i>
+															<input type="text" name="join" id="num03" class="mont">
+															<label for="num03" class="is-blind">휴대폰 번호 마지막 자리</label>
+														</div>
+													</div>
+												</dd>
+											</dl>
+											<dl>
+												<dt>이메일</dt>
+												<dd>
+													<div class="input-wrap type-s">
+														<input type="text" name="email" id="email" placeholder="">
+														<label for="email" class="is-blind">이메일</label>
+													</div>
+												</dd>
+											</dl>
+											<dl>
+												<dt>내용<em> *</em></dt>
+												<dd>
+													<div class="input-wrap">
+														<textarea name="cont" id="cont" cols="30" rows="10"></textarea>
+														<label for="cont" class="is-blind">내용</label>
+													</div>
+												</dd>
+											</dl>
+											<dl>
+												<dt>첨부파일</dt>
+												<dd>
+													<div class="input-wrap type-s">
+														<div class="type-file">
+															<div class="file-box"></div>
+															<input type="file" name="attach" id="attach" placeholder="">
+															<label for="attach" class="btn color_2">찾아보기</label>
+														</div>
+													</div>
+													<span class="sub-txt">
+														(파일형식 : ppt, pptx, xls, xlsx, doc, docx, pdf, jpg, jpge, gif, zip / 파일용량 : 5mb 이하)
+													</span>
+													<div class="attach-list">
+														<div class="attach doc">
+															<a href="#">
+																<span class="f-name">
+																	파일명이 표시됩니다.docx
+																</span>
+															</a>
+															<button type="button" class="btn-del">삭제</button>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="ck-wrap">
+											<div class="note-txt">
+												<p class="txt">
+													접수하신 글은 비밀글로 등록되어 작성자와 관리자만 확인 가능합니다.
+												</p>
+											</div>
+											<div class="ck-box">
+												&#9001; 개인정보 수집·활용 동의 및 필수항목의 고지 &#9002;
+												<br><br>개인정보의 수집 목적 : 아래 입력한 개인정보는 이용자 식별(본인확인), 플랫폼 운영에 대한 연락 및 안내 및 통계분석 활용을 위해 참고용으로 수집·활용됨 수집하는 개인정보의 항목 : 이름,메일정보 항목보유 및 이용 기간 : 3년간 보유 및 이용 이후 파기
+												<br>동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익의 내용 : 개인정보는 필수 입력 사항이며 동의하지 않을 시 글쓰기 제한
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" name="agree" id="agree">
+												<label for="agree">
+													위 사항에 대해 인지하고 입력항목에 대해 수집 및 활용에 동의합니다. (만14세 미만의 아동의 경우 법정대리인(부모 등)의 동의를 받았음)
+												</label>
+											</div>
+										</div>
+										<div class="btn-wrap">
+											<button type="button" class="btn color_4">저장</button>
+											<button type="button" class="btn color_4_re">취소</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
-		
-    <main class="wrap">
-			<img src="../images/dummy/Q&A 02.png" alt="Q&A" usemap="#imagemap-sample1">
-		</main>
-
-    <map name="imagemap-sample1">
-			<area alt="" title="" href="./qna_view.html" coords="760,1295,955,1347" shape="rect">
-		</map>
 
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
 	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
+		//모바일에서 개인정보 수집 동의 문장 변경
+		$(window).resize(function(){
+			let win_w = window.innerWidth;
+			let agreeTxt = '.checkbox > label';
+
+			if(win_w < 768){
+				$(agreeTxt).text('위 사항에 대해 인지하고 입력항목에 대해 수집 및 활용에 동의합니다.');
+			} else{
+				$(agreeTxt).text('위 사항에 대해 인지하고 입력항목에 대해 수집 및 활용에 동의합니다. (만14세 미만의 아동의 경우 법정대리인(부모 등)의 동의를 받았음)');
+			}
+		});
+		$(window).trigger('resize');
 	</script>
 </body>
 </html>

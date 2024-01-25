@@ -1124,16 +1124,43 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 0 20px;
   line-height: 32px;
 }
-.board-wrap .boardList-wrap .search-wrap {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  margin: 0 0 24px;
+.board-wrap .answer span {
+  display: inline-block;
+  width: 80px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
 }
-.board-wrap .boardList-wrap .search-wrap .input-wrap {
+.board-wrap .answer span:last-of-type {
+  display: none;
+}
+.board-wrap .answer.is-complet span {
+  display: inline-block;
+  background-color: #0B248D;
+  border-color: #0B248D;
+  color: #fff;
+}
+.board-wrap .answer.is-complet span:first-of-type {
+  display: none;
+}
+.board-wrap .write-btn .btn {
+  width: 96px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.board-wrap .color_4_re {
+  background-color: #fff;
+  border-color: #222;
+  color: #222;
+}
+.board-wrap .boardList-wrap .search-wrap {
   max-width: 550px;
-  margin: 0 auto;
+  height: 50px;
+  margin: 0 auto 24px;
 }
 .board-wrap .boardList-wrap .search-wrap form {
   display: flex;
@@ -1168,14 +1195,20 @@ input[type=number]::-webkit-inner-spin-button {
   background-position: center;
   background-size: 18px;
 }
-.board-wrap .boardList-wrap .search-wrap .write-btn {
-  width: 96px;
+.board-wrap .boardList-wrap .qna-util {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.board-wrap .boardList-wrap .search-wrap .write-btn .btn {
-  height: 40px;
-  line-height: 40px;
-  font-size: 15px;
-  border-radius: 3px;
+.board-wrap .boardList-wrap .qna-util .board-count {
+  margin-bottom: 0;
+}
+.board-wrap .boardList-wrap .qna-util .write-btn {
+  position: absolute;
+  right: 0;
+  top: -69px;
 }
 .board-wrap .boardList-wrap .board-count {
   text-align: left;
@@ -1241,16 +1274,16 @@ input[type=number]::-webkit-inner-spin-button {
 .board-wrap .boardList-wrap .list.hit {
   width: 100px;
 }
-.board-wrap .boardList-wrap .qna-top .no, .board-wrap .boardList-wrap .qna-wrap .no {
+.board-wrap .boardList-wrap .qna-top .table-list .list.no, .board-wrap .boardList-wrap .qna-wrap .table-list .list.no {
   width: 80px;
 }
-.board-wrap .boardList-wrap .qna-top .writer, .board-wrap .boardList-wrap .qna-wrap .writer {
+.board-wrap .boardList-wrap .qna-top .table-list .list.writer, .board-wrap .boardList-wrap .qna-wrap .table-list .list.writer {
   width: 180px;
 }
-.board-wrap .boardList-wrap .qna-top .date, .board-wrap .boardList-wrap .qna-wrap .date {
+.board-wrap .boardList-wrap .qna-top .table-list .list.date, .board-wrap .boardList-wrap .qna-wrap .table-list .list.date {
   width: 140px;
 }
-.board-wrap .boardList-wrap .qna-top .asnswer, .board-wrap .boardList-wrap .qna-wrap .asnswer {
+.board-wrap .boardList-wrap .qna-top .table-list .list.answer, .board-wrap .boardList-wrap .qna-wrap .table-list .list.answer {
   width: 140px;
 }
 .board-wrap .boardList-wrap .qna-wrap .table-list .list.title {
@@ -1258,26 +1291,6 @@ input[type=number]::-webkit-inner-spin-button {
   background-image: url("../images/common/ico/qna_lock.svg");
   background-repeat: no-repeat;
   background-position: left top;
-}
-.board-wrap .boardList-wrap .qna-wrap .table-list .list.asnswer span {
-  display: inline-block;
-  width: 80px;
-  line-height: 28px;
-  border-radius: 3px;
-  border: 1px solid #DDDDDD;
-  font-size: 14px;
-}
-.board-wrap .boardList-wrap .qna-wrap .table-list .list.asnswer span:last-of-type {
-  display: none;
-}
-.board-wrap .boardList-wrap .qna-wrap .table-list .list.asnswer.complet span {
-  display: inline-block;
-  background-color: #0B248D;
-  border-color: #0B248D;
-  color: #fff;
-}
-.board-wrap .boardList-wrap .qna-wrap .table-list .list.asnswer.complet span:first-of-type {
-  display: none;
 }
 .board-wrap .boardList-wrap .faq-wrap {
   border-top: 1px solid #222222;
@@ -1353,6 +1366,21 @@ input[type=number]::-webkit-inner-spin-button {
   background-position: left center;
   background-image: url("../images/common/ico/list_btn.svg");
 }
+.board-wrap .boardView-wrap .write-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  line-height: 40px;
+}
+.board-wrap .boardView-wrap .write-btn .btn-wrap {
+  padding-top: 0;
+}
+.board-wrap .boardView-wrap .write-btn .btn-wrap:last-of-type {
+  position: absolute;
+  right: 0;
+}
 .board-wrap .boardView-wrap .top-wrap {
   display: flex;
   align-items: start;
@@ -1366,11 +1394,14 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: start;
   line-height: 32px;
 }
-.board-wrap .boardView-wrap .top-wrap .tit-wrap.is-notice .tit {
+.board-wrap .boardView-wrap .top-wrap .tit-wrap.is-notice .tit, .board-wrap .boardView-wrap .top-wrap .tit-wrap.answer .tit {
   margin-left: 12px;
 }
 .board-wrap .boardView-wrap .top-wrap .tit-wrap > span {
   flex: 0 0 auto;
+}
+.board-wrap .boardView-wrap .top-wrap .tit-wrap.answer span {
+  line-height: 30px;
 }
 .board-wrap .boardView-wrap .top-wrap .tit {
   flex: 1;
@@ -1386,7 +1417,7 @@ input[type=number]::-webkit-inner-spin-button {
   line-height: 32px;
   font-family: "Montserrat", sans-serif;
 }
-.board-wrap .boardView-wrap .top-wrap .sub-wrap > span.date::after {
+.board-wrap .boardView-wrap .top-wrap .sub-wrap > span:first-of-type::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -1446,8 +1477,198 @@ input[type=number]::-webkit-inner-spin-button {
 .board-wrap .boardView-wrap .attach-area .attach-list .attach.pdf {
   background-image: url("../images/common/ico/file_pdf.svg");
 }
-.board-wrap .boardView-wrap .attach-area .attach-list .attach + .attach {
-  margin-top: 12px;
+.board-wrap .boardView-wrap .answer-area {
+  padding-top: 60px;
+}
+.board-wrap .boardView-wrap .answer-cont {
+  border-top: 2px solid #222;
+}
+.board-wrap .boardView-wrap .answer-cont .top-wrap {
+  border-width: 1px;
+  border-color: #D3D3D3;
+  padding: 20px 6px;
+}
+.board-wrap .boardView-wrap .answer-cont .top-wrap .sub-wrap > span {
+  line-height: 1.2;
+}
+.board-wrap .boardView-wrap .answer-cont .cont-area {
+  padding: 20px 16px;
+  background-color: #F5F9FC;
+}
+.board-wrap .boardView-wrap .answer-cont .cont-area .txt {
+  line-height: 24px;
+}
+.board-wrap .boardView-wrap .answer-cont .attach-area {
+  padding: 20px 6px;
+}
+.board-wrap .boardView-wrap .answer-cont .attach-area .attach-list .attach:first-of-type {
+  padding-top: 0;
+  background-position: left top;
+}
+.board-wrap .boardView-wrap .answer-cont + .answer-cont {
+  margin-top: 40px;
+}
+.board-wrap .boardWrite-wrap .w-set {
+  max-width: 1000px;
+}
+.board-wrap .boardWrite-wrap .write-form {
+  border-top: 2px solid #222222;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area {
+  padding: 40px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl + dl {
+  margin-top: 20px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl:nth-last-child(-n+2) {
+  align-items: flex-start;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl:nth-last-child(-n+2) dt {
+  padding-top: 10px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl:last-of-type dd {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl:last-of-type dd .sub-txt {
+  width: 100%;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dt {
+  width: 180px;
+  font-size: 16px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dt em {
+  color: #024fc4;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd input {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 15px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap {
+  flex: 1;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap.type-s {
+  max-width: 390px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap + .sub-txt {
+  font-size: 14px;
+  color: #555;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap textarea {
+  height: 145px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-mobile {
+  gap: 5px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-mobile .num-bar {
+  width: 6px;
+  height: 1px;
+  background-color: #222;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-mobile input {
+  flex: 1;
+  max-width: 120px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-file {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-file input[type=file] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  opacity: 0;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-file .file-box {
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+  height: 40px;
+  padding: 0 16px;
+  font-size: 15px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-file label {
+  flex: 1;
+  max-width: 120px;
+  height: 40px;
+  line-height: 38px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list {
+  margin-top: 6px;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach {
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 25px;
+  padding-left: 36px;
+  font-size: 16px;
+  line-height: 26px;
+  word-break: break-all;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach.doc {
+  background-image: url("../images/common/ico/file_doc.svg");
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach.pdf {
+  background-image: url("../images/common/ico/file_pdf.svg");
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach .btn-del {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 14px;
+  color: #555;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap {
+  padding-top: 40px;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .note-txt {
+  padding: 18px 30px;
+  background-color: #F5F9FC;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .note-txt .txt {
+  font-size: 16px;
+  padding-left: 34px;
+  background-image: url("../images/common/ico/login_note.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 22px;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box {
+  border: 1px solid #DDDDDD;
+  margin: 20px 0;
+  padding: 24px 24px 24px 30px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #555;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label {
+  font-size: 16px;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label::before {
+  width: 22px;
+  height: 22px;
+  margin-top: 0;
+  top: 0;
+}
+.board-wrap .boardWrite-wrap .write-form .btn-wrap {
+  padding-top: 120px;
+  justify-content: center;
+}
+.board-wrap .boardWrite-wrap .write-form .btn-wrap .btn {
+  max-width: 200px;
 }
 
 .mypage-wrap .tab-list {
@@ -1947,11 +2168,20 @@ input[type=number]::-webkit-inner-spin-button {
   .mypage-wrap .cont .pay-box dl dt {
     width: auto;
   }
+  .board-wrap .con-btm {
+    padding-top: 26px;
+  }
   .board-wrap .tit-area {
     margin-bottom: 30px;
   }
   .board-wrap .tit-area .sub-txt {
     font-size: 14px;
+  }
+  .board-wrap .boardList-wrap .qna-util {
+    margin-bottom: 14px;
+  }
+  .board-wrap .boardList-wrap .qna-util .write-btn {
+    position: static;
   }
   .board-wrap .boardList-wrap .table-wrap {
     border-top: 2px solid #222;
@@ -1967,6 +2197,21 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .board-wrap .boardList-wrap .table-wrap .table-list .list.title {
     padding-left: 0;
+  }
+  .board-wrap .boardList-wrap .qna-top .table-list .list.no, .board-wrap .boardList-wrap .qna-wrap .table-list .list.no {
+    width: 60px;
+  }
+  .board-wrap .boardList-wrap .qna-top .table-list .list.title, .board-wrap .boardList-wrap .qna-wrap .table-list .list.title {
+    padding-left: 34px;
+  }
+  .board-wrap .boardList-wrap .qna-top .table-list .list.writer, .board-wrap .boardList-wrap .qna-wrap .table-list .list.writer {
+    width: 140px;
+  }
+  .board-wrap .boardList-wrap .qna-top .table-list .list.date, .board-wrap .boardList-wrap .qna-wrap .table-list .list.date {
+    width: 100px;
+  }
+  .board-wrap .boardList-wrap .qna-top .table-list .list.answer, .board-wrap .boardList-wrap .qna-wrap .table-list .list.answer {
+    width: 100px;
   }
   .board-wrap .boardList-wrap .faq-wrap .faq-list .cate {
     font-size: 18px;
@@ -2014,11 +2259,38 @@ input[type=number]::-webkit-inner-spin-button {
   .board-wrap .boardView-wrap .top-wrap .sub-wrap > span {
     line-height: 18px;
   }
-  .board-wrap .boardView-wrap .top-wrap .sub-wrap > span.date::after {
+  .board-wrap .boardView-wrap .top-wrap .sub-wrap > span:first-of-type::after {
     margin: 0 8px;
   }
   .board-wrap .boardView-wrap .cont-area {
     padding: 20px 16px;
+  }
+  .board-wrap .boardView-wrap .answer-cont .top-wrap .sub-wrap > span:first-of-type::after {
+    margin: 0 10px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dt {
+    font-weight: 500;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd {
+    flex-wrap: wrap;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap.type-s {
+    max-width: 100%;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap + .sub-txt {
+    width: 100%;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-mobile {
+    gap: 7px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-mobile input {
+    flex: 1;
+    max-width: none;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-file {
+    max-width: 100%;
+    width: 100%;
+    flex: 1;
   }
 }
 @media (max-width: 768px) {
@@ -2217,6 +2489,12 @@ input[type=number]::-webkit-inner-spin-button {
   .board-wrap .tit-area {
     margin-bottom: 30px;
   }
+  .board-wrap .write-btn .btn {
+    width: 80px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+  }
   .board-wrap .boardList-wrap .search-wrap {
     max-width: 100%;
     height: auto;
@@ -2282,6 +2560,40 @@ input[type=number]::-webkit-inner-spin-button {
     margin-left: 10px;
     background-color: #d3d3d3;
   }
+  .board-wrap .boardList-wrap .qna-wrap .table-list {
+    gap: 10px;
+  }
+  .board-wrap .boardList-wrap .qna-wrap .table-list .list.writer {
+    width: auto;
+    font-size: 14px;
+  }
+  .board-wrap .boardList-wrap .qna-wrap .table-list .list.writer::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin-left: 10px;
+    background-color: #d3d3d3;
+  }
+  .board-wrap .boardList-wrap .qna-wrap .table-list .list.date {
+    width: auto;
+  }
+  .board-wrap .boardList-wrap .qna-wrap .table-list .list.date::after {
+    display: none;
+  }
+  .board-wrap .boardList-wrap .qna-wrap .table-list .list.answer {
+    width: 100%;
+  }
+  .board-wrap .boardList-wrap .qna-wrap .table-list .list.answer span {
+    float: right;
+    width: 100px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .board-wrap .boardList-wrap .qna-wrap .table-list .list.title {
+    padding-left: 28px;
+    background-size: 24px;
+  }
   .board-wrap .boardView-wrap .btn-wrap {
     padding-top: 40px;
   }
@@ -2289,6 +2601,20 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 14px;
     padding-left: 19px;
     background-size: 11px 8px;
+  }
+  .board-wrap .boardView-wrap .write-btn {
+    padding-top: 40px;
+    line-height: 1;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .board-wrap .boardView-wrap .write-btn .btn-wrap {
+    padding-top: 0;
+  }
+  .board-wrap .boardView-wrap .write-btn .btn-wrap:last-of-type {
+    position: static;
+    width: 100%;
+    justify-content: flex-end;
   }
   .board-wrap .boardView-wrap .top-wrap .sub-wrap > span {
     font-size: 14px;
@@ -2311,6 +2637,111 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .board-wrap .boardView-wrap .attach-area .attach-list .attach:first-of-type + .attach {
     margin-top: 10px;
+  }
+  .board-wrap .boardView-wrap .answer-area {
+    padding-top: 32px;
+  }
+  .board-wrap .boardView-wrap .answer-cont {
+    border-width: 1px;
+  }
+  .board-wrap .boardView-wrap .answer-cont .top-wrap {
+    padding: 14px 0;
+  }
+  .board-wrap .boardView-wrap .answer-cont .top-wrap .sub-wrap > span {
+    font-size: 16px;
+  }
+  .board-wrap .boardView-wrap .answer-cont .cont-area {
+    padding: 12px;
+  }
+  .board-wrap .boardView-wrap .answer-cont .attach-area {
+    padding: 14px 0;
+  }
+  .board-wrap .boardView-wrap .answer-cont + .answer-cont {
+    margin-top: 20px;
+  }
+  .board-wrap .boardWrite-wrap .write-form {
+    border: 0;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area {
+    padding: 0;
+    border: 0;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl {
+    gap: 10px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl + dl {
+    margin-top: 16px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl:nth-last-child(-n+2) dt {
+    padding-top: 0;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dt {
+    width: 100%;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd input {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap + .sub-txt {
+    font-size: 13px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap textarea {
+    height: 140px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-file label {
+    max-width: 98px;
+    font-size: 14px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list {
+    width: 100%;
+    margin-top: 2px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap {
+    padding-top: 20px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .note-txt {
+    padding: 12px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .note-txt .txt {
+    font-size: 14px;
+    padding-left: 26px;
+    background-size: 20px;
+    background-position: left top;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box {
+    margin: 16px 0 14px;
+    padding: 12px;
+    font-size: 14px;
+    height: 120px;
+    overflow-y: scroll;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box::-webkit-scrollbar {
+    width: 3px;
+    background: none;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box::-webkit-scrollbar-thumb {
+    width: 3px;
+    border-radius: 2px;
+    background: #e5e5e5;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label {
+    font-size: 14px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label::before {
+    width: 20px;
+    height: 20px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .btn-wrap {
+    padding-top: 40px;
+    gap: 14px;
+  }
+  .board-wrap .boardWrite-wrap .write-form .btn-wrap .btn {
+    max-width: none;
   }
   .register-wrap .con-btm .cont .select-paytype {
     gap: 8px;

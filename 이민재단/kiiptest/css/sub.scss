@@ -1177,17 +1177,50 @@ input[type="number"]::-webkit-inner-spin-button {
             line-height: 32px;
         }
     }
+    .answer {
+        span {
+            display: inline-block;
+            width: 80px;
+            line-height: 28px;
+            text-align: center;
+            border-radius: 3px;
+            border: 1px solid #DDDDDD;
+            font-size: 14px;
+            &:last-of-type {
+                display: none;
+            }
+        }
+        &.is-complet {
+            span {
+                display: inline-block;
+                background-color: #0B248D;
+                border-color: #0B248D;
+                color: #fff;
+                &:first-of-type {
+                    display: none;
+                }
+            }
+        }
+    }
+    .write-btn {
+        .btn {
+            width: 96px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+    }
+    .color_4_re {
+        background-color: #fff;
+        border-color: #222;
+        color: #222;
+    }
     .boardList-wrap {
         .search-wrap {
-            display: flex;
-            align-items: center;
-            width: 100%;
+            max-width: 550px;
             height: 50px;
-            margin: 0 0 24px;
-            .input-wrap {
-                max-width: 550px;
-                margin: 0 auto;
-            }
+            margin: 0 auto 24px;
             form {
                 display: flex;
                 align-items: center;
@@ -1221,14 +1254,20 @@ input[type="number"]::-webkit-inner-spin-button {
                 background-position: center;
                 background-size: 18px;
             }
+        }
+        .qna-util {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .board-count {
+                margin-bottom: 0;
+            }
             .write-btn {
-                width: 96px;
-                .btn {
-                    height: 40px;
-                    line-height: 40px;
-                    font-size: 15px;
-                    border-radius: 3px;
-                }
+                position: absolute;
+                right: 0;
+                top: -69px;
             }
         }
         .board-count {
@@ -1297,17 +1336,21 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
         .qna-top, .qna-wrap {
-            .no {
-                width: 80px;
-            }
-            .writer {
-                width: 180px;
-            }
-            .date {
-                width: 140px;
-            }
-            .asnswer {
-                width: 140px;
+            .table-list {
+                .list {
+                    &.no {
+                        width: 80px;
+                    }
+                    &.writer {
+                        width: 180px;
+                    }
+                    &.date {
+                        width: 140px;
+                    }
+                    &.answer {
+                        width: 140px;
+                    }
+                }
             }
         }
         .qna-wrap {
@@ -1318,30 +1361,6 @@ input[type="number"]::-webkit-inner-spin-button {
                         background-image: url('../images/common/ico/qna_lock.svg');
                         background-repeat: no-repeat;
                         background-position: left top;
-                    }
-                    &.asnswer {
-                        span {
-                            display: inline-block;
-                            width: 80px;
-                            line-height: 28px;
-                            border-radius: 3px;
-                            border: 1px solid #DDDDDD;
-                            font-size: 14px;
-                            &:last-of-type {
-                                display: none;
-                            }
-                        }
-                        &.complet {
-                            span {
-                                display: inline-block;
-                                background-color: #0B248D;
-                                border-color: #0B248D;
-                                color: #fff;
-                                &:first-of-type {
-                                    display: none;
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1426,6 +1445,21 @@ input[type="number"]::-webkit-inner-spin-button {
                 background-image: url('../images/common/ico/list_btn.svg');
             }
         }
+        .write-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            line-height: 40px;
+            .btn-wrap {
+                padding-top: 0;
+                &:last-of-type {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
         .top-wrap {
             display: flex;
             align-items: start;
@@ -1437,13 +1471,18 @@ input[type="number"]::-webkit-inner-spin-button {
                 display: flex;
                 align-items: start;
                 line-height: 32px;
-                &.is-notice {
+                &.is-notice, &.answer {
                     .tit {
                         margin-left: 12px;
                     }
                 }
                 > span {
                     flex: 0 0 auto;
+                }
+                &.answer {
+                    span {
+                        line-height: 30px;
+                    }
                 }
             }
             .tit {
@@ -1458,7 +1497,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     font-size: 16px;
                     line-height: 32px;
                     font-family: $mont;
-                    &.date::after {
+                    &:first-of-type::after {
                         content: '';
                         display: inline-block;
                         width: 1px; height: 12px;
@@ -1493,10 +1532,10 @@ input[type="number"]::-webkit-inner-spin-button {
                 padding: 0 20px;
                 line-height: 32px;
             }
-            .attach-list{
+            .attach-list {
                 padding-right: 16px;
                 align-self: center;
-                .attach{
+                .attach {
                     background-repeat: no-repeat;
                     background-position: left top;
                     background-size: 25px;
@@ -1511,15 +1550,213 @@ input[type="number"]::-webkit-inner-spin-button {
                         background-position: left top 3px;
                         padding-top: 3px;
                     }
-                    &.doc{
+                    &.doc {
                         background-image: url('../images/common/ico/file_doc.svg');
                     }
-                    &.pdf{
+                    &.pdf {
                         background-image: url('../images/common/ico/file_pdf.svg');
                     }
-                    + .attach{
-                        margin-top: 12px;
+                }
+            }
+        }
+        .answer-area {
+            padding-top: 60px;
+        }
+        .answer-cont {
+            border-top: 2px solid #222;
+            .top-wrap {
+                border-width: 1px;
+                border-color: #D3D3D3;
+                padding: 20px 6px;
+                .sub-wrap > span {
+                    line-height: 1.2;
+                }
+            }
+            .cont-area {
+                padding: 20px 16px;
+                background-color: #F5F9FC;
+                .txt {
+                    line-height: 24px;
+                }
+            }
+            .attach-area {
+                padding: 20px 6px;
+                .attach-list {
+                    .attach:first-of-type {
+                        padding-top: 0;
+                        background-position: left top;
                     }
+                }
+            }
+            + .answer-cont {
+                margin-top: 40px;
+            }
+        }
+    }
+    .boardWrite-wrap {
+        .w-set {
+            max-width: 1000px;
+        }
+        .write-form {
+            border-top: 2px solid #222222;
+            .input-area {
+                padding: 40px 0;
+                border-bottom: 1px solid #DDDDDD;
+                dl {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    + dl {
+                        margin-top: 20px;
+                    }
+                    &:nth-last-child(-n+2) {
+                        align-items: flex-start;
+                        dt {
+                            padding-top: 10px;
+                        }
+                    }
+                    &:last-of-type {
+                        dd {
+                            align-items: flex-start;
+                            flex-wrap: wrap;
+                            .sub-txt {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    dt {
+                        width: 180px;
+                        font-size: 16px;
+                        em {
+                            color: $primary-color1;
+                        }
+                    }
+                    dd {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        input {
+                            height: 40px;
+                            padding: 0 16px;
+                            font-size: 15px;
+                        }
+                        .input-wrap {
+                            flex: 1;
+                            &.type-s {
+                                max-width: 390px;
+                            }
+                            + .sub-txt {
+                                font-size: 14px;
+                                color: $text-color2;
+                            }
+                            textarea {
+                                height: 145px;
+                            }
+                            .type-mobile {
+                                gap: 5px;
+                                .num-bar {
+                                    width: 6px;
+                                    height: 1px;
+                                    background-color: #222;
+                                }
+                                input {
+                                    flex: 1;
+                                    max-width: 120px;
+                                }
+                            }
+                            .type-file {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                input[type=file]{
+                                    width: 1px;
+                                    height: 1px;
+                                    position: absolute;
+                                    opacity: 0;
+                                }
+                                .file-box {
+                                    flex: 1;
+                                    border-radius: 6px;
+                                    border: 1px solid #DDDDDD;
+                                    height: 40px;
+                                    padding: 0 16px;
+                                    font-size: 15px;
+                                }
+                                label {
+                                    flex: 1;
+                                    max-width: 120px;
+                                    height: 40px;
+                                    line-height: 38px;
+                                }
+                            }
+                        }
+                        .attach-list {
+                            margin-top: 6px;
+                            .attach {
+                                background-repeat: no-repeat;
+                                background-position: left top;
+                                background-size: 25px;
+                                padding-left: 36px;
+                                font-size: 16px;
+                                line-height: 26px;
+                                word-break: break-all;
+                                &.doc {
+                                    background-image: url('../images/common/ico/file_doc.svg');
+                                }
+                                &.pdf {
+                                    background-image: url('../images/common/ico/file_pdf.svg');
+                                }
+                                .btn-del {
+                                    display: inline-block;
+                                    margin-left: 40px;
+                                    font-size: 14px;
+                                    color: $text-color2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ck-wrap {
+                padding-top: 40px;
+                .note-txt {
+                    padding: 18px 30px;
+                    background-color: #F5F9FC;
+                    .txt {
+                        font-size: 16px;
+                        padding-left: 34px;
+                        background-image: url('../images/common/ico/login_note.svg');
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 22px;
+                    }
+                }
+                .ck-box {
+                    border: 1px solid #DDDDDD;
+                    margin: 20px 0;
+                    padding: 24px 24px 24px 30px;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: $text-color2;
+                }
+                .checkbox {
+                    label {
+                        font-size: 16px;
+                        &::before {
+                            width: 22px;
+                            height: 22px;
+                            margin-top: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+            .btn-wrap {
+                padding-top: 120px;
+                justify-content: center;
+                .btn {
+                    max-width: 200px;
                 }
             }
         }
@@ -2085,6 +2322,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
     // 게시판
     .board-wrap {
+        .con-btm {
+            padding-top: 26px;
+        }
         .tit-area {
             margin-bottom: 30px;
             .sub-txt {
@@ -2092,6 +2332,12 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
         .boardList-wrap {
+            .qna-util {
+                margin-bottom: 14px;
+                .write-btn {
+                    position: static;
+                }
+            }
             .table-wrap {
                 border-top: 2px solid #222;
                 .table-list {
@@ -2107,6 +2353,27 @@ input[type="number"]::-webkit-inner-spin-button {
                         }
                         &.title{
                             padding-left: 0;
+                        }
+                    }
+                }
+            }
+            .qna-top, .qna-wrap {
+                .table-list {
+                    .list {
+                        &.no {
+                            width: 60px;
+                        }
+                        &.title{
+                            padding-left: 34px;
+                        }
+                        &.writer {
+                            width: 140px;
+                        }
+                        &.date {
+                            width: 100px;
+                        }
+                        &.answer {
+                            width: 100px;
                         }
                     }
                 }
@@ -2163,10 +2430,9 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
                 .sub-wrap {
                     padding-left: 5px;
-
                     > span {
                         line-height: 18px;
-                        &.date::after {
+                        &:first-of-type::after {
                             margin: 0 8px;
                         }
                     }
@@ -2174,6 +2440,47 @@ input[type="number"]::-webkit-inner-spin-button {
             }
             .cont-area {
                 padding: 20px 16px;
+            }
+            .answer-cont {
+                .top-wrap {
+                    .sub-wrap > span:first-of-type::after {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        .boardWrite-wrap {
+            .write-form {
+                .input-area {
+                    dl {
+                        dt {
+                            font-weight: 500;
+                        }
+                        dd {
+                            flex-wrap: wrap;
+                            .input-wrap {
+                                &.type-s {
+                                    max-width: 100%;
+                                }
+                                + .sub-txt {
+                                    width: 100%;
+                                }
+                                .type-mobile {
+                                    gap: 7px;
+                                    input {
+                                        flex: 1;
+                                        max-width: none;
+                                    }
+                                }
+                                .type-file {
+                                    max-width: 100%;
+                                    width: 100%;
+                                    flex: 1;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -2412,6 +2719,14 @@ input[type="number"]::-webkit-inner-spin-button {
         .tit-area {
             margin-bottom: 30px;
         }
+        .write-btn {
+            .btn {
+                width: 80px;
+                height: 42px;
+                line-height: 42px;
+                font-size: 16px;
+            }
+        }
         .boardList-wrap {
             .search-wrap {
                 max-width: 100%;
@@ -2482,6 +2797,44 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                 }
             }
+            .qna-wrap {
+                .table-list {
+                    gap: 10px;
+                    .list {
+                        &.writer {
+                            width: auto;
+                            font-size: 14px;
+                            &::after {
+                                content: "";
+                                display: inline-block;
+                                width: 1px;
+                                height: 10px;
+                                margin-left: 10px;
+                                background-color: #d3d3d3;
+                            }
+                        }
+                        &.date {
+                            width: auto;
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        &.answer {
+                            width: 100%;
+                            span {
+                                float: right;
+                                width: 100px;
+                                line-height: 40px;
+                                font-size: 16px;
+                            }
+                        }
+                        &.title {
+                            padding-left: 28px;
+                            background-size: 24px;
+                        }
+                    }
+                }
+            }
         }
 
         .boardView-wrap {
@@ -2491,6 +2844,21 @@ input[type="number"]::-webkit-inner-spin-button {
                     font-size: 14px;
                     padding-left: 19px;
                     background-size: 11px 8px;
+                }
+            }
+            .write-btn {
+                padding-top: 40px;
+                line-height: 1;
+                flex-direction: column;
+                gap: 30px;
+                .btn-wrap {
+                    padding-top: 0;
+                    &:last-of-type {
+                        position: static;
+                        width: 100%;
+                        justify-content: flex-end;
+
+                    }
                 }
             }
             .top-wrap {
@@ -2518,6 +2886,118 @@ input[type="number"]::-webkit-inner-spin-button {
                         + .attach {
                             margin-top: 10px;
                         }
+                    }
+                }
+            }
+            .answer-area {
+                padding-top: 32px;
+            }
+            .answer-cont {
+                border-width: 1px;
+                .top-wrap {
+                    padding: 14px 0;
+                    .sub-wrap {
+                        > span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .cont-area {
+                    padding: 12px;
+                }
+                .attach-area {
+                    padding: 14px 0;
+                }
+                + .answer-cont {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .boardWrite-wrap {
+            .write-form {
+                border: 0;
+                .input-area {
+                    padding: 0;
+                    border: 0;
+                    dl {
+                        gap: 10px;
+                        + dl {
+                            margin-top: 16px;
+                        }
+                        &:nth-last-child(-n+2) {
+                            dt {
+                                padding-top: 0;
+                            }
+                        }
+                        dt {
+                            width: 100%;
+                        }
+                        dd {
+                            input {
+                                padding: 0 10px;
+                                font-size: 14px;
+                            }
+                            .input-wrap {
+                                + .sub-txt {
+                                    font-size: 13px;
+                                }
+                                textarea {
+                                    height: 140px;
+                                }
+                                .type-file {
+                                    label {
+                                        max-width: 98px;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            .attach-list {
+                                width: 100%;
+                                margin-top: 2px;
+                                .attach {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ck-wrap {
+                    padding-top: 20px;
+                    .note-txt {
+                        padding: 12px;
+                        .txt {
+                            font-size: 14px;
+                            padding-left: 26px;
+                            background-size: 20px;
+                            background-position: left top;
+                        }
+                    }
+                    .ck-box {
+                        margin: 16px 0 14px;
+                        padding: 12px;
+                        font-size: 14px;
+                        height: 120px;
+                        overflow-y: scroll;
+                        @include scroll;
+                    }
+                    .checkbox {
+                        label {
+                            font-size: 14px;
+                            &::before {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+                .btn-wrap {
+                    padding-top: 40px;
+                    gap: 14px;
+                    .btn {
+                        max-width: none;
                     }
                 }
             }
