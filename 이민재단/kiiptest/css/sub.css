@@ -343,6 +343,62 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: left;
 }
 
+.sub-wrap .w-set {
+  max-width: 1000px;
+}
+.sub-wrap .alarm-wrap .table-top {
+  padding: 10px 0 14px;
+  border-bottom: 1px solid #DDDDDD;
+  text-align: right;
+}
+.sub-wrap .alarm-wrap .table-top .btn-del {
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: #F9F9F9;
+  border: 1px solid #DDDDDD;
+  font-size: 16px;
+  text-align: center;
+  color: #666666;
+  line-height: 34px;
+}
+.sub-wrap .alarm-wrap .table-wrap {
+  padding: 40px 0 0 12px;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list {
+  display: flex;
+  gap: 12px;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list + .table-list {
+  margin-top: 20px;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list.is-new .list.title {
+  font-weight: 600;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list .list.ck-box {
+  font-size: 0;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list .list.ck-box label {
+  padding-left: 18px;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list .list.ck-box label::before {
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list .list.title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.sub-wrap .alarm-wrap .table-wrap .table-list .list.date {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #555;
+  line-height: 21px;
+  margin-left: auto;
+}
+
 .member-wrap {
   padding: 80px 0 120px;
 }
@@ -1646,7 +1702,7 @@ input[type=number]::-webkit-inner-spin-button {
   background-position: left center;
   background-size: 22px;
 }
-.board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box {
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .txt-box {
   border: 1px solid #DDDDDD;
   margin: 20px 0;
   padding: 24px 24px 24px 30px;

@@ -32,35 +32,76 @@
 	<!-- 본문 바로가기 -->
 	<div id="skipNav"><a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a></div>
 	<div id="container">
-		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
+		<div class="js-include" data-include="../outline/header_sub.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-    <main class="wrap" style="margin-top: 80px;">
-			<img src="../images/dummy/push.png" alt="" usemap="#imagemap-sample1">
+		<main id="contents">
+			<div class="sub-content">
+				<div class="sub-wrap">
+					<div class="con-btm">
+						<div class="tit-area hide-m">
+							<h2 class="tit">알림</h2>
+						</div>
+						<div class="w-set">
+							<div class="alarm-wrap">
+								<div class="table-top">
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<ul class="table-wrap">
+									<!-- 새로운 알림일 경우 table-list에 is-new 클래스 추가 -->
+									<li class="table-list is-new">
+										<div class="list ck-box">
+											<div class="checkbox">
+												<input type="checkbox" name="chk" id="chk01">
+												<label for="chk01"></label>
+											</div>
+										</div>
+										<div class="list title">
+											<p>알림 명이 노출됩니다 말 줄임 없음</p>
+										</div>
+										<div class="list date">2023.12.04</div>
+									</li>
+									<li class="table-list">
+										<div class="list ck-box">
+											<div class="checkbox">
+												<input type="checkbox" name="chk" id="chk01">
+												<label for="chk01"></label>
+											</div>
+										</div>
+										<div class="list title">
+											<p>알림 명이 노출됩니다 말 줄임 없음</p>
+										</div>
+										<div class="list date">2023.12.04</div>
+									</li>
+								</ul>
+								<div class="paging">
+									<a href="#" class="move first">처음 페이지</a>
+									<a href="#" class="move prev">이전 페이지</a>
+									<a href="#" class="on">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#" class="hide-m">6</a>
+									<a href="#" class="hide-m">7</a>
+									<a href="#" class="hide-m">8</a>
+									<a href="#" class="hide-m">9</a>
+									<a href="#" class="hide-m">10</a>
+									<a href="#" class="move next">다음 페이지</a>
+									<a href="#" class="move last">마지막 페이지</a>
+								</div>
+							</div>
+					</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
-    <!-- <map name="imagemap-sample1">
-			<area alt="" title="" href="./certificate01.html" coords="359,216,960,270" shape="rect">
-			<area alt="" title="" href="./certificate_view.html" coords="1459,477,1538,500" shape="rect">
-		</map> -->
-
-		<!-- <main id="contents" class="member">
-			<div class="tit-area">
-				<h2 class="tit">평가구분</h2>
-			</div>
-			<div class="w-set">
-			</div>
-		</main> -->
-
-		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
+		<div class="js-include hide-m" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
 	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
+
 	</script>
 </body>
 </html>
