@@ -371,7 +371,7 @@ input[type=number]::-webkit-inner-spin-button {
   gap: 12px;
 }
 .sub-wrap .alarm-wrap .table-wrap .table-list + .table-list {
-  margin-top: 20px;
+  margin-top: 23px;
 }
 .sub-wrap .alarm-wrap .table-wrap .table-list.is-new .list.title {
   font-weight: 600;
@@ -1625,6 +1625,17 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap textarea {
   height: 145px;
+  word-break: break-all;
+  overflow-y: scroll;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap textarea::-webkit-scrollbar {
+  width: 3px;
+  background: none;
+}
+.board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap textarea::-webkit-scrollbar-thumb {
+  width: 3px;
+  border-radius: 2px;
+  background: #e5e5e5;
 }
 .board-wrap .boardWrite-wrap .write-form .input-area dl dd .input-wrap .type-mobile {
   gap: 5px;
@@ -1709,6 +1720,16 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 21px;
   color: #555;
+  overflow-y: scroll;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .txt-box::-webkit-scrollbar {
+  width: 3px;
+  background: none;
+}
+.board-wrap .boardWrite-wrap .write-form .ck-wrap .txt-box::-webkit-scrollbar-thumb {
+  width: 3px;
+  border-radius: 2px;
+  background: #e5e5e5;
 }
 .board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label {
   font-size: 16px;
@@ -2366,6 +2387,45 @@ input[type=number]::-webkit-inner-spin-button {
   .sub-content .list-wrap .receipt-list > li {
     width: 100%;
   }
+  .sub-wrap .alarm-wrap .table-top {
+    margin-top: 16px;
+    padding: 8px 0 20px;
+  }
+  .sub-wrap .alarm-wrap .table-top .btn-del {
+    width: 58px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .sub-wrap .alarm-wrap .table-wrap {
+    padding: 24px 0 0;
+  }
+  .sub-wrap .alarm-wrap .table-wrap .table-list {
+    flex-wrap: wrap;
+    gap: 10px 12px;
+  }
+  .sub-wrap .alarm-wrap .table-wrap .table-list + .table-list {
+    margin-top: 20px;
+  }
+  .sub-wrap .alarm-wrap .table-wrap .table-list .list.ck-box label {
+    padding-top: 20px;
+  }
+  .sub-wrap .alarm-wrap .table-wrap .table-list .list.ck-box label::before {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    margin-top: -1px;
+  }
+  .sub-wrap .alarm-wrap .table-wrap .table-list .list.title {
+    width: calc(100% - 32px);
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .sub-wrap .alarm-wrap .table-wrap .table-list .list.date {
+    width: 100%;
+    font-size: 14px;
+    padding-left: 32px;
+  }
   .member-wrap .sub-txt {
     font-size: 14px;
   }
@@ -2769,21 +2829,11 @@ input[type=number]::-webkit-inner-spin-button {
     background-size: 20px;
     background-position: left top;
   }
-  .board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box {
+  .board-wrap .boardWrite-wrap .write-form .ck-wrap .txt-box {
     margin: 16px 0 14px;
     padding: 12px;
     font-size: 14px;
     height: 120px;
-    overflow-y: scroll;
-  }
-  .board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box::-webkit-scrollbar {
-    width: 3px;
-    background: none;
-  }
-  .board-wrap .boardWrite-wrap .write-form .ck-wrap .ck-box::-webkit-scrollbar-thumb {
-    width: 3px;
-    border-radius: 2px;
-    background: #e5e5e5;
   }
   .board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label {
     font-size: 14px;
