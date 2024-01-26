@@ -474,12 +474,21 @@
   position: relative;
   overflow: hidden;
 }
-#mainPopup .swiper .swiper-wrapper .swiper-slide a {
+#mainPopup .swiper .popup-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: block;
   position: relative;
+  width: 500px;
+  height: 500px;
 }
-#mainPopup .swiper .swiper-wrapper .swiper-slide a img {
-  width: 100%;
+#mainPopup .swiper .popup-item a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 60px 50px;
 }
 #mainPopup .mainpop-menu {
   display: flex;
@@ -786,6 +795,14 @@
   #mainPopup .swiper {
     border-radius: 12px 12px 0px 0px;
     overflow: hidden;
+  }
+  #mainPopup .swiper .popup-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 130%;
+  }
+  #mainPopup .swiper .popup-item a {
+    padding: 40px 20px;
   }
   #mainPopup .mainpop-menu button {
     font-size: 14px;
