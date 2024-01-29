@@ -35,31 +35,60 @@
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-    <main class="wrap">
-			<img src="../images/dummy/new_join.png" alt="" usemap="#imagemap-sample1">
+
+		<main id="contents">
+			<div class="sub-content">
+				<div class="member-wrap">
+					<div class="tit-area">
+						<h2 class="tit">구술감독관 신규 가입</h2>
+					</div>
+					<div class="join-wrap">
+						<div class="w-set type-s">
+							<div class="join-top">
+								<ul class="step-list">
+									<li class="on">
+										<span class="num">01</span>
+										<span class="txt">구술감독관 <br class="hide-pc">조회</span>
+									</li>
+									<li class="line"></li>
+									<li>
+										<span class="num">02</span>
+										<span class="txt">정보입력</span>
+									</li>
+									<li class="line"></li>
+									<li>
+										<span class="num">03</span>
+										<span class="txt">가입완료</span>
+									</li>
+								</ul>
+							</div>
+							<div class="join-form">
+								<form action="">
+									<div class="input-wrap">
+										<input type="text" name="join" id="name" placeholder="이름">
+										<label for="name" class="is-blind">이름</label>
+									</div>
+									<div class="input-wrap">
+										<input type="text" name="join" id="birth" placeholder="생년월일 ex) 19901019">
+										<label for="birth" class="is-blind">생년월일</label>
+									</div>
+									<div class="input-wrap">
+										<input type="text" name="join" id="mobile" placeholder="휴대폰 번호 (-제외 입력)">
+										<label for="mobile" class="is-blind">휴대폰 번호</label>
+									</div>
+									<button type="button" class="btn color_4">조회</button>	
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
-
-    <map name="imagemap-sample1">
-			<area alt="" title="" href="./new_join02.html" coords="715,477,1206,525" shape="rect">
-		</map>
-
-		<!-- <main id="contents" class="member">
-			<div class="tit-area">
-				<h2 class="tit">평가구분</h2>
-			</div>
-			<div class="w-set">
-			</div>
-		</main> -->
 
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
 	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
 	</script>
 </body>
 </html>
