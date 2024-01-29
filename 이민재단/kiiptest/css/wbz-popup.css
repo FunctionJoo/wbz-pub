@@ -19,14 +19,20 @@
   padding: 30px 20px 40px;
   background: #fff;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   border-radius: 6px;
 }
 .wbz-popup-cont.on {
   display: block;
 }
+.wbz-popup-cont.size-m {
+  max-width: 584px;
+}
 .wbz-popup-cont .popup-header {
   padding-bottom: 20px;
+}
+.wbz-popup-cont .popup-header.type-border {
+  border-bottom: 2px solid #707070;
 }
 .wbz-popup-cont .popup-header .popup-title {
   text-align: center;
@@ -115,6 +121,11 @@
   background-color: #fff;
   color: #222;
   border-color: #666;
+}
+.wbz-popup-cont .popup-cont .popup-button .cr_3 {
+  background-color: #222;
+  border-color: #222;
+  color: #fff;
 }
 .wbz-popup-cont.type-alert {
   max-width: 380px;

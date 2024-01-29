@@ -68,6 +68,82 @@
             }
         }
     }
+    .withdrawal-wrap {
+        margin-top: 40px;
+        .input-wrap {
+            textarea {
+                border-radius: 0;
+                height: 360px;
+                padding: 20px;
+            }
+        }
+    }
+    .refund-wrap {
+        // 테이블
+        .table-wrap {
+            margin-top: 26px;
+            .table-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 0 0 15px;
+                border: 0;
+            }
+            .table-body {
+                .list-row {
+                    &:last-child {
+                        border-bottom: 1px solid #d3d3d3;
+                    }
+                }
+            }
+            .list-row {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                &.table-title {
+                    color: #fff;
+                    font-size: 14px;
+                    & > div {
+                        text-align: center;
+                        background: #555;
+                    }
+                }
+                & > div {
+                    border: solid #d3d3d3;
+                    border-width: 1px 0 0 1px;
+                    font-size: 15px;
+                    display: table-cell;
+                    text-align: center;
+                    padding: 12px 20px;
+                    height: 42px;
+                    vertical-align: middle;
+                    &:last-child {
+                        border-right: 1px solid #d3d3d3;
+                    }
+                }
+                .criteria {
+                    background: #f5f9fc;
+                }
+                .amount {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .logout-wrap {
+        margin-top: 26px;
+        padding: 20px 0;
+        background: #f5f9fc;
+        text-align: center;
+        .txt {
+            font-size: 16px;
+        }
+        .time {
+            padding-top: 10px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
 }
 
 // pdf
@@ -613,11 +689,10 @@
                         }
                     }
                     &.line {
-                       margin-top: 54px;
+                        margin-top: 54px;
                     }
                 }
                 .num {
-                    
                 }
                 .txt {
                     margin: 10px 0 0;
@@ -753,7 +828,7 @@
 }
 
 @include mobile {
-     // 회원가입
+    // 회원가입
     .member-wrap {
         .join-top {
             .step-list {
@@ -765,12 +840,11 @@
                         }
                     }
                     &.line {
-                       margin-top: 50px;
-                       width: 10px;
+                        margin-top: 50px;
+                        width: 10px;
                     }
                 }
                 .num {
-                    
                 }
                 .txt {
                     margin: 10px 0 0;

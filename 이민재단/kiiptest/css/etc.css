@@ -50,6 +50,73 @@
 .wbz-popup-cont .password-wrap .input-wrap input {
   text-align: center;
 }
+.wbz-popup-cont .withdrawal-wrap {
+  margin-top: 40px;
+}
+.wbz-popup-cont .withdrawal-wrap .input-wrap textarea {
+  border-radius: 0;
+  height: 360px;
+  padding: 20px;
+}
+.wbz-popup-cont .refund-wrap .table-wrap {
+  margin-top: 26px;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .table-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 0 15px;
+  border: 0;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .table-body .list-row:last-child {
+  border-bottom: 1px solid #d3d3d3;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .list-row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .list-row.table-title {
+  color: #fff;
+  font-size: 14px;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .list-row.table-title > div {
+  text-align: center;
+  background: #555;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .list-row > div {
+  border: solid #d3d3d3;
+  border-width: 1px 0 0 1px;
+  font-size: 15px;
+  display: table-cell;
+  text-align: center;
+  padding: 12px 20px;
+  height: 42px;
+  vertical-align: middle;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .list-row > div:last-child {
+  border-right: 1px solid #d3d3d3;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .list-row .criteria {
+  background: #f5f9fc;
+}
+.wbz-popup-cont .refund-wrap .table-wrap .list-row .amount {
+  text-align: left;
+}
+.wbz-popup-cont .logout-wrap {
+  margin-top: 26px;
+  padding: 20px 0;
+  background: #f5f9fc;
+  text-align: center;
+}
+.wbz-popup-cont .logout-wrap .txt, .wbz-popup-cont .logout-wrap .document-wrap .document-btm .date, .document-wrap .document-btm .wbz-popup-cont .logout-wrap .date {
+  font-size: 16px;
+}
+.wbz-popup-cont .logout-wrap .time {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
 
 .document-wrap .document-top {
   background-color: #222;

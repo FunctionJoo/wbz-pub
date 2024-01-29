@@ -226,7 +226,7 @@
 									<div class="cont">
 										<div class="tit-area">
 											<span class="tit">주의사항 및 환불 안내</span>
-											<button type="button" class="btn color_3">환불 기준 보기</button>
+											<button type="button" class="btn color_3" onclick="$popup.template('#refundPopup')">환불 기준 보기</button>
 										</div>
 										<div class="precaution-box">
 											<p class="txt">* 환불 시 수수료가 공제 되오니 환불규정을 꼭 숙지해 주시기 바랍니다.</p>
@@ -251,6 +251,48 @@
 
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
+
+	<!-- 환불기준 팝업 -->
+	<div class="wbz-popup-cont is-template" id="refundPopup">
+		<div class="popup-header type-border">
+			<strong class="popup-title">환불기준</strong>
+			<button class="popup-close popup-close-just" onclick="$popup.close();">✕</button>
+		</div>
+		<div class="popup-cont">
+			<div class="refund-wrap">
+				<div class="table-wrap">
+					<div class="table-head">
+						<div class="list-row table-title">
+							<div class="criteria">환불 기준</div>
+							<div class="amount">환불 금액</div>
+						</div>
+					</div>
+					<div class="table-body">
+						<div class="list-row">
+							<div class="criteria">접수기간 내</div>
+							<div class="amount">전액 환불</div>
+						</div>
+						<div class="list-row">
+							<div class="criteria">접수마감 후부터 7일</div>
+							<div class="amount">50% 환불</div>
+						</div>
+						<div class="list-row">
+							<div class="criteria">접수마감 후부터 7일부터 시험2일전</div>
+							<div class="amount">40% 환불</div>
+						</div>
+						<div class="list-row">
+							<div class="criteria">시험1일전 ~ 시험당일</div>
+							<div class="amount">환불불가</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-button">
+				<button type="button" class="cr_3 popup-confirm-event" onclick="$popup.close();">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- //환불기준 팝업 -->
 
 	<script>
 	</script>

@@ -49,8 +49,13 @@
 						<!-- <button type="button" class="btn" onclick="$popup.template('#termsPopup')">이용약관 및 개인정보처리방침</button> -->
 
 						<!-- 회원탈퇴 팝업 -->
-						<button type="button" class="btn" onclick="$popup.template('#withdrawPopup')">회원탈퇴</button>
+						<button type="button" class="btn" onclick="$popup.template('#withdrawalPopup')">회원탈퇴</button>
 
+						<!-- 환불기준 팝업 -->
+						<button type="button" class="btn" onclick="$popup.template('#refundPopup')">환불기준</button>
+
+						<!-- 자동 로그아웃 안내 팝업 -->
+						<button type="button" class="btn" onclick="$popup.template('#logoutPopup')">자동 로그아웃 안내</button>
 					</div>
 				</div>
 			</div>
@@ -113,23 +118,84 @@
 		<!-- //비밀번호 확인 팝업 -->
 
 		<!-- 회원탈퇴 팝업 -->
-		<div class="wbz-popup-cont is-template size-l" id="withdrawPopup">
-			<div class="popup-header">
+		<div class="wbz-popup-cont is-template" id="withdrawalPopup">
+			<div class="popup-header type-border">
 				<strong class="popup-title">회원탈퇴</strong>
 				<button class="popup-close popup-close-just" onclick="$popup.close();">✕</button>
 			</div>
 			<div class="popup-cont">
-				<div class="">
+				<div class="withdrawal-wrap">
 					<div class="input-wrap">
 						<textarea name="" id="" cols="30" rows="10" placeholder="탈퇴 사유를 입력해주세요."></textarea>
 					</div>
 				</div>
 				<div class="popup-button">
-					<button type="button" class="cr_1 popup-confirm-event">확인</button>
+					<button type="button" class="cr_3 popup-confirm-event">확인</button>
 				</div>
 			</div>
 		</div>
 		<!-- //회원탈퇴 팝업 -->
+
+		<!-- 환불기준 팝업 -->
+		<div class="wbz-popup-cont is-template" id="refundPopup">
+			<div class="popup-header type-border">
+				<strong class="popup-title">환불기준</strong>
+				<button class="popup-close popup-close-just" onclick="$popup.close();">✕</button>
+			</div>
+			<div class="popup-cont">
+				<div class="refund-wrap">
+					<div class="table-wrap">
+						<div class="table-head">
+							<div class="list-row table-title">
+								<div class="criteria">환불 기준</div>
+								<div class="amount">환불 금액</div>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="list-row">
+								<div class="criteria">접수기간 내</div>
+								<div class="amount">전액 환불</div>
+							</div>
+							<div class="list-row">
+								<div class="criteria">접수마감 후부터 7일</div>
+								<div class="amount">50% 환불</div>
+							</div>
+							<div class="list-row">
+								<div class="criteria">접수마감 후부터 7일부터 시험2일전</div>
+								<div class="amount">40% 환불</div>
+							</div>
+							<div class="list-row">
+								<div class="criteria">시험1일전 ~ 시험당일</div>
+								<div class="amount">환불불가</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup-button">
+					<button type="button" class="cr_3 popup-confirm-event" onclick="$popup.close();">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //환불기준 팝업 -->
+
+		<!-- 자동 로그아웃 안내 팝업 -->
+		<div class="wbz-popup-cont is-template size-m" id="logoutPopup">
+			<div class="popup-header type-border">
+				<strong class="popup-title">자동 로그아웃 안내</strong>
+				<button class="popup-close popup-close-just" onclick="$popup.close();">✕</button>
+			</div>
+			<div class="popup-cont">
+				<div class="logout-wrap">
+					<p class="txt">남은시간</p>
+					<p class="time">02분 59초</p>
+				</div>
+				<div class="popup-button">
+					<button type="button" class="cr_2">로그아웃</button>
+					<button type="button" class="cr_1 popup-confirm-event">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //자동 로그아웃 안내 팝업 -->
 
 	</div>
 	<script>	

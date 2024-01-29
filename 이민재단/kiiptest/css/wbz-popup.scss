@@ -19,13 +19,19 @@
     padding: 30px 20px 40px;
     background: #fff;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: 6px;
     &.on {
         display: block;
     }
+    &.size-m{
+        max-width: 584px;
+    }
     .popup-header {
         padding-bottom: 20px;
+        &.type-border {
+            border-bottom: 2px solid #707070;
+        }
         .popup-title {
             text-align: center;
             display: block;
@@ -114,6 +120,11 @@
                 color: $text-color1;
                 border-color: #666;
             }
+            .cr_3{
+                background-color: #222;
+                border-color: #222;
+                color: #fff;
+            }
         }
     }
     // 인스턴트 팝업
@@ -160,7 +171,7 @@
 }
 
 @media (max-width: 1023px) {
-    .wbz-popup-cont{
+    .wbz-popup-cont {
         // 모바일 풀 팝업
         &.type-full {
             top: 0;
@@ -225,19 +236,19 @@
                 }
             }
         }
-    }   
+    }
 }
 
 @media (max-width: 768px) {
-    .wbz-popup-cont{
+    .wbz-popup-cont {
         max-width: calc(100% - 36px);
     }
 }
 
 @media (max-width: 400px) {
-    .wbz-popup-cont{
-        &.type-alert{
-            max-width: calc(100% - 36px)
+    .wbz-popup-cont {
+        &.type-alert {
+            max-width: calc(100% - 36px);
         }
     }
 }
