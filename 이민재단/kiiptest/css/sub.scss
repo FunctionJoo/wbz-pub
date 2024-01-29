@@ -7,6 +7,21 @@ main {
     }
 }
 
+//팝업 배경 round
+.wbz-popup-cont {
+    &.type-alert {
+        border-radius: 10px;
+    }
+    &.type-r3 {
+        border-radius: 3px;
+    }
+    .popup-button {
+        button {
+            border-radius: 6px;
+        }
+    }
+}
+
 // 공통
 h2.tit {
     text-align: center;
@@ -1241,6 +1256,9 @@ input[type="number"]::-webkit-inner-spin-button {
             padding: 0 20px;
             line-height: 32px;
         }
+        + .title {
+            font-weight: 600;
+        }
     }
     .answer {
         span {
@@ -1426,6 +1444,9 @@ input[type="number"]::-webkit-inner-spin-button {
                         background-image: url('../images/common/ico/qna_lock.svg');
                         background-repeat: no-repeat;
                         background-position: left top;
+                        > a:hover {
+                            border-bottom: 1px solid #222;
+                        }
                     }
                 }
             }
@@ -1440,12 +1461,12 @@ input[type="number"]::-webkit-inner-spin-button {
                     color: $primary-color1;
                 }
                 dt {
-                    padding: 30px;
                     > a {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         gap: 10px;
+                        padding: 30px;
                         &.on {
                             .ico-arr {
                                 transform: rotate(180deg);
@@ -1500,10 +1521,12 @@ input[type="number"]::-webkit-inner-spin-button {
         .btn-wrap{
             padding-top: 60px;
             justify-content: center;
-            .list_btn{
+            .list-btn{
                 display: inline-block;
                 font-size: 18px;
                 font-weight: 500;
+                height: 40px;
+                line-height: 40px;
                 padding-left: 27px;
                 background-repeat: no-repeat;
                 background-position: left center;
@@ -1620,6 +1643,9 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                     &.pdf {
                         background-image: url('../images/common/ico/file_pdf.svg');
+                    }
+                    + .attach {
+                        margin-top: 12px;
                     }
                 }
             }
@@ -1756,6 +1782,7 @@ input[type="number"]::-webkit-inner-spin-button {
                                     max-width: 120px;
                                     height: 40px;
                                     line-height: 38px;
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -1769,6 +1796,9 @@ input[type="number"]::-webkit-inner-spin-button {
                                 font-size: 16px;
                                 line-height: 26px;
                                 word-break: break-all;
+                                display: flex;
+                                align-items: center;
+                                gap: 40px;
                                 &.doc {
                                     background-image: url('../images/common/ico/file_doc.svg');
                                 }
@@ -1776,10 +1806,9 @@ input[type="number"]::-webkit-inner-spin-button {
                                     background-image: url('../images/common/ico/file_pdf.svg');
                                 }
                                 .btn-del {
-                                    display: inline-block;
-                                    margin-left: 40px;
                                     font-size: 14px;
                                     color: $text-color2;
+                                    white-space: nowrap;
                                 }
                             }
                         }
@@ -2959,7 +2988,7 @@ input[type="number"]::-webkit-inner-spin-button {
         .boardView-wrap {
             .btn-wrap {
                 padding-top: 40px;
-                .list_btn {
+                .list-btn {
                     font-size: 14px;
                     padding-left: 19px;
                     background-size: 11px 8px;
@@ -3073,11 +3102,9 @@ input[type="number"]::-webkit-inner-spin-button {
                             }
                             .attach-list {
                                 width: 100%;
-                                margin-top: 2px;
                                 .attach {
-                                    display: flex;
-                                    align-items: center;
                                     justify-content: space-between;
+                                    gap: 16px;
                                 }
                             }
                         }

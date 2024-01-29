@@ -2,6 +2,16 @@ main > img {
   margin-bottom: 160px;
 }
 
+.wbz-popup-cont.type-alert {
+  border-radius: 10px;
+}
+.wbz-popup-cont.type-r3 {
+  border-radius: 3px;
+}
+.wbz-popup-cont .popup-button button {
+  border-radius: 6px;
+}
+
 h2.tit {
   text-align: center;
   font-weight: 700;
@@ -436,6 +446,9 @@ input[type=number]::-webkit-inner-spin-button {
   border-color: #ddd;
   padding: 0 14px;
   line-height: 48px;
+}
+.member-wrap .input-wrap input::-moz-placeholder {
+  color: #a7a7a7;
 }
 .member-wrap .input-wrap input::placeholder {
   color: #a7a7a7;
@@ -1177,6 +1190,9 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 0 20px;
   line-height: 32px;
 }
+.board-wrap .is-notice + .title {
+  font-weight: 600;
+}
 .board-wrap .answer span {
   display: inline-block;
   width: 80px;
@@ -1345,6 +1361,9 @@ input[type=number]::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: left top;
 }
+.board-wrap .boardList-wrap .qna-wrap .table-list .list.title > a:hover {
+  border-bottom: 1px solid #222;
+}
 .board-wrap .boardList-wrap .faq-wrap {
   border-top: 1px solid #222222;
 }
@@ -1356,14 +1375,12 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 700;
   color: #024fc4;
 }
-.board-wrap .boardList-wrap .faq-wrap .faq-list dt {
-  padding: 30px;
-}
 .board-wrap .boardList-wrap .faq-wrap .faq-list dt > a {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  padding: 30px;
 }
 .board-wrap .boardList-wrap .faq-wrap .faq-list dt > a.on .ico-arr {
   transform: rotate(180deg);
@@ -1410,10 +1427,12 @@ input[type=number]::-webkit-inner-spin-button {
   padding-top: 60px;
   justify-content: center;
 }
-.board-wrap .boardView-wrap .btn-wrap .list_btn {
+.board-wrap .boardView-wrap .btn-wrap .list-btn {
   display: inline-block;
   font-size: 18px;
   font-weight: 500;
+  height: 40px;
+  line-height: 40px;
   padding-left: 27px;
   background-repeat: no-repeat;
   background-position: left center;
@@ -1529,6 +1548,9 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .board-wrap .boardView-wrap .attach-area .attach-list .attach.pdf {
   background-image: url("../images/common/ico/file_pdf.svg");
+}
+.board-wrap .boardView-wrap .attach-area .attach-list .attach + .attach {
+  margin-top: 12px;
 }
 .board-wrap .boardView-wrap .answer-area {
   padding-top: 60px;
@@ -1670,6 +1692,7 @@ input[type=number]::-webkit-inner-spin-button {
   max-width: 120px;
   height: 40px;
   line-height: 38px;
+  cursor: pointer;
 }
 .board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list {
   margin-top: 6px;
@@ -1682,6 +1705,9 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 26px;
   word-break: break-all;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach.doc {
   background-image: url("../images/common/ico/file_doc.svg");
@@ -1690,10 +1716,9 @@ input[type=number]::-webkit-inner-spin-button {
   background-image: url("../images/common/ico/file_pdf.svg");
 }
 .board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach .btn-del {
-  display: inline-block;
-  margin-left: 40px;
   font-size: 14px;
   color: #555;
+  white-space: nowrap;
 }
 .board-wrap .boardWrite-wrap .write-form .ck-wrap {
   padding-top: 40px;
@@ -2710,7 +2735,7 @@ input[type=number]::-webkit-inner-spin-button {
   .board-wrap .boardView-wrap .btn-wrap {
     padding-top: 40px;
   }
-  .board-wrap .boardView-wrap .btn-wrap .list_btn {
+  .board-wrap .boardView-wrap .btn-wrap .list-btn {
     font-size: 14px;
     padding-left: 19px;
     background-size: 11px 8px;
@@ -2807,12 +2832,10 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list {
     width: 100%;
-    margin-top: 2px;
   }
   .board-wrap .boardWrite-wrap .write-form .input-area dl dd .attach-list .attach {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    gap: 16px;
   }
   .board-wrap .boardWrite-wrap .write-form .ck-wrap {
     padding-top: 20px;
