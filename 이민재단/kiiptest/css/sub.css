@@ -455,13 +455,13 @@ input[type=number]::-webkit-inner-spin-button {
   width: 15%;
 }
 .sub-wrap .super-wrap .info-box ul li.info05 {
-  width: 12%;
+  width: 11%;
 }
 .sub-wrap .super-wrap .info-box ul li.info06 {
   width: 15%;
 }
 .sub-wrap .super-wrap .info-box ul li.info07 {
-  width: 16%;
+  width: 17%;
 }
 .sub-wrap .super-wrap .info-box ul li .th {
   height: 42px;
@@ -561,6 +561,74 @@ input[type=number]::-webkit-inner-spin-button {
 .sub-wrap .super-wrap .cont-wrap .app-wrap dl dd .input-wrap select {
   width: 120px;
   height: 40px;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap {
+  margin-top: 20px;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .list.no {
+  width: 6%;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .list.year, .sub-wrap .super-wrap .cont-wrap .table-wrap .list.quarter {
+  width: 8%;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .list.date {
+  width: 12%;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .list.cancel {
+  width: 12%;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .list.area, .sub-wrap .super-wrap .cont-wrap .table-wrap .list.attend {
+  width: 10%;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-top {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  background-color: #F5F5F5;
+  border-top: 1px solid #DDDDDD;
+  padding: 0;
+  line-height: 40px;
+  font-size: 16px;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-top > div {
+  display: table-cell;
+  border-left: 1px solid #DDDDDD;
+  text-align: center;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-top > div:last-of-type {
+  border-right: 1px solid #DDDDDD;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border: solid #DDDDDD;
+  border-width: 1px 0 0;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list:last-of-type {
+  border-bottom: 1px solid #DDDDDD;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div {
+  display: table-cell;
+  border-left: 1px solid #DDDDDD;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  line-height: 52px;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div:last-of-type {
+  border-right: 1px solid #DDDDDD;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.title {
+  text-align: left;
+  padding: 0 12px;
+}
+.sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.cancel .btn {
+  border-radius: 3px;
+  height: 28px;
+  line-height: 26px;
+  max-width: 80px;
+  font-size: 14px;
 }
 
 .member-wrap {
@@ -2203,6 +2271,18 @@ input[type=number]::-webkit-inner-spin-button {
   .sub-wrap .super-wrap .info-box ul li .th {
     font-size: 14px;
   }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .list.area, .sub-wrap .super-wrap .cont-wrap .table-wrap .list.attend {
+    width: 8%;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-top {
+    font-size: 14px;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div {
+    font-size: 14px;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.title {
+    padding: 0 5px;
+  }
   .member-wrap {
     padding: 56px 0 80px;
   }
@@ -2736,6 +2816,47 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .sub-wrap .super-wrap .cont-wrap .app-wrap dl dd .input-wrap select {
     width: 100%;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap {
+    margin-top: 14px;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-top {
+    display: none;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    border-width: 1px;
+    padding: 20px 14px;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div {
+    border: 0 !important;
+    line-height: 1.2;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.no {
+    display: none;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.title {
+    order: 1;
+    width: 100%;
+    padding: 0;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.year, .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.quarter {
+    order: 2;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.date {
+    order: 2;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.cancel {
+    order: 7;
+    width: 100%;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.area, .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list > div.attend {
+    order: 2;
+  }
+  .sub-wrap .super-wrap .cont-wrap .table-wrap .table-body .table-list + .table-list {
+    margin-top: 14px;
   }
   .member-wrap .sub-txt {
     font-size: 14px;

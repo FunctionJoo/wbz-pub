@@ -498,13 +498,13 @@ input[type="number"]::-webkit-inner-spin-button {
                         width: 15%;
                     }
                     &.info05 {
-                        width: 12%;
+                        width: 11%;
                     }
                     &.info06 {
                         width: 15%;
                     }
                     &.info07 {
-                        width: 16%;
+                        width: 17%;
                     }
                     .th {
                         height: 42px;
@@ -608,6 +608,81 @@ input[type="number"]::-webkit-inner-spin-button {
                             select {
                                 width: 120px;
                                 height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .table-wrap {
+                margin-top: 20px;
+                .list {
+                    &.no {
+                        width: 6%;
+                    }
+                    &.year, &.quarter {
+                        width: 8%;
+                    }
+                    &.date {
+                        width: 12%;
+                    }
+                    &.cancel {
+                        width: 12%;
+                    }
+                    &.area, &.attend {
+                        width: 10%;
+                    }
+                }
+                .table-top {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                    background-color: #F5F5F5;
+                    border-top: 1px solid #DDDDDD;
+                    padding: 0;
+                    line-height: 40px;
+                    font-size: 16px;
+                    > div {
+                        display: table-cell;
+                        border-left: 1px solid #DDDDDD;
+                        text-align: center;
+                        &:last-of-type {
+                            border-right: 1px solid #DDDDDD;
+                        }
+                    }
+                }
+                .table-body {
+                    .table-list {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+                        border: solid #DDDDDD;
+                        border-width: 1px 0 0;
+                        &:last-of-type {
+                            border-bottom: 1px solid #DDDDDD;
+                        }
+                        > div {
+                            display: table-cell;
+                            border-left: 1px solid #DDDDDD;
+                            text-align: center;
+                            font-size: 16px;
+                            color: $text-color2;
+                            line-height: 52px;
+                            &:last-of-type {
+                                border-right: 1px solid #DDDDDD;
+                            }
+                            &.title {
+                                text-align: left;
+                                padding: 0 12px;
+                            }
+                            &.cancel {
+                                .btn {
+                                    border-radius: 3px;
+                                    height: 28px;
+                                    line-height: 26px;
+                                    max-width: 80px;
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }
@@ -2360,6 +2435,28 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                 }
             }
+            .cont-wrap {
+                .table-wrap {
+                    .list {
+                        &.area, &.attend {
+                            width: 8%;
+                        }
+                    }
+                    .table-top {
+                        font-size: 14px;
+                    }
+                    .table-body {
+                        .table-list {
+                            > div {
+                                font-size: 14px;
+                                &.title {
+                                    padding: 0 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     // 회원가입
@@ -2879,8 +2976,8 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 
-    //알림
     .sub-wrap {
+        //알림
         .alarm-wrap {
             .table-top {
                 margin-top: 16px;
@@ -3005,6 +3102,49 @@ input[type="number"]::-webkit-inner-spin-button {
                                 select {
                                     width: 100%;
                                 }
+                            }
+                        }
+                    }
+                }
+                .table-wrap {
+                    margin-top: 14px;
+                    .table-top {
+                        display: none;
+                    }
+                    .table-body {
+                        .table-list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            border-radius: 6px;
+                            border-width: 1px;
+                            padding: 20px 14px;
+                            > div {
+                                border: 0 !important;
+                                line-height: 1.2;
+                                &.no {
+                                    display: none;
+                                }
+                                &.title {
+                                    order: 1;
+                                    width: 100%;
+                                    padding: 0;
+                                }
+                                &.year, &.quarter {
+                                    order: 2;
+                                }
+                                &.date {
+                                    order: 2;
+                                }
+                                &.cancel {
+                                    order: 7;
+                                    width: 100%;
+                                }
+                                &.area, &.attend {
+                                    order: 2;
+                                }
+                            }
+                            + .table-list {
+                                margin-top: 14px;
                             }
                         }
                     }
