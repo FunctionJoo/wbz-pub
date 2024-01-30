@@ -35,31 +35,183 @@
 		<div class="js-include" data-include="../outline/header.html" data-event="header"></div>
 		<div class="js-include" data-include="../outline/aside.html" data-event="aside"></div>
 
-    <main class="wrap">
-			<img src="../images/dummy/supervisor.png" alt="" usemap="#imagemap-sample1">
+		<main id="contents">
+			<div class="sub-content">
+				<div class="sub-wrap">
+					<div class="con-top">
+						<div class="location">
+							<ul class="w-set">
+								<li>
+									<a href="../main/index.html" class="home">Home</a>
+								</li>
+								<li>
+									<a href="#" class="menu has-select">구술감독관</a>
+									<ul>
+										<li>
+											<a href="#">KIIP 평가안내</a>
+										</li>
+										<li>
+											<a href="../register/register_step01.html">평가 접수</a>
+										</li>
+										<li>
+											<a href="../service/notice_list.html">알림마당</a>
+										</li>
+										<li>
+											<a href="../mypage/mytest01_list.html">마이페이지</a>
+										</li>
+										<li>
+											<a href="../supervisor/application_list.html">구술감독관</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="menu has-select">구술감독관 신청</a>
+									<ul>
+										<li>
+											<a href="./application.html">구술감독관 신청</a>
+										</li>
+										<li>
+											<a href="./career_list.html">활동확인서 발급</a>
+										</li>
+										<li>
+											<a href="./certificate_list.html">이수증 발급</a>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="con-btm">
+						<div class="w-set">
+							<div class="tit-area">
+								<h2 class="tit">구술감독관 신청</h2>
+							</div>
+							<div class="super-wrap">
+								<div class="info-box menu">
+									<ul>
+										<li class="info01">
+											<span class="th">이수증번호</span>
+											<span>SU-12-구술-015</span>
+										</li>
+										<li class="info02">
+											<span class="th">아이디</span>
+											<span>Sazita00</span>
+										</li>
+										<li class="info03">
+											<span class="th">이름</span>
+											<span>홍길동</span>
+										</li>
+										<li class="info04">
+											<span class="th">생년월일</span>
+											<span>19871211</span>
+										</li>
+										<li class="info05">
+											<span class="th">휴대폰</span>
+											<span>01000000000</span>
+										</li>
+										<li class="info06">
+											<span class="th">이메일</span>
+											<span>mailmail@mail.com</span>
+										</li>
+										<li class="info07">
+											<span class="th">감독구분</span>
+											<span>한국어 및 한국사회이해강사</span>
+										</li>
+										<li class="info08">
+											<span class="th">평가경력</span>
+											<span>10회</span>
+										</li>
+									</ul>
+								</div>
+								<div class="cont-wrap">
+									<div class="tit-area">
+										<span class="tit">감독관 평가 구분</span>
+									</div>
+									<!-- <div class="empty">
+										<p>접수기간이 아닙니다.</p>
+									</div> -->
+									<div class="app-wrap">
+										<form action="">
+											<dl>
+												<dt>분기</dt>
+												<dd>4분기</dd>
+											</dl>
+											<dl>
+												<dt>희망 평가<em>*</em></dt>
+												<dd>
+													<div class="input-wrap">
+														<!-- input이 checked 될 때 부모 checkbox에 on 클래스 추가 -->
+														<div class="checkbox on">
+															<input type="checkbox" name="hope" id="hope01" checked>
+															<label for="hope01">
+																<span>2023-10-10 2023년도 [31차] 사전평가</span>
+															</label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="hope" id="hope02">
+															<label for="hope02">
+																<span>2023-10-10 2023년도 [31차] 중간평가</span>
+															</label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="hope" id="hope03">
+															<label for="hope03">2023-10-10 2023년도 [31차] 종합평가</label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="hope" id="hope04" checked>
+															<label for="hope04">2023-10-10 2023년도 [32차] 사전평가</label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="hope" id="hope05">
+															<label for="hope05">2023-10-10 2023년도 [32차] 중간평가</label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="hope" id="hope06">
+															<label for="hope06">2023-10-10 2023년도 [32차] 종합평가</label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="hope" id="hope07">
+															<label for="hope07">2023-10-10 2023년도 [33차] 종합평가</label>
+														</div>
+													</div>
+												</dd>
+											</dl>
+											<dl>
+												<dt>희망지역</dt>
+												<dd>
+													<div class="input-wrap">
+														<label for="area" class="is-blind">희망지역</label>
+														<select name="area" id="area">
+															<option value="">서울</option>
+															<option value="">경기</option>
+															<option value="">인천</option>
+														</select>
+													</div>
+												</dd>
+											</dl>
+											<div class="btn-wrap type-center-always">
+												<button type="button" class="btn">신청하기</button>
+											</div>
+										</form>
+									</div>
+									<!-- 접수기간 아닐 때 버튼 -->
+									<!-- <div class="btn-wrap type-center-always">
+										<a href="../main/index.html" class="btn">메인이동</a>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
-
-    <map name="imagemap-sample1">
-			<area alt="" title="" href="./application_list.html" coords="860,1222,1055,1270" shape="rect">
-		</map>
-
-		<!-- <main id="contents" class="member">
-			<div class="tit-area">
-				<h2 class="tit">평가구분</h2>
-			</div>
-			<div class="w-set">
-			</div>
-		</main> -->
 
 		<div class="js-include" data-include="../outline/footer.html" data-event="footer"></div>
 	</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
 	<script>
-    $(document).ready(function() {
-      $('img[usemap]').rwdImageMaps();
-    });
+
 	</script>
 </body>
 </html>

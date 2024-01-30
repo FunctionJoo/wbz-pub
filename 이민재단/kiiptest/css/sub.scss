@@ -201,6 +201,19 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+.btn-wrap {
+    margin-top: 60px;
+    &.type-column {
+        margin-top: 40px;
+        gap: 12px;
+    }
+    &.type-center-always {
+        .btn {
+            max-width: 200px;
+        }
+    }
+}
+
 // 공통
 .sub-content {
     // 테이블
@@ -393,11 +406,16 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
-//알림
 .sub-wrap {
-    .w-set {
-        max-width: 1000px;
+    .con-btm {
+        .w-set {
+            &.type-s {
+                max-width: 1000px;
+            }
+
+        }
     }
+    //알림
     .alarm-wrap {
         .table-top {
             padding: 10px 0 14px;
@@ -456,6 +474,147 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
     }
+
+    //구술감독관
+    .super-wrap {
+        .menu {
+            margin: 60px 0 40px;
+        }
+        .info-box {
+            text-align: center;
+            ul {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                border: solid #dddddd;
+                border-width: 1px 0 1px 0;
+                li {
+                    display: table-cell;
+                    border-left: 1px solid #dddddd;
+                    &:last-of-type {
+                        border-right: 1px solid #dddddd;
+                    }
+                    &.info01 {
+                        width: 15%;
+                    }
+                    &.info05 {
+                        width: 12%;
+                    }
+                    &.info06 {
+                        width: 15%;
+                    }
+                    &.info07 {
+                        width: 16%;
+                    }
+                    .th {
+                        height: 42px;
+                        background-color: #555555;
+                        border-bottom: 1px solid #dddddd;
+                        line-height: 42px;
+                        color: #fff;
+                    }
+                    span {
+                        display: block;
+                        font-size: 16px;
+                        color: #000000;
+                        &:last-of-type {
+                            padding: 16px 0;
+                            word-break:break-all;
+                        }
+                    }
+                }
+            }
+        }
+        .cont-wrap {
+            > .btn-wrap {
+                margin-top: 0;
+            }
+            .tit-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .tit {
+                    @include font(500, 20px, #000000);
+                }
+            }
+            .empty p {
+                font-size: 18px;
+            }
+            .app-wrap {
+                margin: 40px 0 0;
+                dl {
+                    display: flex;
+                    flex-wrap: wrap;
+                    border: solid #DDDDDD;
+                    border-width: 1px 1px 0 1px;
+                    &:first-of-type {
+                        dt {
+                            line-height: 54px;
+                        }
+                        dd {
+                            line-height: 1.2;
+                        }
+                        + dl dt {
+                            padding-top: 32px;
+                        }
+                    }
+                    &:last-of-type {
+                        border-width: 1px;
+                        dt {
+                            line-height: 76px;
+                        }
+                    }
+                    dt {
+                        width: 208px;
+                        background-color: #F5F5F5;
+                        border-right: 1px solid #DDDDDD;
+                        font-size: 16px;
+                        text-align: center;
+                        em {
+                            color: $primary-color1;
+                        }
+                    }
+                    dd {
+                        padding: 18px 0 18px 12px;
+                        font-size: 15px;
+                        .checkbox {
+                            + .checkbox {
+                                margin-top: 12px;
+                            }
+                            input[type=checkbox]:checked ~ label{
+                                border-color: $primary-color1;
+                                background-color: #024FC41F;
+                                color: $primary-color1;
+                            }
+                            label {
+                                display: block;
+                                width: 290px;
+                                height: 50px;
+                                padding-left: 42px;
+                                border-radius: 5px;
+                                border: 1px solid #DDDDDD;
+                                font-size: 14px;
+                                line-height: 48px;
+                                &::before {
+                                    width: 18px;
+                                    height: 18px;
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto 0 auto 12px;
+                                }
+                            }
+                        }
+                        .input-wrap {
+                            select {
+                                width: 120px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // 회원
@@ -499,23 +658,6 @@ input[type="number"]::-webkit-inner-spin-button {
             &::placeholder {
                 color: #a7a7a7;
             }
-        }
-    }
-    .btn-wrap {
-        margin-top: 60px;
-        &.type-column {
-            margin-top: 40px;
-            gap: 12px;
-        }
-        &.type-center-always {
-            .btn {
-                max-width: 200px;
-            }
-        }
-        .btn {
-            height: 52px;
-            line-height: 50px;
-            font-weight: 400;
         }
     }
 
@@ -639,6 +781,9 @@ input[type="number"]::-webkit-inner-spin-button {
                 li {
                     display: table-cell;
                     border-left: 1px solid #dddddd;
+                    &:last-of-type {
+                        border-right: 1px solid #dddddd;
+                    }
                     .th {
                         height: 42px;
                         background-color: #f5f5f5;
@@ -652,9 +797,6 @@ input[type="number"]::-webkit-inner-spin-button {
                         font-size: 16px;
                         line-height: 54px;
                         color: $text-color1;
-                    }
-                    &:last-of-type {
-                        border-right: 1px solid #dddddd;
                     }
                 }
             }
@@ -2204,9 +2346,25 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
     }
+
+    .sub-wrap {
+        //구술감독관
+        .super-wrap {
+            .info-box {
+                ul {
+                    li {
+                        span,
+                        .th {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     // 회원가입
     .member-wrap {
-        padding: 50px 0 80px;
+        padding: 56px 0 80px;
         &.type-new {
             padding: 26px 0 80px;
         }
@@ -2694,7 +2852,7 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
     .con-btm {
-        padding: 40px 0 80px;
+        padding: 26px 0 80px;
     }
 
     .sub-content {
@@ -2705,6 +2863,19 @@ input[type="number"]::-webkit-inner-spin-button {
                     width: 100%;
                 }
             }
+        }
+    }
+    .btn-wrap {
+        margin-top: 40px;
+        gap: 14px;
+        &.type-center-always {
+            .btn {
+                max-width: none;
+            }
+        }
+        .btn {
+            height: 50px;
+            line-height: 48px;
         }
     }
 
@@ -2755,6 +2926,91 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
             }
         }
+
+        //구술감독관
+        .super-wrap {
+            .menu {
+                margin: 30px 0;
+            }
+            .info-box {
+                background-color: #f5f5f5;
+                padding: 20px 12px;
+                ul {
+                    border: 0;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 0;
+                        width: 100% !important;
+                        span,
+                        .th {
+                            height: auto;
+                            background-color: transparent;
+                            line-height: 1;
+                            border-bottom: 0;
+                            color: $text-color1;
+                            font-size: 16px;
+                            padding: 0 !important;
+                        }
+                        + li {
+                            margin-top: 12px;
+                        }
+                        &:last-of-type {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            .cont-wrap {
+                .tit-area {
+                    .tit {
+                        font-size: 18px;
+                    }
+                }
+                .empty {
+                    padding: 40px 0;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+                .app-wrap {
+                    margin: 20px 0 0;
+                    dl {
+                        border: 0;
+                        gap: 10px;
+                        + dl dt {
+                            padding-top: 16px !important;
+                        }
+                        dt {
+                            width: 100%;
+                            line-height: 1.2 !important;
+                            background-color: transparent;
+                            text-align: left;
+                            border: 0;
+                            font-weight: 500;
+                        }
+                        dd {
+                            width: 100%;
+                            padding: 0;
+                            font-size: 14px;
+                            .checkbox {
+                                label {
+                                    width: 100%;
+                                    height: 48px;
+                                    line-height: 46px;
+                                }
+                            }
+                            .input-wrap {
+                                select {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // 회원
@@ -2767,6 +3023,7 @@ input[type="number"]::-webkit-inner-spin-button {
         }
         //로그인
         .login {
+            margin-top: 26px;
             .input-wrap {
                 input {
                     height: 40px;
@@ -2785,19 +3042,7 @@ input[type="number"]::-webkit-inner-spin-button {
                 margin-top: 10px;
             }
         }
-        .btn-wrap {
-            margin-top: 40px;
-            gap: 14px;
-            &.type-center-always {
-                .btn {
-                    max-width: none;
-                }
-            }
-            .btn {
-                height: 50px;
-                line-height: 48px;
-            }
-        }
+
         .captcha-wrap {
             margin-top: 20px;
         }
