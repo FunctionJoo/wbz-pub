@@ -436,9 +436,6 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 16px;
   color: #555;
 }
-.member-wrap .sub-txt br {
-  display: none;
-}
 .member-wrap .login {
   margin-top: 40px;
 }
@@ -464,14 +461,20 @@ input[type=number]::-webkit-inner-spin-button {
 .member-wrap .input-wrap input::placeholder {
   color: #a7a7a7;
 }
-.member-wrap .btn {
+.member-wrap .btn-wrap {
+  margin-top: 60px;
+}
+.member-wrap .btn-wrap.type-column {
   margin-top: 40px;
+  gap: 12px;
+}
+.member-wrap .btn-wrap.type-center-always .btn {
+  max-width: 200px;
+}
+.member-wrap .btn-wrap .btn {
   height: 52px;
   line-height: 50px;
   font-weight: 400;
-}
-.member-wrap .btn + .btn {
-  margin-top: 12px;
 }
 .member-wrap .captcha-wrap {
   margin: 12px 0 0;
@@ -516,10 +519,11 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .member-wrap .find-pw {
   display: block;
-  text-align: center;
+  width: 150px;
+  margin: 0 auto;
   font-size: 14px;
   color: #555;
-  line-height: 16px;
+  line-height: 32px;
   margin-top: 40px;
 }
 .member-wrap .find-pw::before {
@@ -749,14 +753,6 @@ input[type=number]::-webkit-inner-spin-button {
   bottom: 0;
   margin: auto 0;
 }
-.member-wrap .join-wrap .join-form .btn-wrap {
-  margin-top: 60px;
-  justify-content: center;
-}
-.member-wrap .join-wrap .join-form .btn-wrap .btn {
-  margin-top: 0;
-  width: 200px;
-}
 .member-wrap .join-wrap .tit-area {
   display: flex;
   justify-content: space-between;
@@ -775,12 +771,10 @@ input[type=number]::-webkit-inner-spin-button {
 .member-wrap .join-wrap .tit-area span.tit {
   font-size: 20px;
   font-weight: 500;
-}
-.member-wrap .join-wrap .tit-area ~ .tit-area {
-  margin: 40px 0 0;
+  color: #000000;
 }
 .member-wrap .join-wrap .form-wrap {
-  padding: 20px 0 0;
+  padding: 20px 0 40px;
 }
 .member-wrap .join-wrap .form-wrap .input-wrap .type-number {
   display: flex;
@@ -800,6 +794,48 @@ input[type=number]::-webkit-inner-spin-button {
   height: 40px;
   margin-top: 0;
   line-height: 38px;
+}
+.member-wrap .join-wrap .form-wrap dl:last-of-type dt::after {
+  display: inline;
+}
+.member-wrap .join-wrap .ck-wrap .tit {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.member-wrap .join-wrap .ck-wrap .txt-box {
+  margin: 20px 0;
+  padding: 30px;
+  border: 1px solid #DDDDDD;
+  font-size: 16px;
+  word-break: break-all;
+}
+.member-wrap .join-wrap .ck-wrap .checkbox em {
+  color: #F50E0E;
+}
+.member-wrap .join-wrap .complete {
+  max-width: 464px;
+  margin: 60px auto 0;
+  padding: 92px 0 0;
+  background-image: url("../images/common/ico/new_join03.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.member-wrap .join-wrap .complete .com-txt {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+}
+.member-wrap .join-wrap .complete .note-txt {
+  margin-top: 40px;
+  border-radius: 0;
+  padding: 28px 0;
+}
+.member-wrap .join-wrap .complete .note-txt .txt {
+  text-align: center;
+  background: none;
+  padding: 0;
+  color: #222;
 }
 
 .con-top .tit-area {
@@ -2037,7 +2073,10 @@ input[type=number]::-webkit-inner-spin-button {
     width: 120px;
   }
   .member-wrap {
-    padding: 50px 0 100px;
+    padding: 50px 0 80px;
+  }
+  .member-wrap.type-new {
+    padding: 26px 0 80px;
   }
   .member-wrap .sub-txt {
     margin: 26px 0 32px;
@@ -2061,6 +2100,9 @@ input[type=number]::-webkit-inner-spin-button {
   .member-wrap .join-wrap .join-form .input-wrap .cert-box + .btn {
     max-width: none;
     min-width: 270px;
+  }
+  .member-wrap .join-wrap .join-form .ck-wrap .txt-box .txt ~ .txt {
+    margin-top: 10px;
   }
   .register-wrap .con-btm .step-wrap {
     padding: 0;
@@ -2499,7 +2541,14 @@ input[type=number]::-webkit-inner-spin-button {
   .member-wrap .input-wrap + .input-wrap {
     margin-top: 10px;
   }
-  .member-wrap .btn {
+  .member-wrap .btn-wrap {
+    margin-top: 40px;
+    gap: 14px;
+  }
+  .member-wrap .btn-wrap.type-center-always .btn {
+    max-width: none;
+  }
+  .member-wrap .btn-wrap .btn {
     height: 50px;
     line-height: 48px;
   }
@@ -2546,37 +2595,41 @@ input[type=number]::-webkit-inner-spin-button {
     line-height: 40px;
     font-size: 14px;
   }
-  .member-wrap .join-wrap .join-top {
-    margin: 26px 0 20px;
+  .member-wrap.type-new .join-wrap .info-box {
+    margin-bottom: 30px;
   }
-  .member-wrap .join-wrap .join-top > span {
-    font-size: 12px;
-  }
-  .member-wrap .join-wrap .join-top .info-box {
-    margin: 8px 0 0;
+  .member-wrap .join-wrap .info-box {
     background-color: #f5f5f5;
     padding: 20px 12px;
+    margin-bottom: 20px;
   }
-  .member-wrap .join-wrap .join-top .info-box ul {
+  .member-wrap .join-wrap .info-box ul {
     border: 0;
   }
-  .member-wrap .join-wrap .join-top .info-box ul li {
+  .member-wrap .join-wrap .info-box ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 0;
   }
-  .member-wrap .join-wrap .join-top .info-box ul li span,
-  .member-wrap .join-wrap .join-top .info-box ul li .th {
+  .member-wrap .join-wrap .info-box ul li span,
+  .member-wrap .join-wrap .info-box ul li .th {
     height: auto;
     line-height: 1;
     border-bottom: 0;
   }
-  .member-wrap .join-wrap .join-top .info-box ul li + li {
+  .member-wrap .join-wrap .info-box ul li + li {
     margin-top: 12px;
   }
-  .member-wrap .join-wrap .join-top .info-box ul li:last-of-type {
+  .member-wrap .join-wrap .info-box ul li:last-of-type {
     border: 0;
+  }
+  .member-wrap .join-wrap .join-top {
+    margin: 26px 0 20px;
+  }
+  .member-wrap .join-wrap .join-top > span {
+    font-size: 12px;
+    margin-bottom: 8px;
   }
   .member-wrap .join-wrap .join-form dl + dl {
     margin-top: 16px;
@@ -2584,7 +2637,7 @@ input[type=number]::-webkit-inner-spin-button {
   .member-wrap .join-wrap .join-form dl dt {
     width: 100%;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .member-wrap .join-wrap .join-form dl dd input {
     padding: 0 12px;
@@ -2592,6 +2645,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .member-wrap .join-wrap .join-form .input-wrap {
     flex-wrap: wrap;
+    gap: 8px;
   }
   .member-wrap .join-wrap .join-form .input-wrap .type-address {
     flex-wrap: wrap;
@@ -2642,19 +2696,65 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .member-wrap .join-wrap .join-form .checkbox label {
     font-size: 14px;
+    padding-left: 28px;
   }
   .member-wrap .join-wrap .join-form .checkbox label::before {
     width: 20px;
     height: 20px;
-    top: 3px;
+    top: 2px;
     bottom: auto;
   }
-  .member-wrap .join-wrap .join-form .btn-wrap {
-    margin-top: 40px;
-    gap: 14px;
+  .member-wrap .join-wrap .tit-area {
+    padding-bottom: 10px;
+    line-height: 21px;
   }
-  .member-wrap .join-wrap .join-form .btn-wrap .btn {
+  .member-wrap .join-wrap .tit-area span {
+    font-size: 12px;
+  }
+  .member-wrap .join-wrap .tit-area span.tit {
+    font-size: 18px;
+  }
+  .member-wrap .join-wrap .form-wrap {
+    padding: 20px 0 32px;
+  }
+  .member-wrap .join-wrap .form-wrap .input-wrap .type-number {
+    width: 100%;
+  }
+  .member-wrap .join-wrap .form-wrap .input-wrap .type-number input {
     flex: 1;
+    max-width: none;
+  }
+  .member-wrap .join-wrap .form-wrap .input-wrap .type-check {
+    max-width: none;
+  }
+  .member-wrap .join-wrap .form-wrap .input-wrap .type-check + .btn {
+    max-width: 98px;
+    font-size: 14px;
+  }
+  .member-wrap .join-wrap .ck-wrap .tit {
+    font-size: 18px;
+  }
+  .member-wrap .join-wrap .ck-wrap .txt-box {
+    margin: 16px 0;
+    padding: 14px 12px;
+    font-size: 14px;
+  }
+  .member-wrap .join-wrap .ck-wrap .checkbox label {
+    padding-left: 22px;
+  }
+  .member-wrap .join-wrap .ck-wrap .checkbox label::before {
+    width: 18px;
+    height: 18px;
+  }
+  .member-wrap .join-wrap .complete {
+    margin: 46px 0 0;
+  }
+  .member-wrap .join-wrap .complete .com-txt {
+    font-size: 18px;
+  }
+  .member-wrap .join-wrap .complete .note-txt {
+    margin-top: 30px;
+    padding: 18px 0;
   }
   .board-wrap .tit-area {
     margin-bottom: 30px;
@@ -2889,10 +2989,12 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label {
     font-size: 14px;
+    padding-left: 28px;
   }
   .board-wrap .boardWrite-wrap .write-form .ck-wrap .checkbox label::before {
     width: 20px;
     height: 20px;
+    top: 2px;
   }
   .board-wrap .boardWrite-wrap .write-form .btn-wrap {
     padding-top: 40px;

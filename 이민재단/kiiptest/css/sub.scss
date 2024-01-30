@@ -473,9 +473,6 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-top: 12px;
         font-size: 16px;
         color: $text-color2;
-        br {
-            display: none;
-        }
     }
     //로그인
     .login {
@@ -504,15 +501,24 @@ input[type="number"]::-webkit-inner-spin-button {
             }
         }
     }
-    .btn {
-        margin-top: 40px;
-        height: 52px;
-        line-height: 50px;
-        font-weight: 400;
-        + .btn {
-            margin-top: 12px;
+    .btn-wrap {
+        margin-top: 60px;
+        &.type-column {
+            margin-top: 40px;
+            gap: 12px;
+        }
+        &.type-center-always {
+            .btn {
+                max-width: 200px;
+            }
+        }
+        .btn {
+            height: 52px;
+            line-height: 50px;
+            font-weight: 400;
         }
     }
+
     .captcha-wrap {
         margin: 12px 0 0;
         border-radius: 6px;
@@ -558,10 +564,11 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .find-pw {
         display: block;
-        text-align: center;
+        width: 150px;
+        margin: 0 auto;
         font-size: 14px;
         color: $text-color2;
-        line-height: 16px;
+        line-height: 32px;
         margin-top: 40px;
         &::before {
             content: "";
@@ -797,14 +804,6 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                 }
             }
-            .btn-wrap {
-                margin-top: 60px;
-                justify-content: center;
-                .btn {
-                    margin-top: 0;
-                    width: 200px;
-                }
-            }
         }
 
         //구술감독관 회원가입
@@ -824,14 +823,12 @@ input[type="number"]::-webkit-inner-spin-button {
                 &.tit {
                     font-size: 20px;
                     font-weight: 500;
+                    color: #000000;
                 }
-            }
-            ~ .tit-area {
-                margin: 40px 0 0;
             }
         }
         .form-wrap {
-            padding: 20px 0 0;
+            padding: 20px 0 40px;
             .input-wrap {
                 .type-number {
                     display: flex;
@@ -853,6 +850,53 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                 }
             }
+            dl:last-of-type dt::after{
+                display: inline;
+            }
+        }
+        .ck-wrap {
+            .tit {
+                font-size: 20px;
+                font-weight: 500;
+                color: #000000;
+            }
+            .txt-box {
+                margin: 20px 0;
+                padding: 30px;
+                border: 1px solid #DDDDDD;
+                font-size: 16px;
+                word-break: break-all;
+            }
+            .checkbox {
+                em {
+                    color: #F50E0E;
+                }
+            }
+        }
+        .complete {
+            max-width: 464px;
+            margin: 60px auto 0;
+            padding: 92px 0 0;
+            background-image: url('../images/common/ico/new_join03.svg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            .com-txt {
+                text-align: center;
+                font-size: 20px;
+                color: #000000;
+            }
+            .note-txt {
+                margin-top: 40px;
+                border-radius: 0;
+                padding: 28px 0;
+                .txt {
+                    text-align: center;
+                    background: none;
+                    padding: 0;
+                    color: $text-color1;
+                }
+            }
+
         }
     }
 }
@@ -2162,7 +2206,10 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     // 회원가입
     .member-wrap {
-        padding: 50px 0 100px;
+        padding: 50px 0 80px;
+        &.type-new {
+            padding: 26px 0 80px;
+        }
         .sub-txt {
             margin: 26px 0 32px;
         }
@@ -2187,6 +2234,15 @@ input[type="number"]::-webkit-inner-spin-button {
                         + .btn {
                             max-width: none;
                             min-width: 270px;
+                        }
+                    }
+                }
+
+                //구술감독관 회원가입
+                .ck-wrap {
+                    .txt-box {
+                        .txt ~ .txt {
+                            margin-top: 10px;
                         }
                     }
                 }
@@ -2701,7 +2757,7 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 
-    // 회원가입
+    // 회원
     .member-wrap {
         .sub-txt {
             font-size: 14px;
@@ -2729,9 +2785,18 @@ input[type="number"]::-webkit-inner-spin-button {
                 margin-top: 10px;
             }
         }
-        .btn {
-            height: 50px;
-            line-height: 48px;
+        .btn-wrap {
+            margin-top: 40px;
+            gap: 14px;
+            &.type-center-always {
+                .btn {
+                    max-width: none;
+                }
+            }
+            .btn {
+                height: 50px;
+                line-height: 48px;
+            }
         }
         .captcha-wrap {
             margin-top: 20px;
@@ -2778,37 +2843,45 @@ input[type="number"]::-webkit-inner-spin-button {
         }
 
         //회원가입
+        &.type-new {
+            .join-wrap {
+                .info-box {
+                    margin-bottom: 30px;
+                }
+            }
+        }
         .join-wrap {
+            .info-box {
+                background-color: #f5f5f5;
+                padding: 20px 12px;
+                margin-bottom: 20px;
+                ul {
+                    border: 0;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 0;
+                        span,
+                        .th {
+                            height: auto;
+                            line-height: 1;
+                            border-bottom: 0;
+                        }
+                        + li {
+                            margin-top: 12px;
+                        }
+                        &:last-of-type {
+                            border: 0;
+                        }
+                    }
+                }
+            }
             .join-top {
                 margin: 26px 0 20px;
                 > span {
                     font-size: 12px;
-                }
-                .info-box {
-                    margin: 8px 0 0;
-                    background-color: #f5f5f5;
-                    padding: 20px 12px;
-                    ul {
-                        border: 0;
-                        li {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            border: 0;
-                            span,
-                            .th {
-                                height: auto;
-                                line-height: 1;
-                                border-bottom: 0;
-                            }
-                            + li {
-                                margin-top: 12px;
-                            }
-                            &:last-of-type {
-                                border: 0;
-                            }
-                        }
-                    }
+                    margin-bottom: 8px;
                 }
             }
             .join-form {
@@ -2819,7 +2892,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     dt {
                         width: 100%;
                         font-weight: 500;
-                        margin-bottom: 10px;
+                        margin-bottom: 8px;
                     }
                     dd {
                         input {
@@ -2830,6 +2903,7 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
                 .input-wrap {
                     flex-wrap: wrap;
+                    gap: 8px;
                     .type-address {
                         flex-wrap: wrap;
                         gap: 6px;
@@ -2881,19 +2955,77 @@ input[type="number"]::-webkit-inner-spin-button {
                 .checkbox {
                     label {
                         font-size: 14px;
+                        padding-left: 28px;
                         &::before {
                             width: 20px;
                             height: 20px;
-                            top: 3px;
+                            top: 2px;
                             bottom: auto;
                         }
                     }
                 }
-                .btn-wrap {
-                    margin-top: 40px;
-                    gap: 14px;
-                    .btn {
-                        flex: 1;
+
+            }
+
+            //구술감독관 회원가입
+            .tit-area {
+                padding-bottom: 10px;
+                line-height: 21px;
+                span {
+                    font-size: 12px;
+                    &.tit {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .form-wrap {
+                padding: 20px 0 32px;
+                .input-wrap {
+                    .type-number {
+                        width: 100%;
+                        input {
+                            flex: 1;
+                            max-width: none;
+                        }
+                    }
+                    .type-check {
+                        max-width: none;
+                        + .btn {
+                            max-width: 98px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .ck-wrap {
+                .tit {
+                    font-size: 18px;
+                }
+                .txt-box {
+                    margin: 16px 0;
+                    padding: 14px 12px;
+                    font-size: 14px;
+                }
+                .checkbox {
+                    label {
+                        padding-left: 22px;
+                        &::before {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+            .complete {
+                margin: 46px 0 0;
+                .com-txt {
+                    font-size: 18px;
+                }
+                .note-txt {
+                    margin-top: 30px;
+                    padding: 18px 0;
+                    .txt {
+
                     }
                 }
             }
@@ -3169,9 +3301,11 @@ input[type="number"]::-webkit-inner-spin-button {
                     .checkbox {
                         label {
                             font-size: 14px;
+                            padding-left: 28px;
                             &::before {
                                 width: 20px;
                                 height: 20px;
+                                top: 2px;
                             }
                         }
                     }

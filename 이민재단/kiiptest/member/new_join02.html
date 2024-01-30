@@ -38,7 +38,7 @@
 
 		<main id="contents">
 			<div class="sub-content">
-				<div class="member-wrap">
+				<div class="member-wrap type-new">
 					<div class="tit-area">
 						<h2 class="tit">구술감독관 신규 가입</h2>
 					</div>
@@ -67,24 +67,20 @@
 							<div class="info-box">
 								<ul>
 									<li>
-										<span class="th">아이디</span>
-										<span>Sazita00</span>
+										<span class="th">이수증번호</span>
+										<span>SU-12-구술-015</span>
 									</li>
 									<li>
 										<span class="th">이름</span>
-										<span>Taylor Alison Swift</span>
-									</li>
-									<li>
-										<span class="th">외국인등록번호</span>
-										<span>871510-5********</span>
+										<span>홍길동</span>
 									</li>
 									<li>
 										<span class="th">생년월일</span>
 										<span>19800112</span>
 									</li>
 									<li>
-										<span class="th">여권번호</span>
-										<span>M302133456</span>
+										<span class="th">휴대폰번호</span>
+										<span>01000000000</span>
 									</li>
 								</ul>
 							</div>
@@ -100,10 +96,10 @@
 											<dd>
 												<div class="input-wrap">
 													<div class="type-number">
-														<input type="text" name="join" id="number01" placeholder="">
+														<input type="number" name="join" id="number01" placeholder="" maxlength="6">
 														<label for="number01" class="is-blind">주민등록번호 앞자리</label>
 														<i class="num-bar"></i>
-														<input type="text" name="join" id="number02" placeholder="">
+														<input type="number" name="join" id="number02" placeholder="" maxlength="7">
 														<label for="number02" class="is-blind">주민등록번호 뒷자리</label>
 													</div>
 
@@ -126,7 +122,7 @@
 											<dt>비밀번호</dt>
 											<dd>
 												<div class="input-wrap">
-													<input type="password" name="join" id="password" placeholder="">
+													<input type="password" name="join" id="password" placeholder="영문, 숫자, 특수문자를 포함하여 6~20자 이내로 입력해주세요">
 													<label for="password" class="is-blind">비밀번호</label>
 												</div>
 											</dd>
@@ -135,7 +131,7 @@
 											<dt>비밀번호 확인</dt>
 											<dd>
 												<div class="input-wrap">
-													<input type="password" name="join" id="passwordChk" placeholder="">
+													<input type="password" name="join" id="passwordChk" placeholder="비밀번호 확인을 위해 다시 한번 입력해주세요">
 													<label for="passwordChk" class="is-blind">비밀번호 확인</label>
 												</div>
 											</dd>
@@ -199,21 +195,31 @@
 											<dt>계좌번호</dt>
 											<dd>
 												<div class="input-wrap">
-													<input type="text" name="join" id="account" placeholder="">
+													<input type="text" name="join" id="account" placeholder="‘-’ 없이 입력해주세요.">
 													<label for="account" class="is-blind">계좌번호</label>
 												</div>
 											</dd>
 										</dl>
-										<div class="ck-wrap">
-											<span class="tit">개인정보이용동의</span>
-											<div class="txt-box">
-												&#9001; 개인정보 수집·활용 동의 및 필수항목의 고지 &#9002;
-												<br><br>개인정보의 수집 목적 : 아래 입력한 개인정보는 이용자 식별(본인확인), 플랫폼 운영에 대한 연락 및 안내 및 통계분석 활용을 위해 참고용으로 수집·활용됨 수집하는 개인정보의 항목 : 이름,메일정보 항목보유 및 이용 기간 : 3년간 보유 및 이용 이후 파기
-												<br>동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익의 내용 : 개인정보는 필수 입력 사항이며 동의하지 않을 시 글쓰기 제한
-											</div>
-											<div class="btn-wrap">
-												<button type="button" class="btn">가입하기</button>
-											</div>
+									</div>
+									<div class="ck-wrap">
+										<span class="tit">개인정보이용동의</span>
+										<div class="txt-box">
+											<p class="txt">
+												1. 개인정보 수집 . 이용 목적 : 2020년 사회통합프로그램 기본소양 평가와 관련하여 감독비 지급 등 일련의 사우 처리에 있어 개인정보를 지정된 목적에 활용하기 위함.(해당 정보는 지정된 목적 외에 일체 사용하지 않음)
+											</p>
+											<br class="hide-m">
+											<p class="txt">
+												2. 수집하는 개인정보의 항목, 성명, 주민등록번호, 계좌번호, 연락처 본인의 개인정보가 [개인정보보호법] 근거하여 위하 같이 제공, 활용되는 것에 대하여 동의합니다.
+											</p>
+
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="join" id="agree">
+											<label for="agree">개인정보 수집 및 활용에 동의함 <em>(필수)</em></label>
+										</div>
+									</div>
+									<div class="btn-wrap type-center-always">
+										<button type="button" class="btn">가입하기</button>
 									</div>
 								</form>
 							</div>
@@ -227,6 +233,27 @@
 	</div>
 
 	<script>
+		//페이지에서만 사용하는 스크립트
+
+		//select 박스 선택 할 때 폰트 색 변경
+		let select = '.input-wrap select';
+		$(select).change(function () {
+			$(this).css('color','#222');
+		});
+
+		//모바일에서 비밀번호 placeholder 문장 변경
+		$(window).resize(function(){
+			let win_w = window.innerWidth;
+
+			if(win_w < 1240){
+				$('#password').attr('placeholder', '영문, 숫자, 특수문자 포함, 6~20자 이내로 입력');
+				$('#passwordChk').attr('placeholder', '비밀번호 확인을 위해 다시 한 번 입력');
+			} else{
+				$('#password').attr('placeholder', '영문, 숫자, 특수문자를 포함하여 6~20자 이내로 입력해주세요');
+				$('#passwordChk').attr('placeholder', '비밀번호확인을 위해 다시 한번 입력해주세요');
+			}
+		});
+		$(window).trigger('resize');
 	</script>
 </body>
 </html>
