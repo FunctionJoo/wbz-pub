@@ -684,6 +684,9 @@ input[type="number"]::-webkit-inner-spin-button {
                                     font-size: 14px;
                                 }
                             }
+                            &.sub-list {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -3121,26 +3124,61 @@ input[type="number"]::-webkit-inner-spin-button {
                             > div {
                                 border: 0 !important;
                                 line-height: 1.2;
+                                font-size: 16px;
                                 &.no {
                                     display: none;
                                 }
-                                &.title {
-                                    order: 1;
-                                    width: 100%;
-                                    padding: 0;
-                                }
                                 &.year, &.quarter {
-                                    order: 2;
+                                    display: none;
                                 }
                                 &.date {
-                                    order: 2;
-                                }
-                                &.cancel {
-                                    order: 7;
-                                    width: 100%;
+                                    display: none;
                                 }
                                 &.area, &.attend {
-                                    order: 2;
+                                    display: none;
+                                }
+                                &.title {
+                                    width: 100%;
+                                    padding: 0;
+                                    color: $text-color1;
+                                }
+                                &.cancel {
+                                    width: 100%;
+                                    > span {
+                                        display: none;
+                                    }
+                                    .btn {
+                                        border-radius: 4px;
+                                        max-width: none;
+                                        height: 34px;
+                                        line-height: 32px;
+                                        margin-top: 20px;
+                                    }
+                                }
+                                &.sub-list {
+                                    display: block;
+                                    margin-top: 12px;
+                                    > div {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 8px;
+                                        + div {
+                                            margin-top: 8px;
+                                        }
+                                        p {
+                                            &::after {
+                                                content: '';
+                                                display: inline-block;
+                                                width: 1px;
+                                                height: 10px;
+                                                margin-left: 8px;
+                                                background-color: #707070;
+                                            }
+                                            &:last-of-type::after {
+                                                display: none;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                             + .table-list {
