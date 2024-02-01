@@ -536,6 +536,13 @@ input[type="number"]::-webkit-inner-spin-button {
                 .tit {
                     @include font(500, 20px, #000000);
                 }
+                .btn {
+                    max-width: 150px;
+                    border-radius: 3px;
+                    font-size: 15px;
+                    height: 40px;
+                    line-height: 38px;
+                }
             }
             .empty p {
                 font-size: 18px;
@@ -2440,20 +2447,78 @@ input[type="number"]::-webkit-inner-spin-button {
             }
             .cont-wrap {
                 .table-wrap {
-                    .list {
-                        &.area, &.attend {
-                            width: 8%;
-                        }
-                    }
                     .table-top {
-                        font-size: 14px;
+                        display: none;
                     }
                     .table-body {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 14px;
                         .table-list {
+                            width: calc(50% - 7px);
+                            display: flex;
+                            flex-wrap: wrap;
+                            border-radius: 6px;
+                            border-width: 1px;
+                            padding: 20px 14px;
                             > div {
-                                font-size: 14px;
+                                border: 0 !important;
+                                line-height: 1.2;
+                                font-size: 16px;
+                                width: 100%;
+                                text-align: left;
+                                &.no {
+                                    display: none;
+                                }
                                 &.title {
-                                    padding: 0 5px;
+                                    padding: 0;
+                                    color: $text-color1;
+                                }
+                                &.row1 {
+                                    margin: 12px 0 8px;
+                                    font-size: 0;
+                                    > span {
+                                        font-size: 16px;
+                                        &::after {
+                                            content: '';
+                                            display: inline-block;
+                                            width: 1px; height: 10px;
+                                            background-color: #707070;
+                                            margin: 0 8px;
+                                        }
+                                        &:last-of-type::after {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &.row2 {
+                                    font-size: 0;
+                                    > span {
+                                        font-size: 16px;
+                                        &::after {
+                                            content: '';
+                                            display: inline-block;
+                                            width: 1px; height: 10px;
+                                            background-color: #707070;
+                                            margin: 0 8px;
+                                        }
+                                        &:last-of-type::after {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &.cancel {
+                                    > span {
+                                        display: none;
+                                    }
+                                    .btn {
+                                        text-align: center;
+                                        border-radius: 4px;
+                                        max-width: none;
+                                        height: 34px;
+                                        line-height: 32px;
+                                        margin-top: 20px;
+                                    }
                                 }
                             }
                         }
@@ -3116,71 +3181,7 @@ input[type="number"]::-webkit-inner-spin-button {
                     }
                     .table-body {
                         .table-list {
-                            display: flex;
-                            flex-wrap: wrap;
-                            border-radius: 6px;
-                            border-width: 1px;
-                            padding: 20px 14px;
-                            > div {
-                                border: 0 !important;
-                                line-height: 1.2;
-                                font-size: 16px;
-                                &.no {
-                                    display: none;
-                                }
-                                &.year, &.quarter {
-                                    display: none;
-                                }
-                                &.date {
-                                    display: none;
-                                }
-                                &.area, &.attend {
-                                    display: none;
-                                }
-                                &.title {
-                                    width: 100%;
-                                    padding: 0;
-                                    color: $text-color1;
-                                }
-                                &.cancel {
-                                    width: 100%;
-                                    > span {
-                                        display: none;
-                                    }
-                                    .btn {
-                                        border-radius: 4px;
-                                        max-width: none;
-                                        height: 34px;
-                                        line-height: 32px;
-                                        margin-top: 20px;
-                                    }
-                                }
-                                &.sub-list {
-                                    display: block;
-                                    margin-top: 12px;
-                                    > div {
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 8px;
-                                        + div {
-                                            margin-top: 8px;
-                                        }
-                                        p {
-                                            &::after {
-                                                content: '';
-                                                display: inline-block;
-                                                width: 1px;
-                                                height: 10px;
-                                                margin-left: 8px;
-                                                background-color: #707070;
-                                            }
-                                            &:last-of-type::after {
-                                                display: none;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                            width: 100%;
                             + .table-list {
                                 margin-top: 14px;
                             }
